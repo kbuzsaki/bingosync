@@ -20,6 +20,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^api/board/(?P<seed>[0-9]+)$', views.board_json, name='board_json'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
