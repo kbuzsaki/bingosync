@@ -85,6 +85,23 @@
 		</div>
 	</div>
 </div></div>
+<script>
+    function updateSquare(selector, json) {
+        selector.html(json["name"]);
+    }
+
+    $(document).ready(function() {
+        // asynchronously load and populate the board
+        $.ajax({
+            "url": "{% url 'views.board_json' seed %}",
+            "success": function(result) {
+                for(var i = 0; i < result.length; i++) {
+                    updateSquare($("#slot" + (i + 1)), result[i])
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
 
