@@ -1,0 +1,90 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ocarina of Time Bingo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <!-- jquery -->
+</head>
+<body>
+<div id="wrap"><div id="main">
+	<div class="container" id="pageContent">
+		<div id="bingoPage">
+			<div id="about_bingo">
+				<h1>OoT Bingo</h1>
+				<div style="clear:both;"></div>
+				<p>This is a "Bingo" board for Ocarina of Time races.</p>
+				<p>To win, you must complete 5 of the tasks in a row horizontally, vertically, or diagonally.</p>
+				<p>The seed number is used to generate the board. Changing the seed will make a new board.</p>
+				<p>You can click on the squares to turn them green and red. This may help you organize your route planning.</p>
+				<p>For OOT-Bingo, there are some specific rules in place:</p>
+				<ul>
+					<li>Just to clarify, RBA is allowed.</li>
+					<li>If it says to have an item, you must actually keep it. For example, if it says to have "Blue Potion," you must not drink it, and you must still have it in your inventory at the time you finish getting all 5 objectives.</li>
+					<li>Sometimes there is a question of when to say you are finished. For dungeons, you are "finished" with the dungeon when you step into the blue warp after defeating the boss. For items, you are "finished" when you are holding the item above your head. For songs, when the text says "You have learned the..."</li>
+				</ul>
+			</div>
+			<div id="results">
+				<table id="bingo">
+					<tr>
+						<td class="popout" id="tlbr">TL-BR</td>
+						<td class="popout" id="col1">COL1</td>
+						<td class="popout" id="col2">COL2</td>
+						<td class="popout" id="col3">COL3</td>
+						<td class="popout" id="col4">COL4</td>
+						<td class="popout" id="col5">COL5</td>
+					</tr>
+					<tr>
+						<td class="popout" id="row1">ROW1</td>
+						<td class="row1 col1 tlbr" id="slot1"></td> 
+						<td class="row1 col2" id="slot2"></td> 
+						<td class="row1 col3" id="slot3"></td> 
+						<td class="row1 col4" id="slot4"></td> 
+						<td class="row1 col5 bltr" id="slot5"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row2">ROW2</td>
+						<td class="row2 col1" id="slot6"></td> 
+						<td class="row2 col2 tlbr" id="slot7"></td> 
+						<td class="row2 col3" id="slot8"></td> 
+						<td class="row2 col4 bltr" id="slot9"></td> 
+						<td class="row2 col5" id="slot10"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row3">ROW3</td>
+						<td class="row3 col1" id="slot11"></td> 
+						<td class="row3 col2" id="slot12"></td> 
+						<td class="row3 col3 tlbr bltr" id="slot13"></td> 
+						<td class="row3 col4" id="slot14"></td> 
+						<td class="row3 col5" id="slot15"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row4">ROW4</td>
+						<td class="row4 col1" id="slot16"></td> 
+						<td class="row4 col2 bltr" id="slot17"></td> 
+						<td class="row4 col3" id="slot18"></td> 
+						<td class="row4 col4 tlbr" id="slot19"></td> 
+						<td class="row4 col5" id="slot20"></td> 
+					</tr>
+					<tr> 
+						<td class="popout" id="row5">ROW5</td>
+						<td class="row5 col1 bltr" id="slot21"></td> 
+						<td class="row5 col2" id="slot22"></td> 
+						<td class="row5 col3" id="slot23"></td> 
+						<td class="row5 col4" id="slot24"></td> 
+						<td class="row5 col5 tlbr" id="slot25"></td> 
+					</tr>
+					<tr>
+						<td class="popout" id="bltr">BL-TR</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div></div>
+</body>
+</html>
+
