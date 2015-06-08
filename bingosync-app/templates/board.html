@@ -107,9 +107,17 @@
             }
         });
 
+        var ws = new WebSocket("ws://127.0.0.1:8888/broadcast");
+        ws.onopen = function() {
+            ws.send("Connection Opened");
+        };
+        ws.onmessage = function (evt) {
+            appendChatMessage(evt.data);
+        };
+
         $("#bingo tr td").on("click", function(ev) {
             var goal = $(this).html();
-            appendChatMessage(goal);
+            ws.send("Player selected: " + goal);
         });
     });
 </script>
