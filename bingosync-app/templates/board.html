@@ -117,7 +117,20 @@
 
         $("#bingo tr td").on("click", function(ev) {
             var goal = $(this).html();
-            ws.send("Player selected: " + goal);
+            $.ajax({
+                "url": "{% url 'views.goal_selected' %}",
+                "type": "PUT",
+                "data": JSON.stringify({
+                    "goal": goal
+                }),
+                "success": function(result) {
+                    appendChatMessage(result);
+                },
+                "error": function(result) {
+                    appendChatMessage("error!");
+                    console.log(result);
+                }
+            });
         });
     });
 </script>
