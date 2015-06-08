@@ -26,6 +26,8 @@
 					<li>If it says to have an item, you must actually keep it. For example, if it says to have "Blue Potion," you must not drink it, and you must still have it in your inventory at the time you finish getting all 5 objectives.</li>
 					<li>Sometimes there is a question of when to say you are finished. For dungeons, you are "finished" with the dungeon when you step into the blue warp after defeating the boss. For items, you are "finished" when you are holding the item above your head. For songs, when the text says "You have learned the..."</li>
 				</ul>
+                <div id="chat-window" style="border: solid 1px; height: 100px; overflow: scroll">
+                </div>
 			</div>
 			<div id="results">
 				<table id="bingo">
@@ -90,6 +92,10 @@
         selector.html(json["name"]);
     }
 
+    function appendChatMessage(message) {
+        $("#chat-window").append("<div>" + message + "</div>");
+    }
+
     $(document).ready(function() {
         // asynchronously load and populate the board
         $.ajax({
@@ -99,6 +105,11 @@
                     updateSquare($("#slot" + (i + 1)), result[i])
                 }
             }
+        });
+
+        $("#bingo tr td").on("click", function(ev) {
+            var goal = $(this).html();
+            appendChatMessage(goal);
         });
     });
 </script>
