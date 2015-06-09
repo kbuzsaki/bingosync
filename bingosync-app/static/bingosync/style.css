@@ -27,19 +27,38 @@
     flex: 0 1 80px;
 }
 
+
+.flex-col-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.flex-col-header {
+    flex: 0 1 auto;
+}
+
+.flex-col-content {
+    flex: 1 1 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.flex-col-footer {
+    flex: 0 1 auto;
+}
+
 .panel-window {
     height: 100%;
-    padding: 10px;
-    background-color: #333;
-    border: solid 1px #666;
 }
 
 .panel-inner {
-    border: solid 2px #444;
+    border: solid 1px #444;
     height: 100%;
     width: 100%;
     background-color: #272b30;
     padding: 3px;
+    padding-left: 6px;
     overflow: scroll;
 }
 
@@ -68,6 +87,10 @@
 
 .chat-send {
     flex: 0 1 auto;
+}
+
+#settings-table tr td {
+    padding-right: 5px;
 }
 
 /* plain old square */

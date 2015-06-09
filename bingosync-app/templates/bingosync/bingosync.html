@@ -10,9 +10,12 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="container" style="height: 100vh">
-    <div class="row" style="height: 100%">
-        <div class="col-md-6 vertical-center" style="text-align: center">
+<div class="container" style="height: 97vh">
+    <div>
+        <h1>Bingosync</h1>
+    </div>
+    <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
+        <div class="col-md-6" style="text-align: center">
             <div style="display: inline-block;">
                 <div id="color-chooser" class="panel panel-default">
                     <div class="panel-heading">
@@ -35,15 +38,14 @@
                 {% include 'bingosync/board.html' %}
             </div>
         </div>
-        <div class="col-md-6" style="height: 100%">
-            <div class="sidebar-right">
-                <div class="sidebar-header">
-                    <h1>OoT Bingo</h1>
-                    <p>This is a "Bingo" board for Ocarina of Time races.</p>
-                </div>
-                <div class="sidebar-content">
-                    <div class="row" style="height: 100%; width: 100%; position: absolute">
-                        <div class="col-md-8" style="height: 100%">
+        <div class="col-md-6" style="height: 93%">
+            <div class="row" style="height: 100%">
+                <div class="col-md-8" style="height: 100%">
+                    <div class="panel panel-default" style="height: 100%">
+                        <div class="panel-heading">
+                            Room Feed
+                        </div>
+                        <div class="panel-body" style="height: calc(100% - 40px);">
                             <div id="bingo-chat" class="chat-window panel-window">
                                 <div class="chat-body panel-inner"></div>
                                 <form>
@@ -52,40 +54,48 @@
                                         <input type="submit" class="chat-send btn btn-default" value="Send"/>
                                     </div>
                                 </form>
-                            </div>
+                            </div>    
                         </div>
-                        <div class="col-md-4" style="height: 100%">
-                            <div class="sidebar-right">
-                                <div class="sidebar-content">
-                                    <div class="panel-window" style="position: absolute; width: 100%">
-                                        <div class="panel-inner">
-                                            <div><b>Team One</b></div>
-                                            <div>Player One</div>
-                                            <div>Player Two</div>
-                                            <div>Player Three</div>
-                                            <br>
-                                            <div><b>Team Two</b></div>
-                                            <div>Player Four</div>
-                                            <div>Player Five</div>
-                                            <div>Player Six</div>
-                                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="height: 100%">
+                    <div class="flex-col-container">
+                        <div class="flex-col-content">
+                            <div class="panel panel-default" style="height: 100%; width: 100%; position: absolute;">
+                                <div class="panel-heading">
+                                    Players
+                                </div>
+                                <div class="panel-body">
+                                    <div><b>Team One</b></div>
+                                    <div style="margin: 0 0 10px 10px">
+                                        <div>Player One</div>
+                                        <div>Player Two</div>
+                                        <div>Player Three</div>
+                                    </div>
+                                    <div><b>Team Two</b></div>
+                                    <div style="margin: 0 0 10px 10px;">
+                                        <div>Player Four</div>
+                                        <div>Player Five</div>
+                                        <div>Player Six</div>
                                     </div>
                                 </div>
-                                <div class="sidebar-footer">
-                                    <div class="panel-window" style="margin-top: 10px;">
-                                        <div class="panel-inner">
-                                            <div>options here</div>
-                                            <div>options here</div>
-                                            <div>options here</div>
-                                            <div>options here</div>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="flex-col-footer">
+                            <div class="panel panel-default" style="height: 100%; margin-bottom: 0px;">
+                                <div class="panel-heading">
+                                    Room Settings
+                                </div>
+                                <div class="panel-body">
+                                    <table id="settings-table">
+                                        <tr><td><b>Seed:</b></td><td>5</td></tr>
+                                        <tr><td><b>Game:</b></td><td>OoT</td></tr>
+                                        <tr><td><b>Mode:</b></td><td>Blackout</td></tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="sidebar-footer-fixed">
                 </div>
             </div>
         </div>
