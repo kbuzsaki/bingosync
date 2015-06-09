@@ -108,56 +108,56 @@
 
 /* plain old square */
 .square {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-  padding: 0 5px;
-  cursor: pointer;
-  width: 105px;
-  height: 95px;
-  text-align: center;
-  border: 1px #424242 solid;
-  background: #181818;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0 5px;
+    cursor: pointer;
+    width: 105px;
+    height: 95px;
+    text-align: center;
+    border: 1px #424242 solid;
+    background: #181818;
 }    
 
 .square:hover,
 .square.hover {
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
 .blanksquare:hover,
 .square.hover {
-  background: #1448b3;       
+    background: #1448b3;       
 }
 
 /* labels along the top */
 #bingo tr:first-child td,
 #bingo tr:last-child td {
-  height: 30px;
-  background: #101821;
-  font-size: 75%;
-  color: #3c70df;
-  font-weight: 700;
-  border: 1px #0a245a solid;
+    height: 30px;
+    background: #101821;
+    font-size: 75%;
+    color: #3c70df;
+    font-weight: 700;
+    border: 1px #0a245a solid;
 }
 #bingo tr:first-child td:hover,
 #bingo tr:last-child td:hover {
-  color: #ffffff;
-  background: #1448b3;
+    color: #ffffff;
+    background: #1448b3;
 }                            
 /* labels along the left */
 #bingo tr td:first-child {
-  width: 35px;
-  background: #101821;
-  font-size: 75%;
-  color: #3c70df;
-  font-weight: 700;
-  border: 1px #0a245a solid;
+    width: 35px;
+    background: #101821;
+    font-size: 75%;
+    color: #3c70df;
+    font-weight: 700;
+    border: 1px #0a245a solid;
 }
 #bingo tr td:first-child:hover {
-  color: #ffffff;
-  background: #1448b3;
+    color: #ffffff;
+    background: #1448b3;
 }
 
 /* ripped these gradients from the slate theme */
@@ -187,8 +187,8 @@
 }
 
 .color-chooser:hover {
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
