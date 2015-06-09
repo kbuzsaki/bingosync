@@ -12,26 +12,7 @@
 <body>
 <div class="container" style="height: 100vh">
     <div class="row" style="height: 100%">
-        <div class="col-md-4 sidebar-right">
-            <div class="sidebar-header">
-                <h1>OoT Bingo</h1>
-                <p>This is a "Bingo" board for Ocarina of Time races.</p>
-            </div>
-            <div id="bingo-chat" class="sidebar-content chat-window">
-                <div class="chat-body-container">
-                    <div class="chat-body"></div>
-                </div>
-                <form>
-                    <div class="chat-input-container">
-                        <input type="text" class="chat-input form-control" autocomplete="off" />
-                        <input type="submit" class="chat-send btn btn-default" value="Send"/>
-                    </div>
-                </form>
-            </div>
-            <div class="sidebar-footer">
-            </div>
-        </div>
-        <div class="col-md-8 vertical-center" style="text-align: center">
+        <div class="col-md-6 vertical-center" style="text-align: center">
             <div style="display: inline-block;">
                 <div id="color-chooser" class="panel panel-default">
                     <div class="panel-heading">
@@ -52,6 +33,60 @@
                     </div>
                 </div>
                 {% include 'bingosync/board.html' %}
+            </div>
+        </div>
+        <div class="col-md-6" style="height: 100%">
+            <div class="sidebar-right">
+                <div class="sidebar-header">
+                    <h1>OoT Bingo</h1>
+                    <p>This is a "Bingo" board for Ocarina of Time races.</p>
+                </div>
+                <div class="sidebar-content">
+                    <div class="row" style="height: 100%; width: 100%; position: absolute">
+                        <div class="col-md-8" style="height: 100%">
+                            <div id="bingo-chat" class="chat-window panel-window">
+                                <div class="chat-body panel-inner"></div>
+                                <form>
+                                    <div class="chat-input-container">
+                                        <input type="text" class="chat-input form-control" autocomplete="off" />
+                                        <input type="submit" class="chat-send btn btn-default" value="Send"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="height: 100%">
+                            <div class="sidebar-right">
+                                <div class="sidebar-content">
+                                    <div class="panel-window" style="position: absolute; width: 100%">
+                                        <div class="panel-inner">
+                                            <div><b>Team One</b></div>
+                                            <div>Player One</div>
+                                            <div>Player Two</div>
+                                            <div>Player Three</div>
+                                            <br>
+                                            <div><b>Team Two</b></div>
+                                            <div>Player Four</div>
+                                            <div>Player Five</div>
+                                            <div>Player Six</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-footer">
+                                    <div class="panel-window" style="margin-top: 10px;">
+                                        <div class="panel-inner">
+                                            <div>options here</div>
+                                            <div>options here</div>
+                                            <div>options here</div>
+                                            <div>options here</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-footer-fixed">
+                </div>
             </div>
         </div>
     </div>

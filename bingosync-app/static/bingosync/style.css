@@ -5,7 +5,6 @@
 }
 
 .sidebar-right {
-    float: right;
     display: flex;
     flex-flow: column;
     height: 100%;
@@ -17,33 +16,40 @@
 
 .sidebar-content {    
     flex: 1 1 auto;
+    position: relative;
 }
 
 .sidebar-footer { 
+    flex: 0 1 relative;
+}
+
+.sidebar-footer-fixed { 
     flex: 0 1 80px;
 }
 
-.chat-window {
-    border: solid 1px #666;
-    display: flex;
-    flex-flow: column;
+.panel-window {
+    height: 100%;
+    padding: 10px;
     background-color: #333;
+    border: solid 1px #666;
 }
 
-.chat-body-container {
-    flex: 1 1 auto;
-    position: relative;
-    margin: 10px;
+.panel-inner {
     border: solid 2px #444;
-}
-
-.chat-body {
-    position: absolute;
-    overflow: scroll;
     height: 100%;
     width: 100%;
     background-color: #272b30;
     padding: 3px;
+    overflow: scroll;
+}
+
+.chat-window {
+    display: flex;
+    flex-flow: column;
+}
+
+.chat-body {
+    flex: 1 1 auto;
 }
 
 .chat-input-container {
