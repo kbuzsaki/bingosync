@@ -4,6 +4,11 @@
     transform: translateY(-50%);
 }
 
+.fill-parent {
+    height: 100%;
+    width: 100%;
+}
+
 .sidebar-right {
     display: flex;
     flex-flow: column;
@@ -44,8 +49,16 @@
     margin-bottom: 20px;
 }
 
+.flex-col-content .fill-parent {
+    position: absolute;
+}
+
 .flex-col-footer {
     flex: 0 1 auto;
+}
+
+.flex-col-footer .panel {
+    margin-bottom: 0px;
 }
 
 .panel-window {
