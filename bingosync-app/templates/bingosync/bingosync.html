@@ -17,14 +17,14 @@
                 <h1>OoT Bingo</h1>
                 <p>This is a "Bingo" board for Ocarina of Time races.</p>
             </div>
-            <div class="sidebar-content chat-window">
+            <div id="bingo-chat" class="sidebar-content chat-window">
                 <div class="chat-body-container">
-                    <div id="chat-body" class="chat-body"></div>
+                    <div class="chat-body"></div>
                 </div>
                 <form>
                     <div class="chat-input-container">
-                        <input type="text" id="chat-input" class="chat-input form-control" autocomplete="off" />
-                        <input type="submit" id="chat-send" class="chat-send btn btn-default" value="Send"/>
+                        <input type="text" class="chat-input form-control" autocomplete="off" />
+                        <input type="submit" class="chat-send btn btn-default" value="Send"/>
                     </div>
                 </form>
             </div>
@@ -39,66 +39,89 @@
     </div>
 </div>
 <script>
-    function updateSquare(selector, json) {
-        selector.html(json["name"]);
-    }
-
-    function appendChatMessage(message) {
-        var $chatBody = $("#chat-body");
-        var wasAtBottom = ($chatBody.scrollTop() + $chatBody.height()) === $chatBody[0].scrollHeight;
-        $chatBody.append("<div>" + message + "</div>");
-        if(wasAtBottom || true) {
-            $chatBody.scrollTop($chatBody[0].scrollHeight);
+    function initializeBoard($board, boardUrl, goalSelectedUrl) {
+        function updateSquare($square, json) {
+            $square.html(json["name"]);
         }
-    }
 
-    $(document).ready(function() {
-        // asynchronously load and populate the board
+        function updateBoard($board, json) {
+            for(var i = 0; i < json.length; i++) {
+                $square = $board.find("#slot" + (i + 1));
+                updateSquare($square, json[i])
+            }
+        }
+
         $.ajax({
-            "url": "{% url 'views.board_json' seed %}",
+            "url": boardUrl,
             "success": function(result) {
-                for(var i = 0; i < result.length; i++) {
-                    updateSquare($("#slot" + (i + 1)), result[i])
-                }
+                updateBoard($board, result);
             }
         });
 
-        var ws = new WebSocket("ws://127.0.0.1:8888/broadcast");
-        ws.onopen = function() {
-            console.log("socket opened!");
-        };
-        ws.onmessage = function (evt) {
-            appendChatMessage(evt.data);
-        };
-
-        $(".square").on("click", function(ev) {
+        $board.find(".square").on("click", function(ev) {
             var goal = $(this).html();
             $.ajax({
-                "url": "{% url 'views.goal_selected' %}",
+                "url": goalSelectedUrl,
                 "type": "PUT",
                 "data": JSON.stringify({
                     "goal": goal
                 }),
-                "success": function(result) {
-                    appendChatMessage(result);
-                },
                 "error": function(result) {
-                    appendChatMessage("error!");
                     console.log(result);
                 }
             });
         });
+    }
 
-        $("#chat-send").on("click", function(ev) {
-            var $chatInput = $("#chat-input");
+    function initializeChatSocket($chatWindow, socketsUrl) {
+        var $chatBody =  $chatWindow.find(".chat-body");
+        var $chatInput = $chatWindow.find(".chat-input");
+        var $chatSend =  $chatWindow.find(".chat-send");
+
+        console.log($chatBody);
+
+        console.log($chatWindow.children());
+
+        function appendChatMessage(message) {
+            $chatBody.append("<div>" + message + "</div>");
+            if($chatBody[0] != undefined) {
+                $chatBody.scrollTop($chatBody[0].scrollHeight);
+            }
+        }
+
+        var chatSocket = new WebSocket(socketsUrl);
+        chatSocket.onopen = function() {
+            console.log("socket opened!");
+        };
+        chatSocket.onmessage = function (evt) {
+            appendChatMessage(evt.data);
+        };
+
+        console.log($chatSend);
+
+        $chatSend.on("click", function(ev) {
             var message = {
                 "type": "chat",
                 "text": $chatInput.val()
             };
-            ws.send(JSON.stringify(message));
+            chatSocket.send(JSON.stringify(message));
             $chatInput.val('');
             return false;
         });
+
+        return chatSocket;
+    }
+
+    $(document).ready(function() {
+        var boardUrl = "{% url 'views.board_json' seed %}";
+        var socketsUrl = "ws://127.0.0.1:8888/broadcast";
+        var goalSelectedUrl = "{% url 'views.goal_selected' %}";
+
+        // asynchronously load and populate the board
+        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl);
+
+        // open the chat web socket
+        var chatSocket = initializeChatSocket($("#bingo-chat"), socketsUrl);
     });
 </script>
 </body>
