@@ -30,6 +30,30 @@ function initializeBoard($board, boardUrl, goalSelectedUrl) {
             }
         });
     });
+
+    function addRowHover(name) {
+        $board.find("#" + name).hover(
+            function() {
+                $board.find("." + name).addClass("hover");
+            },
+            function() {
+                $board.find("." + name).removeClass("hover");
+            }
+        );
+    }
+
+    addRowHover("row1");
+    addRowHover("row2");
+    addRowHover("row3");
+    addRowHover("row4");
+    addRowHover("row5");
+    addRowHover("col1");
+    addRowHover("col2");
+    addRowHover("col3");
+    addRowHover("col4");
+    addRowHover("col5");
+    addRowHover("tlbr");
+    addRowHover("bltr");
 }
 
 function initializeChatSocket($chatWindow, socketsUrl) {
