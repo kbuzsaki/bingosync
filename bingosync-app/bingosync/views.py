@@ -12,7 +12,7 @@ def index(request):
     return HttpResponse("Hello, world.")
 
 def board_view(request, seed):
-    return render(request, "board.html", {"seed": seed})
+    return render(request, "bingosync/bingosync.html", {"seed": seed})
 
 def board_json(request, seed):
     generator = BingoGenerator.instance()
