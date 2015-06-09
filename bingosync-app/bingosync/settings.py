@@ -108,3 +108,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
+
+SOCKET_URL = "http://127.0.0.1:8888"
+

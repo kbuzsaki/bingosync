@@ -2,10 +2,16 @@ import tornado.ioloop
 import tornado.web
 import tornado.websocket
 
+import json
+
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world")
 
+    def put(self):
+        data = json.loads(self.request.body.decode("utf8"))
+        goal = data["goal"]
+        BroadcastWebSocket.send_all(goal)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
 

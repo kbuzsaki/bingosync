@@ -1,9 +1,11 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
+
 import json
 
 from .bingo_generator import BingoGenerator
+from .publish import publish_goal
 
 
 def index(request):
@@ -20,5 +22,7 @@ def board_json(request, seed):
 @csrf_exempt
 def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
-    return HttpResponse("Got goal: " + data["goal"])
+    goal = data["goal"]
+    publish_goal(goal)
+    return HttpResponse("Got goal: " + goal)
 
