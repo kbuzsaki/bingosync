@@ -80,7 +80,7 @@
   height: 95px;
   text-align: center;
   border: 1px #424242 solid;
-  background: #111;
+  background: #181818;
 }    
 
 .square:hover {
@@ -97,7 +97,7 @@
 #bingo tr:first-child td,
 #bingo tr:last-child td {
   height: 30px;
-  background: #000811;
+  background: #101821;
   font-size: 75%;
   color: #3c70df;
   font-weight: 700;
@@ -111,7 +111,7 @@
 /* labels along the left */
 #bingo tr td:first-child {
   width: 35px;
-  background: #000811;
+  background: #101821;
   font-size: 75%;
   color: #3c70df;
   font-weight: 700;
