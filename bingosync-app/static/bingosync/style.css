@@ -134,7 +134,7 @@
 /* labels along the top */
 #bingo tr:first-child td,
 #bingo tr:last-child td {
-    height: 30px;
+    padding: 7px 0px;
     background: #101821;
     font-size: 75%;
     color: #3c70df;
@@ -148,7 +148,6 @@
 }                            
 /* labels along the left */
 #bingo tr td:first-child {
-    width: 35px;
     background: #101821;
     font-size: 75%;
     color: #3c70df;

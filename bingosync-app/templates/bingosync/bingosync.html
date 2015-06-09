@@ -15,10 +15,12 @@
         <h1>Bingosync</h1>
     </div>
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
-        <div class="col-md-6" style="text-align: center">
-            <div style="display: inline-block;">
+        <div class="col-md-6">
+            <div class="fill-parent" style="text-align: center">
                 {% include 'bingosync/color_chooser.html' %}
-                {% include 'bingosync/board.html' %}
+                <div style="display: inline-block;">
+                    {% include 'bingosync/board.html' %}
+                </div>
             </div>
         </div>
         <div class="col-md-6" style="height: 93%">
