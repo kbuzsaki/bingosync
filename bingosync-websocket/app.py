@@ -25,6 +25,12 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
     sockets = list()
 
+    @staticmethod
+    def send_all(message):
+        print("sending message:", message, "to", len(BroadcastWebSocket.sockets), "sockets")
+        for socket in BroadcastWebSocket.sockets:
+            socket.write_message(message)
+
     def check_origin(self, origin):
         return True
 
@@ -34,8 +40,7 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
     def on_message(self, message):
         print("Sending message: " + str(message))
-        for socket in BroadcastWebSocket.sockets:
-            socket.write_message(message)
+        BroadcastWebSocket.send_all(message)
 
     def on_close(self):
         print("WebSocket closed")
