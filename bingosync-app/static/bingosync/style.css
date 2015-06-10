@@ -24,20 +24,20 @@
     height: 100%;
 }
 
-.sidebar-header {  
+.sidebar-header {
     flex: 0 1 auto;
 }
 
-.sidebar-content {    
+.sidebar-content {
     flex: 1 1 auto;
     position: relative;
 }
 
-.sidebar-footer { 
+.sidebar-footer {
     flex: 0 1 relative;
 }
 
-.sidebar-footer-fixed { 
+.sidebar-footer-fixed {
     flex: 0 1 80px;
 }
 
@@ -126,7 +126,7 @@
     text-align: center;
     border: 1px #424242 solid;
     background: #181818;
-}    
+}
 
 .square:hover,
 .square.hover {
@@ -154,7 +154,7 @@
 #bingo tr:last-child td:hover {
     color: #ffffff;
     background: #1448b3;
-}                            
+}
 /* labels along the left */
 #bingo tr td:first-child {
     background: #101821;
