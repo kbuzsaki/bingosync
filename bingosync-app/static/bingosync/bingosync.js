@@ -15,7 +15,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     function updateBoard($board, json) {
         for(var i = 0; i < json.length; i++) {
             $square = $board.find("#slot" + (i + 1));
-            updateSquare($square, json[i])
+            updateSquare($square, json[i]);
         }
     }
 
@@ -88,7 +88,7 @@ function initializeChatSocket($chatWindow, socketsUrl) {
 
     function appendChatMessage(message) {
         $chatBody.append("<div>" + message + "</div>");
-        if($chatBody[0] != undefined) {
+        if($chatBody[0] !== undefined) {
             $chatBody.scrollTop($chatBody[0].scrollHeight);
         }
     }
