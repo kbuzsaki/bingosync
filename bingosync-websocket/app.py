@@ -59,6 +59,12 @@ def goal_message(name, goal):
         "goal": goal
     }
 
+def name_message(name):
+    return {
+        "type": "name",
+        "name": name
+    }
+
 class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
     sockets = list()
@@ -82,6 +88,7 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
         self.name = BroadcastWebSocket.get_name()
         print("WebSocket opened:", self.name)
         BroadcastWebSocket.send_all(connected_message(self.name))
+        self.write_message(name_message(self.name))
         self.write_message(connected_as_message(self.name))
         BroadcastWebSocket.sockets.append(self)
 

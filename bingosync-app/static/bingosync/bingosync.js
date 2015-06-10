@@ -39,7 +39,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
             "url": goalSelectedUrl,
             "type": "PUT",
             "data": JSON.stringify({
-                "name": "Someone",
+                "name": window.sessionStorage.getItem("name"),
                 "goal": goal
             }),
             "error": function(result) {
@@ -116,9 +116,15 @@ function initializeChatSocket($chatWindow, socketsUrl) {
         console.log("socket opened!");
     };
     chatSocket.onmessage = function (evt) {
-        result = processChatJson(JSON.parse(evt.data));
-        console.log(result);
-        appendChatMessage(result);
+        json = JSON.parse(evt.data);
+        console.log(json);
+        if(json["type"] === "name") {
+            window.sessionStorage.setItem("name", json["name"]);
+        }
+        else {
+            result = processChatJson(json);
+            appendChatMessage(result);
+        }
     };
 
     $chatSend.on("click", function(ev) {
