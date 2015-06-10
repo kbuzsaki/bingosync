@@ -24,6 +24,8 @@ def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
     name = data["name"]
     goal = data["goal"]
-    publish_goal(name, goal)
+    slot = data["slot"]
+    color = data["color"]
+    publish_goal(name, goal, slot, color)
     return HttpResponse("Got goal: " + goal)
 

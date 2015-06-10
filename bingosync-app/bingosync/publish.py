@@ -3,10 +3,12 @@ import json
 
 from .settings import SOCKET_URL
 
-def publish_goal(name, goal):
+def publish_goal(name, goal, slot, color):
     data = {
         "name": name,
-        "goal": goal
+        "goal": goal,
+        "slot": slot,
+        "color": color
     }
     _publish_json(data)
 

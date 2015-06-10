@@ -29,18 +29,15 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     $board.find(".square").on("click", function(ev) {
         var goal = $(this).html();
         var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
-        if(chosenColor in $(this).getClasses()) {
-            setSquareColor($(this), "blanksquare");
-        }
-        else {
-            setSquareColor($(this), chosenColor);
-        }
+        var assignedColor = (chosenColor in $(this).getClasses()) ? "blanksquare" : chosenColor;
         $.ajax({
             "url": goalSelectedUrl,
             "type": "PUT",
             "data": JSON.stringify({
                 "name": window.sessionStorage.getItem("name"),
-                "goal": goal
+                "goal": goal,
+                "slot": $(this).attr("id"),
+                "color": assignedColor
             }),
             "error": function(result) {
                 console.log(result);
@@ -101,7 +98,7 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             var message = $("<span>", {"class": "chat-message", html: json["text"]}).toHtml();
             return $("<div>", {html: name + message}).toHtml();
         }
-        else if(json["type"] === "board") {
+        else if(json["type"] === "goal") {
             var name = $("<span>", {"class": "chat-name", html: json["name"]}).toHtml();
             var goal = $("<span>", {"class": "", html: " selected " + json["goal"]}).toHtml();
             return $("<div>", {html: name + goal}).toHtml();
@@ -122,6 +119,10 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             window.sessionStorage.setItem("name", json["name"]);
         }
         else {
+            if(json["type"] === "goal") {
+                var $square = $("#" + json["slot"]);
+                setSquareColor($square, json["color"]);
+            }
             result = processChatJson(json);
             appendChatMessage(result);
         }
