@@ -1,4 +1,13 @@
-function initializeBoard($board, boardUrl, goalSelectedUrl) {
+COLORS = ["blanksquare", "redsquare", "bluesquare", "greensquare", "purplesquare", "orangesquare"];
+
+function setSquareColor($square, new_color) {
+    COLORS.forEach(function(color) {
+        $square.removeClass(color);
+    });
+    $square.addClass(new_color);
+}
+
+function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     function updateSquare($square, json) {
         $square.html(json["name"]);
     }
@@ -19,6 +28,13 @@ function initializeBoard($board, boardUrl, goalSelectedUrl) {
 
     $board.find(".square").on("click", function(ev) {
         var goal = $(this).html();
+        var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
+        if(chosenColor in $(this).getClasses()) {
+            setSquareColor($(this), "blanksquare");
+        }
+        else {
+            setSquareColor($(this), chosenColor);
+        }
         $.ajax({
             "url": goalSelectedUrl,
             "type": "PUT",
@@ -54,6 +70,14 @@ function initializeBoard($board, boardUrl, goalSelectedUrl) {
     addRowHover("col5");
     addRowHover("tlbr");
     addRowHover("bltr");
+}
+
+function initializeColorChooser($colorChooser) {
+    var $colorChoosers = $colorChooser.find(".color-chooser");
+    $colorChoosers.on("click", function(ev) {
+        $colorChoosers.removeClass("chosen-color");
+        $(this).addClass("chosen-color");
+    });
 }
 
 function initializeChatSocket($chatWindow, socketsUrl) {
@@ -93,4 +117,4 @@ function initializeChatSocket($chatWindow, socketsUrl) {
     });
 
     return chatSocket;
-}                             
+}

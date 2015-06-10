@@ -136,8 +136,8 @@
 }
 
 .blanksquare:hover,
-.square.hover {
-    background: #1448b3;       
+.blanksquare.hover {
+    background: #0a245a;
 }
 
 /* labels along the top */
@@ -198,5 +198,10 @@
     box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+}
+
+.chosen-color,
+.chosen-color:hover {
+    border: solid 2px #eee;
 }
 

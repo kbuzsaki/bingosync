@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static "bingosync/bootstrap.min.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="{% static 'bingosync/misc.js' %}"></script>
 </head>
 <body>
 <div class="container" style="height: 97vh">
@@ -50,16 +51,13 @@
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
 
         // asynchronously load and populate the board
-        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl);
+        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"));
 
         // open the chat web socket
-        var chatSocket = initializeChatSocket($("#bingo-chat"), socketsUrl);
+        initializeChatSocket($("#bingo-chat"), socketsUrl);
 
-        $("#slot1").addClass("bluesquare");
-        $("#slot2").addClass("orangesquare");
-        $("#slot3").addClass("redsquare");
-        $("#slot4").addClass("greensquare");
-        $("#slot5").addClass("purplesquare");
+        // enable choosing color
+        initializeColorChooser($("#color-chooser"), $("#bingo"));
     });
 </script>
 </body>
