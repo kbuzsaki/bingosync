@@ -127,6 +127,11 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             appendChatMessage(result);
         }
     };
+    chatSocket.onclose = function() {
+        closeMessage = {"type": "connection", "text": "Disconnected from server..."};
+        result = processChatJson(closeMessage);
+        appendChatMessage(result);
+    };
 
     $chatSend.on("click", function(ev) {
         var message = {
