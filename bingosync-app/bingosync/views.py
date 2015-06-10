@@ -22,7 +22,8 @@ def board_json(request, seed):
 @csrf_exempt
 def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
+    name = data["name"]
     goal = data["goal"]
-    publish_goal(goal)
+    publish_goal(name, goal)
     return HttpResponse("Got goal: " + goal)
 

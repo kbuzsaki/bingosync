@@ -11,8 +11,8 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
-        goal = data["goal"]
-        BroadcastWebSocket.send_all(goal)
+        message = goal_message(data["name"], data["goal"])
+        BroadcastWebSocket.send_all(message)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
 
@@ -29,6 +29,35 @@ class EchoWebSocket(tornado.websocket.WebSocketHandler):
         print("WebSocket closed")
 
 NAMES = ["John", "Sam", "Chris", "Alice", "Josie"]
+
+def connection_message(text):
+    return {
+        "type": "connection",
+        "text": text
+    }
+
+def connected_as_message(name):
+    return connection_message("connected as '" + name + "'")
+
+def connected_message(name):
+    return connection_message(name + " connected")
+
+def disconnected_message(name):
+    return connection_message(name + " disconnected")
+
+def chat_message(name, message):
+    return {
+        "type": "chat",
+        "name": name,
+        "text": message
+    }
+
+def goal_message(name, goal):
+    return {
+        "type": "board",
+        "name": name,
+        "goal": goal
+    }
 
 class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
@@ -51,23 +80,20 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
     def open(self):
         self.name = BroadcastWebSocket.get_name()
-        chat_message = "<i>" + self.name + " connected</i>"
-        BroadcastWebSocket.send_all(chat_message)
-        self.write_message("<i>connected as '" + self.name + "'</i>")
         print("WebSocket opened:", self.name)
+        BroadcastWebSocket.send_all(connected_message(self.name))
+        self.write_message(connected_as_message(self.name))
         BroadcastWebSocket.sockets.append(self)
 
     def on_message(self, message):
         print("Received message: " + repr(message))
         data = json.loads(message)
-        chat_message = "<b>" + self.name + "</b>: " + data["text"]
-        BroadcastWebSocket.send_all(chat_message)
+        BroadcastWebSocket.send_all(chat_message(self.name, data["text"]))
 
     def on_close(self):
         print("WebSocket closed:", self.name)
-        chat_message = "<i>" + self.name + " disconnected</i>"
         BroadcastWebSocket.sockets.remove(self)
-        BroadcastWebSocket.send_all(chat_message)
+        BroadcastWebSocket.send_all(disconnected_message(self.name))
 
 application = tornado.web.Application([
     (r"/", MainHandler),

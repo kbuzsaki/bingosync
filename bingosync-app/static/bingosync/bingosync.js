@@ -39,6 +39,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
             "url": goalSelectedUrl,
             "type": "PUT",
             "data": JSON.stringify({
+                "name": "Someone",
                 "goal": goal
             }),
             "error": function(result) {
@@ -85,14 +86,28 @@ function initializeChatSocket($chatWindow, socketsUrl) {
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
 
-    console.log($chatBody);
-
-    console.log($chatWindow.children());
-
     function appendChatMessage(message) {
         $chatBody.append("<div>" + message + "</div>");
         if($chatBody[0] != undefined) {
             $chatBody.scrollTop($chatBody[0].scrollHeight);
+        }
+    }
+
+    function processChatJson(json) {
+        console.log(json);
+        //return $("<div>", {class: "blah", html: "some text"}).html();
+        if(json["type"] === "chat") {
+            var name = $("<span>", {"class": "chat-name", html: json["name"] + ": "}).toHtml();
+            var message = $("<span>", {"class": "chat-message", html: json["text"]}).toHtml();
+            return $("<div>", {html: name + message}).toHtml();
+        }
+        else if(json["type"] === "board") {
+            var name = $("<span>", {"class": "chat-name", html: json["name"]}).toHtml();
+            var goal = $("<span>", {"class": "", html: " selected " + json["goal"]}).toHtml();
+            return $("<div>", {html: name + goal}).toHtml();
+        }
+        else if(json["type"] === "connection") {
+            return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
         }
     }
 
@@ -101,10 +116,10 @@ function initializeChatSocket($chatWindow, socketsUrl) {
         console.log("socket opened!");
     };
     chatSocket.onmessage = function (evt) {
-        appendChatMessage(evt.data);
+        result = processChatJson(JSON.parse(evt.data));
+        console.log(result);
+        appendChatMessage(result);
     };
-
-    console.log($chatSend);
 
     $chatSend.on("click", function(ev) {
         var message = {

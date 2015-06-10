@@ -205,3 +205,15 @@
     border: solid 2px #eee;
 }
 
+.connection-message {
+    font-style: italic;
+    color: #888;
+}
+
+.chat-name {
+    font-weight: bold;
+}
+
+.chat-message {
+}
+
