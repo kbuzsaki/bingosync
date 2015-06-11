@@ -81,7 +81,7 @@
     background-color: #272b30;
     padding: 3px;
     padding-left: 6px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .chat-window {
