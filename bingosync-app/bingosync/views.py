@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 import json
 
+from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .publish import publish_goal
 
@@ -12,7 +13,11 @@ def index(request):
     return HttpResponse("Hello, world.")
 
 def board_view(request, seed):
-    return render(request, "bingosync/bingosync.html", {"seed": seed})
+    params = {
+        "seed": seed,
+        "sockets_url": SOCKETS_URL
+    }
+    return render(request, "bingosync/bingosync.html", params)
 
 def board_json(request, seed):
     generator = BingoGenerator.instance()

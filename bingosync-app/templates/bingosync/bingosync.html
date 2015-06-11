@@ -47,7 +47,7 @@
 <script>
     $(document).ready(function() {
         var boardUrl = "{% url 'views.board_json' seed %}";
-        var socketsUrl = "ws://127.0.0.1:8888/broadcast";
+        var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
 
         // asynchronously load and populate the board
