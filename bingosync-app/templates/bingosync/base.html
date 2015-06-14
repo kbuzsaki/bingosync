@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ocarina of Time Bingo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static "bingosync/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
+    <script src="{% static "jquery.min.js" %}"></script>
+    <script src="{% static "bingosync/misc.js" %}"></script>
+</head>
+<body>
+    {% block page_body %}
+    {% endblock %}
+</body>
+</html>
+
+
