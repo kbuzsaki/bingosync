@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ocarina of Time Bingo</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ocarina of Time Bingo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="{% static "bingosync/bootstrap.min.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="{% static 'bingosync/misc.js' %}"></script>
+    <script src="{% static "jquery.min.js" %}"></script>
+    <script src="{% static "bingosync/misc.js" %}"></script>
 </head>
 <body>
 <div class="container" style="height: 97vh">
@@ -43,7 +43,7 @@
         </div>
     </div>
 </div>
-<script src="{% static 'bingosync/bingosync.js' %}"></script>
+<script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
         var boardUrl = "{% url 'views.board_json' seed %}";
