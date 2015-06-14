@@ -7,7 +7,7 @@ from termcolor import colored
 SRL_BASE = "http://speedrunslive.com"
 BINGO_URL = SRL_BASE + "/tools/oot-bingo"
 
-def load_generator_source():
+def reload_generator_source():
     # super hacky way to load the generator js from srl so it's not stored in the repo
     page_text = urlopen(BINGO_URL).read().decode("utf-8").split()
     js_url_line = [line for line in page_text if "bingo" in line and "script" in line][0]
@@ -25,7 +25,15 @@ def load_generator_source():
 
     var_eval = "\n".join("eval(" + var_name + ");" for var_name in var_names)
     full_js = js_text + var_eval + "\n"
+
     return full_js
+
+def load_cached_generator_source():
+    with open("bingo_generator.js") as js_file:
+        return js_file.read()
+
+def load_generator_source():
+    return load_cached_generator_source()
 
 def load_generator():
     return BingoGenerator(load_generator_source())
