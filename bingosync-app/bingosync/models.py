@@ -1,0 +1,137 @@
+from django.db import models, transaction
+
+from datetime import datetime
+from uuid import uuid4
+from enum import Enum, unique
+
+@unique
+class Color(Enum):
+    blank = 1
+    red = 2
+    blue = 3
+    green = 4
+    orange = 5
+    purple = 6
+
+    def __str__(self):
+        return self.name.capitalize()
+
+    @staticmethod
+    def for_value(value):
+        return list(Color)[value - 1]
+
+    @staticmethod
+    def goal_choices():
+        return [(color.value, str(color)) for color in Color]
+
+    @staticmethod
+    def goal_default():
+        return Color.blank
+
+    @staticmethod
+    def player_choices():
+        return [(color.value, str(color)) for color in Color if color is not Color.blank]
+
+    @staticmethod
+    def player_default():
+        return Color.red
+
+class Room(models.Model):
+    uuid = models.UUIDField(default=uuid4, editable=False)
+    name = models.CharField(max_length=255)
+    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+
+    def __str__(self):
+        return self.name
+
+    @property
+    def current_game(self):
+        return self.games[0]
+
+    @property
+    def games(self):
+        return Game.objects.filter(room=self)
+
+    @property
+    def players(self):
+        return Player.objects.filter(room=self)
+
+class Game(models.Model):
+    room = models.ForeignKey(Room)
+    seed = models.IntegerField()
+    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+
+    def __str__(self):
+        return self.room.name + ": " + str(self.seed)
+
+    @staticmethod
+    def from_board(board_json, *args, **kwargs):
+        with transaction.atomic():
+            game = Game(*args, **kwargs)
+            game.full_clean()
+            game.save()
+            for index, square_json in enumerate(board_json):
+                slot = index + 1
+                square = Square(game=game, slot=slot, goal=square_json["name"])
+                square.full_clean()
+                square.save()
+        return game
+
+SLOT_RANGE = range(1, 26)
+SLOT_CHOICES = [(num, str(num)) for num in SLOT_RANGE]
+
+def validate_in_slot_range(slot):
+    return slot in SLOT_RANGE
+
+class Square(models.Model):
+    game = models.ForeignKey(Game)
+    slot = models.IntegerField(choices=SLOT_CHOICES, validators=[validate_in_slot_range])
+    goal = models.CharField(max_length=255)
+    color_value = models.IntegerField("Color", default=Color.goal_default().value, choices=Color.goal_choices())
+
+    @property
+    def color(self):
+        return Color.for_value(self.color_value)
+
+    class Meta:
+        unique_together = (("game", "slot"),)
+
+class Player(models.Model):
+    room = models.ForeignKey(Room)
+    name = models.CharField(max_length=50)
+    color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
+    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+
+    @property
+    def color(self):
+        return Color.for_value(self.color_value)
+
+class Event(models.Model):
+    player = models.ForeignKey(Player)
+    timestamp = models.DateTimeField("Sent")
+
+    class Meta:
+        abstract = True
+
+class ChatEvent(Event):
+    body = models.TextField()
+
+class GoalEvent(Event):
+    square = models.ForeignKey(Square)
+    color = models.IntegerField(choices=Color.goal_choices())
+
+@unique
+class ConnectionEventType(Enum):
+    connected = 1
+    disconnected = 2
+
+    def __str__(self):
+        return self.name.capitalize()
+
+    @staticmethod
+    def choices():
+        return [(event.value, str(event)) for event in ConnectionEventType]
+
+class ConnectionEvent(Event):
+    event = models.IntegerField(choices=ConnectionEventType.choices())
+
