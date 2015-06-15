@@ -1,0 +1,58 @@
+from django.contrib import admin
+from django.core import urlresolvers
+
+from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ConnectionEvent
+
+class GameInline(admin.StackedInline):
+    model = Game
+    extra = 0
+
+    readonly_fields = ["link_to_game"]
+
+    def link_to_game(self, obj):
+        link = urlresolvers.reverse("admin:bingosync_game_change", args=[obj.id])
+        return '<a href="%s">%s</a>' % (link, str(obj))
+
+    link_to_game.allow_tags = True
+
+class PlayerInline(admin.StackedInline):
+    model = Player
+    extra = 0
+
+class ChatInline(admin.TabularInline):
+    pass
+
+class RoomAdmin(admin.ModelAdmin):
+    inlines = [GameInline, PlayerInline]
+    list_display = ["__str__", "created_date", "num_games", "num_players", "uuid"]
+
+    def num_games(self, room):
+        return len(room.games)
+    num_games.short_description = "Games"
+
+    def num_players(self, room):
+        return len(room.players)
+    num_players.short_description = "Players"
+
+class SquareInline(admin.TabularInline):
+    model = Square
+    extra = 0
+
+class GameAdmin(admin.ModelAdmin):
+    inlines = [SquareInline]
+    readonly_fields = ["link_to_room"]
+
+    def link_to_room(self, obj):
+        link = urlresolvers.reverse("admin:bingosync_room_change", args=[obj.room.id])
+        return '<a href="%s">%s</a>' % (link, str(obj.room))
+
+    link_to_room.allow_tags = True
+
+admin.site.register(Room, RoomAdmin)
+admin.site.register(Game, GameAdmin)
+admin.site.register(Square)
+admin.site.register(Player)
+admin.site.register(ChatEvent)
+admin.site.register(GoalEvent)
+admin.site.register(ConnectionEvent)
+
