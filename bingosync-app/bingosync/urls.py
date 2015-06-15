@@ -19,7 +19,8 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.rooms, name='rooms'),
+    url(r'^room/(?P<encoded_room_uuid>.+)$', views.room_view, name='room_view'),
     url(r'^board/(?P<seed>[0-9]+)$', views.board_view, name='board_view'),
     url(r'^board/(?P<seed>[0-9]+).json$', views.board_json, name='board_json'),
     url(r'^api/board/(?P<seed>[0-9]+)$', views.board_json, name='board_json'),

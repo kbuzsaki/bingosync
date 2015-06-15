@@ -1,0 +1,46 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+
+{% block page_body %}
+<div class="container" style="height: 97vh">
+    <div>
+        <a href="/">
+            <h1>Bingosync</h1>
+        </a>
+    </div>
+    <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Current Rooms
+                </div>
+                <div class="panel-body">
+                    <div style="margin: 5px; border: solid 1px #888; min-height: 120px; border-radius: 5px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    New Room
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" action="/" method="post">
+                        {% csrf_token %}
+                        {{ form|bootstrap_horizontal:"col-md-3" }}
+                        <div class="form-group">
+                            <div class="col-md-4 pull-right">
+                                <input type="submit" class="form-control" value="Make Room" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
