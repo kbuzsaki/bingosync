@@ -30,6 +30,11 @@ def room_view(request, encoded_room_uuid):
     }
     return render(request, "bingosync/bingosync.html", params)
 
+def room_board(request, encoded_room_uuid):
+    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    board = room.current_game.board
+    return JsonResponse(board, safe=False)
+
 def board_view(request, seed):
     params = {
         "seed": seed,
