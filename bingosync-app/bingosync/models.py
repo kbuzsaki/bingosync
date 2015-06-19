@@ -104,6 +104,14 @@ class Game(models.Model):
                 square.save()
         return game
 
+    @property
+    def squares(self):
+        return Square.objects.filter(game=self).order_by("slot")
+
+    @property
+    def board(self):
+        return [square.to_json() for square in self.squares]
+
 SLOT_RANGE = range(1, 26)
 SLOT_CHOICES = [(num, str(num)) for num in SLOT_RANGE]
 
@@ -119,6 +127,12 @@ class Square(models.Model):
     @property
     def color(self):
         return Color.for_value(self.color_value)
+
+    def to_json(self):
+        return {
+            "name": self.goal,
+            "color": self.color.goal_class
+        }
 
     class Meta:
         unique_together = (("game", "slot"),)
