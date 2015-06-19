@@ -39,6 +39,14 @@ class Color(Enum):
     def player_default():
         return Color.red
 
+    @property
+    def goal_class(self):
+        return self.name + "square"
+
+    @property
+    def player_class(self):
+        return self.name + "player"
+
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=255)
