@@ -4,6 +4,8 @@ from datetime import datetime
 from uuid import uuid4
 from enum import Enum, unique
 
+from .util import encode_uuid, decode_uuid
+
 @unique
 class Color(Enum):
     blank = 1
@@ -43,6 +45,15 @@ class Room(models.Model):
 
     def __str__(self):
         return self.name
+
+    @staticmethod
+    def get_for_encoded_uuid(encoded_room_uuid):
+        decoded_uuid = decode_uuid(encoded_room_uuid)
+        return Room.objects.get(uuid=decoded_uuid)
+
+    @property
+    def encoded_uuid(self):
+        return encode_uuid(self.uuid)
 
     @property
     def current_game(self):
