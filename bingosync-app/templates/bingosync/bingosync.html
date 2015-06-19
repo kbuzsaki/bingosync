@@ -4,7 +4,7 @@
 {% block page_body %}
 <div class="container" style="height: 97vh">
     <div>
-        <h1>Bingosync - {{ room.name }}</h1>
+        <h1><a href="{% url 'views.rooms' %}">Bingosync</a> - {{ room.name }}</h1>
     </div>
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
         <div class="col-md-6">
