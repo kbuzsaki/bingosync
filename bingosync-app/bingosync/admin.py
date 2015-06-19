@@ -24,7 +24,8 @@ class ChatInline(admin.TabularInline):
 
 class RoomAdmin(admin.ModelAdmin):
     inlines = [GameInline, PlayerInline]
-    list_display = ["__str__", "created_date", "num_games", "num_players", "uuid"]
+    list_display = ["__str__", "created_date", "num_games", "num_players", "encoded_uuid"]
+    view_on_site = True
 
     def num_games(self, room):
         return len(room.games)
@@ -33,6 +34,10 @@ class RoomAdmin(admin.ModelAdmin):
     def num_players(self, room):
         return len(room.players)
     num_players.short_description = "Players"
+
+    def encoded_uuid(self, room):
+        return room.encoded_uuid
+    encoded_uuid.short_description = "Base 64 UUID"
 
 class SquareInline(admin.TabularInline):
     model = Square

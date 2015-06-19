@@ -1,4 +1,5 @@
 from django.db import models, transaction
+from django.core import urlresolvers
 
 from datetime import datetime
 from uuid import uuid4
@@ -45,6 +46,13 @@ class Room(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        from .views import room_view
+        kwargs = {
+            "encoded_room_uuid": self.encoded_uuid
+        }
+        return urlresolvers.reverse(room_view, kwargs=kwargs)
 
     @staticmethod
     def get_for_encoded_uuid(encoded_room_uuid):
