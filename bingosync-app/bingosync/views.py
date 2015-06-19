@@ -25,7 +25,7 @@ def room_view(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
     game = room.current_game
     params = {
-        "seed": game.seed,
+        "room": room,
         "sockets_url": SOCKETS_URL
     }
     return render(request, "bingosync/bingosync.html", params)

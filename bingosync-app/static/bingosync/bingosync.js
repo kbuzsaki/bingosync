@@ -10,6 +10,7 @@ function setSquareColor($square, new_color) {
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     function updateSquare($square, json) {
         $square.html(json["name"]);
+        setSquareColor($square, json["color"]);
     }
 
     function updateBoard($board, json) {

@@ -4,7 +4,7 @@
 {% block page_body %}
 <div class="container" style="height: 97vh">
     <div>
-        <h1>Bingosync</h1>
+        <h1>Bingosync - {{ room.name }}</h1>
     </div>
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
         <div class="col-md-6">
@@ -37,7 +37,7 @@
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
-        var boardUrl = "{% url 'views.board_json' seed %}";
+        var boardUrl = "{% url 'views.room_board' room.encoded_uuid %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
 
