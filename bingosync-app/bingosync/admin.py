@@ -1,5 +1,9 @@
 from django.contrib import admin
 from django.core import urlresolvers
+from django.contrib.sessions.models import Session
+
+import json
+import pprint
 
 from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ConnectionEvent
 
@@ -60,4 +64,19 @@ admin.site.register(Player)
 admin.site.register(ChatEvent)
 admin.site.register(GoalEvent)
 admin.site.register(ConnectionEvent)
+
+class SessionAdmin(admin.ModelAdmin):
+
+    def _session_data(self, obj):
+        session_dict = obj.get_decoded()
+        session_json = json.dumps(session_dict, indent=4, sort_keys=True)
+        return "<pre><code>" + session_json + "</pre></code>"
+
+    _session_data.allow_tags=True
+    list_display = ['session_key', '_session_data', 'expire_date']
+    readonly_fields = ['_session_data']
+    exclude = ['session_data']
+    date_hierarchy='expire_date'
+
+admin.site.register(Session, SessionAdmin)
 
