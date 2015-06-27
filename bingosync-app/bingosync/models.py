@@ -51,6 +51,7 @@ class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=255)
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    passphrase = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name

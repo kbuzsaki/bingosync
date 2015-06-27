@@ -31,6 +31,8 @@ class RoomAdmin(admin.ModelAdmin):
     list_display = ["__str__", "created_date", "num_games", "num_players", "encoded_uuid"]
     view_on_site = True
 
+    readonly_fields = ["passphrase"]
+
     def num_games(self, room):
         return len(room.games)
     num_games.short_description = "Games"
