@@ -1,0 +1,41 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+
+{% block page_body %}
+<div class="container" style="height: 97vh">
+    <div>
+        <a href="{% url 'views.rooms' %}">
+            <h1>Bingosync</h1>
+        </a>
+    </div>
+    <div style="max-width: 600px; margin: 0 auto">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Join Room
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" action="{% url 'views.join_room' %}" method="post">
+                    {% csrf_token %}
+                    {{ form|bootstrap_horizontal:"col-md-3" }}
+                    <div class="form-group">
+                        <div class="col-md-4 pull-right">
+                            <input type="submit" class="form-control" value="Join Room" />
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    $(document).ready(function() {
+                        $(".alert-danger a.close").on("click", function() {
+                            $(this).parent().hide(100);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
