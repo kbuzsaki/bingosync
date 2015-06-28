@@ -20,7 +20,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.rooms, name='rooms'),
-    url(r'^join$', views.join_room, name='join_room'),
     url(r'^room/(?P<encoded_room_uuid>.+)/board$', views.room_board, name='room_board'),
     url(r'^room/(?P<encoded_room_uuid>.+)$', views.room_view, name='room_view'),
     url(r'^board/(?P<seed>[0-9]+)$', views.board_view, name='board_view'),

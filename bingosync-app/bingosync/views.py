@@ -23,33 +23,44 @@ def rooms(request):
 
     return render(request, "bingosync/index.html", {"form": form})
 
+def _is_authorized(session, encoded_room_uuid):
+    return encoded_room_uuid in session.get(AUTHORIZED_ROOMS, {})
+
+def _authorize(session, encoded_room_uuid):
+    # have to set the session this way so that it saves properly
+    authorized_rooms = session.get(AUTHORIZED_ROOMS, {})
+    authorized_rooms[encoded_room_uuid] = True
+    session[AUTHORIZED_ROOMS] = authorized_rooms
+
+def _join_room(request, join_form, encoded_room_uuid):
+    params = {
+        "form": join_form,
+        "encoded_room_uuid": encoded_room_uuid
+    }
+    return render(request, "bingosync/join_room.html", params)
+
 def room_view(request, encoded_room_uuid):
-    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    if request.method == "POST":
+        join_form = JoinRoomForm(request.POST)
+        if join_form.is_valid():
+            room = join_form.get_room()
+            # use the form uuid, not the url parameter
+            encoded_room_uuid = room.encoded_uuid
 
-    # not authorized to view this room, so show the join screen
-    if encoded_room_uuid not in request.session.get(AUTHORIZED_ROOMS, {}):
-        join_form = JoinRoomForm.for_room(room)
-        return render(request, "bingosync/join_room.html", {"form": join_form})
-    # authorized, so show the board screen
+            _authorize(request.session, encoded_room_uuid)
+            return redirect("room_view", encoded_room_uuid=encoded_room_uuid)
+        return _join_room(request, join_form, encoded_room_uuid)
     else:
-        params = {
-            "room": room,
-            "sockets_url": SOCKETS_URL
-        }
-        return render(request, "bingosync/bingosync.html", params)
-
-def join_room(request):
-    join_form = JoinRoomForm(request.POST)
-    if join_form.is_valid():
-        room = join_form.get_room()
-
-        # have to set the session this way so that it saves properly
-        authorized_rooms = request.session.get(AUTHORIZED_ROOMS, {})
-        authorized_rooms[room.encoded_uuid] = True
-        request.session[AUTHORIZED_ROOMS] = authorized_rooms
-
-        return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
-    return render(request, "bingosync/join_room.html", {"form": join_form})
+        room = Room.get_for_encoded_uuid(encoded_room_uuid)
+        if not _is_authorized(request.session, encoded_room_uuid):
+            join_form = JoinRoomForm.for_room(room)
+            return _join_room(request, join_form, encoded_room_uuid)
+        else:
+            params = {
+                "room": room,
+                "sockets_url": SOCKETS_URL
+            }
+            return render(request, "bingosync/bingosync.html", params)
 
 def room_board(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
