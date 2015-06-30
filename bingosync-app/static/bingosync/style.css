@@ -190,6 +190,26 @@
     background-image: linear-gradient(#da75ff, #bf0fff);
 }
 
+.goalcounter {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    width: 3ch;
+    padding: 0px 0px;
+    margin: 2px 0px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.playername {
+}
+
 .color-chooser {
     color: #fff;
 }
