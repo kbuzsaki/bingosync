@@ -15,6 +15,8 @@ def rooms(request):
         form = RoomForm(request.POST)
         if form.is_valid():
             room = form.create_room()
+            creator = room.creator
+            _save_session_player(request.session, creator)
             return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
     else:
         form = RoomForm()
