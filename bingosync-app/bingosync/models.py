@@ -164,7 +164,7 @@ class Player(models.Model):
 
 class Event(models.Model):
     player = models.ForeignKey(Player)
-    timestamp = models.DateTimeField("Sent")
+    timestamp = models.DateTimeField("Sent", default=datetime.now)
 
     class Meta:
         abstract = True
