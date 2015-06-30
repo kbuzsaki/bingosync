@@ -35,9 +35,9 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
             "url": goalSelectedUrl,
             "type": "PUT",
             "data": JSON.stringify({
-                "name": window.sessionStorage.getItem("name"),
-                "goal": goal,
-                "slot": $(this).attr("id"),
+                "room": window.sessionStorage.getItem("room"),
+                // substring to get rid of the 'slot' in e.g. 'slot12'
+                "slot": $(this).attr("id").substring(4),
                 "color": assignedColor
             }),
             "error": function(result) {

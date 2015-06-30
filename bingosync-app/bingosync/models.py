@@ -125,6 +125,16 @@ class Game(models.Model):
     def board(self):
         return [square.to_json() for square in self.squares]
 
+    def update_goal(self, player, slot, color):
+        square = self.squares[slot - 1]
+        square.color = color
+        square.save()
+
+        goal_event = GoalEvent(player=player, square=square, color_value=color.value)
+        goal_event.save()
+        return goal_event
+
+
 SLOT_RANGE = range(1, 26)
 SLOT_CHOICES = [(num, str(num)) for num in SLOT_RANGE]
 
@@ -144,6 +154,10 @@ class Square(models.Model):
     @color.setter
     def color(self, color):
         self.color_value = color.value
+
+    @property
+    def slot_name(self):
+        return "slot" + str(self.slot)
 
     def to_json(self):
         return {

@@ -7,8 +7,8 @@ import json
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
-from .models import Room, Game, Player
-from .publish import publish_goal
+from .models import Room, Game, Player, Color
+from .publish import publish_goal_event
 
 def rooms(request):
     if request.method == "POST":
@@ -73,12 +73,16 @@ def board_json(request, seed):
 @csrf_exempt
 def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
-    name = data["name"]
-    goal = data["goal"]
-    slot = data["slot"]
-    color = data["color"]
-    publish_goal(name, goal, slot, color)
-    return HttpResponse("Got goal: " + goal)
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+    game = room.current_game
+    slot = int(data["slot"])
+    color = Color.for_class(data["color"])
+
+    goal_event = game.update_goal(player, slot, color)
+    publish_goal_event(goal_event)
+    return HttpResponse("Recieved data: " + str(data))
 
 
 # Helpers for interacting with sessions
