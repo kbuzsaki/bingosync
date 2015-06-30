@@ -11,7 +11,7 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
-        message = goal_message(data["name"], data["goal"], data["slot"], data["color"])
+        message = goal_message(data["square"], data["player"])
         BroadcastWebSocket.send_all(message)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
@@ -52,13 +52,11 @@ def chat_message(name, message):
         "text": message
     }
 
-def goal_message(name, goal, slot, color):
+def goal_message(square, player):
     return {
         "type": "goal",
-        "name": name,
-        "goal": goal,
-        "slot": slot,
-        "color": color
+        "square": square,
+        "player": player
     }
 
 def name_message(name):

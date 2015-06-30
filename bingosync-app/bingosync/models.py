@@ -159,6 +159,7 @@ class Square(models.Model):
     def to_json(self):
         return {
             "name": self.goal,
+            "slot": self.slot_name,
             "color": self.color.name
         }
 
@@ -185,6 +186,13 @@ class Player(models.Model):
     def color(self):
         return Color.for_value(self.color_value)
 
+    def to_json(self):
+        return {
+            "uuid": self.encoded_uuid,
+            "name": self.name,
+            "color": self.color.name
+        }
+
 class Event(models.Model):
     player = models.ForeignKey(Player)
     timestamp = models.DateTimeField("Sent", default=datetime.now)
@@ -202,6 +210,14 @@ class GoalEvent(Event):
     @property
     def color(self):
         return Color.for_value(self.color_value)
+
+    def to_json(self):
+        return {
+            "type": "goal",
+            "player": self.player.to_json(),
+            "square": self.square.to_json(),
+            "color": self.color.name
+        }
 
 @unique
 class ConnectionEventType(Enum):

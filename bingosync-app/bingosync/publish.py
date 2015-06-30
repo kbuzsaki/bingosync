@@ -4,12 +4,7 @@ import json
 from .settings import SOCKETS_PUBLISH_URL
 
 def publish_goal_event(goal_event):
-    data = {
-        "name": goal_event.player.name,
-        "goal": goal_event.square.goal,
-        "slot": goal_event.square.slot_name,
-        "color": goal_event.color.name
-    }
+    data = goal_event.to_json()
     _publish_json(data)
 
 def _publish_json(data):

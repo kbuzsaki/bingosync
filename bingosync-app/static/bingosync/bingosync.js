@@ -110,9 +110,9 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             return $("<div>", {html: name + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var playerColor = getPlayerColorClass(json["color"])
-            var name = $("<span>", {"class": "chat-name " + playerColor, html: json["name"]}).toHtml();
-            var goal = $("<span>", {"class": "", html: " selected " + json["goal"]}).toHtml();
+            var playerColor = getPlayerColorClass(json["player"]["color"]);
+            var name = $("<span>", {"class": "chat-name " + playerColor, html: json["player"]["name"]}).toHtml();
+            var goal = $("<span>", {"class": "", html: " selected " + json["square"]["name"]}).toHtml();
             return $("<div>", {html: name + goal}).toHtml();
         }
         else if(json["type"] === "connection") {
@@ -132,8 +132,8 @@ function initializeChatSocket($chatWindow, socketsUrl) {
         }
         else {
             if(json["type"] === "goal") {
-                var $square = $("#" + json["slot"]);
-                setSquareColor($square, json["color"]);
+                var $square = $("#" + json["square"]["slot"]);
+                setSquareColor($square, json["square"]["color"]);
             }
             result = processChatJson(json);
             appendChatMessage(result);
