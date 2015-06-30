@@ -8,7 +8,7 @@ def publish_goal_event(goal_event):
         "name": goal_event.player.name,
         "goal": goal_event.square.goal,
         "slot": goal_event.square.slot_name,
-        "color": goal_event.color.goal_class
+        "color": goal_event.color.name
     }
     _publish_json(data)
 

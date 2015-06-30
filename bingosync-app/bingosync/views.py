@@ -78,7 +78,7 @@ def goal_selected(request):
     player = _get_session_player(request.session, room)
     game = room.current_game
     slot = int(data["slot"])
-    color = Color.for_class(data["color"])
+    color = Color.for_name(data["color"])
 
     goal_event = game.update_goal(player, slot, color)
     publish_goal_event(goal_event)

@@ -24,10 +24,7 @@ class Color(Enum):
         return list(Color)[value - 1]
 
     @staticmethod
-    def for_class(css_class):
-        # remove 'square' at the end
-        name = css_class[:-6]
-        print(name)
+    def for_name(name):
         # hacky way to get the color
         return [color for color in Color if color.name == name][0]
 
@@ -162,7 +159,7 @@ class Square(models.Model):
     def to_json(self):
         return {
             "name": self.goal,
-            "color": self.color.goal_class
+            "color": self.color.name
         }
 
     class Meta:

@@ -1,10 +1,14 @@
-COLORS = ["blanksquare", "redsquare", "bluesquare", "greensquare", "purplesquare", "orangesquare"];
+COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
+
+function getSquareColorClass(color) {
+    return color + "square";
+}
 
 function setSquareColor($square, new_color) {
     COLORS.forEach(function(color) {
-        $square.removeClass(color);
+        $square.removeClass(getSquareColorClass(color));
     });
-    $square.addClass(new_color);
+    $square.addClass(getSquareColorClass(new_color));
 }
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
@@ -30,7 +34,8 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     $board.find(".square").on("click", function(ev) {
         var goal = $(this).html();
         var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
-        var assignedColor = (chosenColor in $(this).getClasses()) ? "blanksquare" : chosenColor;
+        var chosenColorClass = getSquareColorClass(chosenColor);
+        var assignedColor = (chosenColorClass in $(this).getClasses()) ? "blank" : chosenColor;
         $.ajax({
             "url": goalSelectedUrl,
             "type": "PUT",
@@ -101,7 +106,7 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             return $("<div>", {html: name + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var name = $("<span>", {"class": "chat-name", html: json["name"]}).toHtml();
+            var name = $("<span>", {"class": "chat-name " + json["color"], html: json["name"]}).toHtml();
             var goal = $("<span>", {"class": "", html: " selected " + json["goal"]}).toHtml();
             return $("<div>", {html: name + goal}).toHtml();
         }
