@@ -174,7 +174,11 @@ class ChatEvent(Event):
 
 class GoalEvent(Event):
     square = models.ForeignKey(Square)
-    color = models.IntegerField(choices=Color.goal_choices())
+    color_value = models.IntegerField(choices=Color.goal_choices())
+
+    @property
+    def color(self):
+        return Color.for_value(self.color_value)
 
 @unique
 class ConnectionEventType(Enum):
