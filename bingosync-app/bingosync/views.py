@@ -7,10 +7,8 @@ import json
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
-from .models import Room, Game
+from .models import Room, Game, Player
 from .publish import publish_goal
-
-AUTHORIZED_ROOMS = 'authorized_rooms'
 
 def rooms(request):
     if request.method == "POST":
@@ -23,14 +21,28 @@ def rooms(request):
 
     return render(request, "bingosync/index.html", {"form": form})
 
-def _is_authorized(session, encoded_room_uuid):
-    return encoded_room_uuid in session.get(AUTHORIZED_ROOMS, {})
-
-def _authorize(session, encoded_room_uuid):
-    # have to set the session this way so that it saves properly
-    authorized_rooms = session.get(AUTHORIZED_ROOMS, {})
-    authorized_rooms[encoded_room_uuid] = True
-    session[AUTHORIZED_ROOMS] = authorized_rooms
+def room_view(request, encoded_room_uuid):
+    if request.method == "POST":
+        join_form = JoinRoomForm(request.POST)
+        if join_form.is_valid():
+            player = join_form.create_player()
+            _save_session_player(request.session, player)
+            return redirect("room_view", encoded_room_uuid=encoded_room_uuid)
+        return _join_room(request, join_form, encoded_room_uuid)
+    else:
+        try:
+            room = Room.get_for_encoded_uuid(encoded_room_uuid)
+            player = _get_session_player(request.session, room)
+            params = {
+                "room": room,
+                "game": room.current_game,
+                "player": player,
+                "sockets_url": SOCKETS_URL
+            }
+            return render(request, "bingosync/bingosync.html", params)
+        except NotAuthenticatedError:
+            join_form = JoinRoomForm.for_room(room)
+            return _join_room(request, join_form, encoded_room_uuid)
 
 def _join_room(request, join_form, encoded_room_uuid):
     params = {
@@ -38,29 +50,6 @@ def _join_room(request, join_form, encoded_room_uuid):
         "encoded_room_uuid": encoded_room_uuid
     }
     return render(request, "bingosync/join_room.html", params)
-
-def room_view(request, encoded_room_uuid):
-    if request.method == "POST":
-        join_form = JoinRoomForm(request.POST)
-        if join_form.is_valid():
-            room = join_form.get_room()
-            # use the form uuid, not the url parameter
-            encoded_room_uuid = room.encoded_uuid
-
-            _authorize(request.session, encoded_room_uuid)
-            return redirect("room_view", encoded_room_uuid=encoded_room_uuid)
-        return _join_room(request, join_form, encoded_room_uuid)
-    else:
-        room = Room.get_for_encoded_uuid(encoded_room_uuid)
-        if not _is_authorized(request.session, encoded_room_uuid):
-            join_form = JoinRoomForm.for_room(room)
-            return _join_room(request, join_form, encoded_room_uuid)
-        else:
-            params = {
-                "room": room,
-                "sockets_url": SOCKETS_URL
-            }
-            return render(request, "bingosync/bingosync.html", params)
 
 def room_board(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
@@ -88,4 +77,26 @@ def goal_selected(request):
     color = data["color"]
     publish_goal(name, goal, slot, color)
     return HttpResponse("Got goal: " + goal)
+
+
+# Helpers for interacting with sessions
+
+AUTHORIZED_ROOMS = 'authorized_rooms'
+
+class NotAuthenticatedError(Exception):
+    pass
+
+def _get_session_player(session, room):
+    try:
+        encoded_player_uuid = session[AUTHORIZED_ROOMS][room.encoded_uuid]
+        return Player.get_for_encoded_uuid(encoded_player_uuid)
+    except KeyError:
+        raise NotAuthenticatedError()
+
+def _save_session_player(session, player):
+    # have to set the session this way so that it saves properly
+    authorized_rooms = session.get(AUTHORIZED_ROOMS, {})
+    authorized_rooms[player.room.encoded_uuid] = player.encoded_uuid
+    session[AUTHORIZED_ROOMS] = authorized_rooms
+
 
