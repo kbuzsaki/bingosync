@@ -141,6 +141,10 @@ class Square(models.Model):
     def color(self):
         return Color.for_value(self.color_value)
 
+    @color.setter
+    def color(self, color):
+        self.color_value = color.value
+
     def to_json(self):
         return {
             "name": self.goal,
