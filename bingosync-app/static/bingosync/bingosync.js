@@ -4,6 +4,10 @@ function getSquareColorClass(color) {
     return color + "square";
 }
 
+function getPlayerColorClass(color) {
+    return color + "player";
+}
+
 function setSquareColor($square, new_color) {
     COLORS.forEach(function(color) {
         $square.removeClass(getSquareColorClass(color));
@@ -106,7 +110,8 @@ function initializeChatSocket($chatWindow, socketsUrl) {
             return $("<div>", {html: name + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var name = $("<span>", {"class": "chat-name " + json["color"], html: json["name"]}).toHtml();
+            var playerColor = getPlayerColorClass(json["color"])
+            var name = $("<span>", {"class": "chat-name " + playerColor, html: json["name"]}).toHtml();
             var goal = $("<span>", {"class": "", html: " selected " + json["goal"]}).toHtml();
             return $("<div>", {html: name + goal}).toHtml();
         }
