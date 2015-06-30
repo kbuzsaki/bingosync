@@ -24,6 +24,14 @@ class Color(Enum):
         return list(Color)[value - 1]
 
     @staticmethod
+    def for_class(css_class):
+        # remove 'square' at the end
+        name = css_class[:-6]
+        print(name)
+        # hacky way to get the color
+        return [color for color in Color if color.name == name][0]
+
+    @staticmethod
     def goal_choices():
         return [(color.value, str(color)) for color in Color]
 
