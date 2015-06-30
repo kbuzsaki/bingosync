@@ -31,6 +31,8 @@ class RoomForm(forms.Form):
             room = Room(name=room_name, passphrase=encrypted_passphrase)
             room.save()
             game = Game.from_board(board_json, room=room, seed=seed)
+            creator = Player(room=room, name=nickname)
+            creator.save()
         return room
 
 class JoinRoomForm(forms.Form):

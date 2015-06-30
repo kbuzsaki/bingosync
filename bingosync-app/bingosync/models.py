@@ -84,6 +84,10 @@ class Room(models.Model):
     def players(self):
         return Player.objects.filter(room=self)
 
+    @property
+    def creator(self):
+        return self.players.order_by("created_date").first()
+
 class Game(models.Model):
     room = models.ForeignKey(Room)
     seed = models.IntegerField()
