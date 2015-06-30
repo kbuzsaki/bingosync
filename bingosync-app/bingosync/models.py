@@ -140,9 +140,19 @@ class Square(models.Model):
 
 class Player(models.Model):
     room = models.ForeignKey(Room)
+    uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=50)
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
+
+    @staticmethod
+    def get_for_encoded_uuid(encoded_player_uuid):
+        decoded_uuid = decode_uuid(encoded_player_uuid)
+        return Player.objects.get(uuid=decoded_uuid)
+
+    @property
+    def encoded_uuid(self):
+        return encode_uuid(self.uuid)
 
     @property
     def color(self):
