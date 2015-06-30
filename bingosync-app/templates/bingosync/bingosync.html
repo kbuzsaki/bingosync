@@ -48,7 +48,7 @@
         initializeChatSocket($("#bingo-chat"), socketsUrl);
 
         // enable choosing color
-        initializeColorChooser($("#color-chooser"), $("#bingo"));
+        initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}");
     });
 </script>
 {% endblock %}

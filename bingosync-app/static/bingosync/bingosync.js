@@ -71,12 +71,13 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     addRowHover("bltr");
 }
 
-function initializeColorChooser($colorChooser) {
+function initializeColorChooser($colorChooser, initialColor) {
     var $colorChoosers = $colorChooser.find(".color-chooser");
     $colorChoosers.on("click", function(ev) {
         $colorChoosers.removeClass("chosen-color");
         $(this).addClass("chosen-color");
     });
+    $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
 function initializeChatSocket($chatWindow, socketsUrl) {
