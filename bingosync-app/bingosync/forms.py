@@ -64,3 +64,11 @@ class JoinRoomForm(forms.Form):
             room = Room.get_for_encoded_uuid(encoded_room_uuid)
             if not hashers.check_password(passphrase, room.passphrase):
                 raise forms.ValidationError("Incorrect Passphrase")
+
+    def create_player(self):
+        room = Room.get_for_encoded_uuid(self.cleaned_data["encoded_room_uuid"])
+        nickname = self.cleaned_data["player_name"]
+
+        player = Player(room=room, name=nickname)
+        player.save()
+        return player
