@@ -203,6 +203,13 @@ class Event(models.Model):
 class ChatEvent(Event):
     body = models.TextField()
 
+    def to_json(self):
+        return {
+            "type": "chat",
+            "player": self.player.to_json(),
+            "text": self.body
+        }
+
 class GoalEvent(Event):
     square = models.ForeignKey(Square)
     color_value = models.IntegerField(choices=Color.goal_choices())

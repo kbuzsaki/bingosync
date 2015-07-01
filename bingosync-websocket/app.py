@@ -11,7 +11,13 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
-        message = goal_message(data["square"], data["player"])
+        if data["type"] == "goal":
+            message = goal_message(data["square"], data["player"])
+        elif data["type"] == "chat":
+            message = chat_message(data["player"], data["text"])
+        else:
+            message = ""
+            print("Unrecognized message:", data)
         BroadcastWebSocket.send_all(message)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
@@ -45,10 +51,10 @@ def connected_message(name):
 def disconnected_message(name):
     return connection_message(name + " disconnected")
 
-def chat_message(name, message):
+def chat_message(player, message):
     return {
         "type": "chat",
-        "name": name,
+        "player": player,
         "text": message
     }
 

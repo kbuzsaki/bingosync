@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^api/board/(?P<seed>[0-9]+)$', views.board_json, name='board_json'),
     url(r'^api/board/(?P<seed>[0-9]+).json$', views.board_json, name='board_json'),
     url(r'^api/select$', views.goal_selected, name='goal_selected'),
+    url(r'^api/chat$', views.chat_message, name='chat_message'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

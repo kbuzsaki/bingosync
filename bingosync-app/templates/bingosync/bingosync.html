@@ -38,6 +38,7 @@
 <script>
     $(document).ready(function() {
         var boardUrl = "{% url 'views.room_board' room.encoded_uuid %}";
+        var chatUrl = "{% url 'views.chat_message' %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
 
@@ -47,7 +48,7 @@
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"));
 
         // open the chat web socket
-        initializeChatSocket($("#bingo-chat"), socketsUrl);
+        initializeChatSocket($("#bingo-chat"), socketsUrl, chatUrl);
 
         // enable choosing color
         initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}");

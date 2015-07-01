@@ -89,7 +89,7 @@ function initializeColorChooser($colorChooser, initialColor) {
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
-function initializeChatSocket($chatWindow, socketsUrl) {
+function initializeChatSocket($chatWindow, socketsUrl, chatUrl) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
@@ -101,22 +101,28 @@ function initializeChatSocket($chatWindow, socketsUrl) {
         }
     }
 
+    function processPlayerJson(playerJson) {
+        var playerColor = getPlayerColorClass(playerJson["color"]);
+        var name = $("<span>", {"class": "chat-name " + playerColor, html: playerJson["name"]}).toHtml();
+        return name;
+    }
     function processChatJson(json) {
         console.log(json);
-        //return $("<div>", {class: "blah", html: "some text"}).html();
+
+        // connection messages don't have a player span, so do them first
+        if (json["type"] === "connection") {
+            return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
+        }
+
+        // otherwise first format the name of the message sender
+        var playerSpan = processPlayerJson(json["player"]);
         if(json["type"] === "chat") {
-            var name = $("<span>", {"class": "chat-name", html: json["name"] + ": "}).toHtml();
             var message = $("<span>", {"class": "chat-message", html: json["text"]}).toHtml();
-            return $("<div>", {html: name + message}).toHtml();
+            return $("<div>", {html: playerSpan + ": " + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var playerColor = getPlayerColorClass(json["player"]["color"]);
-            var name = $("<span>", {"class": "chat-name " + playerColor, html: json["player"]["name"]}).toHtml();
-            var goal = $("<span>", {"class": "", html: " selected " + json["square"]["name"]}).toHtml();
-            return $("<div>", {html: name + goal}).toHtml();
-        }
-        else if(json["type"] === "connection") {
-            return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
+            var goal = $("<span>", {"class": "goal-name", html: json["square"]["name"]}).toHtml();
+            return $("<div>", {html: playerSpan + " selected " + goal}).toHtml();
         }
     }
 
@@ -146,11 +152,17 @@ function initializeChatSocket($chatWindow, socketsUrl) {
     };
 
     $chatSend.on("click", function(ev) {
-        var message = {
-            "type": "chat",
-            "text": $chatInput.val()
-        };
-        chatSocket.send(JSON.stringify(message));
+        $.ajax({
+            "url": chatUrl,
+            "type": "PUT",
+            "data": JSON.stringify({
+                "room": window.sessionStorage.getItem("room"),
+                "text": $chatInput.val()
+            }),
+            "error": function(result) {
+                console.log(result);
+            }
+        });
         $chatInput.val('');
         return false;
     });

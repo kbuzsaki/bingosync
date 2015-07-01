@@ -7,8 +7,8 @@ import json
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
-from .models import Room, Game, Player, Color
-from .publish import publish_goal_event
+from .models import Room, Game, Player, Color, ChatEvent
+from .publish import publish_goal_event, publish_chat_event
 
 def rooms(request):
     if request.method == "POST":
@@ -82,6 +82,19 @@ def goal_selected(request):
 
     goal_event = game.update_goal(player, slot, color)
     publish_goal_event(goal_event)
+    return HttpResponse("Recieved data: " + str(data))
+
+@csrf_exempt
+def chat_message(request):
+    data = json.loads(request.body.decode("utf8"))
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+    text = data["text"]
+
+    chat_event = ChatEvent(player=player, body=text)
+    chat_event.save()
+    publish_chat_event(chat_event)
     return HttpResponse("Recieved data: " + str(data))
 
 
