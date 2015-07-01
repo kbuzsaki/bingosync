@@ -8,7 +8,7 @@ from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
 from .models import Room, Game, Player, Color, ChatEvent
-from .publish import publish_goal_event, publish_chat_event
+from .publish import publish_goal_event, publish_chat_event, publish_color_event
 
 def rooms(request):
     if request.method == "POST":
@@ -96,6 +96,18 @@ def chat_message(request):
     chat_event.save()
     publish_chat_event(chat_event)
     return HttpResponse("Recieved data: " + str(data))
+
+@csrf_exempt
+def select_color(request):
+    data = json.loads(request.body.decode("utf8"))
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+    color = Color.for_name(data["color"])
+
+    color_event = player.update_color(color)
+    publish_color_event(color_event)
+    return HttpResponse("Received data: ", str(data))
 
 
 # Helpers for interacting with sessions

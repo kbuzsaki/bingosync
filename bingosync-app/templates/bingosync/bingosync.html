@@ -39,6 +39,7 @@
     $(document).ready(function() {
         var boardUrl = "{% url 'views.room_board' room.encoded_uuid %}";
         var chatUrl = "{% url 'views.chat_message' %}";
+        var colorSelectedUrl = "{% url 'views.select_color' %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
 
@@ -51,7 +52,7 @@
         initializeChatSocket($("#bingo-chat"), socketsUrl, chatUrl);
 
         // enable choosing color
-        initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}");
+        initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);
     });
 </script>
 {% endblock %}

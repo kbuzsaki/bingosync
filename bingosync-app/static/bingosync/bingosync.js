@@ -80,11 +80,22 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     addRowHover("bltr");
 }
 
-function initializeColorChooser($colorChooser, initialColor) {
+function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     var $colorChoosers = $colorChooser.find(".color-chooser");
     $colorChoosers.on("click", function(ev) {
         $colorChoosers.removeClass("chosen-color");
         $(this).addClass("chosen-color");
+        $.ajax({
+            "url": colorSelectedUrl,
+            "type": "PUT",
+            "data": JSON.stringify({
+                "room": window.sessionStorage.getItem("room"),
+                "color": $(this).attr("squareColor")
+            }),
+            "error": function(result) {
+                console.log(result);
+            }
+        });
     });
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
@@ -109,9 +120,15 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl) {
     function processChatJson(json) {
         console.log(json);
 
-        // connection messages don't have a player span, so do them first
+        // connection and color messages don't have a player span, so do them first
         if (json["type"] === "connection") {
             return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
+        }
+        else if(json["type"] === "color") {
+            var playerColor = json["player"]["color"];
+            var playerColorClass = getPlayerColorClass(playerColor);
+            var colorMessage = json["player"]["name"] + " changed color to " + json["player"]["color"];
+            return $("<div>", {"class": "color-message " + playerColorClass, html: colorMessage}).toHtml();
         }
 
         // otherwise first format the name of the message sender

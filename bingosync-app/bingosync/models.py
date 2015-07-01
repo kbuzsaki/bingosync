@@ -186,6 +186,14 @@ class Player(models.Model):
     def color(self):
         return Color.for_value(self.color_value)
 
+    def update_color(self, color):
+        with transaction.atomic():
+            self.color_value = color.value
+            self.save()
+            color_event = ColorEvent(player=self, color_value=color.value)
+            color_event.save()
+        return color_event
+
     def to_json(self):
         return {
             "uuid": self.encoded_uuid,
@@ -223,6 +231,20 @@ class GoalEvent(Event):
             "type": "goal",
             "player": self.player.to_json(),
             "square": self.square.to_json(),
+            "color": self.color.name
+        }
+
+class ColorEvent(Event):
+    color_value = models.IntegerField(choices=Color.player_choices())
+
+    @property
+    def color(self):
+        return Color.for_value(self.color_value)
+
+    def to_json(self):
+        return {
+            "type": "color",
+            "player": self.player.to_json(),
             "color": self.color.name
         }
 

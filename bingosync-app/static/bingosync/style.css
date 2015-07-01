@@ -261,3 +261,7 @@
 .chat-message {
 }
 
+.color-message {
+    font-style: italic;
+}
+

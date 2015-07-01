@@ -11,13 +11,16 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
+        print("received data:", data)
         if data["type"] == "goal":
             message = goal_message(data["square"], data["player"])
         elif data["type"] == "chat":
             message = chat_message(data["player"], data["text"])
+        elif data["type"] == "color":
+            message = color_message(data["player"])
         else:
             message = ""
-            print("Unrecognized message:", data)
+            print("UNRECOGNIZED MESSAAGE!")
         BroadcastWebSocket.send_all(message)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
@@ -63,6 +66,13 @@ def goal_message(square, player):
         "type": "goal",
         "square": square,
         "player": player
+    }
+
+def color_message(player, color):
+    return {
+        "type": "color",
+        "player": player,
+        "color": color
     }
 
 def name_message(name):

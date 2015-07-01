@@ -11,6 +11,10 @@ def publish_chat_event(chat_event):
     data = chat_event.to_json()
     _publish_json(data)
 
+def publish_color_event(color_event):
+    data = color_event.to_json()
+    _publish_json(data)
+
 def _publish_json(data):
     requests.put(SOCKETS_PUBLISH_URL, data=json.dumps(data))
 

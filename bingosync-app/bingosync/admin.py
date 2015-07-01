@@ -5,7 +5,7 @@ from django.contrib.sessions.models import Session
 import json
 import pprint
 
-from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ConnectionEvent
+from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ColorEvent, ConnectionEvent
 
 class GameInline(admin.StackedInline):
     model = Game
@@ -65,6 +65,7 @@ admin.site.register(Square)
 admin.site.register(Player)
 admin.site.register(ChatEvent)
 admin.site.register(GoalEvent)
+admin.site.register(ColorEvent)
 admin.site.register(ConnectionEvent)
 
 class SessionAdmin(admin.ModelAdmin):
