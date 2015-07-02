@@ -15,6 +15,14 @@ function setSquareColor($square, new_color) {
     $square.addClass(getSquareColorClass(new_color));
 }
 
+function setPlayerColor($playerEntry, new_color) {
+    var $playerGoalCounter = $playerEntry.find(".goalcounter");
+    COLORS.forEach(function(color) {
+        $playerGoalCounter.removeClass(getSquareColorClass(color));
+    });
+    $playerGoalCounter.addClass(getSquareColorClass(new_color));
+}
+
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     function updateSquare($square, json) {
         $square.html(json["name"]);
@@ -168,6 +176,11 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $players
             if(json["type"] === "goal") {
                 var $square = $("#" + json["square"]["slot"]);
                 setSquareColor($square, json["square"]["color"]);
+                updateGoalCounters($board, $playersPanel);
+            }
+            else if(json["type"] === "color") {
+                var $playerEntry = $playersPanel.find("#" + json["player"]["uuid"]);
+                setPlayerColor($playerEntry, json["player"]["color"]);
                 updateGoalCounters($board, $playersPanel);
             }
             result = processChatJson(json);
