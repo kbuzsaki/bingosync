@@ -4,7 +4,7 @@
     <div class="panel-heading">
         Players
     </div>
-    <div class="panel-body">
+    <div id="players-panel" class="panel-body">
     {% for player in room.players %}
         <div>
             <span class="goalcounter {{ player.color.goal_class }}">

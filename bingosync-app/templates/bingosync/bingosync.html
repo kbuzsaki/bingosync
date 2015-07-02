@@ -49,7 +49,7 @@
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"));
 
         // open the chat web socket
-        initializeChatSocket($("#bingo-chat"), socketsUrl, chatUrl);
+        initializeChatSocket($("#bingo-chat"), socketsUrl, chatUrl, $("#bingo"), $("#players-panel"));
 
         // enable choosing color
         initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);

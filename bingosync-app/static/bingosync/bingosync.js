@@ -80,6 +80,17 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
     addRowHover("bltr");
 }
 
+function getColorCount($board, colorClass) {
+    return $board.find("." + colorClass).size();
+}
+
+function updateGoalCounters($board, $goalCounters) {
+    $(".goalcounter").each(function() {
+        var colorClass = $(this).attr('class').split(' ')[1];
+        $(this).html(getColorCount($board, colorClass));
+    });
+}
+
 function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     var $colorChoosers = $colorChooser.find(".color-chooser");
     $colorChoosers.on("click", function(ev) {
@@ -100,7 +111,7 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
-function initializeChatSocket($chatWindow, socketsUrl, chatUrl) {
+function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $playersPanel) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
@@ -157,6 +168,7 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl) {
             if(json["type"] === "goal") {
                 var $square = $("#" + json["square"]["slot"]);
                 setSquareColor($square, json["square"]["color"]);
+                updateGoalCounters($board, $playersPanel);
             }
             result = processChatJson(json);
             appendChatMessage(result);
