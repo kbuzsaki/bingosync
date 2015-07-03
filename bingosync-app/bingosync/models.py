@@ -211,6 +211,15 @@ class Event(models.Model):
     def player_color(self):
         return Color.for_value(self.player_color_value)
 
+    @staticmethod
+    def get_all_for_room(room):
+        chat_events = list(ChatEvent.objects.filter(player__room=room))
+        goal_events = list(GoalEvent.objects.filter(player__room=room))
+        color_events = list(ColorEvent.objects.filter(player__room=room))
+        all_events = chat_events + goal_events + color_events
+        all_events.sort(key=lambda event: event.timestamp)
+        return all_events
+
     class Meta:
         abstract = True
 

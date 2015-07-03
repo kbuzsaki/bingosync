@@ -7,7 +7,7 @@ import json
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
-from .models import Room, Game, Player, Color, ChatEvent
+from .models import Room, Game, Player, Color, Event, ChatEvent
 from .publish import publish_goal_event, publish_chat_event, publish_color_event
 
 def rooms(request):
@@ -69,6 +69,12 @@ def board_json(request, seed):
     generator = BingoGenerator.instance()
     card = generator.get_card(seed)
     return JsonResponse(card, safe=False)
+
+def room_feed(request, encoded_room_uuid):
+    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    all_events = Event.get_all_for_room(room)
+    all_jsons = [event.to_json() for event in all_events]
+    return JsonResponse(all_jsons, safe=False)
 
 @csrf_exempt
 def goal_selected(request):

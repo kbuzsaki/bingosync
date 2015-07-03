@@ -270,3 +270,8 @@
     font-weight: bold;
 }
 
+.history-placeholder {
+    font-style: italic;
+    color: #888;
+}
+

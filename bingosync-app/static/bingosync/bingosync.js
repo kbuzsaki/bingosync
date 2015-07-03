@@ -119,7 +119,7 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
-function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $playersPanel) {
+function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, $board, $playersPanel) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
@@ -165,6 +165,22 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $players
             return $("<div>", {html: playerSpan + " selected " + goal}).toHtml();
         }
     }
+
+    var $chatHistory = $chatBody.find(".chat-history");
+    $.ajax({
+        "url": chatHistoryUrl,
+        "success": function(result) {
+            $chatHistory.html('');
+            for(var i = 0; i < result.length; i++) {
+                var chatJson = result[i];
+                message = processChatJson(chatJson);
+                $chatHistory.append("<div>" + message + "</div>");
+            }
+        },
+        "error": function(result) {
+            console.log(result);
+        }
+    });
 
     var chatSocket = new WebSocket(socketsUrl);
     chatSocket.onopen = function() {
