@@ -1,4 +1,5 @@
 COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
+BLANK_COLOR = "blank";
 
 function getSquareColorClass(color) {
     return color + "square";
@@ -161,8 +162,15 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, 
             return $("<div>", {html: playerSpan + ": " + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var goal = $("<span>", {"class": "goal-name", html: json["square"]["name"]}).toHtml();
-            return $("<div>", {html: playerSpan + " selected " + goal}).toHtml();
+            var colorClass = getPlayerColorClass(json["color"]);
+            var goal = $("<span>", {"class": "goal-name " + colorClass, html: json["square"]["name"]}).toHtml();
+
+            if(json["color"] === BLANK_COLOR) {
+                return $("<div>", {html: playerSpan + " cleared " + goal}).toHtml();
+            }
+            else {
+                return $("<div>", {html: playerSpan + " marked " + goal}).toHtml();
+            }
         }
     }
 
