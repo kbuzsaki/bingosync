@@ -11,17 +11,7 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
-        print("received data:", data)
-        if data["type"] == "goal":
-            message = goal_message(data["square"], data["player"])
-        elif data["type"] == "chat":
-            message = chat_message(data["player"], data["text"])
-        elif data["type"] == "color":
-            message = color_message(data["player"], data["color"])
-        else:
-            message = ""
-            print("UNRECOGNIZED MESSAAGE!")
-        BroadcastWebSocket.send_all(message)
+        BroadcastWebSocket.send_all(data)
 
 class EchoWebSocket(tornado.websocket.WebSocketHandler):
 
