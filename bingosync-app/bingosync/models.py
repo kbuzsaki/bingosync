@@ -127,7 +127,8 @@ class Game(models.Model):
         square.color = color
         square.save()
 
-        goal_event = GoalEvent(player=player, square=square, color_value=color.value)
+        goal_event = GoalEvent(player=player, square=square, color_value=color.value,
+                               player_color_value=player.color.value)
         goal_event.save()
         return goal_event
 
@@ -188,10 +189,10 @@ class Player(models.Model):
 
     def update_color(self, color):
         with transaction.atomic():
+            color_event = ColorEvent(player=self, player_color_value=self.color.value, color_value=color.value)
+            color_event.save()
             self.color_value = color.value
             self.save()
-            color_event = ColorEvent(player=self, color_value=color.value)
-            color_event.save()
         return color_event
 
     def to_json(self):
@@ -204,9 +205,15 @@ class Player(models.Model):
 class Event(models.Model):
     player = models.ForeignKey(Player)
     timestamp = models.DateTimeField("Sent", default=datetime.now)
+    player_color_value = models.IntegerField(choices=Color.player_choices())
+
+    @property
+    def player_color(self):
+        return Color.for_value(self.player_color_value)
 
     class Meta:
         abstract = True
+
 
 class ChatEvent(Event):
     body = models.TextField()
@@ -215,6 +222,7 @@ class ChatEvent(Event):
         return {
             "type": "chat",
             "player": self.player.to_json(),
+            "player_color": self.player_color.name,
             "text": self.body
         }
 
@@ -231,6 +239,7 @@ class GoalEvent(Event):
             "type": "goal",
             "player": self.player.to_json(),
             "square": self.square.to_json(),
+            "player_color": self.player_color.name,
             "color": self.color.name
         }
 
@@ -245,6 +254,7 @@ class ColorEvent(Event):
         return {
             "type": "color",
             "player": self.player.to_json(),
+            "player_color": self.player_color.name,
             "color": self.color.name
         }
 

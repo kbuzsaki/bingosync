@@ -131,8 +131,10 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $players
         }
     }
 
-    function processPlayerJson(playerJson) {
-        var playerColor = getPlayerColorClass(playerJson["color"]);
+    function processPlayerJson(playerJson, playerColor) {
+        if(playerColor === undefined) {
+            playerColor = getPlayerColorClass(playerJson["color"]);
+        }
         var name = $("<span>", {"class": "chat-name " + playerColor, html: playerJson["name"]}).toHtml();
         return name;
     }
@@ -151,7 +153,7 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $players
         }
 
         // otherwise first format the name of the message sender
-        var playerSpan = processPlayerJson(json["player"]);
+        var playerSpan = processPlayerJson(json["player"], getPlayerColorClass(json["player_color"]));
         if(json["type"] === "chat") {
             var message = $("<span>", {"class": "chat-message", html: json["text"]}).toHtml();
             return $("<div>", {html: playerSpan + ": " + message}).toHtml();

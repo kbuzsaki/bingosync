@@ -92,7 +92,7 @@ def chat_message(request):
     player = _get_session_player(request.session, room)
     text = data["text"]
 
-    chat_event = ChatEvent(player=player, body=text)
+    chat_event = ChatEvent(player=player, player_color_value=player.color.value, body=text)
     chat_event.save()
     publish_chat_event(chat_event)
     return HttpResponse("Recieved data: " + str(data))
