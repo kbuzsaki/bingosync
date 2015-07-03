@@ -146,10 +146,12 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, $board, $players
             return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
         }
         else if(json["type"] === "color") {
-            var playerColor = json["player"]["color"];
-            var playerColorClass = getPlayerColorClass(playerColor);
-            var colorMessage = json["player"]["name"] + " changed color to " + json["player"]["color"];
-            return $("<div>", {"class": "color-message " + playerColorClass, html: colorMessage}).toHtml();
+            var playerColorClass = getPlayerColorClass(json["player_color"]);
+            var playerName = $("<span>", {"class": playerColorClass, html: json["player"]["name"]}).toHtml();
+            var newColorClass = getPlayerColorClass(json["color"]);
+            var colorName = $("<span>", {"class": "color-name " + newColorClass, html: json["color"]}).toHtml();
+            var colorMessage = playerName + " changed color to " + colorName;
+            return $("<div>", {"class": "color-message", html: colorMessage}).toHtml();
         }
 
         // otherwise first format the name of the message sender

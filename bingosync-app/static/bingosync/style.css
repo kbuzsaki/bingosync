@@ -263,5 +263,10 @@
 
 .color-message {
     font-style: italic;
+    color: #888;
+}
+
+.color-name {
+    font-weight: bold;
 }
 
