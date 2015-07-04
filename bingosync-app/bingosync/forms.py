@@ -47,7 +47,7 @@ class JoinRoomForm(forms.Form):
         initial_values = {
             "encoded_room_uuid": room.encoded_uuid,
             "room_name": room.name,
-            "creator_name": "Placeholder"
+            "creator_name": room.creator.name
         }
         return JoinRoomForm(initial=initial_values)
 
