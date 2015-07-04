@@ -1,6 +1,11 @@
-<div class="panel panel-default fill-parent">
+<div id="room-settings" class="panel panel-default fill-parent">
     <div class="panel-heading">
-        Room Settings
+        <span>
+            Room Settings
+        </span>
+        <span id="room-settings-collapse" class="btn btn-default btn-xs pull-right">
+            -
+        </span>
     </div>
     <div class="panel-body">
         <table id="settings-table">
@@ -10,3 +15,10 @@
         </table>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $("#room-settings-collapse").on("mousedown", function() {
+            $("#room-settings .panel-body").toggle(50);
+        });
+    });
+</script>
