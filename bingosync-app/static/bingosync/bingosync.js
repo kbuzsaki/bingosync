@@ -120,13 +120,18 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
-function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, $board, $playersPanel) {
+// so many parameters :(
+function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
+                              socketsUrl, chatUrl, chatHistoryUrl) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
 
-    function appendChatMessage(message) {
-        $chatBody.append("<div>" + message + "</div>");
+    function appendChatMessage(message, messageType) {
+        var entry = $("<div>", {"class": messageType, html: message});
+        var setting = $chatSettings.find("#" + messageType + "-toggle");
+        entry.toggle(setting.prop("checked"));
+        $chatBody.append(entry);
         if($chatBody[0] !== undefined) {
             $chatBody.scrollTop($chatBody[0].scrollHeight);
         }
@@ -182,7 +187,8 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, 
             for(var i = 0; i < result.length; i++) {
                 var chatJson = result[i];
                 message = processChatJson(chatJson);
-                $chatHistory.append("<div>" + message + "</div>");
+                var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
+                $chatHistory.append(entry);
             }
         },
         "error": function(result) {
@@ -212,7 +218,7 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, 
                 updateGoalCounters($board, $playersPanel);
             }
             result = processChatJson(json);
-            appendChatMessage(result);
+            appendChatMessage(result, json["type"] + "-entry");
         }
     };
     chatSocket.onclose = function() {
@@ -239,3 +245,16 @@ function initializeChatSocket($chatWindow, socketsUrl, chatUrl, chatHistoryUrl, 
 
     return chatSocket;
 }
+
+function initializeChatSettings($chatSettings, $chatWindow) {
+    $chatSettings.find("#chat-entry-toggle").on("change", function() {
+        $chatWindow.find(".chat-entry").toggle(this.checked);
+    });
+    $chatSettings.find("#goal-entry-toggle").on("change", function() {
+        $chatWindow.find(".goal-entry").toggle(this.checked);
+    });
+    $chatSettings.find("#color-entry-toggle").on("change", function() {
+        $chatWindow.find(".color-entry").toggle(this.checked);
+    });
+}
+
