@@ -17,7 +17,7 @@ class MainHandler(tornado.web.RequestHandler):
         elif data["type"] == "chat":
             message = chat_message(data["player"], data["text"])
         elif data["type"] == "color":
-            message = color_message(data["player"])
+            message = color_message(data["player"], data["color"])
         else:
             message = ""
             print("UNRECOGNIZED MESSAAGE!")
