@@ -48,7 +48,21 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
         var goal = $(this).html();
         var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
         var chosenColorClass = getSquareColorClass(chosenColor);
-        var assignedColor = (chosenColorClass in $(this).getClasses()) ? "blank" : chosenColor;
+
+        var assignedColor;
+        // the square is blank and we're painting it
+        if(getSquareColorClass("blank") in $(this).getClasses()) {
+            assignedColor = chosenColor;
+        }
+        // the square is colored the same as the chosen color so we're clearing it
+        else if(chosenColorClass in $(this).getClasses()) {
+            assignedColor = "blank";
+        }
+        // the square is colored a different color, so don't do anything
+        else {
+            return;
+        }
+
         $.ajax({
             "url": goalSelectedUrl,
             "type": "PUT",
