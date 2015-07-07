@@ -87,7 +87,7 @@ class Room(models.Model):
 
     @property
     def players(self):
-        return Player.objects.filter(room=self)
+        return Player.objects.filter(room=self).order_by("name")
 
     @property
     def creator(self):
