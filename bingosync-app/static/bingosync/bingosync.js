@@ -209,6 +209,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
                 var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
                 $chatHistory.append(entry);
             }
+            if($chatBody[0] !== undefined) {
+                $chatBody.scrollTop($chatBody[0].scrollHeight);
+            }
         },
         "error": function(result) {
             console.log(result);
