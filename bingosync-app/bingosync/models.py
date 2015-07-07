@@ -73,6 +73,10 @@ class Room(models.Model):
         decoded_uuid = decode_uuid(encoded_room_uuid)
         return Room.objects.get(uuid=decoded_uuid)
 
+    @staticmethod
+    def get_listed_rooms():
+        return Room.objects.all()
+
     @property
     def encoded_uuid(self):
         return encode_uuid(self.uuid)

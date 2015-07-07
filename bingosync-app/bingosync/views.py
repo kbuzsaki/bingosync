@@ -21,7 +21,11 @@ def rooms(request):
     else:
         form = RoomForm()
 
-    return render(request, "bingosync/index.html", {"form": form})
+    params = {
+        "form": form,
+        "rooms": Room.get_listed_rooms()
+    }
+    return render(request, "bingosync/index.html", params)
 
 def room_view(request, encoded_room_uuid):
     if request.method == "POST":
