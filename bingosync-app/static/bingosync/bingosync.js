@@ -103,6 +103,11 @@ function updateGoalCounters($board, $goalCounters) {
 function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
     var $colorChoosers = $colorChooser.find(".color-chooser");
     $colorChoosers.on("click", function(ev) {
+        // don't do anything if the color is already the chosen color
+        if("chosen-color" in $(this).getClasses()) {
+            return;
+        }
+
         $colorChoosers.removeClass("chosen-color");
         $(this).addClass("chosen-color");
         $.ajax({
