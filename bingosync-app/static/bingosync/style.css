@@ -115,6 +115,11 @@
     padding-right: 5px;
 }
 
+.collapse-button {
+    position: absolute;
+    right: 2.2em;
+}
+
 /* plain old square */
 .square {
     color: #fff;
