@@ -191,10 +191,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var goal = $("<span>", {"class": "goal-name " + colorClass, html: json["square"]["name"]}).toHtml();
 
             if(json["color"] === BLANK_COLOR) {
-                return $("<div>", {html: playerSpan + " cleared " + goal}).toHtml();
+                return $("<div>", {"class": "goal-message", html: playerSpan + " cleared " + goal}).toHtml();
             }
             else {
-                return $("<div>", {html: playerSpan + " marked " + goal}).toHtml();
+                return $("<div>", {"class": "goal-message", html: playerSpan + " marked " + goal}).toHtml();
             }
         }
     }

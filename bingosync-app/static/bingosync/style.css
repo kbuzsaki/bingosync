@@ -210,6 +210,10 @@
 .playername {
 }
 
+.blankplayer {
+    color: #c8c8c8;
+}
+
 .greenplayer {
     color: #62c462;
 }
@@ -259,6 +263,11 @@
 }
 
 .chat-message {
+}
+
+.goal-message {
+    font-style: italic;
+    color: #888;
 }
 
 .color-message {
