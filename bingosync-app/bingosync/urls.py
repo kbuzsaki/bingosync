@@ -30,6 +30,8 @@ urlpatterns = [
     url(r'^api/select$', views.goal_selected, name='goal_selected'),
     url(r'^api/chat$', views.chat_message, name='chat_message'),
     url(r'^api/color$', views.select_color, name='select_color'),
+    url(r'^api/connected/(?P<encoded_player_uuid>.+)$', views.user_connected, name='user_connected'),
+    url(r'^api/disconnected/(?P<encoded_player_uuid>.+)$', views.user_disconnected, name='user_disconnected'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

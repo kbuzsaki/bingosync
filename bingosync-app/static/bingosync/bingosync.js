@@ -168,7 +168,8 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
 
         // connection and color messages don't have a player span, so do them first
         if (json["type"] === "connection") {
-            return $("<div>", {"class": "connection-message", html: json["text"]}).toHtml();
+            var connectionMessage = json["player"]["name"] + " " + json["event_type"];
+            return $("<div>", {"class": "connection-message", html: " - " + connectionMessage}).toHtml();
         }
         else if(json["type"] === "color") {
             var playerColorClass = getPlayerColorClass(json["player_color"]);

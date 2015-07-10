@@ -7,8 +7,8 @@ import json
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
-from .models import Room, Game, Player, Color, Event, ChatEvent
-from .publish import publish_goal_event, publish_chat_event, publish_color_event
+from .models import Room, Game, Player, Color, Event, ChatEvent, ConnectionEvent
+from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_connection_event
 
 def rooms(request):
     if request.method == "POST":
@@ -119,6 +119,25 @@ def select_color(request):
     publish_color_event(color_event)
     return HttpResponse("Received data: ", str(data))
 
+# TODO: add authentication to limit this route to tornado
+@csrf_exempt
+def user_connected(request, encoded_player_uuid):
+    player = Player.get_for_encoded_uuid(encoded_player_uuid)
+    connection_event = ConnectionEvent.make_connected_event(player)
+    connection_event.save()
+
+    publish_connection_event(connection_event)
+    return HttpResponse()
+
+# TODO: add authentication to limit this route to tornado
+@csrf_exempt
+def user_disconnected(request, encoded_player_uuid):
+    player = Player.get_for_encoded_uuid(encoded_player_uuid)
+    connection_event = ConnectionEvent.make_disconnected_event(player)
+    connection_event.save()
+
+    publish_connection_event(connection_event)
+    return HttpResponse()
 
 # Helpers for interacting with sessions
 

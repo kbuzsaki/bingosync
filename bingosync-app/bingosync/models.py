@@ -220,7 +220,8 @@ class Event(models.Model):
         chat_events = list(ChatEvent.objects.filter(player__room=room))
         goal_events = list(GoalEvent.objects.filter(player__room=room))
         color_events = list(ColorEvent.objects.filter(player__room=room))
-        all_events = chat_events + goal_events + color_events
+        connection_events = list(ConnectionEvent.objects.filter(player__room=room))
+        all_events = chat_events + goal_events + color_events + connection_events
         all_events.sort(key=lambda event: event.timestamp)
         return all_events
 
@@ -280,9 +281,36 @@ class ConnectionEventType(Enum):
         return self.name.capitalize()
 
     @staticmethod
+    def for_value(value):
+        return list(ConnectionEventType)[value - 1]
+
+    @staticmethod
     def choices():
         return [(event.value, str(event)) for event in ConnectionEventType]
 
 class ConnectionEvent(Event):
     event = models.IntegerField(choices=ConnectionEventType.choices())
+
+    @property
+    def event_type(self):
+        return ConnectionEventType.for_value(self.event)
+
+    @staticmethod
+    def make_connected_event(player):
+        return ConnectionEvent(player=player, player_color_value=player.color.value,
+                               event=ConnectionEventType.connected.value)
+
+    @staticmethod
+    def make_disconnected_event(player):
+        return ConnectionEvent(player=player, player_color_value=player.color.value,
+                               event=ConnectionEventType.disconnected.value)
+
+    def to_json(self):
+        return {
+            "type": "connection",
+            "event_type": self.event_type.name,
+            "player": self.player.to_json(),
+            "player_color": self.player_color.name
+        }
+
 
