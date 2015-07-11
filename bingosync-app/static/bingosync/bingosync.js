@@ -226,6 +226,8 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     chatSocket.onmessage = function (evt) {
         json = JSON.parse(evt.data);
         console.log(json);
+        json = $.escapeHtml(json);
+        console.log(json);
         if(json["type"] === "name") {
             window.sessionStorage.setItem("name", json["name"]);
         }
