@@ -183,6 +183,9 @@ class Player(models.Model):
         decoded_uuid = decode_uuid(encoded_player_uuid)
         return Player.objects.get(uuid=decoded_uuid)
 
+    def __str__(self):
+        return self.name
+
     @property
     def encoded_uuid(self):
         return encode_uuid(self.uuid)

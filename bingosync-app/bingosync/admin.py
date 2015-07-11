@@ -59,11 +59,17 @@ class GameAdmin(admin.ModelAdmin):
 
     link_to_room.allow_tags = True
 
+class ChatEventAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "timestamp", "player", "body_preview"]
+
+    def body_preview(self, obj):
+        return obj.body[:100]
+
 admin.site.register(Room, RoomAdmin)
 admin.site.register(Game, GameAdmin)
 admin.site.register(Square)
 admin.site.register(Player)
-admin.site.register(ChatEvent)
+admin.site.register(ChatEvent, ChatEventAdmin)
 admin.site.register(GoalEvent)
 admin.site.register(ColorEvent)
 admin.site.register(ConnectionEvent)
