@@ -15,7 +15,7 @@ PLAYER_NAME_MAX_LENGTH = Player._meta.get_field("name").max_length
 
 class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
-    passphrase = forms.CharField(label="Passphrase", widget=forms.PasswordInput())
+    passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     seed = forms.CharField(label="Seed", widget=forms.NumberInput())
 
@@ -40,7 +40,7 @@ class JoinRoomForm(forms.Form):
     room_name = make_read_only_char_field(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     creator_name = make_read_only_char_field(label="Creator", max_length=PLAYER_NAME_MAX_LENGTH)
     player_name = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
-    passphrase = forms.CharField(label="Passphrase", widget=forms.PasswordInput())
+    passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
 
     @staticmethod
     def for_room(room):
