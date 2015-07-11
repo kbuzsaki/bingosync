@@ -248,9 +248,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         }
     };
     chatSocket.onclose = function() {
-        closeMessage = {"type": "connection", "text": "Disconnected from server..."};
-        result = processChatJson(closeMessage);
-        appendChatMessage(result);
+        var disconnectText = "*** Disconnected from server, try refreshing.";
+        var message = $("<div>", {"class": "connection-message", html: disconnectText}).toHtml();
+        appendChatMessage(message);
     };
 
     $chatSend.on("click", function(ev) {
