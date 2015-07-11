@@ -282,5 +282,8 @@ function initializeChatSettings($chatSettings, $chatWindow) {
     $chatSettings.find("#color-entry-toggle").on("change", function() {
         $chatWindow.find(".color-entry").toggle(this.checked);
     });
+    $chatSettings.find("#connection-entry-toggle").on("change", function() {
+        $chatWindow.find(".connection-entry").toggle(this.checked);
+    });
 }
 
