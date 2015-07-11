@@ -16,6 +16,22 @@ $.fn.toHtml = function() {
     return $(this).wrapAll('<div>').parent().html();
 };
 
+$.fn.insertOnce = function($element, predicate) {
+    var inserted = false;
+    $(this).children().each(function() {
+        if(predicate($(this))) {
+            console.log("inserting!");
+            $element.insertBefore($(this));
+            inserted = true;
+            return false;
+        }
+    });
+
+    if(!inserted) {
+        $(this).append($element);
+    }
+};
+
 $.escapeHtml = function(json) {
     if(json.constructor === Array) {
         for(var i = 0; i < json.length; i++) {
@@ -33,4 +49,5 @@ $.escapeHtml = function(json) {
         return $("<div>").text(json).html();
     }
 };
+
 

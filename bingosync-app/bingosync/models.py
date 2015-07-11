@@ -94,6 +94,10 @@ class Room(models.Model):
         return Player.objects.filter(room=self).order_by("name")
 
     @property
+    def connected_players(self):
+        return [player for player in self.players if player.connected]
+
+    @property
     def creator(self):
         return self.players.order_by("created_date").first()
 
@@ -193,6 +197,11 @@ class Player(models.Model):
     @property
     def color(self):
         return Color.for_value(self.color_value)
+
+    @property
+    def connected(self):
+        last_connection_event = ConnectionEvent.objects.filter(player=self).order_by("timestamp").last()
+        return not last_connection_event or last_connection_event.event_type == ConnectionEventType.connected
 
     def update_color(self, color):
         with transaction.atomic():

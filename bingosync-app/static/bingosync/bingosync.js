@@ -243,6 +243,30 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
                 setPlayerColor($playerEntry, json["player"]["color"]);
                 updateGoalCounters($board, $playersPanel);
             }
+            else if(json["type"] === "connection") {
+                if(json["event_type"] === "connected") {
+                    // only insert if the uuid is not already listed
+                    if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
+                        var colorClass = getSquareColorClass(json["player"]["color"]);
+                        var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
+                        var playerName = $("<span>", {"class": "playername", html: " " + json["player"]["name"]});
+                        var playerDiv = $("<div>", {"id": json["player"]["uuid"]});
+                        playerDiv.append(goalCounter);
+                        playerDiv.append(playerName);
+
+                        $playersPanel.insertOnce(playerDiv, function($possibleNext) {
+                            var possibleNextName = $.trim($possibleNext.find(".playername").text()).toLowerCase();
+                            console.log("comparing " + possibleNextName);
+                            return possibleNextName > json["player"]["name"].toLowerCase();
+                        });
+
+                        updateGoalCounters($board, $playersPanel);
+                    }
+                }
+                else if(json["event_type"] === "disconnected") {
+                    $("#" + json["player"]["uuid"]).remove();
+                }
+            }
             result = processChatJson(json);
             appendChatMessage(result, json["type"] + "-entry");
         }
