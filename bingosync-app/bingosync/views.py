@@ -1,5 +1,6 @@
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, Http404
 from django.shortcuts import render, redirect
+from django.core.cache import cache
 from django.views.decorators.csrf import csrf_exempt
 
 import json
@@ -9,6 +10,7 @@ from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm
 from .models import Room, Game, Player, Color, Event, ChatEvent, ConnectionEvent
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_connection_event
+from .util import generate_encoded_uuid
 
 def rooms(request):
     if request.method == "POST":
@@ -43,7 +45,8 @@ def room_view(request, encoded_room_uuid):
                 "room": room,
                 "game": room.current_game,
                 "player": player,
-                "sockets_url": SOCKETS_URL
+                "sockets_url": SOCKETS_URL,
+                "temporary_socket_key": _create_temporary_socket_key(player)
             }
             return render(request, "bingosync/bingosync.html", params)
         except NotAuthenticatedError:
@@ -139,6 +142,20 @@ def user_disconnected(request, encoded_player_uuid):
     publish_connection_event(connection_event)
     return HttpResponse()
 
+# TODO: add authentication to limit this route to tornado
+def check_socket_key(request, socket_key):
+    try:
+        encoded_player_uuid = _get_temporary_socket_player_uuid(socket_key)
+        player = Player.get_for_encoded_uuid(encoded_player_uuid)
+        json_response = {
+            "room": player.room.encoded_uuid,
+            "player": player.encoded_uuid
+        }
+        return JsonResponse(json_response)
+    except NotAuthenticatedError:
+        raise Http404("Invalid socket key")
+
+
 # Helpers for interacting with sessions
 
 AUTHORIZED_ROOMS = 'authorized_rooms'
@@ -159,4 +176,15 @@ def _save_session_player(session, player):
     authorized_rooms[player.room.encoded_uuid] = player.encoded_uuid
     session[AUTHORIZED_ROOMS] = authorized_rooms
 
+def _create_temporary_socket_key(player):
+    temporary_socket_key = generate_encoded_uuid()
+    cache.set(temporary_socket_key, player.encoded_uuid)
+    return temporary_socket_key
+
+def _get_temporary_socket_player_uuid(temporary_socket_key):
+    encoded_player_uuid = cache.get(temporary_socket_key)
+    if encoded_player_uuid:
+        return encoded_player_uuid
+    else:
+        raise NotAuthenticatedError()
 

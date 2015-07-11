@@ -46,6 +46,7 @@
         var colorSelectedUrl = "{% url 'views.select_color' %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'views.goal_selected' %}";
+        var temporarySocketKey = "{{ temporary_socket_key }}";
 
         window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
 
@@ -54,7 +55,7 @@
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
-                             socketsUrl, chatUrl, chatHistoryUrl);
+                             socketsUrl, chatUrl, chatHistoryUrl, temporarySocketKey);
 
         // enable choosing color
         initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);

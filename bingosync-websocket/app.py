@@ -1,9 +1,76 @@
 import tornado.ioloop
 import tornado.web
 import tornado.websocket
+from tornado.httpclient import AsyncHTTPClient
 
+from collections import defaultdict
 import json
 import random
+import requests
+
+BASE_DJANGO_URL = "http://localhost:8000/"
+BASE_API_URL = BASE_DJANGO_URL + "api/"
+
+SOCKET_VERIFICATION_URL = BASE_API_URL + "socket/"
+CONNECTION_URL = BASE_API_URL + "connected/"
+DISCONNECTION_URL = BASE_API_URL + "disconnected/"
+
+def load_player_data(socket_key):
+    response = requests.get(SOCKET_VERIFICATION_URL + socket_key)
+    response_json = response.json()
+    room_uuid = response_json["room"]
+    player_uuid = response_json["player"]
+    return room_uuid, player_uuid
+
+def post_player_connection(player_uuid):
+    client = AsyncHTTPClient()
+    client.fetch(CONNECTION_URL + player_uuid)
+
+def post_player_disconnection(player_uuid):
+    client = AsyncHTTPClient()
+    client.fetch(DISCONNECTION_URL + player_uuid)
+
+class SocketRouter:
+
+    def __init__(self):
+        self.all_sockets = list()
+        self.sockets_by_room = defaultdict(lambda: defaultdict(list))
+
+    def send_all(self, message):
+        print("sending message:", repr(message), "to", len(self.all_sockets), "sockets")
+        for socket in self.all_sockets:
+            socket.write_message(message)
+
+    def send_to_room(self, room_uuid, message):
+        room_sockets = self.sockets_by_room[room_uuid]
+        for player_sockets in room_sockets.values():
+            for socket in player_sockets:
+                socket.write_message(message)
+
+    def register(self, room_uuid, player_uuid, socket):
+        print("registering socket...", dict(self.sockets_by_room))
+        if not self.sockets_by_room[room_uuid][player_uuid]:
+            print("posting connect")
+            post_player_connection(player_uuid)
+        self.sockets_by_room[room_uuid][player_uuid].append(socket)
+        print("registered", dict(self.sockets_by_room))
+
+    def unregister(self, socket):
+        print("unregistering socket...", dict(self.sockets_by_room))
+        for room_uuid in self.sockets_by_room:
+            room_sockets = self.sockets_by_room[room_uuid]
+            for player_uuid in room_sockets:
+                player_sockets = room_sockets[player_uuid]
+                try:
+                    player_sockets.remove(socket)
+                    if not player_sockets:
+                        print("posting disconnect")
+                        post_player_disconnection(player_uuid)
+                except:
+                    pass
+        print("unregistered", dict(self.sockets_by_room))
+
+ROUTER = SocketRouter()
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -11,26 +78,26 @@ class MainHandler(tornado.web.RequestHandler):
 
     def put(self):
         data = json.loads(self.request.body.decode("utf8"))
-        BroadcastWebSocket.send_all(data)
+        room_uuid = data["room"]
+        ROUTER.send_to_room(room_uuid, data)
+
 
 class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
-
-    sockets = list()
-
-    @staticmethod
-    def send_all(message):
-        print("sending message:", repr(message), "to", len(BroadcastWebSocket.sockets), "sockets")
-        for socket in BroadcastWebSocket.sockets:
-            socket.write_message(message)
 
     def check_origin(self, origin):
         return True
 
-    def open(self):
-        BroadcastWebSocket.sockets.append(self)
+    def on_message(self, message):
+        try:
+            message_dict = json.loads(message)
+            socket_key = message_dict["socket_key"]
+            room_uuid, player_uuid = load_player_data(socket_key)
+            ROUTER.register(room_uuid, player_uuid, self)
+        except:
+            self.write_message('{"type": "error", "error": "unable to authenticate, try refreshing"}')
 
     def on_close(self):
-        BroadcastWebSocket.sockets.remove(self)
+        ROUTER.unregister(self)
 
 application = tornado.web.Application([
     (r"/", MainHandler),

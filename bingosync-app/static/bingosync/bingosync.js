@@ -141,7 +141,7 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
 
 // so many parameters :(
 function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
-                              socketsUrl, chatUrl, chatHistoryUrl) {
+                              socketsUrl, chatUrl, chatHistoryUrl, socketKey) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
     var $chatSend =  $chatWindow.find(".chat-send");
@@ -222,6 +222,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     var chatSocket = new WebSocket(socketsUrl);
     chatSocket.onopen = function() {
         console.log("socket opened!");
+        chatSocket.send(JSON.stringify({"socket_key": socketKey}));
     };
     chatSocket.onmessage = function (evt) {
         json = JSON.parse(evt.data);

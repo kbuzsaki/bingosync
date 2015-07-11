@@ -14,3 +14,6 @@ def decode_uuid(encoded_uuid):
     encoded_uuid += "=="
     uuid_bytes = base64.b64decode(encoded_uuid.encode("utf8"), ALTERNATE_CHARACTERS)
     return uuid.UUID(bytes=uuid_bytes)
+
+def generate_encoded_uuid():
+    return encode_uuid(uuid.uuid4())

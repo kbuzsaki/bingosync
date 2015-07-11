@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^api/color$', views.select_color, name='select_color'),
     url(r'^api/connected/(?P<encoded_player_uuid>.+)$', views.user_connected, name='user_connected'),
     url(r'^api/disconnected/(?P<encoded_player_uuid>.+)$', views.user_disconnected, name='user_disconnected'),
+    url(r'^api/socket/(?P<socket_key>.+)$', views.check_socket_key, name='check_socket_key'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
