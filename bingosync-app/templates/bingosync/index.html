@@ -16,24 +16,30 @@
                     Current Rooms
                 </div>
                 <div class="panel-body">
-                    <div style="margin: 5px; min-height: 120px; border-radius: 5px">
-                        <table class="table">
-                            <thead>
-                                <th>Room</th>
-                                <th>Creator</th>
-                                <th>Players</th>
-                            </thead>
-                            <tbody>
-                            {% for room in rooms %}
-                                <tr>
-                                    <td><a href="{{ room.get_absolute_url }}">{{ room.name }}</a></td>
-                                    <td>{{ room.creator.name }}</td>
-                                    <td>{{ room.connected_players|length }}</td>
-                                </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
+                    {% if rooms %}
+                        <div style="margin: 5px; min-height: 120px; border-radius: 5px">
+                            <table class="table">
+                                <thead>
+                                    <th>Room</th>
+                                    <th>Creator</th>
+                                    <th>Players</th>
+                                </thead>
+                                <tbody>
+                                {% for room in rooms %}
+                                    <tr>
+                                        <td><a href="{{ room.get_absolute_url }}">{{ room.name }}</a></td>
+                                        <td>{{ room.creator.name }}</td>
+                                        <td>{{ room.connected_players|length }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div>
+                            No rooms yet, why don't you make one?
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
