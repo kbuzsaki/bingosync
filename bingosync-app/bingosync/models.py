@@ -75,7 +75,7 @@ class Room(models.Model):
 
     @staticmethod
     def get_listed_rooms():
-        return Room.objects.all()
+        return [room for room in Room.objects.all() if room.active]
 
     @property
     def encoded_uuid(self):
@@ -96,6 +96,10 @@ class Room(models.Model):
     @property
     def connected_players(self):
         return [player for player in self.players if player.connected]
+
+    @property
+    def active(self):
+        return len(self.connected_players) > 0
 
     @property
     def creator(self):

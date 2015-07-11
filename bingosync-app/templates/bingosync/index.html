@@ -28,7 +28,7 @@
                                 <tr>
                                     <td><a href="{{ room.get_absolute_url }}">{{ room.name }}</a></td>
                                     <td>{{ room.creator.name }}</td>
-                                    <td>{{ room.players|length }}</td>
+                                    <td>{{ room.connected_players|length }}</td>
                                 </tr>
                             {% endfor %}
                             </tbody>
