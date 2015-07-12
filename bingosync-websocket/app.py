@@ -4,6 +4,7 @@ import tornado.websocket
 from tornado.httpclient import AsyncHTTPClient
 
 from collections import defaultdict
+import datetime
 import json
 import random
 import requests
@@ -33,13 +34,19 @@ def post_player_disconnection(player_uuid):
 class SocketRouter:
 
     def __init__(self):
-        self.all_sockets = list()
+        self.all_sockets = set()
         self.sockets_by_room = defaultdict(lambda: defaultdict(list))
 
     def send_all(self, message):
         print("sending message:", repr(message), "to", len(self.all_sockets), "sockets")
         for socket in self.all_sockets:
-            socket.write_message(message)
+            try:
+                socket.write_message(message)
+            except:
+                pass
+
+    def ping_all(self):
+        self.send_all({"type": "ping", "timestamp": datetime.datetime.now().isoformat() })
 
     def send_to_room(self, room_uuid, message):
         room_sockets = self.sockets_by_room[room_uuid]
@@ -53,6 +60,7 @@ class SocketRouter:
             print("posting connect")
             post_player_connection(player_uuid)
         self.sockets_by_room[room_uuid][player_uuid].append(socket)
+        self.all_sockets.add(socket)
         print("registered", dict(self.sockets_by_room))
 
     def unregister(self, socket):
@@ -68,6 +76,7 @@ class SocketRouter:
                         post_player_disconnection(player_uuid)
                 except:
                     pass
+        self.all_sockets.remove(socket)
         print("unregistered", dict(self.sockets_by_room))
 
 ROUTER = SocketRouter()
@@ -90,6 +99,8 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
     def on_message(self, message):
         try:
             message_dict = json.loads(message)
+            if message_dict.get("type") == "ping":
+                return
             socket_key = message_dict["socket_key"]
             room_uuid, player_uuid = load_player_data(socket_key)
             ROUTER.register(room_uuid, player_uuid, self)
@@ -106,8 +117,14 @@ application = tornado.web.Application([
 
 PORT = 8888
 
+def periodic_ping():
+    ROUTER.ping_all()
+
 if __name__ == "__main__":
     print("Starting application!")
     print("Listening on port: " + str(PORT))
     application.listen(PORT)
-    tornado.ioloop.IOLoop.current().start()
+    io_loop = tornado.ioloop.IOLoop.current()
+    pinger = tornado.ioloop.PeriodicCallback(periodic_ping, 5000)
+    pinger.start()
+    io_loop.start()

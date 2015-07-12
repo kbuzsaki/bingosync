@@ -229,8 +229,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         console.log(json);
         json = $.escapeHtml(json);
         console.log(json);
-        if(json["type"] === "name") {
-            window.sessionStorage.setItem("name", json["name"]);
+        if(json["type"] === "ping") {
+            console.log("got ping");
+            chatSocket.send(evt.data);
         }
         else {
             if(json["type"] === "goal") {
