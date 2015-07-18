@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.core import urlresolvers
 from django.contrib.sessions.models import Session
+from django.forms import Textarea
+from django.db import models
 
 import json
 import pprint
@@ -23,9 +25,30 @@ class PlayerInline(admin.StackedInline):
     model = Player
     extra = 0
 
-class ChatInline(admin.TabularInline):
-    pass
+class SquareInline(admin.TabularInline):
+    model = Square
+    extra = 0
 
+class ChatEventInline(admin.TabularInline):
+    model = ChatEvent
+    extra = 0
+    formfield_overrides = {
+        models.TextField: {'widget': Textarea(attrs={'rows':2, 'cols':40})},
+    }
+
+class GoalEventInline(admin.TabularInline):
+    model = GoalEvent
+    extra = 0
+
+class ColorEventInline(admin.TabularInline):
+    model = ColorEvent
+    extra = 0
+
+class ConnectionEventInline(admin.TabularInline):
+    model = ConnectionEvent
+    extra = 0
+
+@admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
     inlines = [GameInline, PlayerInline]
     list_display = ["__str__", "created_date", "num_games", "num_players", "encoded_uuid"]
@@ -45,12 +68,10 @@ class RoomAdmin(admin.ModelAdmin):
         return room.encoded_uuid
     encoded_uuid.short_description = "Base 64 UUID"
 
-class SquareInline(admin.TabularInline):
-    model = Square
-    extra = 0
-
+@admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
     inlines = [SquareInline]
+    list_display = ["__str__", "created_date", "room", "seed"]
     readonly_fields = ["link_to_room"]
 
     def link_to_room(self, obj):
@@ -59,21 +80,39 @@ class GameAdmin(admin.ModelAdmin):
 
     link_to_room.allow_tags = True
 
+@admin.register(Square)
+class SquareAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "game", "slot", "goal", "color"]
+
+@admin.register(Player)
+class PlayerAdmin(admin.ModelAdmin):
+    inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
+    list_display = ["__str__", "created_date", "connected", "room", "color"]
+
+@admin.register(ChatEvent)
 class ChatEventAdmin(admin.ModelAdmin):
     list_display = ["__str__", "timestamp", "player", "body_preview"]
 
     def body_preview(self, obj):
         return obj.body[:100]
 
-admin.site.register(Room, RoomAdmin)
-admin.site.register(Game, GameAdmin)
-admin.site.register(Square)
-admin.site.register(Player)
-admin.site.register(ChatEvent, ChatEventAdmin)
-admin.site.register(GoalEvent)
-admin.site.register(ColorEvent)
-admin.site.register(ConnectionEvent)
+@admin.register(ColorEvent)
+class ColorEventAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "timestamp", "player", "player_color", "color"]
 
+@admin.register(GoalEvent)
+class GoalEventAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "timestamp", "player", "color", "goal"]
+
+    def goal(self, obj):
+        return obj.square.goal
+
+@admin.register(ConnectionEvent)
+class ConnectionEventAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "timestamp", "player", "event_type"]
+
+
+@admin.register(Session)
 class SessionAdmin(admin.ModelAdmin):
 
     def _session_data(self, obj):
@@ -86,6 +125,4 @@ class SessionAdmin(admin.ModelAdmin):
     readonly_fields = ['_session_data']
     exclude = ['session_data']
     date_hierarchy='expire_date'
-
-admin.site.register(Session, SessionAdmin)
 
