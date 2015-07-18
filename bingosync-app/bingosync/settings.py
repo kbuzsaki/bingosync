@@ -25,6 +25,8 @@ SECRET_KEY = secret_settings.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+IS_PROD = False
+
 ALLOWED_HOSTS = []
 
 
@@ -83,8 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bingosync',
-        'USER': 'bingoserv',
-        'PASSWORD': 'password',
+        'USER': 'kyle' if IS_PROD else 'kbuzsaki',
     }
 }
 
@@ -134,7 +135,7 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
 
-BASE_SOCKETS_URL = "127.0.0.1:8888"
+BASE_SOCKETS_URL = "sockets.bingosync.com" if IS_PROD else "127.0.0.1:8888"
 SOCKETS_PUBLISH_URL = "http://" + BASE_SOCKETS_URL
 SOCKETS_URL = "ws://" + BASE_SOCKETS_URL
 
