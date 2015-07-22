@@ -58,7 +58,7 @@ class SocketRouter:
         print("sending message:", repr(message), "to", len(self.all_sockets), "sockets")
         for socket in self.all_sockets:
             try:
-                socket.write_message(message)
+                socket.send(message)
             except:
                 pass
 
@@ -77,7 +77,7 @@ class SocketRouter:
         room_sockets = self.sockets_by_room[room_uuid]
         for player_sockets in room_sockets.values():
             for socket in player_sockets:
-                socket.write_message(message)
+                socket.send(message)
 
     def register(self, room_uuid, player_uuid, socket):
         self.log_sockets("registering socket...")
@@ -142,7 +142,7 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
             room_uuid, player_uuid = load_player_data(socket_key)
             ROUTER.register(room_uuid, player_uuid, self)
         except:
-            self.write_message('{"type": "error", "error": "unable to authenticate, try refreshing"}')
+            self.send('{"type": "error", "error": "unable to authenticate, try refreshing"}')
 
     def on_close(self):
         ROUTER.unregister(self)
