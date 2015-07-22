@@ -8,6 +8,7 @@ import datetime
 import json
 import random
 import requests
+import pprint
 
 BASE_DJANGO_URL = "http://localhost:8000/"
 BASE_API_URL = BASE_DJANGO_URL + "api/"
@@ -35,11 +36,23 @@ def post_player_disconnection(player_uuid):
     client = AsyncHTTPClient()
     client.fetch(DISCONNECTION_URL + player_uuid)
 
+def format_defaultdict(ddict):
+    if isinstance(ddict, defaultdict):
+        return {key: format_defaultdict(ddict[key]) for key in ddict}
+    else:
+        return ddict
+
 class SocketRouter:
 
     def __init__(self):
         self.all_sockets = set()
         self.sockets_by_room = defaultdict(lambda: defaultdict(list))
+
+    def log_sockets(self, message=None):
+        if message:
+            print(message)
+        pprint.pprint(format_defaultdict(self.sockets_by_room))
+        print()
 
     def send_all(self, message):
         print("sending message:", repr(message), "to", len(self.all_sockets), "sockets")
@@ -67,16 +80,16 @@ class SocketRouter:
                 socket.write_message(message)
 
     def register(self, room_uuid, player_uuid, socket):
-        print("registering socket...", dict(self.sockets_by_room))
+        self.log_sockets("registering socket...")
         if not self.sockets_by_room[room_uuid][player_uuid]:
             print("posting connect")
             post_player_connection(player_uuid)
         self.sockets_by_room[room_uuid][player_uuid].append(socket)
         self.all_sockets.add(socket)
-        print("registered", dict(self.sockets_by_room))
+        self.log_sockets("registered")
 
     def unregister(self, socket):
-        print("unregistering socket...", dict(self.sockets_by_room))
+        self.log_sockets("unregistering socket...")
         for room_uuid in self.sockets_by_room:
             room_sockets = self.sockets_by_room[room_uuid]
             for player_uuid in room_sockets:
@@ -89,7 +102,7 @@ class SocketRouter:
                 except:
                     pass
         self.all_sockets.remove(socket)
-        print("unregistered", dict(self.sockets_by_room))
+        self.log_sockets("unregistered")
 
 ROUTER = SocketRouter()
 
@@ -108,6 +121,9 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.last_pong = datetime.datetime.now()
+
+    def __repr__(self):
+        return "Socket(" + str(self.last_pong) + ")"
 
     def check_origin(self, origin):
         return True
