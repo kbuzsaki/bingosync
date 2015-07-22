@@ -84,10 +84,17 @@ class GameAdmin(admin.ModelAdmin):
 class SquareAdmin(admin.ModelAdmin):
     list_display = ["__str__", "game", "slot", "goal", "color"]
 
+def disconnect_players(modeladmin, request, queryset):
+    for player in queryset:
+        connection_event = ConnectionEvent.make_disconnected_event(player)
+        connection_event.save()
+disconnect_players.short_description = "Mark players disconnected"
+
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
     list_display = ["__str__", "created_date", "connected", "room", "color"]
+    actions = [disconnect_players]
 
 @admin.register(ChatEvent)
 class ChatEventAdmin(admin.ModelAdmin):
