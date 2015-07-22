@@ -46,7 +46,7 @@ class SocketRouter:
 
     def __init__(self):
         self.all_sockets = set()
-        self.sockets_by_room = defaultdict(lambda: defaultdict(list))
+        self.sockets_by_room = defaultdict(lambda: defaultdict(set))
 
     def log_sockets(self, message=None):
         if message:
@@ -84,7 +84,7 @@ class SocketRouter:
         if not self.sockets_by_room[room_uuid][player_uuid]:
             print("posting connect")
             post_player_connection(player_uuid)
-        self.sockets_by_room[room_uuid][player_uuid].append(socket)
+        self.sockets_by_room[room_uuid][player_uuid].add(socket)
         self.all_sockets.add(socket)
         self.log_sockets("registered")
 
@@ -94,14 +94,12 @@ class SocketRouter:
             room_sockets = self.sockets_by_room[room_uuid]
             for player_uuid in room_sockets:
                 player_sockets = room_sockets[player_uuid]
-                try:
-                    player_sockets.remove(socket)
+                if player_sockets:
+                    player_sockets.discard(socket)
                     if not player_sockets:
                         print("posting disconnect")
                         post_player_disconnection(player_uuid)
-                except:
-                    pass
-        self.all_sockets.remove(socket)
+        self.all_sockets.discard(socket)
         self.log_sockets("unregistered")
 
 ROUTER = SocketRouter()
