@@ -122,7 +122,7 @@ class GameType(Enum):
         return list(GameType)[value - 1]
 
     def generator_instance(self):
-        return BingoGenerator.instance()
+        return BingoGenerator.instance(self.name)
 
     @staticmethod
     def choices():

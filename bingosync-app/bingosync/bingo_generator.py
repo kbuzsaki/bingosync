@@ -28,33 +28,39 @@ def reload_generator_source():
 
     return full_js
 
-def load_cached_generator_source():
-    with open("bingo_generator.js") as js_file:
+CACHED_FILES_BY_NAME = {
+    "oot": "generators/oot_generator.js",
+    "sm64": "generators/sm64_generator.js"
+}
+
+def load_cached_generator_source(game_name):
+    filename = CACHED_FILES_BY_NAME[game_name]
+    with open(filename) as js_file:
         return js_file.read()
 
-def load_generator_source():
-    return load_cached_generator_source()
+def load_generator_source(game_name):
+    return load_cached_generator_source(game_name)
 
-def load_generator():
-    return BingoGenerator(load_generator_source())
+def load_generator(game_name):
+    return BingoGenerator(load_generator_source(game_name))
 
 
 class BingoGenerator:
-    CACHED_INSTANCE = None
+    CACHED_INSTANCES = {}
 
     @staticmethod
-    def loaded():
-        return BingoGenerator.CACHED_INSTANCE is not None
+    def loaded(game_name):
+        return game_name in BingoGenerator.CACHED_INSTANCES
 
     @staticmethod
-    def instance():
-        if not BingoGenerator.CACHED_INSTANCE:
-            BingoGenerator.CACHED_INSTANCE = load_generator()
-        return BingoGenerator.CACHED_INSTANCE
+    def instance(game_name):
+        if game_name not in BingoGenerator.CACHED_INSTANCES:
+            BingoGenerator.CACHED_INSTANCES[game_name] = load_generator(game_name)
+        return BingoGenerator.CACHED_INSTANCES[game_name]
 
     @staticmethod
-    def reload():
-        BingoGenerator.CACHED_INSTANCE = loadGenerator()
+    def reload(game_name):
+        BingoGenerator.CACHED_INSTANCES[game_name] = load_generator(game_name)
 
     def __init__(self, generator_js):
         self.generator_js = generator_js
@@ -67,7 +73,7 @@ class BingoGenerator:
         else:
             opts = "{}"
 
-        js_command = "ootBingoGenerator(bingoList, " + opts + ")"
+        js_command = "bingoGenerator(bingoList, " + opts + ")"
         card = self.context.eval(js_command)
         # for some reason the first element of the list is a garbage None?
         card = card[1:]
