@@ -22,6 +22,7 @@
                                 <thead>
                                     <th>Room</th>
                                     <th>Creator</th>
+                                    <th>Game</th>
                                     <th>Players</th>
                                 </thead>
                                 <tbody>
@@ -29,6 +30,7 @@
                                     <tr>
                                         <td><a href="{{ room.get_absolute_url }}">{{ room.name }}</a></td>
                                         <td>{{ room.creator.name }}</td>
+                                        <td>{{ room.current_game.game_type }}</td>
                                         <td>{{ room.connected_players|length }}</td>
                                     </tr>
                                 {% endfor %}

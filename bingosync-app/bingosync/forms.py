@@ -2,8 +2,7 @@ from django import forms
 from django.db import transaction
 from django.contrib.auth import hashers
 
-from .models import Room, Game, Player
-from .bingo_generator import BingoGenerator
+from .models import Room, GameType, Game, Player
 
 
 def make_read_only_char_field(*args, **kwargs):
@@ -17,20 +16,22 @@ class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
+    game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput())
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
         passphrase = self.cleaned_data["passphrase"]
         nickname = self.cleaned_data["nickname"]
+        game_type = GameType.for_value(int(self.cleaned_data["game_type"]))
         seed = self.cleaned_data["seed"]
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
-            board_json = BingoGenerator.instance().get_card(seed)
+            board_json = game_type.generator_instance().get_card(seed)
             room = Room(name=room_name, passphrase=encrypted_passphrase)
             room.save()
-            game = Game.from_board(board_json, room=room, seed=seed)
+            game = Game.from_board(board_json, room=room, game_type_value=game_type.value, seed=seed)
             creator = Player(room=room, name=nickname)
             creator.save()
         return room
@@ -39,6 +40,7 @@ class JoinRoomForm(forms.Form):
     encoded_room_uuid = forms.CharField(label="Room UUID", max_length=128, widget=forms.HiddenInput())
     room_name = make_read_only_char_field(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     creator_name = make_read_only_char_field(label="Creator", max_length=PLAYER_NAME_MAX_LENGTH)
+    game_name = make_read_only_char_field(label="Game")
     player_name = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
 
@@ -47,7 +49,8 @@ class JoinRoomForm(forms.Form):
         initial_values = {
             "encoded_room_uuid": room.encoded_uuid,
             "room_name": room.name,
-            "creator_name": room.creator.name
+            "creator_name": room.creator.name,
+            "game_name": str(room.current_game.game_type)
         }
         return JoinRoomForm(initial=initial_values)
 
