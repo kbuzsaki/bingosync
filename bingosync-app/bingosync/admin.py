@@ -71,7 +71,7 @@ class RoomAdmin(admin.ModelAdmin):
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
     inlines = [SquareInline]
-    list_display = ["__str__", "created_date", "room", "seed"]
+    list_display = ["__str__", "created_date", "room", "game_type", "seed"]
     readonly_fields = ["link_to_room"]
 
     def link_to_room(self, obj):

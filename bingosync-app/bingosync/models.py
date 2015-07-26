@@ -5,6 +5,7 @@ from datetime import datetime
 from uuid import uuid4
 from enum import Enum, unique
 
+from .bingo_generator import BingoGenerator
 from .util import encode_uuid, decode_uuid
 
 @unique
@@ -105,10 +106,33 @@ class Room(models.Model):
     def creator(self):
         return self.players.order_by("created_date").first()
 
+@unique
+class GameType(Enum):
+    oot = 1
+    sm64 = 2
+
+    def __str__(self):
+        if self == GameType.oot:
+            return "OoT"
+        elif self == GameType.sm64:
+            return "SM64"
+
+    @staticmethod
+    def for_value(value):
+        return list(GameType)[value - 1]
+
+    def generator_instance(self):
+        return BingoGenerator.instance()
+
+    @staticmethod
+    def choices():
+        return [(game_type.value, str(game_type)) for game_type in GameType]
+
 class Game(models.Model):
     room = models.ForeignKey(Room)
     seed = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
 
     def __str__(self):
         return self.room.name + ": " + str(self.seed)
@@ -125,6 +149,10 @@ class Game(models.Model):
                 square.full_clean()
                 square.save()
         return game
+
+    @property
+    def game_type(self):
+        return GameType.for_value(self.game_type_value)
 
     @property
     def squares(self):
