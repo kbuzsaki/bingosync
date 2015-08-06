@@ -4,6 +4,8 @@ from django.contrib.auth import hashers
 
 from .models import Room, GameType, Game, Player
 
+from .goals_converter import DEFAULT_DOWNLOAD_URL
+
 
 def make_read_only_char_field(*args, **kwargs):
     kwargs["widget"] = forms.TextInput(attrs={"readonly": "readonly"})
@@ -75,3 +77,17 @@ class JoinRoomForm(forms.Form):
         player = Player(room=room, name=nickname)
         player.save()
         return player
+
+
+class GoalListConverterForm(forms.Form):
+    spreadsheet_url = forms.CharField(label="Spreadsheet URL")
+
+    @staticmethod
+    def get():
+        initial_values = {
+            "spreadsheet_url": DEFAULT_DOWNLOAD_URL,
+        }
+        return GoalListConverterForm(initial=initial_values)
+
+
+

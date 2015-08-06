@@ -1,0 +1,57 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+
+{% block page_body %}
+<!-- I know this page has terrible CSS, come at me bro -->
+<div class="container" style="height: 97vh">
+    <div>
+        <a href="{% url 'views.rooms' %}">
+            <h1>Bingosync</h1>
+        </a>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Convert Goals List
+            </div>
+            <div class="panel-body">
+                <div style="padding: 0 30px; margin-bottom: 10px">
+                    You probably don't want to change this URL unless you really know what you're doing. <br>
+
+                    It will download
+                    <a href="https://docs.google.com/spreadsheets/d/1dRpwfIV2vDRL_Hq-pBj3U7wq7XwZ9JPW9Ac8hK5qbgc/edit#gid=0">
+                        the bingo spreadsheet
+                    </a> as a csv and convert that to json for you. <br>
+
+                    The result is intended to match the format from
+                    <a href="https://github.com/giuocob/ProjectWaterskulls">ProjectWaterskulls</a>.
+                    <br>
+                    <div style="margin-top: 10px">
+                        Eventually this will support upploading your own csv file.
+                    </div>
+                </div>
+                <form class="form-horizontal" action="{% url 'views.goal_converter' %}" method="post">
+                    {% csrf_token %}
+                    {{ form|bootstrap_horizontal:"col-md-3" }}
+                    <div class="form-group">
+                        <div class="col-md-4 pull-right">
+                            <input type="submit" class="form-control" value="Convert and Download" />
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    $(document).ready(function() {
+                        $(".alert-danger a.close").on("click", function() {
+                            $(this).parent().hide(100);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

@@ -7,7 +7,8 @@ import json
 
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
-from .forms import RoomForm, JoinRoomForm
+from .goals_converter import get_converted_goal_list, ConversionException
+from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from .models import Room, Game, Player, Color, Event, ChatEvent, ConnectionEvent
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_connection_event
 from .util import generate_encoded_uuid
@@ -154,6 +155,20 @@ def check_socket_key(request, socket_key):
         return JsonResponse(json_response)
     except NotAuthenticatedError:
         raise Http404("Invalid socket key")
+
+
+def goal_converter(request):
+    if request.method == "POST":
+        form = GoalListConverterForm(request.POST)
+        if form.is_valid():
+            json_str = get_converted_goal_list()
+            response = HttpResponse(json_str, content_type="application/json")
+            response['Content-Disposition'] = 'attachment; filename="goal-list.json"'
+            return response
+    else:
+        form = GoalListConverterForm.get()
+
+    return render(request, "bingosync/convert.html", {"form": form})
 
 
 # Helpers for interacting with sessions
