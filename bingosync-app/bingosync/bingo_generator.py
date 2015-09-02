@@ -30,7 +30,8 @@ def reload_generator_source():
 
 CACHED_FILES_BY_NAME = {
     "oot": "generators/oot_generator.js",
-    "sm64": "generators/sm64_generator.js"
+    "sm64": "generators/sm64_generator.js",
+    "mm": "generators/mm_generator.js",
 }
 
 def load_cached_generator_source(game_name):

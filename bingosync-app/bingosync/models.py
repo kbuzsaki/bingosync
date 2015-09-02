@@ -110,12 +110,15 @@ class Room(models.Model):
 class GameType(Enum):
     oot = 1
     sm64 = 2
+    mm = 3
 
     def __str__(self):
         if self == GameType.oot:
             return "OoT"
         elif self == GameType.sm64:
             return "SM64"
+        elif self == GameType.mm:
+            return "MM"
 
     @staticmethod
     def for_value(value):
