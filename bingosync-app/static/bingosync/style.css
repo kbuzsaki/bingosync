@@ -289,3 +289,16 @@
     color: #888;
 }
 
+.footer-bar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #888;
+}
+
+.footer-bar a {
+    font-style: italic;
+    color: #888;
+    margin-left: 10px;
+    margin-right: 10px;
+}

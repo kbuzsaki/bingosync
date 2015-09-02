@@ -3,7 +3,7 @@
 {% load bootstrap %}
 
 {% block page_body %}
-<div class="container" style="height: 97vh">
+<div class="container" style="height: 97vh; position: relative">
     <div>
         <a href="{% url 'views.rooms' %}">
             <h1>Bingosync</h1>
@@ -63,6 +63,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-bar">
+        <a href="{% url 'views.history' %}">Room History</a>
+         ·
+        <a href="https://twitter.com/saltor6">Twitter</a>
+         ·
+        <a href="https://github.com/kbuzsaki/bingosync">Github</a>
     </div>
 </div>
 {% endblock %}
