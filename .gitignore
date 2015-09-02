@@ -56,3 +56,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# site secret key
+bingosync-app/bingosync/secret_settings.py
