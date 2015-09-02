@@ -1,6 +1,7 @@
 from django.http import HttpResponse, JsonResponse, Http404
 from django.shortcuts import render, redirect
 from django.core.cache import cache
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
 
 import json
@@ -77,6 +78,25 @@ def board_json(request, seed):
     generator = BingoGenerator.instance()
     card = generator.get_card(seed)
     return JsonResponse(card, safe=False)
+
+def history(request):
+    room_list = Room.objects.order_by("created_date")
+    paginator = Paginator(room_list, 10) # Show 25 contacts per page
+
+    page = request.GET.get('page')
+    try:
+        rooms = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        rooms = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        rooms = paginator.page(paginator.num_pages)
+
+    params = {
+        'rooms': rooms
+    }
+    return render(request, "bingosync/history.html", params)
 
 def room_feed(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
