@@ -80,7 +80,7 @@ def board_json(request, seed):
     return JsonResponse(card, safe=False)
 
 def history(request):
-    room_list = Room.objects.order_by("created_date")
+    room_list = Room.objects.order_by("-created_date")
     paginator = Paginator(room_list, 10) # Show 25 contacts per page
 
     page = request.GET.get('page')
