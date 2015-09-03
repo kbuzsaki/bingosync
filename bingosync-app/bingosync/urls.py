@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^room/(?P<encoded_room_uuid>.+)$', views.room_view, name='room_view'),
     url(r'^history', views.history, name='history'),
     url(r'^convert', views.goal_converter, name='goal_converter'),
+    url(r'^about', views.about, name='about'),
     url(r'^board/(?P<seed>[0-9]+)$', views.board_view, name='board_view'),
     url(r'^board/(?P<seed>[0-9]+).json$', views.board_json, name='board_json'),
     url(r'^api/board/(?P<seed>[0-9]+)$', views.board_json, name='board_json'),

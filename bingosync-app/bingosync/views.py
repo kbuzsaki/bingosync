@@ -98,6 +98,9 @@ def history(request):
     }
     return render(request, "bingosync/history.html", params)
 
+def about(request):
+    return render(request, "bingosync/about.html")
+
 def room_feed(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
     all_events = Event.get_all_for_room(room)

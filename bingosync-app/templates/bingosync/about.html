@@ -1,0 +1,106 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+
+{% block page_body %}
+<div class="container" style="height: 97vh; position: relative">
+    <div>
+        <a href="{% url 'views.rooms' %}">
+            <h1>Bingosync</h1>
+        </a>
+    </div>
+    <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    What is Bingosync?
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Bingosync is a web application that lets people collaboratively work on
+                        "bingo boards" for speedrunning games.
+                    </p>
+                    <p>
+                        When you create a bingosync room from the main page of
+                        <a href="http://bingosync.com">bingosync.com</a>,
+                        you will get a unique URL that you can share with other people to let
+                        them join your room. When multiple people are in the same room
+                        the squares on the bingoboard is synchronized between them in
+                        real time, letting you plan and keep track of bingo progress together.
+                    </p>
+                    <p>
+                        Common applications of bingosync include team bingo "blackout" races like
+                        last year's
+                        <a href="http://forums.zeldaspeedruns.com/index.php?topic=1580.0">team bingo league</a>,
+                        this year's
+                        <a href="http://forums.zeldaspeedruns.com/index.php?topic=1940.0">international bingo league</a>,
+                        spontaneous team bingo blackouts, and competetive bingo "lockouts".
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    About Bingo and Bingosync
+                </div>
+                <div class="panel-body">
+                    <p>
+                        As far as I'm aware, the practice of speedrunning bingo races
+                        originated on
+                        <a href="http://www.speedrunslive.com">speedrunslive.com</a>.
+                        You can view the speedrunslive bingo generators
+                        <a href="http://www.speedrunslive.com/tools/">here</a>.
+                        Bingosync's generators are copied from speedrunslive so you can get
+                        the same board on each site by using the same seed.
+                    </p>
+                    <p>
+                        About a year ago, the popular solution for "bingo-syncing" was
+                        <a href="http://bingosync.twitchtools.tv/">bingosync.twitchtools.tv</a>
+                        which appears to now be defunct. I wrote
+                        <a href="http://bingosync.com">bingosync.com</a>
+                        in order to replace
+                        <a href="http://bingosync.twitchtools.tv/">bingosync.twitchtools.tv</a>
+                        when I learned that it had shut down. Maybe someday I'll buy
+                        the twitchtools.tv domain and have it redirect to bingosync.com :)
+                    </p>
+                    <p>
+                        The source code for Bingosync is hosted on
+                        <a href="https://github.com/kbuzsaki/bingosync">github</a>,
+                        feel free to check it out or message me about it!
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    About Me
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Bingosync is written and maintained by me, Kyle Buzsaki. I go by
+                        the aliases "Saltor", "Saltor6", and "kbuzsaki".
+                    </p>
+                    <p>
+                        If you have any questions, requests, or suggestions, you can
+                        contact me on twitter
+                        <a href="https://twitter.com/saltor6">@Saltor6</a>,
+                        on twitch at
+                        <a href="https://twitch.tv/saltor6">twitch.tv/saltor6</a>,
+                        or on the speedrunslive irc where I go by "Saltor". I idle in the
+                        #zelda and #bingoleague channels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <a href="{% url 'views.history' %}">Room History</a>
+         ·
+        <a href="{% url 'views.about' %}">About</a>
+         ·
+        <a href="https://twitter.com/saltor6">Twitter</a>
+         ·
+        <a href="https://github.com/kbuzsaki/bingosync">Github</a>
+    </div>
+</div>
+{% endblock %}
+
+
