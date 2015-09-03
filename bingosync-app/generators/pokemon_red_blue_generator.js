@@ -215,346 +215,140 @@ bingoGenerator = function(bingoList, opts) {
         }
         return bingoBoard;
     }
-}
-var bingoList = [];
-bingoList[1] = [{
-    name: "Red Coin Star in WF",
-    types: ["WF"]
-}, {
-    name: "100 Coin Star in WF",
-    types: ["WF"]
-}, {
-    name: "Peach's Slide x 2",
-    types: ["secrets"]
-}, {
-    name: "Reach the Castle Roof",
-    types: ["lives"]
-}, {
-    name: "Lose Mario's Hat",
-    types: ["losehat"]
-}];
-bingoList[2] = [{
-    name: "5 Castle Secret Stars",
-    types: ["secrets"]
-}, {
-    name: "Beat the King in BOB ",
-    types: ["BOB"]
-}, {
-    name: "Two Bowser Stage Red Coin Stars",
-    types: ["bowserreds"]
-}, {
-    name: "Collect 120 Coins in one stage",
-    types: ["WF", "hundredcoin"]
-}, {
-    name: "100 Coin Star in CCM",
-    types: ["CCM"]
-}];
-bingoList[3] = [{
-    name: "Open 3 cannons",
-    types: ["cannons"]
-}, {
-    name: "Secret Aquarium Star",
-    types: ["aquarium"]
-}, {
-    name: "15 Lives",
-    types: ["lives"]
-}, {
-    name: "Collect 130 Coins in one stage",
-    types: ["hundredcoin"]
-}];
-bingoList[4] = [{
-    name: "Mario Wings to the Sky BOB",
-    types: ["BOB", "wingcap"]
-}, {
-    name: "Red Coin Star in HMC",
-    types: ["HMC"]
-}, {
-    name: "All Stars in Whomps",
-    types: ["WF"]
-}, {
-    name: "Three 100 Coin Stars",
-    types: ["hundredcoin"]
-}, {
-    name: "BITS Red Coin Star",
-    types: ["bowserreds"]
-}];
-bingoList[5] = [{
-    name: "Red Coin Star in TTM",
-    types: ["TTM"]
-}, {
-    name: "Cruiser Crossing the Rainbow RR",
-    types: ["RR"]
-}, {
-    name: "Collect 140 Coins in one stage",
-    types: ["hundredcoin"]
-}, {
-    name: "Secrets Star in THI",
-    types: ["THI"]
-}];
-bingoList[6] = [{
-    name: "Secrets Star in WDW",
-    types: ["WDW"]
-}, {
-    name: "Red Coin Star in BOB",
-    types: ["BOB"]
-}, {
-    name: "2 Cap Stage Stars",
-    types: ["wingcap", "vanishcap", "metalcap", "secrets"]
-}, {
-    name: "Red Coin Star in BBH",
-    types: ["BBH"]
-}];
-bingoList[7] = [{
-    name: "7 Castle Secret Stars",
-    types: ["secrets"]
-}, {
-    name: "100 Coin Star in LLL",
-    types: ["LLL"]
-}, {
-    name: "20 lives",
-    types: ["lives"]
-}, {
-    name: "Red Coin Star in SSL",
-    types: ["SSL", "wingcap"]
-}];
-bingoList[8] = [{
-    name: "All Stars in CCM",
-    types: ["CCM"]
-}, {
-    name: "100 Coin Star in JRB",
-    types: ["JRB"]
-}, {
-    name: "Red Coin Star in WDW",
-    types: ["WDW"]
-}];
-bingoList[9] = [{
-    name: "Eye in the Secret Room BBH",
-    types: ["BBH", "vanishcap"]
-}, {
-    name: "Three Bowser Stage Red Coin Stars",
-    types: ["bowserreds", "secrets"]
-}, {
-    name: "100 Coin Star in WDW",
-    types: ["WDW"]
-}, {
-    name: "100 Coin Star in TTC",
-    types: ["TTC"]
-}];
-bingoList[10] = [{
-    name: "At least 1 star from 10 stages",
-    types: ["starseach"]
-}, {
-    name: "100 Coin Star in SSL",
-    types: ["SSL"]
-}, {
-    name: "Into the Igloo SL",
-    types: ["SL", "vanishcap"]
-}, {
-    name: "25 Lives",
-    types: ["lives"]
-}, {
-    name: "Open 5 Cannons",
-    types: ["cannons"]
-}];
-bingoList[11] = [{
-    name: "Red Coin Star in JRB",
-    types: ["JRB"]
-}, {
-    name: "Mystery of the Monkey Cage TTM",
-    types: ["TTM"]
-}, {
-    name: "Top Floor Cloud Stage Star",
-    types: ["wingcap"]
-}, {
-    name: "Collect the Caps DDD",
-    types: ["DDD", "vanishcap"]
-}];
-bingoList[12] = [{
-    name: "3 Cap Stage Stars",
-    types: ["wingcap", "vanishcap", "metalcap", "secrets"]
-}, {
-    name: "100 Coin Star in TTM",
-    types: ["TTM"]
-}, {
-    name: "4 Stars each from SSL and HMC",
-    types: ["SSL", "HMC"]
-}, {
-    name: "All Stars in LLL",
-    types: ["LLL"]
-}, {
-    name: "Four 100 Coin Stars",
-    types: ["hundredcoin"]
-}];
-bingoList[13] = [{
-    name: "Race Through Downtown WDW",
-    types: ["WDW", "vanishcap"]
-}, {
-    name: "100 Coin Star in HMC",
-    types: ["HMC"]
-}, {
-    name: "100 Coin Star in THI",
-    types: ["THI"]
-}, {
-    name: "100 Coin Star in DDD",
-    types: ["DDD"]
-}, {
-    name: "4 Stars each from BOB and CCM",
-    types: ["BOB", "CCM"]
-}];
-bingoList[14] = [{
-    name: "100 Coin Star in RR",
-    types: ["RR"]
-}, {
-    name: "100 Coin Star in BOB",
-    types: ["BOB", "wingcap"]
-}, {
-    name: "30 Lives",
-    types: ["lives"]
-}, {
-    name: "100 Coin Star in BBH",
-    types: ["BBH"]
-}, {
-    name: "Open 7 Cannons",
-    types: ["cannons"]
-}];
-bingoList[15] = [{
-    name: "Defeat all 4 Mini-Bosses",
-    types: ["SSL", "THI"]
-}, {
-    name: "3 Stars each from JRB and BBH",
-    types: ["JRB", "BBH"]
-}, {
-    name: "30 Total Stars",
-    types: ["manystar"]
-}, {
-    name: "100 Coin Star in SL",
-    types: ["SL", "vanishcap"]
-}, {
-    name: "Rematch with Koopa the Quick THI",
-    types: ["THI"]
-}];
-bingoList[16] = [{
-    name: "10 Castle Secret Stars",
-    types: ["secrets", "aquarium"]
-}, {
-    name: "At least 3 stars from 6 stages",
-    types: ["starseach", "manystar"]
-}, {
-    name: "At least 2 stars from 10 stages",
-    types: ["starseach", "manystar"]
-}, {
-    name: "All Stars in JRB",
-    types: ["JRB"]
-}, {
-    name: "5 Stars in SL",
-    types: ["SL"]
-}];
-bingoList[17] = [{
-    name: "3 Stars each from TTC and RR",
-    types: ["TTC", "RR"]
-}, {
-    name: "All Stars in HMC",
-    types: ["HMC"]
-}, {
-    name: "Five 100 Coin Stars",
-    types: ["hundredcoin", "starseach", "lives"]
-}, {
-    name: "Collect 140 Coins in two stages",
-    types: ["hundredcoin"]
-}, {
-    name: "5 Stars in DDD",
-    types: ["DDD"]
-}];
-bingoList[18] = [{
-    name: "4 Stars each from JRB and DDD",
-    types: ["JRB", "DDD"]
-}, {
-    name: "3 Stars each from THI and TTM",
-    types: ["THI", "TTM"]
-}, {
-    name: "All Stars in BOB",
-    types: ["BOB"]
-}];
-bingoList[19] = [{
-    name: "All Stars in TTC",
-    types: ["TTC"]
-}, {
-    name: "Six 100 Coin Stars",
-    types: ["hundredcoin", "starseach", "lives"]
-}, {
-    name: "5 Stars in BBH",
-    types: ["BBH"]
-}, {
-    name: "Open 9 Cannons",
-    types: ["cannons"]
-}];
-bingoList[20] = [{
-    name: "All Stars in SSL",
-    types: ["SSL"]
-}, {
-    name: "6 Stars in WDW",
-    types: ["WDW"]
-}, {
-    name: "6 Stars in SSL",
-    types: ["SSL"]
-}];
-bingoList[21] = [{
-    name: "At least 1 Star from each Stage",
-    types: ["starseach", "manystar"]
-}, {
-    name: "Win All 3 Character Races",
-    types: ["BOB", "CCM", "THI"]
-}, {
-    name: "At least 3 stars from 8 stages",
-    types: ["starseach", "manystar"]
-}, {
-    name: "All Stars in TTM",
-    types: ["TTM"]
-}];
-bingoList[22] = [{
-    name: "12 Castle Secret Stars",
-    types: ["secrets", "aquarium"]
-}, {
-    name: "35 Total Stars",
-    types: ["manystar"]
-}, {
-    name: "6 Stars in RR",
-    types: ["RR"]
-}];
-bingoList[23] = [{
-    name: "Star #1 from each stage",
-    types: ["starseach"]
-}, {
-    name: "Top Floor Toad Star",
-    types: ["manystar"]
-}, {
-    name: "All Stars in Snowmans",
-    types: ["SL", "vanishcap"]
-}, {
-    name: "6 Stars in BBH",
-    types: ["BBH"]
-}];
-bingoList[24] = [{
-    name: "6 Stars in DDD",
-    types: ["DDD"]
-}, {
-    name: "All Stars in WDW",
-    types: ["WDW", "vanishcap"]
-}, {
-    name: "All Stars in THI",
-    types: ["THI"]
-}];
-bingoList[25] = [{
-    name: "All Stars in BBH",
-    types: ["BBH", "vanishcap"]
-}, {
-    name: "Open All 11 Cannons",
-    types: ["cannons"]
-}, {
-    name: "All Stars in DDD",
-    types: ["DDD", "vanishcap"]
-}, {
-    name: "All Stars in RR",
-    types: ["RR"]
-}];
-
+};
+var bingoList=[];
+bingoList[1]=[{
+name:"TM 12 (Water Gun)",types:["watergun"]},{
+name:"Town Map",types:["map"]},{
+name:"TM 39 (Swift)",types:["swift"]},{
+name:"View the Space Shuttle Columbia",types:["space"]},];
+bingoList[2]=[{
+name:"Farfetch'd",types:["trades"]},{
+name:"Rattata",types:["lol"]},{
+name:"Vaporeon",types:["vapor"]},{
+name:"TM 40 (Skull Bash)",types:["safari"]},];
+bingoList[3]=[{
+name:"Kill or catch both Snorlaxes",types:["snorlax"]},{
+name:"TM 19 (Seismic Toss)",types:["seismic"]},{
+name:"Kill a Haunter",types:["haunt"]},{
+name:"Finish inside cut bush",types:["finish"]},];
+bingoList[4]=[{
+name:"TM 44 (Rest)",types:["rest"]},{
+name:"Any Pokemon with a multi-hit move",types:["fury"]},{
+name:"Good Rod",types:["rod"]},{
+name:"10 pokemon owned",types:["dex"]},];
+bingoList[5]=[{
+name:"4 Badges",types:["Badges"]},{
+name:"Clefable",types:["moon"]},{
+name:"Defeat all 3 starters",types:["tunnel"]},{
+name:"Any pokemon with 4 status moves",types:["moves"]},];
+bingoList[6]=[{
+name:"TM 10 (Double Edge)",types:["edge"]},{
+name:"Defeat 2 Engineers",types:["engineers"]},{
+name:"Pidgeotto",types:["pidge"]},{
+name:"Arcanine or Ninetales",types:["fires"]},{
+name:"20 TMs",types:["tm"]},];
+bingoList[7]=[{
+name:"Vileplume or Victreebell",types:["leafs"]},{
+name:"Beedrill or Butterfree",types:["bug"]},{
+name:"Any pokemon with 4 damage dealing special moves",types:["moves"]},{
+name:"Enter no Pokemon Centers",types:["heal","instant"]},{
+name:"Finish on the SS Anne",types:["finish"]},];
+bingoList[8]=[{
+name:"Teach TM 49 (Tri Attack)",types:["tm"]},{
+name:"Defeat Viridian Rival",types:["train"]},{
+name:"Raichu",types:["elec"]},{
+name:"3 HMs",types:["hm"]},{
+name:"Defeat 3 Scientists",types:["science"]},];
+bingoList[9]=[{
+name:"TM42 (Dream Eater)",types:["dream"]},{
+name:"Nidoking or Nidoqueen",types:["moon"]},{
+name:"2 PP Ups",types:["pp"]},{
+name:"Defeat all 8 trainers on Route 3",types:["train"]},{
+name:"Wigglytuff",types:["moon"]},];
+bingoList[10]=[{
+name:"Mr. Mime",types:["trades"]},{
+name:"Dugtrio",types:["trio"]},{
+name:"TM26 (Earthquake)",types:["silph"]},{
+name:"Use no repels",types:["repel","instant"]},{
+name:"One starting move on starter",types:["tackle"]},];
+bingoList[11]=[{
+name:"Ditto",types:["ditto"]},{
+name:"HM5 (Flash)",types:["hm"]},{
+name:"Hitmonchan or Hitmonlee",types:["fighting"]},{
+name:"Kadabra",types:["abra"]},{
+name:"TM 28 (Dig)",types:["tm"]},];
+bingoList[12]=[{
+name:"Starmie",types:["waters"]},{
+name:"Cloyster",types:["waters"]},{
+name:"Defeat 7 Pikachus",types:["pika"]},{
+name:"Defeat 4 Beauties",types:["beauty"]},];
+bingoList[13]=[{
+name:"Tentacruel",types:["Surf"]},{
+name:"Any pokemon with a 5 PP non-TM move",types:["rock"]},{
+name:"Super Rod",types:["super"]},{
+name:"Lapras",types:["Silph"]},];
+bingoList[14]=[{
+name:"TM 41 (Softboiled)",types:["soft"]},{
+name:"Gyarados",types:["Gyarados"]},{
+name:"Defeat 5 Jugglers",types:["balls"]},{
+name:"Defeat all 16 trainers on Routes 24 and 25",types:["nugget"]},];
+bingoList[15]=[{
+name:"Onix",types:["rock"]},{
+name:"Golbat",types:["golbat"]},{
+name:"Any Pokemon with Stomp",types:["safari"]},{
+name:"Buy no items outside of Celadon Mart",types:["items","instant"]},];
+bingoList[16]=[{
+name:"4 different level 30 Pokemon",types:["team"]},{
+name:"Kabuto or Omanyte",types:["fossil"]},{
+name:"4 Rare Candies",types:["candy"]},{
+name:"TM16 (Payday)",types:["payday"]},{
+name:"6 different Poison type Pokemon",types:["items"]},];
+bingoList[17]=[{
+name:"Charmeleon",types:["starter"]},{
+name:"Ivysaur",types:["starter"]},{
+name:"Tangela",types:["tangela"]},{
+name:"Venomoth",types:["venomoth"]},];
+bingoList[18]=[{
+name:"20 pokemon owned",types:["dex"]},{
+name:"5 Badges",types:["badges"]},{
+name:"Master Ball",types:["silph"]},{
+name:"Squirtle",types:["starter"]},{
+name:"Silph Scope",types:["hideout"]},];
+bingoList[19]=[{
+name:"Venusaur",types:["starter"]},{
+name:"Defeat all 15 trainers in Rock Tunnel",types:["tunnel"]},{
+name:"Kill a Parasect",types:["parasect"]},{
+name:"Psyduck",types:["Seafoam"]},];
+bingoList[20]=[{
+name:"Graveler",types:["rock"]},{
+name:"Electrode",types:["elec"]},{
+name:"Defeat all 12 trainers in Mt Moon",types:["mt"]},{
+name:"Dewgong",types:["seafoam"]},];
+bingoList[21]=[{
+name:"TM 31 (Mimic)",types:["mimic"]},{
+name:"Charizard",types:["starter"]},{
+name:"Arbok or Sandslash",types:["raise"]},{
+name:"$0",types:["money"]},];
+bingoList[22]=[{
+name:"Magnemite",types:["plant"]},{
+name:"$75,000",types:["money"]},{
+name:"6 Badges",types:["badges"]},{
+name:"Defeat a Slowbro",types:["Slowbro"]},];
+bingoList[23]=[{
+name:"Cubone",types:["cubone"]},{
+name:"Aerodactyl",types:["fossil"]},{
+name:"Hypno",types:["raise"]},{
+name:"Defeat all 17 trainers aboard the SS Anne",types:["anne"]},{
+name:"Defeat 3 Burglars",types:["robber"]},];
+bingoList[24]=[{
+name:"Magmar or Electabuzz",types:["troll"]},{
+name:"Volcanobadge",types:["badges"]},{
+name:"Persian or Primeape",types:["raise"]},{
+name:"Do not use any TMs",types:["tm","instant"]},{
+name:"Release starter before level 11.",types:["starter"]},];
+bingoList[25]=[{
+name:"Chansey or Kangaskhan or Tauros",types:["safari"]},{
+name:"Any level 50 pokemon",types:["zapdos"]},{
+name:"70 pokemon seen",types:["dex"]},{
+name:"30 Pokemon owned",types:["dex"]},];

@@ -29,9 +29,15 @@ def reload_generator_source():
     return full_js
 
 CACHED_FILES_BY_NAME = {
-    "oot": "generators/oot_generator.js",
-    "sm64": "generators/sm64_generator.js",
-    "mm": "generators/mm_generator.js",
+    "ocarina_of_time": "generators/ocarina_of_time_generator.js",
+    "super_mario_64": "generators/super_mario_64_generator.js",
+    "majoras_mask": "generators/majoras_mask_generator.js",
+    "super_metroid": "generators/super_metroid_generator.js",
+    "castlevania_sotn": "generators/castlevania_sotn_generator.js",
+    "super_mario_world": "generators/super_mario_world_generator.js",
+    "pokemon_red_blue": "generators/pokemon_red_blue_generator.js",
+    "pokemon_crystal": "generators/pokemon_crystal_generator.js",
+    "donkey_kong_64": "generators/donkey_kong_64_generator.js",
 }
 
 def load_cached_generator_source(game_name):

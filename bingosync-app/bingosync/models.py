@@ -108,17 +108,18 @@ class Room(models.Model):
 
 @unique
 class GameType(Enum):
-    oot = 1
-    sm64 = 2
-    mm = 3
+    ocarina_of_time = 1
+    super_mario_64 = 2
+    majoras_mask = 3
+    super_metroid = 4
+    castlevania_sotn = 5
+    super_mario_world = 6
+    pokemon_red_blue = 7
+    pokemon_crystal = 8
+    donkey_kong_64 = 9
 
     def __str__(self):
-        if self == GameType.oot:
-            return "OoT"
-        elif self == GameType.sm64:
-            return "SM64"
-        elif self == GameType.mm:
-            return "MM"
+        return GAME_TYPE_NAMES[self]
 
     @staticmethod
     def for_value(value):
@@ -130,6 +131,19 @@ class GameType(Enum):
     @staticmethod
     def choices():
         return [(game_type.value, str(game_type)) for game_type in GameType]
+
+GAME_TYPE_NAMES = {
+    GameType.ocarina_of_time: "Zelda: OoT",
+    GameType.super_mario_64: "SM64",
+    GameType.majoras_mask: "Zelda: MM",
+    GameType.super_metroid: "Super Metroid",
+    GameType.castlevania_sotn: "CV: SotN",
+    GameType.super_mario_world: "SMW",
+    GameType.pokemon_red_blue: "Poké Red/Blue",
+    GameType.pokemon_crystal: "Poké Crystal",
+    GameType.donkey_kong_64: "DK64",
+}
+
 
 class Game(models.Model):
     room = models.ForeignKey(Room)
