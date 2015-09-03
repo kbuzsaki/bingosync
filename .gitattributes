@@ -1,0 +1,3 @@
+bingosync-app/generators/* linguist-vendored
+bingosync-app/static/jquery.min.js linguist-vendored
+bingosync-app/static/bootstrap.min.css linguist-vendored
