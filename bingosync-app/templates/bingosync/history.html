@@ -23,7 +23,7 @@
                             <th>Created</th>
                             <th>Game</th>
                             <th>Seed</th>
-                            <th>Active Players</th>
+                            <th>Total Players</th>
                         </thead>
                         <tbody>
                         {% for room in rooms %}
@@ -33,7 +33,7 @@
                                 <td title="{{ room.created_date }}">{{ room.created_date|timesince }} ago</td>
                                 <td>{{ room.current_game.game_type }}</td>
                                 <td>{{ room.current_game.seed }}</td>
-                                <td>{{ room.connected_players|length }}</td>
+                                <td>{{ room.players|length }}</td>
                             </tr>
                         {% endfor %}
                         </tbody>
