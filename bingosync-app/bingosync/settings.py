@@ -19,15 +19,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
+IS_PROD = False
+
 from . import secret_settings
 SECRET_KEY = secret_settings.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = not IS_PROD
 
-IS_PROD = False
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -134,6 +134,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
+
+STATIC_ROOT = '/var/www/bingosync.com/static/'
 
 BASE_SOCKETS_URL = "sockets.bingosync.com" if IS_PROD else "127.0.0.1:8888"
 SOCKETS_PUBLISH_URL = "http://" + BASE_SOCKETS_URL
