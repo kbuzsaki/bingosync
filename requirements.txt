@@ -1,0 +1,8 @@
+Django==1.8.4
+PyExecJS==1.1.0
+django-bootstrap-form==3.2
+django-suit==0.2.14
+psycopg2==2.6.1
+requests==2.7.0
+termcolor==1.1.0
+tornado==4.2.1
