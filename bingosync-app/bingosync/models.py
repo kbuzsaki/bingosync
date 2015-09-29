@@ -230,6 +230,7 @@ class Player(models.Model):
     name = models.CharField(max_length=50)
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    is_spectator = models.BooleanField()
 
     @staticmethod
     def get_for_encoded_uuid(encoded_player_uuid):
@@ -245,6 +246,8 @@ class Player(models.Model):
 
     @property
     def color(self):
+        if self.is_spectator:
+            return Color.blank
         return Color.for_value(self.color_value)
 
     @property
@@ -261,10 +264,14 @@ class Player(models.Model):
         return color_event
 
     def to_json(self):
+        is_spectator = "false";
+        if (self.is_spectator):
+            is_spectator = "true"
         return {
             "uuid": self.encoded_uuid,
             "name": self.name,
-            "color": self.color.name
+            "color": self.color.name,
+            "is_spectator": is_spectator
         }
 
 class Event(models.Model):

@@ -9,7 +9,7 @@
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
         <div class="col-md-6">
             <div class="fill-parent" style="text-align: center">
-                {% include 'bingosync/color_chooser.html' %}
+                {% if player.is_spectator == False %} {% include 'bingosync/color_chooser.html' %} {% endif %}
                 <div style="display: inline-block;">
                     {% include 'bingosync/board.html' %}
                 </div>
@@ -51,14 +51,15 @@
         window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
 
         // asynchronously load and populate the board
-        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"));
+        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), "{{ player.is_spectator }}" === "True");
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
                              socketsUrl, chatUrl, chatHistoryUrl, temporarySocketKey);
 
         // enable choosing color
-        initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);
+        if ("{{ player.is_spectator }}" === "False")
+            initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));

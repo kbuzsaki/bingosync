@@ -24,7 +24,7 @@ function setPlayerColor($playerEntry, new_color) {
     $playerGoalCounter.addClass(getSquareColorClass(new_color));
 }
 
-function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
+function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, spectator) {
     function updateSquare($square, json) {
         $square.html(json["name"]);
         setSquareColor($square, json["color"]);
@@ -44,39 +44,41 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser) {
         }
     });
 
-    $board.find(".square").on("click", function(ev) {
-        var goal = $(this).html();
-        var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
-        var chosenColorClass = getSquareColorClass(chosenColor);
+    if (!spectator) {
+        $board.find(".square").on("click", function(ev) {
+            var goal = $(this).html();
+            var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
+            var chosenColorClass = getSquareColorClass(chosenColor);
 
-        var assignedColor;
-        // the square is blank and we're painting it
-        if(getSquareColorClass("blank") in $(this).getClasses()) {
-            assignedColor = chosenColor;
-        }
-        // the square is colored the same as the chosen color so we're clearing it
-        else if(chosenColorClass in $(this).getClasses()) {
-            assignedColor = "blank";
-        }
-        // the square is colored a different color, so don't do anything
-        else {
-            return;
-        }
-
-        $.ajax({
-            "url": goalSelectedUrl,
-            "type": "PUT",
-            "data": JSON.stringify({
-                "room": window.sessionStorage.getItem("room"),
-                // substring to get rid of the 'slot' in e.g. 'slot12'
-                "slot": $(this).attr("id").substring(4),
-                "color": assignedColor
-            }),
-            "error": function(result) {
-                console.log(result);
+            var assignedColor;
+            // the square is blank and we're painting it
+            if(getSquareColorClass("blank") in $(this).getClasses()) {
+                assignedColor = chosenColor;
             }
+            // the square is colored the same as the chosen color so we're clearing it
+            else if(chosenColorClass in $(this).getClasses()) {
+                assignedColor = "blank";
+            }
+            // the square is colored a different color, so don't do anything
+            else {
+                return;
+            }
+
+            $.ajax({
+                "url": goalSelectedUrl,
+                "type": "PUT",
+                "data": JSON.stringify({
+                    "room": window.sessionStorage.getItem("room"),
+                    // substring to get rid of the 'slot' in e.g. 'slot12'
+                    "slot": $(this).attr("id").substring(4),
+                    "color": assignedColor
+                }),
+                "error": function(result) {
+                    console.log(result);
+                }
+            });
         });
-    });
+    }
 
     function addRowHover(name) {
         $board.find("#" + name).hover(
@@ -160,7 +162,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         if(playerColor === undefined) {
             playerColor = getPlayerColorClass(playerJson["color"]);
         }
-        var name = $("<span>", {"class": "chat-name " + playerColor, html: playerJson["name"]}).toHtml();
+        var playerName = playerJson["name"];
+        if (playerJson["is_spectator"] === "true")
+            playerName += "(spectator)"
+        var name = $("<span>", {"class": "chat-name " + playerColor, html: playerName}).toHtml();
         return name;
     }
     function processChatJson(json) {
@@ -169,6 +174,8 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         // connection and color messages don't have a player span, so do them first
         if (json["type"] === "connection") {
             var connectionMessage = json["player"]["name"] + " " + json["event_type"];
+            if (json["player"]["is_spectator"] == "true")
+                connectionMessage = json["player"]["name"] + "(spectator) " + json["event_type"];
             return $("<div>", {"class": "connection-message", html: " - " + connectionMessage}).toHtml();
         }
         else if(json["type"] === "color") {
@@ -242,7 +249,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected") {
                 // only insert if the uuid is not already listed
-                if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
+                if($playersPanel.find("#" + json["player"]["uuid"]).length === 0 && json["player"]["is_spectator"] === "false") {
                     var colorClass = getSquareColorClass(json["player"]["color"]);
                     var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
                     var playerName = $("<span>", {"class": "playername", html: " " + json["player"]["name"]});

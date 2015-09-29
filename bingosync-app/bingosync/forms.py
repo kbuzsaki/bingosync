@@ -18,6 +18,7 @@ class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
+    is_spectator = forms.BooleanField(label="Spectator", required=False)
     game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput())
 
@@ -27,6 +28,7 @@ class RoomForm(forms.Form):
         nickname = self.cleaned_data["nickname"]
         game_type = GameType.for_value(int(self.cleaned_data["game_type"]))
         seed = self.cleaned_data["seed"]
+        is_spectator = self.cleaned_data["is_spectator"]
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
@@ -34,7 +36,7 @@ class RoomForm(forms.Form):
             room = Room(name=room_name, passphrase=encrypted_passphrase)
             room.save()
             game = Game.from_board(board_json, room=room, game_type_value=game_type.value, seed=seed)
-            creator = Player(room=room, name=nickname)
+            creator = Player(room=room, name=nickname, is_spectator=is_spectator)
             creator.save()
         return room
 
@@ -43,6 +45,7 @@ class JoinRoomForm(forms.Form):
     room_name = make_read_only_char_field(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     creator_name = make_read_only_char_field(label="Creator", max_length=PLAYER_NAME_MAX_LENGTH)
     game_name = make_read_only_char_field(label="Game")
+    is_spectator = forms.BooleanField(label="Spectator", required=False)
     player_name = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
 
@@ -73,8 +76,9 @@ class JoinRoomForm(forms.Form):
     def create_player(self):
         room = Room.get_for_encoded_uuid(self.cleaned_data["encoded_room_uuid"])
         nickname = self.cleaned_data["player_name"]
+        is_spectator = self.cleaned_data["is_spectator"]
 
-        player = Player(room=room, name=nickname)
+        player = Player(room=room, name=nickname, is_spectator=is_spectator)
         player.save()
         return player
 
