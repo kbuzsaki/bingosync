@@ -107,6 +107,11 @@ def room_feed(request, encoded_room_uuid):
     all_jsons = [event.to_json() for event in all_events]
     return JsonResponse(all_jsons, safe=False)
 
+def room_disconnect(request, encoded_room_uuid):
+    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    _clear_session_player(request.session, room)
+    return redirect("rooms")
+
 @csrf_exempt
 def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
@@ -207,6 +212,12 @@ def _get_session_player(session, room):
         return Player.get_for_encoded_uuid(encoded_player_uuid)
     except KeyError:
         raise NotAuthenticatedError()
+
+def _clear_session_player(session, room):
+    # have to set the session this way so that it saves properly
+    authorized_rooms = session.get(AUTHORIZED_ROOMS, {})
+    del authorized_rooms[room.encoded_uuid]
+    session[AUTHORIZED_ROOMS] = authorized_rooms
 
 def _save_session_player(session, player):
     # have to set the session this way so that it saves properly

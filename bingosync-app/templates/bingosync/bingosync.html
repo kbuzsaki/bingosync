@@ -3,8 +3,14 @@
 
 {% block page_body %}
 <div class="container" style="height: 97vh">
-    <div>
-        <h1><a href="{% url 'views.rooms' %}">Bingosync</a> - {{ room.name }}</h1>
+    <div style="position: relative">
+        <h1 style="display: inline-block;"><a href="{% url 'views.rooms' %}">Bingosync</a> - {{ room.name }}</h1>
+        <h4 style="display: inline-block; position: absolute; right: 0; bottom: 0;">
+            {% if player.is_spectator %}Spectating{% else %}Connected{% endif %} as {{ player.name }}
+            <a class="btn btn-default" href="{% url 'views.room_disconnect' room.encoded_uuid %}">
+                Disconnect
+            </a>
+        </h4>
     </div>
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
         <div class="col-md-6">
