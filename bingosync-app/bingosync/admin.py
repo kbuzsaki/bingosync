@@ -93,7 +93,7 @@ disconnect_players.short_description = "Mark players disconnected"
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
-    list_display = ["__str__", "created_date", "connected", "room", "color"]
+    list_display = ["__str__", "created_date", "connected", "is_spectator", "room", "color"]
     actions = [disconnect_players]
 
 @admin.register(ChatEvent)
