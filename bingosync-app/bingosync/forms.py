@@ -18,9 +18,9 @@ class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
-    is_spectator = forms.BooleanField(label="Spectator", required=False)
     game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput())
+    is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
@@ -45,9 +45,9 @@ class JoinRoomForm(forms.Form):
     room_name = make_read_only_char_field(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     creator_name = make_read_only_char_field(label="Creator", max_length=PLAYER_NAME_MAX_LENGTH)
     game_name = make_read_only_char_field(label="Game")
-    is_spectator = forms.BooleanField(label="Spectator", required=False)
     player_name = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
+    is_spectator = forms.BooleanField(label="Join as Spectator", required=False)
 
     @staticmethod
     def for_room(room):
