@@ -6,7 +6,7 @@
     </div>
     <div id="players-panel" class="panel-body">
     {% for player in room.connected_players %}
-        {% if player.is_spectator == False %}
+        {% if not player.is_spectator %}
         <div id="{{ player.encoded_uuid }}">
             <span class="goalcounter {{ player.color.goal_class }}">
                 {{ game|num_goals:player.color }}

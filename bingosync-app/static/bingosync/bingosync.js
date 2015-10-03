@@ -24,7 +24,7 @@ function setPlayerColor($playerEntry, new_color) {
     $playerGoalCounter.addClass(getSquareColorClass(new_color));
 }
 
-function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, spectator) {
+function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
         $square.html(json["name"]);
         setSquareColor($square, json["color"]);
@@ -44,7 +44,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, spect
         }
     });
 
-    if (!spectator) {
+    if (!isSpectator) {
         $board.find(".square").on("click", function(ev) {
             var goal = $(this).html();
             var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
@@ -236,7 +236,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         chatSocket.send(JSON.stringify({"socket_key": socketKey}));
     };
     chatSocket.onmessage = function (evt) {
-        json = JSON.parse(evt.data);
+        var json = JSON.parse(evt.data);
         console.log(json);
         json = $.escapeHtml(json);
         console.log(json);
