@@ -264,14 +264,11 @@ class Player(models.Model):
         return color_event
 
     def to_json(self):
-        is_spectator = "false";
-        if (self.is_spectator):
-            is_spectator = "true"
         return {
             "uuid": self.encoded_uuid,
             "name": self.name,
             "color": self.color.name,
-            "is_spectator": is_spectator
+            "is_spectator": self.is_spectator
         }
 
 class Event(models.Model):

@@ -163,8 +163,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             playerColor = getPlayerColorClass(playerJson["color"]);
         }
         var playerName = playerJson["name"];
-        if (playerJson["is_spectator"] === "true")
-            playerName += "(spectator)"
+        if (playerJson["is_spectator"]) {
+            playerName += " (spectator)";
+        }
         var name = $("<span>", {"class": "chat-name " + playerColor, html: playerName}).toHtml();
         return name;
     }
@@ -173,9 +174,12 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
 
         // connection and color messages don't have a player span, so do them first
         if (json["type"] === "connection") {
-            var connectionMessage = json["player"]["name"] + " " + json["event_type"];
-            if (json["player"]["is_spectator"] == "true")
-                connectionMessage = json["player"]["name"] + "(spectator) " + json["event_type"];
+            var connectionPlayerName = json["player"]["name"];
+            if (json["player"]["is_spectator"]) {
+                connectionPlayerName += " (spectator)";
+            }
+
+            var connectionMessage = connectionPlayerName + " " + json["event_type"];
             return $("<div>", {"class": "connection-message", html: " - " + connectionMessage}).toHtml();
         }
         else if(json["type"] === "color") {
@@ -247,9 +251,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             updateGoalCounters($board, $playersPanel);
         }
         else if(json["type"] === "connection") {
-            if(json["event_type"] === "connected") {
+            if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
                 // only insert if the uuid is not already listed
-                if($playersPanel.find("#" + json["player"]["uuid"]).length === 0 && json["player"]["is_spectator"] === "false") {
+                if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
                     var colorClass = getSquareColorClass(json["player"]["color"]);
                     var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
                     var playerName = $("<span>", {"class": "playername", html: " " + json["player"]["name"]});

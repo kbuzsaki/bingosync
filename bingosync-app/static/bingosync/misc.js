@@ -48,6 +48,9 @@ $.escapeHtml = function(json) {
     else if(json.constructor === String) {
         return $("<div>").text(json).html();
     }
+    else {
+        return json;
+    }
 };
 
 
