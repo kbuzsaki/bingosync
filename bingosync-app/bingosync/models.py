@@ -230,7 +230,7 @@ class Player(models.Model):
     name = models.CharField(max_length=50)
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
-    is_spectator = models.BooleanField()
+    is_spectator = models.BooleanField("Is Spectator", default=False)
 
     @staticmethod
     def get_for_encoded_uuid(encoded_player_uuid):

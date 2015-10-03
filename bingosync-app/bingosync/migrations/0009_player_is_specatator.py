@@ -14,6 +14,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='player',
             name='is_spectator',
-            field=models.BooleanField()
+            field=models.BooleanField(default=False, verbose_name='Is Spectator'),
         ),
     ]
+
