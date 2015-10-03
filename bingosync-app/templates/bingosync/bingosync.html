@@ -9,7 +9,7 @@
     <div class="row" style="height: calc(100% - 70px); margin-bottom: 20px;">
         <div class="col-md-6">
             <div class="fill-parent" style="text-align: center">
-                {% if player.is_spectator == False %} {% include 'bingosync/color_chooser.html' %} {% endif %}
+                    {% include 'bingosync/color_chooser.html' %}
                 <div style="display: inline-block;">
                     {% include 'bingosync/board.html' %}
                 </div>
@@ -57,9 +57,10 @@
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
                              socketsUrl, chatUrl, chatHistoryUrl, temporarySocketKey);
 
-        // enable choosing color
-        if ("{{ player.is_spectator }}" === "False")
+        {% if not player.is_spectator %}
+            // enable choosing color
             initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);
+        {% endif %}
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
