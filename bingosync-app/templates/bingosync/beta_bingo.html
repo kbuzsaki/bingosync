@@ -36,7 +36,12 @@
 			<div id="about_bingo">
 				<h1>OoT Bingo</h1>
 				<div style="clear:both;"></div>
-                <input id="stats-button" type="button" value="View Goal Stats" />
+                <div>
+                    <input id="stats-button" type="button" value="View Goal Stats" />
+                </div>
+                <div>
+                <input id="new-card-button" type="button" value="Generate New Card" />
+                </div>
                 <p></p>
 				<p>This is a "Bingo" board for Ocarina of Time races.</p>
 				<p>To win, you must complete 5 of the tasks in a row horizontally, vertically, or diagonally.</p>
@@ -131,6 +136,10 @@
     $(document).ready(function() {
         $("#stats-button").on("click", function() {
             window.location = "{% url 'views.beta_stats' %}"
+        });
+        $("#new-card-button").on("click", function() {
+            var newSeed = Math.ceil(999999 * Math.random()).toString();
+            window.location = ("{% url 'views.beta_bingo' %}" + "?seed=" + newSeed);
         });
 
         $.ajax({
