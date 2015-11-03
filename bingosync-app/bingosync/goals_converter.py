@@ -7,6 +7,9 @@ import traceback
 import re
 from io import StringIO
 
+WATERSKULLS = "waterskulls"
+NOT_WATERSKULLS = "not_waterskulls"
+OUTPUT_TYPE = NOT_WATERSKULLS
 
 class ValueColumn:
 
@@ -119,15 +122,30 @@ def rows_to_dict(header, rows):
         "items": []
     }
 
+    # compatibility line
+    if OUTPUT_TYPE == NOT_WATERSKULLS:
+        goals_by_difficulty = [list() for _ in range(26)]
+
     for row in rows:
         try:
             if any(col for col in row):
                 goal = row_to_dict(synergy_header, row)
                 goals["items"].append(goal)
+
+                # compatibility lines
+                if OUTPUT_TYPE == NOT_WATERSKULLS:
+                    goal["name"] = goal["payload"]["name"]
+                    goal["jp"] = goal["payload"]["jp"]
+                    difficulty = goal["difficulty"]
+                    goals_by_difficulty[difficulty].append(goal)
             else:
                 break
         except Exception as e:
             raise RowConversionException(row)
+
+    # compatibility lines
+    if OUTPUT_TYPE == NOT_WATERSKULLS:
+        goals = goals_by_difficulty
 
     return goals
 

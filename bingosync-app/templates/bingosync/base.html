@@ -7,10 +7,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Bingosync is a tool for speedrunners that lets you collaboratively view and edit 'bingo boards' during speedrun races.">
     <meta name="keywords" content="bingo sync, bingosync, zelda bingo, ocarina of time bingo, speedrunning">
-    <link rel="stylesheet" type="text/css" href="{% static "bingosync/bootstrap.min.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
+    {% block page_head_styles %}
+        <link rel="stylesheet" type="text/css" href="{% static "bingosync/bootstrap.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "bingosync/style.css" %}">
+    {% endblock %}
     <script src="{% static "jquery.min.js" %}"></script>
     <script src="{% static "bingosync/misc.js" %}"></script>
+    {% block page_head %}
+    {% endblock %}
 </head>
 <body>
     {% block page_body %}

@@ -27,6 +27,8 @@ urlpatterns = [
     url(r'^history', views.history, name='history'),
     url(r'^convert', views.goal_converter, name='goal_converter'),
     url(r'^about', views.about, name='about'),
+    url(r'^beta/v9/card$', views.beta_bingo, name='beta_bingo'),
+    url(r'^beta/v9/stats$', views.beta_stats, name='beta_stats'),
     url(r'^board/(?P<seed>[0-9]+)$', views.board_view, name='board_view'),
     url(r'^board/(?P<seed>[0-9]+).json$', views.board_json, name='board_json'),
     url(r'^api/board/(?P<seed>[0-9]+)$', views.board_json, name='board_json'),
@@ -37,6 +39,7 @@ urlpatterns = [
     url(r'^api/connected/(?P<encoded_player_uuid>.+)$', views.user_connected, name='user_connected'),
     url(r'^api/disconnected/(?P<encoded_player_uuid>.+)$', views.user_disconnected, name='user_disconnected'),
     url(r'^api/socket/(?P<socket_key>.+)$', views.check_socket_key, name='check_socket_key'),
+    url(r'^api/v9/goal_list$', views.beta_bingo_list, name='beta_bingo_list'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

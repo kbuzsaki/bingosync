@@ -5,6 +5,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
 
 import json
+import time
 
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
@@ -198,6 +199,28 @@ def goal_converter(request):
 
     return render(request, "bingosync/convert.html", {"form": form})
 
+BETA_GOAL_LISTS_DIR = "./beta_goal_lists"
+LATEST_GOAL_LIST = BETA_GOAL_LISTS_DIR + "/latest.json"
+
+def beta_bingo(request):
+    # getting a post indicates that we should refresh
+    if request.method == "POST":
+        goals_json = json.loads(get_converted_goal_list())
+        backup_filename = BETA_GOAL_LISTS_DIR + "/" + time.strftime("%Y-%m-%d_%H-%M-%S.json")
+
+        with open(backup_filename, "w") as outfile:
+            json.dump(goals_json, outfile, sort_keys=True, indent=4)
+        with open(LATEST_GOAL_LIST, "w") as outfile:
+            json.dump(goals_json, outfile, sort_keys=True, indent=4)
+
+    return render(request, "bingosync/beta_bingo.html")
+
+def beta_stats(request):
+    return render(request, "bingosync/beta_stats.html")
+
+def beta_bingo_list(request):
+    goal_list = json.load(open(LATEST_GOAL_LIST))
+    return JsonResponse(goal_list, safe=False)
 
 # Helpers for interacting with sessions
 
