@@ -119,6 +119,7 @@ class GameType(Enum):
     donkey_kong_64 = 9
     pikmin = 10
     super_mario_sunshine = 11
+    pokemon_red_blue_randomizer = 12
 
     def __str__(self):
         return GAME_TYPE_NAMES[self]
@@ -146,6 +147,7 @@ GAME_TYPE_NAMES = {
     GameType.donkey_kong_64: "DK64",
     GameType.pikmin: "Pikmin",
     GameType.super_mario_sunshine: "SMS",
+    GameType.pokemon_red_blue_randomizer: "Poké Random",
 }
 
 

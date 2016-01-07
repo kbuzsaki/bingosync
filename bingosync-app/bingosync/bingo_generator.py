@@ -40,6 +40,7 @@ CACHED_FILES_BY_NAME = {
     "donkey_kong_64": "generators/donkey_kong_64_generator.js",
     "pikmin": "generators/pikmin_generator.js",
     "super_mario_sunshine": "generators/super_mario_sunshine_generator.js",
+    "pokemon_red_blue_randomizer": "generators/pokemon_red_blue_randomizer_generator.js",
 }
 
 def load_cached_generator_source(game_name):
