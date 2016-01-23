@@ -156,9 +156,7 @@ def select_color(request):
 @csrf_exempt
 def user_connected(request, encoded_player_uuid):
     player = Player.get_for_encoded_uuid(encoded_player_uuid)
-    connection_event = ConnectionEvent.make_connected_event(player)
-    connection_event.save()
-
+    connection_event = ConnectionEvent.atomically_connect(player)
     publish_connection_event(connection_event)
     return HttpResponse()
 
@@ -166,9 +164,7 @@ def user_connected(request, encoded_player_uuid):
 @csrf_exempt
 def user_disconnected(request, encoded_player_uuid):
     player = Player.get_for_encoded_uuid(encoded_player_uuid)
-    connection_event = ConnectionEvent.make_disconnected_event(player)
-    connection_event.save()
-
+    connection_event = ConnectionEvent.atomically_disconnect(player)
     publish_connection_event(connection_event)
     return HttpResponse()
 

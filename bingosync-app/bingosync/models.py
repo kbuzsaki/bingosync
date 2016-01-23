@@ -58,6 +58,7 @@ class Room(models.Model):
     name = models.CharField(max_length=255)
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
     passphrase = models.CharField(max_length=255)
+    active = models.BooleanField("Active", default=False)
 
     def __str__(self):
         return self.name
@@ -76,7 +77,7 @@ class Room(models.Model):
 
     @staticmethod
     def get_listed_rooms():
-        return [room for room in Room.objects.all() if room.active]
+        return Room.objects.filter(active=True)
 
     @property
     def encoded_uuid(self):
@@ -98,9 +99,9 @@ class Room(models.Model):
     def connected_players(self):
         return [player for player in self.players if player.connected]
 
-    @property
-    def active(self):
-        return len(self.connected_players) > 0
+    def update_active(self):
+        self.active = len(self.connected_players) > 0
+        self.save()
 
     @property
     def creator(self):
@@ -372,9 +373,25 @@ class ConnectionEvent(Event):
                                event=ConnectionEventType.connected.value)
 
     @staticmethod
+    def atomically_connect(player):
+        with transaction.atomic():
+            connected_event = ConnectionEvent.make_connected_event(player)
+            connected_event.save()
+            player.room.update_active()
+            return connected_event
+
+    @staticmethod
     def make_disconnected_event(player):
         return ConnectionEvent(player=player, player_color_value=player.color.value,
                                event=ConnectionEventType.disconnected.value)
+
+    @staticmethod
+    def atomically_disconnect(player):
+        with transaction.atomic():
+            disconnected_event = ConnectionEvent.make_disconnected_event(player)
+            disconnected_event.save()
+            player.room.update_active()
+            return disconnected_event
 
     def to_json(self):
         return {

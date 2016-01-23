@@ -32,12 +32,16 @@ class RoomForm(forms.Form):
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
-            board_json = game_type.generator_instance().get_card(seed)
             room = Room(name=room_name, passphrase=encrypted_passphrase)
             room.save()
+
+            board_json = game_type.generator_instance().get_card(seed)
             game = Game.from_board(board_json, room=room, game_type_value=game_type.value, seed=seed)
+
             creator = Player(room=room, name=nickname, is_spectator=is_spectator)
             creator.save()
+
+            room.update_active()
         return room
 
 class JoinRoomForm(forms.Form):
@@ -78,9 +82,13 @@ class JoinRoomForm(forms.Form):
         nickname = self.cleaned_data["player_name"]
         is_spectator = self.cleaned_data["is_spectator"]
 
-        player = Player(room=room, name=nickname, is_spectator=is_spectator)
-        player.save()
-        return player
+        with transaction.atomic():
+            player = Player(room=room, name=nickname, is_spectator=is_spectator)
+            player.save()
+
+            room.update_active()
+
+            return player
 
 
 class GoalListConverterForm(forms.Form):

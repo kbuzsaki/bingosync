@@ -86,8 +86,7 @@ class SquareAdmin(admin.ModelAdmin):
 
 def disconnect_players(modeladmin, request, queryset):
     for player in queryset:
-        connection_event = ConnectionEvent.make_disconnected_event(player)
-        connection_event.save()
+        ConnectionEvent.atomically_disconnect(player)
 disconnect_players.short_description = "Mark players disconnected"
 
 @admin.register(Player)
