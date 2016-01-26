@@ -137,7 +137,12 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = '/var/www/bingosync.com/static/'
 
-BASE_SOCKETS_URL = "sockets.bingosync.com" if IS_PROD else "127.0.0.1:8888"
-SOCKETS_PUBLISH_URL = "http://" + BASE_SOCKETS_URL
+INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
+PUBLIC_SOCKETS_URL = "sockets.bingosync.com"
+
+BASE_SOCKETS_URL = PUBLIC_SOCKETS_URL if IS_PROD else INTERNAL_SOCKETS_URL
 SOCKETS_URL = "ws://" + BASE_SOCKETS_URL
+
+# used for publishing events from django to tornado, so can always go across localhost
+SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
 
