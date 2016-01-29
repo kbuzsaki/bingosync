@@ -311,10 +311,10 @@ bingoGenerator = function(bingoList, opts) {
         }
     }
     return card;
-}
+};
 var bingoList = [];
 bingoList["info"] = {
-    version: "v8.4"
+    version: "v8.5"
 };
 bingoList[1] = [{
     name: "Bottled Fairy",
@@ -340,7 +340,7 @@ bingoList[1] = [{
     name: "Defeat a Skull Kid",
     jp: 'スタルキッド撃破',
     types: ["skullkid"],
-    child: "no"
+    child: "yes"
 }, {
     name: "At least 30 Deku Nuts",
     jp: 'デクの実30個以上',
@@ -457,6 +457,11 @@ bingoList[4] = [{
     child: "yes"
 }];
 bingoList[5] = [{
+    name: "3 unused keys in Gerudo Training Grounds",
+    jp: 'ゲルドの修練場の未使用のカギ3つ',
+    types: ["fortress"],
+    child: "yes"
+}, {
     name: "Bullet Bag (40)",
     jp: 'デクのタネ袋(40)',
     types: ["bulletbag", "deku"],
@@ -497,9 +502,9 @@ bingoList[5] = [{
     child: "no"
 }];
 bingoList[6] = [{
-    name: "Beat Dodongo's Cavern",
-    jp: 'ドドンゴの洞窟クリア',
-    types: ["dc", "fortress", "kd"],
+    name: "4 unused keys in Gerudo Training Grounds",
+    jp: 'ゲルドの修練場の未使用のカギ4つ',
+    types: ["fortress"],
     child: "yes"
 }, {
     name: "Map & Compass in Ice Cavern",
@@ -536,11 +541,6 @@ bingoList[6] = [{
     types: ["deku", "ganon"],
     child: "yes"
 }, {
-    name: "3 unused keys in Gerudo Training Grounds",
-    jp: 'ゲルドの修練場の未使用のカギ3つ',
-    types: ["fortress"],
-    child: "yes"
-}, {
     name: "All 3 Skulltulas in Ice Cavern",
     jp: '氷の洞窟の黄金のスタルチュラ3匹',
     types: ["ice"],
@@ -548,14 +548,20 @@ bingoList[6] = [{
     child: "yes"
 }];
 bingoList[7] = [{
+    name: "Beat Dodongo's Cavern",
+    jp: 'ドドンゴの洞窟クリア',
+    types: ["dc", "fortress", "kd"],
+    child: "yes"
+}, {
+    name: "Both Gerudo's Fortress area Skulltulas",
+    jp: 'ゲルドの砦の黄金のスタルチュラ2匹',
+    types: ["fortress"],
+    subtypes: ["wallet"],
+    child: "no"
+}, {
     name: "Milk",
     jp: 'ロンロン牛乳',
     types: ["lonlon", "bottle"],
-    child: "yes"
-}, {
-    name: "4 unused keys in Gerudo Training Grounds",
-    jp: 'ゲルドの修練場の未使用のカギ4つ',
-    types: ["fortress"],
     child: "yes"
 }, {
     name: "All 4 Lost Woods area Skulltulas",
@@ -579,24 +585,18 @@ bingoList[7] = [{
     types: ["songs", "atrade", "zl"],
     subtypes: ["child2"],
     child: "yes"
-}, {
+}];
+bingoList[8] = [{
     name: "Giant's Wallet",
     jp: '巨人のサイフ',
     types: ["wallet"],
     child: "yes"
-}];
-bingoList[8] = [{
+}, {
     name: "Plant bean in Death Mountain Crater",
     jp: 'デスマウンテン火口の土にマメを植える',
     types: ["dmc", "beans"],
     subtypes: ["child2"],
     child: "yes"
-}, {
-    name: "Both Gerudo's Fortress area Skulltulas",
-    jp: 'ゲルドの砦の黄金のスタルチュラ2匹',
-    types: ["fortress"],
-    subtypes: ["wallet"],
-    child: "no"
 }, {
     name: "Epona's Song",
     jp: 'エポナの歌',
@@ -606,7 +606,8 @@ bingoList[8] = [{
 }, {
     name: "Iron Boots",
     jp: 'ヘビーブーツ',
-    types: ["ice", "boots", "mapcompass"],
+    types: ["ice", "boots"],
+    subtypes: ["mapcompass"],
     child: "yes"
 }, {
     name: "5 unused keys in Gerudo Training Grounds",
@@ -629,7 +630,7 @@ bingoList[8] = [{
     jp: '水の神殿のマップとコンパス',
     types: ["water"],
     subtypes: ["mapcompass"],
-    child: "no"
+    child: "yes"
 }];
 bingoList[9] = [{
     name: "3 Swords & 3 Tunics",
@@ -640,7 +641,8 @@ bingoList[9] = [{
 }, {
     name: "3 Boots",
     jp: '靴3種類',
-    types: ["boots", "ice", "mapcompass"],
+    types: ["ice", "boots"],
+    subtypes: ["mapcompass"],
     child: "yes"
 }, {
     name: "All 5 Skulltulas in Dodongo's Cavern",
@@ -653,20 +655,26 @@ bingoList[9] = [{
     jp: 'モーファ撃破',
     types: ["water"],
     subtypes: ["hearts"],
-    child: "no"
+    child: "yes"
 }, {
     name: "Beat the Forest Temple",
     jp: '森の神殿クリア',
     types: ["forest", "pg"],
     subtypes: ["hearts"],
     child: "yes"
-}, {
+}];
+bingoList[10] = [{
     name: "500 Rupees",
     jp: '500ルピー',
     types: ["wallet"],
     child: "yes"
-}];
-bingoList[10] = [{
+}, {
+    name: "All 4 Skulltulas in Deku Tree",
+    jp: 'デクの樹様の中の黄金のスタルチュラ4匹',
+    types: ["deku"],
+    subtypes: ["wallet"],
+    child: "yes"
+}, {
     name: "At least 7 Magic Beans",
     jp: '魔法のマメ7つ以上',
     types: ["beans"],
@@ -688,7 +696,7 @@ bingoList[10] = [{
     jp: '水の神殿クリア',
     types: ["water"],
     subtypes: ["hearts"],
-    child: "no"
+    child: "yes"
 }, {
     name: "Forest Medallion",
     jp: '森のメダル',
@@ -714,6 +722,18 @@ bingoList[10] = [{
     child: "no"
 }];
 bingoList[11] = [{
+    name: "All 4 Lon-Lon Ranch area Skulltulas",
+    jp: 'ロンロン牧場エリアの黄金のスタルチュラ4匹',
+    types: ["jabu", "lonlon"],
+    subtypes: ["wallet"],
+    child: "yes"
+}, {
+    name: "Defeat Bongo-Bongo",
+    jp: 'ボンゴボンゴ撃破',
+    types: ["shadow"],
+    subtypes: ["hearts", "bosskey"],
+    child: "yes"
+}, {
     name: "At least 4 Skulltulas in Shadow Temple",
     jp: '闇の神殿の黄金のスタルチュラ4匹以上',
     types: ["shadow"],
@@ -737,17 +757,11 @@ bingoList[11] = [{
     subtypes: ["wallet"],
     child: "no"
 }, {
-    name: "All 4 Skulltulas in Deku Tree",
-    jp: 'デクの樹様の中の黄金のスタルチュラ4匹',
-    types: ["deku"],
-    subtypes: ["wallet"],
-    child: "yes"
-}, {
     name: "Water Medallion",
     jp: '水のメダル',
     types: ["water", "lightarrow", "atrade", "zl"],
     subtypes: ["hearts"],
-    child: "no"
+    child: "yes"
 }, {
     name: "Gerudo's Card",
     jp: 'ゲルドの会員証',
@@ -761,9 +775,10 @@ bingoList[11] = [{
     child: "no"
 }];
 bingoList[12] = [{
-    name: "Stone of Agony",
-    jp: 'もだえ石',
-    types: ["wallet"],
+    name: "Beat the Shadow Temple",
+    jp: '闇の神殿クリア',
+    types: ["shadow"],
+    subtypes: ["hearts", "bosskey"],
     child: "yes"
 }, {
     name: "Get to the end of Fire Trial",
@@ -805,6 +820,11 @@ bingoList[12] = [{
     child: "no"
 }];
 bingoList[13] = [{
+    name: "Stone of Agony",
+    jp: 'もだえ石',
+    types: ["wallet"],
+    child: "yes"
+}, {
     name: "7 Hearts",
     jp: 'ハート7つ',
     types: ["hearts"],
@@ -817,7 +837,7 @@ bingoList[13] = [{
     child: "yes"
 }, {
     name: "Win Bombchu Bowling Prize",
-    jp: 'ボムチュウボウリングのハートのかけら',
+    jp: 'ボムチュウボウリングの景品',
     types: ["dc", "kd"],
     subtypes: ["hearts", "child2"],
     child: "yes"
@@ -839,18 +859,6 @@ bingoList[13] = [{
     child: "no"
 }];
 bingoList[14] = [{
-    name: "Both Hyrule Field area Skulltulas",
-    jp: 'ハイラル平原エリアの黄金ノスタルチュラ2匹',
-    types: ["zl", "water"],
-    subtypes: ["wallet"],
-    child: "yes"
-}, {
-    name: "All 4 Lon-Lon Ranch area Skulltulas",
-    jp: 'ロンロン牧場エリアの黄金のスタルチュラ4匹',
-    types: ["jabu", "lonlon"],
-    subtypes: ["wallet"],
-    child: "yes"
-}, {
     name: "Double Magic",
     jp: '魔力2倍',
     types: ["dmc", "zl"],
@@ -886,6 +894,12 @@ bingoList[14] = [{
     child: "no"
 }];
 bingoList[15] = [{
+    name: "Both Hyrule Field area Skulltulas",
+    jp: 'ハイラル平原エリアの黄金ノスタルチュラ2匹',
+    types: ["zl", "water"],
+    subtypes: ["wallet"],
+    child: "yes"
+}, {
     name: "Map & Compass in Forest Temple",
     jp: '森の神殿のマップとコンパス',
     types: ["forest", "quiver"],
@@ -950,14 +964,14 @@ bingoList[16] = [{
     jp: '防御力2倍',
     types: ["zl", "ganon"],
     child: "no"
-}, {
+}];
+bingoList[17] = [{
     name: "At least 3 Skulltulas in Water Temple",
     jp: '水の神殿の黄金のスタルチュラ3匹以上',
     types: ["water", "ice", "zl"],
     subtypes: ["wallet"],
     child: "no"
-}];
-bingoList[17] = [{
+}, {
     name: "Frog's Heart Piece",
     jp: 'カエルのハートのかけら(嵐の歌)',
     types: ["forest", "child2", "pg"],
@@ -968,7 +982,7 @@ bingoList[17] = [{
     jp: '闇の神殿のボス部屋のカギ',
     types: ["shadow", "zl"],
     subtypes: ["hearts", "bosskey"],
-    child: "no"
+    child: "yes"
 }, {
     name: "Defeat both Flare Dancers",
     jp: 'フレアダンサー2体撃破',
@@ -1005,15 +1019,9 @@ bingoList[17] = [{
     child: "no"
 }];
 bingoList[18] = [{
-    name: "Defeat Nabooru-Knuckle",
-    jp: 'アイアンナック(ナボール)撃破',
-    types: ["spirit"],
-    child: "no"
-}, {
-    name: "Saria's Song",
-    jp: 'サリアの歌',
-    types: ["zl", "saria"],
-    subtypes: ["child2", "songs"],
+    name: "6 Compasses",
+    jp: 'コンパス6つ',
+    types: ["mapcompass"],
     child: "yes"
 }, {
     name: "Farore's Wind",
@@ -1040,20 +1048,20 @@ bingoList[18] = [{
     child: "no"
 }];
 bingoList[19] = [{
-    name: "Defeat Bongo-Bongo",
-    jp: 'ボンゴボンゴ撃破',
-    types: ["shadow", "zl", "deku"],
-    subtypes: ["hearts", "bosskey"],
+    name: "Defeat Nabooru-Knuckle",
+    jp: 'アイアンナック(ナボール)撃破',
+    types: ["spirit"],
     child: "no"
+}, {
+    name: "Saria's Song",
+    jp: 'サリアの歌',
+    types: ["zl", "saria"],
+    subtypes: ["child2", "songs"],
+    child: "yes"
 }, {
     name: "8 Hearts",
     jp: 'ハート8つ',
     types: ["hearts"],
-    child: "yes"
-}, {
-    name: "6 Compasses",
-    jp: 'コンパス6つ',
-    types: ["mapcompass"],
     child: "yes"
 }, {
     name: "3 Shields & 3 Tunics",
@@ -1066,17 +1074,11 @@ bingoList[19] = [{
     types: ["fire", "forest"],
     subtypes: ["hearts", "bosskey", "mapcompass", "pg"],
     child: "no"
-}, ];
+}];
 bingoList[20] = [{
     name: "Light Arrows",
     jp: '光の矢',
     types: ["lightarrow", "atrade", "zl"],
-    child: "no"
-}, {
-    name: "Beat the Shadow Temple",
-    jp: '闇の神殿クリア',
-    types: ["shadow", "zl", "deku"],
-    subtypes: ["hearts", "bosskey"],
     child: "no"
 }, {
     name: "Defeat Meg (purple Poe)",
@@ -1091,12 +1093,6 @@ bingoList[20] = [{
     subtypes: ["child2", "wallet", "kd"],
     child: "no"
 }, {
-    name: "Goron Bracelet",
-    jp: 'ゴロンの腕輪',
-    types: ["strength", "zl", "saria"],
-    subtypes: ["child2"],
-    child: "yes"
-}, {
     name: "Nayru's Love",
     jp: 'ネールの愛',
     types: ["spirit", "zl"],
@@ -1109,6 +1105,12 @@ bingoList[20] = [{
     child: "no"
 }];
 bingoList[21] = [{
+    name: "Goron Bracelet",
+    jp: 'ゴロンの腕輪',
+    types: ["strength", "zl", "saria"],
+    subtypes: ["child2"],
+    child: "yes"
+}, {
     name: "All 5 Lake Hylia Skulltulas",
     jp: 'ハイリア湖畔エリアの黄金のスタルチュラ5匹',
     types: ["ice", "water"],
@@ -1138,6 +1140,11 @@ bingoList[21] = [{
     child: "yes"
 }];
 bingoList[22] = [{
+    name: "7 Maps",
+    jp: 'マップ7つ',
+    types: ["mapcompass", "claimcheck"],
+    child: "yes"
+}, {
     name: "Spirit Temple Boss Key",
     jp: '魂の神殿のボス部屋のカギ',
     types: ["spirit", "lightarrow", "zl"],
@@ -1154,23 +1161,12 @@ bingoList[22] = [{
     types: ["shields", "boots", "spirit", "ice"],
     subtypes: ["mapcompass"],
     child: "yes"
-}, {
-    name: "Get to the end of Water Trial",
-    jp: '水の結界の最後の部屋に到達',
-    types: ["ganon", "fire", "lightarrow"],
-    subtypes: ["mapcompass", "bosskey", "pg"],
-    child: "no"
 }];
 bingoList[23] = [{
     name: "Both heart pieces in Lost Woods",
     jp: '迷いの森のハートのかけら２つ',
     types: ["zl"],
     subtypes: ["hearts", "child2", "songs"],
-    child: "yes"
-}, {
-    name: "7 Maps",
-    jp: 'マップ7つ',
-    types: ["mapcompass", "claimcheck"],
     child: "yes"
 }, {
     name: "Map & Compass in Spirit Temple",
@@ -1184,18 +1180,25 @@ bingoList[23] = [{
     types: ["spirit"],
     subtypes: ["hearts"],
     child: "no"
+}, {
+    name: "Get to the end of Water Trial",
+    jp: '水の結界の最後の部屋に到達',
+    types: ["ganon", "fire", "lightarrow"],
+    subtypes: ["mapcompass", "bosskey", "pg"],
+    child: "no"
 }];
 bingoList[24] = [{
+    name: "Two Fairy Spells",
+    jp: '魔法のアイテム２つ',
+    types: ["zl", "spirit"],
+    subtypes: ["child2"],
+    child: "yes"
+}, {
     name: "Beat the Spirit Temple",
     jp: '魂の神殿クリア',
     types: ["spirit"],
     subtypes: ["hearts"],
     child: "no"
-}, {
-    name: "9 Hearts",
-    jp: 'ハート9つ',
-    types: ["hearts"],
-    child: "yes"
 }, {
     name: "All 5 Skulltulas in Shadow Temple",
     jp: '闇の神殿の黄金のスタルチュラ5匹',
@@ -1210,6 +1213,11 @@ bingoList[24] = [{
     child: "no"
 }];
 bingoList[25] = [{
+    name: "9 Hearts",
+    jp: 'ハート9つ',
+    types: ["hearts"],
+    child: "yes"
+}, {
     name: "7 Compasses",
     jp: 'コンパス7つ',
     types: ["mapcompass"],
@@ -1220,23 +1228,9 @@ bingoList[25] = [{
     types: ["water", "zl"],
     child: "no"
 }, {
-    name: "Two Fairy Spells",
-    jp: '魔法のアイテム２つ',
-    types: ["zl", "spirit"],
-    subtypes: ["child2"],
-    child: "yes"
-}, {
     name: "Green Gauntlets",
     jp: '緑のグローブ',
     types: ["strength", "bulletbag", "zl", "atrade", "saria"],
     subtypes: ["wallet"],
     child: "no"
 }];
-
-function getUrlParameter(name) {
-    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results == null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
