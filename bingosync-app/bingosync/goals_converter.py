@@ -56,14 +56,14 @@ class Ignore:
 
 SCHEMA = [
     Ignore("updated"),
-    StringColumn("payload", "name"),
-    StringColumn("payload", "jp"),
+    StringColumn("name"),
+    StringColumn("jp"),
     IntegerColumn("difficulty"),
     FloatColumn("time"),
     StringColumn("skill"),
-    BooleanColumn("child"),
-    BooleanColumn("bottle"),
-    BooleanColumn("hookshot"),
+    #BooleanColumn("child"),
+    #BooleanColumn("bottle"),
+    #BooleanColumn("hookshot"),
 ]
 
 NON_ID_CHARACTERS_PATTERN = re.compile(r"[^A-Za-z0-9]+")
@@ -72,7 +72,7 @@ def id_from_name(name):
     return NON_ID_CHARACTERS_PATTERN.sub("-", name.lower())
 
 def id_from_goal(goal):
-    return goal["id"] if "id" in goal else id_from_name(goal["payload"]["name"])
+    return goal["id"] if "id" in goal else id_from_name(goal["name"])
 
 def set_deep(dictionary, keys, value):
     path_keys = keys[:-1]
@@ -89,6 +89,21 @@ def parse_goal(col_details):
         set_deep(goal, col.path, col.parse_value(detail))
     return goal
 
+def parse_synergy(synergy):
+    old_synergy = synergy
+    if synergy.startswith("*"):
+        synergy = synergy[1:]
+
+    try:
+        return float(synergy)
+    except ValueError:
+        if synergy.lower() in ("true", "yes"):
+            return "yes"
+        elif synergy.lower() in ("false", "no"):
+            return "no"
+        else:
+            raise Exception("Failed to parse synergy value: " + repr(old_synergy))
+
 def row_to_dict(synergy_header, row):
     detail_cols = row[:len(SCHEMA)]
     synergy_cols = row[len(SCHEMA):]
@@ -98,18 +113,30 @@ def row_to_dict(synergy_header, row):
 
     types = dict()
     subtypes = dict()
+    rowtypes = dict()
     for synergy_name, synergy in zip(synergy_header, synergy_cols):
         if synergy:
-            if synergy.startswith("*"):
-                subtypes[synergy_name] = float(synergy[1:])
+            synergy_value = parse_synergy(synergy)
+            # 'row synergy'
+            if synergy_name.startswith("*"):
+                rowtypes[synergy_name[1:]] = synergy_value
+            # 'subtype' goal synergy
+            elif synergy.startswith("*"):
+                subtypes[synergy_name] = synergy_value
+            # 'normal' goal synergy
             else:
-                types[synergy_name] = float(synergy)
+                types[synergy_name] = synergy_value
 
     # all goals have types
     goal["types"] = types
     # only include the subtypes dict if we have subtypes
     if subtypes:
         goal["subtypes"] = subtypes
+    # only include the rowtypes dict if we have subtypes
+    if rowtypes:
+        goal["rowtypes"] = rowtypes
+        if "child" in rowtypes:
+            goal["child"] = rowtypes["child"]
 
     return goal
 
@@ -124,7 +151,8 @@ def rows_to_dict(header, rows):
 
     # compatibility line
     if OUTPUT_TYPE == NOT_WATERSKULLS:
-        goals_by_difficulty = [list() for _ in range(26)]
+        goals_by_difficulty = {str(difficulty): list() for difficulty in range(1, 26)}
+        goals_by_difficulty["info"] = {"version": "v9 beta"}
 
     for row in rows:
         try:
@@ -134,10 +162,10 @@ def rows_to_dict(header, rows):
 
                 # compatibility lines
                 if OUTPUT_TYPE == NOT_WATERSKULLS:
-                    goal["name"] = goal["payload"]["name"]
-                    goal["jp"] = goal["payload"]["jp"]
+                    #goal["name"] = goal["payload"]["name"]
+                    #goal["jp"] = goal["payload"]["jp"]
                     difficulty = goal["difficulty"]
-                    goals_by_difficulty[difficulty].append(goal)
+                    goals_by_difficulty[str(difficulty)].append(goal)
             else:
                 break
         except Exception as e:

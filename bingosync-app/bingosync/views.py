@@ -186,9 +186,9 @@ def goal_converter(request):
     if request.method == "POST":
         form = GoalListConverterForm(request.POST)
         if form.is_valid():
-            json_str = form.get_goal_list()
-            response = HttpResponse(json_str, content_type="application/json")
-            response['Content-Disposition'] = 'attachment; filename="goal-list.json"'
+            goal_list_str = form.get_goal_list()
+            response = HttpResponse(goal_list_str, content_type="application/json")
+            response['Content-Disposition'] = 'attachment; filename="goal-list.js"'
             return response
         return render(request, "bingosync/convert.html", {"form": form})
     else:

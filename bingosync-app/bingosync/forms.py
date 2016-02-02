@@ -2,10 +2,14 @@ from django import forms
 from django.db import transaction
 from django.contrib.auth import hashers
 
+import logging
+
 from .models import Room, GameType, Game, Player
 
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
+
+logger = logging.getLogger(__name__)
 
 def make_read_only_char_field(*args, **kwargs):
     kwargs["widget"] = forms.TextInput(attrs={"readonly": "readonly"})
@@ -107,8 +111,11 @@ class GoalListConverterForm(forms.Form):
 
         try:
             json_str = download_and_get_converted_goal_list(spreadsheet_url)
+            # make the json actually javascript
+            json_str = "var bingoList = " + json_str
             self.json_str = json_str
         except Exception as e:
+            logger.error("failed to download url: " + str(spreadsheet_url), exc_info=True)
             raise forms.ValidationError("Unable to get goal list")
 
     def get_goal_list(self):
