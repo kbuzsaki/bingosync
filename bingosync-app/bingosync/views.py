@@ -9,7 +9,7 @@ import time
 
 from .settings import SOCKETS_URL
 from .bingo_generator import BingoGenerator
-from .goals_converter import get_converted_goal_list, ConversionException
+from .goals_converter import download_and_get_converted_goal_list, ConversionException
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from .models import Room, Game, Player, Color, Event, ChatEvent, ConnectionEvent
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_connection_event
@@ -186,10 +186,11 @@ def goal_converter(request):
     if request.method == "POST":
         form = GoalListConverterForm(request.POST)
         if form.is_valid():
-            json_str = get_converted_goal_list()
+            json_str = form.get_goal_list()
             response = HttpResponse(json_str, content_type="application/json")
             response['Content-Disposition'] = 'attachment; filename="goal-list.json"'
             return response
+        return render(request, "bingosync/convert.html", {"form": form})
     else:
         form = GoalListConverterForm.get()
 
@@ -201,7 +202,7 @@ LATEST_GOAL_LIST = BETA_GOAL_LISTS_DIR + "/latest.json"
 def beta_bingo(request):
     # getting a post indicates that we should refresh
     if request.method == "POST":
-        goals_json = json.loads(get_converted_goal_list())
+        goals_json = json.loads(download_and_get_converted_goal_list())
         backup_filename = BETA_GOAL_LISTS_DIR + "/" + time.strftime("%Y-%m-%d_%H-%M-%S.json")
 
         with open(backup_filename, "w") as outfile:

@@ -4,7 +4,7 @@ from django.contrib.auth import hashers
 
 from .models import Room, GameType, Game, Player
 
-from .goals_converter import DEFAULT_DOWNLOAD_URL
+from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
 
 def make_read_only_char_field(*args, **kwargs):
@@ -101,5 +101,16 @@ class GoalListConverterForm(forms.Form):
         }
         return GoalListConverterForm(initial=initial_values)
 
+    def clean(self):
+        cleaned_data = super(GoalListConverterForm, self).clean()
+        spreadsheet_url = cleaned_data["spreadsheet_url"]
 
+        try:
+            json_str = download_and_get_converted_goal_list(spreadsheet_url)
+            self.json_str = json_str
+        except Exception as e:
+            raise forms.ValidationError("Unable to get goal list")
+
+    def get_goal_list(self):
+        return self.json_str
 

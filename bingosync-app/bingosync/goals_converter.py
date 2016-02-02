@@ -170,8 +170,10 @@ def csv_to_json(csv_file):
 BASE_URL = "https://docs.google.com/spreadsheet/ccc"
 DEFAULT_DOWNLOAD_URL = BASE_URL + "?key=1dRpwfIV2vDRL_Hq-pBj3U7wq7XwZ9JPW9Ac8hK5qbgc&output=csv"
 
-def download_goal_csv():
-    data = urlopen(DEFAULT_DOWNLOAD_URL).read().decode('utf-8')
+def download_goal_csv(download_url=None):
+    if not download_url:
+        download_url = DEFAULT_DOWNLOAD_URL
+    data = urlopen(download_url).read().decode('utf-8')
     return StringIO(data)
 
 def get_converted_goal_list(csv_file=None):
@@ -181,3 +183,6 @@ def get_converted_goal_list(csv_file=None):
         return csv_to_json(csv_file)
     except Exception as e:
         raise ConversionException(e)
+
+def download_and_get_converted_goal_list(download_url=None):
+    return get_converted_goal_list(download_goal_csv(download_url))
