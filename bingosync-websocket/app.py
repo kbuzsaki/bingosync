@@ -21,6 +21,8 @@ PING_PERIOD_SECONDS = 5
 PING_PERIOD_MILLIS = PING_PERIOD_SECONDS * 1000
 TIMEOUT_THRESHOLD = datetime.timedelta(seconds=PING_PERIOD_SECONDS * 4)
 
+DEFAULT_RETRY_COUNT = 5
+
 def load_player_data(socket_key):
     response = requests.get(SOCKET_VERIFICATION_URL + socket_key)
     response_json = response.json()
@@ -29,12 +31,23 @@ def load_player_data(socket_key):
     return room_uuid, player_uuid
 
 def post_player_connection(player_uuid):
-    client = AsyncHTTPClient()
-    client.fetch(CONNECTION_URL + player_uuid)
+    ping_with_retry(CONNECTION_URL + player_uuid)
 
 def post_player_disconnection(player_uuid):
+    ping_with_retry(DISCONNECTION_URL + player_uuid)
+
+def ping_with_retry(url, retry_count=DEFAULT_RETRY_COUNT):
+    def retry_callback(response):
+        if response.error:
+            print("Response error:", response.error, "for url:", url)
+            print("Retries left:", retry_count - 1)
+            ping_with_retry(url, retry_count - 1)
+
+    if retry_count <= 0:
+        print("Ran out of retries, for url '" + url + "', giving up.")
+
     client = AsyncHTTPClient()
-    client.fetch(DISCONNECTION_URL + player_uuid)
+    client.fetch(url, retry_callback)
 
 def format_defaultdict(ddict):
     if isinstance(ddict, defaultdict):
