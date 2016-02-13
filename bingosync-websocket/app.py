@@ -23,6 +23,9 @@ TIMEOUT_THRESHOLD = datetime.timedelta(seconds=PING_PERIOD_SECONDS * 4)
 
 DEFAULT_RETRY_COUNT = 5
 
+# whether we should clean up the broadcast sockets dictionary as people disconnect
+CLEANUP_SOCKETS_DICT_ON_DISCONNECT = True
+
 def load_player_data(socket_key):
     response = requests.get(SOCKET_VERIFICATION_URL + socket_key)
     response_json = response.json()
@@ -110,8 +113,16 @@ class SocketRouter:
                 if player_sockets:
                     player_sockets.discard(socket)
                     if not player_sockets:
-                        print("posting disconnect")
+                        print("posting disconnect", player_uuid)
                         post_player_disconnection(player_uuid)
+                        if CLEANUP_SOCKETS_DICT_ON_DISCONNECT:
+                            del room_sockets[player_uuid]
+                            break
+            if not room_sockets:
+                if CLEANUP_SOCKETS_DICT_ON_DISCONNECT:
+                    print("room closed:", room_uuid)
+                    del self.sockets_by_room[room_uuid]
+                    break
         self.all_sockets.discard(socket)
         self.log_sockets("unregistered")
 
