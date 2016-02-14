@@ -11,8 +11,7 @@
         <table id="settings-table">
             <tr><td><b>Seed:</b></td><td>{{ game.seed }}</td></tr>
             <tr><td><b>Game:</b></td><td>{{ game.game_type }}</td></tr>
-            <tr><td><b>Mode:</b></td><td>Blackout</td></tr>
-            <tr><td>Multi</td><td><input id="allow-multi-color" type="checkbox"></td></tr>
+            <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}<div id="is-lockout" class="hidden" value="{% if game.lockout_mode_value == 2 %}lockout{% else %}non_lockout{% endif %}"></td></tr>
         </table>
     </div>
 </div>

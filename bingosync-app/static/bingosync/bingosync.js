@@ -1,6 +1,16 @@
 COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
 BLANK_COLOR = "blank";
 
+var IS_LOCKOUT = null;
+
+$(function () {
+    if ($('#is-lockout').attr('value') === 'lockout') {
+        IS_LOCKOUT = true;
+    } else {
+        IS_LOCKOUT = false;
+    }
+});
+
 function getSquareColorClass(color) {
     return color + "square";
 }
@@ -11,7 +21,7 @@ function getPlayerColorClass(color) {
 
 function setSquareColor($square, newColor, removeColor) {
     var newColorClass = getSquareColorClass(newColor);
-    if ($('#allow-multi-color').prop('checked')) {
+    if (!IS_LOCKOUT) {
         if (removeColor) {
             $square.children('.' + newColorClass).remove();
         } else if (!squareHasColor($square, newColorClass)) {
@@ -106,7 +116,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
                 removeColor = true;
             }
             // the square is a different color, but we allow multiple colors, so add it
-            else if ($('#allow-multi-color').prop('checked')) {
+            else if (!IS_LOCKOUT) {
                 removeColor = false;
             }
             // the square is colored a different color and we don't allow multiple colors, so don't do anything

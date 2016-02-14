@@ -4,7 +4,7 @@ from django.contrib.auth import hashers
 
 import logging
 
-from .models import Room, GameType, Game, Player
+from .models import Room, GameType, LockoutMode, Game, Player
 
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
@@ -23,6 +23,7 @@ class RoomForm(forms.Form):
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
+    lockout_mode = forms.ChoiceField(label="Lockout Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput())
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
 
@@ -31,6 +32,7 @@ class RoomForm(forms.Form):
         passphrase = self.cleaned_data["passphrase"]
         nickname = self.cleaned_data["nickname"]
         game_type = GameType.for_value(int(self.cleaned_data["game_type"]))
+        lockout_mode = LockoutMode.for_value(int(self.cleaned_data["lockout_mode"]))
         seed = self.cleaned_data["seed"]
         is_spectator = self.cleaned_data["is_spectator"]
 
@@ -40,7 +42,7 @@ class RoomForm(forms.Form):
             room.save()
 
             board_json = game_type.generator_instance().get_card(seed)
-            game = Game.from_board(board_json, room=room, game_type_value=game_type.value, seed=seed)
+            game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
 
             creator = Player(room=room, name=nickname, is_spectator=is_spectator)
             creator.save()

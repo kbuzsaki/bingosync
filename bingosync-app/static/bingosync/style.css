@@ -92,6 +92,10 @@
     overflow-y: scroll;
 }
 
+.panel-body {
+    padding:8px;
+}
+
 .chat-window {
     display: flex;
     flex-flow: column;
@@ -327,4 +331,8 @@
     color: #888;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.hidden {
+    display: none;
 }

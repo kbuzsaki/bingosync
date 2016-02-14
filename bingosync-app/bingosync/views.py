@@ -1,4 +1,4 @@
-from django.http import HttpResponse, JsonResponse, Http404
+from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse, Http404
 from django.shortcuts import render, redirect
 from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -125,6 +125,8 @@ def goal_selected(request):
     removeColor = data["removeColor"]
 
     goal_event = game.update_goal(player, slot, color, removeColor)
+    if not goal_event:
+        return HttpResponseBadRequest("Blocked by Lockout")
     publish_goal_event(goal_event)
     return HttpResponse("Recieved data: " + str(data))
 

@@ -255,12 +255,36 @@ GAME_TYPE_NAMES = {
     GameType.pokemon_red_blue_randomizer: "Poké Random",
 }
 
+class LockoutMode(Enum):
+    non_lockout = 1
+    lockout = 2
+
+    def __str__(self):
+        return LOCKOUT_MODE_NAMES[self]
+
+    @staticmethod
+    def for_value(value):
+        return list(LockoutMode)[value - 1]
+
+    @staticmethod
+    def default_value():
+        return LockoutMode.non_lockout.value
+
+    @staticmethod
+    def choices():
+        return [(lockout_mode.value, str(lockout_mode)) for lockout_mode in LockoutMode]
+
+LOCKOUT_MODE_NAMES = {
+    LockoutMode.non_lockout: "Non-Lockout",
+    LockoutMode.lockout: "Lockout",
+}
 
 class Game(models.Model):
     room = models.ForeignKey(Room)
     seed = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
+    lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
 
     def __str__(self):
         return self.room.name + ": " + str(self.seed)
@@ -283,6 +307,10 @@ class Game(models.Model):
         return GameType.for_value(self.game_type_value)
 
     @property
+    def lockout_mode(self):
+        return LockoutMode.for_value(self.lockout_mode_value)
+
+    @property
     def squares(self):
         return Square.objects.filter(game=self).order_by("slot")
 
@@ -293,10 +321,16 @@ class Game(models.Model):
     def update_goal(self, player, slot, color, removeColor):
         square = self.squares[slot - 1]
         sqColor = square.color
+
+        # Don't add the color if lockout is enabled and the square is not blank
+        if self.lockout_mode == LockoutMode.lockout and sqColor.colors != [Color.blank]:
+            return False
+
         if removeColor:
             sqColor.remove(color)
         else:
-            sqColor.add(color)
+            if self.lockout_mode != LockoutMode.lockout or sqColor.colors == [Color.blank]:
+                sqColor.add(color)
         square.color = sqColor
         square.save()
 
