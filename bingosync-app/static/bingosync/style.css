@@ -92,10 +92,6 @@
     overflow-y: scroll;
 }
 
-.panel-body {
-    padding:8px;
-}
-
 .chat-window {
     display: flex;
     flex-flow: column;
@@ -125,6 +121,10 @@
 
 #settings-table tr td {
     padding-right: 5px;
+}
+
+#room-settings .panel-body, #chat-settings .panel-body {
+    font-size: 90%;
 }
 
 .collapse-button {
