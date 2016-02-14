@@ -48,7 +48,7 @@ class Color(Enum):
         return Color.red
 
     @property
-    def compositeValue(self):
+    def composite_value(self):
         if self == Color.blank:
             return 0
         exponent = self.value - 2
@@ -68,26 +68,26 @@ class CompositeColor:
         self.colors = colors
 
     def __str__(self):
-        colorNames = list(map(lambda x: x.name.capitalize(), self.colors))
-        colorNames.sort()
-        return ' '.join(colorNames)
+        color_names = list(map(lambda x: x.name.capitalize(), self.colors))
+        color_names.sort()
+        return ' '.join(color_names)
 
     @staticmethod
     def goal_choices():
-        allcolors = frozenset(Color)
-        allcolors = allcolors - set([Color.blank])
-        allsets = set(chain.from_iterable(combinations(allcolors, n) for n in range(len(allcolors)+1)))
-        allsets.remove(())
-        allsets.add(frozenset([Color.blank]))
+        all_colors = frozenset(Color)
+        all_colors = all_colors - set([Color.blank])
+        all_sets = set(chain.from_iterable(combinations(all_colors, n) for n in range(len(all_colors)+1)))
+        all_sets.remove(())
+        all_sets.add(frozenset([Color.blank]))
         choices = []
-        for possible in allsets:
+        for possible in all_sets:
             try:
                 iterator = iter(possible)
             except TypeError:
                 print(str(possible) + ' is not iterable')
             else:
-                cCol = CompositeColor(possible)
-                choices.append( (cCol.value, str(cCol)) )
+                composite_color = CompositeColor(possible)
+                choices.append( (composite_color.value, str(composite_color)) )
         return choices
 
     @staticmethod
@@ -96,13 +96,13 @@ class CompositeColor:
 
     @staticmethod
     def for_value(value):
-        colorValues = dict(map(lambda x: (x.compositeValue, x), Color))
-        del colorValues[0]
+        color_values = dict(map(lambda x: (x.composite_value, x), Color))
+        del color_values[0]
         colors = set()
-        while len(colorValues.keys()) > 0:
-            key = max(colorValues.keys())
-            color = colorValues[key]
-            del colorValues[key]
+        while len(color_values.keys()) > 0:
+            key = max(color_values.keys())
+            color = color_values[key]
+            del color_values[key]
             if value < key:
                 continue
             colors.add(color)
@@ -122,7 +122,7 @@ class CompositeColor:
         for color in self._colors:
             if color == Color.blank:
                 return 0;
-            val = val + color.compositeValue
+            val = val + color.composite_value
         return val
 
     @property
@@ -318,24 +318,23 @@ class Game(models.Model):
     def board(self):
         return [square.to_json() for square in self.squares]
 
-    def update_goal(self, player, slot, color, removeColor):
+    def update_goal(self, player, slot, color, remove_color):
         square = self.squares[slot - 1]
-        sqColor = square.color
+        square_color = square.color
 
         # Don't add the color if lockout is enabled and the square is not blank
-        if self.lockout_mode == LockoutMode.lockout and sqColor.colors != [Color.blank]:
+        if self.lockout_mode == LockoutMode.lockout and square_color.colors != [Color.blank]:
             return False
 
-        if removeColor:
-            sqColor.remove(color)
+        if remove_color:
+            square_color.remove(color)
         else:
-            if self.lockout_mode != LockoutMode.lockout or sqColor.colors == [Color.blank]:
-                sqColor.add(color)
-        square.color = sqColor
+            square_color.add(color)
+        square.color = square_color
         square.save()
 
         goal_event = GoalEvent(player=player, square=square, color_value=color.value,
-                               player_color_value=player.color.value, remove_color=removeColor)
+                               player_color_value=player.color.value, remove_color=remove_color)
         goal_event.save()
         return goal_event
 

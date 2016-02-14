@@ -133,7 +133,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
                     "slot": $(this).attr("id").substring(4),
                     "color": chosenColor,
                     // if we are removing the color, we need to know which color we are removing
-                    "removeColor": removeColor
+                    "remove_color": removeColor
                 }),
                 "error": function(result) {
                     console.log(result);

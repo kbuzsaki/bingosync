@@ -122,9 +122,9 @@ def goal_selected(request):
     game = room.current_game
     slot = int(data["slot"])
     color = Color.for_name(data["color"])
-    removeColor = data["removeColor"]
+    remove_color = data["remove_color"]
 
-    goal_event = game.update_goal(player, slot, color, removeColor)
+    goal_event = game.update_goal(player, slot, color, remove_color)
     if not goal_event:
         return HttpResponseBadRequest("Blocked by Lockout")
     publish_goal_event(goal_event)
