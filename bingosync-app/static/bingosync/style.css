@@ -2,6 +2,14 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.vertical-center.skew {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) skewX(45deg);
 }
 
 .fill-parent {
@@ -123,7 +131,7 @@
 /* plain old square */
 .square {
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     padding: 0 5px;
     cursor: pointer;
     width: 105px;
@@ -131,10 +139,28 @@
     text-align: center;
     border: 1px #424242 solid;
     background: #181818;
+    vertical-align: middle;
+
+    /* position needs to be relative for overflow hidden to work */
+    position: relative;
+    overflow: hidden;
 }
 
-.square:hover,
-.square.hover {
+.square .bg-color, .square .shadow {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: -2px;
+}
+
+.square .bg-color {
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+}
+
+.square:hover .shadow,
+.square.hover .shadow {
     box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);

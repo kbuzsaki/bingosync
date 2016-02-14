@@ -122,8 +122,9 @@ def goal_selected(request):
     game = room.current_game
     slot = int(data["slot"])
     color = Color.for_name(data["color"])
+    removeColor = data["removeColor"]
 
-    goal_event = game.update_goal(player, slot, color)
+    goal_event = game.update_goal(player, slot, color, removeColor)
     publish_goal_event(goal_event)
     return HttpResponse("Recieved data: " + str(data))
 

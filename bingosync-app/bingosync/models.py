@@ -8,6 +8,8 @@ from enum import Enum, unique
 from .bingo_generator import BingoGenerator
 from .util import encode_uuid, decode_uuid
 
+from itertools import combinations, chain
+
 @unique
 class Color(Enum):
     blank = 1
@@ -46,12 +48,114 @@ class Color(Enum):
         return Color.red
 
     @property
+    def compositeValue(self):
+        if self == Color.blank:
+            return 0
+        exponent = self.value - 2
+        return pow(2, exponent)
+
+    @property
     def goal_class(self):
         return self.name + "square"
 
     @property
     def player_class(self):
         return self.name + "player"
+
+# CompositeColor can be any combination of Color objects (except Color.blank which is always by itself in a CompositeColor)
+class CompositeColor:
+    def __init__(self, colors = []):
+        self.colors = colors
+
+    def __str__(self):
+        colorNames = list(map(lambda x: x.name.capitalize(), self.colors))
+        colorNames.sort()
+        return ' '.join(colorNames)
+
+    @staticmethod
+    def goal_choices():
+        allcolors = frozenset(Color)
+        allcolors = allcolors - set([Color.blank])
+        allsets = set(chain.from_iterable(combinations(allcolors, n) for n in range(len(allcolors)+1)))
+        allsets.remove(())
+        allsets.add(frozenset([Color.blank]))
+        choices = []
+        for possible in allsets:
+            try:
+                iterator = iter(possible)
+            except TypeError:
+                print(str(possible) + ' is not iterable')
+            else:
+                cCol = CompositeColor(possible)
+                choices.append( (cCol.value, str(cCol)) )
+        return choices
+
+    @staticmethod
+    def goal_default():
+        return CompositeColor([Color.blank])
+
+    @staticmethod
+    def for_value(value):
+        colorValues = dict(map(lambda x: (x.compositeValue, x), Color))
+        del colorValues[0]
+        colors = set()
+        while len(colorValues.keys()) > 0:
+            key = max(colorValues.keys())
+            color = colorValues[key]
+            del colorValues[key]
+            if value < key:
+                continue
+            colors.add(color)
+            value -= key
+        if colors == set() or value > 0:
+            colors = set([Color.blank])
+        return CompositeColor(colors)
+
+    @property
+    def name(self):
+        val = str(self)
+        return val.lower()
+
+    @property
+    def value(self):
+        val = 0
+        for color in self._colors:
+            if color == Color.blank:
+                return 0;
+            val = val + color.compositeValue
+        return val
+
+    @property
+    def colors(self):
+        return list(self._colors)
+
+    @colors.setter
+    def colors(self, val):
+        for color in val:
+            if not isinstance(color, Color):
+                raise ValueError("CompositeColor may only contain colors")
+            if color == Color.blank:
+                self._colors = set([Color.blank])
+                return
+        self._colors = set(val)
+        if self._colors == set():
+            self._colors = set([Color.blank])
+
+    def remove(self, color):
+        if not isinstance(color, Color):
+            raise ValueError("CompositeColor may only contain colors")
+        self._colors.discard(color)
+        if self._colors == set():
+            self._colors = set([Color.blank])
+
+    def add(self, color):
+        if not isinstance(color, Color):
+            raise ValueError("CompositeColor may only contain colors")
+        if self._colors == set([Color.blank]):
+            self.colors = [color]
+        else:
+            self._colors.add(color)
+
 
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
@@ -186,13 +290,18 @@ class Game(models.Model):
     def board(self):
         return [square.to_json() for square in self.squares]
 
-    def update_goal(self, player, slot, color):
+    def update_goal(self, player, slot, color, removeColor):
         square = self.squares[slot - 1]
-        square.color = color
+        sqColor = square.color
+        if removeColor:
+            sqColor.remove(color)
+        else:
+            sqColor.add(color)
+        square.color = sqColor
         square.save()
 
         goal_event = GoalEvent(player=player, square=square, color_value=color.value,
-                               player_color_value=player.color.value)
+                               player_color_value=player.color.value, remove_color=removeColor)
         goal_event.save()
         return goal_event
 
@@ -207,11 +316,11 @@ class Square(models.Model):
     game = models.ForeignKey(Game)
     slot = models.IntegerField(choices=SLOT_CHOICES, validators=[validate_in_slot_range])
     goal = models.CharField(max_length=255)
-    color_value = models.IntegerField("Color", default=Color.goal_default().value, choices=Color.goal_choices())
+    color_value = models.IntegerField("Color", default=CompositeColor.goal_default().value, choices=CompositeColor.goal_choices())
 
     @property
     def color(self):
-        return Color.for_value(self.color_value)
+        return CompositeColor.for_value(self.color_value)
 
     @color.setter
     def color(self, color):
@@ -225,7 +334,7 @@ class Square(models.Model):
         return {
             "name": self.goal,
             "slot": self.slot_name,
-            "color": self.color.name
+            "colors": self.color.name
         }
 
     class Meta:
@@ -315,6 +424,7 @@ class ChatEvent(Event):
 class GoalEvent(Event):
     square = models.ForeignKey(Square)
     color_value = models.IntegerField(choices=Color.goal_choices())
+    remove_color = models.BooleanField(default=False)
 
     @property
     def color(self):
@@ -326,7 +436,8 @@ class GoalEvent(Event):
             "player": self.player.to_json(),
             "square": self.square.to_json(),
             "player_color": self.player_color.name,
-            "color": self.color.name
+            "color": self.color.name,
+            "remove": self.remove_color
         }
 
 class ColorEvent(Event):
