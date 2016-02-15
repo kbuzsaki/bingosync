@@ -322,9 +322,15 @@ class Game(models.Model):
         square = self.squares[slot - 1]
         square_color = square.color
 
-        # Don't add the color if lockout is enabled and the square is not blank
-        if self.lockout_mode == LockoutMode.lockout and square_color.colors != [Color.blank]:
-            return False
+        # if we're in a lockout mode, verify that the color change is valid
+        if self.lockout_mode == LockoutMode.lockout:
+            # if we're trying to set a color and the square isn't blank, fail
+            if not remove_color and square_color.colors != [Color.blank]:
+                return False
+            # if we're trying to clear a color and it's not our color, fail
+            if remove_color and square_color.colors != [color]:
+                return False
+
 
         if remove_color:
             square_color.remove(color)
