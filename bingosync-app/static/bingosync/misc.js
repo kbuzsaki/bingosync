@@ -12,6 +12,21 @@ $.fn.getClasses = function() {
     return classes;
 };
 
+// Check if the provided function returns true for any member of a jQuery collection
+$.fn.any = function(func) {
+    if (typeof func !== 'function') {
+        return false;
+    }
+    var any = false;
+    $(this).each(function () {
+        if (func.call(this)) {
+            any = true;
+            return false;
+        }
+    });
+    return any;
+};
+
 $.fn.toHtml = function() {
     return $(this).wrapAll('<div>').parent().html();
 };

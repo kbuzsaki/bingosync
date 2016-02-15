@@ -1,6 +1,16 @@
 COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
 BLANK_COLOR = "blank";
 
+var IS_LOCKOUT = null;
+
+$(function () {
+    if ($('#is-lockout').attr('value') === 'lockout') {
+        IS_LOCKOUT = true;
+    } else {
+        IS_LOCKOUT = false;
+    }
+});
+
 function getSquareColorClass(color) {
     return color + "square";
 }
@@ -9,25 +19,70 @@ function getPlayerColorClass(color) {
     return color + "player";
 }
 
-function setSquareColor($square, new_color) {
-    COLORS.forEach(function(color) {
-        $square.removeClass(getSquareColorClass(color));
-    });
-    $square.addClass(getSquareColorClass(new_color));
+function setSquareColor($square, newColor, removeColor) {
+    var newColorClass = getSquareColorClass(newColor);
+    if (!IS_LOCKOUT) {
+        if (removeColor) {
+            $square.children('.' + newColorClass).remove();
+        } else if (!squareHasColor($square, newColorClass)) {
+            $square.children('.blanksquare').remove();
+            $square.children('.shadow').before('<div class="bg-color ' + newColorClass + '"></div>');
+        }
+    } else {
+        $square.children('.bg-color').remove();
+        $square.children('.shadow').before('<div class="bg-color ' + newColorClass + '"></div>');
+    }
 }
 
-function setPlayerColor($playerEntry, new_color) {
+function setSquareColors($square, colors) {
+    $square.children('.bg-color').remove();
+    colors = colors.split(' ');
+    var shadow = $square.children('.shadow');
+    colors.forEach(function (color) {
+        shadow.before('<div class="bg-color ' + getSquareColorClass(color) + '"></div>');
+    });
+    updateColorOffsets($square);
+}
+
+function updateColorOffsets($square) {
+    var $colorElements = $square.children('.bg-color');
+    var numColors = $colorElements.length;
+    var translatePercent = {
+        2: ['0', '0'],
+        3: ['0', '36', '-34'],
+        4: ['0', '46', '0', '-48'],
+        5: ['0', '56', '18', '-18', '-56']
+    };
+    var translations = translatePercent[numColors];
+
+    $($colorElements[0]).css('transform', '');
+    for (var i = 1; i < $colorElements.length; ++i) {
+        var transform = 'skew(-48deg) translateX(' + translations[i] + '%)';
+        $($colorElements[i]).css('transform', transform);
+        $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
+    }
+}
+
+function setPlayerColor($playerEntry, newColor) {
     var $playerGoalCounter = $playerEntry.find(".goalcounter");
     COLORS.forEach(function(color) {
         $playerGoalCounter.removeClass(getSquareColorClass(color));
     });
-    $playerGoalCounter.addClass(getSquareColorClass(new_color));
+    $playerGoalCounter.addClass(getSquareColorClass(newColor));
+}
+
+function squareHasColor($square, colorClass) {
+    return $square.children('.bg-color').any(function () {
+        if (colorClass in $(this).getClasses()) {
+            return true;
+        }
+    });
 }
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
-        $square.html(json["name"]);
-        setSquareColor($square, json["color"]);
+        $square.html('<div class="shadow"></div><div class="vertical-center">' + json["name"] + '</div>');
+        setSquareColors($square, json["colors"]);
     }
 
     function updateBoard($board, json) {
@@ -50,16 +105,21 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
             var chosenColorClass = getSquareColorClass(chosenColor);
 
-            var assignedColor;
+            // Are we adding or removing the color
+            var removeColor;
             // the square is blank and we're painting it
-            if(getSquareColorClass("blank") in $(this).getClasses()) {
-                assignedColor = chosenColor;
+            if(squareHasColor($(this), getSquareColorClass("blank"))) {
+                removeColor = false;
             }
-            // the square is colored the same as the chosen color so we're clearing it
-            else if(chosenColorClass in $(this).getClasses()) {
-                assignedColor = "blank";
+            // the square is colored the same as the chosen color so we're clearing it (or just removing the chosen color from the square's colors)
+            else if(squareHasColor($(this), chosenColorClass)) {
+                removeColor = true;
             }
-            // the square is colored a different color, so don't do anything
+            // the square is a different color, but we allow multiple colors, so add it
+            else if (!IS_LOCKOUT) {
+                removeColor = false;
+            }
+            // the square is colored a different color and we don't allow multiple colors, so don't do anything
             else {
                 return;
             }
@@ -71,7 +131,9 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
                     "room": window.sessionStorage.getItem("room"),
                     // substring to get rid of the 'slot' in e.g. 'slot12'
                     "slot": $(this).attr("id").substring(4),
-                    "color": assignedColor
+                    "color": chosenColor,
+                    // if we are removing the color, we need to know which color we are removing
+                    "remove_color": removeColor
                 }),
                 "error": function(result) {
                     console.log(result);
@@ -198,10 +260,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             return $("<div>", {html: playerSpan + ": " + message}).toHtml();
         }
         else if(json["type"] === "goal") {
-            var colorClass = getPlayerColorClass(json["color"]);
+            var colorClass = json["remove"] ? getPlayerColorClass('blank') : getPlayerColorClass(json["color"]);
             var goal = $("<span>", {"class": "goal-name " + colorClass, html: json["square"]["name"]}).toHtml();
 
-            if(json["color"] === BLANK_COLOR) {
+            if(json["remove"]) {
                 return $("<div>", {"class": "goal-message", html: playerSpan + " cleared " + goal}).toHtml();
             }
             else {
@@ -242,7 +304,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         console.log(json);
         if(json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
-            setSquareColor($square, json["square"]["color"]);
+            setSquareColors($square, json["square"]["colors"]);
             updateGoalCounters($board, $playersPanel);
         }
         else if(json["type"] === "color") {
