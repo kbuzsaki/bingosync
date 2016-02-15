@@ -85,8 +85,12 @@ class SocketRouter:
                 pass
 
     def ping_all(self):
-        for socket in self.all_sockets:
-            socket.ping("boop".encode("utf8"))
+        for socket in list(self.all_sockets):
+            try:
+                socket.ping("boop".encode("utf8"))
+            except tornado.websocket.WebSocketClosedError:
+                print("pinged socket that was already closed, unregistering", socket)
+                self.unregister(socket)
 
     def kill_dead_sockets(self):
         threshold = datetime.datetime.now() - TIMEOUT_THRESHOLD
