@@ -92,8 +92,12 @@ class SocketRouter:
         threshold = datetime.datetime.now() - TIMEOUT_THRESHOLD
         for socket in self.all_sockets:
             if socket.last_pong < threshold:
-                print("closing socket!")
-                socket.close()
+                print("closing dead socket:", socket)
+                try:
+                    socket.close()
+                except tornado.websocket.WebSocketClosedError:
+                    print("socket already closed, attempting to unregister", socket)
+                    self.unregister(socket)
 
     def send_to_room(self, room_uuid, message):
         room_sockets = self.sockets_by_room[room_uuid]
