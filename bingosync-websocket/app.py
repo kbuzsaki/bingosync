@@ -61,8 +61,14 @@ def format_defaultdict(ddict):
 class SocketRouter:
 
     def __init__(self):
-        self.all_sockets = set()
         self.sockets_by_room = defaultdict(lambda: defaultdict(set))
+
+    @property
+    def all_sockets(self):
+        for room_sockets in self.sockets_by_room.values():
+            for player_sockets in room_sockets.values():
+                for socket in player_sockets:
+                    yield socket
 
     def log_sockets(self, message=None):
         if message:
@@ -71,7 +77,7 @@ class SocketRouter:
         print()
 
     def send_all(self, message):
-        print("sending message:", repr(message), "to", len(self.all_sockets), "sockets")
+        print("sending message:", repr(message), "to", len(list(self.all_sockets)), "sockets")
         for socket in self.all_sockets:
             try:
                 socket.send(message)
@@ -101,7 +107,6 @@ class SocketRouter:
             print("posting connect")
             post_player_connection(player_uuid)
         self.sockets_by_room[room_uuid][player_uuid].add(socket)
-        self.all_sockets.add(socket)
         self.log_sockets("registered")
 
     def unregister(self, socket):
@@ -123,7 +128,6 @@ class SocketRouter:
                     print("room closed:", room_uuid)
                     del self.sockets_by_room[room_uuid]
                     break
-        self.all_sockets.discard(socket)
         self.log_sockets("unregistered")
 
 ROUTER = SocketRouter()
