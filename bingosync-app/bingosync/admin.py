@@ -89,11 +89,17 @@ def disconnect_players(modeladmin, request, queryset):
         ConnectionEvent.atomically_disconnect(player)
 disconnect_players.short_description = "Mark players disconnected"
 
+def disconnect_players_if_connected(modeladmin, request, queryset):
+    for player in queryset:
+        if player.connected:
+            ConnectionEvent.atomically_disconnect(player)
+disconnect_players_if_connected.short_description = "Mark players disconnected if connected"
+
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
     list_display = ["__str__", "created_date", "connected", "is_spectator", "room", "color"]
-    actions = [disconnect_players]
+    actions = [disconnect_players, disconnect_players_if_connected]
 
 @admin.register(ChatEvent)
 class ChatEventAdmin(admin.ModelAdmin):
