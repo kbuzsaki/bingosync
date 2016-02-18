@@ -141,6 +141,7 @@ class SocketRouter:
 ROUTER = SocketRouter()
 
 class MainHandler(tornado.web.RequestHandler):
+
     def get(self):
         self.write("Hello, world")
 
@@ -148,6 +149,13 @@ class MainHandler(tornado.web.RequestHandler):
         data = json.loads(self.request.body.decode("utf8"))
         room_uuid = data["room"]
         ROUTER.send_to_room(room_uuid, data)
+
+
+class ConnectedHandler(tornado.web.RequestHandler):
+
+    def get(self):
+        data = {room: list(players.keys()) for room, players in ROUTER.sockets_by_room.items()}
+        self.write(json.dumps(data))
 
 
 class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
@@ -185,6 +193,7 @@ class BroadcastWebSocket(tornado.websocket.WebSocketHandler):
 
 application = tornado.web.Application([
     (r"/", MainHandler),
+    (r"/connected", ConnectedHandler),
     (r"/broadcast", BroadcastWebSocket)
 ])
 

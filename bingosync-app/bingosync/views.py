@@ -6,8 +6,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 import json
 import time
+import requests
 
-from .settings import SOCKETS_URL
+from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
 from .goals_converter import download_and_get_converted_goal_list, ConversionException
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
@@ -183,6 +184,20 @@ def check_socket_key(request, socket_key):
         return JsonResponse(json_response)
     except NotAuthenticatedError:
         raise Http404("Invalid socket key")
+
+def reconcile_connections(request):
+    connected_url = SOCKETS_PUBLISH_URL + "/connected"
+    response = requests.get(connected_url)
+    connected_rooms = response.json()
+
+    active_rooms = Room.get_listed_rooms()
+    for room in active_rooms:
+        connected_player_uuids = connected_rooms.get(room.encoded_uuid, [])
+        for player in room.connected_players:
+            if player.encoded_uuid not in connected_player_uuids:
+                ConnectionEvent.atomically_disconnect(player)
+
+    return HttpResponse()
 
 
 def goal_converter(request):

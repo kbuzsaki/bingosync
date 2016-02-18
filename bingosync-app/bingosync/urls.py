@@ -39,6 +39,7 @@ urlpatterns = [
     url(r'^api/connected/(?P<encoded_player_uuid>.+)$', views.user_connected, name='user_connected'),
     url(r'^api/disconnected/(?P<encoded_player_uuid>.+)$', views.user_disconnected, name='user_disconnected'),
     url(r'^api/socket/(?P<socket_key>.+)$', views.check_socket_key, name='check_socket_key'),
+    url(r'^api/reconcile$', views.reconcile_connections, name='reconcile'),
     url(r'^api/v9/goal_list$', views.beta_bingo_list, name='beta_bingo_list'),
     url(r'^admin/', include(admin.site.urls)),
 ]
