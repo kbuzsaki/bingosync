@@ -3,6 +3,7 @@ from django.db import transaction
 from django.contrib.auth import hashers
 
 import logging
+import random
 
 from .models import Room, GameType, LockoutMode, Game, Player
 
@@ -24,7 +25,7 @@ class RoomForm(forms.Form):
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
     lockout_mode = forms.ChoiceField(label="Lockout Mode", choices=LockoutMode.choices())
-    seed = forms.CharField(label="Seed", widget=forms.NumberInput())
+    seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
 
     def create_room(self):
@@ -35,6 +36,9 @@ class RoomForm(forms.Form):
         lockout_mode = LockoutMode.for_value(int(self.cleaned_data["lockout_mode"]))
         seed = self.cleaned_data["seed"]
         is_spectator = self.cleaned_data["is_spectator"]
+
+        if seed == None or seed == "":
+            seed = str(random.randint(1, 1000000))
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
