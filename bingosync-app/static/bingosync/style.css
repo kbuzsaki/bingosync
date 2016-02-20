@@ -205,19 +205,19 @@
 
 /* ripped these gradients from the slate theme (Edited by FelixNemis) */
 .greensquare {
-    background-image: linear-gradient(#49ac25, #429412 20%, #337e03);
+    background-image: linear-gradient(#49ac25, #60ad12 20%, #498403);
 }
 
 .redsquare {
-    background-image: linear-gradient(#e1524b, #ee322f 20%, #c22722);
+    background-image: linear-gradient(#e3524a, #eb3633 20%, #be2f27);
 }
 
 .orangesquare {
-    background-image: linear-gradient(#faa143, #f89406 20%, #e48806);
+    background-image: linear-gradient(#faa143, #f87c06 20%, #e48806);
 }
 
 .bluesquare {
-    background-image: linear-gradient(#74aae3, #5b95de 20%, #4a72db);
+    background-image: linear-gradient(#70b7f5, #759cea 20%, #577ce0);
 }
 
 .purplesquare {
