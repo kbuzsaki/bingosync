@@ -337,7 +337,16 @@
     display: none;
 }
 
+/* bootstrap form overrides */
 .help-block {
     color: #b0b0b0;
     font-size: 90%;
+}
+
+.form-group .help-block {
+    margin-bottom: 0;
+}
+
+.form-group .checkbox {
+    padding-top: 0;
 }
