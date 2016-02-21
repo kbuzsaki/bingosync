@@ -24,7 +24,7 @@ class RoomForm(forms.Form):
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.choices())
-    lockout_mode = forms.ChoiceField(label="Lockout Mode", choices=LockoutMode.choices())
+    lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
 
