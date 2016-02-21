@@ -135,7 +135,7 @@
 /* plain old square */
 .square {
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     padding: 0 5px;
     cursor: pointer;
     width: 105px;
@@ -203,26 +203,25 @@
     background: #1448b3;
 }
 
-/* ripped these gradients from the slate theme */
+/* ripped these gradients from the slate theme (Edited by FelixNemis) */
 .greensquare {
-    background-image: linear-gradient(#78cc78, #62c462 60%, #53be53);
+    background-image: linear-gradient(#49ac25, #60ad12 20%, #498403);
 }
 
 .redsquare {
-    background-image: linear-gradient(#f17a77, #ee5f5b 60%, #ec4d49);
+    background-image: linear-gradient(#e3524a, #eb3633 20%, #be2f27);
 }
 
 .orangesquare {
-    background-image: linear-gradient(#faa123, #f89406 60%, #e48806);
+    background-image: linear-gradient(#faa143, #e28c3a 20%, #d88613);
 }
 
 .bluesquare {
-    background-image: linear-gradient(#74cae3, #5bc0de 60%, #4ab9db);
+    background-image: linear-gradient(#70b7f5, #759cea 20%, #577ce0);
 }
 
-/* had to generate this one using an online tool... */
 .purplesquare {
-    background-image: linear-gradient(#da75ff, #bf0fff);
+    background-image: linear-gradient(#da3fef, #bf0fff 20%, #b70edf);
 }
 
 .goalcounter {
