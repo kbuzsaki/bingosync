@@ -228,6 +228,10 @@ class GameType(Enum):
     final_fantasy_1 = 13
 
     def __str__(self):
+        return GAME_TYPE_SHORT_NAMES[self]
+
+    @property
+    def long_name(self):
         return GAME_TYPE_NAMES[self]
 
     @staticmethod
@@ -239,9 +243,25 @@ class GameType(Enum):
 
     @staticmethod
     def choices():
-        return [(game_type.value, str(game_type)) for game_type in GameType]
+        return [(game_type.value, game_type.long_name) for game_type in GameType]
 
 GAME_TYPE_NAMES = {
+    GameType.ocarina_of_time: "Zelda: Ocarina of Time",
+    GameType.super_mario_64: "Super Mario 64",
+    GameType.majoras_mask: "Zelda: Majora's Mask",
+    GameType.super_metroid: "Super Metroid",
+    GameType.castlevania_sotn: "Castlevania: SotN",
+    GameType.super_mario_world: "Super Mario World",
+    GameType.pokemon_red_blue: "Pokémon Red/Blue",
+    GameType.pokemon_crystal: "Pokémon Crystal",
+    GameType.donkey_kong_64: "Donkey Kong 64",
+    GameType.pikmin: "Pikmin",
+    GameType.super_mario_sunshine: "Super Mario Sunshine",
+    GameType.pokemon_red_blue_randomizer: "Pokémon Red/Blue Random",
+    GameType.final_fantasy_1: "Final Fantasy 1",
+}
+
+GAME_TYPE_SHORT_NAMES = {
     GameType.ocarina_of_time: "Zelda: OoT",
     GameType.super_mario_64: "SM64",
     GameType.majoras_mask: "Zelda: MM",
