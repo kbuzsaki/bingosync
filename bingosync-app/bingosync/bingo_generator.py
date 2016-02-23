@@ -41,6 +41,7 @@ CACHED_FILES_BY_NAME = {
     "pikmin": "generators/pikmin_generator.js",
     "super_mario_sunshine": "generators/super_mario_sunshine_generator.js",
     "pokemon_red_blue_randomizer": "generators/pokemon_red_blue_randomizer_generator.js",
+    "final_fantasy_1": "generators/final_fantasy_1_generator.js",
 }
 
 def load_cached_generator_source(game_name):

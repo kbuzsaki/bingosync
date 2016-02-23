@@ -225,6 +225,7 @@ class GameType(Enum):
     pikmin = 10
     super_mario_sunshine = 11
     pokemon_red_blue_randomizer = 12
+    final_fantasy_1 = 13
 
     def __str__(self):
         return GAME_TYPE_NAMES[self]
@@ -253,6 +254,7 @@ GAME_TYPE_NAMES = {
     GameType.pikmin: "Pikmin",
     GameType.super_mario_sunshine: "SMS",
     GameType.pokemon_red_blue_randomizer: "Poké Random",
+    GameType.final_fantasy_1: "FF1",
 }
 
 class LockoutMode(Enum):
