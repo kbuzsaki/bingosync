@@ -1,5 +1,9 @@
 .vertical-center {
-    position: relative;
+    /* set left and right to keep the width the same when changing to position: absolute */
+    left: 5px;
+    right: 5px;
+    /* position: absolute fixes vertical centering in chrome (when the containing td has verticle-align: top) */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -143,7 +147,9 @@
     text-align: center;
     border: 1px #424242 solid;
     background: #181818;
-    vertical-align: middle;
+
+    /* vertical-align changed to top so background colors wont be pushed halfway down */
+    vertical-align: top;
 
     /* position needs to be relative for overflow hidden to work */
     position: relative;
@@ -151,10 +157,10 @@
 }
 
 .square .bg-color, .square .shadow {
-    width: inherit;
     height: inherit;
     position: absolute;
     left: -2px;
+    right: -2px;
 }
 
 .square .bg-color {
@@ -184,6 +190,7 @@
     color: #3c70df;
     font-weight: 700;
     border: 1px #0a245a solid;
+    border-left-width: 0;
 }
 #bingo tr:first-child td:hover,
 #bingo tr:last-child td:hover {
@@ -197,10 +204,18 @@
     color: #3c70df;
     font-weight: 700;
     border: 1px #0a245a solid;
+    border-top-width: 0;
+}
+#bingo tr:first-child td:first-child {
+    border-width:1px;
 }
 #bingo tr td:first-child:hover {
     color: #ffffff;
     background: #1448b3;
+}
+
+#bingo {
+    border-collapse: separate;
 }
 
 /* ripped these gradients from the slate theme */

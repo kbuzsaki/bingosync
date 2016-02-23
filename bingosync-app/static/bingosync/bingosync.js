@@ -55,9 +55,13 @@ function updateColorOffsets($square) {
     };
     var translations = translatePercent[numColors];
 
+    var curWidth = $colorElements.width();
+    var curHeight = $colorElements.height();
+    var targetAngle = Math.atan(curWidth/curHeight);
+
     $($colorElements[0]).css('transform', '');
     for (var i = 1; i < $colorElements.length; ++i) {
-        var transform = 'skew(-48deg) translateX(' + translations[i] + '%)';
+        var transform = 'skew(-' + targetAngle + 'rad) translateX(' + translations[i] + '%)';
         $($colorElements[i]).css('transform', transform);
         $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
     }
@@ -141,6 +145,10 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             });
         });
     }
+
+    $(window).resize(function () {
+        $board.find(".square").each(function () { updateColorOffsets($(this)); });
+    });
 
     function addRowHover(name) {
         $board.find("#" + name).hover(
