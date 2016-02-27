@@ -462,8 +462,9 @@ class Event(models.Model):
         chat_events = list(ChatEvent.objects.filter(player__room=room))
         goal_events = list(GoalEvent.objects.filter(player__room=room))
         color_events = list(ColorEvent.objects.filter(player__room=room))
+        revealed_events = list(RevealedEvent.objects.filter(player__room=room))
         connection_events = list(ConnectionEvent.objects.filter(player__room=room))
-        all_events = chat_events + goal_events + color_events + connection_events
+        all_events = chat_events + goal_events + color_events + revealed_events + connection_events
         all_events.sort(key=lambda event: event.timestamp)
         return all_events
 
@@ -514,6 +515,15 @@ class ColorEvent(Event):
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
             "color": self.color.name
+        }
+
+class RevealedEvent(Event):
+
+    def to_json(self):
+        return {
+            "type": "revealed",
+            "player": self.player.to_json(),
+            "player_color": self.player_color.name,
         }
 
 @unique

@@ -175,6 +175,24 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     addRowHover("bltr");
 }
 
+function initializeBoardCover($boardCover, boardRevealedUrl) {
+    if ($boardCover) {
+        $boardCover.on("click", function() {
+            $(this).remove();
+            $.ajax({
+                "url": boardRevealedUrl,
+                "type": "PUT",
+                "data": JSON.stringify({
+                    "room": window.sessionStorage.getItem("room"),
+                }),
+                "error": function(result) {
+                    console.log(result);
+                }
+            });
+        });
+    }
+}
+
 function getColorCount($board, colorClass) {
     return $board.find("." + colorClass).size();
 }
@@ -259,6 +277,12 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var colorName = $("<span>", {"class": "color-name " + newColorClass, html: json["color"]}).toHtml();
             var colorMessage = playerName + " changed color to " + colorName;
             return $("<div>", {"class": "color-message", html: colorMessage}).toHtml();
+        }
+        else if(json["type"] === "revealed") {
+            var playerColorClass = getPlayerColorClass(json["player_color"]);
+            var playerName = $("<span>", {"class": playerColorClass, html: json["player"]["name"]}).toHtml();
+            var revealedMessage = playerName + " revealed the card";
+            return $("<div>", {"class": "revealed-message", html: revealedMessage}).toHtml();
         }
 
         // otherwise first format the name of the message sender

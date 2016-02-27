@@ -12,8 +12,9 @@ from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
 from .goals_converter import download_and_get_converted_goal_list, ConversionException
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
-from .models import Room, Game, Player, Color, Event, ChatEvent, ConnectionEvent
-from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_connection_event
+from .models import Room, Game, Player, Color, Event, ChatEvent, RevealedEvent, ConnectionEvent
+from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
+from .publish import publish_connection_event
 from .util import generate_encoded_uuid
 
 def rooms(request):
@@ -155,6 +156,18 @@ def select_color(request):
     color_event = player.update_color(color)
     publish_color_event(color_event)
     return HttpResponse("Received data: ", str(data))
+
+@csrf_exempt
+def board_revealed(request):
+    data = json.loads(request.body.decode("utf8"))
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+
+    revealed_event = RevealedEvent(player=player, player_color_value=player.color.value)
+    revealed_event.save()
+    publish_revealed_event(revealed_event)
+    return HttpResponse("Received data: " + str(data))
 
 # TODO: add authentication to limit this route to tornado
 @csrf_exempt

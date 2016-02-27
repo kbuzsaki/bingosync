@@ -15,6 +15,10 @@ def publish_color_event(color_event):
     data = color_event.to_json()
     _publish_json(data, color_event.player.room)
 
+def publish_revealed_event(revealed_event):
+    data = revealed_event.to_json()
+    _publish_json(data, revealed_event.player.room)
+
 def publish_connection_event(connection_event):
     data = connection_event.to_json()
     _publish_json(data, connection_event.player.room)

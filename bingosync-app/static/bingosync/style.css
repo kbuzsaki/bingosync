@@ -240,6 +240,51 @@
     background-image: linear-gradient(#CF6BF5, #B038DC);
 }
 
+.board-container {
+    display: inline-block;
+    position: relative;
+}
+
+.board-cover {
+    /* pin it over top of the board container */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+    /* size of popouts (measured, not enforced) */
+    margin-top: 31px;
+    margin-left: 31px;
+
+    /* cover the board */
+    width: calc(100% - 31px);
+    height: calc(100% - 61px);
+    background: #101821;
+
+    /* helps align text */
+    display: flex;
+    justify-content: center;
+
+    /* slight gradient to not look weird */
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+.board-cover:hover,
+.board-cover.hover {
+    cursor: pointer;
+    background: #05132E;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.6);
+}
+
+/* align text */
+.board-cover-text {
+    align-self: center;
+}
+
 .goalcounter {
     color: white;
     display: inline-block;
@@ -327,6 +372,11 @@
 
 .color-name {
     font-weight: bold;
+}
+
+.revealed-message {
+    font-style: italic;
+    color: #888;
 }
 
 .history-placeholder {
