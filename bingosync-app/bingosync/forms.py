@@ -27,6 +27,7 @@ class RoomForm(forms.Form):
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
+    hide_card = forms.BooleanField(label="Hide Card Initially", required=False)
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
@@ -36,13 +37,14 @@ class RoomForm(forms.Form):
         lockout_mode = LockoutMode.for_value(int(self.cleaned_data["lockout_mode"]))
         seed = self.cleaned_data["seed"]
         is_spectator = self.cleaned_data["is_spectator"]
+        hide_card = self.cleaned_data["hide_card"]
 
         if seed == None or seed == "":
             seed = str(random.randint(1, 1000000))
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
-            room = Room(name=room_name, passphrase=encrypted_passphrase)
+            room = Room(name=room_name, passphrase=encrypted_passphrase, hide_card=hide_card)
             room.save()
 
             board_json = game_type.generator_instance().get_card(seed)

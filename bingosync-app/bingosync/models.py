@@ -163,6 +163,7 @@ class Room(models.Model):
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
     passphrase = models.CharField(max_length=255)
     active = models.BooleanField("Active", default=False)
+    hide_card = models.BooleanField("Initially Hide Card", default=False)
 
     def __str__(self):
         return self.name

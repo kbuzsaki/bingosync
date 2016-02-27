@@ -414,4 +414,5 @@
 
 .form-group .checkbox {
     padding-top: 0;
+    min-height: 0;
 }

@@ -18,11 +18,13 @@
                     {% include 'bingosync/color_chooser.html' %}
                 <div class="board-container">
                     {% include 'bingosync/board.html' %}
-                    <div class="board-cover">
-                        <div class="board-cover-text unselectable">
-                            Click to Reveal
+                    {% if room.hide_card %}
+                        <div class="board-cover">
+                            <div class="board-cover-text unselectable">
+                                Click to Reveal
+                            </div>
                         </div>
-                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -67,7 +69,9 @@
         // asynchronously load and populate the board
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), isSpectator);
 
-        initializeBoardCover($(".board-cover"), boardRevealedUrl);
+        {% if room.hide_card %}
+            initializeBoardCover($(".board-cover"), boardRevealedUrl);
+        {% endif %}
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
