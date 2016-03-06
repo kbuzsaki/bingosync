@@ -227,6 +227,7 @@ class GameType(Enum):
     super_mario_sunshine = 11
     pokemon_red_blue_randomizer = 12
     final_fantasy_1 = 13
+    crash_twinsanity = 14
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -260,6 +261,7 @@ GAME_TYPE_NAMES = {
     GameType.super_mario_sunshine: "Super Mario Sunshine",
     GameType.pokemon_red_blue_randomizer: "Pokémon Red/Blue Random",
     GameType.final_fantasy_1: "Final Fantasy 1",
+    GameType.crash_twinsanity: "Crash Twinsanity",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -276,6 +278,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.super_mario_sunshine: "SMS",
     GameType.pokemon_red_blue_randomizer: "Poké Random",
     GameType.final_fantasy_1: "FF1",
+    GameType.crash_twinsanity: "Crash Twins."
 }
 
 class LockoutMode(Enum):
