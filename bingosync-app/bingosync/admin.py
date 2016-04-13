@@ -51,7 +51,7 @@ class ConnectionEventInline(admin.TabularInline):
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
     inlines = [GameInline, PlayerInline]
-    list_display = ["__str__", "created_date", "num_games", "num_players", "active", "encoded_uuid"]
+    list_display = ["__str__", "created_date", "num_games", "num_players", "active", "hide_card"]
     view_on_site = True
 
     readonly_fields = ["passphrase"]
