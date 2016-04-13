@@ -49,10 +49,19 @@ class ConnectionEventInline(admin.TabularInline):
     model = ConnectionEvent
     extra = 0
 
+def filter_room_and_creator_name(modeladmin, request, queryset):
+    for room in queryset:
+        room.name = FilteredPattern.filter_string(room.name)
+        room.save()
+        creator = room.creator
+        creator.name = FilteredPattern.filter_string(creator.name)
+        creator.save()
+
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
     inlines = [GameInline, PlayerInline]
     list_display = ["__str__", "created_date", "num_games", "num_players", "active", "hide_card"]
+    actions = [filter_room_and_creator_name]
     view_on_site = True
 
     readonly_fields = ["passphrase"]
@@ -96,11 +105,16 @@ def disconnect_players_if_connected(modeladmin, request, queryset):
             ConnectionEvent.atomically_disconnect(player)
 disconnect_players_if_connected.short_description = "Mark players disconnected if connected"
 
+def filter_player_name(modeladmin, request, queryset):
+    for player in queryset:
+        player.name = FilteredPattern.filter_string(player.name)
+        player.save()
+
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
     list_display = ["__str__", "created_date", "connected", "is_spectator", "room", "color"]
-    actions = [disconnect_players, disconnect_players_if_connected]
+    actions = [disconnect_players, disconnect_players_if_connected, filter_player_name]
 
 @admin.register(ChatEvent)
 class ChatEventAdmin(admin.ModelAdmin):
