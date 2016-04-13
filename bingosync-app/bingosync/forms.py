@@ -5,7 +5,7 @@ from django.contrib.auth import hashers
 import logging
 import random
 
-from .models import Room, GameType, LockoutMode, Game, Player
+from .models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
 
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
@@ -38,6 +38,10 @@ class RoomForm(forms.Form):
         seed = self.cleaned_data["seed"]
         is_spectator = self.cleaned_data["is_spectator"]
         hide_card = self.cleaned_data["hide_card"]
+
+        # apply filtered word blacklist
+        room_name = FilteredPattern.filter_string(room_name)
+        nickname = FilteredPattern.filter_string(nickname)
 
         if seed == None or seed == "":
             seed = str(random.randint(1, 1000000))

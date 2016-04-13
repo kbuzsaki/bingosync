@@ -4,6 +4,8 @@ from django.core import urlresolvers
 from datetime import datetime
 from uuid import uuid4
 from enum import Enum, unique
+import re
+import logging
 
 from .bingo_generator import BingoGenerator
 from .util import encode_uuid, decode_uuid
@@ -587,4 +589,24 @@ class ConnectionEvent(Event):
             "player_color": self.player_color.name
         }
 
+
+FILLER_WORD = "kitten"
+
+class FilteredPattern(models.Model):
+    pattern = models.CharField(max_length=255)
+
+    @staticmethod
+    def filter_string(string):
+        filtered_patterns = FilteredPattern.objects.all()
+
+        for filtered_pattern in filtered_patterns:
+            try:
+                filtered_regex = re.compile(filtered_pattern.pattern, re.IGNORECASE)
+                string = filtered_regex.sub(FILLER_WORD, string)
+            except Exception as e:
+                logging.exception("Regex pattern: " + filtered_pattern.pattern)
+
+
+
+        return string
 

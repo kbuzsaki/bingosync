@@ -8,6 +8,7 @@ import json
 import pprint
 
 from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ColorEvent, ConnectionEvent
+from .models import FilteredPattern
 
 class GameInline(admin.StackedInline):
     model = Game
@@ -122,6 +123,11 @@ class GoalEventAdmin(admin.ModelAdmin):
 @admin.register(ConnectionEvent)
 class ConnectionEventAdmin(admin.ModelAdmin):
     list_display = ["__str__", "timestamp", "player", "event_type"]
+
+
+@admin.register(FilteredPattern)
+class FilteredPatternAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "pattern"]
 
 
 @admin.register(Session)
