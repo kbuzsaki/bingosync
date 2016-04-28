@@ -370,6 +370,11 @@
     color: #888;
 }
 
+.chat-timestamp {
+    font-size: 80%;
+    color: #bbbbbb;
+}
+
 .color-name {
     font-weight: bold;
 }
