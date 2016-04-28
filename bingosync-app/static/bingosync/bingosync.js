@@ -85,8 +85,10 @@ function squareHasColor($square, colorClass) {
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
-        $square.html('<div class="shadow"></div><div class="vertical-center">' + json["name"] + '</div>');
+        $square.html('<div class="shadow"></div><div class="vertical-center text-container">' + json["name"] + '</div>');
         setSquareColors($square, json["colors"]);
+
+        refitGoalText();
     }
 
     function updateBoard($board, json) {
@@ -410,4 +412,22 @@ function initializeChatSettings($chatSettings, $chatWindow) {
         $chatWindow.find(".connection-entry").toggle(this.checked);
     });
 }
+
+function refitGoalText() {
+    var $allText = $('.square div.text-container');
+    var maxHeight = $('.square').height();
+
+    console.log($allText);
+    $allText.each(function () {
+        var $thisText = $(this);
+        $thisText.css('font-size', '100%');
+        var currentPercent = 100;
+        while($thisText.height() > maxHeight) {
+            currentPercent -= 2;
+            $thisText.css('font-size', currentPercent + "%" );
+        }
+    });
+}
+
+window.addEventListener('resize', refitGoalText, false);
 
