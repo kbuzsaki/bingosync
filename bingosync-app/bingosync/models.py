@@ -590,7 +590,7 @@ class ConnectionEvent(Event):
         }
 
 
-FILLER_WORD = "kitten"
+FILLER_WORD = "kittens"
 
 class FilteredPattern(models.Model):
     pattern = models.CharField(max_length=255)
