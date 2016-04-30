@@ -7,7 +7,8 @@ from django.db import models
 import json
 import pprint
 
-from .models import Room, Game, Square, Player, ChatEvent, GoalEvent, ColorEvent, ConnectionEvent
+from .models import Room, Game, Square, Player
+from .models import ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent
 from .models import FilteredPattern
 
 class GameInline(admin.StackedInline):
@@ -133,6 +134,10 @@ class GoalEventAdmin(admin.ModelAdmin):
 
     def goal(self, obj):
         return obj.square.goal
+
+@admin.register(RevealedEvent)
+class RevealedEventAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "timestamp", "player"]
 
 @admin.register(ConnectionEvent)
 class ConnectionEventAdmin(admin.ModelAdmin):
