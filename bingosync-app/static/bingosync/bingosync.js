@@ -417,7 +417,6 @@ function refitGoalText() {
     var $allText = $('.square div.text-container');
     var maxHeight = $('.square').height();
 
-    console.log($allText);
     $allText.each(function () {
         var $thisText = $(this);
         $thisText.css('font-size', '100%');
