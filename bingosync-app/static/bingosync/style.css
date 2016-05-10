@@ -67,7 +67,6 @@
 .flex-col-content {
     flex: 1 1 auto;
     position: relative;
-    margin-bottom: 20px;
 }
 
 .flex-col-content .fill-parent {
