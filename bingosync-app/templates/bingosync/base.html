@@ -17,7 +17,29 @@
     {% endblock %}
 </head>
 <body>
-    {% block page_body %}
+    {% block page_all %}
+        <div class="container" style="height: 97vh; position: relative">
+            {% block page_header %}
+                <div>
+                    <a href="{% url 'views.rooms' %}">
+                        <h1>Bingosync</h1>
+                    </a>
+                </div>
+            {% endblock %}
+            {% block page_body %}
+            {% endblock %}
+            {% block page_footer %}
+                <div class="footer-bar">
+                    <a href="{% url 'views.history' %}">Room History</a>
+                    ·
+                    <a href="{% url 'views.about' %}">About</a>
+                    ·
+                    <a href="https://twitter.com/saltor6">Twitter</a>
+                    ·
+                    <a href="https://github.com/kbuzsaki/bingosync">Github</a>
+                </div>
+            {% endblock %}
+        </div>
     {% endblock %}
 </body>
 </html>
