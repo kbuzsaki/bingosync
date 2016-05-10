@@ -91,8 +91,9 @@ class CompositeColor:
                 print(str(possible) + ' is not iterable')
             else:
                 composite_color = CompositeColor(possible)
-                choices.append( (composite_color.value, str(composite_color)) )
-        return choices
+                choices.append((composite_color.value, str(composite_color)))
+        # sort so that it's not runtime dependent and messing up migrations every time
+        return sorted(choices)
 
     @staticmethod
     def goal_default():
