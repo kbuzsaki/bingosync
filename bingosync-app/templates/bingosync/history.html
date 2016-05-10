@@ -9,7 +9,7 @@
         </div>
         <div class="panel-body">
             {% if rooms %}
-                <div style="margin: 5px; min-height: 120px; border-radius: 5px">
+                <div class="table-wrapper" style="margin: 5px; min-height: 120px; border-radius: 5px">
                     <table class="table">
                         <thead>
                             <th>Room</th>
@@ -17,7 +17,7 @@
                             <th>Created</th>
                             <th>Game</th>
                             <th>Seed</th>
-                            <th>Total Players</th>
+                            <th>Players</th>
                         </thead>
                         <tbody>
                         {% for room in rooms %}

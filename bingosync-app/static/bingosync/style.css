@@ -6,6 +6,10 @@
     margin-bottom: 20px;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+
 .vertical-center {
     /* set left and right to keep the width the same when changing to position: absolute */
     left: 5px;
