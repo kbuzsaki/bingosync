@@ -466,7 +466,7 @@ class Event(models.Model):
         return Color.for_value(self.player_color_value)
 
     @property
-    def jsonTimestamp(self):
+    def json_timestamp(self):
         return self.timestamp.replace().timestamp()
 
     @staticmethod
@@ -493,7 +493,7 @@ class ChatEvent(Event):
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
             "text": self.body,
-            "timestamp": self.jsonTimestamp
+            "timestamp": self.json_timestamp
         }
 
 class GoalEvent(Event):
@@ -513,7 +513,7 @@ class GoalEvent(Event):
             "player_color": self.player_color.name,
             "color": self.color.name,
             "remove": self.remove_color,
-            "timestamp": self.jsonTimestamp
+            "timestamp": self.json_timestamp
         }
 
 class ColorEvent(Event):
@@ -529,7 +529,7 @@ class ColorEvent(Event):
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
             "color": self.color.name,
-            "timestamp": self.jsonTimestamp
+            "timestamp": self.json_timestamp
         }
 
 class RevealedEvent(Event):
@@ -539,7 +539,7 @@ class RevealedEvent(Event):
             "type": "revealed",
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
-            "timestamp": self.jsonTimestamp
+            "timestamp": self.json_timestamp
         }
 
 @unique
@@ -597,7 +597,7 @@ class ConnectionEvent(Event):
             "event_type": self.event_type.name,
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
-            "timestamp": self.jsonTimestamp
+            "timestamp": self.json_timestamp
         }
 
 
