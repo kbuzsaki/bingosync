@@ -261,6 +261,17 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     }
     function processChatJson(json) {
         console.log(json);
+        // Generate readable timestamp
+        var zeroPad = function (str, length) {
+            return ('000000' + str).slice(-length);
+        };
+        var eventTime = new Date(json.timestamp*1000);
+        var timeString = zeroPad(eventTime.getHours(), 2) + ':' + zeroPad(eventTime.getMinutes(), 2) + ':' + zeroPad(eventTime.getSeconds(), 2);
+        var timeHtml = $("<span>", {"class": "chat-timestamp", html: timeString});
+        if (!$('#timestamp-toggle').prop("checked")) {
+            timeHtml.hide();
+        }
+        timeHtml = timeHtml.toHtml();
 
         // connection and color messages don't have a player span, so do them first
         if (json["type"] === "connection") {
@@ -270,7 +281,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             }
 
             var connectionMessage = connectionPlayerName + " " + json["event_type"];
-            return $("<div>", {"class": "connection-message", html: " - " + connectionMessage}).toHtml();
+            return $("<div>", {"class": "connection-message", html: timeHtml + " - " + connectionMessage}).toHtml();
         }
         else if(json["type"] === "color") {
             var playerColorClass = getPlayerColorClass(json["player_color"]);
@@ -278,30 +289,30 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var newColorClass = getPlayerColorClass(json["color"]);
             var colorName = $("<span>", {"class": "color-name " + newColorClass, html: json["color"]}).toHtml();
             var colorMessage = playerName + " changed color to " + colorName;
-            return $("<div>", {"class": "color-message", html: colorMessage}).toHtml();
+            return $("<div>", {"class": "color-message", html: timeHtml + " " + colorMessage}).toHtml();
         }
         else if(json["type"] === "revealed") {
             var playerColorClass = getPlayerColorClass(json["player_color"]);
             var playerName = $("<span>", {"class": playerColorClass, html: json["player"]["name"]}).toHtml();
             var revealedMessage = playerName + " revealed the card";
-            return $("<div>", {"class": "revealed-message", html: revealedMessage}).toHtml();
+            return $("<div>", {"class": "revealed-message", html: timeHtml + " " + revealedMessage}).toHtml();
         }
 
         // otherwise first format the name of the message sender
         var playerSpan = processPlayerJson(json["player"], getPlayerColorClass(json["player_color"]));
         if(json["type"] === "chat") {
             var message = $("<span>", {"class": "chat-message", html: json["text"]}).toHtml();
-            return $("<div>", {html: playerSpan + ": " + message}).toHtml();
+            return $("<div>", {html: timeHtml + " " + playerSpan + ": " + message}).toHtml();
         }
         else if(json["type"] === "goal") {
             var colorClass = json["remove"] ? getPlayerColorClass('blank') : getPlayerColorClass(json["color"]);
             var goal = $("<span>", {"class": "goal-name " + colorClass, html: json["square"]["name"]}).toHtml();
 
             if(json["remove"]) {
-                return $("<div>", {"class": "goal-message", html: playerSpan + " cleared " + goal}).toHtml();
+                return $("<div>", {"class": "goal-message", html: timeHtml + " " + playerSpan + " cleared " + goal}).toHtml();
             }
             else {
-                return $("<div>", {"class": "goal-message", html: playerSpan + " marked " + goal}).toHtml();
+                return $("<div>", {"class": "goal-message", html: timeHtml + " " + playerSpan + " marked " + goal}).toHtml();
             }
         }
     }
@@ -410,6 +421,9 @@ function initializeChatSettings($chatSettings, $chatWindow) {
     });
     $chatSettings.find("#connection-entry-toggle").on("change", function() {
         $chatWindow.find(".connection-entry").toggle(this.checked);
+    });
+    $chatSettings.find("#timestamp-toggle").on("change", function() {
+        $chatWindow.find(".chat-timestamp").toggle(this.checked);
     });
 }
 

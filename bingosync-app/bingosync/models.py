@@ -1,6 +1,8 @@
 from django.db import models, transaction
 from django.core import urlresolvers
 
+from django.utils import timezone
+
 from datetime import datetime
 from uuid import uuid4
 from enum import Enum, unique
@@ -456,12 +458,16 @@ class Player(models.Model):
 
 class Event(models.Model):
     player = models.ForeignKey(Player)
-    timestamp = models.DateTimeField("Sent", default=datetime.now)
+    timestamp = models.DateTimeField("Sent", default=timezone.now)
     player_color_value = models.IntegerField(choices=Color.player_choices())
 
     @property
     def player_color(self):
         return Color.for_value(self.player_color_value)
+
+    @property
+    def jsonTimestamp(self):
+        return self.timestamp.replace().timestamp()
 
     @staticmethod
     def get_all_for_room(room):
@@ -486,7 +492,8 @@ class ChatEvent(Event):
             "type": "chat",
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
-            "text": self.body
+            "text": self.body,
+            "timestamp": self.jsonTimestamp
         }
 
 class GoalEvent(Event):
@@ -505,7 +512,8 @@ class GoalEvent(Event):
             "square": self.square.to_json(),
             "player_color": self.player_color.name,
             "color": self.color.name,
-            "remove": self.remove_color
+            "remove": self.remove_color,
+            "timestamp": self.jsonTimestamp
         }
 
 class ColorEvent(Event):
@@ -520,7 +528,8 @@ class ColorEvent(Event):
             "type": "color",
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
-            "color": self.color.name
+            "color": self.color.name,
+            "timestamp": self.jsonTimestamp
         }
 
 class RevealedEvent(Event):
@@ -530,6 +539,7 @@ class RevealedEvent(Event):
             "type": "revealed",
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
+            "timestamp": self.jsonTimestamp
         }
 
 @unique
@@ -586,7 +596,8 @@ class ConnectionEvent(Event):
             "type": "connection",
             "event_type": self.event_type.name,
             "player": self.player.to_json(),
-            "player_color": self.player_color.name
+            "player_color": self.player_color.name,
+            "timestamp": self.jsonTimestamp
         }
 
 
