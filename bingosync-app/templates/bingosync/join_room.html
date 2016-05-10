@@ -2,6 +2,10 @@
 {% load staticfiles %}
 {% load bootstrap %}
 
+{% block page_head_meta_description %}
+    <meta name="description" content="Bingosync room for '{{ room.current_game.game_type.long_name }}' made by {{ room.creator.name }}">
+{% endblock %}
+
 {% block page_content %}
     <div style="max-width: 600px; margin: 0 auto">
         <div class="panel panel-default">

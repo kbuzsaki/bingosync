@@ -56,12 +56,13 @@ def room_view(request, encoded_room_uuid):
             return render(request, "bingosync/bingosync.html", params)
         except NotAuthenticatedError:
             join_form = JoinRoomForm.for_room(room)
-            return _join_room(request, join_form, encoded_room_uuid)
+            return _join_room(request, join_form, room)
 
-def _join_room(request, join_form, encoded_room_uuid):
+def _join_room(request, join_form, room):
     params = {
         "form": join_form,
-        "encoded_room_uuid": encoded_room_uuid
+        "room": room,
+        "encoded_room_uuid": room.encoded_uuid,
     }
     return render(request, "bingosync/join_room.html", params)
 
