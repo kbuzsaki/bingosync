@@ -53,6 +53,9 @@
     flex: 0 1 80px;
 }
 
+.page-container {
+    min-height: 100vh;
+}
 
 .flex-col-container {
     display: flex;
@@ -389,9 +392,7 @@
 }
 
 .footer-bar {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
     color: #888;
 }
 

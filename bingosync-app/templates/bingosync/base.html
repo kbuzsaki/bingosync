@@ -18,27 +18,33 @@
 </head>
 <body>
     {% block page_body %}
-        <div class="container" style="height: 97vh; position: relative">
-            {% block page_header %}
-                <div>
-                    <a href="{% url 'views.rooms' %}">
-                        <h1>Bingosync</h1>
-                    </a>
+        <div class="container">
+            <div class="flex-col-container page-container">
+                <div class="flex-col-header">
+                    {% block page_header %}
+                            <a href="{% url 'views.rooms' %}">
+                                <h1>Bingosync</h1>
+                            </a>
+                    {% endblock %}
                 </div>
-            {% endblock %}
-            {% block page_content %}
-            {% endblock %}
-            {% block page_footer %}
-                <div class="footer-bar">
-                    <a href="{% url 'views.history' %}">Room History</a>
-                    ·
-                    <a href="{% url 'views.about' %}">About</a>
-                    ·
-                    <a href="https://twitter.com/saltor6">Twitter</a>
-                    ·
-                    <a href="https://github.com/kbuzsaki/bingosync">Github</a>
+                <div class="flex-col-content">
+                    {% block page_content %}
+                    {% endblock %}
                 </div>
-            {% endblock %}
+                <div class="flex-col-footer" style="margin-bottom: 20px">
+                    {% block page_footer %}
+                        <div class="footer-bar">
+                            <a href="{% url 'views.history' %}">Room History</a>
+                            ·
+                            <a href="{% url 'views.about' %}">About</a>
+                            ·
+                            <a href="https://twitter.com/saltor6">Twitter</a>
+                            ·
+                            <a href="https://github.com/kbuzsaki/bingosync">Github</a>
+                        </div>
+                    {% endblock %}
+                </div>
+            </div>
         </div>
     {% endblock %}
 </body>
