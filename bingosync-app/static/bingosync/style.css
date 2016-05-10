@@ -1,3 +1,11 @@
+.m-b-s {
+    margin-bottom: 8px;
+}
+
+.m-b-l {
+    margin-bottom: 20px;
+}
+
 .vertical-center {
     /* set left and right to keep the width the same when changing to position: absolute */
     left: 5px;
