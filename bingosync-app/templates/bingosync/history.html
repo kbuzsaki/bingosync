@@ -38,7 +38,7 @@
                         {% if rooms.has_previous %}
                             <a class="btn btn-primary" href="?page={{ rooms.previous_page_number }}">&lt;</a>
                         {% else %}
-                            <span class="btn" style="visibility: hidden">&lt;</span>
+                            <span class="btn hidden">&lt;</span>
                         {% endif %}
                     </span>
 
@@ -50,7 +50,7 @@
                         {% if rooms.has_next %}
                             <a class="btn btn-primary" href="?page={{ rooms.next_page_number }}">&gt;</a>
                         {% else %}
-                            <span class="btn" style="visibility: hidden">&gt;</span>
+                            <span class="btn hidden">&gt;</span>
                         {% endif %}
                     </span>
                 </div>
