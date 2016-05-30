@@ -43,6 +43,7 @@ CACHED_FILES_BY_NAME = {
     "pokemon_red_blue_randomizer": "generators/pokemon_red_blue_randomizer_generator.js",
     "final_fantasy_1": "generators/final_fantasy_1_generator.js",
     "crash_twinsanity": "generators/crash_twinsanity_generator.js",
+    "lufia_2": "generators/lufia_2_generator.js",
 }
 
 def load_cached_generator_source(game_name):
