@@ -189,6 +189,10 @@ class Room(models.Model):
     def get_listed_rooms():
         return Room.objects.filter(active=True)
 
+    @staticmethod
+    def get_with_multiple_players():
+        return Room.objects.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
+
     @property
     def encoded_uuid(self):
         return encode_uuid(self.uuid)

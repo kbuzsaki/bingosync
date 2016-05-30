@@ -1,11 +1,16 @@
 {% extends "bingosync/base.html" %}
 {% load staticfiles %}
 {% load bootstrap %}
+{% load urls %}
 
 {% block page_content %}
     <div class="panel panel-default">
         <div class="panel-heading">
             History
+            <a class="pull-right" href="{% toggle_params request.get_full_path hide_solo='true' %}"
+               title="{{ hide_solo|yesno:"Show,Hide" }} rooms with only one player">
+                {{ hide_solo|yesno:"Show,Hide" }} Solo Rooms
+            </a>
         </div>
         <div class="panel-body">
             {% if rooms %}
@@ -36,7 +41,10 @@
                 <div style="width: 100%; text-align: center; overflow: auto; position: relative;">
                     <span class="pull-left">
                         {% if rooms.has_previous %}
-                            <a class="btn btn-primary" href="?page={{ rooms.previous_page_number }}">&lt;</a>
+                            <a class="btn btn-primary"
+                               href="{% add_params request.get_full_path page=1 %}">|&lt;</a>
+                            <a class="btn btn-primary"
+                               href="{% add_params request.get_full_path page=rooms.previous_page_number %}">&lt;</a>
                         {% else %}
                             <span class="btn hidden">&lt;</span>
                         {% endif %}
@@ -48,7 +56,10 @@
 
                     <span class="pull-right">
                         {% if rooms.has_next %}
-                            <a class="btn btn-primary" href="?page={{ rooms.next_page_number }}">&gt;</a>
+                            <a class="btn btn-primary"
+                               href="{% add_params request.get_full_path page=rooms.next_page_number %}">&gt;</a>
+                            <a class="btn btn-primary"
+                               href="{% add_params request.get_full_path page=rooms.paginator.num_pages %}">&gt;|</a>
                         {% else %}
                             <span class="btn hidden">&gt;</span>
                         {% endif %}

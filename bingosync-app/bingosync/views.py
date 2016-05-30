@@ -84,7 +84,14 @@ def board_json(request, seed):
     return JsonResponse(card, safe=False)
 
 def history(request):
-    room_list = Room.objects.order_by("-created_date")
+    hide_solo = request.GET.get('hide_solo')
+
+    if hide_solo:
+        base_rooms = Room.get_with_multiple_players()
+    else:
+        base_rooms = Room.objects.all()
+
+    room_list = base_rooms.order_by("-created_date")
     paginator = Paginator(room_list, 10) # Show 25 contacts per page
 
     page = request.GET.get('page')
@@ -98,7 +105,8 @@ def history(request):
         rooms = paginator.page(paginator.num_pages)
 
     params = {
-        'rooms': rooms
+        'hide_solo': hide_solo,
+        'rooms': rooms,
     }
     return render(request, "bingosync/history.html", params)
 
