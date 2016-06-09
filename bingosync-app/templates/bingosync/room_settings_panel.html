@@ -1,3 +1,5 @@
+{% load app_filters %}
+
 <div id="room-settings" class="panel panel-default fill-parent">
     <div class="panel-heading">
         <span>
@@ -10,7 +12,7 @@
     <div class="panel-body">
         <table id="settings-table">
             <tr><td><b>Seed:</b></td><td>{{ game.seed }}</td></tr>
-            <tr><td><b>Game:</b></td><td>{{ game.game_type }}</td></tr>
+            <tr><td><b>Game:</b></td><td>{{ game.game_type|hovertext_game_type }}</td></tr>
             <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}<div id="is-lockout" class="hidden" value="{% if game.lockout_mode_value == 2 %}lockout{% else %}non_lockout{% endif %}"></td></tr>
         </table>
     </div>
