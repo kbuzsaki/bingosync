@@ -257,6 +257,14 @@ class GameType(Enum):
     def choices():
         return [(game_type.value, game_type.long_name) for game_type in GameType]
 
+    @staticmethod
+    def sorted_choices():
+        return list(sorted(GameType.choices(), key=lambda el: el[1]))
+
+    @staticmethod
+    def form_choices():
+        return [(None, '')] + GameType.sorted_choices()
+
 GAME_TYPE_NAMES = {
     GameType.ocarina_of_time: "Zelda: Ocarina of Time",
     GameType.super_mario_64: "Super Mario 64",
@@ -321,7 +329,7 @@ class Game(models.Model):
     room = models.ForeignKey(Room)
     seed = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=datetime.now)
-    game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
+    game_type_value = models.IntegerField("Game Type", choices=GameType.sorted_choices())
     lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
 
     def __str__(self):
