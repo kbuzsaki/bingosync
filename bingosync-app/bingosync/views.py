@@ -41,7 +41,9 @@ def room_view(request, encoded_room_uuid):
             player = join_form.create_player()
             _save_session_player(request.session, player)
             return redirect("room_view", encoded_room_uuid=encoded_room_uuid)
-        return _join_room(request, join_form, encoded_room_uuid)
+        else:
+            room = Room.get_for_encoded_uuid(encoded_room_uuid)
+            return _join_room(request, join_form, room)
     else:
         try:
             room = Room.get_for_encoded_uuid(encoded_room_uuid)
