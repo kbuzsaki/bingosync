@@ -13,6 +13,7 @@ from .models import FilteredPattern
 
 class GameInline(admin.StackedInline):
     model = Game
+    raw_id_fields = ["room"]
     extra = 0
 
     readonly_fields = ["link_to_game"]
@@ -25,14 +26,17 @@ class GameInline(admin.StackedInline):
 
 class PlayerInline(admin.StackedInline):
     model = Player
+    raw_id_fields = ["room"]
     extra = 0
 
 class SquareInline(admin.TabularInline):
     model = Square
+    raw_id_fields = ["game"]
     extra = 0
 
 class ChatEventInline(admin.TabularInline):
     model = ChatEvent
+    raw_id_fields = ["player"]
     extra = 0
     formfield_overrides = {
         models.TextField: {'widget': Textarea(attrs={'rows':2, 'cols':40})},
@@ -40,14 +44,17 @@ class ChatEventInline(admin.TabularInline):
 
 class GoalEventInline(admin.TabularInline):
     model = GoalEvent
+    raw_id_fields = ["player", "square"]
     extra = 0
 
 class ColorEventInline(admin.TabularInline):
     model = ColorEvent
+    raw_id_fields = ["player"]
     extra = 0
 
 class ConnectionEventInline(admin.TabularInline):
     model = ConnectionEvent
+    raw_id_fields = ["player"]
     extra = 0
 
 def filter_room_and_creator_name(modeladmin, request, queryset):
@@ -82,6 +89,7 @@ class RoomAdmin(admin.ModelAdmin):
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
     inlines = [SquareInline]
+    raw_id_fields = ["room"]
     list_display = ["__str__", "created_date", "room", "game_type", "seed"]
     readonly_fields = ["link_to_room"]
 
@@ -93,6 +101,7 @@ class GameAdmin(admin.ModelAdmin):
 
 @admin.register(Square)
 class SquareAdmin(admin.ModelAdmin):
+    raw_id_fields = ["game"]
     list_display = ["__str__", "game", "slot", "goal", "color"]
 
 def disconnect_players(modeladmin, request, queryset):
@@ -114,11 +123,13 @@ def filter_player_name(modeladmin, request, queryset):
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
+    raw_id_fields = ["room"]
     list_display = ["__str__", "created_date", "connected", "is_spectator", "room", "color"]
     actions = [disconnect_players, disconnect_players_if_connected, filter_player_name]
 
 @admin.register(ChatEvent)
 class ChatEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player"]
     list_display = ["__str__", "timestamp", "player", "body_preview"]
 
     def body_preview(self, obj):
@@ -126,10 +137,12 @@ class ChatEventAdmin(admin.ModelAdmin):
 
 @admin.register(ColorEvent)
 class ColorEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player"]
     list_display = ["__str__", "timestamp", "player", "player_color", "color"]
 
 @admin.register(GoalEvent)
 class GoalEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player", "square"]
     list_display = ["__str__", "timestamp", "player", "color", "goal"]
 
     def goal(self, obj):
@@ -137,10 +150,12 @@ class GoalEventAdmin(admin.ModelAdmin):
 
 @admin.register(RevealedEvent)
 class RevealedEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player"]
     list_display = ["__str__", "timestamp", "player"]
 
 @admin.register(ConnectionEvent)
 class ConnectionEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player"]
     list_display = ["__str__", "timestamp", "player", "event_type"]
 
 
