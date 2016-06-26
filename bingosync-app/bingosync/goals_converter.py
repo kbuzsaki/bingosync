@@ -33,7 +33,10 @@ class IntegerColumn(ValueColumn):
 class FloatColumn(ValueColumn):
 
     def parse_value(self, value):
-        return float(value)
+        if value:
+            return float(value)
+        else:
+            return 0.0
 
 class BooleanColumn(ValueColumn):
 
@@ -60,7 +63,8 @@ SCHEMA = [
     StringColumn("jp"),
     IntegerColumn("difficulty"),
     FloatColumn("time"),
-    StringColumn("skill"),
+    FloatColumn("skill"),
+    #Ignore("v8.4 diff"),
     #BooleanColumn("child"),
     #BooleanColumn("bottle"),
     #BooleanColumn("hookshot"),
@@ -119,7 +123,9 @@ def row_to_dict(synergy_header, row):
             synergy_value = parse_synergy(synergy)
             # 'row synergy'
             if synergy_name.startswith("*"):
-                rowtypes[synergy_name[1:]] = synergy_value
+                # format is "*child: 2"
+                synergy_name_key = synergy_name[1:].split(":")[0]
+                rowtypes[synergy_name_key] = synergy_value
             # 'subtype' goal synergy
             elif synergy.startswith("*"):
                 subtypes[synergy_name] = synergy_value
@@ -151,8 +157,15 @@ def rows_to_dict(header, rows):
 
     # compatibility line
     if OUTPUT_TYPE == NOT_WATERSKULLS:
-        goals_by_difficulty = {str(difficulty): list() for difficulty in range(1, 26)}
+        goals_by_difficulty = {str(difficulty): list() for difficulty in range(0, 51)}
         goals_by_difficulty["info"] = {"version": "v9 beta"}
+
+    # parse rowsynergy values
+    row_synergy_headers = [header[1:] for header in synergy_header if header.startswith("*")]
+    row_synergy_raws = [header.split(":") for header in row_synergy_headers]
+    row_synergies = {row_synergy: float(value) for row_synergy, value in row_synergy_raws}
+    # assign the row synergies to the goal info
+    goals_by_difficulty["rowtypes"] = row_synergies
 
     for row in rows:
         try:
@@ -187,10 +200,15 @@ class RowConversionException(ConversionException):
 
 def csv_to_json(csv_file):
     reader = csv.reader(csv_file)
-    header = next(reader)
+    #header = next(reader)
     rows = list(reader)
+    columns = list(zip(*rows))
 
-    json_dict = rows_to_dict(header, rows)
+    filtered_columns = [column for column in columns if column and not column[0].startswith("#")]
+
+    filtered_rows = list(zip(*filtered_columns))
+
+    json_dict = rows_to_dict(filtered_rows[0], filtered_rows[1:])
     json_str = json.dumps(json_dict, sort_keys = True, indent = 4, ensure_ascii=False)
 
     return json_str
