@@ -239,6 +239,7 @@ class GameType(Enum):
     crash_twinsanity = 14
     lufia_2 = 15
     lego_star_wars = 16
+    spyro_2 = 17
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -283,6 +284,7 @@ GAME_TYPE_NAMES = {
     GameType.crash_twinsanity: "Crash Twinsanity",
     GameType.lufia_2: "Lufia 2: Ancient Cave",
     GameType.lego_star_wars: "Lego Star Wars",
+    GameType.spyro_2: "Spyro 2: Ripto's Rage",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -302,6 +304,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.crash_twinsanity: "Crash Twins.",
     GameType.lufia_2: "Lufia 2",
     GameType.lego_star_wars: "Lego SW",
+    GameType.spyro_2: "Spyro 2",
 }
 
 class LockoutMode(Enum):
