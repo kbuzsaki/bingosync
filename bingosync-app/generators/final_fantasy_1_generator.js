@@ -219,12 +219,9 @@ bingoGenerator = function(bingoList, opts) {
 
 var bingoList = [];
 // it's "Panmagic" bingo, so it's DIV 5 and MOD 5. All rows will always add up to the same number
-// the types are in to help make sure same goals or incompatible goals don't show up on the same row
-// updated on February 16, 2016 at 1:17 pm central daylight time
-// last edit by Lenophis
 
 bingoList[1] = [
-	{ name: "Get a first place prize in the ship 15-tile minigame", types: ["minigame", "megalixir"] },
+	{ name: "Get a first place prize in 15-tile", types: ["minigame", "megalixir"] },
 	{ name: "Use exactly 2 Monks", types: ["party", "monk"] },
 	{ name: "Get a third place prize in the ship 15-tile minigame", types: ["minigame"] },
 	{ name: "Equip only a Thief's Armlet on the body slot", types: ["unique", "nowarrior", "nowhitemage"] },
@@ -234,7 +231,7 @@ bingoList[1] = [
 ];
 
 bingoList[2] = [
-	{ name: "Get a second place prize in the ship 15-tile minigame", types: ["minigame", "elixir", "emergencyexit"] },
+	{ name: "Get a second place prize in 15-tile", types: ["minigame", "elixir", "emergencyexit"] },
 	{ name: "Cast Fira against a group of Bloodbones", types: ["situational"] },
 	{ name: "Use zero White Mages", types: ["party", "nowhitemage"] },
 	{ name: "Spend at least 14,051 gil in Pravoca", types: ["spending"] },
@@ -274,7 +271,7 @@ bingoList[5] = [
 bingoList[6] = [
 	{ name: "Get both Light Axes in the Sunken Shrine", types: ["treasurehunt"] },
 	{ name: "Get the Giant's Gloves in the Sunken Shrine", types: ["treasurehunt"] },
-	{ name: "Do NOT run from any battle in the Sunken Shrine", types: ["norun"] },
+	{ name: "Complete the Sunken Shrine without escaping combat", types: ["norun"] },
 	{ name: "Get the Diamond Armor in the Sunken Shrine", types: ["treasurehunt"] },
 	{ name: "Do NOT acquire Survival Vests", types: ["default"] },
 	{ name: "Get the Mage's Staff in the Sunken Shrine", types: ["treasurehunt"] },
@@ -287,6 +284,7 @@ bingoList[7] = [
 	{ name: "Learn exactly two curative spells", types: ["monk"] },
 	{ name: "Use zero Sleeping Bags, Tents, or Cottages", types: ["itemrestriction"] },
 	{ name: "Get the Adamantite, but do NOT get the Excalibur", types: ["treasurehunt", "excalibur"] },
+	{ name: "Defeat a group with 4 different monsters", types: ["situational"] },
 	{ name: "Use at least 1 Elixir", types: ["itemrestriction"] }
 ];
 
@@ -307,13 +305,13 @@ bingoList[9] = [
 	{ name: "Get Thor's Hammer in the Mirage Tower", types: ["treasurehunt"] },
 	{ name: "Use zero Red Mages", types: ["party", "noredmage"] },
 	{ name: "Get all of the treasure in Giant's Cave", types: ["treasurehunt"] },
-	{ name: "But exactly 19 Silver Armlets in Melmond", types: ["spending"] },
+	{ name: "Buy exactly 19 Silver Armlets in Melmond", types: ["spending"] },
 ];
 
 bingoList[10] = [
 	{ name: "Get all of the treasure in the Citadel of Trials", types: ["treasurehunt"] },
 	{ name: "Defeat the mighty Blue Dragon at least 10 times", types: ["atleast"] },
-	{ name: "Learn exactly one status buff spell", types: ["monk"] },
+	{ name: "Learn exactly one status buff spell", types: ["monk", "noblackmage", "noredmage", "nowhitemage"] },
 	{ name: "Do NOT run from any battle in the Cavern of Earth", types: ["norun"] },
 	{ name: "Get all of the treasure in the Mermaids' room", types: ["treasurehunt"] },
 	{ name: "Get the Dragon Mail in the Mirage Tower", types: ["treasurehunt"] },
@@ -321,20 +319,20 @@ bingoList[10] = [
 ];
 
 bingoList[11] = [
-	{ name: "Get the Ice Armor in the Cavern of Ice", types: ["icecave"] },
+	{ name: "Get the Ice Armor in the Cavern of Ice", types: ["treasurehunt", "icecave"] },
 	{ name: "Cast Thundara against a group of Earth Elementals", types: ["situational"] },
-	{ name: "Do NOT run from any battle in the Flying Fortress", types: ["norun"] },
-	{ name: "Learn exactly one elemental damage spell", types: ["monk"] },
+	{ name: "Do NOT run from any battle in the Flying Fortress", types: ["norun", "mirage"] },
+	{ name: "Learn exactly one elemental damage spell", types: ["monk", "noredmage", "noblackmage"] },
 	{ name: "Get the Ice Brand in Mt. Gulg", types: ["gulg"] },
-	{ name: "Get the Flame Sword in the Cavern of Ice", types: ["icecave"] },
+	{ name: "Get the Flame Sword in the Cavern of Ice", types: ["treasurehunt", "icecave"] },
 	{ name: "Put a Mindflayer to sleep", types: ["situational"] },
-	{ name: "Blind the Evil Eye", types: ["situational"] },
+	{ name: "Blind the Evil Eye", types: ["situational", "noblackmage"] },
 ];
 
 bingoList[12] = [
-	{ name: "Get the Aegis Shield in the Mirage Tower", types: ["treasurehunt"] },
+	{ name: "Get the Aegis Shield in the Mirage Tower", types: ["treasurehunt", "mirage"] },
 	{ name: "Get the clothes in the Cavern of Ice", types: ["treasurehunt", "icecave"] },
-	{ name: "Get the Rat's Tail from the Citadel of Trials, but do NOT class change", types: ["noclass"] },
+	{ name: "Get the Rat's Tail, but do NOT class change", types: ["noclass"] },
 	{ name: "Buy exactly 18 Mythril Swords in Crescent Lake", types: ["spending"] },
 	{ name: "Get the Sunblade in the Mirage Tower", types: ["treasurehunt", "sunblade"] },
 	{ name: "Defeat a Vampire Lord", types: ["fight"] },
@@ -345,6 +343,7 @@ bingoList[13] = [
 	{ name: "Use at least 4 different Inns", types: ["inn"] },
 	{ name: "Get the Razer in the Flying Fortress", types: ["treasurehunt"] },
 	{ name: "Learn exactly two status buff spells", types: ["monk"] },
+	{ name: "Defeat a Goblin at the Cavern of Earth", types: ["situational"] },
 	{ name: "Defeat Hyenadon", types: ["fight"] },
 	{ name: "Defeat at least two Rhyos", types: ["atleast"] },
 	{ name: "Get the White Robe and Black Robe in the Flying Fortress", types: ["treasurehunt"] },
@@ -354,6 +353,7 @@ bingoList[13] = [
 bingoList[14] = [
 	{ name: "Get the Masamune in the Chaos Shrine", types: ["treasurehunt"] },
 	{ name: "Get the Protect Cloak in the Chaos Shrine", types: ["treasurehunt"] },
+	{ name: "Defeat Goblins at the Cavern of Earth", types: ["situational"] },
 	{ name: "Get Sasuke's Blade in the Chaos Shrine", types: ["treasurehunt"] },
 	{ name: "Obtain an Emergency Exit from Purple Worm", types: ["emergencyexit"] },
 	{ name: "Defeat Red Pirahna", types: ["fight"] },
@@ -364,7 +364,7 @@ bingoList[14] = [
 bingoList[15] = [
 	{ name: "Buy 99 Hi-Potions", types: ["spending"] },
 	{ name: "Defeat White Crocodile", types: ["fight"] },
-	{ name: "Obtain a Megalixir", types: ["megalixir", "deatheye"] },
+	{ name: "Obtain a Megalixir, but not from 15-tile puzzle", types: ["megalixir", "deatheye"] },
 	{ name: "Defeat Ankheg", types: ["fight"] },
 	{ name: "Defeat Green Dragon", types: ["fight", "greendragon"] },
 	{ name: "Put a Green Dragon to sleep", types: ["situational", "greendragon"] },
@@ -374,10 +374,10 @@ bingoList[16] = [
 	{ name: "Defeat Death Eye at least 10 times", types: ["atleast", "deatheye"] },
 	{ name: "Get all of the treasure in the Dragon Caves", types: ["treasurehunt"] },
 	{ name: "Do NOT class change", types: ["noclass"] },
-	{ name: "Get the Protect Cloak in the Flying Fortress", types: ["treasurehunt"] },
+	{ name: "Get the Protect Cloak in Flying Fortress", types: ["treasurehunt"] },
 	{ name: "Defeat Tyrannosaurus", types: ["rare"] },
 	{ name: "Get at least 2 Ribbons from treasure chests", types: ["treasurehunt"] },
-	{ name: "Use the spell Exit to escape from Mt. Gulg", types: ["exit"] },
+	{ name: "Use the spell Exit to escape from Mt. Gulg", types: ["noclass", "exit"] },
 	{ name: "Defeat Sphinx in the Cavern of Earth", types: ["situational"] },
 	{ name: "Defeat at least one Dark Fighter", types: ["atleast"] }
 ];
@@ -386,25 +386,26 @@ bingoList[17] = [
 	{ name: "Defeat Sand Worm", types: ["fight"] },
 	{ name: "Get only 1 of Sunblade or Diamond Armor from chests", types: ["sunblade", "diamondarmor"] },
 	{ name: "Buy 99 Ethers", types: ["spending"] },
-	{ name: "Do NOT equip Dragon Mail", types: ["unique"] },
+	{ name: "Clean out Giant's Cave", types: ["treasurehunt"] },
+	{ name: "Defeat 2 groups with 4 different monsters", types: ["situational"] },
 	{ name: "Get at least 2 characters to level 35", types: ["grind"] },
 	{ name: "Buy 99 Gold Needles", types: ["spending"] },
 	{ name: "Get the Excalibur in Mt. Duergar", types: ["excalibur"] }
 ];
 
 bingoList[18] = [
-	{ name: "Defeat Typhon in Whisperwind Cove", types: ["whisperwind", "extra"] },
+	{ name: "Defeat Typhon", types: ["whisperwind", "extra"] },
 	{ name: "Get at least 3 shields from treasure chests", types: ["treasurehunt"] },
 	{ name: "Buy 99 Phoenix Downs", types: ["spending"] },
 	{ name: "Defeat Ochre Jelly", types: ["rare"] },
 	{ name: "Get at least 3 characters to level 28", types: ["grind"] },
-	{ name: "Equip one unique shield on every character, and don't remove them", types: ["unique"] },
-	{ name: "Get the party at least level 25", types: ["grind"] }
+	{ name: "No duplicate shields equipped", types: ["unique"] },
+	{ name: "Get the party to at least level 25", types: ["grind"] }
 ];
 
 bingoList[19] = [
-	{ name: "Equip one unique sword on every character, and don't remove them", types: ["unique"] },
-	{ name: "Get the party at least level 22", types: ["grind"] },
+	{ name: "No duplicate weapons equipped", types: ["unique"] },
+	{ name: "Get the party to at least level 22", types: ["grind"] },
 	{ name: "Defeat Iron Golem", types: ["rare"] },
 	{ name: "Do NOT equip Barbarian's Sword or Ribbon", types: ["unique"] },
 	{ name: "Buy 99 Tents", types: ["spending"] },
@@ -414,8 +415,8 @@ bingoList[19] = [
 
 bingoList[20] = [
 	{ name: "Learn at least one Level 7 spell for a character", types: ["grind"] },
-	{ name: "Defeat Arhiman in Earthgift Shrine", types: ["earthgift", "extra"] },
-	{ name: "Equip one unique glove on every character", types: ["unique"] },
+	{ name: "Defeat Ahriman", types: ["earthgift", "extra"] },
+	{ name: "No duplicate gloves equipped", types: ["unique"] },
 	{ name: "Learn at least two Level 6 spells for a character", types: ["grind"] },
 	{ name: "Defeat Red Dragon", types: ["rare"] },
 	{ name: "Learn three Level 4 spells for at least two characters", types: ["grind"] },
@@ -424,7 +425,7 @@ bingoList[20] = [
 bingoList[21] = [
 	{ name: "Get Sasuke's Blade in the Flying Fortress", types: ["treasurehunt"] },
 	{ name: "Use at least 5 different Inns", types: ["inn"] },
-	{ name: "Buy 99 Mana Tonics at the Caravan", types: ["spending", "caravan"] },
+	{ name: "Buy 99 Faerie Tonics at the Caravan", types: ["spending", "caravan"] },
 	{ name: "Unlock one blue seal in the Labyrinth of Time", types: ["labyrinth"] },
 	{ name: "Buy exactly 33 Prorings in Gaia", types: ["spending", "gaia"] },
 	{ name: "Learn three Level 1, 2, and 3 spells for a character", types: ["grind"] }
@@ -433,7 +434,8 @@ bingoList[21] = [
 bingoList[22] = [
 	{ name: "Buy 99 Giant's Tonics at the Caravan", types: ["spending", "caravan"] },
 	{ name: "Use at least 6 different Inns", types: ["inn"] },
-	{ name: "Buy exactly 22 Cat Claws in Gaia", types: ["spending", "gaia"] },
+	{ name: "Learn NulDeath", types: ["grind", "nowhitemage", "noredmage"] },
+	{ name: "Defeat 3 groups with 4 different monsters", types: ["situational"] },
 	{ name: "Get at least 55,000 gil from treasure chests", types: ["treasurehunt"] },
 	{ name: "Unlock one red seal in the Labyrinth of Time", types: ["labyrinth"] },
 	{ name: "Get Red Jacket", types: ["nowarrior", "nothief", "duergar"] },
@@ -442,17 +444,18 @@ bingoList[22] = [
 
 bingoList[23] = [
 	{ name: "Get at least 2 characters to level 29", types: ["grind"] },
-	{ name: "Use the spell Exit to escape from Waterfall Cavern", types: ["exit"] },
+	{ name: "Use the spell Exit to escape from Waterfall Cavern", types: ["exit", "noclass"] },
 	{ name: "Get at least 10 weapons from treasure chests", types: ["treasurehunt"] },
 	{ name: "Use all 7 Inns", types: ["inn"] },
+	{ name: "Buy exactly 22 Cat Claws in Gaia", types: ["spending", "gaia"] },
 	{ name: "Kill four different enemies in one encounter", types: ["situational"] },
 	{ name: "Defeat Echidna in Earthgift Shrine", types: ["earthgift", "extra"] }
 ];
 
 bingoList[24] = [
-	{ name: "Defeat Warmech", types: ["rare"] },
+	{ name: "Defeat Warmech in the Flying Fortress", types: ["rare"] },
 	{ name: "Get at least 3 characters to level 20", types: ["grind"] },
-	{ name: "Equip one unique helmet on every character, and don't remove them", types: ["unique"] },
+	{ name: "No duplicate helmets equipped", types: ["unique"] },
 	{ name: "Defeat at least three Ice Gigas", types: ["atleast"] },
 	{ name: "Defeat Two-headed Dragon in Earthgift Shrine", types: ["earthgift", "extra"] },
 	{ name: "Unlock two blue seals in the Labyrinth of Time", types: ["labyrinth"] }
@@ -467,3 +470,11 @@ bingoList[25] = [
 	{ name: "Defeat Gilgamesh and Atomos in Lifespring Grotto", types: ["whisperwind", "extra"] }
 ];
 
+
+// Suggestions
+// Learn NulDeath - in!
+// Blind an enemy
+// Confuse an enemy
+// Defeat a Hydra at Western Keep
+// Defeat some Goblins at Cavern of Earth - in!
+// Walk through the hall of giants
