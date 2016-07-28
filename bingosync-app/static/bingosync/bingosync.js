@@ -85,7 +85,8 @@ function squareHasColor($square, colorClass) {
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
-        $square.html('<div class="shadow"></div><div class="vertical-center text-container">' + json["name"] + '</div>');
+        $square.html('<div class="shadow"></div><div class="vertical-center text-container"></div>');
+        $square.children().next().text(json["name"]);
         setSquareColors($square, json["colors"]);
 
         refitGoalText();

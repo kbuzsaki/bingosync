@@ -2,6 +2,7 @@ from django import forms
 from django.db import transaction
 from django.contrib.auth import hashers
 
+import json
 import logging
 import random
 
@@ -24,10 +25,33 @@ class RoomForm(forms.Form):
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.form_choices())
+    custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
     hide_card = forms.BooleanField(label="Hide Card Initially", required=False)
+
+    def clean(self):
+        cleaned_data = super(RoomForm, self).clean()
+
+        game_type = GameType.for_value(int(cleaned_data["game_type"]))
+        if game_type == GameType.custom:
+            custom_json = cleaned_data["custom_json"]
+            try:
+                custom_board = json.loads(custom_json)
+            except:
+                raise forms.ValidationError("Invalid Board Json")
+
+            if not isinstance(custom_board, list):
+                raise forms.ValidationError("Board must be a list")
+
+            if len(custom_board) != 25:
+                raise forms.ValidationError("Invalid board length " + str(len(custom_board)) + ", expected 25")
+
+            for i, square in enumerate(custom_board):
+                if "name" not in square:
+                    raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+            cleaned_data["custom_board"] = custom_board
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
@@ -43,15 +67,20 @@ class RoomForm(forms.Form):
         room_name = FilteredPattern.filter_string(room_name)
         nickname = FilteredPattern.filter_string(nickname)
 
-        if seed == None or seed == "":
-            seed = str(random.randint(1, 1000000))
+        if game_type == GameType.custom:
+            if not seed:
+                seed = "0"
+            board_json = self.cleaned_data["custom_board"]
+        else:
+            if not seed:
+                seed = str(random.randint(1, 1000000))
+            board_json = game_type.generator_instance().get_card(seed)
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
             room = Room(name=room_name, passphrase=encrypted_passphrase, hide_card=hide_card)
             room.save()
 
-            board_json = game_type.generator_instance().get_card(seed)
             game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
 
             creator = Player(room=room, name=nickname, is_spectator=is_spectator)

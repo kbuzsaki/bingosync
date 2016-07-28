@@ -55,6 +55,43 @@
                             </div>
                         </div>
                     </form>
+                    <!-- this blob gets swapped into the form above because django-bootstrap-form
+                         isn't *quite* flexible enough to let me hide it by default otherwise -->
+                    <div id="real_custom_json" class="form-group hidden">
+                        <label class="control-label col-md-3 " for="id_custom_json">Board</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" name="custom_json" cols="40" rows="5"
+                                      placeholder='Paste your board as a JSON goal list, e.g:
+[ {"name": "first goal"},
+  {"name": "second goal"},
+  {"name": "third goal"},
+  ... ]'></textarea>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            // grab the data from the old custom json field, if any, and remove it
+                            var $oldCustomJson = $("#id_custom_json");
+                            var oldCustomJsonVal = $oldCustomJson.val();
+                            $oldCustomJson.remove();
+
+                            // hackily swap in the real field from the hidden template thing above
+                            var $gameType = $("#id_game_type");
+                            var $customJson = $("#real_custom_json");
+                            $customJson.insertAfter($gameType.parent().parent());
+                            $customJson.find("textarea").text(oldCustomJsonVal);
+
+                            // show / hide the custom json field depending on whether custom is selected
+                            $gameType.on("change", function() {
+                                if ($gameType.val() == 18) {
+                                    $customJson.removeClass("hidden");
+                                } else {
+                                    $customJson.addClass("hidden");
+                                }
+                            });
+                            $gameType.change();
+                        });
+                    </script>
                 </div>
             </div>
         </div>

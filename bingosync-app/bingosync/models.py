@@ -240,6 +240,7 @@ class GameType(Enum):
     lufia_2 = 15
     lego_star_wars = 16
     spyro_2 = 17
+    custom = 18
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -265,7 +266,9 @@ class GameType(Enum):
 
     @staticmethod
     def form_choices():
-        return [(None, '')] + GameType.sorted_choices()
+        # filter out custom and then put it at the end
+        choices = [choice for choice in GameType.sorted_choices() if choice[0] != GameType.custom.value]
+        return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.long_name)]
 
 GAME_TYPE_NAMES = {
     GameType.ocarina_of_time: "Zelda: Ocarina of Time",
@@ -285,6 +288,7 @@ GAME_TYPE_NAMES = {
     GameType.lufia_2: "Lufia 2: Ancient Cave",
     GameType.lego_star_wars: "Lego Star Wars",
     GameType.spyro_2: "Spyro 2: Ripto's Rage",
+    GameType.custom: "Custom (Advanced)",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -305,6 +309,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.lufia_2: "Lufia 2",
     GameType.lego_star_wars: "Lego SW",
     GameType.spyro_2: "Spyro 2",
+    GameType.custom: "Custom",
 }
 
 class LockoutMode(Enum):
