@@ -46,6 +46,7 @@ CACHED_FILES_BY_NAME = {
     "lufia_2": "generators/lufia_2_generator.js",
     "lego_star_wars": "generators/lego_star_wars_generator.js",
     "spyro_2": "generators/spyro_2_generator.js",
+    "pokemon_snap": "generators/pokemon_snap_generator.js",
 }
 
 def load_cached_generator_source(game_name):

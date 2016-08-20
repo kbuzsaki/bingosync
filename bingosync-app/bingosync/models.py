@@ -241,6 +241,7 @@ class GameType(Enum):
     lego_star_wars = 16
     spyro_2 = 17
     custom = 18
+    pokemon_snap = 19
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -289,6 +290,7 @@ GAME_TYPE_NAMES = {
     GameType.lego_star_wars: "Lego Star Wars",
     GameType.spyro_2: "Spyro 2: Ripto's Rage",
     GameType.custom: "Custom (Advanced)",
+    GameType.pokemon_snap: "Pokémon Snap",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -310,6 +312,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.lego_star_wars: "Lego SW",
     GameType.spyro_2: "Spyro 2",
     GameType.custom: "Custom",
+    GameType.pokemon_snap: "Poké Snap",
 }
 
 class LockoutMode(Enum):
