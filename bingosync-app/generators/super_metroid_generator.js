@@ -230,7 +230,7 @@ name:"3+ Energy Tanks and 30+ Missiles",types:["energytank","missile"]},{
 name:"Crateria Map Station",types:["crateriamap"]}];
 bingoList[3]=[{
 name:"20+ Power Bombs",types:["powerbomb"]},{
-name:"Collect Ice Beam and skip Speed Booster",types:["icebeam","skipspeedbooster"]},{
+name:"Collect Ice Beam and skip Speed Booster",types:["icebeam","speedbooster"]},{
 name:"4+ Energy Tanks",types:["energytank"]},{
 name:"75+ Missiles",types:["missile"]},{
 name:"Skip Charge Beam",types:["chargebeam"]}];
@@ -285,10 +285,10 @@ name:"Collect all 25 Brinstar Power Bombs",types:["powerbomb"]},{
 name:"Brinstar Reserve Tank",types:["reservetank"]},{
 name:"Collect all 15 Wrecked Ship Missiles",types:["missile"]}];
 bingoList[13]=[{
-name:"Crateria Super Missile",types:["supermissile","skipspeedbooster"]},{
+name:"Crateria Super Missile",types:["supermissile","speedbooster"]},{
 name:"Wrecked Ship Energy Tank",types:["energytank","wsetroom"]},{
-name:"Wrecked Ship Reserve Tank",types:["reservetank","skipspeedbooster"]},{
-name:"Collect all 5 Brinstar Energy Tanks",types:["energytank","skipspeedbooster"]},{
+name:"Wrecked Ship Reserve Tank",types:["reservetank","speedbooster"]},{
+name:"Collect all 5 Brinstar Energy Tanks",types:["energytank","speedbooster"]},{
 name:"Collect all 60 Brinstar Missiles",types:["missile"]}];
 bingoList[14]=[{
 name:"Finish in an Elevator",types:["finish","forgottenarea"]},{
@@ -328,7 +328,7 @@ name:"Collect only 1 of Varia Suit or Gravity Suit",types:["variasuit","gravitys
 name:"Visit Crateria-Maridia Elevator",types:["forgottenarea"]},{
 name:"Collect X Super Missiles and 50-X Power Bombs",types:["supermissile","powerbomb"]},{
 name:"Collect X Energy Tanks and 11-X Reserve Tanks",types:["energytank","reserve"]},{
-name:"Visit all 3 Brinstar Energy Recharge Stations",types:["energyrecharge","skipspeedbooster"]}];
+name:"Visit all 3 Brinstar Energy Recharge Stations",types:["energyrecharge","speedbooster"]}];
 bingoList[20]=[{
 name:"Crateria Map Station or Wrecked Ship Map Station",types:["crateriamap","wsmap"]},{
 name:"Norfair Reserve Tank or Wrecked Ship Reserve Tank",types:["reservetank"]},{
@@ -355,7 +355,7 @@ name:"Space Jump",types:["spacejump","draygon"]},{
 name:"Charge Beam, Spazer, Wave Beam, Ice Beam, and Plasma Beam",types:["chargebeam","spazer","wavebeam","icebeam","plasmabeam"]},{
 name:"Norfair Super Missile",types:["supermissile"]},{
 name:"Collect Springball and skip Ice Beam",types:["springball","icebeam"]},{
-name:"4 Reserve Tanks",types:["reservetank","skipspeedbooster"]},{
+name:"4 Reserve Tanks",types:["reservetank","speedbooster"]},{
 name:"Collect Springball and skip Grapple Beam",types:["springball","grapplebeam"]},{
 name:"Collect all 40 Maridia Missiles",types:["missile"]}];
 bingoList[24]=[{
@@ -371,4 +371,3 @@ name:"Collect all 15 Maridia Super Missiles",types:["supermissile"]},{
 name:"Collect both Maridia Energy Tanks",types:["energytank"]},{
 name:"11+ Energy Tanks",types:["energytank"]},{
 name:"Hi-Jump Boots, Speed Booster, and Space Jump",types:["hijump","speedbooster","spacejump"]}];
-
