@@ -242,6 +242,9 @@ class GameType(Enum):
     spyro_2 = 17
     custom = 18
     pokemon_snap = 19
+    ocarina_of_time_blackout = 20
+    ocarina_of_time_short = 21
+    ocarina_of_time_short_blackout = 22
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -291,6 +294,9 @@ GAME_TYPE_NAMES = {
     GameType.spyro_2: "Spyro 2: Ripto's Rage",
     GameType.custom: "Custom (Advanced)",
     GameType.pokemon_snap: "Pokémon Snap",
+    GameType.ocarina_of_time_blackout: "Zelda: Ocarina of Time - Blackout",
+    GameType.ocarina_of_time_short: "Zelda: Ocarina of Time - Short",
+    GameType.ocarina_of_time_short_blackout: "Zelda: Ocarina of Time - Short Blackout",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -313,6 +319,9 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.spyro_2: "Spyro 2",
     GameType.custom: "Custom",
     GameType.pokemon_snap: "Poké Snap",
+    GameType.ocarina_of_time_blackout: "OoT Blackout",
+    GameType.ocarina_of_time_short: "OoT Short",
+    GameType.ocarina_of_time_short_blackout: "OoT Short Blackout",
 }
 
 class LockoutMode(Enum):

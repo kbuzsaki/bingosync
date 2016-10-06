@@ -47,6 +47,9 @@ CACHED_FILES_BY_NAME = {
     "lego_star_wars": "generators/lego_star_wars_generator.js",
     "spyro_2": "generators/spyro_2_generator.js",
     "pokemon_snap": "generators/pokemon_snap_generator.js",
+    "ocarina_of_time_blackout": "generators/ocarina_of_time_blackout_generator.js",
+    "ocarina_of_time_short": "generators/ocarina_of_time_short_generator.js",
+    "ocarina_of_time_short_blackout": "generators/ocarina_of_time_short_blackout_generator.js",
 }
 
 def load_cached_generator_source(game_name):
