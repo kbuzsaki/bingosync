@@ -167,6 +167,10 @@ def rows_to_dict(header, rows):
     # assign the row synergies to the goal info
     goals_by_difficulty["rowtypes"] = row_synergies
 
+    synfilters, *rows = rows
+    synfilters = synfilters[len(SCHEMA):]
+    goals_by_difficulty["synfilters"] = {row: filt for row, filt in zip(synergy_header, synfilters) if filt}
+
     for row in rows:
         try:
             if any(col for col in row):
