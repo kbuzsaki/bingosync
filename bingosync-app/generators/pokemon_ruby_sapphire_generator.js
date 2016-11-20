@@ -264,18 +264,18 @@ bingoList[8] = [
  { name: "3 eggs", types: ["egg"] },
  { name: "Dustox and Beautifly", types: ["buggy"] },
  { name: "A Shoal item", types: ["tide"] },
- { name: "Illumise", types: ["bugpair"] }
+ { name: "Volbeat or Illumise", types: ["bugpair"] }
 ];
 bingoList[9] = [
  { name: "Defeat a Slugma", types: ["thirty"] },
  { name: "Use no repels", types: ["repel", "instant"] },
  { name: "Deepseascale or tooth", types: ["held"] },
- { name: "6 Badges", types: ["whee"] }
+ { name: "6 Badges", types: ["whee"] },
 ];
 bingoList[10] = [
- { name: "3rd or 4th place in Contest", types: ["contest"] },
  { name: "Do not heal at any Pokemon Centers", types: ["heal", "instant"] },
  { name: "Defeat all 7 trainers on route 123", types: ["train"] },
+ { name: "Trade with an NPC", types: ["trade"] },
  { name: "Shedinja", types: ["onehpwonder"] }
 ];
 bingoList[11] = [
@@ -328,8 +328,8 @@ bingoList[18] = [
 ];
 bingoList[19] = [
  { name: "Pokemon with an evasion boosting move", types: ["ass"] },
- { name: "Secret Base with 4 items", types: ["base"] },
  { name: "Receive Elixir from Size NPC", types: ["barboach"] },
+ { name: "Make a secret base", types: ["base"] },
  { name: "Stardust", types: ["star"] }
 ];
 bingoList[20] = [
@@ -341,14 +341,14 @@ bingoList[20] = [
 bingoList[21] = [
  { name: "Featherbadge", types: ["flying"] },
  { name: "Magneton", types: ["howdomagnetswork"] },
- { name: "Secret Base with 4 items", types: ["base"] },
- { name: "Relicanth", types: ["regi"] }
+ { name: "Defeat all 5 trainers on Route 133", types: ["train"] },
+ { name: "HM08 (Dive)", types: ["regi"] }
 ];
 bingoList[22] = [
  { name: "Grovyle", types: ["starter"] },
  { name: "A Pokemon with Mud Shot", types: ["starter"] },
  { name: "TM26 (Earthquake)", types: ["tate"] },
- { name: "3 level 30 Pokemon", types: ["pkmn"] }
+ { name: "3 different level 30 Pokemon", types: ["pkmn"] }
 ];
 bingoList[23] = [
  { name: "TM35 (Flamethrower)", types: ["gamecorner"] },
@@ -360,11 +360,12 @@ bingoList[24] = [
  { name: "$50,000", types: ["money", "cash"] },
  { name: "Do not catch a Legendary Pokemon", types: ["ass", "instant"] },
  { name: "30 Pokemon owned", types: ["pkmn"] },
- { name: "Unlock the Regi Chambers", types: ["regi"] }
+ { name: "Complete a Trick House maze", types: ["trickmaster"] }
 ];
 bingoList[25] = [
  { name: "Feebas", types: ["ayylmao"] },
- { name: "1st or 2nd place in Contest", types: ["contest"] },
  { name: "Silverpowder", types: ["powder"] },
- { name: "Complete Trick House", types: ["trickmaster"] }
+ { name: "6 different fire type Pokemon", types: ["pkmn"] },
+ { name: "Relicanth or Wailord", types: ["regi"] }
 ];
+
