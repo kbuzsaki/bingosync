@@ -246,6 +246,7 @@ class GameType(Enum):
     ocarina_of_time_short = 21
     ocarina_of_time_short_blackout = 22
     pokemon_ruby_sapphire = 23
+    adams_family = 24
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -299,6 +300,7 @@ GAME_TYPE_NAMES = {
     GameType.ocarina_of_time_short: "Zelda: Ocarina of Time - Short",
     GameType.ocarina_of_time_short_blackout: "Zelda: Ocarina of Time - Short Blackout",
     GameType.pokemon_ruby_sapphire: "Pokémon Ruby/Sapphire",
+    GameType.adams_family: "The Addams Family (SNES)",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -325,6 +327,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.ocarina_of_time_short: "OoT Short",
     GameType.ocarina_of_time_short_blackout: "OoT Short Blackout",
     GameType.pokemon_ruby_sapphire: "Poké Ruby/Sapph",
+    GameType.adams_family: "Addams Family",
 }
 
 class LockoutMode(Enum):
