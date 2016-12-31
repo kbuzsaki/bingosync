@@ -251,7 +251,7 @@ bingoList[5] = [
 { name: "20 Blue Coins from Gelato Beach", jp: "マンマビーチの青コイン20枚", types: ["Gelato_20", "Gelato_Early", "Gelato_Blues", "Gelato_100s", "Wiggler", "Fast_20", "Gelato_30", "Gelato_Shines"] },
 { name: "35 Total Blue Coins", jp: "青コイン合計35枚", types: ["Ricco_Blues", "Pinna_Blues", "Bianco_Blues", "Pianta_Blues", "Noki_Blues", "Plaza_Blues", "Gelato_Blues", "Sirena_Blues", "XTotal_Blues", "Blue_30"] },
 { name: "Defeat Petey Strikes Back (Bianco 5)", jp: "ボスパックン撃破（ビアンコ5）", types: ["Bianco_Boss", "Bianco_Early", "Unique_Boss", "XBoss_Shines", "Bianco_Shines"] },
-{ name: "100 Coin Shine from Sirena Beach", jp: "シレナビーチの100枚コイ���", types: ["Sirena_100s", "X100_Coins", "Sirena_Early"] },
+{ name: "100 Coin Shine from Sirena Beach", jp: "シレナビーチの100枚コイン", types: ["Sirena_100s", "X100_Coins", "Sirena_Early"] },
 { name: "15 Blue Coins from Delfino Plaza", jp: "ドルピックタウンの青コイン15枚", types: ["XBlue_Coins", "Ricco_Blues", "Gelato_Blues", "Bianco_Blues", "Pinna_Blues", "Pianta_Blues", "Sirena_Blues", "Noki_Blues", "Plaza_Shines"] },
 { name: "100 Coin Shine from Ricco Harbor", jp: "リコハーバーの100枚コイン", types: ["Ricco_100s", "Ricco_Early", "Ricco_Top", "Ricco_Rocket", "Ricco_Shines"] }
 ];
@@ -259,6 +259,7 @@ bingoList[6] = [
 { name: "6 Blue Bird Blue Coins", jp: "青い鳥の青コイン6枚", types: ["Blue_Bird", "Gelato_Hidden"] },
 { name: "100 Coin Shine from Bianco Hills", jp: "ビアンコヒルズの100枚コイン", types: ["Bianco_100s", "Bianco_Early", "Bianco_Shines"] },
 { name: "15 Blue Coins from M Graffiti", jp: "M字から青コイン15枚", types: ["M_Graffiti", "Plaza_M", "Ricco_M"] },
+{ name: "2 Rocket Nozzle Unlocks", jp: "ロケットノズル2つ解放", types: ["Rocket_Nozzle", "Bianco_Rocket", "Ricco_Rocket", "Gelato_Rocket", "Noki_Rocket", "Pianta_Rocket", "Plaza_Rocket"] },
 { name: "Defeat Wiggler", jp: "ボスハナチャン撃破（マンマ3）", types: ["Wiggler", "Gelato_Early"] },
 { name: "15 Blue Coins from Pinna Park", jp: "ピンナパークの青コイン15枚", types: ["Pinna_Blues", "Fast_20", "Pinna_Early", "Pinna_30", "Pinna_Shines"] },
 { name: "5 Blue Coins from Enemies", jp: "敵から青コイン5枚", types: ["Blue_Enemies", "Ricco_Top", "Ricco_Blues", "Ricco_Early", "XBoss_Shines", "M_Graffiti"] }
@@ -274,7 +275,6 @@ bingoList[7] = [
 bingoList[8] = [
 { name: "Collect both gold bird shines", jp: "金の鳥のシャインを2枚取得", types: ["Plaza_Shines", "Noki_Hidden", "Noki_Early"] },
 { name: "20 Blue Coins from Bianco Hills", jp: "ビアンコヒルズの青コイン20枚", types: ["Bianco_20", "Bianco_30", "Bianco_Early", "Bianco_Blues", "Bianco_Shines"] },
-{ name: "2 Rocket Nozzle Unlocks", jp: "ロケットノズル2つ解放", types: ["Rocket_Nozzle", "Bianco_Rocket", "Ricco_Rocket", "Gelato_Rocket", "Noki_Rocket", "Pianta_Rocket", "Plaza_Rocket"] },
 { name: "Defeat Gooper Blooper Returns (Ricco 5)", jp: "ボスゲッソー撃破（リコ5）", types: ["Ricco_Top", "Ricco_Early", "Ricco_6", "Ricco_100", "Ricco_Shines"] },
 { name: "4 Hidden Shines", jp: "隠しシャイン4枚", types: ["Hidden_Shines", "Ricco_Hidden", "Bianco_Hidden", "Pianta_Hidden", "Gelato_Hidden", "Sirena_Hidden", "Pinna_Hidden", "Noki_Hidden", "Secret_Shines"] },
 { name: "20 Blue Coins from Pinna Park", jp: "ピンナパークの青コイン20枚", types: ["Pinna_Blues", "Fast_20", "Pinna_Early", "Pinna_30", "Pinna_Shines"] },
@@ -325,6 +325,7 @@ bingoList[14] = [
 { name: "Collect 1 Hidden Shine in Sirena Beach", jp: "シレナビーチの隠しシャイン1枚", types: ["Sirena_Hidden", "Sirena_Early"] },
 { name: "Collect 2 Hidden Shines in Bianco Hills", jp: "ビアンコヒルズの隠しシャイン2枚", types: ["Bianco_Hidden", "Bianco_Late", "Turbo_Nozzle", "Bianco_Yoshi", "Bianco_Shines"] },
 { name: "60 Total Blue Coins", jp: "青コイン合計60枚", types: ["XTotal_Blues", "Blue_30"] },
+{ name: "Ricco Harbor Episode 8 Shine", jp: "リコハーバーストーリー8", types: ["Ricco_8", "Ricco_Late", "Ricco_Yoshi", "Ricco_Shines"] },
 { name: "Bianco Hills Episode 8 Shine", jp: "ビアンコヒルズストーリー8", types: ["Bianco_Shadow", "Bianco_Late", "Bianco_Yoshi", "Turbo_Nozzle", "Bianco_Shines"] }
 ];
 bingoList[15] = [
@@ -337,7 +338,7 @@ bingoList[15] = [
 { name: "3 Rocket Nozzle Unlocks", jp: "ロケットノズル3つ解放", types: ["Rocket_Nozzle", "Ricco_Rocket", "Bianco_Rocket", "Gelato_Rocket", "Noki_Rocket"] }
 ];
 bingoList[16] = [
-{ name: "5 Secret Shines", jp: "ヒミ���ステージのシャイン5枚", types: ["Secret_Shines", "Hidden_Shines", "Bianco_Hidden", "Sirena_Hidden", "Pinna_Hidden", "Pinna_5"] },
+{ name: "5 Secret Shines", jp: "ヒミツステージのシャイン5枚", types: ["Secret_Shines", "Hidden_Shines", "Bianco_Hidden", "Sirena_Hidden", "Pinna_Hidden", "Pinna_5"] },
 { name: "65 Total Blue Coins", jp: "青コイン合計65枚", types: ["XTotal_Blues"] },
 { name: "6 Boss Shines", jp: "ボス6体撃破", types: ["XBoss_Shines", "Unique_Boss", "Bianco_Boss", "Pinna_Boss", "Ricco_Boss", "Wiggler", "Sirena_Early", "Noki_Boss"] },
 { name: "6 Shines from Pianta Village", jp: "モンテのむらのシャイン6枚", types: ["Pianta_Late", "Pianta_8", "X_Lives", "Pianta_6", "Pianta_Shines"] },
@@ -348,20 +349,20 @@ bingoList[16] = [
 ];
 bingoList[17] = [
 { name: "5 Unique Boss Shines", jp: "ボス5種類撃破", types: ["XBoss_Shines", "Unique_Boss", "Bianco_Boss", "Pinna_Boss", "Ricco_Boss", "Wiggler", "Sirena_Early", "Noki_Boss"] },
-{ name: "Defeat both Cannon Moles", jp: "チョロプーを2匹とも倒す", types: ["Noki_Early", "Pinna_Shines"] },
+{ name: "Defeat both Cannon Moles and collect their shines", jp: "チョロプーを2匹とも倒す", types: ["Noki_Early", "Pinna_Shines"] },
 { name: "Defeat Shadow Mario in Gelato Beach", jp: "マンマビーチのニセマリオ撃破", types: ["Gelato_Late", "Gelato_5", "Gelato_Shadow"] },
 { name: "40 Lives", jp: "残機40", types: ["X_Lives"] },
-{ name: "Ride Yoshi in Bianco Hills", jp: "ビアンコヒルズのヨッシーに乗る", types: ["Bianco_Yoshi", "Bianco_8"] },
-{ name: "Sirena 3 NO Clipping", jp: "シレナ3すり抜けバグ禁止", types: ["Sirena_Late", "Pinna_Yoshi"] }
+{ name: "Defeat Shadow Mario in Pinna Park", jp: "ピンナパークのニセマリオ撃破", types: ["Pinna_Shadow", "Shadow_Mario", "Pinna_6", "Pinna_Shines"] },
+{ name: "Ride Yoshi in Bianco Hills", jp: "ビアンコヒルズのヨッシーに乗る", types: ["Bianco_Yoshi", "Bianco_8"] }
 ];
 bingoList[18] = [
 { name: "6 Hidden Shines", jp: "隠しシャイン6枚", types: ["Hidden_Shines", "Ricco_Hidden", "Bianco_Hidden", "Gelato_Hidden", "Sirena_Hidden", "Pinna_Hidden", "Noki_Hidden", "Pianta_Hidden", "Secret_Shines"] },
 { name: "7 Blue Bird Blue Coins", jp: "青い鳥の青コイン7枚", types: ["Linked_Blues", "Blue_Bird", "Butterfly"] },
 { name: "20 Blue Coins from Noki Bay", jp: "マーレのいりえの青コイン20枚", types: ["Noki_Blues", "Noki_Early", "Noki_20"] },
+{ name: "Sirena 3 NO Clipping", jp: "シレナ3すり抜けバグ禁止", types: ["Sirena_Late", "Pinna_Yoshi"] },
 { name: "70 Total Blue Coins", jp: "青コイン合計70枚", types: ["XTotal_Blues"] },
 { name: "2 Turbo Nozzle Unlocks", jp: "ターボノズル2つ解放", types: ["Gelato_Turbo", "Turbo_Nozzle", "Bianco_Turbo", "Ricco_Turbo"] },
-{ name: "Gelato Beach Episode 8 Shine", jp: "マンマビーチストーリー8", types: ["Gelato_8", "Gelato_Shadow", "Gelato_5", "Gelato_Shines"] },
-{ name: "Defeat Shadow Mario in Pinna Park", jp: "ピンナパークのニセマリオ撃破", types: ["Pinna_Shadow", "Shadow_Mario", "Pinna_6", "Pinna_Shines"] }
+{ name: "Gelato Beach Episode 8 Shine", jp: "マンマビーチストーリー8", types: ["Gelato_8", "Gelato_Shadow", "Gelato_5", "Gelato_Shines"] }
 ];
 bingoList[19] = [
 { name: "2 Shines from 5 Levels", jp: "5つのステージからシャイン2枚ずつ取得", types: ["Mix_Up"] },
@@ -377,7 +378,7 @@ bingoList[20] = [
 { name: "1 Shine from each level", jp: "各ステージからシャインを1枚ずつ取得", types: ["Mix_Up"] },
 { name: "25 Blue Coins from Pianta Village", jp: "モンテのむらの青コイン25枚", types: ["Pianta_Blues", "Pianta_30", "Pianta_Shines"] },
 { name: "75 Total Blue coins", jp: "青コイン合計75枚", types: ["XTotal_Blues"] },
-{ name: "Pianta Village Episode 8 Shine", jp: "モンテ���むらストーリー8", types: ["Pianta_8", "Pianta_Shadow", "Pianta_6", "Pianta_Shines"] },
+{ name: "Pianta Village Episode 8 Shine", jp: "モンテのむらストーリー8", types: ["Pianta_8", "Pianta_Shadow", "Pianta_6", "Pianta_Shines"] },
 { name: "4 Shines from 4 Levels", jp: "4つのステージからシャイン4枚ずつ取得", types: ["Mix_Up"] },
 { name: "6 Secret Shines", jp: "ヒミツステージのシャイン6枚", types: ["Secret_Shines", "Hidden_Shines", "Bianco_Hidden", "Sirena_Hidden", "Pinna_Hidden"] }
 ];
@@ -386,15 +387,14 @@ bingoList[21] = [
 { name: "9 Blue Coins from Enemies", jp: "敵から青コイン9枚", types: ["Blue_Enemies", "Ricco_Blues", "Gelato_Yoshi"] },
 { name: "9 Shines from a single level (not plaza)", jp: "任意の1ステージからシャイン9枚取得（ドルピックタウン以外）", types: ["Ricco_8", "Sirena_8", "Bianco_8", "Gelato_8", "Pinna_8", "Pianta_8", "Red_Shines", "9_S"] },
 { name: "All 30 blue coins from a single level", jp: "1ステージから青コイン30枚取得", types: ["Ricco_30", "Bianco_30", "Pinna_30", "Gelato_30", "Sirena_30", "Pianta_30", "Blue_30"] },
-{ name: "7 Red Coin Shines", jp: "赤コインのシャイン7枚", types: ["Red_Shines", "Hidden_Shines"] },
 { name: "11 Shines from Delfino Plaza", jp: "ドルピックタウンのシャイン11枚", types: ["Plaza_Shines"] },
 { name: "Collect 2 Hidden Shines in Pinna Park", jp: "ピンナパークの隠しシャイン2枚", types: ["Pinna_Hidden", "Pinna_Late", "Pinna_Shines"] }
 ];
 bingoList[22] = [
 { name: "7 Hidden Shines", jp: "隠しシャイン7枚", types: ["Hidden_Shines", "Ricco_Hidden", "Bianco_Hidden", "Pianta_Hidden", "Gelato_Hidden", "Sirena_Hidden", "Pinna_Hidden", "Noki_Hidden", "Secret_Shines"] },
 { name: "5 Shines from Sirena Beach", jp: "シレナビーチのシャイン5枚", types: ["Sirena_5", "Sirena_Late", "Sirena_8"] },
+{ name: "7 Red Coin Shines", jp: "赤コインのシャイン7枚", types: ["Red_Shines", "Hidden_Shines"] },
 { name: "10 Shines from a single level (not plaza)", jp: "任意の1ステージからシャイン10枚取得（ドルピックタウン以外）", types: ["Ricco_8", "Sirena_8", "Bianco_8", "Gelato_8", "Pinna_8", "Pianta_8", "Red_Shines", "9_S"] },
-{ name: "Ricco Harbor Episode 8 Shine", jp: "リコハーバーストーリー8", types: ["Ricco_8", "Ricco_Late", "Ricco_Yoshi", "Ricco_Shines"] },
 { name: "Collect 2 Hidden Shines in Pianta Village", jp: "モンテのむらの隠しシャイン2枚", types: ["Pianta_Late", "Pianta_Hidden", "Pianta_8", "Pianta_Shines", "9_S"] }
 ];
 bingoList[23] = [
@@ -402,7 +402,7 @@ bingoList[23] = [
 { name: "4 Shines from Noki Bay", jp: "マーレのいりえのシャイン4枚", types: ["Noki_Late", "Noki_Early"] },
 { name: "Collect 2 Hidden Shines in Sirena Beach", jp: "シレナビーチの隠しシャイン2枚", types: ["Sirena_Hidden", "Sirena_Late"] },
 { name: "Ride Yoshi in Pianta Village", jp: "モンテのむらのヨッシーに乗る", types: ["Pianta_6", "Pianta_Yoshi", "Butterfly"] },
-{ name: "Collect 25 Shines", jp: "シャイン25枚", types: ["Total_Shines", "Plaza_Shines"] }
+{ name: "Collect 25 Shines", jp: "シャイン25枚", types: ["Total_Shines", "Plaza_Shines", "X_Lives"] }
 ];
 bingoList[24] = [
 { name: "Defeat Shadow Mario in Sirena Beach", jp: "シレナビーチのニセマリオ撃破", types: ["Shadow_Mario", "Sirena_Shadow", "Sirena_Late"] },
@@ -412,10 +412,11 @@ bingoList[24] = [
 { name: "8 Red Coin Shines", jp: "赤コインのシャイン8枚", types: ["Red_Shines", "Hidden_Shines"] }
 ];
 bingoList[25] = [
-{ name: "Collect 28 Shines", jp: "シャイン28枚", types: ["Total_Shines", "Plaza_Shines"] },
+{ name: "Collect 28 Shines", jp: "シャイン28枚", types: ["Total_Shines", "Plaza_Shines", "X_Lives"] },
 { name: "Beat Piantissimo in Noki Bay Episode 5", jp: "マーレのいりえのモンテマンに勝利", types: ["Noki_Late", "Paint_Race"] },
 { name: "6 Unique Boss Shines", jp: "ボス6種類撃破", types: ["XBoss_Shines", "Unique_Boss", "Bianco_Boss", "Pinna_Boss", "Ricco_Boss", "Wiggler", "Sirena_Early", "Noki_Boss"] },
 { name: "Sirena Beach Episode 8 Shine", jp: "シレナビーチストーリー8", types: ["Sirena_8", "Sirena_Late"] },
 { name: "25 Blue Coins from Noki Bay", jp: "マーレのいりえの青コイン25枚", types: ["Noki_Late", "Noki_Blues", "Noki_30"] },
 { name: "3 Shadow Marios", jp: "ニセマリオ3体撃破", types: ["Shadow_Mario"] }
 ];
+
