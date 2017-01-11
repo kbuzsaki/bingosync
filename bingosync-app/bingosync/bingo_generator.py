@@ -53,6 +53,7 @@ CACHED_FILES_BY_NAME = {
     "pokemon_ruby_sapphire": "generators/pokemon_ruby_sapphire_generator.js",
     "adams_family": "generators/adams_family_generator.js",
     "sonic_adventure_2": "generators/sonic_adventure_2_generator.js",
+    "dark_souls": "generators/dark_souls_generator.js",
 }
 
 def load_cached_generator_source(game_name):

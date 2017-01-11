@@ -248,6 +248,7 @@ class GameType(Enum):
     pokemon_ruby_sapphire = 23
     adams_family = 24
     sonic_adventure_2 = 25
+    dark_souls = 26
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -303,6 +304,7 @@ GAME_TYPE_NAMES = {
     GameType.pokemon_ruby_sapphire: "Pokémon Ruby/Sapphire",
     GameType.adams_family: "The Addams Family (SNES)",
     GameType.sonic_adventure_2: "Sonic Adventure 2",
+    GameType.dark_souls: "Dark Souls",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -331,6 +333,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.pokemon_ruby_sapphire: "Poké Ruby/Sapph",
     GameType.adams_family: "Addams Family",
     GameType.sonic_adventure_2: "Sonic Adv. 2",
+    GameType.dark_souls: "Dark Souls",
 }
 
 class LockoutMode(Enum):
