@@ -249,6 +249,7 @@ class GameType(Enum):
     adams_family = 24
     sonic_adventure_2 = 25
     dark_souls = 26
+    road_trip_adventure = 27
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -305,6 +306,7 @@ GAME_TYPE_NAMES = {
     GameType.adams_family: "The Addams Family (SNES)",
     GameType.sonic_adventure_2: "Sonic Adventure 2",
     GameType.dark_souls: "Dark Souls",
+    GameType.road_trip_adventure: "Road Trip Adventure",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -334,6 +336,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.adams_family: "Addams Family",
     GameType.sonic_adventure_2: "Sonic Adv. 2",
     GameType.dark_souls: "Dark Souls",
+    GameType.road_trip_adventure: "Road Trip Adv.",
 }
 
 class LockoutMode(Enum):
