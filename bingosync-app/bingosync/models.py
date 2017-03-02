@@ -250,6 +250,7 @@ class GameType(Enum):
     sonic_adventure_2 = 25
     dark_souls = 26
     road_trip_adventure = 27
+    psychonauts = 28
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -307,6 +308,7 @@ GAME_TYPE_NAMES = {
     GameType.sonic_adventure_2: "Sonic Adventure 2",
     GameType.dark_souls: "Dark Souls",
     GameType.road_trip_adventure: "Road Trip Adventure",
+    GameType.psychonauts: "Psychonauts",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -337,6 +339,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.sonic_adventure_2: "Sonic Adv. 2",
     GameType.dark_souls: "Dark Souls",
     GameType.road_trip_adventure: "Road Trip Adv.",
+    GameType.psychonauts: "Psychonauts",
 }
 
 class LockoutMode(Enum):
