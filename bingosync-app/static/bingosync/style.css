@@ -254,6 +254,17 @@
     background-image: linear-gradient(#CF6BF5, #B038DC);
 }
 
+.starred {
+    background-image: url('/static/bingosync/star.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 100;
+    height: 15px;
+    width: 15px;
+}
+
 .board-container {
     display: inline-block;
     position: relative;

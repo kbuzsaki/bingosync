@@ -85,8 +85,8 @@ function squareHasColor($square, colorClass) {
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
-        $square.html('<div class="shadow"></div><div class="vertical-center text-container"></div>');
-        $square.children().next().text(json["name"]);
+        $square.html('<div class="starred hidden"></div><div class="shadow"></div><div class="vertical-center text-container"></div>');
+        $square.children(".text-container").text(json["name"]);
         setSquareColors($square, json["colors"]);
 
         refitGoalText();
@@ -176,6 +176,13 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     addRowHover("col5");
     addRowHover("tlbr");
     addRowHover("bltr");
+
+    // add starring ability via right click
+    $(".square").on("contextmenu", function(e) {
+        e.preventDefault();
+        $(this).children(".starred").toggleClass("hidden");
+        return false;
+    });
 }
 
 function initializeBoardCover($boardCover, boardRevealedUrl) {
