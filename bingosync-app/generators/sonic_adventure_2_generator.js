@@ -377,7 +377,6 @@ bingoGenerator = function (bingoList, opts) {
 var bingoList = [];
 bingoList[1] = [
     {name: "City Escape M2", types: ["sonic", "cityescape"]},
-    {name: "Complete City Escape M1 with 100+ Rings", types: ["sonic", "cityescape", "m1", "rings"]},
     {name: "2 Chao Boxes in City Escape and finish", types: ["sonic", "cityescape", "m1", "chao"]},
     {name: "5 hidden Chao animals in City Escape and finish", types: ["sonic", "cityescape", "m1", "chao"]},
     {name: "Rename a Chao after a person you're racing", types: ["chao"]},
@@ -390,7 +389,10 @@ bingoList[1] = [
     {name: "Complete Wild Canyon M1 with 100+ Rings", types: ["knuckles", "wildcanyon", "m1", "rings"]},
     {name: "2 Chao Boxes in Wild Canyon and finish", types: ["knuckles", "wildcanyon", "m1", "chao"]},
     {name: "5 hidden Chao animals in Wild Canyon and finish", types: ["knuckles", "wildcanyon", "m1", "chao"]},
-    {name: "Wild Canyon M3", types: ["knuckles", "wildcanyon"]},
+    {name: "Wild Canyon M3", types: ["knuckles", "wildcanyon"]}
+];
+bingoList[2] = [
+    {name: "Wild Canyon M3 B-Rank", types: ["knuckles", "wildcanyon", "brank"]},
     {name: "Dry Lagoon M2", types: ["rouge", "drylagoon"]},
     {name: "Complete Dry Lagoon M1 with 100+ Rings", types: ["rouge", "drylagoon", "m1", "rings"]},
     {name: "2 Chao Boxes in Dry Lagoon and finish", types: ["rouge", "drylagoon", "m1", "chao"]},
@@ -398,21 +400,15 @@ bingoList[1] = [
     {name: "Wild Canyon M4", types: ["knuckles", "wildcanyon"]},
     {name: "Dry Lagoon M3", types: ["rouge", "drylagoon"]}
 ];
-bingoList[2] = [
-    {name: "City Escape M2 A-Rank", types: ["sonic", "cityescape", "arank"]},
-    {name: "Iron Gate M2 A-Rank", types: ["eggman", "irongate", "arank"]},
-    {name: "City Escape M3 A-Rank", types: ["sonic", "cityescape", "arank"]},
-    {name: "Wild Canyon M2 A-Rank", types: ["knuckles", "wildcanyon", "arank"]},
-    {name: "Wild Canyon M3 A-Rank", types: ["knuckles", "wildcanyon", "arank"]},
-    {name: "Dry Lagoon M2 A-Rank", types: ["rouge", "drylagoon", "arank"]},
+bingoList[3] = [
     {name: "Wild Canyon M4 A-Rank", types: ["knuckles", "wildcanyon", "arank"]},
-    {name: "Dry Lagoon M3 A-Rank", types: ["rouge", "drylagoon", "arank"]},
+    {name: "Dry Lagoon M3 B-Rank", types: ["rouge", "drylagoon", "brank"]},
     {name: "City Escape M4", types: ["sonic", "cityescape"]},
     {name: "Wild Canyon M5", types: ["knuckles", "wildcanyon"]},
-    {name: "Defeat both Big Foot and Hot Shot", types: ["multistory"]},
+    {name: "Defeat both Big Foot and Hot Shot", types: ["m1", "multistory"]},
     {name: "Unlock Chao Garden for all Hero Story characters", types: ["sonic", "tails", "knuckles", "chaogarden"]}
 ];
-bingoList[3] = [
+bingoList[4] = [
     {name: "City Escape M4 A-Rank", types: ["sonic", "cityescape", "arank"]},
     {name: "Wild Canyon M5 A-Rank", types: ["knuckles", "wildcanyon", "arank"]},
     {name: "Dry Lagoon M4", types: ["rouge", "drylagoon"]},
@@ -422,9 +418,9 @@ bingoList[3] = [
     {name: "5 hidden Chao animals in Prison Lane and finish", types: ["tails", "prisonlane", "m1", "chao"]},
     {name: "3 Hero Story Gold Beetles", types: ["goldbeetle", "m1"]}
 ];
-bingoList[4] = [
+bingoList[5] = [
+    {name: "Wild Canyon All Missions A-Rank", types: ["knuckles", "wildcanyon", "arank", "allmissions"]},
     {name: "Dry Lagoon M4 A-Rank", types: ["rouge", "drylagoon", "arank"]},
-    {name: "Prison Lane M2 A-Rank", types: ["tails", "prisonlane", "arank"]},
     {name: "Sand Ocean M2", types: ["eggman", "sandocean"]},
     {name: "Complete Sand Ocean M1 with 100+ Rings", types: ["eggman", "sandocean", "m1", "rings"]},
     {name: "2 Chao Boxes in Sand Ocean and finish", types: ["eggman", "sandocean", "m1", "chao"]},
@@ -432,38 +428,37 @@ bingoList[4] = [
     {name: "City Escape M5", types: ["sonic", "cityescape"]},
     {name: "Dry Lagoon M5", types: ["rouge", "drylagoon"]}
 ];
-bingoList[5] = [
-    {name: "Sand Ocean M2 A-Rank", types: ["eggman", "sandocean", "arank"]},
+bingoList[6] = [
     {name: "City Escape M5 A-Rank", types: ["sonic", "cityescape", "arank"]},
     {name: "Dry Lagoon M5 A-Rank", types: ["rouge", "drylagoon", "arank"]},
     {name: "Shadow's Flame Ring", types: ["shadow", "m1", "radicalhighway"]},
     {name: "Metal Harbor M2", types: ["sonic", "metalharbor"]},
-    {name: "Complete Metal Harbor M1 with 100+ Rings", types: ["sonic", "metalharbor", "m1", "rings"]},
     {name: "2 Chao Boxes in Metal Harbor and finish", types: ["sonic", "metalharbor", "m1", "chao"]},
     {name: "5 hidden Chao animals in Metal Harbor and finish", types: ["sonic", "metalharbor", "m1", "chao"]},
+    {name: "Pacifist Metal Harbor M1", types: ["sonic", "metalharbor", "m1", "pacifist"]},
     {name: "Unlock Chao Garden for all Dark Story characters", types: ["shadow", "eggman", "rouge", "chaogarden"]},
     {name: "Metal Harbor M3", types: ["sonic", "metalharbor"]}
 ];
-bingoList[6] = [
-    {name: "Metal Harbor M2 A-Rank", types: ["sonic", "metalharbor", "arank"]},
-    {name: "Metal Harbor M3 A-Rank", types: ["sonic", "metalharbor", "arank"]},
+bingoList[7] = [
+    {name: "City Escape All Missions A-Rank", types: ["sonic", "cityescape", "arank", "allmissions"]},
+    {name: "Dry Lagoon All Missions A-Rank", types: ["rouge", "drylagoon", "arank", "allmissions"]},
+    {name: "Metal Harbor M3 B-Rank", types: ["sonic", "metalharbor", "brank"]},
     {name: "Radical Highway M2", types: ["shadow", "radicalhighway"]},
     {name: "Complete Radical Highway M1 with 100+ Rings", types: ["shadow", "radicalhighway", "m1", "rings"]},
     {name: "2 Chao Boxes in Radical Highway and finish", types: ["shadow", "radicalhighway", "m1", "chao"]},
     {name: "5 hidden Chao animals in Radical Highway and finish", types: ["shadow", "radicalhighway", "m1", "chao"]},
-    {name: "3 Dark Story Gold Beetles", types: ["goldbeetle", "m1"]}
+    {name: "3 Dark Story Gold Beetles", types: ["goldbeetle", "m1"]},
+    {name: "Pacifist Radical Highway M1", types: ["shadow", "radicalhighway", "m1", "pacifist"]}
 ];
-bingoList[7] = [
-    {name: "Radical Highway M2 A-Rank", types: ["shadow", "radicalhighway", "arank"]},
+bingoList[8] = [
     {name: "Metal Harbor M4", types: ["sonic", "metalharbor"]},
     {name: "Radical Highway M3", types: ["shadow", "radicalhighway"]},
     {name: "Rouge's Mystic Melody", types: ["rouge", "drylagoon"]},
-    {name: "500 Total Rings", types: ["rings"]},
+    {name: "500 Total Rings", types: ["rings", "multistory"]},
     {name: "Sonic's Ancient Light", types: ["sonic", "m1", "greenforest"]}
 ];
-bingoList[8] = [
+bingoList[9] = [
     {name: "Metal Harbor M4 A-Rank", types: ["sonic", "metalharbor", "arank"]},
-    {name: "Radical Highway M3 A-Rank", types: ["shadow", "radicalhighway", "arank"]},
     {name: "Egg Quarters M2", types: ["rouge", "eggquarters"]},
     {name: "Complete Egg Quarters M1 with 100+ Rings", types: ["rouge", "eggquarters", "m1", "rings"]},
     {name: "2 Chao Boxes in Egg Quarters and finish", types: ["rouge", "eggquarters", "m1", "chao"]},
@@ -472,11 +467,10 @@ bingoList[8] = [
     {name: "Complete Green Forest M1 with 100+ Rings", types: ["sonic", "greenforest", "m1", "rings"]},
     {name: "2 Chao Boxes in Green Forest and finish", types: ["sonic", "greenforest", "m1", "chao"]},
     {name: "5 hidden Chao animals in Green Forest and finish", types: ["sonic", "greenforest", "m1", "chao"]},
+    {name: "Pacifist Green Forest M1", types: ["sonic", "greenforest", "m1", "pacifist"]},
     {name: "Metal Harbor M5", types: ["sonic", "metalharbor"]}
 ];
-bingoList[9] = [
-    {name: "Egg Quarters M2 A-Rank", types: ["rouge", "eggquarters", "arank"]},
-    {name: "Green Forest M2 A-Rank", types: ["sonic", "greenforest", "arank"]},
+bingoList[10] = [
     {name: "Metal Harbor M5 A-Rank", types: ["sonic", "metalharbor", "arank"]},
     {name: "Egg Quarters M3", types: ["rouge", "eggquarters"]},
     {name: "Green Forest M3", types: ["sonic", "greenforest"]},
@@ -484,9 +478,8 @@ bingoList[9] = [
     {name: "Knuckles' Mystic Melody", types: ["knuckles", "wildcanyon", "mysticmelody"]},
     {name: "Dr Eggman's Mystic Melody", types: ["eggman", "sandocean", "mysticmelody"]}
 ];
-bingoList[10] = [
-    {name: "Egg Quarters M3 A-Rank", types: ["rouge", "eggquarters", "arank"]},
-    {name: "Green Forest M3 A-Rank", types: ["sonic", "greenforest", "arank"]},
+bingoList[11] = [
+    {name: "Metal Harbor All Missions A-Rank", types: ["sonic", "metalharbor", "arank", "allmissions"]},
     {name: "Radical Highway M4 A-Rank", types: ["shadow", "radicalhighway", "arank"]},
     {name: "Pumpkin Hill M2", types: ["knuckles", "pumpkinhill"]},
     {name: "Complete Pumpkin Hill M1 with 100+ Rings", types: ["knuckles", "pumpkinhill", "m1", "rings"]},
@@ -496,9 +489,7 @@ bingoList[10] = [
     {name: "Egg Quarters M4", types: ["rouge", "eggquarters"]},
     {name: "5 Gold Beetles across both Stories", types: ["goldbeetle", "m1", "multistory"]}
 ];
-bingoList[11] = [
-    {name: "Pumpkin Hill M2 A-Rank", types: ["knuckles", "pumpkinhill", "arank"]},
-    {name: "Pumpkin Hill M3 A-Rank", types: ["knuckles", "pumpkinhill", "arank"]},
+bingoList[12] = [
     {name: "Egg Quarters M4 A-Rank", types: ["rouge", "eggquarters", "arank"]},
     {name: "Lost Colony M2", types: ["eggman", "lostcolony"]},
     {name: "Sand Ocean M3", types: ["eggman", "sandocean"]},
@@ -507,33 +498,31 @@ bingoList[11] = [
     {name: "5 hidden Chao animals in Lost Colony and finish", types: ["eggman", "lostcolony", "m1", "chao"]},
     {name: "Radical Highway M5", types: ["shadow", "radicalhighway"]},
     {name: "Pumpkin Hill M4", types: ["knuckles", "pumpkinhill"]},
-    {name: "10 Emblems", types: ["emblems"]}
+    {name: "10 Emblems", types: ["emblems", "multistory"]}
 ];
-bingoList[12] = [
-    {name: "Lost Colony M2 A-Rank", types: ["eggman", "lostcolony", "arank"]},
-    {name: "Sand Ocean M3 A-Rank", types: ["eggman", "sandocean", "arank"]},
+bingoList[13] = [
     {name: "Radical Highway M5 A-Rank", types: ["shadow", "radicalhighway", "arank"]},
     {name: "Pumpkin Hill M4 A-Rank", types: ["knuckles", "pumpkinhill", "arank"]},
     {name: "Green Forest M4", types: ["sonic", "greenforest"]},
+    {name: "Game Over during Mission Street M1", types: ["tails", "missionstreet", "m1", "gameover"]},
     {name: "Iron Gate M3", types: ["eggman", "irongate"]},
     {name: "Egg Quarters M5", types: ["rouge", "eggquarters"]},
     {name: "Unlock Chao Garden for every character", types: ["chaogarden", "multistory"]},
-    {name: "Pumpkin Hill M5", types: ["knuckles", "pumpkinhill"]}
-];
-bingoList[13] = [
+    {name: "Pumpkin Hill M5", types: ["knuckles", "pumpkinhill"]},
+    {name: "Game Over during Tails 1", types: ["eggman", "m1", "gameover"]},
     {name: "Weapons Bed M2", types: ["eggman", "weaponsbed"]},
     {name: "Complete Weapons Bed M1 with 100+ Rings", types: ["eggman", "weaponsbed", "m1", "rings"]},
     {name: "2 Chao Boxes in Weapons Bed and finish", types: ["eggman", "weaponsbed", "m1", "chao"]},
     {name: "5 hidden Chao animals in Weapons Bed and finish", types: ["eggman", "weaponsbed", "m1", "chao"]},
+    {name: "Pacifist Weapons Bed M1", types: ["eggman", "weaponsbed", "m1", "pacifist"]},
     {name: "Sand Ocean M4", types: ["eggman", "sandocean"]},
-    {name: "Knuckles' Air Necklace", types: ["knuckles", "m1", "aquaticmine"]},
-    {name: "Green Forest M4 A-Rank", types: ["sonic", "greenforest", "arank"]},
-    {name: "Iron Gate M3 A-Rank", types: ["eggman", "irongate", "arank"]},
-    {name: "Egg Quarters M5 A-Rank", types: ["rouge", "eggquarters", "arank"]},
-    {name: "Pumpkin Hill M5 A-Rank", types: ["knuckles", "pumpkinhill", "arank"]}
+    {name: "Knuckles' Air Necklace", types: ["knuckles", "m1", "aquaticmine"]}
 ];
 bingoList[14] = [
-    {name: "Weapons Bed M2 A-Rank", types: ["eggman", "weaponsbed", "arank"]},
+    {name: "Radical Highway All Missions A-Rank", types: ["shadow", "radicalhighway", "arank", "allmissions"]},
+    {name: "Green Forest M4 A-Rank", types: ["sonic", "greenforest", "arank"]},
+    {name: "Egg Quarters M5 A-Rank", types: ["rouge", "eggquarters", "arank"]},
+    {name: "Pumpkin Hill M5 A-Rank", types: ["knuckles", "pumpkinhill", "arank"]},
     {name: "Sand Ocean M4 A-Rank", types: ["eggman", "sandocean", "arank"]},
     {name: "Rouge's Treasure Scope", types: ["rouge", "m1", "securityhall"]},
     {name: "Mission Street M2", types: ["tails", "missionstreet"]},
@@ -542,6 +531,7 @@ bingoList[14] = [
     {name: "2 Chao Boxes in Mission Street and finish", types: ["tails", "missionstreet", "m1", "chao"]},
     {name: "5 hidden Chao animals in Mission Street and finish", types: ["tails", "missionstreet", "m1", "chao"]},
     {name: "6 Hero Story Gold Beetles", types: ["goldbeetle", "m1"]},
+    {name: "Pacifist Mission Street M1", types: ["tails", "missionstreet", "m1", "pacifist"]},
     {name: "Lost Colony M3", types: ["eggman", "lostcolony"]},
     {name: "Aquatic Mine M2", types: ["knuckles", "aquaticmine"]},
     {name: "Weapons Bed M3", types: ["eggman", "weaponsbed"]},
@@ -550,43 +540,36 @@ bingoList[14] = [
     {name: "2 Chao Boxes in Aquatic Mine and finish", types: ["knuckles", "aquaticmine", "m1", "chao"]},
     {name: "5 hidden Chao animals in Aquatic Mine and finish", types: ["knuckles", "aquaticmine", "m1", "chao"]},
     {name: "Green Forest M5", types: ["sonic", "greenforest"]},
-    {name: "Aquatic Mine M3", types: ["knuckles", "aquaticmine"]}
-];
-bingoList[15] = [
+    {name: "Aquatic Mine M3", types: ["knuckles", "aquaticmine"]},
+    {name: "Game Over during Flying Dog", types: ["rouge", "m1", "gameover"]},
     {name: "Security Hall M2", types: ["rouge", "securityhall"]},
     {name: "Complete Security Hall M1 with 100+ Rings", types: ["rouge", "securityhall", "m1", "rings"]},
     {name: "2 Chao Boxes in Security Hall and finish", types: ["rouge", "securityhall", "m1", "chao"]},
     {name: "5 hidden Chao animals in Security Hall and finish", types: ["rouge", "securityhall", "m1", "chao"]},
-    {name: "6 Dark Story Gold Beetles", types: ["goldbeetle", "m1"]},
-    {name: "Mission Street M2 A-Rank", types: ["tails", "missionstreet", "arank"]},
-    {name: "Iron Gate M4 A-Rank", types: ["eggman", "irongate", "arank"]},
-    {name: "Lost Colony M3 A-Rank", types: ["eggman", "lostcolony", "arank"]},
-    {name: "Aquatic Mine M2 A-Rank", types: ["knuckles", "aquaticmine", "arank"]},
-    {name: "Weapons Bed M3 A-Rank", types: ["eggman", "weaponsbed", "arank"]},
-    {name: "Green Forest M5 A-Rank", types: ["sonic", "greenforest", "arank"]},
-    {name: "Aquatic Mine M3 A-Rank", types: ["knuckles", "aquaticmine", "arank"]}
+    {name: "6 Dark Story Gold Beetles", types: ["goldbeetle", "m1"]}
 ];
-bingoList[16] = [
-    {name: "Security Hall M2 A-Rank", types: ["rouge", "securityhall", "arank"]},
+bingoList[15] = [
+    {name: "Egg Quarters All Missions A-Rank", types: ["rouge", "eggquarters", "arank", "allmissions"]},
+    {name: "Iron Gate M4 A-Rank", types: ["eggman", "irongate", "arank"]},
+    {name: "Green Forest M5 A-Rank", types: ["sonic", "greenforest", "arank"]},
     {name: "Iron Gate M5", types: ["eggman", "irongate"]},
     {name: "Sand Ocean M5", types: ["eggman", "sandocean"]},
+    {name: "Game Over during Route 101 M1", types: ["tails", "route101", "m1", "gameover"]},
     {name: "Aquatic Mine M4", types: ["knuckles", "aquaticmine"]},
     {name: "Security Hall M3", types: ["rouge", "securityhall"]},
-    {name: "Weapons Bed M4", types: ["eggman", "weaponsbed"]}
-];
-bingoList[17] = [
+    {name: "Security Hall M3 B-Rank", types: ["rouge", "securityhall", "brank"]},
+    {name: "Weapons Bed M4", types: ["eggman", "weaponsbed"]},
     {name: "Route 101 M2", types: ["tails", "route101"]},
-    {name: "Defeat both Tails 1 and Dr Eggman 1", types: ["multistory"]},
+    {name: "Defeat both Tails 1 and Dr Eggman 1", types: ["m1", "multistory"]},
     {name: "Security Hall M4", types: ["rouge", "securityhall"]},
-    {name: "Lost Colony M4", types: ["eggman", "lostcolony"]},
+    {name: "Lost Colony M4", types: ["eggman", "lostcolony"]}
+];
+bingoList[16] = [
+    {name: "Green Forest All Missions A-Rank", types: ["sonic", "greenforest", "arank", "allmissions"]},
     {name: "Iron Gate M5 A-Rank", types: ["eggman", "irongate", "arank"]},
     {name: "Sand Ocean M5 A-Rank", types: ["eggman", "sandocean", "arank"]},
     {name: "Aquatic Mine M4 A-Rank", types: ["knuckles", "aquaticmine", "arank"]},
-    {name: "Security Hall M3 A-Rank", types: ["rouge", "securityhall", "arank"]},
-    {name: "Weapons Bed M4 A-Rank", types: ["eggman", "weaponsbed", "arank"]}
-];
-bingoList[18] = [
-    {name: "Route 101 M2 A-Rank", types: ["tails", "route101", "arank"]},
+    {name: "Weapons Bed M4 A-Rank", types: ["eggman", "weaponsbed", "arank"]},
     {name: "Security Hall M4 A-Rank", types: ["rouge", "securityhall", "arank"]},
     {name: "Lost Colony M4 A-Rank", types: ["eggman", "lostcolony", "arank"]},
     {name: "White Jungle M2", types: ["shadow", "whitejungle"]},
@@ -594,55 +577,46 @@ bingoList[18] = [
     {name: "Complete White Jungle M1 with 100+ Rings", types: ["shadow", "whitejungle", "m1", "rings"]},
     {name: "2 Chao Boxes in White Jungle and finish", types: ["shadow", "whitejungle", "m1", "chao"]},
     {name: "5 hidden Chao animals in White Jungle and finish", types: ["shadow", "whitejungle", "m1", "chao"]},
-    {name: "Beginner Kart Racing Emblem", types: ["kartracing", "route101", "route280"]}
-];
-bingoList[19] = [
+    {name: "Game Over during Sonic 1", types: ["shadow", "m1", "gameover"]},
+    {name: "Pacifist White Jungle M1", types: ["shadow", "whitejungle", "m1", "pacifist"]},
+    {name: "Beginner Kart Racing Emblem", types: ["kartracing", "route101", "route280", "multistory"]},
     {name: "Security Hall M5", types: ["rouge", "securityhall"]},
-    {name: "Route 101 M3", types: ["tails", "route101"]},
-    {name: "White Jungle M2 A-Rank", types: ["shadow", "whitejungle", "arank"]},
-    {name: "Weapons Bed M5 A-Rank", types: ["eggman", "weaponsbed", "arank"]}
+    {name: "Route 101 M3", types: ["tails", "route101"]}
 ];
-bingoList[20] = [
+bingoList[17] = [
+    {name: "Weapons Bed M5 A-Rank", types: ["eggman", "weaponsbed", "arank"]},
     {name: "Security Hall M5 A-Rank", types: ["rouge", "securityhall", "arank"]},
-    {name: "Route 101 M3 A-Rank", types: ["tails", "route101", "arank"]},
     {name: "Hidden Base M2", types: ["tails", "hiddenbase"]},
     {name: "Complete Hidden Base M1 with 100+ Rings", types: ["tails", "hiddenbase", "m1", "rings"]},
     {name: "2 Chao Boxes in Hidden Base and finish", types: ["tails", "hiddenbase", "m1", "chao"]},
     {name: "5 hidden Chao animals in Hidden Base and finish", types: ["tails", "hiddenbase", "m1", "chao"]},
-    {name: "White Jungle M3", types: ["shadow", "whitejungle"]}
-];
-bingoList[21] = [
+    {name: "White Jungle M3", types: ["shadow", "whitejungle"]},
+    {name: "Game Over during Pyramid Cave M1", types: ["sonic", "pyramidcave", "m1", "gameover"]},
     {name: "Pyramid Cave M2", types: ["sonic", "pyramidcave"]},
     {name: "Lost Colony M5", types: ["eggman", "lostcolony"]},
     {name: "Complete Pyramid Cave M1 with 100+ Rings", types: ["sonic", "pyramidcave", "m1", "rings"]},
     {name: "2 Chao Boxes in Pyramid Cave and finish", types: ["sonic", "pyramidcave", "m1", "chao"]},
     {name: "5 hidden Chao animals in Pyramid Cave and finish", types: ["sonic", "pyramidcave", "m1", "chao"]},
-    {name: "Route 101 M4", types: ["tails", "route101"]},
-    {name: "Hidden Base M2 A-Rank", types: ["tails", "hiddenbase", "arank"]},
-    {name: "White Jungle M3 A-Rank", types: ["shadow", "whitejungle", "arank"]}
+    {name: "Game Over during Route 280 M1", types: ["rouge", "route280", "m1", "gameover"]},
+    {name: "Route 101 M4", types: ["tails", "route101"]}
 ];
-bingoList[22] = [
-    {name: "Pyramid Cave M2 A-Rank", types: ["sonic", "pyramidcave", "arank"]},
+bingoList[18] = [
     {name: "Lost Colony M5 A-Rank", types: ["eggman", "lostcolony", "arank"]},
     {name: "Route 101 M4 A-Rank", types: ["tails", "route101", "arank"]},
     {name: "Hidden Base M3", types: ["tails", "hiddenbase"]},
-    {name: "Route 280 M2", types: ["rouge", "route280"]}
-];
-bingoList[23] = [
+    {name: "Route 280 M2", types: ["rouge", "route280"]},
     {name: "Pyramid Cave M3", types: ["sonic", "pyramidcave"]},
     {name: "White Jungle M4", types: ["shadow", "whitejungle"]},
     {name: "Shadow's Ancient Light", types: ["shadow", "m1", "skyrail"]},
+    {name: "Game Over during King Boom Boo", types: ["knuckles", "m1", "gameover"]},
     {name: "Death Chamber M2", types: ["knuckles", "deathchamber"]},
     {name: "Complete Death Chamber M1 with 100+ Rings", types: ["knuckles", "deathchamber", "m1", "rings"]},
     {name: "2 Chao Boxes in Death Chamber and finish", types: ["knuckles", "deathchamber", "m1", "chao"]},
-    {name: "5 hidden Chao animals in Death Chamber and finish", types: ["knuckles", "deathchamber", "m1", "chao"]},
-    {name: "Hidden Base M3 A-Rank", types: ["tails", "hiddenbase", "arank"]},
-    {name: "Route 280 M2 A-Rank", types: ["rouge", "route280", "arank"]}
+    {name: "5 hidden Chao animals in Death Chamber and finish", types: ["knuckles", "deathchamber", "m1", "chao"]}
 ];
-bingoList[24] = [
-    {name: "Pyramid Cave M3 A-Rank", types: ["sonic", "pyramidcave", "arank"]},
+bingoList[19] = [
+    {name: "Lost Colony All Missions A-Rank", types: ["eggman", "lostcolony", "arank", "allmissions"]},
     {name: "White Jungle M4 A-Rank", types: ["shadow", "whitejungle", "arank"]},
-    {name: "Death Chamber M2 A-Rank", types: ["knuckles", "deathchamber", "arank"]},
     {name: "Hidden Base M4", types: ["tails", "hiddenbase"]},
     {name: "Route 101 M5", types: ["tails", "route101"]},
     {name: "Sky Rail M2", types: ["shadow", "skyrail"]},
@@ -650,18 +624,106 @@ bingoList[24] = [
     {name: "2 Chao Boxes in Sky Rail and finish", types: ["shadow", "skyrail", "m1", "chao"]},
     {name: "5 hidden Chao animals in Sky Rail and finish", types: ["shadow", "skyrail", "m1", "chao"]},
     {name: "Death Chamber M3", types: ["knuckles", "deathchamber"]},
-    {name: "Pyramid Cave M4", types: ["sonic", "pyramidcave"]}
-];
-bingoList[25] = [
+    {name: "Pyramid Cave M4", types: ["sonic", "pyramidcave"]},
     {name: "Sky Rail M3", types: ["shadow", "skyrail"]},
     {name: "White Jungle M5", types: ["shadow", "whitejungle"]},
-    {name: "All Kart Racing Emblems", types: ["kartracing", "route101", "route280"]},
+    {name: "All Kart Racing Emblems", types: ["kartracing", "route101", "route280", "multistory"]},
     {name: "Death Chamber M4", types: ["knuckles", "deathchamber"]},
     {name: "Route 280 M3", types: ["rouge", "route280"]},
-    {name: "Finish with 25+ Lives (No Underflow)", types: ["multistory"]},
+    {name: "Finish any mission with 25+ Lives (No Underflow)", types: ["multistory"]}
+];
+bingoList[20] = [
     {name: "Hidden Base M4 A-Rank", types: ["tails", "hiddenbase", "arank"]},
     {name: "Route 101 M5 A-Rank", types: ["tails", "route101", "arank"]},
-    {name: "Sky Rail M2 A-Rank", types: ["shadow", "skyrail", "arank"]},
-    {name: "Death Chamber M3 A-Rank", types: ["knuckles", "deathchamber", "arank"]},
-    {name: "Pyramid Cave M4 A-Rank", types: ["sonic", "pyramidcave", "arank"]}
+    {name: "Pyramid Cave M4 A-Rank", types: ["sonic", "pyramidcave", "arank"]},
+    {name: "White Jungle M5 A-Rank", types: ["shadow", "whitejungle", "arank"]},
+    {name: "Death Chamber M4 A-Rank", types: ["knuckles", "deathchamber", "arank"]},
+    {name: "Hidden Base M5", types: ["tails", "hiddenbase"]},
+    {name: "Mad Space M2", types: ["rouge", "madspace"]},
+    {name: "Complete Mad Space M1 with 100+ Rings", types: ["rouge", "madspace", "m1", "rings"]},
+    {name: "2 Chao Boxes in Mad Space and finish", types: ["rouge", "madspace", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Mad Space and finish", types: ["rouge", "madspace", "m1", "chao"]},
+    {name: "Sky Rail M4", types: ["shadow", "skyrail"]},
+    {name: "Pyramid Cave M5", types: ["sonic", "pyramidcave"]},
+    {name: "Death Chamber M5", types: ["knuckles", "deathchamber"]},
+    {name: "Defeat both Shadow 1 and Sonic 1", types: ["m1", "multistory"]}
+];
+bingoList[21] = [
+    {name: "Hidden Base M5 A-Rank", types: ["tails", "hiddenbase", "arank"]},
+    {name: "Sky Rail M4 A-Rank", types: ["shadow", "skyrail", "arank"]},
+    {name: "Pyramid Cave M5 A-Rank", types: ["sonic", "pyramidcave", "arank"]},
+    {name: "Death Chamber M5 A-Rank", types: ["knuckles", "deathchamber", "arank"]},
+    {name: "Sky Rail M5", types: ["shadow", "skyrail"]},
+    {name: "Mad Space M3", types: ["rouge", "madspace"]},
+    {name: "Route 280 M4", types: ["rouge", "route280"]},
+    {name: "Eternal Engine M2", types: ["tails", "eternalengine"]},
+    {name: "Mad Space M4", types: ["rouge", "madspace"]},
+    {name: "Dr Eggman's Protective Armor", types: ["eggman", "cosmicwall"]},
+    {name: "Complete Eternal Engine M1 with 100+ Rings", types: ["tails", "eternalengine", "m1", "rings"]},
+    {name: "2 Chao Boxes in Eternal Engine and finish", types: ["tails", "eternalengine", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Eternal Engine and finish", types: ["tails", "eternalengine", "m1", "chao"]}
+];
+bingoList[22] = [
+    {name: "Sky Rail M5 A-Rank", types: ["shadow", "skyrail", "arank"]},
+    {name: "Route 280 M4 A-Rank", types: ["rouge", "route280", "arank"]},
+    {name: "Mad Space M4 A-Rank", types: ["rouge", "madspace", "arank"]},
+    {name: "Knuckles' Sunglasses", types: ["knuckles", "m1", "meteorherd"]},
+    {name: "Tails' Mystic Melody", types: ["tails", "eternalengine", "mysticmelody"]},
+    {name: "Meteor Herd M2", types: ["knuckles", "meteorherd"]},
+    {name: "Tails' Laser Blaster", types: ["tails", "eternalengine"]},
+    {name: "Complete Meteor Herd M1 with 100+ Rings", types: ["knuckles", "meteorherd", "m1", "rings"]},
+    {name: "2 Chao Boxes in Meteor Herd and finish", types: ["knuckles", "meteorherd", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Meteor Herd and finish", types: ["knuckles", "meteorherd", "m1", "chao"]},
+    {name: "20 Emblems", types: ["emblems", "multistory"]},
+    {name: "10 Gold Beetles across both Stories", types: ["goldbeetle", "m1", "multistory"]},
+    {name: "Prison Lane M3", types: ["tails", "prisonlane"]},
+    {name: "Mad Space M5", types: ["rouge", "madspace"]},
+    {name: "Meteor Herd M3", types: ["knuckles", "meteorherd"]},
+    {name: "Route 280 M5", types: ["rouge", "route280"]}
+];
+bingoList[23] = [
+    {name: "Mad Space M5 A-Rank", types: ["rouge", "madspace", "arank"]},
+    {name: "Route 280 M5 A-Rank", types: ["rouge", "route280", "arank"]},
+    {name: "Mission Street M3", types: ["tails", "missionstreet"]},
+    {name: "Eternal Engine M3", types: ["tails", "eternalengine"]},
+    {name: "Aquatic Mine M5", types: ["knuckles", "aquaticmine"]},
+    {name: "Meteor Herd M4", types: ["knuckles", "meteorherd"]},
+    {name: "Sonic's Flame Ring", types: ["sonic", "m1", "crazygadget"]},
+    {name: "Prison Lane M4", types: ["tails", "prisonlane"]},
+    {name: "Meteor Herd M5", types: ["knuckles", "meteorherd"]},
+    {name: "Cosmic Wall M2", types: ["eggman", "cosmicwall"]},
+    {name: "Complete Cosmic Wall M1 with 100+ Rings", types: ["eggman", "cosmicwall", "m1", "rings"]},
+    {name: "5 hidden Chao animals in Cosmic Wall and finish", types: ["eggman", "cosmicwall", "m1", "chao"]},
+    {name: "Crazy Gadget M2", types: ["sonic", "crazygadget"]},
+    {name: "Complete Crazy Gadget M1 with 100+ Rings", types: ["sonic", "crazygadget", "m1", "rings"]},
+    {name: "2 Chao Boxes in Crazy Gadget and finish", types: ["sonic", "crazygadget", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Crazy Gadget and finish", types: ["sonic", "crazygadget", "m1", "chao"]}
+];
+bingoList[24] = [
+    {name: "Aquatic Mine M5 A-Rank", types: ["knuckles", "aquaticmine", "arank"]},
+    {name: "Meteor Herd M4 A-Rank", types: ["knuckles", "meteorherd", "arank"]},
+    {name: "Prison Lane M4 A-Rank", types: ["tails", "prisonlane", "arank"]},
+    {name: "Meteor Herd M5 A-Rank", types: ["knuckles", "meteorherd", "arank"]},
+    {name: "Mission Street M4", types: ["tails", "missionstreet"]},
+    {name: "Cosmic Wall M3", types: ["eggman", "cosmicwall"]},
+    {name: "Eternal Engine M4", types: ["tails", "eternalengine"]},
+    {name: "Sonic's Mystic Melody", types: ["sonic", "finalrush", "mysticmelody"]},
+    {name: "Prison Lane M5", types: ["tails", "prisonlane"]},
+    {name: "Sonic's Magic Gloves", types: ["sonic", "crazygadget"]},
+    {name: "Crazy Gadget M3", types: ["sonic", "crazygadget"]},
+    {name: "1500 Total Rings", types: ["rings", "multistory"]},
+    {name: "Shadow's Mystic Melody", types: ["shadow", "finalchase", "mysticmelody"]},
+    {name: "Final Rush M2", types: ["sonic", "finalrush"]},
+    {name: "Complete Final Rush M1 with 100+ Rings", types: ["sonic", "finalrush", "m1", "rings"]},
+    {name: "2 Chao Boxes in Final Rush and finish", types: ["sonic", "finalrush", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Final Rush and finish", types: ["sonic", "finalrush", "m1", "chao"]},
+    {name: "Mission Street M5", types: ["tails", "missionstreet"]},
+    {name: "Crazy Gadget M4", types: ["sonic", "crazygadget"]},
+    {name: "Final Chase M2", types: ["shadow", "finalchase"]},
+    {name: "Complete Final Chase M1 with 100+ Rings", types: ["shadow", "finalchase", "m1", "rings"]},
+    {name: "2 Chao Boxes in Final Chase and finish", types: ["shadow", "finalchase", "m1", "chao"]},
+    {name: "5 hidden Chao animals in Final Chase and finish", types: ["shadow", "finalchase", "m1", "chao"]}
+];
+bingoList[25] = [
+    {name: "50 Emblems (Team Combined)", types: ["emblems"]}
 ];
