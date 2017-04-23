@@ -57,6 +57,7 @@ CACHED_FILES_BY_NAME = {
     "road_trip_adventure": "generators/road_trip_adventure_generator.js",
     "psychonauts": "generators/psychonauts_generator.js",
     "super_mario_galaxy": "generators/super_mario_galaxy_generator.js",
+    "banjo_tooie": "generators/banjo_tooie_generator.js",
 }
 
 def load_cached_generator_source(game_name):

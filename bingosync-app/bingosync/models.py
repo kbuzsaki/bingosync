@@ -252,6 +252,7 @@ class GameType(Enum):
     road_trip_adventure = 27
     psychonauts = 28
     super_mario_galaxy = 29
+    banjo_tooie = 30
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -311,6 +312,7 @@ GAME_TYPE_NAMES = {
     GameType.road_trip_adventure: "Road Trip Adventure",
     GameType.psychonauts: "Psychonauts",
     GameType.super_mario_galaxy: "Super Mario Galaxy",
+    GameType.banjo_tooie: "Banjo-Tooie",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -343,6 +345,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.road_trip_adventure: "Road Trip Adv.",
     GameType.psychonauts: "Psychonauts",
     GameType.super_mario_galaxy: "SM Galaxy",
+    GameType.banjo_tooie: "Banjo-Tooie",
 }
 
 class LockoutMode(Enum):
