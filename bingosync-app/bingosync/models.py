@@ -254,6 +254,7 @@ class GameType(Enum):
     super_mario_galaxy = 29
     banjo_tooie = 30
     ff4_ancient_cave = 31
+    zelda_botw = 32
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -315,6 +316,7 @@ GAME_TYPE_NAMES = {
     GameType.super_mario_galaxy: "Super Mario Galaxy",
     GameType.banjo_tooie: "Banjo-Tooie",
     GameType.ff4_ancient_cave: "Final Fantasy 4 - Ancient Cave",
+    GameType.zelda_botw: "Zelda: Breath of the Wild",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -349,6 +351,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.super_mario_galaxy: "SM Galaxy",
     GameType.banjo_tooie: "Banjo-Tooie",
     GameType.ff4_ancient_cave: "FF4 Ancient Cave",
+    GameType.zelda_botw: "Zelda: BotW",
 }
 
 class LockoutMode(Enum):

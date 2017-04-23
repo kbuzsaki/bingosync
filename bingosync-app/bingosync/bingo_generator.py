@@ -59,6 +59,7 @@ CACHED_FILES_BY_NAME = {
     "super_mario_galaxy": "generators/super_mario_galaxy_generator.js",
     "banjo_tooie": "generators/banjo_tooie_generator.js",
     "ff4_ancient_cave": "generators/ff4_ancient_cave_generator.js",
+    "zelda_botw": "generators/zelda_botw_generator.js",
 }
 
 def load_cached_generator_source(game_name):
