@@ -240,7 +240,6 @@ var bingoList = [
  'Imp Summon',
  'Elixir',
  'Cabin',
- 'Tent',
  'Whistle',
  'Rat Tail'
 ];
