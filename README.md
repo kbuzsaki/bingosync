@@ -1,4 +1,5 @@
-#Bingosync.com
+Bingosync.com
+===
 
 This is the repository powering [bingosync.com](http://bingosync.com/),
 a web application that lets people collaboratively work on "bingo boards"
