@@ -255,6 +255,7 @@ class GameType(Enum):
     banjo_tooie = 30
     ff4_ancient_cave = 31
     zelda_botw = 32
+    sonic_adventure_2_hero_story = 33
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -317,6 +318,7 @@ GAME_TYPE_NAMES = {
     GameType.banjo_tooie: "Banjo-Tooie",
     GameType.ff4_ancient_cave: "Final Fantasy 4 - Ancient Cave",
     GameType.zelda_botw: "Zelda: Breath of the Wild",
+    GameType.sonic_adventure_2_hero_story: "Sonic Adventure 2 - Hero Story",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -352,6 +354,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.banjo_tooie: "Banjo-Tooie",
     GameType.ff4_ancient_cave: "FF4 Ancient Cave",
     GameType.zelda_botw: "Zelda: BotW",
+    GameType.sonic_adventure_2_hero_story: "Sonic Adv. 2: HS",
 }
 
 class LockoutMode(Enum):

@@ -60,6 +60,7 @@ CACHED_FILES_BY_NAME = {
     "banjo_tooie": "generators/banjo_tooie_generator.js",
     "ff4_ancient_cave": "generators/ff4_ancient_cave_generator.js",
     "zelda_botw": "generators/zelda_botw_generator.js",
+    "sonic_adventure_2_hero_story": "generators/sonic_adventure_2_hero_story_generator.js",
 }
 
 def load_cached_generator_source(game_name):
