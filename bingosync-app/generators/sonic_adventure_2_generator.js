@@ -416,9 +416,9 @@ bingoList[4] = [
     {name: "Dry Lagoon M4", types: ["drylagoon"]},
     {name: "Prison Lane M2", types: ["prisonlane"]},
     {name: "Complete Prison Lane M1 with 100+ Rings", types: ["prisonlane"]},
-    {name: "2 Chao Boxes in Prison Lane and finish", types: ["prisonlane"  ]},
-    {name: "5 hidden Chao animals in Prison Lane and finish", types: ["prisonlane"  ]},
-    {name: "3 Hero Story Gold Beetles", types: ["goldbeetle"]}
+    {name: "2 Chao Boxes in Prison Lane and finish", types: ["prisonlane"]},
+    {name: "5 hidden Chao animals in Prison Lane and finish", types: ["prisonlane"]},
+    {name: "Destroy the Gold Beetle in 3 Hero Story stages", types: ["goldbeetle"]}
 ];
 bingoList[5] = [
     {name: "Wild Canyon All Missions A-Rank", types: ["wildcanyon", "arank", "allmissions"]},
@@ -428,6 +428,7 @@ bingoList[5] = [
     {name: "2 Chao Boxes in Sand Ocean and finish", types: ["sandocean"]},
     {name: "5 hidden Chao animals in Sand Ocean and finish", types: ["sandocean"]},
     {name: "City Escape M5", types: ["cityescape"]},
+    {name: "Beginner Chao Karate Emblem (with a new Chao)", types: ["multistory"]},
     {name: "Dry Lagoon M5", types: ["drylagoon"]}
 ];
 bingoList[6] = [
@@ -449,7 +450,7 @@ bingoList[7] = [
     {name: "Complete Radical Highway M1 with 100+ Rings", types: ["radicalhighway"]},
     {name: "2 Chao Boxes in Radical Highway and finish", types: ["radicalhighway"]},
     {name: "5 hidden Chao animals in Radical Highway and finish", types: ["radicalhighway"]},
-    {name: "3 Dark Story Gold Beetles", types: ["goldbeetle"]},
+    {name: "Destroy the Gold Beetle in 3 Dark Story stages", types: ["goldbeetle"]},
     {name: "Pacifist Radical Highway M1", types: ["radicalhighway"]}
 ];
 bingoList[8] = [
@@ -471,6 +472,8 @@ bingoList[9] = [
     {name: "2 Chao Boxes in Green Forest and finish", types: ["greenforest"]},
     {name: "5 hidden Chao animals in Green Forest and finish", types: ["greenforest"]},
     {name: "Pacifist Green Forest M1", types: ["greenforest"]},
+    {name: "Complete Green Forest M1 with a Magnetic Shield", types: ["greenforest"]},
+    {name: "Complete Egg Quarters M1 with a Magnetic Shield", types: ["eggquarters"]},
     {name: "Metal Harbor M5", types: ["metalharbor"]}
 ];
 bingoList[10] = [
@@ -491,7 +494,7 @@ bingoList[11] = [
     {name: "5 hidden Chao animals in Pumpkin Hill and finish", types: ["pumpkinhill"]},
     {name: "Pumpkin Hill M3", types: ["pumpkinhill"]},
     {name: "Egg Quarters M4", types: ["eggquarters"]},
-    {name: "5 Gold Beetles across both Stories", types: ["goldbeetle",  "multistory"]}
+    {name: "Destroy the Gold Beetle in 5 different stages", types: ["goldbeetle",  "multistory"]}
 ];
 bingoList[12] = [
     {name: "Egg Quarters M4 A-Rank", types: ["eggquarters", "arank"]},
@@ -536,7 +539,7 @@ bingoList[14] = [
     {name: "Complete Mission Street M1 with 100+ Rings", types: ["missionstreet"]},
     {name: "2 Chao Boxes in Mission Street and finish", types: ["missionstreet"]},
     {name: "5 hidden Chao animals in Mission Street and finish", types: ["missionstreet"]},
-    {name: "6 Hero Story Gold Beetles", types: ["goldbeetle"]},
+    {name: "Destroy the Gold Beetle in 6 Hero Story stages", types: ["goldbeetle"]},
     {name: "Pacifist Mission Street M1", types: ["missionstreet"]},
     {name: "Lost Colony M3", types: ["lostcolony"]},
     {name: "Aquatic Mine M2", types: ["aquaticmine"]},
@@ -552,7 +555,8 @@ bingoList[14] = [
     {name: "Complete Security Hall M1 with 100+ Rings", types: ["securityhall"]},
     {name: "2 Chao Boxes in Security Hall and finish", types: ["securityhall"]},
     {name: "5 hidden Chao animals in Security Hall and finish", types: ["securityhall"]},
-    {name: "6 Dark Story Gold Beetles", types: ["goldbeetle"]}
+    {name: "Complete Security Hall M1 with a Magnetic Shield", types: ["securityhall"]},
+    {name: "Destroy the Gold Beetle in 6 Dark Story stages", types: ["goldbeetle"]}
 ];
 bingoList[15] = [
     {name: "Egg Quarters All Missions A-Rank", types: ["eggquarters", "arank", "allmissions"]},
@@ -670,6 +674,7 @@ bingoList[21] = [
     {name: "Complete Eternal Engine M1 with 100+ Rings", types: ["eternalengine"]},
     {name: "2 Chao Boxes in Eternal Engine and finish", types: ["eternalengine"]},
     {name: "5 hidden Chao animals in Eternal Engine and finish", types: ["eternalengine"]},
+    {name: "Complete Eternal Engine M1 with a Green Shield", types: ["eternalengine"]},
     {name: "Meteor Herd M1 Hintless", types: ["meteorherd"]}
 ];
 bingoList[22] = [
@@ -684,7 +689,7 @@ bingoList[22] = [
     {name: "2 Chao Boxes in Meteor Herd and finish", types: ["meteorherd"]},
     {name: "5 hidden Chao animals in Meteor Herd and finish", types: ["meteorherd"]},
     {name: "20 Emblems", types: ["emblems", "multistory"]},
-    {name: "10 Gold Beetles across both Stories", types: ["goldbeetle",  "multistory"]},
+    {name: "Destroy the Gold Beetle in 10 different stages", types: ["goldbeetle",  "multistory"]},
     {name: "Prison Lane M3", types: ["prisonlane"]},
     {name: "Mad Space M5", types: ["madspace"]},
     {name: "Meteor Herd M3", types: ["meteorherd"]},
@@ -731,8 +736,10 @@ bingoList[24] = [
     {name: "Final Chase M2", types: ["finalchase"]},
     {name: "Complete Final Chase M1 with 100+ Rings", types: ["finalchase"]},
     {name: "2 Chao Boxes in Final Chase and finish", types: ["finalchase"]},
-    {name: "5 hidden Chao animals in Final Chase and finish", types: ["finalchase"]}
+    {name: "5 hidden Chao animals in Final Chase and finish", types: ["finalchase"]},
+    {name: "All Hero Story Character's Upgrades", types: ["finalrush"]},
+    {name: "All Dark Story Character's Upgrades", types: ["finalchase"]}
 ];
 bingoList[25] = [
-    {name: "50 Emblems (Team Combined)", types: ["emblems"]}
+    {name: "60 Emblems (Team Combined)", types: ["emblems"]}
 ];
