@@ -220,6 +220,7 @@ def reconcile_connections(request):
         for player in room.connected_players:
             if player.encoded_uuid not in connected_player_uuids:
                 ConnectionEvent.atomically_disconnect(player)
+        room.update_active()
 
     return HttpResponse()
 
