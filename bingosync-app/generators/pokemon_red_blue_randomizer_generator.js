@@ -806,7 +806,7 @@ bingoList = {
             "name": "35 Pokemon owned", "types": ["owned"]
         },
         {
-            "name": "Defeat 5 Pikachus"
+            "name": "Faint 5 Pikachus"
         }
     ]
 };
