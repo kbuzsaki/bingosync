@@ -232,15 +232,15 @@ bingoList[2] = [
 ];
 bingoList[3] = [
 { name: "Slakoth", types: ["easy"] },
-{ name: "7 Different types of Poke Ball", types: ["ball"] },
+{ name: "7 different types of Poke Ball", types: ["ball"] },
 { name: "Numel", types: ["easy"] },
-{ name: "Put a Pokeblock into a Safari Zone Container", types: ["safari"] }
+{ name: "Put a Pokeblock into a Safari Zone Container", types: ["pokeblock"] }
 ];
 bingoList[4] = [
 { name: "10 pokemon owned", types: ["pkmn"] },
 { name: "Zangoose or Seviper", types: ["rivals"] },
-{ name: "TM49 (Snatch)", types: ["snatch"] },
-{ name: "Metal Coat", types: ["metal"] }
+{ name: "TM48 (Skill Swap)", types: ["skill"] },
+{ name: "Metal Coat or Up-Grade", types: ["metal"] }
 ];
 bingoList[5] = [
 { name: "Plusle or Minun", types: ["plusminus"] },
@@ -256,13 +256,13 @@ bingoList[6] = [
 ];
 bingoList[7] = [
 { name: "No money on hand", types: ["cash"] },
-{ name: "Mawile", types: ["lore"] },
+{ name: "Mawile or Sableye", types: ["lore"] },
 { name: "Solrock or Lunatone", types: ["catch"] },
 { name: "Magikarp", types: ["karp"] }
 ];
 bingoList[8] = [
 { name: "Hatch an egg", types: ["egg"] },
-{ name: "Dustox and Beautifly", types: ["buggy"] },
+{ name: "Dustox or Beautifly", types: ["buggy"] },
 { name: "Shoal Shell or Shoal Salt", types: ["tide"] },
 { name: "Volbeat or Illumise", types: ["bugpair"] }
 ];
@@ -270,7 +270,7 @@ bingoList[9] = [
 { name: "Defeat a Slugma", types: ["thirty"] },
 { name: "Use no repels", types: ["repel", "instant"] },
 { name: "Deepseascale or tooth", types: ["held"] },
-{ name: "6 Badges", types: ["badge"] },
+{ name: "Heracross or Pinsir", types: ["bugpair"] }
 ];
 bingoList[10] = [
 { name: "Do not heal at any Pokemon Centers", types: ["heal", "instant"] },
@@ -280,7 +280,7 @@ bingoList[10] = [
 ];
 bingoList[11] = [
 { name: "Swablu", types: ["fluffy"] },
-{ name: "4 Big Pearls", types: ["cash"] },
+{ name: "Pearl and Big Pearl", types: ["cash"] },
 { name: "Pelipper", types: ["toomuchwater"] },
 { name: "TM37 (Sandstorm)", types: ["dududu"] }
 ];
@@ -294,16 +294,16 @@ bingoList[13] = [
 { name: "Do not use any TMs", types: ["tm", "instant"] },
 { name: "Beldum", types: ["gift"] },
 { name: "Black Glasses or Black Belt", types: ["shadysalesman"] },
-{ name: "3 baby Pokemon", types: ["egg"] }
+{ name: "A baby Pokemon", types: ["egg"] }
 ];
 bingoList[14] = [
 { name: "A Pokemon with a status related ability", types: ["ability"] },
-{ name: "Skarmory", types: ["steel"] },
+{ name: "Defeat all 8 Kecleons", types: ["kecleon"] },
 { name: "A Pokemon with 4 non-TM status moves", types: ["hop"] },
 { name: "Gyarados", types: ["karp"] }
 ];
 bingoList[15] = [
-{ name: "15 TMs", types: ["tm"] },
+{ name: "10 TMs", types: ["tm"] },
 { name: "7 Different Berries", types: ["berry"] },
 { name: "Spoink", types: ["pigu"] },
 { name: "Exp Share", types: ["share"] }
@@ -311,7 +311,7 @@ bingoList[15] = [
 bingoList[16] = [
 { name: "20 Pokemon owned", types: ["pkmn"] },
 { name: "Lileep or Anorith", types: ["fossil"] },
-{ name: "4 Heart Scales", types: ["cash"] },
+{ name: "Heart Scale or Dragon Scale", types: ["cash"] },
 { name: "Golbat", types: ["batty"] }
 ];
 bingoList[17] = [
@@ -321,7 +321,7 @@ bingoList[17] = [
 { name: "50 pokemon seen", types: ["pkmn"] }
 ];
 bingoList[18] = [
-{ name: "4 Rare Candies", types: ["cash"] },
+{ name: "Sell a Rare Candy", types: ["cash"] },
 { name: "Vulpix", types: ["firefox"] },
 { name: "Spell Tag", types: ["spell"] },
 { name: "3 different evolution stones", types: ["stone"] }
@@ -330,13 +330,13 @@ bingoList[19] = [
 { name: "Pokemon with an evasion boosting move", types: ["ass"] },
 { name: "Receive Elixir from Size NPC", types: ["barboach"] },
 { name: "Make a secret base", types: ["base"] },
-{ name: "Stardust", types: ["star"] }
+{ name: "Stardust or Star Piece", types: ["star"] }
 ];
 bingoList[20] = [
-{ name: "Burn Kecleon", types: ["wtf"] },
+{ name: "Burn a Kecleon", types: ["kecleon"] },
 { name: "A Pokemon with a weather related ability", types: ["ability"] },
 { name: "HM02 (Fly)", types: ["whee"] },
-{ name: "Wobbuffet", types: ["dummy"] }
+{ name: "Wobbuffet", types: ["safari"] }
 ];
 bingoList[21] = [
 { name: "Featherbadge", types: ["badge"] },
@@ -351,7 +351,7 @@ bingoList[22] = [
 { name: "3 different level 30 Pokemon", types: ["pkmn"] }
 ];
 bingoList[23] = [
-{ name: "TM35 (Flamethrower)", types: ["gamecorner"] },
+{ name: "Feed a Pokemon a Pokeblock", types: ["pokeblock"] },
 { name: "Mindbadge", types: ["badge"] },
 { name: "Defeat 5 Ninja Boys", types: ["trainer"] },
 { name: "Seadra", types: ["almostdragon"] }
@@ -363,8 +363,8 @@ bingoList[24] = [
 { name: "Complete a Trick House maze", types: ["trickmaster"] }
 ];
 bingoList[25] = [
-{ name: "Feebas", types: ["ayylmao"] },
-{ name: "Silverpowder", types: ["powder"] },
+{ name: "Barboach", types: ["barboach"] },
+{ name: "A powder item", types: ["powder"] },
 { name: "6 different fire type Pokemon", types: ["pkmn"] },
 { name: "Relicanth or Wailord", types: ["regi"] }
 ];
