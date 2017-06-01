@@ -218,104 +218,104 @@ bingoGenerator = function(bingoList, opts) {
 };
 var bingoList = [
     [], [ // Group 1
-        {name:"Tutorial Gate EP", types:["ep", "tutorial"]},
-        {name:"Squares Tutorial", types:["panel", "tutorial"]},
-        {name:"Dots Tutorial", types:["panel", "tutorial"]}
+        {name:"Squares Tutorial", types:["tutorial"]},
+        {name:"Dots Tutorial", types:["tutorial"]},
+        {name:"Swamp Tutorial", types:["swamp"]}
     ], [ // Group 2
-        {name:"Shadows Laser", types:["laser", "shadows"]},
-        {name:"Swamp Laser", types:["laser", "swamp"]},
-        {name:"Keep Laser", types:["laser", "keep"]}
+        {name:"Tutorial Gate EP", types:["tutorial"]},
+        {name:"Sand Line EP", types:["desert_ep"]},
+        {name:"Keep Flower EPs", types:["keep_ep"]}
     ], [ // Group 3
-        {name:"Any 5 Audio Logs", types:["log"]},
-        {name:"Sand Line EP", types:["ep", "desert_ep"]},
-        {name:"Any 1 Vault", types:["vault"]}
+        {name:"The Yellow Vase EP", types:["symmetry_ep"]},
+        {name:"Any pair of symmetrical EPs", types:[]},
+        {name:"Mountaintop River EP", types:["mountain_ep"]}
     ], [ // Group 4
-        {name:"Keep Flower EPs", types:["ep", "quarry_ep"]},
-        {name:"Any 3 discarded panels", types:["discard"]},
-        {name:"1 Windmill EP", types:["ep", "windmill_ep"]}
+        {name:"Any 1 discarded panel", types:["discard"]},
+        {name:"Any 1 Vault", types:["vault"]},
+        {name:"Any 1 non-laser panel that doesn't increase solve count", types:["nonpanel"]}
     ], [ // Group 5
-        {name:"Any 1 panel that doesn't increase solve count", types:["fakepanel"]},
-        {name:"The Yellow Vase EP", types:["ep", "symmetry_ep"]},
-        {name:"Mountaintop River EP", types:["ep", "mountain_ep"]}
+        {name:"Shadows Laser", types:["laser", "shadows"]},
+        {name:"Keep Laser", types:["laser", "keep"]},
+        {name:"Swamp Laser", types:["laser", "swamp"]}
     ], [ // Group 6
-        {name:"3 EPs while on the Boat", types:["ep", "boat_ep"]},
-        {name:"Any 2 Keep Walkway EPs", types:["ep", "keep_ep", "keep"]},
-        {name:"2 Windmill EPs", types:["ep", "windmill_ep"]}
+        {name:"Any 2 discarded panels", types:["discard"]},
+        {name:"Any 5 Audio Logs", types:["log"]},
+        {name:"Town RGB Panels", types:["town"]}
     ], [ // Group 7
-        {name:"Monastery Laser", types:["laser", "monastery"]},
-        {name:"Jungle Laser", types:["laser", "jungle"]},
-        {name:"Greenhouse Laser", types:["laser", "greenhouse"]}
+        {name:"Any 2 Keep Walkway EPs", types:["keep_ep", "keep"]},
+        {name:"1 Windmill EP", types:["windmill_ep"]},
+        {name:"Any 1 EP while on the Boat", types:["boat", "boat_ep"]}
     ], [ // Group 8
-        {name:"All 6 Monastery Facade EPs", types:["ep", "monastery_ep"]},
-        {name:"Town RGB Panels", types:["panel", "town"]},
-        {name:"Any 2 Vaults", types:["vault"]}
-    ], [ // Group 9
-        {name:"Any 3 Vaults", types:["vault"]},
-        {name:"3 Windmill EPs", types:["ep", "windmill_ep"]},
-        {name:"Quarry Laser", types:["laser", "quarry"]}
-    ], [ // Group 10
-        {name:"Desert Laser", types:["laser", "desert"]},
-        {name:"Town Laser", types:["laser", "town"]},
-        {name:"Symmetry Laser", types:["laser", "symmetry"]}
-    ], [ // Group 11
-        {name:"Flood Room EP", types:["ep", "desert_ep"]},
-        {name:"Railroad EP", types:["ep", "quarry_ep", "quarry"]},
-        {name:"Green Window EP", types:["ep", "greenhouse_ep"]}
-    ], [ // Group 12
-        {name:"5 EPs while on the Boat", types:["ep", "boat_ep"]},
-        {name:"Monastery Interior EPs", types:["ep", "monastery_ep"]},
-        {name:"Swamp Tutorial", types:["panel", "swamp"]}
-    ], [ // Group 13
-        {name:"Any 4 Vaults", types:["vault"]},
-        {name:"Any 3 panels that don't increase solve count", types:["fakepanel"]},
-        {name:"All 3 Mountaintop EPs", types:["ep", "mountain_ep"]}
-    ], [ // Group 14
-        {name:"Treehouse Buoy EP", types:["ep", "treehouse_ep"]},
-        {name:"Any 4 Keep Walkway EPs", types:["ep", "keep_ep", "keep"]},
-        {name:"Pink Trees", types:["panel"]}
-    ], [ // Group 15
-        {name:"Any 5 discarded panels", types:["discard"]},
-        {name:"Thundercloud EP", types:["ep", "desert"]},
-        {name:"Any EP and its reflection", types:["ep"]}
-    ], [ // Group 16
-        {name:"10 EPs while on the Boat", types:["ep", "boat_ep"]},
-        {name:"Any 10 Audio Logs", types:["log"]},
-        {name:"Both Treehouse Bridge EPs", types:["ep", "treehouse_ep"]}
-    ], [ // Group 17
-        {name:"Treehouse Laser", types:["laser", "treehouse"]},
-        {name:"Desert Obelisk", types:["obelisk", "desert_ep"]},
-        {name:"Any 7 discarded panels", types:["discard"]}
-    ], [ // Group 18
-        {name:"Any 15 Audio Logs", types:["log"]},
-        {name:"All Treehouse Shadow EPs", types:["ep", "treehouse_ep"]},
-        {name:"Any 10 discarded panels", types:["discard"]}
-    ], [ // Group 19
-        {name:"Both halves of Keep", types:["keep"]},
-        {name:"Any 12 discarded panels", types:["discard"]},
-        {name:"All 5 Keep Walkway EPs", types:["ep", "keep_ep", "keep"]}
-    ], [ // Group 20
-        {name:"Treehouses/Keep Obelisk", types:["obelisk", "treehouse_ep", "keep_ep"]},
-        {name:"Shadows/Quarry Obelisk", types:["obelisk", "shadows_ep", "quarry_ep"]},
-        {name:"Monastery Obelisk", types:["obelisk", "monastery_ep"]}
-    ], [ // Group 21
-        {name:"Any 5 panels that don't increase solve count", types:["fakepanel"]},
-        {name:"All Mountain Walkway EPs", types:["ep", "mountain"]},
-        {name:"All 4 Swamp Shadow EPs", types:["ep", "swamp_ep"]}
-    ], [ // Group 22
-        {name:"Take the boat in a circle", types:["boat"]},
-        {name:"Move any object that isn't a door", types:[]},
+        {name:"Take the boat in a loop", types:["boat"]},
+        {name:"Move any object that isn't a door, boat, or laser", types:[]},
         {name:"Listen to the entire mountaintop audio log", types:["log"]}
+    ], [ // Group 9
+        {name:"Monastery Interior EPs", types:["monastery_ep"]},
+        {name:"All 6 Monastery Facade EPs", types:["monastery_ep", "monastery"]},
+        {name:"Cloud Cycle EP", types:[]}
+    ], [ // Group 10
+        {name:"Any 3 discarded panels", types:["discard"]},
+        {name:"Pink Trees", types:[]},
+        {name:"Any 3 non-laser panel that doesn't increase solve count", types:["nonpanel"]}
+    ], [ // Group 11
+        {name:"Any 3 Cinema EPs", types:["windmill"]},
+        {name:"All 3 Mountaintop EPs", types:["mountain_ep"]},
+        {name:"All 3 Treehouse Shadow EPs", types:["treehouse_ep"]}
+    ], [ // Group 12
+        {name:"Both Keep laser puzzles", types:["laser", "keep"]},
+        {name:"Symmetry Laser", types:["laser", "symmetry"]},
+        {name:"Greenhouse Laser", types:["laser", "greenhouse"]}
+    ], [ // Group 13
+        {name:"Any 4 Keep Walkway EPs", types:["keep_ep", "keep"]},
+        {name:"2 Windmill EPs", types:["windmill_ep"]},
+        {name:"Any 2 EPs while on the Boat", types:["boat", "boat_ep"]}
+    ], [ // Group 14
+        {name:"Any 4 discarded panels", types:["discard"]},
+        {name:"Any 2 Vaults", types:["vault"]},
+        {name:"Any 10 Audio Logs", types:["log"]}
+    ], [ // Group 15
+        {name:"Treehouse Buoy EP", types:["treehouse_ep", "boat"]},
+        {name:"Flood Room EP", types:["desert_ep", "desert"]},
+        {name:"Railroad EP", types:["quarry_ep", "quarry"]}
+    ], [ // Group 16
+        {name:"Monastery Laser", types:["laser", "monastery"]},
+        {name:"Monastery Obelisk", types:["obelisk", "monastery_ep", "monastery"]},
+        {name:"Jungle Laser", types:["laser", "jungle"]}
+    ], [ // Group 17
+        {name:"Any 5 discarded panels", types:["discard"]},
+        {name:"Any 3 Vaults", types:["vault"]},
+        {name:"Any 5 non-laser panels that don't increase solve count", types:["nonpanel"]}
+    ], [ // Group 18
+        {name:"All 5 Keep Walkway EPs", types:["keep_ep", "keep"]},
+        {name:"3 Windmill EPs", types:["windmill_ep"]},
+        {name:"Any 3 EPs while on the Boat", types:["boat", "boat_ep"]}
+    ], [ // Group 19
+        {name:"Desert Laser", types:["laser", "desert"]},
+        {name:"Thundercloud EP", types:["desert"]},
+        {name:"Desert Elevator EP", types:["desert_ep", "desert"]}
+    ], [ // Group 20
+        {name:"Any 6 discarded panels", types:["discard"]},
+        {name:"Any 4 Vaults", types:["vault"]},
+        {name:"Any 15 Audio Logs", types:["log"]}
+    ], [ // Group 21
+        {name:"Both Treehouse Bridge EPs", types:["treehouse_ep", "treehouse"]},
+        {name:"Green Window EP", types:["greenhouse_ep", "greenhouse"]},
+        {name:"All 4 Swamp Shadow EPs", types:["swamp_ep"]}
+    ], [ // Group 22
+        {name:"Quarry Laser", types:["laser", "quarry"]},
+        {name:"Town Laser", types:["laser", "town"]},
+        {name:"Treehouse Laser", types:["laser", "treehouse"]}
     ], [ // Group 23
-        {name:"Any 20 Audio Logs", types:["log"]},
-        {name:"Any 14 discarded panels", types:["discard"]},
-        {name:"Any 5 Vaults", types:["vault"]}
+        {name:"Any 7 discarded panels", types:["discard"]},
+        {name:"Any 5 Vaults", types:["vault"]},
+        {name:"Any 20 Audio Logs", types:["log"]}
     ], [ // Group 24
-        {name:"Any 4 Cinema EPs", types:["ep"]},
-        {name:"Cloud Cycle EP", types:["ep"]},
-        {name:"Desert Elevator EP", types:["ep", "desert_ep", "desert"]}
+        {name:"Desert Obelisk", types:["obelisk", "desert_ep", "boat_ep", "desert", "symmetry"]},
+        {name:"Shadows/Quarry Obelisk", types:["obelisk", "shadows_ep", "quarry_ep", "quarry", "town"]},
+        {name:"Treehouses/Keep Obelisk", types:["obelisk", "treehouse_ep", "keep_ep", "boat_ep", "treehouse", "keep"]}
     ], [ // Group 25
-        {name:"Purple Mountain Walkway EP", types:["ep", "mountain"]},
-        {name:"Blue Mountain Walkway EP", types:["ep", "mountain"]},
-        {name:"Orange Mountain Walkway EP", types:["ep", "mountain"]}
+        {name:"Purple Mountain Walkway EP", types:["mountain"]},
+        {name:"Blue Mountain Walkway EP", types:["mountain"]},
+        {name:"Orange Mountain Walkway EP", types:["mountain"]}
     ]
 ];
