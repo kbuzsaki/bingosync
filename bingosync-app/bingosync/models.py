@@ -187,7 +187,11 @@ class Room(models.Model):
 
     @staticmethod
     def get_listed_rooms():
-        return Room.objects.filter(active=True)
+        active_rooms = Room.objects.filter(active=True)
+        # use -len(players) so that high numbers of players are at the top
+        # but otherwise names are sorted lexicographically descending
+        key = lambda room: (-len(room.connected_players), room.name)
+        return sorted(active_rooms, key=key)
 
     @staticmethod
     def get_with_multiple_players():
