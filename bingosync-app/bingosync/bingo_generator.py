@@ -62,6 +62,7 @@ CACHED_FILES_BY_NAME = {
     "zelda_botw": "generators/zelda_botw_generator.js",
     "sonic_adventure_2_hero_story": "generators/sonic_adventure_2_hero_story_generator.js",
     "the_witness": "generators/the_witness_generator.js",
+    "pikmin_2": "generators/pikmin_2_generator.js",
 }
 
 def load_cached_generator_source(game_name):

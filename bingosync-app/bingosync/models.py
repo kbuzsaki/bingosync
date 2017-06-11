@@ -261,6 +261,7 @@ class GameType(Enum):
     zelda_botw = 32
     sonic_adventure_2_hero_story = 33
     the_witness = 34
+    pikmin_2 = 35
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -325,6 +326,7 @@ GAME_TYPE_NAMES = {
     GameType.zelda_botw: "Zelda: Breath of the Wild",
     GameType.sonic_adventure_2_hero_story: "Sonic Adventure 2 - Hero Story",
     GameType.the_witness: "The Witness",
+    GameType.pikmin_2: "Pikmin 2",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -362,6 +364,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.zelda_botw: "Zelda: BotW",
     GameType.sonic_adventure_2_hero_story: "Sonic Adv. 2: HS",
     GameType.the_witness: "The Witness",
+    GameType.pikmin_2: "Pikmin 2",
 }
 
 class LockoutMode(Enum):
