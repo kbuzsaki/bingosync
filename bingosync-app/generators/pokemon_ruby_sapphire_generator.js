@@ -219,152 +219,152 @@ bingoGenerator = function(bingoList, opts) {
 
 var bingoList = [];
 bingoList[1] = [
-{ name: "Poochyena", types: ["lol"] },
-{ name: "TM28 (Dig)", types: ["dig"] },
-{ name: "HM05 (Flash)", types: ["flash"] },
-{ name: "Coin Case", types: ["gamecorner"] }
+{ name: "Poochyena", types: ["pkmn"] },
+{ name: "TM05 (Roar)", types: ["tm"] },
+{ name: "HM05 (Flash)", types: ["hm"] },
+{ name: "Coin Case", types: ["item"] }
 ];
 bingoList[2] = [
-{ name: "Tentacool", types: ["toomuchwater"] },
+{ name: "Tentacool", types: ["pkmn"] },
 { name: "A Pokemon with a stat related ability", types: ["ability"] },
-{ name: "Soot Sack", types: ["sack"] },
-{ name: "TM05 (Roar)", types: ["roar"] }
+{ name: "Soot Sack", types: ["item"] },
+{ name: "TM36 (Sludge Bomb)", types: ["tm"] }
 ];
 bingoList[3] = [
-{ name: "Slakoth", types: ["easy"] },
-{ name: "7 different types of Poke Ball", types: ["ball"] },
-{ name: "Numel", types: ["easy"] },
-{ name: "Put a Pokeblock into a Safari Zone Container", types: ["pokeblock"] }
+{ name: "Slakoth", types: ["pkmn"] },
+{ name: "7 Different Berries", types: ["multiitem"] },
+{ name: "Numel", types: ["pkmn"] },
+{ name: "Lava Cookie", types: ["item"] }
 ];
 bingoList[4] = [
-{ name: "10 pokemon owned", types: ["pkmn"] },
-{ name: "Zangoose or Seviper", types: ["rivals"] },
-{ name: "TM48 (Skill Swap)", types: ["skill"] },
-{ name: "Metal Coat or Up-Grade", types: ["metal"] }
+{ name: "10 pokemon owned", types: ["dex"] },
+{ name: "Zangoose or Seviper", types: ["pkmnpair"] },
+{ name: "6 water type Pokémon", types: ["pkmnpair"] },
+{ name: "A Pokemon with Mud Shot", types: ["starter"] }
 ];
 bingoList[5] = [
-{ name: "Plusle or Minun", types: ["plusminus"] },
-{ name: "Defeat Winstrate Family", types: ["family"] },
+{ name: "Plusle or Minun", types: ["pkmnpair"] },
+{ name: "Defeat Winstrate Family", types: ["trainer"] },
 { name: "Participate in a Contest", types: ["contest"] },
-{ name: "TM19 (Giga Drain)", types: ["drain"] }
+{ name: "Mawile or Sableye", types: ["pkmnpair"] }
 ];
 bingoList[6] = [
-{ name: "A Pokemon with 4 moves with STAB", types: ["tm"] },
-{ name: "Breloom", types: ["easy"] },
-{ name: "All rods", types: ["rod"] },
-{ name: "Shelgon", types: ["shelgon"] }
+{ name: "10 TMs", types: ["tm"] },
+{ name: "Ether", types: ["item"] },
+{ name: "Magikarp", types: ["pkmn"] },
+{ name: "Full Daycare", types: ["egg"] }
 ];
 bingoList[7] = [
+{ name: "A powder item", types: ["itempair"] },
 { name: "No money on hand", types: ["cash"] },
-{ name: "Mawile or Sableye", types: ["lore"] },
-{ name: "Solrock or Lunatone", types: ["catch"] },
-{ name: "Magikarp", types: ["karp"] }
+{ name: "Do not catch a Legendary Pokemon", types: ["instant"] },
+{ name: "Trade with an NPC", types: ["trade"] }
 ];
 bingoList[8] = [
-{ name: "Hatch an egg", types: ["egg"] },
-{ name: "Dustox or Beautifly", types: ["buggy"] },
-{ name: "Shoal Shell or Shoal Salt", types: ["tide"] },
-{ name: "Volbeat or Illumise", types: ["bugpair"] }
+{ name: "6 different water type Pokemon", types: ["dex"] },
+{ name: "Feed a Pokemon a Pokeblock", types: ["pokeblock"] },
+{ name: "A Pokemon with a status related ability", types: ["ability"] },
+{ name: "Volbeat or Illumise", types: ["pkmnpair"] }
 ];
 bingoList[9] = [
-{ name: "Defeat a Slugma", types: ["thirty"] },
-{ name: "Use no repels", types: ["repel", "instant"] },
-{ name: "Deepseascale or tooth", types: ["held"] },
-{ name: "Heracross or Pinsir", types: ["bugpair"] }
+{ name: "Defeat a Slugma", types: ["pkmn"] },
+{ name: "A Pokemon with a weather related ability", types: ["ability"] },
+{ name: "Defeat all 6 trainers on Cycling Road", types: ["trainer"] },
+{ name: "Complete a Trick House maze", types: ["trickmaster"] }
 ];
 bingoList[10] = [
+{ name: "Dustox or Beautifly", types: ["pkmnpair"] },
 { name: "Do not heal at any Pokemon Centers", types: ["heal", "instant"] },
-{ name: "Defeat all 7 trainers on route 123", types: ["train"] },
-{ name: "Trade with an NPC", types: ["trade"] },
-{ name: "Shedinja", types: ["onehpwonder"] }
+{ name: "Sell a Rare Candy", types: ["item"] },
+{ name: "Make a secret base", types: ["tm"] }
 ];
 bingoList[11] = [
-{ name: "Swablu", types: ["fluffy"] },
-{ name: "Pearl and Big Pearl", types: ["cash"] },
-{ name: "Pelipper", types: ["toomuchwater"] },
-{ name: "TM37 (Sandstorm)", types: ["dududu"] }
+{ name: "Gloom", types: ["pkmn"] },
+{ name: "A Pokemon with 4 moves with STAB", types: ["tm"] },
+{ name: "Exp Share", types: ["item"] },
+{ name: "TM44 (Rest)", types: ["tm"] }
 ];
 bingoList[12] = [
-{ name: "Barboach", types: ["rod"] },
-{ name: "Use a stone to evolve a Pokemon", types: ["stone"] },
-{ name: "Lava Cookie", types: ["whostolemycookie"] },
-{ name: "TM22 (Solar Beam)", types: ["beam"] }
+{ name: "Pearl or Big Pearl", types: ["itempair"] },
+{ name: "Spoink", types: ["pkmn"] },
+{ name: "Hatch an egg", types: ["egg"] },
+{ name: "Make a Pokémon relearn a move", types: ["item"] }
 ];
 bingoList[13] = [
+{ name: "Swablu", types: ["pkmn"] },
 { name: "Do not use any TMs", types: ["tm", "instant"] },
-{ name: "Beldum", types: ["gift"] },
-{ name: "Black Glasses or Black Belt", types: ["shadysalesman"] },
-{ name: "A baby Pokemon", types: ["egg"] }
+{ name: "Shedinja", types: ["pkmn"] },
+{ name: "Three type-boosting items", types: ["multiitem"] }
 ];
 bingoList[14] = [
-{ name: "A Pokemon with a status related ability", types: ["ability"] },
-{ name: "Defeat all 8 Kecleons", types: ["kecleon"] },
-{ name: "A Pokemon with 4 non-TM status moves", types: ["hop"] },
-{ name: "Gyarados", types: ["karp"] }
+{ name: "Golbat", types: ["pkmn"] },
+{ name: "Solrock or Lunatone", types: ["pkmnpair"] },
+{ name: "A Pokemon with 4 non-TM status moves", types: ["move"] },
+{ name: "Pokemon with an evasion boosting move", types: ["move"] }
 ];
 bingoList[15] = [
-{ name: "10 TMs", types: ["tm"] },
-{ name: "7 Different Berries", types: ["berry"] },
-{ name: "Spoink", types: ["pigu"] },
-{ name: "Exp Share", types: ["share"] }
+{ name: "7 different types of Poke Ball", types: ["multiitem"] },
+{ name: "Barboach", types: ["pkmn"] },
+{ name: "Evolve 5 different Pokémon", types: ["hm", "instant"] },
+{ name: "A baby Pokemon", types: ["egg", "pkmn"] }
 ];
 bingoList[16] = [
-{ name: "20 Pokemon owned", types: ["pkmn"] },
-{ name: "Lileep or Anorith", types: ["fossil"] },
-{ name: "Heart Scale or Dragon Scale", types: ["cash"] },
-{ name: "Golbat", types: ["batty"] }
+{ name: "20 Pokemon owned", types: ["dex"] },
+{ name: "Stop starter evolving 6 times", types: ["starter"] },
+{ name: "Lileep or Anorith", types: ["pkmnpair"] },
+{ name: "Pelipper", types: ["pkmn"] }
 ];
 bingoList[17] = [
-{ name: "Gloom", types: ["smokeweedeveryday"] },
-{ name: "Stop starter evolving 6 times", types: ["starter"] },
-{ name: "Twistedspoon", types: ["nospoon"] },
-{ name: "50 pokemon seen", types: ["pkmn"] }
+{ name: "TM19 (Giga Drain)", types: ["tm"] },
+{ name: "Use a stone to evolve a Pokemon", types: ["multiitem"] },
+{ name: "Use no repels", types: ["repel", "instant"] },
+{ name: "50 pokemon seen", types: ["dex"] }
 ];
 bingoList[18] = [
-{ name: "Sell a Rare Candy", types: ["cash"] },
-{ name: "Vulpix", types: ["firefox"] },
-{ name: "Spell Tag", types: ["spell"] },
-{ name: "3 different evolution stones", types: ["stone"] }
+{ name: "Defeat all 8 Kecleons", types: ["kecleon"] },
+{ name: "Gyarados", types: ["pkmn"] },
+{ name: "Defeat all 7 trainers on Route 123", types: ["trainer"] },
+{ name: "Breloom", types: ["pkmn"] }
 ];
 bingoList[19] = [
-{ name: "Pokemon with an evasion boosting move", types: ["ass"] },
-{ name: "Receive Elixir from Size NPC", types: ["barboach"] },
-{ name: "Make a secret base", types: ["base"] },
-{ name: "Stardust or Star Piece", types: ["star"] }
+{ name: "Vulpix", types: ["pkmn"] },
+{ name: "Defeat 10 Swimmers", types: ["trainer"] },
+{ name: "Catch something from Safari Zone", types: ["safari"] },
+{ name: "5 Valuable Items", types: ["multiitem"] }
 ];
 bingoList[20] = [
-{ name: "Burn a Kecleon", types: ["kecleon"] },
-{ name: "A Pokemon with a weather related ability", types: ["ability"] },
-{ name: "HM02 (Fly)", types: ["whee"] },
-{ name: "Wobbuffet", types: ["safari"] }
+{ name: "Burn a Kecleon", types: ["move"] },
+{ name: "20 TMs", types: ["item"] },
+{ name: "HM02 (Fly)", types: ["hm"] },
+{ name: "Spell Tag", types: ["item"] }
 ];
 bingoList[21] = [
 { name: "Featherbadge", types: ["badge"] },
-{ name: "Magneton", types: ["howdomagnetswork"] },
-{ name: "Defeat all 6 trainers on Cycling Road", types: ["train"] },
-{ name: "HM08 (Dive)", types: ["regi"] }
+{ name: "Magneton", types: ["pkmn"] },
+{ name: "$50,000", types: ["cash"] },
+{ name: "Put a Pokeblock into a Safari Zone Container", types: ["pokeblock"] }
 ];
 bingoList[22] = [
-{ name: "Grovyle", types: ["starter"] },
-{ name: "A Pokemon with Mud Shot", types: ["starter"] },
-{ name: "TM26 (Earthquake)", types: ["tate"] },
-{ name: "3 different level 30 Pokemon", types: ["pkmn"] }
+{ name: "Two non-key exchangeable items", types: ["multiitem"] },
+{ name: "A Trade Evolution Item", types: ["multiitem"] },
+{ name: "Wobbuffet", types: ["pkmn"] },
+{ name: "3 different level 30 Pokemon", types: ["dex"] }
 ];
 bingoList[23] = [
-{ name: "Feed a Pokemon a Pokeblock", types: ["pokeblock"] },
+{ name: "TM26 (Earthquake)", types: ["tm"] },
 { name: "Mindbadge", types: ["badge"] },
 { name: "Defeat 5 Ninja Boys", types: ["trainer"] },
-{ name: "Seadra", types: ["almostdragon"] }
+{ name: "HM08 (Dive)", types: ["hm"] }
 ];
 bingoList[24] = [
-{ name: "$50,000", types: ["money", "cash"] },
-{ name: "Do not catch a Legendary Pokemon", types: ["ass", "instant"] },
-{ name: "Catch something from Safari Zone", types: ["safari"] },
-{ name: "Complete a Trick House maze", types: ["trickmaster"] }
+{ name: "Seadra", types: ["pkmn"] },
+{ name: "Grovyle", types: ["starter", "pkmn"] },
+{ name: "TM04 (Calm Mind)", types: ["tm"] },
+{ name: "Relicanth or Wailord", types: ["pkmnpair"] }
 ];
 bingoList[25] = [
-{ name: "Barboach", types: ["barboach"] },
-{ name: "A powder item", types: ["powder"] },
-{ name: "6 different fire type Pokemon", types: ["pkmn"] },
-{ name: "Relicanth or Wailord", types: ["regi"] }
+{ name: "Defeat all 5 Trainers on Route 133", types: ["trainer"] },
+{ name: "Bagon", types: ["pkmn"] },
+{ name: "Receive Elixir from Size NPC", types: ["barboach"] },
+{ name: "Heracross or Pinsir", types: ["pkmnpair"] }
 ];
