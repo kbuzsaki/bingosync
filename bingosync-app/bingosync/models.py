@@ -262,6 +262,7 @@ class GameType(Enum):
     sonic_adventure_2_hero_story = 33
     the_witness = 34
     pikmin_2 = 35
+    alttp_randomizer = 36
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -327,6 +328,7 @@ GAME_TYPE_NAMES = {
     GameType.sonic_adventure_2_hero_story: "Sonic Adventure 2 - Hero Story",
     GameType.the_witness: "The Witness",
     GameType.pikmin_2: "Pikmin 2",
+    GameType.alttp_randomizer: "Zelda: A Link To The Past - Randomizer",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -365,6 +367,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.sonic_adventure_2_hero_story: "Sonic Adv. 2: HS",
     GameType.the_witness: "The Witness",
     GameType.pikmin_2: "Pikmin 2",
+    GameType.alttp_randomizer: "ALttP Random",
 }
 
 class LockoutMode(Enum):
