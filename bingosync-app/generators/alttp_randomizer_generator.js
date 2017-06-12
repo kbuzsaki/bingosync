@@ -81,7 +81,7 @@ bingoGenerator = function(bingoList, opts) {
 
         // add extra constraint to prevent multiple "Finish in x" goals from being on the board
         var isFinishGoal = function(s) {
-            return s.startsWith("Finish")
+            return s.indexOf("Finish") == 0;
         };
         var finishGoalAdded = false;
 
