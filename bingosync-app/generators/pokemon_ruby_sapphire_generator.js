@@ -239,8 +239,8 @@ bingoList[3] = [
 bingoList[4] = [
 { name: "10 pokemon owned", types: ["dex"] },
 { name: "Zangoose or Seviper", types: ["pkmnpair"] },
-{ name: "6 water type Pokémon", types: ["pkmnpair"] },
-{ name: "A Pokemon with Mud Shot", types: ["starter"] }
+{ name: "6 different water type Pokemon", types: ["dex"] },
+{ name: "A Pokemon with Double Kick or Mud Shot", types: ["starter"] }
 ];
 bingoList[5] = [
 { name: "Plusle or Minun", types: ["pkmnpair"] },
@@ -261,7 +261,7 @@ bingoList[7] = [
 { name: "Trade with an NPC", types: ["trade"] }
 ];
 bingoList[8] = [
-{ name: "6 different water type Pokemon", types: ["dex"] },
+{ name: "6 different flying type Pokemon", types: ["dex"] },
 { name: "Feed a Pokemon a Pokeblock", types: ["pokeblock"] },
 { name: "A Pokemon with a status related ability", types: ["ability"] },
 { name: "Volbeat or Illumise", types: ["pkmnpair"] }
@@ -269,7 +269,7 @@ bingoList[8] = [
 bingoList[9] = [
 { name: "Defeat a Slugma", types: ["pkmn"] },
 { name: "A Pokemon with a weather related ability", types: ["ability"] },
-{ name: "Defeat all 6 trainers on Cycling Road", types: ["trainer"] },
+{ name: "Defeat all 5 cyclists on Cycling Road", types: ["trainer"] },
 { name: "Complete a Trick House maze", types: ["trickmaster"] }
 ];
 bingoList[10] = [
@@ -317,11 +317,11 @@ bingoList[16] = [
 bingoList[17] = [
 { name: "TM19 (Giga Drain)", types: ["tm"] },
 { name: "Use a stone to evolve a Pokemon", types: ["multiitem"] },
-{ name: "Use no repels", types: ["repel", "instant"] },
+{ name: "Shuppet or Duskull", types: ["pkmn"]},
 { name: "50 pokemon seen", types: ["dex"] }
 ];
 bingoList[18] = [
-{ name: "Defeat all 8 Kecleons", types: ["kecleon"] },
+{ name: "Defeat 4 Kecleons", types: ["kecleon"] },
 { name: "Gyarados", types: ["pkmn"] },
 { name: "Defeat all 7 trainers on Route 123", types: ["trainer"] },
 { name: "Breloom", types: ["pkmn"] }
@@ -336,7 +336,7 @@ bingoList[20] = [
 { name: "Burn a Kecleon", types: ["move"] },
 { name: "20 TMs", types: ["item"] },
 { name: "HM02 (Fly)", types: ["hm"] },
-{ name: "Spell Tag", types: ["item"] }
+{ name: "Sea or Lax Incense", types: ["item"] }
 ];
 bingoList[21] = [
 { name: "Featherbadge", types: ["badge"] },
@@ -351,7 +351,7 @@ bingoList[22] = [
 { name: "3 different level 30 Pokemon", types: ["dex"] }
 ];
 bingoList[23] = [
-{ name: "TM26 (Earthquake)", types: ["tm"] },
+{ name: "TM27 (Return)", types: ["tm"] },
 { name: "Mindbadge", types: ["badge"] },
 { name: "Defeat 5 Ninja Boys", types: ["trainer"] },
 { name: "HM08 (Dive)", types: ["hm"] }
@@ -363,8 +363,8 @@ bingoList[24] = [
 { name: "Relicanth or Wailord", types: ["pkmnpair"] }
 ];
 bingoList[25] = [
-{ name: "Defeat all 5 Trainers on Route 133", types: ["trainer"] },
+{ name: "Defeat all 6 Trainers on Route 125", types: ["trainer"] },
 { name: "Bagon", types: ["pkmn"] },
-{ name: "Receive Elixir from Size NPC", types: ["barboach"] },
+{ name: "All badges", types: ["badge"] },
 { name: "Heracross or Pinsir", types: ["pkmnpair"] }
 ];
