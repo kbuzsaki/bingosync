@@ -251,7 +251,7 @@ bingoList[5] = [
 bingoList[6] = [
 { name: "10 TMs", types: ["tm"] },
 { name: "Ether", types: ["item"] },
-{ name: "Magikarp", types: ["pkmn"] },
+{ name: "Magikarp", types: ["pkmn", "karp"] },
 { name: "Full Daycare", types: ["egg"] }
 ];
 bingoList[7] = [
@@ -293,7 +293,7 @@ bingoList[12] = [
 bingoList[13] = [
 { name: "Swablu", types: ["pkmn"] },
 { name: "Do not use any TMs", types: ["tm", "instant"] },
-{ name: "Shedinja", types: ["pkmn"] },
+{ name: "Ninjask or Shedinja", types: ["pkmn"] },
 { name: "Three type-boosting items", types: ["multiitem"] }
 ];
 bingoList[14] = [
@@ -322,7 +322,7 @@ bingoList[17] = [
 ];
 bingoList[18] = [
 { name: "Defeat 4 Kecleons", types: ["kecleon"] },
-{ name: "Gyarados", types: ["pkmn"] },
+{ name: "Gyarados", types: ["pkmn", "karp"] },
 { name: "Defeat all 7 trainers on Route 123", types: ["trainer"] },
 { name: "Breloom", types: ["pkmn"] }
 ];
@@ -345,14 +345,14 @@ bingoList[21] = [
 { name: "Put a Pokeblock into a Safari Zone Container", types: ["pokeblock"] }
 ];
 bingoList[22] = [
-{ name: "Two non-key exchangeable items", types: ["multiitem"] },
+{ name: "Two different non-key exchangeable items", types: ["multiitem"] },
 { name: "A Trade Evolution Item", types: ["multiitem"] },
 { name: "Wobbuffet", types: ["pkmn"] },
 { name: "3 different level 30 Pokemon", types: ["dex"] }
 ];
 bingoList[23] = [
-{ name: "TM27 (Return)", types: ["tm"] },
-{ name: "Mindbadge", types: ["badge"] },
+{ name: "TM21 (Frustration) or TM27 (Return)", types: ["tm"] },
+{ name: "All rods", types: ["rods"] },
 { name: "Defeat 5 Ninja Boys", types: ["trainer"] },
 { name: "HM08 (Dive)", types: ["hm"] }
 ];
@@ -364,7 +364,7 @@ bingoList[24] = [
 ];
 bingoList[25] = [
 { name: "Defeat all 6 Trainers on Route 125", types: ["trainer"] },
-{ name: "Bagon", types: ["pkmn"] },
+{ name: "Catch a Dragon-type Pokemon", types: ["pkmn"] },
 { name: "All badges", types: ["badge"] },
 { name: "Heracross or Pinsir", types: ["pkmnpair"] }
 ];
