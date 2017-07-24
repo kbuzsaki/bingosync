@@ -263,6 +263,7 @@ class GameType(Enum):
     the_witness = 34
     pikmin_2 = 35
     alttp_randomizer = 36
+    pokemon_platinum = 37
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -329,6 +330,7 @@ GAME_TYPE_NAMES = {
     GameType.the_witness: "The Witness",
     GameType.pikmin_2: "Pikmin 2",
     GameType.alttp_randomizer: "Zelda: A Link To The Past - Randomizer",
+    GameType.pokemon_platinum: "Pokémon Platinum",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -368,6 +370,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.the_witness: "The Witness",
     GameType.pikmin_2: "Pikmin 2",
     GameType.alttp_randomizer: "ALttP Random",
+    GameType.pokemon_platinum: "Poké Plat.",
 }
 
 class LockoutMode(Enum):

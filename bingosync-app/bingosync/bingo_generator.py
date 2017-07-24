@@ -64,6 +64,7 @@ CACHED_FILES_BY_NAME = {
     "the_witness": "generators/the_witness_generator.js",
     "pikmin_2": "generators/pikmin_2_generator.js",
     "alttp_randomizer": "generators/alttp_randomizer_generator.js",
+    "pokemon_platinum": "generators/pokemon_platinum_generator.js",
 }
 
 def load_cached_generator_source(game_name):
