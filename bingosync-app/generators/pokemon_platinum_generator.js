@@ -220,185 +220,180 @@ bingoGenerator = function(bingoList, opts) {
 var bingoList = [];
 
 bingoList[1] = [
+  { name:"Don’t heal with herbal items", types: ["instant"] },
   { name:"Odd Keystone", types: ["keystone"] },
   { name:"TM88 (Pluck)", types: ["floaroma1"] },
-  { name:"Sprayduck", types: ["keyitem"] },
+  { name:"Quick Claw", types: ["jubilife"] },
   { name:"Evolve a Pokémon", types: ["evolve"] },
-  { name:"Wormadam, Mothim, or Beautifly", types: ["gen4bugs"] }
+  { name:"Wormadam, Mothim, or Vespiquen", types: ["pokemon"] }
 ];
 bingoList[2] = [
   { name:"Give a Pokémon a massage", types: ["massage"] },
   { name:"Catch a Pokémon with the Old Rod", types: ["fishing"] },
-  { name:"Defeat a Gym Leader with animations on", types: ["leader"] },
+  { name:"Sprayduck", types: ["keyitem"] },
   { name:"Poffin Case", types: ["keyitem"] },
-  { name:"Beautifly or Dustox", types: ["gen3bugs"] }
+  { name:"Beautifly or Dustox", types: ["pokemon"] }
 ];
 bingoList[3] = [
   { name:"Don’t heal at Pokémon Centers", types: ["instant"] },
+  { name:"Defeat a Gym Leader with animations on", types: ["leader"] },
   { name:"TM67 (Recycle)", types: ["eterna"] },
   { name:"Slather honey on 10 different trees", types: ["honey"] },
-  { name:"8 Pokétch Apps", types: ["poketch"] },
-  { name:"Kadabra, Machoke, or Graveler", types: ["trade"] }
+  { name:"Haunter, Kadabra, Machoke, or Graveler", types: ["pokemon"] }
 ];
 bingoList[4] = [
   { name:"Use a 4x super-effective move", types: ["parasect"] },
-  { name:"5 different type-boosting items", types: ["items"] },
   { name:"10 different berries", types: ["berries"] },
+  { name:"8 Pokétch Apps", types: ["poketch"] },
   { name:"Apply a Ball Seal to a Pokémon", types: ["seals"] },
-  { name:"Bibarel or Staravia", types: ["bidoof"] }
+  { name:"Kricketune, Bibarel, or Staravia", types: ["pokemon"] }
 ];
 bingoList[5] = [
+  { name:"5 different type-boosting items", types: ["typeitems"] },
   { name:"Protector, Reaper Cloth, Magmarizer, or Electrizer", types: ["tradeitems"] },
-  { name:"5 different Water-type Pokémon", types: ["catch5"] },
   { name:"Defeat a doubles partner", types: ["doubles"] },
   { name:"TM51 (Roost)", types: ["abovesolaceon"] },
-  { name:"Tangela, Yanma, or Piloswine", types: ["ancientpower"] }
+  { name:"Tangela, Yanma, or Piloswine", types: ["pokemon"] }
 ];
 bingoList[6] = [
-  { name:"5 different Normal-type Pokémon", types: ["catch5easy"] },
   { name:"Release starter before level 11", types: ["starter"] },
   { name:"7 Different types of Poké Ball", types: ["balls"] },
-  { name:"10 Pokémon owned", types: ["pkmn"] },
-  { name:"Kirlia or Snorunt", types: ["dawn"] }
+  { name:"10 different Pokémon owned", types: ["pkmn"] },
+  { name:"Defeat all 8 trainers in Eterna Forest", types: ["trainers"] },
+  { name:"Roselia, Togetic, Kirlia, or Snorunt", types: ["pokemon"] }
 ];
 bingoList[7] = [
-  { name:"5 different Flying-type Pokémon", types: ["catch5easy"] },
   { name:"3 Pokémon that start with the same letter", types: ["letter"] },
-  { name:"A Pokémon with a non-TM stat-boosting move", types: ["move"] },
+  { name:"A Pokémon with a stat-boosting move", types: ["move"] },
   { name:"Return the Suite Key", types: ["hotel"] },
   { name:"TM92 (Trick Room)", types: ["hotel"] },
-  { name:"Electabuzz, Magmar, or Jynx", types: ["punches"] }
+  { name:"Electabuzz, Magmar, or Jynx", types: ["pokemon"] }
 ];
 bingoList[8] = [
-  { name:"5 different Grass-type Pokémon", types: ["catch5easy"] },
   { name:"A Pokémon with a non-TM move with 5 PP", types: ["move"] },
   { name:"Battle Rotom (TV Pokémon)", types: ["clock"] },
   { name:"15 TMs", types: ["tms"] },
-  { name:"2 eggs", types: ["egg"] },
-  { name:"Magnezone or Probopass", types: ["coronet"] }
+  { name:"Defeat all 11 trainers on Route 205", types: ["trainers"] },
+  { name:"3 eggs", types: ["egg"] },
+  { name:"Magnezone or Probopass", types: ["pokemon"] }
 ];
 bingoList[9] = [
-  { name:"5 different Psychic-type Pokémon", types: ["catch5easy"] },
-  { name:"Defeat all 8 trainers in Eterna Forest", types: ["trainers"] },
+  { name:"6 different Water-type Pokémon", types: ["catch6"] },
   { name:"Defeat Drifloon", types: ["date"] },
   { name:"TM78 (Captivate)", types: ["floaroma2"] },
   { name:"Catch a Pokémon with the Good Rod", types: ["fishing"] },
-  { name:"Mightyena or Houndoom", types: ["frankerz"] }
+  { name:"Luxio, Mightyena, or Houndoom", types: ["pokemon"] }
 ];
 bingoList[10] = [
-  { name:"5 different Poison-type Pokémon", types: ["catch5easy"] },
-  { name:"Revive a Fossil", types: ["fossil"] },
+  { name:"6 different Normal-type Pokémon", types: ["catch6"] },
+  { name:"Defeat 8 spinners", types: ["trainers"] },
   { name:"HM05 (Defog)", types: ["hms"] },
   { name:"Evolve 3 different Pokémon", types: ["evolve"] },
-  { name:"Quagsire or Pelipper", types: ["waters"] }
+  { name:"Shellos, Floatzel, Quagsire, or Pelipper", types: ["pokemon"] }
 ];
 bingoList[11] = [
-  { name:"5 different Ground-type Pokémon", types: ["catch5medium"] },
+  { name:"6 different Flying-type Pokémon", types: ["catch6"] },
+  { name:"Revive a Fossil", types: ["fossil"] },
   { name:"BlackGlasses, Wise Glasses, or Choice Specs", types: ["celestic"] },
   { name:"TM77 (Psych Up)", types: ["celestic"] },
-  { name:"Aron or Spheal", types: ["gen3things"] }
+  { name:"Duskull, Aron, or Spheal", types: ["pokemon"] }
 ];
 bingoList[12] = [
-  { name:"5 different Bug-type Pokémon", types: ["catch5medium"] },
   { name:"Defeat all 7 trainers in Galactic Eterna Building", types: ["missable"] },
   { name:"Defeat 8 Hikers", types: ["class"] },
-  { name:"Defeat all 6 trainers in Fantina’s gym", types: ["trainers"] },
+  { name:"Defeat all 6 trainers in Fantina’s gym", types: ["missable"] },
   { name:"Enter Amity Square", types: ["amity"] },
-  { name:"Seel or Slowpoke", types: ["derp"] }
+  { name:"Azumarill, Seel, or Slowpoke", types: ["pokemon"] }
 ];
 bingoList[13] = [
-  { name:"5 different Rock-type Pokémon", types: ["catch5medium"] },
-  { name:"15 Pokémon owned", types: ["pkmn"] },
+  { name:"15 different Pokémon owned", types: ["pkmn"] },
   { name:"A Pokémon with 4 non-TM status moves", types: ["hms"] },
+  { name:"Matchup Checker App", types: ["marsh"] },
   { name:"5 rematches with trainers", types: ["rematch"] },
-  { name:"Larvitar, Gible, or Bagon", types: ["pseudo"] }
+  { name:"Larvitar, Gible, or Bagon", types: ["pokemon"] }
 ];
 bingoList[14] = [
-  { name:"5 different Fire-type Pokémon", types: ["catch5medium"] },
   { name:"Hatch a Pokémon from an egg", types: ["hatch"] },
-  { name:"Defeat all 4 non-double trainers in Lost Tower", types: ["trainers"] },
+  { name:"A Pokémon with a stat-related ability", types: ["ability"] },
   { name:"Defeat all 8 trainers on Cycling Road", types: ["trainers"] },
   { name:"3 battles inside Pokémon Centers", types: ["center"] },
-  { name:"Stunky or Glameow", types: ["mammals"] }
+  { name:"Absol, Stunky, or Glameow", types: ["pokemon"] }
 ];
 bingoList[15] = [
-  { name:"5 different Electric-type Pokémon", types: ["catch5medium"] },
   { name:"A Pokémon with 4 STAB moves", types: ["stab"] },
   { name:"A Pokémon with red HP", types: ["endgame"] },
+  { name:"Defeat all 9 trainers on Route 214", types: ["trainers"] },
+  { name:"A Pokémon with a weather-related ability", types: ["ability"] },
   { name:"Battle a Legendary Pokémon", types: ["legend"] },
-  { name:"HM03 (Surf)", types: ["celestic"] },
-  { name:"Sneasel or Gligar", types: ["razor"] }
+  { name:"Snover, Sneasel, or Gligar", types: ["pokemon"] }
 ];
 bingoList[16] = [
-  { name:"5 different Steel-type Pokémon", types: ["catch5medium"] },
   { name:"A Pokémon weighing at least 300 lbs", types: ["heavy"] },
   { name:"A Pokémon with a non-HM 2-turn move", types: ["two"] },
-  { name:"A Pokémon with a stat-related ability", types: ["ability"] },
+  { name:"Defeat all 8 trainers in Lost Tower", types: ["trainers"] },
   { name:"Defeat the maids at Mr. Backlot’s Mansion", types: ["mansion"] },
-  { name:"Aipom or Lickitung", types: ["normals"] }
+  { name:"Buneary, Aipom, or Lickitung", types: ["pokemon"] }
 ];
 bingoList[17] = [
-  { name:"5 different Fighting-type Pokémon", types: ["catch5medium"] },
   { name:"3 baby Pokémon", types: ["baby"] },
   { name:"Use a stone to evolve a Pokémon", types: ["evolve"] },
   { name:"12 Pokétch Apps", types: ["poketch"] },
   { name:"A Pokémon with a status-related ability", types: ["ability"] },
-  { name:"Murkrow or Misdreavus", types: ["dusk"] }
+  { name:"Haunter, Murkrow, or Misdreavus", types: ["pokemon"] }
 ];
 bingoList[18] = [
-  { name:"5 different Dark-type Pokémon", types: ["catch5hard"] },
   { name:"Land a move with at most 70% accuracy", types: ["miss"] },
   { name:"Train a Pokémon to Level 45", types: ["raise"] },
+  { name:"Participate in a Contest", types: ["contest"] },
   { name:"Earn a reward from the Pokémon News Press", types: ["news"] },
-  { name:"Buizel or Shellos", types: ["gen4waters"] }
+  { name:"Meditite, Bronzor, or Girafarig", types: ["pokemon"] }
 ];
 bingoList[19] = [
-  { name:"5 different Ice-type Pokémon", types: ["catch5hard"] },
+  { name:"Teach 4 TMs to the same Pokémon", types: ["tms"] },
   { name:"$50,000", types: ["money"] },
   { name:"No money on hand", types: ["money"] },
-  { name:"Participate in a Contest", types: ["contest"] },
-  { name:"Goldeen or Barboach", types: ["fish"] }
+  { name:"Don’t use X items", types: ["instant"] },
+  { name:"Finneon, Remoraid, Goldeen, or Barboach", types: ["pokemon"] }
 ];
 bingoList[20] = [
-  { name:"5 different Dragon-type Pokémon", types: ["catch5hard"] },
-  { name:"Teach 4 TMs to the same Pokémon", types: ["tms"] },
+  { name:"A Pokémon with an item-related ability", types: ["ability"] },
   { name:"All Pokémon of only one gender", types: ["instant"] },
-  { name:"Defeat all 3 trainers in Fuego Ironworks", types: ["surf"] },
-  { name:"Finneon or Remoraid", types: ["fish"] }
+  { name:"Fen Badge", types: ["surf"] },
+  { name:"Footprint Ribbon", types: ["footprint"] },
+  { name:"Carnivine, Skorupi, or Croagunk", types: ["pokemon"] }
 ];
 bingoList[21] = [
-  { name:"5 different Ghost-type Pokemon", types: ["catch5hard"] },
   { name:"10 rematches with trainers", types: ["rematch"] },
   { name:"25 TMs", types: ["tms"] },
-  { name:"Footprint Ribbon", types: ["footprint"] },
+  { name:"HM03 (Surf)", types: ["surf"] },
   { name:"A Pokemon with an evasion boosting move", types: ["move"] },
-  { name:"Feebas or Magikarp", types: ["fish"] }
+  { name:"Onix, Scyther, or Feebas", types: ["pokemon"] }
 ];
 bingoList[22] = [
   { name:"A Pokémon with each different type", types: ["types"] },
-  { name:"Don’t use X items", types: ["instant"] },
-  { name:"A Pokémon with an item-related ability", types: ["ability"] },
+  { name:"Stop starter evolving 3 times", types: ["raise"] },
+  { name:"20 different Pokémon owned", types: ["pkmn"] },
   { name:"Evolve 5 different Pokémon", types: ["evolve"] },
-  { name:"Skorupi or Croagunk", types: ["gen4poisons"] }
+  { name:"Togepi, Riolu, Porygon, or Eevee", types: ["pokemon"] }
 ];
 bingoList[23] = [
   { name:"Use Struggle", types: ["pp"] },
-  { name:"3 Pokémon in the same evolution chain", types: ["evolve"] },
-  { name:"A Pokémon with a weather-related ability", types: ["ability"] },
-  { name:"20 Pokémon owned", types: ["pkmn"] },
-  { name:"Scyther or Pinsir", types: ["gen1bugs"] }
+  { name:"4 Pokémon with adjacent National Dex numbers", types: ["dex"] },
+  { name:"Catch a Pokémon while Surfing", types: ["surf"] },
+  { name:"TM48 (Skill Swap)", types: ["canalavetm"] },
+  { name:"Dialga, Palkia, or Giratina", types: ["pokemon"] }
 ];
 bingoList[24] = [
   { name:"Hit 5 times with a multi-hit move", types: ["skilllink"] },
-  { name:"Stop starter evolving 3 times", types: ["raise"] },
-  { name:"Digger Drill", types: ["underground"]},
-  { name:"Mine Badge", types: ["surf"] },
-  { name:"Kecleon or Stantler", types: ["normals"] }
+  { name:"Defeat all 9 trainers on Route 213", types: ["surf"] },
+  { name:"3 Pokémon in the same evolution chain", types: ["evolve"] },
+  { name:"Get all 3 TMs in Oreburgh Gate", types: ["surf"] },
+  { name:"Black Belt, Expert Belt, or Focus Sash", types: ["belts"] }
 ];
 bingoList[25] = [
   { name:"Defeat all 11 trainers in Route 210’s fog", types: ["fog"] },
+  { name:"Digger Drill", types: ["underground"] },
   { name:"Don’t use Repels", types: ["instant"] },
-  { name:"Complete Mira’s sidequest", types: ["sidequest"] },
-  { name:"Complete Riley’s sidequest", types: ["sidequest"] },
-  { name:"Dialga, Palkia, or Giratina", types: ["legends"] }
+  { name:"Defeat all 3 trainers in Fuego Ironworks", types: ["surf"] },
+  { name:"Complete Mira’s sidequest", types: ["sidequest"] }
 ];
