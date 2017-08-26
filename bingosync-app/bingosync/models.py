@@ -264,6 +264,10 @@ class GameType(Enum):
     pikmin_2 = 35
     alttp_randomizer = 36
     pokemon_platinum = 37
+    rayman_ps1 = 38
+    pokemon_crystal_randomizer = 39
+    pokemon_emerald_randomizer = 40
+    pokemon_crystal_tournament = 41
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -331,6 +335,10 @@ GAME_TYPE_NAMES = {
     GameType.pikmin_2: "Pikmin 2",
     GameType.alttp_randomizer: "Zelda: A Link To The Past - Randomizer",
     GameType.pokemon_platinum: "Pokémon Platinum",
+    GameType.rayman_ps1: "Rayman (PS1)",
+    GameType.pokemon_crystal_randomizer: "Pokémon Crystal - Randomizer",
+    GameType.pokemon_emerald_randomizer: "Pokémon Emerald - Randomizer",
+    GameType.pokemon_crystal_tournament: "Pokémon Crystal - Tournament",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -345,7 +353,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.donkey_kong_64: "DK64",
     GameType.pikmin: "Pikmin",
     GameType.super_mario_sunshine: "SMS",
-    GameType.pokemon_red_blue_randomizer: "Poké Random",
+    GameType.pokemon_red_blue_randomizer: "Red/Blue Random",
     GameType.final_fantasy_1: "FF1",
     GameType.crash_twinsanity: "Crash Twins.",
     GameType.lufia_2: "Lufia 2",
@@ -371,6 +379,10 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.pikmin_2: "Pikmin 2",
     GameType.alttp_randomizer: "ALttP Random",
     GameType.pokemon_platinum: "Poké Plat.",
+    GameType.rayman_ps1: "Rayman",
+    GameType.pokemon_crystal_randomizer: "Crystal Random",
+    GameType.pokemon_emerald_randomizer: "Emerald Random",
+    GameType.pokemon_crystal_tournament: "Crystal Tournament",
 }
 
 class LockoutMode(Enum):

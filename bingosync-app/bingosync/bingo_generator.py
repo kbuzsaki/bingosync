@@ -65,6 +65,10 @@ CACHED_FILES_BY_NAME = {
     "pikmin_2": "generators/pikmin_2_generator.js",
     "alttp_randomizer": "generators/alttp_randomizer_generator.js",
     "pokemon_platinum": "generators/pokemon_platinum_generator.js",
+    "rayman_ps1": "generators/rayman_ps1_generator.js",
+    "pokemon_crystal_randomizer": "generators/pokemon_crystal_randomizer_generator.js",
+    "pokemon_emerald_randomizer": "generators/pokemon_emerald_randomizer_generator.js",
+    "pokemon_crystal_tournament": "generators/pokemon_crystal_tournament_generator.js",
 }
 
 def load_cached_generator_source(game_name):
