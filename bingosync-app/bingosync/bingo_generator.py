@@ -69,6 +69,8 @@ CACHED_FILES_BY_NAME = {
     "pokemon_crystal_randomizer": "generators/pokemon_crystal_randomizer_generator.js",
     "pokemon_emerald_randomizer": "generators/pokemon_emerald_randomizer_generator.js",
     "pokemon_crystal_tournament": "generators/pokemon_crystal_tournament_generator.js",
+    "sonic_adventure_2_dark_story": "generators/sonic_adventure_2_dark_story_generator.js",
+    "sonic_adventure_2_long": "generators/sonic_adventure_2_long_generator.js",
 }
 
 def load_cached_generator_source(game_name):

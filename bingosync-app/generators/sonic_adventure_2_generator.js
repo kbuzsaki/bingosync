@@ -483,7 +483,7 @@ bingoList[10] = [
     {name: "Green Forest M3", types: ["greenforest"]},
     {name: "Radical Highway M4", types: ["radicalhighway"]},
     {name: "Knuckles' Mystic Melody", types: ["wildcanyon"]},
-    {name: "Dr Eggman's Mystic Melody", types: ["sandocean"]}
+    {name: "Dr Eggman's Mystic Melody", types: ["lostcolony"]}
 ];
 bingoList[11] = [
     {name: "Metal Harbor All Missions A-Rank", types: ["metalharbor", "arank", "allmissions"]},

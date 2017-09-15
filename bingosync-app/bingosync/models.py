@@ -268,6 +268,8 @@ class GameType(Enum):
     pokemon_crystal_randomizer = 39
     pokemon_emerald_randomizer = 40
     pokemon_crystal_tournament = 41
+    sonic_adventure_2_dark_story = 42
+    sonic_adventure_2_long = 43
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -339,6 +341,8 @@ GAME_TYPE_NAMES = {
     GameType.pokemon_crystal_randomizer: "Pokémon Crystal - Randomizer",
     GameType.pokemon_emerald_randomizer: "Pokémon Emerald - Randomizer",
     GameType.pokemon_crystal_tournament: "Pokémon Crystal - Tournament",
+    GameType.sonic_adventure_2_dark_story: "Sonic Adventure 2 - Dark Story",
+    GameType.sonic_adventure_2_long: "Sonic Adventure 2 - Long",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -366,7 +370,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.ocarina_of_time_short_blackout: "OoT Short Blackout",
     GameType.pokemon_ruby_sapphire: "Poké Ruby/Sapph",
     GameType.adams_family: "Addams Family",
-    GameType.sonic_adventure_2: "Sonic Adv. 2",
+    GameType.sonic_adventure_2: "SA2",
     GameType.dark_souls: "Dark Souls",
     GameType.road_trip_adventure: "Road Trip Adv.",
     GameType.psychonauts: "Psychonauts",
@@ -374,7 +378,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.banjo_tooie: "Banjo-Tooie",
     GameType.ff4_ancient_cave: "FF4 Ancient Cave",
     GameType.zelda_botw: "Zelda: BotW",
-    GameType.sonic_adventure_2_hero_story: "Sonic Adv. 2: HS",
+    GameType.sonic_adventure_2_hero_story: "SA2 Hero",
     GameType.the_witness: "The Witness",
     GameType.pikmin_2: "Pikmin 2",
     GameType.alttp_randomizer: "ALttP Random",
@@ -383,6 +387,8 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.pokemon_crystal_randomizer: "Crystal Random",
     GameType.pokemon_emerald_randomizer: "Emerald Random",
     GameType.pokemon_crystal_tournament: "Crystal Tournament",
+    GameType.sonic_adventure_2_dark_story: "SA2 Dark",
+    GameType.sonic_adventure_2_long: "SA2 Long",
 }
 
 class LockoutMode(Enum):
