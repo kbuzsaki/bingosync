@@ -164,7 +164,7 @@ bingoGenerator = function(bingoList, opts) {
             var synergy = 0;
             for (var j = 0; j < lineCheckList[i].length; j++) {
                 var typesB = bingoBoard[lineCheckList[i][j] + 1].types;
-                if (typeof typesB != 'undefined') {
+                if (typeof typesA != "undefined" && typeof typesB != 'undefined') {
                     for (var k = 0; k < typesA.length; k++) {
                         for (var l = 0; l < typesB.length; l++) {
                             if (typesA[k] == typesB[l]) {
@@ -216,106 +216,264 @@ bingoGenerator = function(bingoList, opts) {
         return bingoBoard;
     }
 };
-var bingoList = [
-    [], [ // Group 1
-        {name:"Squares Tutorial", types:["tutorial"]},
-        {name:"Dots Tutorial", types:["tutorial"]},
-        {name:"Swamp Tutorial", types:["swamp"]}
-    ], [ // Group 2
-        {name:"Tutorial Gate EP", types:["tutorial"]},
-        {name:"Sand Line EP", types:["desert_ep"]},
-        {name:"Keep Flower EPs", types:["keep_ep"]}
-    ], [ // Group 3
-        {name:"The Yellow Vase EP", types:["symmetry_ep"]},
-        {name:"Any pair of symmetrical EPs", types:[]},
-        {name:"Mountaintop River EP", types:["mountain_ep"]}
-    ], [ // Group 4
-        {name:"Any 1 discarded panel", types:["discard"]},
-        {name:"Any 1 Vault", types:["vault"]},
-        {name:"Any 1 non-laser panel that doesn't increase solve count", types:["nonpanel"]}
-    ], [ // Group 5
-        {name:"Shadows Laser", types:["laser", "shadows"]},
-        {name:"Keep Laser", types:["laser", "keep"]},
-        {name:"Swamp Laser", types:["laser", "swamp"]}
-    ], [ // Group 6
-        {name:"Any 2 discarded panels", types:["discard"]},
-        {name:"Any 5 Audio Logs", types:["log"]},
-        {name:"Town RGB Panels", types:["town"]}
-    ], [ // Group 7
-        {name:"Any 2 Keep Walkway EPs", types:["keep_ep", "keep"]},
-        {name:"1 Windmill EP", types:["windmill_ep"]},
-        {name:"Any 1 EP while on the Boat", types:["boat", "boat_ep"]}
-    ], [ // Group 8
-        {name:"Take the boat in a loop", types:["boat"]},
-        {name:"Move any object that isn't a door, boat, or laser", types:[]},
-        {name:"Listen to the entire mountaintop audio log", types:["log"]}
-    ], [ // Group 9
-        {name:"Monastery Interior EPs", types:["monastery_ep"]},
-        {name:"All 6 Monastery Facade EPs", types:["monastery_ep", "monastery"]},
-        {name:"Cloud Cycle EP", types:[]}
-    ], [ // Group 10
-        {name:"Any 3 discarded panels", types:["discard"]},
-        {name:"Pink Trees", types:[]},
-        {name:"Any 3 non-laser panel that doesn't increase solve count", types:["nonpanel"]}
-    ], [ // Group 11
-        {name:"Any 3 Cinema EPs", types:["windmill"]},
-        {name:"All 3 Mountaintop EPs", types:["mountain_ep"]},
-        {name:"All 3 Treehouse Shadow EPs", types:["treehouse_ep"]}
-    ], [ // Group 12
-        {name:"Both Keep laser puzzles", types:["laser", "keep"]},
-        {name:"Symmetry Laser", types:["laser", "symmetry"]},
-        {name:"Greenhouse Laser", types:["laser", "greenhouse"]}
-    ], [ // Group 13
-        {name:"Any 4 Keep Walkway EPs", types:["keep_ep", "keep"]},
-        {name:"2 Windmill EPs", types:["windmill_ep"]},
-        {name:"Any 2 EPs while on the Boat", types:["boat", "boat_ep"]}
-    ], [ // Group 14
-        {name:"Any 4 discarded panels", types:["discard"]},
-        {name:"Any 2 Vaults", types:["vault"]},
-        {name:"Any 10 Audio Logs", types:["log"]}
-    ], [ // Group 15
-        {name:"Treehouse Buoy EP", types:["treehouse_ep", "boat"]},
-        {name:"Flood Room EP", types:["desert_ep", "desert"]},
-        {name:"Railroad EP", types:["quarry_ep", "quarry"]}
-    ], [ // Group 16
-        {name:"Monastery Laser", types:["laser", "monastery"]},
-        {name:"Monastery Obelisk", types:["obelisk", "monastery_ep", "monastery"]},
-        {name:"Jungle Laser", types:["laser", "jungle"]}
-    ], [ // Group 17
-        {name:"Any 5 discarded panels", types:["discard"]},
-        {name:"Any 3 Vaults", types:["vault"]},
-        {name:"Any 5 non-laser panels that don't increase solve count", types:["nonpanel"]}
-    ], [ // Group 18
-        {name:"All 5 Keep Walkway EPs", types:["keep_ep", "keep"]},
-        {name:"3 Windmill EPs", types:["windmill_ep"]},
-        {name:"Any 3 EPs while on the Boat", types:["boat", "boat_ep"]}
-    ], [ // Group 19
-        {name:"Desert Laser", types:["laser", "desert"]},
-        {name:"Thundercloud EP", types:["desert"]},
-        {name:"Desert Elevator EP", types:["desert_ep", "desert"]}
-    ], [ // Group 20
-        {name:"Any 6 discarded panels", types:["discard"]},
-        {name:"Any 4 Vaults", types:["vault"]},
-        {name:"Any 15 Audio Logs", types:["log"]}
-    ], [ // Group 21
-        {name:"Both Treehouse Bridge EPs", types:["treehouse_ep", "treehouse"]},
-        {name:"Green Window EP", types:["greenhouse_ep", "greenhouse"]},
-        {name:"All 4 Swamp Shadow EPs", types:["swamp_ep"]}
-    ], [ // Group 22
-        {name:"Quarry Laser", types:["laser", "quarry"]},
-        {name:"Town Laser", types:["laser", "town"]},
-        {name:"Treehouse Laser", types:["laser", "treehouse"]}
-    ], [ // Group 23
-        {name:"Any 7 discarded panels", types:["discard"]},
-        {name:"Any 5 Vaults", types:["vault"]},
-        {name:"Any 20 Audio Logs", types:["log"]}
-    ], [ // Group 24
-        {name:"Desert Obelisk", types:["obelisk", "desert_ep", "boat_ep", "desert", "symmetry"]},
-        {name:"Shadows/Quarry Obelisk", types:["obelisk", "shadows_ep", "quarry_ep", "quarry", "town"]},
-        {name:"Treehouses/Keep Obelisk", types:["obelisk", "treehouse_ep", "keep_ep", "boat_ep", "treehouse", "keep"]}
-    ], [ // Group 25
-        {name:"Purple Mountain Walkway EP", types:["mountain"]},
-        {name:"Blue Mountain Walkway EP", types:["mountain"]},
-        {name:"Orange Mountain Walkway EP", types:["mountain"]}
-    ]
+var bingoList = [];
+bingoList[1] = [
+	{name:'Tutorial Hallway EP'},
+	{name:'Tutorial Cloud EP'},
+	{name:'Tutorial Gate EP'},
+	{name:'Tutorial Pillar'},
+	{name:'Tutorial Floor Panel'},
+	{name:'Tutorial Flowers EP'},
+	{name:'Tutorial Vault', types: ['vault']},
+	{name:"Move any object that isn't a Boat, Door, Staircase, or Laser"},
+	{name:'Turn on the Lightswitch'},
+];
+bingoList[2] = [
+	{name:'Boat Short Sewer EP'},
+	{name:'Tutorial Path EP'},
+	{name:'Tutorial Garden EP'},
+	{name:'Tractor EP'},
+	{name:'Dots Tutorial'},
+	{name:'Symmetry Discarded Panel', types: ['discard']},
+	{name:'Glass Factory Yellow Vase EP'},
+	{name:'Squares Tutorial'},
+	{name:'Pink Trees Panels'},
+	{name:'Tutorial Discarded Panel', types: ['discard']},
+];
+bingoList[3] = [
+	{name:'Town Orange Crate Discarded Panel'},
+	{name:'Town Redirect Black Line EP'},
+	{name:'Town Church Panels'},
+	{name:'Town Bell Tower Black Line EP'},
+	{name:'Town Negation Panel'},
+	{name:'Town Rooftop Discarded Panel', types: ['discard']},
+	{name:'Town Underside Retracted Bridge EP'},
+	{name:'All 4 Town Tower Underside EPs'},
+];
+bingoList[4] = [
+	{name:'Desert Sand Snake EP'},
+	{name:'Quarry Entrance Pipe EP'},
+	{name:'Quarry Gate Panels'},
+	{name:'Keep Red Flowers EP'},
+	{name:'Mill Rooftop Vent EP'},
+	{name:'Keep Purple Flowers EP'},
+	{name:'Shadows Laser'},
+];
+bingoList[5] = [
+	{name:'Jungle Entrance EP'},
+	{name:'Jungle Discarded Panel', types: ['discard']},
+	{name:'Jungle Tree Halo EP'},
+	{name:'Jungle Pop-up Wall Moss EP'},
+	{name:'Summon Boat at Jungle'},
+	{name:'Jungle Set 1 Panels'},
+	{name:'Jungle Vault', types: ['vault']},
+	{name:'Jungle Green Leaf Moss EP'},
+	{name:'Both Jungle Bamboo Sky EPs'},
+	{name:'Jungle Set 2 Panels'},
+	{name:'All 3 Jungle Moss EPs from the Same Starting Point'},
+];
+bingoList[6] = [
+	{name:'Both Desert Facade EPs'},
+	{name:'Desert Discarded Panel', types: ['discard']},
+	{name:'Desert Shoreline EP'},
+	{name:'Both Desert Stairs EPs'},
+	{name:'Desert Island EP'},
+	{name:'Both Desert Broken Wall EPs'},
+	{name:'Desert Vault', types: ['vault']},
+];
+bingoList[7] = [
+	{name:'Town Green Flowers EP'},
+	{name:'All 3 Town R/G/B Light Panels'},
+	{name:'Cinema Discarded Panel', types: ['discard']},
+	{name:'Nostalgia Video EP'},
+	{name:'Cinema Exit Panels'},
+	{name:'Both BBC Video EPs'},
+	{name:'All 6 Cinema Video Panels'},
+];
+bingoList[8] = [
+	{name:'Monastery Exterior Panels'},
+	{name:'Monastery Stairs EP'},
+	{name:'Right Monastery Courtyard EP'},
+	{name:'Monastery Stone Wall EP'},
+	{name:'All 6 Monastery Facade EPs'},
+	{name:'All 5 Interior Monastery Panels'},
+	{name:'Left Monastery Courtyard EP'},
+	{name:'Monastery Laser'},
+	{name:'All 3 Monastery Shutter EPs'},
+];
+bingoList[9] = [
+	{name:'Mill Rooftop Discarded Panel', types: ['discard']},
+	{name:'Mill Door Panels'},
+	{name:'Mill Sand Pile and Shore EPs'},
+	{name:'Summon Boat at Quarry'},
+	{name:'Raise Boathouse Ramp'},
+	{name:'Mill Lower Row Panels'},
+	{name:'Boathouse Negation and Polyomino Panels'},
+	{name:'Mill Upper Row Panels'},
+	{name:'Boathouse Claw Panel'},
+];
+bingoList[10] = [
+	{name:'Town Maze, Bridge, and Blue Panels'},
+	{name:'Town Red Flowers EP'},
+	{name:'Town Red Hexagonal Panel'},
+	{name:'Windmill First Blade EP'},
+	{name:'Summon Boat at Town'},
+	{name:'Windmill Second Blade EP'},
+	{name:'Windmill Third Blade EP'},
+];
+bingoList[11] = [
+	{name:'Both Treehouse Beach Shadow EPs'},
+	{name:'Mountainside Bush and Cove EP'},
+	{name:'Treehouse Drawbridge'},
+	{name:'Mountainside Discarded Panel', types: ['discard']},
+	{name:'Mountain Vault', types: ['vault']},
+	{name:'Mountaintop River EP'},
+	{name:'Mountaintop River Panel'},
+	{name:'Mountaintop Black Arch EP'},
+	{name:'Both Mountaintop White Arch EPs'},
+];
+bingoList[12] = [
+	{name:'Desert Light Switch Room Panels'},
+	{name:'Desert Surface Panels'},
+	{name:'Desert Pool Room'},
+	{name:'Both Desert Pool Room EPs'},
+	{name:'Desert Flood Room Panels'},
+	{name:'Desert Laser', types: ['desert_laser']},
+	{name:'Desert Flood Room EP'},
+	{name:'Desert Elevator EP', types: ['desert_laser']},
+];
+bingoList[13] = [
+	{name:"Any 7 Non-Laser Panels that don't increase solve count"},
+	{name:'Any 2 Vaults', types: ['vault']},
+	{name:'Any 8 Audio Logs', types: ['audio_log']},
+	{name:'Any 2 Discarded Panels', types: ['discard']},
+	{name:'Shadows - First Third'},
+	{name:'Shadows - Follow'},
+	{name:'Shadows - Avoid'},
+	{name:'Listen to the Entire Peninsula Audio Log', types: ['audio_log']},
+];
+bingoList[14] = [
+	{name:'Symmetry Glass Factory'},
+	{name:'Symmetry Island Black Dots Panels'},
+	{name:'Glass Factory Black Line EP'},
+	{name:'Glass Factory Black Line Reflection EP'},
+	{name:'Symmetry Look-Through Panels'},
+	{name:'Symmetry Island Colored Dots and Solid Lines Panels'},
+	{name:'Symmetry Island Colored Dots and Fading Lines Panels'},
+	{name:'Summon Boat at Symmetry'},
+	{name:'Symmetry Laser'},
+];
+bingoList[15] = [
+	{name:'Front Half of Keep'},
+	{name:'Keep Discarded Panel', types: ['discard']},
+	{name:'All 3 Shipwreck Circle EPs'},
+	{name:'Shipwreck Discarded Panel', types: ['discard']},
+	{name:'Shipwreck Vault', types: ['vault']},
+	{name:'Both Shipwreck Rope EPs'},
+	{name:'Back End of Shipwreck EP'},
+];
+bingoList[16] = [
+	{name:'Bunker Back Wall Panels'},
+	{name:'Any 3 Discarded Panels', types: ['discard']},
+	{name:'Bunker Flower Room'},
+	{name:'Bunker UV Room'},
+	{name:'Bunker Doorway EP'},
+	{name:'Any 2 Boat EPs', types: ['boat_ep']},
+	{name:'Bunker Elevator Panel'},
+];
+bingoList[17] = [
+	{name:'Swamp Tutorial'},
+	{name:'Swamp Laser'},
+	{name:'Both Swamp Red Island Panels'},
+	{name:'Both Swamp Sliding Bridge EPs'},
+	{name:'Both Swamp Red Shortcut Door Panels'},
+	{name:'Swamp Red Panels'},
+	{name:'Summon Boat at Swamp'},
+	{name:'Swamp Back of Boat EP'},
+	{name:'Swamp Double Rotating Bridge EP'},
+];
+bingoList[18] = [
+	{name:'Keep Dirt Path EP'},
+	{name:'Keep Laser'},
+	{name:'Back Half of Keep'},
+	{name:'Keep Hedge Mazes EP'},
+	{name:'Keep Yellow Walk-On EP'},
+	{name:'Keep Green Walk-On EP'},
+	{name:'Keep Purple Walk-On EP'},
+	{name:'Both Keep Laser Panels'},
+	{name:'All 5 Keep Walk-On EPs'},
+];
+bingoList[19] = [
+	{name:'Boathouse Claw Ramp EP'},
+	{name:'Mill Control Room Panels'},
+	{name:'Boathouse Ramp in Motion EP'},
+	{name:'Left Mill Light EP'},
+	{name:'Right Mill Light EP'},
+	{name:'Boathouse Negation and Star Panels'},
+	{name:'Boathouse Negation, Star, and Polyomino Panels'},
+];
+bingoList[20] = [
+	{name:'Boat Tutorial Moss EP', types: ['boat_ep']},
+	{name:'Boat Clockwise Shipwreck Underside EP', types: ['boat_ep']},
+	{name:'Boat Counterclockwise Shipwreck Underside EP', types: ['boat_ep']},
+	{name:'Boat Orange Container EP', types: ['boat_ep']},
+	{name:'Boat Long Sewer EP', types: ['boat_ep']},
+	{name:'Boat Tutorial Reflection EP', types: ['boat_ep']},
+	{name:'Boat Tutorial EP', types: ['boat_ep']},
+	{name:'Boat Bunker EP', types: ['boat_ep']},
+	{name:'Boat Desert EP', types: ['boat_ep']},
+	{name:'Boat Green Shipwreck EP', types: ['boat_ep']},
+];
+bingoList[21] = [
+	{name:'Any 10 Audio Logs', types: ['audio_log']},
+	{name:'Any 3 Vaults', types: ['vault']},
+	{name:'Any 4 Straight Line EPs'},
+	{name:'Any 4 Discarded Panels', types: ['discard']},
+	{name:'Jungle Pop-up Wall Panels'},
+	{name:'Treehouse Buoy EP'},
+	{name:'Jungle Laser'},
+];
+bingoList[22] = [
+	{name:'Town Laser'},
+	{name:'Thundercloud EP', types: ['desert_laser']},
+	{name:'Any 3 Boat EPs', types: ['boat_ep']},
+	{name:'Couch EP'},
+	{name:'Bunker Green Room EP'},
+	{name:'Any 12 Audio Logs', types: ['audio_log']},
+];
+bingoList[23] = [
+	{name:'Swamp Bridge Clockwise Shadow EP'},
+	{name:'Swamp Bridge Counterclockwise Shadow EP'},
+	{name:'Swamp Optional Tetris Panel'},
+	{name:'Quarry Railroad EP'},
+	{name:'Bunker Laser'},
+	{name:'Treehouse Tutorial Bridge'},
+	{name:'Swamp Blue Underwater Panels'},
+	{name:'Swamp Yellow and Orange Underwater Line EPs'},
+];
+bingoList[24] = [
+	{name:'Swamp Teal Underwater Panels'},
+	{name:'Treehouse Green Bridge'},
+	{name:'Treehouse Green Bridge Discarded Panel'},
+	{name:'All 3 Swamp Purple Sand EPs'},
+	{name:'Swamp Underwater Bridge EP'},
+	{name:'Treehouse Right Orange Bridge'},
+	{name:'Swamp Red Underwater Panels'},
+	{name:'Both Treehouse Purple Bridges'},
+	{name:'Quarry Laser'},
+];
+bingoList[25] = [
+	{name:'Monastery Obelisk'},
+	{name:'Treehouse Left Orange Bridge'},
+	{name:'Treehouse Burnt House Shadow EP'},
+	{name:'Treehouse Laser Discarded Panel'},
+	{name:'Short Treehouse Bridge EP'},
+	{name:'Treehouse Laser'},
+	{name:'All 5 Vaults', types: ['vault']},
+	{name:'Long Treehouse Bridge EP'},
+	{name:'Listen to the Entire Mountaintop Audio Log', types: ['audio_log']},
+	{name:'Quarry Obelisk'},
+	{name:'Desert Obelisk'},
+	{name:'Cloud Cycle EP'},
+	{name:'Treehouse Obelisk'},
 ];
