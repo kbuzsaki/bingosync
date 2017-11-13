@@ -270,6 +270,7 @@ class GameType(Enum):
     pokemon_crystal_tournament = 41
     sonic_adventure_2_dark_story = 42
     sonic_adventure_2_long = 43
+    zelda_skyward_sword = 44
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -343,6 +344,7 @@ GAME_TYPE_NAMES = {
     GameType.pokemon_crystal_tournament: "Pokémon Crystal - Tournament",
     GameType.sonic_adventure_2_dark_story: "Sonic Adventure 2 - Dark Story",
     GameType.sonic_adventure_2_long: "Sonic Adventure 2 - Long",
+    GameType.zelda_skyward_sword: "Zelda: Skyward Sword",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -389,6 +391,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.pokemon_crystal_tournament: "Crystal Tournament",
     GameType.sonic_adventure_2_dark_story: "SA2 Dark",
     GameType.sonic_adventure_2_long: "SA2 Long",
+    GameType.zelda_skyward_sword: "Zelda: SS",
 }
 
 class LockoutMode(Enum):
