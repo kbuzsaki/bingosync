@@ -220,161 +220,176 @@ bingoGenerator = function(bingoList, opts) {
 var bingoList = [];
 
 bingoList[1] = [
-    { name:"Map Card", types: ["map"] },
-    { name:"Itemfinder", types: ["finder"] },
-    { name:"Radio Card", types: ["radio"] },
-    { name:"Do not heal at any Pokemon Centers", types: ["instant"] }
+ { name: "Map Card", types: ["map"] },
+ { name: "Beedrill or Butterfree", types: ["bugs"] },
+ { name: "Itemfinder", types: ["item"] },
+ { name: "Radio Card", types: ["radio"] },
+ { name: "Charcoal", types: ["coal"] }
 ];
 bingoList[2] = [
-    { name:"Stormbadge", types: ["fly"] },
-    { name:"Exp Share", types: ["itemget"] },
-    { name:"80 Pokemon seen", types: ["pkmn"] },
-    { name:"Defeat a Gym Leader with animations on", types: ["leader"] }
+ { name: "Call a Bug Catcher", types: ["call"] },
+ { name: "Nidoking or Nidoqueen", types: ["nido"] },
+ { name: "4 different types of Poké Ball", types: ["ball"] },
+ { name: "Give a Pokémon a haircut", types: ["snip"] },
+ { name: "Encounter a Legendary Pokémon", types: ["free"] }
 ];
 bingoList[3] = [
-    { name:"Nickname a pokemon with a Twitch emote", types: ["kappa"] },
-    { name:"5 Different types of Poke Ball", types: ["ball"] },
-    { name:"Give a Pokemon a haircut", types: ["snip"] },
-    { name:"Teach TM12", types: ["tms"] }
+ { name: "Win Bug Catching Contest", types: ["place"] },
+ { name: "Clefable or Wigglytuff", types: ["stone"] },
+ { name: "Arcanine or Ninetales", types: ["stone"] },
+ { name: "Sunflora or Exeggutor", types: ["stone"] },
+ { name: "Starmie or Cloyster", types: ["stone"] }
 ];
 bingoList[4] = [
-    { name:"Call a Youngster", types: ["shorts"] },
-    { name:"TM05 (Roar)", types: ["roar"] },
-    { name:"TM10 (Hidden power)", types: ["maze"] },
-    { name:"0 items in item pocket", types: ["endgame"] },
-    { name:"Mystic Water", types: ["typeitem"] }
+ { name: "Hatch an egg", types: ["egg"] },
+ { name: "TM11 (Sunny Day)", types: ["rocket"] },
+ { name: "Slowpoketail", types: ["money"] },
+ { name: "10+ Pokémon owned", types: ["pkmn"] },
+ { name: "Release starter before Lv11", types: ["starter"] }
 ];
 bingoList[5] = [
-    { name:"TM27 (Return)", types: ["day", "sunday"] },
-    { name:"Use a 4x super-effective move", types: ["parasect"] },
-    { name:"Push 4 boulders into holes", types: ["icepath"] },
-    { name:"TM50 (Nightmare)", types: ["kenya"] }
+ { name: "A Pokémon with 4 STAB moves", types: ["stab"] },
+ { name: "Bayleef, Quilava, or Croconaw", types: ["starters"] },
+ { name: "Ivysaur, Charmeleon, or Wartortle", types: ["starters"] },
+ { name: "Defeat all 4 trainers in National Park", types: ["park"] },
+ { name: "HM05 (Flash)", types: ["flash"] }
 ];
 bingoList[6] = [
-    { name:"Release starter before level 11", types: ["starter"] },
-    { name:"7 different berries", types: ["mystery"] },
-    { name:"3 eggs", types: ["egg"] },
-    { name:"Charcoal", types: ["typeitem"] }
+ { name: "Flaaffy or Skiploom", types: ["15"] },
+ { name: "Granbull or Furret", types: ["15"] },
+ { name: "Corsola, Octillery, or Lanturn", types: ["ocean"] },
+ { name: "TM05 (Roar)", types: ["violet"] },
+ { name: "TM50 (Nightmare)", types: ["violet"] }
 ];
 bingoList[7] = [
-    { name:"Slowpoketail", types: ["money"] },
-    { name:"10 pokemon owned", types: ["pkmn"] },
-    { name:"Defeat all 4 trainers in National Park", types: ["park"] },
-    { name:"A pokemon with 4 damaging moves with STAB", types: ["stab"] }
+ { name: "Buy a Game Corner Pokémon", types: ["coins"] },
+ { name: "TM10 (Hidden Power)", types: ["lake"] },
+ { name: "Azumarill or Quagsire", types: ["20"] },
+ { name: "Raticate or Fearow", types: ["20"] },
+ { name: "Ariados or Ledian", types: ["20"] }
 ];
 bingoList[8] = [
-    { name:"2 PokÃ©mon that start with the same letter", types: ["letter"] },
-    { name:"Defeat Rival in the underground", types: ["rival"] },
-    { name:"King's Rock", types: ["itemget"] },
-    { name:"Soft Sand", types: ["dig"] },
-    { name:"Clear Sprout Tower", types: ["earlygame"] }
+ { name: "3 eggs", types: ["egg"] },
+ { name: "Weepinbell or Gloom", types: ["8"] },
+ { name: "Sandslash or Arbok", types: ["8"] },
+ { name: "Complete 2 Ruins of Alph puzzles", types: ["unown"] },
+ { name: "Everstone", types: ["place"] }
 ];
 bingoList[9] = [
-    { name:"Defeat Lapras", types: ["day"] },
-    { name:"Max Phonebook", types: ["phone"] },
-    { name:"Split experience 6 ways", types: ["shift"] },
-    { name:"Encounter Suicune on route 42", types: ["suicune"] },
-    { name:"Glacierbadge", types: ["ice"] }
+ { name: "Graveler or Haunter", types: ["link"] },
+ { name: "Kadabra or Machoke", types: ["link"] },
+ { name: "Defeat a Ponyta or Rapidash", types: ["pony"] },
+ { name: "Status Sudowoodo", types: ["tree"] },
+ { name: "7 different types of Berry", types: ["berry"] }
 ];
 bingoList[10] = [
-    { name:"Use 5 HM moves outside of battle", types: ["hms"] },
-    { name:"A shiny Pokemon", types: ["waters"] },
-    { name:"Catch a Pokemon by fishing", types: ["fish"] },
-    { name:"A PP healing item", types: ["mysteryberry"] },
-    { name:"Heal a status with a held berry", types: ["status"] }
+ { name: "Slowpoke or Poliwhirl", types: ["split"] },
+ { name: "$0 on hand/mom", types: ["cash"] },
+ { name: "Big Pearl", types: ["day"] },
+ { name: "Defeat all 8 trainers on Route 32", types: ["train"] },
+ { name: "Defeat all 9 trainers on Route 35", types: ["train"] }
 ];
 bingoList[11] = [
-    { name:"Catch a pokemon that knows a damaging STAB move", types: ["stab"] },
-    { name:"Use a move powered up by a hold item", types: ["typeitem"] },
-    { name:"A Pokemon with a 5 PP non-TM move", types: ["move"] },
-    { name:"Use the same move an enemy Pokemon just used", types: ["repeat"] },
-    { name:"Defeat Electrode", types: ["static"] }
+ { name: "TM28 (Dig)", types: ["random"] },
+ { name: "Don't use Potions", types: ["instant"] },
+ { name: "Gold Berry", types: ["place"] },
+ { name: "Venomoth or Parasect", types: ["11"] },
+ { name: "Noctowl or Xatu", types: ["11"] }
 ];
 bingoList[12] = [
-    { name:"TM28, TM40, or TM46", types: ["shuffle"] },
-    { name:"Go through Dark Cave", types: ["dank"] },
-    { name:"A Pokemon with 4 non-TM status moves", types: ["hms"] },
-    { name:"Win Bug Catching Contest", types: ["day"] }
+ { name: "A Ghost type Pokémon", types: ["ghost"] },
+ { name: "A Pokémon with a Ghost type move", types: ["lick"] },
+ { name: "A Pokémon with a Dark type move", types: ["pursuit"] },
+ { name: "2 Eevee evolutions", types: ["eevee"] },
+ { name: "A Dragon type Pokémon", types: ["dragon"] }
 ];
 bingoList[13] = [
-    { name:"TM13 (Snore)", types: ["zzz"] },
-    { name:"20 Pokemon owned", types: ["pkmn"] },
-    { name:"Mineralbadge", types: ["steel"] },
-    { name:"Beedrill or Butterfree", types: ["bugs"] }
+ { name: "A shiny Pokémon", types: ["lake"] },
+ { name: "Don't use Repels", types: ["instant"] },
+ { name: "Catch a Pokémon in Kanto", types: ["kanto"] },
+ { name: "Defeat 9 Pokémaniacs", types: ["maniac"] },
+ { name: "Houndoom or Murkrow", types: ["fire"] }
 ];
 bingoList[14] = [
-    { name:"Nidoking or Nidoqueen", types: ["drill"] },
-    { name:"A Ghost or Dragon-type Pokemon", types: ["typepkmn"] },
-    { name:"A Pokemon with only one possible gender", types: ["conditioncatch"] },
-    { name:"A Pokemon with at least 5 weaknesses", types: ["conditioncatch"] },
-    { name:"Win 8 or more coins from slots", types: ["gamble"] }
+ { name: "Electabuzz, Jynx, or Magmar", types: ["blessed"] },
+ { name: "Hitmonlee, Hitmonchan, or Hitmontop", types: ["dojo"] },
+ { name: "TM13 (Snore)", types: ["berry"] },
+ { name: "A Pokémon with 4 non-TM non-damaging moves", types: ["flash"] },
+ { name: "Mystic Water", types: ["violet"] }
 ];
 bingoList[15] = [
-    { name:"A Pokemon with a stat lower than its level", types: ["jynx"] },
-    { name:"Catch 4 different Pokemon on Route 31", types: ["earlygame"] },
-    { name:"A Dark or Steel-type Pokemon", types: ["typepkmn"] },
-    { name:"A Pokemon with red bar HP", types: ["endgame"] }
+ { name: "Donphan or Ursaring", types: ["gs"] },
+ { name: "King's Rock", types: ["slow"] },
+ { name: "TM34 (Swagger)", types: ["random"] },
+ { name: "Soft Sand", types: ["pro"] },
+ { name: "Exp. Share", types: ["whirl"] }
 ];
 bingoList[16] = [
-    { name:"Land a move with at most 70 accuracy", types: ["miss"] },
-    { name:"A Pokemon weighing at least 300 lbs", types: ["heavy"] },
-    { name:"Defeat a gym leader using only HM moves", types: ["leader"] },
-    { name:"Rematch a trainer", types: ["phone"] },
-    { name:"A Legendary Pokemon", types: ["legend"] }
+ { name: "Zubat, Koffing, or Grimer", types: ["rocket"] },
+ { name: "20+ different TMs", types: ["tm"] },
+ { name: "20+ Pokémon owned", types: ["pkmn"] },
+ { name: "A Pokémon with Sunny Day, Rain Dance, or Sandstorm", types: ["move"] },
+ { name: "Evolve Eevee", types: ["eevee"] }
 ];
 bingoList[17] = [
-    { name:"A baby Pokemon", types: ["baby"] },
-    { name:"A Pokemon with a multi-hit move", types: ["move"] },
-    { name:"Use a stone to evolve a Pokemon", types: ["evolve"] },
-    { name:"Defeat 10 Pokemaniacs", types: ["train"] }
+ { name: "TM21 (Frustration) or TM27 (Return)", types: ["day"] },
+ { name: "Defeat Lapras", types: ["day"] },
+ { name: "Black Belt", types: ["day"] },
+ { name: "Encounter Suicune on Route 42", types: ["chuck"] },
+ { name: "HM02 (Fly)", types: ["chuck"] }
 ];
 bingoList[18] = [
-    { name:"3 level 30 pokemon", types: ["red"] },
-    { name:"Turn an apricorn into a ball", types: ["ball"] },
-    { name:"Use Struggle", types: ["pp"] },
-    { name:"Poison an enemy Pokemon", types: ["status"] }
+ { name: "Suicune, Raikou, or Entei", types: ["beasts"] },
+ { name: "Omanyte, Kabuto, or Aerodactyl", types: ["trio"] },
+ { name: "Gligar, Delibird, or Sneasel", types: ["trio"] },
+ { name: "Heracross, Pinsir, or Aipom", types: ["trio"] },
+ { name: "Dunsparce, Wobbuffet, or Girafarig", types: ["trio"] }
 ];
 bingoList[19] = [
-    { name:"5 different Flying-type Pokemon", types: ["catch6"] },
-    { name:"Trade a Pokemon", types: ["trade"] },
-    { name:"Defeat a level 40 Pokemon", types: ["suicune"] },
-    { name:"Use a non-HM move out of battle", types: ["move"] },
-    { name:"No money on hand or mom", types: ["money"] }
+ { name: "A Pokémon with Explosion or Selfdestruct", types: ["move"] },
+ { name: "A Pokémon with Minimize or Double Team", types: ["move"] },
+ { name: "Defeat Electrode", types: ["elec"] },
+ { name: "Trade a Pokémon", types: ["trade"] },
+ { name: "Own 10 different Water type Pokémon", types: ["pkmn"] }
 ];
 bingoList[20] = [
-    { name:"Everstone", types: ["day"] },
-    { name:"5 different Water-type Pokemon", types: ["catch6"] },
-    { name:"Defeat all 8 trainers on route 32", types: ["train"] },
-    { name:"Stop starter from evolving", types: ["raise", "starter"] },
-    { name:"Get confused by your own move", types: ["suicide"] }
+ { name: "Articuno, Zapdos, or Moltres", types: ["birds"] },
+ { name: "90 Pokémon seen", types: ["pkmn"] },
+ { name: "Stop starter evolving 3 times", types: ["raise"] },
+ { name: "Spell Tag", types: ["blackthorn"] },
+ { name: "Call a Black Belt", types: ["blackthorn"] }
 ];
 bingoList[21] = [
-    { name:"Defeat 8 swimmers", types: ["train"] },
-    { name:"20 TMs", types: ["tms"] },
-    { name:"TM21 (Frustration)", types: ["happy", "sunday"] },
-    { name:"A Pokemon with an evasion boosting move", types: ["move"] }
+ { name: "Mewtwo, Mew, or Celebi", types: ["mythical"] },
+ { name: "Evolve 4 different Pokémon", types: ["raise"] },
+ { name: "Max Phonebook", types: ["battles"] },
+ { name: "TM46 (Thief)", types: ["random"] },
+ { name: "2 baby Pokémon", types: ["egg"] }
 ];
 bingoList[22] = [
-    { name:"Electabuzz, Magmar, or Jynx", types: ["lose"] },
-    { name:"Do not use any repels", types: ["instant"] },
-    { name:"Faint your Pokemon with your own move", types: ["suicide"] },
-    { name:"Solve 2 puzzles at the Ruins of Alph", types: ["unown"] }
+ { name: "Own 8 different Normal type Pokémon", types: ["pkmn"] },
+ { name: "Own 8 different Flying type Pokémon", types: ["pkmn"] },
+ { name: "Glacier Badge", types: ["whirl"] },
+ { name: "6 Badges", types: ["badges"] }
 ];
 bingoList[23] = [
-    { name:"Train Kenya to level 30", types: ["raise", "kenya"] },
-    { name:"3 Pokemon in the same evolution chain", types: ["evolve"] },
-    { name:"30 Pokemon owned", types: ["pkmn"] },
-    { name:"Evolve 4 different Pokemon", types: ["evolve, pkmncount"] }
+ { name: "$50,000+", types: ["cash"] },
+ { name: "Defeat Rival 4", types: ["ass"] },
+ { name: "Mineral Badge", types: ["steel"] },
+ { name: "3 level 30+ Pokémon", types: ["tin"] },
+ { name: "Don't use more than one TM", types: ["tm", "instant"] }
 ];
 bingoList[24] = [
-    { name:"A Pokemon with exactly 50 Speed", types: ["stat"] },
-    { name:"4 Pokemon with adjacent national dex numbers", types: ["pkmncount"] },
-    { name:"Defeat all 12 trainers in Union Cave", types: ["train"] },
-    { name:"$50,000", types: ["money"] }
+ { name: "Onix or Scyther", types: ["duo"] },
+ { name: "Mantine or Skarmory", types: ["duo"] },
+ { name: "Miltank or Tauros", types: ["duo"] },
+ { name: "Tangela or Lickitung", types: ["duo"] },
+ { name: "Yanma or Piloswine", types: ["duo"] }
 ];
 bingoList[25] = [
-    { name:"Use a Master Ball", types: ["clair"] },
-    { name:"Do not use Fly", types: ["instant"] },
-    { name:"Defeat Falkner with original starter", types: ["starter"] },
-    { name:"Teach 4 TMs to the same Pokemon", types: ["tms"] }
+ { name: "Ho-Oh or Lugia", types: ["cover"] },
+ { name: "Defeat a Level 40+ Pokémon", types: ["clair"] },
+ { name: "Defeat Clair", types: ["clair"] },
+ { name: "Berry Juice or Elixer", types: ["shuck"] },
+ { name: "Blackglasses", types: ["dark"] }
 ];
