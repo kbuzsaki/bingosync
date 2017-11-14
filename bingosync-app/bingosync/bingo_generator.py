@@ -72,6 +72,7 @@ CACHED_FILES_BY_NAME = {
     "sonic_adventure_2_dark_story": "generators/sonic_adventure_2_dark_story_generator.js",
     "sonic_adventure_2_long": "generators/sonic_adventure_2_long_generator.js",
     "zelda_skyward_sword": "generators/zelda_skyward_sword_generator.js",
+    "super_mario_odyssey": "generators/super_mario_odyssey_generator.js",
 }
 
 def load_cached_generator_source(game_name):
