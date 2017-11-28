@@ -34,7 +34,7 @@ class RoomForm(forms.Form):
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()
 
-        game_type = GameType.for_value(int(cleaned_data["game_type"]))
+        game_type = GameType.for_value(int(cleaned_data.get("game_type", "0")))
         if game_type == GameType.custom:
             custom_json = cleaned_data["custom_json"]
             try:
