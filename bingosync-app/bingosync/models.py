@@ -273,6 +273,7 @@ class GameType(Enum):
     zelda_skyward_sword = 44
     super_mario_odyssey_short = 45
     super_mario_odyssey = 46
+    rabi_ribi = 47
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -349,6 +350,7 @@ GAME_TYPE_NAMES = {
     GameType.zelda_skyward_sword: "Zelda: Skyward Sword",
     GameType.super_mario_odyssey_short: "Super Mario Odyssey - Short",
     GameType.super_mario_odyssey: "Super Mario Odyssey",
+    GameType.rabi_ribi: "Rabi-Ribi",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -398,6 +400,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.zelda_skyward_sword: "Zelda: SS",
     GameType.super_mario_odyssey_short: "SMO Short",
     GameType.super_mario_odyssey: "SMO",
+    GameType.rabi_ribi: "Rabi-Ribi",
 }
 
 class LockoutMode(Enum):

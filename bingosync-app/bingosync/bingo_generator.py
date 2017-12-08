@@ -74,6 +74,7 @@ CACHED_FILES_BY_NAME = {
     "zelda_skyward_sword": "generators/zelda_skyward_sword_generator.js",
     "super_mario_odyssey_short": "generators/super_mario_odyssey_short_generator.js",
     "super_mario_odyssey": "generators/super_mario_odyssey_generator.js",
+    "rabi_ribi": "generators/rabi_ribi_generator.js",
 }
 
 def load_cached_generator_source(game_name):
