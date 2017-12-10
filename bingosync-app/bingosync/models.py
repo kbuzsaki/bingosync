@@ -3,7 +3,6 @@ from django.core import urlresolvers
 
 from django.utils import timezone
 
-from datetime import datetime
 from uuid import uuid4
 from enum import Enum, unique
 import re
@@ -165,7 +164,7 @@ class CompositeColor:
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=255)
-    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    created_date = models.DateTimeField("Creation Time", default=timezone.now)
     passphrase = models.CharField(max_length=255)
     active = models.BooleanField("Active", default=False)
     hide_card = models.BooleanField("Initially Hide Card", default=False)
@@ -430,7 +429,7 @@ LOCKOUT_MODE_NAMES = {
 class Game(models.Model):
     room = models.ForeignKey(Room)
     seed = models.IntegerField()
-    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    created_date = models.DateTimeField("Creation Time", default=timezone.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.sorted_choices())
     lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
 
@@ -532,7 +531,7 @@ class Player(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=50)
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
-    created_date = models.DateTimeField("Creation Time", default=datetime.now)
+    created_date = models.DateTimeField("Creation Time", default=timezone.now)
     is_spectator = models.BooleanField("Is Spectator", default=False)
 
     @staticmethod
