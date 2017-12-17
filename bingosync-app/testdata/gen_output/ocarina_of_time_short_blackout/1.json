@@ -1,0 +1,954 @@
+[
+    {
+        "synergy": 3,
+        "id": "map-compass-in-jabu-jabu",
+        "time": 8.5,
+        "subtypes": {
+            "hearts": 0.5,
+            "map": 7.5,
+            "ruto": 1,
+            "compass": 8.5,
+            "wallet": 1
+        },
+        "types": {
+            "jabu": 5,
+            "selfsynergy": 0,
+            "fountain": 2
+        },
+        "name": "Map & Compass in Jabu-Jabu",
+        "difficulty": 20,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30b8\u30e3\u30d6\u30b8\u30e3\u30d6\u69d8\u306e\u304a\u8179\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
+            "id": "map-compass-in-jabu-jabu",
+            "subtypes": {
+                "hearts": 0.5,
+                "map": 7.5,
+                "ruto": 1,
+                "compass": 8.5,
+                "wallet": 1
+            },
+            "time": 8.5,
+            "name": "Map & Compass in Jabu-Jabu",
+            "difficulty": 17,
+            "types": {
+                "jabu": 5,
+                "selfsynergy": 0,
+                "fountain": 2
+            }
+        },
+        "desiredTime": 10
+    },
+    {
+        "synergy": 4,
+        "id": "win-bombchu-bowling-prize",
+        "time": 11,
+        "subtypes": {
+            "map": 2.75,
+            "fortress": 3,
+            "compass": 3,
+            "plant": 0.5,
+            "hearts": 3,
+            "plant2": 1.5,
+            "wallet": 1,
+            "hearts2": 2
+        },
+        "types": {
+            "dc": 4,
+            "kd": 3,
+            "inckd": 100,
+            "selfsynergy": 0
+        },
+        "name": "Win Bombchu Bowling Prize",
+        "difficulty": 22,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30dc\u30e0\u30c1\u30e5\u30a6\u30dc\u30a6\u30ea\u30f3\u30b0\u306e\u666f\u54c1",
+            "id": "win-bombchu-bowling-prize",
+            "subtypes": {
+                "map": 2.75,
+                "fortress": 3,
+                "compass": 3,
+                "plant": 0.5,
+                "hearts": 3,
+                "plant2": 1.5,
+                "wallet": 1,
+                "hearts2": 2
+            },
+            "time": 11,
+            "name": "Win Bombchu Bowling Prize",
+            "difficulty": 22,
+            "types": {
+                "dc": 4,
+                "kd": 3,
+                "inckd": 100,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 11
+    },
+    {
+        "synergy": 4,
+        "id": "20-deku-sticks",
+        "types": {
+            "sticks": 100,
+            "selfsynergy": 0
+        },
+        "time": 1,
+        "name": "20 Deku Sticks",
+        "difficulty": 4,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30af\u306e\u68d220\u672c",
+            "id": "20-deku-sticks",
+            "types": {
+                "sticks": 100,
+                "selfsynergy": 0
+            },
+            "time": 1,
+            "name": "20 Deku Sticks",
+            "difficulty": 2
+        },
+        "desiredTime": 2
+    },
+    {
+        "synergy": 3.25,
+        "id": "milk",
+        "time": 5.75,
+        "subtypes": {
+            "zl": 1,
+            "wallet": 0.5,
+            "bottle": 2
+        },
+        "types": {
+            "field": 0.75,
+            "endbottle": -2.5,
+            "selfsynergy": 0,
+            "lonlon": 4
+        },
+        "name": "Milk",
+        "difficulty": 11,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30ed\u30f3\u30ed\u30f3\u725b\u4e73",
+            "id": "milk",
+            "subtypes": {
+                "zl": 1,
+                "wallet": 0.5,
+                "bottle": 2
+            },
+            "time": 5.75,
+            "name": "Milk",
+            "difficulty": 11,
+            "types": {
+                "field": 0.75,
+                "endbottle": -2.5,
+                "selfsynergy": 0,
+                "lonlon": 4
+            }
+        },
+        "desiredTime": 5.5
+    },
+    {
+        "synergy": 3,
+        "id": "green-potion",
+        "types": {
+            "endbottle": -2.5,
+            "selfsynergy": 0,
+            "bottle": 2
+        },
+        "time": 2.5,
+        "name": "Green Potion",
+        "difficulty": 8,
+        "goal": {
+            "skill": 0,
+            "jp": "\u7dd1\u306e\u30af\u30b9\u30ea",
+            "id": "green-potion",
+            "types": {
+                "endbottle": -2.5,
+                "selfsynergy": 0,
+                "bottle": 2
+            },
+            "time": 2.5,
+            "name": "Green Potion",
+            "difficulty": 5
+        },
+        "desiredTime": 4
+    },
+    {
+        "synergy": 4,
+        "id": "beat-the-deku-tree",
+        "time": 8.5,
+        "subtypes": {
+            "map": 3,
+            "hearts2": 2,
+            "compass": 3.5,
+            "plant": 0.25,
+            "hearts": 3,
+            "zl": 2.25,
+            "ganon": 5,
+            "wallet": 0.5
+        },
+        "types": {
+            "incgohma": 100,
+            "endon": -1,
+            "deku": 5,
+            "selfsynergy": 0,
+            "bottle": 2
+        },
+        "name": "Beat the Deku Tree",
+        "difficulty": 14,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30af\u306e\u6a39\u69d8\u306e\u4e2d\u30af\u30ea\u30a2",
+            "id": "beat-the-deku-tree",
+            "subtypes": {
+                "map": 3,
+                "hearts2": 2,
+                "compass": 3.5,
+                "plant": 0.25,
+                "hearts": 3,
+                "zl": 2.25,
+                "ganon": 5,
+                "wallet": 0.5
+            },
+            "time": 8.5,
+            "name": "Beat the Deku Tree",
+            "difficulty": 17,
+            "types": {
+                "incgohma": 100,
+                "endon": -1,
+                "deku": 5,
+                "selfsynergy": 0,
+                "bottle": 2
+            }
+        },
+        "desiredTime": 7
+    },
+    {
+        "synergy": 3.5,
+        "id": "30-deku-nuts",
+        "time": 1,
+        "subtypes": {
+            "songs": 0.5,
+            "plant": 0.5,
+            "wallet": 0.25
+        },
+        "types": {
+            "selfsynergy": 0
+        },
+        "name": "30 Deku Nuts",
+        "difficulty": 6,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30af\u306e\u5b9f30\u500b\u4ee5\u4e0a",
+            "id": "30-deku-nuts",
+            "subtypes": {
+                "songs": 0.5,
+                "plant": 0.5,
+                "wallet": 0.25
+            },
+            "time": 1,
+            "name": "30 Deku Nuts",
+            "difficulty": 2,
+            "types": {
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 3
+    },
+    {
+        "synergy": 3.5,
+        "id": "all-7-child-kakariko-area-skulltulas",
+        "time": 9,
+        "subtypes": {
+            "jabu": 1,
+            "plant": 0.5,
+            "wallet": 4.5
+        },
+        "types": {
+            "selfsynergy": 0,
+            "bottle": 2
+        },
+        "name": "All 7 Child Kakariko area Skulltulas",
+        "difficulty": 18,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30ab\u30ab\u30ea\u30b3\u6751\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "id": "all-7-child-kakariko-area-skulltulas",
+            "subtypes": {
+                "jabu": 1,
+                "plant": 0.5,
+                "wallet": 4.5
+            },
+            "time": 9,
+            "name": "All 7 Child Kakariko area Skulltulas",
+            "difficulty": 18,
+            "types": {
+                "selfsynergy": 0,
+                "bottle": 2
+            }
+        },
+        "desiredTime": 9
+    },
+    {
+        "synergy": 1,
+        "id": "get-bombchu-chest-in-spirit-temple",
+        "time": 11.5,
+        "subtypes": {
+            "plant": 0.5,
+            "compass": 1,
+            "map": 2,
+            "hearts": 0.75,
+            "plant2": 1.5,
+            "wallet": 0.5,
+            "bosskey": 2
+        },
+        "types": {
+            "field": 0.75,
+            "spirit": 6,
+            "fortress": 2.5,
+            "selfsynergy": 0
+        },
+        "name": "Get Bombchu chest in Spirit Temple",
+        "difficulty": 25,
+        "goal": {
+            "skill": 0,
+            "jp": "\u9b42\u306e\u795e\u6bbf\u306e\u30dc\u30e0\u30c1\u30e5\u30a6\u53d6\u5f97",
+            "id": "get-bombchu-chest-in-spirit-temple",
+            "subtypes": {
+                "plant": 0.5,
+                "compass": 1,
+                "map": 2,
+                "hearts": 0.75,
+                "plant2": 1.5,
+                "wallet": 0.5,
+                "bosskey": 2
+            },
+            "time": 11.5,
+            "name": "Get Bombchu chest in Spirit Temple",
+            "difficulty": 23,
+            "types": {
+                "field": 0.75,
+                "spirit": 6,
+                "fortress": 2.5,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 12.5
+    },
+    {
+        "synergy": 3.5,
+        "id": "2-shields",
+        "types": {
+            "selfsynergy": 0
+        },
+        "time": 0.5,
+        "name": "2 Shields",
+        "difficulty": 2,
+        "goal": {
+            "skill": 0,
+            "jp": "\u76fe2\u7a2e",
+            "id": "2-shields",
+            "types": {
+                "selfsynergy": 0
+            },
+            "time": 0.5,
+            "name": "2 Shields",
+            "difficulty": 1
+        },
+        "desiredTime": 1
+    },
+    {
+        "synergy": 0.5,
+        "id": "6-hearts",
+        "time": 11,
+        "subtypes": {
+            "plant": 1,
+            "wallet": 1,
+            "plant2": 1
+        },
+        "types": {
+            "hearts": 8,
+            "hearts2": 4,
+            "selfsynergy": -2
+        },
+        "name": "6 Hearts",
+        "difficulty": 23,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30cf\u30fc\u30c86\u3064",
+            "id": "6-hearts",
+            "subtypes": {
+                "plant": 1,
+                "wallet": 1,
+                "plant2": 1
+            },
+            "time": 11,
+            "name": "6 Hearts",
+            "difficulty": 22,
+            "types": {
+                "hearts": 8,
+                "hearts2": 4,
+                "selfsynergy": -2
+            }
+        },
+        "desiredTime": 11.5
+    },
+    {
+        "synergy": 0.75,
+        "id": "plant-bean-in-death-mountain-crater",
+        "time": 3.5,
+        "subtypes": {
+            "plant": 0.75,
+            "compass": 1,
+            "map": 1,
+            "hearts": 1,
+            "wallet": 0.5,
+            "plant2": 1.5
+        },
+        "types": {
+            "dmc": 3,
+            "beans": -1,
+            "selfsynergy": 0
+        },
+        "name": "Plant bean in Death Mountain Crater",
+        "difficulty": 5,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30b9\u30de\u30a6\u30f3\u30c6\u30f3\u706b\u53e3\u306e\u571f\u306b\u30de\u30e1\u3092\u690d\u3048\u308b",
+            "id": "plant-bean-in-death-mountain-crater",
+            "subtypes": {
+                "plant": 0.75,
+                "compass": 1,
+                "map": 1,
+                "hearts": 1,
+                "wallet": 0.5,
+                "plant2": 1.5
+            },
+            "time": 3.5,
+            "name": "Plant bean in Death Mountain Crater",
+            "difficulty": 7,
+            "types": {
+                "dmc": 3,
+                "beans": -1,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 2.5
+    },
+    {
+        "synergy": 0,
+        "id": "7-magic-beans",
+        "time": 8,
+        "subtypes": {
+            "wallet": 0.25
+        },
+        "types": {
+            "incbeans": 100,
+            "beans": 10,
+            "selfsynergy": 0
+        },
+        "name": "7 Magic Beans",
+        "difficulty": 12,
+        "goal": {
+            "skill": 0,
+            "jp": "\u9b54\u6cd5\u306e\u30de\u30e17\u3064\u4ee5\u4e0a",
+            "id": "7-magic-beans",
+            "subtypes": {
+                "wallet": 0.25
+            },
+            "time": 8,
+            "name": "7 Magic Beans",
+            "difficulty": 16,
+            "types": {
+                "incbeans": 100,
+                "beans": 10,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 6
+    },
+    {
+        "synergy": 1.75,
+        "id": "bottled-poe",
+        "time": 3,
+        "subtypes": {
+            "plant": 0.5
+        },
+        "types": {
+            "endbottle": -2.5,
+            "selfsynergy": 0,
+            "bottle": 2
+        },
+        "name": "Bottled Poe",
+        "difficulty": 9,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30d3\u30f3(\u30dd\u30a6)",
+            "id": "bottled-poe",
+            "subtypes": {
+                "plant": 0.5
+            },
+            "time": 3,
+            "name": "Bottled Poe",
+            "difficulty": 6,
+            "types": {
+                "endbottle": -2.5,
+                "selfsynergy": 0,
+                "bottle": 2
+            }
+        },
+        "desiredTime": 4.5
+    },
+    {
+        "synergy": 3.25,
+        "id": "all-5-skulltulas-in-dodongo-s-cavern",
+        "time": 8.25,
+        "subtypes": {
+            "map": 2.75,
+            "hearts2": 2,
+            "kd": 1.5,
+            "plant": 0.5,
+            "hearts": 2,
+            "compass": 3,
+            "wallet": 3.25,
+            "plant2": 1.5
+        },
+        "types": {
+            "dmc": 1,
+            "dc": 3,
+            "selfsynergy": 0,
+            "endon": -0.5
+        },
+        "name": "All 5 Skulltulas in Dodongo's Cavern",
+        "difficulty": 16,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e95\u5339",
+            "id": "all-5-skulltulas-in-dodongo-s-cavern",
+            "subtypes": {
+                "map": 2.75,
+                "hearts2": 2,
+                "kd": 1.5,
+                "plant": 0.5,
+                "hearts": 2,
+                "compass": 3,
+                "wallet": 3.25,
+                "plant2": 1.5
+            },
+            "time": 8.25,
+            "name": "All 5 Skulltulas in Dodongo's Cavern",
+            "difficulty": 16,
+            "types": {
+                "dmc": 1,
+                "dc": 3,
+                "selfsynergy": 0,
+                "endon": -0.5
+            }
+        },
+        "desiredTime": 8
+    },
+    {
+        "synergy": 1.75,
+        "id": "3-unused-keys-in-gerudo-training-grounds",
+        "time": 5.25,
+        "subtypes": {
+            "hearts": 0.75,
+            "plant2": 0.5,
+            "kd": 2.5,
+            "bosskey": 3
+        },
+        "types": {
+            "gtg": 2,
+            "field": 0.75,
+            "fortress": 3,
+            "incgtgkey": 100,
+            "selfsynergy": 0,
+            "endon": -0.5
+        },
+        "name": "3 unused keys in Gerudo Training Grounds",
+        "difficulty": 7,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30b2\u30eb\u30c9\u306e\u4fee\u7df4\u5834\u306e\u672a\u4f7f\u7528\u306e\u30ab\u30ae3\u3064",
+            "id": "3-unused-keys-in-gerudo-training-grounds",
+            "subtypes": {
+                "hearts": 0.75,
+                "plant2": 0.5,
+                "kd": 2.5,
+                "bosskey": 3
+            },
+            "time": 5.25,
+            "name": "3 unused keys in Gerudo Training Grounds",
+            "difficulty": 10,
+            "types": {
+                "gtg": 2,
+                "field": 0.75,
+                "fortress": 3,
+                "incgtgkey": 100,
+                "selfsynergy": 0,
+                "endon": -0.5
+            }
+        },
+        "desiredTime": 3.5
+    },
+    {
+        "synergy": 2,
+        "id": "all-4-lon-lon-ranch-area-skulltulas",
+        "time": 8,
+        "subtypes": {
+            "jabu": 2,
+            "hearts": 0.25,
+            "wallet": 2.5
+        },
+        "types": {
+            "field": 0.75,
+            "selfsynergy": 0,
+            "lonlon": 1.5
+        },
+        "name": "All 4 Lon-Lon Ranch area Skulltulas",
+        "difficulty": 19,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30ed\u30f3\u30ed\u30f3\u7267\u5834\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e94\u5339",
+            "id": "all-4-lon-lon-ranch-area-skulltulas",
+            "subtypes": {
+                "jabu": 2,
+                "hearts": 0.25,
+                "wallet": 2.5
+            },
+            "time": 8,
+            "name": "All 4 Lon-Lon Ranch area Skulltulas",
+            "difficulty": 16,
+            "types": {
+                "field": 0.75,
+                "selfsynergy": 0,
+                "lonlon": 1.5
+            }
+        },
+        "desiredTime": 9.5
+    },
+    {
+        "synergy": 0,
+        "id": "gerudo-s-card",
+        "time": 11.5,
+        "subtypes": {
+            "hearts": 0.75,
+            "plant2": 0.5,
+            "bosskey": 2.5
+        },
+        "types": {
+            "field": 0.75,
+            "fortress": 2.5,
+            "selfsynergy": 0
+        },
+        "name": "Gerudo's Card",
+        "difficulty": 21,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30b2\u30eb\u30c9\u306e\u4f1a\u54e1\u8a3c",
+            "id": "gerudo-s-card",
+            "subtypes": {
+                "hearts": 0.75,
+                "plant2": 0.5,
+                "bosskey": 2.5
+            },
+            "time": 11.5,
+            "name": "Gerudo's Card",
+            "difficulty": 23,
+            "types": {
+                "field": 0.75,
+                "fortress": 2.5,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 10.5
+    },
+    {
+        "synergy": 0,
+        "id": "both-heart-pieces-in-death-mountain-crater",
+        "time": 3.5,
+        "subtypes": {
+            "wallet": 1,
+            "plant": 0.5,
+            "compass": 1,
+            "map": 1,
+            "hearts": 2,
+            "plant2": 1.5,
+            "songs": 1.5,
+            "bosskey": 1
+        },
+        "types": {
+            "dmc": 3,
+            "selfsynergy": 0
+        },
+        "name": "Both heart pieces in Death Mountain Crater",
+        "difficulty": 3,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30b9\u30de\u30a6\u30f3\u30c6\u30f3\u706b\u53e3\u306e\u30cf\u30fc\u30c8\u306e\u304b\u3051\u3089\uff12\u3064",
+            "id": "both-heart-pieces-in-death-mountain-crater",
+            "subtypes": {
+                "wallet": 1,
+                "plant": 0.5,
+                "compass": 1,
+                "map": 1,
+                "hearts": 2,
+                "plant2": 1.5,
+                "songs": 1.5,
+                "bosskey": 1
+            },
+            "time": 3.5,
+            "name": "Both heart pieces in Death Mountain Crater",
+            "difficulty": 7,
+            "types": {
+                "dmc": 3,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 1.5
+    },
+    {
+        "synergy": 2.75,
+        "id": "all-4-skulltulas-in-jabu-jabu",
+        "time": 8,
+        "subtypes": {
+            "hearts": 2,
+            "map": 5,
+            "ruto": 1,
+            "compass": 5,
+            "wallet": 2.5
+        },
+        "types": {
+            "gtg": 1,
+            "jabu": 3,
+            "fountain": 2,
+            "selfsynergy": 0,
+            "endon": -0.5
+        },
+        "name": "All 4 Skulltulas in Jabu-Jabu",
+        "difficulty": 15,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30b8\u30e3\u30d6\u30b8\u30e3\u30d6\u69d8\u306e\u304a\u8179\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e94\u5339",
+            "id": "all-4-skulltulas-in-jabu-jabu",
+            "subtypes": {
+                "hearts": 2,
+                "map": 5,
+                "ruto": 1,
+                "compass": 5,
+                "wallet": 2.5
+            },
+            "time": 8,
+            "name": "All 4 Skulltulas in Jabu-Jabu",
+            "difficulty": 16,
+            "types": {
+                "gtg": 1,
+                "jabu": 3,
+                "fountain": 2,
+                "selfsynergy": 0,
+                "endon": -0.5
+            }
+        },
+        "desiredTime": 7.5
+    },
+    {
+        "synergy": 0.75,
+        "id": "bullet-bag-50-",
+        "time": 1.25,
+        "subtypes": {
+            "plant": 0.25
+        },
+        "types": {
+            "selfsynergy": 0,
+            "bulletbag": 100
+        },
+        "name": "Bullet Bag (50)",
+        "difficulty": 1,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30af\u306e\u30bf\u30cd\u888b(50)",
+            "id": "bullet-bag-50-",
+            "subtypes": {
+                "plant": 0.25
+            },
+            "time": 1.25,
+            "name": "Bullet Bag (50)",
+            "difficulty": 2,
+            "types": {
+                "selfsynergy": 0,
+                "bulletbag": 100
+            }
+        },
+        "desiredTime": 0.5
+    },
+    {
+        "synergy": 1.75,
+        "id": "all-4-skulltulas-in-deku-tree",
+        "time": 8.25,
+        "subtypes": {
+            "map": 3,
+            "compass": 3.75,
+            "jabu": 1,
+            "plant": 0.25,
+            "hearts": 3,
+            "ganon": 3,
+            "wallet": 2.5
+        },
+        "types": {
+            "deku": 3,
+            "selfsynergy": 0,
+            "endon": -0.5
+        },
+        "name": "All 4 Skulltulas in Deku Tree",
+        "difficulty": 13,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c7\u30af\u306e\u6a39\u69d8\u306e\u4e2d\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e94\u5339",
+            "id": "all-4-skulltulas-in-deku-tree",
+            "subtypes": {
+                "map": 3,
+                "compass": 3.75,
+                "jabu": 1,
+                "plant": 0.25,
+                "hearts": 3,
+                "ganon": 3,
+                "wallet": 2.5
+            },
+            "time": 8.25,
+            "name": "All 4 Skulltulas in Deku Tree",
+            "difficulty": 16,
+            "types": {
+                "deku": 3,
+                "selfsynergy": 0,
+                "endon": -0.5
+            }
+        },
+        "desiredTime": 6.5
+    },
+    {
+        "synergy": 0,
+        "id": "map-compass-in-dodongo-s-cavern",
+        "time": 4,
+        "subtypes": {
+            "plant": 0.5,
+            "compass": 3.5,
+            "map": 3,
+            "hearts": 1,
+            "wallet": 0.25,
+            "plant2": 1.5
+        },
+        "types": {
+            "dmc": 1,
+            "dc": 3,
+            "selfsynergy": 0
+        },
+        "name": "Map & Compass in Dodongo's Cavern",
+        "difficulty": 10,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
+            "id": "map-compass-in-dodongo-s-cavern",
+            "subtypes": {
+                "plant": 0.5,
+                "compass": 3.5,
+                "map": 3,
+                "hearts": 1,
+                "wallet": 0.25,
+                "plant2": 1.5
+            },
+            "time": 4,
+            "name": "Map & Compass in Dodongo's Cavern",
+            "difficulty": 8,
+            "types": {
+                "dmc": 1,
+                "dc": 3,
+                "selfsynergy": 0
+            }
+        },
+        "desiredTime": 5
+    },
+    {
+        "synergy": 3,
+        "id": "defeat-big-octo",
+        "time": 6.5,
+        "subtypes": {
+            "map": 5,
+            "ruto": 1,
+            "compass": 5,
+            "wallet": 0.75
+        },
+        "types": {
+            "gtg": 1,
+            "jabu": 3,
+            "selfsynergy": 0,
+            "fountain": 2
+        },
+        "name": "Defeat Big Octo",
+        "difficulty": 17,
+        "goal": {
+            "skill": 0,
+            "jp": "\u5927\u30aa\u30af\u30bf\u6483\u7834",
+            "id": "defeat-big-octo",
+            "subtypes": {
+                "map": 5,
+                "ruto": 1,
+                "compass": 5,
+                "wallet": 0.75
+            },
+            "time": 6.5,
+            "name": "Defeat Big Octo",
+            "difficulty": 13,
+            "types": {
+                "gtg": 1,
+                "jabu": 3,
+                "selfsynergy": 0,
+                "fountain": 2
+            }
+        },
+        "desiredTime": 8.5
+    },
+    {
+        "synergy": 1.5,
+        "id": "saria-s-song",
+        "time": 10.5,
+        "subtypes": {
+            "hearts": 2,
+            "plant": 0.5,
+            "hearts2": 2,
+            "wallet": 0.25
+        },
+        "types": {
+            "field": 0.75,
+            "zl": 6.75,
+            "incsaria": 100,
+            "selfsynergy": 0,
+            "saria": 3
+        },
+        "name": "Saria's Song",
+        "difficulty": 24,
+        "goal": {
+            "skill": 0,
+            "jp": "\u30b5\u30ea\u30a2\u306e\u6b4c",
+            "id": "saria-s-song",
+            "subtypes": {
+                "hearts": 2,
+                "plant": 0.5,
+                "hearts2": 2,
+                "wallet": 0.25
+            },
+            "time": 10.5,
+            "name": "Saria's Song",
+            "difficulty": 21,
+            "types": {
+                "field": 0.75,
+                "zl": 6.75,
+                "incsaria": 100,
+                "selfsynergy": 0,
+                "saria": 3
+            }
+        },
+        "desiredTime": 12
+    }
+]

@@ -1,0 +1,229 @@
+[
+    {
+        "name": "Obtain 2 Soul of a Hero",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "stats",
+            "humanity"
+        ]
+    },
+    {
+        "name": "Obtain Leo Ring",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "anorlondo",
+            "ornsmo"
+        ]
+    },
+    {
+        "name": "Rescue Logan in Sen's",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "sens",
+            "npc",
+            "spells"
+        ]
+    },
+    {
+        "name": "Obtain Queelag's Soul",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "bosses",
+            "depths",
+            "items"
+        ]
+    },
+    {
+        "name": "Cleric Class",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "startingclass"
+        ]
+    },
+    {
+        "name": "Obtain Rusted Iron Ring",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "asylum",
+            "items"
+        ]
+    },
+    {
+        "name": "Take Old witches ring as gift",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "startingitem",
+            "restrict_key"
+        ]
+    },
+    {
+        "name": "Obtain Large Divine Ember",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "ember",
+            "totg"
+        ]
+    },
+    {
+        "name": "Obtain Black Iron Set",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "paintedworld",
+            "guardians"
+        ]
+    },
+    {
+        "name": "Summon Iron Tarkus",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "npcs",
+            "lautrec"
+        ]
+    },
+    {
+        "name": "Never wear Armour",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "restriction"
+        ]
+    },
+    {
+        "name": "Kill Lady of the Darkling",
+        "difficulty": 14,
+        "synergy": 2,
+        "types": [
+            "npc",
+            "anorlondo"
+        ]
+    },
+    {
+        "name": "Obtain 10 Cracked Red Eye Orbs",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "items",
+            "drakeslondo"
+        ]
+    },
+    {
+        "name": "Open Lower Burg / Depths to Firelink Gate",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "shortcut",
+            "lowerburg"
+        ]
+    },
+    {
+        "name": "Obtain Dusk Crown Ring",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "darkroothard",
+            "dusk"
+        ]
+    },
+    {
+        "name": "Starting Weapons only",
+        "difficulty": 3,
+        "synergy": 3,
+        "types": [
+            "restriction",
+            "restrict_armour"
+        ]
+    },
+    {
+        "name": "28 Attunement",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "stats",
+            "casting"
+        ]
+    },
+    {
+        "name": "Kill Three Mimics",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "anorlondo"
+        ]
+    },
+    {
+        "name": "Join Chaos Covenant",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "demonruins",
+            "npcs",
+            "covenant"
+        ]
+    },
+    {
+        "name": "Obtain 6 Eyes of Death",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "items",
+            "catacombs",
+            "totg"
+        ]
+    },
+    {
+        "name": "Kill All 3 Giants in Sens",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "enemies",
+            "sens"
+        ]
+    },
+    {
+        "name": "Obtain Hornet Ring",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "darkroot",
+            "bosses",
+            "sif"
+        ]
+    },
+    {
+        "name": "Join Warriors of Sunlight",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "covenant",
+            "parish"
+        ]
+    },
+    {
+        "name": "Obtain Great Magic Barrier",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "miracles",
+            "ashlake"
+        ]
+    },
+    {
+        "name": "Obtain Velka's Rapier",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "paintedworld",
+            "weapons"
+        ]
+    }
+]

@@ -1,0 +1,227 @@
+[
+    {
+        "name": "Obtain Dark Ember",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "paintedworld",
+            "ember"
+        ]
+    },
+    {
+        "name": "Obtain Ricard's Rapier",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "items",
+            "weapons",
+            "sens",
+            "npcs"
+        ]
+    },
+    {
+        "name": "Depraved Class",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "startingclass"
+        ]
+    },
+    {
+        "name": "Kill 2 Black Knights in the Asylum",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "asylum",
+            "enemies"
+        ]
+    },
+    {
+        "name": "Obtain Cloranthy Ring",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "ashlake"
+        ]
+    },
+    {
+        "name": "Rescue Laurentius",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "npcs",
+            "depths",
+            "pyromancy"
+        ]
+    },
+    {
+        "name": "36 Faith",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "stats",
+            "casting"
+        ]
+    },
+    {
+        "name": "Kill Gwynevere",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "anorlondo",
+            "ornsmo"
+        ]
+    },
+    {
+        "name": "Kill Lady of the Darkling",
+        "difficulty": 14,
+        "synergy": 2,
+        "types": [
+            "npc",
+            "anorlondo"
+        ]
+    },
+    {
+        "name": "Left hand wielding only",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "restriction",
+            "wielding"
+        ]
+    },
+    {
+        "name": "Murder Solaire",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "covenant",
+            "solaire"
+        ]
+    },
+    {
+        "name": "Obtain Fire Keeper Soul (Parish)",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "humanity",
+            "parish"
+        ]
+    },
+    {
+        "name": "Obtain Iaito",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "weapons",
+            "blighttown"
+        ]
+    },
+    {
+        "name": "Get pushed by Patches",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "npcs",
+            "totg"
+        ]
+    },
+    {
+        "name": "Murder Priscilla",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "paintedworld",
+            "youmonster"
+        ]
+    },
+    {
+        "name": "Never Light a bonfire",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "restriction"
+        ]
+    },
+    {
+        "name": "Never wear Armour",
+        "difficulty": 16,
+        "synergy": 3,
+        "types": [
+            "restriction"
+        ]
+    },
+    {
+        "name": "Rescue Griggs in Lower Burg",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "lowerburg",
+            "npc"
+        ]
+    },
+    {
+        "name": "Daggers Only",
+        "difficulty": 3,
+        "synergy": 6,
+        "types": [
+            "restriction",
+            "restrict_weapons"
+        ]
+    },
+    {
+        "name": "Obtain Darkmoon Seance Ring",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "enemies",
+            "catacombs"
+        ]
+    },
+    {
+        "name": "Kill Capra Demon",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "lowerburg",
+            "bosses"
+        ]
+    },
+    {
+        "name": "Obtain Cursebite Ring",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "rings",
+            "drakeslondo"
+        ]
+    },
+    {
+        "name": "No Vitality levelling",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "stats",
+            "restriction",
+            "condition"
+        ]
+    },
+    {
+        "name": "Obtain Ring of the Sun's Firstborn",
+        "difficulty": 17,
+        "synergy": 2,
+        "types": [
+            "anorlondo"
+        ]
+    },
+    {
+        "name": "Join Chaos Covenant",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "demonruins",
+            "npcs",
+            "covenant"
+        ]
+    }
+]

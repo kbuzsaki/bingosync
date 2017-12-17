@@ -1,0 +1,204 @@
+[
+    {
+        "name": "$50,000",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "money",
+            "cash"
+        ]
+    },
+    {
+        "name": "Encounter Suicune on Route 42",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "cune"
+        ]
+    },
+    {
+        "name": "Soft Sand",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "pro"
+        ]
+    },
+    {
+        "name": "Ariados or Ledian",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "bugs2"
+        ]
+    },
+    {
+        "name": "Radio Card",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "radio"
+        ]
+    },
+    {
+        "name": "Don't heal at Pok\u00e9mon Centers",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "heal",
+            "instant"
+        ]
+    },
+    {
+        "name": "4 different types of Pok\u00e9 Ball",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "ball"
+        ]
+    },
+    {
+        "name": "3 baby Pok\u00e9mon",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "egg"
+        ]
+    },
+    {
+        "name": "A Pokemon with Explosion or Selfdestruct",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "boom"
+        ]
+    },
+    {
+        "name": "Venonat or Paras",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "bugs3"
+        ]
+    },
+    {
+        "name": "Evolve Eevee",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "Mystic Water",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "Complete 2 Ruins of Alph puzzles",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "unown"
+        ]
+    },
+    {
+        "name": "Defeat all 4 trainers in National Park",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "park"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with Flame Wheel, Body Slam, or Scary Face",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "Call a Youngster",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "call"
+        ]
+    },
+    {
+        "name": "Defeat Clair",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "clair"
+        ]
+    },
+    {
+        "name": "Koffing or Grimer",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "Noctowl or Xatu",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "birds"
+        ]
+    },
+    {
+        "name": "Graveler or Haunter",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "trade"
+        ]
+    },
+    {
+        "name": "A Dragon type Pok\u00e9mon",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "dragon"
+        ]
+    },
+    {
+        "name": "Gold Berry",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "place"
+        ]
+    },
+    {
+        "name": "Slowpoketail",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "money"
+        ]
+    },
+    {
+        "name": "Defeat Rival 4",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "whirl"
+        ]
+    },
+    {
+        "name": "Max Phonebook",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "battles"
+        ]
+    }
+]

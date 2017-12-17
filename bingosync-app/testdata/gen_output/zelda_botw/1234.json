@@ -1,0 +1,222 @@
+[
+    {
+        "name": "Any 'Rusty' Equipment item",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "Sapphire Circlet \u2605",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Gems",
+            "Rupee",
+            "Great Fairy"
+        ]
+    },
+    {
+        "name": "11 Side Quests",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Side Quest"
+        ]
+    },
+    {
+        "name": "A Major Test of Strength Shrine",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Guardian"
+        ]
+    },
+    {
+        "name": "Cream of Mushroom Soup",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "15 Tabantha Koroks",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Tabantha"
+        ]
+    },
+    {
+        "name": "3 Lake Shrines",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Lake"
+        ]
+    },
+    {
+        "name": "Kill a fire-typed Wizzrobe",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Wizzrobe"
+        ]
+    },
+    {
+        "name": "'A Wife Washed Away' Side Quest",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "Any 'Royal Guard's' Equipment item",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "'Zora Stone Monuments' Side Quest",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "Read Zelda's Diary",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Hyrule Castle"
+        ]
+    },
+    {
+        "name": "10 Creatures in Compendium",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Camera",
+            "Compendium"
+        ]
+    },
+    {
+        "name": "Finish Golf Minigame",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Minigame",
+            "Woodland"
+        ]
+    },
+    {
+        "name": "Open 2 Bokoblin Camp Chests",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Plateau"
+        ]
+    },
+    {
+        "name": "'The Cursed Statue' Shrine Quest",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Shrine Quest",
+            "Hateno"
+        ]
+    },
+    {
+        "name": "Kill a Wizzrobe of any kind",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Wizzrobe"
+        ]
+    },
+    {
+        "name": "Activate 8 Towers",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Tower"
+        ]
+    },
+    {
+        "name": "Bokoblin Mask",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Kilton"
+        ]
+    },
+    {
+        "name": "12 Hebra Koroks",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Hebra",
+            "Cold Resistance"
+        ]
+    },
+    {
+        "name": "Kill a Frost Talus",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Rupee",
+            "Gems",
+            "Miniboss",
+            "Talus",
+            "Cold Resistance"
+        ]
+    },
+    {
+        "name": "15 Eldin Koroks",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "Salt-Grilled Crab",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "Any 'Boko' Equipment item",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "Beat Ganon",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Hyrule Castle"
+        ]
+    }
+]

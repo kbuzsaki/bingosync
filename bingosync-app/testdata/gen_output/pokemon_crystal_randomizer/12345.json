@@ -1,0 +1,206 @@
+[
+    {
+        "name": "Tangela or Lickitung",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "duo"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a Sleep inducing move",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "Poison Barb",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "day"
+        ]
+    },
+    {
+        "name": "Ariados or Ledian",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "22/18"
+        ]
+    },
+    {
+        "name": "Defeat Rival 4",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "goldenrod"
+        ]
+    },
+    {
+        "name": "TM20 (Endure)",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "tms",
+            "randomtm"
+        ]
+    },
+    {
+        "name": "Berry Juice or Elixer",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "shuck"
+        ]
+    },
+    {
+        "name": "Own 8 different Water type Pok\u00e9mon",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Houndoom or Granbull",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "24/23"
+        ]
+    },
+    {
+        "name": "Slowpoketail",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "progress"
+        ]
+    },
+    {
+        "name": "Catch a Pok\u00e9mon in Tohjo Falls",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "kanto"
+        ]
+    },
+    {
+        "name": "Don't use more than one TM",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "tms",
+            "instant"
+        ]
+    },
+    {
+        "name": "3 eggs",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "egg"
+        ]
+    },
+    {
+        "name": "90 Pok\u00e9mon seen",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Ho-Oh or Lugia",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "duo"
+        ]
+    },
+    {
+        "name": "Glacier Badge",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "glacier"
+        ]
+    },
+    {
+        "name": "Electabuzz, Jynx, or Magmar",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "blessed"
+        ]
+    },
+    {
+        "name": "TM21 (Frustration) or TM27 (Return)",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "goldenrod",
+            "tms"
+        ]
+    },
+    {
+        "name": "TM05 (Roar)",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "violet"
+        ]
+    },
+    {
+        "name": "Release starter before Lv11",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "release"
+        ]
+    },
+    {
+        "name": "Sunflora or Exeggutor",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "Flaaffy or Skiploom",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "15/18"
+        ]
+    },
+    {
+        "name": "Mineral Badge",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "steel"
+        ]
+    },
+    {
+        "name": "Defeat Lapras",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "day",
+            "union"
+        ]
+    },
+    {
+        "name": "Golbat, Koffing, or Grimer",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "rocket"
+        ]
+    }
+]

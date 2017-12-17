@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Roll a ball into the shortcut cave in TI",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Backtrack from AA's entrance to BP while OoB",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Teleport to the void at drill chase",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Damage boost from a bat",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Collect all gems in the AoE hub",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Ride SSI backwards until the first checkpoint",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Escape back to the village after the chase",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Feed bombs to every totem",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Collect at least 4 gems in every Hub",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Push a tribesman into a hole",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Gain invulnerability 5 times",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Kill everything in the village",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Go through the shortcut to HSH",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Bodyslam Cortex 4 times in the boss fight",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Collect the first gem in BRD as Zombie",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Beat Tikimon",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Avoid all gems in a Humiliskate level",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Go through 2 sets of color cycles backwards",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Take Cortex to the first beach",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Destroy all life crates in the walrus chase",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Roll an acorn to the top of the cliff",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Kill every swinger in the swinger room",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Kill all the chickens at the farm",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Beat a frog room as Cortex",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Enter a slide without triggering its cutscene",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": []
+    }
+]

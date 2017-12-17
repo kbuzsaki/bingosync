@@ -1,0 +1,211 @@
+[
+    {
+        "name": "Practice Sword",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Skyloft"
+        ]
+    },
+    {
+        "name": "3 Unique Iron Shields",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Shields"
+        ]
+    },
+    {
+        "name": "Destroy all of Scaldera's Rocks",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Earth"
+        ]
+    },
+    {
+        "name": "8 Heart Pieces",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Hearts"
+        ]
+    },
+    {
+        "name": "4 Eldin Bird Statues",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Statues",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "Fortified Shield",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Shields"
+        ]
+    },
+    {
+        "name": "Orielle's Gratitude Crystals",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Crystals"
+        ]
+    },
+    {
+        "name": "Win the Wing Ceremony Twice",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "BiT",
+            "Skyloft"
+        ]
+    },
+    {
+        "name": "Goddess Harp",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Harp"
+        ]
+    },
+    {
+        "name": "3 Medals",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Medals"
+        ]
+    },
+    {
+        "name": "Talk to Yerbal",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Harp",
+            "BiT"
+        ]
+    },
+    {
+        "name": "3 Unique Potion Upgrades",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Potions",
+            "Bottles"
+        ]
+    },
+    {
+        "name": "Braced Shield",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Shields"
+        ]
+    },
+    {
+        "name": "Skyview Dungeon Map",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Map",
+            "Skyview"
+        ]
+    },
+    {
+        "name": "Beedle's Gratitude Crystal",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Crystals"
+        ]
+    },
+    {
+        "name": "10 Amber Relics",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Treasures"
+        ]
+    },
+    {
+        "name": "Finish the Sword Tutorial",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Skyloft"
+        ]
+    },
+    {
+        "name": "Open 40 Chests",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Chests"
+        ]
+    },
+    {
+        "name": "10 Goddess Cubes",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Cubes"
+        ]
+    },
+    {
+        "name": "Five map beacons",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "Zelda's Gratitude Crystal",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "End",
+            "Crystals",
+            "Sailcloth"
+        ]
+    },
+    {
+        "name": "Baby's Rattle",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Misc"
+        ]
+    },
+    {
+        "name": "5 Goddess Cubes",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Cubes"
+        ]
+    },
+    {
+        "name": "Glittering Spores",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Bottles",
+            "Faron"
+        ]
+    },
+    {
+        "name": "Reseal the Imprisoned",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Harp",
+            "Imp"
+        ]
+    }
+]

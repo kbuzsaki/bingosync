@@ -1,0 +1,202 @@
+[
+    {
+        "name": "$50,000",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "money"
+        ]
+    },
+    {
+        "name": "Enter Amity Square",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "amity"
+        ]
+    },
+    {
+        "name": "Quick Claw",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "jubilife"
+        ]
+    },
+    {
+        "name": "Shellos, Floatzel, Quagsire, or Pelipper",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "Use Struggle",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "pp"
+        ]
+    },
+    {
+        "name": "Defeat all 8 trainers in Eterna Forest",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "trainers"
+        ]
+    },
+    {
+        "name": "Complete Mira\u2019s sidequest",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "sidequest"
+        ]
+    },
+    {
+        "name": "Meditite, Bronzor, or Girafarig",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "Hatch a Pok\u00e9mon from an egg",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "hatch"
+        ]
+    },
+    {
+        "name": "Poffin Case",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "keyitem"
+        ]
+    },
+    {
+        "name": "Larvitar, Gible, or Bagon",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "10 different berries",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "berries"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a stat-boosting move",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "25 TMs",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "tms"
+        ]
+    },
+    {
+        "name": "Footprint Ribbon",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "footprint"
+        ]
+    },
+    {
+        "name": "20 different Pok\u00e9mon owned",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Buneary, Aipom, or Lickitung",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a weather-related ability",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "name": "TM67 (Recycle)",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "eterna"
+        ]
+    },
+    {
+        "name": "Defeat Drifloon",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "date"
+        ]
+    },
+    {
+        "name": "TM51 (Roost)",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "abovesolaceon"
+        ]
+    },
+    {
+        "name": "15 TMs",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "tms"
+        ]
+    },
+    {
+        "name": "Black Belt, Expert Belt, or Focus Sash",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "belts"
+        ]
+    },
+    {
+        "name": "3 baby Pok\u00e9mon",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "baby"
+        ]
+    },
+    {
+        "name": "TM77 (Psych Up)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "celestic"
+        ]
+    }
+]

@@ -1,0 +1,249 @@
+[
+    {
+        "name": "All 5 Crypt GBs in Castle",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "castle",
+            "castlegb"
+        ]
+    },
+    {
+        "name": "Nintendo Coin",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "factory",
+            "donkey"
+        ]
+    },
+    {
+        "name": "All 4 GB's in Llama Temple",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "aztec",
+            "aztecgb"
+        ]
+    },
+    {
+        "name": "All Caged GBs in DK Isles",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "islesgb",
+            "isles"
+        ]
+    },
+    {
+        "name": "50 Bananas in Gloomy Galleon",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "gloomy",
+            "gloomybananas"
+        ]
+    },
+    {
+        "name": "Activate All Warps in Gloomy Galleon",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "gloomy",
+            "gloomywarp"
+        ]
+    },
+    {
+        "name": "3 Diddy Blueprints",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "diddy",
+            "bp",
+            "japesbp",
+            "aztecbp",
+            "factorybp",
+            "gloomybp",
+            "fungibp",
+            "cavebp",
+            "castlebp",
+            "islesbp"
+        ]
+    },
+    {
+        "name": "300 Total Banana Coins",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "coin",
+            "restrict_coin"
+        ]
+    },
+    {
+        "name": "Open Crown Door in Helm",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "helm",
+            "japescrown",
+            "azteccrown",
+            "factorycrown",
+            "gloomycrown",
+            "fungicrown",
+            "cavecrown",
+            "castlecrown",
+            "islescrown",
+            "helmcrown"
+        ]
+    },
+    {
+        "name": "Both Banana Fairies in Creepy Castle",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "fairy",
+            "castle"
+        ]
+    },
+    {
+        "name": "200 Bananas in Crystal Caves",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "cave",
+            "cavebananas"
+        ]
+    },
+    {
+        "name": "5 GBs in Creepy Castle",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "castle",
+            "castlegb"
+        ]
+    },
+    {
+        "name": "Squash Tomatoes GB",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "fungi",
+            "chunky"
+        ]
+    },
+    {
+        "name": "5 Banana Fairies",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "fairy",
+            "key8"
+        ]
+    },
+    {
+        "name": "2 GBs for each Kong in DK Isles",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "isles",
+            "manybp",
+            "islesgb"
+        ]
+    },
+    {
+        "name": "Vulture GB",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "diddy",
+            "aztec"
+        ]
+    },
+    {
+        "name": "Complete Diddy's phase of K. Rool Fight",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "key3",
+            "key8",
+            "key",
+            "manykey"
+        ]
+    },
+    {
+        "name": "3 Banana Medals in Gloomy Galleon",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "gloomy",
+            "medal",
+            "gloomybananas"
+        ]
+    },
+    {
+        "name": "200 Bananas in Frantic Factory",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "factorybananas",
+            "factory"
+        ]
+    },
+    {
+        "name": "Spider Mini-Boss GB",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "tiny",
+            "fungi"
+        ]
+    },
+    {
+        "name": "All 3 Beehive area GBs",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "japes",
+            "japesgb"
+        ]
+    },
+    {
+        "name": "9 Rainbow Coins",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "coin",
+            "restrict_coin"
+        ]
+    },
+    {
+        "name": "Crystal Caves Battle Crown",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "cave",
+            "cavecrown"
+        ]
+    },
+    {
+        "name": "10 GBs in Creepy Castle",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "castlegb",
+            "castle"
+        ]
+    },
+    {
+        "name": "Spawn K. Rool Battle",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "key3",
+            "key8",
+            "key",
+            "manykey"
+        ]
+    }
+]

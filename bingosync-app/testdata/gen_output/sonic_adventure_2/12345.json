@@ -1,0 +1,205 @@
+[
+    {
+        "name": "All Kart Racing Emblems",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "multistory"
+        ]
+    },
+    {
+        "name": "Pumpkin Hill M4",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "pumpkinhill"
+        ]
+    },
+    {
+        "name": "Dry Lagoon M1 Hintless",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "Radical Highway M4",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "Meteor Herd M4",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "meteorherd"
+        ]
+    },
+    {
+        "name": "Pacifist Metal Harbor M1",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "metalharbor"
+        ]
+    },
+    {
+        "name": "60 Emblems (Team Combined)",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "emblems"
+        ]
+    },
+    {
+        "name": "Lost Colony M5 A-Rank",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "lostcolony",
+            "arank"
+        ]
+    },
+    {
+        "name": "Green Forest M5",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "greenforest"
+        ]
+    },
+    {
+        "name": "Dry Lagoon M2",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Weapons Bed and finish",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "weaponsbed"
+        ]
+    },
+    {
+        "name": "Destroy the Gold Beetle in 3 Hero Story stages",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "goldbeetle"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Radical Highway and finish",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "Mad Space M3",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "madspace"
+        ]
+    },
+    {
+        "name": "Death Chamber M5",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "deathchamber"
+        ]
+    },
+    {
+        "name": "Tails' Laser Blaster",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "eternalengine"
+        ]
+    },
+    {
+        "name": "Lost Colony M4 A-Rank",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "lostcolony",
+            "arank"
+        ]
+    },
+    {
+        "name": "Security Hall M4",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "securityhall"
+        ]
+    },
+    {
+        "name": "Dry Lagoon M3 B-Rank",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "drylagoon",
+            "brank"
+        ]
+    },
+    {
+        "name": "Green Forest M2",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "greenforest"
+        ]
+    },
+    {
+        "name": "Sand Ocean M2",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Metal Harbor M4",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "metalharbor"
+        ]
+    },
+    {
+        "name": "Sonic's Mystic Melody",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "finalrush"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Pyramid Cave and finish",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "pyramidcave"
+        ]
+    },
+    {
+        "name": "Egg Quarters M4",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    }
+]

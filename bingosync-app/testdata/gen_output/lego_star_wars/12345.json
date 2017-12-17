@@ -1,0 +1,232 @@
+[
+    {
+        "name": "Collect at Least 3 Minikits in Chancellor in Peril",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "cip",
+            "collect",
+            "3mk"
+        ]
+    },
+    {
+        "name": "Buy Purple",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "buy",
+            "extras"
+        ]
+    },
+    {
+        "name": "Beat Count Dooku in Story Mode",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "cd",
+            "sm"
+        ]
+    },
+    {
+        "name": "Buy Darth Sidious",
+        "difficulty": 10,
+        "synergy": 3,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "True Jedi in Gunship Cavalry ",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "gc",
+            "tj"
+        ]
+    },
+    {
+        "name": "Buy Geonosian",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "True Jedi in Darth Maul",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "dm",
+            "tj"
+        ]
+    },
+    {
+        "name": "Collect at Least 3 Minikits in Gunship Cavalry",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "gc",
+            "collect",
+            "3mk"
+        ]
+    },
+    {
+        "name": "Collect all Minikits in Discovery on Kamino",
+        "difficulty": 14,
+        "synergy": 1,
+        "types": [
+            "dk",
+            "amk",
+            "collect"
+        ]
+    },
+    {
+        "name": "Beat Darth Vader in Free Play",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "dv",
+            "fp"
+        ]
+    },
+    {
+        "name": "Collect 60 Minikits",
+        "difficulty": 13,
+        "synergy": 1,
+        "types": [
+            "mk",
+            "collect"
+        ]
+    },
+    {
+        "name": "Collect 100,000 studs",
+        "difficulty": 4,
+        "synergy": 1,
+        "types": [
+            "studs",
+            "collect"
+        ]
+    },
+    {
+        "name": "Buy All 3 Siths",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "True Jedi in 5 Levels",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "tj"
+        ]
+    },
+    {
+        "name": "Collect at Least 3 Minikits in Darth Maul",
+        "difficulty": 20,
+        "synergy": 2,
+        "types": [
+            "dm",
+            "collect",
+            "3mk"
+        ]
+    },
+    {
+        "name": "True Jedi in Escape from Naboo",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "efn",
+            "tj"
+        ]
+    },
+    {
+        "name": "Collect 90 Minikits",
+        "difficulty": 16,
+        "synergy": 2,
+        "types": [
+            "mk",
+            "collect"
+        ]
+    },
+    {
+        "name": "Collect all Minikits in Defense of Kashyyyk",
+        "difficulty": 15,
+        "synergy": 2,
+        "types": [
+            "dok",
+            "amk",
+            "collect"
+        ]
+    },
+    {
+        "name": "Collect 1,000,000 studs",
+        "difficulty": 3,
+        "synergy": 4,
+        "types": [
+            "studs",
+            "collect"
+        ]
+    },
+    {
+        "name": "Buy General Grievous",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "Buy Battle Droid",
+        "difficulty": 5,
+        "synergy": 8,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "Buy Shaak Ti",
+        "difficulty": 8,
+        "synergy": 7,
+        "types": [
+            "buy",
+            "character"
+        ]
+    },
+    {
+        "name": "True Jedi in Ruin of the Jedi",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "rotj",
+            "tj"
+        ]
+    },
+    {
+        "name": "Collect at Least 3 Minikits in Negotiations",
+        "difficulty": 17,
+        "synergy": 2,
+        "types": [
+            "negotiations",
+            "collect",
+            "3mk"
+        ]
+    },
+    {
+        "name": "Buy Clone (Episode III, Walker)",
+        "difficulty": 11,
+        "synergy": 16,
+        "types": [
+            "buy",
+            "character"
+        ]
+    }
+]

@@ -1,0 +1,260 @@
+[
+    {
+        "name": "1 Shine from each level",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Mix_Up"
+        ]
+    },
+    {
+        "name": "7 Red Coin Shines",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Red_Shines",
+            "Hidden_Shines"
+        ]
+    },
+    {
+        "name": "Collect 1 Hidden Shine in Ricco Harbor",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Ricco_Top",
+            "Ricco_Hidden",
+            "Ricco_Early",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "5 Boss Shines",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "XBoss_Shines",
+            "Unique_Boss",
+            "Bianco_Boss",
+            "Pinna_Boss",
+            "Ricco_Boss",
+            "Wiggler",
+            "Sirena_Early",
+            "Noki_Boss"
+        ]
+    },
+    {
+        "name": "20 Blue Coins from Pinna Park",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Pinna_Blues",
+            "Fast_20",
+            "Pinna_Early",
+            "Pinna_30",
+            "Pinna_Shines"
+        ]
+    },
+    {
+        "name": "Collect 2 Hidden Shines in Bianco Hills",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Bianco_Hidden",
+            "Bianco_Late",
+            "Turbo_Nozzle",
+            "Bianco_Yoshi",
+            "Bianco_Shines"
+        ]
+    },
+    {
+        "name": "15 Blue Coins from Pinna Park",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Pinna_Blues",
+            "Fast_20",
+            "Pinna_Early",
+            "Pinna_30",
+            "Pinna_Shines"
+        ]
+    },
+    {
+        "name": "7 Blue Bird Blue Coins",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Linked_Blues",
+            "Blue_Bird",
+            "Butterfly"
+        ]
+    },
+    {
+        "name": "Sirena Beach Episode 8 Shine",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Sirena_8",
+            "Sirena_Late"
+        ]
+    },
+    {
+        "name": "Collect Ricco 3 Shine from the top",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Ricco_Top",
+            "Ricco_Early",
+            "Ricco_20",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "Pinna Park Episode 8 Shine",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Pinna_8",
+            "Pinna_Late",
+            "Pinna_Shines"
+        ]
+    },
+    {
+        "name": "100 Coin Shine from Ricco Harbor",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Ricco_100s",
+            "Ricco_Early",
+            "Ricco_Top",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "55 Total Blue Coins",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "XTotal_Blues",
+            "Blue_30"
+        ]
+    },
+    {
+        "name": "100 Coin Shine from Gelato Beach",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Gelato_100",
+            "Gelato_Early",
+            "Gelato_Shines"
+        ]
+    },
+    {
+        "name": "Lily Pad Shine",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Plaza_Shines"
+        ]
+    },
+    {
+        "name": "40 Total Blue Coins",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Ricco_Blues",
+            "Pinna_Blues",
+            "Bianco_Blues",
+            "Pianta_Blues",
+            "Noki_Blues",
+            "Plaza_Blues",
+            "Gelato_Blues",
+            "Sirena_Blues",
+            "XTotal_Blues",
+            "Blue_30"
+        ]
+    },
+    {
+        "name": "4 Blue Coins from Butterflies",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Butterfly"
+        ]
+    },
+    {
+        "name": "11 Shines from Delfino Plaza",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Plaza_Shines"
+        ]
+    },
+    {
+        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Ricco_Top",
+            "Ricco_Hidden",
+            "Ricco_Early",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "8 Linked Blue Coin Pairs",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Linked_Blues"
+        ]
+    },
+    {
+        "name": "3 Fruit Lady Blue Coins",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Fruit_Ladies"
+        ]
+    },
+    {
+        "name": "25 Lives",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "X_Lives"
+        ]
+    },
+    {
+        "name": "5 Shines from Gelato Beach",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Gelato_5",
+            "Wiggler",
+            "Gelato_Early",
+            "Gelato_Shines"
+        ]
+    },
+    {
+        "name": "Ride Yoshi in Bianco Hills",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Bianco_Yoshi",
+            "Bianco_8"
+        ]
+    },
+    {
+        "name": "8 Red Coin Shines",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Red_Shines",
+            "Hidden_Shines"
+        ]
+    }
+]

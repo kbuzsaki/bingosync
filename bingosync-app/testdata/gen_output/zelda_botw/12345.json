@@ -1,0 +1,223 @@
+[
+    {
+        "name": "Radiant Shirt \u2605",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Radiant Gear",
+            "Rupee",
+            "Gems",
+            "Great Fairy"
+        ]
+    },
+    {
+        "name": "Collect 1 Picture Memory",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Camera"
+        ]
+    },
+    {
+        "name": "Any 'Boko' Equipment item",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "Cream of Mushroom Soup",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "Activate 8 Towers",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Tower"
+        ]
+    },
+    {
+        "name": "Hard-Boiled Egg",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "50 Koroks",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Korok"
+        ]
+    },
+    {
+        "name": "Buy a House",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Hateno",
+            "Rupee"
+        ]
+    },
+    {
+        "name": "12 Lanayru Koroks",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Korok. Lanayru"
+        ]
+    },
+    {
+        "name": "Soup Ladle",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "Finish Basic Shield Surfing Minigame",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Minigame",
+            "Hebra",
+            "Cold Resistance"
+        ]
+    },
+    {
+        "name": "Stealth Mask",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Stealth Gear",
+            "Rupee",
+            "Dueling Peaks"
+        ]
+    },
+    {
+        "name": "'An Ice Guy' Side Quest",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Wasteland"
+        ]
+    },
+    {
+        "name": "13 Shrines",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Shrine"
+        ]
+    },
+    {
+        "name": "'Divine Beast Vah Ruta' Main Quest",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Divine Beast",
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "14 Shrines",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Shrine"
+        ]
+    },
+    {
+        "name": "10 Monsters in Compendium",
+        "difficulty": 16,
+        "synergy": 3,
+        "types": [
+            "Camera",
+            "Compendium"
+        ]
+    },
+    {
+        "name": "Kill a Lynel",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Miniboss",
+            "Lynel"
+        ]
+    },
+    {
+        "name": "Open 2 Bokoblin Camp Chests",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Plateau"
+        ]
+    },
+    {
+        "name": "'What's for Dinner?' Side Quest",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Faron"
+        ]
+    },
+    {
+        "name": "Boat Oar",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "'A Freezing Rod' Side Quest",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Woodland",
+            "Wizzrobe"
+        ]
+    },
+    {
+        "name": "Full Climber's Set",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Climbing Gear"
+        ]
+    },
+    {
+        "name": "15 Ridgeland Koroks",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Ridgeland"
+        ]
+    },
+    {
+        "name": "Register the Giant Horse",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Horse",
+            "Lake",
+            "Stamina"
+        ]
+    }
+]

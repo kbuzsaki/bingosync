@@ -1,0 +1,210 @@
+[
+    {
+        "name": "All Stars in TTC",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "TTC"
+        ]
+    },
+    {
+        "name": "All Stars in LLL",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "LLL"
+        ]
+    },
+    {
+        "name": "Peach's Slide x 2",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "secrets"
+        ]
+    },
+    {
+        "name": "Open 5 Cannons",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "cannons"
+        ]
+    },
+    {
+        "name": "6 Stars in BBH",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "BBH"
+        ]
+    },
+    {
+        "name": "2 Cap Stage Stars",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "wingcap",
+            "vanishcap",
+            "metalcap",
+            "secrets"
+        ]
+    },
+    {
+        "name": "All Stars in RR",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "RR"
+        ]
+    },
+    {
+        "name": "All Stars in BOB",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "BOB"
+        ]
+    },
+    {
+        "name": "30 Lives",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "lives"
+        ]
+    },
+    {
+        "name": "Collect 120 Coins in one stage",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "WF",
+            "hundredcoin"
+        ]
+    },
+    {
+        "name": "4 Stars each from BOB and CCM",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "BOB",
+            "CCM"
+        ]
+    },
+    {
+        "name": "Red Coin Star in HMC",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "HMC"
+        ]
+    },
+    {
+        "name": "100 Coin Star in LLL",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "LLL"
+        ]
+    },
+    {
+        "name": "At least 3 stars from 8 stages",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "starseach",
+            "manystar"
+        ]
+    },
+    {
+        "name": "6 Stars in WDW",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "WDW"
+        ]
+    },
+    {
+        "name": "35 Total Stars",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "manystar"
+        ]
+    },
+    {
+        "name": "5 Stars in SL",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "SL"
+        ]
+    },
+    {
+        "name": "Rematch with Koopa the Quick THI",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "THI"
+        ]
+    },
+    {
+        "name": "Secret Aquarium Star",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "aquarium"
+        ]
+    },
+    {
+        "name": "Three Bowser Stage Red Coin Stars",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "bowserreds",
+            "secrets"
+        ]
+    },
+    {
+        "name": "Collect 140 Coins in one stage",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "hundredcoin"
+        ]
+    },
+    {
+        "name": "100 Coin Star in JRB",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "JRB"
+        ]
+    },
+    {
+        "name": "6 Stars in DDD",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "DDD"
+        ]
+    },
+    {
+        "name": "3 Stars each from TTC and RR",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "TTC",
+            "RR"
+        ]
+    },
+    {
+        "name": "Mystery of the Monkey Cage TTM",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "TTM"
+        ]
+    }
+]

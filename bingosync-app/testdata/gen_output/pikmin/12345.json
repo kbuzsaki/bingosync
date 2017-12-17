@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Defeat 3 different species of grubdog",
+        "difficulty": 19,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "grubdog"
+        ]
+    },
+    {
+        "name": "Build 3 climbable sticks in Forest Navel in one day",
+        "difficulty": 12,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "sticks"
+        ]
+    },
+    {
+        "name": "Whimsical Radar",
+        "difficulty": 1,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "radar"
+        ]
+    },
+    {
+        "name": "Analog Computer",
+        "difficulty": 10,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "analog"
+        ]
+    },
+    {
+        "name": "Defeat both Armored Cannon Beetles",
+        "difficulty": 23,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "acb"
+        ]
+    },
+    {
+        "name": "Automatic Gear",
+        "difficulty": 6,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "gear"
+        ]
+    },
+    {
+        "name": "Defeat Smoky Progg",
+        "difficulty": 25,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "smoky"
+        ]
+    },
+    {
+        "name": "Anti-Dioxin Filter",
+        "difficulty": 18,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "dioxin"
+        ]
+    },
+    {
+        "name": "Defeat a Fiery Blowhog without Pikmin",
+        "difficulty": 14,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "hands",
+            "fiery"
+        ]
+    },
+    {
+        "name": "Defeat all 24 Pellet Posies in the Impact Site (after Day 1)",
+        "difficulty": 2,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "is"
+        ]
+    },
+    {
+        "name": "Break 3 stone gates in Forest Navel",
+        "difficulty": 13,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "obstacle"
+        ]
+    },
+    {
+        "name": "Hit 3 Honeywisps",
+        "difficulty": 4,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "nectar"
+        ]
+    },
+    {
+        "name": "Guard Satellite",
+        "difficulty": 7,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "bll"
+        ]
+    },
+    {
+        "name": "Have a Swooping Snitchbug plant a Pikmin of each color",
+        "difficulty": 21,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "snitchbug"
+        ]
+    },
+    {
+        "name": "Massage Machine",
+        "difficulty": 20,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "un"
+        ]
+    },
+    {
+        "name": "Zirconium Rotor",
+        "difficulty": 22,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "zirconium"
+        ]
+    },
+    {
+        "name": "Defeat 2 Puffy Blowhogs",
+        "difficulty": 16,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "puffy"
+        ]
+    },
+    {
+        "name": "Have 150 Blue Pikmin",
+        "difficulty": 15,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "count"
+        ]
+    },
+    {
+        "name": "Defeat the Wogpoles in Forest of Hope",
+        "difficulty": 3,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "wogpole"
+        ]
+    },
+    {
+        "name": "Kill a mushroom Pikmin",
+        "difficulty": 9,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "puffstool"
+        ]
+    },
+    {
+        "name": "Shock Absorber without defeating the Spotty Bulborb",
+        "difficulty": 5,
+        "synergy": 0,
+        "child": "no",
+        "types": []
+    },
+    {
+        "name": "Positron Generator",
+        "difficulty": 8,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "is"
+        ]
+    },
+    {
+        "name": "Get 15 parts",
+        "difficulty": 24,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "all_parts"
+        ]
+    },
+    {
+        "name": "Never exceed 100 total Pikmin alive",
+        "difficulty": 17,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "count"
+        ]
+    },
+    {
+        "name": "Gluon Drive",
+        "difficulty": 11,
+        "synergy": 0,
+        "child": "no",
+        "types": [
+            "gluon"
+        ]
+    }
+]

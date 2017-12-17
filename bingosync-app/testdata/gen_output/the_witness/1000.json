@@ -1,0 +1,139 @@
+[
+    {
+        "name": "Swamp Teal Underwater Panels",
+        "difficulty": 24,
+        "synergy": 0
+    },
+    {
+        "name": "Back Half of Keep",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Shipwreck Vault",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "vault"
+        ]
+    },
+    {
+        "name": "Cinema Exit Panels",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Turn on the Lightswitch",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "Windmill First Blade EP",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Dots Tutorial",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Treehouse Buoy EP",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Boathouse Claw Ramp EP",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Any 7 Non-Laser Panels that don't increase solve count",
+        "difficulty": 13,
+        "synergy": 0
+    },
+    {
+        "name": "Bunker Elevator Panel",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Symmetry Laser",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Left Monastery Courtyard EP",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "Both Jungle Bamboo Sky EPs",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Bunker Green Room EP",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "All 4 Town Tower Underside EPs",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "Long Treehouse Bridge EP",
+        "difficulty": 25,
+        "synergy": 0
+    },
+    {
+        "name": "Both Swamp Red Shortcut Door Panels",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Mountaintop River Panel",
+        "difficulty": 11,
+        "synergy": 0
+    },
+    {
+        "name": "Mill Door Panels",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "Desert Elevator EP",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "desert_laser"
+        ]
+    },
+    {
+        "name": "Desert Vault",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "vault"
+        ]
+    },
+    {
+        "name": "Quarry Entrance Pipe EP",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "Quarry Railroad EP",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "Boat Tutorial Reflection EP",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "boat_ep"
+        ]
+    }
+]

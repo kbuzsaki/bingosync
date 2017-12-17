@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Heart Potion++",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Potions"
+        ]
+    },
+    {
+        "name": "Fairy in a Bottle",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Bottles"
+        ]
+    },
+    {
+        "name": "Bring Mia to Horwell",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Skyloft"
+        ]
+    },
+    {
+        "name": "Enter Isle of Songs",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "BiT"
+        ]
+    },
+    {
+        "name": "Open 40 Chests",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Chests"
+        ]
+    },
+    {
+        "name": "50 Deku Hornets",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Bugs"
+        ]
+    },
+    {
+        "name": "All 10 Faron Bird Statues",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Harp",
+            "BiT",
+            "Scale",
+            "Statues"
+        ]
+    },
+    {
+        "name": "8 Heart Pieces",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Hearts"
+        ]
+    },
+    {
+        "name": "Kina's Pumpkin Carrying Game",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Pumpkin"
+        ]
+    },
+    {
+        "name": "Complete a ringer skydive",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Sky"
+        ]
+    },
+    {
+        "name": "6 Eldin Goddess Cubes",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Cubes",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "Floria Waterfall Bird Statue",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Faron"
+        ]
+    },
+    {
+        "name": "500 Rupees",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Rupees"
+        ]
+    },
+    {
+        "name": "3 Unique Iron Shields",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Shields"
+        ]
+    },
+    {
+        "name": "LMF Dungeon Map",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Map",
+            "LMF"
+        ]
+    },
+    {
+        "name": "Temple of Time Bird Statue",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Statues",
+            "Harp"
+        ]
+    },
+    {
+        "name": "Quick Beetle",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Upgrade"
+        ]
+    },
+    {
+        "name": "30 Bombs",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Ammo"
+        ]
+    },
+    {
+        "name": "Kill three guays in the sky",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Sky"
+        ]
+    },
+    {
+        "name": "Defeat Ghirahim with a dart",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Skyview"
+        ]
+    },
+    {
+        "name": "Sleep in Zelda's Bed",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Skyloft",
+            "Sailcloth"
+        ]
+    },
+    {
+        "name": "Batreaux's Heart Piece",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Hearts",
+            "Crystals"
+        ]
+    },
+    {
+        "name": "Ballad of the Goddess",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Harp"
+        ]
+    },
+    {
+        "name": "Five map beacons",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "Treasure Medal",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Medals"
+        ]
+    }
+]

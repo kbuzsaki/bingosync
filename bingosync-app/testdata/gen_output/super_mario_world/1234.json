@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Open star road from Valley Of Bowser",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "yoshi1"
+        ]
+    },
+    {
+        "name": "Perfect matching game (8-up)",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Valley Of Bowser)",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Vanilla Dome 4 - small mario no yoshi",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "8/9 bonus rooms",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Tubular",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "tubular"
+        ]
+    },
+    {
+        "name": "3/4 Reznors",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "6 swimming stages",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Blue Switch - get 8 silver coins",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "50 coins in 5 stages",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Red Switch - get 3 lives from turtles",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Vanilla Dome)",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Butter Bridge 2 - small mario no yoshi",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "4 star-block 1-ups",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "All 14 exits in Forest Of Illusion",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "6/10 ghost house exits",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Open Chocolate Island 3 useless exit",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "NO YOSHI",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "yoshi1",
+            "yoshi2"
+        ]
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Star World)",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Vanilla Dome 1 normal exit - no star",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Twin Bridges)",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Cheese Bridge secret exit - no yoshi",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "cape1"
+        ]
+    },
+    {
+        "name": "10/18 keyhole exits",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Defeat 6/7 Koopa Kids",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Yellow Switch - get 300 coins",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": []
+    }
+]

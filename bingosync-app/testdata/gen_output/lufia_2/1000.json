@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Rapier",
+        "difficulty": 24,
+        "synergy": 0
+    },
+    {
+        "name": "Gold Shield",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Hipower Ring",
+        "difficulty": 15,
+        "synergy": 0
+    },
+    {
+        "name": "Zircon Plate",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Insect Crush",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "Courage",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "SuhrCustom11",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Crystal Mail",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Cloth Armor",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Blue Beret",
+        "difficulty": 13,
+        "synergy": 0
+    },
+    {
+        "name": "Zap",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Headband",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Brone Helmet",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "Frock",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Sleep Ball",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "Silvo Rapier",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "Fire Dagger",
+        "difficulty": 25,
+        "synergy": 0
+    },
+    {
+        "name": "Fry",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Ice Ball",
+        "difficulty": 11,
+        "synergy": 0
+    },
+    {
+        "name": "Ex-Potion",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "Any Iris Item",
+        "difficulty": 12,
+        "synergy": 0
+    },
+    {
+        "name": "Silver Armor",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Flying Blow",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "Battledriver",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "Plate Cap",
+        "difficulty": 20,
+        "synergy": 0
+    }
+]

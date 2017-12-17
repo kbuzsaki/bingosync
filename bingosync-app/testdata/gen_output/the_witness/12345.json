@@ -1,0 +1,139 @@
+[
+    {
+        "name": "Mill Control Room Panels",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Desert Laser",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "desert_laser"
+        ]
+    },
+    {
+        "name": "Tutorial Floor Panel",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "Windmill Third Blade EP",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Swamp Yellow and Orange Underwater Line EPs",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "Both Desert Broken Wall EPs",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Treehouse Obelisk",
+        "difficulty": 25,
+        "synergy": 0
+    },
+    {
+        "name": "All 5 Keep Walk-On EPs",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Symmetry Glass Factory",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Squares Tutorial",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Listen to the Entire Peninsula Audio Log",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "audio_log"
+        ]
+    },
+    {
+        "name": "Quarry Entrance Pipe EP",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "All 3 Town R/G/B Light Panels",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Any 4 Straight Line EPs",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Boat Tutorial EP",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "boat_ep"
+        ]
+    },
+    {
+        "name": "Couch EP",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "Bunker Elevator Panel",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Shipwreck Discarded Panel",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "discard"
+        ]
+    },
+    {
+        "name": "Town Bell Tower Black Line EP",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "Mill Door Panels",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "Jungle Green Leaf Moss EP",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Monastery Stone Wall EP",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "Quarry Laser",
+        "difficulty": 24,
+        "synergy": 0
+    },
+    {
+        "name": "Swamp Laser",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Mountaintop Black Arch EP",
+        "difficulty": 11,
+        "synergy": 0
+    }
+]

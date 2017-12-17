@@ -1,0 +1,269 @@
+[
+    {
+        "name": "Defeat Shadow Mario in Sirena Beach",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Shadow_Mario",
+            "Sirena_Shadow",
+            "Sirena_Late"
+        ]
+    },
+    {
+        "name": "7 Blue Bird Blue Coins",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Linked_Blues",
+            "Blue_Bird",
+            "Butterfly"
+        ]
+    },
+    {
+        "name": "10 Blue Coins from Noki Bay",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Noki_Blues",
+            "Noki_Early"
+        ]
+    },
+    {
+        "name": "Collect a 100 Coin Shine from a Secret Level",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Secret_100"
+        ]
+    },
+    {
+        "name": "15 Blue Coins from Ricco Harbor",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Ricco_Blues",
+            "Ricco_M",
+            "Fast_20",
+            "Ricco_30",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "50 Total Blue Coins",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Ricco_Blues",
+            "Pinna_Blues",
+            "Bianco_Blues",
+            "Pianta_Blues",
+            "Noki_Blues",
+            "Plaza_Blues",
+            "Gelato_Blues",
+            "Sirena_Blues",
+            "XTotal_Blues",
+            "Blue_30"
+        ]
+    },
+    {
+        "name": "Defeat all Cataquacks in a single episode of Gelato Beach",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Gelato_Quacks",
+            "Gelato_Early",
+            "Wiggler",
+            "Gelato_Shines"
+        ]
+    },
+    {
+        "name": "11 Shines from Delfino Plaza",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Plaza_Shines"
+        ]
+    },
+    {
+        "name": "2 Shines from 5 Levels",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Mix_Up"
+        ]
+    },
+    {
+        "name": "Defeat Shadow Mario in Bianco Hills",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Bianco_Shadow",
+            "Shadow_Mario",
+            "Bianco_Late",
+            "Bianco_Shines"
+        ]
+    },
+    {
+        "name": "5 Secret Shines",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Secret_Shines",
+            "Hidden_Shines",
+            "Bianco_Hidden",
+            "Sirena_Hidden",
+            "Pinna_Hidden",
+            "Pinna_5"
+        ]
+    },
+    {
+        "name": "Bianco Hills Episode 8 Shine",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Bianco_Shadow",
+            "Bianco_Late",
+            "Bianco_Yoshi",
+            "Turbo_Nozzle",
+            "Bianco_Shines"
+        ]
+    },
+    {
+        "name": "20 Blue Coins from Pinna Park",
+        "difficulty": 8,
+        "synergy": 1,
+        "types": [
+            "Pinna_Blues",
+            "Fast_20",
+            "Pinna_Early",
+            "Pinna_30",
+            "Pinna_Shines"
+        ]
+    },
+    {
+        "name": "100 Coin Shine from Ricco Harbor",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Ricco_100s",
+            "Ricco_Early",
+            "Ricco_Top",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "10 Shines from a single level (not plaza)",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Ricco_8",
+            "Sirena_8",
+            "Bianco_8",
+            "Gelato_8",
+            "Pinna_8",
+            "Pianta_8",
+            "Red_Shines",
+            "9_S"
+        ]
+    },
+    {
+        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Ricco_Top",
+            "Ricco_Hidden",
+            "Ricco_Early",
+            "Ricco_Rocket",
+            "Ricco_Shines"
+        ]
+    },
+    {
+        "name": "Sirena Beach Episode 8 Shine",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Sirena_8",
+            "Sirena_Late"
+        ]
+    },
+    {
+        "name": "40 Lives",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "X_Lives"
+        ]
+    },
+    {
+        "name": "8 Shines from Delfino Plaza",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Plaza_M",
+            "Fruit_Ladies",
+            "Plaza_Shines"
+        ]
+    },
+    {
+        "name": "100 Coin Shine from Gelato Beach",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Gelato_100",
+            "Gelato_Early",
+            "Gelato_Shines"
+        ]
+    },
+    {
+        "name": "9 Shines from Delfino Plaza",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Plaza_M",
+            "Fruit_Ladies",
+            "Plaza_Shines"
+        ]
+    },
+    {
+        "name": "5 Blue Coins from Enemies",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Blue_Enemies",
+            "Ricco_Top",
+            "Ricco_Blues",
+            "Ricco_Early",
+            "XBoss_Shines",
+            "M_Graffiti"
+        ]
+    },
+    {
+        "name": "Goopy Inferno (Pianta 3) NO damage taken",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Goopy_Inferno",
+            "Paint_Race",
+            "Pianta_Shines"
+        ]
+    },
+    {
+        "name": "Collect 2 Hidden Shines in Sirena Beach",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Sirena_Hidden",
+            "Sirena_Late"
+        ]
+    },
+    {
+        "name": "4 Shines from 4 Levels",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Mix_Up"
+        ]
+    }
+]

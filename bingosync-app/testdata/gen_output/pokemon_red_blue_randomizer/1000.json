@@ -1,0 +1,133 @@
+[
+    {
+        "name": "Mewtwo",
+        "difficulty": 24,
+        "synergy": 0
+    },
+    {
+        "name": "Catch a Pokemon while Surfing",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat all 5 trainers in Fighting Dojo",
+        "difficulty": 15,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with 4 status moves",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat Viridian Rival",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "6 Different Normal-type Pokemon",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Teach TM 49",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "notms"
+        ]
+    },
+    {
+        "name": "Faint all 3 starters evolutionary line",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Raichu",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Sell no items",
+        "difficulty": 13,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat the only trainer on Route 4",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Rattata, Spearow, or Pidgey ",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat all trainers in each Gym you enter",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "6 Key Items",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat 3 Burglars",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "A Pokemon with 4 non Normal Moves",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "6 Badges",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "badges"
+        ]
+    },
+    {
+        "name": "Defeat all 17 trainers inside Pokemon Tower",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat all 10 trainers in Route 11",
+        "difficulty": 11,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with a high critical hit move",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "Victreebell or Vileplume",
+        "difficulty": 12,
+        "synergy": 0
+    },
+    {
+        "name": "Snorlax",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Use no X items",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "Evolve a Pokemon twice",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "Obtain a Pokemon with Explosion or Self-Destruct",
+        "difficulty": 20,
+        "synergy": 0
+    }
+]

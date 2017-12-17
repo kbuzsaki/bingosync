@@ -1,0 +1,213 @@
+[
+    {
+        "name": "Defeat Warmech in the Flying Fortress",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "rare"
+        ]
+    },
+    {
+        "name": "Get at least 3 shields from treasure chests",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "treasurehunt"
+        ]
+    },
+    {
+        "name": "Defeat Ankheg",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "fight"
+        ]
+    },
+    {
+        "name": "Defeat a group with 4 different monsters",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    },
+    {
+        "name": "Defeat at least 3 Goblin Guards",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "defeat",
+            "goblin"
+        ]
+    },
+    {
+        "name": "Do NOT run from any battle in the Cavern of Earth",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "norun"
+        ]
+    },
+    {
+        "name": "Use zero White Mages",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "party",
+            "nowhitemage"
+        ]
+    },
+    {
+        "name": "Buy exactly 33 Prorings in Gaia",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "spending",
+            "gaia"
+        ]
+    },
+    {
+        "name": "No duplicate weapons equipped",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "unique"
+        ]
+    },
+    {
+        "name": "Use at least 4 different Inns",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "inn"
+        ]
+    },
+    {
+        "name": "Defeat at least one Dark Fighter",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "atleast"
+        ]
+    },
+    {
+        "name": "Defeat Goblins at the Cavern of Earth",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    },
+    {
+        "name": "Use at least 50 Potions",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "itemrestriction"
+        ]
+    },
+    {
+        "name": "Cast Blizzaga at least twice",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "noredmage",
+            "noblackmage"
+        ]
+    },
+    {
+        "name": "Get Red Jacket",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "nowarrior",
+            "nothief",
+            "duergar"
+        ]
+    },
+    {
+        "name": "Win twice at the ship 15-tile minigame",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "minigame"
+        ]
+    },
+    {
+        "name": "Learn three Level 5 spells for a character",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "grind"
+        ]
+    },
+    {
+        "name": "Defeat 2 groups with 4 different monsters",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    },
+    {
+        "name": "Get the Flame Sword in the Cavern of Ice",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "treasurehunt",
+            "icecave"
+        ]
+    },
+    {
+        "name": "Use at least 2 Gold Needles",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "itemrestriction"
+        ]
+    },
+    {
+        "name": "Use Scourge to defeat Tiamat",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    },
+    {
+        "name": "Equip only an Ice Shield on the shield slot",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "unique",
+            "nowarrior",
+            "nothief",
+            "noclass"
+        ]
+    },
+    {
+        "name": "Use exactly 2 White Mages",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "party",
+            "whitemage"
+        ]
+    },
+    {
+        "name": "Use all 7 Inns",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "inn"
+        ]
+    },
+    {
+        "name": "Learn at least two Level 6 spells for a character",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "grind"
+        ]
+    }
+]

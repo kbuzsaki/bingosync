@@ -1,0 +1,208 @@
+[
+    {
+        "name": "Destroy all 3 electric gates in PP",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "elecgate",
+            "ppgate"
+        ]
+    },
+    {
+        "name": "Air Brake (AW)",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "aw"
+        ]
+    },
+    {
+        "name": "Enter all 4 caves in AW",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "caveenter"
+        ]
+    },
+    {
+        "name": "Clear FC3",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "clear"
+        ]
+    },
+    {
+        "name": "8 Spicy Sprays",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "spray"
+        ]
+    },
+    {
+        "name": "Use 4 Candypop Buds in FC",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "cpb"
+        ]
+    },
+    {
+        "name": "Trigger all 3 hazard cutscenes",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "selfharm"
+        ]
+    },
+    {
+        "name": "2500 Pokos",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "total"
+        ]
+    },
+    {
+        "name": "Justice Alloy (SH7)",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "hardboss"
+        ]
+    },
+    {
+        "name": "Enter SmC",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "caveenter"
+        ]
+    },
+    {
+        "name": "Clear FC6",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "clear"
+        ]
+    },
+    {
+        "name": "Collect 2 Burrowing Snagret heads",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "snagret"
+        ]
+    },
+    {
+        "name": "100 Pikmin of a single type",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "onetype",
+            "masspik"
+        ]
+    },
+    {
+        "name": "Never get Prototype Detector (HoB5)",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "nogauge",
+            "instant"
+        ]
+    },
+    {
+        "name": "Collect all 3 Cannon Beetle corpses in VoR",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "allenemy"
+        ]
+    },
+    {
+        "name": "Fossilized Ursidae (VoR)",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "vor"
+        ]
+    },
+    {
+        "name": "Collect all 5 Wogpoles in PP",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "wogpole",
+            "ppgate"
+        ]
+    },
+    {
+        "name": "Repugnant Appendage (FC8)",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "easyboss",
+            "empress"
+        ]
+    },
+    {
+        "name": "Pilgrim Bulb (AW)",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "aw"
+        ]
+    },
+    {
+        "name": "Collect 2 Gattling Groinks",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "xenemy"
+        ]
+    },
+    {
+        "name": "Collect a 1-Pellet of each color",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "pellet"
+        ]
+    },
+    {
+        "name": "Never do Early Blues",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "awgate",
+            "instant"
+        ]
+    },
+    {
+        "name": "Collect all 3 Wogpoles in AW",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "wogpole"
+        ]
+    },
+    {
+        "name": "Build all 3 bridges in PP",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "bridge"
+        ]
+    },
+    {
+        "name": "Stellar Orb (SCx9)",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "hardboss"
+        ]
+    }
+]

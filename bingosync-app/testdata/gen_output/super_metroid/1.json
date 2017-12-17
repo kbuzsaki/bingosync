@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Norfair Reserve Tank or Wrecked Ship Reserve Tank",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "reservetank"
+        ]
+    },
+    {
+        "name": "Defeat Draygon",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "draygon"
+        ]
+    },
+    {
+        "name": "5+ Energy Tanks",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "energytank"
+        ]
+    },
+    {
+        "name": "Collect all 40 Crateria Missiles",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "missile"
+        ]
+    },
+    {
+        "name": "Collect only 1 of Ice Beam or Speed Booster",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "icebeam",
+            "speedbooster"
+        ]
+    },
+    {
+        "name": "Finish in Kraid's room",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "finish",
+            "variasuit"
+        ]
+    },
+    {
+        "name": "25+ Power Bombs",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "powerbomb"
+        ]
+    },
+    {
+        "name": "Visit the critters",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "speedbooster"
+        ]
+    },
+    {
+        "name": "Collect both Maridia Energy Tanks",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "energytank"
+        ]
+    },
+    {
+        "name": "15+ Super Missiles",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "supermissile"
+        ]
+    },
+    {
+        "name": "Space Jump",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "spacejump",
+            "draygon"
+        ]
+    },
+    {
+        "name": "Skip Spazer",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "spazer"
+        ]
+    },
+    {
+        "name": "Collect all 15 Wrecked Ship Missiles",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "missile"
+        ]
+    },
+    {
+        "name": "Maridia Map Station",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "maridiamap"
+        ]
+    },
+    {
+        "name": "35+ Power Bombs",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "powerbomb"
+        ]
+    },
+    {
+        "name": "7+ Energy Tanks",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "energytank"
+        ]
+    },
+    {
+        "name": "Collect only 1 of Varia Suit or Gravity Suit",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "variasuit",
+            "gravitysuit"
+        ]
+    },
+    {
+        "name": "40+ Power Bombs",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "powerbomb"
+        ]
+    },
+    {
+        "name": "Skip Charge Beam",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "chargebeam"
+        ]
+    },
+    {
+        "name": "Finish in Wrecked Ship Energy Tank room",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "finish",
+            "wsetroom"
+        ]
+    },
+    {
+        "name": "10+ Power Bombs",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "powerbomb"
+        ]
+    },
+    {
+        "name": "Wrecked Ship Reserve Tank",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "reservetank",
+            "speedbooster"
+        ]
+    },
+    {
+        "name": "Collect only 1 of Wave Beam or Charge Beam",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "wavebeam",
+            "chargebeam"
+        ]
+    },
+    {
+        "name": "25+ Super Missiles",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "supermissile"
+        ]
+    },
+    {
+        "name": "Plasma Beam",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "plasmabeam",
+            "draygon"
+        ]
+    }
+]

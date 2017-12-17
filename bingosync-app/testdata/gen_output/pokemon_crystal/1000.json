@@ -1,0 +1,204 @@
+[
+    {
+        "name": "$50,000",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "money",
+            "cash"
+        ]
+    },
+    {
+        "name": "Encounter Suicune on route 42",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "cune"
+        ]
+    },
+    {
+        "name": "Soft Sand",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "pro"
+        ]
+    },
+    {
+        "name": "Farfetch'd",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "time"
+        ]
+    },
+    {
+        "name": "Radio Card",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "radio"
+        ]
+    },
+    {
+        "name": "Do not heal at any Pokemon Centers",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "heal",
+            "instant"
+        ]
+    },
+    {
+        "name": "4 Different types of Poke Ball",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "ball"
+        ]
+    },
+    {
+        "name": "3 baby Pokemon",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "egg"
+        ]
+    },
+    {
+        "name": "A Pokemon with pursuit",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "suit"
+        ]
+    },
+    {
+        "name": "Catch Shuckle",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "shuck"
+        ]
+    },
+    {
+        "name": "Evolve Eevee",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "Mystic Water",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "Unown Pokedex",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "unown"
+        ]
+    },
+    {
+        "name": "Defeat all 4 trainers in National Park",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "park"
+        ]
+    },
+    {
+        "name": "Own 10 different Flying type Pokemon",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Rattata",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "lol"
+        ]
+    },
+    {
+        "name": "Win a Battle Tower match",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "gg"
+        ]
+    },
+    {
+        "name": "Xatu",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "alph"
+        ]
+    },
+    {
+        "name": "HM05 (Flash)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "flash"
+        ]
+    },
+    {
+        "name": "Noctowl",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "trees"
+        ]
+    },
+    {
+        "name": "Corsola",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "rod"
+        ]
+    },
+    {
+        "name": "Cubone",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "money"
+        ]
+    },
+    {
+        "name": "Growlithe",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "grow"
+        ]
+    },
+    {
+        "name": "Glacierbadge",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "whirl"
+        ]
+    },
+    {
+        "name": "Max phonebook",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "battles"
+        ]
+    }
+]

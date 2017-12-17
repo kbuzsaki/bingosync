@@ -1,0 +1,205 @@
+[
+    {
+        "name": "A Pokemon with a stat related ability",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "name": "Magneton",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Pokemon with an evasion boosting move",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "Defeat 4 Kecleons",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "kecleon"
+        ]
+    },
+    {
+        "name": "Do not heal at any Pokemon Centers",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "heal",
+            "instant"
+        ]
+    },
+    {
+        "name": "Vulpix",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Volbeat or Illumise",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "pkmnpair"
+        ]
+    },
+    {
+        "name": "Defeat Winstrate Family",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "trainer"
+        ]
+    },
+    {
+        "name": "A Trade Evolution Item",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "multiitem"
+        ]
+    },
+    {
+        "name": "Exp Share",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "Defeat all 6 Trainers on Route 125",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "trainer"
+        ]
+    },
+    {
+        "name": "Make a Pok\u00e9mon relearn a move",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "Pelipper",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Complete a Trick House maze",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "trickmaster"
+        ]
+    },
+    {
+        "name": "7 Different Berries",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "multiitem"
+        ]
+    },
+    {
+        "name": "Ether",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "6 different water type Pokemon",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "dex"
+        ]
+    },
+    {
+        "name": "HM08 (Dive)",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "hm"
+        ]
+    },
+    {
+        "name": "A baby Pokemon",
+        "difficulty": 15,
+        "synergy": 2,
+        "types": [
+            "egg",
+            "pkmn"
+        ]
+    },
+    {
+        "name": "TM19 (Giga Drain)",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "tm"
+        ]
+    },
+    {
+        "name": "Do not use any TMs",
+        "difficulty": 13,
+        "synergy": 1,
+        "types": [
+            "tm",
+            "instant"
+        ]
+    },
+    {
+        "name": "Burn a Kecleon",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "Trade with an NPC",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "trade"
+        ]
+    },
+    {
+        "name": "HM05 (Flash)",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "hm"
+        ]
+    },
+    {
+        "name": "Relicanth or Wailord",
+        "difficulty": 24,
+        "synergy": 3,
+        "types": [
+            "pkmnpair"
+        ]
+    }
+]

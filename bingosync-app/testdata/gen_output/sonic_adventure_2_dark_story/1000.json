@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Complete Final Chase M1 with 100+ Rings",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "finalchase"
+        ]
+    },
+    {
+        "name": "Lost Colony All Missions A-Rank",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "lostcolony",
+            "arank",
+            "allmissions"
+        ]
+    },
+    {
+        "name": "Pacifist White Jungle M1",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "whitejungle"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Egg Quarters and finish",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "Complete Iron Gate M1 with 100+ Rings",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "irongate"
+        ]
+    },
+    {
+        "name": "Pacifist Weapons Bed M1",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "weaponsbed"
+        ]
+    },
+    {
+        "name": "Complete Dry Lagoon M1 with 100+ Rings",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "Mad Space M4",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "madspace"
+        ]
+    },
+    {
+        "name": "Finish any mission with 25+ Lives (No Underflow)",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "multistory"
+        ]
+    },
+    {
+        "name": "Sand Ocean M5",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Lost Colony M5",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    },
+    {
+        "name": "Complete White Jungle M1 with 100+ Rings",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "whitejungle"
+        ]
+    },
+    {
+        "name": "Radical Highway M4 A-Rank",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "radicalhighway",
+            "arank"
+        ]
+    },
+    {
+        "name": "Unlock Chao Garden for all characters",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "chaogarden"
+        ]
+    },
+    {
+        "name": "Route 280 M5",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "route280"
+        ]
+    },
+    {
+        "name": "Dry Lagoon M4",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Final Chase and finish",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "finalchase"
+        ]
+    },
+    {
+        "name": "Complete Sky Rail M1 with 100+ Rings",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "Rouge's Treasure Scope",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "securityhall"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Lost Colony and finish",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Security Hall and finish",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "securityhall"
+        ]
+    },
+    {
+        "name": "Egg Quarters M1 Hintless",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "Destroy the Gold Beetle in 3 different stages",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "goldbeetle"
+        ]
+    },
+    {
+        "name": "Cosmic Wall M2",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "cosmicwall"
+        ]
+    },
+    {
+        "name": "Sky Rail M4",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    }
+]

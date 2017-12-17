@@ -1,0 +1,202 @@
+[
+    {
+        "name": "A Pokemon with Explosion or Selfdestruct",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "boom"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a Dragon type move",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "twister"
+        ]
+    },
+    {
+        "name": "Itemfinder",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "Defeat all 8 trainers on Route 32",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "train"
+        ]
+    },
+    {
+        "name": "Miltank or Tauros",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "moo"
+        ]
+    },
+    {
+        "name": "TM05 (Roar)",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "6 Badges",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "whee"
+        ]
+    },
+    {
+        "name": "Wobbuffet, Girafarig, or Stantler",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "tails"
+        ]
+    },
+    {
+        "name": "Cubone or Phanpy",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "Charcoal",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "coal"
+        ]
+    },
+    {
+        "name": "Release starter before Lv11",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "TM20 (Endure)",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "endure"
+        ]
+    },
+    {
+        "name": "Weepinbell or Gloom",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "21"
+        ]
+    },
+    {
+        "name": "90 Pok\u00e9mon seen",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Max Phonebook",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "battles"
+        ]
+    },
+    {
+        "name": "Call a Black Belt",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "call"
+        ]
+    },
+    {
+        "name": "Evolve Eevee",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "Soft Sand",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "pro"
+        ]
+    },
+    {
+        "name": "Win Bug Catching contest",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "place"
+        ]
+    },
+    {
+        "name": "Defeat a Ponyta or Rapidash",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "Ivysaur, Charmeleon, or Wartortle",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "starters"
+        ]
+    },
+    {
+        "name": "Sandslash or Arbok",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "22"
+        ]
+    },
+    {
+        "name": "Mantine or Skarmory",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "exclusives"
+        ]
+    },
+    {
+        "name": "Stop starter evolving 3 times",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "HM05 (Flash)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "flash"
+        ]
+    }
+]

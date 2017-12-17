@@ -1,0 +1,214 @@
+[
+    {
+        "name": "4 Real Bottles (no dupe)",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "bottle"
+        ]
+    },
+    {
+        "name": "1000 Rupees in Bank",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "wallet"
+        ]
+    },
+    {
+        "name": "Blast Mask",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "allnight"
+        ]
+    },
+    {
+        "name": "Press 3 STT Yellow Floor Switches",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "stt",
+            "istt",
+            "gistt"
+        ]
+    },
+    {
+        "name": "3 Boss Keys",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "bosskey"
+        ]
+    },
+    {
+        "name": "Razor Sword",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "sword"
+        ]
+    },
+    {
+        "name": "Great Fairy's Sword",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "gfs",
+            "gfairy",
+            "gbt"
+        ]
+    },
+    {
+        "name": "Beaver Bottle",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "hook",
+            "bottle"
+        ]
+    },
+    {
+        "name": "Open 2 Well Chests",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "mirror"
+        ]
+    },
+    {
+        "name": "Rosa Sister's Happiness Seal",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "notebook"
+        ]
+    },
+    {
+        "name": "Kill 3 Dinolfos",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "elemental",
+            "gbt"
+        ]
+    },
+    {
+        "name": "Save Sun Mask",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "couple"
+        ]
+    },
+    {
+        "name": "Ikana Castle HP",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "castle"
+        ]
+    },
+    {
+        "name": "14 Masks",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "mask"
+        ]
+    },
+    {
+        "name": "Hit All 10 Owl Statues",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "hook",
+            "stt"
+        ]
+    },
+    {
+        "name": "3 Temple Maps and Compasses",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "mc"
+        ]
+    },
+    {
+        "name": "3 Bottom Row Songs",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "song"
+        ]
+    },
+    {
+        "name": "Column of 4 Masks",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "mask"
+        ]
+    },
+    {
+        "name": "20 Magic Beans",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "slot",
+            "bean"
+        ]
+    },
+    {
+        "name": "Don Gero's Mask",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "lens"
+        ]
+    },
+    {
+        "name": "Doggy Racetrack HP",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "ranch"
+        ]
+    },
+    {
+        "name": "All Maps from Tingle",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "map"
+        ]
+    },
+    {
+        "name": "2 Temple Maps, Compasses, and Boss Keys",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "mc",
+            "bosskey"
+        ]
+    },
+    {
+        "name": "Mask of Scents",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "wft",
+            "remains"
+        ]
+    },
+    {
+        "name": "4 Business Scrub HPs",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "heart",
+            "scrub",
+            "deed"
+        ]
+    }
+]

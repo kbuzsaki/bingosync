@@ -1,0 +1,228 @@
+[
+    {
+        "name": "Barbarian Helm \u2605",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Barbarian Gear",
+            "Great Fairy",
+            "Lynel"
+        ]
+    },
+    {
+        "name": "'A Wife Washed Away' Side Quest",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Lanayru"
+        ]
+    },
+    {
+        "name": "Activate Hateno Tower",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Tower",
+            "Hateno"
+        ]
+    },
+    {
+        "name": "3 Tabantha Shrines",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Tabantha"
+        ]
+    },
+    {
+        "name": "Any 'Forest Dweller's' Equipment item",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "'Curry for What Ails You' Side Quest",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Tabantha",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "Hard-Boiled Egg",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "15 Akkala Koroks",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Akkala"
+        ]
+    },
+    {
+        "name": "Activate 10 Towers",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Tower"
+        ]
+    },
+    {
+        "name": "Give Beedle a Beetle",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Horse"
+        ]
+    },
+    {
+        "name": "15 Shrines",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Shrine"
+        ]
+    },
+    {
+        "name": "Activate Central Tower",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Tower",
+            "Central Hyrule"
+        ]
+    },
+    {
+        "name": "Collect 1 Picture Memory",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Camera"
+        ]
+    },
+    {
+        "name": "9 Ridgeland Koroks",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Ridgeland"
+        ]
+    },
+    {
+        "name": "'The Road to Respect' Side Quest",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Side Quest",
+            "Eldin",
+            "Talus"
+        ]
+    },
+    {
+        "name": "Activate Gerudo Tower",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Tower",
+            "Gerudo"
+        ]
+    },
+    {
+        "name": "Climbing Gear",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Climbing Gear",
+            "Hateno"
+        ]
+    },
+    {
+        "name": "'The Ancient Rito Song' Shrine Quest",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Shrine Quest",
+            "Tabantha"
+        ]
+    },
+    {
+        "name": "Open 2 Bokoblin Camp Chests",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Plateau"
+        ]
+    },
+    {
+        "name": "Kill a Lynel",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Miniboss",
+            "Lynel"
+        ]
+    },
+    {
+        "name": "3 Ridgeland Koroks",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Ridgeland"
+        ]
+    },
+    {
+        "name": "Kill a Frost Talus",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Rupee",
+            "Gems",
+            "Miniboss",
+            "Talus",
+            "Cold Resistance"
+        ]
+    },
+    {
+        "name": "Any Guardian Shield",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Equipment",
+            "Guardian"
+        ]
+    },
+    {
+        "name": "15 Equipment in Compendium",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Camera",
+            "Compendium"
+        ]
+    },
+    {
+        "name": "16 Shrines",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Shrine"
+        ]
+    }
+]

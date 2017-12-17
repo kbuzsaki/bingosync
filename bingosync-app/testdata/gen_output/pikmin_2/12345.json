@@ -1,0 +1,209 @@
+[
+    {
+        "name": "Kill 5 Breadbugs",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "breadbug"
+        ]
+    },
+    {
+        "name": "100 Pikmin of a single type",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "onetype",
+            "masspik"
+        ]
+    },
+    {
+        "name": "Collect a 1-Pellet of each color",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "pellet"
+        ]
+    },
+    {
+        "name": "Collect all 3 Wogpoles in AW",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "wogpole"
+        ]
+    },
+    {
+        "name": "Decorative Goo (AW)",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "awgate",
+            "aw"
+        ]
+    },
+    {
+        "name": "Trigger all 3 hazard cutscenes",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "selfharm"
+        ]
+    },
+    {
+        "name": "Justice Alloy (SH7)",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "hardboss"
+        ]
+    },
+    {
+        "name": "Clear SCx6",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "clear"
+        ]
+    },
+    {
+        "name": "5 Spicy Sprays and 5 Bitter Sprays",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "spray"
+        ]
+    },
+    {
+        "name": "Kill the Burrowing Snagret in VoR",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "snagret"
+        ]
+    },
+    {
+        "name": "200 Total Pikmin",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "masspik"
+        ]
+    },
+    {
+        "name": "Get a Pikmin Extinction inside a cave",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "selfharm"
+        ]
+    },
+    {
+        "name": "Collect 8 Dweevils (of any kind)",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "xenemy"
+        ]
+    },
+    {
+        "name": "Collect Temporal Mechanism (VoR) without using any Bitter Sprays",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "vor",
+            "fiery"
+        ]
+    },
+    {
+        "name": "Onion Replica (PP)",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "pp",
+            "blkgate",
+            "void",
+            "lowpoko"
+        ]
+    },
+    {
+        "name": "Air Brake (AW)",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "aw"
+        ]
+    },
+    {
+        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "mature"
+        ]
+    },
+    {
+        "name": "Thirst Activator(NTSC-U)/Perfect Container(PAL) (SCx7)",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "hipoko"
+        ]
+    },
+    {
+        "name": "Get a Red Pikmin Extinction",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "red",
+            "selfharm"
+        ]
+    },
+    {
+        "name": "Kill all 3 Creeping Chrysanthemums in AW",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "allenemy"
+        ]
+    },
+    {
+        "name": "Collect a 5-Pellet of each color",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "pellet"
+        ]
+    },
+    {
+        "name": "Turn 15 Bulbmin into other types",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "blb"
+        ]
+    },
+    {
+        "name": "Stellar Orb (SCx9)",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "hardboss"
+        ]
+    },
+    {
+        "name": "45 Purples",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "onetype"
+        ]
+    },
+    {
+        "name": "8 Bitter Sprays",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "spray"
+        ]
+    }
+]

@@ -1,0 +1,208 @@
+[
+    {
+        "name": "Wild Canyon M3 B-Rank",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "wildcanyon",
+            "brank"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Eternal Engine and finish",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "eternalengine"
+        ]
+    },
+    {
+        "name": "Dr Eggman's Laser Blaster",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "irongate"
+        ]
+    },
+    {
+        "name": "Hidden Base M3",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "hiddenbase"
+        ]
+    },
+    {
+        "name": "Dr Eggman's Mystic Melody",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    },
+    {
+        "name": "Lost Colony All Missions A-Rank",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "lostcolony",
+            "arank",
+            "allmissions"
+        ]
+    },
+    {
+        "name": "Radical Highway M3",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "Complete Sand Ocean M1 with 100+ Rings",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Meteor Herd M3",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "meteorherd"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Pumpkin Hill and finish",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "pumpkinhill"
+        ]
+    },
+    {
+        "name": "60 Emblems (Team Combined)",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "emblems"
+        ]
+    },
+    {
+        "name": "Sand Ocean M3",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in White Jungle and finish",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "whitejungle"
+        ]
+    },
+    {
+        "name": "Complete Egg Quarters M1 with a Magnetic Shield",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "City Escape M4",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "cityescape"
+        ]
+    },
+    {
+        "name": "Pacifist Metal Harbor M1",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "metalharbor"
+        ]
+    },
+    {
+        "name": "City Escape M4 A-Rank",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "cityescape",
+            "arank"
+        ]
+    },
+    {
+        "name": "Aquatic Mine M5",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "aquaticmine"
+        ]
+    },
+    {
+        "name": "Security Hall M4",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "securityhall"
+        ]
+    },
+    {
+        "name": "Game Over during Route 280 M1",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "route280",
+            "gameover"
+        ]
+    },
+    {
+        "name": "Pacifist Weapons Bed M1",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "weaponsbed"
+        ]
+    },
+    {
+        "name": "Sky Rail M4",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Radical Highway and finish",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in City Escape and finish",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "cityescape"
+        ]
+    },
+    {
+        "name": "Meteor Herd M5 A-Rank",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "meteorherd",
+            "arank"
+        ]
+    }
+]

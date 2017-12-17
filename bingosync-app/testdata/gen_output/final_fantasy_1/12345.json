@@ -1,0 +1,213 @@
+[
+    {
+        "name": "Get the party to at least level 22",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "grind"
+        ]
+    },
+    {
+        "name": "Get the Sunblade in the Mirage Tower",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "treasurehunt",
+            "sunblade"
+        ]
+    },
+    {
+        "name": "Equip only a Thief's Armlet on the body slot",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "unique",
+            "nowarrior",
+            "nowhitemage"
+        ]
+    },
+    {
+        "name": "Do NOT run from any battle in the Citadel of Trials",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "norun"
+        ]
+    },
+    {
+        "name": "Defeat Echidna in Earthgift Shrine",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "earthgift",
+            "extra"
+        ]
+    },
+    {
+        "name": "Get the Mage's Staff in the Sunken Shrine",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "treasurehunt"
+        ]
+    },
+    {
+        "name": "Defeat Gilgamesh and Atomos in Lifespring Grotto",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "whisperwind",
+            "extra"
+        ]
+    },
+    {
+        "name": "Get the party to at least level 25",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "grind"
+        ]
+    },
+    {
+        "name": "Defeat Goblins at the Cavern of Earth",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    },
+    {
+        "name": "Use exactly 2 Thieves",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "party",
+            "thief"
+        ]
+    },
+    {
+        "name": "Use at least 75 Potions",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "itemrestriction"
+        ]
+    },
+    {
+        "name": "Use exactly 2 White Mages",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "party",
+            "whitemage"
+        ]
+    },
+    {
+        "name": "Learn exactly two curative spells",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "monk"
+        ]
+    },
+    {
+        "name": "Buy 99 Faerie Tonics at the Caravan",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "spending",
+            "caravan"
+        ]
+    },
+    {
+        "name": "Learn at least two Level 6 spells for a character",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "grind"
+        ]
+    },
+    {
+        "name": "Unlock one red seal in the Labyrinth of Time",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "labyrinth"
+        ]
+    },
+    {
+        "name": "Defeat at least one Dark Fighter",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "atleast"
+        ]
+    },
+    {
+        "name": "Defeat Ankheg",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "fight"
+        ]
+    },
+    {
+        "name": "Use exactly 2 Warriors",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "party",
+            "warrior"
+        ]
+    },
+    {
+        "name": "Use at least 2 Gold Needles",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "itemrestriction"
+        ]
+    },
+    {
+        "name": "Cast Thundaga at least twice",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "noredmage",
+            "noblackmage"
+        ]
+    },
+    {
+        "name": "Spend at least 26,780 gil in Elfheim",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "spending"
+        ]
+    },
+    {
+        "name": "Unlock two blue seals in the Labyrinth of Time",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "labyrinth"
+        ]
+    },
+    {
+        "name": "Get only 1 of Sunblade or Diamond Armor from chests",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "sunblade",
+            "diamondarmor"
+        ]
+    },
+    {
+        "name": "Put a Mindflayer to sleep",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "situational"
+        ]
+    }
+]

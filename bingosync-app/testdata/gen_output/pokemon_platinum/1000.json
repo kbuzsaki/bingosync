@@ -1,0 +1,202 @@
+[
+    {
+        "name": "Hit 5 times with a multi-hit move",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "skilllink"
+        ]
+    },
+    {
+        "name": "Train a Pok\u00e9mon to Level 45",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "raise"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a weather-related ability",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "name": "TM92 (Trick Room)",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "hotel"
+        ]
+    },
+    {
+        "name": "Wormadam, Mothim, or Vespiquen",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "HM05 (Defog)",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "hms"
+        ]
+    },
+    {
+        "name": "Sprayduck",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "keyitem"
+        ]
+    },
+    {
+        "name": "Onix, Scyther, or Feebas",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "Teach 4 TMs to the same Pok\u00e9mon",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "tms"
+        ]
+    },
+    {
+        "name": "15 different Pok\u00e9mon owned",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Buneary, Aipom, or Lickitung",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "Hatch a Pok\u00e9mon from an egg",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "hatch"
+        ]
+    },
+    {
+        "name": "3 eggs",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "egg"
+        ]
+    },
+    {
+        "name": "TM51 (Roost)",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "abovesolaceon"
+        ]
+    },
+    {
+        "name": "Evolve 5 different Pok\u00e9mon",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "evolve"
+        ]
+    },
+    {
+        "name": "Don\u2019t heal at Pok\u00e9mon Centers",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "instant"
+        ]
+    },
+    {
+        "name": "Defeat all 3 trainers in Fuego Ironworks",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "surf"
+        ]
+    },
+    {
+        "name": "12 Pok\u00e9tch Apps",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "poketch"
+        ]
+    },
+    {
+        "name": "TM77 (Psych Up)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "celestic"
+        ]
+    },
+    {
+        "name": "6 different Water-type Pok\u00e9mon",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "catch6"
+        ]
+    },
+    {
+        "name": "Defeat all 7 trainers in Galactic Eterna Building",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "missable"
+        ]
+    },
+    {
+        "name": "Roselia, Togetic, Kirlia, or Snorunt",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "pokemon"
+        ]
+    },
+    {
+        "name": "10 different berries",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "berries"
+        ]
+    },
+    {
+        "name": "Catch a Pok\u00e9mon while Surfing",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "surf"
+        ]
+    },
+    {
+        "name": "Footprint Ribbon",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "footprint"
+        ]
+    }
+]

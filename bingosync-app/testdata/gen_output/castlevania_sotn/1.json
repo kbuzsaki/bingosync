@@ -1,0 +1,208 @@
+[
+    {
+        "name": "Use 6 different Shield spells vs. 1 boss",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "shieldrod"
+        ]
+    },
+    {
+        "name": "Use 4 different full screen attack items vs. 1 boss",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "forbiddenlibrary",
+            "intro"
+        ]
+    },
+    {
+        "name": "Finish at Turquoise",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "finishplace"
+        ]
+    },
+    {
+        "name": "Fire, Ice & Lightning Mails",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "keep"
+        ]
+    },
+    {
+        "name": "All 1st castle warps",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "warps"
+        ]
+    },
+    {
+        "name": "Kill 6 different types of zombies",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "bestiary"
+        ]
+    },
+    {
+        "name": "Gravity Boots",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "marblegallery"
+        ]
+    },
+    {
+        "name": "Beat Creature w/ Sword of Dawn",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "creature",
+            "medusa"
+        ]
+    },
+    {
+        "name": "Beat Succubus w/o Soul of Bat",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "jewelopen"
+        ]
+    },
+    {
+        "name": "Power of Wolf",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "wolf"
+        ]
+    },
+    {
+        "name": "Finish by beating Olrox wearing Secret Boots",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "finishplace",
+            "echo"
+        ]
+    },
+    {
+        "name": "Kill 8 types of Knights",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "bestiary"
+        ]
+    },
+    {
+        "name": "Talisman",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "entrance2"
+        ]
+    },
+    {
+        "name": "Holy Symbol",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "holysymbol"
+        ]
+    },
+    {
+        "name": "Ring of Arcana",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "beelzebub",
+            "librarian"
+        ]
+    },
+    {
+        "name": "Hear a confession wearing Ankh of Life",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "hippogryph"
+        ]
+    },
+    {
+        "name": "Katana",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "necromancy"
+        ]
+    },
+    {
+        "name": "Osafune katana",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "death"
+        ]
+    },
+    {
+        "name": "Nunchaku",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "scylla"
+        ]
+    },
+    {
+        "name": "Finish by seeing Ferry in Outer Wall telescope",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "finishplace"
+        ]
+    },
+    {
+        "name": "Start w/ 30 MP and Neutron bomb",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "intro"
+        ]
+    },
+    {
+        "name": "Broadsword & Sword of Hador",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "olrox"
+        ]
+    },
+    {
+        "name": "Get Stoned by 4 different enemies",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "status"
+        ]
+    },
+    {
+        "name": "No Cube of Zoe",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "challenges",
+            "cubezoe",
+            "subweapons"
+        ]
+    },
+    {
+        "name": "3 Heart Refreshes",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "hr"
+        ]
+    }
+]

@@ -1,0 +1,269 @@
+[
+    {
+        "name": "100 Bananas in Angry Aztec",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "aztec",
+            "aztecbananas"
+        ]
+    },
+    {
+        "name": "Open Helm Lobby",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "key7",
+            "key6",
+            "key",
+            "manykey"
+        ]
+    },
+    {
+        "name": "5 GBs in Creepy Castle",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "castle",
+            "castlegb"
+        ]
+    },
+    {
+        "name": "2 GBs for each Kong in Jungle Japes",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "japesgb",
+            "manybp",
+            "japes"
+        ]
+    },
+    {
+        "name": "Activate All Warps in Gloomy Galleon",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "gloomy",
+            "gloomywarp"
+        ]
+    },
+    {
+        "name": "Open Crown Door in Helm",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "helm",
+            "japescrown",
+            "azteccrown",
+            "factorycrown",
+            "gloomycrown",
+            "fungicrown",
+            "cavecrown",
+            "castlecrown",
+            "islescrown",
+            "helmcrown"
+        ]
+    },
+    {
+        "name": "Squash Tomatoes GB",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "fungi",
+            "chunky"
+        ]
+    },
+    {
+        "name": "3 Lanky Blueprints",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "lanky",
+            "bp",
+            "japesbp",
+            "aztecbp",
+            "factorybp",
+            "gloomybp",
+            "fungibp",
+            "cavebp",
+            "castlebp",
+            "islesbp"
+        ]
+    },
+    {
+        "name": "3 Banana Medals in Creepy Castle",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "castlebananas",
+            "castle",
+            "medal"
+        ]
+    },
+    {
+        "name": "200 Bananas in Frantic Factory",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "factorybananas",
+            "factory"
+        ]
+    },
+    {
+        "name": "Complete Diddy's phase of K. Rool Fight",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "key3",
+            "key8",
+            "key",
+            "manykey"
+        ]
+    },
+    {
+        "name": "3 Banana Medals",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "medal",
+            "japesbananas",
+            "aztecbananas",
+            "factorybananas",
+            "gloomybananas",
+            "fungibananas",
+            "cavebananas",
+            "castlebananas"
+        ]
+    },
+    {
+        "name": "10 Banana Fairies",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "fairy"
+        ]
+    },
+    {
+        "name": "Activate All Warps in Angry Aztec",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "aztec",
+            "aztecwarp"
+        ]
+    },
+    {
+        "name": "Kill Giant Kosha",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "cave"
+        ]
+    },
+    {
+        "name": "Both Banana Fairies in Frantic Factory",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "factory",
+            "fairy"
+        ]
+    },
+    {
+        "name": "Diddy Minecart GB",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "japes",
+            "diddy",
+            "race"
+        ]
+    },
+    {
+        "name": "Activate All Blue Warps",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "manylevel",
+            "japeswarp",
+            "aztecwarp",
+            "factorywarp",
+            "gloomywarp",
+            "fungiwarp",
+            "cavewarp",
+            "castlewarp"
+        ]
+    },
+    {
+        "name": "100 bananas for any Kong in Crystal Caves",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "cave",
+            "cavebananas"
+        ]
+    },
+    {
+        "name": "Donkey's Banana Medal in Hideout Helm",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "donkey",
+            "helm",
+            "medal"
+        ]
+    },
+    {
+        "name": "15 GBs",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "manybp",
+            "bp",
+            "japesgb",
+            "aztecgb",
+            "factorygb",
+            "gloomygb",
+            "fungigb",
+            "cavegb",
+            "castlegb",
+            "islesgb"
+        ]
+    },
+    {
+        "name": "10 GBs in Gloomy Galleon",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "gloomy",
+            "galleongb"
+        ]
+    },
+    {
+        "name": "100 Bananas in Fungi Forest",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "fungi",
+            "fungibananas"
+        ]
+    },
+    {
+        "name": "Activate Production Room in Factory",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "factory",
+            "donkey"
+        ]
+    },
+    {
+        "name": "6 Boss Keys",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "key",
+            "manykey"
+        ]
+    }
+]

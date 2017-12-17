@@ -1,0 +1,206 @@
+[
+    {
+        "name": "Power of Wolf",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "wolf"
+        ]
+    },
+    {
+        "name": "Finish with 255 of each gem",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "finishplace",
+            "gem"
+        ]
+    },
+    {
+        "name": "Beat a 1st castle boss w/ Bastard sword",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "sword"
+        ]
+    },
+    {
+        "name": "Beat Cerberus w/ Combat Knife",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "cerberus"
+        ]
+    },
+    {
+        "name": "Shaman Shield w/o Soul of Bat",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "clocktower"
+        ]
+    },
+    {
+        "name": "Visit 20 save rooms",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "saves"
+        ]
+    },
+    {
+        "name": "All 1st castle warps",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "warps"
+        ]
+    },
+    {
+        "name": "Kill 8 types of Knights",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "bestiary"
+        ]
+    },
+    {
+        "name": "Use 4 different full screen attack items vs. 1 boss",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "forbiddenlibrary",
+            "intro"
+        ]
+    },
+    {
+        "name": "Silver Crown w/o Sword Card",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "swordcard"
+        ]
+    },
+    {
+        "name": "Holy Sword and Fury Plate",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "2castles"
+        ]
+    },
+    {
+        "name": "Beat Akmodan wearing Sunstone",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "akmodan"
+        ]
+    },
+    {
+        "name": "Finish at Opal",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "finishplace"
+        ]
+    },
+    {
+        "name": "Use only 1 type of expendable item in 1st castle",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "challenges"
+        ]
+    },
+    {
+        "name": "Kill 5 Feathered Enemies",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "bestiary"
+        ]
+    },
+    {
+        "name": "Sit in 6 different chairs",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "chairs"
+        ]
+    },
+    {
+        "name": "Beat Slogra & Gaibon w/ Knife Subweapon Only",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "entrance",
+            "subweapons"
+        ]
+    },
+    {
+        "name": "Damage a boss w/ 6 different 2-handed swords",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "equips"
+        ]
+    },
+    {
+        "name": "Damage a boss w/ Force of Echo",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "echo"
+        ]
+    },
+    {
+        "name": "Beat Minotaur & Werewolf w/ Morningstar",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "minotaur",
+            "hippogryph"
+        ]
+    },
+    {
+        "name": "Have a STR boost of at least +40",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "strength"
+        ]
+    },
+    {
+        "name": "Use 6 different Shield spells vs. 1 boss",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "shieldrod"
+        ]
+    },
+    {
+        "name": "Start w/ Potion",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "intro"
+        ]
+    },
+    {
+        "name": "Get Stoned, Cursed, and Poisoned (not all at once)",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "status"
+        ]
+    },
+    {
+        "name": "Get big tossed by 3 different enemies",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "hp"
+        ]
+    }
+]

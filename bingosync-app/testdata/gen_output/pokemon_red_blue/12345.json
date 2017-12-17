@@ -1,0 +1,202 @@
+[
+    {
+        "name": "Venusaur",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "Defeat 7 Pikachus",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "pika"
+        ]
+    },
+    {
+        "name": "TM 39 (Swift)",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "swift"
+        ]
+    },
+    {
+        "name": "One starting move on starter",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "tackle"
+        ]
+    },
+    {
+        "name": "Defeat 3 Burglars",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "robber"
+        ]
+    },
+    {
+        "name": "Arcanine or Ninetales",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "fires"
+        ]
+    },
+    {
+        "name": "30 Pokemon owned",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "dex"
+        ]
+    },
+    {
+        "name": "Silph Scope",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "hideout"
+        ]
+    },
+    {
+        "name": "TM 41 (Softboiled)",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "soft"
+        ]
+    },
+    {
+        "name": "TM 40 (Skull Bash)",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "safari"
+        ]
+    },
+    {
+        "name": "Lapras",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Silph"
+        ]
+    },
+    {
+        "name": "TM 44 (Rest)",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "rest"
+        ]
+    },
+    {
+        "name": "Beedrill or Butterfree",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "bug"
+        ]
+    },
+    {
+        "name": "Charizard",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "Defeat all 12 trainers in Mt Moon",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "mt"
+        ]
+    },
+    {
+        "name": "6 Badges",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "badges"
+        ]
+    },
+    {
+        "name": "6 different Poison type Pokemon",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "items"
+        ]
+    },
+    {
+        "name": "Any Pokemon with Stomp",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "safari"
+        ]
+    },
+    {
+        "name": "TM 19 (Seismic Toss)",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "seismic"
+        ]
+    },
+    {
+        "name": "Nidoking or Nidoqueen",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "moon"
+        ]
+    },
+    {
+        "name": "Defeat all 3 starters",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "tunnel"
+        ]
+    },
+    {
+        "name": "Raichu",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "elec"
+        ]
+    },
+    {
+        "name": "Release starter before level 11.",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "starter"
+        ]
+    },
+    {
+        "name": "Tangela",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "tangela"
+        ]
+    },
+    {
+        "name": "Kadabra",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "abra"
+        ]
+    }
+]

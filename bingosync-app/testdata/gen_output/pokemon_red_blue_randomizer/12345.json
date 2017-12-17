@@ -1,0 +1,130 @@
+[
+    {
+        "name": "TM31",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Starmie or Cloyster",
+        "difficulty": 12,
+        "synergy": 0
+    },
+    {
+        "name": "10 Pokemon owned",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "owned"
+        ]
+    },
+    {
+        "name": "Defeat 2 Rockers",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Use 4 different stones to evolve Pokemon",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with 4 damage dealing physical moves",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Faint 5 Pikachus",
+        "difficulty": 25,
+        "synergy": 0
+    },
+    {
+        "name": "TM35",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat all 14 trainers in Routes 6 and 8",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Party Pokemon Names spell out \"BINGO!\"",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Faint a Slowbro",
+        "difficulty": 13,
+        "synergy": 0
+    },
+    {
+        "name": "Use no X items",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with a charging-turn move except Fly",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Any level 50 Pokemon",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Revive a Fossil",
+        "difficulty": 20,
+        "synergy": 0
+    },
+    {
+        "name": "Onix",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat the only trainer on Route 4",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Dragon-type Pokemon",
+        "difficulty": 15,
+        "synergy": 0
+    },
+    {
+        "name": "Finish on the SS Anne",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "Ivysaur, Charmeleon, or Wartortle",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "6 Key Items",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "3 HMs",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "3 Pokemon with different status ailments",
+        "difficulty": 24,
+        "synergy": 0
+    },
+    {
+        "name": "Diglett or Abra",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat all 10 trainers in Route 11",
+        "difficulty": 11,
+        "synergy": 0
+    }
+]

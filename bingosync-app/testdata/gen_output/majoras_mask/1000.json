@@ -1,0 +1,224 @@
+[
+    {
+        "name": "Change GBT Water Direction",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "dungeon",
+            "gbt",
+            "gsht",
+            "gistt"
+        ]
+    },
+    {
+        "name": "12 Item Slots",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "slot",
+            "bottle"
+        ]
+    },
+    {
+        "name": "Grow 8 Bean Plants",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "bean"
+        ]
+    },
+    {
+        "name": "No Hidden Owl Statue",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "restrict",
+            "stt",
+            "istt",
+            "0thday"
+        ]
+    },
+    {
+        "name": "Enter 4th Day",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "end"
+        ]
+    },
+    {
+        "name": "Pictograph of Dancing Redead",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "picto",
+            "mirror"
+        ]
+    },
+    {
+        "name": "2 blank C-buttons",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "delivery"
+        ]
+    },
+    {
+        "name": "Clear 3 Chest Icons on Mountain Village Maps",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "sht",
+            "remains",
+            "map",
+            "gsht"
+        ]
+    },
+    {
+        "name": "4 Real Bottles (no dupe)",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "bottle"
+        ]
+    },
+    {
+        "name": "10 Happiness Seals",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "notebook"
+        ]
+    },
+    {
+        "name": "3 Bottom Row Songs",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "song"
+        ]
+    },
+    {
+        "name": "10 STT Fairies",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "stt",
+            "istt",
+            "gistt",
+            "gfs"
+        ]
+    },
+    {
+        "name": "Open 8 WFT Chests",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "wft"
+        ]
+    },
+    {
+        "name": "Postman Happiness Seal",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "notebook",
+            "delivery",
+            "couple"
+        ]
+    },
+    {
+        "name": "Destroy 15 SHT Ice Blocks",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "sht",
+            "elemental",
+            "gsht"
+        ]
+    },
+    {
+        "name": "Postman's Hat",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "delivery"
+        ]
+    },
+    {
+        "name": "30 Total Stray Fairies",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "dungeon",
+            "fairy"
+        ]
+    },
+    {
+        "name": "5 East Clock Town HPs",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "heart"
+        ]
+    },
+    {
+        "name": "Pinnacle Rock HP",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "picto",
+            "fortress"
+        ]
+    },
+    {
+        "name": "Don Gero's Mask",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "lens"
+        ]
+    },
+    {
+        "name": "Mask of Truth",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "spider"
+        ]
+    },
+    {
+        "name": "Defeat Captain Keeta",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "grave"
+        ]
+    },
+    {
+        "name": "Save Sun Mask",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "couple"
+        ]
+    },
+    {
+        "name": "Double Magic",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "sht",
+            "lens"
+        ]
+    },
+    {
+        "name": "Hit All 10 Owl Statues",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "hook",
+            "stt"
+        ]
+    }
+]

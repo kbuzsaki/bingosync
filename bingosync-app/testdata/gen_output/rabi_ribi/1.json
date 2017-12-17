@@ -1,0 +1,259 @@
+[
+    {
+        "name": "Lv.2 P Hairpin",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "P Hairpin",
+            "Plurkwood"
+        ]
+    },
+    {
+        "name": "End with 50000 EN",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Money"
+        ]
+    },
+    {
+        "name": "Hear \u266a Evernight Peak",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Eastern Highlands"
+        ]
+    },
+    {
+        "name": "Lv.2 Spike Barrier",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Slide",
+            "Spike"
+        ]
+    },
+    {
+        "name": "All 3 Southern Woodland Pack Up Potions",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Southern Woodland",
+            "Pack Up"
+        ]
+    },
+    {
+        "name": "Fire, Water, Nature, and Light Orbs",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Fire Orb",
+            "Water Orb",
+            "Nature Orb",
+            "Light Orb"
+        ]
+    },
+    {
+        "name": "10 Mana Up Potions",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Mana Up"
+        ]
+    },
+    {
+        "name": "15 Regen Up Potions",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Regen Up"
+        ]
+    },
+    {
+        "name": "Get a High-Score above 5000 on the sandbag",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Sandbag"
+        ]
+    },
+    {
+        "name": "Lv.2 Bunny Amulet",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Amulet",
+            "Ch2"
+        ]
+    },
+    {
+        "name": "20 Easter Eggs",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Eggs"
+        ]
+    },
+    {
+        "name": "10% Item",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Collection"
+        ]
+    },
+    {
+        "name": "Defeat Nixie",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Nixie"
+        ]
+    },
+    {
+        "name": "Quick Barrette, Charge Ring, Plus Necklace, and Auto Earrings",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Barrette",
+            "Ring",
+            "Necklace",
+            "Earrings"
+        ]
+    },
+    {
+        "name": "Recruit Keke Bunny",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Keke Bunny",
+            "Plurkwood"
+        ]
+    },
+    {
+        "name": "Hear \u266a Bounce Bounce",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Nieve",
+            "Nixie",
+            "Keke Bunny",
+            "Seana"
+        ]
+    },
+    {
+        "name": "All 5 Northern Tundra Health Up Potions",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Northern Tundra",
+            "Health Up"
+        ]
+    },
+    {
+        "name": "Recruit Aruraune and Lilith",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Aruraune",
+            "Lilith"
+        ]
+    },
+    {
+        "name": "Defeat All 3 UPRPRC Hideout Bosses",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "UPRPRC"
+        ]
+    },
+    {
+        "name": "Purchase 5 Buffs at Once",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Attack Up Buff",
+            "Defense Up Buff",
+            "Arrest Buff",
+            "Speedy Buff",
+            "MaxHP Buff",
+            "MaxMP Buff",
+            "Amulet Cut Buff",
+            "HP Regen Buff",
+            "MP Regen Buff",
+            "Give ATK Down Buff",
+            "Give DEF Down Buff",
+            "Shrink Buff",
+            "Giant Buff"
+        ]
+    },
+    {
+        "name": "Hear \u266a Sudden Death",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Alius"
+        ]
+    },
+    {
+        "name": "All 3 Eastern Highlands Regen Up Potions",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Eastern Highlands",
+            "Regen Up"
+        ]
+    },
+    {
+        "name": "All 4 Island Core Mana Up Potions",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Island Core",
+            "Mana Up"
+        ]
+    },
+    {
+        "name": "Equip at least 8 Badges",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Pack Up",
+            "Health Plus",
+            "Health Surge",
+            "Mana Plus",
+            "Mana Surge",
+            "Crisis Boost",
+            "ATK Grow",
+            "DEF Grow",
+            "ATK Trade",
+            "DEF Trade",
+            "Arm Strength",
+            "Carrot Boost",
+            "Weaken",
+            "Self-Defense",
+            "Armored",
+            "Lucky Seven",
+            "Hex Cancel",
+            "Pure Love",
+            "Toxic Strike",
+            "Frame Cancel",
+            "Health Wager",
+            "Mana Wager",
+            "Stamina Plus",
+            "Cashback",
+            "Survival",
+            "Top Form",
+            "Tough Skin"
+        ]
+    },
+    {
+        "name": "Recruit Ashuri and Lilith",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Ashuri",
+            "Lilith"
+        ]
+    }
+]

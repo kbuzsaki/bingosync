@@ -1,0 +1,203 @@
+[
+    {
+        "name": "Berry Juice",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "shuck"
+        ]
+    },
+    {
+        "name": "Call a Black Belt",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "call"
+        ]
+    },
+    {
+        "name": "10 Pok\u00e9mon owned",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "TM10 (Hidden Power)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "rage"
+        ]
+    },
+    {
+        "name": "Sandslash or Arbok",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "22"
+        ]
+    },
+    {
+        "name": "TM11 (Sunny Day)",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "rocket"
+        ]
+    },
+    {
+        "name": "TM05 (Roar)",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "Gligar, Delibird, or Farfetch'd",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "birds2"
+        ]
+    },
+    {
+        "name": "Receive Elixer from Fishing Guru",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "karp"
+        ]
+    },
+    {
+        "name": "Nidoking or Nidoqueen",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "3 level 30 Pok\u00e9mon",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "tin"
+        ]
+    },
+    {
+        "name": "Defeat all 4 trainers in National Park",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "park"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a Ghost type move",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "lick"
+        ]
+    },
+    {
+        "name": "Graveler or Haunter",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "trade"
+        ]
+    },
+    {
+        "name": "Mankey or Meowth",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "28"
+        ]
+    },
+    {
+        "name": "TM50 (Nightmare)",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "thirty"
+        ]
+    },
+    {
+        "name": "Dunsparce, Smeargle, or Aipom",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "weird"
+        ]
+    },
+    {
+        "name": "Suicune, Raikou, or Entei",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "gen2legends"
+        ]
+    },
+    {
+        "name": "Starmie or Cloyster",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "King's Rock",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "slow"
+        ]
+    },
+    {
+        "name": "Radio Card",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "radio"
+        ]
+    },
+    {
+        "name": "A shiny Pok\u00e9mon",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "waters"
+        ]
+    },
+    {
+        "name": "Don't heal at Pok\u00e9mon Centers",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "heal",
+            "instant"
+        ]
+    },
+    {
+        "name": "Own 10 different Water type Pok\u00e9mon",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Mantine or Skarmory",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "exclusives"
+        ]
+    }
+]

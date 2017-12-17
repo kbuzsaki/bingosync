@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Buy all 3 Game Corner Pok\u00e9mon",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "goldenrod",
+            "money",
+            "coin"
+        ]
+    },
+    {
+        "name": "Mewtwo, Mew, or Celebi",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "trio"
+        ]
+    },
+    {
+        "name": "TM34 (Swagger)",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "tms",
+            "randomtm"
+        ]
+    },
+    {
+        "name": "Everstone or Gold Berry",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "place"
+        ]
+    },
+    {
+        "name": "Defeat a Legendary Pok\u00e9mon",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "legendary"
+        ]
+    },
+    {
+        "name": "Weepinbell or Gloom",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "21"
+        ]
+    },
+    {
+        "name": "Give a Pok\u00e9mon a haircut",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "snip"
+        ]
+    },
+    {
+        "name": "Call a Black Belt",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "blackthorn"
+        ]
+    },
+    {
+        "name": "Yanma or Piloswine",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "duo"
+        ]
+    },
+    {
+        "name": "A shiny Pok\u00e9mon",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "lake"
+        ]
+    },
+    {
+        "name": "Electabuzz, Jynx, or Magmar",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "blessed"
+        ]
+    },
+    {
+        "name": "Hypno or Dugtrio",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "26"
+        ]
+    },
+    {
+        "name": "Bayleef, Quilava, or Croconaw",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "starters"
+        ]
+    },
+    {
+        "name": "Sunflora or Exeggutor",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "stone"
+        ]
+    },
+    {
+        "name": "6 Badges",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "glacier"
+        ]
+    },
+    {
+        "name": "Defeat all 4 trainers in National Park",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "trainers"
+        ]
+    },
+    {
+        "name": "Catch a Pok\u00e9mon in Lugia's room",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "lugia"
+        ]
+    },
+    {
+        "name": "20+ Pok\u00e9mon owned",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Golbat, Koffing, or Grimer",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "rocket"
+        ]
+    },
+    {
+        "name": "7 different types of Berry",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "berry"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with a non-HM Accuracy reducing move",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "Burn, Paralyze, or Poison Sudowoodo",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "tree"
+        ]
+    },
+    {
+        "name": "A Pok\u00e9mon with 4 moves sharing its type(s)",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "movetype"
+        ]
+    },
+    {
+        "name": "Suicune, Raikou, or Entei",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "beasts"
+        ]
+    },
+    {
+        "name": "Miltank or Tauros",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "duo"
+        ]
+    }
+]

@@ -1,0 +1,204 @@
+[
+    {
+        "name": "Seadra",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Defeat all 7 trainers on Route 123",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "trainer"
+        ]
+    },
+    {
+        "name": "Evolve 5 different Pok\u00e9mon",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "hm",
+            "instant"
+        ]
+    },
+    {
+        "name": "Trade with an NPC",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "trade"
+        ]
+    },
+    {
+        "name": "Coin Case",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "Sell a Rare Candy",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "A Pokemon with a stat related ability",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "name": "Put a Pokeblock into a Safari Zone Container",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "pokeblock"
+        ]
+    },
+    {
+        "name": "Vulpix",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Do not use any TMs",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "tm",
+            "instant"
+        ]
+    },
+    {
+        "name": "20 Pokemon owned",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "dex"
+        ]
+    },
+    {
+        "name": "Pokemon with an evasion boosting move",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "move"
+        ]
+    },
+    {
+        "name": "Volbeat or Illumise",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "pkmnpair"
+        ]
+    },
+    {
+        "name": "Defeat Winstrate Family",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "trainer"
+        ]
+    },
+    {
+        "name": "Two different non-key exchangeable items",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "multiitem"
+        ]
+    },
+    {
+        "name": "7 Different Berries",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "multiitem"
+        ]
+    },
+    {
+        "name": "All badges",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "badge"
+        ]
+    },
+    {
+        "name": "Shuppet or Duskull",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "pkmn"
+        ]
+    },
+    {
+        "name": "Exp Share",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "item"
+        ]
+    },
+    {
+        "name": "A Pokemon with a weather related ability",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "name": "Pearl or Big Pearl",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "itempair"
+        ]
+    },
+    {
+        "name": "Full Daycare",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "egg"
+        ]
+    },
+    {
+        "name": "6 different water type Pokemon",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "dex"
+        ]
+    },
+    {
+        "name": "All rods",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "rods"
+        ]
+    },
+    {
+        "name": "HM02 (Fly)",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "hm"
+        ]
+    }
+]

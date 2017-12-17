@@ -1,0 +1,209 @@
+[
+    {
+        "name": "Summon a Gossip Stone",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Harp"
+        ]
+    },
+    {
+        "name": "15 Goddess Cubes",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Cubes"
+        ]
+    },
+    {
+        "name": "30 Bombs",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Ammo"
+        ]
+    },
+    {
+        "name": "500 Rupees",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Rupees"
+        ]
+    },
+    {
+        "name": "Bottled Water",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Bottles"
+        ]
+    },
+    {
+        "name": "Eldin Heart Piece",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Hearts",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "Complete a ringer skydive",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Sky"
+        ]
+    },
+    {
+        "name": "Tough Beetle",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Upgrade"
+        ]
+    },
+    {
+        "name": "Fortified Shield",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Shields"
+        ]
+    },
+    {
+        "name": "25 Gratitude Crystals",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Crystals"
+        ]
+    },
+    {
+        "name": "Quick Beetle",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Upgrade"
+        ]
+    },
+    {
+        "name": "Destroy all of Scaldera's Rocks",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Earth"
+        ]
+    },
+    {
+        "name": "15 Gratitude Crystals",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Crystals"
+        ]
+    },
+    {
+        "name": "Sleep in Zelda's Bed",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Skyloft",
+            "Sailcloth"
+        ]
+    },
+    {
+        "name": "Temple of Time Bird Statue",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Statues",
+            "Harp"
+        ]
+    },
+    {
+        "name": "10 Blessed Butterflies",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Bugs"
+        ]
+    },
+    {
+        "name": "Air Potion",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Potions",
+            "Scale",
+            "BiT"
+        ]
+    },
+    {
+        "name": "Obtain a Recovery Heart",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Misc"
+        ]
+    },
+    {
+        "name": "Treasure Medal",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Medals"
+        ]
+    },
+    {
+        "name": "Skyview Dungeon Map",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Map",
+            "Skyview"
+        ]
+    },
+    {
+        "name": "Fairy in a Bottle",
+        "difficulty": 12,
+        "synergy": 3,
+        "types": [
+            "Bottles"
+        ]
+    },
+    {
+        "name": "10 Woodland Rhino Beetles",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Bugs"
+        ]
+    },
+    {
+        "name": "Floria Waterfall Bird Statue",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Faron"
+        ]
+    },
+    {
+        "name": "40 Gratitude Crystals",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Crystals",
+            "Imp"
+        ]
+    },
+    {
+        "name": "3 Goddess Plumes",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Treasures"
+        ]
+    }
+]

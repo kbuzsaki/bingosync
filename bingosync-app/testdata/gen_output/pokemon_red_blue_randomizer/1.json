@@ -1,0 +1,133 @@
+[
+    {
+        "name": "Cubone or Marowak",
+        "difficulty": 20,
+        "synergy": 0
+    },
+    {
+        "name": "Mr. Mime",
+        "difficulty": 22,
+        "synergy": 0
+    },
+    {
+        "name": "Collect 4 Gift Pokemon",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "6 Different Pokemon not sharing any types",
+        "difficulty": 11,
+        "synergy": 0
+    },
+    {
+        "name": "Pickup and keep an item that contains the word Max",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "Get a Pokemon in Silph Co.",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with 4 damage dealing physical moves",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Catch a Pokemon while Surfing",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "$75,000",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "money"
+        ]
+    },
+    {
+        "name": "Finish inside cut bush",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Mew",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "A Pokemon with exactly Height of 5'11\" (1.8m)",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Catch 3 different Safari Pokemon",
+        "difficulty": 12,
+        "synergy": 0
+    },
+    {
+        "name": "Any Pokemon with a high critical hit move",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "3 different Pokemon without an evolution",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "no_evolution"
+        ]
+    },
+    {
+        "name": "Defeat all 12 trainers in Mt Moon",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "TM41",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "Use Pokeflute to wake up in battle",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Finish on the SS Anne",
+        "difficulty": 3,
+        "synergy": 0
+    },
+    {
+        "name": "Bulbasaur, Squirtle, or Charmander",
+        "difficulty": 15,
+        "synergy": 0
+    },
+    {
+        "name": "Defeat Viridian Rival",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "Faint a Chansey",
+        "difficulty": 13,
+        "synergy": 0
+    },
+    {
+        "name": "PP Healing Item",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Fill a PC Box",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "3 Pokemon with different status ailments",
+        "difficulty": 24,
+        "synergy": 0
+    }
+]

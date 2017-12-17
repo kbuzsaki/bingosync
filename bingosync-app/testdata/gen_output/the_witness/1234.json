@@ -1,0 +1,139 @@
+[
+    {
+        "name": "Tractor EP",
+        "difficulty": 2,
+        "synergy": 0
+    },
+    {
+        "name": "Any 4 Straight Line EPs",
+        "difficulty": 21,
+        "synergy": 0
+    },
+    {
+        "name": "Symmetry Laser",
+        "difficulty": 14,
+        "synergy": 0
+    },
+    {
+        "name": "All 5 Keep Walk-On EPs",
+        "difficulty": 18,
+        "synergy": 0
+    },
+    {
+        "name": "Town Red Hexagonal Panel",
+        "difficulty": 10,
+        "synergy": 0
+    },
+    {
+        "name": "Boathouse Claw Ramp EP",
+        "difficulty": 19,
+        "synergy": 0
+    },
+    {
+        "name": "All 6 Monastery Facade EPs",
+        "difficulty": 8,
+        "synergy": 0
+    },
+    {
+        "name": "Both Jungle Bamboo Sky EPs",
+        "difficulty": 5,
+        "synergy": 0
+    },
+    {
+        "name": "Any 3 Boat EPs",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "boat_ep"
+        ]
+    },
+    {
+        "name": "Mountaintop River EP",
+        "difficulty": 11,
+        "synergy": 0
+    },
+    {
+        "name": "Treehouse Left Orange Bridge",
+        "difficulty": 25,
+        "synergy": 0
+    },
+    {
+        "name": "Desert Flood Room EP",
+        "difficulty": 12,
+        "synergy": 0
+    },
+    {
+        "name": "Bunker Doorway EP",
+        "difficulty": 16,
+        "synergy": 0
+    },
+    {
+        "name": "Boathouse Claw Panel",
+        "difficulty": 9,
+        "synergy": 0
+    },
+    {
+        "name": "Town Rooftop Discarded Panel",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "discard"
+        ]
+    },
+    {
+        "name": "Desert Shoreline EP",
+        "difficulty": 6,
+        "synergy": 0
+    },
+    {
+        "name": "Mill Rooftop Vent EP",
+        "difficulty": 4,
+        "synergy": 0
+    },
+    {
+        "name": "Swamp Yellow and Orange Underwater Line EPs",
+        "difficulty": 23,
+        "synergy": 0
+    },
+    {
+        "name": "All 3 Shipwreck Circle EPs",
+        "difficulty": 15,
+        "synergy": 0
+    },
+    {
+        "name": "Both Swamp Red Island Panels",
+        "difficulty": 17,
+        "synergy": 0
+    },
+    {
+        "name": "Any 2 Discarded Panels",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "discard"
+        ]
+    },
+    {
+        "name": "Boat Clockwise Shipwreck Underside EP",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "boat_ep"
+        ]
+    },
+    {
+        "name": "Both BBC Video EPs",
+        "difficulty": 7,
+        "synergy": 0
+    },
+    {
+        "name": "Tutorial Floor Panel",
+        "difficulty": 1,
+        "synergy": 0
+    },
+    {
+        "name": "Swamp Red Underwater Panels",
+        "difficulty": 24,
+        "synergy": 0
+    }
+]

@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Cosmic Wall M3",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "cosmicwall"
+        ]
+    },
+    {
+        "name": "Game Over during King Boom Boo",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "gameover"
+        ]
+    },
+    {
+        "name": "Security Hall M3 B-Rank",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "securityhall",
+            "brank"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Radical Highway and finish",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Wild Canyon and finish",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "wildcanyon"
+        ]
+    },
+    {
+        "name": "Egg Quarters M3",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "Wild Canyon M4",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "wildcanyon"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Eternal Engine and finish",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "eternalengine"
+        ]
+    },
+    {
+        "name": "Death Chamber M4",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "deathchamber"
+        ]
+    },
+    {
+        "name": "Pumpkin Hill M4 A-Rank",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "pumpkinhill",
+            "arank"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in White Jungle and finish",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "whitejungle"
+        ]
+    },
+    {
+        "name": "Green Forest M5",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "greenforest"
+        ]
+    },
+    {
+        "name": "Rouge's Mystic Melody",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Sand Ocean and finish",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Meteor Herd M3",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "meteorherd"
+        ]
+    },
+    {
+        "name": "City Escape M4",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "cityescape"
+        ]
+    },
+    {
+        "name": "60 Emblems (Team Combined)",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "emblems"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Pyramid Cave and finish",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "pyramidcave"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "pumpkinhill"
+        ]
+    },
+    {
+        "name": "Green Forest M2",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "greenforest"
+        ]
+    },
+    {
+        "name": "Sand Ocean M3",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "City Escape M5 A-Rank",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "cityescape",
+            "arank"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Prison Lane and finish",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "prisonlane"
+        ]
+    },
+    {
+        "name": "Complete Crazy Gadget M1 with 100+ Rings",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "crazygadget"
+        ]
+    },
+    {
+        "name": "Complete Mad Space M1 with 100+ Rings",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "madspace"
+        ]
+    }
+]

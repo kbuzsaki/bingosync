@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Tubular",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "tubular"
+        ]
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Donut Plains)",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Defeat 6/7 Koopa Kids",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "8/9 bonus rooms",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "NO YOSHI",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "yoshi1",
+            "yoshi2"
+        ]
+    },
+    {
+        "name": "6/10 ghost house exits",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Forest Of Illusion 4 - don't get Lakitu 1-up; no flying",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Vanilla Dome 4 - small mario no yoshi",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Chocolate Island)",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Open star road from Valley Of Bowser",
+        "difficulty": 2,
+        "synergy": 3,
+        "types": [
+            "yoshi1"
+        ]
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Forest Of Illusion)",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Open Chocolate Island 3 useless exit",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "10/18 keyhole exits",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Perfect matching game (8-up)",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Valley Of Bowser 3 - small mario no yoshi",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Butter Bridge 1 - get 4 lives from turtles",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Vanilla Dome 2 normal exit - small mario no star",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "5 yoshi coins on 2 stages (Star World)",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "All 14 exits in Forest Of Illusion",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "4 star-block 1-ups",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "6 swimming stages",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "7 moons",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "cape3"
+        ]
+    },
+    {
+        "name": "Yellow Switch - get 300 coins",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "Castle 6 - small mario",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": []
+    },
+    {
+        "name": "50 coins in 5 stages",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": []
+    }
+]

@@ -1,0 +1,220 @@
+[
+    {
+        "name": "45 Koroks",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "Korok"
+        ]
+    },
+    {
+        "name": "15 Lanayru Koroks",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "Korok. Lanayru"
+        ]
+    },
+    {
+        "name": "'The Bird in the Mountains' Shrine Quest",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Shrine Quest",
+            "Hebra",
+            "Cold Resistance"
+        ]
+    },
+    {
+        "name": "Any 'Zora' Equipment item",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "Hylian Hood",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "Clothes",
+            "Hylian Gear",
+            "Rupee"
+        ]
+    },
+    {
+        "name": "A Modest Test of Strength Shrine",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Guardian"
+        ]
+    },
+    {
+        "name": "Give Beedle a Beetle",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "Horse"
+        ]
+    },
+    {
+        "name": "Spring-Loaded Hammer",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "Equipment",
+            "Kilton"
+        ]
+    },
+    {
+        "name": "15 Wasteland Koroks",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Wasteland"
+        ]
+    },
+    {
+        "name": "5 Creatures in Compendium",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "Camera",
+            "Compendium"
+        ]
+    },
+    {
+        "name": "10 Monsters in Compendium",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "Camera",
+            "Compendium"
+        ]
+    },
+    {
+        "name": "Activate 4 Towers",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "Tower"
+        ]
+    },
+    {
+        "name": "Fruitcake",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "Cooking"
+        ]
+    },
+    {
+        "name": "Kill a fire-typed Wizzrobe",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "Wizzrobe"
+        ]
+    },
+    {
+        "name": "14 Side Quests",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "Side Quest"
+        ]
+    },
+    {
+        "name": "Any Stalfos 'Arm' Equipment item",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "Equipment"
+        ]
+    },
+    {
+        "name": "'The Undefeated Champ' Shrine Quest",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Shrine Quest",
+            "Wastelands"
+        ]
+    },
+    {
+        "name": "Activate 5 Towers",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "Tower"
+        ]
+    },
+    {
+        "name": "Kill a Stone Talus (Rare)",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "Rupee",
+            "Miniboss",
+            "Talus"
+        ]
+    },
+    {
+        "name": "Apple Pie",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "Cooking",
+            "Tabantha"
+        ]
+    },
+    {
+        "name": "10 Side Quests",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "Side Quest"
+        ]
+    },
+    {
+        "name": "6 Tabantha Koroks",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "Korok",
+            "Tabantha"
+        ]
+    },
+    {
+        "name": "Kill a Wizzrobe of any kind",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "Wizzrobe"
+        ]
+    },
+    {
+        "name": "'Divine Beast Vah Rudania' Main Quest",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "Divine Beast",
+            "Eldin"
+        ]
+    },
+    {
+        "name": "6 Shrine Quests",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "Shrine",
+            "Shrine Quest"
+        ]
+    }
+]

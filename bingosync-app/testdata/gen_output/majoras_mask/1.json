@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Beaver HP",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "hook",
+            "bottle"
+        ]
+    },
+    {
+        "name": "Open 5 GBT Chests",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "dungeon",
+            "gbt",
+            "gsht",
+            "gistt"
+        ]
+    },
+    {
+        "name": "WFT Boss Key",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "wft",
+            "bosskey"
+        ]
+    },
+    {
+        "name": "Pinnacle Rock HP",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "picto",
+            "fortress"
+        ]
+    },
+    {
+        "name": "Path to Snowhead HP",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "heart"
+        ]
+    },
+    {
+        "name": "Powder Keg",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "lens"
+        ]
+    },
+    {
+        "name": "Razor Sword",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "sword"
+        ]
+    },
+    {
+        "name": "12 Item Slots",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "slot",
+            "bottle"
+        ]
+    },
+    {
+        "name": "30 Total Stray Fairies",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "dungeon",
+            "fairy"
+        ]
+    },
+    {
+        "name": "Keaton Quiz HP",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "delivery"
+        ]
+    },
+    {
+        "name": "Gyorg's Remains",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "dungeon",
+            "gbt",
+            "remains",
+            "gsht",
+            "gistt"
+        ]
+    },
+    {
+        "name": "10 WFT Fairies",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "fairy",
+            "wft"
+        ]
+    },
+    {
+        "name": "Circus Leader's Mask",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "mask",
+            "notebook"
+        ]
+    },
+    {
+        "name": "Rock Sirloin above head",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "lens",
+            "end"
+        ]
+    },
+    {
+        "name": "3 Bottom Row Songs",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "song"
+        ]
+    },
+    {
+        "name": "Open 2 Graves",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "grave"
+        ]
+    },
+    {
+        "name": "4 Real Bottles (no dupe)",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "bottle"
+        ]
+    },
+    {
+        "name": "Clear 3 Chest Icons on Mountain Village Maps",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "sht",
+            "remains",
+            "map",
+            "gsht"
+        ]
+    },
+    {
+        "name": "Deku Playground HP",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "heart"
+        ]
+    },
+    {
+        "name": "Column of 4 Masks",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "mask"
+        ]
+    },
+    {
+        "name": "Enter 4th Day",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "end"
+        ]
+    },
+    {
+        "name": "Garo Mask",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "ranch",
+            "epona"
+        ]
+    },
+    {
+        "name": "Open Chest of Magic Beans",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "bean",
+            "stt",
+            "istt",
+            "gistt"
+        ]
+    },
+    {
+        "name": "10 SHT Fairies",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "sht",
+            "gsht"
+        ]
+    },
+    {
+        "name": "2 Temple Maps, Compasses, and Boss Keys",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "mc",
+            "bosskey"
+        ]
+    }
+]

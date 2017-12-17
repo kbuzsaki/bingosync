@@ -1,0 +1,206 @@
+[
+    {
+        "name": "Sky Rail M3",
+        "difficulty": 19,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "Game Over during Flying Dog",
+        "difficulty": 12,
+        "synergy": 0,
+        "types": [
+            "gameover"
+        ]
+    },
+    {
+        "name": "Rename a Chao after a person you're racing",
+        "difficulty": 1,
+        "synergy": 0,
+        "types": [
+            "chaogarden",
+            "multistory"
+        ]
+    },
+    {
+        "name": "Iron Gate M3",
+        "difficulty": 10,
+        "synergy": 0,
+        "types": [
+            "irongate"
+        ]
+    },
+    {
+        "name": "Route 280 M5 A-Rank",
+        "difficulty": 23,
+        "synergy": 0,
+        "types": [
+            "route280",
+            "arank"
+        ]
+    },
+    {
+        "name": "Rouge's Mystic Melody",
+        "difficulty": 6,
+        "synergy": 0,
+        "types": [
+            "drylagoon"
+        ]
+    },
+    {
+        "name": "Final Chase M2",
+        "difficulty": 25,
+        "synergy": 0,
+        "types": [
+            "finalchase"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Sky Rail and finish",
+        "difficulty": 18,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "Weapons Bed M5",
+        "difficulty": 14,
+        "synergy": 0,
+        "types": [
+            "weaponsbed"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Sand Ocean and finish",
+        "difficulty": 2,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Lost Colony M4",
+        "difficulty": 13,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    },
+    {
+        "name": "Dry Lagoon M5 A-Rank",
+        "difficulty": 4,
+        "synergy": 0,
+        "types": [
+            "drylagoon",
+            "arank"
+        ]
+    },
+    {
+        "name": "Complete Egg Quarters M1 with a Magnetic Shield",
+        "difficulty": 7,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "Mad Space M3",
+        "difficulty": 21,
+        "synergy": 0,
+        "types": [
+            "madspace"
+        ]
+    },
+    {
+        "name": "Sky Rail M4",
+        "difficulty": 20,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "Destroy the Gold Beetle in 9 different stages",
+        "difficulty": 22,
+        "synergy": 0,
+        "types": [
+            "goldbeetle",
+            "multistory"
+        ]
+    },
+    {
+        "name": "Lost Colony M5",
+        "difficulty": 16,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    },
+    {
+        "name": "5 hidden Chao animals in White Jungle and finish",
+        "difficulty": 15,
+        "synergy": 0,
+        "types": [
+            "whitejungle"
+        ]
+    },
+    {
+        "name": "2 Chao Boxes in Sand Ocean and finish",
+        "difficulty": 3,
+        "synergy": 0,
+        "types": [
+            "sandocean"
+        ]
+    },
+    {
+        "name": "Radical Highway M5",
+        "difficulty": 9,
+        "synergy": 0,
+        "types": [
+            "radicalhighway"
+        ]
+    },
+    {
+        "name": "Unlock Chao Garden for all characters",
+        "difficulty": 5,
+        "synergy": 0,
+        "types": [
+            "chaogarden"
+        ]
+    },
+    {
+        "name": "Egg Quarters M4",
+        "difficulty": 8,
+        "synergy": 0,
+        "types": [
+            "eggquarters"
+        ]
+    },
+    {
+        "name": "Cosmic Wall M3",
+        "difficulty": 24,
+        "synergy": 0,
+        "types": [
+            "cosmicwall"
+        ]
+    },
+    {
+        "name": "Complete Sky Rail M1 with 100+ Rings",
+        "difficulty": 17,
+        "synergy": 0,
+        "types": [
+            "skyrail"
+        ]
+    },
+    {
+        "name": "Lost Colony M3",
+        "difficulty": 11,
+        "synergy": 0,
+        "types": [
+            "lostcolony"
+        ]
+    }
+]
