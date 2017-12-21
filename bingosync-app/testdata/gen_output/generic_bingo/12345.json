@@ -1,0 +1,207 @@
+[
+    {
+        "difficulty": 19,
+        "name": "Put on a disguise",
+        "synergy": 0,
+        "types": [
+            "guard"
+        ]
+    },
+    {
+        "difficulty": 12,
+        "name": "Enter outer space",
+        "synergy": 0,
+        "types": [
+            "area"
+        ]
+    },
+    {
+        "difficulty": 1,
+        "name": "Defeat an enemy using only punches",
+        "synergy": 0,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "difficulty": 10,
+        "name": "Armor/Defense upgrade",
+        "synergy": 0,
+        "types": [
+            "hp"
+        ]
+    },
+    {
+        "difficulty": 23,
+        "name": "Turn the lights on",
+        "synergy": 0,
+        "types": [
+            "puzzle"
+        ]
+    },
+    {
+        "difficulty": 6,
+        "name": "Talk to a scientist",
+        "synergy": 0,
+        "types": [
+            "sci"
+        ]
+    },
+    {
+        "difficulty": 25,
+        "name": "Beat a game",
+        "synergy": 0,
+        "types": [
+            "boss"
+        ]
+    },
+    {
+        "difficulty": 18,
+        "name": "Stun an enemy",
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "difficulty": 14,
+        "name": "Ammo upgrade",
+        "synergy": 0,
+        "types": [
+            "weapon"
+        ]
+    },
+    {
+        "difficulty": 2,
+        "name": "Obtain a potion",
+        "synergy": 0,
+        "types": [
+            "money",
+            "heal"
+        ]
+    },
+    {
+        "difficulty": 13,
+        "name": "Learn an ability involving water",
+        "synergy": 0,
+        "types": [
+            "ability",
+            "water"
+        ]
+    },
+    {
+        "difficulty": 4,
+        "name": "Collect 100 yellow/golden items",
+        "synergy": 0,
+        "types": [
+            "money"
+        ]
+    },
+    {
+        "difficulty": 7,
+        "name": "Enter a snowy/icy area",
+        "synergy": 0,
+        "types": [
+            "snow",
+            "ice",
+            "area"
+        ]
+    },
+    {
+        "difficulty": 21,
+        "name": "Manipulate time",
+        "synergy": 0,
+        "types": [
+            "puzzle"
+        ]
+    },
+    {
+        "difficulty": 20,
+        "name": "Ride a train",
+        "synergy": 0,
+        "types": [
+            "vehicle"
+        ]
+    },
+    {
+        "difficulty": 22,
+        "name": "Kill a vampire",
+        "synergy": 0,
+        "types": [
+            "ghost",
+            "boss"
+        ]
+    },
+    {
+        "difficulty": 16,
+        "name": "Rescue an NPC",
+        "synergy": 0,
+        "types": [
+            "save"
+        ]
+    },
+    {
+        "difficulty": 15,
+        "name": "Complete a stealth section",
+        "synergy": 0,
+        "types": [
+            "guard"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "name": "Complete an autoscroll section",
+        "synergy": 0,
+        "types": [
+            "level"
+        ]
+    },
+    {
+        "difficulty": 9,
+        "name": "Enter strong wind currents",
+        "synergy": 0,
+        "types": [
+            "wind"
+        ]
+    },
+    {
+        "difficulty": 5,
+        "name": "Level up to 4",
+        "synergy": 0,
+        "types": [
+            "hp"
+        ]
+    },
+    {
+        "difficulty": 8,
+        "name": "Weapon upgrade",
+        "synergy": 0,
+        "types": [
+            "weapon"
+        ]
+    },
+    {
+        "difficulty": 24,
+        "name": "Defeat an enemy dragon",
+        "synergy": 0,
+        "types": [
+            "boss"
+        ]
+    },
+    {
+        "difficulty": 17,
+        "name": "Ride a boat/raft",
+        "synergy": 0,
+        "types": [
+            "vehicle"
+        ]
+    },
+    {
+        "difficulty": 11,
+        "name": "Play an instrument/song",
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    }
+]

@@ -273,6 +273,7 @@ class GameType(Enum):
     super_mario_odyssey_short = 45
     super_mario_odyssey = 46
     rabi_ribi = 47
+    generic_bingo = 48
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -350,6 +351,7 @@ GAME_TYPE_NAMES = {
     GameType.super_mario_odyssey_short: "Super Mario Odyssey - Short",
     GameType.super_mario_odyssey: "Super Mario Odyssey",
     GameType.rabi_ribi: "Rabi-Ribi",
+    GameType.generic_bingo: "Generic / Multi-Game",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -400,6 +402,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.super_mario_odyssey_short: "SMO Short",
     GameType.super_mario_odyssey: "SMO",
     GameType.rabi_ribi: "Rabi-Ribi",
+    GameType.generic_bingo: "Generic",
 }
 
 class LockoutMode(Enum):

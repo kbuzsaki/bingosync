@@ -1,0 +1,205 @@
+[
+    {
+        "difficulty": 2,
+        "name": "Kill a knight",
+        "synergy": 0,
+        "types": [
+            "future"
+        ]
+    },
+    {
+        "difficulty": 21,
+        "name": "Change the water level",
+        "synergy": 0,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "difficulty": 14,
+        "name": "Learn a password",
+        "synergy": 0,
+        "types": [
+            "guard"
+        ]
+    },
+    {
+        "difficulty": 18,
+        "name": "Stun an enemy",
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "difficulty": 10,
+        "name": "Enter a volcano",
+        "synergy": 0,
+        "types": [
+            "fire",
+            "area"
+        ]
+    },
+    {
+        "difficulty": 19,
+        "name": "Put on a disguise",
+        "synergy": 0,
+        "types": [
+            "guard"
+        ]
+    },
+    {
+        "difficulty": 8,
+        "name": "Win a race",
+        "synergy": 0,
+        "types": [
+            "race"
+        ]
+    },
+    {
+        "difficulty": 5,
+        "name": "Enter a forest/jungle",
+        "synergy": 0,
+        "types": [
+            "weapon",
+            "area"
+        ]
+    },
+    {
+        "difficulty": 22,
+        "name": "Kill a vampire",
+        "synergy": 0,
+        "types": [
+            "ghost",
+            "boss"
+        ]
+    },
+    {
+        "difficulty": 11,
+        "name": "Play an instrument/song",
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "difficulty": 25,
+        "name": "Win a tournament",
+        "synergy": 0,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "difficulty": 12,
+        "name": "Ride an electric elevator",
+        "synergy": 0,
+        "types": [
+            "vehicle"
+        ]
+    },
+    {
+        "difficulty": 16,
+        "name": "Rescue an NPC",
+        "synergy": 0,
+        "types": [
+            "save"
+        ]
+    },
+    {
+        "difficulty": 9,
+        "name": "Enter strong wind currents",
+        "synergy": 0,
+        "types": [
+            "wind"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "name": "Complete an autoscroll section",
+        "synergy": 0,
+        "types": [
+            "level"
+        ]
+    },
+    {
+        "difficulty": 6,
+        "name": "Talk to a King or Princess",
+        "synergy": 0,
+        "types": [
+            "castle"
+        ]
+    },
+    {
+        "difficulty": 4,
+        "name": "Complete a bonus/special stage",
+        "synergy": 0,
+        "types": [
+            "level"
+        ]
+    },
+    {
+        "difficulty": 23,
+        "name": "Turn the lights on",
+        "synergy": 0,
+        "types": [
+            "puzzle"
+        ]
+    },
+    {
+        "difficulty": 15,
+        "name": "Complete a stealth section",
+        "synergy": 0,
+        "types": [
+            "guard"
+        ]
+    },
+    {
+        "difficulty": 17,
+        "name": "Ride a boat/raft",
+        "synergy": 0,
+        "types": [
+            "vehicle"
+        ]
+    },
+    {
+        "difficulty": 13,
+        "name": "Read a book",
+        "synergy": 0,
+        "types": [
+            "lerning"
+        ]
+    },
+    {
+        "difficulty": 20,
+        "name": "Obtain ability to warp",
+        "synergy": 0,
+        "types": [
+            "ability"
+        ]
+    },
+    {
+        "difficulty": 7,
+        "name": "Heal an ally",
+        "synergy": 0,
+        "types": [
+            "heal"
+        ]
+    },
+    {
+        "difficulty": 1,
+        "name": "Defeat an enemy using only punches",
+        "synergy": 0,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "difficulty": 24,
+        "name": "Defeat an enemy dragon",
+        "synergy": 0,
+        "types": [
+            "boss"
+        ]
+    }
+]

@@ -75,6 +75,7 @@ CACHED_FILES_BY_NAME = {
     "super_mario_odyssey_short": "generators/super_mario_odyssey_short_generator.js",
     "super_mario_odyssey": "generators/super_mario_odyssey_generator.js",
     "rabi_ribi": "generators/rabi_ribi_generator.js",
+    "generic_bingo": "generators/generic_bingo_generator.js",
 }
 
 def load_cached_generator_source(game_name):
