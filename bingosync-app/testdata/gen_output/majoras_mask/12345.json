@@ -1,31 +1,31 @@
 [
     {
-        "name": "4 Real Bottles (no dupe)",
         "difficulty": 19,
+        "name": "4 Real Bottles (no dupe)",
         "synergy": 0,
         "types": [
             "bottle"
         ]
     },
     {
-        "name": "1000 Rupees in Bank",
         "difficulty": 12,
+        "name": "1000 Rupees in Bank",
         "synergy": 0,
         "types": [
             "wallet"
         ]
     },
     {
-        "name": "Blast Mask",
         "difficulty": 1,
+        "name": "Blast Mask",
         "synergy": 0,
         "types": [
             "allnight"
         ]
     },
     {
-        "name": "Press 3 STT Yellow Floor Switches",
         "difficulty": 10,
+        "name": "Press 3 STT Yellow Floor Switches",
         "synergy": 0,
         "types": [
             "stt",
@@ -34,24 +34,24 @@
         ]
     },
     {
-        "name": "3 Boss Keys",
         "difficulty": 23,
+        "name": "3 Boss Keys",
         "synergy": 0,
         "types": [
             "bosskey"
         ]
     },
     {
-        "name": "Razor Sword",
         "difficulty": 6,
+        "name": "Razor Sword",
         "synergy": 0,
         "types": [
             "sword"
         ]
     },
     {
-        "name": "Great Fairy's Sword",
         "difficulty": 25,
+        "name": "Great Fairy's Sword",
         "synergy": 0,
         "types": [
             "gfs",
@@ -60,8 +60,8 @@
         ]
     },
     {
-        "name": "Beaver Bottle",
         "difficulty": 18,
+        "name": "Beaver Bottle",
         "synergy": 0,
         "types": [
             "hook",
@@ -69,24 +69,24 @@
         ]
     },
     {
-        "name": "Open 2 Well Chests",
         "difficulty": 14,
+        "name": "Open 2 Well Chests",
         "synergy": 0,
         "types": [
             "mirror"
         ]
     },
     {
-        "name": "Rosa Sister's Happiness Seal",
         "difficulty": 2,
+        "name": "Rosa Sister's Happiness Seal",
         "synergy": 0,
         "types": [
             "notebook"
         ]
     },
     {
-        "name": "Kill 3 Dinolfos",
         "difficulty": 13,
+        "name": "Kill 3 Dinolfos",
         "synergy": 0,
         "types": [
             "elemental",
@@ -94,32 +94,32 @@
         ]
     },
     {
-        "name": "Save Sun Mask",
         "difficulty": 4,
+        "name": "Save Sun Mask",
         "synergy": 0,
         "types": [
             "couple"
         ]
     },
     {
-        "name": "Ikana Castle HP",
         "difficulty": 7,
+        "name": "Ikana Castle HP",
         "synergy": 0,
         "types": [
             "castle"
         ]
     },
     {
-        "name": "14 Masks",
         "difficulty": 21,
+        "name": "14 Masks",
         "synergy": 0,
         "types": [
             "mask"
         ]
     },
     {
-        "name": "Hit All 10 Owl Statues",
         "difficulty": 20,
+        "name": "Hit All 10 Owl Statues",
         "synergy": 0,
         "types": [
             "hook",
@@ -127,32 +127,32 @@
         ]
     },
     {
-        "name": "3 Temple Maps and Compasses",
         "difficulty": 22,
+        "name": "3 Temple Maps and Compasses",
         "synergy": 0,
         "types": [
             "mc"
         ]
     },
     {
-        "name": "3 Bottom Row Songs",
         "difficulty": 16,
+        "name": "3 Bottom Row Songs",
         "synergy": 0,
         "types": [
             "song"
         ]
     },
     {
-        "name": "Column of 4 Masks",
         "difficulty": 15,
+        "name": "Column of 4 Masks",
         "synergy": 0,
         "types": [
             "mask"
         ]
     },
     {
-        "name": "20 Magic Beans",
         "difficulty": 3,
+        "name": "20 Magic Beans",
         "synergy": 0,
         "types": [
             "slot",
@@ -160,32 +160,32 @@
         ]
     },
     {
-        "name": "Don Gero's Mask",
         "difficulty": 9,
+        "name": "Don Gero's Mask",
         "synergy": 0,
         "types": [
             "lens"
         ]
     },
     {
-        "name": "Doggy Racetrack HP",
         "difficulty": 5,
+        "name": "Doggy Racetrack HP",
         "synergy": 0,
         "types": [
             "ranch"
         ]
     },
     {
-        "name": "All Maps from Tingle",
         "difficulty": 8,
+        "name": "All Maps from Tingle",
         "synergy": 0,
         "types": [
             "map"
         ]
     },
     {
-        "name": "2 Temple Maps, Compasses, and Boss Keys",
         "difficulty": 24,
+        "name": "2 Temple Maps, Compasses, and Boss Keys",
         "synergy": 0,
         "types": [
             "mc",
@@ -193,8 +193,8 @@
         ]
     },
     {
-        "name": "Mask of Scents",
         "difficulty": 17,
+        "name": "Mask of Scents",
         "synergy": 0,
         "types": [
             "wft",
@@ -202,8 +202,8 @@
         ]
     },
     {
-        "name": "4 Business Scrub HPs",
         "difficulty": 11,
+        "name": "4 Business Scrub HPs",
         "synergy": 0,
         "types": [
             "heart",

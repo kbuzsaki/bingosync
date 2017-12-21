@@ -1,31 +1,31 @@
 [
     {
-        "name": "Visit Crateria-Maridia Elevator",
         "difficulty": 19,
+        "name": "Visit Crateria-Maridia Elevator",
         "synergy": 0,
         "types": [
             "forgottenarea"
         ]
     },
     {
-        "name": "Brinstar Reserve Tank",
         "difficulty": 12,
+        "name": "Brinstar Reserve Tank",
         "synergy": 0,
         "types": [
             "reservetank"
         ]
     },
     {
-        "name": "Defeat Spore Spawn",
         "difficulty": 1,
+        "name": "Defeat Spore Spawn",
         "synergy": 0,
         "types": [
             "sporespawn"
         ]
     },
     {
-        "name": "Collect only 1 of Wave Beam or Charge Beam",
         "difficulty": 10,
+        "name": "Collect only 1 of Wave Beam or Charge Beam",
         "synergy": 0,
         "types": [
             "wavebeam",
@@ -33,24 +33,24 @@
         ]
     },
     {
-        "name": "Collect all 40 Maridia Missiles",
         "difficulty": 23,
+        "name": "Collect all 40 Maridia Missiles",
         "synergy": 0,
         "types": [
             "missile"
         ]
     },
     {
-        "name": "25+ Power Bombs",
         "difficulty": 6,
+        "name": "25+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "Hi-Jump Boots, Speed Booster, and Space Jump",
         "difficulty": 25,
+        "name": "Hi-Jump Boots, Speed Booster, and Space Jump",
         "synergy": 0,
         "types": [
             "hijump",
@@ -59,8 +59,8 @@
         ]
     },
     {
-        "name": "Collect X-Ray Scope and skip Grapple Beam",
         "difficulty": 18,
+        "name": "Collect X-Ray Scope and skip Grapple Beam",
         "synergy": 0,
         "types": [
             "xrayscope",
@@ -68,8 +68,8 @@
         ]
     },
     {
-        "name": "Finish in an Elevator",
         "difficulty": 14,
+        "name": "Finish in an Elevator",
         "synergy": 0,
         "types": [
             "finish",
@@ -77,24 +77,24 @@
         ]
     },
     {
-        "name": "Crateria Map Station",
         "difficulty": 2,
+        "name": "Crateria Map Station",
         "synergy": 0,
         "types": [
             "crateriamap"
         ]
     },
     {
-        "name": "Collect all 60 Brinstar Missiles",
         "difficulty": 13,
+        "name": "Collect all 60 Brinstar Missiles",
         "synergy": 0,
         "types": [
             "missile"
         ]
     },
     {
-        "name": "Both Brinstar Missile Recharge Stations",
         "difficulty": 4,
+        "name": "Both Brinstar Missile Recharge Stations",
         "synergy": 0,
         "types": [
             "missilerecharge",
@@ -102,16 +102,16 @@
         ]
     },
     {
-        "name": "Wave Beam",
         "difficulty": 7,
+        "name": "Wave Beam",
         "synergy": 0,
         "types": [
             "wavebeam"
         ]
     },
     {
-        "name": "Defeat Spore Spawn and Botwoon",
         "difficulty": 21,
+        "name": "Defeat Spore Spawn and Botwoon",
         "synergy": 0,
         "types": [
             "sporespawn",
@@ -119,16 +119,16 @@
         ]
     },
     {
-        "name": "Screw Attack",
         "difficulty": 20,
+        "name": "Screw Attack",
         "synergy": 0,
         "types": [
             "screwattack"
         ]
     },
     {
-        "name": "Collect Springball or defeat Draygon",
         "difficulty": 22,
+        "name": "Collect Springball or defeat Draygon",
         "synergy": 0,
         "types": [
             "springball",
@@ -138,8 +138,8 @@
         ]
     },
     {
-        "name": "Fully explore the Wrecked Ship",
         "difficulty": 16,
+        "name": "Fully explore the Wrecked Ship",
         "synergy": 0,
         "types": [
             "phantoon",
@@ -147,40 +147,40 @@
         ]
     },
     {
-        "name": "Finish near Spazer, Charge Beam, Ice Beam, Wave Beam, or Plasma Beam",
         "difficulty": 15,
+        "name": "Finish near Spazer, Charge Beam, Ice Beam, Wave Beam, or Plasma Beam",
         "synergy": 0,
         "types": [
             "finish"
         ]
     },
     {
-        "name": "4+ Energy Tanks",
         "difficulty": 3,
+        "name": "4+ Energy Tanks",
         "synergy": 0,
         "types": [
             "energytank"
         ]
     },
     {
-        "name": "30+ Power Bombs",
         "difficulty": 9,
+        "name": "30+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "Destroy at least 1 statue",
         "difficulty": 5,
+        "name": "Destroy at least 1 statue",
         "synergy": 0,
         "types": [
             "statueroom"
         ]
     },
     {
-        "name": "Collect Grapple Beam and skip Charge Beam",
         "difficulty": 8,
+        "name": "Collect Grapple Beam and skip Charge Beam",
         "synergy": 0,
         "types": [
             "grapplebeam",
@@ -189,24 +189,24 @@
         ]
     },
     {
-        "name": "35+ Super Missiles",
         "difficulty": 24,
+        "name": "35+ Super Missiles",
         "synergy": 0,
         "types": [
             "supermissile"
         ]
     },
     {
-        "name": "3+ Reserve Tanks",
         "difficulty": 17,
+        "name": "3+ Reserve Tanks",
         "synergy": 0,
         "types": [
             "reservetank"
         ]
     },
     {
-        "name": "Collect both Crateria Energy Tanks",
         "difficulty": 11,
+        "name": "Collect both Crateria Energy Tanks",
         "synergy": 3,
         "types": [
             "energytank"

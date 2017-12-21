@@ -1,938 +1,938 @@
 [
     {
-        "synergy": 1.5,
-        "id": "gerudo-s-card",
-        "time": 11.5,
-        "subtypes": {
-            "hearts": 0.75,
-            "plant2": 0.5,
-            "bosskey": 2.5
-        },
-        "types": {
-            "field": 0.75,
-            "fortress": 2.5,
-            "selfsynergy": 0
-        },
-        "name": "Gerudo's Card",
+        "desiredTime": 9.5,
         "difficulty": 19,
         "goal": {
-            "skill": 0,
-            "jp": "\u30b2\u30eb\u30c9\u306e\u4f1a\u54e1\u8a3c",
+            "difficulty": 23,
             "id": "gerudo-s-card",
+            "jp": "\u30b2\u30eb\u30c9\u306e\u4f1a\u54e1\u8a3c",
+            "name": "Gerudo's Card",
+            "skill": 0,
             "subtypes": {
+                "bosskey": 2.5,
                 "hearts": 0.75,
-                "plant2": 0.5,
-                "bosskey": 2.5
+                "plant2": 0.5
             },
             "time": 11.5,
-            "name": "Gerudo's Card",
-            "difficulty": 23,
             "types": {
                 "field": 0.75,
                 "fortress": 2.5,
                 "selfsynergy": 0
             }
         },
-        "desiredTime": 9.5
+        "id": "gerudo-s-card",
+        "name": "Gerudo's Card",
+        "subtypes": {
+            "bosskey": 2.5,
+            "hearts": 0.75,
+            "plant2": 0.5
+        },
+        "synergy": 1.5,
+        "time": 11.5,
+        "types": {
+            "field": 0.75,
+            "fortress": 2.5,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 3.75,
-        "id": "30-deku-sticks",
-        "types": {
-            "sticks": 100,
-            "dc": 3,
-            "selfsynergy": 0
-        },
-        "time": 5.5,
-        "name": "30 Deku Sticks",
+        "desiredTime": 6,
         "difficulty": 12,
         "goal": {
-            "skill": 0,
-            "jp": "\u30c7\u30af\u306e\u68d230\u672c",
+            "difficulty": 11,
             "id": "30-deku-sticks",
-            "types": {
-                "sticks": 100,
-                "dc": 3,
-                "selfsynergy": 0
-            },
-            "time": 5.5,
+            "jp": "\u30c7\u30af\u306e\u68d230\u672c",
             "name": "30 Deku Sticks",
-            "difficulty": 11
+            "skill": 0,
+            "time": 5.5,
+            "types": {
+                "dc": 3,
+                "selfsynergy": 0,
+                "sticks": 100
+            }
         },
-        "desiredTime": 6
+        "id": "30-deku-sticks",
+        "name": "30 Deku Sticks",
+        "synergy": 3.75,
+        "time": 5.5,
+        "types": {
+            "dc": 3,
+            "selfsynergy": 0,
+            "sticks": 100
+        }
     },
     {
-        "synergy": 2,
-        "id": "red-potion",
-        "types": {
-            "endbottle": -2.5,
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "time": 2.5,
-        "name": "Red Potion",
+        "desiredTime": 0.5,
         "difficulty": 1,
         "goal": {
-            "skill": 0,
-            "jp": "\u8d64\u3044\u30af\u30b9\u30ea",
+            "difficulty": 5,
             "id": "red-potion",
-            "types": {
-                "endbottle": -2.5,
-                "selfsynergy": 0,
-                "bottle": 2
-            },
-            "time": 2.5,
+            "jp": "\u8d64\u3044\u30af\u30b9\u30ea",
             "name": "Red Potion",
-            "difficulty": 5
-        },
-        "desiredTime": 0.5
-    },
-    {
-        "synergy": 0,
-        "id": "all-3-child-lake-hylia-skulltulas",
-        "time": 7,
-        "subtypes": {
-            "plant": 0.5,
-            "wallet": 1.75,
-            "ruto": 2,
-            "plant2": 1.5
-        },
-        "types": {
-            "field": 0.75,
-            "fountain": 0.5,
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "name": "All 3 Child Lake Hylia Skulltulas",
-        "difficulty": 10,
-        "goal": {
             "skill": 0,
-            "jp": "\u30cf\u30a4\u30ea\u30a2\u6e56\u7554\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
-            "id": "all-3-child-lake-hylia-skulltulas",
-            "subtypes": {
-                "plant": 0.5,
-                "wallet": 1.75,
-                "ruto": 2,
-                "plant2": 1.5
-            },
-            "time": 7,
-            "name": "All 3 Child Lake Hylia Skulltulas",
-            "difficulty": 14,
+            "time": 2.5,
             "types": {
-                "field": 0.75,
-                "fountain": 0.5,
-                "selfsynergy": 0,
-                "bottle": 2
-            }
-        },
-        "desiredTime": 5
-    },
-    {
-        "synergy": 0,
-        "id": "plant-7-magic-beans",
-        "types": {
-            "field": 0.75,
-            "beans": 10,
-            "incbeans": 100,
-            "plant": 4.5,
-            "selfsynergy": -2,
-            "plant2": 2
-        },
-        "time": 12.25,
-        "name": "Plant 7 Magic Beans",
-        "difficulty": 23,
-        "goal": {
-            "skill": 0,
-            "jp": "\u9b54\u6cd5\u306e\u8c46\u30927\u30f6\u6240\u306b\u57cb\u3081\u308b",
-            "id": "plant-7-magic-beans",
-            "types": {
-                "field": 0.75,
-                "beans": 10,
-                "incbeans": 100,
-                "plant": 4.5,
-                "selfsynergy": -2,
-                "plant2": 2
-            },
-            "time": 12.25,
-            "name": "Plant 7 Magic Beans",
-            "difficulty": 24
-        },
-        "desiredTime": 11.5
-    },
-    {
-        "synergy": 0.25,
-        "id": "ice-arrows",
-        "time": 4.75,
-        "subtypes": {
-            "hearts": 0.75,
-            "plant2": 0.5,
-            "kd": 2.5,
-            "bosskey": 3.5
-        },
-        "types": {
-            "gtg": 2.5,
-            "field": 0.75,
-            "fortress": 3,
-            "selfsynergy": 0
-        },
-        "name": "Ice Arrows",
-        "difficulty": 6,
-        "goal": {
-            "skill": 0,
-            "jp": "\u6c37\u306e\u77e2",
-            "id": "ice-arrows",
-            "subtypes": {
-                "hearts": 0.75,
-                "plant2": 0.5,
-                "kd": 2.5,
-                "bosskey": 3.5
-            },
-            "time": 4.75,
-            "name": "Ice Arrows",
-            "difficulty": 9,
-            "types": {
-                "gtg": 2.5,
-                "field": 0.75,
-                "fortress": 3,
+                "bottle": 2,
+                "endbottle": -2.5,
                 "selfsynergy": 0
             }
         },
-        "desiredTime": 3
+        "id": "red-potion",
+        "name": "Red Potion",
+        "synergy": 2,
+        "time": 2.5,
+        "types": {
+            "bottle": 2,
+            "endbottle": -2.5,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 1.5,
-        "id": "zora-s-sapphire",
-        "time": 11,
-        "subtypes": {
-            "map": 6,
-            "hearts2": 2,
-            "compass": 6,
-            "hearts": 3,
-            "wallet": 1,
-            "ruto": 1
-        },
-        "types": {
-            "incbarinade": 100,
-            "jabu": 8,
-            "selfsynergy": 0,
-            "fountain": 2
-        },
-        "name": "Zora's Sapphire",
-        "difficulty": 25,
+        "desiredTime": 5,
+        "difficulty": 10,
         "goal": {
+            "difficulty": 14,
+            "id": "all-3-child-lake-hylia-skulltulas",
+            "jp": "\u30cf\u30a4\u30ea\u30a2\u6e56\u7554\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
+            "name": "All 3 Child Lake Hylia Skulltulas",
             "skill": 0,
-            "jp": "\u30be\u30fc\u30e9\u306e\u30b5\u30d5\u30a1\u30a4\u30a2",
-            "id": "zora-s-sapphire",
-            "subtypes": {
-                "map": 6,
-                "hearts2": 2,
-                "compass": 6,
-                "hearts": 3,
-                "wallet": 1,
-                "ruto": 1
-            },
-            "time": 11,
-            "name": "Zora's Sapphire",
-            "difficulty": 22,
-            "types": {
-                "incbarinade": 100,
-                "jabu": 8,
-                "selfsynergy": 0,
-                "fountain": 2
-            }
-        },
-        "desiredTime": 12.5
-    },
-    {
-        "synergy": 3.75,
-        "id": "1-skulltula-from-each-child-dungeon",
-        "time": 9.5,
-        "subtypes": {
-            "plant": 0.5,
-            "compass": 4,
-            "map": 4,
-            "wallet": 3,
-            "ganon": 2.5,
-            "ruto": 1,
-            "plant2": 1.5
-        },
-        "types": {
-            "dc": 2,
-            "jabu": 3,
-            "dmc": 1,
-            "deku": 3,
-            "selfsynergy": -3.5,
-            "fountain": 2
-        },
-        "name": "1 Skulltula from each Child Dungeon",
-        "difficulty": 18,
-        "goal": {
-            "skill": 0,
-            "jp": "\u5168\u3066\u306e\u5b50\u4f9b\u30c0\u30f3\u30b8\u30e7\u30f3\u304b\u3089\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\u6700\u4f4e1\u5339\u305a\u3064",
-            "id": "1-skulltula-from-each-child-dungeon",
             "subtypes": {
                 "plant": 0.5,
-                "compass": 4,
-                "map": 4,
-                "wallet": 3,
-                "ganon": 2.5,
-                "ruto": 1,
-                "plant2": 1.5
-            },
-            "time": 9.5,
-            "name": "1 Skulltula from each Child Dungeon",
-            "difficulty": 19,
-            "types": {
-                "dc": 2,
-                "jabu": 3,
-                "dmc": 1,
-                "deku": 3,
-                "selfsynergy": -3.5,
-                "fountain": 2
-            }
-        },
-        "desiredTime": 9
-    },
-    {
-        "synergy": 1.5,
-        "id": "ganon-s-castle-boss-key",
-        "time": 7,
-        "subtypes": {
-            "hearts": 3,
-            "plant": 0.25,
-            "hearts2": 2,
-            "wallet": 0.5,
-            "bosskey": 4.25
-        },
-        "types": {
-            "incgohma": 100,
-            "endon": -0.5,
-            "ganon": 5,
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "name": "Ganon's Castle Boss Key",
-        "difficulty": 14,
-        "goal": {
-            "skill": 0,
-            "jp": "\u30ac\u30ce\u30f3\u57ce\u306e\u30dc\u30b9\u90e8\u5c4b\u306e\u30ab\u30ae",
-            "id": "ganon-s-castle-boss-key",
-            "subtypes": {
-                "hearts": 3,
-                "plant": 0.25,
-                "hearts2": 2,
-                "wallet": 0.5,
-                "bosskey": 4.25
+                "plant2": 1.5,
+                "ruto": 2,
+                "wallet": 1.75
             },
             "time": 7,
-            "name": "Ganon's Castle Boss Key",
-            "difficulty": 14,
             "types": {
-                "incgohma": 100,
-                "endon": -0.5,
-                "ganon": 5,
-                "selfsynergy": 0,
-                "bottle": 2
+                "bottle": 2,
+                "field": 0.75,
+                "fountain": 0.5,
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 7
-    },
-    {
-        "synergy": 2,
-        "id": "bottled-fairy",
-        "types": {
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "time": 2.5,
-        "name": "Bottled Fairy",
-        "difficulty": 2,
-        "goal": {
-            "skill": 0,
-            "jp": "\u30d3\u30f3(\u5996\u7cbe)",
-            "id": "bottled-fairy",
-            "types": {
-                "selfsynergy": 0,
-                "bottle": 2
-            },
-            "time": 2.5,
-            "name": "Bottled Fairy",
-            "difficulty": 5
-        },
-        "desiredTime": 1
-    },
-    {
-        "synergy": 0,
-        "id": "all-4-lon-lon-ranch-area-skulltulas",
-        "time": 8,
+        "id": "all-3-child-lake-hylia-skulltulas",
+        "name": "All 3 Child Lake Hylia Skulltulas",
         "subtypes": {
-            "jabu": 2,
-            "hearts": 0.25,
-            "wallet": 2.5
+            "plant": 0.5,
+            "plant2": 1.5,
+            "ruto": 2,
+            "wallet": 1.75
         },
+        "synergy": 0,
+        "time": 7,
+        "types": {
+            "bottle": 2,
+            "field": 0.75,
+            "fountain": 0.5,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 11.5,
+        "difficulty": 23,
+        "goal": {
+            "difficulty": 24,
+            "id": "plant-7-magic-beans",
+            "jp": "\u9b54\u6cd5\u306e\u8c46\u30927\u30f6\u6240\u306b\u57cb\u3081\u308b",
+            "name": "Plant 7 Magic Beans",
+            "skill": 0,
+            "time": 12.25,
+            "types": {
+                "beans": 10,
+                "field": 0.75,
+                "incbeans": 100,
+                "plant": 4.5,
+                "plant2": 2,
+                "selfsynergy": -2
+            }
+        },
+        "id": "plant-7-magic-beans",
+        "name": "Plant 7 Magic Beans",
+        "synergy": 0,
+        "time": 12.25,
+        "types": {
+            "beans": 10,
+            "field": 0.75,
+            "incbeans": 100,
+            "plant": 4.5,
+            "plant2": 2,
+            "selfsynergy": -2
+        }
+    },
+    {
+        "desiredTime": 3,
+        "difficulty": 6,
+        "goal": {
+            "difficulty": 9,
+            "id": "ice-arrows",
+            "jp": "\u6c37\u306e\u77e2",
+            "name": "Ice Arrows",
+            "skill": 0,
+            "subtypes": {
+                "bosskey": 3.5,
+                "hearts": 0.75,
+                "kd": 2.5,
+                "plant2": 0.5
+            },
+            "time": 4.75,
+            "types": {
+                "field": 0.75,
+                "fortress": 3,
+                "gtg": 2.5,
+                "selfsynergy": 0
+            }
+        },
+        "id": "ice-arrows",
+        "name": "Ice Arrows",
+        "subtypes": {
+            "bosskey": 3.5,
+            "hearts": 0.75,
+            "kd": 2.5,
+            "plant2": 0.5
+        },
+        "synergy": 0.25,
+        "time": 4.75,
         "types": {
             "field": 0.75,
-            "selfsynergy": 0,
-            "lonlon": 1.5
+            "fortress": 3,
+            "gtg": 2.5,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 12.5,
+        "difficulty": 25,
+        "goal": {
+            "difficulty": 22,
+            "id": "zora-s-sapphire",
+            "jp": "\u30be\u30fc\u30e9\u306e\u30b5\u30d5\u30a1\u30a4\u30a2",
+            "name": "Zora's Sapphire",
+            "skill": 0,
+            "subtypes": {
+                "compass": 6,
+                "hearts": 3,
+                "hearts2": 2,
+                "map": 6,
+                "ruto": 1,
+                "wallet": 1
+            },
+            "time": 11,
+            "types": {
+                "fountain": 2,
+                "incbarinade": 100,
+                "jabu": 8,
+                "selfsynergy": 0
+            }
         },
-        "name": "All 4 Lon-Lon Ranch area Skulltulas",
+        "id": "zora-s-sapphire",
+        "name": "Zora's Sapphire",
+        "subtypes": {
+            "compass": 6,
+            "hearts": 3,
+            "hearts2": 2,
+            "map": 6,
+            "ruto": 1,
+            "wallet": 1
+        },
+        "synergy": 1.5,
+        "time": 11,
+        "types": {
+            "fountain": 2,
+            "incbarinade": 100,
+            "jabu": 8,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 9,
+        "difficulty": 18,
+        "goal": {
+            "difficulty": 19,
+            "id": "1-skulltula-from-each-child-dungeon",
+            "jp": "\u5168\u3066\u306e\u5b50\u4f9b\u30c0\u30f3\u30b8\u30e7\u30f3\u304b\u3089\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\u6700\u4f4e1\u5339\u305a\u3064",
+            "name": "1 Skulltula from each Child Dungeon",
+            "skill": 0,
+            "subtypes": {
+                "compass": 4,
+                "ganon": 2.5,
+                "map": 4,
+                "plant": 0.5,
+                "plant2": 1.5,
+                "ruto": 1,
+                "wallet": 3
+            },
+            "time": 9.5,
+            "types": {
+                "dc": 2,
+                "deku": 3,
+                "dmc": 1,
+                "fountain": 2,
+                "jabu": 3,
+                "selfsynergy": -3.5
+            }
+        },
+        "id": "1-skulltula-from-each-child-dungeon",
+        "name": "1 Skulltula from each Child Dungeon",
+        "subtypes": {
+            "compass": 4,
+            "ganon": 2.5,
+            "map": 4,
+            "plant": 0.5,
+            "plant2": 1.5,
+            "ruto": 1,
+            "wallet": 3
+        },
+        "synergy": 3.75,
+        "time": 9.5,
+        "types": {
+            "dc": 2,
+            "deku": 3,
+            "dmc": 1,
+            "fountain": 2,
+            "jabu": 3,
+            "selfsynergy": -3.5
+        }
+    },
+    {
+        "desiredTime": 7,
+        "difficulty": 14,
+        "goal": {
+            "difficulty": 14,
+            "id": "ganon-s-castle-boss-key",
+            "jp": "\u30ac\u30ce\u30f3\u57ce\u306e\u30dc\u30b9\u90e8\u5c4b\u306e\u30ab\u30ae",
+            "name": "Ganon's Castle Boss Key",
+            "skill": 0,
+            "subtypes": {
+                "bosskey": 4.25,
+                "hearts": 3,
+                "hearts2": 2,
+                "plant": 0.25,
+                "wallet": 0.5
+            },
+            "time": 7,
+            "types": {
+                "bottle": 2,
+                "endon": -0.5,
+                "ganon": 5,
+                "incgohma": 100,
+                "selfsynergy": 0
+            }
+        },
+        "id": "ganon-s-castle-boss-key",
+        "name": "Ganon's Castle Boss Key",
+        "subtypes": {
+            "bosskey": 4.25,
+            "hearts": 3,
+            "hearts2": 2,
+            "plant": 0.25,
+            "wallet": 0.5
+        },
+        "synergy": 1.5,
+        "time": 7,
+        "types": {
+            "bottle": 2,
+            "endon": -0.5,
+            "ganon": 5,
+            "incgohma": 100,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 1,
+        "difficulty": 2,
+        "goal": {
+            "difficulty": 5,
+            "id": "bottled-fairy",
+            "jp": "\u30d3\u30f3(\u5996\u7cbe)",
+            "name": "Bottled Fairy",
+            "skill": 0,
+            "time": 2.5,
+            "types": {
+                "bottle": 2,
+                "selfsynergy": 0
+            }
+        },
+        "id": "bottled-fairy",
+        "name": "Bottled Fairy",
+        "synergy": 2,
+        "time": 2.5,
+        "types": {
+            "bottle": 2,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 6.5,
         "difficulty": 13,
         "goal": {
-            "skill": 0,
-            "jp": "\u30ed\u30f3\u30ed\u30f3\u7267\u5834\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e94\u5339",
+            "difficulty": 16,
             "id": "all-4-lon-lon-ranch-area-skulltulas",
+            "jp": "\u30ed\u30f3\u30ed\u30f3\u7267\u5834\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e94\u5339",
+            "name": "All 4 Lon-Lon Ranch area Skulltulas",
+            "skill": 0,
             "subtypes": {
-                "jabu": 2,
                 "hearts": 0.25,
+                "jabu": 2,
                 "wallet": 2.5
             },
             "time": 8,
-            "name": "All 4 Lon-Lon Ranch area Skulltulas",
-            "difficulty": 16,
             "types": {
                 "field": 0.75,
-                "selfsynergy": 0,
-                "lonlon": 1.5
+                "lonlon": 1.5,
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 6.5
+        "id": "all-4-lon-lon-ranch-area-skulltulas",
+        "name": "All 4 Lon-Lon Ranch area Skulltulas",
+        "subtypes": {
+            "hearts": 0.25,
+            "jabu": 2,
+            "wallet": 2.5
+        },
+        "synergy": 0,
+        "time": 8,
+        "types": {
+            "field": 0.75,
+            "lonlon": 1.5,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 2.5,
-        "id": "all-3-skulltulas-in-bottom-of-the-well",
-        "time": 3.25,
-        "subtypes": {
-            "wallet": 1.75
-        },
-        "types": {
-            "selfsynergy": 0
-        },
-        "name": "All 3 Skulltulas in Bottom of the Well",
+        "desiredTime": 2,
         "difficulty": 4,
         "goal": {
-            "skill": 0,
-            "jp": "\u4e95\u6238\u306e\u5e95\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339",
+            "difficulty": 6,
             "id": "all-3-skulltulas-in-bottom-of-the-well",
+            "jp": "\u4e95\u6238\u306e\u5e95\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339",
+            "name": "All 3 Skulltulas in Bottom of the Well",
+            "skill": 0,
             "subtypes": {
                 "wallet": 1.75
             },
             "time": 3.25,
-            "name": "All 3 Skulltulas in Bottom of the Well",
-            "difficulty": 6,
             "types": {
                 "selfsynergy": 0
             }
         },
-        "desiredTime": 2
+        "id": "all-3-skulltulas-in-bottom-of-the-well",
+        "name": "All 3 Skulltulas in Bottom of the Well",
+        "subtypes": {
+            "wallet": 1.75
+        },
+        "synergy": 2.5,
+        "time": 3.25,
+        "types": {
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 1.5,
-        "id": "both-child-kokiri-forest-area-skulltulas",
-        "time": 4,
-        "subtypes": {
-            "plant": 0.5,
-            "wallet": 1
-        },
-        "types": {
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "name": "Both Child Kokiri Forest area Skulltulas",
+        "desiredTime": 3.5,
         "difficulty": 7,
         "goal": {
-            "skill": 0,
-            "jp": "\u30b3\u30ad\u30ea\u306e\u68ee\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\uff13\u5339",
+            "difficulty": 8,
             "id": "both-child-kokiri-forest-area-skulltulas",
+            "jp": "\u30b3\u30ad\u30ea\u306e\u68ee\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\uff13\u5339",
+            "name": "Both Child Kokiri Forest area Skulltulas",
+            "skill": 0,
             "subtypes": {
                 "plant": 0.5,
                 "wallet": 1
             },
             "time": 4,
-            "name": "Both Child Kokiri Forest area Skulltulas",
-            "difficulty": 8,
             "types": {
-                "selfsynergy": 0,
-                "bottle": 2
-            }
-        },
-        "desiredTime": 3.5
-    },
-    {
-        "synergy": 0,
-        "id": "get-bombchu-chest-in-spirit-temple",
-        "time": 11.5,
-        "subtypes": {
-            "plant": 0.5,
-            "compass": 1,
-            "map": 2,
-            "hearts": 0.75,
-            "plant2": 1.5,
-            "wallet": 0.5,
-            "bosskey": 2
-        },
-        "types": {
-            "field": 0.75,
-            "spirit": 6,
-            "fortress": 2.5,
-            "selfsynergy": 0
-        },
-        "name": "Get Bombchu chest in Spirit Temple",
-        "difficulty": 21,
-        "goal": {
-            "skill": 0,
-            "jp": "\u9b42\u306e\u795e\u6bbf\u306e\u30dc\u30e0\u30c1\u30e5\u30a6\u53d6\u5f97",
-            "id": "get-bombchu-chest-in-spirit-temple",
-            "subtypes": {
-                "plant": 0.5,
-                "compass": 1,
-                "map": 2,
-                "hearts": 0.75,
-                "plant2": 1.5,
-                "wallet": 0.5,
-                "bosskey": 2
-            },
-            "time": 11.5,
-            "name": "Get Bombchu chest in Spirit Temple",
-            "difficulty": 23,
-            "types": {
-                "field": 0.75,
-                "spirit": 6,
-                "fortress": 2.5,
+                "bottle": 2,
                 "selfsynergy": 0
             }
         },
-        "desiredTime": 10.5
+        "id": "both-child-kokiri-forest-area-skulltulas",
+        "name": "Both Child Kokiri Forest area Skulltulas",
+        "subtypes": {
+            "plant": 0.5,
+            "wallet": 1
+        },
+        "synergy": 1.5,
+        "time": 4,
+        "types": {
+            "bottle": 2,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 3.5,
-        "id": "all-5-skulltulas-in-dodongo-s-cavern",
-        "time": 8.25,
-        "subtypes": {
-            "map": 2.75,
-            "hearts2": 2,
-            "kd": 1.5,
-            "plant": 0.5,
-            "hearts": 2,
-            "compass": 3,
-            "wallet": 3.25,
-            "plant2": 1.5
-        },
-        "types": {
-            "dmc": 1,
-            "dc": 3,
-            "selfsynergy": 0,
-            "endon": -0.5
-        },
-        "name": "All 5 Skulltulas in Dodongo's Cavern",
-        "difficulty": 20,
+        "desiredTime": 10.5,
+        "difficulty": 21,
         "goal": {
+            "difficulty": 23,
+            "id": "get-bombchu-chest-in-spirit-temple",
+            "jp": "\u9b42\u306e\u795e\u6bbf\u306e\u30dc\u30e0\u30c1\u30e5\u30a6\u53d6\u5f97",
+            "name": "Get Bombchu chest in Spirit Temple",
             "skill": 0,
-            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e95\u5339",
-            "id": "all-5-skulltulas-in-dodongo-s-cavern",
             "subtypes": {
-                "map": 2.75,
-                "hearts2": 2,
-                "kd": 1.5,
+                "bosskey": 2,
+                "compass": 1,
+                "hearts": 0.75,
+                "map": 2,
                 "plant": 0.5,
-                "hearts": 2,
-                "compass": 3,
-                "wallet": 3.25,
-                "plant2": 1.5
+                "plant2": 1.5,
+                "wallet": 0.5
             },
-            "time": 8.25,
-            "name": "All 5 Skulltulas in Dodongo's Cavern",
-            "difficulty": 16,
+            "time": 11.5,
             "types": {
-                "dmc": 1,
-                "dc": 3,
+                "field": 0.75,
+                "fortress": 2.5,
                 "selfsynergy": 0,
-                "endon": -0.5
+                "spirit": 6
             }
         },
-        "desiredTime": 10
-    },
-    {
-        "synergy": 3.25,
-        "id": "saria-s-song",
-        "time": 10.5,
+        "id": "get-bombchu-chest-in-spirit-temple",
+        "name": "Get Bombchu chest in Spirit Temple",
         "subtypes": {
-            "hearts": 2,
+            "bosskey": 2,
+            "compass": 1,
+            "hearts": 0.75,
+            "map": 2,
             "plant": 0.5,
-            "hearts2": 2,
-            "wallet": 0.25
+            "plant2": 1.5,
+            "wallet": 0.5
         },
+        "synergy": 0,
+        "time": 11.5,
         "types": {
             "field": 0.75,
-            "zl": 6.75,
-            "incsaria": 100,
+            "fortress": 2.5,
             "selfsynergy": 0,
-            "saria": 3
+            "spirit": 6
+        }
+    },
+    {
+        "desiredTime": 10,
+        "difficulty": 20,
+        "goal": {
+            "difficulty": 16,
+            "id": "all-5-skulltulas-in-dodongo-s-cavern",
+            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e95\u5339",
+            "name": "All 5 Skulltulas in Dodongo's Cavern",
+            "skill": 0,
+            "subtypes": {
+                "compass": 3,
+                "hearts": 2,
+                "hearts2": 2,
+                "kd": 1.5,
+                "map": 2.75,
+                "plant": 0.5,
+                "plant2": 1.5,
+                "wallet": 3.25
+            },
+            "time": 8.25,
+            "types": {
+                "dc": 3,
+                "dmc": 1,
+                "endon": -0.5,
+                "selfsynergy": 0
+            }
         },
-        "name": "Saria's Song",
+        "id": "all-5-skulltulas-in-dodongo-s-cavern",
+        "name": "All 5 Skulltulas in Dodongo's Cavern",
+        "subtypes": {
+            "compass": 3,
+            "hearts": 2,
+            "hearts2": 2,
+            "kd": 1.5,
+            "map": 2.75,
+            "plant": 0.5,
+            "plant2": 1.5,
+            "wallet": 3.25
+        },
+        "synergy": 3.5,
+        "time": 8.25,
+        "types": {
+            "dc": 3,
+            "dmc": 1,
+            "endon": -0.5,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 11,
         "difficulty": 22,
         "goal": {
-            "skill": 0,
-            "jp": "\u30b5\u30ea\u30a2\u306e\u6b4c",
+            "difficulty": 21,
             "id": "saria-s-song",
+            "jp": "\u30b5\u30ea\u30a2\u306e\u6b4c",
+            "name": "Saria's Song",
+            "skill": 0,
             "subtypes": {
                 "hearts": 2,
-                "plant": 0.5,
                 "hearts2": 2,
+                "plant": 0.5,
                 "wallet": 0.25
             },
             "time": 10.5,
-            "name": "Saria's Song",
-            "difficulty": 21,
             "types": {
                 "field": 0.75,
-                "zl": 6.75,
                 "incsaria": 100,
+                "saria": 3,
                 "selfsynergy": 0,
-                "saria": 3
+                "zl": 6.75
             }
         },
-        "desiredTime": 11
+        "id": "saria-s-song",
+        "name": "Saria's Song",
+        "subtypes": {
+            "hearts": 2,
+            "hearts2": 2,
+            "plant": 0.5,
+            "wallet": 0.25
+        },
+        "synergy": 3.25,
+        "time": 10.5,
+        "types": {
+            "field": 0.75,
+            "incsaria": 100,
+            "saria": 3,
+            "selfsynergy": 0,
+            "zl": 6.75
+        }
     },
     {
-        "synergy": 3.25,
-        "id": "4-unused-keys-in-gerudo-training-grounds",
-        "time": 6.25,
-        "subtypes": {
-            "hearts": 0.75,
-            "plant2": 0.5,
-            "kd": 2.5,
-            "bosskey": 3
-        },
-        "types": {
-            "gtg": 3,
-            "field": 0.75,
-            "fortress": 3,
-            "incgtgkey": 100,
-            "selfsynergy": 0,
-            "endon": -0.5
-        },
-        "name": "4 unused keys in Gerudo Training Grounds",
+        "desiredTime": 8,
         "difficulty": 16,
         "goal": {
-            "skill": 0,
-            "jp": "\u30b2\u30eb\u30c9\u306e\u4fee\u7df4\u5834\u306e\u672a\u4f7f\u7528\u306e\u30ab\u30ae4\u3064",
+            "difficulty": 12,
             "id": "4-unused-keys-in-gerudo-training-grounds",
+            "jp": "\u30b2\u30eb\u30c9\u306e\u4fee\u7df4\u5834\u306e\u672a\u4f7f\u7528\u306e\u30ab\u30ae4\u3064",
+            "name": "4 unused keys in Gerudo Training Grounds",
+            "skill": 0,
             "subtypes": {
+                "bosskey": 3,
                 "hearts": 0.75,
-                "plant2": 0.5,
                 "kd": 2.5,
-                "bosskey": 3
+                "plant2": 0.5
             },
             "time": 6.25,
-            "name": "4 unused keys in Gerudo Training Grounds",
-            "difficulty": 12,
             "types": {
-                "gtg": 3,
+                "endon": -0.5,
                 "field": 0.75,
                 "fortress": 3,
+                "gtg": 3,
                 "incgtgkey": 100,
-                "selfsynergy": 0,
-                "endon": -0.5
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 8
+        "id": "4-unused-keys-in-gerudo-training-grounds",
+        "name": "4 unused keys in Gerudo Training Grounds",
+        "subtypes": {
+            "bosskey": 3,
+            "hearts": 0.75,
+            "kd": 2.5,
+            "plant2": 0.5
+        },
+        "synergy": 3.25,
+        "time": 6.25,
+        "types": {
+            "endon": -0.5,
+            "field": 0.75,
+            "fortress": 3,
+            "gtg": 3,
+            "incgtgkey": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 2,
-        "id": "all-7-child-kakariko-area-skulltulas",
-        "time": 9,
-        "subtypes": {
-            "jabu": 1,
-            "plant": 0.5,
-            "wallet": 4.5
-        },
-        "types": {
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "name": "All 7 Child Kakariko area Skulltulas",
+        "desiredTime": 7.5,
         "difficulty": 15,
         "goal": {
-            "skill": 0,
-            "jp": "\u30ab\u30ab\u30ea\u30b3\u6751\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "difficulty": 18,
             "id": "all-7-child-kakariko-area-skulltulas",
+            "jp": "\u30ab\u30ab\u30ea\u30b3\u6751\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "name": "All 7 Child Kakariko area Skulltulas",
+            "skill": 0,
             "subtypes": {
                 "jabu": 1,
                 "plant": 0.5,
                 "wallet": 4.5
             },
             "time": 9,
-            "name": "All 7 Child Kakariko area Skulltulas",
-            "difficulty": 18,
             "types": {
-                "selfsynergy": 0,
-                "bottle": 2
+                "bottle": 2,
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 7.5
+        "id": "all-7-child-kakariko-area-skulltulas",
+        "name": "All 7 Child Kakariko area Skulltulas",
+        "subtypes": {
+            "jabu": 1,
+            "plant": 0.5,
+            "wallet": 4.5
+        },
+        "synergy": 2,
+        "time": 9,
+        "types": {
+            "bottle": 2,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 1.25,
-        "id": "bullet-bag-50-",
-        "time": 1.25,
-        "subtypes": {
-            "plant": 0.25
-        },
-        "types": {
-            "selfsynergy": 0,
-            "bulletbag": 100
-        },
-        "name": "Bullet Bag (50)",
+        "desiredTime": 1.5,
         "difficulty": 3,
         "goal": {
-            "skill": 0,
-            "jp": "\u30c7\u30af\u306e\u30bf\u30cd\u888b(50)",
+            "difficulty": 2,
             "id": "bullet-bag-50-",
+            "jp": "\u30c7\u30af\u306e\u30bf\u30cd\u888b(50)",
+            "name": "Bullet Bag (50)",
+            "skill": 0,
             "subtypes": {
                 "plant": 0.25
             },
             "time": 1.25,
-            "name": "Bullet Bag (50)",
-            "difficulty": 2,
             "types": {
-                "selfsynergy": 0,
-                "bulletbag": 100
+                "bulletbag": 100,
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 1.5
+        "id": "bullet-bag-50-",
+        "name": "Bullet Bag (50)",
+        "subtypes": {
+            "plant": 0.25
+        },
+        "synergy": 1.25,
+        "time": 1.25,
+        "types": {
+            "bulletbag": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 2.5,
-        "id": "37th-heart-piece-child-fortress-",
-        "time": 6.25,
-        "subtypes": {
-            "hearts": 1.75,
-            "plant2": 0.5,
-            "kd": 2.5,
-            "bosskey": 2
-        },
-        "types": {
-            "fortress": 2.5,
-            "selfsynergy": 0
-        },
-        "name": "37th heart piece (Child Fortress)",
+        "desiredTime": 4.5,
         "difficulty": 9,
         "goal": {
-            "skill": 0,
-            "jp": "37\u756a\u76ee\u306e\u30cf\u30fc\u30c8\u306e\u304b\u3051\u3089(\u5b50\u4f9b\u306e\u30b2\u30eb\u30c9\u306e\u7826)",
+            "difficulty": 12,
             "id": "37th-heart-piece-child-fortress-",
+            "jp": "37\u756a\u76ee\u306e\u30cf\u30fc\u30c8\u306e\u304b\u3051\u3089(\u5b50\u4f9b\u306e\u30b2\u30eb\u30c9\u306e\u7826)",
+            "name": "37th heart piece (Child Fortress)",
+            "skill": 0,
             "subtypes": {
+                "bosskey": 2,
                 "hearts": 1.75,
-                "plant2": 0.5,
                 "kd": 2.5,
-                "bosskey": 2
+                "plant2": 0.5
             },
             "time": 6.25,
-            "name": "37th heart piece (Child Fortress)",
-            "difficulty": 12,
             "types": {
                 "fortress": 2.5,
                 "selfsynergy": 0
             }
         },
-        "desiredTime": 4.5
+        "id": "37th-heart-piece-child-fortress-",
+        "name": "37th heart piece (Child Fortress)",
+        "subtypes": {
+            "bosskey": 2,
+            "hearts": 1.75,
+            "kd": 2.5,
+            "plant2": 0.5
+        },
+        "synergy": 2.5,
+        "time": 6.25,
+        "types": {
+            "fortress": 2.5,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 2.25,
-        "id": "golden-scale",
-        "time": 4,
-        "subtypes": {
-            "plant": 0.25,
-            "plant2": 1.5
-        },
-        "types": {
-            "scale": 100,
-            "selfsynergy": 0,
-            "fountain": 1
-        },
-        "name": "Golden Scale",
+        "desiredTime": 2.5,
         "difficulty": 5,
         "goal": {
-            "skill": 0,
-            "jp": "\u91d1\u306e\u30a6\u30ed\u30b3",
+            "difficulty": 8,
             "id": "golden-scale",
+            "jp": "\u91d1\u306e\u30a6\u30ed\u30b3",
+            "name": "Golden Scale",
+            "skill": 0,
             "subtypes": {
                 "plant": 0.25,
                 "plant2": 1.5
             },
             "time": 4,
-            "name": "Golden Scale",
-            "difficulty": 8,
             "types": {
+                "fountain": 1,
                 "scale": 100,
-                "selfsynergy": 0,
-                "fountain": 1
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 2.5
+        "id": "golden-scale",
+        "name": "Golden Scale",
+        "subtypes": {
+            "plant": 0.25,
+            "plant2": 1.5
+        },
+        "synergy": 2.25,
+        "time": 4,
+        "types": {
+            "fountain": 1,
+            "scale": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 3,
-        "id": "all-4-child-zora-s-domain-area-skulltulas",
-        "time": 6,
-        "subtypes": {
-            "map": 2,
-            "compass": 2,
-            "jabu": 0.5,
-            "hearts": 0.75,
-            "wallet": 2.5,
-            "ruto": 1
-        },
-        "types": {
-            "selfsynergy": 0,
-            "fountain": 2
-        },
-        "name": "All 4 Child Zora's Domain area Skulltulas",
+        "desiredTime": 4,
         "difficulty": 8,
         "goal": {
-            "skill": 0,
-            "jp": "\u30be\u30fc\u30e9\u306e\u91cc\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "difficulty": 12,
             "id": "all-4-child-zora-s-domain-area-skulltulas",
+            "jp": "\u30be\u30fc\u30e9\u306e\u91cc\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "name": "All 4 Child Zora's Domain area Skulltulas",
+            "skill": 0,
             "subtypes": {
-                "map": 2,
                 "compass": 2,
-                "jabu": 0.5,
                 "hearts": 0.75,
-                "wallet": 2.5,
-                "ruto": 1
+                "jabu": 0.5,
+                "map": 2,
+                "ruto": 1,
+                "wallet": 2.5
             },
             "time": 6,
-            "name": "All 4 Child Zora's Domain area Skulltulas",
-            "difficulty": 12,
             "types": {
-                "selfsynergy": 0,
-                "fountain": 2
+                "fountain": 2,
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 4
+        "id": "all-4-child-zora-s-domain-area-skulltulas",
+        "name": "All 4 Child Zora's Domain area Skulltulas",
+        "subtypes": {
+            "compass": 2,
+            "hearts": 0.75,
+            "jabu": 0.5,
+            "map": 2,
+            "ruto": 1,
+            "wallet": 2.5
+        },
+        "synergy": 3,
+        "time": 6,
+        "types": {
+            "fountain": 2,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 2,
-        "id": "beat-dodongo-s-cavern",
-        "time": 10,
-        "subtypes": {
-            "map": 2.75,
-            "fortress": 3,
-            "compass": 3,
-            "plant": 0.5,
-            "hearts": 3,
-            "plant2": 1.5,
-            "wallet": 1,
-            "hearts2": 2
-        },
-        "types": {
-            "dc": 4,
-            "inckd": 100,
-            "kd": 3,
-            "dmc": 1,
-            "selfsynergy": 0,
-            "endon": -1
-        },
-        "name": "Beat Dodongo's Cavern",
+        "desiredTime": 12,
         "difficulty": 24,
         "goal": {
-            "skill": 0,
-            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u30af\u30ea\u30a2",
+            "difficulty": 20,
             "id": "beat-dodongo-s-cavern",
+            "jp": "\u30c9\u30c9\u30f3\u30b4\u306e\u6d1e\u7a9f\u30af\u30ea\u30a2",
+            "name": "Beat Dodongo's Cavern",
+            "skill": 0,
             "subtypes": {
-                "map": 2.75,
-                "fortress": 3,
                 "compass": 3,
-                "plant": 0.5,
+                "fortress": 3,
                 "hearts": 3,
+                "hearts2": 2,
+                "map": 2.75,
+                "plant": 0.5,
                 "plant2": 1.5,
-                "wallet": 1,
-                "hearts2": 2
+                "wallet": 1
             },
             "time": 10,
-            "name": "Beat Dodongo's Cavern",
-            "difficulty": 20,
             "types": {
                 "dc": 4,
+                "dmc": 1,
+                "endon": -1,
                 "inckd": 100,
                 "kd": 3,
-                "dmc": 1,
-                "selfsynergy": 0,
-                "endon": -1
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 12
+        "id": "beat-dodongo-s-cavern",
+        "name": "Beat Dodongo's Cavern",
+        "subtypes": {
+            "compass": 3,
+            "fortress": 3,
+            "hearts": 3,
+            "hearts2": 2,
+            "map": 2.75,
+            "plant": 0.5,
+            "plant2": 1.5,
+            "wallet": 1
+        },
+        "synergy": 2,
+        "time": 10,
+        "types": {
+            "dc": 4,
+            "dmc": 1,
+            "endon": -1,
+            "inckd": 100,
+            "kd": 3,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 3.25,
-        "id": "epona-s-song",
-        "time": 8,
-        "subtypes": {
-            "wallet": 0.5,
-            "zl": 1
-        },
-        "types": {
-            "field": 0.75,
-            "lonlon": 4,
-            "selfsynergy": 0,
-            "bottle": 2
-        },
-        "name": "Epona's Song",
+        "desiredTime": 8.5,
         "difficulty": 17,
         "goal": {
-            "skill": 0,
-            "jp": "\u30a8\u30dd\u30ca\u306e\u6b4c",
+            "difficulty": 16,
             "id": "epona-s-song",
+            "jp": "\u30a8\u30dd\u30ca\u306e\u6b4c",
+            "name": "Epona's Song",
+            "skill": 0,
             "subtypes": {
                 "wallet": 0.5,
                 "zl": 1
             },
             "time": 8,
-            "name": "Epona's Song",
-            "difficulty": 16,
             "types": {
+                "bottle": 2,
                 "field": 0.75,
                 "lonlon": 4,
-                "selfsynergy": 0,
-                "bottle": 2
+                "selfsynergy": 0
             }
         },
-        "desiredTime": 8.5
+        "id": "epona-s-song",
+        "name": "Epona's Song",
+        "subtypes": {
+            "wallet": 0.5,
+            "zl": 1
+        },
+        "synergy": 3.25,
+        "time": 8,
+        "types": {
+            "bottle": 2,
+            "field": 0.75,
+            "lonlon": 4,
+            "selfsynergy": 0
+        }
     },
     {
-        "synergy": 3.5,
-        "id": "5-hearts",
-        "time": 6,
-        "subtypes": {
-            "plant": 1,
-            "wallet": 1,
-            "plant2": 1
-        },
-        "types": {
-            "hearts": 5,
-            "hearts2": 1,
-            "selfsynergy": -2
-        },
-        "name": "5 Hearts",
+        "desiredTime": 5.5,
         "difficulty": 11,
         "goal": {
-            "skill": 0,
-            "jp": "\u30cf\u30fc\u30c85\u3064",
+            "difficulty": 12,
             "id": "5-hearts",
+            "jp": "\u30cf\u30fc\u30c85\u3064",
+            "name": "5 Hearts",
+            "skill": 0,
             "subtypes": {
                 "plant": 1,
-                "wallet": 1,
-                "plant2": 1
+                "plant2": 1,
+                "wallet": 1
             },
             "time": 6,
-            "name": "5 Hearts",
-            "difficulty": 12,
             "types": {
                 "hearts": 5,
                 "hearts2": 1,
                 "selfsynergy": -2
             }
         },
-        "desiredTime": 5.5
+        "id": "5-hearts",
+        "name": "5 Hearts",
+        "subtypes": {
+            "plant": 1,
+            "plant2": 1,
+            "wallet": 1
+        },
+        "synergy": 3.5,
+        "time": 6,
+        "types": {
+            "hearts": 5,
+            "hearts2": 1,
+            "selfsynergy": -2
+        }
     }
 ]

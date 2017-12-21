@@ -1,15 +1,15 @@
 [
     {
-        "name": "6 Stars in DDD",
         "difficulty": 24,
+        "name": "6 Stars in DDD",
         "synergy": 0,
         "types": [
             "DDD"
         ]
     },
     {
-        "name": "3 Stars each from THI and TTM",
         "difficulty": 18,
+        "name": "3 Stars each from THI and TTM",
         "synergy": 0,
         "types": [
             "THI",
@@ -17,8 +17,8 @@
         ]
     },
     {
-        "name": "100 Coin Star in SL",
         "difficulty": 15,
+        "name": "100 Coin Star in SL",
         "synergy": 0,
         "types": [
             "SL",
@@ -26,24 +26,24 @@
         ]
     },
     {
-        "name": "20 lives",
         "difficulty": 7,
+        "name": "20 lives",
         "synergy": 0,
         "types": [
             "lives"
         ]
     },
     {
-        "name": "Lose Mario's Hat",
         "difficulty": 1,
+        "name": "Lose Mario's Hat",
         "synergy": 0,
         "types": [
             "losehat"
         ]
     },
     {
-        "name": "Into the Igloo SL",
         "difficulty": 10,
+        "name": "Into the Igloo SL",
         "synergy": 0,
         "types": [
             "SL",
@@ -51,40 +51,40 @@
         ]
     },
     {
-        "name": "Two Bowser Stage Red Coin Stars",
         "difficulty": 2,
+        "name": "Two Bowser Stage Red Coin Stars",
         "synergy": 0,
         "types": [
             "bowserreds"
         ]
     },
     {
-        "name": "All Stars in TTM",
         "difficulty": 21,
+        "name": "All Stars in TTM",
         "synergy": 0,
         "types": [
             "TTM"
         ]
     },
     {
-        "name": "All Stars in TTC",
         "difficulty": 19,
+        "name": "All Stars in TTC",
         "synergy": 0,
         "types": [
             "TTC"
         ]
     },
     {
-        "name": "100 Coin Star in HMC",
         "difficulty": 13,
+        "name": "100 Coin Star in HMC",
         "synergy": 0,
         "types": [
             "HMC"
         ]
     },
     {
-        "name": "10 Castle Secret Stars",
         "difficulty": 16,
+        "name": "10 Castle Secret Stars",
         "synergy": 0,
         "types": [
             "secrets",
@@ -92,48 +92,48 @@
         ]
     },
     {
-        "name": "Open 7 Cannons",
         "difficulty": 14,
+        "name": "Open 7 Cannons",
         "synergy": 0,
         "types": [
             "cannons"
         ]
     },
     {
-        "name": "Red Coin Star in WDW",
         "difficulty": 8,
+        "name": "Red Coin Star in WDW",
         "synergy": 0,
         "types": [
             "WDW"
         ]
     },
     {
-        "name": "Secrets Star in THI",
         "difficulty": 5,
+        "name": "Secrets Star in THI",
         "synergy": 0,
         "types": [
             "THI"
         ]
     },
     {
-        "name": "6 Stars in RR",
         "difficulty": 22,
+        "name": "6 Stars in RR",
         "synergy": 0,
         "types": [
             "RR"
         ]
     },
     {
-        "name": "Collect 130 Coins in one stage",
         "difficulty": 3,
+        "name": "Collect 130 Coins in one stage",
         "synergy": 0,
         "types": [
             "hundredcoin"
         ]
     },
     {
-        "name": "All Stars in DDD",
         "difficulty": 25,
+        "name": "All Stars in DDD",
         "synergy": 0,
         "types": [
             "DDD",
@@ -141,8 +141,8 @@
         ]
     },
     {
-        "name": "3 Stars each from TTC and RR",
         "difficulty": 17,
+        "name": "3 Stars each from TTC and RR",
         "synergy": 0,
         "types": [
             "TTC",
@@ -150,16 +150,16 @@
         ]
     },
     {
-        "name": "Top Floor Cloud Stage Star",
         "difficulty": 11,
+        "name": "Top Floor Cloud Stage Star",
         "synergy": 0,
         "types": [
             "wingcap"
         ]
     },
     {
-        "name": "Three Bowser Stage Red Coin Stars",
         "difficulty": 9,
+        "name": "Three Bowser Stage Red Coin Stars",
         "synergy": 0,
         "types": [
             "bowserreds",
@@ -167,40 +167,40 @@
         ]
     },
     {
-        "name": "100 Coin Star in TTM",
         "difficulty": 12,
+        "name": "100 Coin Star in TTM",
         "synergy": 0,
         "types": [
             "TTM"
         ]
     },
     {
-        "name": "Red Coin Star in BBH",
         "difficulty": 6,
+        "name": "Red Coin Star in BBH",
         "synergy": 0,
         "types": [
             "BBH"
         ]
     },
     {
-        "name": "Red Coin Star in HMC",
         "difficulty": 4,
+        "name": "Red Coin Star in HMC",
         "synergy": 0,
         "types": [
             "HMC"
         ]
     },
     {
-        "name": "Top Floor Toad Star",
         "difficulty": 23,
+        "name": "Top Floor Toad Star",
         "synergy": 0,
         "types": [
             "manystar"
         ]
     },
     {
-        "name": "6 Stars in SSL",
         "difficulty": 20,
+        "name": "6 Stars in SSL",
         "synergy": 0,
         "types": [
             "SSL"

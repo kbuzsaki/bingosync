@@ -1,7 +1,7 @@
 [
     {
-        "name": "15 Health Up and 15 Mana Up",
         "difficulty": 24,
+        "name": "15 Health Up and 15 Mana Up",
         "synergy": 0,
         "types": [
             "Health Up",
@@ -9,16 +9,16 @@
         ]
     },
     {
-        "name": "16 Easter Eggs",
         "difficulty": 18,
+        "name": "16 Easter Eggs",
         "synergy": 0,
         "types": [
             "Eggs"
         ]
     },
     {
-        "name": "75% Southern Woodland Map",
         "difficulty": 15,
+        "name": "75% Southern Woodland Map",
         "synergy": 0,
         "types": [
             "Southern Woodland",
@@ -26,8 +26,8 @@
         ]
     },
     {
-        "name": "10 Western Coast items",
         "difficulty": 7,
+        "name": "10 Western Coast items",
         "synergy": 0,
         "types": [
             "Western Coast",
@@ -35,8 +35,8 @@
         ]
     },
     {
-        "name": "Hear \u266a Kitty Attack",
         "difficulty": 1,
+        "name": "Hear \u266a Kitty Attack",
         "synergy": 0,
         "types": [
             "Vanilla",
@@ -46,8 +46,8 @@
         ]
     },
     {
-        "name": "Recruit Cocoa, Chocolate, and Vanilla",
         "difficulty": 10,
+        "name": "Recruit Cocoa, Chocolate, and Vanilla",
         "synergy": 0,
         "types": [
             "Cocoa",
@@ -57,8 +57,8 @@
         ]
     },
     {
-        "name": "Defeat Holo-Defense System (Rainbow Maid)",
         "difficulty": 2,
+        "name": "Defeat Holo-Defense System (Rainbow Maid)",
         "synergy": 0,
         "types": [
             "Cicini",
@@ -67,16 +67,16 @@
         ]
     },
     {
-        "name": "20 Attack Up Potions",
         "difficulty": 21,
+        "name": "20 Attack Up Potions",
         "synergy": 0,
         "types": [
             "Attack Up"
         ]
     },
     {
-        "name": "15 Badges",
         "difficulty": 19,
+        "name": "15 Badges",
         "synergy": 0,
         "types": [
             "Health Plus",
@@ -108,40 +108,40 @@
         ]
     },
     {
-        "name": "10 Pack Up Potions",
         "difficulty": 13,
+        "name": "10 Pack Up Potions",
         "synergy": 0,
         "types": [
             "Pack Up"
         ]
     },
     {
-        "name": "15 Attack Up Potions",
         "difficulty": 16,
+        "name": "15 Attack Up Potions",
         "synergy": 0,
         "types": [
             "Attack Up"
         ]
     },
     {
-        "name": "20% Item",
         "difficulty": 14,
+        "name": "20% Item",
         "synergy": 0,
         "types": [
             "Collection"
         ]
     },
     {
-        "name": "Water Orb",
         "difficulty": 8,
+        "name": "Water Orb",
         "synergy": 0,
         "types": [
             "Water Orb"
         ]
     },
     {
-        "name": "All 3 Eastern Highlands Warp Stones",
         "difficulty": 5,
+        "name": "All 3 Eastern Highlands Warp Stones",
         "synergy": 0,
         "types": [
             "Eastern Highlands",
@@ -149,8 +149,8 @@
         ]
     },
     {
-        "name": "75% Western Coast Map",
         "difficulty": 22,
+        "name": "75% Western Coast Map",
         "synergy": 0,
         "types": [
             "Western Coast",
@@ -159,8 +159,8 @@
         ]
     },
     {
-        "name": "Hear \u266a Brawl Breaks Ver.2",
         "difficulty": 3,
+        "name": "Hear \u266a Brawl Breaks Ver.2",
         "synergy": 0,
         "types": [
             "Ashuri",
@@ -168,16 +168,16 @@
         ]
     },
     {
-        "name": "Get a High-Score above 5000 on the sandbag",
         "difficulty": 25,
+        "name": "Get a High-Score above 5000 on the sandbag",
         "synergy": 0,
         "types": [
             "Sandbag"
         ]
     },
     {
-        "name": "Purchase the MP Regen Buff",
         "difficulty": 17,
+        "name": "Purchase the MP Regen Buff",
         "synergy": 0,
         "types": [
             "MP Regen Buff",
@@ -185,8 +185,8 @@
         ]
     },
     {
-        "name": "Lv.2 Fire Orb",
         "difficulty": 11,
+        "name": "Lv.2 Fire Orb",
         "synergy": 0,
         "types": [
             "Subterranean Area",
@@ -194,8 +194,8 @@
         ]
     },
     {
-        "name": "10 Badges",
         "difficulty": 9,
+        "name": "10 Badges",
         "synergy": 0,
         "types": [
             "Health Plus",
@@ -227,32 +227,32 @@
         ]
     },
     {
-        "name": "Halloween Warp Zone Egg",
         "difficulty": 12,
+        "name": "Halloween Warp Zone Egg",
         "synergy": 0,
         "types": [
             "Eggs"
         ]
     },
     {
-        "name": "15 Warp Stones",
         "difficulty": 6,
+        "name": "15 Warp Stones",
         "synergy": 0,
         "types": [
             "Warp Stone"
         ]
     },
     {
-        "name": "Health Surge Badge",
         "difficulty": 4,
+        "name": "Health Surge Badge",
         "synergy": 0,
         "types": [
             "Health Surge"
         ]
     },
     {
-        "name": "70% Northern Tundra Map",
         "difficulty": 23,
+        "name": "70% Northern Tundra Map",
         "synergy": 0,
         "types": [
             "Northern Tundra",
@@ -260,8 +260,8 @@
         ]
     },
     {
-        "name": "Defeat a Lv.25 or higher boss",
         "difficulty": 20,
+        "name": "Defeat a Lv.25 or higher boss",
         "synergy": 0,
         "types": [
             "Boss"

@@ -1,151 +1,151 @@
 [
     {
-        "name": "Roll a ball into the shortcut cave in TI",
         "difficulty": 20,
+        "name": "Roll a ball into the shortcut cave in TI",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Backtrack from AA's entrance to BP while OoB",
         "difficulty": 22,
+        "name": "Backtrack from AA's entrance to BP while OoB",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Teleport to the void at drill chase",
         "difficulty": 4,
+        "name": "Teleport to the void at drill chase",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Damage boost from a bat",
         "difficulty": 11,
+        "name": "Damage boost from a bat",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Collect all gems in the AoE hub",
         "difficulty": 8,
+        "name": "Collect all gems in the AoE hub",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Ride SSI backwards until the first checkpoint",
         "difficulty": 14,
+        "name": "Ride SSI backwards until the first checkpoint",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Escape back to the village after the chase",
         "difficulty": 6,
+        "name": "Escape back to the village after the chase",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Feed bombs to every totem",
         "difficulty": 18,
+        "name": "Feed bombs to every totem",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Collect at least 4 gems in every Hub",
         "difficulty": 25,
+        "name": "Collect at least 4 gems in every Hub",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Push a tribesman into a hole",
         "difficulty": 2,
+        "name": "Push a tribesman into a hole",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Gain invulnerability 5 times",
         "difficulty": 23,
+        "name": "Gain invulnerability 5 times",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Kill everything in the village",
         "difficulty": 5,
+        "name": "Kill everything in the village",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Go through the shortcut to HSH",
         "difficulty": 12,
+        "name": "Go through the shortcut to HSH",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Bodyslam Cortex 4 times in the boss fight",
         "difficulty": 9,
+        "name": "Bodyslam Cortex 4 times in the boss fight",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Collect the first gem in BRD as Zombie",
         "difficulty": 16,
+        "name": "Collect the first gem in BRD as Zombie",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Beat Tikimon",
         "difficulty": 7,
+        "name": "Beat Tikimon",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Avoid all gems in a Humiliskate level",
         "difficulty": 19,
+        "name": "Avoid all gems in a Humiliskate level",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Go through 2 sets of color cycles backwards",
         "difficulty": 21,
+        "name": "Go through 2 sets of color cycles backwards",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Take Cortex to the first beach",
         "difficulty": 3,
+        "name": "Take Cortex to the first beach",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Destroy all life crates in the walrus chase",
         "difficulty": 15,
+        "name": "Destroy all life crates in the walrus chase",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Roll an acorn to the top of the cliff",
         "difficulty": 1,
+        "name": "Roll an acorn to the top of the cliff",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Kill every swinger in the swinger room",
         "difficulty": 13,
+        "name": "Kill every swinger in the swinger room",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Kill all the chickens at the farm",
         "difficulty": 10,
+        "name": "Kill all the chickens at the farm",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Beat a frog room as Cortex",
         "difficulty": 17,
+        "name": "Beat a frog room as Cortex",
         "synergy": 0,
         "types": []
     },
     {
-        "name": "Enter a slide without triggering its cutscene",
         "difficulty": 24,
+        "name": "Enter a slide without triggering its cutscene",
         "synergy": 0,
         "types": []
     }

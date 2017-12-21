@@ -1,7 +1,7 @@
 [
     {
-        "name": "Dry Lagoon M3 B-Rank",
         "difficulty": 2,
+        "name": "Dry Lagoon M3 B-Rank",
         "synergy": 0,
         "types": [
             "drylagoon",
@@ -9,56 +9,56 @@
         ]
     },
     {
-        "name": "Route 280 M4",
         "difficulty": 21,
+        "name": "Route 280 M4",
         "synergy": 0,
         "types": [
             "route280"
         ]
     },
     {
-        "name": "Complete White Jungle M1 with 100+ Rings",
         "difficulty": 14,
+        "name": "Complete White Jungle M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "whitejungle"
         ]
     },
     {
-        "name": "Sky Rail M2",
         "difficulty": 18,
+        "name": "Sky Rail M2",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Complete Weapons Bed M1 with 100+ Rings",
         "difficulty": 10,
+        "name": "Complete Weapons Bed M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "weaponsbed"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Sky Rail and finish",
         "difficulty": 19,
+        "name": "5 hidden Chao animals in Sky Rail and finish",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Egg Quarters M4",
         "difficulty": 8,
+        "name": "Egg Quarters M4",
         "synergy": 0,
         "types": [
             "eggquarters"
         ]
     },
     {
-        "name": "Dry Lagoon All Missions A-Rank",
         "difficulty": 5,
+        "name": "Dry Lagoon All Missions A-Rank",
         "synergy": 0,
         "types": [
             "drylagoon",
@@ -67,8 +67,8 @@
         ]
     },
     {
-        "name": "Destroy the Gold Beetle in 9 different stages",
         "difficulty": 22,
+        "name": "Destroy the Gold Beetle in 9 different stages",
         "synergy": 0,
         "types": [
             "goldbeetle",
@@ -76,40 +76,40 @@
         ]
     },
     {
-        "name": "Iron Gate M4",
         "difficulty": 11,
+        "name": "Iron Gate M4",
         "synergy": 0,
         "types": [
             "irongate"
         ]
     },
     {
-        "name": "Final Chase M2",
         "difficulty": 25,
+        "name": "Final Chase M2",
         "synergy": 0,
         "types": [
             "finalchase"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Security Hall and finish",
         "difficulty": 12,
+        "name": "5 hidden Chao animals in Security Hall and finish",
         "synergy": 0,
         "types": [
             "securityhall"
         ]
     },
     {
-        "name": "Lost Colony M5",
         "difficulty": 16,
+        "name": "Lost Colony M5",
         "synergy": 0,
         "types": [
             "lostcolony"
         ]
     },
     {
-        "name": "Egg Quarters M4 A-Rank",
         "difficulty": 9,
+        "name": "Egg Quarters M4 A-Rank",
         "synergy": 0,
         "types": [
             "eggquarters",
@@ -117,88 +117,88 @@
         ]
     },
     {
-        "name": "Complete Sand Ocean M1 with 100+ Rings",
         "difficulty": 3,
+        "name": "Complete Sand Ocean M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "sandocean"
         ]
     },
     {
-        "name": "500 Total Rings",
         "difficulty": 6,
+        "name": "500 Total Rings",
         "synergy": 0,
         "types": [
             "multistory"
         ]
     },
     {
-        "name": "Shadow's Flame Ring",
         "difficulty": 4,
+        "name": "Shadow's Flame Ring",
         "synergy": 0,
         "types": [
             "radicalhighway"
         ]
     },
     {
-        "name": "Complete Cosmic Wall M1 with 100+ Rings",
         "difficulty": 23,
+        "name": "Complete Cosmic Wall M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "cosmicwall"
         ]
     },
     {
-        "name": "Game Over during Sonic 1",
         "difficulty": 15,
+        "name": "Game Over during Sonic 1",
         "synergy": 0,
         "types": [
             "gameover"
         ]
     },
     {
-        "name": "Shadow's Ancient Light",
         "difficulty": 17,
+        "name": "Shadow's Ancient Light",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Security Hall M4",
         "difficulty": 13,
+        "name": "Security Hall M4",
         "synergy": 0,
         "types": [
             "securityhall"
         ]
     },
     {
-        "name": "2 Chao Boxes in Mad Space and finish",
         "difficulty": 20,
+        "name": "2 Chao Boxes in Mad Space and finish",
         "synergy": 0,
         "types": [
             "madspace"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Egg Quarters and finish",
         "difficulty": 7,
+        "name": "5 hidden Chao animals in Egg Quarters and finish",
         "synergy": 0,
         "types": [
             "eggquarters"
         ]
     },
     {
-        "name": "Dry Lagoon M1 Hintless",
         "difficulty": 1,
+        "name": "Dry Lagoon M1 Hintless",
         "synergy": 0,
         "types": [
             "drylagoon"
         ]
     },
     {
-        "name": "1500 Total Rings",
         "difficulty": 24,
+        "name": "1500 Total Rings",
         "synergy": 0,
         "types": [
             "multistory"

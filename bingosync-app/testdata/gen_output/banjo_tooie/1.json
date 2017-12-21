@@ -1,7 +1,7 @@
 [
     {
-        "name": "Dragon Kazooie",
         "difficulty": 20,
+        "name": "Dragon Kazooie",
         "synergy": 0,
         "types": [
             "SoS",
@@ -11,8 +11,8 @@
         ]
     },
     {
-        "name": "6 Jiggies in WW",
         "difficulty": 22,
+        "name": "6 Jiggies in WW",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -20,16 +20,16 @@
         ]
     },
     {
-        "name": "4 Trebleclefs",
         "difficulty": 4,
+        "name": "4 Trebleclefs",
         "synergy": 0,
         "types": [
             "Trebleclef"
         ]
     },
     {
-        "name": "Open all Elevator Doors",
         "difficulty": 11,
+        "name": "Open all Elevator Doors",
         "synergy": 0,
         "types": [
             "Doors",
@@ -37,8 +37,8 @@
         ]
     },
     {
-        "name": "Mountain CP as T-Rex",
         "difficulty": 8,
+        "name": "Mountain CP as T-Rex",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -46,8 +46,8 @@
         ]
     },
     {
-        "name": "Learn Claw Clamber Boots",
         "difficulty": 14,
+        "name": "Learn Claw Clamber Boots",
         "synergy": 0,
         "types": [
             "Moves",
@@ -55,8 +55,8 @@
         ]
     },
     {
-        "name": "All Honeycombs in JRL",
         "difficulty": 6,
+        "name": "All Honeycombs in JRL",
         "synergy": 0,
         "types": [
             "Honeycombs",
@@ -64,8 +64,8 @@
         ]
     },
     {
-        "name": "Oil Drill Jiggy",
         "difficulty": 18,
+        "name": "Oil Drill Jiggy",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -73,24 +73,24 @@
         ]
     },
     {
-        "name": "Defeat 5 Bosses (Except Klungos/Hag1)",
         "difficulty": 25,
+        "name": "Defeat 5 Bosses (Except Klungos/Hag1)",
         "synergy": 0,
         "types": [
             "Bosses"
         ]
     },
     {
-        "name": "All Warppads in GGM",
         "difficulty": 2,
+        "name": "All Warppads in GGM",
         "synergy": 0,
         "types": [
             "GGM"
         ]
     },
     {
-        "name": "All Cheato Pages in CCL",
         "difficulty": 23,
+        "name": "All Cheato Pages in CCL",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -98,16 +98,16 @@
         ]
     },
     {
-        "name": "All Warppads in MT",
         "difficulty": 5,
+        "name": "All Warppads in MT",
         "synergy": 0,
         "types": [
             "MT"
         ]
     },
     {
-        "name": "All Jinjos in HFP",
         "difficulty": 12,
+        "name": "All Jinjos in HFP",
         "synergy": 1,
         "types": [
             "Jinjos",
@@ -115,8 +115,8 @@
         ]
     },
     {
-        "name": "Oogle Boogle Jiggy",
         "difficulty": 9,
+        "name": "Oogle Boogle Jiggy",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -124,8 +124,8 @@
         ]
     },
     {
-        "name": "Call Train to GI",
         "difficulty": 16,
+        "name": "Call Train to GI",
         "synergy": 0,
         "types": [
             "GI",
@@ -133,8 +133,8 @@
         ]
     },
     {
-        "name": "All Honeycombs in TDL",
         "difficulty": 7,
+        "name": "All Honeycombs in TDL",
         "synergy": 0,
         "types": [
             "Honeycombs",
@@ -142,32 +142,32 @@
         ]
     },
     {
-        "name": "13 Glowbos",
         "difficulty": 19,
+        "name": "13 Glowbos",
         "synergy": 0,
         "types": [
             "Glowbo"
         ]
     },
     {
-        "name": "12 Cheato Pages",
         "difficulty": 21,
+        "name": "12 Cheato Pages",
         "synergy": 0,
         "types": [
             "Cheatos"
         ]
     },
     {
-        "name": "Stub Biggafoots Toe",
         "difficulty": 3,
+        "name": "Stub Biggafoots Toe",
         "synergy": 2,
         "types": [
             "HFP"
         ]
     },
     {
-        "name": "Targitzan Jiggy w/o FPS",
         "difficulty": 15,
+        "name": "Targitzan Jiggy w/o FPS",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -175,16 +175,16 @@
         ]
     },
     {
-        "name": "Purchase Blubber\u00e2\u20ac\u2122s Last Possession",
         "difficulty": 1,
+        "name": "Purchase Blubber\u00e2\u20ac\u2122s Last Possession",
         "synergy": 0,
         "types": [
             "JRL"
         ]
     },
     {
-        "name": "All Cheato Pages in GI",
         "difficulty": 13,
+        "name": "All Cheato Pages in GI",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -193,8 +193,8 @@
         ]
     },
     {
-        "name": "Kill George and Mildred",
         "difficulty": 10,
+        "name": "Kill George and Mildred",
         "synergy": 2,
         "types": [
             "CCL",
@@ -202,8 +202,8 @@
         ]
     },
     {
-        "name": "7 Jiggies in GGM",
         "difficulty": 17,
+        "name": "7 Jiggies in GGM",
         "synergy": 3,
         "types": [
             "Jiggies",
@@ -211,8 +211,8 @@
         ]
     },
     {
-        "name": "Open all 4 Battery Doors in GI",
         "difficulty": 24,
+        "name": "Open all 4 Battery Doors in GI",
         "synergy": 3,
         "types": [
             "Doors",

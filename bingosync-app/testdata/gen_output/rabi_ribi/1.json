@@ -1,7 +1,7 @@
 [
     {
-        "name": "Lv.2 P Hairpin",
         "difficulty": 20,
+        "name": "Lv.2 P Hairpin",
         "synergy": 0,
         "types": [
             "P Hairpin",
@@ -9,24 +9,24 @@
         ]
     },
     {
-        "name": "End with 50000 EN",
         "difficulty": 22,
+        "name": "End with 50000 EN",
         "synergy": 0,
         "types": [
             "Money"
         ]
     },
     {
-        "name": "Hear \u266a Evernight Peak",
         "difficulty": 4,
+        "name": "Hear \u266a Evernight Peak",
         "synergy": 0,
         "types": [
             "Eastern Highlands"
         ]
     },
     {
-        "name": "Lv.2 Spike Barrier",
         "difficulty": 11,
+        "name": "Lv.2 Spike Barrier",
         "synergy": 0,
         "types": [
             "Slide",
@@ -34,8 +34,8 @@
         ]
     },
     {
-        "name": "All 3 Southern Woodland Pack Up Potions",
         "difficulty": 8,
+        "name": "All 3 Southern Woodland Pack Up Potions",
         "synergy": 0,
         "types": [
             "Southern Woodland",
@@ -43,8 +43,8 @@
         ]
     },
     {
-        "name": "Fire, Water, Nature, and Light Orbs",
         "difficulty": 14,
+        "name": "Fire, Water, Nature, and Light Orbs",
         "synergy": 0,
         "types": [
             "Fire Orb",
@@ -54,32 +54,32 @@
         ]
     },
     {
-        "name": "10 Mana Up Potions",
         "difficulty": 6,
+        "name": "10 Mana Up Potions",
         "synergy": 0,
         "types": [
             "Mana Up"
         ]
     },
     {
-        "name": "15 Regen Up Potions",
         "difficulty": 18,
+        "name": "15 Regen Up Potions",
         "synergy": 0,
         "types": [
             "Regen Up"
         ]
     },
     {
-        "name": "Get a High-Score above 5000 on the sandbag",
         "difficulty": 25,
+        "name": "Get a High-Score above 5000 on the sandbag",
         "synergy": 0,
         "types": [
             "Sandbag"
         ]
     },
     {
-        "name": "Lv.2 Bunny Amulet",
         "difficulty": 2,
+        "name": "Lv.2 Bunny Amulet",
         "synergy": 0,
         "types": [
             "Amulet",
@@ -87,32 +87,32 @@
         ]
     },
     {
-        "name": "20 Easter Eggs",
         "difficulty": 23,
+        "name": "20 Easter Eggs",
         "synergy": 0,
         "types": [
             "Eggs"
         ]
     },
     {
-        "name": "10% Item",
         "difficulty": 5,
+        "name": "10% Item",
         "synergy": 0,
         "types": [
             "Collection"
         ]
     },
     {
-        "name": "Defeat Nixie",
         "difficulty": 12,
+        "name": "Defeat Nixie",
         "synergy": 0,
         "types": [
             "Nixie"
         ]
     },
     {
-        "name": "Quick Barrette, Charge Ring, Plus Necklace, and Auto Earrings",
         "difficulty": 9,
+        "name": "Quick Barrette, Charge Ring, Plus Necklace, and Auto Earrings",
         "synergy": 0,
         "types": [
             "Barrette",
@@ -122,8 +122,8 @@
         ]
     },
     {
-        "name": "Recruit Keke Bunny",
         "difficulty": 16,
+        "name": "Recruit Keke Bunny",
         "synergy": 0,
         "types": [
             "Keke Bunny",
@@ -131,8 +131,8 @@
         ]
     },
     {
-        "name": "Hear \u266a Bounce Bounce",
         "difficulty": 7,
+        "name": "Hear \u266a Bounce Bounce",
         "synergy": 0,
         "types": [
             "Nieve",
@@ -142,8 +142,8 @@
         ]
     },
     {
-        "name": "All 5 Northern Tundra Health Up Potions",
         "difficulty": 19,
+        "name": "All 5 Northern Tundra Health Up Potions",
         "synergy": 0,
         "types": [
             "Northern Tundra",
@@ -151,8 +151,8 @@
         ]
     },
     {
-        "name": "Recruit Aruraune and Lilith",
         "difficulty": 21,
+        "name": "Recruit Aruraune and Lilith",
         "synergy": 0,
         "types": [
             "Aruraune",
@@ -160,16 +160,16 @@
         ]
     },
     {
-        "name": "Defeat All 3 UPRPRC Hideout Bosses",
         "difficulty": 3,
+        "name": "Defeat All 3 UPRPRC Hideout Bosses",
         "synergy": 0,
         "types": [
             "UPRPRC"
         ]
     },
     {
-        "name": "Purchase 5 Buffs at Once",
         "difficulty": 15,
+        "name": "Purchase 5 Buffs at Once",
         "synergy": 0,
         "types": [
             "Attack Up Buff",
@@ -188,16 +188,16 @@
         ]
     },
     {
-        "name": "Hear \u266a Sudden Death",
         "difficulty": 1,
+        "name": "Hear \u266a Sudden Death",
         "synergy": 0,
         "types": [
             "Alius"
         ]
     },
     {
-        "name": "All 3 Eastern Highlands Regen Up Potions",
         "difficulty": 13,
+        "name": "All 3 Eastern Highlands Regen Up Potions",
         "synergy": 0,
         "types": [
             "Eastern Highlands",
@@ -205,8 +205,8 @@
         ]
     },
     {
-        "name": "All 4 Island Core Mana Up Potions",
         "difficulty": 10,
+        "name": "All 4 Island Core Mana Up Potions",
         "synergy": 0,
         "types": [
             "Island Core",
@@ -214,8 +214,8 @@
         ]
     },
     {
-        "name": "Equip at least 8 Badges",
         "difficulty": 17,
+        "name": "Equip at least 8 Badges",
         "synergy": 0,
         "types": [
             "Pack Up",
@@ -248,8 +248,8 @@
         ]
     },
     {
-        "name": "Recruit Ashuri and Lilith",
         "difficulty": 24,
+        "name": "Recruit Ashuri and Lilith",
         "synergy": 0,
         "types": [
             "Ashuri",

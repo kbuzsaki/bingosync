@@ -1,7 +1,7 @@
 [
     {
-        "name": "6 Jiggies in JRL",
         "difficulty": 24,
+        "name": "6 Jiggies in JRL",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -9,8 +9,8 @@
         ]
     },
     {
-        "name": "Learn Snooze Pack",
         "difficulty": 18,
+        "name": "Learn Snooze Pack",
         "synergy": 0,
         "types": [
             "Moves",
@@ -18,16 +18,16 @@
         ]
     },
     {
-        "name": "11 Glowbos",
         "difficulty": 15,
+        "name": "11 Glowbos",
         "synergy": 0,
         "types": [
             "Glowbo"
         ]
     },
     {
-        "name": "All Notes in HFP",
         "difficulty": 7,
+        "name": "All Notes in HFP",
         "synergy": 0,
         "types": [
             "Notes",
@@ -36,8 +36,8 @@
         ]
     },
     {
-        "name": "All Honeycombs in IoH",
         "difficulty": 1,
+        "name": "All Honeycombs in IoH",
         "synergy": 0,
         "types": [
             "Honeycombs",
@@ -45,8 +45,8 @@
         ]
     },
     {
-        "name": "Kill George and Mildred",
         "difficulty": 10,
+        "name": "Kill George and Mildred",
         "synergy": 0,
         "types": [
             "CCL",
@@ -54,8 +54,8 @@
         ]
     },
     {
-        "name": "All Honeycombs in GGM",
         "difficulty": 2,
+        "name": "All Honeycombs in GGM",
         "synergy": 0,
         "types": [
             "Honeycombs",
@@ -63,8 +63,8 @@
         ]
     },
     {
-        "name": "Dodgem Dome Jiggy",
         "difficulty": 21,
+        "name": "Dodgem Dome Jiggy",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -72,24 +72,24 @@
         ]
     },
     {
-        "name": "13 Glowbos",
         "difficulty": 19,
+        "name": "13 Glowbos",
         "synergy": 0,
         "types": [
             "Glowbo"
         ]
     },
     {
-        "name": "8 Cheato Pages",
         "difficulty": 13,
+        "name": "8 Cheato Pages",
         "synergy": 0,
         "types": [
             "Cheatos"
         ]
     },
     {
-        "name": "All Jinjos in GI",
         "difficulty": 16,
+        "name": "All Jinjos in GI",
         "synergy": 0,
         "types": [
             "Jinjos",
@@ -97,8 +97,8 @@
         ]
     },
     {
-        "name": "Dragon Brothers Jiggy",
         "difficulty": 14,
+        "name": "Dragon Brothers Jiggy",
         "synergy": 0,
         "types": [
             "Bosses",
@@ -107,8 +107,8 @@
         ]
     },
     {
-        "name": "Mountain CP as T-Rex",
         "difficulty": 8,
+        "name": "Mountain CP as T-Rex",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -116,8 +116,8 @@
         ]
     },
     {
-        "name": "Learn Breegull Bash",
         "difficulty": 5,
+        "name": "Learn Breegull Bash",
         "synergy": 0,
         "types": [
             "Moves",
@@ -126,8 +126,8 @@
         ]
     },
     {
-        "name": "5 Jiggies in JRL",
         "difficulty": 22,
+        "name": "5 Jiggies in JRL",
         "synergy": 2,
         "types": [
             "Jiggies",
@@ -135,8 +135,8 @@
         ]
     },
     {
-        "name": "All Cheato Pages in MT",
         "difficulty": 3,
+        "name": "All Cheato Pages in MT",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -144,16 +144,16 @@
         ]
     },
     {
-        "name": "9 Trebleclefs",
         "difficulty": 25,
+        "name": "9 Trebleclefs",
         "synergy": 0,
         "types": [
             "Trebleclef"
         ]
     },
     {
-        "name": "Clinkers Cavern Jiggy",
         "difficulty": 17,
+        "name": "Clinkers Cavern Jiggy",
         "synergy": 3,
         "types": [
             "Jiggies",
@@ -161,8 +161,8 @@
         ]
     },
     {
-        "name": "All Jinjos in CCL",
         "difficulty": 11,
+        "name": "All Jinjos in CCL",
         "synergy": 0,
         "types": [
             "Jinjos",
@@ -170,16 +170,16 @@
         ]
     },
     {
-        "name": "All Warppads in TDL",
         "difficulty": 9,
+        "name": "All Warppads in TDL",
         "synergy": 0,
         "types": [
             "TDL"
         ]
     },
     {
-        "name": "All Jinjos in GGM",
         "difficulty": 12,
+        "name": "All Jinjos in GGM",
         "synergy": 3,
         "types": [
             "Jinjos",
@@ -187,8 +187,8 @@
         ]
     },
     {
-        "name": "All Cheato Pages in TDL",
         "difficulty": 6,
+        "name": "All Cheato Pages in TDL",
         "synergy": 0,
         "types": [
             "Cheatos",
@@ -196,16 +196,16 @@
         ]
     },
     {
-        "name": "4 Trebleclefs",
         "difficulty": 4,
+        "name": "4 Trebleclefs",
         "synergy": 0,
         "types": [
             "Trebleclef"
         ]
     },
     {
-        "name": "7 Jiggies in GI",
         "difficulty": 23,
+        "name": "7 Jiggies in GI",
         "synergy": 0,
         "types": [
             "Jiggies",
@@ -213,8 +213,8 @@
         ]
     },
     {
-        "name": "Learn Glide",
         "difficulty": 20,
+        "name": "Learn Glide",
         "synergy": 0,
         "types": [
             "Moves",

@@ -1,15 +1,15 @@
 [
     {
-        "name": "Get the party to at least level 22",
         "difficulty": 19,
+        "name": "Get the party to at least level 22",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Get the Sunblade in the Mirage Tower",
         "difficulty": 12,
+        "name": "Get the Sunblade in the Mirage Tower",
         "synergy": 0,
         "types": [
             "treasurehunt",
@@ -17,8 +17,8 @@
         ]
     },
     {
-        "name": "Equip only a Thief's Armlet on the body slot",
         "difficulty": 1,
+        "name": "Equip only a Thief's Armlet on the body slot",
         "synergy": 0,
         "types": [
             "unique",
@@ -27,16 +27,16 @@
         ]
     },
     {
-        "name": "Do NOT run from any battle in the Citadel of Trials",
         "difficulty": 10,
+        "name": "Do NOT run from any battle in the Citadel of Trials",
         "synergy": 0,
         "types": [
             "norun"
         ]
     },
     {
-        "name": "Defeat Echidna in Earthgift Shrine",
         "difficulty": 23,
+        "name": "Defeat Echidna in Earthgift Shrine",
         "synergy": 0,
         "types": [
             "earthgift",
@@ -44,16 +44,16 @@
         ]
     },
     {
-        "name": "Get the Mage's Staff in the Sunken Shrine",
         "difficulty": 6,
+        "name": "Get the Mage's Staff in the Sunken Shrine",
         "synergy": 0,
         "types": [
             "treasurehunt"
         ]
     },
     {
-        "name": "Defeat Gilgamesh and Atomos in Lifespring Grotto",
         "difficulty": 25,
+        "name": "Defeat Gilgamesh and Atomos in Lifespring Grotto",
         "synergy": 0,
         "types": [
             "whisperwind",
@@ -61,24 +61,24 @@
         ]
     },
     {
-        "name": "Get the party to at least level 25",
         "difficulty": 18,
+        "name": "Get the party to at least level 25",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Defeat Goblins at the Cavern of Earth",
         "difficulty": 14,
+        "name": "Defeat Goblins at the Cavern of Earth",
         "synergy": 0,
         "types": [
             "situational"
         ]
     },
     {
-        "name": "Use exactly 2 Thieves",
         "difficulty": 2,
+        "name": "Use exactly 2 Thieves",
         "synergy": 0,
         "types": [
             "party",
@@ -86,16 +86,16 @@
         ]
     },
     {
-        "name": "Use at least 75 Potions",
         "difficulty": 13,
+        "name": "Use at least 75 Potions",
         "synergy": 0,
         "types": [
             "itemrestriction"
         ]
     },
     {
-        "name": "Use exactly 2 White Mages",
         "difficulty": 4,
+        "name": "Use exactly 2 White Mages",
         "synergy": 0,
         "types": [
             "party",
@@ -103,16 +103,16 @@
         ]
     },
     {
-        "name": "Learn exactly two curative spells",
         "difficulty": 7,
+        "name": "Learn exactly two curative spells",
         "synergy": 0,
         "types": [
             "monk"
         ]
     },
     {
-        "name": "Buy 99 Faerie Tonics at the Caravan",
         "difficulty": 21,
+        "name": "Buy 99 Faerie Tonics at the Caravan",
         "synergy": 0,
         "types": [
             "spending",
@@ -120,40 +120,40 @@
         ]
     },
     {
-        "name": "Learn at least two Level 6 spells for a character",
         "difficulty": 20,
+        "name": "Learn at least two Level 6 spells for a character",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Unlock one red seal in the Labyrinth of Time",
         "difficulty": 22,
+        "name": "Unlock one red seal in the Labyrinth of Time",
         "synergy": 0,
         "types": [
             "labyrinth"
         ]
     },
     {
-        "name": "Defeat at least one Dark Fighter",
         "difficulty": 16,
+        "name": "Defeat at least one Dark Fighter",
         "synergy": 0,
         "types": [
             "atleast"
         ]
     },
     {
-        "name": "Defeat Ankheg",
         "difficulty": 15,
+        "name": "Defeat Ankheg",
         "synergy": 0,
         "types": [
             "fight"
         ]
     },
     {
-        "name": "Use exactly 2 Warriors",
         "difficulty": 3,
+        "name": "Use exactly 2 Warriors",
         "synergy": 0,
         "types": [
             "party",
@@ -161,16 +161,16 @@
         ]
     },
     {
-        "name": "Use at least 2 Gold Needles",
         "difficulty": 9,
+        "name": "Use at least 2 Gold Needles",
         "synergy": 0,
         "types": [
             "itemrestriction"
         ]
     },
     {
-        "name": "Cast Thundaga at least twice",
         "difficulty": 5,
+        "name": "Cast Thundaga at least twice",
         "synergy": 0,
         "types": [
             "noredmage",
@@ -178,24 +178,24 @@
         ]
     },
     {
-        "name": "Spend at least 26,780 gil in Elfheim",
         "difficulty": 8,
+        "name": "Spend at least 26,780 gil in Elfheim",
         "synergy": 0,
         "types": [
             "spending"
         ]
     },
     {
-        "name": "Unlock two blue seals in the Labyrinth of Time",
         "difficulty": 24,
+        "name": "Unlock two blue seals in the Labyrinth of Time",
         "synergy": 0,
         "types": [
             "labyrinth"
         ]
     },
     {
-        "name": "Get only 1 of Sunblade or Diamond Armor from chests",
         "difficulty": 17,
+        "name": "Get only 1 of Sunblade or Diamond Armor from chests",
         "synergy": 0,
         "types": [
             "sunblade",
@@ -203,8 +203,8 @@
         ]
     },
     {
-        "name": "Put a Mindflayer to sleep",
         "difficulty": 11,
+        "name": "Put a Mindflayer to sleep",
         "synergy": 0,
         "types": [
             "situational"

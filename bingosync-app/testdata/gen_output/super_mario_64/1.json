@@ -1,55 +1,55 @@
 [
     {
-        "name": "All Stars in SSL",
         "difficulty": 20,
+        "name": "All Stars in SSL",
         "synergy": 0,
         "types": [
             "SSL"
         ]
     },
     {
-        "name": "35 Total Stars",
         "difficulty": 22,
+        "name": "35 Total Stars",
         "synergy": 0,
         "types": [
             "manystar"
         ]
     },
     {
-        "name": "BITS Red Coin Star",
         "difficulty": 4,
+        "name": "BITS Red Coin Star",
         "synergy": 0,
         "types": [
             "bowserreds"
         ]
     },
     {
-        "name": "Red Coin Star in JRB",
         "difficulty": 11,
+        "name": "Red Coin Star in JRB",
         "synergy": 0,
         "types": [
             "JRB"
         ]
     },
     {
-        "name": "Red Coin Star in WDW",
         "difficulty": 8,
+        "name": "Red Coin Star in WDW",
         "synergy": 0,
         "types": [
             "WDW"
         ]
     },
     {
-        "name": "30 Lives",
         "difficulty": 14,
+        "name": "30 Lives",
         "synergy": 0,
         "types": [
             "lives"
         ]
     },
     {
-        "name": "2 Cap Stage Stars",
         "difficulty": 6,
+        "name": "2 Cap Stage Stars",
         "synergy": 0,
         "types": [
             "wingcap",
@@ -59,8 +59,8 @@
         ]
     },
     {
-        "name": "4 Stars each from JRB and DDD",
         "difficulty": 18,
+        "name": "4 Stars each from JRB and DDD",
         "synergy": 0,
         "types": [
             "JRB",
@@ -68,48 +68,48 @@
         ]
     },
     {
-        "name": "Open All 11 Cannons",
         "difficulty": 25,
+        "name": "Open All 11 Cannons",
         "synergy": 0,
         "types": [
             "cannons"
         ]
     },
     {
-        "name": "Beat the King in BOB ",
         "difficulty": 2,
+        "name": "Beat the King in BOB ",
         "synergy": 0,
         "types": [
             "BOB"
         ]
     },
     {
-        "name": "Star #1 from each stage",
         "difficulty": 23,
+        "name": "Star #1 from each stage",
         "synergy": 0,
         "types": [
             "starseach"
         ]
     },
     {
-        "name": "Secrets Star in THI",
         "difficulty": 5,
+        "name": "Secrets Star in THI",
         "synergy": 0,
         "types": [
             "THI"
         ]
     },
     {
-        "name": "100 Coin Star in TTM",
         "difficulty": 12,
+        "name": "100 Coin Star in TTM",
         "synergy": 0,
         "types": [
             "TTM"
         ]
     },
     {
-        "name": "Eye in the Secret Room BBH",
         "difficulty": 9,
+        "name": "Eye in the Secret Room BBH",
         "synergy": 0,
         "types": [
             "BBH",
@@ -117,32 +117,32 @@
         ]
     },
     {
-        "name": "All Stars in JRB",
         "difficulty": 16,
+        "name": "All Stars in JRB",
         "synergy": 0,
         "types": [
             "JRB"
         ]
     },
     {
-        "name": "7 Castle Secret Stars",
         "difficulty": 7,
+        "name": "7 Castle Secret Stars",
         "synergy": 0,
         "types": [
             "secrets"
         ]
     },
     {
-        "name": "All Stars in TTC",
         "difficulty": 19,
+        "name": "All Stars in TTC",
         "synergy": 0,
         "types": [
             "TTC"
         ]
     },
     {
-        "name": "At least 3 stars from 8 stages",
         "difficulty": 21,
+        "name": "At least 3 stars from 8 stages",
         "synergy": 0,
         "types": [
             "starseach",
@@ -150,16 +150,16 @@
         ]
     },
     {
-        "name": "Secret Aquarium Star",
         "difficulty": 3,
+        "name": "Secret Aquarium Star",
         "synergy": 0,
         "types": [
             "aquarium"
         ]
     },
     {
-        "name": "100 Coin Star in SL",
         "difficulty": 15,
+        "name": "100 Coin Star in SL",
         "synergy": 0,
         "types": [
             "SL",
@@ -167,32 +167,32 @@
         ]
     },
     {
-        "name": "Lose Mario's Hat",
         "difficulty": 1,
+        "name": "Lose Mario's Hat",
         "synergy": 0,
         "types": [
             "losehat"
         ]
     },
     {
-        "name": "100 Coin Star in DDD",
         "difficulty": 13,
+        "name": "100 Coin Star in DDD",
         "synergy": 0,
         "types": [
             "DDD"
         ]
     },
     {
-        "name": "25 Lives",
         "difficulty": 10,
+        "name": "25 Lives",
         "synergy": 0,
         "types": [
             "lives"
         ]
     },
     {
-        "name": "3 Stars each from TTC and RR",
         "difficulty": 17,
+        "name": "3 Stars each from TTC and RR",
         "synergy": 0,
         "types": [
             "TTC",
@@ -200,8 +200,8 @@
         ]
     },
     {
-        "name": "All Stars in THI",
         "difficulty": 24,
+        "name": "All Stars in THI",
         "synergy": 0,
         "types": [
             "THI"

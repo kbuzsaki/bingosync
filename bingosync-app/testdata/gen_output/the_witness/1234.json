@@ -1,139 +1,139 @@
 [
     {
-        "name": "Tractor EP",
         "difficulty": 2,
+        "name": "Tractor EP",
         "synergy": 0
     },
     {
-        "name": "Any 4 Straight Line EPs",
         "difficulty": 21,
+        "name": "Any 4 Straight Line EPs",
         "synergy": 0
     },
     {
-        "name": "Symmetry Laser",
         "difficulty": 14,
+        "name": "Symmetry Laser",
         "synergy": 0
     },
     {
-        "name": "All 5 Keep Walk-On EPs",
         "difficulty": 18,
+        "name": "All 5 Keep Walk-On EPs",
         "synergy": 0
     },
     {
-        "name": "Town Red Hexagonal Panel",
         "difficulty": 10,
+        "name": "Town Red Hexagonal Panel",
         "synergy": 0
     },
     {
-        "name": "Boathouse Claw Ramp EP",
         "difficulty": 19,
+        "name": "Boathouse Claw Ramp EP",
         "synergy": 0
     },
     {
-        "name": "All 6 Monastery Facade EPs",
         "difficulty": 8,
+        "name": "All 6 Monastery Facade EPs",
         "synergy": 0
     },
     {
-        "name": "Both Jungle Bamboo Sky EPs",
         "difficulty": 5,
+        "name": "Both Jungle Bamboo Sky EPs",
         "synergy": 0
     },
     {
-        "name": "Any 3 Boat EPs",
         "difficulty": 22,
+        "name": "Any 3 Boat EPs",
         "synergy": 0,
         "types": [
             "boat_ep"
         ]
     },
     {
-        "name": "Mountaintop River EP",
         "difficulty": 11,
+        "name": "Mountaintop River EP",
         "synergy": 0
     },
     {
-        "name": "Treehouse Left Orange Bridge",
         "difficulty": 25,
+        "name": "Treehouse Left Orange Bridge",
         "synergy": 0
     },
     {
-        "name": "Desert Flood Room EP",
         "difficulty": 12,
+        "name": "Desert Flood Room EP",
         "synergy": 0
     },
     {
-        "name": "Bunker Doorway EP",
         "difficulty": 16,
+        "name": "Bunker Doorway EP",
         "synergy": 0
     },
     {
-        "name": "Boathouse Claw Panel",
         "difficulty": 9,
+        "name": "Boathouse Claw Panel",
         "synergy": 0
     },
     {
-        "name": "Town Rooftop Discarded Panel",
         "difficulty": 3,
+        "name": "Town Rooftop Discarded Panel",
         "synergy": 0,
         "types": [
             "discard"
         ]
     },
     {
-        "name": "Desert Shoreline EP",
         "difficulty": 6,
+        "name": "Desert Shoreline EP",
         "synergy": 0
     },
     {
-        "name": "Mill Rooftop Vent EP",
         "difficulty": 4,
+        "name": "Mill Rooftop Vent EP",
         "synergy": 0
     },
     {
-        "name": "Swamp Yellow and Orange Underwater Line EPs",
         "difficulty": 23,
+        "name": "Swamp Yellow and Orange Underwater Line EPs",
         "synergy": 0
     },
     {
-        "name": "All 3 Shipwreck Circle EPs",
         "difficulty": 15,
+        "name": "All 3 Shipwreck Circle EPs",
         "synergy": 0
     },
     {
-        "name": "Both Swamp Red Island Panels",
         "difficulty": 17,
+        "name": "Both Swamp Red Island Panels",
         "synergy": 0
     },
     {
-        "name": "Any 2 Discarded Panels",
         "difficulty": 13,
+        "name": "Any 2 Discarded Panels",
         "synergy": 0,
         "types": [
             "discard"
         ]
     },
     {
-        "name": "Boat Clockwise Shipwreck Underside EP",
         "difficulty": 20,
+        "name": "Boat Clockwise Shipwreck Underside EP",
         "synergy": 0,
         "types": [
             "boat_ep"
         ]
     },
     {
-        "name": "Both BBC Video EPs",
         "difficulty": 7,
+        "name": "Both BBC Video EPs",
         "synergy": 0
     },
     {
-        "name": "Tutorial Floor Panel",
         "difficulty": 1,
+        "name": "Tutorial Floor Panel",
         "synergy": 0
     },
     {
-        "name": "Swamp Red Underwater Panels",
         "difficulty": 24,
+        "name": "Swamp Red Underwater Panels",
         "synergy": 0
     }
 ]

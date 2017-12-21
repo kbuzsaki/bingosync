@@ -1,87 +1,87 @@
 [
     {
-        "name": "3 Heart Refreshes",
         "difficulty": 24,
+        "name": "3 Heart Refreshes",
         "synergy": 0,
         "types": [
             "hr"
         ]
     },
     {
-        "name": "Bekatowa & Luminus",
         "difficulty": 18,
+        "name": "Bekatowa & Luminus",
         "synergy": 0,
         "types": [
             "clocktower"
         ]
     },
     {
-        "name": "Kill 5 mounted enemies",
         "difficulty": 15,
+        "name": "Kill 5 mounted enemies",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Start w/ Potion",
         "difficulty": 7,
+        "name": "Start w/ Potion",
         "synergy": 0,
         "types": [
             "intro"
         ]
     },
     {
-        "name": "Finish at Zircon",
         "difficulty": 1,
+        "name": "Finish at Zircon",
         "synergy": 0,
         "types": [
             "finishplace"
         ]
     },
     {
-        "name": "Have Fairie identify 5 suspicious walls",
         "difficulty": 10,
+        "name": "Have Fairie identify 5 suspicious walls",
         "synergy": 0,
         "types": [
             "fairie"
         ]
     },
     {
-        "name": "No Shield Rod",
         "difficulty": 2,
+        "name": "No Shield Rod",
         "synergy": 0,
         "types": [
             "shieldrod"
         ]
     },
     {
-        "name": "180+ Hearts",
         "difficulty": 21,
+        "name": "180+ Hearts",
         "synergy": 0,
         "types": [
             "hearts"
         ]
     },
     {
-        "name": "Visit 20 save rooms",
         "difficulty": 19,
+        "name": "Visit 20 save rooms",
         "synergy": 0,
         "types": [
             "saves"
         ]
     },
     {
-        "name": "Gram",
         "difficulty": 13,
+        "name": "Gram",
         "synergy": 0,
         "types": [
             "cv3triplets"
         ]
     },
     {
-        "name": "Ring of Arcana",
         "difficulty": 16,
+        "name": "Ring of Arcana",
         "synergy": 0,
         "types": [
             "beelzebub",
@@ -89,80 +89,80 @@
         ]
     },
     {
-        "name": "Beat a 1st castle boss w/ Bastard sword",
         "difficulty": 14,
+        "name": "Beat a 1st castle boss w/ Bastard sword",
         "synergy": 0,
         "types": [
             "sword"
         ]
     },
     {
-        "name": "Faerie Card w/o Sword Card",
         "difficulty": 8,
+        "name": "Faerie Card w/o Sword Card",
         "synergy": 0,
         "types": [
             "swordcard"
         ]
     },
     {
-        "name": "Kill 8 types of Knights",
         "difficulty": 5,
+        "name": "Kill 8 types of Knights",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Merman Statue and Alucard Shield",
         "difficulty": 22,
+        "name": "Merman Statue and Alucard Shield",
         "synergy": 0,
         "types": [
             "merman"
         ]
     },
     {
-        "name": "Beat Slogra & Gaibon w/ Basilard",
         "difficulty": 3,
+        "name": "Beat Slogra & Gaibon w/ Basilard",
         "synergy": 0,
         "types": [
             "entrance"
         ]
     },
     {
-        "name": "Beat Succubus w/o Soul of Bat",
         "difficulty": 25,
+        "name": "Beat Succubus w/o Soul of Bat",
         "synergy": 0,
         "types": [
             "jewelopen"
         ]
     },
     {
-        "name": "300+ HP",
         "difficulty": 17,
+        "name": "300+ HP",
         "synergy": 0,
         "types": [
             "hp"
         ]
     },
     {
-        "name": "Beat Karasuman w/ Cutlass",
         "difficulty": 11,
+        "name": "Beat Karasuman w/ Cutlass",
         "synergy": 0,
         "types": [
             "karasuman"
         ]
     },
     {
-        "name": "Dark Blade",
         "difficulty": 9,
+        "name": "Dark Blade",
         "synergy": 0,
         "types": [
             "dopple40"
         ]
     },
     {
-        "name": "Jewel Sword & Beryl Circlet",
         "difficulty": 12,
+        "name": "Jewel Sword & Beryl Circlet",
         "synergy": 0,
         "types": [
             "wolf",
@@ -170,16 +170,16 @@
         ]
     },
     {
-        "name": "Crystal Cloak",
         "difficulty": 6,
+        "name": "Crystal Cloak",
         "synergy": 0,
         "types": [
             "scylla"
         ]
     },
     {
-        "name": "Beat Doppleganger10 with Jewel Knuckles, no subweapons",
         "difficulty": 4,
+        "name": "Beat Doppleganger10 with Jewel Knuckles, no subweapons",
         "synergy": 0,
         "types": [
             "dopple10",
@@ -187,16 +187,16 @@
         ]
     },
     {
-        "name": "600+ rooms",
         "difficulty": 23,
+        "name": "600+ rooms",
         "synergy": 0,
         "types": [
             "rooms"
         ]
     },
     {
-        "name": "3 Power of Sires",
         "difficulty": 20,
+        "name": "3 Power of Sires",
         "synergy": 0,
         "types": [
             "powersire"

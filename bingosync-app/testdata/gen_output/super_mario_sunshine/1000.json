@@ -1,7 +1,7 @@
 [
     {
-        "name": "Defeat Shadow Mario in Sirena Beach",
         "difficulty": 24,
+        "name": "Defeat Shadow Mario in Sirena Beach",
         "synergy": 0,
         "types": [
             "Shadow_Mario",
@@ -10,8 +10,8 @@
         ]
     },
     {
-        "name": "7 Blue Bird Blue Coins",
         "difficulty": 18,
+        "name": "7 Blue Bird Blue Coins",
         "synergy": 0,
         "types": [
             "Linked_Blues",
@@ -20,8 +20,8 @@
         ]
     },
     {
-        "name": "10 Blue Coins from Noki Bay",
         "difficulty": 15,
+        "name": "10 Blue Coins from Noki Bay",
         "synergy": 0,
         "types": [
             "Noki_Blues",
@@ -29,16 +29,16 @@
         ]
     },
     {
-        "name": "Collect a 100 Coin Shine from a Secret Level",
         "difficulty": 7,
+        "name": "Collect a 100 Coin Shine from a Secret Level",
         "synergy": 0,
         "types": [
             "Secret_100"
         ]
     },
     {
-        "name": "15 Blue Coins from Ricco Harbor",
         "difficulty": 1,
+        "name": "15 Blue Coins from Ricco Harbor",
         "synergy": 0,
         "types": [
             "Ricco_Blues",
@@ -49,8 +49,8 @@
         ]
     },
     {
-        "name": "50 Total Blue Coins",
         "difficulty": 10,
+        "name": "50 Total Blue Coins",
         "synergy": 0,
         "types": [
             "Ricco_Blues",
@@ -66,8 +66,8 @@
         ]
     },
     {
-        "name": "Defeat all Cataquacks in a single episode of Gelato Beach",
         "difficulty": 2,
+        "name": "Defeat all Cataquacks in a single episode of Gelato Beach",
         "synergy": 0,
         "types": [
             "Gelato_Quacks",
@@ -77,24 +77,24 @@
         ]
     },
     {
-        "name": "11 Shines from Delfino Plaza",
         "difficulty": 21,
+        "name": "11 Shines from Delfino Plaza",
         "synergy": 0,
         "types": [
             "Plaza_Shines"
         ]
     },
     {
-        "name": "2 Shines from 5 Levels",
         "difficulty": 19,
+        "name": "2 Shines from 5 Levels",
         "synergy": 0,
         "types": [
             "Mix_Up"
         ]
     },
     {
-        "name": "Defeat Shadow Mario in Bianco Hills",
         "difficulty": 13,
+        "name": "Defeat Shadow Mario in Bianco Hills",
         "synergy": 0,
         "types": [
             "Bianco_Shadow",
@@ -104,8 +104,8 @@
         ]
     },
     {
-        "name": "5 Secret Shines",
         "difficulty": 16,
+        "name": "5 Secret Shines",
         "synergy": 0,
         "types": [
             "Secret_Shines",
@@ -117,8 +117,8 @@
         ]
     },
     {
-        "name": "Bianco Hills Episode 8 Shine",
         "difficulty": 14,
+        "name": "Bianco Hills Episode 8 Shine",
         "synergy": 0,
         "types": [
             "Bianco_Shadow",
@@ -129,8 +129,8 @@
         ]
     },
     {
-        "name": "20 Blue Coins from Pinna Park",
         "difficulty": 8,
+        "name": "20 Blue Coins from Pinna Park",
         "synergy": 1,
         "types": [
             "Pinna_Blues",
@@ -141,8 +141,8 @@
         ]
     },
     {
-        "name": "100 Coin Shine from Ricco Harbor",
         "difficulty": 5,
+        "name": "100 Coin Shine from Ricco Harbor",
         "synergy": 0,
         "types": [
             "Ricco_100s",
@@ -153,8 +153,8 @@
         ]
     },
     {
-        "name": "10 Shines from a single level (not plaza)",
         "difficulty": 22,
+        "name": "10 Shines from a single level (not plaza)",
         "synergy": 0,
         "types": [
             "Ricco_8",
@@ -168,8 +168,8 @@
         ]
     },
     {
-        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless",
         "difficulty": 3,
+        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless",
         "synergy": 0,
         "types": [
             "Ricco_Top",
@@ -180,8 +180,8 @@
         ]
     },
     {
-        "name": "Sirena Beach Episode 8 Shine",
         "difficulty": 25,
+        "name": "Sirena Beach Episode 8 Shine",
         "synergy": 0,
         "types": [
             "Sirena_8",
@@ -189,16 +189,16 @@
         ]
     },
     {
-        "name": "40 Lives",
         "difficulty": 17,
+        "name": "40 Lives",
         "synergy": 0,
         "types": [
             "X_Lives"
         ]
     },
     {
-        "name": "8 Shines from Delfino Plaza",
         "difficulty": 11,
+        "name": "8 Shines from Delfino Plaza",
         "synergy": 0,
         "types": [
             "Plaza_M",
@@ -207,8 +207,8 @@
         ]
     },
     {
-        "name": "100 Coin Shine from Gelato Beach",
         "difficulty": 9,
+        "name": "100 Coin Shine from Gelato Beach",
         "synergy": 0,
         "types": [
             "Gelato_100",
@@ -217,8 +217,8 @@
         ]
     },
     {
-        "name": "9 Shines from Delfino Plaza",
         "difficulty": 12,
+        "name": "9 Shines from Delfino Plaza",
         "synergy": 0,
         "types": [
             "Plaza_M",
@@ -227,8 +227,8 @@
         ]
     },
     {
-        "name": "5 Blue Coins from Enemies",
         "difficulty": 6,
+        "name": "5 Blue Coins from Enemies",
         "synergy": 0,
         "types": [
             "Blue_Enemies",
@@ -240,8 +240,8 @@
         ]
     },
     {
-        "name": "Goopy Inferno (Pianta 3) NO damage taken",
         "difficulty": 4,
+        "name": "Goopy Inferno (Pianta 3) NO damage taken",
         "synergy": 0,
         "types": [
             "Goopy_Inferno",
@@ -250,8 +250,8 @@
         ]
     },
     {
-        "name": "Collect 2 Hidden Shines in Sirena Beach",
         "difficulty": 23,
+        "name": "Collect 2 Hidden Shines in Sirena Beach",
         "synergy": 0,
         "types": [
             "Sirena_Hidden",
@@ -259,8 +259,8 @@
         ]
     },
     {
-        "name": "4 Shines from 4 Levels",
         "difficulty": 20,
+        "name": "4 Shines from 4 Levels",
         "synergy": 0,
         "types": [
             "Mix_Up"

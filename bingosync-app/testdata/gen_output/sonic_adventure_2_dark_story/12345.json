@@ -1,23 +1,23 @@
 [
     {
-        "name": "Sky Rail M3",
         "difficulty": 19,
+        "name": "Sky Rail M3",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Game Over during Flying Dog",
         "difficulty": 12,
+        "name": "Game Over during Flying Dog",
         "synergy": 0,
         "types": [
             "gameover"
         ]
     },
     {
-        "name": "Rename a Chao after a person you're racing",
         "difficulty": 1,
+        "name": "Rename a Chao after a person you're racing",
         "synergy": 0,
         "types": [
             "chaogarden",
@@ -25,16 +25,16 @@
         ]
     },
     {
-        "name": "Iron Gate M3",
         "difficulty": 10,
+        "name": "Iron Gate M3",
         "synergy": 0,
         "types": [
             "irongate"
         ]
     },
     {
-        "name": "Route 280 M5 A-Rank",
         "difficulty": 23,
+        "name": "Route 280 M5 A-Rank",
         "synergy": 0,
         "types": [
             "route280",
@@ -42,56 +42,56 @@
         ]
     },
     {
-        "name": "Rouge's Mystic Melody",
         "difficulty": 6,
+        "name": "Rouge's Mystic Melody",
         "synergy": 0,
         "types": [
             "drylagoon"
         ]
     },
     {
-        "name": "Final Chase M2",
         "difficulty": 25,
+        "name": "Final Chase M2",
         "synergy": 0,
         "types": [
             "finalchase"
         ]
     },
     {
-        "name": "2 Chao Boxes in Sky Rail and finish",
         "difficulty": 18,
+        "name": "2 Chao Boxes in Sky Rail and finish",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Weapons Bed M5",
         "difficulty": 14,
+        "name": "Weapons Bed M5",
         "synergy": 0,
         "types": [
             "weaponsbed"
         ]
     },
     {
-        "name": "2 Chao Boxes in Sand Ocean and finish",
         "difficulty": 2,
+        "name": "2 Chao Boxes in Sand Ocean and finish",
         "synergy": 0,
         "types": [
             "sandocean"
         ]
     },
     {
-        "name": "Lost Colony M4",
         "difficulty": 13,
+        "name": "Lost Colony M4",
         "synergy": 0,
         "types": [
             "lostcolony"
         ]
     },
     {
-        "name": "Dry Lagoon M5 A-Rank",
         "difficulty": 4,
+        "name": "Dry Lagoon M5 A-Rank",
         "synergy": 0,
         "types": [
             "drylagoon",
@@ -99,32 +99,32 @@
         ]
     },
     {
-        "name": "Complete Egg Quarters M1 with a Magnetic Shield",
         "difficulty": 7,
+        "name": "Complete Egg Quarters M1 with a Magnetic Shield",
         "synergy": 0,
         "types": [
             "eggquarters"
         ]
     },
     {
-        "name": "Mad Space M3",
         "difficulty": 21,
+        "name": "Mad Space M3",
         "synergy": 0,
         "types": [
             "madspace"
         ]
     },
     {
-        "name": "Sky Rail M4",
         "difficulty": 20,
+        "name": "Sky Rail M4",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Destroy the Gold Beetle in 9 different stages",
         "difficulty": 22,
+        "name": "Destroy the Gold Beetle in 9 different stages",
         "synergy": 0,
         "types": [
             "goldbeetle",
@@ -132,72 +132,72 @@
         ]
     },
     {
-        "name": "Lost Colony M5",
         "difficulty": 16,
+        "name": "Lost Colony M5",
         "synergy": 0,
         "types": [
             "lostcolony"
         ]
     },
     {
-        "name": "5 hidden Chao animals in White Jungle and finish",
         "difficulty": 15,
+        "name": "5 hidden Chao animals in White Jungle and finish",
         "synergy": 0,
         "types": [
             "whitejungle"
         ]
     },
     {
-        "name": "2 Chao Boxes in Sand Ocean and finish",
         "difficulty": 3,
+        "name": "2 Chao Boxes in Sand Ocean and finish",
         "synergy": 0,
         "types": [
             "sandocean"
         ]
     },
     {
-        "name": "Radical Highway M5",
         "difficulty": 9,
+        "name": "Radical Highway M5",
         "synergy": 0,
         "types": [
             "radicalhighway"
         ]
     },
     {
-        "name": "Unlock Chao Garden for all characters",
         "difficulty": 5,
+        "name": "Unlock Chao Garden for all characters",
         "synergy": 0,
         "types": [
             "chaogarden"
         ]
     },
     {
-        "name": "Egg Quarters M4",
         "difficulty": 8,
+        "name": "Egg Quarters M4",
         "synergy": 0,
         "types": [
             "eggquarters"
         ]
     },
     {
-        "name": "Cosmic Wall M3",
         "difficulty": 24,
+        "name": "Cosmic Wall M3",
         "synergy": 0,
         "types": [
             "cosmicwall"
         ]
     },
     {
-        "name": "Complete Sky Rail M1 with 100+ Rings",
         "difficulty": 17,
+        "name": "Complete Sky Rail M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "skyrail"
         ]
     },
     {
-        "name": "Lost Colony M3",
         "difficulty": 11,
+        "name": "Lost Colony M3",
         "synergy": 0,
         "types": [
             "lostcolony"

@@ -1,206 +1,206 @@
 [
     {
+        "difficulty": 20,
+        "name": "Mantine or Skarmory",
         "synergy": 0,
         "types": [
             "duo"
-        ],
-        "difficulty": 20,
-        "name": "Mantine or Skarmory"
+        ]
     },
     {
+        "difficulty": 22,
+        "name": "Stop the same Pok\u00e9mon evolving 4 times",
         "synergy": 0,
         "types": [
             "raise"
-        ],
-        "difficulty": 22,
-        "name": "Stop the same Pok\u00e9mon evolving 4 times"
+        ]
     },
     {
+        "difficulty": 4,
+        "name": "King's Rock",
         "synergy": 0,
         "types": [
             "azalea"
-        ],
-        "difficulty": 4,
-        "name": "King's Rock"
+        ]
     },
     {
+        "difficulty": 11,
+        "name": "A Dragon type Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "dragon"
-        ],
-        "difficulty": 11,
-        "name": "A Dragon type Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 8,
+        "name": "Bayleef, Quilava, or Croconaw",
         "synergy": 0,
         "types": [
             "starters"
-        ],
-        "difficulty": 8,
-        "name": "Bayleef, Quilava, or Croconaw"
+        ]
     },
     {
+        "difficulty": 14,
+        "name": "Dunsparce, Wobbuffet, or Girafarig",
         "synergy": 0,
         "types": [
             "trio"
-        ],
-        "difficulty": 14,
-        "name": "Dunsparce, Wobbuffet, or Girafarig"
+        ]
     },
     {
+        "difficulty": 6,
+        "name": "TM20 (Endure)",
         "synergy": 0,
         "types": [
             "tms",
             "randomtm"
-        ],
-        "difficulty": 6,
-        "name": "TM20 (Endure)"
+        ]
     },
     {
+        "difficulty": 18,
+        "name": "Own 6 different Normal type Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "pkmn"
-        ],
-        "difficulty": 18,
-        "name": "Own 6 different Normal type Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 25,
+        "name": "Mineral Badge",
         "synergy": 0,
         "types": [
             "steel"
-        ],
-        "difficulty": 25,
-        "name": "Mineral Badge"
+        ]
     },
     {
+        "difficulty": 2,
+        "name": "Call a Lass",
         "synergy": 0,
         "types": [
             "call"
-        ],
-        "difficulty": 2,
-        "name": "Call a Lass"
+        ]
     },
     {
+        "difficulty": 23,
+        "name": "3 Lv30+ Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "30"
-        ],
-        "difficulty": 23,
-        "name": "3 Lv30+ Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 5,
+        "name": "Starmie or Cloyster",
         "synergy": 0,
         "types": [
             "stone"
-        ],
-        "difficulty": 5,
-        "name": "Starmie or Cloyster"
+        ]
     },
     {
+        "difficulty": 12,
+        "name": "2 different baby Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "baby"
-        ],
-        "difficulty": 12,
-        "name": "2 different baby Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 9,
+        "name": "7 different types of Berry",
         "synergy": 0,
         "types": [
             "berry"
-        ],
-        "difficulty": 9,
-        "name": "7 different types of Berry"
+        ]
     },
     {
+        "difficulty": 16,
+        "name": "Phanpy or Teddiursa",
         "synergy": 0,
         "types": [
             "nfe"
-        ],
-        "difficulty": 16,
-        "name": "Phanpy or Teddiursa"
+        ]
     },
     {
+        "difficulty": 7,
+        "name": "$0 on hand & mom",
         "synergy": 0,
         "types": [
             "money"
-        ],
-        "difficulty": 7,
-        "name": "$0 on hand & mom"
+        ]
     },
     {
+        "difficulty": 19,
+        "name": "A Pok\u00e9mon with a Rock type move",
         "synergy": 0,
         "types": [
             "move"
-        ],
-        "difficulty": 19,
-        "name": "A Pok\u00e9mon with a Rock type move"
+        ]
     },
     {
+        "difficulty": 21,
+        "name": "Defeat 10 Pok\u00e9Maniacs",
         "synergy": 0,
         "types": [
             "day",
             "union"
-        ],
-        "difficulty": 21,
-        "name": "Defeat 10 Pok\u00e9Maniacs"
+        ]
     },
     {
+        "difficulty": 3,
+        "name": "TM05 (Roar)",
         "synergy": 0,
         "types": [
             "violet"
-        ],
-        "difficulty": 3,
-        "name": "TM05 (Roar)"
+        ]
     },
     {
+        "difficulty": 15,
+        "name": "Soft Sand",
         "synergy": 0,
         "types": [
             "goldenrod",
             "trainers"
-        ],
-        "difficulty": 15,
-        "name": "Soft Sand"
+        ]
     },
     {
+        "difficulty": 1,
+        "name": "Defeat a Legendary Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "legendary"
-        ],
-        "difficulty": 1,
-        "name": "Defeat a Legendary Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 13,
+        "name": "Exp. Share",
         "synergy": 0,
         "types": [
             "whirl",
             "violet"
-        ],
-        "difficulty": 13,
-        "name": "Exp. Share"
+        ]
     },
     {
+        "difficulty": 10,
+        "name": "Sandslash or Arbok",
         "synergy": 0,
         "types": [
             "22"
-        ],
-        "difficulty": 10,
-        "name": "Sandslash or Arbok"
+        ]
     },
     {
+        "difficulty": 17,
+        "name": "HM02 (Fly)",
         "synergy": 0,
         "types": [
             "cianwood"
-        ],
-        "difficulty": 17,
-        "name": "HM02 (Fly)"
+        ]
     },
     {
+        "difficulty": 24,
+        "name": "Berry Juice or Elixer",
         "synergy": 0,
         "types": [
             "shuck"
-        ],
-        "difficulty": 24,
-        "name": "Berry Juice or Elixer"
+        ]
     }
 ]

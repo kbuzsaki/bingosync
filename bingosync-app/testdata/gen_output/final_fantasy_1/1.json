@@ -1,7 +1,7 @@
 [
     {
-        "name": "Defeat Ahriman",
         "difficulty": 20,
+        "name": "Defeat Ahriman",
         "synergy": 0,
         "types": [
             "earthgift",
@@ -9,16 +9,16 @@
         ]
     },
     {
-        "name": "Defeat 3 groups with 4 different monsters",
         "difficulty": 22,
+        "name": "Defeat 3 groups with 4 different monsters",
         "synergy": 0,
         "types": [
             "situational"
         ]
     },
     {
-        "name": "Use exactly one Monk AND one Red Mage",
         "difficulty": 4,
+        "name": "Use exactly one Monk AND one Red Mage",
         "synergy": 0,
         "types": [
             "party",
@@ -27,8 +27,8 @@
         ]
     },
     {
-        "name": "Do NOT run from any battle in the Flying Fortress",
         "difficulty": 11,
+        "name": "Do NOT run from any battle in the Flying Fortress",
         "synergy": 0,
         "types": [
             "norun",
@@ -36,80 +36,80 @@
         ]
     },
     {
-        "name": "Get all of the treasure in the Marsh Cave",
         "difficulty": 8,
+        "name": "Get all of the treasure in the Marsh Cave",
         "synergy": 0,
         "types": [
             "treasurehunt"
         ]
     },
     {
-        "name": "Obtain an Emergency Exit from Purple Worm",
         "difficulty": 14,
+        "name": "Obtain an Emergency Exit from Purple Worm",
         "synergy": 0,
         "types": [
             "emergencyexit"
         ]
     },
     {
-        "name": "Get the Mage's Staff in the Sunken Shrine",
         "difficulty": 6,
+        "name": "Get the Mage's Staff in the Sunken Shrine",
         "synergy": 0,
         "types": [
             "treasurehunt"
         ]
     },
     {
-        "name": "Buy 99 Phoenix Downs",
         "difficulty": 18,
+        "name": "Buy 99 Phoenix Downs",
         "synergy": 0,
         "types": [
             "spending"
         ]
     },
     {
-        "name": "Get at least 1 character to level 37",
         "difficulty": 25,
+        "name": "Get at least 1 character to level 37",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Cast Fira against a group of Bloodbones",
         "difficulty": 2,
+        "name": "Cast Fira against a group of Bloodbones",
         "synergy": 0,
         "types": [
             "situational"
         ]
     },
     {
-        "name": "Get at least 2 characters to level 29",
         "difficulty": 23,
+        "name": "Get at least 2 characters to level 29",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Do NOT cast Flare",
         "difficulty": 5,
+        "name": "Do NOT cast Flare",
         "synergy": 0,
         "types": [
             "default"
         ]
     },
     {
-        "name": "Get the Rat's Tail, but do NOT class change",
         "difficulty": 12,
+        "name": "Get the Rat's Tail, but do NOT class change",
         "synergy": 0,
         "types": [
             "noclass"
         ]
     },
     {
-        "name": "Get all of the treasure in Mt. Duergar, including Excalibur",
         "difficulty": 9,
+        "name": "Get all of the treasure in Mt. Duergar, including Excalibur",
         "synergy": 0,
         "types": [
             "treasurehunt",
@@ -117,48 +117,48 @@
         ]
     },
     {
-        "name": "Defeat at least one Dark Fighter",
         "difficulty": 16,
+        "name": "Defeat at least one Dark Fighter",
         "synergy": 0,
         "types": [
             "atleast"
         ]
     },
     {
-        "name": "Use at least 1 Elixir",
         "difficulty": 7,
+        "name": "Use at least 1 Elixir",
         "synergy": 0,
         "types": [
             "itemrestriction"
         ]
     },
     {
-        "name": "Get Maximillian",
         "difficulty": 19,
+        "name": "Get Maximillian",
         "synergy": 0,
         "types": [
             "westernkeep"
         ]
     },
     {
-        "name": "Learn three Level 1, 2, and 3 spells for a character",
         "difficulty": 21,
+        "name": "Learn three Level 1, 2, and 3 spells for a character",
         "synergy": 0,
         "types": [
             "grind"
         ]
     },
     {
-        "name": "Learn exactly two elemental damage spells",
         "difficulty": 3,
+        "name": "Learn exactly two elemental damage spells",
         "synergy": 0,
         "types": [
             "monk"
         ]
     },
     {
-        "name": "Obtain a Megalixir, but not from 15-tile puzzle",
         "difficulty": 15,
+        "name": "Obtain a Megalixir, but not from 15-tile puzzle",
         "synergy": 0,
         "types": [
             "megalixir",
@@ -166,8 +166,8 @@
         ]
     },
     {
-        "name": "Defeat at least 3 Goblin Guards",
         "difficulty": 1,
+        "name": "Defeat at least 3 Goblin Guards",
         "synergy": 0,
         "types": [
             "defeat",
@@ -175,32 +175,32 @@
         ]
     },
     {
-        "name": "Defeat Hyenadon",
         "difficulty": 13,
+        "name": "Defeat Hyenadon",
         "synergy": 0,
         "types": [
             "fight"
         ]
     },
     {
-        "name": "Get the Dragon Mail in the Mirage Tower",
         "difficulty": 10,
+        "name": "Get the Dragon Mail in the Mirage Tower",
         "synergy": 0,
         "types": [
             "treasurehunt"
         ]
     },
     {
-        "name": "Get the Excalibur in Mt. Duergar",
         "difficulty": 17,
+        "name": "Get the Excalibur in Mt. Duergar",
         "synergy": 0,
         "types": [
             "excalibur"
         ]
     },
     {
-        "name": "Unlock two blue seals in the Labyrinth of Time",
         "difficulty": 24,
+        "name": "Unlock two blue seals in the Labyrinth of Time",
         "synergy": 0,
         "types": [
             "labyrinth"

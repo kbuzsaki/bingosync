@@ -1,130 +1,130 @@
 [
     {
-        "name": "TM31",
         "difficulty": 19,
+        "name": "TM31",
         "synergy": 0
     },
     {
-        "name": "Starmie or Cloyster",
         "difficulty": 12,
+        "name": "Starmie or Cloyster",
         "synergy": 0
     },
     {
-        "name": "10 Pokemon owned",
         "difficulty": 1,
+        "name": "10 Pokemon owned",
         "synergy": 0,
         "types": [
             "owned"
         ]
     },
     {
-        "name": "Defeat 2 Rockers",
         "difficulty": 10,
+        "name": "Defeat 2 Rockers",
         "synergy": 0
     },
     {
-        "name": "Use 4 different stones to evolve Pokemon",
         "difficulty": 23,
+        "name": "Use 4 different stones to evolve Pokemon",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with 4 damage dealing physical moves",
         "difficulty": 6,
+        "name": "Any Pokemon with 4 damage dealing physical moves",
         "synergy": 0
     },
     {
-        "name": "Faint 5 Pikachus",
         "difficulty": 25,
+        "name": "Faint 5 Pikachus",
         "synergy": 0
     },
     {
-        "name": "TM35",
         "difficulty": 18,
+        "name": "TM35",
         "synergy": 0
     },
     {
-        "name": "Defeat all 14 trainers in Routes 6 and 8",
         "difficulty": 14,
+        "name": "Defeat all 14 trainers in Routes 6 and 8",
         "synergy": 0
     },
     {
-        "name": "Party Pokemon Names spell out \"BINGO!\"",
         "difficulty": 2,
+        "name": "Party Pokemon Names spell out \"BINGO!\"",
         "synergy": 0
     },
     {
-        "name": "Faint a Slowbro",
         "difficulty": 13,
+        "name": "Faint a Slowbro",
         "synergy": 0
     },
     {
-        "name": "Use no X items",
         "difficulty": 4,
+        "name": "Use no X items",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with a charging-turn move except Fly",
         "difficulty": 7,
+        "name": "Any Pokemon with a charging-turn move except Fly",
         "synergy": 0
     },
     {
-        "name": "Any level 50 Pokemon",
         "difficulty": 21,
+        "name": "Any level 50 Pokemon",
         "synergy": 0
     },
     {
-        "name": "Revive a Fossil",
         "difficulty": 20,
+        "name": "Revive a Fossil",
         "synergy": 0
     },
     {
-        "name": "Onix",
         "difficulty": 22,
+        "name": "Onix",
         "synergy": 0
     },
     {
-        "name": "Defeat the only trainer on Route 4",
         "difficulty": 16,
+        "name": "Defeat the only trainer on Route 4",
         "synergy": 0
     },
     {
-        "name": "Dragon-type Pokemon",
         "difficulty": 15,
+        "name": "Dragon-type Pokemon",
         "synergy": 0
     },
     {
-        "name": "Finish on the SS Anne",
         "difficulty": 3,
+        "name": "Finish on the SS Anne",
         "synergy": 0
     },
     {
-        "name": "Ivysaur, Charmeleon, or Wartortle",
         "difficulty": 9,
+        "name": "Ivysaur, Charmeleon, or Wartortle",
         "synergy": 0
     },
     {
-        "name": "6 Key Items",
         "difficulty": 5,
+        "name": "6 Key Items",
         "synergy": 0
     },
     {
-        "name": "3 HMs",
         "difficulty": 8,
+        "name": "3 HMs",
         "synergy": 0
     },
     {
-        "name": "3 Pokemon with different status ailments",
         "difficulty": 24,
+        "name": "3 Pokemon with different status ailments",
         "synergy": 0
     },
     {
-        "name": "Diglett or Abra",
         "difficulty": 17,
+        "name": "Diglett or Abra",
         "synergy": 0
     },
     {
-        "name": "Defeat all 10 trainers in Route 11",
         "difficulty": 11,
+        "name": "Defeat all 10 trainers in Route 11",
         "synergy": 0
     }
 ]

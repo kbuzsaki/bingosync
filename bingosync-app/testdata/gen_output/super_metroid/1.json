@@ -1,39 +1,39 @@
 [
     {
-        "name": "Norfair Reserve Tank or Wrecked Ship Reserve Tank",
         "difficulty": 20,
+        "name": "Norfair Reserve Tank or Wrecked Ship Reserve Tank",
         "synergy": 0,
         "types": [
             "reservetank"
         ]
     },
     {
-        "name": "Defeat Draygon",
         "difficulty": 22,
+        "name": "Defeat Draygon",
         "synergy": 0,
         "types": [
             "draygon"
         ]
     },
     {
-        "name": "5+ Energy Tanks",
         "difficulty": 4,
+        "name": "5+ Energy Tanks",
         "synergy": 0,
         "types": [
             "energytank"
         ]
     },
     {
-        "name": "Collect all 40 Crateria Missiles",
         "difficulty": 11,
+        "name": "Collect all 40 Crateria Missiles",
         "synergy": 0,
         "types": [
             "missile"
         ]
     },
     {
-        "name": "Collect only 1 of Ice Beam or Speed Booster",
         "difficulty": 8,
+        "name": "Collect only 1 of Ice Beam or Speed Booster",
         "synergy": 0,
         "types": [
             "icebeam",
@@ -41,8 +41,8 @@
         ]
     },
     {
-        "name": "Finish in Kraid's room",
         "difficulty": 14,
+        "name": "Finish in Kraid's room",
         "synergy": 0,
         "types": [
             "finish",
@@ -50,40 +50,40 @@
         ]
     },
     {
-        "name": "25+ Power Bombs",
         "difficulty": 6,
+        "name": "25+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "Visit the critters",
         "difficulty": 18,
+        "name": "Visit the critters",
         "synergy": 0,
         "types": [
             "speedbooster"
         ]
     },
     {
-        "name": "Collect both Maridia Energy Tanks",
         "difficulty": 25,
+        "name": "Collect both Maridia Energy Tanks",
         "synergy": 0,
         "types": [
             "energytank"
         ]
     },
     {
-        "name": "15+ Super Missiles",
         "difficulty": 2,
+        "name": "15+ Super Missiles",
         "synergy": 0,
         "types": [
             "supermissile"
         ]
     },
     {
-        "name": "Space Jump",
         "difficulty": 23,
+        "name": "Space Jump",
         "synergy": 0,
         "types": [
             "spacejump",
@@ -91,48 +91,48 @@
         ]
     },
     {
-        "name": "Skip Spazer",
         "difficulty": 5,
+        "name": "Skip Spazer",
         "synergy": 0,
         "types": [
             "spazer"
         ]
     },
     {
-        "name": "Collect all 15 Wrecked Ship Missiles",
         "difficulty": 12,
+        "name": "Collect all 15 Wrecked Ship Missiles",
         "synergy": 0,
         "types": [
             "missile"
         ]
     },
     {
-        "name": "Maridia Map Station",
         "difficulty": 9,
+        "name": "Maridia Map Station",
         "synergy": 0,
         "types": [
             "maridiamap"
         ]
     },
     {
-        "name": "35+ Power Bombs",
         "difficulty": 16,
+        "name": "35+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "7+ Energy Tanks",
         "difficulty": 7,
+        "name": "7+ Energy Tanks",
         "synergy": 0,
         "types": [
             "energytank"
         ]
     },
     {
-        "name": "Collect only 1 of Varia Suit or Gravity Suit",
         "difficulty": 19,
+        "name": "Collect only 1 of Varia Suit or Gravity Suit",
         "synergy": 0,
         "types": [
             "variasuit",
@@ -140,24 +140,24 @@
         ]
     },
     {
-        "name": "40+ Power Bombs",
         "difficulty": 21,
+        "name": "40+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "Skip Charge Beam",
         "difficulty": 3,
+        "name": "Skip Charge Beam",
         "synergy": 0,
         "types": [
             "chargebeam"
         ]
     },
     {
-        "name": "Finish in Wrecked Ship Energy Tank room",
         "difficulty": 15,
+        "name": "Finish in Wrecked Ship Energy Tank room",
         "synergy": 0,
         "types": [
             "finish",
@@ -165,16 +165,16 @@
         ]
     },
     {
-        "name": "10+ Power Bombs",
         "difficulty": 1,
+        "name": "10+ Power Bombs",
         "synergy": 0,
         "types": [
             "powerbomb"
         ]
     },
     {
-        "name": "Wrecked Ship Reserve Tank",
         "difficulty": 13,
+        "name": "Wrecked Ship Reserve Tank",
         "synergy": 0,
         "types": [
             "reservetank",
@@ -182,8 +182,8 @@
         ]
     },
     {
-        "name": "Collect only 1 of Wave Beam or Charge Beam",
         "difficulty": 10,
+        "name": "Collect only 1 of Wave Beam or Charge Beam",
         "synergy": 0,
         "types": [
             "wavebeam",
@@ -191,16 +191,16 @@
         ]
     },
     {
-        "name": "25+ Super Missiles",
         "difficulty": 17,
+        "name": "25+ Super Missiles",
         "synergy": 0,
         "types": [
             "supermissile"
         ]
     },
     {
-        "name": "Plasma Beam",
         "difficulty": 24,
+        "name": "Plasma Beam",
         "synergy": 0,
         "types": [
             "plasmabeam",

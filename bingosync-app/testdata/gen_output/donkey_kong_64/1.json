@@ -1,7 +1,7 @@
 [
     {
-        "name": "10 GBs in Frantic Factory",
         "difficulty": 20,
+        "name": "10 GBs in Frantic Factory",
         "synergy": 0,
         "types": [
             "factory",
@@ -9,8 +9,8 @@
         ]
     },
     {
-        "name": "20 Blueprints",
         "difficulty": 22,
+        "name": "20 Blueprints",
         "synergy": 0,
         "types": [
             "bp",
@@ -26,8 +26,8 @@
         ]
     },
     {
-        "name": "Diddy Minecart GB",
         "difficulty": 4,
+        "name": "Diddy Minecart GB",
         "synergy": 0,
         "types": [
             "japes",
@@ -36,8 +36,8 @@
         ]
     },
     {
-        "name": "1 GB for each Kong in Gloomy Galleon",
         "difficulty": 11,
+        "name": "1 GB for each Kong in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -45,8 +45,8 @@
         ]
     },
     {
-        "name": "Squash Tomatoes GB",
         "difficulty": 8,
+        "name": "Squash Tomatoes GB",
         "synergy": 0,
         "types": [
             "fungi",
@@ -54,8 +54,8 @@
         ]
     },
     {
-        "name": "2 Blueprints on each Kong",
         "difficulty": 14,
+        "name": "2 Blueprints on each Kong",
         "synergy": 0,
         "types": [
             "manybp",
@@ -71,8 +71,8 @@
         ]
     },
     {
-        "name": "5 GBs in Angry Aztec",
         "difficulty": 6,
+        "name": "5 GBs in Angry Aztec",
         "synergy": 0,
         "types": [
             "aztec",
@@ -80,8 +80,8 @@
         ]
     },
     {
-        "name": "Nintendo Coin",
         "difficulty": 18,
+        "name": "Nintendo Coin",
         "synergy": 0,
         "types": [
             "factory",
@@ -89,8 +89,8 @@
         ]
     },
     {
-        "name": "2 GBs for Each Kong in Creepy Castle",
         "difficulty": 25,
+        "name": "2 GBs for Each Kong in Creepy Castle",
         "synergy": 0,
         "types": [
             "castle",
@@ -98,8 +98,8 @@
         ]
     },
     {
-        "name": "2 Battle Crowns",
         "difficulty": 2,
+        "name": "2 Battle Crowns",
         "synergy": 0,
         "types": [
             "japescrown",
@@ -114,8 +114,8 @@
         ]
     },
     {
-        "name": "All 5 GBs from 5 Door Temple",
         "difficulty": 23,
+        "name": "All 5 GBs from 5 Door Temple",
         "synergy": 0,
         "types": [
             "aztecgb",
@@ -123,8 +123,8 @@
         ]
     },
     {
-        "name": "All 100 Bananas with any Kong in any level",
         "difficulty": 5,
+        "name": "All 100 Bananas with any Kong in any level",
         "synergy": 0,
         "types": [
             "japesbananas",
@@ -137,8 +137,8 @@
         ]
     },
     {
-        "name": "5 Lanky Blueprints",
         "difficulty": 12,
+        "name": "5 Lanky Blueprints",
         "synergy": 0,
         "types": [
             "bp",
@@ -154,8 +154,8 @@
         ]
     },
     {
-        "name": "Spider Mini-Boss GB",
         "difficulty": 9,
+        "name": "Spider Mini-Boss GB",
         "synergy": 0,
         "types": [
             "tiny",
@@ -163,8 +163,8 @@
         ]
     },
     {
-        "name": "All 5 GBs from 5 Door Ship",
         "difficulty": 16,
+        "name": "All 5 GBs from 5 Door Ship",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -172,8 +172,8 @@
         ]
     },
     {
-        "name": "All Caged GBs in DK Isles",
         "difficulty": 7,
+        "name": "All Caged GBs in DK Isles",
         "synergy": 0,
         "types": [
             "islesgb",
@@ -181,8 +181,8 @@
         ]
     },
     {
-        "name": "Open Crown Door in Helm",
         "difficulty": 19,
+        "name": "Open Crown Door in Helm",
         "synergy": 0,
         "types": [
             "helm",
@@ -198,8 +198,8 @@
         ]
     },
     {
-        "name": "2 GBs for each Kong in Gloomy Galleon",
         "difficulty": 21,
+        "name": "2 GBs for each Kong in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -208,16 +208,16 @@
         ]
     },
     {
-        "name": "Kill Giant Kosha",
         "difficulty": 3,
+        "name": "Kill Giant Kosha",
         "synergy": 0,
         "types": [
             "cave"
         ]
     },
     {
-        "name": "All 3 GBs in Castle Dungeon",
         "difficulty": 15,
+        "name": "All 3 GBs in Castle Dungeon",
         "synergy": 0,
         "types": [
             "castle",
@@ -225,8 +225,8 @@
         ]
     },
     {
-        "name": "Baboon Blast GB in Jungle Japes",
         "difficulty": 1,
+        "name": "Baboon Blast GB in Jungle Japes",
         "synergy": 0,
         "types": [
             "japes",
@@ -234,8 +234,8 @@
         ]
     },
     {
-        "name": "All 5 DK Isles Instrument Pad GBs",
         "difficulty": 13,
+        "name": "All 5 DK Isles Instrument Pad GBs",
         "synergy": 0,
         "types": [
             "islesgb",
@@ -243,8 +243,8 @@
         ]
     },
     {
-        "name": "Beanstalk GB",
         "difficulty": 10,
+        "name": "Beanstalk GB",
         "synergy": 0,
         "types": [
             "tiny",
@@ -252,8 +252,8 @@
         ]
     },
     {
-        "name": "250 Total Bananas With Lanky",
         "difficulty": 17,
+        "name": "250 Total Bananas With Lanky",
         "synergy": 0,
         "types": [
             "lanky",
@@ -267,8 +267,8 @@
         ]
     },
     {
-        "name": "13 Banana Fairies",
         "difficulty": 24,
+        "name": "13 Banana Fairies",
         "synergy": 0,
         "types": [
             "fairy",

@@ -1,204 +1,204 @@
 [
     {
+        "difficulty": 2,
+        "name": "Give a Pok\u00e9mon a haircut",
         "synergy": 0,
         "types": [
             "snip"
-        ],
-        "difficulty": 2,
-        "name": "Give a Pok\u00e9mon a haircut"
+        ]
     },
     {
+        "difficulty": 21,
+        "name": "90 Pok\u00e9mon seen",
         "synergy": 0,
         "types": [
             "pkmn"
-        ],
-        "difficulty": 21,
-        "name": "90 Pok\u00e9mon seen"
+        ]
     },
     {
+        "difficulty": 14,
+        "name": "Electabuzz, Jynx, or Magmar",
         "synergy": 0,
         "types": [
             "blessed"
-        ],
-        "difficulty": 14,
-        "name": "Electabuzz, Jynx, or Magmar"
+        ]
     },
     {
+        "difficulty": 18,
+        "name": "Articuno, Zapdos, or Moltres",
         "synergy": 0,
         "types": [
             "trio"
-        ],
-        "difficulty": 18,
-        "name": "Articuno, Zapdos, or Moltres"
+        ]
     },
     {
+        "difficulty": 10,
+        "name": "Azumarill or Quagsire",
         "synergy": 0,
         "types": [
             "18/20"
-        ],
-        "difficulty": 10,
-        "name": "Azumarill or Quagsire"
+        ]
     },
     {
+        "difficulty": 19,
+        "name": "Yanma or Piloswine",
         "synergy": 0,
         "types": [
             "duo"
-        ],
-        "difficulty": 19,
-        "name": "Yanma or Piloswine"
+        ]
     },
     {
+        "difficulty": 8,
+        "name": "Bayleef, Quilava, or Croconaw",
         "synergy": 0,
         "types": [
             "starters"
-        ],
-        "difficulty": 8,
-        "name": "Bayleef, Quilava, or Croconaw"
+        ]
     },
     {
+        "difficulty": 5,
+        "name": "Starmie or Cloyster",
         "synergy": 0,
         "types": [
             "stone"
-        ],
-        "difficulty": 5,
-        "name": "Starmie or Cloyster"
+        ]
     },
     {
+        "difficulty": 22,
+        "name": "Stop the same Pok\u00e9mon evolving 4 times",
         "synergy": 0,
         "types": [
             "raise"
-        ],
-        "difficulty": 22,
-        "name": "Stop the same Pok\u00e9mon evolving 4 times"
+        ]
     },
     {
+        "difficulty": 11,
+        "name": "A Ghost type Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "ghost"
-        ],
-        "difficulty": 11,
-        "name": "A Ghost type Pok\u00e9mon"
+        ]
     },
     {
+        "difficulty": 25,
+        "name": "Rising Badge",
         "synergy": 0,
         "types": [
             "clair"
-        ],
-        "difficulty": 25,
-        "name": "Rising Badge"
+        ]
     },
     {
+        "difficulty": 12,
+        "name": "A Pok\u00e9mon with a Sleep inducing move",
         "synergy": 0,
         "types": [
             "move"
-        ],
-        "difficulty": 12,
-        "name": "A Pok\u00e9mon with a Sleep inducing move"
+        ]
     },
     {
+        "difficulty": 16,
+        "name": "Phanpy or Teddiursa",
         "synergy": 0,
         "types": [
             "nfe"
-        ],
-        "difficulty": 16,
-        "name": "Phanpy or Teddiursa"
+        ]
     },
     {
+        "difficulty": 9,
+        "name": "HM05 (Flash)",
         "synergy": 0,
         "types": [
             "flash"
-        ],
-        "difficulty": 9,
-        "name": "HM05 (Flash)"
+        ]
     },
     {
+        "difficulty": 3,
+        "name": "TM50 (Nightmare)",
         "synergy": 0,
         "types": [
             "violet"
-        ],
-        "difficulty": 3,
-        "name": "TM50 (Nightmare)"
+        ]
     },
     {
+        "difficulty": 6,
+        "name": "Nidoking or Nidoqueen",
         "synergy": 0,
         "types": [
             "nido"
-        ],
-        "difficulty": 6,
-        "name": "Nidoking or Nidoqueen"
+        ]
     },
     {
+        "difficulty": 4,
+        "name": "Charcoal",
         "synergy": 0,
         "types": [
             "azalea"
-        ],
-        "difficulty": 4,
-        "name": "Charcoal"
+        ]
     },
     {
+        "difficulty": 23,
+        "name": "Defeat Rival 4",
         "synergy": 0,
         "types": [
             "goldenrod"
-        ],
-        "difficulty": 23,
-        "name": "Defeat Rival 4"
+        ]
     },
     {
+        "difficulty": 15,
+        "name": "TM34 (Swagger)",
         "synergy": 0,
         "types": [
             "tms",
             "randomtm"
-        ],
-        "difficulty": 15,
-        "name": "TM34 (Swagger)"
+        ]
     },
     {
+        "difficulty": 17,
+        "name": "Defeat 2 Electrodes",
         "synergy": 0,
         "types": [
             "hideout"
-        ],
-        "difficulty": 17,
-        "name": "Defeat 2 Electrodes"
+        ]
     },
     {
+        "difficulty": 13,
+        "name": "TM10 (Hidden Power)",
         "synergy": 0,
         "types": [
             "tms",
             "lake"
-        ],
-        "difficulty": 13,
-        "name": "TM10 (Hidden Power)"
+        ]
     },
     {
+        "difficulty": 20,
+        "name": "Onix or Scyther",
         "synergy": 0,
         "types": [
             "duo"
-        ],
-        "difficulty": 20,
-        "name": "Onix or Scyther"
+        ]
     },
     {
+        "difficulty": 7,
+        "name": "$0 on hand & mom",
         "synergy": 0,
         "types": [
             "money"
-        ],
-        "difficulty": 7,
-        "name": "$0 on hand & mom"
+        ]
     },
     {
+        "difficulty": 1,
+        "name": "Poison Barb",
         "synergy": 0,
         "types": [
             "day"
-        ],
-        "difficulty": 1,
-        "name": "Poison Barb"
+        ]
     },
     {
+        "difficulty": 24,
+        "name": "Defeat a Lv40+ Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "40"
-        ],
-        "difficulty": 24,
-        "name": "Defeat a Lv40+ Pok\u00e9mon"
+        ]
     }
 ]

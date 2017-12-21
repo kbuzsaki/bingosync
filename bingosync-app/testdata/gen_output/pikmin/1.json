@@ -1,226 +1,226 @@
 [
     {
-        "name": "UV Lamp",
-        "difficulty": 20,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 20,
+        "name": "UV Lamp",
+        "synergy": 0,
         "types": [
             "un"
         ]
     },
     {
-        "name": "Zirconium Rotor",
-        "difficulty": 22,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 22,
+        "name": "Zirconium Rotor",
+        "synergy": 0,
         "types": [
             "zirconium"
         ]
     },
     {
-        "name": "Hit an Iridescent Flint Beetle",
-        "difficulty": 4,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 4,
+        "name": "Hit an Iridescent Flint Beetle",
+        "synergy": 0,
         "types": [
             "beetle"
         ]
     },
     {
-        "name": "Gluon Drive",
-        "difficulty": 11,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 11,
+        "name": "Gluon Drive",
+        "synergy": 0,
         "types": [
             "gluon"
         ]
     },
     {
-        "name": "Defeat a Pearly Clam-Clamp in one cycle",
-        "difficulty": 8,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 8,
+        "name": "Defeat a Pearly Clam-Clamp in one cycle",
+        "synergy": 0,
         "types": [
             "is"
         ]
     },
     {
-        "name": "Defeat any Wollywog without Pikmin",
-        "difficulty": 14,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 14,
+        "name": "Defeat any Wollywog without Pikmin",
+        "synergy": 0,
         "types": [
             "hands",
             "wolly"
         ]
     },
     {
-        "name": "Automatic Gear",
-        "difficulty": 6,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 6,
+        "name": "Automatic Gear",
+        "synergy": 0,
         "types": [
             "gear"
         ]
     },
     {
-        "name": "Anti-Dioxin Filter",
-        "difficulty": 18,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 18,
+        "name": "Anti-Dioxin Filter",
+        "synergy": 0,
         "types": [
             "dioxin"
         ]
     },
     {
-        "name": "Bowsprit",
-        "difficulty": 25,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 25,
+        "name": "Bowsprit",
+        "synergy": 0,
         "types": [
             "acb"
         ]
     },
     {
-        "name": "Defeat 5 Fiery Blowhogs",
-        "difficulty": 2,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 2,
+        "name": "Defeat 5 Fiery Blowhogs",
+        "synergy": 0,
         "types": [
             "fiery"
         ]
     },
     {
-        "name": "Defeat 3 Burrowing Snagrets",
-        "difficulty": 23,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 23,
+        "name": "Defeat 3 Burrowing Snagrets",
+        "synergy": 0,
         "types": [
             "snagret"
         ]
     },
     {
-        "name": "Sagittarius without Blue Pikmin",
-        "difficulty": 5,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 5,
+        "name": "Sagittarius without Blue Pikmin",
+        "synergy": 0,
         "types": [
             "sagi"
         ]
     },
     {
-        "name": "Repair-type Bolt",
-        "difficulty": 12,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 12,
+        "name": "Repair-type Bolt",
+        "synergy": 0,
         "types": [
             "repair"
         ]
     },
     {
-        "name": "Kill a mushroom Pikmin",
-        "difficulty": 9,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 9,
+        "name": "Kill a mushroom Pikmin",
+        "synergy": 0,
         "types": [
             "puffstool"
         ]
     },
     {
-        "name": "Interstellar Radio",
-        "difficulty": 16,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 16,
+        "name": "Interstellar Radio",
+        "synergy": 0,
         "types": [
             "puffy"
         ]
     },
     {
-        "name": "Guard Satellite",
-        "difficulty": 7,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 7,
+        "name": "Guard Satellite",
+        "synergy": 0,
         "types": [
             "bll"
         ]
     },
     {
-        "name": "Pilot\u2019s Seat",
-        "difficulty": 19,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 19,
+        "name": "Pilot\u2019s Seat",
+        "synergy": 0,
         "types": [
             "pilot"
         ]
     },
     {
-        "name": "Never use nectar",
-        "difficulty": 21,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 21,
+        "name": "Never use nectar",
+        "synergy": 0,
         "types": [
             "nectar"
         ]
     },
     {
-        "name": "Defeat the Wogpoles in Forest of Hope",
-        "difficulty": 3,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 3,
+        "name": "Defeat the Wogpoles in Forest of Hope",
+        "synergy": 0,
         "types": [
             "wogpole"
         ]
     },
     {
-        "name": "Have 75 of each type of Pikmin",
-        "difficulty": 15,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 15,
+        "name": "Have 75 of each type of Pikmin",
+        "synergy": 0,
         "types": [
             "count"
         ]
     },
     {
-        "name": "Whimsical Radar",
-        "difficulty": 1,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 1,
+        "name": "Whimsical Radar",
+        "synergy": 0,
         "types": [
             "radar"
         ]
     },
     {
-        "name": "Build all 5 bridges in Forest Navel",
-        "difficulty": 13,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 13,
+        "name": "Build all 5 bridges in Forest Navel",
+        "synergy": 0,
         "types": [
             "obstacle"
         ]
     },
     {
-        "name": "Libra",
-        "difficulty": 10,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 10,
+        "name": "Libra",
+        "synergy": 0,
         "types": [
             "libra"
         ]
     },
     {
-        "name": "Have Olimar lose all of his health",
-        "difficulty": 17,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 17,
+        "name": "Have Olimar lose all of his health",
+        "synergy": 0,
         "types": [
             "health"
         ]
     },
     {
-        "name": "All parts in Forest Navel",
-        "difficulty": 24,
-        "synergy": 0,
         "child": "no",
+        "difficulty": 24,
+        "name": "All parts in Forest Navel",
+        "synergy": 0,
         "types": [
             "all_parts"
         ]

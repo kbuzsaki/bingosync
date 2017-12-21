@@ -1,23 +1,23 @@
 [
     {
-        "name": "Seadra",
         "difficulty": 24,
+        "name": "Seadra",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Defeat all 7 trainers on Route 123",
         "difficulty": 18,
+        "name": "Defeat all 7 trainers on Route 123",
         "synergy": 0,
         "types": [
             "trainer"
         ]
     },
     {
-        "name": "Evolve 5 different Pok\u00e9mon",
         "difficulty": 15,
+        "name": "Evolve 5 different Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "hm",
@@ -25,56 +25,56 @@
         ]
     },
     {
-        "name": "Trade with an NPC",
         "difficulty": 7,
+        "name": "Trade with an NPC",
         "synergy": 0,
         "types": [
             "trade"
         ]
     },
     {
-        "name": "Coin Case",
         "difficulty": 1,
+        "name": "Coin Case",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "Sell a Rare Candy",
         "difficulty": 10,
+        "name": "Sell a Rare Candy",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "A Pokemon with a stat related ability",
         "difficulty": 2,
+        "name": "A Pokemon with a stat related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "Put a Pokeblock into a Safari Zone Container",
         "difficulty": 21,
+        "name": "Put a Pokeblock into a Safari Zone Container",
         "synergy": 0,
         "types": [
             "pokeblock"
         ]
     },
     {
-        "name": "Vulpix",
         "difficulty": 19,
+        "name": "Vulpix",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Do not use any TMs",
         "difficulty": 13,
+        "name": "Do not use any TMs",
         "synergy": 0,
         "types": [
             "tm",
@@ -82,120 +82,120 @@
         ]
     },
     {
-        "name": "20 Pokemon owned",
         "difficulty": 16,
+        "name": "20 Pokemon owned",
         "synergy": 0,
         "types": [
             "dex"
         ]
     },
     {
-        "name": "Pokemon with an evasion boosting move",
         "difficulty": 14,
+        "name": "Pokemon with an evasion boosting move",
         "synergy": 0,
         "types": [
             "move"
         ]
     },
     {
-        "name": "Volbeat or Illumise",
         "difficulty": 8,
+        "name": "Volbeat or Illumise",
         "synergy": 0,
         "types": [
             "pkmnpair"
         ]
     },
     {
-        "name": "Defeat Winstrate Family",
         "difficulty": 5,
+        "name": "Defeat Winstrate Family",
         "synergy": 0,
         "types": [
             "trainer"
         ]
     },
     {
-        "name": "Two different non-key exchangeable items",
         "difficulty": 22,
+        "name": "Two different non-key exchangeable items",
         "synergy": 0,
         "types": [
             "multiitem"
         ]
     },
     {
-        "name": "7 Different Berries",
         "difficulty": 3,
+        "name": "7 Different Berries",
         "synergy": 0,
         "types": [
             "multiitem"
         ]
     },
     {
-        "name": "All badges",
         "difficulty": 25,
+        "name": "All badges",
         "synergy": 0,
         "types": [
             "badge"
         ]
     },
     {
-        "name": "Shuppet or Duskull",
         "difficulty": 17,
+        "name": "Shuppet or Duskull",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Exp Share",
         "difficulty": 11,
+        "name": "Exp Share",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "A Pokemon with a weather related ability",
         "difficulty": 9,
+        "name": "A Pokemon with a weather related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "Pearl or Big Pearl",
         "difficulty": 12,
+        "name": "Pearl or Big Pearl",
         "synergy": 0,
         "types": [
             "itempair"
         ]
     },
     {
-        "name": "Full Daycare",
         "difficulty": 6,
+        "name": "Full Daycare",
         "synergy": 0,
         "types": [
             "egg"
         ]
     },
     {
-        "name": "6 different water type Pokemon",
         "difficulty": 4,
+        "name": "6 different water type Pokemon",
         "synergy": 0,
         "types": [
             "dex"
         ]
     },
     {
-        "name": "All rods",
         "difficulty": 23,
+        "name": "All rods",
         "synergy": 0,
         "types": [
             "rods"
         ]
     },
     {
-        "name": "HM02 (Fly)",
         "difficulty": 20,
+        "name": "HM02 (Fly)",
         "synergy": 0,
         "types": [
             "hm"

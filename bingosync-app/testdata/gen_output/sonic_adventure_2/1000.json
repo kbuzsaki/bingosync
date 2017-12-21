@@ -1,23 +1,23 @@
 [
     {
-        "name": "Cosmic Wall M3",
         "difficulty": 24,
+        "name": "Cosmic Wall M3",
         "synergy": 0,
         "types": [
             "cosmicwall"
         ]
     },
     {
-        "name": "Game Over during King Boom Boo",
         "difficulty": 18,
+        "name": "Game Over during King Boom Boo",
         "synergy": 0,
         "types": [
             "gameover"
         ]
     },
     {
-        "name": "Security Hall M3 B-Rank",
         "difficulty": 15,
+        "name": "Security Hall M3 B-Rank",
         "synergy": 0,
         "types": [
             "securityhall",
@@ -25,56 +25,56 @@
         ]
     },
     {
-        "name": "2 Chao Boxes in Radical Highway and finish",
         "difficulty": 7,
+        "name": "2 Chao Boxes in Radical Highway and finish",
         "synergy": 0,
         "types": [
             "radicalhighway"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Wild Canyon and finish",
         "difficulty": 1,
+        "name": "5 hidden Chao animals in Wild Canyon and finish",
         "synergy": 0,
         "types": [
             "wildcanyon"
         ]
     },
     {
-        "name": "Egg Quarters M3",
         "difficulty": 10,
+        "name": "Egg Quarters M3",
         "synergy": 0,
         "types": [
             "eggquarters"
         ]
     },
     {
-        "name": "Wild Canyon M4",
         "difficulty": 2,
+        "name": "Wild Canyon M4",
         "synergy": 0,
         "types": [
             "wildcanyon"
         ]
     },
     {
-        "name": "2 Chao Boxes in Eternal Engine and finish",
         "difficulty": 21,
+        "name": "2 Chao Boxes in Eternal Engine and finish",
         "synergy": 0,
         "types": [
             "eternalengine"
         ]
     },
     {
-        "name": "Death Chamber M4",
         "difficulty": 19,
+        "name": "Death Chamber M4",
         "synergy": 0,
         "types": [
             "deathchamber"
         ]
     },
     {
-        "name": "Pumpkin Hill M4 A-Rank",
         "difficulty": 13,
+        "name": "Pumpkin Hill M4 A-Rank",
         "synergy": 0,
         "types": [
             "pumpkinhill",
@@ -82,96 +82,96 @@
         ]
     },
     {
-        "name": "2 Chao Boxes in White Jungle and finish",
         "difficulty": 16,
+        "name": "2 Chao Boxes in White Jungle and finish",
         "synergy": 0,
         "types": [
             "whitejungle"
         ]
     },
     {
-        "name": "Green Forest M5",
         "difficulty": 14,
+        "name": "Green Forest M5",
         "synergy": 0,
         "types": [
             "greenforest"
         ]
     },
     {
-        "name": "Rouge's Mystic Melody",
         "difficulty": 8,
+        "name": "Rouge's Mystic Melody",
         "synergy": 0,
         "types": [
             "drylagoon"
         ]
     },
     {
-        "name": "2 Chao Boxes in Sand Ocean and finish",
         "difficulty": 5,
+        "name": "2 Chao Boxes in Sand Ocean and finish",
         "synergy": 0,
         "types": [
             "sandocean"
         ]
     },
     {
-        "name": "Meteor Herd M3",
         "difficulty": 22,
+        "name": "Meteor Herd M3",
         "synergy": 0,
         "types": [
             "meteorherd"
         ]
     },
     {
-        "name": "City Escape M4",
         "difficulty": 3,
+        "name": "City Escape M4",
         "synergy": 0,
         "types": [
             "cityescape"
         ]
     },
     {
-        "name": "60 Emblems (Team Combined)",
         "difficulty": 25,
+        "name": "60 Emblems (Team Combined)",
         "synergy": 0,
         "types": [
             "emblems"
         ]
     },
     {
-        "name": "2 Chao Boxes in Pyramid Cave and finish",
         "difficulty": 17,
+        "name": "2 Chao Boxes in Pyramid Cave and finish",
         "synergy": 0,
         "types": [
             "pyramidcave"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
         "difficulty": 11,
+        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
         "synergy": 0,
         "types": [
             "pumpkinhill"
         ]
     },
     {
-        "name": "Green Forest M2",
         "difficulty": 9,
+        "name": "Green Forest M2",
         "synergy": 0,
         "types": [
             "greenforest"
         ]
     },
     {
-        "name": "Sand Ocean M3",
         "difficulty": 12,
+        "name": "Sand Ocean M3",
         "synergy": 0,
         "types": [
             "sandocean"
         ]
     },
     {
-        "name": "City Escape M5 A-Rank",
         "difficulty": 6,
+        "name": "City Escape M5 A-Rank",
         "synergy": 0,
         "types": [
             "cityescape",
@@ -179,24 +179,24 @@
         ]
     },
     {
-        "name": "2 Chao Boxes in Prison Lane and finish",
         "difficulty": 4,
+        "name": "2 Chao Boxes in Prison Lane and finish",
         "synergy": 0,
         "types": [
             "prisonlane"
         ]
     },
     {
-        "name": "Complete Crazy Gadget M1 with 100+ Rings",
         "difficulty": 23,
+        "name": "Complete Crazy Gadget M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "crazygadget"
         ]
     },
     {
-        "name": "Complete Mad Space M1 with 100+ Rings",
         "difficulty": 20,
+        "name": "Complete Mad Space M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "madspace"

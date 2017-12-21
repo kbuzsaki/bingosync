@@ -1,55 +1,55 @@
 [
     {
-        "name": "20 TMs",
         "difficulty": 20,
+        "name": "20 TMs",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "A Trade Evolution Item",
         "difficulty": 22,
+        "name": "A Trade Evolution Item",
         "synergy": 0,
         "types": [
             "multiitem"
         ]
     },
     {
-        "name": "A Pokemon with Double Kick or Mud Shot",
         "difficulty": 4,
+        "name": "A Pokemon with Double Kick or Mud Shot",
         "synergy": 0,
         "types": [
             "starter"
         ]
     },
     {
-        "name": "Gloom",
         "difficulty": 11,
+        "name": "Gloom",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "A Pokemon with a status related ability",
         "difficulty": 8,
+        "name": "A Pokemon with a status related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "A Pokemon with 4 non-TM status moves",
         "difficulty": 14,
+        "name": "A Pokemon with 4 non-TM status moves",
         "synergy": 0,
         "types": [
             "move"
         ]
     },
     {
-        "name": "Magikarp",
         "difficulty": 6,
+        "name": "Magikarp",
         "synergy": 0,
         "types": [
             "pkmn",
@@ -57,104 +57,104 @@
         ]
     },
     {
-        "name": "Defeat 4 Kecleons",
         "difficulty": 18,
+        "name": "Defeat 4 Kecleons",
         "synergy": 0,
         "types": [
             "kecleon"
         ]
     },
     {
-        "name": "All badges",
         "difficulty": 25,
+        "name": "All badges",
         "synergy": 0,
         "types": [
             "badge"
         ]
     },
     {
-        "name": "Soot Sack",
         "difficulty": 2,
+        "name": "Soot Sack",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "TM21 (Frustration) or TM27 (Return)",
         "difficulty": 23,
+        "name": "TM21 (Frustration) or TM27 (Return)",
         "synergy": 0,
         "types": [
             "tm"
         ]
     },
     {
-        "name": "Mawile or Sableye",
         "difficulty": 5,
+        "name": "Mawile or Sableye",
         "synergy": 0,
         "types": [
             "pkmnpair"
         ]
     },
     {
-        "name": "Hatch an egg",
         "difficulty": 12,
+        "name": "Hatch an egg",
         "synergy": 0,
         "types": [
             "egg"
         ]
     },
     {
-        "name": "A Pokemon with a weather related ability",
         "difficulty": 9,
+        "name": "A Pokemon with a weather related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "Pelipper",
         "difficulty": 16,
+        "name": "Pelipper",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Trade with an NPC",
         "difficulty": 7,
+        "name": "Trade with an NPC",
         "synergy": 0,
         "types": [
             "trade"
         ]
     },
     {
-        "name": "Defeat 10 Swimmers",
         "difficulty": 19,
+        "name": "Defeat 10 Swimmers",
         "synergy": 0,
         "types": [
             "trainer"
         ]
     },
     {
-        "name": "$50,000",
         "difficulty": 21,
+        "name": "$50,000",
         "synergy": 0,
         "types": [
             "cash"
         ]
     },
     {
-        "name": "7 Different Berries",
         "difficulty": 3,
+        "name": "7 Different Berries",
         "synergy": 0,
         "types": [
             "multiitem"
         ]
     },
     {
-        "name": "Evolve 5 different Pok\u00e9mon",
         "difficulty": 15,
+        "name": "Evolve 5 different Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "hm",
@@ -162,16 +162,16 @@
         ]
     },
     {
-        "name": "Poochyena",
         "difficulty": 1,
+        "name": "Poochyena",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Do not use any TMs",
         "difficulty": 13,
+        "name": "Do not use any TMs",
         "synergy": 0,
         "types": [
             "tm",
@@ -179,24 +179,24 @@
         ]
     },
     {
-        "name": "Sell a Rare Candy",
         "difficulty": 10,
+        "name": "Sell a Rare Candy",
         "synergy": 0,
         "types": [
             "item"
         ]
     },
     {
-        "name": "50 pokemon seen",
         "difficulty": 17,
+        "name": "50 pokemon seen",
         "synergy": 0,
         "types": [
             "dex"
         ]
     },
     {
-        "name": "Relicanth or Wailord",
         "difficulty": 24,
+        "name": "Relicanth or Wailord",
         "synergy": 0,
         "types": [
             "pkmnpair"

@@ -1,199 +1,199 @@
 [
     {
-        "name": "Venusaur",
         "difficulty": 19,
+        "name": "Venusaur",
         "synergy": 0,
         "types": [
             "starter"
         ]
     },
     {
-        "name": "Defeat 7 Pikachus",
         "difficulty": 12,
+        "name": "Defeat 7 Pikachus",
         "synergy": 0,
         "types": [
             "pika"
         ]
     },
     {
-        "name": "TM 39 (Swift)",
         "difficulty": 1,
+        "name": "TM 39 (Swift)",
         "synergy": 0,
         "types": [
             "swift"
         ]
     },
     {
-        "name": "One starting move on starter",
         "difficulty": 10,
+        "name": "One starting move on starter",
         "synergy": 0,
         "types": [
             "tackle"
         ]
     },
     {
-        "name": "Defeat 3 Burglars",
         "difficulty": 23,
+        "name": "Defeat 3 Burglars",
         "synergy": 0,
         "types": [
             "robber"
         ]
     },
     {
-        "name": "Arcanine or Ninetales",
         "difficulty": 6,
+        "name": "Arcanine or Ninetales",
         "synergy": 0,
         "types": [
             "fires"
         ]
     },
     {
-        "name": "30 Pokemon owned",
         "difficulty": 25,
+        "name": "30 Pokemon owned",
         "synergy": 0,
         "types": [
             "dex"
         ]
     },
     {
-        "name": "Silph Scope",
         "difficulty": 18,
+        "name": "Silph Scope",
         "synergy": 0,
         "types": [
             "hideout"
         ]
     },
     {
-        "name": "TM 41 (Softboiled)",
         "difficulty": 14,
+        "name": "TM 41 (Softboiled)",
         "synergy": 0,
         "types": [
             "soft"
         ]
     },
     {
-        "name": "TM 40 (Skull Bash)",
         "difficulty": 2,
+        "name": "TM 40 (Skull Bash)",
         "synergy": 0,
         "types": [
             "safari"
         ]
     },
     {
-        "name": "Lapras",
         "difficulty": 13,
+        "name": "Lapras",
         "synergy": 0,
         "types": [
             "Silph"
         ]
     },
     {
-        "name": "TM 44 (Rest)",
         "difficulty": 4,
+        "name": "TM 44 (Rest)",
         "synergy": 0,
         "types": [
             "rest"
         ]
     },
     {
-        "name": "Beedrill or Butterfree",
         "difficulty": 7,
+        "name": "Beedrill or Butterfree",
         "synergy": 0,
         "types": [
             "bug"
         ]
     },
     {
-        "name": "Charizard",
         "difficulty": 21,
+        "name": "Charizard",
         "synergy": 0,
         "types": [
             "starter"
         ]
     },
     {
-        "name": "Defeat all 12 trainers in Mt Moon",
         "difficulty": 20,
+        "name": "Defeat all 12 trainers in Mt Moon",
         "synergy": 0,
         "types": [
             "mt"
         ]
     },
     {
-        "name": "6 Badges",
         "difficulty": 22,
+        "name": "6 Badges",
         "synergy": 0,
         "types": [
             "badges"
         ]
     },
     {
-        "name": "6 different Poison type Pokemon",
         "difficulty": 16,
+        "name": "6 different Poison type Pokemon",
         "synergy": 0,
         "types": [
             "items"
         ]
     },
     {
-        "name": "Any Pokemon with Stomp",
         "difficulty": 15,
+        "name": "Any Pokemon with Stomp",
         "synergy": 0,
         "types": [
             "safari"
         ]
     },
     {
-        "name": "TM 19 (Seismic Toss)",
         "difficulty": 3,
+        "name": "TM 19 (Seismic Toss)",
         "synergy": 0,
         "types": [
             "seismic"
         ]
     },
     {
-        "name": "Nidoking or Nidoqueen",
         "difficulty": 9,
+        "name": "Nidoking or Nidoqueen",
         "synergy": 0,
         "types": [
             "moon"
         ]
     },
     {
-        "name": "Defeat all 3 starters",
         "difficulty": 5,
+        "name": "Defeat all 3 starters",
         "synergy": 0,
         "types": [
             "tunnel"
         ]
     },
     {
-        "name": "Raichu",
         "difficulty": 8,
+        "name": "Raichu",
         "synergy": 0,
         "types": [
             "elec"
         ]
     },
     {
-        "name": "Release starter before level 11.",
         "difficulty": 24,
+        "name": "Release starter before level 11.",
         "synergy": 0,
         "types": [
             "starter"
         ]
     },
     {
-        "name": "Tangela",
         "difficulty": 17,
+        "name": "Tangela",
         "synergy": 0,
         "types": [
             "tangela"
         ]
     },
     {
-        "name": "Kadabra",
         "difficulty": 11,
+        "name": "Kadabra",
         "synergy": 0,
         "types": [
             "abra"

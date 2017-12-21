@@ -1,1420 +1,1420 @@
 [
     {
-        "rowtypes": {
-            "hookshot": 0.25,
-            "ms": 100,
-            "gclw": 1,
-            "bottle": 100
-        },
-        "synergy": 2.75,
-        "id": "defeat-volvagia",
-        "time": 12.5,
-        "subtypes": {
-            "pg": 1,
-            "songs5": 1.25,
-            "map": 2.5,
-            "compass": 4,
-            "hearts4": 2,
-            "aganon": 1,
-            "lightarrow": 3.5,
-            "hearts3": 3.5,
-            "hovers": 0.25,
-            "wallet": 0.25,
-            "bosskey": 2
-        },
-        "types": {
-            "incvolvagia": 100,
-            "fire": 9,
-            "dmc": 1,
-            "endon": -0.5,
-            "gtunic": 1.75,
-            "selfsynergy": 0,
-            "forest": 1
-        },
-        "name": "Defeat Volvagia",
+        "desiredTime": 14.25,
         "difficulty": 19,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.25,
-                "ms": 100,
-                "gclw": 1,
-                "bottle": 100
-            },
-            "jp": "\u30f4\u30a1\u30eb\u30d0\u30b8\u30a2\u6483\u7834",
+            "difficulty": 17,
             "id": "defeat-volvagia",
+            "jp": "\u30f4\u30a1\u30eb\u30d0\u30b8\u30a2\u6483\u7834",
+            "name": "Defeat Volvagia",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 1,
+                "hookshot": 0.25,
+                "ms": 100
+            },
+            "skill": 0.25,
             "subtypes": {
+                "aganon": 1,
+                "bosskey": 2,
+                "compass": 4,
+                "hearts3": 3.5,
+                "hearts4": 2,
+                "hovers": 0.25,
+                "lightarrow": 3.5,
+                "map": 2.5,
                 "pg": 1,
                 "songs5": 1.25,
-                "map": 2.5,
-                "compass": 4,
-                "hearts4": 2,
-                "aganon": 1,
-                "lightarrow": 3.5,
-                "hearts3": 3.5,
-                "hovers": 0.25,
-                "wallet": 0.25,
-                "bosskey": 2
+                "wallet": 0.25
             },
             "time": 12.5,
-            "name": "Defeat Volvagia",
-            "difficulty": 17,
             "types": {
-                "incvolvagia": 100,
-                "fire": 9,
                 "dmc": 1,
                 "endon": -0.5,
+                "fire": 9,
+                "forest": 1,
                 "gtunic": 1.75,
-                "selfsynergy": 0,
-                "forest": 1
-            },
-            "skill": 0.25
+                "incvolvagia": 100,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 14.25
+        "id": "defeat-volvagia",
+        "name": "Defeat Volvagia",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 1,
+            "hookshot": 0.25,
+            "ms": 100
+        },
+        "subtypes": {
+            "aganon": 1,
+            "bosskey": 2,
+            "compass": 4,
+            "hearts3": 3.5,
+            "hearts4": 2,
+            "hovers": 0.25,
+            "lightarrow": 3.5,
+            "map": 2.5,
+            "pg": 1,
+            "songs5": 1.25,
+            "wallet": 0.25
+        },
+        "synergy": 2.75,
+        "time": 12.5,
+        "types": {
+            "dmc": 1,
+            "endon": -0.5,
+            "fire": 9,
+            "forest": 1,
+            "gtunic": 1.75,
+            "incvolvagia": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 100,
-            "ms": 7,
-            "gclw": 1,
-            "bottle": 0
-        },
-        "synergy": 1,
-        "id": "stone-of-agony",
-        "time": 8.25,
-        "subtypes": {
-            "wallet": 5
-        },
-        "types": {
-            "selfsynergy": 0,
-            "forest": 0.5
-        },
-        "name": "Stone of Agony",
+        "desiredTime": 9,
         "difficulty": 12,
         "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 7,
-                "gclw": 1,
-                "bottle": 0
-            },
-            "jp": "\u3082\u3060\u3048\u77f3",
+            "difficulty": 11,
             "id": "stone-of-agony",
+            "jp": "\u3082\u3060\u3048\u77f3",
+            "name": "Stone of Agony",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 1,
+                "hookshot": 100,
+                "ms": 7
+            },
+            "skill": 0.5,
             "subtypes": {
                 "wallet": 5
             },
             "time": 8.25,
-            "name": "Stone of Agony",
-            "difficulty": 11,
             "types": {
-                "selfsynergy": 0,
-                "forest": 0.5
-            },
-            "skill": 0.5
+                "forest": 0.5,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 9
+        "id": "stone-of-agony",
+        "name": "Stone of Agony",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 1,
+            "hookshot": 100,
+            "ms": 7
+        },
+        "subtypes": {
+            "wallet": 5
+        },
+        "synergy": 1,
+        "time": 8.25,
+        "types": {
+            "forest": 0.5,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 0
-        },
-        "synergy": 5.5,
-        "id": "5-magic-beans",
-        "time": 2.5,
-        "subtypes": {
-            "child2": 3,
-            "wallet": 0.25
-        },
-        "types": {
-            "incbeans": 100,
-            "childreset": 0.5,
-            "beans": 3,
-            "selfsynergy": 0
-        },
-        "name": "5 Magic Beans",
+        "desiredTime": 0.75,
         "difficulty": 1,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "\u9b54\u6cd5\u306e\u30de\u30e15\u3064\u4ee5\u4e0a",
+            "difficulty": 3,
             "id": "5-magic-beans",
+            "jp": "\u9b54\u6cd5\u306e\u30de\u30e15\u3064\u4ee5\u4e0a",
+            "name": "5 Magic Beans",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0,
             "subtypes": {
                 "child2": 3,
                 "wallet": 0.25
             },
             "time": 2.5,
-            "name": "5 Magic Beans",
-            "difficulty": 3,
             "types": {
-                "incbeans": 100,
-                "childreset": 0.5,
                 "beans": 3,
+                "childreset": 0.5,
+                "incbeans": 100,
                 "selfsynergy": 0
-            },
-            "skill": 0
+            }
         },
-        "desiredTime": 0.75
+        "id": "5-magic-beans",
+        "name": "5 Magic Beans",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 0,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "subtypes": {
+            "child2": 3,
+            "wallet": 0.25
+        },
+        "synergy": 5.5,
+        "time": 2.5,
+        "types": {
+            "beans": 3,
+            "childreset": 0.5,
+            "incbeans": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 1,
-            "gclw": 0.5,
-            "bottle": 0
-        },
-        "synergy": 5.75,
-        "id": "map-compass-in-water-temple",
-        "time": 7,
-        "subtypes": {
-            "poachers": 1.25,
-            "map": 3,
-            "hearts4": 1,
-            "compass": 3
-        },
-        "types": {
-            "gtg": 1,
-            "selfsynergy": 0,
-            "water": 3
-        },
-        "name": "Map & Compass in Water Temple",
+        "desiredTime": 7.5,
         "difficulty": 10,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 1,
-                "gclw": 0.5,
-                "bottle": 0
-            },
-            "jp": "\u6c34\u306e\u795e\u6bbf\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
+            "difficulty": 9,
             "id": "map-compass-in-water-temple",
+            "jp": "\u6c34\u306e\u795e\u6bbf\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
+            "name": "Map & Compass in Water Temple",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0.5,
+                "hookshot": 0,
+                "ms": 1
+            },
+            "skill": 0.5,
             "subtypes": {
-                "poachers": 1.25,
-                "map": 3,
+                "compass": 3,
                 "hearts4": 1,
-                "compass": 3
+                "map": 3,
+                "poachers": 1.25
             },
             "time": 7,
-            "name": "Map & Compass in Water Temple",
-            "difficulty": 9,
             "types": {
                 "gtg": 1,
                 "selfsynergy": 0,
                 "water": 3
-            },
-            "skill": 0.5
+            }
         },
-        "desiredTime": 7.5
-    },
-    {
+        "id": "map-compass-in-water-temple",
+        "name": "Map & Compass in Water Temple",
         "rowtypes": {
-            "hookshot": 100,
-            "ms": 100,
-            "gclw": 0,
-            "bottle": 0.5
+            "bottle": 0,
+            "gclw": 0.5,
+            "hookshot": 0,
+            "ms": 1
         },
-        "synergy": 0,
-        "id": "defeat-twinrova",
-        "time": 19,
         "subtypes": {
-            "songs5": 1,
+            "compass": 3,
+            "hearts4": 1,
             "map": 3,
-            "compass": 1,
-            "hearts4": 1.5,
-            "bosskey": 6,
-            "bosskey2": 6,
-            "wallet": 0.5,
-            "hearts3": 3
+            "poachers": 1.25
         },
+        "synergy": 5.75,
+        "time": 7,
         "types": {
             "gtg": 1,
-            "legitlacs": 100,
-            "incspboss": 100,
-            "fortress": 2.5,
-            "hovers": 3,
-            "spirit": 8,
             "selfsynergy": 0,
-            "endon": -1
-        },
-        "name": "Defeat Twinrova",
+            "water": 3
+        }
+    },
+    {
+        "desiredTime": 17.25,
         "difficulty": 23,
         "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 100,
-                "gclw": 0,
-                "bottle": 0.5
-            },
-            "jp": "\u30c4\u30a4\u30f3\u30ed\u30fc\u30d0\u6483\u7834",
+            "difficulty": 25,
             "id": "defeat-twinrova",
+            "jp": "\u30c4\u30a4\u30f3\u30ed\u30fc\u30d0\u6483\u7834",
+            "name": "Defeat Twinrova",
+            "rowtypes": {
+                "bottle": 0.5,
+                "gclw": 0,
+                "hookshot": 100,
+                "ms": 100
+            },
+            "skill": 1,
             "subtypes": {
-                "songs5": 1,
-                "map": 3,
-                "compass": 1,
-                "hearts4": 1.5,
                 "bosskey": 6,
                 "bosskey2": 6,
-                "wallet": 0.5,
-                "hearts3": 3
+                "compass": 1,
+                "hearts3": 3,
+                "hearts4": 1.5,
+                "map": 3,
+                "songs5": 1,
+                "wallet": 0.5
             },
             "time": 19,
-            "name": "Defeat Twinrova",
-            "difficulty": 25,
             "types": {
-                "gtg": 1,
-                "legitlacs": 100,
-                "incspboss": 100,
+                "endon": -1,
                 "fortress": 2.5,
+                "gtg": 1,
                 "hovers": 3,
-                "spirit": 8,
+                "incspboss": 100,
+                "legitlacs": 100,
                 "selfsynergy": 0,
-                "endon": -1
-            },
-            "skill": 1
+                "spirit": 8
+            }
         },
-        "desiredTime": 17.25
+        "id": "defeat-twinrova",
+        "name": "Defeat Twinrova",
+        "rowtypes": {
+            "bottle": 0.5,
+            "gclw": 0,
+            "hookshot": 100,
+            "ms": 100
+        },
+        "subtypes": {
+            "bosskey": 6,
+            "bosskey2": 6,
+            "compass": 1,
+            "hearts3": 3,
+            "hearts4": 1.5,
+            "map": 3,
+            "songs5": 1,
+            "wallet": 0.5
+        },
+        "synergy": 0,
+        "time": 19,
+        "types": {
+            "endon": -1,
+            "fortress": 2.5,
+            "gtg": 1,
+            "hovers": 3,
+            "incspboss": 100,
+            "legitlacs": 100,
+            "selfsynergy": 0,
+            "spirit": 8
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 1.5
-        },
-        "synergy": 0.25,
-        "id": "3-lake-hylia-skulltulas",
-        "time": 5.5,
-        "subtypes": {
-            "bottleslot": 2,
-            "wallet": 1.5,
-            "child2": 2
-        },
-        "types": {
-            "inclhskull": 100,
-            "selfsynergy": 0,
-            "fountain": 0.5
-        },
-        "name": "3 Lake Hylia Skulltulas",
+        "desiredTime": 4.5,
         "difficulty": 6,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 1.5
-            },
-            "jp": "\u30cf\u30a4\u30ea\u30a2\u6e56\u7554\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
+            "difficulty": 7,
             "id": "3-lake-hylia-skulltulas",
+            "jp": "\u30cf\u30a4\u30ea\u30a2\u6e56\u7554\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
+            "name": "3 Lake Hylia Skulltulas",
+            "rowtypes": {
+                "bottle": 1.5,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0.25,
             "subtypes": {
                 "bottleslot": 2,
-                "wallet": 1.5,
-                "child2": 2
+                "child2": 2,
+                "wallet": 1.5
             },
             "time": 5.5,
-            "name": "3 Lake Hylia Skulltulas",
-            "difficulty": 7,
             "types": {
+                "fountain": 0.5,
                 "inclhskull": 100,
-                "selfsynergy": 0,
-                "fountain": 0.5
-            },
-            "skill": 0.25
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 4.5
+        "id": "3-lake-hylia-skulltulas",
+        "name": "3 Lake Hylia Skulltulas",
+        "rowtypes": {
+            "bottle": 1.5,
+            "gclw": 0,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "subtypes": {
+            "bottleslot": 2,
+            "child2": 2,
+            "wallet": 1.5
+        },
+        "synergy": 0.25,
+        "time": 5.5,
+        "types": {
+            "fountain": 0.5,
+            "inclhskull": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 100,
-            "ms": 5,
-            "gclw": 1,
-            "bottle": 0.5
-        },
-        "synergy": 0.5,
-        "id": "7-compasses",
-        "time": 18.25,
-        "subtypes": {
-            "map": 22,
-            "hearts4": 2,
-            "poachers": 1.25,
-            "bosskey2": 2,
-            "wallet": 1,
-            "hearts3": 1.5
-        },
-        "types": {
-            "hovers": 3,
-            "selfsynergy": -3,
-            "compass": 22,
-            "incmc": 100
-        },
-        "name": "7 Compasses",
+        "desiredTime": 18.75,
         "difficulty": 25,
         "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 5,
-                "gclw": 1,
-                "bottle": 0.5
-            },
-            "jp": "\u30b3\u30f3\u30d1\u30b97\u3064",
+            "difficulty": 24,
             "id": "7-compasses",
+            "jp": "\u30b3\u30f3\u30d1\u30b97\u3064",
+            "name": "7 Compasses",
+            "rowtypes": {
+                "bottle": 0.5,
+                "gclw": 1,
+                "hookshot": 100,
+                "ms": 5
+            },
+            "skill": 1,
             "subtypes": {
-                "map": 22,
-                "hearts4": 2,
-                "poachers": 1.25,
                 "bosskey2": 2,
-                "wallet": 1,
-                "hearts3": 1.5
+                "hearts3": 1.5,
+                "hearts4": 2,
+                "map": 22,
+                "poachers": 1.25,
+                "wallet": 1
             },
             "time": 18.25,
-            "name": "7 Compasses",
-            "difficulty": 24,
             "types": {
-                "hovers": 3,
-                "selfsynergy": -3,
                 "compass": 22,
-                "incmc": 100
-            },
-            "skill": 1
+                "hovers": 3,
+                "incmc": 100,
+                "selfsynergy": -3
+            }
         },
-        "desiredTime": 18.75
+        "id": "7-compasses",
+        "name": "7 Compasses",
+        "rowtypes": {
+            "bottle": 0.5,
+            "gclw": 1,
+            "hookshot": 100,
+            "ms": 5
+        },
+        "subtypes": {
+            "bosskey2": 2,
+            "hearts3": 1.5,
+            "hearts4": 2,
+            "map": 22,
+            "poachers": 1.25,
+            "wallet": 1
+        },
+        "synergy": 0.5,
+        "time": 18.25,
+        "types": {
+            "compass": 22,
+            "hovers": 3,
+            "incmc": 100,
+            "selfsynergy": -3
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 100,
-            "gclw": 0,
-            "bottle": 100
-        },
-        "synergy": 3.75,
-        "id": "quiver-50-",
-        "time": 14.25,
-        "subtypes": {
-            "childchu": -2.5,
-            "map": 2,
-            "wallet": 0.25,
-            "hearts4": 0.5,
-            "bosskey": 2.5
-        },
-        "types": {
-            "gerudo": 7,
-            "spirit": 0.5,
-            "beans": 10,
-            "fortress": 3,
-            "bombbag": 100,
-            "quiver": 1,
-            "selfsynergy": 0
-        },
-        "name": "Quiver (50)",
+        "desiredTime": 13.5,
         "difficulty": 18,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 100,
-                "gclw": 0,
-                "bottle": 100
-            },
-            "jp": "\u77e2\u7acb\u3066(50)",
+            "difficulty": 19,
             "id": "quiver-50-",
+            "jp": "\u77e2\u7acb\u3066(50)",
+            "name": "Quiver (50)",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 100
+            },
+            "skill": 0,
             "subtypes": {
+                "bosskey": 2.5,
                 "childchu": -2.5,
-                "map": 2,
-                "wallet": 0.25,
                 "hearts4": 0.5,
-                "bosskey": 2.5
+                "map": 2,
+                "wallet": 0.25
             },
             "time": 14.25,
-            "name": "Quiver (50)",
-            "difficulty": 19,
             "types": {
-                "gerudo": 7,
-                "spirit": 0.5,
                 "beans": 10,
-                "fortress": 3,
                 "bombbag": 100,
+                "fortress": 3,
+                "gerudo": 7,
                 "quiver": 1,
-                "selfsynergy": 0
-            },
-            "skill": 0
+                "selfsynergy": 0,
+                "spirit": 0.5
+            }
         },
-        "desiredTime": 13.5
-    },
-    {
+        "id": "quiver-50-",
+        "name": "Quiver (50)",
         "rowtypes": {
-            "hookshot": 0.5,
-            "ms": 4,
+            "bottle": 100,
             "gclw": 0,
-            "bottle": 0
+            "hookshot": 0,
+            "ms": 100
+        },
+        "subtypes": {
+            "bosskey": 2.5,
+            "childchu": -2.5,
+            "hearts4": 0.5,
+            "map": 2,
+            "wallet": 0.25
         },
         "synergy": 3.75,
-        "id": "7-hearts",
+        "time": 14.25,
         "types": {
-            "inchearts": 100,
-            "selfsynergy": -3,
-            "hearts4": 0.5,
-            "hearts3": 10
-        },
-        "time": 8.5,
-        "name": "7 Hearts",
+            "beans": 10,
+            "bombbag": 100,
+            "fortress": 3,
+            "gerudo": 7,
+            "quiver": 1,
+            "selfsynergy": 0,
+            "spirit": 0.5
+        }
+    },
+    {
+        "desiredTime": 10.5,
         "difficulty": 14,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.5,
-                "ms": 4,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "\u30cf\u30fc\u30c87\u3064",
-            "id": "7-hearts",
-            "types": {
-                "inchearts": 100,
-                "selfsynergy": -3,
-                "hearts4": 0.5,
-                "hearts3": 10
-            },
-            "time": 8.5,
-            "name": "7 Hearts",
             "difficulty": 11,
-            "skill": 0.5
-        },
-        "desiredTime": 10.5
-    },
-    {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 1,
-            "bottle": 0
-        },
-        "synergy": 7.75,
-        "id": "defeat-a-skull-kid",
-        "types": {
-            "selfsynergy": 0,
-            "forest": 0.25
-        },
-        "time": 0.75,
-        "name": "Defeat a Skull Kid",
-        "difficulty": 2,
-        "goal": {
+            "id": "7-hearts",
+            "jp": "\u30cf\u30fc\u30c87\u3064",
+            "name": "7 Hearts",
             "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 1,
-                "bottle": 0
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0.5,
+                "ms": 4
             },
-            "jp": "\u30b9\u30bf\u30eb\u30ad\u30c3\u30c9\u6483\u7834",
-            "id": "defeat-a-skull-kid",
+            "skill": 0.5,
+            "time": 8.5,
             "types": {
-                "selfsynergy": 0,
-                "forest": 0.25
-            },
-            "time": 0.75,
-            "name": "Defeat a Skull Kid",
-            "difficulty": 1,
-            "skill": 0
+                "hearts3": 10,
+                "hearts4": 0.5,
+                "inchearts": 100,
+                "selfsynergy": -3
+            }
         },
-        "desiredTime": 1.5
-    },
-    {
+        "id": "7-hearts",
+        "name": "7 Hearts",
         "rowtypes": {
+            "bottle": 0,
+            "gclw": 0,
             "hookshot": 0.5,
-            "ms": 0,
-            "gclw": 0.5,
-            "bottle": 0
+            "ms": 4
         },
         "synergy": 3.75,
-        "id": "1-skulltula-from-each-child-dungeon",
-        "time": 10.25,
-        "subtypes": {
-            "jabu": 3,
-            "map": 4,
-            "hearts4": 1.5,
-            "compass": 4,
-            "wallet": 2
-        },
+        "time": 8.5,
         "types": {
-            "dc": 2,
-            "deku": 3,
-            "selfsynergy": 0,
-            "fountain": 2
+            "hearts3": 10,
+            "hearts4": 0.5,
+            "inchearts": 100,
+            "selfsynergy": -3
+        }
+    },
+    {
+        "desiredTime": 1.5,
+        "difficulty": 2,
+        "goal": {
+            "difficulty": 1,
+            "id": "defeat-a-skull-kid",
+            "jp": "\u30b9\u30bf\u30eb\u30ad\u30c3\u30c9\u6483\u7834",
+            "name": "Defeat a Skull Kid",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 1,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0,
+            "time": 0.75,
+            "types": {
+                "forest": 0.25,
+                "selfsynergy": 0
+            }
         },
-        "name": "1 Skulltula from each Child Dungeon",
+        "id": "defeat-a-skull-kid",
+        "name": "Defeat a Skull Kid",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 1,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "synergy": 7.75,
+        "time": 0.75,
+        "types": {
+            "forest": 0.25,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 9.75,
         "difficulty": 13,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.5,
-                "ms": 0,
-                "gclw": 0.5,
-                "bottle": 0
-            },
-            "jp": "\u5168\u3066\u306e\u5b50\u4f9b\u30c0\u30f3\u30b8\u30e7\u30f3\u304b\u3089\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\u6700\u4f4e1\u5339\u305a\u3064",
+            "difficulty": 14,
             "id": "1-skulltula-from-each-child-dungeon",
+            "jp": "\u5168\u3066\u306e\u5b50\u4f9b\u30c0\u30f3\u30b8\u30e7\u30f3\u304b\u3089\u30b9\u30bf\u30eb\u30c1\u30e5\u30e9\u6700\u4f4e1\u5339\u305a\u3064",
+            "name": "1 Skulltula from each Child Dungeon",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0.5,
+                "hookshot": 0.5,
+                "ms": 0
+            },
+            "skill": 0.5,
             "subtypes": {
+                "compass": 4,
+                "hearts4": 1.5,
                 "jabu": 3,
                 "map": 4,
-                "hearts4": 1.5,
-                "compass": 4,
                 "wallet": 2
             },
             "time": 10.25,
-            "name": "1 Skulltula from each Child Dungeon",
-            "difficulty": 14,
             "types": {
                 "dc": 2,
                 "deku": 3,
-                "selfsynergy": 0,
-                "fountain": 2
-            },
-            "skill": 0.5
+                "fountain": 2,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 9.75
+        "id": "1-skulltula-from-each-child-dungeon",
+        "name": "1 Skulltula from each Child Dungeon",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 0.5,
+            "hookshot": 0.5,
+            "ms": 0
+        },
+        "subtypes": {
+            "compass": 4,
+            "hearts4": 1.5,
+            "jabu": 3,
+            "map": 4,
+            "wallet": 2
+        },
+        "synergy": 3.75,
+        "time": 10.25,
+        "types": {
+            "dc": 2,
+            "deku": 3,
+            "fountain": 2,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0.5,
-            "ms": 5,
-            "gclw": 1,
-            "bottle": 100
-        },
-        "synergy": 0,
-        "id": "blue-potion",
-        "time": 4.5,
-        "subtypes": {
-            "childchu": -2.5,
-            "hearts3": 1,
-            "aganon": 0.25
-        },
-        "types": {
-            "selfsynergy": 0,
-            "poachers": 4.25
-        },
-        "name": "Blue Potion",
+        "desiredTime": 3,
         "difficulty": 4,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.5,
-                "ms": 5,
-                "gclw": 1,
-                "bottle": 100
-            },
-            "jp": "\u9752\u3044\u30af\u30b9\u30ea",
+            "difficulty": 6,
             "id": "blue-potion",
+            "jp": "\u9752\u3044\u30af\u30b9\u30ea",
+            "name": "Blue Potion",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 1,
+                "hookshot": 0.5,
+                "ms": 5
+            },
+            "skill": 0,
             "subtypes": {
+                "aganon": 0.25,
                 "childchu": -2.5,
-                "hearts3": 1,
-                "aganon": 0.25
+                "hearts3": 1
             },
             "time": 4.5,
-            "name": "Blue Potion",
-            "difficulty": 6,
             "types": {
-                "selfsynergy": 0,
-                "poachers": 4.25
-            },
-            "skill": 0
+                "poachers": 4.25,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 3
+        "id": "blue-potion",
+        "name": "Blue Potion",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 1,
+            "hookshot": 0.5,
+            "ms": 5
+        },
+        "subtypes": {
+            "aganon": 0.25,
+            "childchu": -2.5,
+            "hearts3": 1
+        },
+        "synergy": 0,
+        "time": 4.5,
+        "types": {
+            "poachers": 4.25,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 0
-        },
-        "synergy": 1.5,
-        "id": "37th-heart-piece-child-fortress-",
-        "time": 6,
-        "subtypes": {
-            "poachers": 3,
-            "map": 2,
-            "hearts4": 0.5,
-            "kd": 2,
-            "child2": 2,
-            "bosskey": 2,
-            "hearts3": 0.75
-        },
-        "types": {
-            "childchu": 0,
-            "childreset": 1.25,
-            "fortress": 2.5,
-            "selfsynergy": 0
-        },
-        "name": "37th Heart Piece (Child Fortress)",
+        "desiredTime": 5.25,
         "difficulty": 7,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "37\u756a\u76ee\u306e\u30cf\u30fc\u30c8\u306e\u304b\u3051\u3089(\u5b50\u4f9b\u306e\u30b2\u30eb\u30c9\u306e\u7826)",
+            "difficulty": 8,
             "id": "37th-heart-piece-child-fortress-",
+            "jp": "37\u756a\u76ee\u306e\u30cf\u30fc\u30c8\u306e\u304b\u3051\u3089(\u5b50\u4f9b\u306e\u30b2\u30eb\u30c9\u306e\u7826)",
+            "name": "37th Heart Piece (Child Fortress)",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0.25,
             "subtypes": {
-                "poachers": 3,
-                "map": 2,
+                "bosskey": 2,
+                "child2": 2,
+                "hearts3": 0.75,
                 "hearts4": 0.5,
                 "kd": 2,
-                "child2": 2,
-                "bosskey": 2,
-                "hearts3": 0.75
+                "map": 2,
+                "poachers": 3
             },
             "time": 6,
-            "name": "37th Heart Piece (Child Fortress)",
-            "difficulty": 8,
             "types": {
                 "childchu": 0,
                 "childreset": 1.25,
                 "fortress": 2.5,
                 "selfsynergy": 0
-            },
-            "skill": 0.25
+            }
         },
-        "desiredTime": 5.25
-    },
-    {
+        "id": "37th-heart-piece-child-fortress-",
+        "name": "37th Heart Piece (Child Fortress)",
         "rowtypes": {
-            "hookshot": 100,
-            "ms": 100,
-            "gclw": 1,
-            "bottle": 0
-        },
-        "synergy": 10,
-        "id": "obtain-all-5-small-keys-in-shadow-temple",
-        "time": 15.25,
-        "subtypes": {
-            "childchu": -2.5,
-            "chuczl": 2,
-            "hearts4": 1,
-            "compass": 1,
-            "wallet": 1.5,
-            "bosskey2": 6,
-            "hearts3": 2,
-            "bosskey": 3.5
-        },
-        "types": {
-            "poachers": 4.25,
-            "czl": 4.25,
-            "shadow": 8,
-            "hovers": 3,
-            "bothzl": -4.25,
-            "selfsynergy": 0
-        },
-        "name": "Obtain all 5 Small Keys in Shadow Temple",
-        "difficulty": 21,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 100,
-                "gclw": 1,
-                "bottle": 0
-            },
-            "jp": "\u95c7\u306e\u795e\u6bbf\u306e\u5c0f\u3055\u306a\u9375\uff15\u3064\u53d6\u5f97",
-            "id": "obtain-all-5-small-keys-in-shadow-temple",
-            "subtypes": {
-                "childchu": -2.5,
-                "chuczl": 2,
-                "hearts4": 1,
-                "compass": 1,
-                "wallet": 1.5,
-                "bosskey2": 6,
-                "hearts3": 2,
-                "bosskey": 3.5
-            },
-            "time": 15.25,
-            "name": "Obtain all 5 Small Keys in Shadow Temple",
-            "difficulty": 20,
-            "types": {
-                "poachers": 4.25,
-                "czl": 4.25,
-                "shadow": 8,
-                "hovers": 3,
-                "bothzl": -4.25,
-                "selfsynergy": 0
-            },
-            "skill": 0.25
-        },
-        "desiredTime": 15.75
-    },
-    {
-        "rowtypes": {
-            "hookshot": 100,
-            "ms": 8,
+            "bottle": 0,
             "gclw": 0,
-            "bottle": 100
-        },
-        "synergy": 8.5,
-        "id": "defeat-4-different-iron-knuckles",
-        "time": 17,
-        "subtypes": {
-            "songs5": 1,
-            "map": 3,
-            "hearts4": 1.5,
-            "compass": 1,
-            "childtrade": 1.5,
-            "wallet": 1,
-            "bosskey2": 5,
-            "czl": 1.5,
-            "hearts3": 2,
-            "bosskey": 7.25
-        },
-        "types": {
-            "gtg": 1,
-            "spirit": 4,
-            "fortress": 2.5,
-            "selfsynergy": 0,
-            "aganon": 3,
-            "cganon": 3,
-            "hovers": 3,
-            "bganon": -3,
-            "endon": -0.5
-        },
-        "name": "Defeat 4 Different Iron Knuckles",
-        "difficulty": 20,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 8,
-                "gclw": 0,
-                "bottle": 100
-            },
-            "jp": "\u30a2\u30a4\u30a2\u30f3\u30ca\u30c3\u30af\u30924\u4f53\u6483\u7834",
-            "id": "defeat-4-different-iron-knuckles",
-            "subtypes": {
-                "songs5": 1,
-                "map": 3,
-                "hearts4": 1.5,
-                "compass": 1,
-                "childtrade": 1.5,
-                "wallet": 1,
-                "bosskey2": 5,
-                "czl": 1.5,
-                "hearts3": 2,
-                "bosskey": 7.25
-            },
-            "time": 17,
-            "name": "Defeat 4 Different Iron Knuckles",
-            "difficulty": 23,
-            "types": {
-                "gtg": 1,
-                "spirit": 4,
-                "fortress": 2.5,
-                "selfsynergy": 0,
-                "aganon": 3,
-                "cganon": 3,
-                "hovers": 3,
-                "bganon": -3,
-                "endon": -0.5
-            },
-            "skill": 0.5
-        },
-        "desiredTime": 15
-    },
-    {
-        "rowtypes": {
-            "hookshot": 2.5,
-            "ms": 4,
-            "gclw": 0,
-            "bottle": 100
-        },
-        "synergy": 4.75,
-        "id": "nayru-s-love",
-        "time": 15.5,
-        "subtypes": {
-            "childchu": -2.5,
-            "chuczl": 2,
-            "map": 2,
-            "hearts4": 0.25,
-            "compass": 2.5,
-            "aganon": 0.25,
-            "bottleslot": 4,
-            "wallet": 0.5,
-            "hearts3": 1,
-            "incfairy": 100,
-            "bosskey": 2
-        },
-        "types": {
-            "spirit": 2,
-            "fortress": 2.5,
-            "poachers": 4.25,
-            "hovers": 2,
-            "dmc": 1,
-            "magic": 2,
-            "czl": 4.25,
-            "bothzl": -4.25,
-            "selfsynergy": 0,
-            "endon": -0.25
-        },
-        "name": "Nayru's Love",
-        "difficulty": 22,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 2.5,
-                "ms": 4,
-                "gclw": 0,
-                "bottle": 100
-            },
-            "jp": "\u30cd\u30fc\u30eb\u306e\u611b",
-            "id": "nayru-s-love",
-            "subtypes": {
-                "childchu": -2.5,
-                "chuczl": 2,
-                "map": 2,
-                "hearts4": 0.25,
-                "compass": 2.5,
-                "aganon": 0.25,
-                "bottleslot": 4,
-                "wallet": 0.5,
-                "hearts3": 1,
-                "incfairy": 100,
-                "bosskey": 2
-            },
-            "time": 15.5,
-            "name": "Nayru's Love",
-            "difficulty": 21,
-            "types": {
-                "spirit": 2,
-                "fortress": 2.5,
-                "poachers": 4.25,
-                "hovers": 2,
-                "dmc": 1,
-                "magic": 2,
-                "czl": 4.25,
-                "bothzl": -4.25,
-                "selfsynergy": 0,
-                "endon": -0.25
-            },
-            "skill": 0.25
-        },
-        "desiredTime": 16.5
-    },
-    {
-        "rowtypes": {
             "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 0
+            "ms": 0
         },
-        "synergy": 8.5,
-        "id": "saria-s-song",
-        "time": 12.5,
         "subtypes": {
-            "hearts4": 1,
-            "child2": 2.5,
-            "wallet": 0.25,
-            "cganon": 2,
-            "hearts3": 3,
-            "songs4": 3
+            "bosskey": 2,
+            "child2": 2,
+            "hearts3": 0.75,
+            "hearts4": 0.5,
+            "kd": 2,
+            "map": 2,
+            "poachers": 3
         },
+        "synergy": 1.5,
+        "time": 6,
         "types": {
             "childchu": 0,
             "childreset": 1.25,
-            "incsaria": 100,
-            "chuczl": 2,
-            "childtrade": 2.75,
-            "czl": 5,
-            "selfsynergy": 0,
-            "saria": 3
+            "fortress": 2.5,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 15.75,
+        "difficulty": 21,
+        "goal": {
+            "difficulty": 20,
+            "id": "obtain-all-5-small-keys-in-shadow-temple",
+            "jp": "\u95c7\u306e\u795e\u6bbf\u306e\u5c0f\u3055\u306a\u9375\uff15\u3064\u53d6\u5f97",
+            "name": "Obtain all 5 Small Keys in Shadow Temple",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 1,
+                "hookshot": 100,
+                "ms": 100
+            },
+            "skill": 0.25,
+            "subtypes": {
+                "bosskey": 3.5,
+                "bosskey2": 6,
+                "childchu": -2.5,
+                "chuczl": 2,
+                "compass": 1,
+                "hearts3": 2,
+                "hearts4": 1,
+                "wallet": 1.5
+            },
+            "time": 15.25,
+            "types": {
+                "bothzl": -4.25,
+                "czl": 4.25,
+                "hovers": 3,
+                "poachers": 4.25,
+                "selfsynergy": 0,
+                "shadow": 8
+            }
         },
-        "name": "Saria's Song",
+        "id": "obtain-all-5-small-keys-in-shadow-temple",
+        "name": "Obtain all 5 Small Keys in Shadow Temple",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 1,
+            "hookshot": 100,
+            "ms": 100
+        },
+        "subtypes": {
+            "bosskey": 3.5,
+            "bosskey2": 6,
+            "childchu": -2.5,
+            "chuczl": 2,
+            "compass": 1,
+            "hearts3": 2,
+            "hearts4": 1,
+            "wallet": 1.5
+        },
+        "synergy": 10,
+        "time": 15.25,
+        "types": {
+            "bothzl": -4.25,
+            "czl": 4.25,
+            "hovers": 3,
+            "poachers": 4.25,
+            "selfsynergy": 0,
+            "shadow": 8
+        }
+    },
+    {
+        "desiredTime": 15,
+        "difficulty": 20,
+        "goal": {
+            "difficulty": 23,
+            "id": "defeat-4-different-iron-knuckles",
+            "jp": "\u30a2\u30a4\u30a2\u30f3\u30ca\u30c3\u30af\u30924\u4f53\u6483\u7834",
+            "name": "Defeat 4 Different Iron Knuckles",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 0,
+                "hookshot": 100,
+                "ms": 8
+            },
+            "skill": 0.5,
+            "subtypes": {
+                "bosskey": 7.25,
+                "bosskey2": 5,
+                "childtrade": 1.5,
+                "compass": 1,
+                "czl": 1.5,
+                "hearts3": 2,
+                "hearts4": 1.5,
+                "map": 3,
+                "songs5": 1,
+                "wallet": 1
+            },
+            "time": 17,
+            "types": {
+                "aganon": 3,
+                "bganon": -3,
+                "cganon": 3,
+                "endon": -0.5,
+                "fortress": 2.5,
+                "gtg": 1,
+                "hovers": 3,
+                "selfsynergy": 0,
+                "spirit": 4
+            }
+        },
+        "id": "defeat-4-different-iron-knuckles",
+        "name": "Defeat 4 Different Iron Knuckles",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 0,
+            "hookshot": 100,
+            "ms": 8
+        },
+        "subtypes": {
+            "bosskey": 7.25,
+            "bosskey2": 5,
+            "childtrade": 1.5,
+            "compass": 1,
+            "czl": 1.5,
+            "hearts3": 2,
+            "hearts4": 1.5,
+            "map": 3,
+            "songs5": 1,
+            "wallet": 1
+        },
+        "synergy": 8.5,
+        "time": 17,
+        "types": {
+            "aganon": 3,
+            "bganon": -3,
+            "cganon": 3,
+            "endon": -0.5,
+            "fortress": 2.5,
+            "gtg": 1,
+            "hovers": 3,
+            "selfsynergy": 0,
+            "spirit": 4
+        }
+    },
+    {
+        "desiredTime": 16.5,
+        "difficulty": 22,
+        "goal": {
+            "difficulty": 21,
+            "id": "nayru-s-love",
+            "jp": "\u30cd\u30fc\u30eb\u306e\u611b",
+            "name": "Nayru's Love",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 0,
+                "hookshot": 2.5,
+                "ms": 4
+            },
+            "skill": 0.25,
+            "subtypes": {
+                "aganon": 0.25,
+                "bosskey": 2,
+                "bottleslot": 4,
+                "childchu": -2.5,
+                "chuczl": 2,
+                "compass": 2.5,
+                "hearts3": 1,
+                "hearts4": 0.25,
+                "incfairy": 100,
+                "map": 2,
+                "wallet": 0.5
+            },
+            "time": 15.5,
+            "types": {
+                "bothzl": -4.25,
+                "czl": 4.25,
+                "dmc": 1,
+                "endon": -0.25,
+                "fortress": 2.5,
+                "hovers": 2,
+                "magic": 2,
+                "poachers": 4.25,
+                "selfsynergy": 0,
+                "spirit": 2
+            }
+        },
+        "id": "nayru-s-love",
+        "name": "Nayru's Love",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 0,
+            "hookshot": 2.5,
+            "ms": 4
+        },
+        "subtypes": {
+            "aganon": 0.25,
+            "bosskey": 2,
+            "bottleslot": 4,
+            "childchu": -2.5,
+            "chuczl": 2,
+            "compass": 2.5,
+            "hearts3": 1,
+            "hearts4": 0.25,
+            "incfairy": 100,
+            "map": 2,
+            "wallet": 0.5
+        },
+        "synergy": 4.75,
+        "time": 15.5,
+        "types": {
+            "bothzl": -4.25,
+            "czl": 4.25,
+            "dmc": 1,
+            "endon": -0.25,
+            "fortress": 2.5,
+            "hovers": 2,
+            "magic": 2,
+            "poachers": 4.25,
+            "selfsynergy": 0,
+            "spirit": 2
+        }
+    },
+    {
+        "desiredTime": 12,
         "difficulty": 16,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "\u30b5\u30ea\u30a2\u306e\u6b4c",
+            "difficulty": 17,
             "id": "saria-s-song",
+            "jp": "\u30b5\u30ea\u30a2\u306e\u6b4c",
+            "name": "Saria's Song",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0,
             "subtypes": {
-                "hearts4": 1,
-                "child2": 2.5,
-                "wallet": 0.25,
                 "cganon": 2,
+                "child2": 2.5,
                 "hearts3": 3,
-                "songs4": 3
+                "hearts4": 1,
+                "songs4": 3,
+                "wallet": 0.25
             },
             "time": 12.5,
-            "name": "Saria's Song",
-            "difficulty": 17,
             "types": {
                 "childchu": 0,
                 "childreset": 1.25,
-                "incsaria": 100,
-                "chuczl": 2,
                 "childtrade": 2.75,
+                "chuczl": 2,
                 "czl": 5,
-                "selfsynergy": 0,
-                "saria": 3
-            },
-            "skill": 0
+                "incsaria": 100,
+                "saria": 3,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 12
+        "id": "saria-s-song",
+        "name": "Saria's Song",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 0,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "subtypes": {
+            "cganon": 2,
+            "child2": 2.5,
+            "hearts3": 3,
+            "hearts4": 1,
+            "songs4": 3,
+            "wallet": 0.25
+        },
+        "synergy": 8.5,
+        "time": 12.5,
+        "types": {
+            "childchu": 0,
+            "childreset": 1.25,
+            "childtrade": 2.75,
+            "chuczl": 2,
+            "czl": 5,
+            "incsaria": 100,
+            "saria": 3,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 100,
-            "ms": 7,
-            "gclw": 0.5,
-            "bottle": 100
-        },
-        "synergy": 7,
-        "id": "3-skulltulas-in-water-temple",
-        "time": 9.75,
-        "subtypes": {
-            "childchu": -2.5,
-            "bbprize": -4,
-            "hearts4": 2.5,
-            "compass": 2.5,
-            "aganon": 0.25,
-            "map": 2.5,
-            "hovers": 0.5,
-            "wallet": 1.5,
-            "hearts3": 1.5
-        },
-        "types": {
-            "incwskull": 100,
-            "dc": 2,
-            "longshot": 2,
-            "water": 3,
-            "irons": 2,
-            "selfsynergy": 0,
-            "ice": 1.5
-        },
-        "name": "3 Skulltulas in Water Temple",
+        "desiredTime": 11.25,
         "difficulty": 15,
         "goal": {
-            "rowtypes": {
-                "hookshot": 100,
-                "ms": 7,
-                "gclw": 0.5,
-                "bottle": 100
-            },
-            "jp": "\u6c34\u306e\u795e\u6bbf\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
+            "difficulty": 13,
             "id": "3-skulltulas-in-water-temple",
+            "jp": "\u6c34\u306e\u795e\u6bbf\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e93\u5339\u4ee5\u4e0a",
+            "name": "3 Skulltulas in Water Temple",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 0.5,
+                "hookshot": 100,
+                "ms": 7
+            },
+            "skill": 0.5,
             "subtypes": {
-                "childchu": -2.5,
-                "bbprize": -4,
-                "hearts4": 2.5,
-                "compass": 2.5,
                 "aganon": 0.25,
-                "map": 2.5,
+                "bbprize": -4,
+                "childchu": -2.5,
+                "compass": 2.5,
+                "hearts3": 1.5,
+                "hearts4": 2.5,
                 "hovers": 0.5,
-                "wallet": 1.5,
-                "hearts3": 1.5
+                "map": 2.5,
+                "wallet": 1.5
             },
             "time": 9.75,
-            "name": "3 Skulltulas in Water Temple",
-            "difficulty": 13,
             "types": {
-                "incwskull": 100,
                 "dc": 2,
-                "longshot": 2,
-                "water": 3,
+                "ice": 1.5,
+                "incwskull": 100,
                 "irons": 2,
+                "longshot": 2,
                 "selfsynergy": 0,
-                "ice": 1.5
-            },
-            "skill": 0.5
+                "water": 3
+            }
         },
-        "desiredTime": 11.25
+        "id": "3-skulltulas-in-water-temple",
+        "name": "3 Skulltulas in Water Temple",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 0.5,
+            "hookshot": 100,
+            "ms": 7
+        },
+        "subtypes": {
+            "aganon": 0.25,
+            "bbprize": -4,
+            "childchu": -2.5,
+            "compass": 2.5,
+            "hearts3": 1.5,
+            "hearts4": 2.5,
+            "hovers": 0.5,
+            "map": 2.5,
+            "wallet": 1.5
+        },
+        "synergy": 7,
+        "time": 9.75,
+        "types": {
+            "dc": 2,
+            "ice": 1.5,
+            "incwskull": 100,
+            "irons": 2,
+            "longshot": 2,
+            "selfsynergy": 0,
+            "water": 3
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 100,
-            "gclw": 1,
-            "bottle": 0
-        },
-        "synergy": 4.25,
-        "id": "minuet-of-forest",
-        "time": 1.75,
-        "subtypes": {
-            "lightarrow": -1.5,
-            "songs5": 1.75,
-            "bosskey2": 1.75,
-            "wallet": 0.5
-        },
-        "types": {
-            "incforest": 100,
-            "selfsynergy": 0,
-            "forest": 1.75
-        },
-        "name": "Minuet of Forest",
+        "desiredTime": 2.25,
         "difficulty": 3,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 100,
-                "gclw": 1,
-                "bottle": 0
-            },
-            "jp": "\u68ee\u306e\u30e1\u30cc\u30a8\u30c3\u30c8",
+            "difficulty": 2,
             "id": "minuet-of-forest",
+            "jp": "\u68ee\u306e\u30e1\u30cc\u30a8\u30c3\u30c8",
+            "name": "Minuet of Forest",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 1,
+                "hookshot": 0,
+                "ms": 100
+            },
+            "skill": 0,
             "subtypes": {
+                "bosskey2": 1.75,
                 "lightarrow": -1.5,
                 "songs5": 1.75,
-                "bosskey2": 1.75,
                 "wallet": 0.5
             },
             "time": 1.75,
-            "name": "Minuet of Forest",
-            "difficulty": 2,
             "types": {
+                "forest": 1.75,
                 "incforest": 100,
-                "selfsynergy": 0,
-                "forest": 1.75
-            },
-            "skill": 0
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 2.25
+        "id": "minuet-of-forest",
+        "name": "Minuet of Forest",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 1,
+            "hookshot": 0,
+            "ms": 100
+        },
+        "subtypes": {
+            "bosskey2": 1.75,
+            "lightarrow": -1.5,
+            "songs5": 1.75,
+            "wallet": 0.5
+        },
+        "synergy": 4.25,
+        "time": 1.75,
+        "types": {
+            "forest": 1.75,
+            "incforest": 100,
+            "selfsynergy": 0
+        }
     },
     {
-        "rowtypes": {
-            "hookshot": 0.25,
-            "ms": 100,
-            "gclw": 0.75,
-            "bottle": 100
-        },
-        "synergy": 7,
-        "id": "all-8-death-mountain-area-skulltulas",
-        "time": 8.25,
-        "subtypes": {
-            "child2": 3,
-            "czl": 0.5,
-            "wallet": 4,
-            "hearts3": 0.5
-        },
-        "types": {
-            "childchu": 0,
-            "dmc": 2,
-            "selfsynergy": 0
-        },
-        "name": "All 8 Death Mountain area Skulltulas",
+        "desiredTime": 6.75,
         "difficulty": 9,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.25,
-                "ms": 100,
-                "gclw": 0.75,
-                "bottle": 100
-            },
-            "jp": "\u30c7\u30b9\u30de\u30a6\u30f3\u30c6\u30f3\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "difficulty": 11,
             "id": "all-8-death-mountain-area-skulltulas",
+            "jp": "\u30c7\u30b9\u30de\u30a6\u30f3\u30c6\u30f3\u30a8\u30ea\u30a2\u306e\u9ec4\u91d1\u306e\u30b9\u30bf\u30eb\u30c1\u30e5\u30e98\u5339",
+            "name": "All 8 Death Mountain area Skulltulas",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 0.75,
+                "hookshot": 0.25,
+                "ms": 100
+            },
+            "skill": 0,
             "subtypes": {
                 "child2": 3,
                 "czl": 0.5,
-                "wallet": 4,
-                "hearts3": 0.5
+                "hearts3": 0.5,
+                "wallet": 4
             },
             "time": 8.25,
-            "name": "All 8 Death Mountain area Skulltulas",
-            "difficulty": 11,
             "types": {
                 "childchu": 0,
                 "dmc": 2,
                 "selfsynergy": 0
-            },
-            "skill": 0
+            }
         },
-        "desiredTime": 6.75
-    },
-    {
+        "id": "all-8-death-mountain-area-skulltulas",
+        "name": "All 8 Death Mountain area Skulltulas",
         "rowtypes": {
-            "hookshot": 0,
-            "ms": 1,
-            "gclw": 1,
-            "bottle": 0.5
+            "bottle": 100,
+            "gclw": 0.75,
+            "hookshot": 0.25,
+            "ms": 100
         },
-        "synergy": 10,
-        "id": "map-compass-in-ice-cavern",
-        "time": 4.75,
         "subtypes": {
-            "map": 3,
-            "wallet": 1,
-            "compass": 3,
-            "hearts3": 1.5
-        },
-        "types": {
-            "ice": 2,
-            "selfsynergy": 0,
-            "fountain": 2
-        },
-        "name": "Map & Compass in Ice Cavern",
-        "difficulty": 5,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 1,
-                "gclw": 1,
-                "bottle": 0.5
-            },
-            "jp": "\u6c37\u306e\u6d1e\u7a9f\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
-            "id": "map-compass-in-ice-cavern",
-            "subtypes": {
-                "map": 3,
-                "wallet": 1,
-                "compass": 3,
-                "hearts3": 1.5
-            },
-            "time": 4.75,
-            "name": "Map & Compass in Ice Cavern",
-            "difficulty": 6,
-            "types": {
-                "ice": 2,
-                "selfsynergy": 0,
-                "fountain": 2
-            },
-            "skill": 0.25
-        },
-        "desiredTime": 3.75
-    },
-    {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 0
-        },
-        "synergy": 2.25,
-        "id": "milk",
-        "time": 6.25,
-        "subtypes": {
-            "bottleslot": 4.5,
-            "songs4": 0.5,
-            "czl": 2,
-            "wallet": 0.5,
-            "childreset": 1
-        },
-        "types": {
-            "selfsynergy": 0,
-            "lonlon": 4
-        },
-        "name": "Milk",
-        "difficulty": 8,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "\u30ed\u30f3\u30ed\u30f3\u725b\u4e73",
-            "id": "milk",
-            "subtypes": {
-                "bottleslot": 4.5,
-                "songs4": 0.5,
-                "czl": 2,
-                "wallet": 0.5,
-                "childreset": 1
-            },
-            "time": 6.25,
-            "name": "Milk",
-            "difficulty": 8,
-            "types": {
-                "selfsynergy": 0,
-                "lonlon": 4
-            },
-            "skill": 0
-        },
-        "desiredTime": 6
-    },
-    {
-        "rowtypes": {
-            "hookshot": 2,
-            "ms": 100,
-            "gclw": 1,
-            "bottle": 100
-        },
-        "synergy": 0,
-        "id": "10-songs",
-        "time": 18.75,
-        "subtypes": {
-            "childchu": -2.5,
-            "map": 2,
-            "hearts4": 0.25,
-            "compass": 1,
-            "aganon": 0.25,
             "child2": 3,
-            "hearts3": 1.5,
-            "hovers": 1,
-            "wallet": 1.5,
-            "bosskey": 3.5
+            "czl": 0.5,
+            "hearts3": 0.5,
+            "wallet": 4
         },
-        "types": {
-            "songs5": 15,
-            "incsongs": 100,
-            "spirit": 2.5,
-            "fortress": 2.5,
-            "poachers": 4.25,
-            "selfsynergy": 0,
-            "endon": -0.25
-        },
-        "name": "10 Songs",
-        "difficulty": 24,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 2,
-                "ms": 100,
-                "gclw": 1,
-                "bottle": 100
-            },
-            "jp": "\u6b4c10\u3064\u4ee5\u4e0a",
-            "id": "10-songs",
-            "subtypes": {
-                "childchu": -2.5,
-                "map": 2,
-                "hearts4": 0.25,
-                "compass": 1,
-                "aganon": 0.25,
-                "child2": 3,
-                "hearts3": 1.5,
-                "hovers": 1,
-                "wallet": 1.5,
-                "bosskey": 3.5
-            },
-            "time": 18.75,
-            "name": "10 Songs",
-            "difficulty": 25,
-            "types": {
-                "songs5": 15,
-                "incsongs": 100,
-                "spirit": 2.5,
-                "fortress": 2.5,
-                "poachers": 4.25,
-                "selfsynergy": 0,
-                "endon": -0.25
-            },
-            "skill": 0.25
-        },
-        "desiredTime": 18
-    },
-    {
-        "rowtypes": {
-            "hookshot": 0,
-            "ms": 0,
-            "gclw": 0,
-            "bottle": 0
-        },
-        "synergy": 4.25,
-        "id": "beat-jabu-jabu-s-belly",
-        "time": 12.5,
-        "subtypes": {
-            "childreset": 1.25,
-            "map": 3,
-            "compass": 2.5,
-            "hearts4": 1,
-            "child2": 3.5,
-            "wallet": 0.5,
-            "hearts3": 4
-        },
+        "synergy": 7,
+        "time": 8.25,
         "types": {
             "childchu": 0,
-            "incbarinade": 100,
-            "jabu": 8,
-            "selfsynergy": 0,
-            "fountain": 2
-        },
-        "name": "Beat Jabu-Jabu's Belly",
-        "difficulty": 17,
-        "goal": {
-            "rowtypes": {
-                "hookshot": 0,
-                "ms": 0,
-                "gclw": 0,
-                "bottle": 0
-            },
-            "jp": "\u30b8\u30e3\u30d6\u30b8\u30e3\u30d6\u69d8\u306e\u304a\u8179\u30af\u30ea\u30a2",
-            "id": "beat-jabu-jabu-s-belly",
-            "subtypes": {
-                "childreset": 1.25,
-                "map": 3,
-                "compass": 2.5,
-                "hearts4": 1,
-                "child2": 3.5,
-                "wallet": 0.5,
-                "hearts3": 4
-            },
-            "time": 12.5,
-            "name": "Beat Jabu-Jabu's Belly",
-            "difficulty": 17,
-            "types": {
-                "childchu": 0,
-                "incbarinade": 100,
-                "jabu": 8,
-                "selfsynergy": 0,
-                "fountain": 2
-            },
-            "skill": 0.25
-        },
-        "desiredTime": 12.75
+            "dmc": 2,
+            "selfsynergy": 0
+        }
     },
     {
+        "desiredTime": 3.75,
+        "difficulty": 5,
+        "goal": {
+            "difficulty": 6,
+            "id": "map-compass-in-ice-cavern",
+            "jp": "\u6c37\u306e\u6d1e\u7a9f\u306e\u30de\u30c3\u30d7\u3068\u30b3\u30f3\u30d1\u30b9",
+            "name": "Map & Compass in Ice Cavern",
+            "rowtypes": {
+                "bottle": 0.5,
+                "gclw": 1,
+                "hookshot": 0,
+                "ms": 1
+            },
+            "skill": 0.25,
+            "subtypes": {
+                "compass": 3,
+                "hearts3": 1.5,
+                "map": 3,
+                "wallet": 1
+            },
+            "time": 4.75,
+            "types": {
+                "fountain": 2,
+                "ice": 2,
+                "selfsynergy": 0
+            }
+        },
+        "id": "map-compass-in-ice-cavern",
+        "name": "Map & Compass in Ice Cavern",
         "rowtypes": {
-            "hookshot": 0.5,
-            "ms": 1.5,
+            "bottle": 0.5,
             "gclw": 1,
-            "bottle": 0
+            "hookshot": 0,
+            "ms": 1
         },
-        "synergy": 9.5,
-        "id": "3-boots",
-        "time": 8.5,
         "subtypes": {
-            "map": 3,
             "compass": 3,
-            "hearts4": 0.25,
-            "hearts3": 1,
-            "wallet": 1,
-            "songs4": 1.5
+            "hearts3": 1.5,
+            "map": 3,
+            "wallet": 1
         },
+        "synergy": 10,
+        "time": 4.75,
         "types": {
-            "incboot": 100,
-            "endon": -0.5,
-            "irons": 2,
             "fountain": 2,
-            "hovers": 3,
-            "selfsynergy": 0,
-            "ice": 1.5
+            "ice": 2,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 6,
+        "difficulty": 8,
+        "goal": {
+            "difficulty": 8,
+            "id": "milk",
+            "jp": "\u30ed\u30f3\u30ed\u30f3\u725b\u4e73",
+            "name": "Milk",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0,
+            "subtypes": {
+                "bottleslot": 4.5,
+                "childreset": 1,
+                "czl": 2,
+                "songs4": 0.5,
+                "wallet": 0.5
+            },
+            "time": 6.25,
+            "types": {
+                "lonlon": 4,
+                "selfsynergy": 0
+            }
         },
-        "name": "3 Boots",
+        "id": "milk",
+        "name": "Milk",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 0,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "subtypes": {
+            "bottleslot": 4.5,
+            "childreset": 1,
+            "czl": 2,
+            "songs4": 0.5,
+            "wallet": 0.5
+        },
+        "synergy": 2.25,
+        "time": 6.25,
+        "types": {
+            "lonlon": 4,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 18,
+        "difficulty": 24,
+        "goal": {
+            "difficulty": 25,
+            "id": "10-songs",
+            "jp": "\u6b4c10\u3064\u4ee5\u4e0a",
+            "name": "10 Songs",
+            "rowtypes": {
+                "bottle": 100,
+                "gclw": 1,
+                "hookshot": 2,
+                "ms": 100
+            },
+            "skill": 0.25,
+            "subtypes": {
+                "aganon": 0.25,
+                "bosskey": 3.5,
+                "child2": 3,
+                "childchu": -2.5,
+                "compass": 1,
+                "hearts3": 1.5,
+                "hearts4": 0.25,
+                "hovers": 1,
+                "map": 2,
+                "wallet": 1.5
+            },
+            "time": 18.75,
+            "types": {
+                "endon": -0.25,
+                "fortress": 2.5,
+                "incsongs": 100,
+                "poachers": 4.25,
+                "selfsynergy": 0,
+                "songs5": 15,
+                "spirit": 2.5
+            }
+        },
+        "id": "10-songs",
+        "name": "10 Songs",
+        "rowtypes": {
+            "bottle": 100,
+            "gclw": 1,
+            "hookshot": 2,
+            "ms": 100
+        },
+        "subtypes": {
+            "aganon": 0.25,
+            "bosskey": 3.5,
+            "child2": 3,
+            "childchu": -2.5,
+            "compass": 1,
+            "hearts3": 1.5,
+            "hearts4": 0.25,
+            "hovers": 1,
+            "map": 2,
+            "wallet": 1.5
+        },
+        "synergy": 0,
+        "time": 18.75,
+        "types": {
+            "endon": -0.25,
+            "fortress": 2.5,
+            "incsongs": 100,
+            "poachers": 4.25,
+            "selfsynergy": 0,
+            "songs5": 15,
+            "spirit": 2.5
+        }
+    },
+    {
+        "desiredTime": 12.75,
+        "difficulty": 17,
+        "goal": {
+            "difficulty": 17,
+            "id": "beat-jabu-jabu-s-belly",
+            "jp": "\u30b8\u30e3\u30d6\u30b8\u30e3\u30d6\u69d8\u306e\u304a\u8179\u30af\u30ea\u30a2",
+            "name": "Beat Jabu-Jabu's Belly",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 0,
+                "hookshot": 0,
+                "ms": 0
+            },
+            "skill": 0.25,
+            "subtypes": {
+                "child2": 3.5,
+                "childreset": 1.25,
+                "compass": 2.5,
+                "hearts3": 4,
+                "hearts4": 1,
+                "map": 3,
+                "wallet": 0.5
+            },
+            "time": 12.5,
+            "types": {
+                "childchu": 0,
+                "fountain": 2,
+                "incbarinade": 100,
+                "jabu": 8,
+                "selfsynergy": 0
+            }
+        },
+        "id": "beat-jabu-jabu-s-belly",
+        "name": "Beat Jabu-Jabu's Belly",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 0,
+            "hookshot": 0,
+            "ms": 0
+        },
+        "subtypes": {
+            "child2": 3.5,
+            "childreset": 1.25,
+            "compass": 2.5,
+            "hearts3": 4,
+            "hearts4": 1,
+            "map": 3,
+            "wallet": 0.5
+        },
+        "synergy": 4.25,
+        "time": 12.5,
+        "types": {
+            "childchu": 0,
+            "fountain": 2,
+            "incbarinade": 100,
+            "jabu": 8,
+            "selfsynergy": 0
+        }
+    },
+    {
+        "desiredTime": 8.25,
         "difficulty": 11,
         "goal": {
-            "rowtypes": {
-                "hookshot": 0.5,
-                "ms": 1.5,
-                "gclw": 1,
-                "bottle": 0
-            },
-            "jp": "\u97743\u7a2e",
+            "difficulty": 11,
             "id": "3-boots",
+            "jp": "\u97743\u7a2e",
+            "name": "3 Boots",
+            "rowtypes": {
+                "bottle": 0,
+                "gclw": 1,
+                "hookshot": 0.5,
+                "ms": 1.5
+            },
+            "skill": 0.25,
             "subtypes": {
-                "map": 3,
                 "compass": 3,
-                "hearts4": 0.25,
                 "hearts3": 1,
-                "wallet": 1,
-                "songs4": 1.5
+                "hearts4": 0.25,
+                "map": 3,
+                "songs4": 1.5,
+                "wallet": 1
             },
             "time": 8.5,
-            "name": "3 Boots",
-            "difficulty": 11,
             "types": {
-                "incboot": 100,
                 "endon": -0.5,
-                "irons": 2,
                 "fountain": 2,
                 "hovers": 3,
-                "selfsynergy": 0,
-                "ice": 1.5
-            },
-            "skill": 0.25
+                "ice": 1.5,
+                "incboot": 100,
+                "irons": 2,
+                "selfsynergy": 0
+            }
         },
-        "desiredTime": 8.25
+        "id": "3-boots",
+        "name": "3 Boots",
+        "rowtypes": {
+            "bottle": 0,
+            "gclw": 1,
+            "hookshot": 0.5,
+            "ms": 1.5
+        },
+        "subtypes": {
+            "compass": 3,
+            "hearts3": 1,
+            "hearts4": 0.25,
+            "map": 3,
+            "songs4": 1.5,
+            "wallet": 1
+        },
+        "synergy": 9.5,
+        "time": 8.5,
+        "types": {
+            "endon": -0.5,
+            "fountain": 2,
+            "hovers": 3,
+            "ice": 1.5,
+            "incboot": 100,
+            "irons": 2,
+            "selfsynergy": 0
+        }
     }
 ]

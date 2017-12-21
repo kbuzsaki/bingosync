@@ -1,7 +1,7 @@
 [
     {
-        "name": "5 Boss Keys",
         "difficulty": 19,
+        "name": "5 Boss Keys",
         "synergy": 0,
         "types": [
             "key",
@@ -9,8 +9,8 @@
         ]
     },
     {
-        "name": "5 GBs in Crystal Caves",
         "difficulty": 12,
+        "name": "5 GBs in Crystal Caves",
         "synergy": 0,
         "types": [
             "cave",
@@ -18,8 +18,8 @@
         ]
     },
     {
-        "name": "50 bananas in Creepy Castle",
         "difficulty": 1,
+        "name": "50 bananas in Creepy Castle",
         "synergy": 0,
         "types": [
             "castle",
@@ -27,8 +27,8 @@
         ]
     },
     {
-        "name": "Enter Every Level",
         "difficulty": 10,
+        "name": "Enter Every Level",
         "synergy": 0,
         "types": [
             "helm",
@@ -36,8 +36,8 @@
         ]
     },
     {
-        "name": "6 Battle Crowns",
         "difficulty": 23,
+        "name": "6 Battle Crowns",
         "synergy": 0,
         "types": [
             "japescrown",
@@ -52,8 +52,8 @@
         ]
     },
     {
-        "name": "5 GBs in Angry Aztec",
         "difficulty": 6,
+        "name": "5 GBs in Angry Aztec",
         "synergy": 0,
         "types": [
             "aztec",
@@ -61,8 +61,8 @@
         ]
     },
     {
-        "name": "All banana medals for any level",
         "difficulty": 25,
+        "name": "All banana medals for any level",
         "synergy": 0,
         "types": [
             "medal",
@@ -76,8 +76,8 @@
         ]
     },
     {
-        "name": "2 GBs for each Kong in Jungle Japes",
         "difficulty": 18,
+        "name": "2 GBs for each Kong in Jungle Japes",
         "synergy": 0,
         "types": [
             "japesgb",
@@ -86,8 +86,8 @@
         ]
     },
     {
-        "name": "All Banana Fairies in DK Isles",
         "difficulty": 14,
+        "name": "All Banana Fairies in DK Isles",
         "synergy": 0,
         "types": [
             "fairy",
@@ -95,8 +95,8 @@
         ]
     },
     {
-        "name": "3 Tiny Blueprints",
         "difficulty": 2,
+        "name": "3 Tiny Blueprints",
         "synergy": 0,
         "types": [
             "bp",
@@ -112,8 +112,8 @@
         ]
     },
     {
-        "name": "100 Bananas for any Kong in Gloomy Galleon",
         "difficulty": 13,
+        "name": "100 Bananas for any Kong in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -121,16 +121,16 @@
         ]
     },
     {
-        "name": "Key 4",
         "difficulty": 4,
+        "name": "Key 4",
         "synergy": 0,
         "types": [
             "key"
         ]
     },
     {
-        "name": "1 GB for each Kong in Factory",
         "difficulty": 7,
+        "name": "1 GB for each Kong in Factory",
         "synergy": 0,
         "types": [
             "factory",
@@ -138,8 +138,8 @@
         ]
     },
     {
-        "name": "10 GBs in Angry Aztec",
         "difficulty": 21,
+        "name": "10 GBs in Angry Aztec",
         "synergy": 0,
         "types": [
             "aztecgb",
@@ -147,8 +147,8 @@
         ]
     },
     {
-        "name": "200 Bananas in Creepy Castle",
         "difficulty": 20,
+        "name": "200 Bananas in Creepy Castle",
         "synergy": 0,
         "types": [
             "castlebananas",
@@ -156,8 +156,8 @@
         ]
     },
     {
-        "name": "3 Banana Medals in Creepy Castle",
         "difficulty": 22,
+        "name": "3 Banana Medals in Creepy Castle",
         "synergy": 0,
         "types": [
             "castlebananas",
@@ -166,8 +166,8 @@
         ]
     },
     {
-        "name": "12 Rainbow Coins",
         "difficulty": 16,
+        "name": "12 Rainbow Coins",
         "synergy": 0,
         "types": [
             "coin ",
@@ -175,8 +175,8 @@
         ]
     },
     {
-        "name": "All 4 GB's in Llama Temple",
         "difficulty": 15,
+        "name": "All 4 GB's in Llama Temple",
         "synergy": 0,
         "types": [
             "aztec",
@@ -184,8 +184,8 @@
         ]
     },
     {
-        "name": "Galleon Submarine GB",
         "difficulty": 3,
+        "name": "Galleon Submarine GB",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -194,8 +194,8 @@
         ]
     },
     {
-        "name": "100 bananas for any Kong in Jungle Japes",
         "difficulty": 9,
+        "name": "100 bananas for any Kong in Jungle Japes",
         "synergy": 0,
         "types": [
             "japesbananas",
@@ -203,8 +203,8 @@
         ]
     },
     {
-        "name": "3 Lanky Blueprints",
         "difficulty": 5,
+        "name": "3 Lanky Blueprints",
         "synergy": 0,
         "types": [
             "lanky",
@@ -220,8 +220,8 @@
         ]
     },
     {
-        "name": "5 GBs in Gloomy Galleon",
         "difficulty": 8,
+        "name": "5 GBs in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomygb",
@@ -229,8 +229,8 @@
         ]
     },
     {
-        "name": "13 Banana Fairies",
         "difficulty": 24,
+        "name": "13 Banana Fairies",
         "synergy": 0,
         "types": [
             "fairy",
@@ -238,8 +238,8 @@
         ]
     },
     {
-        "name": "All 5 Production Room GBs",
         "difficulty": 17,
+        "name": "All 5 Production Room GBs",
         "synergy": 0,
         "types": [
             "factory",
@@ -247,8 +247,8 @@
         ]
     },
     {
-        "name": "Activate All Warps in Crystal Caves",
         "difficulty": 11,
+        "name": "Activate All Warps in Crystal Caves",
         "synergy": 0,
         "types": [
             "cave",

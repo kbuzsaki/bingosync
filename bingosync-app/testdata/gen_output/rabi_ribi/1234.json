@@ -1,23 +1,23 @@
 [
     {
-        "name": "Max Bracelet",
         "difficulty": 2,
+        "name": "Max Bracelet",
         "synergy": 0,
         "types": [
             "Bracelet"
         ]
     },
     {
-        "name": "25% Item",
         "difficulty": 21,
+        "name": "25% Item",
         "synergy": 0,
         "types": [
             "Collection"
         ]
     },
     {
-        "name": "Lv.3 Fire Orb",
         "difficulty": 14,
+        "name": "Lv.3 Fire Orb",
         "synergy": 0,
         "types": [
             "Subterranean Area",
@@ -25,8 +25,8 @@
         ]
     },
     {
-        "name": "Have at least 175 max MP",
         "difficulty": 18,
+        "name": "Have at least 175 max MP",
         "synergy": 0,
         "types": [
             "Mana Up",
@@ -37,16 +37,16 @@
         ]
     },
     {
-        "name": "Survival Badge",
         "difficulty": 10,
+        "name": "Survival Badge",
         "synergy": 0,
         "types": [
             "Survival"
         ]
     },
     {
-        "name": "15 Badges",
         "difficulty": 19,
+        "name": "15 Badges",
         "synergy": 0,
         "types": [
             "Health Plus",
@@ -78,8 +78,8 @@
         ]
     },
     {
-        "name": "All 3 Southern Woodland Pack Up Potions",
         "difficulty": 8,
+        "name": "All 3 Southern Woodland Pack Up Potions",
         "synergy": 0,
         "types": [
             "Southern Woodland",
@@ -87,32 +87,32 @@
         ]
     },
     {
-        "name": "Defeat a Lv.10 or higher boss",
         "difficulty": 5,
+        "name": "Defeat a Lv.10 or higher boss",
         "synergy": 0,
         "types": [
             "Boss"
         ]
     },
     {
-        "name": "End with 50000 EN",
         "difficulty": 22,
+        "name": "End with 50000 EN",
         "synergy": 0,
         "types": [
             "Money"
         ]
     },
     {
-        "name": "Defeat Lilith I",
         "difficulty": 11,
+        "name": "Defeat Lilith I",
         "synergy": 0,
         "types": [
             "Lilith"
         ]
     },
     {
-        "name": "Recruit 8 Towns Members",
         "difficulty": 25,
+        "name": "Recruit 8 Towns Members",
         "synergy": 0,
         "types": [
             "Ashuri",
@@ -133,40 +133,40 @@
         ]
     },
     {
-        "name": "18 Warp Stones",
         "difficulty": 12,
+        "name": "18 Warp Stones",
         "synergy": 0,
         "types": [
             "Warp Stone"
         ]
     },
     {
-        "name": "20 Health Up Potions",
         "difficulty": 16,
+        "name": "20 Health Up Potions",
         "synergy": 0,
         "types": [
             "Health Up"
         ]
     },
     {
-        "name": "15% Item",
         "difficulty": 9,
+        "name": "15% Item",
         "synergy": 0,
         "types": [
             "Collection"
         ]
     },
     {
-        "name": "5 Mana Up Potions",
         "difficulty": 3,
+        "name": "5 Mana Up Potions",
         "synergy": 0,
         "types": [
             "Mana Up"
         ]
     },
     {
-        "name": "Defeat Illusion Alius III",
         "difficulty": 6,
+        "name": "Defeat Illusion Alius III",
         "synergy": 0,
         "types": [
             "Alius",
@@ -174,8 +174,8 @@
         ]
     },
     {
-        "name": "Log the Bunny Lover buff",
         "difficulty": 4,
+        "name": "Log the Bunny Lover buff",
         "synergy": 0,
         "types": [
             "Eggs",
@@ -183,8 +183,8 @@
         ]
     },
     {
-        "name": "70% Northern Tundra Map",
         "difficulty": 23,
+        "name": "70% Northern Tundra Map",
         "synergy": 0,
         "types": [
             "Northern Tundra",
@@ -192,16 +192,16 @@
         ]
     },
     {
-        "name": "Defeat Plurkwood's Twin Cats",
         "difficulty": 15,
+        "name": "Defeat Plurkwood's Twin Cats",
         "synergy": 0,
         "types": [
             "Plurkwood"
         ]
     },
     {
-        "name": "Recruit Ashuri, Pandora, and Rita",
         "difficulty": 17,
+        "name": "Recruit Ashuri, Pandora, and Rita",
         "synergy": 0,
         "types": [
             "Ashuri",
@@ -210,8 +210,8 @@
         ]
     },
     {
-        "name": "20 Island Core items",
         "difficulty": 13,
+        "name": "20 Island Core items",
         "synergy": 0,
         "types": [
             "Island Core",
@@ -219,16 +219,16 @@
         ]
     },
     {
-        "name": "Get a High-Score above 4000 on the sandbag",
         "difficulty": 20,
+        "name": "Get a High-Score above 4000 on the sandbag",
         "synergy": 0,
         "types": [
             "Sandbag"
         ]
     },
     {
-        "name": "Hear \u266a Bounce Bounce",
         "difficulty": 7,
+        "name": "Hear \u266a Bounce Bounce",
         "synergy": 0,
         "types": [
             "Nieve",
@@ -238,16 +238,16 @@
         ]
     },
     {
-        "name": "Log the Numb debuff",
         "difficulty": 1,
+        "name": "Log the Numb debuff",
         "synergy": 0,
         "types": [
             "Numb"
         ]
     },
     {
-        "name": "20 Northern Tundra items",
         "difficulty": 24,
+        "name": "20 Northern Tundra items",
         "synergy": 1,
         "types": [
             "Northern Tundra",

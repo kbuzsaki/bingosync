@@ -1,136 +1,136 @@
 [
     {
-        "name": "Swamp Teal Underwater Panels",
         "difficulty": 24,
+        "name": "Swamp Teal Underwater Panels",
         "synergy": 0
     },
     {
-        "name": "Back Half of Keep",
         "difficulty": 18,
+        "name": "Back Half of Keep",
         "synergy": 0
     },
     {
-        "name": "Shipwreck Vault",
         "difficulty": 15,
+        "name": "Shipwreck Vault",
         "synergy": 0,
         "types": [
             "vault"
         ]
     },
     {
-        "name": "Cinema Exit Panels",
         "difficulty": 7,
+        "name": "Cinema Exit Panels",
         "synergy": 0
     },
     {
-        "name": "Turn on the Lightswitch",
         "difficulty": 1,
+        "name": "Turn on the Lightswitch",
         "synergy": 0
     },
     {
-        "name": "Windmill First Blade EP",
         "difficulty": 10,
+        "name": "Windmill First Blade EP",
         "synergy": 0
     },
     {
-        "name": "Dots Tutorial",
         "difficulty": 2,
+        "name": "Dots Tutorial",
         "synergy": 0
     },
     {
-        "name": "Treehouse Buoy EP",
         "difficulty": 21,
+        "name": "Treehouse Buoy EP",
         "synergy": 0
     },
     {
-        "name": "Boathouse Claw Ramp EP",
         "difficulty": 19,
+        "name": "Boathouse Claw Ramp EP",
         "synergy": 0
     },
     {
-        "name": "Any 7 Non-Laser Panels that don't increase solve count",
         "difficulty": 13,
+        "name": "Any 7 Non-Laser Panels that don't increase solve count",
         "synergy": 0
     },
     {
-        "name": "Bunker Elevator Panel",
         "difficulty": 16,
+        "name": "Bunker Elevator Panel",
         "synergy": 0
     },
     {
-        "name": "Symmetry Laser",
         "difficulty": 14,
+        "name": "Symmetry Laser",
         "synergy": 0
     },
     {
-        "name": "Left Monastery Courtyard EP",
         "difficulty": 8,
+        "name": "Left Monastery Courtyard EP",
         "synergy": 0
     },
     {
-        "name": "Both Jungle Bamboo Sky EPs",
         "difficulty": 5,
+        "name": "Both Jungle Bamboo Sky EPs",
         "synergy": 0
     },
     {
-        "name": "Bunker Green Room EP",
         "difficulty": 22,
+        "name": "Bunker Green Room EP",
         "synergy": 0
     },
     {
-        "name": "All 4 Town Tower Underside EPs",
         "difficulty": 3,
+        "name": "All 4 Town Tower Underside EPs",
         "synergy": 0
     },
     {
-        "name": "Long Treehouse Bridge EP",
         "difficulty": 25,
+        "name": "Long Treehouse Bridge EP",
         "synergy": 0
     },
     {
-        "name": "Both Swamp Red Shortcut Door Panels",
         "difficulty": 17,
+        "name": "Both Swamp Red Shortcut Door Panels",
         "synergy": 0
     },
     {
-        "name": "Mountaintop River Panel",
         "difficulty": 11,
+        "name": "Mountaintop River Panel",
         "synergy": 0
     },
     {
-        "name": "Mill Door Panels",
         "difficulty": 9,
+        "name": "Mill Door Panels",
         "synergy": 0
     },
     {
-        "name": "Desert Elevator EP",
         "difficulty": 12,
+        "name": "Desert Elevator EP",
         "synergy": 0,
         "types": [
             "desert_laser"
         ]
     },
     {
-        "name": "Desert Vault",
         "difficulty": 6,
+        "name": "Desert Vault",
         "synergy": 0,
         "types": [
             "vault"
         ]
     },
     {
-        "name": "Quarry Entrance Pipe EP",
         "difficulty": 4,
+        "name": "Quarry Entrance Pipe EP",
         "synergy": 0
     },
     {
-        "name": "Quarry Railroad EP",
         "difficulty": 23,
+        "name": "Quarry Railroad EP",
         "synergy": 0
     },
     {
-        "name": "Boat Tutorial Reflection EP",
         "difficulty": 20,
+        "name": "Boat Tutorial Reflection EP",
         "synergy": 0,
         "types": [
             "boat_ep"

@@ -1,23 +1,23 @@
 [
     {
-        "name": "45 Koroks",
         "difficulty": 24,
+        "name": "45 Koroks",
         "synergy": 0,
         "types": [
             "Korok"
         ]
     },
     {
-        "name": "15 Lanayru Koroks",
         "difficulty": 18,
+        "name": "15 Lanayru Koroks",
         "synergy": 0,
         "types": [
             "Korok. Lanayru"
         ]
     },
     {
-        "name": "'The Bird in the Mountains' Shrine Quest",
         "difficulty": 15,
+        "name": "'The Bird in the Mountains' Shrine Quest",
         "synergy": 0,
         "types": [
             "Shrine",
@@ -27,16 +27,16 @@
         ]
     },
     {
-        "name": "Any 'Zora' Equipment item",
         "difficulty": 7,
+        "name": "Any 'Zora' Equipment item",
         "synergy": 0,
         "types": [
             "Equipment"
         ]
     },
     {
-        "name": "Hylian Hood",
         "difficulty": 1,
+        "name": "Hylian Hood",
         "synergy": 0,
         "types": [
             "Clothes",
@@ -45,8 +45,8 @@
         ]
     },
     {
-        "name": "A Modest Test of Strength Shrine",
         "difficulty": 10,
+        "name": "A Modest Test of Strength Shrine",
         "synergy": 0,
         "types": [
             "Shrine",
@@ -54,16 +54,16 @@
         ]
     },
     {
-        "name": "Give Beedle a Beetle",
         "difficulty": 2,
+        "name": "Give Beedle a Beetle",
         "synergy": 0,
         "types": [
             "Horse"
         ]
     },
     {
-        "name": "Spring-Loaded Hammer",
         "difficulty": 21,
+        "name": "Spring-Loaded Hammer",
         "synergy": 0,
         "types": [
             "Equipment",
@@ -71,8 +71,8 @@
         ]
     },
     {
-        "name": "15 Wasteland Koroks",
         "difficulty": 19,
+        "name": "15 Wasteland Koroks",
         "synergy": 0,
         "types": [
             "Korok",
@@ -80,8 +80,8 @@
         ]
     },
     {
-        "name": "5 Creatures in Compendium",
         "difficulty": 13,
+        "name": "5 Creatures in Compendium",
         "synergy": 0,
         "types": [
             "Camera",
@@ -89,8 +89,8 @@
         ]
     },
     {
-        "name": "10 Monsters in Compendium",
         "difficulty": 16,
+        "name": "10 Monsters in Compendium",
         "synergy": 0,
         "types": [
             "Camera",
@@ -98,48 +98,48 @@
         ]
     },
     {
-        "name": "Activate 4 Towers",
         "difficulty": 14,
+        "name": "Activate 4 Towers",
         "synergy": 0,
         "types": [
             "Tower"
         ]
     },
     {
-        "name": "Fruitcake",
         "difficulty": 8,
+        "name": "Fruitcake",
         "synergy": 0,
         "types": [
             "Cooking"
         ]
     },
     {
-        "name": "Kill a fire-typed Wizzrobe",
         "difficulty": 5,
+        "name": "Kill a fire-typed Wizzrobe",
         "synergy": 0,
         "types": [
             "Wizzrobe"
         ]
     },
     {
-        "name": "14 Side Quests",
         "difficulty": 22,
+        "name": "14 Side Quests",
         "synergy": 0,
         "types": [
             "Side Quest"
         ]
     },
     {
-        "name": "Any Stalfos 'Arm' Equipment item",
         "difficulty": 3,
+        "name": "Any Stalfos 'Arm' Equipment item",
         "synergy": 0,
         "types": [
             "Equipment"
         ]
     },
     {
-        "name": "'The Undefeated Champ' Shrine Quest",
         "difficulty": 25,
+        "name": "'The Undefeated Champ' Shrine Quest",
         "synergy": 0,
         "types": [
             "Shrine",
@@ -148,16 +148,16 @@
         ]
     },
     {
-        "name": "Activate 5 Towers",
         "difficulty": 17,
+        "name": "Activate 5 Towers",
         "synergy": 0,
         "types": [
             "Tower"
         ]
     },
     {
-        "name": "Kill a Stone Talus (Rare)",
         "difficulty": 11,
+        "name": "Kill a Stone Talus (Rare)",
         "synergy": 0,
         "types": [
             "Rupee",
@@ -166,8 +166,8 @@
         ]
     },
     {
-        "name": "Apple Pie",
         "difficulty": 9,
+        "name": "Apple Pie",
         "synergy": 0,
         "types": [
             "Cooking",
@@ -175,16 +175,16 @@
         ]
     },
     {
-        "name": "10 Side Quests",
         "difficulty": 12,
+        "name": "10 Side Quests",
         "synergy": 0,
         "types": [
             "Side Quest"
         ]
     },
     {
-        "name": "6 Tabantha Koroks",
         "difficulty": 6,
+        "name": "6 Tabantha Koroks",
         "synergy": 0,
         "types": [
             "Korok",
@@ -192,16 +192,16 @@
         ]
     },
     {
-        "name": "Kill a Wizzrobe of any kind",
         "difficulty": 4,
+        "name": "Kill a Wizzrobe of any kind",
         "synergy": 0,
         "types": [
             "Wizzrobe"
         ]
     },
     {
-        "name": "'Divine Beast Vah Rudania' Main Quest",
         "difficulty": 23,
+        "name": "'Divine Beast Vah Rudania' Main Quest",
         "synergy": 0,
         "types": [
             "Divine Beast",
@@ -209,8 +209,8 @@
         ]
     },
     {
-        "name": "6 Shrine Quests",
         "difficulty": 20,
+        "name": "6 Shrine Quests",
         "synergy": 0,
         "types": [
             "Shrine",

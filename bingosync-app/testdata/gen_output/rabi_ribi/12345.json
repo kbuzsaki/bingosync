@@ -1,7 +1,7 @@
 [
     {
-        "name": "15 Badges",
         "difficulty": 19,
+        "name": "15 Badges",
         "synergy": 0,
         "types": [
             "Health Plus",
@@ -33,8 +33,8 @@
         ]
     },
     {
-        "name": "15 Northern Tundra items",
         "difficulty": 12,
+        "name": "15 Northern Tundra items",
         "synergy": 0,
         "types": [
             "Northern Tundra",
@@ -42,16 +42,16 @@
         ]
     },
     {
-        "name": "Log the Speed Down debuff",
         "difficulty": 1,
+        "name": "Log the Speed Down debuff",
         "synergy": 0,
         "types": [
             "Cicini"
         ]
     },
     {
-        "name": "4 Eastern Highlands Easter Eggs",
         "difficulty": 10,
+        "name": "4 Eastern Highlands Easter Eggs",
         "synergy": 0,
         "types": [
             "Eastern Highlands",
@@ -59,8 +59,8 @@
         ]
     },
     {
-        "name": "Lv.3 P Hairpin",
         "difficulty": 23,
+        "name": "Lv.3 P Hairpin",
         "synergy": 0,
         "types": [
             "P Hairpin",
@@ -68,16 +68,16 @@
         ]
     },
     {
-        "name": "10 Mana Up Potions",
         "difficulty": 6,
+        "name": "10 Mana Up Potions",
         "synergy": 0,
         "types": [
             "Mana Up"
         ]
     },
     {
-        "name": "Recruit 8 Towns Members",
         "difficulty": 25,
+        "name": "Recruit 8 Towns Members",
         "synergy": 0,
         "types": [
             "Ashuri",
@@ -98,48 +98,48 @@
         ]
     },
     {
-        "name": "15 Regen Up Potions",
         "difficulty": 18,
+        "name": "15 Regen Up Potions",
         "synergy": 0,
         "types": [
             "Regen Up"
         ]
     },
     {
-        "name": "Lv.3 Piko Hammer",
         "difficulty": 14,
+        "name": "Lv.3 Piko Hammer",
         "synergy": 0,
         "types": [
             "Hammer"
         ]
     },
     {
-        "name": "4 Easter Eggs",
         "difficulty": 2,
+        "name": "4 Easter Eggs",
         "synergy": 0,
         "types": [
             "Eggs"
         ]
     },
     {
-        "name": "Strange Box",
         "difficulty": 13,
+        "name": "Strange Box",
         "synergy": 0,
         "types": [
             "Syaro"
         ]
     },
     {
-        "name": "Plus Necklace",
         "difficulty": 4,
+        "name": "Plus Necklace",
         "synergy": 0,
         "types": [
             "Necklace"
         ]
     },
     {
-        "name": "Healing Staff, Soul Heart, Book of Carrot, and Max Bracelet",
         "difficulty": 7,
+        "name": "Healing Staff, Soul Heart, Book of Carrot, and Max Bracelet",
         "synergy": 0,
         "types": [
             "Green",
@@ -149,40 +149,40 @@
         ]
     },
     {
-        "name": "25% Item",
         "difficulty": 21,
+        "name": "25% Item",
         "synergy": 0,
         "types": [
             "Collection"
         ]
     },
     {
-        "name": "Defeat a Lv.25 or higher boss",
         "difficulty": 20,
+        "name": "Defeat a Lv.25 or higher boss",
         "synergy": 0,
         "types": [
             "Boss"
         ]
     },
     {
-        "name": "15 Pack Up Potions",
         "difficulty": 22,
+        "name": "15 Pack Up Potions",
         "synergy": 0,
         "types": [
             "Pack Up"
         ]
     },
     {
-        "name": "15 Attack Up Potions",
         "difficulty": 16,
+        "name": "15 Attack Up Potions",
         "synergy": 0,
         "types": [
             "Attack Up"
         ]
     },
     {
-        "name": "75% Southern Woodland Map",
         "difficulty": 15,
+        "name": "75% Southern Woodland Map",
         "synergy": 0,
         "types": [
             "Southern Woodland",
@@ -190,24 +190,24 @@
         ]
     },
     {
-        "name": "Defeat All 3 UPRPRC Hideout Bosses",
         "difficulty": 3,
+        "name": "Defeat All 3 UPRPRC Hideout Bosses",
         "synergy": 0,
         "types": [
             "UPRPRC"
         ]
     },
     {
-        "name": "Recruit Ashuri",
         "difficulty": 9,
+        "name": "Recruit Ashuri",
         "synergy": 0,
         "types": [
             "Ashuri"
         ]
     },
     {
-        "name": "10 Island Core items",
         "difficulty": 5,
+        "name": "10 Island Core items",
         "synergy": 0,
         "types": [
             "Island Core",
@@ -215,16 +215,16 @@
         ]
     },
     {
-        "name": "8 Easter Eggs",
         "difficulty": 8,
+        "name": "8 Easter Eggs",
         "synergy": 0,
         "types": [
             "Eggs"
         ]
     },
     {
-        "name": "Recruit Ashuri and Lilith",
         "difficulty": 24,
+        "name": "Recruit Ashuri and Lilith",
         "synergy": 0,
         "types": [
             "Ashuri",
@@ -232,8 +232,8 @@
         ]
     },
     {
-        "name": "Recruit Nieve, Nixie, and Cocoa",
         "difficulty": 17,
+        "name": "Recruit Nieve, Nixie, and Cocoa",
         "synergy": 0,
         "types": [
             "Cocoa",
@@ -243,8 +243,8 @@
         ]
     },
     {
-        "name": "15 Mana Up Potions",
         "difficulty": 11,
+        "name": "15 Mana Up Potions",
         "synergy": 0,
         "types": [
             "Mana Up"

@@ -1,15 +1,15 @@
 [
     {
-        "name": "Use 6 different Shield spells vs. 1 boss",
         "difficulty": 20,
+        "name": "Use 6 different Shield spells vs. 1 boss",
         "synergy": 0,
         "types": [
             "shieldrod"
         ]
     },
     {
-        "name": "Use 4 different full screen attack items vs. 1 boss",
         "difficulty": 22,
+        "name": "Use 4 different full screen attack items vs. 1 boss",
         "synergy": 0,
         "types": [
             "forbiddenlibrary",
@@ -17,48 +17,48 @@
         ]
     },
     {
-        "name": "Finish at Turquoise",
         "difficulty": 4,
+        "name": "Finish at Turquoise",
         "synergy": 0,
         "types": [
             "finishplace"
         ]
     },
     {
-        "name": "Fire, Ice & Lightning Mails",
         "difficulty": 11,
+        "name": "Fire, Ice & Lightning Mails",
         "synergy": 0,
         "types": [
             "keep"
         ]
     },
     {
-        "name": "All 1st castle warps",
         "difficulty": 8,
+        "name": "All 1st castle warps",
         "synergy": 0,
         "types": [
             "warps"
         ]
     },
     {
-        "name": "Kill 6 different types of zombies",
         "difficulty": 14,
+        "name": "Kill 6 different types of zombies",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Gravity Boots",
         "difficulty": 6,
+        "name": "Gravity Boots",
         "synergy": 0,
         "types": [
             "marblegallery"
         ]
     },
     {
-        "name": "Beat Creature w/ Sword of Dawn",
         "difficulty": 18,
+        "name": "Beat Creature w/ Sword of Dawn",
         "synergy": 0,
         "types": [
             "creature",
@@ -66,24 +66,24 @@
         ]
     },
     {
-        "name": "Beat Succubus w/o Soul of Bat",
         "difficulty": 25,
+        "name": "Beat Succubus w/o Soul of Bat",
         "synergy": 0,
         "types": [
             "jewelopen"
         ]
     },
     {
-        "name": "Power of Wolf",
         "difficulty": 2,
+        "name": "Power of Wolf",
         "synergy": 0,
         "types": [
             "wolf"
         ]
     },
     {
-        "name": "Finish by beating Olrox wearing Secret Boots",
         "difficulty": 23,
+        "name": "Finish by beating Olrox wearing Secret Boots",
         "synergy": 0,
         "types": [
             "finishplace",
@@ -91,32 +91,32 @@
         ]
     },
     {
-        "name": "Kill 8 types of Knights",
         "difficulty": 5,
+        "name": "Kill 8 types of Knights",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Talisman",
         "difficulty": 12,
+        "name": "Talisman",
         "synergy": 0,
         "types": [
             "entrance2"
         ]
     },
     {
-        "name": "Holy Symbol",
         "difficulty": 9,
+        "name": "Holy Symbol",
         "synergy": 0,
         "types": [
             "holysymbol"
         ]
     },
     {
-        "name": "Ring of Arcana",
         "difficulty": 16,
+        "name": "Ring of Arcana",
         "synergy": 0,
         "types": [
             "beelzebub",
@@ -124,72 +124,72 @@
         ]
     },
     {
-        "name": "Hear a confession wearing Ankh of Life",
         "difficulty": 7,
+        "name": "Hear a confession wearing Ankh of Life",
         "synergy": 0,
         "types": [
             "hippogryph"
         ]
     },
     {
-        "name": "Katana",
         "difficulty": 19,
+        "name": "Katana",
         "synergy": 0,
         "types": [
             "necromancy"
         ]
     },
     {
-        "name": "Osafune katana",
         "difficulty": 21,
+        "name": "Osafune katana",
         "synergy": 0,
         "types": [
             "death"
         ]
     },
     {
-        "name": "Nunchaku",
         "difficulty": 3,
+        "name": "Nunchaku",
         "synergy": 0,
         "types": [
             "scylla"
         ]
     },
     {
-        "name": "Finish by seeing Ferry in Outer Wall telescope",
         "difficulty": 15,
+        "name": "Finish by seeing Ferry in Outer Wall telescope",
         "synergy": 0,
         "types": [
             "finishplace"
         ]
     },
     {
-        "name": "Start w/ 30 MP and Neutron bomb",
         "difficulty": 1,
+        "name": "Start w/ 30 MP and Neutron bomb",
         "synergy": 0,
         "types": [
             "intro"
         ]
     },
     {
-        "name": "Broadsword & Sword of Hador",
         "difficulty": 13,
+        "name": "Broadsword & Sword of Hador",
         "synergy": 0,
         "types": [
             "olrox"
         ]
     },
     {
-        "name": "Get Stoned by 4 different enemies",
         "difficulty": 10,
+        "name": "Get Stoned by 4 different enemies",
         "synergy": 0,
         "types": [
             "status"
         ]
     },
     {
-        "name": "No Cube of Zoe",
         "difficulty": 17,
+        "name": "No Cube of Zoe",
         "synergy": 0,
         "types": [
             "challenges",
@@ -198,8 +198,8 @@
         ]
     },
     {
-        "name": "3 Heart Refreshes",
         "difficulty": 24,
+        "name": "3 Heart Refreshes",
         "synergy": 0,
         "types": [
             "hr"

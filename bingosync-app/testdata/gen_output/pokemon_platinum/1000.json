@@ -1,199 +1,199 @@
 [
     {
-        "name": "Hit 5 times with a multi-hit move",
         "difficulty": 24,
+        "name": "Hit 5 times with a multi-hit move",
         "synergy": 0,
         "types": [
             "skilllink"
         ]
     },
     {
-        "name": "Train a Pok\u00e9mon to Level 45",
         "difficulty": 18,
+        "name": "Train a Pok\u00e9mon to Level 45",
         "synergy": 0,
         "types": [
             "raise"
         ]
     },
     {
-        "name": "A Pok\u00e9mon with a weather-related ability",
         "difficulty": 15,
+        "name": "A Pok\u00e9mon with a weather-related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "TM92 (Trick Room)",
         "difficulty": 7,
+        "name": "TM92 (Trick Room)",
         "synergy": 0,
         "types": [
             "hotel"
         ]
     },
     {
-        "name": "Wormadam, Mothim, or Vespiquen",
         "difficulty": 1,
+        "name": "Wormadam, Mothim, or Vespiquen",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "HM05 (Defog)",
         "difficulty": 10,
+        "name": "HM05 (Defog)",
         "synergy": 0,
         "types": [
             "hms"
         ]
     },
     {
-        "name": "Sprayduck",
         "difficulty": 2,
+        "name": "Sprayduck",
         "synergy": 0,
         "types": [
             "keyitem"
         ]
     },
     {
-        "name": "Onix, Scyther, or Feebas",
         "difficulty": 21,
+        "name": "Onix, Scyther, or Feebas",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "Teach 4 TMs to the same Pok\u00e9mon",
         "difficulty": 19,
+        "name": "Teach 4 TMs to the same Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "tms"
         ]
     },
     {
-        "name": "15 different Pok\u00e9mon owned",
         "difficulty": 13,
+        "name": "15 different Pok\u00e9mon owned",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Buneary, Aipom, or Lickitung",
         "difficulty": 16,
+        "name": "Buneary, Aipom, or Lickitung",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "Hatch a Pok\u00e9mon from an egg",
         "difficulty": 14,
+        "name": "Hatch a Pok\u00e9mon from an egg",
         "synergy": 0,
         "types": [
             "hatch"
         ]
     },
     {
-        "name": "3 eggs",
         "difficulty": 8,
+        "name": "3 eggs",
         "synergy": 0,
         "types": [
             "egg"
         ]
     },
     {
-        "name": "TM51 (Roost)",
         "difficulty": 5,
+        "name": "TM51 (Roost)",
         "synergy": 0,
         "types": [
             "abovesolaceon"
         ]
     },
     {
-        "name": "Evolve 5 different Pok\u00e9mon",
         "difficulty": 22,
+        "name": "Evolve 5 different Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "evolve"
         ]
     },
     {
-        "name": "Don\u2019t heal at Pok\u00e9mon Centers",
         "difficulty": 3,
+        "name": "Don\u2019t heal at Pok\u00e9mon Centers",
         "synergy": 0,
         "types": [
             "instant"
         ]
     },
     {
-        "name": "Defeat all 3 trainers in Fuego Ironworks",
         "difficulty": 25,
+        "name": "Defeat all 3 trainers in Fuego Ironworks",
         "synergy": 0,
         "types": [
             "surf"
         ]
     },
     {
-        "name": "12 Pok\u00e9tch Apps",
         "difficulty": 17,
+        "name": "12 Pok\u00e9tch Apps",
         "synergy": 0,
         "types": [
             "poketch"
         ]
     },
     {
-        "name": "TM77 (Psych Up)",
         "difficulty": 11,
+        "name": "TM77 (Psych Up)",
         "synergy": 0,
         "types": [
             "celestic"
         ]
     },
     {
-        "name": "6 different Water-type Pok\u00e9mon",
         "difficulty": 9,
+        "name": "6 different Water-type Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "catch6"
         ]
     },
     {
-        "name": "Defeat all 7 trainers in Galactic Eterna Building",
         "difficulty": 12,
+        "name": "Defeat all 7 trainers in Galactic Eterna Building",
         "synergy": 0,
         "types": [
             "missable"
         ]
     },
     {
-        "name": "Roselia, Togetic, Kirlia, or Snorunt",
         "difficulty": 6,
+        "name": "Roselia, Togetic, Kirlia, or Snorunt",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "10 different berries",
         "difficulty": 4,
+        "name": "10 different berries",
         "synergy": 0,
         "types": [
             "berries"
         ]
     },
     {
-        "name": "Catch a Pok\u00e9mon while Surfing",
         "difficulty": 23,
+        "name": "Catch a Pok\u00e9mon while Surfing",
         "synergy": 0,
         "types": [
             "surf"
         ]
     },
     {
-        "name": "Footprint Ribbon",
         "difficulty": 20,
+        "name": "Footprint Ribbon",
         "synergy": 0,
         "types": [
             "footprint"

@@ -1,133 +1,133 @@
 [
     {
-        "name": "Mewtwo",
         "difficulty": 24,
+        "name": "Mewtwo",
         "synergy": 0
     },
     {
-        "name": "Catch a Pokemon while Surfing",
         "difficulty": 18,
+        "name": "Catch a Pokemon while Surfing",
         "synergy": 0
     },
     {
-        "name": "Defeat all 5 trainers in Fighting Dojo",
         "difficulty": 15,
+        "name": "Defeat all 5 trainers in Fighting Dojo",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with 4 status moves",
         "difficulty": 7,
+        "name": "Any Pokemon with 4 status moves",
         "synergy": 0
     },
     {
-        "name": "Defeat Viridian Rival",
         "difficulty": 1,
+        "name": "Defeat Viridian Rival",
         "synergy": 0
     },
     {
-        "name": "6 Different Normal-type Pokemon",
         "difficulty": 10,
+        "name": "6 Different Normal-type Pokemon",
         "synergy": 0
     },
     {
-        "name": "Teach TM 49",
         "difficulty": 2,
+        "name": "Teach TM 49",
         "synergy": 0,
         "types": [
             "notms"
         ]
     },
     {
-        "name": "Faint all 3 starters evolutionary line",
         "difficulty": 21,
+        "name": "Faint all 3 starters evolutionary line",
         "synergy": 0
     },
     {
-        "name": "Raichu",
         "difficulty": 19,
+        "name": "Raichu",
         "synergy": 0
     },
     {
-        "name": "Sell no items",
         "difficulty": 13,
+        "name": "Sell no items",
         "synergy": 0
     },
     {
-        "name": "Defeat the only trainer on Route 4",
         "difficulty": 16,
+        "name": "Defeat the only trainer on Route 4",
         "synergy": 0
     },
     {
-        "name": "Rattata, Spearow, or Pidgey ",
         "difficulty": 14,
+        "name": "Rattata, Spearow, or Pidgey ",
         "synergy": 0
     },
     {
-        "name": "Defeat all trainers in each Gym you enter",
         "difficulty": 8,
+        "name": "Defeat all trainers in each Gym you enter",
         "synergy": 0
     },
     {
-        "name": "6 Key Items",
         "difficulty": 5,
+        "name": "6 Key Items",
         "synergy": 0
     },
     {
-        "name": "Defeat 3 Burglars",
         "difficulty": 22,
+        "name": "Defeat 3 Burglars",
         "synergy": 0
     },
     {
-        "name": "A Pokemon with 4 non Normal Moves",
         "difficulty": 3,
+        "name": "A Pokemon with 4 non Normal Moves",
         "synergy": 0
     },
     {
-        "name": "6 Badges",
         "difficulty": 25,
+        "name": "6 Badges",
         "synergy": 0,
         "types": [
             "badges"
         ]
     },
     {
-        "name": "Defeat all 17 trainers inside Pokemon Tower",
         "difficulty": 17,
+        "name": "Defeat all 17 trainers inside Pokemon Tower",
         "synergy": 0
     },
     {
-        "name": "Defeat all 10 trainers in Route 11",
         "difficulty": 11,
+        "name": "Defeat all 10 trainers in Route 11",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with a high critical hit move",
         "difficulty": 9,
+        "name": "Any Pokemon with a high critical hit move",
         "synergy": 0
     },
     {
-        "name": "Victreebell or Vileplume",
         "difficulty": 12,
+        "name": "Victreebell or Vileplume",
         "synergy": 0
     },
     {
-        "name": "Snorlax",
         "difficulty": 6,
+        "name": "Snorlax",
         "synergy": 0
     },
     {
-        "name": "Use no X items",
         "difficulty": 4,
+        "name": "Use no X items",
         "synergy": 0
     },
     {
-        "name": "Evolve a Pokemon twice",
         "difficulty": 23,
+        "name": "Evolve a Pokemon twice",
         "synergy": 0
     },
     {
-        "name": "Obtain a Pokemon with Explosion or Self-Destruct",
         "difficulty": 20,
+        "name": "Obtain a Pokemon with Explosion or Self-Destruct",
         "synergy": 0
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
-        "name": "Change GBT Water Direction",
         "difficulty": 24,
+        "name": "Change GBT Water Direction",
         "synergy": 0,
         "types": [
             "dungeon",
@@ -11,8 +11,8 @@
         ]
     },
     {
-        "name": "12 Item Slots",
         "difficulty": 18,
+        "name": "12 Item Slots",
         "synergy": 0,
         "types": [
             "slot",
@@ -20,16 +20,16 @@
         ]
     },
     {
-        "name": "Grow 8 Bean Plants",
         "difficulty": 15,
+        "name": "Grow 8 Bean Plants",
         "synergy": 0,
         "types": [
             "bean"
         ]
     },
     {
-        "name": "No Hidden Owl Statue",
         "difficulty": 7,
+        "name": "No Hidden Owl Statue",
         "synergy": 0,
         "types": [
             "restrict",
@@ -39,16 +39,16 @@
         ]
     },
     {
-        "name": "Enter 4th Day",
         "difficulty": 1,
+        "name": "Enter 4th Day",
         "synergy": 0,
         "types": [
             "end"
         ]
     },
     {
-        "name": "Pictograph of Dancing Redead",
         "difficulty": 10,
+        "name": "Pictograph of Dancing Redead",
         "synergy": 0,
         "types": [
             "picto",
@@ -56,16 +56,16 @@
         ]
     },
     {
-        "name": "2 blank C-buttons",
         "difficulty": 2,
+        "name": "2 blank C-buttons",
         "synergy": 0,
         "types": [
             "delivery"
         ]
     },
     {
-        "name": "Clear 3 Chest Icons on Mountain Village Maps",
         "difficulty": 21,
+        "name": "Clear 3 Chest Icons on Mountain Village Maps",
         "synergy": 0,
         "types": [
             "sht",
@@ -75,32 +75,32 @@
         ]
     },
     {
-        "name": "4 Real Bottles (no dupe)",
         "difficulty": 19,
+        "name": "4 Real Bottles (no dupe)",
         "synergy": 0,
         "types": [
             "bottle"
         ]
     },
     {
-        "name": "10 Happiness Seals",
         "difficulty": 13,
+        "name": "10 Happiness Seals",
         "synergy": 0,
         "types": [
             "notebook"
         ]
     },
     {
-        "name": "3 Bottom Row Songs",
         "difficulty": 16,
+        "name": "3 Bottom Row Songs",
         "synergy": 0,
         "types": [
             "song"
         ]
     },
     {
-        "name": "10 STT Fairies",
         "difficulty": 14,
+        "name": "10 STT Fairies",
         "synergy": 0,
         "types": [
             "stt",
@@ -110,16 +110,16 @@
         ]
     },
     {
-        "name": "Open 8 WFT Chests",
         "difficulty": 8,
+        "name": "Open 8 WFT Chests",
         "synergy": 0,
         "types": [
             "wft"
         ]
     },
     {
-        "name": "Postman Happiness Seal",
         "difficulty": 5,
+        "name": "Postman Happiness Seal",
         "synergy": 0,
         "types": [
             "notebook",
@@ -128,8 +128,8 @@
         ]
     },
     {
-        "name": "Destroy 15 SHT Ice Blocks",
         "difficulty": 22,
+        "name": "Destroy 15 SHT Ice Blocks",
         "synergy": 0,
         "types": [
             "sht",
@@ -138,16 +138,16 @@
         ]
     },
     {
-        "name": "Postman's Hat",
         "difficulty": 3,
+        "name": "Postman's Hat",
         "synergy": 0,
         "types": [
             "delivery"
         ]
     },
     {
-        "name": "30 Total Stray Fairies",
         "difficulty": 25,
+        "name": "30 Total Stray Fairies",
         "synergy": 0,
         "types": [
             "dungeon",
@@ -155,16 +155,16 @@
         ]
     },
     {
-        "name": "5 East Clock Town HPs",
         "difficulty": 17,
+        "name": "5 East Clock Town HPs",
         "synergy": 0,
         "types": [
             "heart"
         ]
     },
     {
-        "name": "Pinnacle Rock HP",
         "difficulty": 11,
+        "name": "Pinnacle Rock HP",
         "synergy": 0,
         "types": [
             "picto",
@@ -172,40 +172,40 @@
         ]
     },
     {
-        "name": "Don Gero's Mask",
         "difficulty": 9,
+        "name": "Don Gero's Mask",
         "synergy": 0,
         "types": [
             "lens"
         ]
     },
     {
-        "name": "Mask of Truth",
         "difficulty": 12,
+        "name": "Mask of Truth",
         "synergy": 0,
         "types": [
             "spider"
         ]
     },
     {
-        "name": "Defeat Captain Keeta",
         "difficulty": 6,
+        "name": "Defeat Captain Keeta",
         "synergy": 0,
         "types": [
             "grave"
         ]
     },
     {
-        "name": "Save Sun Mask",
         "difficulty": 4,
+        "name": "Save Sun Mask",
         "synergy": 0,
         "types": [
             "couple"
         ]
     },
     {
-        "name": "Double Magic",
         "difficulty": 23,
+        "name": "Double Magic",
         "synergy": 0,
         "types": [
             "sht",
@@ -213,8 +213,8 @@
         ]
     },
     {
-        "name": "Hit All 10 Owl Statues",
         "difficulty": 20,
+        "name": "Hit All 10 Owl Statues",
         "synergy": 0,
         "types": [
             "hook",

@@ -35,7 +35,7 @@ def save_board(game_type, seed, board_json):
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, str(seed) + ".json")
     with open(output_path, "w") as outfile:
-        json.dump(board_json, outfile, indent=4)
+        json.dump(board_json, outfile, indent=4, sort_keys=True)
 
 def data_exists(game_type, seed):
     output_path = os.path.join(GEN_TESTDATA_DIR, game_type.name, str(seed) + ".json")

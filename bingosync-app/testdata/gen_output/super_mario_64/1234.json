@@ -1,15 +1,15 @@
 [
     {
-        "name": "Beat the King in BOB ",
         "difficulty": 2,
+        "name": "Beat the King in BOB ",
         "synergy": 0,
         "types": [
             "BOB"
         ]
     },
     {
-        "name": "At least 3 stars from 8 stages",
         "difficulty": 21,
+        "name": "At least 3 stars from 8 stages",
         "synergy": 0,
         "types": [
             "starseach",
@@ -17,16 +17,16 @@
         ]
     },
     {
-        "name": "Open 7 Cannons",
         "difficulty": 14,
+        "name": "Open 7 Cannons",
         "synergy": 0,
         "types": [
             "cannons"
         ]
     },
     {
-        "name": "4 Stars each from JRB and DDD",
         "difficulty": 18,
+        "name": "4 Stars each from JRB and DDD",
         "synergy": 0,
         "types": [
             "JRB",
@@ -34,56 +34,56 @@
         ]
     },
     {
-        "name": "100 Coin Star in SSL",
         "difficulty": 10,
+        "name": "100 Coin Star in SSL",
         "synergy": 0,
         "types": [
             "SSL"
         ]
     },
     {
-        "name": "All Stars in TTC",
         "difficulty": 19,
+        "name": "All Stars in TTC",
         "synergy": 0,
         "types": [
             "TTC"
         ]
     },
     {
-        "name": "100 Coin Star in JRB",
         "difficulty": 8,
+        "name": "100 Coin Star in JRB",
         "synergy": 0,
         "types": [
             "JRB"
         ]
     },
     {
-        "name": "Secrets Star in THI",
         "difficulty": 5,
+        "name": "Secrets Star in THI",
         "synergy": 0,
         "types": [
             "THI"
         ]
     },
     {
-        "name": "35 Total Stars",
         "difficulty": 22,
+        "name": "35 Total Stars",
         "synergy": 0,
         "types": [
             "manystar"
         ]
     },
     {
-        "name": "Top Floor Cloud Stage Star",
         "difficulty": 11,
+        "name": "Top Floor Cloud Stage Star",
         "synergy": 0,
         "types": [
             "wingcap"
         ]
     },
     {
-        "name": "All Stars in BBH",
         "difficulty": 25,
+        "name": "All Stars in BBH",
         "synergy": 0,
         "types": [
             "BBH",
@@ -91,112 +91,112 @@
         ]
     },
     {
-        "name": "All Stars in LLL",
         "difficulty": 12,
+        "name": "All Stars in LLL",
         "synergy": 0,
         "types": [
             "LLL"
         ]
     },
     {
-        "name": "5 Stars in SL",
         "difficulty": 16,
+        "name": "5 Stars in SL",
         "synergy": 0,
         "types": [
             "SL"
         ]
     },
     {
-        "name": "100 Coin Star in TTC",
         "difficulty": 9,
+        "name": "100 Coin Star in TTC",
         "synergy": 0,
         "types": [
             "TTC"
         ]
     },
     {
-        "name": "15 Lives",
         "difficulty": 3,
+        "name": "15 Lives",
         "synergy": 0,
         "types": [
             "lives"
         ]
     },
     {
-        "name": "Secrets Star in WDW",
         "difficulty": 6,
+        "name": "Secrets Star in WDW",
         "synergy": 0,
         "types": [
             "WDW"
         ]
     },
     {
-        "name": "Three 100 Coin Stars",
         "difficulty": 4,
+        "name": "Three 100 Coin Stars",
         "synergy": 0,
         "types": [
             "hundredcoin"
         ]
     },
     {
-        "name": "6 Stars in BBH",
         "difficulty": 23,
+        "name": "6 Stars in BBH",
         "synergy": 0,
         "types": [
             "BBH"
         ]
     },
     {
-        "name": "Rematch with Koopa the Quick THI",
         "difficulty": 15,
+        "name": "Rematch with Koopa the Quick THI",
         "synergy": 0,
         "types": [
             "THI"
         ]
     },
     {
-        "name": "All Stars in HMC",
         "difficulty": 17,
+        "name": "All Stars in HMC",
         "synergy": 0,
         "types": [
             "HMC"
         ]
     },
     {
-        "name": "100 Coin Star in HMC",
         "difficulty": 13,
+        "name": "100 Coin Star in HMC",
         "synergy": 0,
         "types": [
             "HMC"
         ]
     },
     {
-        "name": "All Stars in SSL",
         "difficulty": 20,
+        "name": "All Stars in SSL",
         "synergy": 0,
         "types": [
             "SSL"
         ]
     },
     {
-        "name": "7 Castle Secret Stars",
         "difficulty": 7,
+        "name": "7 Castle Secret Stars",
         "synergy": 0,
         "types": [
             "secrets"
         ]
     },
     {
-        "name": "Reach the Castle Roof",
         "difficulty": 1,
+        "name": "Reach the Castle Roof",
         "synergy": 0,
         "types": [
             "lives"
         ]
     },
     {
-        "name": "6 Stars in DDD",
         "difficulty": 24,
+        "name": "6 Stars in DDD",
         "synergy": 0,
         "types": [
             "DDD"

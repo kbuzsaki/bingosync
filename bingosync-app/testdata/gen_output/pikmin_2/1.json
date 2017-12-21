@@ -1,7 +1,7 @@
 [
     {
-        "name": "Destroy all 3 electric gates in PP",
         "difficulty": 20,
+        "name": "Destroy all 3 electric gates in PP",
         "synergy": 0,
         "types": [
             "elecgate",
@@ -9,96 +9,96 @@
         ]
     },
     {
-        "name": "Air Brake (AW)",
         "difficulty": 22,
+        "name": "Air Brake (AW)",
         "synergy": 0,
         "types": [
             "aw"
         ]
     },
     {
-        "name": "Enter all 4 caves in AW",
         "difficulty": 4,
+        "name": "Enter all 4 caves in AW",
         "synergy": 0,
         "types": [
             "caveenter"
         ]
     },
     {
-        "name": "Clear FC3",
         "difficulty": 11,
+        "name": "Clear FC3",
         "synergy": 0,
         "types": [
             "clear"
         ]
     },
     {
-        "name": "8 Spicy Sprays",
         "difficulty": 8,
+        "name": "8 Spicy Sprays",
         "synergy": 0,
         "types": [
             "spray"
         ]
     },
     {
-        "name": "Use 4 Candypop Buds in FC",
         "difficulty": 14,
+        "name": "Use 4 Candypop Buds in FC",
         "synergy": 0,
         "types": [
             "cpb"
         ]
     },
     {
-        "name": "Trigger all 3 hazard cutscenes",
         "difficulty": 6,
+        "name": "Trigger all 3 hazard cutscenes",
         "synergy": 0,
         "types": [
             "selfharm"
         ]
     },
     {
-        "name": "2500 Pokos",
         "difficulty": 18,
+        "name": "2500 Pokos",
         "synergy": 0,
         "types": [
             "total"
         ]
     },
     {
-        "name": "Justice Alloy (SH7)",
         "difficulty": 25,
+        "name": "Justice Alloy (SH7)",
         "synergy": 0,
         "types": [
             "hardboss"
         ]
     },
     {
-        "name": "Enter SmC",
         "difficulty": 2,
+        "name": "Enter SmC",
         "synergy": 0,
         "types": [
             "caveenter"
         ]
     },
     {
-        "name": "Clear FC6",
         "difficulty": 23,
+        "name": "Clear FC6",
         "synergy": 0,
         "types": [
             "clear"
         ]
     },
     {
-        "name": "Collect 2 Burrowing Snagret heads",
         "difficulty": 5,
+        "name": "Collect 2 Burrowing Snagret heads",
         "synergy": 0,
         "types": [
             "snagret"
         ]
     },
     {
-        "name": "100 Pikmin of a single type",
         "difficulty": 12,
+        "name": "100 Pikmin of a single type",
         "synergy": 0,
         "types": [
             "onetype",
@@ -106,8 +106,8 @@
         ]
     },
     {
-        "name": "Never get Prototype Detector (HoB5)",
         "difficulty": 9,
+        "name": "Never get Prototype Detector (HoB5)",
         "synergy": 0,
         "types": [
             "nogauge",
@@ -115,24 +115,24 @@
         ]
     },
     {
-        "name": "Collect all 3 Cannon Beetle corpses in VoR",
         "difficulty": 16,
+        "name": "Collect all 3 Cannon Beetle corpses in VoR",
         "synergy": 0,
         "types": [
             "allenemy"
         ]
     },
     {
-        "name": "Fossilized Ursidae (VoR)",
         "difficulty": 7,
+        "name": "Fossilized Ursidae (VoR)",
         "synergy": 0,
         "types": [
             "vor"
         ]
     },
     {
-        "name": "Collect all 5 Wogpoles in PP",
         "difficulty": 19,
+        "name": "Collect all 5 Wogpoles in PP",
         "synergy": 0,
         "types": [
             "wogpole",
@@ -140,8 +140,8 @@
         ]
     },
     {
-        "name": "Repugnant Appendage (FC8)",
         "difficulty": 21,
+        "name": "Repugnant Appendage (FC8)",
         "synergy": 0,
         "types": [
             "easyboss",
@@ -149,32 +149,32 @@
         ]
     },
     {
-        "name": "Pilgrim Bulb (AW)",
         "difficulty": 3,
+        "name": "Pilgrim Bulb (AW)",
         "synergy": 0,
         "types": [
             "aw"
         ]
     },
     {
-        "name": "Collect 2 Gattling Groinks",
         "difficulty": 15,
+        "name": "Collect 2 Gattling Groinks",
         "synergy": 0,
         "types": [
             "xenemy"
         ]
     },
     {
-        "name": "Collect a 1-Pellet of each color",
         "difficulty": 1,
+        "name": "Collect a 1-Pellet of each color",
         "synergy": 0,
         "types": [
             "pellet"
         ]
     },
     {
-        "name": "Never do Early Blues",
         "difficulty": 13,
+        "name": "Never do Early Blues",
         "synergy": 0,
         "types": [
             "awgate",
@@ -182,24 +182,24 @@
         ]
     },
     {
-        "name": "Collect all 3 Wogpoles in AW",
         "difficulty": 10,
+        "name": "Collect all 3 Wogpoles in AW",
         "synergy": 0,
         "types": [
             "wogpole"
         ]
     },
     {
-        "name": "Build all 3 bridges in PP",
         "difficulty": 17,
+        "name": "Build all 3 bridges in PP",
         "synergy": 0,
         "types": [
             "bridge"
         ]
     },
     {
-        "name": "Stellar Orb (SCx9)",
         "difficulty": 24,
+        "name": "Stellar Orb (SCx9)",
         "synergy": 0,
         "types": [
             "hardboss"

@@ -1,133 +1,133 @@
 [
     {
-        "name": "Cubone or Marowak",
         "difficulty": 20,
+        "name": "Cubone or Marowak",
         "synergy": 0
     },
     {
-        "name": "Mr. Mime",
         "difficulty": 22,
+        "name": "Mr. Mime",
         "synergy": 0
     },
     {
-        "name": "Collect 4 Gift Pokemon",
         "difficulty": 4,
+        "name": "Collect 4 Gift Pokemon",
         "synergy": 0
     },
     {
-        "name": "6 Different Pokemon not sharing any types",
         "difficulty": 11,
+        "name": "6 Different Pokemon not sharing any types",
         "synergy": 0
     },
     {
-        "name": "Pickup and keep an item that contains the word Max",
         "difficulty": 8,
+        "name": "Pickup and keep an item that contains the word Max",
         "synergy": 0
     },
     {
-        "name": "Get a Pokemon in Silph Co.",
         "difficulty": 14,
+        "name": "Get a Pokemon in Silph Co.",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with 4 damage dealing physical moves",
         "difficulty": 6,
+        "name": "Any Pokemon with 4 damage dealing physical moves",
         "synergy": 0
     },
     {
-        "name": "Catch a Pokemon while Surfing",
         "difficulty": 18,
+        "name": "Catch a Pokemon while Surfing",
         "synergy": 0
     },
     {
-        "name": "$75,000",
         "difficulty": 25,
+        "name": "$75,000",
         "synergy": 0,
         "types": [
             "money"
         ]
     },
     {
-        "name": "Finish inside cut bush",
         "difficulty": 2,
+        "name": "Finish inside cut bush",
         "synergy": 0
     },
     {
-        "name": "Mew",
         "difficulty": 23,
+        "name": "Mew",
         "synergy": 0
     },
     {
-        "name": "A Pokemon with exactly Height of 5'11\" (1.8m)",
         "difficulty": 5,
+        "name": "A Pokemon with exactly Height of 5'11\" (1.8m)",
         "synergy": 0
     },
     {
-        "name": "Catch 3 different Safari Pokemon",
         "difficulty": 12,
+        "name": "Catch 3 different Safari Pokemon",
         "synergy": 0
     },
     {
-        "name": "Any Pokemon with a high critical hit move",
         "difficulty": 9,
+        "name": "Any Pokemon with a high critical hit move",
         "synergy": 0
     },
     {
-        "name": "3 different Pokemon without an evolution",
         "difficulty": 16,
+        "name": "3 different Pokemon without an evolution",
         "synergy": 0,
         "types": [
             "no_evolution"
         ]
     },
     {
-        "name": "Defeat all 12 trainers in Mt Moon",
         "difficulty": 7,
+        "name": "Defeat all 12 trainers in Mt Moon",
         "synergy": 0
     },
     {
-        "name": "TM41",
         "difficulty": 19,
+        "name": "TM41",
         "synergy": 0
     },
     {
-        "name": "Use Pokeflute to wake up in battle",
         "difficulty": 21,
+        "name": "Use Pokeflute to wake up in battle",
         "synergy": 0
     },
     {
-        "name": "Finish on the SS Anne",
         "difficulty": 3,
+        "name": "Finish on the SS Anne",
         "synergy": 0
     },
     {
-        "name": "Bulbasaur, Squirtle, or Charmander",
         "difficulty": 15,
+        "name": "Bulbasaur, Squirtle, or Charmander",
         "synergy": 0
     },
     {
-        "name": "Defeat Viridian Rival",
         "difficulty": 1,
+        "name": "Defeat Viridian Rival",
         "synergy": 0
     },
     {
-        "name": "Faint a Chansey",
         "difficulty": 13,
+        "name": "Faint a Chansey",
         "synergy": 0
     },
     {
-        "name": "PP Healing Item",
         "difficulty": 10,
+        "name": "PP Healing Item",
         "synergy": 0
     },
     {
-        "name": "Fill a PC Box",
         "difficulty": 17,
+        "name": "Fill a PC Box",
         "synergy": 0
     },
     {
-        "name": "3 Pokemon with different status ailments",
         "difficulty": 24,
+        "name": "3 Pokemon with different status ailments",
         "synergy": 0
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
-        "name": "100 Bananas in Angry Aztec",
         "difficulty": 2,
+        "name": "100 Bananas in Angry Aztec",
         "synergy": 0,
         "types": [
             "aztec",
@@ -9,8 +9,8 @@
         ]
     },
     {
-        "name": "Open Helm Lobby",
         "difficulty": 21,
+        "name": "Open Helm Lobby",
         "synergy": 0,
         "types": [
             "key7",
@@ -20,8 +20,8 @@
         ]
     },
     {
-        "name": "5 GBs in Creepy Castle",
         "difficulty": 14,
+        "name": "5 GBs in Creepy Castle",
         "synergy": 0,
         "types": [
             "castle",
@@ -29,8 +29,8 @@
         ]
     },
     {
-        "name": "2 GBs for each Kong in Jungle Japes",
         "difficulty": 18,
+        "name": "2 GBs for each Kong in Jungle Japes",
         "synergy": 0,
         "types": [
             "japesgb",
@@ -39,8 +39,8 @@
         ]
     },
     {
-        "name": "Activate All Warps in Gloomy Galleon",
         "difficulty": 10,
+        "name": "Activate All Warps in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -48,8 +48,8 @@
         ]
     },
     {
-        "name": "Open Crown Door in Helm",
         "difficulty": 19,
+        "name": "Open Crown Door in Helm",
         "synergy": 0,
         "types": [
             "helm",
@@ -65,8 +65,8 @@
         ]
     },
     {
-        "name": "Squash Tomatoes GB",
         "difficulty": 8,
+        "name": "Squash Tomatoes GB",
         "synergy": 0,
         "types": [
             "fungi",
@@ -74,8 +74,8 @@
         ]
     },
     {
-        "name": "3 Lanky Blueprints",
         "difficulty": 5,
+        "name": "3 Lanky Blueprints",
         "synergy": 0,
         "types": [
             "lanky",
@@ -91,8 +91,8 @@
         ]
     },
     {
-        "name": "3 Banana Medals in Creepy Castle",
         "difficulty": 22,
+        "name": "3 Banana Medals in Creepy Castle",
         "synergy": 0,
         "types": [
             "castlebananas",
@@ -101,8 +101,8 @@
         ]
     },
     {
-        "name": "200 Bananas in Frantic Factory",
         "difficulty": 11,
+        "name": "200 Bananas in Frantic Factory",
         "synergy": 0,
         "types": [
             "factorybananas",
@@ -110,8 +110,8 @@
         ]
     },
     {
-        "name": "Complete Diddy's phase of K. Rool Fight",
         "difficulty": 25,
+        "name": "Complete Diddy's phase of K. Rool Fight",
         "synergy": 0,
         "types": [
             "key3",
@@ -121,8 +121,8 @@
         ]
     },
     {
-        "name": "3 Banana Medals",
         "difficulty": 12,
+        "name": "3 Banana Medals",
         "synergy": 0,
         "types": [
             "medal",
@@ -136,16 +136,16 @@
         ]
     },
     {
-        "name": "10 Banana Fairies",
         "difficulty": 16,
+        "name": "10 Banana Fairies",
         "synergy": 0,
         "types": [
             "fairy"
         ]
     },
     {
-        "name": "Activate All Warps in Angry Aztec",
         "difficulty": 9,
+        "name": "Activate All Warps in Angry Aztec",
         "synergy": 0,
         "types": [
             "aztec",
@@ -153,16 +153,16 @@
         ]
     },
     {
-        "name": "Kill Giant Kosha",
         "difficulty": 3,
+        "name": "Kill Giant Kosha",
         "synergy": 0,
         "types": [
             "cave"
         ]
     },
     {
-        "name": "Both Banana Fairies in Frantic Factory",
         "difficulty": 6,
+        "name": "Both Banana Fairies in Frantic Factory",
         "synergy": 0,
         "types": [
             "factory",
@@ -170,8 +170,8 @@
         ]
     },
     {
-        "name": "Diddy Minecart GB",
         "difficulty": 4,
+        "name": "Diddy Minecart GB",
         "synergy": 0,
         "types": [
             "japes",
@@ -180,8 +180,8 @@
         ]
     },
     {
-        "name": "Activate All Blue Warps",
         "difficulty": 23,
+        "name": "Activate All Blue Warps",
         "synergy": 0,
         "types": [
             "manylevel",
@@ -195,8 +195,8 @@
         ]
     },
     {
-        "name": "100 bananas for any Kong in Crystal Caves",
         "difficulty": 15,
+        "name": "100 bananas for any Kong in Crystal Caves",
         "synergy": 0,
         "types": [
             "cave",
@@ -204,8 +204,8 @@
         ]
     },
     {
-        "name": "Donkey's Banana Medal in Hideout Helm",
         "difficulty": 17,
+        "name": "Donkey's Banana Medal in Hideout Helm",
         "synergy": 0,
         "types": [
             "donkey",
@@ -214,8 +214,8 @@
         ]
     },
     {
-        "name": "15 GBs",
         "difficulty": 13,
+        "name": "15 GBs",
         "synergy": 0,
         "types": [
             "manybp",
@@ -231,8 +231,8 @@
         ]
     },
     {
-        "name": "10 GBs in Gloomy Galleon",
         "difficulty": 20,
+        "name": "10 GBs in Gloomy Galleon",
         "synergy": 0,
         "types": [
             "gloomy",
@@ -240,8 +240,8 @@
         ]
     },
     {
-        "name": "100 Bananas in Fungi Forest",
         "difficulty": 7,
+        "name": "100 Bananas in Fungi Forest",
         "synergy": 0,
         "types": [
             "fungi",
@@ -249,8 +249,8 @@
         ]
     },
     {
-        "name": "Activate Production Room in Factory",
         "difficulty": 1,
+        "name": "Activate Production Room in Factory",
         "synergy": 0,
         "types": [
             "factory",
@@ -258,8 +258,8 @@
         ]
     },
     {
-        "name": "6 Boss Keys",
         "difficulty": 24,
+        "name": "6 Boss Keys",
         "synergy": 0,
         "types": [
             "key",

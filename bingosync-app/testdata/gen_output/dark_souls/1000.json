@@ -1,7 +1,7 @@
 [
     {
-        "name": "Obtain 2 Soul of a Hero",
         "difficulty": 24,
+        "name": "Obtain 2 Soul of a Hero",
         "synergy": 0,
         "types": [
             "stats",
@@ -9,8 +9,8 @@
         ]
     },
     {
-        "name": "Obtain Leo Ring",
         "difficulty": 18,
+        "name": "Obtain Leo Ring",
         "synergy": 0,
         "types": [
             "anorlondo",
@@ -18,8 +18,8 @@
         ]
     },
     {
-        "name": "Rescue Logan in Sen's",
         "difficulty": 15,
+        "name": "Rescue Logan in Sen's",
         "synergy": 0,
         "types": [
             "sens",
@@ -28,8 +28,8 @@
         ]
     },
     {
-        "name": "Obtain Queelag's Soul",
         "difficulty": 7,
+        "name": "Obtain Queelag's Soul",
         "synergy": 0,
         "types": [
             "bosses",
@@ -38,16 +38,16 @@
         ]
     },
     {
-        "name": "Cleric Class",
         "difficulty": 1,
+        "name": "Cleric Class",
         "synergy": 0,
         "types": [
             "startingclass"
         ]
     },
     {
-        "name": "Obtain Rusted Iron Ring",
         "difficulty": 10,
+        "name": "Obtain Rusted Iron Ring",
         "synergy": 0,
         "types": [
             "asylum",
@@ -55,8 +55,8 @@
         ]
     },
     {
-        "name": "Take Old witches ring as gift",
         "difficulty": 2,
+        "name": "Take Old witches ring as gift",
         "synergy": 0,
         "types": [
             "startingitem",
@@ -64,8 +64,8 @@
         ]
     },
     {
-        "name": "Obtain Large Divine Ember",
         "difficulty": 21,
+        "name": "Obtain Large Divine Ember",
         "synergy": 0,
         "types": [
             "ember",
@@ -73,8 +73,8 @@
         ]
     },
     {
-        "name": "Obtain Black Iron Set",
         "difficulty": 19,
+        "name": "Obtain Black Iron Set",
         "synergy": 0,
         "types": [
             "paintedworld",
@@ -82,8 +82,8 @@
         ]
     },
     {
-        "name": "Summon Iron Tarkus",
         "difficulty": 13,
+        "name": "Summon Iron Tarkus",
         "synergy": 0,
         "types": [
             "npcs",
@@ -91,16 +91,16 @@
         ]
     },
     {
-        "name": "Never wear Armour",
         "difficulty": 16,
+        "name": "Never wear Armour",
         "synergy": 0,
         "types": [
             "restriction"
         ]
     },
     {
-        "name": "Kill Lady of the Darkling",
         "difficulty": 14,
+        "name": "Kill Lady of the Darkling",
         "synergy": 2,
         "types": [
             "npc",
@@ -108,8 +108,8 @@
         ]
     },
     {
-        "name": "Obtain 10 Cracked Red Eye Orbs",
         "difficulty": 8,
+        "name": "Obtain 10 Cracked Red Eye Orbs",
         "synergy": 0,
         "types": [
             "items",
@@ -117,8 +117,8 @@
         ]
     },
     {
-        "name": "Open Lower Burg / Depths to Firelink Gate",
         "difficulty": 5,
+        "name": "Open Lower Burg / Depths to Firelink Gate",
         "synergy": 0,
         "types": [
             "shortcut",
@@ -126,8 +126,8 @@
         ]
     },
     {
-        "name": "Obtain Dusk Crown Ring",
         "difficulty": 22,
+        "name": "Obtain Dusk Crown Ring",
         "synergy": 0,
         "types": [
             "darkroothard",
@@ -135,8 +135,8 @@
         ]
     },
     {
-        "name": "Starting Weapons only",
         "difficulty": 3,
+        "name": "Starting Weapons only",
         "synergy": 3,
         "types": [
             "restriction",
@@ -144,8 +144,8 @@
         ]
     },
     {
-        "name": "28 Attunement",
         "difficulty": 25,
+        "name": "28 Attunement",
         "synergy": 0,
         "types": [
             "stats",
@@ -153,16 +153,16 @@
         ]
     },
     {
-        "name": "Kill Three Mimics",
         "difficulty": 17,
+        "name": "Kill Three Mimics",
         "synergy": 0,
         "types": [
             "anorlondo"
         ]
     },
     {
-        "name": "Join Chaos Covenant",
         "difficulty": 11,
+        "name": "Join Chaos Covenant",
         "synergy": 0,
         "types": [
             "demonruins",
@@ -171,8 +171,8 @@
         ]
     },
     {
-        "name": "Obtain 6 Eyes of Death",
         "difficulty": 9,
+        "name": "Obtain 6 Eyes of Death",
         "synergy": 0,
         "types": [
             "items",
@@ -181,8 +181,8 @@
         ]
     },
     {
-        "name": "Kill All 3 Giants in Sens",
         "difficulty": 12,
+        "name": "Kill All 3 Giants in Sens",
         "synergy": 0,
         "types": [
             "enemies",
@@ -190,8 +190,8 @@
         ]
     },
     {
-        "name": "Obtain Hornet Ring",
         "difficulty": 6,
+        "name": "Obtain Hornet Ring",
         "synergy": 0,
         "types": [
             "darkroot",
@@ -200,8 +200,8 @@
         ]
     },
     {
-        "name": "Join Warriors of Sunlight",
         "difficulty": 4,
+        "name": "Join Warriors of Sunlight",
         "synergy": 0,
         "types": [
             "covenant",
@@ -209,8 +209,8 @@
         ]
     },
     {
-        "name": "Obtain Great Magic Barrier",
         "difficulty": 23,
+        "name": "Obtain Great Magic Barrier",
         "synergy": 0,
         "types": [
             "miracles",
@@ -218,8 +218,8 @@
         ]
     },
     {
-        "name": "Obtain Velka's Rapier",
         "difficulty": 20,
+        "name": "Obtain Velka's Rapier",
         "synergy": 0,
         "types": [
             "paintedworld",

@@ -1,199 +1,199 @@
 [
     {
-        "name": "$50,000",
         "difficulty": 19,
+        "name": "$50,000",
         "synergy": 0,
         "types": [
             "money"
         ]
     },
     {
-        "name": "Enter Amity Square",
         "difficulty": 12,
+        "name": "Enter Amity Square",
         "synergy": 0,
         "types": [
             "amity"
         ]
     },
     {
-        "name": "Quick Claw",
         "difficulty": 1,
+        "name": "Quick Claw",
         "synergy": 0,
         "types": [
             "jubilife"
         ]
     },
     {
-        "name": "Shellos, Floatzel, Quagsire, or Pelipper",
         "difficulty": 10,
+        "name": "Shellos, Floatzel, Quagsire, or Pelipper",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "Use Struggle",
         "difficulty": 23,
+        "name": "Use Struggle",
         "synergy": 0,
         "types": [
             "pp"
         ]
     },
     {
-        "name": "Defeat all 8 trainers in Eterna Forest",
         "difficulty": 6,
+        "name": "Defeat all 8 trainers in Eterna Forest",
         "synergy": 0,
         "types": [
             "trainers"
         ]
     },
     {
-        "name": "Complete Mira\u2019s sidequest",
         "difficulty": 25,
+        "name": "Complete Mira\u2019s sidequest",
         "synergy": 0,
         "types": [
             "sidequest"
         ]
     },
     {
-        "name": "Meditite, Bronzor, or Girafarig",
         "difficulty": 18,
+        "name": "Meditite, Bronzor, or Girafarig",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "Hatch a Pok\u00e9mon from an egg",
         "difficulty": 14,
+        "name": "Hatch a Pok\u00e9mon from an egg",
         "synergy": 0,
         "types": [
             "hatch"
         ]
     },
     {
-        "name": "Poffin Case",
         "difficulty": 2,
+        "name": "Poffin Case",
         "synergy": 0,
         "types": [
             "keyitem"
         ]
     },
     {
-        "name": "Larvitar, Gible, or Bagon",
         "difficulty": 13,
+        "name": "Larvitar, Gible, or Bagon",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "10 different berries",
         "difficulty": 4,
+        "name": "10 different berries",
         "synergy": 0,
         "types": [
             "berries"
         ]
     },
     {
-        "name": "A Pok\u00e9mon with a stat-boosting move",
         "difficulty": 7,
+        "name": "A Pok\u00e9mon with a stat-boosting move",
         "synergy": 0,
         "types": [
             "move"
         ]
     },
     {
-        "name": "25 TMs",
         "difficulty": 21,
+        "name": "25 TMs",
         "synergy": 0,
         "types": [
             "tms"
         ]
     },
     {
-        "name": "Footprint Ribbon",
         "difficulty": 20,
+        "name": "Footprint Ribbon",
         "synergy": 0,
         "types": [
             "footprint"
         ]
     },
     {
-        "name": "20 different Pok\u00e9mon owned",
         "difficulty": 22,
+        "name": "20 different Pok\u00e9mon owned",
         "synergy": 0,
         "types": [
             "pkmn"
         ]
     },
     {
-        "name": "Buneary, Aipom, or Lickitung",
         "difficulty": 16,
+        "name": "Buneary, Aipom, or Lickitung",
         "synergy": 0,
         "types": [
             "pokemon"
         ]
     },
     {
-        "name": "A Pok\u00e9mon with a weather-related ability",
         "difficulty": 15,
+        "name": "A Pok\u00e9mon with a weather-related ability",
         "synergy": 0,
         "types": [
             "ability"
         ]
     },
     {
-        "name": "TM67 (Recycle)",
         "difficulty": 3,
+        "name": "TM67 (Recycle)",
         "synergy": 0,
         "types": [
             "eterna"
         ]
     },
     {
-        "name": "Defeat Drifloon",
         "difficulty": 9,
+        "name": "Defeat Drifloon",
         "synergy": 0,
         "types": [
             "date"
         ]
     },
     {
-        "name": "TM51 (Roost)",
         "difficulty": 5,
+        "name": "TM51 (Roost)",
         "synergy": 0,
         "types": [
             "abovesolaceon"
         ]
     },
     {
-        "name": "15 TMs",
         "difficulty": 8,
+        "name": "15 TMs",
         "synergy": 0,
         "types": [
             "tms"
         ]
     },
     {
-        "name": "Black Belt, Expert Belt, or Focus Sash",
         "difficulty": 24,
+        "name": "Black Belt, Expert Belt, or Focus Sash",
         "synergy": 0,
         "types": [
             "belts"
         ]
     },
     {
-        "name": "3 baby Pok\u00e9mon",
         "difficulty": 17,
+        "name": "3 baby Pok\u00e9mon",
         "synergy": 0,
         "types": [
             "baby"
         ]
     },
     {
-        "name": "TM77 (Psych Up)",
         "difficulty": 11,
+        "name": "TM77 (Psych Up)",
         "synergy": 0,
         "types": [
             "celestic"

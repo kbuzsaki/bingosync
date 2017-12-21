@@ -1,15 +1,15 @@
 [
     {
-        "name": "Power of Wolf",
         "difficulty": 2,
+        "name": "Power of Wolf",
         "synergy": 0,
         "types": [
             "wolf"
         ]
     },
     {
-        "name": "Finish with 255 of each gem",
         "difficulty": 21,
+        "name": "Finish with 255 of each gem",
         "synergy": 0,
         "types": [
             "finishplace",
@@ -17,56 +17,56 @@
         ]
     },
     {
-        "name": "Beat a 1st castle boss w/ Bastard sword",
         "difficulty": 14,
+        "name": "Beat a 1st castle boss w/ Bastard sword",
         "synergy": 0,
         "types": [
             "sword"
         ]
     },
     {
-        "name": "Beat Cerberus w/ Combat Knife",
         "difficulty": 18,
+        "name": "Beat Cerberus w/ Combat Knife",
         "synergy": 0,
         "types": [
             "cerberus"
         ]
     },
     {
-        "name": "Shaman Shield w/o Soul of Bat",
         "difficulty": 10,
+        "name": "Shaman Shield w/o Soul of Bat",
         "synergy": 0,
         "types": [
             "clocktower"
         ]
     },
     {
-        "name": "Visit 20 save rooms",
         "difficulty": 19,
+        "name": "Visit 20 save rooms",
         "synergy": 0,
         "types": [
             "saves"
         ]
     },
     {
-        "name": "All 1st castle warps",
         "difficulty": 8,
+        "name": "All 1st castle warps",
         "synergy": 0,
         "types": [
             "warps"
         ]
     },
     {
-        "name": "Kill 8 types of Knights",
         "difficulty": 5,
+        "name": "Kill 8 types of Knights",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Use 4 different full screen attack items vs. 1 boss",
         "difficulty": 22,
+        "name": "Use 4 different full screen attack items vs. 1 boss",
         "synergy": 0,
         "types": [
             "forbiddenlibrary",
@@ -74,64 +74,64 @@
         ]
     },
     {
-        "name": "Silver Crown w/o Sword Card",
         "difficulty": 11,
+        "name": "Silver Crown w/o Sword Card",
         "synergy": 0,
         "types": [
             "swordcard"
         ]
     },
     {
-        "name": "Holy Sword and Fury Plate",
         "difficulty": 25,
+        "name": "Holy Sword and Fury Plate",
         "synergy": 0,
         "types": [
             "2castles"
         ]
     },
     {
-        "name": "Beat Akmodan wearing Sunstone",
         "difficulty": 12,
+        "name": "Beat Akmodan wearing Sunstone",
         "synergy": 0,
         "types": [
             "akmodan"
         ]
     },
     {
-        "name": "Finish at Opal",
         "difficulty": 16,
+        "name": "Finish at Opal",
         "synergy": 0,
         "types": [
             "finishplace"
         ]
     },
     {
-        "name": "Use only 1 type of expendable item in 1st castle",
         "difficulty": 9,
+        "name": "Use only 1 type of expendable item in 1st castle",
         "synergy": 0,
         "types": [
             "challenges"
         ]
     },
     {
-        "name": "Kill 5 Feathered Enemies",
         "difficulty": 3,
+        "name": "Kill 5 Feathered Enemies",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Sit in 6 different chairs",
         "difficulty": 6,
+        "name": "Sit in 6 different chairs",
         "synergy": 0,
         "types": [
             "chairs"
         ]
     },
     {
-        "name": "Beat Slogra & Gaibon w/ Knife Subweapon Only",
         "difficulty": 4,
+        "name": "Beat Slogra & Gaibon w/ Knife Subweapon Only",
         "synergy": 0,
         "types": [
             "entrance",
@@ -139,24 +139,24 @@
         ]
     },
     {
-        "name": "Damage a boss w/ 6 different 2-handed swords",
         "difficulty": 23,
+        "name": "Damage a boss w/ 6 different 2-handed swords",
         "synergy": 0,
         "types": [
             "equips"
         ]
     },
     {
-        "name": "Damage a boss w/ Force of Echo",
         "difficulty": 15,
+        "name": "Damage a boss w/ Force of Echo",
         "synergy": 0,
         "types": [
             "echo"
         ]
     },
     {
-        "name": "Beat Minotaur & Werewolf w/ Morningstar",
         "difficulty": 17,
+        "name": "Beat Minotaur & Werewolf w/ Morningstar",
         "synergy": 0,
         "types": [
             "minotaur",
@@ -164,40 +164,40 @@
         ]
     },
     {
-        "name": "Have a STR boost of at least +40",
         "difficulty": 13,
+        "name": "Have a STR boost of at least +40",
         "synergy": 0,
         "types": [
             "strength"
         ]
     },
     {
-        "name": "Use 6 different Shield spells vs. 1 boss",
         "difficulty": 20,
+        "name": "Use 6 different Shield spells vs. 1 boss",
         "synergy": 0,
         "types": [
             "shieldrod"
         ]
     },
     {
-        "name": "Start w/ Potion",
         "difficulty": 7,
+        "name": "Start w/ Potion",
         "synergy": 0,
         "types": [
             "intro"
         ]
     },
     {
-        "name": "Get Stoned, Cursed, and Poisoned (not all at once)",
         "difficulty": 1,
+        "name": "Get Stoned, Cursed, and Poisoned (not all at once)",
         "synergy": 0,
         "types": [
             "status"
         ]
     },
     {
-        "name": "Get big tossed by 3 different enemies",
         "difficulty": 24,
+        "name": "Get big tossed by 3 different enemies",
         "synergy": 0,
         "types": [
             "hp"

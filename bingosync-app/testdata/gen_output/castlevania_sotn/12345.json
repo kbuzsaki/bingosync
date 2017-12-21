@@ -1,15 +1,15 @@
 [
     {
-        "name": "Sunstone & Moonstone",
         "difficulty": 19,
+        "name": "Sunstone & Moonstone",
         "synergy": 0,
         "types": [
             "stones"
         ]
     },
     {
-        "name": "Kill 5 bosses while poisoned",
         "difficulty": 12,
+        "name": "Kill 5 bosses while poisoned",
         "synergy": 0,
         "types": [
             "bestiary",
@@ -17,40 +17,40 @@
         ]
     },
     {
-        "name": "Get Stoned, Cursed, and Poisoned (not all at once)",
         "difficulty": 1,
+        "name": "Get Stoned, Cursed, and Poisoned (not all at once)",
         "synergy": 0,
         "types": [
             "status"
         ]
     },
     {
-        "name": "Fight off Slogra & Gaibon in the Entrance",
         "difficulty": 10,
+        "name": "Fight off Slogra & Gaibon in the Entrance",
         "synergy": 0,
         "types": [
             "entrance"
         ]
     },
     {
-        "name": "Damage a boss w/ 6 different 2-handed swords",
         "difficulty": 23,
+        "name": "Damage a boss w/ 6 different 2-handed swords",
         "synergy": 0,
         "types": [
             "equips"
         ]
     },
     {
-        "name": "Gravity Boots",
         "difficulty": 6,
+        "name": "Gravity Boots",
         "synergy": 0,
         "types": [
             "marblegallery"
         ]
     },
     {
-        "name": "Finish by killing Richter",
         "difficulty": 25,
+        "name": "Finish by killing Richter",
         "synergy": 0,
         "types": [
             "finishplace",
@@ -58,40 +58,40 @@
         ]
     },
     {
-        "name": "Beat Cerberus w/ Combat Knife",
         "difficulty": 18,
+        "name": "Beat Cerberus w/ Combat Knife",
         "synergy": 0,
         "types": [
             "cerberus"
         ]
     },
     {
-        "name": "Have a LCK boost of at least +60",
         "difficulty": 14,
+        "name": "Have a LCK boost of at least +60",
         "synergy": 0,
         "types": [
             "luck"
         ]
     },
     {
-        "name": "Skill of Wolf",
         "difficulty": 2,
+        "name": "Skill of Wolf",
         "synergy": 0,
         "types": [
             "wolf"
         ]
     },
     {
-        "name": "Finish at Twilight Cloak",
         "difficulty": 13,
+        "name": "Finish at Twilight Cloak",
         "synergy": 0,
         "types": [
             "finishplace"
         ]
     },
     {
-        "name": "Beat Doppleganger10 with Jewel Knuckles, no subweapons",
         "difficulty": 4,
+        "name": "Beat Doppleganger10 with Jewel Knuckles, no subweapons",
         "synergy": 0,
         "types": [
             "dopple10",
@@ -99,32 +99,32 @@
         ]
     },
     {
-        "name": "Merman Statue",
         "difficulty": 7,
+        "name": "Merman Statue",
         "synergy": 0,
         "types": [
             "scylla"
         ]
     },
     {
-        "name": "Osafune katana",
         "difficulty": 21,
+        "name": "Osafune katana",
         "synergy": 0,
         "types": [
             "death"
         ]
     },
     {
-        "name": "Destory all 4 types of Weeds",
         "difficulty": 20,
+        "name": "Destory all 4 types of Weeds",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Use 4 different full screen attack items vs. 1 boss",
         "difficulty": 22,
+        "name": "Use 4 different full screen attack items vs. 1 boss",
         "synergy": 0,
         "types": [
             "forbiddenlibrary",
@@ -132,8 +132,8 @@
         ]
     },
     {
-        "name": "Ring of Arcana",
         "difficulty": 16,
+        "name": "Ring of Arcana",
         "synergy": 0,
         "types": [
             "beelzebub",
@@ -141,48 +141,48 @@
         ]
     },
     {
-        "name": "Damage a boss w/ Force of Echo",
         "difficulty": 15,
+        "name": "Damage a boss w/ Force of Echo",
         "synergy": 0,
         "types": [
             "echo"
         ]
     },
     {
-        "name": "Kill 5 Feathered Enemies",
         "difficulty": 3,
+        "name": "Kill 5 Feathered Enemies",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "Dark Blade",
         "difficulty": 9,
+        "name": "Dark Blade",
         "synergy": 0,
         "types": [
             "dopple40"
         ]
     },
     {
-        "name": "Kill 8 types of Knights",
         "difficulty": 5,
+        "name": "Kill 8 types of Knights",
         "synergy": 0,
         "types": [
             "bestiary"
         ]
     },
     {
-        "name": "All 1st castle warps",
         "difficulty": 8,
+        "name": "All 1st castle warps",
         "synergy": 0,
         "types": [
             "warps"
         ]
     },
     {
-        "name": "Sunglasses and Goddess Shield",
         "difficulty": 24,
+        "name": "Sunglasses and Goddess Shield",
         "synergy": 0,
         "types": [
             "beelzebub",
@@ -190,8 +190,8 @@
         ]
     },
     {
-        "name": "Beat Minotaur & Werewolf w/ Morningstar",
         "difficulty": 17,
+        "name": "Beat Minotaur & Werewolf w/ Morningstar",
         "synergy": 0,
         "types": [
             "minotaur",
@@ -199,8 +199,8 @@
         ]
     },
     {
-        "name": "Beat Karasuman w/ Cutlass",
         "difficulty": 11,
+        "name": "Beat Karasuman w/ Cutlass",
         "synergy": 0,
         "types": [
             "karasuman"

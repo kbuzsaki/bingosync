@@ -1,15 +1,15 @@
 [
     {
-        "name": "Wild Canyon M4",
         "difficulty": 2,
+        "name": "Wild Canyon M4",
         "synergy": 0,
         "types": [
             "wildcanyon"
         ]
     },
     {
-        "name": "Hidden Base M5 A-Rank",
         "difficulty": 21,
+        "name": "Hidden Base M5 A-Rank",
         "synergy": 0,
         "types": [
             "hiddenbase",
@@ -17,48 +17,48 @@
         ]
     },
     {
-        "name": "Complete Mission Street M1 with 100+ Rings",
         "difficulty": 14,
+        "name": "Complete Mission Street M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "missionstreet"
         ]
     },
     {
-        "name": "Complete Death Chamber M1 with 100+ Rings",
         "difficulty": 18,
+        "name": "Complete Death Chamber M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "deathchamber"
         ]
     },
     {
-        "name": "Green Forest M3",
         "difficulty": 10,
+        "name": "Green Forest M3",
         "synergy": 0,
         "types": [
             "greenforest"
         ]
     },
     {
-        "name": "Route 101 M5",
         "difficulty": 19,
+        "name": "Route 101 M5",
         "synergy": 0,
         "types": [
             "route101"
         ]
     },
     {
-        "name": "Metal Harbor M4",
         "difficulty": 8,
+        "name": "Metal Harbor M4",
         "synergy": 0,
         "types": [
             "metalharbor"
         ]
     },
     {
-        "name": "Wild Canyon All Missions A-Rank",
         "difficulty": 5,
+        "name": "Wild Canyon All Missions A-Rank",
         "synergy": 0,
         "types": [
             "wildcanyon",
@@ -67,48 +67,48 @@
         ]
     },
     {
-        "name": "5 hidden Chao animals in Meteor Herd and finish",
         "difficulty": 22,
+        "name": "5 hidden Chao animals in Meteor Herd and finish",
         "synergy": 0,
         "types": [
             "meteorherd"
         ]
     },
     {
-        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
         "difficulty": 11,
+        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
         "synergy": 0,
         "types": [
             "pumpkinhill"
         ]
     },
     {
-        "name": "Mission Street M5",
         "difficulty": 25,
+        "name": "Mission Street M5",
         "synergy": 0,
         "types": [
             "missionstreet"
         ]
     },
     {
-        "name": "10 Emblems",
         "difficulty": 12,
+        "name": "10 Emblems",
         "synergy": 0,
         "types": [
             "emblems"
         ]
     },
     {
-        "name": "Route 101 M3",
         "difficulty": 16,
+        "name": "Route 101 M3",
         "synergy": 0,
         "types": [
             "route101"
         ]
     },
     {
-        "name": "Metal Harbor M4 A-Rank",
         "difficulty": 9,
+        "name": "Metal Harbor M4 A-Rank",
         "synergy": 0,
         "types": [
             "metalharbor",
@@ -116,72 +116,72 @@
         ]
     },
     {
-        "name": "Unlock Chao Garden for all Hero Story characters",
         "difficulty": 3,
+        "name": "Unlock Chao Garden for all Hero Story characters",
         "synergy": 0,
         "types": [
             "chaogarden"
         ]
     },
     {
-        "name": "2 Chao Boxes in Metal Harbor and finish",
         "difficulty": 6,
+        "name": "2 Chao Boxes in Metal Harbor and finish",
         "synergy": 0,
         "types": [
             "metalharbor"
         ]
     },
     {
-        "name": "Destroy the Gold Beetle in 3 different stages",
         "difficulty": 4,
+        "name": "Destroy the Gold Beetle in 3 different stages",
         "synergy": 0,
         "types": [
             "goldbeetle"
         ]
     },
     {
-        "name": "Complete Crazy Gadget M1 with 100+ Rings",
         "difficulty": 23,
+        "name": "Complete Crazy Gadget M1 with 100+ Rings",
         "synergy": 0,
         "types": [
             "crazygadget"
         ]
     },
     {
-        "name": "Aquatic Mine M4",
         "difficulty": 15,
+        "name": "Aquatic Mine M4",
         "synergy": 0,
         "types": [
             "aquaticmine"
         ]
     },
     {
-        "name": "Hidden Base M2",
         "difficulty": 17,
+        "name": "Hidden Base M2",
         "synergy": 0,
         "types": [
             "hiddenbase"
         ]
     },
     {
-        "name": "Aquatic Mine M1 Hintless",
         "difficulty": 13,
+        "name": "Aquatic Mine M1 Hintless",
         "synergy": 0,
         "types": [
             "aquaticmine"
         ]
     },
     {
-        "name": "Death Chamber M5",
         "difficulty": 20,
+        "name": "Death Chamber M5",
         "synergy": 0,
         "types": [
             "deathchamber"
         ]
     },
     {
-        "name": "Metal Harbor M3 B-Rank",
         "difficulty": 7,
+        "name": "Metal Harbor M3 B-Rank",
         "synergy": 0,
         "types": [
             "metalharbor",
@@ -189,16 +189,16 @@
         ]
     },
     {
-        "name": "5 hidden Chao animals in Wild Canyon and finish",
         "difficulty": 1,
+        "name": "5 hidden Chao animals in Wild Canyon and finish",
         "synergy": 0,
         "types": [
             "wildcanyon"
         ]
     },
     {
-        "name": "Prison Lane M4 A-Rank",
         "difficulty": 24,
+        "name": "Prison Lane M4 A-Rank",
         "synergy": 0,
         "types": [
             "prisonlane",
