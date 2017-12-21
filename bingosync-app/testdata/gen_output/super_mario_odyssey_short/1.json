@@ -1,77 +1,213 @@
 [
     {
-        "name": "Purchase the Fossil Falls Sticker (Cascade Kingdom)"
+        "difficulty": 20,
+        "name": "20 Regional Coins (Luncheon Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Coins",
+            "Luncheon_Coins"
+        ]
     },
     {
-        "name": "Purchase a Power Moon in the Lake Kingdom"
+        "difficulty": 22,
+        "name": "14 Moons (Bowser's Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Bowser_Moons"
+        ]
     },
     {
-        "name": "Purchase the Mount Volbono Sticker (Luncheon Kingdom)"
+        "difficulty": 4,
+        "name": "4 Moons from sub-areas (Sand Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Sand_Subarea"
+        ]
     },
     {
-        "name": "25 Regional Coins from the Cascade Kingdom"
+        "difficulty": 11,
+        "name": "16 Moons (Lost Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Lost_Moons"
+        ]
     },
     {
-        "name": "16 Power Moons from the Lost Kingdom"
+        "difficulty": 8,
+        "name": "3 Checkpoints (Lake Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Lake_Checkpoints"
+        ]
     },
     {
-        "name": "4 Checkpoints from the Wooded Kingdom"
+        "difficulty": 14,
+        "name": "A Locked Door in the Metro Kingdom!",
+        "synergy": 0,
+        "types": [
+            "Metro_LockedDoor"
+        ]
     },
     {
-        "name": "16 Power Moons from the Seaside Kingdom"
+        "difficulty": 6,
+        "name": "Broodal Battle atop the Inverted Pyramid!",
+        "synergy": 0,
+        "types": [
+            "Sand_Objective"
+        ]
     },
     {
-        "name": "Captain Toad in the Cap Kingdom"
+        "difficulty": 18,
+        "name": "25 Regional Coins (Seaside Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Coins",
+            "Seaside_Coins"
+        ]
     },
     {
-        "name": "30 Regional Coins from the Lake Kingdom"
+        "difficulty": 25,
+        "name": "7 Checkpoints (Bowser's Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Bowser_Checkpoints"
+        ]
     },
     {
-        "name": "15 Total Checkpoints"
+        "difficulty": 2,
+        "name": "2 Timer Challenges (Cascade Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Cascade_Timer"
+        ]
     },
     {
-        "name": "2 Power Moon from Slots"
+        "difficulty": 23,
+        "name": "16 Moons (Bowser's Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Bowser_Moons"
+        ]
     },
     {
-        "name": "6 Checkpoints from Bowser's Kingdom"
+        "difficulty": 5,
+        "name": "Call Jaxi from 4 Different Jaxi-Stands",
+        "synergy": 0,
+        "types": [
+            "Sand_Jaxi"
+        ]
     },
     {
-        "name": "Call Jaxi from 3 Different Jaxi-Stands"
+        "difficulty": 12,
+        "name": "Purchase the Lost Kingdom Sticker",
+        "synergy": 0,
+        "types": [
+            "Sticker",
+            "Lost_Sticker"
+        ]
     },
     {
-        "name": "Plant 4 Seeds"
+        "difficulty": 9,
+        "name": "20 Moons (Wooded Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Wooded_Moons"
+        ]
     },
     {
-        "name": "29 Power Moons from the Metro Kingdom"
+        "difficulty": 16,
+        "name": "18 Total Checkpoints",
+        "synergy": 0,
+        "types": [
+            "Checkpoints"
+        ]
     },
     {
-        "name": "15 Power Moons from Bowser's Kingdom"
+        "difficulty": 7,
+        "name": "2 Moons from sub-areas (Lake Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Subarea",
+            "Lake_Subarea"
+        ]
     },
     {
-        "name": "8 Power Moons from the Moon Kingdom"
+        "difficulty": 19,
+        "name": "5 Moons from Captain Toad",
+        "synergy": 0,
+        "types": [
+            "Toad"
+        ]
     },
     {
-        "name": "Shiveria Secret Room: Dressed for the Weather (Snow Kingdom)"
+        "difficulty": 21,
+        "name": "6 Multi Moons",
+        "synergy": 0,
+        "types": [
+            "Multi_Moons"
+        ]
     },
     {
-        "name": "4 Checkpoints from the Lake Kingdom"
+        "difficulty": 3,
+        "name": "27 Moons (Sand Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Sand_Moons"
+        ]
     },
     {
-        "name": "4 Checkpoints from the Sand Kingdom"
+        "difficulty": 15,
+        "name": "17 Moons (Snow Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Snow_Moons"
+        ]
     },
     {
-        "name": "7 Power Moons from the Moon Kingdom"
+        "difficulty": 1,
+        "name": "9 Moons (Cascade Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Cascade_Moons"
+        ]
     },
     {
-        "name": "27 Power Moons from the Metro Kingdom"
+        "difficulty": 13,
+        "name": "Purchase a Moon (Metro Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Shop",
+            "Metro_Shop"
+        ]
     },
     {
-        "name": "4 Checkpoints from the Luncheon Kingdom"
+        "difficulty": 10,
+        "name": "6 Checkpoints (Wooded Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Wooded_Checkpoints"
+        ]
     },
     {
-        "name": "2 Power Moons from sub-areas (Luncheon Kingdom)"
+        "difficulty": 17,
+        "name": "Plant 5 Seeds",
+        "synergy": 0,
+        "types": [
+            "Seeds",
+            "Sand_Seeds",
+            "Lake_Seeds",
+            "Metro_Seeds",
+            "Seaside_Seeds",
+            "Mushroom_Seeds"
+        ]
     },
     {
-        "name": "Purchase a Power Moon from the Seaside Kingdom"
+        "difficulty": 24,
+        "name": "2 Moons from sub-areas (Bowser's Kingdom)",
+        "synergy": 0,
+        "types": [
+            "Subarea",
+            "Bowser_Subarea"
+        ]
     }
 ]
