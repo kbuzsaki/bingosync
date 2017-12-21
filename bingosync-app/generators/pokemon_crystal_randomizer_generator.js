@@ -305,11 +305,12 @@ bingoList[13] = [
  { name: "Catch a Pokémon in Tohjo Falls", types: ["kanto"] }
 ];
 bingoList[14] = [
- { name: "Houndoom or Granbull", types: ["24/23"] },
- { name: "Parasect or Octillery", types: ["24/25"] },
- { name: "Donphan or Xatu", types: ["25"] },
- { name: "Graveler or Haunter", types: ["25"] },
- { name: "Hypno or Dugtrio", types: ["26"] }
+ { name: "Omanyte, Kabuto, or Aerodactyl", types: ["trio"] },
+ { name: "Gligar, Delibird, or Sneasel", types: ["trio"] },
+ { name: "Heracross, Pinsir, or Aipom", types: ["trio"] },
+ { name: "Dunsparce, Wobbuffet, or Girafarig", types: ["trio"] },
+ { name: "Machoke, Graveler, or Haunter", types: ["trio"] },
+ { name: "Electabuzz, Jynx, or Magmar", types: ["blessed"] }
 ];
 bingoList[15] = [
  { name: "Don't use Repels", types: ["instant"] },
@@ -319,11 +320,11 @@ bingoList[15] = [
  { name: "A Pokémon with 4 non-TM non-damaging moves", types: ["flash"] }
 ];
 bingoList[16] = [
- { name: "Omanyte, Kabuto, or Aerodactyl", types: ["trio"] },
- { name: "Gligar, Delibird, or Sneasel", types: ["trio"] },
- { name: "Heracross, Pinsir, or Aipom", types: ["trio"] },
- { name: "Dunsparce, Wobbuffet, or Girafarig", types: ["trio"] },
- { name: "Electabuzz, Jynx, or Magmar", types: ["blessed"] }
+ { name: "Houndour or Snubbull", types: ["nfe"] },
+ { name: "Venonat or Paras", types: ["nfe"] },
+ { name: "Mankey or Meowth", types: ["nfe"] },
+ { name: "Phanpy or Teddiursa", types: ["nfe"] },
+ { name: "Cubone or Diglett", types: ["nfe"] }
 ];
 bingoList[17] = [
  { name: "Defeat Lapras", types: ["day", "union"] },
@@ -361,7 +362,7 @@ bingoList[21] = [
 ];
 bingoList[22] = [
  { name: "20+ different TMs", types: ["tm"] },
- { name: "Stop the same Pokémon evolving 6 times", types: ["raise"] },
+ { name: "Stop the same Pokémon evolving 4 times", types: ["raise"] },
  { name: "Glacier Badge", types: ["glacier"] },
  { name: "6 Badges", types: ["glacier"] }
 ];
@@ -373,13 +374,13 @@ bingoList[23] = [
 ];
 bingoList[24] = [
  { name: "Buy all 3 Game Corner Pokémon", types: ["goldenrod", "money", "coin"] },
+ { name: "30+ Pokémon owned", types: ["pkmn"] },
  { name: "Defeat a Lv40+ Pokémon", types: ["40"] },
- { name: "Complete all 4 Ruins of Alph puzzles", types: ["violet", "alph"] },
- { name: "Mineral Badge", types: ["steel"] }
+ { name: "Berry Juice or Elixer", types: ["shuck"] }
 ];
 bingoList[25] = [
  { name: "Rising Badge", types: ["clair"] },
- { name: "30+ Pokémon owned", types: ["pkmn"] },
- { name: "Catch a Pokémon in Lugia's room", types: ["lugia"] },
- { name: "Berry Juice or Elixer", types: ["shuck"] }
+ { name: "Mineral Badge", types: ["steel"] },
+ { name: "Complete all 4 Ruins of Alph puzzles", types: ["violet", "alph"] },
+ { name: "Catch a Pokémon in Lugia's room", types: ["lugia"] }
 ];
