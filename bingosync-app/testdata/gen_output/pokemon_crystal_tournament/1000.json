@@ -1,204 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "$50,000",
-        "synergy": 0,
-        "types": [
-            "money",
-            "cash"
-        ]
+        "name": "$50,000"
     },
     {
-        "difficulty": 18,
-        "name": "Encounter Suicune on Route 42",
-        "synergy": 0,
-        "types": [
-            "cune"
-        ]
+        "name": "Encounter Suicune on Route 42"
     },
     {
-        "difficulty": 15,
-        "name": "Soft Sand",
-        "synergy": 0,
-        "types": [
-            "pro"
-        ]
+        "name": "Soft Sand"
     },
     {
-        "difficulty": 7,
-        "name": "Ariados or Ledian",
-        "synergy": 0,
-        "types": [
-            "bugs2"
-        ]
+        "name": "Ariados or Ledian"
     },
     {
-        "difficulty": 1,
-        "name": "Radio Card",
-        "synergy": 0,
-        "types": [
-            "radio"
-        ]
+        "name": "Radio Card"
     },
     {
-        "difficulty": 10,
-        "name": "Don't heal at Pok\u00e9mon Centers",
-        "synergy": 0,
-        "types": [
-            "heal",
-            "instant"
-        ]
+        "name": "Don't heal at Pok\u00e9mon Centers"
     },
     {
-        "difficulty": 2,
-        "name": "4 different types of Pok\u00e9 Ball",
-        "synergy": 0,
-        "types": [
-            "ball"
-        ]
+        "name": "4 different types of Pok\u00e9 Ball"
     },
     {
-        "difficulty": 21,
-        "name": "3 baby Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "egg"
-        ]
+        "name": "3 baby Pok\u00e9mon"
     },
     {
-        "difficulty": 19,
-        "name": "A Pokemon with Explosion or Selfdestruct",
-        "synergy": 0,
-        "types": [
-            "boom"
-        ]
+        "name": "A Pokemon with Explosion or Selfdestruct"
     },
     {
-        "difficulty": 13,
-        "name": "Venonat or Paras",
-        "synergy": 0,
-        "types": [
-            "bugs3"
-        ]
+        "name": "Venonat or Paras"
     },
     {
-        "difficulty": 16,
-        "name": "Evolve Eevee",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Evolve Eevee"
     },
     {
-        "difficulty": 14,
-        "name": "Mystic Water",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Mystic Water"
     },
     {
-        "difficulty": 8,
-        "name": "Complete 2 Ruins of Alph puzzles",
-        "synergy": 0,
-        "types": [
-            "unown"
-        ]
+        "name": "Complete 2 Ruins of Alph puzzles"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat all 4 trainers in National Park",
-        "synergy": 0,
-        "types": [
-            "park"
-        ]
+        "name": "Defeat all 4 trainers in National Park"
     },
     {
-        "difficulty": 22,
-        "name": "A Pok\u00e9mon with Flame Wheel, Body Slam, or Scary Face",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "A Pok\u00e9mon with Flame Wheel, Body Slam, or Scary Face"
     },
     {
-        "difficulty": 3,
-        "name": "Call a Youngster",
-        "synergy": 0,
-        "types": [
-            "call"
-        ]
+        "name": "Call a Youngster"
     },
     {
-        "difficulty": 25,
-        "name": "Defeat Clair",
-        "synergy": 0,
-        "types": [
-            "clair"
-        ]
+        "name": "Defeat Clair"
     },
     {
-        "difficulty": 17,
-        "name": "Koffing or Grimer",
-        "synergy": 0,
-        "types": [
-            "poison"
-        ]
+        "name": "Koffing or Grimer"
     },
     {
-        "difficulty": 11,
-        "name": "Noctowl or Xatu",
-        "synergy": 0,
-        "types": [
-            "birds"
-        ]
+        "name": "Noctowl or Xatu"
     },
     {
-        "difficulty": 9,
-        "name": "Graveler or Haunter",
-        "synergy": 0,
-        "types": [
-            "trade"
-        ]
+        "name": "Graveler or Haunter"
     },
     {
-        "difficulty": 12,
-        "name": "A Dragon type Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "dragon"
-        ]
+        "name": "A Dragon type Pok\u00e9mon"
     },
     {
-        "difficulty": 6,
-        "name": "Gold Berry",
-        "synergy": 0,
-        "types": [
-            "place"
-        ]
+        "name": "Gold Berry"
     },
     {
-        "difficulty": 4,
-        "name": "Slowpoketail",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "Slowpoketail"
     },
     {
-        "difficulty": 23,
-        "name": "Defeat Rival 4",
-        "synergy": 0,
-        "types": [
-            "whirl"
-        ]
+        "name": "Defeat Rival 4"
     },
     {
-        "difficulty": 20,
-        "name": "Max Phonebook",
-        "synergy": 0,
-        "types": [
-            "battles"
-        ]
+        "name": "Max Phonebook"
     }
 ]

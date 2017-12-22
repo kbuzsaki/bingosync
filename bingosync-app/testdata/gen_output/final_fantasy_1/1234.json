@@ -1,217 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Cast Fira against a group of Bloodbones",
-        "synergy": 0,
-        "types": [
-            "situational"
-        ]
+        "name": "Cast Fira against a group of Bloodbones"
     },
     {
-        "difficulty": 21,
-        "name": "Buy 99 Faerie Tonics at the Caravan",
-        "synergy": 0,
-        "types": [
-            "spending",
-            "caravan"
-        ]
+        "name": "Buy 99 Faerie Tonics at the Caravan"
     },
     {
-        "difficulty": 14,
-        "name": "Get both Healing Helms from treasure chests",
-        "synergy": 0,
-        "types": [
-            "treasurehunt"
-        ]
+        "name": "Get both Healing Helms from treasure chests"
     },
     {
-        "difficulty": 18,
-        "name": "Get the party to at least level 25",
-        "synergy": 0,
-        "types": [
-            "grind"
-        ]
+        "name": "Get the party to at least level 25"
     },
     {
-        "difficulty": 10,
-        "name": "Learn exactly one status buff spell",
-        "synergy": 0,
-        "types": [
-            "monk",
-            "noblackmage",
-            "noredmage",
-            "nowhitemage"
-        ]
+        "name": "Learn exactly one status buff spell"
     },
     {
-        "difficulty": 19,
-        "name": "No duplicate weapons equipped",
-        "synergy": 0,
-        "types": [
-            "unique"
-        ]
+        "name": "No duplicate weapons equipped"
     },
     {
-        "difficulty": 8,
-        "name": "Get all of the treasure in the Marsh Cave",
-        "synergy": 0,
-        "types": [
-            "treasurehunt"
-        ]
+        "name": "Get all of the treasure in the Marsh Cave"
     },
     {
-        "difficulty": 5,
-        "name": "Cast Blizzaga at least twice",
-        "synergy": 0,
-        "types": [
-            "noredmage",
-            "noblackmage"
-        ]
+        "name": "Cast Blizzaga at least twice"
     },
     {
-        "difficulty": 22,
-        "name": "Defeat 3 groups with 4 different monsters",
-        "synergy": 0,
-        "types": [
-            "situational"
-        ]
+        "name": "Defeat 3 groups with 4 different monsters"
     },
     {
-        "difficulty": 11,
-        "name": "Get the Ice Brand in Mt. Gulg",
-        "synergy": 0,
-        "types": [
-            "gulg"
-        ]
+        "name": "Get the Ice Brand in Mt. Gulg"
     },
     {
-        "difficulty": 25,
-        "name": "Buy 99 Cottages in Gaia",
-        "synergy": 0,
-        "types": [
-            "spending",
-            "gaia"
-        ]
+        "name": "Buy 99 Cottages in Gaia"
     },
     {
-        "difficulty": 12,
-        "name": "Defeat a Vampire Lord",
-        "synergy": 0,
-        "types": [
-            "fight"
-        ]
+        "name": "Defeat a Vampire Lord"
     },
     {
-        "difficulty": 16,
-        "name": "Use the spell Exit to escape from Mt. Gulg",
-        "synergy": 0,
-        "types": [
-            "noclass",
-            "exit"
-        ]
+        "name": "Use the spell Exit to escape from Mt. Gulg"
     },
     {
-        "difficulty": 9,
-        "name": "Get all of the treasure in Mt. Duergar, including Excalibur",
-        "synergy": 0,
-        "types": [
-            "treasurehunt",
-            "duergar"
-        ]
+        "name": "Get all of the treasure in Mt. Duergar, including Excalibur"
     },
     {
-        "difficulty": 3,
-        "name": "Use at least 15 Ethers",
-        "synergy": 0,
-        "types": [
-            "itemrestriction"
-        ]
+        "name": "Use at least 15 Ethers"
     },
     {
-        "difficulty": 6,
-        "name": "Complete the Sunken Shrine without escaping combat",
-        "synergy": 0,
-        "types": [
-            "norun"
-        ]
+        "name": "Complete the Sunken Shrine without escaping combat"
     },
     {
-        "difficulty": 4,
-        "name": "Use zero Thieves",
-        "synergy": 0,
-        "types": [
-            "party",
-            "nothief"
-        ]
+        "name": "Use zero Thieves"
     },
     {
-        "difficulty": 23,
-        "name": "Defeat Echidna in Earthgift Shrine",
-        "synergy": 0,
-        "types": [
-            "earthgift",
-            "extra"
-        ]
+        "name": "Defeat Echidna in Earthgift Shrine"
     },
     {
-        "difficulty": 15,
-        "name": "Obtain a Megalixir, but not from 15-tile puzzle",
-        "synergy": 0,
-        "types": [
-            "megalixir",
-            "deatheye"
-        ]
+        "name": "Obtain a Megalixir, but not from 15-tile puzzle"
     },
     {
-        "difficulty": 17,
-        "name": "Get only 1 of Sunblade or Diamond Armor from chests",
-        "synergy": 0,
-        "types": [
-            "sunblade",
-            "diamondarmor"
-        ]
+        "name": "Get only 1 of Sunblade or Diamond Armor from chests"
     },
     {
-        "difficulty": 13,
-        "name": "Defeat Hyenadon",
-        "synergy": 0,
-        "types": [
-            "fight"
-        ]
+        "name": "Defeat Hyenadon"
     },
     {
-        "difficulty": 20,
-        "name": "Learn at least one Level 7 spell for a character",
-        "synergy": 0,
-        "types": [
-            "grind"
-        ]
+        "name": "Learn at least one Level 7 spell for a character"
     },
     {
-        "difficulty": 7,
-        "name": "Defeat a group with 4 different monsters",
-        "synergy": 0,
-        "types": [
-            "situational"
-        ]
+        "name": "Defeat a group with 4 different monsters"
     },
     {
-        "difficulty": 1,
-        "name": "Equip only a Thief's Armlet on the body slot",
-        "synergy": 0,
-        "types": [
-            "unique",
-            "nowarrior",
-            "nowhitemage"
-        ]
+        "name": "Equip only a Thief's Armlet on the body slot"
     },
     {
-        "difficulty": 24,
-        "name": "Defeat Two-headed Dragon in Earthgift Shrine",
-        "synergy": 0,
-        "types": [
-            "earthgift",
-            "extra"
-        ]
+        "name": "Defeat Two-headed Dragon in Earthgift Shrine"
     }
 ]

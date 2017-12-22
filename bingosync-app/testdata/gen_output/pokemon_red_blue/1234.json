@@ -1,203 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Rattata",
-        "synergy": 0,
-        "types": [
-            "lol"
-        ]
+        "name": "Rattata"
     },
     {
-        "difficulty": 21,
-        "name": "Charizard",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Charizard"
     },
     {
-        "difficulty": 14,
-        "name": "Defeat all 16 trainers on Routes 24 and 25",
-        "synergy": 0,
-        "types": [
-            "nugget"
-        ]
+        "name": "Defeat all 16 trainers on Routes 24 and 25"
     },
     {
-        "difficulty": 18,
-        "name": "Silph Scope",
-        "synergy": 0,
-        "types": [
-            "hideout"
-        ]
+        "name": "Silph Scope"
     },
     {
-        "difficulty": 10,
-        "name": "Dugtrio",
-        "synergy": 0,
-        "types": [
-            "trio"
-        ]
+        "name": "Dugtrio"
     },
     {
-        "difficulty": 19,
-        "name": "Venusaur",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Venusaur"
     },
     {
-        "difficulty": 8,
-        "name": "Raichu",
-        "synergy": 0,
-        "types": [
-            "elec"
-        ]
+        "name": "Raichu"
     },
     {
-        "difficulty": 5,
-        "name": "Any pokemon with 4 status moves",
-        "synergy": 0,
-        "types": [
-            "moves"
-        ]
+        "name": "Any pokemon with 4 status moves"
     },
     {
-        "difficulty": 22,
-        "name": "$75,000",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "$75,000"
     },
     {
-        "difficulty": 11,
-        "name": "Hitmonchan or Hitmonlee",
-        "synergy": 0,
-        "types": [
-            "fighting"
-        ]
+        "name": "Hitmonchan or Hitmonlee"
     },
     {
-        "difficulty": 25,
-        "name": "Chansey or Kangaskhan or Tauros",
-        "synergy": 0,
-        "types": [
-            "safari"
-        ]
+        "name": "Chansey or Kangaskhan or Tauros"
     },
     {
-        "difficulty": 12,
-        "name": "Defeat 4 Beauties",
-        "synergy": 0,
-        "types": [
-            "beauty"
-        ]
+        "name": "Defeat 4 Beauties"
     },
     {
-        "difficulty": 16,
-        "name": "TM16 (Payday)",
-        "synergy": 0,
-        "types": [
-            "payday"
-        ]
+        "name": "TM16 (Payday)"
     },
     {
-        "difficulty": 9,
-        "name": "Wigglytuff",
-        "synergy": 0,
-        "types": [
-            "moon"
-        ]
+        "name": "Wigglytuff"
     },
     {
-        "difficulty": 3,
-        "name": "Kill a Haunter",
-        "synergy": 0,
-        "types": [
-            "haunt"
-        ]
+        "name": "Kill a Haunter"
     },
     {
-        "difficulty": 6,
-        "name": "Pidgeotto",
-        "synergy": 0,
-        "types": [
-            "pidge"
-        ]
+        "name": "Pidgeotto"
     },
     {
-        "difficulty": 4,
-        "name": "Good Rod",
-        "synergy": 0,
-        "types": [
-            "rod"
-        ]
+        "name": "Good Rod"
     },
     {
-        "difficulty": 23,
-        "name": "Defeat 3 Burglars",
-        "synergy": 0,
-        "types": [
-            "robber"
-        ]
+        "name": "Defeat 3 Burglars"
     },
     {
-        "difficulty": 15,
-        "name": "Golbat",
-        "synergy": 0,
-        "types": [
-            "golbat"
-        ]
+        "name": "Golbat"
     },
     {
-        "difficulty": 17,
-        "name": "Charmeleon",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Charmeleon"
     },
     {
-        "difficulty": 13,
-        "name": "Any pokemon with a 5 PP non-TM move",
-        "synergy": 0,
-        "types": [
-            "rock"
-        ]
+        "name": "Any pokemon with a 5 PP non-TM move"
     },
     {
-        "difficulty": 20,
-        "name": "Defeat all 12 trainers in Mt Moon",
-        "synergy": 0,
-        "types": [
-            "mt"
-        ]
+        "name": "Defeat all 12 trainers in Mt Moon"
     },
     {
-        "difficulty": 7,
-        "name": "Enter no Pokemon Centers",
-        "synergy": 0,
-        "types": [
-            "heal",
-            "instant"
-        ]
+        "name": "Enter no Pokemon Centers"
     },
     {
-        "difficulty": 1,
-        "name": "TM 39 (Swift)",
-        "synergy": 0,
-        "types": [
-            "swift"
-        ]
+        "name": "TM 39 (Swift)"
     },
     {
-        "difficulty": 24,
-        "name": "Magmar or Electabuzz",
-        "synergy": 0,
-        "types": [
-            "troll"
-        ]
+        "name": "Magmar or Electabuzz"
     }
 ]

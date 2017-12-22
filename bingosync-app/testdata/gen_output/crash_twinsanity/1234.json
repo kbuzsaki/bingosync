@@ -1,152 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Reach the secret beach",
-        "synergy": 0,
-        "types": []
+        "name": "Reach the secret beach"
     },
     {
-        "difficulty": 21,
-        "name": "Break all blue light bulbs in AA",
-        "synergy": 0,
-        "types": []
+        "name": "Break all blue light bulbs in AA"
     },
     {
-        "difficulty": 14,
-        "name": "Beat the AA crossroad puzzle",
-        "synergy": 0,
-        "types": []
+        "name": "Beat the AA crossroad puzzle"
     },
     {
-        "difficulty": 18,
-        "name": "Kill 3 invisible enemies in Classroom",
-        "synergy": 0,
-        "types": []
+        "name": "Kill 3 invisible enemies in Classroom"
     },
     {
-        "difficulty": 10,
-        "name": "Kill all dogs",
-        "synergy": 0,
-        "types": []
+        "name": "Kill all dogs"
     },
     {
-        "difficulty": 19,
-        "name": "Avoid ringing bells in Rooftop yourself",
-        "synergy": 0,
-        "types": []
+        "name": "Avoid ringing bells in Rooftop yourself"
     },
     {
-        "difficulty": 8,
-        "name": "Collect all gems in the AoE hub",
-        "synergy": 0,
-        "types": []
+        "name": "Collect all gems in the AoE hub"
     },
     {
-        "difficulty": 5,
-        "name": "Kill everything in the village",
-        "synergy": 0,
-        "types": []
+        "name": "Kill everything in the village"
     },
     {
-        "difficulty": 22,
-        "name": "Backtrack from AA's entrance to BP while OoB",
-        "synergy": 0,
-        "types": []
+        "name": "Backtrack from AA's entrance to BP while OoB"
     },
     {
-        "difficulty": 11,
-        "name": "Yellow gem in IC using Cortex",
-        "synergy": 0,
-        "types": []
+        "name": "Yellow gem in IC using Cortex"
     },
     {
-        "difficulty": 25,
-        "name": "100% two levels from different hubs",
-        "synergy": 0,
-        "types": []
+        "name": "100% two levels from different hubs"
     },
     {
-        "difficulty": 12,
-        "name": "Beat all enemies after the bus chase",
-        "synergy": 0,
-        "types": []
+        "name": "Beat all enemies after the bus chase"
     },
     {
-        "difficulty": 16,
-        "name": "Collect the first gem in BRD as Zombie",
-        "synergy": 0,
-        "types": []
+        "name": "Collect the first gem in BRD as Zombie"
     },
     {
-        "difficulty": 9,
-        "name": "Escape from the drill chase",
-        "synergy": 0,
-        "types": []
+        "name": "Escape from the drill chase"
     },
     {
-        "difficulty": 3,
-        "name": "Take Cortex to the first beach",
-        "synergy": 0,
-        "types": []
+        "name": "Take Cortex to the first beach"
     },
     {
-        "difficulty": 6,
-        "name": "Look at Tikimon from below",
-        "synergy": 0,
-        "types": []
+        "name": "Look at Tikimon from below"
     },
     {
-        "difficulty": 4,
-        "name": "Complete Ernest Emu's worm minigame",
-        "synergy": 0,
-        "types": []
+        "name": "Complete Ernest Emu's worm minigame"
     },
     {
-        "difficulty": 23,
-        "name": "Beat any boss twice",
-        "synergy": 0,
-        "types": []
+        "name": "Beat any boss twice"
     },
     {
-        "difficulty": 15,
-        "name": "Destroy all life crates in the walrus chase",
-        "synergy": 0,
-        "types": []
+        "name": "Destroy all life crates in the walrus chase"
     },
     {
-        "difficulty": 17,
-        "name": "Stay on the BRD rodeo for 5 seconds",
-        "synergy": 0,
-        "types": []
+        "name": "Stay on the BRD rodeo for 5 seconds"
     },
     {
-        "difficulty": 13,
-        "name": "Kill every swinger in the swinger room",
-        "synergy": 0,
-        "types": []
+        "name": "Kill every swinger in the swinger room"
     },
     {
-        "difficulty": 20,
-        "name": "Collect 3 Cortex lives as Crash",
-        "synergy": 0,
-        "types": []
+        "name": "Collect 3 Cortex lives as Crash"
     },
     {
-        "difficulty": 7,
-        "name": "Beat Tikimon",
-        "synergy": 0,
-        "types": []
+        "name": "Beat Tikimon"
     },
     {
-        "difficulty": 1,
-        "name": "Highest reachable point of the beach chunk",
-        "synergy": 0,
-        "types": []
+        "name": "Highest reachable point of the beach chunk"
     },
     {
-        "difficulty": 24,
-        "name": "Enter a slide without triggering its cutscene",
-        "synergy": 0,
-        "types": []
+        "name": "Enter a slide without triggering its cutscene"
     }
 ]

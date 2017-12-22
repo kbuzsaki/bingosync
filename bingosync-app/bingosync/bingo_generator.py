@@ -47,4 +47,5 @@ class BingoGenerator:
 
 def process_card(card):
     # for some reason the first element of the list is a garbage None?
-    return card[1:]
+    card = card[1:]
+    return [{"name": goal.get("name", "")} for goal in card]

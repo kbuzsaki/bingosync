@@ -1,203 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Berry Juice",
-        "synergy": 0,
-        "types": [
-            "shuck"
-        ]
+        "name": "Berry Juice"
     },
     {
-        "difficulty": 22,
-        "name": "TM21 (Frustration) or TM27 (Return)",
-        "synergy": 0,
-        "types": [
-            "day"
-        ]
+        "name": "TM21 (Frustration) or TM27 (Return)"
     },
     {
-        "difficulty": 4,
-        "name": "10 pokemon owned",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "10 pokemon owned"
     },
     {
-        "difficulty": 11,
-        "name": "TM10 (Hidden Power)",
-        "synergy": 0,
-        "types": [
-            "time"
-        ]
+        "name": "TM10 (Hidden Power)"
     },
     {
-        "difficulty": 8,
-        "name": "Beedrill and Butterfree",
-        "synergy": 0,
-        "types": [
-            "buggy"
-        ]
+        "name": "Beedrill and Butterfree"
     },
     {
-        "difficulty": 14,
-        "name": "A Pokemon with 4 non-TM status moves",
-        "synergy": 0,
-        "types": [
-            "hop"
-        ]
+        "name": "A Pokemon with 4 non-TM status moves"
     },
     {
-        "difficulty": 6,
-        "name": "A Pokemon with 4 moves with STAB",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "A Pokemon with 4 moves with STAB"
     },
     {
-        "difficulty": 18,
-        "name": "Poliwhirl",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Poliwhirl"
     },
     {
-        "difficulty": 25,
-        "name": "Receive elixer from Fishing Guru",
-        "synergy": 0,
-        "types": [
-            "karp"
-        ]
+        "name": "Receive elixer from Fishing Guru"
     },
     {
-        "difficulty": 2,
-        "name": "Koffing",
-        "synergy": 0,
-        "types": [
-            "gas"
-        ]
+        "name": "Koffing"
     },
     {
-        "difficulty": 23,
-        "name": "3 level 30 Pokemon",
-        "synergy": 0,
-        "types": [
-            "red"
-        ]
+        "name": "3 level 30 Pokemon"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat all 4 trainers in National Park",
-        "synergy": 0,
-        "types": [
-            "park"
-        ]
+        "name": "Defeat all 4 trainers in National Park"
     },
     {
-        "difficulty": 12,
-        "name": "A Pokemon with Focus Energy",
-        "synergy": 0,
-        "types": [
-            "focus"
-        ]
+        "name": "A Pokemon with Focus Energy"
     },
     {
-        "difficulty": 9,
-        "name": "Noctowl",
-        "synergy": 0,
-        "types": [
-            "trees"
-        ]
+        "name": "Noctowl"
     },
     {
-        "difficulty": 16,
-        "name": "Heracross",
-        "synergy": 0,
-        "types": [
-            "hera"
-        ]
+        "name": "Heracross"
     },
     {
-        "difficulty": 7,
-        "name": "TM50 (Nightmare)",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "TM50 (Nightmare)"
     },
     {
-        "difficulty": 19,
-        "name": "Nidoking or Nidoqueen",
-        "synergy": 0,
-        "types": [
-            "nido"
-        ]
+        "name": "Nidoking or Nidoqueen"
     },
     {
-        "difficulty": 21,
-        "name": "Electrode",
-        "synergy": 0,
-        "types": [
-            "elec"
-        ]
+        "name": "Electrode"
     },
     {
-        "difficulty": 3,
-        "name": "Magikarp",
-        "synergy": 0,
-        "types": [
-            "lol"
-        ]
+        "name": "Magikarp"
     },
     {
-        "difficulty": 15,
-        "name": "King's Rock",
-        "synergy": 0,
-        "types": [
-            "slow"
-        ]
+        "name": "King's Rock"
     },
     {
-        "difficulty": 1,
-        "name": "Radio Card",
-        "synergy": 0,
-        "types": [
-            "radio"
-        ]
+        "name": "Radio Card"
     },
     {
-        "difficulty": 13,
-        "name": "A shiny Pokemon",
-        "synergy": 0,
-        "types": [
-            "waters"
-        ]
+        "name": "A shiny Pokemon"
     },
     {
-        "difficulty": 10,
-        "name": "Do not heal at any Pokemon Centers",
-        "synergy": 0,
-        "types": [
-            "heal",
-            "instant"
-        ]
+        "name": "Do not heal at any Pokemon Centers"
     },
     {
-        "difficulty": 17,
-        "name": "Defeat Lapras",
-        "synergy": 0,
-        "types": [
-            "day"
-        ]
+        "name": "Defeat Lapras"
     },
     {
-        "difficulty": 24,
-        "name": "Lanturn",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Lanturn"
     }
 ]

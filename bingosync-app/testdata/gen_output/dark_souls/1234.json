@@ -1,227 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Take Binoculars as gift",
-        "synergy": 0,
-        "types": [
-            "startingitem",
-            "restrict_key"
-        ]
+        "name": "Take Binoculars as gift"
     },
     {
-        "difficulty": 21,
-        "name": "Get pushed by Patches",
-        "synergy": 0,
-        "types": [
-            "npcs",
-            "totg"
-        ]
+        "name": "Get pushed by Patches"
     },
     {
-        "difficulty": 14,
-        "name": "Obtain Silver Knight Set",
-        "synergy": 0,
-        "types": [
-            "anorlondo",
-            "armour"
-        ]
+        "name": "Obtain Silver Knight Set"
     },
     {
-        "difficulty": 18,
-        "name": "Kill Gwynevere",
-        "synergy": 3,
-        "types": [
-            "anorlondo",
-            "ornsmo"
-        ]
+        "name": "Kill Gwynevere"
     },
     {
-        "difficulty": 10,
-        "name": "Obtain Peculiar Doll",
-        "synergy": 0,
-        "types": [
-            "asylum",
-            "items"
-        ]
+        "name": "Obtain Peculiar Doll"
     },
     {
-        "difficulty": 19,
-        "name": "Obtain Black Iron Set",
-        "synergy": 0,
-        "types": [
-            "paintedworld",
-            "guardians"
-        ]
+        "name": "Obtain Black Iron Set"
     },
     {
-        "difficulty": 8,
-        "name": "Obtain Composite Bow",
-        "synergy": 0,
-        "types": [
-            "weapons",
-            "drakeslondo",
-            "items"
-        ]
+        "name": "Obtain Composite Bow"
     },
     {
-        "difficulty": 5,
-        "name": "Obtain Soul of the Moonlight Butterfly",
-        "synergy": 0,
-        "types": [
-            "bosses",
-            "darkroot"
-        ]
+        "name": "Obtain Soul of the Moonlight Butterfly"
     },
     {
-        "difficulty": 22,
-        "name": "Obtain Antiquated Set",
-        "synergy": 0,
-        "types": [
-            "darkroothard",
-            "dusk",
-            "spells"
-        ]
+        "name": "Obtain Antiquated Set"
     },
     {
-        "difficulty": 11,
-        "name": "Murder Chaos Covenant Leader",
-        "synergy": 0,
-        "types": [
-            "demonruins",
-            "npcs",
-            "covenant"
-        ]
+        "name": "Murder Chaos Covenant Leader"
     },
     {
-        "difficulty": 25,
-        "name": "36 Dexterity",
-        "synergy": 0,
-        "types": [
-            "stats",
-            "attack"
-        ]
+        "name": "36 Dexterity"
     },
     {
-        "difficulty": 12,
-        "name": "Kill All 3 Giants in Sens",
-        "synergy": 0,
-        "types": [
-            "enemies",
-            "sens"
-        ]
+        "name": "Kill All 3 Giants in Sens"
     },
     {
-        "difficulty": 16,
-        "name": "Only heal with Humanities",
-        "synergy": 0,
-        "types": [
-            "restriction",
-            "restrict_consumable"
-        ]
+        "name": "Only heal with Humanities"
     },
     {
-        "difficulty": 9,
-        "name": "Craft a Fire Weapon",
-        "synergy": 0,
-        "types": [
-            "vamos",
-            "catacombs"
-        ]
+        "name": "Craft a Fire Weapon"
     },
     {
-        "difficulty": 3,
-        "name": "No Rings",
-        "synergy": 3,
-        "types": [
-            "restriction",
-            "restrict_armour"
-        ]
+        "name": "No Rings"
     },
     {
-        "difficulty": 6,
-        "name": "Kill Gaping Dragon",
-        "synergy": 0,
-        "types": [
-            "bosses",
-            "depths"
-        ]
+        "name": "Kill Gaping Dragon"
     },
     {
-        "difficulty": 4,
-        "name": "Bloodbite Ring",
-        "synergy": 0,
-        "types": [
-            "rings",
-            "parish"
-        ]
+        "name": "Bloodbite Ring"
     },
     {
-        "difficulty": 23,
-        "name": "Obtain Cloranthy Ring",
-        "synergy": 0,
-        "types": [
-            "ashlake"
-        ]
+        "name": "Obtain Cloranthy Ring"
     },
     {
-        "difficulty": 15,
-        "name": "Kill Crestfallen Merchant",
-        "synergy": 0,
-        "types": [
-            "sens",
-            "npc"
-        ]
+        "name": "Kill Crestfallen Merchant"
     },
     {
-        "difficulty": 17,
-        "name": "Obtain Ring of the Sun's Firstborn",
-        "synergy": 0,
-        "types": [
-            "anorlondo"
-        ]
+        "name": "Obtain Ring of the Sun's Firstborn"
     },
     {
-        "difficulty": 13,
-        "name": "Summon Witch Beatrice",
-        "synergy": 0,
-        "types": [
-            "npcs",
-            "Beatrice"
-        ]
+        "name": "Summon Witch Beatrice"
     },
     {
-        "difficulty": 20,
-        "name": "Obtain Painting Guardian Set",
-        "synergy": 0,
-        "types": [
-            "paintedworld",
-            "armour"
-        ]
+        "name": "Obtain Painting Guardian Set"
     },
     {
-        "difficulty": 7,
-        "name": "Obtain Remedy",
-        "synergy": 0,
-        "types": [
-            "sorcery",
-            "blighttown"
-        ]
+        "name": "Obtain Remedy"
     },
     {
-        "difficulty": 1,
-        "name": "Depraved Class",
-        "synergy": 0,
-        "types": [
-            "startingclass"
-        ]
+        "name": "Depraved Class"
     },
     {
-        "difficulty": 24,
-        "name": "36 Endurance",
-        "synergy": 0,
-        "types": [
-            "stats",
-            "condition"
-        ]
+        "name": "36 Endurance"
     }
 ]

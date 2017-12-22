@@ -1,203 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "4 Different types of Poke Ball",
-        "synergy": 0,
-        "types": [
-            "ball"
-        ]
+        "name": "4 Different types of Poke Ball"
     },
     {
-        "difficulty": 21,
-        "name": "80 Pokemon seen",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "80 Pokemon seen"
     },
     {
-        "difficulty": 14,
-        "name": "Mystic Water",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Mystic Water"
     },
     {
-        "difficulty": 18,
-        "name": "4 Rare Candies",
-        "synergy": 0,
-        "types": [
-            "rare"
-        ]
+        "name": "4 Rare Candies"
     },
     {
-        "difficulty": 10,
-        "name": "Graveler",
-        "synergy": 0,
-        "types": [
-            "gravel"
-        ]
+        "name": "Graveler"
     },
     {
-        "difficulty": 19,
-        "name": "A Pokemon with pursuit",
-        "synergy": 0,
-        "types": [
-            "suit"
-        ]
+        "name": "A Pokemon with pursuit"
     },
     {
-        "difficulty": 8,
-        "name": "Beedrill and Butterfree",
-        "synergy": 0,
-        "types": [
-            "buggy"
-        ]
+        "name": "Beedrill and Butterfree"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat all 4 trainers in National Park",
-        "synergy": 0,
-        "types": [
-            "park"
-        ]
+        "name": "Defeat all 4 trainers in National Park"
     },
     {
-        "difficulty": 22,
-        "name": "TM21 (Frustration) or TM27 (Return)",
-        "synergy": 0,
-        "types": [
-            "day"
-        ]
+        "name": "TM21 (Frustration) or TM27 (Return)"
     },
     {
-        "difficulty": 11,
-        "name": "Phanpy",
-        "synergy": 0,
-        "types": [
-            "time"
-        ]
+        "name": "Phanpy"
     },
     {
-        "difficulty": 25,
-        "name": "Jumpluff",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Jumpluff"
     },
     {
-        "difficulty": 12,
-        "name": "Corsola",
-        "synergy": 0,
-        "types": [
-            "rod"
-        ]
+        "name": "Corsola"
     },
     {
-        "difficulty": 16,
-        "name": "Heracross",
-        "synergy": 0,
-        "types": [
-            "hera"
-        ]
+        "name": "Heracross"
     },
     {
-        "difficulty": 9,
-        "name": "7 Different berries",
-        "synergy": 0,
-        "types": [
-            "berry"
-        ]
+        "name": "7 Different berries"
     },
     {
-        "difficulty": 3,
-        "name": "Teach TM12 (Sweet Scent)",
-        "synergy": 0,
-        "types": [
-            "bug"
-        ]
+        "name": "Teach TM12 (Sweet Scent)"
     },
     {
-        "difficulty": 6,
-        "name": "Slowpoke",
-        "synergy": 0,
-        "types": [
-            "dopey"
-        ]
+        "name": "Slowpoke"
     },
     {
-        "difficulty": 4,
-        "name": "Growlithe",
-        "synergy": 0,
-        "types": [
-            "grow"
-        ]
+        "name": "Growlithe"
     },
     {
-        "difficulty": 23,
-        "name": "Sandslash",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Sandslash"
     },
     {
-        "difficulty": 15,
-        "name": "King's Rock",
-        "synergy": 0,
-        "types": [
-            "slow"
-        ]
+        "name": "King's Rock"
     },
     {
-        "difficulty": 17,
-        "name": "Stop starter evolving 6 times",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Stop starter evolving 6 times"
     },
     {
-        "difficulty": 13,
-        "name": "Do not use any TMs",
-        "synergy": 0,
-        "types": [
-            "tm",
-            "instant"
-        ]
+        "name": "Do not use any TMs"
     },
     {
-        "difficulty": 20,
-        "name": "Granbull",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Granbull"
     },
     {
-        "difficulty": 7,
-        "name": "Ariados",
-        "synergy": 0,
-        "types": [
-            "time"
-        ]
+        "name": "Ariados"
     },
     {
-        "difficulty": 1,
-        "name": "Itemfinder",
-        "synergy": 0,
-        "types": [
-            "item"
-        ]
+        "name": "Itemfinder"
     },
     {
-        "difficulty": 24,
-        "name": "30 Pokemon owned",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "30 Pokemon owned"
     }
 ]

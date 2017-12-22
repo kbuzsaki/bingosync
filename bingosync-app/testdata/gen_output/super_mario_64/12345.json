@@ -1,210 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "All Stars in TTC",
-        "synergy": 0,
-        "types": [
-            "TTC"
-        ]
+        "name": "All Stars in TTC"
     },
     {
-        "difficulty": 12,
-        "name": "All Stars in LLL",
-        "synergy": 0,
-        "types": [
-            "LLL"
-        ]
+        "name": "All Stars in LLL"
     },
     {
-        "difficulty": 1,
-        "name": "Peach's Slide x 2",
-        "synergy": 0,
-        "types": [
-            "secrets"
-        ]
+        "name": "Peach's Slide x 2"
     },
     {
-        "difficulty": 10,
-        "name": "Open 5 Cannons",
-        "synergy": 0,
-        "types": [
-            "cannons"
-        ]
+        "name": "Open 5 Cannons"
     },
     {
-        "difficulty": 23,
-        "name": "6 Stars in BBH",
-        "synergy": 0,
-        "types": [
-            "BBH"
-        ]
+        "name": "6 Stars in BBH"
     },
     {
-        "difficulty": 6,
-        "name": "2 Cap Stage Stars",
-        "synergy": 0,
-        "types": [
-            "wingcap",
-            "vanishcap",
-            "metalcap",
-            "secrets"
-        ]
+        "name": "2 Cap Stage Stars"
     },
     {
-        "difficulty": 25,
-        "name": "All Stars in RR",
-        "synergy": 0,
-        "types": [
-            "RR"
-        ]
+        "name": "All Stars in RR"
     },
     {
-        "difficulty": 18,
-        "name": "All Stars in BOB",
-        "synergy": 0,
-        "types": [
-            "BOB"
-        ]
+        "name": "All Stars in BOB"
     },
     {
-        "difficulty": 14,
-        "name": "30 Lives",
-        "synergy": 0,
-        "types": [
-            "lives"
-        ]
+        "name": "30 Lives"
     },
     {
-        "difficulty": 2,
-        "name": "Collect 120 Coins in one stage",
-        "synergy": 0,
-        "types": [
-            "WF",
-            "hundredcoin"
-        ]
+        "name": "Collect 120 Coins in one stage"
     },
     {
-        "difficulty": 13,
-        "name": "4 Stars each from BOB and CCM",
-        "synergy": 0,
-        "types": [
-            "BOB",
-            "CCM"
-        ]
+        "name": "4 Stars each from BOB and CCM"
     },
     {
-        "difficulty": 4,
-        "name": "Red Coin Star in HMC",
-        "synergy": 0,
-        "types": [
-            "HMC"
-        ]
+        "name": "Red Coin Star in HMC"
     },
     {
-        "difficulty": 7,
-        "name": "100 Coin Star in LLL",
-        "synergy": 0,
-        "types": [
-            "LLL"
-        ]
+        "name": "100 Coin Star in LLL"
     },
     {
-        "difficulty": 21,
-        "name": "At least 3 stars from 8 stages",
-        "synergy": 0,
-        "types": [
-            "starseach",
-            "manystar"
-        ]
+        "name": "At least 3 stars from 8 stages"
     },
     {
-        "difficulty": 20,
-        "name": "6 Stars in WDW",
-        "synergy": 0,
-        "types": [
-            "WDW"
-        ]
+        "name": "6 Stars in WDW"
     },
     {
-        "difficulty": 22,
-        "name": "35 Total Stars",
-        "synergy": 0,
-        "types": [
-            "manystar"
-        ]
+        "name": "35 Total Stars"
     },
     {
-        "difficulty": 16,
-        "name": "5 Stars in SL",
-        "synergy": 0,
-        "types": [
-            "SL"
-        ]
+        "name": "5 Stars in SL"
     },
     {
-        "difficulty": 15,
-        "name": "Rematch with Koopa the Quick THI",
-        "synergy": 0,
-        "types": [
-            "THI"
-        ]
+        "name": "Rematch with Koopa the Quick THI"
     },
     {
-        "difficulty": 3,
-        "name": "Secret Aquarium Star",
-        "synergy": 0,
-        "types": [
-            "aquarium"
-        ]
+        "name": "Secret Aquarium Star"
     },
     {
-        "difficulty": 9,
-        "name": "Three Bowser Stage Red Coin Stars",
-        "synergy": 0,
-        "types": [
-            "bowserreds",
-            "secrets"
-        ]
+        "name": "Three Bowser Stage Red Coin Stars"
     },
     {
-        "difficulty": 5,
-        "name": "Collect 140 Coins in one stage",
-        "synergy": 0,
-        "types": [
-            "hundredcoin"
-        ]
+        "name": "Collect 140 Coins in one stage"
     },
     {
-        "difficulty": 8,
-        "name": "100 Coin Star in JRB",
-        "synergy": 0,
-        "types": [
-            "JRB"
-        ]
+        "name": "100 Coin Star in JRB"
     },
     {
-        "difficulty": 24,
-        "name": "6 Stars in DDD",
-        "synergy": 0,
-        "types": [
-            "DDD"
-        ]
+        "name": "6 Stars in DDD"
     },
     {
-        "difficulty": 17,
-        "name": "3 Stars each from TTC and RR",
-        "synergy": 0,
-        "types": [
-            "TTC",
-            "RR"
-        ]
+        "name": "3 Stars each from TTC and RR"
     },
     {
-        "difficulty": 11,
-        "name": "Mystery of the Monkey Cage TTM",
-        "synergy": 0,
-        "types": [
-            "TTM"
-        ]
+        "name": "Mystery of the Monkey Cage TTM"
     }
 ]

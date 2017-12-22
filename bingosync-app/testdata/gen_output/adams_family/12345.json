@@ -1,127 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Hit the switch in THE CONSEVATORY from the left side",
-        "synergy": 0
+        "name": "Hit the switch in THE CONSEVATORY from the left side"
     },
     {
-        "difficulty": 12,
-        "name": "Clear the Water Sectioon in THE MINE SHAFT",
-        "synergy": 0
+        "name": "Clear the Water Sectioon in THE MINE SHAFT"
     },
     {
-        "difficulty": 1,
-        "name": "Clear the West and East Chimney normal",
-        "synergy": 0
+        "name": "Clear the West and East Chimney normal"
     },
     {
-        "difficulty": 10,
-        "name": "Complete THE GONDOLA without touching the water",
-        "synergy": 0
+        "name": "Complete THE GONDOLA without touching the water"
     },
     {
-        "difficulty": 23,
-        "name": " Get all 1UPs in the CRYPTIC CLIMB",
-        "synergy": 0
+        "name": " Get all 1UPs in the CRYPTIC CLIMB"
     },
     {
-        "difficulty": 6,
-        "name": "Read 5 Textboxes",
-        "synergy": 0
+        "name": "Read 5 Textboxes"
     },
     {
-        "difficulty": 25,
-        "name": "Get 5 different Single Spot Hearts",
-        "synergy": 0
+        "name": "Get 5 different Single Spot Hearts"
     },
     {
-        "difficulty": 18,
-        "name": "Judge Softlock",
-        "synergy": 0
+        "name": "Judge Softlock"
     },
     {
-        "difficulty": 14,
-        "name": "COMPLETE THE DARK ROOM by taking the leftmost door",
-        "synergy": 0
+        "name": "COMPLETE THE DARK ROOM by taking the leftmost door"
     },
     {
-        "difficulty": 2,
-        "name": "Kill the Rave by holding the shield",
-        "synergy": 0
+        "name": "Kill the Rave by holding the shield"
     },
     {
-        "difficulty": 13,
-        "name": "Complete JESTERs JUMP from the right side",
-        "synergy": 0
+        "name": "Complete JESTERs JUMP from the right side"
     },
     {
-        "difficulty": 4,
-        "name": "Get 5 different Fezicopter",
-        "synergy": 0
+        "name": "Get 5 different Fezicopter"
     },
     {
-        "difficulty": 7,
-        "name": "Save Pugsley without using the Secret Door",
-        "synergy": 0
+        "name": "Save Pugsley without using the Secret Door"
     },
     {
-        "difficulty": 21,
-        "name": "Get all Money at the top of THE CRAZY CRYPT",
-        "synergy": 0
+        "name": "Get all Money at the top of THE CRAZY CRYPT"
     },
     {
-        "difficulty": 20,
-        "name": "Use the left Door in THE PIRANHA TANK",
-        "synergy": 0
+        "name": "Use the left Door in THE PIRANHA TANK"
     },
     {
-        "difficulty": 22,
-        "name": "Every digit of your score has to be the same except for the last one and score has to be at least 10000",
-        "synergy": 0
+        "name": "Every digit of your score has to be the same except for the last one and score has to be at least 10000"
     },
     {
-        "difficulty": 16,
-        "name": "Save Wednesday and Eudora",
-        "synergy": 0
+        "name": "Save Wednesday and Eudora"
     },
     {
-        "difficulty": 15,
-        "name": "Clear THE COOKIE JAR",
-        "synergy": 0
+        "name": "Clear THE COOKIE JAR"
     },
     {
-        "difficulty": 3,
-        "name": "Kill the Goblin with the Sword",
-        "synergy": 0
+        "name": "Kill the Goblin with the Sword"
     },
     {
-        "difficulty": 9,
-        "name": "Clear THE 1UP ROOM",
-        "synergy": 0
+        "name": "Clear THE 1UP ROOM"
     },
     {
-        "difficulty": 5,
-        "name": "Get 50000 Points",
-        "synergy": 0
+        "name": "Get 50000 Points"
     },
     {
-        "difficulty": 8,
-        "name": "Kill the Judge with the Sword",
-        "synergy": 0
+        "name": "Kill the Judge with the Sword"
     },
     {
-        "difficulty": 24,
-        "name": "Get the Heart at the Bubble Race Part at THE FIRING FISH",
-        "synergy": 0
+        "name": "Get the Heart at the Bubble Race Part at THE FIRING FISH"
     },
     {
-        "difficulty": 17,
-        "name": "Furnace Clip",
-        "synergy": 0
+        "name": "Furnace Clip"
     },
     {
-        "difficulty": 11,
-        "name": "Complete the Conservatory without  using the hidden door under the entrance",
-        "synergy": 0
+        "name": "Complete the Conservatory without  using the hidden door under the entrance"
     }
 ]

@@ -1,211 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Practice Sword",
-        "synergy": 0,
-        "types": [
-            "Skyloft"
-        ]
+        "name": "Practice Sword"
     },
     {
-        "difficulty": 21,
-        "name": "3 Unique Iron Shields",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "3 Unique Iron Shields"
     },
     {
-        "difficulty": 14,
-        "name": "Destroy all of Scaldera's Rocks",
-        "synergy": 0,
-        "types": [
-            "Earth"
-        ]
+        "name": "Destroy all of Scaldera's Rocks"
     },
     {
-        "difficulty": 18,
-        "name": "8 Heart Pieces",
-        "synergy": 0,
-        "types": [
-            "Hearts"
-        ]
+        "name": "8 Heart Pieces"
     },
     {
-        "difficulty": 10,
-        "name": "4 Eldin Bird Statues",
-        "synergy": 0,
-        "types": [
-            "Statues",
-            "Eldin"
-        ]
+        "name": "4 Eldin Bird Statues"
     },
     {
-        "difficulty": 19,
-        "name": "Fortified Shield",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "Fortified Shield"
     },
     {
-        "difficulty": 8,
-        "name": "Orielle's Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "Orielle's Gratitude Crystals"
     },
     {
-        "difficulty": 5,
-        "name": "Win the Wing Ceremony Twice",
-        "synergy": 0,
-        "types": [
-            "BiT",
-            "Skyloft"
-        ]
+        "name": "Win the Wing Ceremony Twice"
     },
     {
-        "difficulty": 22,
-        "name": "Goddess Harp",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Goddess Harp"
     },
     {
-        "difficulty": 11,
-        "name": "3 Medals",
-        "synergy": 0,
-        "types": [
-            "Medals"
-        ]
+        "name": "3 Medals"
     },
     {
-        "difficulty": 25,
-        "name": "Talk to Yerbal",
-        "synergy": 0,
-        "types": [
-            "Harp",
-            "BiT"
-        ]
+        "name": "Talk to Yerbal"
     },
     {
-        "difficulty": 12,
-        "name": "3 Unique Potion Upgrades",
-        "synergy": 0,
-        "types": [
-            "Potions",
-            "Bottles"
-        ]
+        "name": "3 Unique Potion Upgrades"
     },
     {
-        "difficulty": 16,
-        "name": "Braced Shield",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "Braced Shield"
     },
     {
-        "difficulty": 9,
-        "name": "Skyview Dungeon Map",
-        "synergy": 0,
-        "types": [
-            "Map",
-            "Skyview"
-        ]
+        "name": "Skyview Dungeon Map"
     },
     {
-        "difficulty": 3,
-        "name": "Beedle's Gratitude Crystal",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "Beedle's Gratitude Crystal"
     },
     {
-        "difficulty": 6,
-        "name": "10 Amber Relics",
-        "synergy": 0,
-        "types": [
-            "Treasures"
-        ]
+        "name": "10 Amber Relics"
     },
     {
-        "difficulty": 4,
-        "name": "Finish the Sword Tutorial",
-        "synergy": 0,
-        "types": [
-            "Skyloft"
-        ]
+        "name": "Finish the Sword Tutorial"
     },
     {
-        "difficulty": 23,
-        "name": "Open 40 Chests",
-        "synergy": 0,
-        "types": [
-            "Chests"
-        ]
+        "name": "Open 40 Chests"
     },
     {
-        "difficulty": 15,
-        "name": "10 Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes"
-        ]
+        "name": "10 Goddess Cubes"
     },
     {
-        "difficulty": 17,
-        "name": "Five map beacons",
-        "synergy": 0,
-        "types": [
-            "Lanayru"
-        ]
+        "name": "Five map beacons"
     },
     {
-        "difficulty": 13,
-        "name": "Zelda's Gratitude Crystal",
-        "synergy": 0,
-        "types": [
-            "End",
-            "Crystals",
-            "Sailcloth"
-        ]
+        "name": "Zelda's Gratitude Crystal"
     },
     {
-        "difficulty": 20,
-        "name": "Baby's Rattle",
-        "synergy": 0,
-        "types": [
-            "Misc"
-        ]
+        "name": "Baby's Rattle"
     },
     {
-        "difficulty": 7,
-        "name": "5 Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes"
-        ]
+        "name": "5 Goddess Cubes"
     },
     {
-        "difficulty": 1,
-        "name": "Glittering Spores",
-        "synergy": 0,
-        "types": [
-            "Bottles",
-            "Faron"
-        ]
+        "name": "Glittering Spores"
     },
     {
-        "difficulty": 24,
-        "name": "Reseal the Imprisoned",
-        "synergy": 0,
-        "types": [
-            "Harp",
-            "Imp"
-        ]
+        "name": "Reseal the Imprisoned"
     }
 ]

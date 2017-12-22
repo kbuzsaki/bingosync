@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "4 different types of Pok\u00e9 Ball",
-        "synergy": 0,
-        "types": [
-            "ball"
-        ]
+        "name": "4 different types of Pok\u00e9 Ball"
     },
     {
-        "difficulty": 21,
-        "name": "Defeat Electrode",
-        "synergy": 0,
-        "types": [
-            "elec"
-        ]
+        "name": "Defeat Electrode"
     },
     {
-        "difficulty": 14,
-        "name": "Mystic Water",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Mystic Water"
     },
     {
-        "difficulty": 18,
-        "name": "Wobbuffet, Girafarig, or Stantler",
-        "synergy": 0,
-        "types": [
-            "tails"
-        ]
+        "name": "Wobbuffet, Girafarig, or Stantler"
     },
     {
-        "difficulty": 10,
-        "name": "Slowpoke or Poliwag",
-        "synergy": 0,
-        "types": [
-            "split"
-        ]
+        "name": "Slowpoke or Poliwag"
     },
     {
-        "difficulty": 19,
-        "name": "A Pokemon with Explosion or Selfdestruct",
-        "synergy": 0,
-        "types": [
-            "boom"
-        ]
+        "name": "A Pokemon with Explosion or Selfdestruct"
     },
     {
-        "difficulty": 8,
-        "name": "Sandslash or Arbok",
-        "synergy": 0,
-        "types": [
-            "22"
-        ]
+        "name": "Sandslash or Arbok"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat all 4 trainers in National Park",
-        "synergy": 0,
-        "types": [
-            "park"
-        ]
+        "name": "Defeat all 4 trainers in National Park"
     },
     {
-        "difficulty": 22,
-        "name": "Call a Black Belt",
-        "synergy": 0,
-        "types": [
-            "call"
-        ]
+        "name": "Call a Black Belt"
     },
     {
-        "difficulty": 11,
-        "name": "Noctowl or Xatu",
-        "synergy": 0,
-        "types": [
-            "birds"
-        ]
+        "name": "Noctowl or Xatu"
     },
     {
-        "difficulty": 25,
-        "name": "Mewtwo or Mew",
-        "synergy": 0,
-        "types": [
-            "mew"
-        ]
+        "name": "Mewtwo or Mew"
     },
     {
-        "difficulty": 12,
-        "name": "A Dragon type Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "dragon"
-        ]
+        "name": "A Dragon type Pok\u00e9mon"
     },
     {
-        "difficulty": 16,
-        "name": "Mankey or Meowth",
-        "synergy": 0,
-        "types": [
-            "28"
-        ]
+        "name": "Mankey or Meowth"
     },
     {
-        "difficulty": 9,
-        "name": "7 different types of Berry",
-        "synergy": 0,
-        "types": [
-            "berry"
-        ]
+        "name": "7 different types of Berry"
     },
     {
-        "difficulty": 3,
-        "name": "Win Bug Catching contest",
-        "synergy": 0,
-        "types": [
-            "place"
-        ]
+        "name": "Win Bug Catching contest"
     },
     {
-        "difficulty": 6,
-        "name": "A Pok\u00e9mon with 4 STAB moves",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "A Pok\u00e9mon with 4 STAB moves"
     },
     {
-        "difficulty": 4,
-        "name": "Clefable or Wigglytuff",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Clefable or Wigglytuff"
     },
     {
-        "difficulty": 23,
-        "name": "Miltank or Tauros",
-        "synergy": 0,
-        "types": [
-            "moo"
-        ]
+        "name": "Miltank or Tauros"
     },
     {
-        "difficulty": 15,
-        "name": "King's Rock",
-        "synergy": 0,
-        "types": [
-            "slow"
-        ]
+        "name": "King's Rock"
     },
     {
-        "difficulty": 17,
-        "name": "Onix or Scyther",
-        "synergy": 0,
-        "types": [
-            "metal"
-        ]
+        "name": "Onix or Scyther"
     },
     {
-        "difficulty": 13,
-        "name": "A shiny Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "waters"
-        ]
+        "name": "A shiny Pok\u00e9mon"
     },
     {
-        "difficulty": 20,
-        "name": "Articuno, Zapdos, or Moltres",
-        "synergy": 0,
-        "types": [
-            "gen1legends"
-        ]
+        "name": "Articuno, Zapdos, or Moltres"
     },
     {
-        "difficulty": 7,
-        "name": "Weepinbell or Gloom",
-        "synergy": 0,
-        "types": [
-            "21"
-        ]
+        "name": "Weepinbell or Gloom"
     },
     {
-        "difficulty": 1,
-        "name": "Itemfinder",
-        "synergy": 0,
-        "types": [
-            "item"
-        ]
+        "name": "Itemfinder"
     },
     {
-        "difficulty": 24,
-        "name": "Blackglasses",
-        "synergy": 0,
-        "types": [
-            "dark"
-        ]
+        "name": "Blackglasses"
     }
 ]

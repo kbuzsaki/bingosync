@@ -1,152 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "All end of level orbs",
-        "synergy": 0,
-        "types": []
+        "name": "All end of level orbs"
     },
     {
-        "difficulty": 18,
-        "name": "All orbs in Aquaria Towers",
-        "synergy": 0,
-        "types": []
+        "name": "All orbs in Aquaria Towers"
     },
     {
-        "difficulty": 15,
-        "name": "Buy Climb and Headbash",
-        "synergy": 0,
-        "types": []
+        "name": "Buy Climb and Headbash"
     },
     {
-        "difficulty": 7,
-        "name": "Dinos 1, Spirit Statues & Turtle Soup 1 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Dinos 1, Spirit Statues & Turtle Soup 1 orbs"
     },
     {
-        "difficulty": 1,
-        "name": "100% Glimmer",
-        "synergy": 0,
-        "types": []
+        "name": "100% Glimmer"
     },
     {
-        "difficulty": 10,
-        "name": "800 combined Homeworld gems",
-        "synergy": 0,
-        "types": []
+        "name": "800 combined Homeworld gems"
     },
     {
-        "difficulty": 2,
-        "name": "100% Crystal Glacier",
-        "synergy": 0,
-        "types": []
+        "name": "100% Crystal Glacier"
     },
     {
-        "difficulty": 21,
-        "name": "225 gems in both Zephyr & Cloud Temples",
-        "synergy": 0,
-        "types": []
+        "name": "225 gems in both Zephyr & Cloud Temples"
     },
     {
-        "difficulty": 19,
-        "name": "Destroy 3 ?-mark bottles",
-        "synergy": 0,
-        "types": []
+        "name": "Destroy 3 ?-mark bottles"
     },
     {
-        "difficulty": 13,
-        "name": "Seahorses & Hula girls orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Seahorses & Hula girls orbs"
     },
     {
-        "difficulty": 16,
-        "name": "Factory Glide 2 & Juliet 1 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Factory Glide 2 & Juliet 1 orbs"
     },
     {
-        "difficulty": 14,
-        "name": "Activate all powerups in Glimmer, Idol Springs & Skelos Badlands",
-        "synergy": 0,
-        "types": []
+        "name": "Activate all powerups in Glimmer, Idol Springs & Skelos Badlands"
     },
     {
-        "difficulty": 8,
-        "name": "Trolley & Draclets orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Trolley & Draclets orbs"
     },
     {
-        "difficulty": 5,
-        "name": "All gems in 3 speedways",
-        "synergy": 0,
-        "types": []
+        "name": "All gems in 3 speedways"
     },
     {
-        "difficulty": 22,
-        "name": "100% Skelos Badlands",
-        "synergy": 0,
-        "types": []
+        "name": "100% Skelos Badlands"
     },
     {
-        "difficulty": 3,
-        "name": "All gems in Mystic Marsh & all orbs in Glimmer",
-        "synergy": 0,
-        "types": []
+        "name": "All gems in Mystic Marsh & all orbs in Glimmer"
     },
     {
-        "difficulty": 25,
-        "name": "100% Winter Tundra Homeworld",
-        "synergy": 0,
-        "types": []
+        "name": "100% Winter Tundra Homeworld"
     },
     {
-        "difficulty": 17,
-        "name": "Mantas 2 & Party Crashers orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Mantas 2 & Party Crashers orbs"
     },
     {
-        "difficulty": 11,
-        "name": "650 combined gems in Idol Springs & Scorch",
-        "synergy": 0,
-        "types": []
+        "name": "650 combined gems in Idol Springs & Scorch"
     },
     {
-        "difficulty": 9,
-        "name": "Stand on top of 6 portals that you own the talisman for",
-        "synergy": 0,
-        "types": []
+        "name": "Stand on top of 6 portals that you own the talisman for"
     },
     {
-        "difficulty": 12,
-        "name": "600 combined gems in Skelos Badlands & Fracture Hills",
-        "synergy": 0,
-        "types": []
+        "name": "600 combined gems in Skelos Badlands & Fracture Hills"
     },
     {
-        "difficulty": 6,
-        "name": "100% Magma Cone",
-        "synergy": 0,
-        "types": []
+        "name": "100% Magma Cone"
     },
     {
-        "difficulty": 4,
-        "name": "8 Winter Tundra orbs",
-        "synergy": 0,
-        "types": []
+        "name": "8 Winter Tundra orbs"
     },
     {
-        "difficulty": 23,
-        "name": "Mantas 1 & Agent 0 orb",
-        "synergy": 0,
-        "types": []
+        "name": "Mantas 1 & Agent 0 orb"
     },
     {
-        "difficulty": 20,
-        "name": "Unlock all Speedways",
-        "synergy": 0,
-        "types": []
+        "name": "Unlock all Speedways"
     }
 ]

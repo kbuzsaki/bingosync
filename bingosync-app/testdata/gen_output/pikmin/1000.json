@@ -1,229 +1,77 @@
 [
     {
-        "child": "no",
-        "difficulty": 24,
-        "name": "All parts in Forest Navel",
-        "synergy": 0,
-        "types": [
-            "all_parts"
-        ]
+        "name": "All parts in Forest Navel"
     },
     {
-        "child": "no",
-        "difficulty": 18,
-        "name": "Anti-Dioxin Filter",
-        "synergy": 0,
-        "types": [
-            "dioxin"
-        ]
+        "name": "Anti-Dioxin Filter"
     },
     {
-        "child": "no",
-        "difficulty": 15,
-        "name": "Have 150 Yellow Pikmin",
-        "synergy": 0,
-        "types": [
-            "count"
-        ]
+        "name": "Have 150 Yellow Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 7,
-        "name": "Omega Stabilizer",
-        "synergy": 0,
-        "types": [
-            "puffstool"
-        ]
+        "name": "Omega Stabilizer"
     },
     {
-        "child": "no",
-        "difficulty": 1,
-        "name": "Whimsical Radar",
-        "synergy": 0,
-        "types": [
-            "radar"
-        ]
+        "name": "Whimsical Radar"
     },
     {
-        "child": "no",
-        "difficulty": 10,
-        "name": "Analog Computer",
-        "synergy": 0,
-        "types": [
-            "analog"
-        ]
+        "name": "Analog Computer"
     },
     {
-        "child": "no",
-        "difficulty": 2,
-        "name": "Defeat 4 regular Wollywogs",
-        "synergy": 0,
-        "types": [
-            "wolly"
-        ]
+        "name": "Defeat 4 regular Wollywogs"
     },
     {
-        "child": "no",
-        "difficulty": 21,
-        "name": "Never use nectar",
-        "synergy": 0,
-        "types": [
-            "nectar"
-        ]
+        "name": "Never use nectar"
     },
     {
-        "child": "no",
-        "difficulty": 19,
-        "name": "Defeat 3 different species of grubdog",
-        "synergy": 0,
-        "types": [
-            "grubdog"
-        ]
+        "name": "Defeat 3 different species of grubdog"
     },
     {
-        "child": "no",
-        "difficulty": 13,
-        "name": "Build all 5 bridges in Forest Navel",
-        "synergy": 0,
-        "types": [
-            "obstacle"
-        ]
+        "name": "Build all 5 bridges in Forest Navel"
     },
     {
-        "child": "no",
-        "difficulty": 16,
-        "name": "Defeat 2 Puffy Blowhogs",
-        "synergy": 0,
-        "types": [
-            "puffy"
-        ]
+        "name": "Defeat 2 Puffy Blowhogs"
     },
     {
-        "child": "no",
-        "difficulty": 14,
-        "name": "Defeat a Spotty Bulbear using bomb rocks",
-        "synergy": 0,
-        "types": [
-            "bear",
-            "grubdog",
-            "bomb"
-        ]
+        "name": "Defeat a Spotty Bulbear using bomb rocks"
     },
     {
-        "child": "no",
-        "difficulty": 8,
-        "name": "Positron Generator",
-        "synergy": 0,
-        "types": [
-            "is"
-        ]
+        "name": "Positron Generator"
     },
     {
-        "child": "no",
-        "difficulty": 5,
-        "name": "Sagittarius without Blue Pikmin",
-        "synergy": 0,
-        "types": [
-            "sagi"
-        ]
+        "name": "Sagittarius without Blue Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 22,
-        "name": "Zirconium Rotor",
-        "synergy": 0,
-        "types": [
-            "zirconium"
-        ]
+        "name": "Zirconium Rotor"
     },
     {
-        "child": "no",
-        "difficulty": 3,
-        "name": "Defeat the Wogpoles in Forest of Hope",
-        "synergy": 0,
-        "types": [
-            "wogpole"
-        ]
+        "name": "Defeat the Wogpoles in Forest of Hope"
     },
     {
-        "child": "no",
-        "difficulty": 25,
-        "name": "Bowsprit",
-        "synergy": 0,
-        "types": [
-            "acb"
-        ]
+        "name": "Bowsprit"
     },
     {
-        "child": "no",
-        "difficulty": 17,
-        "name": "Throw 20 Pikmin in a Candypop Bud",
-        "synergy": 0,
-        "types": [
-            "candypop"
-        ]
+        "name": "Throw 20 Pikmin in a Candypop Bud"
     },
     {
-        "child": "no",
-        "difficulty": 11,
-        "name": "Gluon Drive",
-        "synergy": 0,
-        "types": [
-            "gluon"
-        ]
+        "name": "Gluon Drive"
     },
     {
-        "child": "no",
-        "difficulty": 9,
-        "name": "Defeat 7 Water Dumples",
-        "synergy": 0,
-        "types": [
-            "grubdog"
-        ]
+        "name": "Defeat 7 Water Dumples"
     },
     {
-        "child": "no",
-        "difficulty": 12,
-        "name": "Repair-type Bolt",
-        "synergy": 0,
-        "types": [
-            "repair"
-        ]
+        "name": "Repair-type Bolt"
     },
     {
-        "child": "no",
-        "difficulty": 6,
-        "name": "Automatic Gear",
-        "synergy": 0,
-        "types": [
-            "gear"
-        ]
+        "name": "Automatic Gear"
     },
     {
-        "child": "no",
-        "difficulty": 4,
-        "name": "Have a Blue Pikmin 'lifeguard' a drowning Pikmin",
-        "synergy": 0,
-        "types": [
-            "lifeguard"
-        ]
+        "name": "Have a Blue Pikmin 'lifeguard' a drowning Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 23,
-        "name": "Defeat 3 Burrowing Snagrets",
-        "synergy": 0,
-        "types": [
-            "snagret"
-        ]
+        "name": "Defeat 3 Burrowing Snagrets"
     },
     {
-        "child": "no",
-        "difficulty": 20,
-        "name": "UV Lamp",
-        "synergy": 0,
-        "types": [
-            "un"
-        ]
+        "name": "UV Lamp"
     }
 ]

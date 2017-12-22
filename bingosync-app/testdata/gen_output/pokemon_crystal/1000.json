@@ -1,204 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "$50,000",
-        "synergy": 0,
-        "types": [
-            "money",
-            "cash"
-        ]
+        "name": "$50,000"
     },
     {
-        "difficulty": 18,
-        "name": "Encounter Suicune on route 42",
-        "synergy": 0,
-        "types": [
-            "cune"
-        ]
+        "name": "Encounter Suicune on route 42"
     },
     {
-        "difficulty": 15,
-        "name": "Soft Sand",
-        "synergy": 0,
-        "types": [
-            "pro"
-        ]
+        "name": "Soft Sand"
     },
     {
-        "difficulty": 7,
-        "name": "Farfetch'd",
-        "synergy": 0,
-        "types": [
-            "time"
-        ]
+        "name": "Farfetch'd"
     },
     {
-        "difficulty": 1,
-        "name": "Radio Card",
-        "synergy": 0,
-        "types": [
-            "radio"
-        ]
+        "name": "Radio Card"
     },
     {
-        "difficulty": 10,
-        "name": "Do not heal at any Pokemon Centers",
-        "synergy": 0,
-        "types": [
-            "heal",
-            "instant"
-        ]
+        "name": "Do not heal at any Pokemon Centers"
     },
     {
-        "difficulty": 2,
-        "name": "4 Different types of Poke Ball",
-        "synergy": 0,
-        "types": [
-            "ball"
-        ]
+        "name": "4 Different types of Poke Ball"
     },
     {
-        "difficulty": 21,
-        "name": "3 baby Pokemon",
-        "synergy": 0,
-        "types": [
-            "egg"
-        ]
+        "name": "3 baby Pokemon"
     },
     {
-        "difficulty": 19,
-        "name": "A Pokemon with pursuit",
-        "synergy": 0,
-        "types": [
-            "suit"
-        ]
+        "name": "A Pokemon with pursuit"
     },
     {
-        "difficulty": 13,
-        "name": "Catch Shuckle",
-        "synergy": 0,
-        "types": [
-            "shuck"
-        ]
+        "name": "Catch Shuckle"
     },
     {
-        "difficulty": 16,
-        "name": "Evolve Eevee",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Evolve Eevee"
     },
     {
-        "difficulty": 14,
-        "name": "Mystic Water",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Mystic Water"
     },
     {
-        "difficulty": 8,
-        "name": "Unown Pokedex",
-        "synergy": 0,
-        "types": [
-            "unown"
-        ]
+        "name": "Unown Pokedex"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat all 4 trainers in National Park",
-        "synergy": 0,
-        "types": [
-            "park"
-        ]
+        "name": "Defeat all 4 trainers in National Park"
     },
     {
-        "difficulty": 22,
-        "name": "Own 10 different Flying type Pokemon",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Own 10 different Flying type Pokemon"
     },
     {
-        "difficulty": 3,
-        "name": "Rattata",
-        "synergy": 0,
-        "types": [
-            "lol"
-        ]
+        "name": "Rattata"
     },
     {
-        "difficulty": 25,
-        "name": "Win a Battle Tower match",
-        "synergy": 0,
-        "types": [
-            "gg"
-        ]
+        "name": "Win a Battle Tower match"
     },
     {
-        "difficulty": 17,
-        "name": "Xatu",
-        "synergy": 0,
-        "types": [
-            "alph"
-        ]
+        "name": "Xatu"
     },
     {
-        "difficulty": 11,
-        "name": "HM05 (Flash)",
-        "synergy": 0,
-        "types": [
-            "flash"
-        ]
+        "name": "HM05 (Flash)"
     },
     {
-        "difficulty": 9,
-        "name": "Noctowl",
-        "synergy": 0,
-        "types": [
-            "trees"
-        ]
+        "name": "Noctowl"
     },
     {
-        "difficulty": 12,
-        "name": "Corsola",
-        "synergy": 0,
-        "types": [
-            "rod"
-        ]
+        "name": "Corsola"
     },
     {
-        "difficulty": 6,
-        "name": "Cubone",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "Cubone"
     },
     {
-        "difficulty": 4,
-        "name": "Growlithe",
-        "synergy": 0,
-        "types": [
-            "grow"
-        ]
+        "name": "Growlithe"
     },
     {
-        "difficulty": 23,
-        "name": "Glacierbadge",
-        "synergy": 0,
-        "types": [
-            "whirl"
-        ]
+        "name": "Glacierbadge"
     },
     {
-        "difficulty": 20,
-        "name": "Max phonebook",
-        "synergy": 0,
-        "types": [
-            "battles"
-        ]
+        "name": "Max phonebook"
     }
 ]

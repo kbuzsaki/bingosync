@@ -1,203 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Electrode",
-        "synergy": 0,
-        "types": [
-            "elec"
-        ]
+        "name": "Electrode"
     },
     {
-        "difficulty": 22,
-        "name": "$75,000",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "$75,000"
     },
     {
-        "difficulty": 4,
-        "name": "10 pokemon owned",
-        "synergy": 0,
-        "types": [
-            "dex"
-        ]
+        "name": "10 pokemon owned"
     },
     {
-        "difficulty": 11,
-        "name": "HM5 (Flash)",
-        "synergy": 0,
-        "types": [
-            "hm"
-        ]
+        "name": "HM5 (Flash)"
     },
     {
-        "difficulty": 8,
-        "name": "Defeat 3 Scientists",
-        "synergy": 0,
-        "types": [
-            "science"
-        ]
+        "name": "Defeat 3 Scientists"
     },
     {
-        "difficulty": 14,
-        "name": "Defeat 5 Jugglers",
-        "synergy": 0,
-        "types": [
-            "balls"
-        ]
+        "name": "Defeat 5 Jugglers"
     },
     {
-        "difficulty": 6,
-        "name": "Arcanine or Ninetales",
-        "synergy": 0,
-        "types": [
-            "fires"
-        ]
+        "name": "Arcanine or Ninetales"
     },
     {
-        "difficulty": 18,
-        "name": "5 Badges",
-        "synergy": 0,
-        "types": [
-            "badges"
-        ]
+        "name": "5 Badges"
     },
     {
-        "difficulty": 25,
-        "name": "Any level 50 pokemon",
-        "synergy": 0,
-        "types": [
-            "zapdos"
-        ]
+        "name": "Any level 50 pokemon"
     },
     {
-        "difficulty": 2,
-        "name": "Farfetch'd",
-        "synergy": 0,
-        "types": [
-            "trades"
-        ]
+        "name": "Farfetch'd"
     },
     {
-        "difficulty": 23,
-        "name": "Cubone",
-        "synergy": 0,
-        "types": [
-            "cubone"
-        ]
+        "name": "Cubone"
     },
     {
-        "difficulty": 5,
-        "name": "Any pokemon with 4 status moves",
-        "synergy": 0,
-        "types": [
-            "moves"
-        ]
+        "name": "Any pokemon with 4 status moves"
     },
     {
-        "difficulty": 12,
-        "name": "Cloyster",
-        "synergy": 0,
-        "types": [
-            "waters"
-        ]
+        "name": "Cloyster"
     },
     {
-        "difficulty": 9,
-        "name": "TM42 (Dream Eater)",
-        "synergy": 0,
-        "types": [
-            "dream"
-        ]
+        "name": "TM42 (Dream Eater)"
     },
     {
-        "difficulty": 16,
-        "name": "TM16 (Payday)",
-        "synergy": 0,
-        "types": [
-            "payday"
-        ]
+        "name": "TM16 (Payday)"
     },
     {
-        "difficulty": 7,
-        "name": "Finish on the SS Anne",
-        "synergy": 0,
-        "types": [
-            "finish"
-        ]
+        "name": "Finish on the SS Anne"
     },
     {
-        "difficulty": 19,
-        "name": "Psyduck",
-        "synergy": 0,
-        "types": [
-            "Seafoam"
-        ]
+        "name": "Psyduck"
     },
     {
-        "difficulty": 21,
-        "name": "Arbok or Sandslash",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Arbok or Sandslash"
     },
     {
-        "difficulty": 3,
-        "name": "TM 19 (Seismic Toss)",
-        "synergy": 0,
-        "types": [
-            "seismic"
-        ]
+        "name": "TM 19 (Seismic Toss)"
     },
     {
-        "difficulty": 15,
-        "name": "Golbat",
-        "synergy": 0,
-        "types": [
-            "golbat"
-        ]
+        "name": "Golbat"
     },
     {
-        "difficulty": 1,
-        "name": "View the Space Shuttle Columbia",
-        "synergy": 0,
-        "types": [
-            "space"
-        ]
+        "name": "View the Space Shuttle Columbia"
     },
     {
-        "difficulty": 13,
-        "name": "Super Rod",
-        "synergy": 0,
-        "types": [
-            "super"
-        ]
+        "name": "Super Rod"
     },
     {
-        "difficulty": 10,
-        "name": "Use no repels",
-        "synergy": 0,
-        "types": [
-            "repel",
-            "instant"
-        ]
+        "name": "Use no repels"
     },
     {
-        "difficulty": 17,
-        "name": "Venomoth",
-        "synergy": 0,
-        "types": [
-            "venomoth"
-        ]
+        "name": "Venomoth"
     },
     {
-        "difficulty": 24,
-        "name": "Release starter before level 11.",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Release starter before level 11."
     }
 ]

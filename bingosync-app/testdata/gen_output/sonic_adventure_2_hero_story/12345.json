@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Finish any mission with 25+ Lives (No Underflow)",
-        "synergy": 0,
-        "types": [
-            "gameover"
-        ]
+        "name": "Finish any mission with 25+ Lives (No Underflow)"
     },
     {
-        "difficulty": 12,
-        "name": "Pumpkin Hill M4",
-        "synergy": 0,
-        "types": [
-            "pumpkinhill"
-        ]
+        "name": "Pumpkin Hill M4"
     },
     {
-        "difficulty": 1,
-        "name": "2 Chao Boxes in City Escape and finish",
-        "synergy": 0,
-        "types": [
-            "cityescape"
-        ]
+        "name": "2 Chao Boxes in City Escape and finish"
     },
     {
-        "difficulty": 10,
-        "name": "Metal Harbor M5 A-Rank",
-        "synergy": 0,
-        "types": [
-            "metalharbor",
-            "arank"
-        ]
+        "name": "Metal Harbor M5 A-Rank"
     },
     {
-        "difficulty": 23,
-        "name": "2 Chao Boxes in Crazy Gadget and finish",
-        "synergy": 0,
-        "types": [
-            "crazygadget"
-        ]
+        "name": "2 Chao Boxes in Crazy Gadget and finish"
     },
     {
-        "difficulty": 6,
-        "name": "Metal Harbor M3",
-        "synergy": 0,
-        "types": [
-            "metalharbor"
-        ]
+        "name": "Metal Harbor M3"
     },
     {
-        "difficulty": 25,
-        "name": "Eternal Engine M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "eternalengine",
-            "arank"
-        ]
+        "name": "Eternal Engine M4 A-Rank"
     },
     {
-        "difficulty": 18,
-        "name": "Death Chamber M1 Hintless",
-        "synergy": 0,
-        "types": [
-            "deathchamber"
-        ]
+        "name": "Death Chamber M1 Hintless"
     },
     {
-        "difficulty": 14,
-        "name": "2 Chao Boxes in Aquatic Mine and finish",
-        "synergy": 0,
-        "types": [
-            "aquaticmine"
-        ]
+        "name": "2 Chao Boxes in Aquatic Mine and finish"
     },
     {
-        "difficulty": 2,
-        "name": "Wild Canyon M3 B-Rank",
-        "synergy": 0,
-        "types": [
-            "wildcanyon",
-            "brank"
-        ]
+        "name": "Wild Canyon M3 B-Rank"
     },
     {
-        "difficulty": 13,
-        "name": "Pumpkin Hill M5",
-        "synergy": 0,
-        "types": [
-            "pumpkinhill"
-        ]
+        "name": "Pumpkin Hill M5"
     },
     {
-        "difficulty": 4,
-        "name": "Complete Prison Lane M1 with a Green Shield",
-        "synergy": 0,
-        "types": [
-            "prisonlane"
-        ]
+        "name": "Complete Prison Lane M1 with a Green Shield"
     },
     {
-        "difficulty": 7,
-        "name": "Metal Harbor M3 B-Rank",
-        "synergy": 0,
-        "types": [
-            "metalharbor",
-            "brank"
-        ]
+        "name": "Metal Harbor M3 B-Rank"
     },
     {
-        "difficulty": 21,
-        "name": "Complete Eternal Engine M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "eternalengine"
-        ]
+        "name": "Complete Eternal Engine M1 with 100+ Rings"
     },
     {
-        "difficulty": 20,
-        "name": "Death Chamber M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "deathchamber",
-            "arank"
-        ]
+        "name": "Death Chamber M4 A-Rank"
     },
     {
-        "difficulty": 22,
-        "name": "Complete Meteor Herd M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "meteorherd"
-        ]
+        "name": "Complete Meteor Herd M1 with 100+ Rings"
     },
     {
-        "difficulty": 16,
-        "name": "Route 101 M3",
-        "synergy": 0,
-        "types": [
-            "route101"
-        ]
+        "name": "Route 101 M3"
     },
     {
-        "difficulty": 15,
-        "name": "Aquatic Mine M4",
-        "synergy": 0,
-        "types": [
-            "aquaticmine"
-        ]
+        "name": "Aquatic Mine M4"
     },
     {
-        "difficulty": 3,
-        "name": "Wild Canyon M5",
-        "synergy": 0,
-        "types": [
-            "wildcanyon"
-        ]
+        "name": "Wild Canyon M5"
     },
     {
-        "difficulty": 9,
-        "name": "Pacifist Green Forest M1",
-        "synergy": 0,
-        "types": [
-            "greenforest"
-        ]
+        "name": "Pacifist Green Forest M1"
     },
     {
-        "difficulty": 5,
-        "name": "Wild Canyon All Missions A-Rank",
-        "synergy": 0,
-        "types": [
-            "wildcanyon",
-            "arank",
-            "allmissions"
-        ]
+        "name": "Wild Canyon All Missions A-Rank"
     },
     {
-        "difficulty": 8,
-        "name": "500 Total Rings",
-        "synergy": 0,
-        "types": [
-            "rings"
-        ]
+        "name": "500 Total Rings"
     },
     {
-        "difficulty": 24,
-        "name": "Sonic's Mystic Melody",
-        "synergy": 0,
-        "types": [
-            "finalrush"
-        ]
+        "name": "Sonic's Mystic Melody"
     },
     {
-        "difficulty": 17,
-        "name": "Complete Hidden Base M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "hiddenbase"
-        ]
+        "name": "Complete Hidden Base M1 with 100+ Rings"
     },
     {
-        "difficulty": 11,
-        "name": "5 hidden Chao animals in Pumpkin Hill and finish",
-        "synergy": 0,
-        "types": [
-            "pumpkinhill"
-        ]
+        "name": "5 hidden Chao animals in Pumpkin Hill and finish"
     }
 ]

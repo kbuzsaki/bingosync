@@ -1,228 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Barbarian Helm \u2605",
-        "synergy": 0,
-        "types": [
-            "Clothes",
-            "Barbarian Gear",
-            "Great Fairy",
-            "Lynel"
-        ]
+        "name": "Barbarian Helm \u2605"
     },
     {
-        "difficulty": 22,
-        "name": "'A Wife Washed Away' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Lanayru"
-        ]
+        "name": "'A Wife Washed Away' Side Quest"
     },
     {
-        "difficulty": 4,
-        "name": "Activate Hateno Tower",
-        "synergy": 0,
-        "types": [
-            "Tower",
-            "Hateno"
-        ]
+        "name": "Activate Hateno Tower"
     },
     {
-        "difficulty": 11,
-        "name": "3 Tabantha Shrines",
-        "synergy": 0,
-        "types": [
-            "Shrine",
-            "Tabantha"
-        ]
+        "name": "3 Tabantha Shrines"
     },
     {
-        "difficulty": 8,
-        "name": "Any 'Forest Dweller's' Equipment item",
-        "synergy": 0,
-        "types": [
-            "Equipment"
-        ]
+        "name": "Any 'Forest Dweller's' Equipment item"
     },
     {
-        "difficulty": 14,
-        "name": "'Curry for What Ails You' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Tabantha",
-            "Eldin"
-        ]
+        "name": "'Curry for What Ails You' Side Quest"
     },
     {
-        "difficulty": 6,
-        "name": "Hard-Boiled Egg",
-        "synergy": 0,
-        "types": [
-            "Cooking"
-        ]
+        "name": "Hard-Boiled Egg"
     },
     {
-        "difficulty": 18,
-        "name": "15 Akkala Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok",
-            "Akkala"
-        ]
+        "name": "15 Akkala Koroks"
     },
     {
-        "difficulty": 25,
-        "name": "Activate 10 Towers",
-        "synergy": 0,
-        "types": [
-            "Tower"
-        ]
+        "name": "Activate 10 Towers"
     },
     {
-        "difficulty": 2,
-        "name": "Give Beedle a Beetle",
-        "synergy": 0,
-        "types": [
-            "Horse"
-        ]
+        "name": "Give Beedle a Beetle"
     },
     {
-        "difficulty": 23,
-        "name": "15 Shrines",
-        "synergy": 0,
-        "types": [
-            "Shrine"
-        ]
+        "name": "15 Shrines"
     },
     {
-        "difficulty": 5,
-        "name": "Activate Central Tower",
-        "synergy": 0,
-        "types": [
-            "Tower",
-            "Central Hyrule"
-        ]
+        "name": "Activate Central Tower"
     },
     {
-        "difficulty": 12,
-        "name": "Collect 1 Picture Memory",
-        "synergy": 0,
-        "types": [
-            "Camera"
-        ]
+        "name": "Collect 1 Picture Memory"
     },
     {
-        "difficulty": 9,
-        "name": "9 Ridgeland Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok",
-            "Ridgeland"
-        ]
+        "name": "9 Ridgeland Koroks"
     },
     {
-        "difficulty": 16,
-        "name": "'The Road to Respect' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Eldin",
-            "Talus"
-        ]
+        "name": "'The Road to Respect' Side Quest"
     },
     {
-        "difficulty": 7,
-        "name": "Activate Gerudo Tower",
-        "synergy": 0,
-        "types": [
-            "Tower",
-            "Gerudo"
-        ]
+        "name": "Activate Gerudo Tower"
     },
     {
-        "difficulty": 19,
-        "name": "Climbing Gear",
-        "synergy": 0,
-        "types": [
-            "Clothes",
-            "Climbing Gear",
-            "Hateno"
-        ]
+        "name": "Climbing Gear"
     },
     {
-        "difficulty": 21,
-        "name": "'The Ancient Rito Song' Shrine Quest",
-        "synergy": 0,
-        "types": [
-            "Shrine",
-            "Shrine Quest",
-            "Tabantha"
-        ]
+        "name": "'The Ancient Rito Song' Shrine Quest"
     },
     {
-        "difficulty": 3,
-        "name": "Open 2 Bokoblin Camp Chests",
-        "synergy": 0,
-        "types": [
-            "Plateau"
-        ]
+        "name": "Open 2 Bokoblin Camp Chests"
     },
     {
-        "difficulty": 15,
-        "name": "Kill a Lynel",
-        "synergy": 0,
-        "types": [
-            "Miniboss",
-            "Lynel"
-        ]
+        "name": "Kill a Lynel"
     },
     {
-        "difficulty": 1,
-        "name": "3 Ridgeland Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok",
-            "Ridgeland"
-        ]
+        "name": "3 Ridgeland Koroks"
     },
     {
-        "difficulty": 13,
-        "name": "Kill a Frost Talus",
-        "synergy": 0,
-        "types": [
-            "Rupee",
-            "Gems",
-            "Miniboss",
-            "Talus",
-            "Cold Resistance"
-        ]
+        "name": "Kill a Frost Talus"
     },
     {
-        "difficulty": 10,
-        "name": "Any Guardian Shield",
-        "synergy": 0,
-        "types": [
-            "Equipment",
-            "Guardian"
-        ]
+        "name": "Any Guardian Shield"
     },
     {
-        "difficulty": 17,
-        "name": "15 Equipment in Compendium",
-        "synergy": 0,
-        "types": [
-            "Camera",
-            "Compendium"
-        ]
+        "name": "15 Equipment in Compendium"
     },
     {
-        "difficulty": 24,
-        "name": "16 Shrines",
-        "synergy": 0,
-        "types": [
-            "Shrine"
-        ]
+        "name": "16 Shrines"
     }
 ]

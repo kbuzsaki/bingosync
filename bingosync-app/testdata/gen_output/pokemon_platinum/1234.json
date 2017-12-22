@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Catch a Pok\u00e9mon with the Old Rod",
-        "synergy": 0,
-        "types": [
-            "fishing"
-        ]
+        "name": "Catch a Pok\u00e9mon with the Old Rod"
     },
     {
-        "difficulty": 21,
-        "name": "HM03 (Surf)",
-        "synergy": 0,
-        "types": [
-            "surf"
-        ]
+        "name": "HM03 (Surf)"
     },
     {
-        "difficulty": 14,
-        "name": "Absol, Stunky, or Glameow",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Absol, Stunky, or Glameow"
     },
     {
-        "difficulty": 18,
-        "name": "Land a move with at most 70% accuracy",
-        "synergy": 0,
-        "types": [
-            "miss"
-        ]
+        "name": "Land a move with at most 70% accuracy"
     },
     {
-        "difficulty": 10,
-        "name": "Defeat 8 spinners",
-        "synergy": 0,
-        "types": [
-            "trainers"
-        ]
+        "name": "Defeat 8 spinners"
     },
     {
-        "difficulty": 19,
-        "name": "Teach 4 TMs to the same Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "tms"
-        ]
+        "name": "Teach 4 TMs to the same Pok\u00e9mon"
     },
     {
-        "difficulty": 8,
-        "name": "Defeat all 11 trainers on Route 205",
-        "synergy": 0,
-        "types": [
-            "trainers"
-        ]
+        "name": "Defeat all 11 trainers on Route 205"
     },
     {
-        "difficulty": 5,
-        "name": "5 different type-boosting items",
-        "synergy": 0,
-        "types": [
-            "typeitems"
-        ]
+        "name": "5 different type-boosting items"
     },
     {
-        "difficulty": 22,
-        "name": "20 different Pok\u00e9mon owned",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "20 different Pok\u00e9mon owned"
     },
     {
-        "difficulty": 11,
-        "name": "BlackGlasses, Wise Glasses, or Choice Specs",
-        "synergy": 0,
-        "types": [
-            "celestic"
-        ]
+        "name": "BlackGlasses, Wise Glasses, or Choice Specs"
     },
     {
-        "difficulty": 25,
-        "name": "Defeat all 11 trainers in Route 210\u2019s fog",
-        "synergy": 0,
-        "types": [
-            "fog"
-        ]
+        "name": "Defeat all 11 trainers in Route 210\u2019s fog"
     },
     {
-        "difficulty": 12,
-        "name": "Enter Amity Square",
-        "synergy": 0,
-        "types": [
-            "amity"
-        ]
+        "name": "Enter Amity Square"
     },
     {
-        "difficulty": 16,
-        "name": "Defeat the maids at Mr. Backlot\u2019s Mansion",
-        "synergy": 0,
-        "types": [
-            "mansion"
-        ]
+        "name": "Defeat the maids at Mr. Backlot\u2019s Mansion"
     },
     {
-        "difficulty": 9,
-        "name": "Luxio, Mightyena, or Houndoom",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Luxio, Mightyena, or Houndoom"
     },
     {
-        "difficulty": 3,
-        "name": "Slather honey on 10 different trees",
-        "synergy": 0,
-        "types": [
-            "honey"
-        ]
+        "name": "Slather honey on 10 different trees"
     },
     {
-        "difficulty": 6,
-        "name": "10 different Pok\u00e9mon owned",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "10 different Pok\u00e9mon owned"
     },
     {
-        "difficulty": 4,
-        "name": "Apply a Ball Seal to a Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "seals"
-        ]
+        "name": "Apply a Ball Seal to a Pok\u00e9mon"
     },
     {
-        "difficulty": 23,
-        "name": "Use Struggle",
-        "synergy": 0,
-        "types": [
-            "pp"
-        ]
+        "name": "Use Struggle"
     },
     {
-        "difficulty": 15,
-        "name": "A Pok\u00e9mon with a weather-related ability",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "A Pok\u00e9mon with a weather-related ability"
     },
     {
-        "difficulty": 17,
-        "name": "Use a stone to evolve a Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "evolve"
-        ]
+        "name": "Use a stone to evolve a Pok\u00e9mon"
     },
     {
-        "difficulty": 13,
-        "name": "A Pok\u00e9mon with 4 non-TM status moves",
-        "synergy": 0,
-        "types": [
-            "hms"
-        ]
+        "name": "A Pok\u00e9mon with 4 non-TM status moves"
     },
     {
-        "difficulty": 20,
-        "name": "A Pok\u00e9mon with an item-related ability",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "A Pok\u00e9mon with an item-related ability"
     },
     {
-        "difficulty": 7,
-        "name": "TM92 (Trick Room)",
-        "synergy": 0,
-        "types": [
-            "hotel"
-        ]
+        "name": "TM92 (Trick Room)"
     },
     {
-        "difficulty": 1,
-        "name": "Quick Claw",
-        "synergy": 0,
-        "types": [
-            "jubilife"
-        ]
+        "name": "Quick Claw"
     },
     {
-        "difficulty": 24,
-        "name": "Get all 3 TMs in Oreburgh Gate",
-        "synergy": 0,
-        "types": [
-            "surf"
-        ]
+        "name": "Get all 3 TMs in Oreburgh Gate"
     }
 ]

@@ -1,212 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "15+ Super Missiles",
-        "synergy": 0,
-        "types": [
-            "supermissile"
-        ]
+        "name": "15+ Super Missiles"
     },
     {
-        "difficulty": 21,
-        "name": "Defeat Spore Spawn and Botwoon",
-        "synergy": 0,
-        "types": [
-            "sporespawn",
-            "botwoon"
-        ]
+        "name": "Defeat Spore Spawn and Botwoon"
     },
     {
-        "difficulty": 14,
-        "name": "Finish in Metal Pirate room",
-        "synergy": 0,
-        "types": [
-            "finish"
-        ]
+        "name": "Finish in Metal Pirate room"
     },
     {
-        "difficulty": 18,
-        "name": "Collect X-Ray Scope and skip Grapple Beam",
-        "synergy": 0,
-        "types": [
-            "xrayscope",
-            "grapplebeam"
-        ]
+        "name": "Collect X-Ray Scope and skip Grapple Beam"
     },
     {
-        "difficulty": 10,
-        "name": "7+ Energy Tanks and 70+ Missiles",
-        "synergy": 0,
-        "types": [
-            "energytank",
-            "missile"
-        ]
+        "name": "7+ Energy Tanks and 70+ Missiles"
     },
     {
-        "difficulty": 19,
-        "name": "Collect only 1 of Varia Suit or Gravity Suit",
-        "synergy": 0,
-        "types": [
-            "variasuit",
-            "gravitysuit"
-        ]
+        "name": "Collect only 1 of Varia Suit or Gravity Suit"
     },
     {
-        "difficulty": 8,
-        "name": "Norfair Reserve Tank",
-        "synergy": 0,
-        "types": [
-            "reservetank"
-        ]
+        "name": "Norfair Reserve Tank"
     },
     {
-        "difficulty": 5,
-        "name": "Skip Spazer",
-        "synergy": 0,
-        "types": [
-            "spazer"
-        ]
+        "name": "Skip Spazer"
     },
     {
-        "difficulty": 22,
-        "name": "Defeat Draygon",
-        "synergy": 0,
-        "types": [
-            "draygon"
-        ]
+        "name": "Defeat Draygon"
     },
     {
-        "difficulty": 11,
-        "name": "Crateria Power Bomb",
-        "synergy": 0,
-        "types": [
-            "powerbomb"
-        ]
+        "name": "Crateria Power Bomb"
     },
     {
-        "difficulty": 25,
-        "name": "Collect Plasma Beam or defeat Ridley",
-        "synergy": 0,
-        "types": [
-            "plasma",
-            "ridley",
-            "draygon"
-        ]
+        "name": "Collect Plasma Beam or defeat Ridley"
     },
     {
-        "difficulty": 12,
-        "name": "Collect all 15 Wrecked Ship Missiles",
-        "synergy": 0,
-        "types": [
-            "missile"
-        ]
+        "name": "Collect all 15 Wrecked Ship Missiles"
     },
     {
-        "difficulty": 16,
-        "name": "35+ Power Bombs",
-        "synergy": 0,
-        "types": [
-            "powerbomb"
-        ]
+        "name": "35+ Power Bombs"
     },
     {
-        "difficulty": 9,
-        "name": "8+ Energy Tanks",
-        "synergy": 0,
-        "types": [
-            "energytank"
-        ]
+        "name": "8+ Energy Tanks"
     },
     {
-        "difficulty": 3,
-        "name": "Skip Charge Beam",
-        "synergy": 0,
-        "types": [
-            "chargebeam"
-        ]
+        "name": "Skip Charge Beam"
     },
     {
-        "difficulty": 6,
-        "name": "Ice Beam",
-        "synergy": 0,
-        "types": [
-            "icebeam"
-        ]
+        "name": "Ice Beam"
     },
     {
-        "difficulty": 4,
-        "name": "Skip Hi-Jump Boots",
-        "synergy": 0,
-        "types": [
-            "hijump"
-        ]
+        "name": "Skip Hi-Jump Boots"
     },
     {
-        "difficulty": 23,
-        "name": "Collect all 40 Maridia Missiles",
-        "synergy": 0,
-        "types": [
-            "missile"
-        ]
+        "name": "Collect all 40 Maridia Missiles"
     },
     {
-        "difficulty": 15,
-        "name": "Finish in Wrecked Ship Energy Tank room",
-        "synergy": 0,
-        "types": [
-            "finish",
-            "wsetroom"
-        ]
+        "name": "Finish in Wrecked Ship Energy Tank room"
     },
     {
-        "difficulty": 17,
-        "name": "3+ Reserve Tanks",
-        "synergy": 0,
-        "types": [
-            "reservetank"
-        ]
+        "name": "3+ Reserve Tanks"
     },
     {
-        "difficulty": 13,
-        "name": "Wrecked Ship Reserve Tank",
-        "synergy": 0,
-        "types": [
-            "reservetank",
-            "speedbooster"
-        ]
+        "name": "Wrecked Ship Reserve Tank"
     },
     {
-        "difficulty": 20,
-        "name": "Crateria Map Station or Wrecked Ship Map Station",
-        "synergy": 0,
-        "types": [
-            "crateriamap",
-            "wsmap"
-        ]
+        "name": "Crateria Map Station or Wrecked Ship Map Station"
     },
     {
-        "difficulty": 7,
-        "name": "7+ Energy Tanks",
-        "synergy": 0,
-        "types": [
-            "energytank"
-        ]
+        "name": "7+ Energy Tanks"
     },
     {
-        "difficulty": 1,
-        "name": "Defeat Spore Spawn",
-        "synergy": 0,
-        "types": [
-            "sporespawn"
-        ]
+        "name": "Defeat Spore Spawn"
     },
     {
-        "difficulty": 24,
-        "name": "Plasma Beam",
-        "synergy": 0,
-        "types": [
-            "plasmabeam",
-            "draygon"
-        ]
+        "name": "Plasma Beam"
     }
 ]

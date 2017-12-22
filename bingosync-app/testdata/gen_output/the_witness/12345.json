@@ -1,139 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Mill Control Room Panels",
-        "synergy": 0
+        "name": "Mill Control Room Panels"
     },
     {
-        "difficulty": 12,
-        "name": "Desert Laser",
-        "synergy": 0,
-        "types": [
-            "desert_laser"
-        ]
+        "name": "Desert Laser"
     },
     {
-        "difficulty": 1,
-        "name": "Tutorial Floor Panel",
-        "synergy": 0
+        "name": "Tutorial Floor Panel"
     },
     {
-        "difficulty": 10,
-        "name": "Windmill Third Blade EP",
-        "synergy": 0
+        "name": "Windmill Third Blade EP"
     },
     {
-        "difficulty": 23,
-        "name": "Swamp Yellow and Orange Underwater Line EPs",
-        "synergy": 0
+        "name": "Swamp Yellow and Orange Underwater Line EPs"
     },
     {
-        "difficulty": 6,
-        "name": "Both Desert Broken Wall EPs",
-        "synergy": 0
+        "name": "Both Desert Broken Wall EPs"
     },
     {
-        "difficulty": 25,
-        "name": "Treehouse Obelisk",
-        "synergy": 0
+        "name": "Treehouse Obelisk"
     },
     {
-        "difficulty": 18,
-        "name": "All 5 Keep Walk-On EPs",
-        "synergy": 0
+        "name": "All 5 Keep Walk-On EPs"
     },
     {
-        "difficulty": 14,
-        "name": "Symmetry Glass Factory",
-        "synergy": 0
+        "name": "Symmetry Glass Factory"
     },
     {
-        "difficulty": 2,
-        "name": "Squares Tutorial",
-        "synergy": 0
+        "name": "Squares Tutorial"
     },
     {
-        "difficulty": 13,
-        "name": "Listen to the Entire Peninsula Audio Log",
-        "synergy": 0,
-        "types": [
-            "audio_log"
-        ]
+        "name": "Listen to the Entire Peninsula Audio Log"
     },
     {
-        "difficulty": 4,
-        "name": "Quarry Entrance Pipe EP",
-        "synergy": 0
+        "name": "Quarry Entrance Pipe EP"
     },
     {
-        "difficulty": 7,
-        "name": "All 3 Town R/G/B Light Panels",
-        "synergy": 0
+        "name": "All 3 Town R/G/B Light Panels"
     },
     {
-        "difficulty": 21,
-        "name": "Any 4 Straight Line EPs",
-        "synergy": 0
+        "name": "Any 4 Straight Line EPs"
     },
     {
-        "difficulty": 20,
-        "name": "Boat Tutorial EP",
-        "synergy": 0,
-        "types": [
-            "boat_ep"
-        ]
+        "name": "Boat Tutorial EP"
     },
     {
-        "difficulty": 22,
-        "name": "Couch EP",
-        "synergy": 0
+        "name": "Couch EP"
     },
     {
-        "difficulty": 16,
-        "name": "Bunker Elevator Panel",
-        "synergy": 0
+        "name": "Bunker Elevator Panel"
     },
     {
-        "difficulty": 15,
-        "name": "Shipwreck Discarded Panel",
-        "synergy": 0,
-        "types": [
-            "discard"
-        ]
+        "name": "Shipwreck Discarded Panel"
     },
     {
-        "difficulty": 3,
-        "name": "Town Bell Tower Black Line EP",
-        "synergy": 0
+        "name": "Town Bell Tower Black Line EP"
     },
     {
-        "difficulty": 9,
-        "name": "Mill Door Panels",
-        "synergy": 0
+        "name": "Mill Door Panels"
     },
     {
-        "difficulty": 5,
-        "name": "Jungle Green Leaf Moss EP",
-        "synergy": 0
+        "name": "Jungle Green Leaf Moss EP"
     },
     {
-        "difficulty": 8,
-        "name": "Monastery Stone Wall EP",
-        "synergy": 0
+        "name": "Monastery Stone Wall EP"
     },
     {
-        "difficulty": 24,
-        "name": "Quarry Laser",
-        "synergy": 0
+        "name": "Quarry Laser"
     },
     {
-        "difficulty": 17,
-        "name": "Swamp Laser",
-        "synergy": 0
+        "name": "Swamp Laser"
     },
     {
-        "difficulty": 11,
-        "name": "Mountaintop Black Arch EP",
-        "synergy": 0
+        "name": "Mountaintop Black Arch EP"
     }
 ]

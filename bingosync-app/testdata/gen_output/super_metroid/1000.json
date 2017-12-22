@@ -1,213 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Plasma Beam",
-        "synergy": 0,
-        "types": [
-            "plasmabeam",
-            "draygon"
-        ]
+        "name": "Plasma Beam"
     },
     {
-        "difficulty": 18,
-        "name": "Visit the critters",
-        "synergy": 0,
-        "types": [
-            "speedbooster"
-        ]
+        "name": "Visit the critters"
     },
     {
-        "difficulty": 15,
-        "name": "Finish in Spore Spawn's room",
-        "synergy": 0,
-        "types": [
-            "finish",
-            "sporespawn"
-        ]
+        "name": "Finish in Spore Spawn's room"
     },
     {
-        "difficulty": 7,
-        "name": "100+ Missiles",
-        "synergy": 0,
-        "types": [
-            "missile"
-        ]
+        "name": "100+ Missiles"
     },
     {
-        "difficulty": 1,
-        "name": "3+ Energy Tanks",
-        "synergy": 0,
-        "types": [
-            "energytank"
-        ]
+        "name": "3+ Energy Tanks"
     },
     {
-        "difficulty": 10,
-        "name": "7+ Energy Tanks and 70+ Missiles",
-        "synergy": 0,
-        "types": [
-            "energytank",
-            "missile"
-        ]
+        "name": "7+ Energy Tanks and 70+ Missiles"
     },
     {
-        "difficulty": 2,
-        "name": "15+ Super Missiles",
-        "synergy": 0,
-        "types": [
-            "supermissile"
-        ]
+        "name": "15+ Super Missiles"
     },
     {
-        "difficulty": 21,
-        "name": "40+ Power Bombs",
-        "synergy": 0,
-        "types": [
-            "powerbomb"
-        ]
+        "name": "40+ Power Bombs"
     },
     {
-        "difficulty": 19,
-        "name": "Collect only 1 of Varia Suit or Gravity Suit",
-        "synergy": 0,
-        "types": [
-            "variasuit",
-            "gravitysuit"
-        ]
+        "name": "Collect only 1 of Varia Suit or Gravity Suit"
     },
     {
-        "difficulty": 13,
-        "name": "Wrecked Ship Reserve Tank",
-        "synergy": 0,
-        "types": [
-            "reservetank",
-            "speedbooster"
-        ]
+        "name": "Wrecked Ship Reserve Tank"
     },
     {
-        "difficulty": 16,
-        "name": "Fully explore the Wrecked Ship",
-        "synergy": 0,
-        "types": [
-            "phantoon",
-            "gravitysuit"
-        ]
+        "name": "Fully explore the Wrecked Ship"
     },
     {
-        "difficulty": 14,
-        "name": "Finish in Metal Pirate room",
-        "synergy": 0,
-        "types": [
-            "finish"
-        ]
+        "name": "Finish in Metal Pirate room"
     },
     {
-        "difficulty": 8,
-        "name": "Collect only 1 of Ice Beam or Speed Booster",
-        "synergy": 0,
-        "types": [
-            "icebeam",
-            "speedbooster"
-        ]
+        "name": "Collect only 1 of Ice Beam or Speed Booster"
     },
     {
-        "difficulty": 5,
-        "name": "Skip Spazer",
-        "synergy": 0,
-        "types": [
-            "spazer"
-        ]
+        "name": "Skip Spazer"
     },
     {
-        "difficulty": 22,
-        "name": "Defeat Crocomire and Draygon",
-        "synergy": 0,
-        "types": [
-            "crocomire",
-            "draygon"
-        ]
+        "name": "Defeat Crocomire and Draygon"
     },
     {
-        "difficulty": 3,
-        "name": "Skip Charge Beam",
-        "synergy": 0,
-        "types": [
-            "chargebeam"
-        ]
+        "name": "Skip Charge Beam"
     },
     {
-        "difficulty": 25,
-        "name": "Collect Plasma Beam or defeat Ridley",
-        "synergy": 0,
-        "types": [
-            "plasma",
-            "ridley",
-            "draygon"
-        ]
+        "name": "Collect Plasma Beam or defeat Ridley"
     },
     {
-        "difficulty": 17,
-        "name": "X-Ray Scope",
-        "synergy": 0,
-        "types": [
-            "xrayscope"
-        ]
+        "name": "X-Ray Scope"
     },
     {
-        "difficulty": 11,
-        "name": "Crateria Power Bomb",
-        "synergy": 0,
-        "types": [
-            "powerbomb"
-        ]
+        "name": "Crateria Power Bomb"
     },
     {
-        "difficulty": 9,
-        "name": "Maridia Map Station",
-        "synergy": 0,
-        "types": [
-            "maridiamap"
-        ]
+        "name": "Maridia Map Station"
     },
     {
-        "difficulty": 12,
-        "name": "Collect all 15 Brinstar Super Missiles",
-        "synergy": 0,
-        "types": [
-            "supermissile"
-        ]
+        "name": "Collect all 15 Brinstar Super Missiles"
     },
     {
-        "difficulty": 6,
-        "name": "Defeat Crocomire",
-        "synergy": 0,
-        "types": [
-            "crocomire"
-        ]
+        "name": "Defeat Crocomire"
     },
     {
-        "difficulty": 4,
-        "name": "50+ Missiles",
-        "synergy": 0,
-        "types": [
-            "missile"
-        ]
+        "name": "50+ Missiles"
     },
     {
-        "difficulty": 23,
-        "name": "Collect Springball and skip Ice Beam",
-        "synergy": 0,
-        "types": [
-            "springball",
-            "icebeam"
-        ]
+        "name": "Collect Springball and skip Ice Beam"
     },
     {
-        "difficulty": 20,
-        "name": "Screw Attack",
-        "synergy": 0,
-        "types": [
-            "screwattack"
-        ]
+        "name": "Screw Attack"
     }
 ]

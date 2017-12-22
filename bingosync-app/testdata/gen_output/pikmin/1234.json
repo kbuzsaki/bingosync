@@ -1,229 +1,77 @@
 [
     {
-        "child": "no",
-        "difficulty": 2,
-        "name": "Defeat 4 regular Wollywogs",
-        "synergy": 0,
-        "types": [
-            "wolly"
-        ]
+        "name": "Defeat 4 regular Wollywogs"
     },
     {
-        "child": "no",
-        "difficulty": 21,
-        "name": "Never use nectar",
-        "synergy": 0,
-        "types": [
-            "nectar"
-        ]
+        "name": "Never use nectar"
     },
     {
-        "child": "no",
-        "difficulty": 14,
-        "name": "Defeat a Fiery Blowhog without Pikmin",
-        "synergy": 0,
-        "types": [
-            "hands",
-            "fiery"
-        ]
+        "name": "Defeat a Fiery Blowhog without Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 18,
-        "name": "Anti-Dioxin Filter",
-        "synergy": 0,
-        "types": [
-            "dioxin"
-        ]
+        "name": "Anti-Dioxin Filter"
     },
     {
-        "child": "no",
-        "difficulty": 10,
-        "name": "Analog Computer",
-        "synergy": 0,
-        "types": [
-            "analog"
-        ]
+        "name": "Analog Computer"
     },
     {
-        "child": "no",
-        "difficulty": 19,
-        "name": "Pilot\u2019s Seat",
-        "synergy": 0,
-        "types": [
-            "pilot"
-        ]
+        "name": "Pilot\u2019s Seat"
     },
     {
-        "child": "no",
-        "difficulty": 8,
-        "name": "Defeat 7 Water Dumples",
-        "synergy": 0,
-        "types": [
-            "grubdog"
-        ]
+        "name": "Defeat 7 Water Dumples"
     },
     {
-        "child": "no",
-        "difficulty": 5,
-        "name": "Sagittarius",
-        "synergy": 0,
-        "types": [
-            "sagi"
-        ]
+        "name": "Sagittarius"
     },
     {
-        "child": "no",
-        "difficulty": 22,
-        "name": "#2 Ionium Jet",
-        "synergy": 0,
-        "types": [
-            "ionium2"
-        ]
+        "name": "#2 Ionium Jet"
     },
     {
-        "child": "no",
-        "difficulty": 11,
-        "name": "Gluon Drive",
-        "synergy": 0,
-        "types": [
-            "gluon"
-        ]
+        "name": "Gluon Drive"
     },
     {
-        "child": "no",
-        "difficulty": 25,
-        "name": "Defeat Smoky Progg",
-        "synergy": 0,
-        "types": [
-            "smoky"
-        ]
+        "name": "Defeat Smoky Progg"
     },
     {
-        "child": "no",
-        "difficulty": 12,
-        "name": "Collect a 20-pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 20-pellet of each color"
     },
     {
-        "child": "no",
-        "difficulty": 16,
-        "name": "Interstellar Radio",
-        "synergy": 0,
-        "types": [
-            "puffy"
-        ]
+        "name": "Interstellar Radio"
     },
     {
-        "child": "no",
-        "difficulty": 9,
-        "name": "Kill a mushroom Pikmin",
-        "synergy": 0,
-        "types": [
-            "puffstool"
-        ]
+        "name": "Kill a mushroom Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 3,
-        "name": "Defeat a Spotty Bulborb using bomb rocks",
-        "synergy": 0,
-        "types": [
-            "grubdog",
-            "bomb"
-        ]
+        "name": "Defeat a Spotty Bulborb using bomb rocks"
     },
     {
-        "child": "no",
-        "difficulty": 6,
-        "name": "Build 4 Geysers",
-        "synergy": 0,
-        "types": [
-            "geysers"
-        ]
+        "name": "Build 4 Geysers"
     },
     {
-        "child": "no",
-        "difficulty": 4,
-        "name": "Pluck a flowered Pikmin",
-        "synergy": 0,
-        "types": [
-            "is"
-        ]
+        "name": "Pluck a flowered Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 23,
-        "name": "Defeat 3 Burrowing Snagrets",
-        "synergy": 0,
-        "types": [
-            "snagret"
-        ]
+        "name": "Defeat 3 Burrowing Snagrets"
     },
     {
-        "child": "no",
-        "difficulty": 15,
-        "name": "Have 150 Yellow Pikmin",
-        "synergy": 0,
-        "types": [
-            "count"
-        ]
+        "name": "Have 150 Yellow Pikmin"
     },
     {
-        "child": "no",
-        "difficulty": 17,
-        "name": "Have Olimar lose all of his health",
-        "synergy": 0,
-        "types": [
-            "health"
-        ]
+        "name": "Have Olimar lose all of his health"
     },
     {
-        "child": "no",
-        "difficulty": 13,
-        "name": "Build 3 bridges in Distant Spring",
-        "synergy": 0,
-        "types": [
-            "obstacle"
-        ]
+        "name": "Build 3 bridges in Distant Spring"
     },
     {
-        "child": "no",
-        "difficulty": 20,
-        "name": "UV Lamp",
-        "synergy": 0,
-        "types": [
-            "un"
-        ]
+        "name": "UV Lamp"
     },
     {
-        "child": "no",
-        "difficulty": 7,
-        "name": "Guard Satellite",
-        "synergy": 0,
-        "types": [
-            "bll"
-        ]
+        "name": "Guard Satellite"
     },
     {
-        "child": "no",
-        "difficulty": 1,
-        "name": "Eternal Fuel Dynamo",
-        "synergy": 0,
-        "types": [
-            "dynamo"
-        ]
+        "name": "Eternal Fuel Dynamo"
     },
     {
-        "child": "no",
-        "difficulty": 24,
-        "name": "All parts in Forest Navel",
-        "synergy": 0,
-        "types": [
-            "all_parts"
-        ]
+        "name": "All parts in Forest Navel"
     }
 ]

@@ -1,127 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Tight Dress",
-        "synergy": 0
+        "name": "Tight Dress"
     },
     {
-        "difficulty": 12,
-        "name": "Boomerang",
-        "synergy": 0
+        "name": "Boomerang"
     },
     {
-        "difficulty": 1,
-        "name": "Short Sword",
-        "synergy": 0
+        "name": "Short Sword"
     },
     {
-        "difficulty": 10,
-        "name": "Drowsy",
-        "synergy": 0
+        "name": "Drowsy"
     },
     {
-        "difficulty": 23,
-        "name": "Halbert",
-        "synergy": 0
+        "name": "Halbert"
     },
     {
-        "difficulty": 6,
-        "name": "Silver Mail",
-        "synergy": 0
+        "name": "Silver Mail"
     },
     {
-        "difficulty": 25,
-        "name": "Estok",
-        "synergy": 0
+        "name": "Estok"
     },
     {
-        "difficulty": 18,
-        "name": "Cancer Rock",
-        "synergy": 0
+        "name": "Cancer Rock"
     },
     {
-        "difficulty": 14,
-        "name": "Mini Shield",
-        "synergy": 0
+        "name": "Mini Shield"
     },
     {
-        "difficulty": 2,
-        "name": "Deadly Rod",
-        "synergy": 0
+        "name": "Deadly Rod"
     },
     {
-        "difficulty": 13,
-        "name": "Fake Ring",
-        "synergy": 0
+        "name": "Fake Ring"
     },
     {
-        "difficulty": 4,
-        "name": "Holy Whip",
-        "synergy": 0
+        "name": "Holy Whip"
     },
     {
-        "difficulty": 7,
-        "name": "Power Robe",
-        "synergy": 0
+        "name": "Power Robe"
     },
     {
-        "difficulty": 21,
-        "name": "Plate Armor",
-        "synergy": 0
+        "name": "Plate Armor"
     },
     {
-        "difficulty": 20,
-        "name": "Big Shield",
-        "synergy": 0
+        "name": "Big Shield"
     },
     {
-        "difficulty": 22,
-        "name": "Regain",
-        "synergy": 0
+        "name": "Regain"
     },
     {
-        "difficulty": 16,
-        "name": "Zap",
-        "synergy": 0
+        "name": "Zap"
     },
     {
-        "difficulty": 15,
-        "name": "Sonic Ring",
-        "synergy": 0
+        "name": "Sonic Ring"
     },
     {
-        "difficulty": 3,
-        "name": "Broadsword",
-        "synergy": 0
+        "name": "Broadsword"
     },
     {
-        "difficulty": 9,
-        "name": "Miracle",
-        "synergy": 0
+        "name": "Miracle"
     },
     {
-        "difficulty": 5,
-        "name": "Dress",
-        "synergy": 0
+        "name": "Dress"
     },
     {
-        "difficulty": 8,
-        "name": "Hide Shield",
-        "synergy": 0
+        "name": "Hide Shield"
     },
     {
-        "difficulty": 24,
-        "name": "Gladius",
-        "synergy": 0
+        "name": "Gladius"
     },
     {
-        "difficulty": 17,
-        "name": "Coma",
-        "synergy": 0
+        "name": "Coma"
     },
     {
-        "difficulty": 11,
-        "name": "Life Potion",
-        "synergy": 0
+        "name": "Life Potion"
     }
 ]

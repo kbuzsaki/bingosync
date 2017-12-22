@@ -1,204 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Obtain ability to warp",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "Obtain ability to warp"
     },
     {
-        "difficulty": 22,
-        "name": "Kill a vampire",
-        "synergy": 0,
-        "types": [
-            "ghost",
-            "boss"
-        ]
+        "name": "Kill a vampire"
     },
     {
-        "difficulty": 4,
-        "name": "Complete a bonus/special stage",
-        "synergy": 0,
-        "types": [
-            "level"
-        ]
+        "name": "Complete a bonus/special stage"
     },
     {
-        "difficulty": 11,
-        "name": "Obtain a hammer",
-        "synergy": 0,
-        "types": [
-            "weapon"
-        ]
+        "name": "Obtain a hammer"
     },
     {
-        "difficulty": 8,
-        "name": "Win a race",
-        "synergy": 0,
-        "types": [
-            "race"
-        ]
+        "name": "Win a race"
     },
     {
-        "difficulty": 14,
-        "name": "100k points",
-        "synergy": 0,
-        "types": [
-            "level"
-        ]
+        "name": "100k points"
     },
     {
-        "difficulty": 6,
-        "name": "Talk to a scientist",
-        "synergy": 0,
-        "types": [
-            "sci"
-        ]
+        "name": "Talk to a scientist"
     },
     {
-        "difficulty": 18,
-        "name": "Complete a world",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Complete a world"
     },
     {
-        "difficulty": 25,
-        "name": "Win a tournament",
-        "synergy": 0,
-        "types": [
-            "water"
-        ]
+        "name": "Win a tournament"
     },
     {
-        "difficulty": 2,
-        "name": "Kill a knight",
-        "synergy": 0,
-        "types": [
-            "future"
-        ]
+        "name": "Kill a knight"
     },
     {
-        "difficulty": 23,
-        "name": "Turn the lights on",
-        "synergy": 0,
-        "types": [
-            "puzzle"
-        ]
+        "name": "Turn the lights on"
     },
     {
-        "difficulty": 5,
-        "name": "Enter a forest/jungle",
-        "synergy": 0,
-        "types": [
-            "weapon",
-            "area"
-        ]
+        "name": "Enter a forest/jungle"
     },
     {
-        "difficulty": 12,
-        "name": "Ride an electric elevator",
-        "synergy": 0,
-        "types": [
-            "vehicle"
-        ]
+        "name": "Ride an electric elevator"
     },
     {
-        "difficulty": 9,
-        "name": "Use a key",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Use a key"
     },
     {
-        "difficulty": 16,
-        "name": "Rescue an NPC",
-        "synergy": 0,
-        "types": [
-            "save"
-        ]
+        "name": "Rescue an NPC"
     },
     {
-        "difficulty": 7,
-        "name": "Heal an ally",
-        "synergy": 0,
-        "types": [
-            "heal"
-        ]
+        "name": "Heal an ally"
     },
     {
-        "difficulty": 19,
-        "name": "Glitch out of bounds",
-        "synergy": 0,
-        "types": [
-            "glitch"
-        ]
+        "name": "Glitch out of bounds"
     },
     {
-        "difficulty": 21,
-        "name": "Turn invisible",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "Turn invisible"
     },
     {
-        "difficulty": 3,
-        "name": "Kill a zombie/mummy",
-        "synergy": 0,
-        "types": [
-            "ghost"
-        ]
+        "name": "Kill a zombie/mummy"
     },
     {
-        "difficulty": 15,
-        "name": "Obtain an area map",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Obtain an area map"
     },
     {
-        "difficulty": 1,
-        "name": "Obtain 3 extra lives",
-        "synergy": 0,
-        "types": [
-            "life"
-        ]
+        "name": "Obtain 3 extra lives"
     },
     {
-        "difficulty": 13,
-        "name": "Read a book",
-        "synergy": 0,
-        "types": [
-            "lerning"
-        ]
+        "name": "Read a book"
     },
     {
-        "difficulty": 10,
-        "name": "Armor/Defense upgrade",
-        "synergy": 0,
-        "types": [
-            "hp"
-        ]
+        "name": "Armor/Defense upgrade"
     },
     {
-        "difficulty": 17,
-        "name": "Kill a King",
-        "synergy": 0,
-        "types": [
-            "castle"
-        ]
+        "name": "Kill a King"
     },
     {
-        "difficulty": 24,
-        "name": "Defeat an enemy dragon",
-        "synergy": 3,
-        "types": [
-            "boss"
-        ]
+        "name": "Defeat an enemy dragon"
     }
 ]

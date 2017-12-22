@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Vulpix",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Vulpix"
     },
     {
-        "difficulty": 12,
-        "name": "Hatch an egg",
-        "synergy": 0,
-        "types": [
-            "egg"
-        ]
+        "name": "Hatch an egg"
     },
     {
-        "difficulty": 1,
-        "name": "HM05 (Flash)",
-        "synergy": 0,
-        "types": [
-            "hm"
-        ]
+        "name": "HM05 (Flash)"
     },
     {
-        "difficulty": 10,
-        "name": "Make a secret base",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "Make a secret base"
     },
     {
-        "difficulty": 23,
-        "name": "All rods",
-        "synergy": 0,
-        "types": [
-            "rods"
-        ]
+        "name": "All rods"
     },
     {
-        "difficulty": 6,
-        "name": "Full Daycare",
-        "synergy": 0,
-        "types": [
-            "egg"
-        ]
+        "name": "Full Daycare"
     },
     {
-        "difficulty": 25,
-        "name": "Heracross or Pinsir",
-        "synergy": 0,
-        "types": [
-            "pkmnpair"
-        ]
+        "name": "Heracross or Pinsir"
     },
     {
-        "difficulty": 18,
-        "name": "Breloom",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Breloom"
     },
     {
-        "difficulty": 14,
-        "name": "A Pokemon with 4 non-TM status moves",
-        "synergy": 0,
-        "types": [
-            "move"
-        ]
+        "name": "A Pokemon with 4 non-TM status moves"
     },
     {
-        "difficulty": 2,
-        "name": "TM36 (Sludge Bomb)",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "TM36 (Sludge Bomb)"
     },
     {
-        "difficulty": 13,
-        "name": "Three type-boosting items",
-        "synergy": 0,
-        "types": [
-            "multiitem"
-        ]
+        "name": "Three type-boosting items"
     },
     {
-        "difficulty": 4,
-        "name": "10 pokemon owned",
-        "synergy": 0,
-        "types": [
-            "dex"
-        ]
+        "name": "10 pokemon owned"
     },
     {
-        "difficulty": 7,
-        "name": "A powder item",
-        "synergy": 0,
-        "types": [
-            "itempair"
-        ]
+        "name": "A powder item"
     },
     {
-        "difficulty": 21,
-        "name": "Magneton",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Magneton"
     },
     {
-        "difficulty": 20,
-        "name": "HM02 (Fly)",
-        "synergy": 0,
-        "types": [
-            "hm"
-        ]
+        "name": "HM02 (Fly)"
     },
     {
-        "difficulty": 22,
-        "name": "3 different level 30 Pokemon",
-        "synergy": 0,
-        "types": [
-            "dex"
-        ]
+        "name": "3 different level 30 Pokemon"
     },
     {
-        "difficulty": 16,
-        "name": "Pelipper",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Pelipper"
     },
     {
-        "difficulty": 15,
-        "name": "7 different types of Poke Ball",
-        "synergy": 0,
-        "types": [
-            "multiitem"
-        ]
+        "name": "7 different types of Poke Ball"
     },
     {
-        "difficulty": 3,
-        "name": "Lava Cookie",
-        "synergy": 0,
-        "types": [
-            "item"
-        ]
+        "name": "Lava Cookie"
     },
     {
-        "difficulty": 9,
-        "name": "A Pokemon with a weather related ability",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "A Pokemon with a weather related ability"
     },
     {
-        "difficulty": 5,
-        "name": "Participate in a Contest",
-        "synergy": 0,
-        "types": [
-            "contest"
-        ]
+        "name": "Participate in a Contest"
     },
     {
-        "difficulty": 8,
-        "name": "Feed a Pokemon a Pokeblock",
-        "synergy": 0,
-        "types": [
-            "pokeblock"
-        ]
+        "name": "Feed a Pokemon a Pokeblock"
     },
     {
-        "difficulty": 24,
-        "name": "Relicanth or Wailord",
-        "synergy": 0,
-        "types": [
-            "pkmnpair"
-        ]
+        "name": "Relicanth or Wailord"
     },
     {
-        "difficulty": 17,
-        "name": "Use a stone to evolve a Pokemon",
-        "synergy": 0,
-        "types": [
-            "multiitem"
-        ]
+        "name": "Use a stone to evolve a Pokemon"
     },
     {
-        "difficulty": 11,
-        "name": "TM44 (Rest)",
-        "synergy": 3,
-        "types": [
-            "tm"
-        ]
+        "name": "TM44 (Rest)"
     }
 ]

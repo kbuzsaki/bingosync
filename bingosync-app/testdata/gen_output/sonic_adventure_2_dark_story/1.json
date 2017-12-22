@@ -1,205 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Sky Rail M4",
-        "synergy": 0,
-        "types": [
-            "skyrail"
-        ]
+        "name": "Sky Rail M4"
     },
     {
-        "difficulty": 22,
-        "name": "Mad Space M5",
-        "synergy": 0,
-        "types": [
-            "madspace"
-        ]
+        "name": "Mad Space M5"
     },
     {
-        "difficulty": 4,
-        "name": "Dry Lagoon M5 A-Rank",
-        "synergy": 0,
-        "types": [
-            "drylagoon",
-            "arank"
-        ]
+        "name": "Dry Lagoon M5 A-Rank"
     },
     {
-        "difficulty": 11,
-        "name": "Dr Eggman's Laser Blaster",
-        "synergy": 0,
-        "types": [
-            "irongate"
-        ]
+        "name": "Dr Eggman's Laser Blaster"
     },
     {
-        "difficulty": 8,
-        "name": "Destroy the Gold Beetle in 5 different stages",
-        "synergy": 0,
-        "types": [
-            "goldbeetle",
-            "multistory"
-        ]
+        "name": "Destroy the Gold Beetle in 5 different stages"
     },
     {
-        "difficulty": 14,
-        "name": "Weapons Bed M5",
-        "synergy": 0,
-        "types": [
-            "weaponsbed"
-        ]
+        "name": "Weapons Bed M5"
     },
     {
-        "difficulty": 6,
-        "name": "Egg Quarters M1 Hintless",
-        "synergy": 0,
-        "types": [
-            "eggquarters"
-        ]
+        "name": "Egg Quarters M1 Hintless"
     },
     {
-        "difficulty": 18,
-        "name": "White Jungle M5",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "White Jungle M5"
     },
     {
-        "difficulty": 25,
-        "name": "All Dark Story Character's Upgrades",
-        "synergy": 0,
-        "types": [
-            "finalchase"
-        ]
+        "name": "All Dark Story Character's Upgrades"
     },
     {
-        "difficulty": 2,
-        "name": "Dry Lagoon M3",
-        "synergy": 0,
-        "types": [
-            "drylagoon"
-        ]
+        "name": "Dry Lagoon M3"
     },
     {
-        "difficulty": 23,
-        "name": "Mad Space M5 A-Rank",
-        "synergy": 0,
-        "types": [
-            "madspace",
-            "arank"
-        ]
+        "name": "Mad Space M5 A-Rank"
     },
     {
-        "difficulty": 5,
-        "name": "Unlock Chao Garden for all characters",
-        "synergy": 0,
-        "types": [
-            "chaogarden"
-        ]
+        "name": "Unlock Chao Garden for all characters"
     },
     {
-        "difficulty": 12,
-        "name": "5 hidden Chao animals in Security Hall and finish",
-        "synergy": 0,
-        "types": [
-            "securityhall"
-        ]
+        "name": "5 hidden Chao animals in Security Hall and finish"
     },
     {
-        "difficulty": 9,
-        "name": "Radical Highway M5",
-        "synergy": 0,
-        "types": [
-            "radicalhighway"
-        ]
+        "name": "Radical Highway M5"
     },
     {
-        "difficulty": 16,
-        "name": "Lost Colony M5",
-        "synergy": 0,
-        "types": [
-            "lostcolony"
-        ]
+        "name": "Lost Colony M5"
     },
     {
-        "difficulty": 7,
-        "name": "5 hidden Chao animals in Egg Quarters and finish",
-        "synergy": 0,
-        "types": [
-            "eggquarters"
-        ]
+        "name": "5 hidden Chao animals in Egg Quarters and finish"
     },
     {
-        "difficulty": 19,
-        "name": "Sky Rail M3",
-        "synergy": 0,
-        "types": [
-            "skyrail"
-        ]
+        "name": "Sky Rail M3"
     },
     {
-        "difficulty": 21,
-        "name": "Mad Space M4",
-        "synergy": 0,
-        "types": [
-            "madspace"
-        ]
+        "name": "Mad Space M4"
     },
     {
-        "difficulty": 3,
-        "name": "Complete Sand Ocean M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "sandocean"
-        ]
+        "name": "Complete Sand Ocean M1 with 100+ Rings"
     },
     {
-        "difficulty": 15,
-        "name": "5 hidden Chao animals in White Jungle and finish",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "5 hidden Chao animals in White Jungle and finish"
     },
     {
-        "difficulty": 1,
-        "name": "Dry Lagoon M1 Hintless",
-        "synergy": 0,
-        "types": [
-            "drylagoon"
-        ]
+        "name": "Dry Lagoon M1 Hintless"
     },
     {
-        "difficulty": 13,
-        "name": "Sand Ocean M5",
-        "synergy": 0,
-        "types": [
-            "sandocean"
-        ]
+        "name": "Sand Ocean M5"
     },
     {
-        "difficulty": 10,
-        "name": "Game Over during Tails 1",
-        "synergy": 0,
-        "types": [
-            "gameover"
-        ]
+        "name": "Game Over during Tails 1"
     },
     {
-        "difficulty": 17,
-        "name": "White Jungle M4",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "White Jungle M4"
     },
     {
-        "difficulty": 24,
-        "name": "Shadow's Mystic Melody",
-        "synergy": 0,
-        "types": [
-            "finalchase"
-        ]
+        "name": "Shadow's Mystic Melody"
     }
 ]

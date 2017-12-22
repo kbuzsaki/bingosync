@@ -1,226 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Beaver HP",
-        "synergy": 0,
-        "types": [
-            "hook",
-            "bottle"
-        ]
+        "name": "Beaver HP"
     },
     {
-        "difficulty": 22,
-        "name": "Open 5 GBT Chests",
-        "synergy": 0,
-        "types": [
-            "dungeon",
-            "gbt",
-            "gsht",
-            "gistt"
-        ]
+        "name": "Open 5 GBT Chests"
     },
     {
-        "difficulty": 4,
-        "name": "WFT Boss Key",
-        "synergy": 0,
-        "types": [
-            "wft",
-            "bosskey"
-        ]
+        "name": "WFT Boss Key"
     },
     {
-        "difficulty": 11,
-        "name": "Pinnacle Rock HP",
-        "synergy": 0,
-        "types": [
-            "picto",
-            "fortress"
-        ]
+        "name": "Pinnacle Rock HP"
     },
     {
-        "difficulty": 8,
-        "name": "Path to Snowhead HP",
-        "synergy": 0,
-        "types": [
-            "heart"
-        ]
+        "name": "Path to Snowhead HP"
     },
     {
-        "difficulty": 14,
-        "name": "Powder Keg",
-        "synergy": 0,
-        "types": [
-            "lens"
-        ]
+        "name": "Powder Keg"
     },
     {
-        "difficulty": 6,
-        "name": "Razor Sword",
-        "synergy": 0,
-        "types": [
-            "sword"
-        ]
+        "name": "Razor Sword"
     },
     {
-        "difficulty": 18,
-        "name": "12 Item Slots",
-        "synergy": 0,
-        "types": [
-            "slot",
-            "bottle"
-        ]
+        "name": "12 Item Slots"
     },
     {
-        "difficulty": 25,
-        "name": "30 Total Stray Fairies",
-        "synergy": 0,
-        "types": [
-            "dungeon",
-            "fairy"
-        ]
+        "name": "30 Total Stray Fairies"
     },
     {
-        "difficulty": 2,
-        "name": "Keaton Quiz HP",
-        "synergy": 0,
-        "types": [
-            "delivery"
-        ]
+        "name": "Keaton Quiz HP"
     },
     {
-        "difficulty": 23,
-        "name": "Gyorg's Remains",
-        "synergy": 0,
-        "types": [
-            "dungeon",
-            "gbt",
-            "remains",
-            "gsht",
-            "gistt"
-        ]
+        "name": "Gyorg's Remains"
     },
     {
-        "difficulty": 5,
-        "name": "10 WFT Fairies",
-        "synergy": 0,
-        "types": [
-            "fairy",
-            "wft"
-        ]
+        "name": "10 WFT Fairies"
     },
     {
-        "difficulty": 12,
-        "name": "Circus Leader's Mask",
-        "synergy": 0,
-        "types": [
-            "mask",
-            "notebook"
-        ]
+        "name": "Circus Leader's Mask"
     },
     {
-        "difficulty": 9,
-        "name": "Rock Sirloin above head",
-        "synergy": 0,
-        "types": [
-            "lens",
-            "end"
-        ]
+        "name": "Rock Sirloin above head"
     },
     {
-        "difficulty": 16,
-        "name": "3 Bottom Row Songs",
-        "synergy": 0,
-        "types": [
-            "song"
-        ]
+        "name": "3 Bottom Row Songs"
     },
     {
-        "difficulty": 7,
-        "name": "Open 2 Graves",
-        "synergy": 0,
-        "types": [
-            "grave"
-        ]
+        "name": "Open 2 Graves"
     },
     {
-        "difficulty": 19,
-        "name": "4 Real Bottles (no dupe)",
-        "synergy": 0,
-        "types": [
-            "bottle"
-        ]
+        "name": "4 Real Bottles (no dupe)"
     },
     {
-        "difficulty": 21,
-        "name": "Clear 3 Chest Icons on Mountain Village Maps",
-        "synergy": 0,
-        "types": [
-            "sht",
-            "remains",
-            "map",
-            "gsht"
-        ]
+        "name": "Clear 3 Chest Icons on Mountain Village Maps"
     },
     {
-        "difficulty": 3,
-        "name": "Deku Playground HP",
-        "synergy": 0,
-        "types": [
-            "heart"
-        ]
+        "name": "Deku Playground HP"
     },
     {
-        "difficulty": 15,
-        "name": "Column of 4 Masks",
-        "synergy": 0,
-        "types": [
-            "mask"
-        ]
+        "name": "Column of 4 Masks"
     },
     {
-        "difficulty": 1,
-        "name": "Enter 4th Day",
-        "synergy": 0,
-        "types": [
-            "end"
-        ]
+        "name": "Enter 4th Day"
     },
     {
-        "difficulty": 13,
-        "name": "Garo Mask",
-        "synergy": 0,
-        "types": [
-            "ranch",
-            "epona"
-        ]
+        "name": "Garo Mask"
     },
     {
-        "difficulty": 10,
-        "name": "Open Chest of Magic Beans",
-        "synergy": 0,
-        "types": [
-            "bean",
-            "stt",
-            "istt",
-            "gistt"
-        ]
+        "name": "Open Chest of Magic Beans"
     },
     {
-        "difficulty": 17,
-        "name": "10 SHT Fairies",
-        "synergy": 0,
-        "types": [
-            "sht",
-            "gsht"
-        ]
+        "name": "10 SHT Fairies"
     },
     {
-        "difficulty": 24,
-        "name": "2 Temple Maps, Compasses, and Boss Keys",
-        "synergy": 0,
-        "types": [
-            "mc",
-            "bosskey"
-        ]
+        "name": "2 Temple Maps, Compasses, and Boss Keys"
     }
 ]

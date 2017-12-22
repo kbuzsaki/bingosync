@@ -1,205 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Complete Final Chase M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "finalchase"
-        ]
+        "name": "Complete Final Chase M1 with 100+ Rings"
     },
     {
-        "difficulty": 18,
-        "name": "Lost Colony All Missions A-Rank",
-        "synergy": 0,
-        "types": [
-            "lostcolony",
-            "arank",
-            "allmissions"
-        ]
+        "name": "Lost Colony All Missions A-Rank"
     },
     {
-        "difficulty": 15,
-        "name": "Pacifist White Jungle M1",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "Pacifist White Jungle M1"
     },
     {
-        "difficulty": 7,
-        "name": "5 hidden Chao animals in Egg Quarters and finish",
-        "synergy": 0,
-        "types": [
-            "eggquarters"
-        ]
+        "name": "5 hidden Chao animals in Egg Quarters and finish"
     },
     {
-        "difficulty": 1,
-        "name": "Complete Iron Gate M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "irongate"
-        ]
+        "name": "Complete Iron Gate M1 with 100+ Rings"
     },
     {
-        "difficulty": 10,
-        "name": "Pacifist Weapons Bed M1",
-        "synergy": 0,
-        "types": [
-            "weaponsbed"
-        ]
+        "name": "Pacifist Weapons Bed M1"
     },
     {
-        "difficulty": 2,
-        "name": "Complete Dry Lagoon M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "drylagoon"
-        ]
+        "name": "Complete Dry Lagoon M1 with 100+ Rings"
     },
     {
-        "difficulty": 21,
-        "name": "Mad Space M4",
-        "synergy": 0,
-        "types": [
-            "madspace"
-        ]
+        "name": "Mad Space M4"
     },
     {
-        "difficulty": 19,
-        "name": "Finish any mission with 25+ Lives (No Underflow)",
-        "synergy": 0,
-        "types": [
-            "multistory"
-        ]
+        "name": "Finish any mission with 25+ Lives (No Underflow)"
     },
     {
-        "difficulty": 13,
-        "name": "Sand Ocean M5",
-        "synergy": 0,
-        "types": [
-            "sandocean"
-        ]
+        "name": "Sand Ocean M5"
     },
     {
-        "difficulty": 16,
-        "name": "Lost Colony M5",
-        "synergy": 0,
-        "types": [
-            "lostcolony"
-        ]
+        "name": "Lost Colony M5"
     },
     {
-        "difficulty": 14,
-        "name": "Complete White Jungle M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "Complete White Jungle M1 with 100+ Rings"
     },
     {
-        "difficulty": 8,
-        "name": "Radical Highway M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "radicalhighway",
-            "arank"
-        ]
+        "name": "Radical Highway M4 A-Rank"
     },
     {
-        "difficulty": 5,
-        "name": "Unlock Chao Garden for all characters",
-        "synergy": 0,
-        "types": [
-            "chaogarden"
-        ]
+        "name": "Unlock Chao Garden for all characters"
     },
     {
-        "difficulty": 22,
-        "name": "Route 280 M5",
-        "synergy": 0,
-        "types": [
-            "route280"
-        ]
+        "name": "Route 280 M5"
     },
     {
-        "difficulty": 3,
-        "name": "Dry Lagoon M4",
-        "synergy": 0,
-        "types": [
-            "drylagoon"
-        ]
+        "name": "Dry Lagoon M4"
     },
     {
-        "difficulty": 25,
-        "name": "5 hidden Chao animals in Final Chase and finish",
-        "synergy": 0,
-        "types": [
-            "finalchase"
-        ]
+        "name": "5 hidden Chao animals in Final Chase and finish"
     },
     {
-        "difficulty": 17,
-        "name": "Complete Sky Rail M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "skyrail"
-        ]
+        "name": "Complete Sky Rail M1 with 100+ Rings"
     },
     {
-        "difficulty": 11,
-        "name": "Rouge's Treasure Scope",
-        "synergy": 0,
-        "types": [
-            "securityhall"
-        ]
+        "name": "Rouge's Treasure Scope"
     },
     {
-        "difficulty": 9,
-        "name": "5 hidden Chao animals in Lost Colony and finish",
-        "synergy": 0,
-        "types": [
-            "lostcolony"
-        ]
+        "name": "5 hidden Chao animals in Lost Colony and finish"
     },
     {
-        "difficulty": 12,
-        "name": "5 hidden Chao animals in Security Hall and finish",
-        "synergy": 0,
-        "types": [
-            "securityhall"
-        ]
+        "name": "5 hidden Chao animals in Security Hall and finish"
     },
     {
-        "difficulty": 6,
-        "name": "Egg Quarters M1 Hintless",
-        "synergy": 0,
-        "types": [
-            "eggquarters"
-        ]
+        "name": "Egg Quarters M1 Hintless"
     },
     {
-        "difficulty": 4,
-        "name": "Destroy the Gold Beetle in 3 different stages",
-        "synergy": 0,
-        "types": [
-            "goldbeetle"
-        ]
+        "name": "Destroy the Gold Beetle in 3 different stages"
     },
     {
-        "difficulty": 23,
-        "name": "Cosmic Wall M2",
-        "synergy": 0,
-        "types": [
-            "cosmicwall"
-        ]
+        "name": "Cosmic Wall M2"
     },
     {
-        "difficulty": 20,
-        "name": "Sky Rail M4",
-        "synergy": 0,
-        "types": [
-            "skyrail"
-        ]
+        "name": "Sky Rail M4"
     }
 ]

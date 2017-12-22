@@ -1,139 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "HM5 (Flash)",
-        "synergy": 0
+        "name": "HM5 (Flash)"
     },
     {
-        "difficulty": 21,
-        "name": "Any level 50 Pokemon",
-        "synergy": 0
+        "name": "Any level 50 Pokemon"
     },
     {
-        "difficulty": 14,
-        "name": "Rattata, Spearow, or Pidgey ",
-        "synergy": 0
+        "name": "Rattata, Spearow, or Pidgey "
     },
     {
-        "difficulty": 18,
-        "name": "TM35",
-        "synergy": 0
+        "name": "TM35"
     },
     {
-        "difficulty": 10,
-        "name": "6 Different Water-type Pokemon",
-        "synergy": 0
+        "name": "6 Different Water-type Pokemon"
     },
     {
-        "difficulty": 19,
-        "name": "Raichu",
-        "synergy": 0
+        "name": "Raichu"
     },
     {
-        "difficulty": 8,
-        "name": "Pickup and keep an item that contains the word Max",
-        "synergy": 0
+        "name": "Pickup and keep an item that contains the word Max"
     },
     {
-        "difficulty": 5,
-        "name": "A Pokemon with exactly Height of 5'11\" (1.8m)",
-        "synergy": 0
+        "name": "A Pokemon with exactly Height of 5'11\" (1.8m)"
     },
     {
-        "difficulty": 22,
-        "name": "Mr. Mime",
-        "synergy": 0
+        "name": "Mr. Mime"
     },
     {
-        "difficulty": 11,
-        "name": "Defeat Giovanni",
-        "synergy": 0
+        "name": "Defeat Giovanni"
     },
     {
-        "difficulty": 25,
-        "name": "110 Pokemon seen",
-        "synergy": 0,
-        "types": [
-            "seen"
-        ]
+        "name": "110 Pokemon seen"
     },
     {
-        "difficulty": 12,
-        "name": "Alakazam, Gengar, Machamp, or Golem",
-        "synergy": 0
+        "name": "Alakazam, Gengar, Machamp, or Golem"
     },
     {
-        "difficulty": 16,
-        "name": "3 different Pokemon without an evolution",
-        "synergy": 0,
-        "types": [
-            "no_evolution"
-        ]
+        "name": "3 different Pokemon without an evolution"
     },
     {
-        "difficulty": 9,
-        "name": "Defeat all 16 trainers on Routes 24 and 25",
-        "synergy": 0
+        "name": "Defeat all 16 trainers on Routes 24 and 25"
     },
     {
-        "difficulty": 3,
-        "name": "6 Different not fully evolved Pokemon",
-        "synergy": 0
+        "name": "6 Different not fully evolved Pokemon"
     },
     {
-        "difficulty": 6,
-        "name": "Exactly $0",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "Exactly $0"
     },
     {
-        "difficulty": 4,
-        "name": "Collect 4 Gift Pokemon",
-        "synergy": 0
+        "name": "Collect 4 Gift Pokemon"
     },
     {
-        "difficulty": 23,
-        "name": "Use 4 different stones to evolve Pokemon",
-        "synergy": 0
+        "name": "Use 4 different stones to evolve Pokemon"
     },
     {
-        "difficulty": 15,
-        "name": "Bulbasaur, Squirtle, or Charmander",
-        "synergy": 0
+        "name": "Bulbasaur, Squirtle, or Charmander"
     },
     {
-        "difficulty": 17,
-        "name": "Voltorb or Magnemite",
-        "synergy": 0
+        "name": "Voltorb or Magnemite"
     },
     {
-        "difficulty": 13,
-        "name": "Faint a Parasect",
-        "synergy": 0
+        "name": "Faint a Parasect"
     },
     {
-        "difficulty": 20,
-        "name": "Zubat",
-        "synergy": 0
+        "name": "Zubat"
     },
     {
-        "difficulty": 7,
-        "name": "Any Pokemon with 4 status moves",
-        "synergy": 0
+        "name": "Any Pokemon with 4 status moves"
     },
     {
-        "difficulty": 1,
-        "name": "10 Pokemon owned",
-        "synergy": 0,
-        "types": [
-            "owned"
-        ]
+        "name": "10 Pokemon owned"
     },
     {
-        "difficulty": 24,
-        "name": "Use no Potions of any kind in battle",
-        "synergy": 0
+        "name": "Use no Potions of any kind in battle"
     }
 ]

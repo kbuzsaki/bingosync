@@ -1,205 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Defeat an enemy dragon",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Defeat an enemy dragon"
     },
     {
-        "difficulty": 18,
-        "name": "Learn how to shrink",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "Learn how to shrink"
     },
     {
-        "difficulty": 15,
-        "name": "Complete a stealth section",
-        "synergy": 0,
-        "types": [
-            "guard"
-        ]
+        "name": "Complete a stealth section"
     },
     {
-        "difficulty": 7,
-        "name": "New vehicle",
-        "synergy": 0,
-        "types": [
-            "vehicle"
-        ]
+        "name": "New vehicle"
     },
     {
-        "difficulty": 1,
-        "name": "Obtain 3 extra lives",
-        "synergy": 0,
-        "types": [
-            "life"
-        ]
+        "name": "Obtain 3 extra lives"
     },
     {
-        "difficulty": 10,
-        "name": "Don't shoot",
-        "synergy": 0,
-        "types": [
-            "save",
-            "ability",
-            "weapon"
-        ]
+        "name": "Don't shoot"
     },
     {
-        "difficulty": 2,
-        "name": "Defeat an enemy using only kicks",
-        "synergy": 0,
-        "types": [
-            "fighting"
-        ]
+        "name": "Defeat an enemy using only kicks"
     },
     {
-        "difficulty": 21,
-        "name": "Manipulate time",
-        "synergy": 0,
-        "types": [
-            "puzzle"
-        ]
+        "name": "Manipulate time"
     },
     {
-        "difficulty": 19,
-        "name": "Put on a disguise",
-        "synergy": 0,
-        "types": [
-            "guard"
-        ]
+        "name": "Put on a disguise"
     },
     {
-        "difficulty": 13,
-        "name": "Read a book",
-        "synergy": 0,
-        "types": [
-            "lerning"
-        ]
+        "name": "Read a book"
     },
     {
-        "difficulty": 16,
-        "name": "Ride a snowboard",
-        "synergy": 0,
-        "types": [
-            "ice"
-        ]
+        "name": "Ride a snowboard"
     },
     {
-        "difficulty": 14,
-        "name": "Learn a password",
-        "synergy": 0,
-        "types": [
-            "guard"
-        ]
+        "name": "Learn a password"
     },
     {
-        "difficulty": 8,
-        "name": "Win a race",
-        "synergy": 0,
-        "types": [
-            "race"
-        ]
+        "name": "Win a race"
     },
     {
-        "difficulty": 5,
-        "name": "Enter a forest/jungle",
-        "synergy": 0,
-        "types": [
-            "weapon",
-            "area"
-        ]
+        "name": "Enter a forest/jungle"
     },
     {
-        "difficulty": 22,
-        "name": "Defeat three bosses",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Defeat three bosses"
     },
     {
-        "difficulty": 3,
-        "name": "Complete a prologue/tutorial",
-        "synergy": 0,
-        "types": [
-            "cutscene"
-        ]
+        "name": "Complete a prologue/tutorial"
     },
     {
-        "difficulty": 25,
-        "name": "Beat a game",
-        "synergy": 0,
-        "types": [
-            "boss"
-        ]
+        "name": "Beat a game"
     },
     {
-        "difficulty": 17,
-        "name": "Kill a ghost",
-        "synergy": 0,
-        "types": [
-            "ghost"
-        ]
+        "name": "Kill a ghost"
     },
     {
-        "difficulty": 11,
-        "name": "Play an instrument/song",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "Play an instrument/song"
     },
     {
-        "difficulty": 9,
-        "name": "Escape from prison",
-        "synergy": 0,
-        "types": [
-            "guard"
-        ]
+        "name": "Escape from prison"
     },
     {
-        "difficulty": 12,
-        "name": "Ride an electric elevator",
-        "synergy": 0,
-        "types": [
-            "vehicle"
-        ]
+        "name": "Ride an electric elevator"
     },
     {
-        "difficulty": 6,
-        "name": "New character/partner",
-        "synergy": 0,
-        "types": [
-            "char"
-        ]
+        "name": "New character/partner"
     },
     {
-        "difficulty": 4,
-        "name": "Obtain a card",
-        "synergy": 0,
-        "types": [
-            "obtain"
-        ]
+        "name": "Obtain a card"
     },
     {
-        "difficulty": 23,
-        "name": "Turn the lights on",
-        "synergy": 0,
-        "types": [
-            "puzzle"
-        ]
+        "name": "Turn the lights on"
     },
     {
-        "difficulty": 20,
-        "name": "Learn how to dig",
-        "synergy": 3,
-        "types": [
-            "ability"
-        ]
+        "name": "Learn how to dig"
     }
 ]

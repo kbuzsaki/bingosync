@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Make the second Scyther spawn",
-        "synergy": 0,
-        "types": [
-            "beach"
-        ]
+        "name": "Make the second Scyther spawn"
     },
     {
-        "difficulty": 12,
-        "name": "Evolve six different pokemon",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Evolve six different pokemon"
     },
     {
-        "difficulty": 1,
-        "name": "Pic: Vulpix (Uncentered)",
-        "synergy": 0,
-        "types": [
-            "volcano"
-        ]
+        "name": "Pic: Vulpix (Uncentered)"
     },
     {
-        "difficulty": 10,
-        "name": "Pic: 3200+ Psyduck",
-        "synergy": 0,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: 3200+ Psyduck"
     },
     {
-        "difficulty": 23,
-        "name": "Look at Mew in the Pokemon Report",
-        "synergy": 0,
-        "types": [
-            "rainbow"
-        ]
+        "name": "Look at Mew in the Pokemon Report"
     },
     {
-        "difficulty": 6,
-        "name": "Throw a Pester ball at Vulpix",
-        "synergy": 0,
-        "types": [
-            "volcano",
-            "pester"
-        ]
+        "name": "Throw a Pester ball at Vulpix"
     },
     {
-        "difficulty": 25,
-        "name": "Challenge score in Beach (1,510,000)",
-        "synergy": 0,
-        "types": [
-            "challenge"
-        ]
+        "name": "Challenge score in Beach (1,510,000)"
     },
     {
-        "difficulty": 18,
-        "name": "Add pics of three different Snorlax dances to the album",
-        "synergy": 0,
-        "types": [
-            "flute",
-            "beach",
-            "album"
-        ]
+        "name": "Add pics of three different Snorlax dances to the album"
     },
     {
-        "difficulty": 14,
-        "name": "Pic: 3000+ Koffing",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: 3000+ Koffing"
     },
     {
-        "difficulty": 2,
-        "name": "Pic: Speed Pikachu",
-        "synergy": 0,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: Speed Pikachu"
     },
     {
-        "difficulty": 13,
-        "name": "Pic: Centered pic of four Metapods",
-        "synergy": 0,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: Centered pic of four Metapods"
     },
     {
-        "difficulty": 4,
-        "name": "Full camera film in Tunnel",
-        "synergy": 0,
-        "types": [
-            "film"
-        ]
+        "name": "Full camera film in Tunnel"
     },
     {
-        "difficulty": 7,
-        "name": "Pic: Magikarp in Volcano",
-        "synergy": 0,
-        "types": [
-            "castle"
-        ]
+        "name": "Pic: Magikarp in Volcano"
     },
     {
-        "difficulty": 21,
-        "name": "Knock down all five Geodudes",
-        "synergy": 0,
-        "types": [
-            "valley"
-        ]
+        "name": "Knock down all five Geodudes"
     },
     {
-        "difficulty": 20,
-        "name": "Pic: 3500+ Electrode",
-        "synergy": 0,
-        "types": [
-            "tunnel"
-        ]
+        "name": "Pic: 3500+ Electrode"
     },
     {
-        "difficulty": 22,
-        "name": "Pic: 3900+ Muk",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: 3900+ Muk"
     },
     {
-        "difficulty": 16,
-        "name": "Pic: Jumping Graveler",
-        "synergy": 0,
-        "types": [
-            "valley",
-            "graveler"
-        ]
+        "name": "Pic: Jumping Graveler"
     },
     {
-        "difficulty": 15,
-        "name": "Pic: Four different Pokemon",
-        "synergy": 0,
-        "types": [
-            "rainbow"
-        ]
+        "name": "Pic: Four different Pokemon"
     },
     {
-        "difficulty": 3,
-        "name": "Add a pic of Rapidash to your album",
-        "synergy": 0,
-        "types": [
-            "volcano",
-            "album"
-        ]
+        "name": "Add a pic of Rapidash to your album"
     },
     {
-        "difficulty": 9,
-        "name": "Pic: Fainted Weepinbell",
-        "synergy": 3,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: Fainted Weepinbell"
     },
     {
-        "difficulty": 5,
-        "name": "Make both Electabuzz activate the TV screens",
-        "synergy": 0,
-        "types": [
-            "tunnel"
-        ]
+        "name": "Make both Electabuzz activate the TV screens"
     },
     {
-        "difficulty": 8,
-        "name": "Pic: Centered Arcanine",
-        "synergy": 0,
-        "types": [
-            "volcano"
-        ]
+        "name": "Pic: Centered Arcanine"
     },
     {
-        "difficulty": 24,
-        "name": "Pester Ball a Zubat in Cave",
-        "synergy": 0,
-        "types": [
-            "cave",
-            "pester"
-        ]
+        "name": "Pester Ball a Zubat in Cave"
     },
     {
-        "difficulty": 17,
-        "name": "Full camera film in Rainbow Cloud",
-        "synergy": 0,
-        "types": [
-            "film",
-            "rainbow"
-        ]
+        "name": "Full camera film in Rainbow Cloud"
     },
     {
-        "difficulty": 11,
-        "name": "Pic: Two Cloysters",
-        "synergy": 3,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: Two Cloysters"
     }
 ]

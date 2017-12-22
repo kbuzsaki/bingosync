@@ -1,257 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Max Bracelet",
-        "synergy": 0,
-        "types": [
-            "Bracelet"
-        ]
+        "name": "Max Bracelet"
     },
     {
-        "difficulty": 21,
-        "name": "25% Item",
-        "synergy": 0,
-        "types": [
-            "Collection"
-        ]
+        "name": "25% Item"
     },
     {
-        "difficulty": 14,
-        "name": "Lv.3 Fire Orb",
-        "synergy": 0,
-        "types": [
-            "Subterranean Area",
-            "Fire Orb"
-        ]
+        "name": "Lv.3 Fire Orb"
     },
     {
-        "difficulty": 18,
-        "name": "Have at least 175 max MP",
-        "synergy": 0,
-        "types": [
-            "Mana Up",
-            "MaxMP Buff",
-            "Mana Plus",
-            "Mana Surge",
-            "Health Wager"
-        ]
+        "name": "Have at least 175 max MP"
     },
     {
-        "difficulty": 10,
-        "name": "Survival Badge",
-        "synergy": 0,
-        "types": [
-            "Survival"
-        ]
+        "name": "Survival Badge"
     },
     {
-        "difficulty": 19,
-        "name": "15 Badges",
-        "synergy": 0,
-        "types": [
-            "Health Plus",
-            "Health Surge",
-            "Mana Plus",
-            "Mana Surge",
-            "Crisis Boost",
-            "ATK Grow",
-            "DEF Grow",
-            "ATK Trade",
-            "DEF Trade",
-            "Arm Strength",
-            "Carrot Boost",
-            "Weaken",
-            "Self-Defense",
-            "Armored",
-            "Lucky Seven",
-            "Hex Cancel",
-            "Pure Love",
-            "Toxic Strike",
-            "Frame Cancel",
-            "Health Wager",
-            "Mana Wager",
-            "Stamina Plus",
-            "Cashback",
-            "Survival",
-            "Top Form",
-            "Tough Skin"
-        ]
+        "name": "15 Badges"
     },
     {
-        "difficulty": 8,
-        "name": "All 3 Southern Woodland Pack Up Potions",
-        "synergy": 0,
-        "types": [
-            "Southern Woodland",
-            "Pack Up"
-        ]
+        "name": "All 3 Southern Woodland Pack Up Potions"
     },
     {
-        "difficulty": 5,
-        "name": "Defeat a Lv.10 or higher boss",
-        "synergy": 0,
-        "types": [
-            "Boss"
-        ]
+        "name": "Defeat a Lv.10 or higher boss"
     },
     {
-        "difficulty": 22,
-        "name": "End with 50000 EN",
-        "synergy": 0,
-        "types": [
-            "Money"
-        ]
+        "name": "End with 50000 EN"
     },
     {
-        "difficulty": 11,
-        "name": "Defeat Lilith I",
-        "synergy": 0,
-        "types": [
-            "Lilith"
-        ]
+        "name": "Defeat Lilith I"
     },
     {
-        "difficulty": 25,
-        "name": "Recruit 8 Towns Members",
-        "synergy": 0,
-        "types": [
-            "Ashuri",
-            "Pandora",
-            "Rita",
-            "Saya",
-            "Cocoa",
-            "Kotri",
-            "Cicini",
-            "Syaro",
-            "Chocolate",
-            "Vanilla",
-            "Nixie",
-            "Aruraune",
-            "Lilith",
-            "Seana",
-            "Keke Bunny"
-        ]
+        "name": "Recruit 8 Towns Members"
     },
     {
-        "difficulty": 12,
-        "name": "18 Warp Stones",
-        "synergy": 0,
-        "types": [
-            "Warp Stone"
-        ]
+        "name": "18 Warp Stones"
     },
     {
-        "difficulty": 16,
-        "name": "20 Health Up Potions",
-        "synergy": 0,
-        "types": [
-            "Health Up"
-        ]
+        "name": "20 Health Up Potions"
     },
     {
-        "difficulty": 9,
-        "name": "15% Item",
-        "synergy": 0,
-        "types": [
-            "Collection"
-        ]
+        "name": "15% Item"
     },
     {
-        "difficulty": 3,
-        "name": "5 Mana Up Potions",
-        "synergy": 0,
-        "types": [
-            "Mana Up"
-        ]
+        "name": "5 Mana Up Potions"
     },
     {
-        "difficulty": 6,
-        "name": "Defeat Illusion Alius III",
-        "synergy": 0,
-        "types": [
-            "Alius",
-            "Ch4"
-        ]
+        "name": "Defeat Illusion Alius III"
     },
     {
-        "difficulty": 4,
-        "name": "Log the Bunny Lover buff",
-        "synergy": 0,
-        "types": [
-            "Eggs",
-            "Miru"
-        ]
+        "name": "Log the Bunny Lover buff"
     },
     {
-        "difficulty": 23,
-        "name": "70% Northern Tundra Map",
-        "synergy": 0,
-        "types": [
-            "Northern Tundra",
-            "Map"
-        ]
+        "name": "70% Northern Tundra Map"
     },
     {
-        "difficulty": 15,
-        "name": "Defeat Plurkwood's Twin Cats",
-        "synergy": 0,
-        "types": [
-            "Plurkwood"
-        ]
+        "name": "Defeat Plurkwood's Twin Cats"
     },
     {
-        "difficulty": 17,
-        "name": "Recruit Ashuri, Pandora, and Rita",
-        "synergy": 0,
-        "types": [
-            "Ashuri",
-            "Pandora",
-            "Rita"
-        ]
+        "name": "Recruit Ashuri, Pandora, and Rita"
     },
     {
-        "difficulty": 13,
-        "name": "20 Island Core items",
-        "synergy": 0,
-        "types": [
-            "Island Core",
-            "Collection"
-        ]
+        "name": "20 Island Core items"
     },
     {
-        "difficulty": 20,
-        "name": "Get a High-Score above 4000 on the sandbag",
-        "synergy": 0,
-        "types": [
-            "Sandbag"
-        ]
+        "name": "Get a High-Score above 4000 on the sandbag"
     },
     {
-        "difficulty": 7,
-        "name": "Hear \u266a Bounce Bounce",
-        "synergy": 0,
-        "types": [
-            "Nieve",
-            "Nixie",
-            "Keke Bunny",
-            "Seana"
-        ]
+        "name": "Hear \u266a Bounce Bounce"
     },
     {
-        "difficulty": 1,
-        "name": "Log the Numb debuff",
-        "synergy": 0,
-        "types": [
-            "Numb"
-        ]
+        "name": "Log the Numb debuff"
     },
     {
-        "difficulty": 24,
-        "name": "20 Northern Tundra items",
-        "synergy": 1,
-        "types": [
-            "Northern Tundra",
-            "Collection"
-        ]
+        "name": "20 Northern Tundra items"
     }
 ]

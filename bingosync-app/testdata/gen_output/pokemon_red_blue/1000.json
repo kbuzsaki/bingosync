@@ -1,203 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Magmar or Electabuzz",
-        "synergy": 0,
-        "types": [
-            "troll"
-        ]
+        "name": "Magmar or Electabuzz"
     },
     {
-        "difficulty": 18,
-        "name": "5 Badges",
-        "synergy": 0,
-        "types": [
-            "badges"
-        ]
+        "name": "5 Badges"
     },
     {
-        "difficulty": 15,
-        "name": "Any Pokemon with Stomp",
-        "synergy": 0,
-        "types": [
-            "safari"
-        ]
+        "name": "Any Pokemon with Stomp"
     },
     {
-        "difficulty": 7,
-        "name": "Enter no Pokemon Centers",
-        "synergy": 0,
-        "types": [
-            "heal",
-            "instant"
-        ]
+        "name": "Enter no Pokemon Centers"
     },
     {
-        "difficulty": 1,
-        "name": "View the Space Shuttle Columbia",
-        "synergy": 0,
-        "types": [
-            "space"
-        ]
+        "name": "View the Space Shuttle Columbia"
     },
     {
-        "difficulty": 10,
-        "name": "TM26 (Earthquake)",
-        "synergy": 0,
-        "types": [
-            "silph"
-        ]
+        "name": "TM26 (Earthquake)"
     },
     {
-        "difficulty": 2,
-        "name": "Rattata",
-        "synergy": 0,
-        "types": [
-            "lol"
-        ]
+        "name": "Rattata"
     },
     {
-        "difficulty": 21,
-        "name": "$0",
-        "synergy": 0,
-        "types": [
-            "money"
-        ]
+        "name": "$0"
     },
     {
-        "difficulty": 19,
-        "name": "Venusaur",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Venusaur"
     },
     {
-        "difficulty": 13,
-        "name": "Tentacruel",
-        "synergy": 0,
-        "types": [
-            "Surf"
-        ]
+        "name": "Tentacruel"
     },
     {
-        "difficulty": 16,
-        "name": "6 different Poison type Pokemon",
-        "synergy": 0,
-        "types": [
-            "items"
-        ]
+        "name": "6 different Poison type Pokemon"
     },
     {
-        "difficulty": 14,
-        "name": "Defeat all 16 trainers on Routes 24 and 25",
-        "synergy": 0,
-        "types": [
-            "nugget"
-        ]
+        "name": "Defeat all 16 trainers on Routes 24 and 25"
     },
     {
-        "difficulty": 8,
-        "name": "3 HMs",
-        "synergy": 0,
-        "types": [
-            "hm"
-        ]
+        "name": "3 HMs"
     },
     {
-        "difficulty": 5,
-        "name": "Any pokemon with 4 status moves",
-        "synergy": 0,
-        "types": [
-            "moves"
-        ]
+        "name": "Any pokemon with 4 status moves"
     },
     {
-        "difficulty": 22,
-        "name": "Defeat a Slowbro",
-        "synergy": 0,
-        "types": [
-            "Slowbro"
-        ]
+        "name": "Defeat a Slowbro"
     },
     {
-        "difficulty": 3,
-        "name": "Finish inside cut bush",
-        "synergy": 0,
-        "types": [
-            "finish"
-        ]
+        "name": "Finish inside cut bush"
     },
     {
-        "difficulty": 25,
-        "name": "70 pokemon seen",
-        "synergy": 0,
-        "types": [
-            "dex"
-        ]
+        "name": "70 pokemon seen"
     },
     {
-        "difficulty": 17,
-        "name": "Tangela",
-        "synergy": 0,
-        "types": [
-            "tangela"
-        ]
+        "name": "Tangela"
     },
     {
-        "difficulty": 11,
-        "name": "Kadabra",
-        "synergy": 0,
-        "types": [
-            "abra"
-        ]
+        "name": "Kadabra"
     },
     {
-        "difficulty": 9,
-        "name": "TM42 (Dream Eater)",
-        "synergy": 0,
-        "types": [
-            "dream"
-        ]
+        "name": "TM42 (Dream Eater)"
     },
     {
-        "difficulty": 12,
-        "name": "Defeat 4 Beauties",
-        "synergy": 0,
-        "types": [
-            "beauty"
-        ]
+        "name": "Defeat 4 Beauties"
     },
     {
-        "difficulty": 6,
-        "name": "20 TMs",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "20 TMs"
     },
     {
-        "difficulty": 4,
-        "name": "Any Pokemon with a multi-hit move",
-        "synergy": 0,
-        "types": [
-            "fury"
-        ]
+        "name": "Any Pokemon with a multi-hit move"
     },
     {
-        "difficulty": 23,
-        "name": "Hypno",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Hypno"
     },
     {
-        "difficulty": 20,
-        "name": "Defeat all 12 trainers in Mt Moon",
-        "synergy": 0,
-        "types": [
-            "mt"
-        ]
+        "name": "Defeat all 12 trainers in Mt Moon"
     }
 ]

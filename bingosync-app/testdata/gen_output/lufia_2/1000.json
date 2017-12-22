@@ -1,127 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Rapier",
-        "synergy": 0
+        "name": "Rapier"
     },
     {
-        "difficulty": 18,
-        "name": "Gold Shield",
-        "synergy": 0
+        "name": "Gold Shield"
     },
     {
-        "difficulty": 15,
-        "name": "Hipower Ring",
-        "synergy": 0
+        "name": "Hipower Ring"
     },
     {
-        "difficulty": 7,
-        "name": "Zircon Plate",
-        "synergy": 0
+        "name": "Zircon Plate"
     },
     {
-        "difficulty": 1,
-        "name": "Insect Crush",
-        "synergy": 0
+        "name": "Insect Crush"
     },
     {
-        "difficulty": 10,
-        "name": "Courage",
-        "synergy": 0
+        "name": "Courage"
     },
     {
-        "difficulty": 2,
-        "name": "SuhrCustom11",
-        "synergy": 0
+        "name": "SuhrCustom11"
     },
     {
-        "difficulty": 21,
-        "name": "Crystal Mail",
-        "synergy": 0
+        "name": "Crystal Mail"
     },
     {
-        "difficulty": 19,
-        "name": "Cloth Armor",
-        "synergy": 0
+        "name": "Cloth Armor"
     },
     {
-        "difficulty": 13,
-        "name": "Blue Beret",
-        "synergy": 0
+        "name": "Blue Beret"
     },
     {
-        "difficulty": 16,
-        "name": "Zap",
-        "synergy": 0
+        "name": "Zap"
     },
     {
-        "difficulty": 14,
-        "name": "Headband",
-        "synergy": 0
+        "name": "Headband"
     },
     {
-        "difficulty": 8,
-        "name": "Brone Helmet",
-        "synergy": 0
+        "name": "Brone Helmet"
     },
     {
-        "difficulty": 5,
-        "name": "Frock",
-        "synergy": 0
+        "name": "Frock"
     },
     {
-        "difficulty": 22,
-        "name": "Sleep Ball",
-        "synergy": 0
+        "name": "Sleep Ball"
     },
     {
-        "difficulty": 3,
-        "name": "Silvo Rapier",
-        "synergy": 0
+        "name": "Silvo Rapier"
     },
     {
-        "difficulty": 25,
-        "name": "Fire Dagger",
-        "synergy": 0
+        "name": "Fire Dagger"
     },
     {
-        "difficulty": 17,
-        "name": "Fry",
-        "synergy": 0
+        "name": "Fry"
     },
     {
-        "difficulty": 11,
-        "name": "Ice Ball",
-        "synergy": 0
+        "name": "Ice Ball"
     },
     {
-        "difficulty": 9,
-        "name": "Ex-Potion",
-        "synergy": 0
+        "name": "Ex-Potion"
     },
     {
-        "difficulty": 12,
-        "name": "Any Iris Item",
-        "synergy": 0
+        "name": "Any Iris Item"
     },
     {
-        "difficulty": 6,
-        "name": "Silver Armor",
-        "synergy": 0
+        "name": "Silver Armor"
     },
     {
-        "difficulty": 4,
-        "name": "Flying Blow",
-        "synergy": 0
+        "name": "Flying Blow"
     },
     {
-        "difficulty": 23,
-        "name": "Battledriver",
-        "synergy": 0
+        "name": "Battledriver"
     },
     {
-        "difficulty": 20,
-        "name": "Plate Cap",
-        "synergy": 0
+        "name": "Plate Cap"
     }
 ]

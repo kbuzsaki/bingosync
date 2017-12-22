@@ -1,207 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Professional Noisemaker (SmC5)",
-        "synergy": 0,
-        "types": [
-            "hardboss"
-        ]
+        "name": "Professional Noisemaker (SmC5)"
     },
     {
-        "difficulty": 18,
-        "name": "2500 Pokos",
-        "synergy": 0,
-        "types": [
-            "total"
-        ]
+        "name": "2500 Pokos"
     },
     {
-        "difficulty": 15,
-        "name": "Thirst Activator(NTSC-U)/Perfect Container(PAL) (SCx7)",
-        "synergy": 0,
-        "types": [
-            "hipoko"
-        ]
+        "name": "Thirst Activator(NTSC-U)/Perfect Container(PAL) (SCx7)"
     },
     {
-        "difficulty": 7,
-        "name": "Kill 8 Blowhogs (of any kind)",
-        "synergy": 0,
-        "types": [
-            "xenemy"
-        ]
+        "name": "Kill 8 Blowhogs (of any kind)"
     },
     {
-        "difficulty": 1,
-        "name": "Collect a 1-Pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 1-Pellet of each color"
     },
     {
-        "difficulty": 10,
-        "name": "45 Whites",
-        "synergy": 0,
-        "types": [
-            "onetype"
-        ]
+        "name": "45 Whites"
     },
     {
-        "difficulty": 2,
-        "name": "Kill 10 Mitites on HoB4",
-        "synergy": 0,
-        "types": [
-            "hobenemies"
-        ]
+        "name": "Kill 10 Mitites on HoB4"
     },
     {
-        "difficulty": 21,
-        "name": "Mirrored Stage (SR3)",
-        "synergy": 0,
-        "types": []
+        "name": "Mirrored Stage (SR3)"
     },
     {
-        "difficulty": 19,
-        "name": "Kill 5 Breadbugs",
-        "synergy": 0,
-        "types": [
-            "breadbug"
-        ]
+        "name": "Kill 5 Breadbugs"
     },
     {
-        "difficulty": 13,
-        "name": "Drain the main lake in PP",
-        "synergy": 0,
-        "types": [
-            "drain"
-        ]
+        "name": "Drain the main lake in PP"
     },
     {
-        "difficulty": 16,
-        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin",
-        "synergy": 0,
-        "types": [
-            "mature"
-        ]
+        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin"
     },
     {
-        "difficulty": 14,
-        "name": "100 Blues",
-        "synergy": 0,
-        "types": [
-            "onetype",
-            "masspik"
-        ]
+        "name": "100 Blues"
     },
     {
-        "difficulty": 8,
-        "name": "8 Spicy Sprays",
-        "synergy": 0,
-        "types": [
-            "spray"
-        ]
+        "name": "8 Spicy Sprays"
     },
     {
-        "difficulty": 5,
-        "name": "Collect a 5-Pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 5-Pellet of each color"
     },
     {
-        "difficulty": 22,
-        "name": "Amplified Amplifier (SR7)",
-        "synergy": 0,
-        "types": [
-            "easyboss"
-        ]
+        "name": "Amplified Amplifier (SR7)"
     },
     {
-        "difficulty": 3,
-        "name": "Fall into the void and respawn near the ship",
-        "synergy": 0,
-        "types": [
-            "void"
-        ]
+        "name": "Fall into the void and respawn near the ship"
     },
     {
-        "difficulty": 25,
-        "name": "Justice Alloy (SH7)",
-        "synergy": 0,
-        "types": [
-            "hardboss"
-        ]
+        "name": "Justice Alloy (SH7)"
     },
     {
-        "difficulty": 17,
-        "name": "Kill 2 Fiery Bulblaxes",
-        "synergy": 0,
-        "types": [
-            "fiery"
-        ]
+        "name": "Kill 2 Fiery Bulblaxes"
     },
     {
-        "difficulty": 11,
-        "name": "Clear SCx3",
-        "synergy": 0,
-        "types": [
-            "clear"
-        ]
+        "name": "Clear SCx3"
     },
     {
-        "difficulty": 9,
-        "name": "Never get Prototype Detector (HoB5)",
-        "synergy": 0,
-        "types": [
-            "nogauge",
-            "instant"
-        ]
+        "name": "Never get Prototype Detector (HoB5)"
     },
     {
-        "difficulty": 12,
-        "name": "Kill 5 Bulbmin",
-        "synergy": 0,
-        "types": [
-            "blb",
-            "selfharm"
-        ]
+        "name": "Kill 5 Bulbmin"
     },
     {
-        "difficulty": 6,
-        "name": "Enter all 3 caves in VoR",
-        "synergy": 0,
-        "types": [
-            "caveenter"
-        ]
+        "name": "Enter all 3 caves in VoR"
     },
     {
-        "difficulty": 4,
-        "name": "Activate every dormant bomb rock on SCx7",
-        "synergy": 0,
-        "types": [
-            "scxbomb"
-        ]
+        "name": "Activate every dormant bomb rock on SCx7"
     },
     {
-        "difficulty": 23,
-        "name": "Decorative Goo (AW)",
-        "synergy": 0,
-        "types": [
-            "awgate",
-            "aw"
-        ]
+        "name": "Decorative Goo (AW)"
     },
     {
-        "difficulty": 20,
-        "name": "Onion Replica (PP)",
-        "synergy": 0,
-        "types": [
-            "pp",
-            "blkgate",
-            "void",
-            "lowpoko"
-        ]
+        "name": "Onion Replica (PP)"
     }
 ]

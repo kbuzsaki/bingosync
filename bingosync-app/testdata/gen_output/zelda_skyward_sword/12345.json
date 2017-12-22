@@ -1,210 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Heart Potion++",
-        "synergy": 0,
-        "types": [
-            "Potions"
-        ]
+        "name": "Heart Potion++"
     },
     {
-        "difficulty": 12,
-        "name": "Fairy in a Bottle",
-        "synergy": 0,
-        "types": [
-            "Bottles"
-        ]
+        "name": "Fairy in a Bottle"
     },
     {
-        "difficulty": 1,
-        "name": "Bring Mia to Horwell",
-        "synergy": 0,
-        "types": [
-            "Skyloft"
-        ]
+        "name": "Bring Mia to Horwell"
     },
     {
-        "difficulty": 10,
-        "name": "Enter Isle of Songs",
-        "synergy": 0,
-        "types": [
-            "BiT"
-        ]
+        "name": "Enter Isle of Songs"
     },
     {
-        "difficulty": 23,
-        "name": "Open 40 Chests",
-        "synergy": 0,
-        "types": [
-            "Chests"
-        ]
+        "name": "Open 40 Chests"
     },
     {
-        "difficulty": 6,
-        "name": "50 Deku Hornets",
-        "synergy": 0,
-        "types": [
-            "Bugs"
-        ]
+        "name": "50 Deku Hornets"
     },
     {
-        "difficulty": 25,
-        "name": "All 10 Faron Bird Statues",
-        "synergy": 0,
-        "types": [
-            "Harp",
-            "BiT",
-            "Scale",
-            "Statues"
-        ]
+        "name": "All 10 Faron Bird Statues"
     },
     {
-        "difficulty": 18,
-        "name": "8 Heart Pieces",
-        "synergy": 0,
-        "types": [
-            "Hearts"
-        ]
+        "name": "8 Heart Pieces"
     },
     {
-        "difficulty": 14,
-        "name": "Kina's Pumpkin Carrying Game",
-        "synergy": 0,
-        "types": [
-            "Pumpkin"
-        ]
+        "name": "Kina's Pumpkin Carrying Game"
     },
     {
-        "difficulty": 2,
-        "name": "Complete a ringer skydive",
-        "synergy": 0,
-        "types": [
-            "Sky"
-        ]
+        "name": "Complete a ringer skydive"
     },
     {
-        "difficulty": 13,
-        "name": "6 Eldin Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes",
-            "Eldin"
-        ]
+        "name": "6 Eldin Goddess Cubes"
     },
     {
-        "difficulty": 4,
-        "name": "Floria Waterfall Bird Statue",
-        "synergy": 0,
-        "types": [
-            "Faron"
-        ]
+        "name": "Floria Waterfall Bird Statue"
     },
     {
-        "difficulty": 7,
-        "name": "500 Rupees",
-        "synergy": 0,
-        "types": [
-            "Rupees"
-        ]
+        "name": "500 Rupees"
     },
     {
-        "difficulty": 21,
-        "name": "3 Unique Iron Shields",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "3 Unique Iron Shields"
     },
     {
-        "difficulty": 20,
-        "name": "LMF Dungeon Map",
-        "synergy": 0,
-        "types": [
-            "Map",
-            "LMF"
-        ]
+        "name": "LMF Dungeon Map"
     },
     {
-        "difficulty": 22,
-        "name": "Temple of Time Bird Statue",
-        "synergy": 0,
-        "types": [
-            "Statues",
-            "Harp"
-        ]
+        "name": "Temple of Time Bird Statue"
     },
     {
-        "difficulty": 16,
-        "name": "Quick Beetle",
-        "synergy": 0,
-        "types": [
-            "Upgrade"
-        ]
+        "name": "Quick Beetle"
     },
     {
-        "difficulty": 15,
-        "name": "30 Bombs",
-        "synergy": 0,
-        "types": [
-            "Ammo"
-        ]
+        "name": "30 Bombs"
     },
     {
-        "difficulty": 3,
-        "name": "Kill three guays in the sky",
-        "synergy": 0,
-        "types": [
-            "Sky"
-        ]
+        "name": "Kill three guays in the sky"
     },
     {
-        "difficulty": 9,
-        "name": "Defeat Ghirahim with a dart",
-        "synergy": 0,
-        "types": [
-            "Skyview"
-        ]
+        "name": "Defeat Ghirahim with a dart"
     },
     {
-        "difficulty": 5,
-        "name": "Sleep in Zelda's Bed",
-        "synergy": 0,
-        "types": [
-            "Skyloft",
-            "Sailcloth"
-        ]
+        "name": "Sleep in Zelda's Bed"
     },
     {
-        "difficulty": 8,
-        "name": "Batreaux's Heart Piece",
-        "synergy": 0,
-        "types": [
-            "Hearts",
-            "Crystals"
-        ]
+        "name": "Batreaux's Heart Piece"
     },
     {
-        "difficulty": 24,
-        "name": "Ballad of the Goddess",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Ballad of the Goddess"
     },
     {
-        "difficulty": 17,
-        "name": "Five map beacons",
-        "synergy": 0,
-        "types": [
-            "Lanayru"
-        ]
+        "name": "Five map beacons"
     },
     {
-        "difficulty": 11,
-        "name": "Treasure Medal",
-        "synergy": 0,
-        "types": [
-            "Medals"
-        ]
+        "name": "Treasure Medal"
     }
 ]

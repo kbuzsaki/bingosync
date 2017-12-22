@@ -1,127 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Scimitar",
-        "synergy": 0
+        "name": "Scimitar"
     },
     {
-        "difficulty": 21,
-        "name": "Plate Armor",
-        "synergy": 0
+        "name": "Plate Armor"
     },
     {
-        "difficulty": 14,
-        "name": "Headband",
-        "synergy": 0
+        "name": "Headband"
     },
     {
-        "difficulty": 18,
-        "name": "Cancer Rock",
-        "synergy": 0
+        "name": "Cancer Rock"
     },
     {
-        "difficulty": 10,
-        "name": "Champion",
-        "synergy": 0
+        "name": "Champion"
     },
     {
-        "difficulty": 19,
-        "name": "Cloth Armor",
-        "synergy": 0
+        "name": "Cloth Armor"
     },
     {
-        "difficulty": 8,
-        "name": "Kite Shield",
-        "synergy": 0
+        "name": "Kite Shield"
     },
     {
-        "difficulty": 5,
-        "name": "Robe",
-        "synergy": 0
+        "name": "Robe"
     },
     {
-        "difficulty": 22,
-        "name": "Power Potion",
-        "synergy": 0
+        "name": "Power Potion"
     },
     {
-        "difficulty": 11,
-        "name": "Freeze Ball",
-        "synergy": 0
+        "name": "Freeze Ball"
     },
     {
-        "difficulty": 25,
-        "name": "Long Staff",
-        "synergy": 0
+        "name": "Long Staff"
     },
     {
-        "difficulty": 12,
-        "name": "Boomerang",
-        "synergy": 0
+        "name": "Boomerang"
     },
     {
-        "difficulty": 16,
-        "name": "Valor",
-        "synergy": 0
+        "name": "Valor"
     },
     {
-        "difficulty": 9,
-        "name": "Magic Guard",
-        "synergy": 0
+        "name": "Magic Guard"
     },
     {
-        "difficulty": 3,
-        "name": "Stun Gun",
-        "synergy": 0
+        "name": "Stun Gun"
     },
     {
-        "difficulty": 6,
-        "name": "Silk Toga",
-        "synergy": 0
+        "name": "Silk Toga"
     },
     {
-        "difficulty": 4,
-        "name": "Rune Rapier",
-        "synergy": 0
+        "name": "Rune Rapier"
     },
     {
-        "difficulty": 23,
-        "name": "Halbert",
-        "synergy": 0
+        "name": "Halbert"
     },
     {
-        "difficulty": 15,
-        "name": "Eagle Rock",
-        "synergy": 0
+        "name": "Eagle Rock"
     },
     {
-        "difficulty": 17,
-        "name": "Droplet",
-        "synergy": 0
+        "name": "Droplet"
     },
     {
-        "difficulty": 13,
-        "name": "Cloche",
-        "synergy": 0
+        "name": "Cloche"
     },
     {
-        "difficulty": 20,
-        "name": "Anger Brace",
-        "synergy": 0
+        "name": "Anger Brace"
     },
     {
-        "difficulty": 7,
-        "name": "Wood Helmet",
-        "synergy": 0
+        "name": "Wood Helmet"
     },
     {
-        "difficulty": 1,
-        "name": "Short Sword",
-        "synergy": 0
+        "name": "Short Sword"
     },
     {
-        "difficulty": 24,
-        "name": "Franshiska",
-        "synergy": 0
+        "name": "Franshiska"
     }
 ]

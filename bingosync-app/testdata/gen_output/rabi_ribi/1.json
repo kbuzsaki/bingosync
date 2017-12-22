@@ -1,259 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Lv.2 P Hairpin",
-        "synergy": 0,
-        "types": [
-            "P Hairpin",
-            "Plurkwood"
-        ]
+        "name": "Lv.2 P Hairpin"
     },
     {
-        "difficulty": 22,
-        "name": "End with 50000 EN",
-        "synergy": 0,
-        "types": [
-            "Money"
-        ]
+        "name": "End with 50000 EN"
     },
     {
-        "difficulty": 4,
-        "name": "Hear \u266a Evernight Peak",
-        "synergy": 0,
-        "types": [
-            "Eastern Highlands"
-        ]
+        "name": "Hear \u266a Evernight Peak"
     },
     {
-        "difficulty": 11,
-        "name": "Lv.2 Spike Barrier",
-        "synergy": 0,
-        "types": [
-            "Slide",
-            "Spike"
-        ]
+        "name": "Lv.2 Spike Barrier"
     },
     {
-        "difficulty": 8,
-        "name": "All 3 Southern Woodland Pack Up Potions",
-        "synergy": 0,
-        "types": [
-            "Southern Woodland",
-            "Pack Up"
-        ]
+        "name": "All 3 Southern Woodland Pack Up Potions"
     },
     {
-        "difficulty": 14,
-        "name": "Fire, Water, Nature, and Light Orbs",
-        "synergy": 0,
-        "types": [
-            "Fire Orb",
-            "Water Orb",
-            "Nature Orb",
-            "Light Orb"
-        ]
+        "name": "Fire, Water, Nature, and Light Orbs"
     },
     {
-        "difficulty": 6,
-        "name": "10 Mana Up Potions",
-        "synergy": 0,
-        "types": [
-            "Mana Up"
-        ]
+        "name": "10 Mana Up Potions"
     },
     {
-        "difficulty": 18,
-        "name": "15 Regen Up Potions",
-        "synergy": 0,
-        "types": [
-            "Regen Up"
-        ]
+        "name": "15 Regen Up Potions"
     },
     {
-        "difficulty": 25,
-        "name": "Get a High-Score above 5000 on the sandbag",
-        "synergy": 0,
-        "types": [
-            "Sandbag"
-        ]
+        "name": "Get a High-Score above 5000 on the sandbag"
     },
     {
-        "difficulty": 2,
-        "name": "Lv.2 Bunny Amulet",
-        "synergy": 0,
-        "types": [
-            "Amulet",
-            "Ch2"
-        ]
+        "name": "Lv.2 Bunny Amulet"
     },
     {
-        "difficulty": 23,
-        "name": "20 Easter Eggs",
-        "synergy": 0,
-        "types": [
-            "Eggs"
-        ]
+        "name": "20 Easter Eggs"
     },
     {
-        "difficulty": 5,
-        "name": "10% Item",
-        "synergy": 0,
-        "types": [
-            "Collection"
-        ]
+        "name": "10% Item"
     },
     {
-        "difficulty": 12,
-        "name": "Defeat Nixie",
-        "synergy": 0,
-        "types": [
-            "Nixie"
-        ]
+        "name": "Defeat Nixie"
     },
     {
-        "difficulty": 9,
-        "name": "Quick Barrette, Charge Ring, Plus Necklace, and Auto Earrings",
-        "synergy": 0,
-        "types": [
-            "Barrette",
-            "Ring",
-            "Necklace",
-            "Earrings"
-        ]
+        "name": "Quick Barrette, Charge Ring, Plus Necklace, and Auto Earrings"
     },
     {
-        "difficulty": 16,
-        "name": "Recruit Keke Bunny",
-        "synergy": 0,
-        "types": [
-            "Keke Bunny",
-            "Plurkwood"
-        ]
+        "name": "Recruit Keke Bunny"
     },
     {
-        "difficulty": 7,
-        "name": "Hear \u266a Bounce Bounce",
-        "synergy": 0,
-        "types": [
-            "Nieve",
-            "Nixie",
-            "Keke Bunny",
-            "Seana"
-        ]
+        "name": "Hear \u266a Bounce Bounce"
     },
     {
-        "difficulty": 19,
-        "name": "All 5 Northern Tundra Health Up Potions",
-        "synergy": 0,
-        "types": [
-            "Northern Tundra",
-            "Health Up"
-        ]
+        "name": "All 5 Northern Tundra Health Up Potions"
     },
     {
-        "difficulty": 21,
-        "name": "Recruit Aruraune and Lilith",
-        "synergy": 0,
-        "types": [
-            "Aruraune",
-            "Lilith"
-        ]
+        "name": "Recruit Aruraune and Lilith"
     },
     {
-        "difficulty": 3,
-        "name": "Defeat All 3 UPRPRC Hideout Bosses",
-        "synergy": 0,
-        "types": [
-            "UPRPRC"
-        ]
+        "name": "Defeat All 3 UPRPRC Hideout Bosses"
     },
     {
-        "difficulty": 15,
-        "name": "Purchase 5 Buffs at Once",
-        "synergy": 0,
-        "types": [
-            "Attack Up Buff",
-            "Defense Up Buff",
-            "Arrest Buff",
-            "Speedy Buff",
-            "MaxHP Buff",
-            "MaxMP Buff",
-            "Amulet Cut Buff",
-            "HP Regen Buff",
-            "MP Regen Buff",
-            "Give ATK Down Buff",
-            "Give DEF Down Buff",
-            "Shrink Buff",
-            "Giant Buff"
-        ]
+        "name": "Purchase 5 Buffs at Once"
     },
     {
-        "difficulty": 1,
-        "name": "Hear \u266a Sudden Death",
-        "synergy": 0,
-        "types": [
-            "Alius"
-        ]
+        "name": "Hear \u266a Sudden Death"
     },
     {
-        "difficulty": 13,
-        "name": "All 3 Eastern Highlands Regen Up Potions",
-        "synergy": 0,
-        "types": [
-            "Eastern Highlands",
-            "Regen Up"
-        ]
+        "name": "All 3 Eastern Highlands Regen Up Potions"
     },
     {
-        "difficulty": 10,
-        "name": "All 4 Island Core Mana Up Potions",
-        "synergy": 0,
-        "types": [
-            "Island Core",
-            "Mana Up"
-        ]
+        "name": "All 4 Island Core Mana Up Potions"
     },
     {
-        "difficulty": 17,
-        "name": "Equip at least 8 Badges",
-        "synergy": 0,
-        "types": [
-            "Pack Up",
-            "Health Plus",
-            "Health Surge",
-            "Mana Plus",
-            "Mana Surge",
-            "Crisis Boost",
-            "ATK Grow",
-            "DEF Grow",
-            "ATK Trade",
-            "DEF Trade",
-            "Arm Strength",
-            "Carrot Boost",
-            "Weaken",
-            "Self-Defense",
-            "Armored",
-            "Lucky Seven",
-            "Hex Cancel",
-            "Pure Love",
-            "Toxic Strike",
-            "Frame Cancel",
-            "Health Wager",
-            "Mana Wager",
-            "Stamina Plus",
-            "Cashback",
-            "Survival",
-            "Top Form",
-            "Tough Skin"
-        ]
+        "name": "Equip at least 8 Badges"
     },
     {
-        "difficulty": 24,
-        "name": "Recruit Ashuri and Lilith",
-        "synergy": 0,
-        "types": [
-            "Ashuri",
-            "Lilith"
-        ]
+        "name": "Recruit Ashuri and Lilith"
     }
 ]

@@ -1,161 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Tubular",
-        "synergy": 0,
-        "types": [
-            "tubular"
-        ]
+        "name": "Tubular"
     },
     {
-        "difficulty": 12,
-        "name": "5 yoshi coins on 2 stages (Donut Plains)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Donut Plains)"
     },
     {
-        "difficulty": 1,
-        "name": "Defeat 6/7 Koopa Kids",
-        "synergy": 0,
-        "types": []
+        "name": "Defeat 6/7 Koopa Kids"
     },
     {
-        "difficulty": 10,
-        "name": "8/9 bonus rooms",
-        "synergy": 0,
-        "types": []
+        "name": "8/9 bonus rooms"
     },
     {
-        "difficulty": 23,
-        "name": "NO YOSHI",
-        "synergy": 0,
-        "types": [
-            "yoshi1",
-            "yoshi2"
-        ]
+        "name": "NO YOSHI"
     },
     {
-        "difficulty": 6,
-        "name": "6/10 ghost house exits",
-        "synergy": 0,
-        "types": []
+        "name": "6/10 ghost house exits"
     },
     {
-        "difficulty": 25,
-        "name": "Forest Of Illusion 4 - don't get Lakitu 1-up; no flying",
-        "synergy": 0,
-        "types": []
+        "name": "Forest Of Illusion 4 - don't get Lakitu 1-up; no flying"
     },
     {
-        "difficulty": 18,
-        "name": "Vanilla Dome 4 - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Vanilla Dome 4 - small mario no yoshi"
     },
     {
-        "difficulty": 14,
-        "name": "5 yoshi coins on 2 stages (Chocolate Island)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Chocolate Island)"
     },
     {
-        "difficulty": 2,
-        "name": "Open star road from Valley Of Bowser",
-        "synergy": 3,
-        "types": [
-            "yoshi1"
-        ]
+        "name": "Open star road from Valley Of Bowser"
     },
     {
-        "difficulty": 13,
-        "name": "5 yoshi coins on 2 stages (Forest Of Illusion)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Forest Of Illusion)"
     },
     {
-        "difficulty": 4,
-        "name": "Open Chocolate Island 3 useless exit",
-        "synergy": 0,
-        "types": []
+        "name": "Open Chocolate Island 3 useless exit"
     },
     {
-        "difficulty": 7,
-        "name": "10/18 keyhole exits",
-        "synergy": 0,
-        "types": []
+        "name": "10/18 keyhole exits"
     },
     {
-        "difficulty": 21,
-        "name": "Perfect matching game (8-up)",
-        "synergy": 0,
-        "types": []
+        "name": "Perfect matching game (8-up)"
     },
     {
-        "difficulty": 20,
-        "name": "Valley Of Bowser 3 - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Valley Of Bowser 3 - small mario no yoshi"
     },
     {
-        "difficulty": 22,
-        "name": "Butter Bridge 1 - get 4 lives from turtles",
-        "synergy": 0,
-        "types": []
+        "name": "Butter Bridge 1 - get 4 lives from turtles"
     },
     {
-        "difficulty": 16,
-        "name": "Vanilla Dome 2 normal exit - small mario no star",
-        "synergy": 0,
-        "types": []
+        "name": "Vanilla Dome 2 normal exit - small mario no star"
     },
     {
-        "difficulty": 15,
-        "name": "5 yoshi coins on 2 stages (Star World)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Star World)"
     },
     {
-        "difficulty": 3,
-        "name": "All 14 exits in Forest Of Illusion",
-        "synergy": 0,
-        "types": []
+        "name": "All 14 exits in Forest Of Illusion"
     },
     {
-        "difficulty": 9,
-        "name": "4 star-block 1-ups",
-        "synergy": 0,
-        "types": []
+        "name": "4 star-block 1-ups"
     },
     {
-        "difficulty": 5,
-        "name": "6 swimming stages",
-        "synergy": 0,
-        "types": []
+        "name": "6 swimming stages"
     },
     {
-        "difficulty": 8,
-        "name": "7 moons",
-        "synergy": 0,
-        "types": [
-            "cape3"
-        ]
+        "name": "7 moons"
     },
     {
-        "difficulty": 24,
-        "name": "Yellow Switch - get 300 coins",
-        "synergy": 0,
-        "types": []
+        "name": "Yellow Switch - get 300 coins"
     },
     {
-        "difficulty": 17,
-        "name": "Castle 6 - small mario",
-        "synergy": 0,
-        "types": []
+        "name": "Castle 6 - small mario"
     },
     {
-        "difficulty": 11,
-        "name": "50 coins in 5 stages",
-        "synergy": 0,
-        "types": []
+        "name": "50 coins in 5 stages"
     }
 ]

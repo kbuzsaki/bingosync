@@ -1,161 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Forest Secret Area - three 1-ups behind exit gate",
-        "synergy": 0,
-        "types": []
+        "name": "Forest Secret Area - three 1-ups behind exit gate"
     },
     {
-        "difficulty": 22,
-        "name": "Blue Switch - get 8 silver coins",
-        "synergy": 0,
-        "types": []
+        "name": "Blue Switch - get 8 silver coins"
     },
     {
-        "difficulty": 4,
-        "name": "Open Chocolate Island 3 useless exit",
-        "synergy": 0,
-        "types": []
+        "name": "Open Chocolate Island 3 useless exit"
     },
     {
-        "difficulty": 11,
-        "name": "50 coins in 5 stages",
-        "synergy": 0,
-        "types": []
+        "name": "50 coins in 5 stages"
     },
     {
-        "difficulty": 8,
-        "name": "3/4 Reznors",
-        "synergy": 0,
-        "types": []
+        "name": "3/4 Reznors"
     },
     {
-        "difficulty": 14,
-        "name": "5 yoshi coins on 2 stages (Valley Of Bowser)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Valley Of Bowser)"
     },
     {
-        "difficulty": 6,
-        "name": "6/10 ghost house exits",
-        "synergy": 0,
-        "types": []
+        "name": "6/10 ghost house exits"
     },
     {
-        "difficulty": 18,
-        "name": "Soda Lake - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Soda Lake - small mario no yoshi"
     },
     {
-        "difficulty": 25,
-        "name": "Red Switch - get 3 lives from turtles",
-        "synergy": 0,
-        "types": []
+        "name": "Red Switch - get 3 lives from turtles"
     },
     {
-        "difficulty": 2,
-        "name": "Open star road from Valley Of Bowser",
-        "synergy": 0,
-        "types": [
-            "yoshi1"
-        ]
+        "name": "Open star road from Valley Of Bowser"
     },
     {
-        "difficulty": 23,
-        "name": "NO CAPE",
-        "synergy": 0,
-        "types": [
-            "cape1",
-            "cape2",
-            "cape3"
-        ]
+        "name": "NO CAPE"
     },
     {
-        "difficulty": 5,
-        "name": "6 swimming stages",
-        "synergy": 0,
-        "types": []
+        "name": "6 swimming stages"
     },
     {
-        "difficulty": 12,
-        "name": "5 yoshi coins on 2 stages (Donut Plains)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Donut Plains)"
     },
     {
-        "difficulty": 9,
-        "name": "3 yoshi wing exits",
-        "synergy": 0,
-        "types": [
-            "yoshi2",
-            "tubular"
-        ]
+        "name": "3 yoshi wing exits"
     },
     {
-        "difficulty": 16,
-        "name": "Butter Bridge 2 - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Butter Bridge 2 - small mario no yoshi"
     },
     {
-        "difficulty": 7,
-        "name": "10/18 keyhole exits",
-        "synergy": 0,
-        "types": []
+        "name": "10/18 keyhole exits"
     },
     {
-        "difficulty": 19,
-        "name": "Star World 1 - time 286+",
-        "synergy": 0,
-        "types": []
+        "name": "Star World 1 - time 286+"
     },
     {
-        "difficulty": 21,
-        "name": "Sunken Ship - get 1 life from star",
-        "synergy": 0,
-        "types": []
+        "name": "Sunken Ship - get 1 life from star"
     },
     {
-        "difficulty": 3,
-        "name": "All 14 exits in Forest Of Illusion",
-        "synergy": 0,
-        "types": []
+        "name": "All 14 exits in Forest Of Illusion"
     },
     {
-        "difficulty": 15,
-        "name": "5 yoshi coins on 2 stages (Star World)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Star World)"
     },
     {
-        "difficulty": 1,
-        "name": "Defeat 6/7 Koopa Kids",
-        "synergy": 0,
-        "types": []
+        "name": "Defeat 6/7 Koopa Kids"
     },
     {
-        "difficulty": 13,
-        "name": "5 yoshi coins on 2 stages (Forest Of Illusion)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Forest Of Illusion)"
     },
     {
-        "difficulty": 10,
-        "name": "8/9 bonus rooms",
-        "synergy": 0,
-        "types": []
+        "name": "8/9 bonus rooms"
     },
     {
-        "difficulty": 17,
-        "name": "Chocolate Island 2 - visit all 9 rooms",
-        "synergy": 0,
-        "types": []
+        "name": "Chocolate Island 2 - visit all 9 rooms"
     },
     {
-        "difficulty": 24,
-        "name": "Yellow Switch - get 300 coins",
-        "synergy": 0,
-        "types": []
+        "name": "Yellow Switch - get 300 coins"
     }
 ]

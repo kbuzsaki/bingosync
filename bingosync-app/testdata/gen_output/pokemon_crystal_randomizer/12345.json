@@ -1,206 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Tangela or Lickitung",
-        "synergy": 0,
-        "types": [
-            "duo"
-        ]
+        "name": "Tangela or Lickitung"
     },
     {
-        "difficulty": 12,
-        "name": "A Pok\u00e9mon with a Sleep inducing move",
-        "synergy": 0,
-        "types": [
-            "move"
-        ]
+        "name": "A Pok\u00e9mon with a Sleep inducing move"
     },
     {
-        "difficulty": 1,
-        "name": "Poison Barb",
-        "synergy": 0,
-        "types": [
-            "day"
-        ]
+        "name": "Poison Barb"
     },
     {
-        "difficulty": 10,
-        "name": "Ariados or Ledian",
-        "synergy": 0,
-        "types": [
-            "22/18"
-        ]
+        "name": "Ariados or Ledian"
     },
     {
-        "difficulty": 23,
-        "name": "Defeat Rival 4",
-        "synergy": 0,
-        "types": [
-            "goldenrod"
-        ]
+        "name": "Defeat Rival 4"
     },
     {
-        "difficulty": 6,
-        "name": "TM20 (Endure)",
-        "synergy": 0,
-        "types": [
-            "tms",
-            "randomtm"
-        ]
+        "name": "TM20 (Endure)"
     },
     {
-        "difficulty": 25,
-        "name": "Catch a Pok\u00e9mon in Lugia's room",
-        "synergy": 0,
-        "types": [
-            "lugia"
-        ]
+        "name": "Catch a Pok\u00e9mon in Lugia's room"
     },
     {
-        "difficulty": 18,
-        "name": "Own 8 different Water type Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Own 8 different Water type Pok\u00e9mon"
     },
     {
-        "difficulty": 14,
-        "name": "Omanyte, Kabuto, or Aerodactyl",
-        "synergy": 0,
-        "types": [
-            "trio"
-        ]
+        "name": "Omanyte, Kabuto, or Aerodactyl"
     },
     {
-        "difficulty": 2,
-        "name": "Slowpoketail",
-        "synergy": 0,
-        "types": [
-            "progress"
-        ]
+        "name": "Slowpoketail"
     },
     {
-        "difficulty": 13,
-        "name": "Catch a Pok\u00e9mon in Tohjo Falls",
-        "synergy": 0,
-        "types": [
-            "kanto"
-        ]
+        "name": "Catch a Pok\u00e9mon in Tohjo Falls"
     },
     {
-        "difficulty": 4,
-        "name": "Don't use more than one TM",
-        "synergy": 0,
-        "types": [
-            "tms",
-            "instant"
-        ]
+        "name": "Don't use more than one TM"
     },
     {
-        "difficulty": 7,
-        "name": "3 eggs",
-        "synergy": 0,
-        "types": [
-            "egg"
-        ]
+        "name": "3 eggs"
     },
     {
-        "difficulty": 21,
-        "name": "90 Pok\u00e9mon seen",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "90 Pok\u00e9mon seen"
     },
     {
-        "difficulty": 20,
-        "name": "Ho-Oh or Lugia",
-        "synergy": 0,
-        "types": [
-            "duo"
-        ]
+        "name": "Ho-Oh or Lugia"
     },
     {
-        "difficulty": 22,
-        "name": "Glacier Badge",
-        "synergy": 0,
-        "types": [
-            "glacier"
-        ]
+        "name": "Glacier Badge"
     },
     {
-        "difficulty": 16,
-        "name": "Cubone or Diglett",
-        "synergy": 0,
-        "types": [
-            "nfe"
-        ]
+        "name": "Cubone or Diglett"
     },
     {
-        "difficulty": 15,
-        "name": "TM21 (Frustration) or TM27 (Return)",
-        "synergy": 0,
-        "types": [
-            "goldenrod",
-            "tms"
-        ]
+        "name": "TM21 (Frustration) or TM27 (Return)"
     },
     {
-        "difficulty": 3,
-        "name": "TM05 (Roar)",
-        "synergy": 0,
-        "types": [
-            "violet"
-        ]
+        "name": "TM05 (Roar)"
     },
     {
-        "difficulty": 9,
-        "name": "Release starter before Lv11",
-        "synergy": 0,
-        "types": [
-            "release"
-        ]
+        "name": "Release starter before Lv11"
     },
     {
-        "difficulty": 5,
-        "name": "Sunflora or Exeggutor",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Sunflora or Exeggutor"
     },
     {
-        "difficulty": 8,
-        "name": "Flaaffy or Skiploom",
-        "synergy": 0,
-        "types": [
-            "15/18"
-        ]
+        "name": "Flaaffy or Skiploom"
     },
     {
-        "difficulty": 24,
-        "name": "Berry Juice or Elixer",
-        "synergy": 0,
-        "types": [
-            "shuck"
-        ]
+        "name": "Berry Juice or Elixer"
     },
     {
-        "difficulty": 17,
-        "name": "Defeat Lapras",
-        "synergy": 0,
-        "types": [
-            "day",
-            "union"
-        ]
+        "name": "Defeat Lapras"
     },
     {
-        "difficulty": 11,
-        "name": "Golbat, Koffing, or Grimer",
-        "synergy": 0,
-        "types": [
-            "rocket"
-        ]
+        "name": "Golbat, Koffing, or Grimer"
     }
 ]

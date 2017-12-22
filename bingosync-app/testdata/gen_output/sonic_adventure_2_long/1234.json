@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "City Escape M3",
-        "synergy": 0,
-        "types": [
-            "2"
-        ]
+        "name": "City Escape M3"
     },
     {
-        "difficulty": 21,
-        "name": "8000 Total Rings (Team Combined)",
-        "synergy": 0,
-        "types": [
-            "21"
-        ]
+        "name": "8000 Total Rings (Team Combined)"
     },
     {
-        "difficulty": 14,
-        "name": "Knuckles' Sunglasses",
-        "synergy": 0,
-        "types": [
-            "14"
-        ]
+        "name": "Knuckles' Sunglasses"
     },
     {
-        "difficulty": 18,
-        "name": "Crazy Gadget M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "18"
-        ]
+        "name": "Crazy Gadget M4 A-Rank"
     },
     {
-        "difficulty": 10,
-        "name": "Beginner Kart Racing Emblem",
-        "synergy": 0,
-        "types": [
-            "10"
-        ]
+        "name": "Beginner Kart Racing Emblem"
     },
     {
-        "difficulty": 19,
-        "name": "Cosmic Wall M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "19"
-        ]
+        "name": "Cosmic Wall M4 A-Rank"
     },
     {
-        "difficulty": 8,
-        "name": "5 hidden Chao animals in Aquatic Mine and finish",
-        "synergy": 0,
-        "types": [
-            "8"
-        ]
+        "name": "5 hidden Chao animals in Aquatic Mine and finish"
     },
     {
-        "difficulty": 5,
-        "name": "Radical Highway M3",
-        "synergy": 0,
-        "types": [
-            "5"
-        ]
+        "name": "Radical Highway M3"
     },
     {
-        "difficulty": 22,
-        "name": "Cosmic Wall All Missions A-Rank",
-        "synergy": 0,
-        "types": [
-            "22"
-        ]
+        "name": "Cosmic Wall All Missions A-Rank"
     },
     {
-        "difficulty": 11,
-        "name": "Death Chamber M1 Hintless",
-        "synergy": 0,
-        "types": [
-            "11"
-        ]
+        "name": "Death Chamber M1 Hintless"
     },
     {
-        "difficulty": 25,
-        "name": "90 Emblems (Team Combined)",
-        "synergy": 0,
-        "types": [
-            "25"
-        ]
+        "name": "90 Emblems (Team Combined)"
     },
     {
-        "difficulty": 12,
-        "name": "Death Chamber M4",
-        "synergy": 0,
-        "types": [
-            "12"
-        ]
+        "name": "Death Chamber M4"
     },
     {
-        "difficulty": 16,
-        "name": "Meteor Herd M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "16"
-        ]
+        "name": "Meteor Herd M4 A-Rank"
     },
     {
-        "difficulty": 9,
-        "name": "Radical Highway All Missions A-Rank",
-        "synergy": 0,
-        "types": [
-            "9"
-        ]
+        "name": "Radical Highway All Missions A-Rank"
     },
     {
-        "difficulty": 3,
-        "name": "City Escape M4",
-        "synergy": 0,
-        "types": [
-            "3"
-        ]
+        "name": "City Escape M4"
     },
     {
-        "difficulty": 6,
-        "name": "2 Chao Boxes in Pumpkin Hill and finish",
-        "synergy": 0,
-        "types": [
-            "6"
-        ]
+        "name": "2 Chao Boxes in Pumpkin Hill and finish"
     },
     {
-        "difficulty": 4,
-        "name": "2 Chao Boxes in Sand Ocean and finish",
-        "synergy": 0,
-        "types": [
-            "4"
-        ]
+        "name": "2 Chao Boxes in Sand Ocean and finish"
     },
     {
-        "difficulty": 23,
-        "name": "Knuckles' Alternative Kart",
-        "synergy": 0,
-        "types": [
-            "23"
-        ]
+        "name": "Knuckles' Alternative Kart"
     },
     {
-        "difficulty": 15,
-        "name": "Aquatic Mine M5",
-        "synergy": 0,
-        "types": [
-            "15"
-        ]
+        "name": "Aquatic Mine M5"
     },
     {
-        "difficulty": 17,
-        "name": "Aquatic Mine All Missions A-Rank",
-        "synergy": 0,
-        "types": [
-            "17"
-        ]
+        "name": "Aquatic Mine All Missions A-Rank"
     },
     {
-        "difficulty": 13,
-        "name": "Hidden Base M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "13"
-        ]
+        "name": "Hidden Base M4 A-Rank"
     },
     {
-        "difficulty": 20,
-        "name": "Cosmic Wall M5",
-        "synergy": 0,
-        "types": [
-            "20"
-        ]
+        "name": "Cosmic Wall M5"
     },
     {
-        "difficulty": 7,
-        "name": "2 Chao Boxes in Lost Colony and finish",
-        "synergy": 0,
-        "types": [
-            "7"
-        ]
+        "name": "2 Chao Boxes in Lost Colony and finish"
     },
     {
-        "difficulty": 1,
-        "name": "2 Chao Boxes in City Escape and finish",
-        "synergy": 0,
-        "types": [
-            "1"
-        ]
+        "name": "2 Chao Boxes in City Escape and finish"
     },
     {
-        "difficulty": 24,
-        "name": "Sonic's Alternative Kart",
-        "synergy": 0,
-        "types": [
-            "24"
-        ]
+        "name": "Sonic's Alternative Kart"
     }
 ]

@@ -1,230 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Obtain Painting Guardian Set",
-        "synergy": 0,
-        "types": [
-            "paintedworld",
-            "armour"
-        ]
+        "name": "Obtain Painting Guardian Set"
     },
     {
-        "difficulty": 22,
-        "name": "Obtain Antiquated Set",
-        "synergy": 0,
-        "types": [
-            "darkroothard",
-            "dusk",
-            "spells"
-        ]
+        "name": "Obtain Antiquated Set"
     },
     {
-        "difficulty": 4,
-        "name": "Poisonbite Ring",
-        "synergy": 0,
-        "types": [
-            "rings",
-            "parish"
-        ]
+        "name": "Poisonbite Ring"
     },
     {
-        "difficulty": 11,
-        "name": "Obtain Large Flame Ember",
-        "synergy": 0,
-        "types": [
-            "demonruins",
-            "items",
-            "ember"
-        ]
+        "name": "Obtain Large Flame Ember"
     },
     {
-        "difficulty": 8,
-        "name": "Defeat Four Kings",
-        "synergy": 0,
-        "types": [
-            "bosses",
-            "drakeslondo"
-        ]
+        "name": "Defeat Four Kings"
     },
     {
-        "difficulty": 14,
-        "name": "Join Darkmoon Covenant",
-        "synergy": 0,
-        "types": [
-            "npcs",
-            "bosses",
-            "anorlondo"
-        ]
+        "name": "Join Darkmoon Covenant"
     },
     {
-        "difficulty": 6,
-        "name": "Obtain heavy Crossbow",
-        "synergy": 0,
-        "types": [
-            "weapons",
-            "depths",
-            "items"
-        ]
+        "name": "Obtain heavy Crossbow"
     },
     {
-        "difficulty": 18,
-        "name": "Obtain Leo Ring",
-        "synergy": 2,
-        "types": [
-            "anorlondo",
-            "ornsmo"
-        ]
+        "name": "Obtain Leo Ring"
     },
     {
-        "difficulty": 25,
-        "name": "28 Attunement",
-        "synergy": 0,
-        "types": [
-            "stats",
-            "casting"
-        ]
+        "name": "28 Attunement"
     },
     {
-        "difficulty": 2,
-        "name": "No Master Key",
-        "synergy": 0,
-        "types": [
-            "startingitem",
-            "restrict_key"
-        ]
+        "name": "No Master Key"
     },
     {
-        "difficulty": 23,
-        "name": "Join Path of the Dragon",
-        "synergy": 0,
-        "types": [
-            "covenant",
-            "ashlake"
-        ]
+        "name": "Join Path of the Dragon"
     },
     {
-        "difficulty": 5,
-        "name": "Obtain Soul of the Moonlight Butterfly",
-        "synergy": 0,
-        "types": [
-            "bosses",
-            "darkroot"
-        ]
+        "name": "Obtain Soul of the Moonlight Butterfly"
     },
     {
-        "difficulty": 12,
-        "name": "Kill All 3 Giants in Sens",
-        "synergy": 0,
-        "types": [
-            "enemies",
-            "sens"
-        ]
+        "name": "Kill All 3 Giants in Sens"
     },
     {
-        "difficulty": 9,
-        "name": "Obtain Lucerne",
-        "synergy": 0,
-        "types": [
-            "weapons",
-            "catacombs"
-        ]
+        "name": "Obtain Lucerne"
     },
     {
-        "difficulty": 16,
-        "name": "Only heal with Humanities",
-        "synergy": 0,
-        "types": [
-            "restriction",
-            "restrict_consumable"
-        ]
+        "name": "Only heal with Humanities"
     },
     {
-        "difficulty": 7,
-        "name": "Obtain Whip",
-        "synergy": 0,
-        "types": [
-            "weapons",
-            "blighttown"
-        ]
+        "name": "Obtain Whip"
     },
     {
-        "difficulty": 19,
-        "name": "Obtain Black Iron Set",
-        "synergy": 0,
-        "types": [
-            "paintedworld",
-            "guardians"
-        ]
+        "name": "Obtain Black Iron Set"
     },
     {
-        "difficulty": 21,
-        "name": "Obtain Large Divine Ember",
-        "synergy": 0,
-        "types": [
-            "ember",
-            "totg"
-        ]
+        "name": "Obtain Large Divine Ember"
     },
     {
-        "difficulty": 3,
-        "name": "Daggers Only",
-        "synergy": 0,
-        "types": [
-            "restriction",
-            "restrict_weapons"
-        ]
+        "name": "Daggers Only"
     },
     {
-        "difficulty": 15,
-        "name": "Kill Crestfallen Merchant",
-        "synergy": 0,
-        "types": [
-            "sens",
-            "npc"
-        ]
+        "name": "Kill Crestfallen Merchant"
     },
     {
-        "difficulty": 1,
-        "name": "Cleric Class",
-        "synergy": 0,
-        "types": [
-            "startingclass"
-        ]
+        "name": "Cleric Class"
     },
     {
-        "difficulty": 13,
-        "name": "Murder Siegmeyer",
-        "synergy": 0,
-        "types": [
-            "npcs",
-            "lautrec"
-        ]
+        "name": "Murder Siegmeyer"
     },
     {
-        "difficulty": 10,
-        "name": "Kill Stray Demon",
-        "synergy": 0,
-        "types": [
-            "asylum",
-            "bosses"
-        ]
+        "name": "Kill Stray Demon"
     },
     {
-        "difficulty": 17,
-        "name": "Obtain Havel's Set",
-        "synergy": 0,
-        "types": [
-            "anorlondo",
-            "armour"
-        ]
+        "name": "Obtain Havel's Set"
     },
     {
-        "difficulty": 24,
-        "name": "Obtain 2 Soul of a Hero",
-        "synergy": 0,
-        "types": [
-            "stats",
-            "humanity"
-        ]
+        "name": "Obtain 2 Soul of a Hero"
     }
 ]

@@ -1,212 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "30 Regional Coins (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Coins",
-            "Cascade_Coins"
-        ]
+        "name": "30 Regional Coins (Cascade Kingdom)"
     },
     {
-        "difficulty": 21,
-        "name": "2 Moons from sub-areas (Ruined Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Ruined_Subarea"
-        ]
+        "name": "2 Moons from sub-areas (Ruined Kingdom)"
     },
     {
-        "difficulty": 14,
-        "name": "32 Moons (Metro Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Metro_Moons"
-        ]
+        "name": "32 Moons (Metro Kingdom)"
     },
     {
-        "difficulty": 18,
-        "name": "6 Moons from Music Note Challenges",
-        "synergy": 0,
-        "types": [
-            "Music_Notes"
-        ]
+        "name": "6 Moons from Music Note Challenges"
     },
     {
-        "difficulty": 10,
-        "name": "3 Moons from the Deep Woods",
-        "synergy": 0,
-        "types": [
-            "Wooded_Moons",
-            "Wooded_Deep"
-        ]
+        "name": "3 Moons from the Deep Woods"
     },
     {
-        "difficulty": 19,
-        "name": "Uncork 3 Fountains (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Seaside_Corks"
-        ]
+        "name": "Uncork 3 Fountains (Seaside Kingdom)"
     },
     {
-        "difficulty": 8,
-        "name": "3 Checkpoints (Lake Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Lake_Checkpoints"
-        ]
+        "name": "3 Checkpoints (Lake Kingdom)"
     },
     {
-        "difficulty": 5,
-        "name": "2 Moons from sub-areas (Cap Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Cap_Subarea"
-        ]
+        "name": "2 Moons from sub-areas (Cap Kingdom)"
     },
     {
-        "difficulty": 22,
-        "name": "14 Moons (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Moons"
-        ]
+        "name": "14 Moons (Bowser's Kingdom)"
     },
     {
-        "difficulty": 11,
-        "name": "Captain Toad in the Lost Kingdom",
-        "synergy": 0,
-        "types": [
-            "Toad",
-            "Lost_Toad"
-        ]
+        "name": "Captain Toad in the Lost Kingdom"
     },
     {
-        "difficulty": 25,
-        "name": "6 Checkpoints (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Checkpoints"
-        ]
+        "name": "6 Checkpoints (Bowser's Kingdom)"
     },
     {
-        "difficulty": 12,
-        "name": "150 Total Regional Coins",
-        "synergy": 0,
-        "types": [
-            "Coins"
-        ]
+        "name": "150 Total Regional Coins"
     },
     {
-        "difficulty": 16,
-        "name": "19 Total Checkpoints",
-        "synergy": 0,
-        "types": [
-            "Checkpoints"
-        ]
+        "name": "19 Total Checkpoints"
     },
     {
-        "difficulty": 9,
-        "name": "Purchase 3 Kingdom Stickers",
-        "synergy": 0,
-        "types": [
-            "Sticker"
-        ]
+        "name": "Purchase 3 Kingdom Stickers"
     },
     {
-        "difficulty": 3,
-        "name": "Sand Kingdom Slots",
-        "synergy": 0,
-        "types": [
-            "Slots",
-            "Sand_Slots"
-        ]
+        "name": "Sand Kingdom Slots"
     },
     {
-        "difficulty": 6,
-        "name": "Purchase the Cap Kingdom Sticker",
-        "synergy": 0,
-        "types": [
-            "Sticker",
-            "Cap_Sticker"
-        ]
+        "name": "Purchase the Cap Kingdom Sticker"
     },
     {
-        "difficulty": 4,
-        "name": "Call Jaxi from 3 Different Jaxi-Stands",
-        "synergy": 0,
-        "types": [
-            "Sand_Jaxi"
-        ]
+        "name": "Call Jaxi from 3 Different Jaxi-Stands"
     },
     {
-        "difficulty": 23,
-        "name": "Purchase a Moon (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Shop",
-            "Bowser_Shop"
-        ]
+        "name": "Purchase a Moon (Bowser's Kingdom)"
     },
     {
-        "difficulty": 15,
-        "name": "17 Moons (Snow Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Snow_Moons"
-        ]
+        "name": "17 Moons (Snow Kingdom)"
     },
     {
-        "difficulty": 17,
-        "name": "17 Moons (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Seaside_Moons"
-        ]
+        "name": "17 Moons (Seaside Kingdom)"
     },
     {
-        "difficulty": 13,
-        "name": "31 Moons (Metro Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Metro_Moons"
-        ]
+        "name": "31 Moons (Metro Kingdom)"
     },
     {
-        "difficulty": 20,
-        "name": "30 Moons (Luncheon Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Luncheon_Moons"
-        ]
+        "name": "30 Moons (Luncheon Kingdom)"
     },
     {
-        "difficulty": 7,
-        "name": "Captain Toad in the Lake Kingdom",
-        "synergy": 0,
-        "types": [
-            "Toad",
-            "Lake_Toad"
-        ]
+        "name": "Captain Toad in the Lake Kingdom"
     },
     {
-        "difficulty": 1,
-        "name": "13 Moons (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Cascade_Moons"
-        ]
+        "name": "13 Moons (Cascade Kingdom)"
     },
     {
-        "difficulty": 24,
-        "name": "Purchase the Bowser's Kingdom Sticker",
-        "synergy": 0,
-        "types": [
-            "Sticker",
-            "Bowser_Sticker"
-        ]
+        "name": "Purchase the Bowser's Kingdom Sticker"
     }
 ]

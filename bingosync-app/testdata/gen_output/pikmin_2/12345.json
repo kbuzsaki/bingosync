@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Kill 5 Breadbugs",
-        "synergy": 0,
-        "types": [
-            "breadbug"
-        ]
+        "name": "Kill 5 Breadbugs"
     },
     {
-        "difficulty": 12,
-        "name": "100 Pikmin of a single type",
-        "synergy": 0,
-        "types": [
-            "onetype",
-            "masspik"
-        ]
+        "name": "100 Pikmin of a single type"
     },
     {
-        "difficulty": 1,
-        "name": "Collect a 1-Pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 1-Pellet of each color"
     },
     {
-        "difficulty": 10,
-        "name": "Collect all 3 Wogpoles in AW",
-        "synergy": 0,
-        "types": [
-            "wogpole"
-        ]
+        "name": "Collect all 3 Wogpoles in AW"
     },
     {
-        "difficulty": 23,
-        "name": "Decorative Goo (AW)",
-        "synergy": 0,
-        "types": [
-            "awgate",
-            "aw"
-        ]
+        "name": "Decorative Goo (AW)"
     },
     {
-        "difficulty": 6,
-        "name": "Trigger all 3 hazard cutscenes",
-        "synergy": 0,
-        "types": [
-            "selfharm"
-        ]
+        "name": "Trigger all 3 hazard cutscenes"
     },
     {
-        "difficulty": 25,
-        "name": "Justice Alloy (SH7)",
-        "synergy": 0,
-        "types": [
-            "hardboss"
-        ]
+        "name": "Justice Alloy (SH7)"
     },
     {
-        "difficulty": 18,
-        "name": "Clear SCx6",
-        "synergy": 0,
-        "types": [
-            "clear"
-        ]
+        "name": "Clear SCx6"
     },
     {
-        "difficulty": 14,
-        "name": "5 Spicy Sprays and 5 Bitter Sprays",
-        "synergy": 0,
-        "types": [
-            "spray"
-        ]
+        "name": "5 Spicy Sprays and 5 Bitter Sprays"
     },
     {
-        "difficulty": 2,
-        "name": "Kill the Burrowing Snagret in VoR",
-        "synergy": 0,
-        "types": [
-            "snagret"
-        ]
+        "name": "Kill the Burrowing Snagret in VoR"
     },
     {
-        "difficulty": 13,
-        "name": "200 Total Pikmin",
-        "synergy": 0,
-        "types": [
-            "masspik"
-        ]
+        "name": "200 Total Pikmin"
     },
     {
-        "difficulty": 4,
-        "name": "Get a Pikmin Extinction inside a cave",
-        "synergy": 0,
-        "types": [
-            "selfharm"
-        ]
+        "name": "Get a Pikmin Extinction inside a cave"
     },
     {
-        "difficulty": 7,
-        "name": "Collect 8 Dweevils (of any kind)",
-        "synergy": 0,
-        "types": [
-            "xenemy"
-        ]
+        "name": "Collect 8 Dweevils (of any kind)"
     },
     {
-        "difficulty": 21,
-        "name": "Collect Temporal Mechanism (VoR) without using any Bitter Sprays",
-        "synergy": 0,
-        "types": [
-            "vor",
-            "fiery"
-        ]
+        "name": "Collect Temporal Mechanism (VoR) without using any Bitter Sprays"
     },
     {
-        "difficulty": 20,
-        "name": "Onion Replica (PP)",
-        "synergy": 0,
-        "types": [
-            "pp",
-            "blkgate",
-            "void",
-            "lowpoko"
-        ]
+        "name": "Onion Replica (PP)"
     },
     {
-        "difficulty": 22,
-        "name": "Air Brake (AW)",
-        "synergy": 0,
-        "types": [
-            "aw"
-        ]
+        "name": "Air Brake (AW)"
     },
     {
-        "difficulty": 16,
-        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin",
-        "synergy": 0,
-        "types": [
-            "mature"
-        ]
+        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin"
     },
     {
-        "difficulty": 15,
-        "name": "Thirst Activator(NTSC-U)/Perfect Container(PAL) (SCx7)",
-        "synergy": 0,
-        "types": [
-            "hipoko"
-        ]
+        "name": "Thirst Activator(NTSC-U)/Perfect Container(PAL) (SCx7)"
     },
     {
-        "difficulty": 3,
-        "name": "Get a Red Pikmin Extinction",
-        "synergy": 0,
-        "types": [
-            "red",
-            "selfharm"
-        ]
+        "name": "Get a Red Pikmin Extinction"
     },
     {
-        "difficulty": 9,
-        "name": "Kill all 3 Creeping Chrysanthemums in AW",
-        "synergy": 0,
-        "types": [
-            "allenemy"
-        ]
+        "name": "Kill all 3 Creeping Chrysanthemums in AW"
     },
     {
-        "difficulty": 5,
-        "name": "Collect a 5-Pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 5-Pellet of each color"
     },
     {
-        "difficulty": 8,
-        "name": "Turn 15 Bulbmin into other types",
-        "synergy": 0,
-        "types": [
-            "blb"
-        ]
+        "name": "Turn 15 Bulbmin into other types"
     },
     {
-        "difficulty": 24,
-        "name": "Stellar Orb (SCx9)",
-        "synergy": 0,
-        "types": [
-            "hardboss"
-        ]
+        "name": "Stellar Orb (SCx9)"
     },
     {
-        "difficulty": 17,
-        "name": "45 Purples",
-        "synergy": 0,
-        "types": [
-            "onetype"
-        ]
+        "name": "45 Purples"
     },
     {
-        "difficulty": 11,
-        "name": "8 Bitter Sprays",
-        "synergy": 0,
-        "types": [
-            "spray"
-        ]
+        "name": "8 Bitter Sprays"
     }
 ]

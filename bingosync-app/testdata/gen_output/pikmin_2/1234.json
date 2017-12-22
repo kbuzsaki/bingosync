@@ -1,206 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Enter SmC",
-        "synergy": 0,
-        "types": [
-            "caveenter"
-        ]
+        "name": "Enter SmC"
     },
     {
-        "difficulty": 21,
-        "name": "Collect Temporal Mechanism (VoR) without using any Bitter Sprays",
-        "synergy": 0,
-        "types": [
-            "vor",
-            "fiery"
-        ]
+        "name": "Collect Temporal Mechanism (VoR) without using any Bitter Sprays"
     },
     {
-        "difficulty": 14,
-        "name": "100 Blues",
-        "synergy": 0,
-        "types": [
-            "onetype",
-            "masspik"
-        ]
+        "name": "100 Blues"
     },
     {
-        "difficulty": 18,
-        "name": "Clear SCx6",
-        "synergy": 0,
-        "types": [
-            "clear"
-        ]
+        "name": "Clear SCx6"
     },
     {
-        "difficulty": 10,
-        "name": "Kill all 2 Hermit Crawmads in PP",
-        "synergy": 0,
-        "types": [
-            "allenemy"
-        ]
+        "name": "Kill all 2 Hermit Crawmads in PP"
     },
     {
-        "difficulty": 19,
-        "name": "Kill 5 Breadbugs",
-        "synergy": 0,
-        "types": [
-            "breadbug"
-        ]
+        "name": "Kill 5 Breadbugs"
     },
     {
-        "difficulty": 8,
-        "name": "8 Spicy Sprays",
-        "synergy": 0,
-        "types": [
-            "spray"
-        ]
+        "name": "8 Spicy Sprays"
     },
     {
-        "difficulty": 5,
-        "name": "Collect 2 Burrowing Snagret heads",
-        "synergy": 0,
-        "types": [
-            "snagret"
-        ]
+        "name": "Collect 2 Burrowing Snagret heads"
     },
     {
-        "difficulty": 22,
-        "name": "Air Brake (AW)",
-        "synergy": 0,
-        "types": [
-            "aw"
-        ]
+        "name": "Air Brake (AW)"
     },
     {
-        "difficulty": 11,
-        "name": "Clear SCx3",
-        "synergy": 0,
-        "types": [
-            "clear"
-        ]
+        "name": "Clear SCx3"
     },
     {
-        "difficulty": 25,
-        "name": "Clear SmC4",
-        "synergy": 0,
-        "types": [
-            "clear"
-        ]
+        "name": "Clear SmC4"
     },
     {
-        "difficulty": 12,
-        "name": "Kill 5 Bulbmin",
-        "synergy": 0,
-        "types": [
-            "blb",
-            "selfharm"
-        ]
+        "name": "Kill 5 Bulbmin"
     },
     {
-        "difficulty": 16,
-        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin",
-        "synergy": 0,
-        "types": [
-            "mature"
-        ]
+        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin"
     },
     {
-        "difficulty": 9,
-        "name": "Enter all 4 caves in PP",
-        "synergy": 0,
-        "types": [
-            "caveenter"
-        ]
+        "name": "Enter all 4 caves in PP"
     },
     {
-        "difficulty": 3,
-        "name": "Pilgrim Bulb (AW)",
-        "synergy": 0,
-        "types": [
-            "aw"
-        ]
+        "name": "Pilgrim Bulb (AW)"
     },
     {
-        "difficulty": 6,
-        "name": "Crystal Clover (BK1) and Crystal King (BK4)",
-        "synergy": 0,
-        "types": []
+        "name": "Crystal Clover (BK1) and Crystal King (BK4)"
     },
     {
-        "difficulty": 4,
-        "name": "Use a Red Candypop Bud",
-        "synergy": 0,
-        "types": [
-            "red",
-            "cpb"
-        ]
+        "name": "Use a Red Candypop Bud"
     },
     {
-        "difficulty": 23,
-        "name": "Decorative Goo (AW)",
-        "synergy": 0,
-        "types": [
-            "awgate",
-            "aw"
-        ]
+        "name": "Decorative Goo (AW)"
     },
     {
-        "difficulty": 15,
-        "name": "Collect 2 Gattling Groinks",
-        "synergy": 0,
-        "types": [
-            "xenemy"
-        ]
+        "name": "Collect 2 Gattling Groinks"
     },
     {
-        "difficulty": 17,
-        "name": "45 Purples",
-        "synergy": 0,
-        "types": [
-            "onetype"
-        ]
+        "name": "45 Purples"
     },
     {
-        "difficulty": 13,
-        "name": "Build all 3 bridges in AW",
-        "synergy": 0,
-        "types": [
-            "bridge"
-        ]
+        "name": "Build all 3 bridges in AW"
     },
     {
-        "difficulty": 20,
-        "name": "Destroy all 2 black gates in PP",
-        "synergy": 0,
-        "types": [
-            "blkgate",
-            "ppgate"
-        ]
+        "name": "Destroy all 2 black gates in PP"
     },
     {
-        "difficulty": 7,
-        "name": "Fossilized Ursidae (VoR)",
-        "synergy": 0,
-        "types": [
-            "vor"
-        ]
+        "name": "Fossilized Ursidae (VoR)"
     },
     {
-        "difficulty": 1,
-        "name": "Collect a 1-Pellet of each color",
-        "synergy": 0,
-        "types": [
-            "pellet"
-        ]
+        "name": "Collect a 1-Pellet of each color"
     },
     {
-        "difficulty": 24,
-        "name": "Stellar Orb (SCx9)",
-        "synergy": 0,
-        "types": [
-            "hardboss"
-        ]
+        "name": "Stellar Orb (SCx9)"
     }
 ]

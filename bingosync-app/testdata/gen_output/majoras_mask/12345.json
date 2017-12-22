@@ -1,214 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "4 Real Bottles (no dupe)",
-        "synergy": 0,
-        "types": [
-            "bottle"
-        ]
+        "name": "4 Real Bottles (no dupe)"
     },
     {
-        "difficulty": 12,
-        "name": "1000 Rupees in Bank",
-        "synergy": 0,
-        "types": [
-            "wallet"
-        ]
+        "name": "1000 Rupees in Bank"
     },
     {
-        "difficulty": 1,
-        "name": "Blast Mask",
-        "synergy": 0,
-        "types": [
-            "allnight"
-        ]
+        "name": "Blast Mask"
     },
     {
-        "difficulty": 10,
-        "name": "Press 3 STT Yellow Floor Switches",
-        "synergy": 0,
-        "types": [
-            "stt",
-            "istt",
-            "gistt"
-        ]
+        "name": "Press 3 STT Yellow Floor Switches"
     },
     {
-        "difficulty": 23,
-        "name": "3 Boss Keys",
-        "synergy": 0,
-        "types": [
-            "bosskey"
-        ]
+        "name": "3 Boss Keys"
     },
     {
-        "difficulty": 6,
-        "name": "Razor Sword",
-        "synergy": 0,
-        "types": [
-            "sword"
-        ]
+        "name": "Razor Sword"
     },
     {
-        "difficulty": 25,
-        "name": "Great Fairy's Sword",
-        "synergy": 0,
-        "types": [
-            "gfs",
-            "gfairy",
-            "gbt"
-        ]
+        "name": "Great Fairy's Sword"
     },
     {
-        "difficulty": 18,
-        "name": "Beaver Bottle",
-        "synergy": 0,
-        "types": [
-            "hook",
-            "bottle"
-        ]
+        "name": "Beaver Bottle"
     },
     {
-        "difficulty": 14,
-        "name": "Open 2 Well Chests",
-        "synergy": 0,
-        "types": [
-            "mirror"
-        ]
+        "name": "Open 2 Well Chests"
     },
     {
-        "difficulty": 2,
-        "name": "Rosa Sister's Happiness Seal",
-        "synergy": 0,
-        "types": [
-            "notebook"
-        ]
+        "name": "Rosa Sister's Happiness Seal"
     },
     {
-        "difficulty": 13,
-        "name": "Kill 3 Dinolfos",
-        "synergy": 0,
-        "types": [
-            "elemental",
-            "gbt"
-        ]
+        "name": "Kill 3 Dinolfos"
     },
     {
-        "difficulty": 4,
-        "name": "Save Sun Mask",
-        "synergy": 0,
-        "types": [
-            "couple"
-        ]
+        "name": "Save Sun Mask"
     },
     {
-        "difficulty": 7,
-        "name": "Ikana Castle HP",
-        "synergy": 0,
-        "types": [
-            "castle"
-        ]
+        "name": "Ikana Castle HP"
     },
     {
-        "difficulty": 21,
-        "name": "14 Masks",
-        "synergy": 0,
-        "types": [
-            "mask"
-        ]
+        "name": "14 Masks"
     },
     {
-        "difficulty": 20,
-        "name": "Hit All 10 Owl Statues",
-        "synergy": 0,
-        "types": [
-            "hook",
-            "stt"
-        ]
+        "name": "Hit All 10 Owl Statues"
     },
     {
-        "difficulty": 22,
-        "name": "3 Temple Maps and Compasses",
-        "synergy": 0,
-        "types": [
-            "mc"
-        ]
+        "name": "3 Temple Maps and Compasses"
     },
     {
-        "difficulty": 16,
-        "name": "3 Bottom Row Songs",
-        "synergy": 0,
-        "types": [
-            "song"
-        ]
+        "name": "3 Bottom Row Songs"
     },
     {
-        "difficulty": 15,
-        "name": "Column of 4 Masks",
-        "synergy": 0,
-        "types": [
-            "mask"
-        ]
+        "name": "Column of 4 Masks"
     },
     {
-        "difficulty": 3,
-        "name": "20 Magic Beans",
-        "synergy": 0,
-        "types": [
-            "slot",
-            "bean"
-        ]
+        "name": "20 Magic Beans"
     },
     {
-        "difficulty": 9,
-        "name": "Don Gero's Mask",
-        "synergy": 0,
-        "types": [
-            "lens"
-        ]
+        "name": "Don Gero's Mask"
     },
     {
-        "difficulty": 5,
-        "name": "Doggy Racetrack HP",
-        "synergy": 0,
-        "types": [
-            "ranch"
-        ]
+        "name": "Doggy Racetrack HP"
     },
     {
-        "difficulty": 8,
-        "name": "All Maps from Tingle",
-        "synergy": 0,
-        "types": [
-            "map"
-        ]
+        "name": "All Maps from Tingle"
     },
     {
-        "difficulty": 24,
-        "name": "2 Temple Maps, Compasses, and Boss Keys",
-        "synergy": 0,
-        "types": [
-            "mc",
-            "bosskey"
-        ]
+        "name": "2 Temple Maps, Compasses, and Boss Keys"
     },
     {
-        "difficulty": 17,
-        "name": "Mask of Scents",
-        "synergy": 0,
-        "types": [
-            "wft",
-            "remains"
-        ]
+        "name": "Mask of Scents"
     },
     {
-        "difficulty": 11,
-        "name": "4 Business Scrub HPs",
-        "synergy": 0,
-        "types": [
-            "heart",
-            "scrub",
-            "deed"
-        ]
+        "name": "4 Business Scrub HPs"
     }
 ]

@@ -1,226 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Blank B Button (no sword)",
-        "synergy": 0,
-        "types": [
-            "sword",
-            "epona"
-        ]
+        "name": "Blank B Button (no sword)"
     },
     {
-        "difficulty": 21,
-        "name": "14 Masks",
-        "synergy": 0,
-        "types": [
-            "mask"
-        ]
+        "name": "14 Masks"
     },
     {
-        "difficulty": 14,
-        "name": "10 STT Fairies",
-        "synergy": 0,
-        "types": [
-            "stt",
-            "istt",
-            "gistt",
-            "gfs"
-        ]
+        "name": "10 STT Fairies"
     },
     {
-        "difficulty": 18,
-        "name": "Beaver Bottle",
-        "synergy": 0,
-        "types": [
-            "hook",
-            "bottle"
-        ]
+        "name": "Beaver Bottle"
     },
     {
-        "difficulty": 10,
-        "name": "Ghost Hut HP",
-        "synergy": 0,
-        "types": [
-            "heart"
-        ]
+        "name": "Ghost Hut HP"
     },
     {
-        "difficulty": 19,
-        "name": "4 Real Bottles (no dupe)",
-        "synergy": 0,
-        "types": [
-            "bottle"
-        ]
+        "name": "4 Real Bottles (no dupe)"
     },
     {
-        "difficulty": 8,
-        "name": "Path to Snowhead HP",
-        "synergy": 0,
-        "types": [
-            "heart"
-        ]
+        "name": "Path to Snowhead HP"
     },
     {
-        "difficulty": 5,
-        "name": "Postman Happiness Seal",
-        "synergy": 0,
-        "types": [
-            "notebook",
-            "delivery",
-            "couple"
-        ]
+        "name": "Postman Happiness Seal"
     },
     {
-        "difficulty": 22,
-        "name": "Open 5 GBT Chests",
-        "synergy": 0,
-        "types": [
-            "dungeon",
-            "gbt",
-            "gsht",
-            "gistt"
-        ]
+        "name": "Open 5 GBT Chests"
     },
     {
-        "difficulty": 11,
-        "name": "Exactly 333 Rupees in Wallet",
-        "synergy": 0,
-        "types": [
-            "wallet",
-            "spider"
-        ]
+        "name": "Exactly 333 Rupees in Wallet"
     },
     {
-        "difficulty": 25,
-        "name": "Ice Arrow",
-        "synergy": 0,
-        "types": [
-            "dungeon",
-            "elemental",
-            "gbt",
-            "gsht",
-            "gistt"
-        ]
+        "name": "Ice Arrow"
     },
     {
-        "difficulty": 12,
-        "name": "Pirate's Fortress HP",
-        "synergy": 0,
-        "types": [
-            "fortress"
-        ]
+        "name": "Pirate's Fortress HP"
     },
     {
-        "difficulty": 16,
-        "name": "12 Masks",
-        "synergy": 0,
-        "types": [
-            "mask"
-        ]
+        "name": "12 Masks"
     },
     {
-        "difficulty": 9,
-        "name": "2 Unused STT Small Keys",
-        "synergy": 0,
-        "types": [
-            "stt",
-            "gfs"
-        ]
+        "name": "2 Unused STT Small Keys"
     },
     {
-        "difficulty": 3,
-        "name": "Chateau Romani",
-        "synergy": 0,
-        "types": [
-            "delivery",
-            "bottle"
-        ]
+        "name": "Chateau Romani"
     },
     {
-        "difficulty": 6,
-        "name": "Song of Storms",
-        "synergy": 0,
-        "types": [
-            "song",
-            "grave"
-        ]
+        "name": "Song of Storms"
     },
     {
-        "difficulty": 4,
-        "name": "WFT Boss Key",
-        "synergy": 0,
-        "types": [
-            "wft",
-            "bosskey"
-        ]
+        "name": "WFT Boss Key"
     },
     {
-        "difficulty": 23,
-        "name": "Double Magic",
-        "synergy": 0,
-        "types": [
-            "sht",
-            "lens"
-        ]
+        "name": "Double Magic"
     },
     {
-        "difficulty": 15,
-        "name": "Grow 8 Bean Plants",
-        "synergy": 0,
-        "types": [
-            "bean"
-        ]
+        "name": "Grow 8 Bean Plants"
     },
     {
-        "difficulty": 17,
-        "name": "Diagonal of 4 Item Slots",
-        "synergy": 1,
-        "types": [
-            "slot",
-            "bottle"
-        ]
+        "name": "Diagonal of 4 Item Slots"
     },
     {
-        "difficulty": 13,
-        "name": "10 Happiness Seals",
-        "synergy": 0,
-        "types": [
-            "notebook"
-        ]
+        "name": "10 Happiness Seals"
     },
     {
-        "difficulty": 20,
-        "name": "Beaver HP",
-        "synergy": 0,
-        "types": [
-            "hook",
-            "bottle"
-        ]
+        "name": "Beaver HP"
     },
     {
-        "difficulty": 7,
-        "name": "Odolwa's Remains",
-        "synergy": 0,
-        "types": [
-            "wft",
-            "remains"
-        ]
+        "name": "Odolwa's Remains"
     },
     {
-        "difficulty": 1,
-        "name": "Blast Mask",
-        "synergy": 0,
-        "types": [
-            "allnight"
-        ]
+        "name": "Blast Mask"
     },
     {
-        "difficulty": 24,
-        "name": "Cremia's Reward(hug or 200 rupees)",
-        "synergy": 0,
-        "types": [
-            "ranch",
-            "0thday"
-        ]
+        "name": "Cremia's Reward(hug or 200 rupees)"
     }
 ]

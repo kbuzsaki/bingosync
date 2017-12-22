@@ -1,232 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "True Jedi in Battle Over Coruscant",
-        "synergy": 0,
-        "types": [
-            "boc",
-            "tj"
-        ]
+        "name": "True Jedi in Battle Over Coruscant"
     },
     {
-        "difficulty": 18,
-        "name": "Collect at Least 3 Minikits in Droid Factory",
-        "synergy": 0,
-        "types": [
-            "df",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Droid Factory"
     },
     {
-        "difficulty": 15,
-        "name": "Collect all Minikits in Ruin of the Jedi",
-        "synergy": 1,
-        "types": [
-            "rotj",
-            "amk",
-            "collect"
-        ]
+        "name": "Collect all Minikits in Ruin of the Jedi"
     },
     {
-        "difficulty": 7,
-        "name": "Buy Brushes",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "extras"
-        ]
+        "name": "Buy Brushes"
     },
     {
-        "difficulty": 1,
-        "name": "Beat Darth Vader in Story Mode",
-        "synergy": 0,
-        "types": [
-            "dv",
-            "sm"
-        ]
+        "name": "Beat Darth Vader in Story Mode"
     },
     {
-        "difficulty": 10,
-        "name": "Buy Silly Blasters",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "extras"
-        ]
+        "name": "Buy Silly Blasters"
     },
     {
-        "difficulty": 2,
-        "name": "Beat Count Dooku in Free Play",
-        "synergy": 0,
-        "types": [
-            "cd",
-            "fp"
-        ]
+        "name": "Beat Count Dooku in Free Play"
     },
     {
-        "difficulty": 21,
-        "name": "True Jedi in 5 Levels",
-        "synergy": 0,
-        "types": [
-            "tj"
-        ]
+        "name": "True Jedi in 5 Levels"
     },
     {
-        "difficulty": 19,
-        "name": "Collect at Least 3 Minikits in Battle Over Coruscant",
-        "synergy": 0,
-        "types": [
-            "boc",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Battle Over Coruscant"
     },
     {
-        "difficulty": 13,
-        "name": "Collect all Minikits in Negotiations",
-        "synergy": 1,
-        "types": [
-            "negotiations",
-            "amk",
-            "collect"
-        ]
+        "name": "Collect all Minikits in Negotiations"
     },
     {
-        "difficulty": 16,
-        "name": "Collect 90 Minikits",
-        "synergy": 0,
-        "types": [
-            "mk",
-            "collect"
-        ]
+        "name": "Collect 90 Minikits"
     },
     {
-        "difficulty": 14,
-        "name": "Collect all Minikits in Discovery on Kamino",
-        "synergy": 2,
-        "types": [
-            "dk",
-            "amk",
-            "collect"
-        ]
+        "name": "Collect all Minikits in Discovery on Kamino"
     },
     {
-        "difficulty": 8,
-        "name": "Buy Count Dooku",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Count Dooku"
     },
     {
-        "difficulty": 5,
-        "name": "Buy Battle Droid (Commander)",
-        "synergy": 7,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Battle Droid (Commander)"
     },
     {
-        "difficulty": 22,
-        "name": "True Jedi in Podrace ",
-        "synergy": 0,
-        "types": [
-            "pr",
-            "tj"
-        ]
+        "name": "True Jedi in Podrace "
     },
     {
-        "difficulty": 3,
-        "name": "True Jedi in Darth Vader",
-        "synergy": 1,
-        "types": [
-            "dv",
-            "tj"
-        ]
+        "name": "True Jedi in Darth Vader"
     },
     {
-        "difficulty": 25,
-        "name": "True Jedi in Darth Maul",
-        "synergy": 1,
-        "types": [
-            "dm",
-            "tj"
-        ]
+        "name": "True Jedi in Darth Maul"
     },
     {
-        "difficulty": 17,
-        "name": "Collect at Least 3 Minikits in Escape from Naboo",
-        "synergy": 1,
-        "types": [
-            "efn",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Escape from Naboo"
     },
     {
-        "difficulty": 11,
-        "name": "Buy Clone (Episode III, Walker)",
-        "synergy": 11,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Clone (Episode III, Walker)"
     },
     {
-        "difficulty": 9,
-        "name": "Collect 500,000 studs",
-        "synergy": 2,
-        "types": [
-            "studs",
-            "collect"
-        ]
+        "name": "Collect 500,000 studs"
     },
     {
-        "difficulty": 12,
-        "name": "Collect 250,000 studs",
-        "synergy": 2,
-        "types": [
-            "studs",
-            "collect"
-        ]
+        "name": "Collect 250,000 studs"
     },
     {
-        "difficulty": 6,
-        "name": "Buy Battle Droid (Geonosis)",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Battle Droid (Geonosis)"
     },
     {
-        "difficulty": 4,
-        "name": "Buy 5 Extras",
-        "synergy": 6,
-        "types": [
-            "buy",
-            "extras"
-        ]
+        "name": "Buy 5 Extras"
     },
     {
-        "difficulty": 23,
-        "name": "True Jedi in Droid Factory",
-        "synergy": 0,
-        "types": [
-            "df",
-            "tj"
-        ]
+        "name": "True Jedi in Droid Factory"
     },
     {
-        "difficulty": 20,
-        "name": "Collect 80 Minikits",
-        "synergy": 3,
-        "types": [
-            "mk",
-            "collect"
-        ]
+        "name": "Collect 80 Minikits"
     }
 ]

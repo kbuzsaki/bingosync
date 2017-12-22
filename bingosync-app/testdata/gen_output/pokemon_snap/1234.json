@@ -1,211 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Pic: Three Dugtrios",
-        "synergy": 0,
-        "types": [
-            "tunnel"
-        ]
+        "name": "Pic: Three Dugtrios"
     },
     {
-        "difficulty": 21,
-        "name": "Pic: 4000+ Grimer",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: 4000+ Grimer"
     },
     {
-        "difficulty": 14,
-        "name": "Pic: 4000+ Gyarados",
-        "synergy": 0,
-        "types": [
-            "valley"
-        ]
+        "name": "Pic: 4000+ Gyarados"
     },
     {
-        "difficulty": 18,
-        "name": "Add pics of three different Snorlax dances to the album",
-        "synergy": 0,
-        "types": [
-            "flute",
-            "beach",
-            "album"
-        ]
+        "name": "Add pics of three different Snorlax dances to the album"
     },
     {
-        "difficulty": 10,
-        "name": "Pic: Fighting Magmars",
-        "synergy": 0,
-        "types": [
-            "volcano"
-        ]
+        "name": "Pic: Fighting Magmars"
     },
     {
-        "difficulty": 19,
-        "name": "Make the second Scyther spawn",
-        "synergy": 0,
-        "types": [
-            "beach"
-        ]
+        "name": "Make the second Scyther spawn"
     },
     {
-        "difficulty": 8,
-        "name": "Pic: Centered Arcanine",
-        "synergy": 0,
-        "types": [
-            "volcano"
-        ]
+        "name": "Pic: Centered Arcanine"
     },
     {
-        "difficulty": 5,
-        "name": "Pic: Centered Jynx",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: Centered Jynx"
     },
     {
-        "difficulty": 22,
-        "name": "Pic: Centered Metapod climbing back up",
-        "synergy": 0,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: Centered Metapod climbing back up"
     },
     {
-        "difficulty": 11,
-        "name": "Add pics of all three Pikachus in Tunnel to the album",
-        "synergy": 0,
-        "types": [
-            "tunnel",
-            "album"
-        ]
+        "name": "Add pics of all three Pikachus in Tunnel to the album"
     },
     {
-        "difficulty": 25,
-        "name": "Pic: Mew facing you",
-        "synergy": 0,
-        "types": [
-            "rainbow"
-        ]
+        "name": "Pic: Mew facing you"
     },
     {
-        "difficulty": 12,
-        "name": "Pic: Snorlax with both feet in the air",
-        "synergy": 0,
-        "types": [
-            "beach"
-        ]
+        "name": "Pic: Snorlax with both feet in the air"
     },
     {
-        "difficulty": 16,
-        "name": "Add 15+ pics in the album",
-        "synergy": 0,
-        "types": [
-            "album"
-        ]
+        "name": "Add 15+ pics in the album"
     },
     {
-        "difficulty": 9,
-        "name": "Pic: Interrupt the performance",
-        "synergy": 0,
-        "types": [
-            "cave"
-        ]
+        "name": "Pic: Interrupt the performance"
     },
     {
-        "difficulty": 3,
-        "name": "Release three Porygons",
-        "synergy": 0,
-        "types": [
-            "river",
-            "pester"
-        ]
+        "name": "Release three Porygons"
     },
     {
-        "difficulty": 6,
-        "name": "Pic: Sparkling Magikarp (Cave)",
-        "synergy": 0,
-        "types": [
-            "cave",
-            "pester"
-        ]
+        "name": "Pic: Sparkling Magikarp (Cave)"
     },
     {
-        "difficulty": 4,
-        "name": "Pic: Digging Sandslash",
-        "synergy": 0,
-        "types": [
-            "valley"
-        ]
+        "name": "Pic: Digging Sandslash"
     },
     {
-        "difficulty": 23,
-        "name": "Look at Mew in the Pokemon Report",
-        "synergy": 0,
-        "types": [
-            "rainbow"
-        ]
+        "name": "Look at Mew in the Pokemon Report"
     },
     {
-        "difficulty": 15,
-        "name": "Submit eight different Pokemon pics in Beach",
-        "synergy": 2,
-        "types": [
-            "beach"
-        ]
+        "name": "Submit eight different Pokemon pics in Beach"
     },
     {
-        "difficulty": 17,
-        "name": "Pic: Tunnel sign",
-        "synergy": 2,
-        "types": [
-            "sign",
-            "tunnel"
-        ]
+        "name": "Pic: Tunnel sign"
     },
     {
-        "difficulty": 13,
-        "name": "Make all four Bulbasaurs in Cave evolve",
-        "synergy": 2,
-        "types": [
-            "pester",
-            "bulbasaur"
-        ]
+        "name": "Make all four Bulbasaurs in Cave evolve"
     },
     {
-        "difficulty": 20,
-        "name": "Add pics of five different exploded Electrodes to the album",
-        "synergy": 0,
-        "types": [
-            "apple",
-            "tunnel",
-            "album"
-        ]
+        "name": "Add pics of five different exploded Electrodes to the album"
     },
     {
-        "difficulty": 7,
-        "name": "Pic: Three Bulbasaurs",
-        "synergy": 0,
-        "types": [
-            "river"
-        ]
+        "name": "Pic: Three Bulbasaurs"
     },
     {
-        "difficulty": 1,
-        "name": "Pic: Vulpix (Uncentered)",
-        "synergy": 0,
-        "types": [
-            "volcano"
-        ]
+        "name": "Pic: Vulpix (Uncentered)"
     },
     {
-        "difficulty": 24,
-        "name": "Pic: 9000+ Mew",
-        "synergy": 0,
-        "types": [
-            "rainbow"
-        ]
+        "name": "Pic: 9000+ Mew"
     }
 ]

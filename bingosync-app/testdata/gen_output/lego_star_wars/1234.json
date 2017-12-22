@@ -1,232 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Beat Darth Maul in Free Play",
-        "synergy": 0,
-        "types": [
-            "dm",
-            "fp"
-        ]
+        "name": "Beat Darth Maul in Free Play"
     },
     {
-        "difficulty": 21,
-        "name": "Buy Minikit detector",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "extras"
-        ]
+        "name": "Buy Minikit detector"
     },
     {
-        "difficulty": 14,
-        "name": "Collect 40 Minikits",
-        "synergy": 0,
-        "types": [
-            "mk",
-            "collect"
-        ]
+        "name": "Collect 40 Minikits"
     },
     {
-        "difficulty": 18,
-        "name": "Collect at Least 3 Minikits in Gunship Cavalry",
-        "synergy": 1,
-        "types": [
-            "gc",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Gunship Cavalry"
     },
     {
-        "difficulty": 10,
-        "name": "Buy Darth Sidious",
-        "synergy": 3,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Darth Sidious"
     },
     {
-        "difficulty": 19,
-        "name": "Collect at Least 3 Minikits in Battle Over Coruscant",
-        "synergy": 0,
-        "types": [
-            "boc",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Battle Over Coruscant"
     },
     {
-        "difficulty": 8,
-        "name": "Buy Shaak Ti",
-        "synergy": 3,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Shaak Ti"
     },
     {
-        "difficulty": 5,
-        "name": "Buy Battle Droid (Commander)",
-        "synergy": 4,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Battle Droid (Commander)"
     },
     {
-        "difficulty": 22,
-        "name": "True Jedi in Escape from Naboo",
-        "synergy": 0,
-        "types": [
-            "efn",
-            "tj"
-        ]
+        "name": "True Jedi in Escape from Naboo"
     },
     {
-        "difficulty": 11,
-        "name": "Buy Clone (Episode III, Swamp)",
-        "synergy": 12,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Clone (Episode III, Swamp)"
     },
     {
-        "difficulty": 25,
-        "name": "True Jedi in Darth Vader",
-        "synergy": 0,
-        "types": [
-            "dv",
-            "tj"
-        ]
+        "name": "True Jedi in Darth Vader"
     },
     {
-        "difficulty": 12,
-        "name": "Collect 250,000 studs",
-        "synergy": 0,
-        "types": [
-            "studs",
-            "collect"
-        ]
+        "name": "Collect 250,000 studs"
     },
     {
-        "difficulty": 16,
-        "name": "Collect all Minikits in Count Dooku",
-        "synergy": 2,
-        "types": [
-            "cd",
-            "amk",
-            "collect"
-        ]
+        "name": "Collect all Minikits in Count Dooku"
     },
     {
-        "difficulty": 9,
-        "name": "Buy General Grievous",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy General Grievous"
     },
     {
-        "difficulty": 3,
-        "name": "True Jedi in Darth Vader",
-        "synergy": 4,
-        "types": [
-            "dv",
-            "tj"
-        ]
+        "name": "True Jedi in Darth Vader"
     },
     {
-        "difficulty": 6,
-        "name": "Buy Darth Maul",
-        "synergy": 0,
-        "types": [
-            "buy",
-            "character"
-        ]
+        "name": "Buy Darth Maul"
     },
     {
-        "difficulty": 4,
-        "name": "Collect 100,000 studs",
-        "synergy": 5,
-        "types": [
-            "studs",
-            "collect"
-        ]
+        "name": "Collect 100,000 studs"
     },
     {
-        "difficulty": 23,
-        "name": "True Jedi in Gunship Cavalry ",
-        "synergy": 0,
-        "types": [
-            "gc",
-            "tj"
-        ]
+        "name": "True Jedi in Gunship Cavalry "
     },
     {
-        "difficulty": 15,
-        "name": "Collect 70 Minikits",
-        "synergy": 3,
-        "types": [
-            "mk",
-            "collect"
-        ]
+        "name": "Collect 70 Minikits"
     },
     {
-        "difficulty": 17,
-        "name": "Collect at Least 3 Minikits in Invasion of Naboo",
-        "synergy": 2,
-        "types": [
-            "ion",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Invasion of Naboo"
     },
     {
-        "difficulty": 13,
-        "name": "Collect 50 Minikits",
-        "synergy": 3,
-        "types": [
-            "mk",
-            "collect"
-        ]
+        "name": "Collect 50 Minikits"
     },
     {
-        "difficulty": 20,
-        "name": "Collect at Least 3 Minikits in Darth Maul",
-        "synergy": 3,
-        "types": [
-            "dm",
-            "collect",
-            "3mk"
-        ]
+        "name": "Collect at Least 3 Minikits in Darth Maul"
     },
     {
-        "difficulty": 7,
-        "name": "Buy Tea cups",
-        "synergy": 3,
-        "types": [
-            "buy",
-            "extras"
-        ]
+        "name": "Buy Tea cups"
     },
     {
-        "difficulty": 1,
-        "name": "Beat Count Dooku in Story Mode",
-        "synergy": 0,
-        "types": [
-            "cd",
-            "sm"
-        ]
+        "name": "Beat Count Dooku in Story Mode"
     },
     {
-        "difficulty": 24,
-        "name": "True Jedi in Defense of Kashyyyk",
-        "synergy": 1,
-        "types": [
-            "dok",
-            "tj"
-        ]
+        "name": "True Jedi in Defense of Kashyyyk"
     }
 ]

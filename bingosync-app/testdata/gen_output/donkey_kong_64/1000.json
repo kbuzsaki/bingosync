@@ -1,249 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "All 5 Crypt GBs in Castle",
-        "synergy": 0,
-        "types": [
-            "castle",
-            "castlegb"
-        ]
+        "name": "All 5 Crypt GBs in Castle"
     },
     {
-        "difficulty": 18,
-        "name": "Nintendo Coin",
-        "synergy": 0,
-        "types": [
-            "factory",
-            "donkey"
-        ]
+        "name": "Nintendo Coin"
     },
     {
-        "difficulty": 15,
-        "name": "All 4 GB's in Llama Temple",
-        "synergy": 0,
-        "types": [
-            "aztec",
-            "aztecgb"
-        ]
+        "name": "All 4 GB's in Llama Temple"
     },
     {
-        "difficulty": 7,
-        "name": "All Caged GBs in DK Isles",
-        "synergy": 0,
-        "types": [
-            "islesgb",
-            "isles"
-        ]
+        "name": "All Caged GBs in DK Isles"
     },
     {
-        "difficulty": 1,
-        "name": "50 Bananas in Gloomy Galleon",
-        "synergy": 0,
-        "types": [
-            "gloomy",
-            "gloomybananas"
-        ]
+        "name": "50 Bananas in Gloomy Galleon"
     },
     {
-        "difficulty": 10,
-        "name": "Activate All Warps in Gloomy Galleon",
-        "synergy": 0,
-        "types": [
-            "gloomy",
-            "gloomywarp"
-        ]
+        "name": "Activate All Warps in Gloomy Galleon"
     },
     {
-        "difficulty": 2,
-        "name": "3 Diddy Blueprints",
-        "synergy": 0,
-        "types": [
-            "diddy",
-            "bp",
-            "japesbp",
-            "aztecbp",
-            "factorybp",
-            "gloomybp",
-            "fungibp",
-            "cavebp",
-            "castlebp",
-            "islesbp"
-        ]
+        "name": "3 Diddy Blueprints"
     },
     {
-        "difficulty": 21,
-        "name": "300 Total Banana Coins",
-        "synergy": 0,
-        "types": [
-            "coin",
-            "restrict_coin"
-        ]
+        "name": "300 Total Banana Coins"
     },
     {
-        "difficulty": 19,
-        "name": "Open Crown Door in Helm",
-        "synergy": 0,
-        "types": [
-            "helm",
-            "japescrown",
-            "azteccrown",
-            "factorycrown",
-            "gloomycrown",
-            "fungicrown",
-            "cavecrown",
-            "castlecrown",
-            "islescrown",
-            "helmcrown"
-        ]
+        "name": "Open Crown Door in Helm"
     },
     {
-        "difficulty": 13,
-        "name": "Both Banana Fairies in Creepy Castle",
-        "synergy": 0,
-        "types": [
-            "fairy",
-            "castle"
-        ]
+        "name": "Both Banana Fairies in Creepy Castle"
     },
     {
-        "difficulty": 16,
-        "name": "200 Bananas in Crystal Caves",
-        "synergy": 0,
-        "types": [
-            "cave",
-            "cavebananas"
-        ]
+        "name": "200 Bananas in Crystal Caves"
     },
     {
-        "difficulty": 14,
-        "name": "5 GBs in Creepy Castle",
-        "synergy": 0,
-        "types": [
-            "castle",
-            "castlegb"
-        ]
+        "name": "5 GBs in Creepy Castle"
     },
     {
-        "difficulty": 8,
-        "name": "Squash Tomatoes GB",
-        "synergy": 0,
-        "types": [
-            "fungi",
-            "chunky"
-        ]
+        "name": "Squash Tomatoes GB"
     },
     {
-        "difficulty": 5,
-        "name": "5 Banana Fairies",
-        "synergy": 0,
-        "types": [
-            "fairy",
-            "key8"
-        ]
+        "name": "5 Banana Fairies"
     },
     {
-        "difficulty": 22,
-        "name": "2 GBs for each Kong in DK Isles",
-        "synergy": 0,
-        "types": [
-            "isles",
-            "manybp",
-            "islesgb"
-        ]
+        "name": "2 GBs for each Kong in DK Isles"
     },
     {
-        "difficulty": 3,
-        "name": "Vulture GB",
-        "synergy": 0,
-        "types": [
-            "diddy",
-            "aztec"
-        ]
+        "name": "Vulture GB"
     },
     {
-        "difficulty": 25,
-        "name": "Complete Diddy's phase of K. Rool Fight",
-        "synergy": 0,
-        "types": [
-            "key3",
-            "key8",
-            "key",
-            "manykey"
-        ]
+        "name": "Complete Diddy's phase of K. Rool Fight"
     },
     {
-        "difficulty": 17,
-        "name": "3 Banana Medals in Gloomy Galleon",
-        "synergy": 0,
-        "types": [
-            "gloomy",
-            "medal",
-            "gloomybananas"
-        ]
+        "name": "3 Banana Medals in Gloomy Galleon"
     },
     {
-        "difficulty": 11,
-        "name": "200 Bananas in Frantic Factory",
-        "synergy": 0,
-        "types": [
-            "factorybananas",
-            "factory"
-        ]
+        "name": "200 Bananas in Frantic Factory"
     },
     {
-        "difficulty": 9,
-        "name": "Spider Mini-Boss GB",
-        "synergy": 0,
-        "types": [
-            "tiny",
-            "fungi"
-        ]
+        "name": "Spider Mini-Boss GB"
     },
     {
-        "difficulty": 12,
-        "name": "All 3 Beehive area GBs",
-        "synergy": 0,
-        "types": [
-            "japes",
-            "japesgb"
-        ]
+        "name": "All 3 Beehive area GBs"
     },
     {
-        "difficulty": 6,
-        "name": "9 Rainbow Coins",
-        "synergy": 0,
-        "types": [
-            "coin",
-            "restrict_coin"
-        ]
+        "name": "9 Rainbow Coins"
     },
     {
-        "difficulty": 4,
-        "name": "Crystal Caves Battle Crown",
-        "synergy": 0,
-        "types": [
-            "cave",
-            "cavecrown"
-        ]
+        "name": "Crystal Caves Battle Crown"
     },
     {
-        "difficulty": 23,
-        "name": "10 GBs in Creepy Castle",
-        "synergy": 0,
-        "types": [
-            "castlegb",
-            "castle"
-        ]
+        "name": "10 GBs in Creepy Castle"
     },
     {
-        "difficulty": 20,
-        "name": "Spawn K. Rool Battle",
-        "synergy": 0,
-        "types": [
-            "key3",
-            "key8",
-            "key",
-            "manykey"
-        ]
+        "name": "Spawn K. Rool Battle"
     }
 ]

@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "24 Moons (Luncheon Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Luncheon_Moons"
-        ]
+        "name": "24 Moons (Luncheon Kingdom)"
     },
     {
-        "difficulty": 12,
-        "name": "15 Total Checkpoints",
-        "synergy": 0,
-        "types": [
-            "Checkpoints"
-        ]
+        "name": "15 Total Checkpoints"
     },
     {
-        "difficulty": 1,
-        "name": "13 Moons (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Cascade_Moons"
-        ]
+        "name": "13 Moons (Cascade Kingdom)"
     },
     {
-        "difficulty": 10,
-        "name": "4 Moons from sub-areas (Wooded Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Wooded_Subarea"
-        ]
+        "name": "4 Moons from sub-areas (Wooded Kingdom)"
     },
     {
-        "difficulty": 23,
-        "name": "Purchase a Moon (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Shop",
-            "Bowser_Shop"
-        ]
+        "name": "Purchase a Moon (Bowser's Kingdom)"
     },
     {
-        "difficulty": 6,
-        "name": "Broodal Battle atop the Inverted Pyramid!",
-        "synergy": 0,
-        "types": [
-            "Sand_Objective"
-        ]
+        "name": "Broodal Battle atop the Inverted Pyramid!"
     },
     {
-        "difficulty": 25,
-        "name": "9 Checkpoints (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Checkpoints"
-        ]
+        "name": "9 Checkpoints (Bowser's Kingdom)"
     },
     {
-        "difficulty": 18,
-        "name": "6 Moons from Moon Shards",
-        "synergy": 0,
-        "types": [
-            "Moon_Shards"
-        ]
+        "name": "6 Moons from Moon Shards"
     },
     {
-        "difficulty": 14,
-        "name": "33 Moons (Metro Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Metro_Moons"
-        ]
+        "name": "33 Moons (Metro Kingdom)"
     },
     {
-        "difficulty": 2,
-        "name": "3 Checkpoints (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Cascade_Checkpoints"
-        ]
+        "name": "3 Checkpoints (Cascade Kingdom)"
     },
     {
-        "difficulty": 13,
-        "name": "5 Checkpoints (Metro Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Metro_Checkpoints"
-        ]
+        "name": "5 Checkpoints (Metro Kingdom)"
     },
     {
-        "difficulty": 4,
-        "name": "30 Moons (Sand Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Sand_Moons"
-        ]
+        "name": "30 Moons (Sand Kingdom)"
     },
     {
-        "difficulty": 7,
-        "name": "14 Moons (Lake Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Lake_Moons"
-        ]
+        "name": "14 Moons (Lake Kingdom)"
     },
     {
-        "difficulty": 21,
-        "name": "7 Moons from Moon Shards",
-        "synergy": 0,
-        "types": [
-            "Moon_Shards"
-        ]
+        "name": "7 Moons from Moon Shards"
     },
     {
-        "difficulty": 20,
-        "name": "3 Golden Turnips (Luncheon Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Luncheon_Moons",
-            "Luncheon_Turnips"
-        ]
+        "name": "3 Golden Turnips (Luncheon Kingdom)"
     },
     {
-        "difficulty": 22,
-        "name": "15 Moons (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Moons"
-        ]
+        "name": "15 Moons (Bowser's Kingdom)"
     },
     {
-        "difficulty": 16,
-        "name": "6 Moons from Timer Challenges",
-        "synergy": 0,
-        "types": [
-            "Timer"
-        ]
+        "name": "6 Moons from Timer Challenges"
     },
     {
-        "difficulty": 15,
-        "name": "Purchase a Moon (Snow Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Shop",
-            "Snow_Shop"
-        ]
+        "name": "Purchase a Moon (Snow Kingdom)"
     },
     {
-        "difficulty": 3,
-        "name": "26 Moons (Sand Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Sand_Moons"
-        ]
+        "name": "26 Moons (Sand Kingdom)"
     },
     {
-        "difficulty": 9,
-        "name": "22 Moons (Wooded Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Wooded_Moons"
-        ]
+        "name": "22 Moons (Wooded Kingdom)"
     },
     {
-        "difficulty": 5,
-        "name": "Captain Toad in the Cap Kingdom",
-        "synergy": 0,
-        "types": [
-            "Toad",
-            "Cap_Toad"
-        ]
+        "name": "Captain Toad in the Cap Kingdom"
     },
     {
-        "difficulty": 8,
-        "name": "Lakitu-Fishing (Lake Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Fishing",
-            "Lake_Fishing"
-        ]
+        "name": "Lakitu-Fishing (Lake Kingdom)"
     },
     {
-        "difficulty": 24,
-        "name": "2 Moons from sub-areas (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Bowser_Subarea"
-        ]
+        "name": "2 Moons from sub-areas (Bowser's Kingdom)"
     },
     {
-        "difficulty": 17,
-        "name": "16 Moons (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Seaside_Moons"
-        ]
+        "name": "16 Moons (Seaside Kingdom)"
     },
     {
-        "difficulty": 11,
-        "name": "5 Moons from Timer Challenges",
-        "synergy": 0,
-        "types": [
-            "Timer"
-        ]
+        "name": "5 Moons from Timer Challenges"
     }
 ]

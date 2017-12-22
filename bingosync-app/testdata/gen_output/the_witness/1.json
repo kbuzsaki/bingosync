@@ -1,133 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Boat Counterclockwise Shipwreck Underside EP",
-        "synergy": 0,
-        "types": [
-            "boat_ep"
-        ]
+        "name": "Boat Counterclockwise Shipwreck Underside EP"
     },
     {
-        "difficulty": 22,
-        "name": "Couch EP",
-        "synergy": 0
+        "name": "Couch EP"
     },
     {
-        "difficulty": 4,
-        "name": "Shadows Laser",
-        "synergy": 0
+        "name": "Shadows Laser"
     },
     {
-        "difficulty": 11,
-        "name": "Treehouse Drawbridge",
-        "synergy": 0
+        "name": "Treehouse Drawbridge"
     },
     {
-        "difficulty": 8,
-        "name": "All 6 Monastery Facade EPs",
-        "synergy": 0
+        "name": "All 6 Monastery Facade EPs"
     },
     {
-        "difficulty": 14,
-        "name": "Symmetry Look-Through Panels",
-        "synergy": 0
+        "name": "Symmetry Look-Through Panels"
     },
     {
-        "difficulty": 6,
-        "name": "Both Desert Broken Wall EPs",
-        "synergy": 0
+        "name": "Both Desert Broken Wall EPs"
     },
     {
-        "difficulty": 18,
-        "name": "Keep Laser",
-        "synergy": 0
+        "name": "Keep Laser"
     },
     {
-        "difficulty": 25,
-        "name": "Treehouse Laser",
-        "synergy": 0
+        "name": "Treehouse Laser"
     },
     {
-        "difficulty": 2,
-        "name": "Boat Short Sewer EP",
-        "synergy": 0
+        "name": "Boat Short Sewer EP"
     },
     {
-        "difficulty": 23,
-        "name": "Swamp Bridge Clockwise Shadow EP",
-        "synergy": 0
+        "name": "Swamp Bridge Clockwise Shadow EP"
     },
     {
-        "difficulty": 5,
-        "name": "All 3 Jungle Moss EPs from the Same Starting Point",
-        "synergy": 0
+        "name": "All 3 Jungle Moss EPs from the Same Starting Point"
     },
     {
-        "difficulty": 12,
-        "name": "Desert Pool Room",
-        "synergy": 0
+        "name": "Desert Pool Room"
     },
     {
-        "difficulty": 9,
-        "name": "Mill Rooftop Discarded Panel",
-        "synergy": 0,
-        "types": [
-            "discard"
-        ]
+        "name": "Mill Rooftop Discarded Panel"
     },
     {
-        "difficulty": 16,
-        "name": "Bunker Doorway EP",
-        "synergy": 0
+        "name": "Bunker Doorway EP"
     },
     {
-        "difficulty": 7,
-        "name": "All 6 Cinema Video Panels",
-        "synergy": 0
+        "name": "All 6 Cinema Video Panels"
     },
     {
-        "difficulty": 19,
-        "name": "Boathouse Negation, Star, and Polyomino Panels",
-        "synergy": 0
+        "name": "Boathouse Negation, Star, and Polyomino Panels"
     },
     {
-        "difficulty": 21,
-        "name": "Treehouse Buoy EP",
-        "synergy": 0
+        "name": "Treehouse Buoy EP"
     },
     {
-        "difficulty": 3,
-        "name": "Town Bell Tower Black Line EP",
-        "synergy": 0
+        "name": "Town Bell Tower Black Line EP"
     },
     {
-        "difficulty": 15,
-        "name": "All 3 Shipwreck Circle EPs",
-        "synergy": 0
+        "name": "All 3 Shipwreck Circle EPs"
     },
     {
-        "difficulty": 1,
-        "name": "Turn on the Lightswitch",
-        "synergy": 0
+        "name": "Turn on the Lightswitch"
     },
     {
-        "difficulty": 13,
-        "name": "Shadows - First Third",
-        "synergy": 0
+        "name": "Shadows - First Third"
     },
     {
-        "difficulty": 10,
-        "name": "Windmill Second Blade EP",
-        "synergy": 0
+        "name": "Windmill Second Blade EP"
     },
     {
-        "difficulty": 17,
-        "name": "Swamp Back of Boat EP",
-        "synergy": 0
+        "name": "Swamp Back of Boat EP"
     },
     {
-        "difficulty": 24,
-        "name": "Both Treehouse Purple Bridges",
-        "synergy": 0
+        "name": "Both Treehouse Purple Bridges"
     }
 ]

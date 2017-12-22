@@ -1,264 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "20 Blue Coins from Sirena Beach",
-        "synergy": 0,
-        "types": [
-            "Sirena_Early",
-            "Sirena_Blues"
-        ]
+        "name": "20 Blue Coins from Sirena Beach"
     },
     {
-        "difficulty": 12,
-        "name": "55 Total Blue Coins",
-        "synergy": 0,
-        "types": [
-            "XTotal_Blues",
-            "Blue_30"
-        ]
+        "name": "55 Total Blue Coins"
     },
     {
-        "difficulty": 1,
-        "name": "3 Fruit Lady Blue Coins",
-        "synergy": 0,
-        "types": [
-            "Fruit_Ladies"
-        ]
+        "name": "3 Fruit Lady Blue Coins"
     },
     {
-        "difficulty": 10,
-        "name": "7 Blue Coins from Enemies",
-        "synergy": 0,
-        "types": [
-            "Blue_Enemies",
-            "XBoss_Shines",
-            "M_Graffiti"
-        ]
+        "name": "7 Blue Coins from Enemies"
     },
     {
-        "difficulty": 23,
-        "name": "Collect 25 Shines",
-        "synergy": 0,
-        "types": [
-            "Total_Shines",
-            "Plaza_Shines",
-            "X_Lives"
-        ]
+        "name": "Collect 25 Shines"
     },
     {
-        "difficulty": 6,
-        "name": "15 Blue Coins from Pinna Park",
-        "synergy": 0,
-        "types": [
-            "Pinna_Blues",
-            "Fast_20",
-            "Pinna_Early",
-            "Pinna_30",
-            "Pinna_Shines"
-        ]
+        "name": "15 Blue Coins from Pinna Park"
     },
     {
-        "difficulty": 25,
-        "name": "3 Shadow Marios",
-        "synergy": 0,
-        "types": [
-            "Shadow_Mario"
-        ]
+        "name": "3 Shadow Marios"
     },
     {
-        "difficulty": 18,
-        "name": "Gelato Beach Episode 8 Shine",
-        "synergy": 0,
-        "types": [
-            "Gelato_8",
-            "Gelato_Shadow",
-            "Gelato_5",
-            "Gelato_Shines"
-        ]
+        "name": "Gelato Beach Episode 8 Shine"
     },
     {
-        "difficulty": 14,
-        "name": "Collect 1 Hidden Shine in Sirena Beach",
-        "synergy": 0,
-        "types": [
-            "Sirena_Hidden",
-            "Sirena_Early"
-        ]
+        "name": "Collect 1 Hidden Shine in Sirena Beach"
     },
     {
-        "difficulty": 2,
-        "name": "15 Blue Coins from Bianco Hills",
-        "synergy": 0,
-        "types": [
-            "Bianco_Blues",
-            "Bianco_Early",
-            "Bianco_30"
-        ]
+        "name": "15 Blue Coins from Bianco Hills"
     },
     {
-        "difficulty": 13,
-        "name": "25 Lives",
-        "synergy": 0,
-        "types": [
-            "X_Lives"
-        ]
+        "name": "25 Lives"
     },
     {
-        "difficulty": 4,
-        "name": "15 Blue Coins from Gelato Beach",
-        "synergy": 0,
-        "types": [
-            "Gelato_Blues",
-            "Fast_20",
-            "Gelato_Quacks",
-            "Gelato_30",
-            "Gelato_Shines"
-        ]
+        "name": "15 Blue Coins from Gelato Beach"
     },
     {
-        "difficulty": 7,
-        "name": "Collect 1 Hidden Shine in Pinna Park",
-        "synergy": 0,
-        "types": [
-            "Pinna_Early",
-            "Pinna_Hidden",
-            "Pinna_Yoshi",
-            "Pinna_Shines"
-        ]
+        "name": "Collect 1 Hidden Shine in Pinna Park"
     },
     {
-        "difficulty": 21,
-        "name": "9 Shines from a single level (not plaza)",
-        "synergy": 0,
-        "types": [
-            "Ricco_8",
-            "Sirena_8",
-            "Bianco_8",
-            "Gelato_8",
-            "Pinna_8",
-            "Pianta_8",
-            "Red_Shines",
-            "9_S"
-        ]
+        "name": "9 Shines from a single level (not plaza)"
     },
     {
-        "difficulty": 20,
-        "name": "4 Shines from 4 Levels",
-        "synergy": 0,
-        "types": [
-            "Mix_Up"
-        ]
+        "name": "4 Shines from 4 Levels"
     },
     {
-        "difficulty": 22,
-        "name": "7 Red Coin Shines",
-        "synergy": 0,
-        "types": [
-            "Red_Shines",
-            "Hidden_Shines"
-        ]
+        "name": "7 Red Coin Shines"
     },
     {
-        "difficulty": 16,
-        "name": "6 Boss Shines",
-        "synergy": 1,
-        "types": [
-            "XBoss_Shines",
-            "Unique_Boss",
-            "Bianco_Boss",
-            "Pinna_Boss",
-            "Ricco_Boss",
-            "Wiggler",
-            "Sirena_Early",
-            "Noki_Boss"
-        ]
+        "name": "6 Boss Shines"
     },
     {
-        "difficulty": 15,
-        "name": "8 Linked Blue Coin Pairs",
-        "synergy": 0,
-        "types": [
-            "Linked_Blues"
-        ]
+        "name": "8 Linked Blue Coin Pairs"
     },
     {
-        "difficulty": 3,
-        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless",
-        "synergy": 0,
-        "types": [
-            "Ricco_Top",
-            "Ricco_Hidden",
-            "Ricco_Early",
-            "Ricco_Rocket",
-            "Ricco_Shines"
-        ]
+        "name": "Complete Episode 2 of Ricco Harbor Entirely Blooperless"
     },
     {
-        "difficulty": 9,
-        "name": "100 Coin Shine from Pinna Park",
-        "synergy": 0,
-        "types": [
-            "Pinna_100",
-            "Pinna_Yoshi",
-            "Pinna_Hoverless",
-            "Pinna_Shines"
-        ]
+        "name": "100 Coin Shine from Pinna Park"
     },
     {
-        "difficulty": 5,
-        "name": "100 Coin Shine from Ricco Harbor",
-        "synergy": 0,
-        "types": [
-            "Ricco_100s",
-            "Ricco_Early",
-            "Ricco_Top",
-            "Ricco_Rocket",
-            "Ricco_Shines"
-        ]
+        "name": "100 Coin Shine from Ricco Harbor"
     },
     {
-        "difficulty": 8,
-        "name": "4 Hidden Shines",
-        "synergy": 0,
-        "types": [
-            "Hidden_Shines",
-            "Ricco_Hidden",
-            "Bianco_Hidden",
-            "Pianta_Hidden",
-            "Gelato_Hidden",
-            "Sirena_Hidden",
-            "Pinna_Hidden",
-            "Noki_Hidden",
-            "Secret_Shines"
-        ]
+        "name": "4 Hidden Shines"
     },
     {
-        "difficulty": 24,
-        "name": "Defeat Shadow Mario in Sirena Beach",
-        "synergy": 0,
-        "types": [
-            "Shadow_Mario",
-            "Sirena_Shadow",
-            "Sirena_Late"
-        ]
+        "name": "Defeat Shadow Mario in Sirena Beach"
     },
     {
-        "difficulty": 17,
-        "name": "Defeat both Cannon Moles and collect their shines",
-        "synergy": 0,
-        "types": [
-            "Noki_Early",
-            "Pinna_Shines"
-        ]
+        "name": "Defeat both Cannon Moles and collect their shines"
     },
     {
-        "difficulty": 11,
-        "name": "8 Shines from Delfino Plaza",
-        "synergy": 1,
-        "types": [
-            "Plaza_M",
-            "Fruit_Ladies",
-            "Plaza_Shines"
-        ]
+        "name": "8 Shines from Delfino Plaza"
     }
 ]

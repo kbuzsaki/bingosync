@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "A Pokemon with Explosion or Selfdestruct",
-        "synergy": 0,
-        "types": [
-            "boom"
-        ]
+        "name": "A Pokemon with Explosion or Selfdestruct"
     },
     {
-        "difficulty": 12,
-        "name": "A Pok\u00e9mon with a Dragon type move",
-        "synergy": 0,
-        "types": [
-            "twister"
-        ]
+        "name": "A Pok\u00e9mon with a Dragon type move"
     },
     {
-        "difficulty": 1,
-        "name": "Itemfinder",
-        "synergy": 0,
-        "types": [
-            "item"
-        ]
+        "name": "Itemfinder"
     },
     {
-        "difficulty": 10,
-        "name": "Defeat all 8 trainers on Route 32",
-        "synergy": 0,
-        "types": [
-            "train"
-        ]
+        "name": "Defeat all 8 trainers on Route 32"
     },
     {
-        "difficulty": 23,
-        "name": "Miltank or Tauros",
-        "synergy": 0,
-        "types": [
-            "moo"
-        ]
+        "name": "Miltank or Tauros"
     },
     {
-        "difficulty": 6,
-        "name": "TM05 (Roar)",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "TM05 (Roar)"
     },
     {
-        "difficulty": 25,
-        "name": "6 Badges",
-        "synergy": 0,
-        "types": [
-            "whee"
-        ]
+        "name": "6 Badges"
     },
     {
-        "difficulty": 18,
-        "name": "Wobbuffet, Girafarig, or Stantler",
-        "synergy": 0,
-        "types": [
-            "tails"
-        ]
+        "name": "Wobbuffet, Girafarig, or Stantler"
     },
     {
-        "difficulty": 14,
-        "name": "Cubone or Phanpy",
-        "synergy": 0,
-        "types": [
-            "ground"
-        ]
+        "name": "Cubone or Phanpy"
     },
     {
-        "difficulty": 2,
-        "name": "Charcoal",
-        "synergy": 0,
-        "types": [
-            "coal"
-        ]
+        "name": "Charcoal"
     },
     {
-        "difficulty": 13,
-        "name": "Release starter before Lv11",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Release starter before Lv11"
     },
     {
-        "difficulty": 4,
-        "name": "TM20 (Endure)",
-        "synergy": 0,
-        "types": [
-            "endure"
-        ]
+        "name": "TM20 (Endure)"
     },
     {
-        "difficulty": 7,
-        "name": "Weepinbell or Gloom",
-        "synergy": 0,
-        "types": [
-            "21"
-        ]
+        "name": "Weepinbell or Gloom"
     },
     {
-        "difficulty": 21,
-        "name": "90 Pok\u00e9mon seen",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "90 Pok\u00e9mon seen"
     },
     {
-        "difficulty": 20,
-        "name": "Max Phonebook",
-        "synergy": 0,
-        "types": [
-            "battles"
-        ]
+        "name": "Max Phonebook"
     },
     {
-        "difficulty": 22,
-        "name": "Call a Black Belt",
-        "synergy": 0,
-        "types": [
-            "call"
-        ]
+        "name": "Call a Black Belt"
     },
     {
-        "difficulty": 16,
-        "name": "Evolve Eevee",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Evolve Eevee"
     },
     {
-        "difficulty": 15,
-        "name": "Soft Sand",
-        "synergy": 0,
-        "types": [
-            "pro"
-        ]
+        "name": "Soft Sand"
     },
     {
-        "difficulty": 3,
-        "name": "Win Bug Catching contest",
-        "synergy": 0,
-        "types": [
-            "place"
-        ]
+        "name": "Win Bug Catching contest"
     },
     {
-        "difficulty": 9,
-        "name": "Defeat a Ponyta or Rapidash",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Defeat a Ponyta or Rapidash"
     },
     {
-        "difficulty": 5,
-        "name": "Ivysaur, Charmeleon, or Wartortle",
-        "synergy": 0,
-        "types": [
-            "starters"
-        ]
+        "name": "Ivysaur, Charmeleon, or Wartortle"
     },
     {
-        "difficulty": 8,
-        "name": "Sandslash or Arbok",
-        "synergy": 0,
-        "types": [
-            "22"
-        ]
+        "name": "Sandslash or Arbok"
     },
     {
-        "difficulty": 24,
-        "name": "Mantine or Skarmory",
-        "synergy": 0,
-        "types": [
-            "exclusives"
-        ]
+        "name": "Mantine or Skarmory"
     },
     {
-        "difficulty": 17,
-        "name": "Stop starter evolving 3 times",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Stop starter evolving 3 times"
     },
     {
-        "difficulty": 11,
-        "name": "HM05 (Flash)",
-        "synergy": 0,
-        "types": [
-            "flash"
-        ]
+        "name": "HM05 (Flash)"
     }
 ]

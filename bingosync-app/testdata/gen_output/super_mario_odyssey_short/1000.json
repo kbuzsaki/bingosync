@@ -1,212 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "30 Regional Coins (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Coins",
-            "Bowser_Coins"
-        ]
+        "name": "30 Regional Coins (Bowser's Kingdom)"
     },
     {
-        "difficulty": 18,
-        "name": "3 Fountain-Moons (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Seaside_Moons",
-            "Seaside_Fountains"
-        ]
+        "name": "3 Fountain-Moons (Seaside Kingdom)"
     },
     {
-        "difficulty": 15,
-        "name": "3 Barrier-Moons (Snow Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Snow_Moons",
-            "Snow_Barriers"
-        ]
+        "name": "3 Barrier-Moons (Snow Kingdom)"
     },
     {
-        "difficulty": 7,
-        "name": "18 Moons (Lake Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Lake_Moons"
-        ]
+        "name": "18 Moons (Lake Kingdom)"
     },
     {
-        "difficulty": 1,
-        "name": "2 Moons from sub-areas (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Cascade_Subarea"
-        ]
+        "name": "2 Moons from sub-areas (Cascade Kingdom)"
     },
     {
-        "difficulty": 10,
-        "name": "4 Moons from the Deep Woods",
-        "synergy": 0,
-        "types": [
-            "Wooded_Moons",
-            "Wooded_Deep"
-        ]
+        "name": "4 Moons from the Deep Woods"
     },
     {
-        "difficulty": 2,
-        "name": "2 Timer Challenges (Cascade Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Cascade_Timer"
-        ]
+        "name": "2 Timer Challenges (Cascade Kingdom)"
     },
     {
-        "difficulty": 21,
-        "name": "6 Multi Moons",
-        "synergy": 0,
-        "types": [
-            "Multi_Moons"
-        ]
+        "name": "6 Multi Moons"
     },
     {
-        "difficulty": 19,
-        "name": "4 Fountain-Moons (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Seaside_Moons",
-            "Seaside_Fountains"
-        ]
+        "name": "4 Fountain-Moons (Seaside Kingdom)"
     },
     {
-        "difficulty": 13,
-        "name": "26 Moons (Metro Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Metro_Moons"
-        ]
+        "name": "26 Moons (Metro Kingdom)"
     },
     {
-        "difficulty": 16,
-        "name": "6 Moons from Timer Challenges",
-        "synergy": 0,
-        "types": [
-            "Timer"
-        ]
+        "name": "6 Moons from Timer Challenges"
     },
     {
-        "difficulty": 14,
-        "name": "175 Total Regional Coins",
-        "synergy": 0,
-        "types": [
-            "Coins"
-        ]
+        "name": "175 Total Regional Coins"
     },
     {
-        "difficulty": 8,
-        "name": "4 Checkpoints (Lake Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Lake_Checkpoints"
-        ]
+        "name": "4 Checkpoints (Lake Kingdom)"
     },
     {
-        "difficulty": 5,
-        "name": "2 Moons from sub-areas (Cap Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Subarea",
-            "Cap_Subarea"
-        ]
+        "name": "2 Moons from sub-areas (Cap Kingdom)"
     },
     {
-        "difficulty": 22,
-        "name": "13 Moons (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Moons"
-        ]
+        "name": "13 Moons (Bowser's Kingdom)"
     },
     {
-        "difficulty": 3,
-        "name": "5 Checkpoints (Sand Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Checkpoints",
-            "Sand_Checkpoints"
-        ]
+        "name": "5 Checkpoints (Sand Kingdom)"
     },
     {
-        "difficulty": 25,
-        "name": "8 Checkpoints (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Checkpoints"
-        ]
+        "name": "8 Checkpoints (Bowser's Kingdom)"
     },
     {
-        "difficulty": 17,
-        "name": "Purchase a Moon (Seaside Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Shop",
-            "Seaside_Shop"
-        ]
+        "name": "Purchase a Moon (Seaside Kingdom)"
     },
     {
-        "difficulty": 11,
-        "name": "4 Moons from 8-bit Sections",
-        "synergy": 0,
-        "types": [
-            "8_Bit"
-        ]
+        "name": "4 Moons from 8-bit Sections"
     },
     {
-        "difficulty": 9,
-        "name": "21 Moons (Wooded Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Wooded_Moons"
-        ]
+        "name": "21 Moons (Wooded Kingdom)"
     },
     {
-        "difficulty": 12,
-        "name": "4 Moons from Music Note Challenges",
-        "synergy": 0,
-        "types": [
-            "Music_Notes"
-        ]
+        "name": "4 Moons from Music Note Challenges"
     },
     {
-        "difficulty": 6,
-        "name": "Purchase 2 Kingdom Stickers",
-        "synergy": 0,
-        "types": [
-            "Sticker"
-        ]
+        "name": "Purchase 2 Kingdom Stickers"
     },
     {
-        "difficulty": 4,
-        "name": "25 Regional Coins (Sand Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Coins",
-            "Sand_Coins"
-        ]
+        "name": "25 Regional Coins (Sand Kingdom)"
     },
     {
-        "difficulty": 23,
-        "name": "18 Moons (Bowser's Kingdom)",
-        "synergy": 0,
-        "types": [
-            "Bowser_Moons"
-        ]
+        "name": "18 Moons (Bowser's Kingdom)"
     },
     {
-        "difficulty": 20,
-        "name": "A Locked Door in the Luncheon Kingdom!",
-        "synergy": 0,
-        "types": [
-            "Luncheon_LockedDoor"
-        ]
+        "name": "A Locked Door in the Luncheon Kingdom!"
     }
 ]

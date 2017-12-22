@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Mallara's Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "Mallara's Gratitude Crystals"
     },
     {
-        "difficulty": 22,
-        "name": "Goddess Harp",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Goddess Harp"
     },
     {
-        "difficulty": 4,
-        "name": "Finish with 6 Hearts",
-        "synergy": 0,
-        "types": [
-            "Restriction",
-            "Hearts"
-        ]
+        "name": "Finish with 6 Hearts"
     },
     {
-        "difficulty": 11,
-        "name": "60 Deku Seeds",
-        "synergy": 0,
-        "types": [
-            "Ammo"
-        ]
+        "name": "60 Deku Seeds"
     },
     {
-        "difficulty": 8,
-        "name": "3 Bottles",
-        "synergy": 0,
-        "types": [
-            "Bottles"
-        ]
+        "name": "3 Bottles"
     },
     {
-        "difficulty": 14,
-        "name": "Earth Temple Dungeon Map",
-        "synergy": 0,
-        "types": [
-            "Map",
-            "Earth"
-        ]
+        "name": "Earth Temple Dungeon Map"
     },
     {
-        "difficulty": 6,
-        "name": "50 Deku Hornets",
-        "synergy": 0,
-        "types": [
-            "Bugs"
-        ]
+        "name": "50 Deku Hornets"
     },
     {
-        "difficulty": 18,
-        "name": "15 Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes"
-        ]
+        "name": "15 Goddess Cubes"
     },
     {
-        "difficulty": 25,
-        "name": "Cawlin's Letter",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Cawlin's Letter"
     },
     {
-        "difficulty": 2,
-        "name": "Heart Potion",
-        "synergy": 0,
-        "types": [
-            "Potions"
-        ]
+        "name": "Heart Potion"
     },
     {
-        "difficulty": 23,
-        "name": "8 Pouch Slots",
-        "synergy": 0,
-        "types": [
-            "Pouch",
-            "Rupees"
-        ]
+        "name": "8 Pouch Slots"
     },
     {
-        "difficulty": 5,
-        "name": "Win the Wing Ceremony Twice",
-        "synergy": 0,
-        "types": [
-            "BiT",
-            "Skyloft"
-        ]
+        "name": "Win the Wing Ceremony Twice"
     },
     {
-        "difficulty": 12,
-        "name": "Guardian Potion+",
-        "synergy": 0,
-        "types": [
-            "Potions"
-        ]
+        "name": "Guardian Potion+"
     },
     {
-        "difficulty": 9,
-        "name": "Skyview Dungeon Map",
-        "synergy": 0,
-        "types": [
-            "Map",
-            "Skyview"
-        ]
+        "name": "Skyview Dungeon Map"
     },
     {
-        "difficulty": 16,
-        "name": "Braced Shield",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "Braced Shield"
     },
     {
-        "difficulty": 7,
-        "name": "4 Heart Pieces",
-        "synergy": 0,
-        "types": [
-            "Hearts"
-        ]
+        "name": "4 Heart Pieces"
     },
     {
-        "difficulty": 19,
-        "name": "Large Bomb Bag",
-        "synergy": 0,
-        "types": [
-            "Ammo",
-            "Upgrade"
-        ]
+        "name": "Large Bomb Bag"
     },
     {
-        "difficulty": 21,
-        "name": "3 Unique Iron Shields",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "3 Unique Iron Shields"
     },
     {
-        "difficulty": 3,
-        "name": "Kill three guays in the sky",
-        "synergy": 0,
-        "types": [
-            "Sky"
-        ]
+        "name": "Kill three guays in the sky"
     },
     {
-        "difficulty": 15,
-        "name": "10 Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes"
-        ]
+        "name": "10 Goddess Cubes"
     },
     {
-        "difficulty": 1,
-        "name": "Bring Mia to Horwell",
-        "synergy": 0,
-        "types": [
-            "Skyloft"
-        ]
+        "name": "Bring Mia to Horwell"
     },
     {
-        "difficulty": 13,
-        "name": "Peatrice's Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "Peatrice's Gratitude Crystals"
     },
     {
-        "difficulty": 10,
-        "name": "Farore's Courage",
-        "synergy": 0,
-        "types": [
-            "BiT"
-        ]
+        "name": "Farore's Courage"
     },
     {
-        "difficulty": 17,
-        "name": "5 Lanayru Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Lanayru",
-            "Cubes"
-        ]
+        "name": "5 Lanayru Goddess Cubes"
     },
     {
-        "difficulty": 24,
-        "name": "Ballad of the Goddess",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Ballad of the Goddess"
     }
 ]

@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "All Pok\u00e9mon of only one gender",
-        "synergy": 0,
-        "types": [
-            "instant"
-        ]
+        "name": "All Pok\u00e9mon of only one gender"
     },
     {
-        "difficulty": 22,
-        "name": "20 different Pok\u00e9mon owned",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "20 different Pok\u00e9mon owned"
     },
     {
-        "difficulty": 4,
-        "name": "Kricketune, Bibarel, or Staravia",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Kricketune, Bibarel, or Staravia"
     },
     {
-        "difficulty": 11,
-        "name": "Revive a Fossil",
-        "synergy": 0,
-        "types": [
-            "fossil"
-        ]
+        "name": "Revive a Fossil"
     },
     {
-        "difficulty": 8,
-        "name": "Defeat all 11 trainers on Route 205",
-        "synergy": 0,
-        "types": [
-            "trainers"
-        ]
+        "name": "Defeat all 11 trainers on Route 205"
     },
     {
-        "difficulty": 14,
-        "name": "Defeat all 8 trainers on Cycling Road",
-        "synergy": 0,
-        "types": [
-            "trainers"
-        ]
+        "name": "Defeat all 8 trainers on Cycling Road"
     },
     {
-        "difficulty": 6,
-        "name": "Roselia, Togetic, Kirlia, or Snorunt",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Roselia, Togetic, Kirlia, or Snorunt"
     },
     {
-        "difficulty": 18,
-        "name": "Train a Pok\u00e9mon to Level 45",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Train a Pok\u00e9mon to Level 45"
     },
     {
-        "difficulty": 25,
-        "name": "Don\u2019t use Repels",
-        "synergy": 0,
-        "types": [
-            "instant"
-        ]
+        "name": "Don\u2019t use Repels"
     },
     {
-        "difficulty": 2,
-        "name": "Give a Pok\u00e9mon a massage",
-        "synergy": 0,
-        "types": [
-            "massage"
-        ]
+        "name": "Give a Pok\u00e9mon a massage"
     },
     {
-        "difficulty": 23,
-        "name": "Use Struggle",
-        "synergy": 0,
-        "types": [
-            "pp"
-        ]
+        "name": "Use Struggle"
     },
     {
-        "difficulty": 5,
-        "name": "5 different type-boosting items",
-        "synergy": 0,
-        "types": [
-            "typeitems"
-        ]
+        "name": "5 different type-boosting items"
     },
     {
-        "difficulty": 12,
-        "name": "Defeat 8 Hikers",
-        "synergy": 0,
-        "types": [
-            "class"
-        ]
+        "name": "Defeat 8 Hikers"
     },
     {
-        "difficulty": 9,
-        "name": "6 different Water-type Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "catch6"
-        ]
+        "name": "6 different Water-type Pok\u00e9mon"
     },
     {
-        "difficulty": 16,
-        "name": "Defeat the maids at Mr. Backlot\u2019s Mansion",
-        "synergy": 0,
-        "types": [
-            "mansion"
-        ]
+        "name": "Defeat the maids at Mr. Backlot\u2019s Mansion"
     },
     {
-        "difficulty": 7,
-        "name": "Electabuzz, Magmar, or Jynx",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Electabuzz, Magmar, or Jynx"
     },
     {
-        "difficulty": 19,
-        "name": "Teach 4 TMs to the same Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "tms"
-        ]
+        "name": "Teach 4 TMs to the same Pok\u00e9mon"
     },
     {
-        "difficulty": 21,
-        "name": "A Pokemon with an evasion boosting move",
-        "synergy": 0,
-        "types": [
-            "move"
-        ]
+        "name": "A Pokemon with an evasion boosting move"
     },
     {
-        "difficulty": 3,
-        "name": "TM67 (Recycle)",
-        "synergy": 0,
-        "types": [
-            "eterna"
-        ]
+        "name": "TM67 (Recycle)"
     },
     {
-        "difficulty": 15,
-        "name": "A Pok\u00e9mon with a weather-related ability",
-        "synergy": 0,
-        "types": [
-            "ability"
-        ]
+        "name": "A Pok\u00e9mon with a weather-related ability"
     },
     {
-        "difficulty": 1,
-        "name": "Odd Keystone",
-        "synergy": 0,
-        "types": [
-            "keystone"
-        ]
+        "name": "Odd Keystone"
     },
     {
-        "difficulty": 13,
-        "name": "Matchup Checker App",
-        "synergy": 0,
-        "types": [
-            "marsh"
-        ]
+        "name": "Matchup Checker App"
     },
     {
-        "difficulty": 10,
-        "name": "Evolve 3 different Pok\u00e9mon",
-        "synergy": 0,
-        "types": [
-            "evolve"
-        ]
+        "name": "Evolve 3 different Pok\u00e9mon"
     },
     {
-        "difficulty": 17,
-        "name": "Haunter, Murkrow, or Misdreavus",
-        "synergy": 0,
-        "types": [
-            "pokemon"
-        ]
+        "name": "Haunter, Murkrow, or Misdreavus"
     },
     {
-        "difficulty": 24,
-        "name": "Black Belt, Expert Belt, or Focus Sash",
-        "synergy": 0,
-        "types": [
-            "belts"
-        ]
+        "name": "Black Belt, Expert Belt, or Focus Sash"
     }
 ]

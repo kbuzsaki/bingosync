@@ -1,227 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "Free Gobi",
-        "synergy": 0,
-        "types": [
-            "WW"
-        ]
+        "name": "Free Gobi"
     },
     {
-        "difficulty": 21,
-        "name": "Jelly Castle Jiggy as Banjo",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "CCL",
-            "HFP"
-        ]
+        "name": "Jelly Castle Jiggy as Banjo"
     },
     {
-        "difficulty": 14,
-        "name": "All Jinjos in IoH & SM",
-        "synergy": 0,
-        "types": [
-            "Jinjos",
-            "IoH",
-            "JRL"
-        ]
+        "name": "All Jinjos in IoH & SM"
     },
     {
-        "difficulty": 18,
-        "name": "Hatch Heggy\u00e2\u20ac\u2122s 3 Eggs",
-        "synergy": 0,
-        "types": [
-            "SoS"
-        ]
+        "name": "Hatch Heggy\u00e2\u20ac\u2122s 3 Eggs"
     },
     {
-        "difficulty": 10,
-        "name": "5 Jiggies in GGM",
-        "synergy": 3,
-        "types": [
-            "Jiggies",
-            "GGM"
-        ]
+        "name": "5 Jiggies in GGM"
     },
     {
-        "difficulty": 19,
-        "name": "Learn Shack Pack",
-        "synergy": 0,
-        "types": [
-            "Moves",
-            "HFP"
-        ]
+        "name": "Learn Shack Pack"
     },
     {
-        "difficulty": 8,
-        "name": "Mountain CP as T-Rex",
-        "synergy": 0,
-        "types": [
-            "Cheatos",
-            "TDL"
-        ]
+        "name": "Mountain CP as T-Rex"
     },
     {
-        "difficulty": 5,
-        "name": "5 Jiggies in MT",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "MT"
-        ]
+        "name": "5 Jiggies in MT"
     },
     {
-        "difficulty": 22,
-        "name": "Heal The Sick Styracosaurus",
-        "synergy": 2,
-        "types": [
-            "TDL",
-            "Train",
-            "Bosses"
-        ]
+        "name": "Heal The Sick Styracosaurus"
     },
     {
-        "difficulty": 11,
-        "name": "All Jinjos in CCL",
-        "synergy": 0,
-        "types": [
-            "Jinjos",
-            "CCL"
-        ]
+        "name": "All Jinjos in CCL"
     },
     {
-        "difficulty": 25,
-        "name": "7 Jiggies in JRL",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "JRL"
-        ]
+        "name": "7 Jiggies in JRL"
     },
     {
-        "difficulty": 12,
-        "name": "All Jinjos in GGM",
-        "synergy": 0,
-        "types": [
-            "Jinjos",
-            "GGM"
-        ]
+        "name": "All Jinjos in GGM"
     },
     {
-        "difficulty": 16,
-        "name": "Learn Leg Spring",
-        "synergy": 0,
-        "types": [
-            "Moves",
-            "GI"
-        ]
+        "name": "Learn Leg Spring"
     },
     {
-        "difficulty": 9,
-        "name": "All Cheato Pages in JRL",
-        "synergy": 1,
-        "types": [
-            "Cheatos",
-            "JRL"
-        ]
+        "name": "All Cheato Pages in JRL"
     },
     {
-        "difficulty": 3,
-        "name": "Stub Biggafoots Toe",
-        "synergy": 0,
-        "types": [
-            "HFP"
-        ]
+        "name": "Stub Biggafoots Toe"
     },
     {
-        "difficulty": 6,
-        "name": "All Cheato Pages in TDL",
-        "synergy": 0,
-        "types": [
-            "Cheatos",
-            "TDL"
-        ]
+        "name": "All Cheato Pages in TDL"
     },
     {
-        "difficulty": 4,
-        "name": "7-Health BK",
-        "synergy": 0,
-        "types": [
-            "Honeycombs",
-            "IoH"
-        ]
+        "name": "7-Health BK"
     },
     {
-        "difficulty": 23,
-        "name": "Hatch 7 Eggs",
-        "synergy": 3,
-        "types": [
-            "TDL",
-            "JRL",
-            "Bosses",
-            "SoS",
-            "CCL"
-        ]
+        "name": "Hatch 7 Eggs"
     },
     {
-        "difficulty": 15,
-        "name": "Targitzan Jiggy w/o FPS",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "MT"
-        ]
+        "name": "Targitzan Jiggy w/o FPS"
     },
     {
-        "difficulty": 17,
-        "name": "10 Cheato Pages",
-        "synergy": 3,
-        "types": [
-            "Cheatos"
-        ]
+        "name": "10 Cheato Pages"
     },
     {
-        "difficulty": 13,
-        "name": "Grow Both Beanstalks",
-        "synergy": 0,
-        "types": [
-            "CCL"
-        ]
+        "name": "Grow Both Beanstalks"
     },
     {
-        "difficulty": 20,
-        "name": "Defeat 4 Bosses (Except Klungos/Hag1)",
-        "synergy": 0,
-        "types": [
-            "Bosses"
-        ]
+        "name": "Defeat 4 Bosses (Except Klungos/Hag1)"
     },
     {
-        "difficulty": 7,
-        "name": "7 Glowbos",
-        "synergy": 0,
-        "types": [
-            "Glowbo"
-        ]
+        "name": "7 Glowbos"
     },
     {
-        "difficulty": 1,
-        "name": "All Honeycombs in IoH",
-        "synergy": 0,
-        "types": [
-            "Honeycombs",
-            "IoH"
-        ]
+        "name": "All Honeycombs in IoH"
     },
     {
-        "difficulty": 24,
-        "name": "Open all 4 Battery Doors in GI",
-        "synergy": 3,
-        "types": [
-            "Doors",
-            "GI",
-            "WW"
-        ]
+        "name": "Open all 4 Battery Doors in GI"
     }
 ]

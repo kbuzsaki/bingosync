@@ -1,223 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Radiant Shirt \u2605",
-        "synergy": 0,
-        "types": [
-            "Clothes",
-            "Radiant Gear",
-            "Rupee",
-            "Gems",
-            "Great Fairy"
-        ]
+        "name": "Radiant Shirt \u2605"
     },
     {
-        "difficulty": 12,
-        "name": "Collect 1 Picture Memory",
-        "synergy": 0,
-        "types": [
-            "Camera"
-        ]
+        "name": "Collect 1 Picture Memory"
     },
     {
-        "difficulty": 1,
-        "name": "Any 'Boko' Equipment item",
-        "synergy": 0,
-        "types": [
-            "Equipment"
-        ]
+        "name": "Any 'Boko' Equipment item"
     },
     {
-        "difficulty": 10,
-        "name": "Cream of Mushroom Soup",
-        "synergy": 0,
-        "types": [
-            "Cooking"
-        ]
+        "name": "Cream of Mushroom Soup"
     },
     {
-        "difficulty": 23,
-        "name": "Activate 8 Towers",
-        "synergy": 0,
-        "types": [
-            "Tower"
-        ]
+        "name": "Activate 8 Towers"
     },
     {
-        "difficulty": 6,
-        "name": "Hard-Boiled Egg",
-        "synergy": 0,
-        "types": [
-            "Cooking"
-        ]
+        "name": "Hard-Boiled Egg"
     },
     {
-        "difficulty": 25,
-        "name": "50 Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok"
-        ]
+        "name": "50 Koroks"
     },
     {
-        "difficulty": 18,
-        "name": "Buy a House",
-        "synergy": 0,
-        "types": [
-            "Hateno",
-            "Rupee"
-        ]
+        "name": "Buy a House"
     },
     {
-        "difficulty": 14,
-        "name": "12 Lanayru Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok. Lanayru"
-        ]
+        "name": "12 Lanayru Koroks"
     },
     {
-        "difficulty": 2,
-        "name": "Soup Ladle",
-        "synergy": 0,
-        "types": [
-            "Equipment"
-        ]
+        "name": "Soup Ladle"
     },
     {
-        "difficulty": 13,
-        "name": "Finish Basic Shield Surfing Minigame",
-        "synergy": 0,
-        "types": [
-            "Minigame",
-            "Hebra",
-            "Cold Resistance"
-        ]
+        "name": "Finish Basic Shield Surfing Minigame"
     },
     {
-        "difficulty": 4,
-        "name": "Stealth Mask",
-        "synergy": 0,
-        "types": [
-            "Clothes",
-            "Stealth Gear",
-            "Rupee",
-            "Dueling Peaks"
-        ]
+        "name": "Stealth Mask"
     },
     {
-        "difficulty": 7,
-        "name": "'An Ice Guy' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Wasteland"
-        ]
+        "name": "'An Ice Guy' Side Quest"
     },
     {
-        "difficulty": 21,
-        "name": "13 Shrines",
-        "synergy": 0,
-        "types": [
-            "Shrine"
-        ]
+        "name": "13 Shrines"
     },
     {
-        "difficulty": 20,
-        "name": "'Divine Beast Vah Ruta' Main Quest",
-        "synergy": 0,
-        "types": [
-            "Divine Beast",
-            "Lanayru"
-        ]
+        "name": "'Divine Beast Vah Ruta' Main Quest"
     },
     {
-        "difficulty": 22,
-        "name": "14 Shrines",
-        "synergy": 0,
-        "types": [
-            "Shrine"
-        ]
+        "name": "14 Shrines"
     },
     {
-        "difficulty": 16,
-        "name": "10 Monsters in Compendium",
-        "synergy": 3,
-        "types": [
-            "Camera",
-            "Compendium"
-        ]
+        "name": "10 Monsters in Compendium"
     },
     {
-        "difficulty": 15,
-        "name": "Kill a Lynel",
-        "synergy": 0,
-        "types": [
-            "Miniboss",
-            "Lynel"
-        ]
+        "name": "Kill a Lynel"
     },
     {
-        "difficulty": 3,
-        "name": "Open 2 Bokoblin Camp Chests",
-        "synergy": 0,
-        "types": [
-            "Plateau"
-        ]
+        "name": "Open 2 Bokoblin Camp Chests"
     },
     {
-        "difficulty": 9,
-        "name": "'What's for Dinner?' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Faron"
-        ]
+        "name": "'What's for Dinner?' Side Quest"
     },
     {
-        "difficulty": 5,
-        "name": "Boat Oar",
-        "synergy": 0,
-        "types": [
-            "Equipment"
-        ]
+        "name": "Boat Oar"
     },
     {
-        "difficulty": 8,
-        "name": "'A Freezing Rod' Side Quest",
-        "synergy": 0,
-        "types": [
-            "Side Quest",
-            "Woodland",
-            "Wizzrobe"
-        ]
+        "name": "'A Freezing Rod' Side Quest"
     },
     {
-        "difficulty": 24,
-        "name": "Full Climber's Set",
-        "synergy": 0,
-        "types": [
-            "Clothes",
-            "Climbing Gear"
-        ]
+        "name": "Full Climber's Set"
     },
     {
-        "difficulty": 17,
-        "name": "15 Ridgeland Koroks",
-        "synergy": 0,
-        "types": [
-            "Korok",
-            "Ridgeland"
-        ]
+        "name": "15 Ridgeland Koroks"
     },
     {
-        "difficulty": 11,
-        "name": "Register the Giant Horse",
-        "synergy": 0,
-        "types": [
-            "Horse",
-            "Lake",
-            "Stamina"
-        ]
+        "name": "Register the Giant Horse"
     }
 ]

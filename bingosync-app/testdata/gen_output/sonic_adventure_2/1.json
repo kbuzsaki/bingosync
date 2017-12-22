@@ -1,207 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Pyramid Cave M5",
-        "synergy": 0,
-        "types": [
-            "pyramidcave"
-        ]
+        "name": "Pyramid Cave M5"
     },
     {
-        "difficulty": 22,
-        "name": "Sky Rail M5 A-Rank",
-        "synergy": 0,
-        "types": [
-            "skyrail",
-            "arank"
-        ]
+        "name": "Sky Rail M5 A-Rank"
     },
     {
-        "difficulty": 4,
-        "name": "Destroy the Gold Beetle in 3 Hero Story stages",
-        "synergy": 0,
-        "types": [
-            "goldbeetle"
-        ]
+        "name": "Destroy the Gold Beetle in 3 Hero Story stages"
     },
     {
-        "difficulty": 11,
-        "name": "Complete Pumpkin Hill M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "pumpkinhill"
-        ]
+        "name": "Complete Pumpkin Hill M1 with 100+ Rings"
     },
     {
-        "difficulty": 8,
-        "name": "Metal Harbor M4",
-        "synergy": 0,
-        "types": [
-            "metalharbor"
-        ]
+        "name": "Metal Harbor M4"
     },
     {
-        "difficulty": 14,
-        "name": "Iron Gate M4",
-        "synergy": 0,
-        "types": [
-            "irongate"
-        ]
+        "name": "Iron Gate M4"
     },
     {
-        "difficulty": 6,
-        "name": "Metal Harbor M2",
-        "synergy": 0,
-        "types": [
-            "metalharbor"
-        ]
+        "name": "Metal Harbor M2"
     },
     {
-        "difficulty": 18,
-        "name": "Lost Colony M5 A-Rank",
-        "synergy": 0,
-        "types": [
-            "lostcolony",
-            "arank"
-        ]
+        "name": "Lost Colony M5 A-Rank"
     },
     {
-        "difficulty": 25,
-        "name": "60 Emblems (Team Combined)",
-        "synergy": 0,
-        "types": [
-            "emblems"
-        ]
+        "name": "60 Emblems (Team Combined)"
     },
     {
-        "difficulty": 2,
-        "name": "5 hidden Chao animals in Dry Lagoon and finish",
-        "synergy": 0,
-        "types": [
-            "drylagoon"
-        ]
+        "name": "5 hidden Chao animals in Dry Lagoon and finish"
     },
     {
-        "difficulty": 23,
-        "name": "Complete Crazy Gadget M1 with 100+ Rings",
-        "synergy": 0,
-        "types": [
-            "crazygadget"
-        ]
+        "name": "Complete Crazy Gadget M1 with 100+ Rings"
     },
     {
-        "difficulty": 5,
-        "name": "2 Chao Boxes in Sand Ocean and finish",
-        "synergy": 0,
-        "types": [
-            "sandocean"
-        ]
+        "name": "2 Chao Boxes in Sand Ocean and finish"
     },
     {
-        "difficulty": 12,
-        "name": "Pumpkin Hill M4",
-        "synergy": 0,
-        "types": [
-            "pumpkinhill"
-        ]
+        "name": "Pumpkin Hill M4"
     },
     {
-        "difficulty": 9,
-        "name": "2 Chao Boxes in Green Forest and finish",
-        "synergy": 0,
-        "types": [
-            "greenforest"
-        ]
+        "name": "2 Chao Boxes in Green Forest and finish"
     },
     {
-        "difficulty": 16,
-        "name": "Route 101 M3",
-        "synergy": 0,
-        "types": [
-            "route101"
-        ]
+        "name": "Route 101 M3"
     },
     {
-        "difficulty": 7,
-        "name": "Radical Highway M2",
-        "synergy": 0,
-        "types": [
-            "radicalhighway"
-        ]
+        "name": "Radical Highway M2"
     },
     {
-        "difficulty": 19,
-        "name": "White Jungle M5",
-        "synergy": 0,
-        "types": [
-            "whitejungle"
-        ]
+        "name": "White Jungle M5"
     },
     {
-        "difficulty": 21,
-        "name": "Mad Space M3",
-        "synergy": 0,
-        "types": [
-            "madspace"
-        ]
+        "name": "Mad Space M3"
     },
     {
-        "difficulty": 3,
-        "name": "Wild Canyon M4 A-Rank",
-        "synergy": 0,
-        "types": [
-            "wildcanyon",
-            "arank"
-        ]
+        "name": "Wild Canyon M4 A-Rank"
     },
     {
-        "difficulty": 15,
-        "name": "Security Hall M3 B-Rank",
-        "synergy": 0,
-        "types": [
-            "securityhall",
-            "brank"
-        ]
+        "name": "Security Hall M3 B-Rank"
     },
     {
-        "difficulty": 1,
-        "name": "Rename a Chao after a person you're racing",
-        "synergy": 0,
-        "types": [
-            "chaogarden",
-            "multistory"
-        ]
+        "name": "Rename a Chao after a person you're racing"
     },
     {
-        "difficulty": 13,
-        "name": "Iron Gate M3",
-        "synergy": 0,
-        "types": [
-            "irongate"
-        ]
+        "name": "Iron Gate M3"
     },
     {
-        "difficulty": 10,
-        "name": "Knuckles' Mystic Melody",
-        "synergy": 0,
-        "types": [
-            "wildcanyon"
-        ]
+        "name": "Knuckles' Mystic Melody"
     },
     {
-        "difficulty": 17,
-        "name": "Lost Colony M5",
-        "synergy": 0,
-        "types": [
-            "lostcolony"
-        ]
+        "name": "Lost Colony M5"
     },
     {
-        "difficulty": 24,
-        "name": "Sonic's Mystic Melody",
-        "synergy": 0,
-        "types": [
-            "finalrush"
-        ]
+        "name": "Sonic's Mystic Melody"
     }
 ]

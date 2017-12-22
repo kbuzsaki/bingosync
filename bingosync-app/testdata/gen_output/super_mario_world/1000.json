@@ -1,163 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Green Switch - get 3 lives from turtles",
-        "synergy": 0,
-        "types": []
+        "name": "Green Switch - get 3 lives from turtles"
     },
     {
-        "difficulty": 18,
-        "name": "Soda Lake - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Soda Lake - small mario no yoshi"
     },
     {
-        "difficulty": 15,
-        "name": "5 yoshi coins on 2 stages (Star World)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Star World)"
     },
     {
-        "difficulty": 7,
-        "name": "10/18 keyhole exits",
-        "synergy": 0,
-        "types": []
+        "name": "10/18 keyhole exits"
     },
     {
-        "difficulty": 1,
-        "name": "Defeat 6/7 Koopa Kids",
-        "synergy": 0,
-        "types": []
+        "name": "Defeat 6/7 Koopa Kids"
     },
     {
-        "difficulty": 10,
-        "name": "8/9 bonus rooms",
-        "synergy": 0,
-        "types": []
+        "name": "8/9 bonus rooms"
     },
     {
-        "difficulty": 2,
-        "name": "Open star road from Valley Of Bowser",
-        "synergy": 0,
-        "types": [
-            "yoshi1"
-        ]
+        "name": "Open star road from Valley Of Bowser"
     },
     {
-        "difficulty": 21,
-        "name": "Sunken Ship - get 1 life from star",
-        "synergy": 0,
-        "types": []
+        "name": "Sunken Ship - get 1 life from star"
     },
     {
-        "difficulty": 19,
-        "name": "Tubular",
-        "synergy": 0,
-        "types": [
-            "tubular"
-        ]
+        "name": "Tubular"
     },
     {
-        "difficulty": 13,
-        "name": "5 yoshi coins on 2 stages (Twin Bridges)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Twin Bridges)"
     },
     {
-        "difficulty": 16,
-        "name": "Vanilla Dome 2 normal exit - small mario no star",
-        "synergy": 0,
-        "types": []
+        "name": "Vanilla Dome 2 normal exit - small mario no star"
     },
     {
-        "difficulty": 14,
-        "name": "5 yoshi coins on 2 stages (Valley Of Bowser)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Valley Of Bowser)"
     },
     {
-        "difficulty": 8,
-        "name": "3/4 Reznors",
-        "synergy": 0,
-        "types": []
+        "name": "3/4 Reznors"
     },
     {
-        "difficulty": 5,
-        "name": "6 swimming stages",
-        "synergy": 0,
-        "types": []
+        "name": "6 swimming stages"
     },
     {
-        "difficulty": 22,
-        "name": "Chocolate Island 2 - get 11 bubble mushrooms",
-        "synergy": 0,
-        "types": []
+        "name": "Chocolate Island 2 - get 11 bubble mushrooms"
     },
     {
-        "difficulty": 3,
-        "name": "All 14 exits in Forest Of Illusion",
-        "synergy": 0,
-        "types": []
+        "name": "All 14 exits in Forest Of Illusion"
     },
     {
-        "difficulty": 25,
-        "name": "Forest Of Illusion 4 - don't get Lakitu 1-up; no flying",
-        "synergy": 0,
-        "types": []
+        "name": "Forest Of Illusion 4 - don't get Lakitu 1-up; no flying"
     },
     {
-        "difficulty": 17,
-        "name": "Forest Of Illusion 3 - pacifist, small mario",
-        "synergy": 0,
-        "types": []
+        "name": "Forest Of Illusion 3 - pacifist, small mario"
     },
     {
-        "difficulty": 11,
-        "name": "50 coins in 5 stages",
-        "synergy": 0,
-        "types": []
+        "name": "50 coins in 5 stages"
     },
     {
-        "difficulty": 9,
-        "name": "3 yoshi wing exits",
-        "synergy": 0,
-        "types": [
-            "yoshi2",
-            "tubular"
-        ]
+        "name": "3 yoshi wing exits"
     },
     {
-        "difficulty": 12,
-        "name": "5 yoshi coins on 2 stages (Vanilla Dome)",
-        "synergy": 0,
-        "types": []
+        "name": "5 yoshi coins on 2 stages (Vanilla Dome)"
     },
     {
-        "difficulty": 6,
-        "name": "6/10 ghost house exits",
-        "synergy": 0,
-        "types": []
+        "name": "6/10 ghost house exits"
     },
     {
-        "difficulty": 4,
-        "name": "Open Chocolate Island 3 useless exit",
-        "synergy": 0,
-        "types": []
+        "name": "Open Chocolate Island 3 useless exit"
     },
     {
-        "difficulty": 23,
-        "name": "NO CAPE",
-        "synergy": 0,
-        "types": [
-            "cape1",
-            "cape2",
-            "cape3"
-        ]
+        "name": "NO CAPE"
     },
     {
-        "difficulty": 20,
-        "name": "Valley Of Bowser 3 - small mario no yoshi",
-        "synergy": 0,
-        "types": []
+        "name": "Valley Of Bowser 3 - small mario no yoshi"
     }
 ]

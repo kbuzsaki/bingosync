@@ -1,270 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "15 Health Up and 15 Mana Up",
-        "synergy": 0,
-        "types": [
-            "Health Up",
-            "Mana Up"
-        ]
+        "name": "15 Health Up and 15 Mana Up"
     },
     {
-        "difficulty": 18,
-        "name": "16 Easter Eggs",
-        "synergy": 0,
-        "types": [
-            "Eggs"
-        ]
+        "name": "16 Easter Eggs"
     },
     {
-        "difficulty": 15,
-        "name": "75% Southern Woodland Map",
-        "synergy": 0,
-        "types": [
-            "Southern Woodland",
-            "Map"
-        ]
+        "name": "75% Southern Woodland Map"
     },
     {
-        "difficulty": 7,
-        "name": "10 Western Coast items",
-        "synergy": 0,
-        "types": [
-            "Western Coast",
-            "Collection"
-        ]
+        "name": "10 Western Coast items"
     },
     {
-        "difficulty": 1,
-        "name": "Hear \u266a Kitty Attack",
-        "synergy": 0,
-        "types": [
-            "Vanilla",
-            "Chocolate",
-            "Saya",
-            "Seana"
-        ]
+        "name": "Hear \u266a Kitty Attack"
     },
     {
-        "difficulty": 10,
-        "name": "Recruit Cocoa, Chocolate, and Vanilla",
-        "synergy": 0,
-        "types": [
-            "Cocoa",
-            "Chocolate",
-            "Vanilla",
-            "Green Kotri"
-        ]
+        "name": "Recruit Cocoa, Chocolate, and Vanilla"
     },
     {
-        "difficulty": 2,
-        "name": "Defeat Holo-Defense System (Rainbow Maid)",
-        "synergy": 0,
-        "types": [
-            "Cicini",
-            "Lab",
-            "Rainbow Maid"
-        ]
+        "name": "Defeat Holo-Defense System (Rainbow Maid)"
     },
     {
-        "difficulty": 21,
-        "name": "20 Attack Up Potions",
-        "synergy": 0,
-        "types": [
-            "Attack Up"
-        ]
+        "name": "20 Attack Up Potions"
     },
     {
-        "difficulty": 19,
-        "name": "15 Badges",
-        "synergy": 0,
-        "types": [
-            "Health Plus",
-            "Health Surge",
-            "Mana Plus",
-            "Mana Surge",
-            "Crisis Boost",
-            "ATK Grow",
-            "DEF Grow",
-            "ATK Trade",
-            "DEF Trade",
-            "Arm Strength",
-            "Carrot Boost",
-            "Weaken",
-            "Self-Defense",
-            "Armored",
-            "Lucky Seven",
-            "Hex Cancel",
-            "Pure Love",
-            "Toxic Strike",
-            "Frame Cancel",
-            "Health Wager",
-            "Mana Wager",
-            "Stamina Plus",
-            "Cashback",
-            "Survival",
-            "Top Form",
-            "Tough Skin"
-        ]
+        "name": "15 Badges"
     },
     {
-        "difficulty": 13,
-        "name": "10 Pack Up Potions",
-        "synergy": 0,
-        "types": [
-            "Pack Up"
-        ]
+        "name": "10 Pack Up Potions"
     },
     {
-        "difficulty": 16,
-        "name": "15 Attack Up Potions",
-        "synergy": 0,
-        "types": [
-            "Attack Up"
-        ]
+        "name": "15 Attack Up Potions"
     },
     {
-        "difficulty": 14,
-        "name": "20% Item",
-        "synergy": 0,
-        "types": [
-            "Collection"
-        ]
+        "name": "20% Item"
     },
     {
-        "difficulty": 8,
-        "name": "Water Orb",
-        "synergy": 0,
-        "types": [
-            "Water Orb"
-        ]
+        "name": "Water Orb"
     },
     {
-        "difficulty": 5,
-        "name": "All 3 Eastern Highlands Warp Stones",
-        "synergy": 0,
-        "types": [
-            "Eastern Highlands",
-            "Warp Stone"
-        ]
+        "name": "All 3 Eastern Highlands Warp Stones"
     },
     {
-        "difficulty": 22,
-        "name": "75% Western Coast Map",
-        "synergy": 0,
-        "types": [
-            "Western Coast",
-            "Map",
-            "Halloween"
-        ]
+        "name": "75% Western Coast Map"
     },
     {
-        "difficulty": 3,
-        "name": "Hear \u266a Brawl Breaks Ver.2",
-        "synergy": 0,
-        "types": [
-            "Ashuri",
-            "Kotri"
-        ]
+        "name": "Hear \u266a Brawl Breaks Ver.2"
     },
     {
-        "difficulty": 25,
-        "name": "Get a High-Score above 5000 on the sandbag",
-        "synergy": 0,
-        "types": [
-            "Sandbag"
-        ]
+        "name": "Get a High-Score above 5000 on the sandbag"
     },
     {
-        "difficulty": 17,
-        "name": "Purchase the MP Regen Buff",
-        "synergy": 0,
-        "types": [
-            "MP Regen Buff",
-            "Lilith"
-        ]
+        "name": "Purchase the MP Regen Buff"
     },
     {
-        "difficulty": 11,
-        "name": "Lv.2 Fire Orb",
-        "synergy": 0,
-        "types": [
-            "Subterranean Area",
-            "Fire Orb"
-        ]
+        "name": "Lv.2 Fire Orb"
     },
     {
-        "difficulty": 9,
-        "name": "10 Badges",
-        "synergy": 0,
-        "types": [
-            "Health Plus",
-            "Health Surge",
-            "Mana Plus",
-            "Mana Surge",
-            "Crisis Boost",
-            "ATK Grow",
-            "DEF Grow",
-            "ATK Trade",
-            "DEF Trade",
-            "Arm Strength",
-            "Carrot Boost",
-            "Weaken",
-            "Self-Defense",
-            "Armored",
-            "Lucky Seven",
-            "Hex Cancel",
-            "Pure Love",
-            "Toxic Strike",
-            "Frame Cancel",
-            "Health Wager",
-            "Mana Wager",
-            "Stamina Plus",
-            "Cashback",
-            "Survival",
-            "Top Form",
-            "Tough Skin"
-        ]
+        "name": "10 Badges"
     },
     {
-        "difficulty": 12,
-        "name": "Halloween Warp Zone Egg",
-        "synergy": 0,
-        "types": [
-            "Eggs"
-        ]
+        "name": "Halloween Warp Zone Egg"
     },
     {
-        "difficulty": 6,
-        "name": "15 Warp Stones",
-        "synergy": 0,
-        "types": [
-            "Warp Stone"
-        ]
+        "name": "15 Warp Stones"
     },
     {
-        "difficulty": 4,
-        "name": "Health Surge Badge",
-        "synergy": 0,
-        "types": [
-            "Health Surge"
-        ]
+        "name": "Health Surge Badge"
     },
     {
-        "difficulty": 23,
-        "name": "70% Northern Tundra Map",
-        "synergy": 0,
-        "types": [
-            "Northern Tundra",
-            "Map"
-        ]
+        "name": "70% Northern Tundra Map"
     },
     {
-        "difficulty": 20,
-        "name": "Defeat a Lv.25 or higher boss",
-        "synergy": 0,
-        "types": [
-            "Boss"
-        ]
+        "name": "Defeat a Lv.25 or higher boss"
     }
 ]

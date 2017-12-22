@@ -1,220 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "Twinkly Packaging Jiggy",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "GI"
-        ]
+        "name": "Twinkly Packaging Jiggy"
     },
     {
-        "difficulty": 12,
-        "name": "All Jinjos in GGM",
-        "synergy": 0,
-        "types": [
-            "Jinjos",
-            "GGM"
-        ]
+        "name": "All Jinjos in GGM"
     },
     {
-        "difficulty": 1,
-        "name": "Purchase Blubber\u00e2\u20ac\u2122s Last Possession",
-        "synergy": 0,
-        "types": [
-            "JRL"
-        ]
+        "name": "Purchase Blubber\u00e2\u20ac\u2122s Last Possession"
     },
     {
-        "difficulty": 10,
-        "name": "Kill George and Mildred",
-        "synergy": 0,
-        "types": [
-            "CCL",
-            "HFP"
-        ]
+        "name": "Kill George and Mildred"
     },
     {
-        "difficulty": 23,
-        "name": "9-Health BK",
-        "synergy": 0,
-        "types": [
-            "Honeycombs",
-            "IoH"
-        ]
+        "name": "9-Health BK"
     },
     {
-        "difficulty": 6,
-        "name": "All Honeycombs in JRL",
-        "synergy": 0,
-        "types": [
-            "Honeycombs",
-            "JRL"
-        ]
+        "name": "All Honeycombs in JRL"
     },
     {
-        "difficulty": 25,
-        "name": "9 Trebleclefs",
-        "synergy": 0,
-        "types": [
-            "Trebleclef"
-        ]
+        "name": "9 Trebleclefs"
     },
     {
-        "difficulty": 18,
-        "name": "Hatch Heggy\u00e2\u20ac\u2122s 3 Eggs",
-        "synergy": 0,
-        "types": [
-            "SoS"
-        ]
+        "name": "Hatch Heggy\u00e2\u20ac\u2122s 3 Eggs"
     },
     {
-        "difficulty": 14,
-        "name": "All Warppads in GI",
-        "synergy": 0,
-        "types": [
-            "Warppads",
-            "GI"
-        ]
+        "name": "All Warppads in GI"
     },
     {
-        "difficulty": 2,
-        "name": "Dilberta Jiggy",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "MT",
-            "GGM"
-        ]
+        "name": "Dilberta Jiggy"
     },
     {
-        "difficulty": 13,
-        "name": "Grow Both Beanstalks",
-        "synergy": 0,
-        "types": [
-            "CCL"
-        ]
+        "name": "Grow Both Beanstalks"
     },
     {
-        "difficulty": 4,
-        "name": "All Warppads in WW",
-        "synergy": 0,
-        "types": [
-            "WW"
-        ]
+        "name": "All Warppads in WW"
     },
     {
-        "difficulty": 7,
-        "name": "All Warppads in HFP",
-        "synergy": 0,
-        "types": [
-            "HFP"
-        ]
+        "name": "All Warppads in HFP"
     },
     {
-        "difficulty": 21,
-        "name": "12 Cheato Pages",
-        "synergy": 0,
-        "types": [
-            "Cheatos"
-        ]
+        "name": "12 Cheato Pages"
     },
     {
-        "difficulty": 20,
-        "name": "Defeat Hag 1",
-        "synergy": 0,
-        "types": [
-            "CK"
-        ]
+        "name": "Defeat Hag 1"
     },
     {
-        "difficulty": 22,
-        "name": "Heal The Sick Styracosaurus",
-        "synergy": 0,
-        "types": [
-            "TDL",
-            "Train",
-            "Bosses"
-        ]
+        "name": "Heal The Sick Styracosaurus"
     },
     {
-        "difficulty": 16,
-        "name": "Open Superstash Deluxe Safe",
-        "synergy": 0,
-        "types": [
-            "Jiggies",
-            "CCL"
-        ]
+        "name": "Open Superstash Deluxe Safe"
     },
     {
-        "difficulty": 15,
-        "name": "11 Glowbos",
-        "synergy": 0,
-        "types": [
-            "Glowbo"
-        ]
+        "name": "11 Glowbos"
     },
     {
-        "difficulty": 3,
-        "name": "All Jinjos in MT",
-        "synergy": 0,
-        "types": [
-            "Jinjos",
-            "MT"
-        ]
+        "name": "All Jinjos in MT"
     },
     {
-        "difficulty": 9,
-        "name": "All Cheato Pages in JRL",
-        "synergy": 0,
-        "types": [
-            "Cheatos",
-            "JRL"
-        ]
+        "name": "All Cheato Pages in JRL"
     },
     {
-        "difficulty": 5,
-        "name": "All Notes in WW",
-        "synergy": 0,
-        "types": [
-            "Notes",
-            "Trebleclef",
-            "WW"
-        ]
+        "name": "All Notes in WW"
     },
     {
-        "difficulty": 8,
-        "name": "Mountain CP as T-Rex",
-        "synergy": 0,
-        "types": [
-            "Cheatos",
-            "TDL"
-        ]
+        "name": "Mountain CP as T-Rex"
     },
     {
-        "difficulty": 24,
-        "name": "7 Jiggies in WW",
-        "synergy": 1,
-        "types": [
-            "Jiggies",
-            "WW"
-        ]
+        "name": "7 Jiggies in WW"
     },
     {
-        "difficulty": 17,
-        "name": "4 Jiggies in JRL",
-        "synergy": 3,
-        "types": [
-            "Jiggies",
-            "JRL"
-        ]
+        "name": "4 Jiggies in JRL"
     },
     {
-        "difficulty": 11,
-        "name": "9 Glowbos",
-        "synergy": 0,
-        "types": [
-            "Glowbo"
-        ]
+        "name": "9 Glowbos"
     }
 ]

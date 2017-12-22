@@ -1,152 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Unlock all Speedways",
-        "synergy": 0,
-        "types": []
+        "name": "Unlock all Speedways"
     },
     {
-        "difficulty": 22,
-        "name": "Bells orb & #BoneDance",
-        "synergy": 0,
-        "types": []
+        "name": "Bells orb & #BoneDance"
     },
     {
-        "difficulty": 4,
-        "name": "8 Winter Tundra orbs",
-        "synergy": 0,
-        "types": []
+        "name": "8 Winter Tundra orbs"
     },
     {
-        "difficulty": 11,
-        "name": "Puzzle & Juliet 2 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Puzzle & Juliet 2 orbs"
     },
     {
-        "difficulty": 8,
-        "name": "Robot Scarecrows & George orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Robot Scarecrows & George orbs"
     },
     {
-        "difficulty": 14,
-        "name": "100% Idol Springs",
-        "synergy": 0,
-        "types": []
+        "name": "100% Idol Springs"
     },
     {
-        "difficulty": 6,
-        "name": "Indoor Lamps & Tractor Path orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Indoor Lamps & Tractor Path orbs"
     },
     {
-        "difficulty": 18,
-        "name": "All orbs in Aquaria Towers",
-        "synergy": 0,
-        "types": []
+        "name": "All orbs in Aquaria Towers"
     },
     {
-        "difficulty": 25,
-        "name": "Enter 3 inactive portals from OoB",
-        "synergy": 0,
-        "types": []
+        "name": "Enter 3 inactive portals from OoB"
     },
     {
-        "difficulty": 2,
-        "name": "4 combined orbs in Glimmer & Sunny Beach",
-        "synergy": 0,
-        "types": []
+        "name": "4 combined orbs in Glimmer & Sunny Beach"
     },
     {
-        "difficulty": 23,
-        "name": "275 gems in both Breeze Harbor & Metropolis",
-        "synergy": 0,
-        "types": []
+        "name": "275 gems in both Breeze Harbor & Metropolis"
     },
     {
-        "difficulty": 5,
-        "name": "Canyon & Ocean speedway orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Canyon & Ocean speedway orbs"
     },
     {
-        "difficulty": 12,
-        "name": "Turtle Boxes & Earthshapers orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Turtle Boxes & Earthshapers orbs"
     },
     {
-        "difficulty": 9,
-        "name": "Stand on top of 6 portals that you own the talisman for",
-        "synergy": 0,
-        "types": []
+        "name": "Stand on top of 6 portals that you own the talisman for"
     },
     {
-        "difficulty": 16,
-        "name": "Talismans from Hurricos, Scorch & Magma Cone",
-        "synergy": 0,
-        "types": []
+        "name": "Talismans from Hurricos, Scorch & Magma Cone"
     },
     {
-        "difficulty": 7,
-        "name": "250 gems in both Sunny Beach & Robotica Farms",
-        "synergy": 0,
-        "types": []
+        "name": "250 gems in both Sunny Beach & Robotica Farms"
     },
     {
-        "difficulty": 19,
-        "name": "Defeat all enemies in Zephyr",
-        "synergy": 0,
-        "types": []
+        "name": "Defeat all enemies in Zephyr"
     },
     {
-        "difficulty": 21,
-        "name": "Popcorn 1 & Hockey 1 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Popcorn 1 & Hockey 1 orbs"
     },
     {
-        "difficulty": 3,
-        "name": "All gems in Mystic Marsh & all orbs in Glimmer",
-        "synergy": 0,
-        "types": []
+        "name": "All gems in Mystic Marsh & all orbs in Glimmer"
     },
     {
-        "difficulty": 15,
-        "name": "Pay Moneybags 7 times",
-        "synergy": 0,
-        "types": []
+        "name": "Pay Moneybags 7 times"
     },
     {
-        "difficulty": 1,
-        "name": "100% Glimmer",
-        "synergy": 0,
-        "types": []
+        "name": "100% Glimmer"
     },
     {
-        "difficulty": 13,
-        "name": "Activate all '14' powerups",
-        "synergy": 0,
-        "types": []
+        "name": "Activate all '14' powerups"
     },
     {
-        "difficulty": 10,
-        "name": "800 combined Homeworld gems",
-        "synergy": 0,
-        "types": []
+        "name": "800 combined Homeworld gems"
     },
     {
-        "difficulty": 17,
-        "name": "100% Colossus",
-        "synergy": 0,
-        "types": []
+        "name": "100% Colossus"
     },
     {
-        "difficulty": 24,
-        "name": "Talk to Brother Curtis with 4+ talismans and 4+ orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Talk to Brother Curtis with 4+ talismans and 4+ orbs"
     }
 ]

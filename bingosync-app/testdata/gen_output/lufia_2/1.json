@@ -1,127 +1,77 @@
 [
     {
-        "difficulty": 20,
-        "name": "Round Shield",
-        "synergy": 0
+        "name": "Round Shield"
     },
     {
-        "difficulty": 22,
-        "name": "Power Potion",
-        "synergy": 0
+        "name": "Power Potion"
     },
     {
-        "difficulty": 4,
-        "name": "Myth Blade",
-        "synergy": 0
+        "name": "Myth Blade"
     },
     {
-        "difficulty": 11,
-        "name": "Curselifter",
-        "synergy": 0
+        "name": "Curselifter"
     },
     {
-        "difficulty": 8,
-        "name": "Kite Shield",
-        "synergy": 0
+        "name": "Kite Shield"
     },
     {
-        "difficulty": 14,
-        "name": "Jet Helmet",
-        "synergy": 0
+        "name": "Jet Helmet"
     },
     {
-        "difficulty": 6,
-        "name": "Silver Mail",
-        "synergy": 0
+        "name": "Silver Mail"
     },
     {
-        "difficulty": 18,
-        "name": "Gold Shield",
-        "synergy": 0
+        "name": "Gold Shield"
     },
     {
-        "difficulty": 25,
-        "name": "Vice Pliers",
-        "synergy": 0
+        "name": "Vice Pliers"
     },
     {
-        "difficulty": 2,
-        "name": "Aqua Whip",
-        "synergy": 0
+        "name": "Aqua Whip"
     },
     {
-        "difficulty": 23,
-        "name": "Dekar Blade",
-        "synergy": 0
+        "name": "Dekar Blade"
     },
     {
-        "difficulty": 5,
-        "name": "Light Dress",
-        "synergy": 0
+        "name": "Light Dress"
     },
     {
-        "difficulty": 12,
-        "name": "Antidote",
-        "synergy": 0
+        "name": "Antidote"
     },
     {
-        "difficulty": 9,
-        "name": "Hi-Potion",
-        "synergy": 0
+        "name": "Hi-Potion"
     },
     {
-        "difficulty": 16,
-        "name": "Trick",
-        "synergy": 0
+        "name": "Trick"
     },
     {
-        "difficulty": 7,
-        "name": "Wood Shield",
-        "synergy": 0
+        "name": "Wood Shield"
     },
     {
-        "difficulty": 19,
-        "name": "Long Robe",
-        "synergy": 0
+        "name": "Long Robe"
     },
     {
-        "difficulty": 21,
-        "name": "Metal Armor",
-        "synergy": 0
+        "name": "Metal Armor"
     },
     {
-        "difficulty": 3,
-        "name": "Broadsword",
-        "synergy": 0
+        "name": "Broadsword"
     },
     {
-        "difficulty": 15,
-        "name": "Eagle Rock",
-        "synergy": 0
+        "name": "Eagle Rock"
     },
     {
-        "difficulty": 1,
-        "name": "Insect Crush",
-        "synergy": 0
+        "name": "Insect Crush"
     },
     {
-        "difficulty": 13,
-        "name": "Witch Ring",
-        "synergy": 0
+        "name": "Witch Ring"
     },
     {
-        "difficulty": 10,
-        "name": "Dragon",
-        "synergy": 0
+        "name": "Dragon"
     },
     {
-        "difficulty": 17,
-        "name": "Spark",
-        "synergy": 0
+        "name": "Spark"
     },
     {
-        "difficulty": 24,
-        "name": "Gladius",
-        "synergy": 0
+        "name": "Gladius"
     }
 ]

@@ -1,202 +1,77 @@
 [
     {
-        "difficulty": 19,
-        "name": "A Pokemon with pursuit",
-        "synergy": 0,
-        "types": [
-            "suit"
-        ]
+        "name": "A Pokemon with pursuit"
     },
     {
-        "difficulty": 12,
-        "name": "Win Bug Catching contest",
-        "synergy": 0,
-        "types": [
-            "day"
-        ]
+        "name": "Win Bug Catching contest"
     },
     {
-        "difficulty": 1,
-        "name": "Itemfinder",
-        "synergy": 0,
-        "types": [
-            "item"
-        ]
+        "name": "Itemfinder"
     },
     {
-        "difficulty": 10,
-        "name": "Defeat all 8 trainers on route 32",
-        "synergy": 0,
-        "types": [
-            "train"
-        ]
+        "name": "Defeat all 8 trainers on route 32"
     },
     {
-        "difficulty": 23,
-        "name": "Sandslash",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Sandslash"
     },
     {
-        "difficulty": 6,
-        "name": "A Pokemon with 4 moves with STAB",
-        "synergy": 0,
-        "types": [
-            "tm"
-        ]
+        "name": "A Pokemon with 4 moves with STAB"
     },
     {
-        "difficulty": 25,
-        "name": "6 Badges",
-        "synergy": 0,
-        "types": [
-            "whee"
-        ]
+        "name": "6 Badges"
     },
     {
-        "difficulty": 18,
-        "name": "4 Rare Candies",
-        "synergy": 0,
-        "types": [
-            "rare"
-        ]
+        "name": "4 Rare Candies"
     },
     {
-        "difficulty": 14,
-        "name": "Miltank",
-        "synergy": 0,
-        "types": [
-            "time"
-        ]
+        "name": "Miltank"
     },
     {
-        "difficulty": 2,
-        "name": "Charcoal",
-        "synergy": 0,
-        "types": [
-            "fire"
-        ]
+        "name": "Charcoal"
     },
     {
-        "difficulty": 13,
-        "name": "Release starter before level 11",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Release starter before level 11"
     },
     {
-        "difficulty": 4,
-        "name": "TM20 (Endure)",
-        "synergy": 0,
-        "types": [
-            "endure"
-        ]
+        "name": "TM20 (Endure)"
     },
     {
-        "difficulty": 7,
-        "name": "No money on hand or mom",
-        "synergy": 0,
-        "types": [
-            "cash"
-        ]
+        "name": "No money on hand or mom"
     },
     {
-        "difficulty": 21,
-        "name": "80 Pokemon seen",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "80 Pokemon seen"
     },
     {
-        "difficulty": 20,
-        "name": "Max phonebook",
-        "synergy": 0,
-        "types": [
-            "battles"
-        ]
+        "name": "Max phonebook"
     },
     {
-        "difficulty": 22,
-        "name": "Own 10 different Flying type Pokemon",
-        "synergy": 0,
-        "types": [
-            "pkmn"
-        ]
+        "name": "Own 10 different Flying type Pokemon"
     },
     {
-        "difficulty": 16,
-        "name": "Evolve Eevee",
-        "synergy": 0,
-        "types": [
-            "stone"
-        ]
+        "name": "Evolve Eevee"
     },
     {
-        "difficulty": 15,
-        "name": "Soft Sand",
-        "synergy": 0,
-        "types": [
-            "pro"
-        ]
+        "name": "Soft Sand"
     },
     {
-        "difficulty": 3,
-        "name": "Magikarp",
-        "synergy": 0,
-        "types": [
-            "lol"
-        ]
+        "name": "Magikarp"
     },
     {
-        "difficulty": 9,
-        "name": "Defeat a Ponyta",
-        "synergy": 0,
-        "types": [
-            "thirty"
-        ]
+        "name": "Defeat a Ponyta"
     },
     {
-        "difficulty": 5,
-        "name": "Venonat",
-        "synergy": 0,
-        "types": [
-            "radar"
-        ]
+        "name": "Venonat"
     },
     {
-        "difficulty": 8,
-        "name": "Beedrill and Butterfree",
-        "synergy": 0,
-        "types": [
-            "buggy"
-        ]
+        "name": "Beedrill and Butterfree"
     },
     {
-        "difficulty": 24,
-        "name": "Lanturn",
-        "synergy": 0,
-        "types": [
-            "raise"
-        ]
+        "name": "Lanturn"
     },
     {
-        "difficulty": 17,
-        "name": "Stop starter evolving 6 times",
-        "synergy": 0,
-        "types": [
-            "starter"
-        ]
+        "name": "Stop starter evolving 6 times"
     },
     {
-        "difficulty": 11,
-        "name": "HM05 (Flash)",
-        "synergy": 0,
-        "types": [
-            "flash"
-        ]
+        "name": "HM05 (Flash)"
     }
 ]

@@ -1,209 +1,77 @@
 [
     {
-        "difficulty": 24,
-        "name": "Summon a Gossip Stone",
-        "synergy": 0,
-        "types": [
-            "Harp"
-        ]
+        "name": "Summon a Gossip Stone"
     },
     {
-        "difficulty": 18,
-        "name": "15 Goddess Cubes",
-        "synergy": 0,
-        "types": [
-            "Cubes"
-        ]
+        "name": "15 Goddess Cubes"
     },
     {
-        "difficulty": 15,
-        "name": "30 Bombs",
-        "synergy": 0,
-        "types": [
-            "Ammo"
-        ]
+        "name": "30 Bombs"
     },
     {
-        "difficulty": 7,
-        "name": "500 Rupees",
-        "synergy": 0,
-        "types": [
-            "Rupees"
-        ]
+        "name": "500 Rupees"
     },
     {
-        "difficulty": 1,
-        "name": "Bottled Water",
-        "synergy": 0,
-        "types": [
-            "Bottles"
-        ]
+        "name": "Bottled Water"
     },
     {
-        "difficulty": 10,
-        "name": "Eldin Heart Piece",
-        "synergy": 0,
-        "types": [
-            "Hearts",
-            "Eldin"
-        ]
+        "name": "Eldin Heart Piece"
     },
     {
-        "difficulty": 2,
-        "name": "Complete a ringer skydive",
-        "synergy": 0,
-        "types": [
-            "Sky"
-        ]
+        "name": "Complete a ringer skydive"
     },
     {
-        "difficulty": 21,
-        "name": "Tough Beetle",
-        "synergy": 0,
-        "types": [
-            "Upgrade"
-        ]
+        "name": "Tough Beetle"
     },
     {
-        "difficulty": 19,
-        "name": "Fortified Shield",
-        "synergy": 0,
-        "types": [
-            "Shields"
-        ]
+        "name": "Fortified Shield"
     },
     {
-        "difficulty": 13,
-        "name": "25 Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "25 Gratitude Crystals"
     },
     {
-        "difficulty": 16,
-        "name": "Quick Beetle",
-        "synergy": 0,
-        "types": [
-            "Upgrade"
-        ]
+        "name": "Quick Beetle"
     },
     {
-        "difficulty": 14,
-        "name": "Destroy all of Scaldera's Rocks",
-        "synergy": 0,
-        "types": [
-            "Earth"
-        ]
+        "name": "Destroy all of Scaldera's Rocks"
     },
     {
-        "difficulty": 8,
-        "name": "15 Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals"
-        ]
+        "name": "15 Gratitude Crystals"
     },
     {
-        "difficulty": 5,
-        "name": "Sleep in Zelda's Bed",
-        "synergy": 0,
-        "types": [
-            "Skyloft",
-            "Sailcloth"
-        ]
+        "name": "Sleep in Zelda's Bed"
     },
     {
-        "difficulty": 22,
-        "name": "Temple of Time Bird Statue",
-        "synergy": 0,
-        "types": [
-            "Statues",
-            "Harp"
-        ]
+        "name": "Temple of Time Bird Statue"
     },
     {
-        "difficulty": 3,
-        "name": "10 Blessed Butterflies",
-        "synergy": 0,
-        "types": [
-            "Bugs"
-        ]
+        "name": "10 Blessed Butterflies"
     },
     {
-        "difficulty": 25,
-        "name": "Air Potion",
-        "synergy": 0,
-        "types": [
-            "Potions",
-            "Scale",
-            "BiT"
-        ]
+        "name": "Air Potion"
     },
     {
-        "difficulty": 17,
-        "name": "Obtain a Recovery Heart",
-        "synergy": 0,
-        "types": [
-            "Misc"
-        ]
+        "name": "Obtain a Recovery Heart"
     },
     {
-        "difficulty": 11,
-        "name": "Treasure Medal",
-        "synergy": 0,
-        "types": [
-            "Medals"
-        ]
+        "name": "Treasure Medal"
     },
     {
-        "difficulty": 9,
-        "name": "Skyview Dungeon Map",
-        "synergy": 0,
-        "types": [
-            "Map",
-            "Skyview"
-        ]
+        "name": "Skyview Dungeon Map"
     },
     {
-        "difficulty": 12,
-        "name": "Fairy in a Bottle",
-        "synergy": 3,
-        "types": [
-            "Bottles"
-        ]
+        "name": "Fairy in a Bottle"
     },
     {
-        "difficulty": 6,
-        "name": "10 Woodland Rhino Beetles",
-        "synergy": 0,
-        "types": [
-            "Bugs"
-        ]
+        "name": "10 Woodland Rhino Beetles"
     },
     {
-        "difficulty": 4,
-        "name": "Floria Waterfall Bird Statue",
-        "synergy": 0,
-        "types": [
-            "Faron"
-        ]
+        "name": "Floria Waterfall Bird Statue"
     },
     {
-        "difficulty": 23,
-        "name": "40 Gratitude Crystals",
-        "synergy": 0,
-        "types": [
-            "Crystals",
-            "Imp"
-        ]
+        "name": "40 Gratitude Crystals"
     },
     {
-        "difficulty": 20,
-        "name": "3 Goddess Plumes",
-        "synergy": 0,
-        "types": [
-            "Treasures"
-        ]
+        "name": "3 Goddess Plumes"
     }
 ]

@@ -1,152 +1,77 @@
 [
     {
-        "difficulty": 2,
-        "name": "100% Crystal Glacier",
-        "synergy": 0,
-        "types": []
+        "name": "100% Crystal Glacier"
     },
     {
-        "difficulty": 21,
-        "name": "Popcorn 2 & Lamp Thieves orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Popcorn 2 & Lamp Thieves orbs"
     },
     {
-        "difficulty": 14,
-        "name": "Activate all powerups in Glimmer, Idol Springs & Skelos Badlands",
-        "synergy": 0,
-        "types": []
+        "name": "Activate all powerups in Glimmer, Idol Springs & Skelos Badlands"
     },
     {
-        "difficulty": 18,
-        "name": "7 Hunter orbs",
-        "synergy": 0,
-        "types": []
+        "name": "7 Hunter orbs"
     },
     {
-        "difficulty": 10,
-        "name": "800 combined Homeworld gems",
-        "synergy": 0,
-        "types": []
+        "name": "800 combined Homeworld gems"
     },
     {
-        "difficulty": 19,
-        "name": "Plant all seeds in Zephyr",
-        "synergy": 0,
-        "types": []
+        "name": "Plant all seeds in Zephyr"
     },
     {
-        "difficulty": 8,
-        "name": "Robot Scarecrows & George orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Robot Scarecrows & George orbs"
     },
     {
-        "difficulty": 5,
-        "name": "Canyon & Ocean speedway orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Canyon & Ocean speedway orbs"
     },
     {
-        "difficulty": 22,
-        "name": "UFOs 1 & Cowlecks 2 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "UFOs 1 & Cowlecks 2 orbs"
     },
     {
-        "difficulty": 11,
-        "name": "650 combined gems in Idol Springs & Scorch",
-        "synergy": 0,
-        "types": []
+        "name": "650 combined gems in Idol Springs & Scorch"
     },
     {
-        "difficulty": 25,
-        "name": "Stand on top of 10 portals & both skulls in Skelos Badlands",
-        "synergy": 0,
-        "types": []
+        "name": "Stand on top of 10 portals & both skulls in Skelos Badlands"
     },
     {
-        "difficulty": 12,
-        "name": "Turtle Boxes & Earthshapers orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Turtle Boxes & Earthshapers orbs"
     },
     {
-        "difficulty": 16,
-        "name": "Factory Glide 2 & Juliet 1 orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Factory Glide 2 & Juliet 1 orbs"
     },
     {
-        "difficulty": 9,
-        "name": "Enter 8 Return Home portals",
-        "synergy": 0,
-        "types": []
+        "name": "Enter 8 Return Home portals"
     },
     {
-        "difficulty": 3,
-        "name": "All boss skillpoints",
-        "synergy": 0,
-        "types": []
+        "name": "All boss skillpoints"
     },
     {
-        "difficulty": 6,
-        "name": "Glimmer Lizards & Floating Mines orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Glimmer Lizards & Floating Mines orbs"
     },
     {
-        "difficulty": 4,
-        "name": "10 Autumn Plains orbs",
-        "synergy": 0,
-        "types": []
+        "name": "10 Autumn Plains orbs"
     },
     {
-        "difficulty": 23,
-        "name": "100+ gems in Skelos Badlands, 2+ orbs in Aquaria Towers & 300+ gems in Metropolis",
-        "synergy": 0,
-        "types": []
+        "name": "100+ gems in Skelos Badlands, 2+ orbs in Aquaria Towers & 300+ gems in Metropolis"
     },
     {
-        "difficulty": 15,
-        "name": "Buy Climb and Headbash",
-        "synergy": 0,
-        "types": []
+        "name": "Buy Climb and Headbash"
     },
     {
-        "difficulty": 17,
-        "name": "100% Colossus",
-        "synergy": 0,
-        "types": []
+        "name": "100% Colossus"
     },
     {
-        "difficulty": 13,
-        "name": "Seahorses & Hula girls orbs",
-        "synergy": 0,
-        "types": []
+        "name": "Seahorses & Hula girls orbs"
     },
     {
-        "difficulty": 20,
-        "name": "Unlock all Speedways",
-        "synergy": 0,
-        "types": []
+        "name": "Unlock all Speedways"
     },
     {
-        "difficulty": 7,
-        "name": "250 gems in both Sunny Beach & Robotica Farms",
-        "synergy": 0,
-        "types": []
+        "name": "250 gems in both Sunny Beach & Robotica Farms"
     },
     {
-        "difficulty": 1,
-        "name": "All gems in Shady Oasis",
-        "synergy": 0,
-        "types": []
+        "name": "All gems in Shady Oasis"
     },
     {
-        "difficulty": 24,
-        "name": "12 Summer Forest orbs",
-        "synergy": 0,
-        "types": []
+        "name": "12 Summer Forest orbs"
     }
 ]
