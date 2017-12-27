@@ -24,7 +24,7 @@
                         Eventually this will support upploading your own csv file.
                     </div>
                 </div>
-                <form class="form-horizontal" action="{% url 'views.goal_converter' %}" method="post">
+                <form class="form-horizontal" action="{% url 'goal_converter' %}" method="post">
                     {% csrf_token %}
                     {{ form|bootstrap_horizontal:"col-md-3" }}
                     <div class="form-group">

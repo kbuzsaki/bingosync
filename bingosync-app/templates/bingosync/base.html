@@ -26,7 +26,7 @@
             <div class="flex-col-container page-container">
                 <div class="flex-col-header">
                     {% block page_header %}
-                            <a href="{% url 'views.rooms' %}">
+                            <a href="{% url 'rooms' %}">
                                 <h1>Bingosync</h1>
                             </a>
                     {% endblock %}
@@ -38,9 +38,9 @@
                 <div class="flex-col-footer m-b-l">
                     {% block page_footer %}
                         <div class="footer-bar">
-                            <a href="{% url 'views.history' %}">Room History</a>
+                            <a href="{% url 'history' %}">Room History</a>
                             ·
-                            <a href="{% url 'views.about' %}">About</a>
+                            <a href="{% url 'about' %}">About</a>
                             ·
                             <a href="https://twitter.com/saltor6">Twitter</a>
                             ·

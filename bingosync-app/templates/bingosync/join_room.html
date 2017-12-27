@@ -13,7 +13,7 @@
                 Join Room
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" action="{% url 'views.room_view' encoded_room_uuid %}" method="post">
+                <form class="form-horizontal" action="{% url 'room_view' encoded_room_uuid %}" method="post">
                     {% csrf_token %}
                     {{ form|bootstrap_horizontal:"col-md-3" }}
                     <div class="form-group">

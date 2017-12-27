@@ -8,10 +8,10 @@
 {% block page_body %}
 <div class="container" style="height: 97vh">
     <div style="position: relative">
-        <h1 style="display: inline-block;"><a href="{% url 'views.rooms' %}">Bingosync</a> - {{ room.name }}</h1>
+        <h1 style="display: inline-block;"><a href="{% url 'rooms' %}">Bingosync</a> - {{ room.name }}</h1>
         <h4 style="display: inline-block; position: absolute; right: 0; bottom: 0;">
             {% if player.is_spectator %}Spectating{% else %}Playing{% endif %} as: {{ player.name }}
-            <a class="btn btn-default" href="{% url 'views.room_disconnect' room.encoded_uuid %}">
+            <a class="btn btn-default" href="{% url 'room_disconnect' room.encoded_uuid %}">
                 Disconnect
             </a>
         </h4>
@@ -57,13 +57,13 @@
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
-        var boardUrl = "{% url 'views.room_board' room.encoded_uuid %}";
-        var chatHistoryUrl = "{% url 'views.room_feed' room.encoded_uuid %}";
-        var chatUrl = "{% url 'views.chat_message' %}";
-        var colorSelectedUrl = "{% url 'views.select_color' %}";
+        var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
+        var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
+        var chatUrl = "{% url 'chat_message' %}";
+        var colorSelectedUrl = "{% url 'select_color' %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
-        var goalSelectedUrl = "{% url 'views.goal_selected' %}";
-        var boardRevealedUrl = "{% url 'views.board_revealed' %}";
+        var goalSelectedUrl = "{% url 'goal_selected' %}";
+        var boardRevealedUrl = "{% url 'board_revealed' %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
         var isSpectator = {{ player.is_spectator|yesno:"true,false" }};

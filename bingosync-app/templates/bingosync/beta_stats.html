@@ -69,11 +69,11 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("#beta-button").on("click", function() {
-            window.location = "{% url 'views.beta_bingo' %}";
+            window.location = "{% url 'beta_bingo' %}";
         });
 
         $.ajax({
-            "url": "{% url 'views.beta_bingo_list' %}",
+            "url": "{% url 'beta_bingo_list' %}",
             "success": function(result) {
                 result["info"] = {
                     version: "v9"

@@ -53,7 +53,7 @@
 					<li>If it says to have an item, you must actually keep it. For example, if it says to have "Blue Potion," you must not drink it, and you must still have it in your inventory at the time you finish getting all 5 objectives.</li>
 					<li>Sometimes there is a question of when to say you are finished. For dungeons, you are "finished" with the dungeon when you step into the blue warp after defeating the boss. For items, you are "finished" when you are holding the item above your head. For songs, when the text says "You have learned the..."</li>
 				</ul>
-                <form action="{% url 'views.beta_bingo' %}" method="POST">
+                <form action="{% url 'beta_bingo' %}" method="POST">
                     {% csrf_token %}
                     <input type="submit" value="Refresh Goal List" />
                 </form>
@@ -135,15 +135,15 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $("#stats-button").on("click", function() {
-            window.location = "{% url 'views.beta_stats' %}"
+            window.location = "{% url 'beta_stats' %}"
         });
         $("#new-card-button").on("click", function() {
             var newSeed = Math.ceil(999999 * Math.random()).toString();
-            window.location = ("{% url 'views.beta_bingo' %}" + "?seed=" + newSeed);
+            window.location = ("{% url 'beta_bingo' %}" + "?seed=" + newSeed);
         });
 
         $.ajax({
-            "url": "{% url 'views.beta_bingo_list' %}",
+            "url": "{% url 'beta_bingo_list' %}",
             "success": function(result) {
                 result["info"] = {
                     version: "v9"
