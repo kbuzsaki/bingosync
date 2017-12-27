@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
                 ('timestamp', models.DateTimeField(verbose_name='Sent', default=datetime.datetime.now)),
                 ('player_color_value', models.IntegerField(choices=[(2, 'Red'), (3, 'Blue'), (4, 'Green'), (5, 'Orange'), (6, 'Purple')])),
-                ('player', models.ForeignKey(to='bingosync.Player')),
+                ('player', models.ForeignKey(to='bingosync.Player', on_delete=models.CASCADE)),
             ],
             options={
                 'abstract': False,

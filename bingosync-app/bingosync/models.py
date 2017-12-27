@@ -433,7 +433,7 @@ LOCKOUT_MODE_NAMES = {
 }
 
 class Game(models.Model):
-    room = models.ForeignKey(Room)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
     seed = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.sorted_choices())
@@ -505,7 +505,7 @@ def validate_in_slot_range(slot):
     return slot in SLOT_RANGE
 
 class Square(models.Model):
-    game = models.ForeignKey(Game)
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
     slot = models.IntegerField(choices=SLOT_CHOICES, validators=[validate_in_slot_range])
     goal = models.CharField(max_length=255)
     color_value = models.IntegerField("Color", default=CompositeColor.goal_default().value, choices=CompositeColor.goal_choices())
@@ -533,7 +533,7 @@ class Square(models.Model):
         unique_together = (("game", "slot"),)
 
 class Player(models.Model):
-    room = models.ForeignKey(Room)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=50)
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
@@ -580,7 +580,7 @@ class Player(models.Model):
         }
 
 class Event(models.Model):
-    player = models.ForeignKey(Player)
+    player = models.ForeignKey(Player, on_delete=models.CASCADE)
     timestamp = models.DateTimeField("Sent", default=timezone.now)
     player_color_value = models.IntegerField(choices=Color.player_choices())
 
@@ -620,7 +620,7 @@ class ChatEvent(Event):
         }
 
 class GoalEvent(Event):
-    square = models.ForeignKey(Square)
+    square = models.ForeignKey(Square, on_delete=models.CASCADE)
     color_value = models.IntegerField(choices=Color.goal_choices())
     remove_color = models.BooleanField(default=False)
 
