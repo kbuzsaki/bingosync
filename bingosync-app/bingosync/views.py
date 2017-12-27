@@ -71,18 +71,6 @@ def room_board(request, encoded_room_uuid):
     board = room.current_game.board
     return JsonResponse(board, safe=False)
 
-def board_view(request, seed):
-    params = {
-        "seed": seed,
-        "sockets_url": SOCKETS_URL
-    }
-    return render(request, "bingosync/bingosync.html", params)
-
-def board_json(request, seed):
-    generator = BingoGenerator.instance()
-    card = generator.get_card(seed)
-    return JsonResponse(card, safe=False)
-
 def history(request):
     hide_solo = request.GET.get('hide_solo')
 
