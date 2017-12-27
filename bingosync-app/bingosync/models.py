@@ -1,6 +1,5 @@
 from django.db import models, transaction
-from django.core import urlresolvers
-
+from django.urls import reverse
 from django.utils import timezone
 
 from uuid import uuid4
@@ -177,7 +176,7 @@ class Room(models.Model):
         kwargs = {
             "encoded_room_uuid": self.encoded_uuid
         }
-        return urlresolvers.reverse(room_view, kwargs=kwargs)
+        return reverse(room_view, kwargs=kwargs)
 
     @staticmethod
     def get_for_encoded_uuid(encoded_room_uuid):

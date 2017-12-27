@@ -1,8 +1,8 @@
 from django.contrib import admin
-from django.core import urlresolvers
 from django.contrib.sessions.models import Session
 from django.forms import Textarea
 from django.db import models
+from django.urls import reverse
 
 import json
 import pprint
@@ -19,7 +19,7 @@ class GameInline(admin.StackedInline):
     readonly_fields = ["link_to_game"]
 
     def link_to_game(self, obj):
-        link = urlresolvers.reverse("admin:bingosync_game_change", args=[obj.id])
+        link = reverse("admin:bingosync_game_change", args=[obj.id])
         return '<a href="%s">%s</a>' % (link, str(obj))
 
     link_to_game.allow_tags = True
@@ -94,7 +94,7 @@ class GameAdmin(admin.ModelAdmin):
     readonly_fields = ["link_to_room"]
 
     def link_to_room(self, obj):
-        link = urlresolvers.reverse("admin:bingosync_room_change", args=[obj.room.id])
+        link = reverse("admin:bingosync_room_change", args=[obj.room.id])
         return '<a href="%s">%s</a>' % (link, str(obj.room))
 
     link_to_room.allow_tags = True
