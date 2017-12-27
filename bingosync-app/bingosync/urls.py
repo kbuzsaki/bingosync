@@ -35,6 +35,6 @@ urlpatterns = [
     url(r'^api/disconnected/(?P<encoded_player_uuid>.+)$', views.user_disconnected, name='user_disconnected'),
     url(r'^api/socket/(?P<socket_key>.+)$', views.check_socket_key, name='check_socket_key'),
     url(r'^api/reconcile$', views.reconcile_connections, name='reconcile'),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
 
