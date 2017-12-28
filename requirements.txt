@@ -5,7 +5,7 @@ django-bootstrap-form==3.3
 django-url-tools-py3==0.2.0
 idna==2.6
 psycopg2==2.7.3.2
-PyExecJS==1.5.0
+PyExecJS==1.1.0
 pytz==2017.3
 requests==2.18.4
 six==1.11.0
