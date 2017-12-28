@@ -2,7 +2,7 @@ certifi==2017.11.5
 chardet==3.0.4
 Django==1.11.8
 django-bootstrap-form==3.3
-django-url-tools-py3==0.1.0.1
+django-url-tools-py3==0.2.0
 idna==2.6
 psycopg2==2.7.3.2
 PyExecJS==1.5.0
