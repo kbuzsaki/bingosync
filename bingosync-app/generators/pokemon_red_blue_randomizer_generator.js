@@ -788,7 +788,7 @@ bingoList = {
     ],
     "25": [
         {
-            "name": "110 Pokemon seen", "types": ["seen"]
+            "name": "100 Pokemon seen", "types": ["seen"]
         },
         {
             "name": "Own 6 Consecutive Dex Pokemon"
