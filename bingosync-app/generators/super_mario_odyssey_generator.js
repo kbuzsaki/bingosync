@@ -72,510 +72,479 @@ bingoGenerator = function(bingoList, opts) {
     var cardType = "Normal";
     var SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
     var size = 5;
-
-    // simpler generator that just does a random choice without duplicates
-    Math.seedrandom(SEED);
     if (true) {
-        var usedGoals = {};
-        var bingoBoard = [];
+        Math.seedrandom(SEED);
+        var MAX_SEED = 999999;
 
-        for (var i = 1; i <= 25; i++) {
-            var randIndex = Math.floor(Math.random() * bingoList.length);
-            while (usedGoals[randIndex]) {
-                randIndex = Math.floor(Math.random() * bingoList.length);
-            }
-            usedGoals[randIndex] = true;
-
-            var goal = bingoList[randIndex];
-            bingoBoard[i] = {"name": goal};
+        var lineCheckList = [];
+        if (size == 5) {
+            lineCheckList[1] = [1, 2, 3, 4, 5, 10, 15, 20, 6, 12, 18, 24];
+            lineCheckList[2] = [0, 2, 3, 4, 6, 11, 16, 21];
+            lineCheckList[3] = [0, 1, 3, 4, 7, 12, 17, 22];
+            lineCheckList[4] = [0, 1, 2, 4, 8, 13, 18, 23];
+            lineCheckList[5] = [0, 1, 2, 3, 8, 12, 16, 20, 9, 14, 19, 24];
+            lineCheckList[6] = [0, 10, 15, 20, 6, 7, 8, 9];
+            lineCheckList[7] = [0, 12, 18, 24, 5, 7, 8, 9, 1, 11, 16, 21];
+            lineCheckList[8] = [5, 6, 8, 9, 2, 12, 17, 22];
+            lineCheckList[9] = [4, 12, 16, 20, 9, 7, 6, 5, 3, 13, 18, 23];
+            lineCheckList[10] = [4, 14, 19, 24, 8, 7, 6, 5];
+            lineCheckList[11] = [0, 5, 15, 20, 11, 12, 13, 14];
+            lineCheckList[12] = [1, 6, 16, 21, 10, 12, 13, 14];
+            lineCheckList[13] = [0, 6, 12, 18, 24, 20, 16, 8, 4, 2, 7, 17, 22, 10, 11, 13, 14];
+            lineCheckList[14] = [3, 8, 18, 23, 10, 11, 12, 14];
+            lineCheckList[15] = [4, 9, 19, 24, 10, 11, 12, 13];
+            lineCheckList[16] = [0, 5, 10, 20, 16, 17, 18, 19];
+            lineCheckList[17] = [15, 17, 18, 19, 1, 6, 11, 21, 20, 12, 8, 4];
+            lineCheckList[18] = [15, 16, 18, 19, 2, 7, 12, 22];
+            lineCheckList[19] = [15, 16, 17, 19, 23, 13, 8, 3, 24, 12, 6, 0];
+            lineCheckList[20] = [4, 9, 14, 24, 15, 16, 17, 18];
+            lineCheckList[21] = [0, 5, 10, 15, 16, 12, 8, 4, 21, 22, 23, 24];
+            lineCheckList[22] = [20, 22, 23, 24, 1, 6, 11, 16];
+            lineCheckList[23] = [2, 7, 12, 17, 20, 21, 23, 24];
+            lineCheckList[24] = [20, 21, 22, 24, 3, 8, 13, 18];
+            lineCheckList[25] = [0, 6, 12, 18, 20, 21, 22, 23, 19, 14, 9, 4];
         }
 
+        function mirror(i) {
+            if (i == 0) {
+                i = 4;
+            } else if (i == 1) {
+                i = 3;
+            } else if (i == 3) {
+                i = 1;
+            } else if (i == 4) {
+                i = 0;
+            }
+            return i;
+        }
+
+        function difficulty(i) {
+            var Num3 = SEED % 1000;
+            var Rem8 = Num3 % 8;
+            var Rem4 = Math.floor(Rem8 / 2);
+            var Rem2 = Rem8 % 2;
+            var Rem5 = Num3 % 5;
+            var Rem3 = Num3 % 3;
+            var RemT = Math.floor(Num3 / 120);
+            var Table5 = [0];
+            Table5.splice(Rem2, 0, 1);
+            Table5.splice(Rem3, 0, 2);
+            Table5.splice(Rem4, 0, 3);
+            Table5.splice(Rem5, 0, 4);
+            Num3 = Math.floor(SEED / 1000);
+            Num3 = Num3 % 1000;
+            Rem8 = Num3 % 8;
+            Rem4 = Math.floor(Rem8 / 2);
+            Rem2 = Rem8 % 2;
+            Rem5 = Num3 % 5;
+            Rem3 = Num3 % 3;
+            RemT = RemT * 8 + Math.floor(Num3 / 120);
+            var Table1 = [0];
+            Table1.splice(Rem2, 0, 1);
+            Table1.splice(Rem3, 0, 2);
+            Table1.splice(Rem4, 0, 3);
+            Table1.splice(Rem5, 0, 4);
+            i--;
+            RemT = RemT % 5;
+            x = (i + RemT) % 5;
+            y = Math.floor(i / 5);
+            var e5 = Table5[(x + 3 * y) % 5];
+            var e1 = Table1[(3 * x + y) % 5];
+            value = 5 * e5 + e1;
+            if (MODE == "short") {
+                value = Math.floor(value / 2);
+            } else if (MODE == "long") {
+                value = Math.floor((value + 25) / 2);
+            }
+            value++;
+            return value;
+        }
+
+        function checkLine(i, typesA) {
+            var synergy = 0;
+            for (var j = 0; j < lineCheckList[i].length; j++) {
+                var typesB = bingoBoard[lineCheckList[i][j] + 1].types;
+                if (typeof typesB != 'undefined') {
+                    for (var k = 0; k < typesA.length; k++) {
+                        for (var l = 0; l < typesB.length; l++) {
+                            if (typesA[k] == typesB[l]) {
+                                synergy++;
+                                if (k == 0) {
+                                    synergy++
+                                };
+                                if (l == 0) {
+                                    synergy++
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            return synergy;
+        }
+        var bingoBoard = [];
+        for (var i = 1; i <= 25; i++) {
+            bingoBoard[i] = {
+                difficulty: difficulty(i)
+            };
+        }
+        for (var i = 1; i <= 25; i++) {
+            var getDifficulty = bingoBoard[i].difficulty;
+            var RNG = Math.floor(bingoList[getDifficulty].length * Math.random());
+            if (RNG == bingoList[getDifficulty].length) {
+                RNG--;
+            };
+            var j = 0,
+                synergy = 0,
+                currentObj = null,
+                minSynObj = null;
+            do {
+                currentObj = bingoList[getDifficulty][(j + RNG) % bingoList[getDifficulty].length];
+                synergy = checkLine(i, currentObj.types);
+                if (minSynObj == null || synergy < minSynObj.synergy) {
+                    minSynObj = {
+                        synergy: synergy,
+                        value: currentObj
+                    };
+                }
+                j++;
+            } while ((synergy != 0) && (j < bingoList[getDifficulty].length));
+            bingoBoard[i].types = minSynObj.value.types;
+            bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
+            bingoBoard[i].synergy = minSynObj.synergy;
+        }
         return bingoBoard;
     }
 };
 
-var bingoList = [
-    "Defeat each Broodal at least once",
-    "Answer 5 Sphynx Questions",
-    "15 Total Checkpoints",
-    "20 Total Checkpoints",
-    "25 Total Checkpoints",
-    "30 Total Checkpoints",
-    "6 Power Moons from 8-bit Sections",
-    "7 Power Moons from 8-bit Sections",
-    "8 Power Moons from 8-bit Sections",
-    "2 Power Moons from Koopa Trace-Walking",
-    "Plant 4 Seeds",
-    "Plant 5 Seeds",
-    "Plant 6 Seeds",
-    "Plant 7 Seeds",
-    "2 Power Moons from Seeds",
-    "3 Power Moons from Seeds",
-    "4 Power Moons from Seeds",
-    "Purchase 2 Full Costumes using Regional Coins",
-    "Purchase 3 Full Costumes using Regional Coins",
-    "Purchase 4 Full Costumes using Regional Coins",
-    "4 Power Moons from Goombette",
-    "5 Power Moons from Goombette",
-    "6 Power Moons from Goombette",
-    "6 Power Moons from Moon Shards",
-    "7 Power Moons from Moon Shards",
-    "8 Power Moons from Moon Shards",
-    "Have 1000 Coins at any one point",
-    "Have 1500 Coins at any one point",
-    "Bring Peace to 5 Kingdoms",
-    "Bring Peace to 6 Kingdoms",
-    "Bring Peace to 7 Kingdoms",
-    "1 Power Moon from Fishing",
-    "2 Power Moons from Fishing",
-    "200 Total Regional Coins",
-    "250 Total Regional Coins",
-    "300 Total Regional Coins",
-    "350 Total Regional Coins",
-    "400 Total Regional Coins",
-    "1 Power Moon from Picture Match",
-    "8 Multi Moons",
-    "9 Multi Moons",
-    "15 Power Moons from Every Kingdom (except Cloud and Ruined)",
-    "20 Power Moons from Every Kingdom (except Cloud and Ruined)",
-    "25 Power Moons from a Single Kingdom",
-    "30 Power Moons from a Single Kingdom",
-    "Enter 3 Warp-Paintings",
-    "Enter 4 Warp-Paintings",
-    "Enter 5 Warp-Paintings",
-    "2 Power Moons from Peach",
-    "3 Power Moons from Peach",
-    "4 Power Moons from Peach",
-    "5 Power Moons from Peach",
-    "4 Power Moons from Captain Toad",
-    "5 Power Moons from Captain Toad",
-    "6 Power Moons from Captain Toad",
-    "1 Power Moon from Slots",
-    "2 Power Moons from Slots",
-    "3 Power Moons from Slots",
-    "50 Regional Coins from a Single Kingdom",
-    "75 Regional Coins from a Single Kingdom",
-    "2 Power Moons from Hint Art",
-    "3 Power Moons from Hint Art",
-    "4 Power Moons from Hint Art",
-    "5 Power Moons from Hint Art",
-    "2 Power Moons from Koopa Freerunning",
-    "3 Power Moons from Koopa Freerunning",
-    "4 Power Moons from Koopa Freerunning",
-    "6 Power Moons from Music Note Challenges",
-    "7 Power Moons from Music Note Challenges",
-    "8 Power Moons from Music Note Challenges",
-    "9 Power Moons from Music Note Challenges",
-    "6 Power Moons from Timer Challenges",
-    "7 Power Moons from Timer Challenges",
-    "8 Power Moons from Timer Challenges",
-    "9 Power Moons from Timer Challenges",
-    "10 Power Moons from Timer Challenges",
-    "8 Total Power Moons from sub-areas",
-    "10 Total Power Moons from sub-areas",
-    "12 Total Power Moons from sub-areas",
-    "14 Total Power Moons from sub-areas",
-    "Purchase 3 Kingdom Stickers",
-    "Purchase 4 Kingdom Stickers",
-    "Purchase 5 Kingdom Stickers",
-    "Purchase 6 Kingdom Stickers",
-    "5 Power Moons from the Cap Kingdom",
-    "10 Power Moons from the Cap Kingdom",
-    "20 Regional Coins from the Cap Kingdom",
-    "30 Regional Coins from the Cap Kingdom",
-    "40 Regional Coins from the Cap Kingdom",
-    "Peach in the Cap Kingdom",
-    "Power Moon from Cap Kingdom Hint Art",
-    "\"Bonneter Blockade\" Power Moon (Cap Kingdom)",
-    "Koopa Freerunning (Cap Kingdom) in under 35 Seconds",
-    "Purchase the Full Black-Suit Costume (Cap Kingdom)",
-    "Purchase a Power Moon in the Cap Kingdom",
-    "1 Timer Challenge from the Cap Kingdom",
-    "Purchase the Bonneton Sticker (Cap Kingdom)",
-    "Captain Toad in the Cap Kingdom",
-    "Purchase 1 Souvenir from the Cap Kingdom",
-    "2 Checkpoints from the Cap Kingdom",
-    "2 Power Moons from sub-areas (Cap Kingdom)",
-    "4 Power Moons from sub-areas (Cap Kingdom)",
-    "Flying Taxi: At the Central Plaza (Cap Kingdom)",
-    "15 Power Moons from the Cascade Kingdom",
-    "20 Power Moons from the Cascade Kingdom",
-    "20 Regional Coins from the Cascade Kingdom",
-    "30 Regional Coins from the Cascade Kingdom",
-    "40 Regional Coins from the Cascade Kingdom",
-    "Peach in the Cascade Kingdom",
-    "Destroy a Rock in the Chain Chomp sub-area (Cascade Kingdom)",
-    "Purchase a Power Moon in the Cascade Kingdom",
-    "Koopa Freerunning (Cascade Kingdom) in under 40 Seconds",
-    "Reach the Cascade Kingdom with a Warp-Painting",
-    "Caveman-Fan: Summit of the Falls (Cascade Kingdom)",
-    "1 Timer Challenge from the Cascade Kingdom",
-    "2 Timer Challenges from the Cascade Kingdom",
-    "Purchase the Fossil Falls Sticker (Cascade Kingdom)",
-    "Captain Toad in the Cascade Kingdom",
-    "Purchase 1 Souvenir from the Cascade Kingdom",
-    "2 Power Moons from sub-areas (Cascade Kingdom)",
-    "4 Power Moons from sub-areas (Cascade Kingdom)",
-    "Flying Sphynx: Over the Waterfall (Cascade Kingdom)",
-    "2 Checkpoints from the Cascade Kingdom",
-    "3 Checkpoints from the Cascade Kingdom",
-    "20 Power Moons from the Sand Kingdom",
-    "25 Power Moons from the Sand Kingdom",
-    "30 Power Moons from the Sand Kingdom",
-    "35 Power Moons from the Sand Kingdom",
-    "40 Power Moons from the Sand Kingdom",
-    "20 Regional Coins from the Sand Kingdom",
-    "30 Regional Coins from the Sand Kingdom",
-    "40 Regional Coins from the Sand Kingdom",
-    "50 Regional Coins from the Sand Kingdom",
-    "Reach the Sand Kingdom with a Warp-Painting",
-    "Bonneter Hat-and-Seek: In the Town (Sand Kingdom)",
-    "Power Moon atop the Ruins Tower (Sand Kingdom)",
-    "Moon Shards in the Moe-Eye Habitat (Sand Kingdom)",
-    "Broodals at the Inverted Pyramid! (Sand Kingdom)",
-    "Knucklotec Battle in the Icy Caverns (Sand Kingdom)",
-    "Collect 5 Power Moons while riding a Jaxi",
-    "Tostarena Secret Room: Dancing on Stage! (Sand Kingdom)",
-    "Lost Sheep in the Dunes (Sand Kingdom)",
-    "1 Timer Challenge from the Sand Kingdom",
-    "2 Timer Challenges from the Sand Kingdom",
-    "3 Timer Challenges from the Sand Kingdom",
-    "Peach in the Sand Kingdom",
-    "Power Moon from Sand Kingdom Hint Art",
-    "1 Power Moon from Sand Kingdom Seeds",
-    "Long Jump from Top of Inverted Pyramid and Land on a Power Moon",
-    "Call Jaxi from 3 Different Jaxi-Stands",
-    "Call Jaxi from 4 Different Jaxi-Stands",
-    "Call Jaxi from 5 Different Jaxi-Stands",
-    "Power Moon from the Binding Band (Sand Kingdom)",
-    "Score 90 Points on Koopa Trace-Walking (Sand Kingdom)",
-    "Sand Kingdom Slots",
-    "Koopa Freerunning (Sand Kingdom) in under 45 Seconds",
-    "Koopa Freerunning (Sand Kingdom) without using a Jaxi",
-    "Lakitu-Fishing Power Moon (Sand Kingdom)",
-    "Purchase a Power Moon in the Sand Kingdom",
-    "Music-Toad in the Desert Town (Sand Kingdom)",
-    "Captain Toad in the Sand Kingdom",
-    "Purchase 1 Souvenir from the Sand Kingdom",
-    "Purchase the Tostarena Sticker (Sand Kingdom)",
-    "Power Moon in the Desert! Good Dog! (Sand Kingdom)",
-    "2 Power Moons from sub-areas (Sand Kingdom)",
-    "4 Power Moons from sub-areas (Sand Kingdom)",
-    "6 Power Moons from sub-areas (Sand Kingdom)",
-    "5 Checkpoints from the Sand Kingdom",
-    "6 Checkpoints from the Sand Kingdom",
-    "7 Checkpoints from the Sand Kingdom",
-    "15 Power Moons from the Lake Kingdom",
-    "20 Power Moons from the Lake Kingdom",
-    "20 Regional Coins from the Lake Kingdom",
-    "30 Regional Coins from the Lake Kingdom",
-    "40 Regional Coins from the Lake Kingdom",
-    "Peach in the Lake Kingdom",
-    "Lake Lamode Secret Room: Dress Display Case (Lake Kingdom)",
-    "Koopa Freerunning (Lake Kingdom) in under 45 Seconds",
-    "Koopa Freerunning (Lake Kingdom) without Triple Jumps",
-    "Power Moon from Lake Kingdom Hint Art",
-    "Lakitu-Fishing Power Moon (Lake Kingdom)",
-    "Power Moon from Lake Kingdom Seed",
-    "Cheep Cheep Lover: Over the Water Plaza (Lake Lamode)",
-    "1 Power Moon from the Lochlady Sisters (Lake Kingdom)",
-    "1 Timer Challenge from the Lake Kingdom",
-    "2 Timer Challenges from the Lake Kingdom",
-    "Create a Goomba Tower with 10 Goombas (Lake Kingdom)",
-    "Reach the Lake Kingdom with a Warp-Painting",
-    "Purchase a Power Moon in the Lake Kingdom",
-    "Purchase the Lake Lamode Sticker (Lake Kingdom)",
-    "Purchase 1 Souvenir from the Lake Kingdom",
-    "Captain Toad in the Lake Kingdom",
-    "2 Power Moons from sub-areas (Lake Kingdom)",
-    "4 Checkpoints from the Lake Kingdom",
-    "5 Checkpoints from the Lake Kingdom",
-    "6 Checkpoints from the Lake Kingdom",
-    "Flying Taxi: Over the Lake! (Lake Kingdom)",
-    "20 Power Moons from the Wooded Kingdom",
-    "25 Power Moons from the Wooded Kingdom",
-    "30 Power Moons from the Wooded Kingdom",
-    "35 Power Moons from the Wooded Kingdom",
-    "40 Power Moons from the Wooded Kingdom",
-    "20 Regional Coins from the Wooded Kingdom",
-    "30 Regional Coins from the Wooded Kingdom",
-    "40 Regional Coins from the Wooded Kingdom",
-    "50 Regional Coins from the Wooded Kingdom",
-    "4 Power Moons in the Deep Woods",
-    "5 Power Moons in the Deep Woods",
-    "6 Power Moons in the Deep Woods",
-    "\"A Treasure Made from Coins\" (Wooded Kingdom)",
-    "8 Power Moons from Nuts (Wooded Kingdom)",
-    "10 Power Moons from Nuts (Wooded Kingdom)",
-    "12 Power Moons from Nuts (Wooded Kingdom)",
-    "1 Timer Challenge from the Wooded Kingdom",
-    "2 Timer Challenges from the Wooded Kingdom",
-    "Steam Gardens Secret Room: Explorer in the Deep Woods! (Wooded Kingdom)",
-    "Bonneter Scientist: Uproot at Sky Garden! (Wooded Kingdom)",
-    "Peach in the Wooded Kingdom",
-    "Captain Toad in the Wooded Kingdom",
-    "Koopa Freerunning (Wooded Kingdom) in under 35 Seconds",
-    "Torkdrift in the Secret Flower Field! (Wooded Kingdom)",
-    "Reach the Wooded Kingdom with a Warp-Painting",
-    "Power Moon from Wooded Kingdom Hint Art",
-    "Music-Toad in the Wooded Kingdom",
-    "Purchase the Steam Gardens Sticker (Wooded Kingdom)",
-    "Purchase 1 Souvenir from the Wooded Kingdom",
-    "5 Checkpoints from the Wooded Kingdom",
-    "6 Checkpoints from the Wooded Kingdom",
-    "7 Checkpoints from the Wooded Kingdom",
-    "2 Power Moons from sub-areas (Wooded Kingdom)",
-    "4 Power Moons from sub-areas (Wooded Kingdom)",
-    "6 Power Moons from sub-areas (Wooded Kingdom)",
-    "Score 85 Points on Picture Match (Cloud Kingdom)",
-    "Peach in the Cloud Kingdom",
-    "15 Power Moons from the Lost Kingdom",
-    "20 Power Moons from the Lost Kingdom",
-    "20 Regional Coins from the Lost Kingdom",
-    "30 Regional Coins from the Lost Kingdom",
-    "40 Regional Coins from the Lost Kingdom",
-    "Koopa Freerunning (Lost Kingdom) in under 50 Seconds",
-    "Bonneter Scientist: Tropical Wiggler Ahoy! (Lost Kingdom)",
-    "Power Moon from the Rabbit (Lost Kingdom)",
-    "Purchase the Full Aviator Costume (Lost Kingdom)",
-    "Purchase a Power Moon in the Lost Kingdom",
-    "Captain Toad in the Lost Kingdom",
-    "Peach in the Lost Kingdom",
-    "Purchase the Forgotten Isle Sticker (Lost Kingdom)",
-    "Purchase 1 Souvenir from the Lost Kingdom",
-    "Flying Taxi: In the Forgotten Land (Lost Kingdom)",
-    "3 Checkpoints from the Lost Kingdom",
-    "30 Power Moons from the Metro Kingdom",
-    "35 Power Moons from the Metro Kingdom",
-    "40 Power Moons from the Metro Kingdom",
-    "20 Regional Coins from the Metro Kingdom",
-    "30 Regional Coins from the Metro Kingdom",
-    "40 Regional Coins from the Metro Kingdom",
-    "50 Regional Coins from the Metro Kingdom",
-    "Reach the Metro Kingdom with a Warp-Painting",
-    "Bonneter Hat-and-Seek: City Quest (Metro Kingdom)",
-    "Bonneter Hat-and-Seek: Among the Crowd (Metro Kingdom)",
-    "Music-Toad in the Metro Kingdom",
-    "Metro Kingdom Slots",
-    "Jump, Man! 100 Points on the Jump-Rope Challenge!",
-    "1 Power Moon from Metro Kingdom Seeds",
-    "1 Timer Challenge from the Metro Kingdom",
-    "2 Timer Challenges from the Metro Kingdom",
-    "Purchase a Power Moon in the Metro Kingdom",
-    "3 Power Moons from Musicians (Metro Kingdom)",
-    "4 Power Moons from Musicians (Metro Kingdom)",
-    "New Donk City Festival! (Metro Kingdom)",
-    "Pauline's Lost Handbag (Metro Kingdom)",
-    "Power Moon from Metro Kingdom Hint Art",
-    "Koopa Freerunning (Metro Kingdom) in under 35 Seconds",
-    "Use the Letters to Spell Any Word other than \"Mario\" (Metro Kingdom)",
-    "New Donk City Secret Room: Construction Mario? (Metro Kingdom)",
-    "Peach in the Metro Kingdom",
-    "Captain Toad in the Metro Kingdom",
-    "Purchase the New Donk City Sticker (Metro Kingdom)",
-    "Purchase 1 Souvenir from the Metro Kingdom",
-    "2 Power Moons from sub-areas (Metro Kingdom)",
-    "4 Power Moons from sub-areas (Metro Kingdom)",
-    "6 Power Moons from sub-areas (Metro Kingdom)",
-    "8 Power Moons from sub-areas (Metro Kingdom)",
-    "4 Checkpoints from the Metro Kingdom",
-    "5 Checkpoints from the Metro Kingdom",
-    "6 Checkpoints from the Metro Kingdom",
-    "Flying Sphynx: Over the Skyscrapers (Metro Kingdom)",
-    "15 Power Moons from the Snow Kingdom",
-    "20 Power Moons from the Snow Kingdom",
-    "25 Power Moons from the Snow Kingdom",
-    "30 Power Moons from the Snow Kingdom",
-    "20 Regional Coins from the Snow Kingdom",
-    "30 Regional Coins from the Snow Kingdom",
-    "40 Regional Coins from the Snow Kingdom",
-    "Bonneter Hat-and-Seek: In the Snowy Depths (Snow Kingdom)",
-    "Reach the Snow Kingdom with a Warp-Painting",
-    "The Bound Bowl Grand Prix! (Snow Kingdom)",
-    "Purchase a Power Moon from the Snow Kingdom",
-    "Power Moon from Snow Kingdom Hint Art",
-    "Score 85 Points on Koopa Trace-Walking (Snow Kingdom)",
-    "1 Timer Challenge from the Snow Kingdom",
-    "2 Timer Challenges from the Snow Kingdom",
-    "Shiveria Secret Room: Dressed for the Weather (Snow Kingdom)",
-    "Snowline Circuit: Class S (Snow Kingdom)",
-    "Peach in the Snow Kingdom",
-    "Power Moon from the Rabbit (Snow Kingdom)",
-    "Lakitu-Fishing Power Moon (Snow Kingdom)",
-    "3 Barrier-Opening Power Moons (Snow Kingdom)",
-    "4 Barrier-Opening Power Moons (Snow Kingdom)",
-    "Bonneter Scientist: Cheep Cheeps in the Ice (Snow Kingdom)",
-    "Boxer Shorts in the Cold?! Here's a Power Moon! (Snow Kingdom)",
-    "Koopa Freerunning (Snow Kingdom) in under 25 Seconds",
-    "Captain Toad in the Snow Kingdom",
-    "Purchase the Shiveria Sticker (Snow Kingdom)",
-    "Purchase 1 Souvenir from the Snow Kingdom",
-    "2 Checkpoint from the Snow Kingdom",
-    "3 Checkpoints from the Snow Kingdom",
-    "2 Power Moons from sub-areas (Snow Kingdom)",
-    "4 Power Moons from sub-areas (Snow Kingdom)",
-    "20 Power Moons from the Seaside Kingdom",
-    "25 Power Moons from the Seaside Kingdom",
-    "30 Power Moons from the Seaside Kingdom",
-    "35 Power Moons from the Seaside Kingdom",
-    "20 Regional Coins from the Seaside Kingdom",
-    "30 Regional Coins from the Seaside Kingdom",
-    "40 Regional Coins from the Seaside Kingdom",
-    "50 Regional Coins from the Seaside Kingdom",
-    "3 Fountain-Seal Power Moons (Seaside Kingdom)",
-    "4 Fountain-Seal Power Moons (Seaside Kingdom)",
-    "Uncork 2 Fountains (Seaside Kingdom)",
-    "Uncork 3 Fountains (Seaside Kingdom)",
-    "Uncork 4 Fountains (Seaside Kingdom)",
-    "1 Timer Challenge from the Seaside Kingdom",
-    "2 Timer Challenges from the Seaside Kingdom",
-    "Power Moon from Seaside Kingdom Hint Art",
-    "Reach the Seaside Kingdom with a Warp-Painting",
-    "Mollusque-Lanceur's Attack on the Beach! (Seaside Kingdom)",
-    "Peach in the Seaside Kingdom",
-    "Koopa Freerunning (Seaside Kingdom) in under 50 Seconds",
-    "1 Power Moon from Seaside Kingdom Seeds",
-    "Purchase a Power Moon from the Seaside Kingdom",
-    "Bubblaine Secret Room: A Relaxing Dance (Seaside Kingdom)",
-    "Entire \"Underwater Tunnel to the Lighthouse\" without a Cheep Cheep (Seaside Kingdom)",
-    "Power Moon on the Beach! Good Dog! (Seaside Kingdom)",
-    "Jump, Man! 100 Points on Beach Volleyball! (Seaside Kingdom)",
-    "Goombette in the Rolling Canyon (Seaside Kingdom)",
-    "Purchase the Bubblaine Sticker (Seaside Kingdom)",
-    "Purchase 1 Souvenir from the Seaside Kingdom",
-    "Captain Toad in the Seaside Kingdom",
-    "2 Power Moons from sub-areas (Seaside Kingdom)",
-    "4 Power Moons from sub-areas (Seaside Kingdom)",
-    "4 Checkpoints from the Seaside Kingdom",
-    "5 Checkpoints from the Seaside Kingdom",
-    "6 Checkpoints from the Seaside Kingdom",
-    "30 Power Moons from the Luncheon Kingdom",
-    "35 Power Moons from the Luncheon Kingdom",
-    "40 Power Moons from the Luncheon Kingdom",
-    "20 Regional Coins from the Luncheon Kingdom",
-    "30 Regional Coins from the Luncheon Kingdom",
-    "40 Regional Coins from the Luncheon Kingdom",
-    "50 Regional Coins from the Luncheon Kingdom",
-    "Mount Volbono Secret Room: Heat Up the First Pot! (Luncheon Kingdom)",
-    "Mount Volbono Secret Room: Heat Up the Second Pot! (Luncheon Kingdom)",
-    "Bonneter Hat-and-Seek: Plaza Festival! (Luncheon Kingdom)",
-    "Cookatiel Confrontation at Mount Volbono (Luncheon Kingdom)",
-    "Peach in the Luncheon Kingdom",
-    "Captain Toad in the Luncheon Kingdom",
-    "Reach the Luncheon Kingdom with a Warp-Painting",
-    "Power Moon from Luncheon Kingdom Hint Art",
-    "Koopa Freerunning (Luncheon Kingdom) in under 50 Seconds",
-    "2 Power Moon from Golden Turnips (Luncheon Kingdom)",
-    "3 Power Moons from Golden Turnips (Luncheon Kingdom)",
-    "Luncheon Kingdom Slots",
-    "Power Moon from the Rabbit (Luncheon Kingdom)",
-    "Music-Toad in the Luncheon Kingdom",
-    "1 Timer Challenge from the Luncheon Kingdom",
-    "2 Timer Challenges from the Luncheon Kingdom",
-    "3 Timer Challenges from the Luncheon Kingdom",
-    "Mechanic in the Plaza! Fix Up the Steam Gardener! (Luncheon Kingdom)",
-    "Goombette over the Lava (Luncheon Kingdom)",
-    "Purchase a Power Moon from the Luncheon Kingdom",
-    "Peronza Plaza: Heat Up the Pot (Luncheon Kingdom)",
-    "On the Remote Island! Fix Up those Cracks! (Luncehon Kingdom)",
-    "Purchase the Mount Volbono Sticker (Luncheon Kingdom)",
-    "Purchase 1 Souvenir from the Luncheon Kingdom",
-    "2 Power Moons from sub-areas (Luncheon Kingdom)",
-    "4 Power Moons from sub-areas (Luncheon Kingdom)",
-    "6 Power Moons from sub-areas (Luncheon Kingdom)",
-    "4 Checkpoints from the Luncheon Kingdom",
-    "5 Checkpoints from the Luncheon Kingdom",
-    "6 Checkpoints from the Luncheon Kingdom",
-    "5 Power Moons from the Ruined Kingdom",
-    "Peach in the Ruined Kingdom",
-    "Throw Cappy at All the Swords (Ruined Kingdom)",
-    "15 Power Moons from Bowser's Kingdom",
-    "20 Power Moons from Bowser's Kingdom",
-    "25 Power Moons from Bowser's Kingdom",
-    "30 Power Moons from Bowser's Kingdom",
-    "20 Regional Coins from Bowser's Kingdom",
-    "30 Regional Coins from Bowser's Kingdom",
-    "40 Regional Coins from Bowser's Kingdom",
-    "50 Regional Coins from Bowser's Kingdom",
-    "Peach in Bowser's Kingdom",
-    "Purchase a Power Moon from Bowser's Kingdom",
-    "Reach Bowser's Kingdom with a Warp-Painting",
-    "Power Moon from Bowser's Kingdom Hint Art",
-    "Power Moon from the Rabbit (Bowser's Kingdom)",
-    "1 Timer Challenge from Bowser's Kingdom",
-    "Bonneter Scientist: Pokio in the Castle! (Bowser's Kingdom)",
-    "Lakitu-Fishing Power Moon (Bowser's Kingdom)",
-    "Koopa Freerunning (Bowser's Kingdom) in under 105 Seconds",
-    "\"Showdown Arena\" Checkpoint Flag (Bowser's Kingdom)",
-    "Open the Front Door to Bowser's Castle (post-game)",
-    "Bowser's Castle Secret Room: 8-bit Samurai Action (Bowser's Kingdom)",
-    "Captain Toad in Bowser's Kingdom",
-    "Purchase 1 Souvenir from Bowser's Kingdom",
-    "Purchase the Bowser's Castle Sticker (Bowser's Kingdom)",
-    "Flying Sphynx: Over Bowser's Castle (Bowser's Kingdom)",
-    "8 Checkpoints from Bowser's Kingdom",
-    "9 Checkpoints from Bowser's Kingdom",
-    "10 Checkpoints from Bowser's Kingdom",
-    "2 Power Moons from sub-areas (Bowser's Kingdom)",
-    "4 Power Moons from sub-areas (Bowser's Kingdom)",
-    "10 Power Moons from the Moon Kingdom",
-    "15 Power Moons from the Moon Kingdom",
-    "20 Regional Coins from the Moon Kingdom",
-    "30 Regional Coins from the Moon Kingdom",
-    "Purchase the Full Space-Suit Costume (Moon Kingdom)",
-    "Peach in the Moon Kingdom",
-    "Power Moon from the Rabbit (Moon Kingdom)",
-    "Koopa Freerunning (Moon Kingdom) in under 60 Seconds",
-    "Power Moon from Moon Kingdom Hint Art",
-    "Return of Doctor Mario! Heal the Shiverian! (Moon Kingdom)",
-    "Power Moon on the Moon! Good Dog! (Moon Kingdom)",
-    "1 Power Moon from the Underground Moon Caverns (Moon Kingdom)",
-    "1 Timer Challenge from the Moon Kingdom",
-    "Purchase a Power Moon from the Moon Kingdom",
-    "Purchase 1 Souvenir from the Moon Kingdom",
-    "Purchase the Honeylune Ridge Sticker (Moon Kingdom)",
-    "Captain Toad in the Moon Kingdom",
-    "3 Checkpoints from the Moon Kingdom",
-    "Score 85 Points on Koopa Trace-Walking (Moon Kingdom)",
-    "10 Power Moons from the Mushroom Kingdom (excluding Toadette)",
-    "15 Power Moons from the Mushroom Kingdom (excluding Toadette)",
-    "20 Power Moons from the Mushroom Kingdom (excluding Toadette)",
-    "20 Regional Coins from the Mushroom Kingdom",
-    "30 Regional Coins from the Mushroom Kingdom",
-    "40 Regional Coins from the Mushroom Kingdom",
-    "Knucklotec's Icy Rematch! (Mushroom Kingdom)",
-    "Torkdrift's Flowery Rematch! (Mushroom Kingdom)",
-    "Mechwiggler's Mecha-Rematch! (Mushroom Kingdom)",
-    "Mollusque-Lanceur's Aerial Rematch! (Mushroom Kingdom)",
-    "Cookatiel's Volcanic Rematch! (Mushroom Kingdom)",
-    "Ruined Dragon's Electrical Rematch! (Mushroom Kingdom)",
-    "2 Boss-Rematch Multi Moons (Mushroom Kingdom)",
-    "3 Boss-Rematch Multi Moons (Mushroom Kingdom)",
-    "10 Power Moons from Toadette (Mushroom Kingdom)",
-    "15 Power Moons from Toadette (Mushroom Kingdom)",
-    "Koopa Freerunning (Mushroom Kingdom) in under 20 Seconds",
-    "Power Moon from Mushroom Kingdom Hint Art",
-    "Eat 10 Berries with Yoshi (Mushroom Kingdom)",
-    "1 Power Moon from Mushroom Kingdom Seeds",
-    "\"Toad Defender\" Power Moon (Mushroom Kingdom)",
-    "Power Moon from the Rabbit (Mushroom Kingdom)",
-    "Score 85 Points on Picture Match (Mushroom Kingdom)",
-    "Purchase a Power Moon from the Mushroom Kingdom",
-    "Peach's Castle Secret Room: Nostaligic Getaway (Mushroom Kingdom)",
-    "Goombette Encounter behind Peach's Castle (Mushroom Kingdom)",
-    "Captain Toad in the Mushroom Kingdom",
-    "Purchase the Peach's Castle Sticker (Mushroom Kingdom)",
-    "Purchase the ?-Block Sticker (Mushroom Kingdom)",
-    "Purchase the Brick-Block Sticker (Mushroom Kingdom)",
-    "Purchase the Coin Sticker (Mushroom Kingdom)",
-    "Purchase the Warp Pipe Sticker (Mushroom Kingdom)",
-    "Purchase 1 Souvenir from the Mushroom Kingdom",
-    "Try to Enter the Wing Cap Stage (Mushroom Kingdom)",
-    "Purchase 2 Stickers from the Mushroom Kingdom",
-    "Purchase 3 Stickers from the Mushroom Kingdom",
-    "2 Checkpoints from the Mushroom Kingdom",
-    "3 Checkpoints from the Mushroom Kingdom",
-    "Music-Toad in the Mushroom Kingdom",
-    "Bonneter Hat-and-Seek: At Peach's Castle (Mushroom Kingdom)",
-    "1 Timer Challenge from the Mushroom Kingdom"
+var bingoList = [];
+
+bingoList[1] = [
+{ name: "2 Checkpoints (Cascade)", types: ["Cascade"] },
+{ name: "Captain Toad (Cascade)", types: ["Cascade"] },
+{ name: "20 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "Have 0 Coins", types: ["Coins"] },
+{ name: "Answer 3 Sphynx Questions Correctly", types: ["Sphynx"] },
+{ name: "Purchase 2 Yellow Coin Outfits", types: ["Yellow_Outfits"] },
+{ name: "Purchase 4 Hats", types: ["Hats"] },
+{ name: "1 Timer Challenge (Cascade)", types: ["Cascade"] },
+{ name: "Moon atop the Tostarena Ruins Tower", types: ["Sand_Story"] },
+{ name: "Call Jaxi from 2 Stands", types: ["Jaxi"] },
+{ name: "3 Checkpoints (Lake)", types: ["Lake"] },
+{ name: "4 Checkpoints (Sand)", types: ["Sand"] }
+];
+bingoList[2] = [
+{ name: "7 Moons from Nuts", types: ["Nuts"] },
+{ name: "3 Checkpoints (Lost)", types: ["Lost"] },
+{ name: "Captain Toad (Metro)", types: ["Metro"] },
+{ name: "4 Checkpoints (Metro)", types: ["Metro"] },
+{ name: "Uncork 1 Fountain (Seaside)", types: ["Uncork"] },
+{ name: "3 Checkpoints (Seaside)", types: ["Seaside"] },
+{ name: "2 Moons from sub-areas (Metro)", types: ["Metro"] },
+{ name: "Captain Toad (Seaside)", types: ["Seaside"] },
+{ name: "4 Checkpoints (Luncheon)", types: ["Luncheon"] },
+{ name: "Moon Shards in the Cold Room (Snow)", types: ["Locked_Door"] },
+{ name: "Captain Toad (Lost)", types: ["Lost"] }
+];
+bingoList[3] = [
+{ name: "22 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "2 Moons from Slots", types: ["Slots"] },
+{ name: "Purchase 2 Clothes", types: ["Clothes"] },
+{ name: "Purchase 1 Souvenir", types: ["Souvenir"] },
+{ name: "Look at 2 Hint Arts", types: ["Hint_View"] },
+{ name: "2 Moons from sub-areas (Sand)", types: ["Sand"] },
+{ name: "5 Checkpoints (Sand)", types: ["Sand"] },
+{ name: "Lakitu-Fishing (Lake)", types: ["Lake"] },
+{ name: "2 Stickers", types: ["Stickers"] },
+{ name: "1 Warp-Painting Moon", types: ["Warp_Painting"] },
+{ name: "Answer 5 Sphynx Questions Correctly", types: ["Sphynx"] }
+];
+bingoList[4] = [
+{ name: "100 Moons (Total)", types: ["Total_Moons"] },
+{ name: "20 Moons (Sand)", types: ["Sand_Moons"] },
+{ name: "4 Checkpoints (Wooded)", types: ["Wooded"] },
+{ name: "Uncork 2 Fountains (Seaside)", types: ["Uncork"] },
+{ name: "14 Moons (Seaside)", types: ["Seaside_Moons"] },
+{ name: "2 Timer Challenges", types: ["Timer"] },
+{ name: "Purchase 5 Hats", types: ["Hats"] },
+{ name: "2 Checkpoints (Cap)", types: ["Cap"] },
+{ name: "Call Jaxi from 3 Stands", types: ["Jaxi"] },
+{ name: "24 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "12 Moons (Lost)", types: ["Lost_Moons"] },
+{ name: "8 Moons (Cascade)", types: ["Cascade_Moons"] }
+];
+bingoList[5] = [
+{ name: "1 Timer Challenge (Cap)", types: ["Cap"] },
+{ name: "Purchase 3 Clothes", types: ["Clothes"] },
+{ name: "2 Timer Challenges (Cascade)", types: ["Cascade"] },
+{ name: "3 Captain Toad Moons", types: ["Captain_Toad"] },
+{ name: "3 Moons from 8-bit Sections", types: ["8bit"] },
+{ name: "20 Moons (Wooded)", types: ["Wooded_Moons"] },
+{ name: "Captain Toad (Lake)", types: ["Lake"] },
+{ name: "3 Moons from Moon Shards", types: ["Moon_Shards"] },
+{ name: "Sandy Moon Shards in the Moe-Eye Habitat", types: ["Sand_Story"] },
+{ name: "12 Moons (Lake)", types: ["Lake_Moons"] },
+{ name: "4 Moons (Cap)", types: ["Cap_Moons"] },
+{ name: "4 Moons from Music Notes", types: ["Music_Notes"] }
+];
+bingoList[6] = [
+{ name: "15 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
+{ name: "25 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "10 Regional Coins (Lake)", types: ["Lake_Regional"] },
+{ name: "10 Regional Coins (Snow)", types: ["Snow_Regional"] },
+{ name: "20 Regional Coins (Metro)", types: ["Metro_Regional"] },
+{ name: "25 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "10 Regional Coins (Lost)", types: ["Lost_Regional"] },
+{ name: "25 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "3 Musicians (Metro)", types: ["Musicians"] },
+{ name: "10 Regional Coins (Cap)", types: ["Cap_Regional"] },
+{ name: "50 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "Koopa Trace-Walking (Sand)", types: ["Sand"] }
+];
+bingoList[7] = [
+{ name: "Have 500 Coins", types: ["Coins"] },
+{ name: "Purchase 4 Moons", types: ["Shop_Moons"] },
+{ name: "Purchase 3 Regional Coin Outfits", types: ["Regional_Outfits"] },
+{ name: "5 Treasure Chest Moons", types: ["Treasure_Chest"] },
+{ name: "22 Moons (Sand)", types: ["Sand_Moons"] },
+{ name: "14 Moons (Lost)", types: ["Lost_Moons"] },
+{ name: "4 Moons from sub-areas (Metro)", types: ["Metro"] },
+{ name: "14 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "25 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
+{ name: "5 Checkpoints (Seaside)", types: ["Seaside"] },
+{ name: "3 Moons (Bowser's)", types: ["Bowsers_Moons"] },
+{ name: "10 Regional Coins (Bowser's)", types: ["Bowsers_Regional"] },
+{ name: "4 Moons from sub-areas (Luncheon)", types: ["Luncheon"] }
+];
+bingoList[8] = [
+{ name: "A Strong Simmer (Luncheon)", types: ["Locked_Door"] },
+{ name: "Rewiring the Neighborhood (Metro)", types: ["Locked_Door"] },
+{ name: "15 Regional Coins (Cap)", types: ["Cap_Regional"] },
+{ name: "2 Moons from sub-areas (Cap)", types: ["Cap"] },
+{ name: "10 Moons (Cascade)", types: ["Cascade_Moons"] },
+{ name: "4 Moons from Moon Shards", types: ["Moon_Shards"] },
+{ name: "4 Timer Challenges", types: ["Timer"] },
+{ name: "3 Stickers", types: ["Stickers"] },
+{ name: "110 Moons (Total)", types: ["Total_Moons"] },
+{ name: "1 Moon from Hint Art", types: ["Hint_Moons"] },
+{ name: "Purchase 4 Souvenirs", types: ["Souvenirs"] },
+{ name: "Purchase 3 Clothes", types: ["Clothes"] }
+];
+bingoList[9] = [
+{ name: "Don't Capture Any T-Rexes", types: ["Captureless"] },
+{ name: "Have 750 Coins", types: ["Coins"] },
+{ name: "24 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "20 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
+{ name: "30 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "15 Regional Coins (Lake)", types: ["Lake_Regional"] },
+{ name: "8 Moons from Nuts", types: ["Nuts"] },
+{ name: "14 Moons (Lake)", types: ["Lake_Moons"] },
+{ name: "15 Regional Coins (Lost)", types: ["Lost_Regional"] },
+{ name: "22 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "6 Moons from sub-areas (Luncheon)", types: ["Luncheon"] }
+];
+bingoList[10] = [
+{ name: "2 Golden Turnips (Luncheon)", types: ["Luncheon"] },
+{ name: "Plant 4 Seeds", types: ["Seeds"] },
+{ name: "5 Moons from 8-bit Sections", types: ["8bit"] },
+{ name: "120 Moons (Total)", types: ["Total_Moons"] },
+{ name: "10 Moons from Cap-Doors", types: ["Cap_Doors"] },
+{ name: "24 Unique Captures", types: ["Unique_Captures"] },
+{ name: "4 Stickers", types: ["Stickers"] },
+{ name: "4 Moons from Rocket-Ship Areas", types: ["Rocket_Ship"] },
+{ name: "5 Timer Challenges", types: ["Timer"] },
+{ name: "30 Regional Coins (Metro)", types: ["Metro_Regional"] },
+{ name: "3 Barrier-Moons (Snow)", types: ["Snow"] },
+{ name: "A Relaxing Dance (Seaside)", types: ["Locked_Door"] },
+{ name: "Leave Lake without Multi Moon", types: ["No_Multi"] }
+];
+bingoList[11] = [
+{ name: "Exploring for Treasure (Wooded)", types: ["Locked_Door"] },
+{ name: "4 Moons from sub-areas (Wooded)", types: ["Wooded"] },
+{ name: "28 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "20 Regional Coins (Bowser's)", types: ["Bowsers_Regional"] },
+{ name: "6 Moons (Cap)", types: ["Cap_Moons"] },
+{ name: "4 Captain Toad Moons", types: ["Captain_Toad"] },
+{ name: "Call Jaxi from 4 Stands", types: ["Jaxi"] },
+{ name: "Have 1000 Coins", types: ["Coins"] },
+{ name: "Look at 4 Hint Arts", types: ["Hint_View"] },
+{ name: "75 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "Don't Capture Any Gushens", types: ["Captureless"] },
+{ name: "Dancing with New Friends (Sand)", types: ["Locked_Door"] }
+];
+bingoList[12] = [
+{ name: "24 Moons (Sand)", types: ["Sand_Moons"] },
+{ name: "6 Moons from sub-areas (Sand)", types: ["Sand"] },
+{ name: "20 Regional Coins (Lake)", types: ["Lake_Regional"] },
+{ name: "2 Moons (Deep Woods)", types: ["Deep_Woods"] },
+{ name: "20 Regional Coins (Snow)", types: ["Snow_Regional"] },
+{ name: "30 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
+{ name: "4 Moons from sub-areas (Seaside)", types: ["Seaside"] },
+{ name: "30 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "16 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "I Feel Underdressed (Lake)", types: ["Locked_Door"] },
+{ name: "2 Moons from Shiny Rocks", types: ["Shiny_Rocks"] }
+];
+bingoList[13] = [
+{ name: "2 Moons from sub-areas (Cascade)", types: ["Cascade"] },
+{ name: "24 Moons (Wooded)", types: ["Wooded_Moons"] },
+{ name: "Plant 5 Seeds", types: ["Seeds"] },
+{ name: "26 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "100 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "Have 1250 Coins", types: ["Coins"] },
+{ name: "3 Moons from Goombas", types: ["Goomba"] },
+{ name: "6 Multi Moons", types: ["Multi_Moons"] },
+{ name: "15 Ground-Pound Moons", types: ["Ground_Pound"] },
+{ name: "Don't Capture Any Cheep Cheeps", types: ["Captureless"] },
+{ name: "30 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "5 Checkpoints (Wooded)", types: ["Wooded"] },
+{ name: "6 Moons (Bowser's)", types: ["Bowsers_Moons"] }
+];
+bingoList[14] = [
+{ name: "18 Moons (Seaside)", types: ["Seaside_Moons"] },
+{ name: "20 Regional Coins (Lost)", types: ["Lost_Regional"] },
+{ name: "6 Moons from sub-areas (Metro)", types: ["Metro"] },
+{ name: "35 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "Purchase 5 Moons", types: ["Shop_Moons"] },
+{ name: "Purchase 4 Regional Coin Outfits", types: ["Regional_Outfits"] },
+{ name: "3 Warp-Painting Moons", types: ["Warp_Painting"] },
+{ name: "125 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "6 Checkpoints (Sand)", types: ["Sand"] },
+{ name: "6 Moons from sub-areas (Wooded)", types: ["Wooded"] }
+];
+bingoList[15] = [
+{ name: "Leave Wooded without Multi Moon", types: ["No_Multi"] },
+{ name: "16 Moons (Lost)", types: ["Lost_Moons"] },
+{ name: "6 Checkpoints (Metro)", types: ["Metro"] },
+{ name: "35 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
+{ name: "24 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "25 Regional Coins (Bowser's)", types: ["Bowsers_Regional"] },
+{ name: "12 Moons from Cap-Doors", types: ["Cap_Doors"] },
+{ name: "5 Moons from Music Notes", types: ["Music_Notes"] },
+{ name: "5 Moons from Moon Shards", types: ["Moon_Shards"] },
+{ name: "12 Moons (Cascade)", types: ["Cascade_Moons"] }
+];
+bingoList[16] = [
+{ name: "150 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "6 Timer Challenges", types: ["Timer"] },
+{ name: "130 Moons (Total)", types: ["Total_Moons"] },
+{ name: "26 Unique Captures", types: ["Unique_Captures"] },
+{ name: "7 Treasure Chest Moons", types: ["Treasure_Chest"] },
+{ name: "Don't Capture Any Lava Bubbles", types: ["Captureless"] },
+{ name: "7 Checkpoints (Sand)", types: ["Sand"] },
+{ name: "9 Moons from Nuts", types: ["Nuts"] },
+{ name: "35 Regional Coins (Metro)", types: ["Metro_Regional"] },
+{ name: "3 Moons from Slots", types: ["Slots"] }
+];
+bingoList[17] = [
+{ name: "4 Barrier-Moons (Snow)", types: ["Snow"] },
+{ name: "Uncork 3 Fountains (Seaside)", types: ["Uncork"] },
+{ name: "Leave Luncheon without Multi Moon", types: ["No_Multi"] },
+{ name: "35 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "26 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "6 Moons from Rocket-Ship Areas", types: ["Rocket_Ship"] },
+{ name: "Purchase 6 Souvenirs", types: ["Souvenirs"] },
+{ name: "Don't Capture Any Uproots", types: ["Captureless"] },
+{ name: "35 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "Don't Capture Any Bullet Bills", types: ["Captureless"] }
+];
+bingoList[18] = [
+{ name: "Broodal Battle on the Inverted Pyramid!", types: ["Sand_Story"] },
+{ name: "16 Moons (Lake)", types: ["Lake_Moons"] },
+{ name: "3 Moons (Deep Woods)", types: ["Deep_Woods"] },
+{ name: "8 Moons from sub-areas (Metro)", types: ["Metro"] },
+{ name: "8 Moons (Bowser's)", types: ["Bowsers_Moons"] },
+{ name: "175 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "Have 1500 Coins", types: ["Coins"] },
+{ name: "Look at 5 Hint Arts", types: ["Hint_View"] },
+{ name: "Purchase 5 Regional Coin Outfits", types: ["Regional_Outfits"] },
+{ name: "Leave Wooded with No Nut Moons", types: ["No_Moons"] }
+];
+bingoList[19] = [
+{ name: "4 Warp-Painting Moons", types: ["Warp_Painting"] },
+{ name: "18 Ground-Pound Moons", types: ["Ground_Pound"] },
+{ name: "28 Unique Captures", types: ["Unique_Captures"] },
+{ name: "Look at 6 Hint Arts", types: ["Hint_View"] },
+{ name: "8 Moons (Cap)", types: ["Cap_Moons"] },
+{ name: "4 Moons from sub-areas (Cap)", types: ["Cap"] },
+{ name: "4 Moons from sub-areas (Cascade)", types: ["Cascade"] },
+{ name: "28 Moons (Sand)", types: ["Sand_Moons"] },
+{ name: "25 Regional Coins (Lake)", types: ["Lake_Regional"] },
+{ name: "40 Regional Coins (Wooded)", types: ["Wooded_Regional"] }
+];
+bingoList[20] = [
+{ name: "25 Regional Coins (Lost)", types: ["Lost_Regional"] },
+{ name: "30 Regional Coins (Bowser's)", types: ["Bowsers_Regional"] },
+{ name: "5 Moons (Ruined)", types: ["Ruined_Moons"] },
+{ name: "200 Total Regional Coins", types: ["Regional_Coins"] },
+{ name: "Have 1750 Coins", types: ["Coins"] },
+{ name: "4 Moons from Goombas", types: ["Goomba"] },
+{ name: "7 Multi Moons", types: ["Multi_Moons"] },
+{ name: "Purchase the Boxer Shorts", types: ["Coins"] },
+{ name: "28 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "30 Regional Coins (Cascade)", types: ["Cascade_Regional"] }
+];
+bingoList[21] = [
+{ name: "4 Moons (Deep Woods)", types: ["Deep_Woods"] },
+{ name: "10 Moons (Bowser's)", types: ["Bowsers_Moons"] },
+{ name: "28 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "40 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
+{ name: "20 Regional Coins (Cap)", types: ["Cap_Regional"] },
+{ name: "5 Stickers", types: ["Stickers"] },
+{ name: "9 Treasure Chest Moons", types: ["Treasure_Chest"] },
+{ name: "14 Moons (Cascade)", types: ["Cascade_Moons"] },
+{ name: "Purchase 6 Moons", types: ["Shop_Moons"] },
+{ name: "10 Moons from Nuts", types: ["Nuts"] }
+];
+bingoList[22] = [
+{ name: "6 Moons from Moon Shards", types: ["Moon_Shards"] },
+{ name: "5 Captain Toad Moons", types: ["Captain_Toad"] },
+{ name: "14 Moons from Cap-Doors", types: ["Cap_Doors"] },
+{ name: "8 Moons from Rocket-Ship Areas", types: ["Rocket_Ship"] },
+{ name: "140 Moons (Total)", types: ["Total_Moons"] },
+{ name: "Answer 7 Sphynx Questions Correctly", types: ["Sphynx"] },
+{ name: "40 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "26 Moons (Wooded)", types: ["Wooded_Moons"] },
+{ name: "3 Moons from Shiny Rocks", types: ["Shiny_Rocks"] },
+{ name: "3 Golden Turnips (Luncheon)", types: ["Luncheon"] }
+];
+bingoList[23] = [
+{ name: "30 Regional Coins (Lost)", types: ["Lost_Regional"] },
+{ name: "30 Regional Coins (Snow)", types: ["Snow_Regional"] },
+{ name: "World Peace Restored! (Wooded)", types: ["World_Peace"] },
+{ name: "25 Regional Coins (Cap)", types: ["Cap_Regional"] },
+{ name: "30 Total Checkpoints", types: ["Checkpoints"] },
+{ name: "Have 2000 Coins", types: ["Coins"] },
+{ name: "2 Moons from Hint Art", types: ["Hint_Moons"] },
+{ name: "8 Multi Moons", types: ["Multi_Moons"] },
+{ name: "Goomba Picture-Match (Cloud)", types: ["Cloud"] },
+{ name: "World Peace Restored! (Luncheon)", types: ["World_Peace"] }
+];
+bingoList[24] = [
+{ name: "7 Timer Challenges", types: ["Timer"] },
+{ name: "6 Moons from Music Notes", types: ["Music_Notes"] },
+{ name: "7 Moons from 8-bit Sections", types: ["8bit"] },
+{ name: "50 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
+{ name: "50 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "35 Regional Coins (Lake)", types: ["Lake_Regional"] },
+{ name: "8 Moons from sub-areas (Wooded)", types: ["Wooded"] },
+{ name: "38 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "Scene of Crossing the Poison Swamp (Bowser's)", types: ["Locked_Door"] },
+{ name: "Leave Seaside without Underwater Moons", types: ["No_Moons"] },
+{ name: "Leave Metro with No NPC Moons", types: ["No_Moons"] },
+{ name: "225 Total Regional Coins", types: ["Regional_Coins"] }
+];
+bingoList[25] = [
+{ name: "World Peace Restored! (Metro)", types: ["World_Peace"] },
+{ name: "World Peace Restored! (Sand)", types: ["World_Peace"] },
+{ name: "24 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "16 Moons (Bowser's)", types: ["Bowsers_Moons"] },
+{ name: "40 Regional Coins (Bowser's)", types: ["Bowsers_Regional"] },
+{ name: "10 Moons (Cap)", types: ["Cap_Moons"] },
+{ name: "18 Moons (Cascade)", types: ["Cascade_Moons"] },
+{ name: "24 Moons (Lake)", types: ["Lake_Moons"] },
+{ name: "60 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "World Peace Restored! (Seaside)", types: ["World_Peace"] },
+{ name: "Captain Toad (Bowser's)", types: ["Bowsers"] },
+{ name: "160 Moons (Total)", types: ["Total_Moons"] }
 ];

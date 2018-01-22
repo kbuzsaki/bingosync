@@ -269,8 +269,8 @@ class GameType(Enum):
     sonic_adventure_2_dark_story = 42
     sonic_adventure_2_long = 43
     zelda_skyward_sword = 44
-    super_mario_odyssey_short = 45
-    super_mario_odyssey = 46
+    super_mario_odyssey = 45
+    super_mario_odyssey_long = 46
     rabi_ribi = 47
     generic_bingo = 48
     generic_bingo_deluxe = 49
@@ -348,8 +348,8 @@ GAME_TYPE_NAMES = {
     GameType.sonic_adventure_2_dark_story: "Sonic Adventure 2 - Dark Story",
     GameType.sonic_adventure_2_long: "Sonic Adventure 2 - Long",
     GameType.zelda_skyward_sword: "Zelda: Skyward Sword",
-    GameType.super_mario_odyssey_short: "Super Mario Odyssey - Short",
     GameType.super_mario_odyssey: "Super Mario Odyssey",
+    GameType.super_mario_odyssey_long: "Super Mario Odyssey - Long",
     GameType.rabi_ribi: "Rabi-Ribi",
     GameType.generic_bingo: "Generic Bingo",
     GameType.generic_bingo_deluxe: "Generic Bingo Deluxe",
@@ -400,8 +400,8 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.sonic_adventure_2_dark_story: "SA2 Dark",
     GameType.sonic_adventure_2_long: "SA2 Long",
     GameType.zelda_skyward_sword: "Zelda: SS",
-    GameType.super_mario_odyssey_short: "SMO Short",
     GameType.super_mario_odyssey: "SMO",
+    GameType.super_mario_odyssey_long: "SMO Long",
     GameType.rabi_ribi: "Rabi-Ribi",
     GameType.generic_bingo: "Generic",
     GameType.generic_bingo_deluxe: "Generic Deluxe",
