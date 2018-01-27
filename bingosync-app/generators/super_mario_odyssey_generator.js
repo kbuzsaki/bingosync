@@ -223,7 +223,6 @@ bingoList[1] = [
 { name: "2 Checkpoints (Cascade)", types: ["Cascade"] },
 { name: "Captain Toad (Cascade)", types: ["Cascade"] },
 { name: "Have 0 Coins", types: ["Coins"] },
-{ name: "Purchase 2 Yellow Coin Outfits", types: ["Yellow_Outfits"] },
 { name: "Purchase 4 Hats", types: ["Hats"] },
 { name: "Moon atop the Tostarena Ruins Tower", types: ["Sand_Story"] },
 { name: "Call Jaxi from 2 Stands", types: ["Jaxi"] },
@@ -252,8 +251,7 @@ bingoList[3] = [
 { name: "2 Stickers", types: ["Stickers"] },
 { name: "1 Warp-Painting Moon", types: ["Warp_Painting"] },
 { name: "Answer 6 Sphynx Questions Correctly", types: ["Sphynx"] },
-{ name: "Purchase 4 Souvenirs", types: ["Souvenirs"] },
-{ name: "12 Unique Captures", types: ["Unique_Captures"] }
+{ name: "Purchase 4 Souvenirs", types: ["Souvenirs"] }
 ];
 bingoList[4] = [
 { name: "80 Moons (Total)", types: ["Total_Moons"] },
@@ -263,10 +261,11 @@ bingoList[4] = [
 { name: "Purchase 5 Hats", types: ["Hats"] },
 { name: "2 Checkpoints (Cap)", types: ["Cap"] },
 { name: "Call Jaxi from 3 Stands", types: ["Jaxi"] },
-{ name: "24 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "24 Moons (Metro)", types: ["Metro_Moons", "Metro_Long"] },
 { name: "12 Moons (Lost)", types: ["Lost_Moons"] },
 { name: "10 Moons (Cascade)", types: ["Cascade_Moons"] },
-{ name: "Finish Wooded without Multi Moon", types: ["No_Multi"] }
+{ name: "Finish Wooded without Multi Moon", types: ["No_Multi"] },
+{ name: "Purchase 3 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[5] = [
 { name: "3 Captain Toad Moons", types: ["Captain_Toad"] },
@@ -289,20 +288,20 @@ bingoList[6] = [
 { name: "10 Regional Coins (Cap)", types: ["Cap_Regional"] },
 { name: "50 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "Koopa Trace-Walking (Sand)", types: ["Sand"] },
-{ name: "2 Moons (Deep Woods)", types: ["Deep_Woods"] },
-{ name: "Purchase 3 Yellow Coin Outfits", types: ["Yellow_Outfits"] }
+{ name: "2 Moons (Deep Woods)", types: ["Deep_Woods"] }
 ];
 bingoList[7] = [
 { name: "Have 500 Coins", types: ["Coins"] },
 { name: "Purchase 4 Moons", types: ["Shop_Moons"] },
-{ name: "Purchase 3 Regional Coin Outfits", types: ["Regional_Outfits"] },
 { name: "5 Treasure Chest Moons", types: ["Treasure_Chest"] },
 { name: "22 Moons (Sand)", types: ["Sand_Moons"] },
 { name: "14 Moons (Lost)", types: ["Lost_Moons"] },
 { name: "4 Moons from sub-areas (Metro)", types: ["Metro"] },
 { name: "4 Moons from sub-areas (Cascade)", types: ["Cascade"] },
 { name: "2 Moons from Wooden Crates", types: ["Crates"] },
-{ name: "12 Moons from sub-areas (Total)", types: ["Sub_Areas"] }
+{ name: "12 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
+{ name: "18 Unique Captures", types: ["Unique_Captures"] },
+{ name: "Purchase 4 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[8] = [
 { name: "Outfit-Door (Metro)", types: ["Locked_Door"] },
@@ -313,7 +312,7 @@ bingoList[8] = [
 { name: "4 Timer Challenges", types: ["Timer"] },
 { name: "3 Stickers", types: ["Stickers"] },
 { name: "1 Moon from Hint Art", types: ["Hint_Moons"] },
-{ name: "26 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "26 Moons (Metro)", types: ["Metro_Moons", "Metro_Long"] },
 { name: "4 Moons from sub-areas (Sand)", types: ["Sand"] },
 { name: "20 Regional Coins (Lake)", types: ["Lake_Regional"] },
 { name: "Finish Sand with No Ground-Pound Moons", types: ["No_Moons"] }
@@ -329,23 +328,24 @@ bingoList[9] = [
 { name: "20 Regional Coins (Cap)", types: ["Cap_Regional"] },
 { name: "30 Regional Coins (Lake)", types: ["Lake_Regional"] },
 { name: "Capture both the Cactus and the Tree", types: ["Capture_Both"] },
-{ name: "3 Moons (Deep Woods)", types: ["Deep_Woods"] }
+{ name: "3 Moons (Deep Woods)", types: ["Deep_Woods"] },
+{ name: "20 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[10] = [
 { name: "Plant 4 Seeds", types: ["Seeds"] },
 { name: "5 Moons from 8-bit Sections", types: ["8bit"] },
-{ name: "14 Unique Captures", types: ["Unique_Captures"] },
 { name: "4 Stickers", types: ["Stickers"] },
 { name: "5 Timer Challenges", types: ["Timer"] },
 { name: "30 Regional Coins (Metro)", types: ["Metro_Regional"] },
 { name: "Finish Lake without Multi Moon", types: ["No_Multi"] },
 { name: "35 Regional Coins (Lake)", types: ["Lake_Regional"] },
-{ name: "Broodal Battle on the Inverted Pyramid!", types: ["Sand_Story"] }
+{ name: "Broodal Battle on the Inverted Pyramid!", types: ["Sand_Story"] },
+{ name: "Purchase 5 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[11] = [
 { name: "Outfit-Door (Wooded)", types: ["Locked_Door"] },
 { name: "4 Moons from sub-areas (Wooded)", types: ["Wooded"] },
-{ name: "28 Moons (Metro)", types: ["Metro_Moons"] },
+{ name: "28 Moons (Metro)", types: ["Metro_Moons", "Metro_Long"] },
 { name: "6 Moons (Cap)", types: ["Cap_Moons"] },
 { name: "4 Captain Toad Moons", types: ["Captain_Toad"] },
 { name: "Call Jaxi from 4 Stands", types: ["Jaxi"] },
@@ -353,7 +353,9 @@ bingoList[11] = [
 { name: "75 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "Outfit-Door (Sand)", types: ["Locked_Door"] },
 { name: "20 Regional Coins (Lost)", types: ["Lost_Regional"] },
-{ name: "Wear the Boxer Shorts", types: ["Coins"] }
+{ name: "Wear the Boxer Shorts", types: ["Coins"] },
+{ name: "9 Moons from Nuts", types: ["Nuts"] },
+{ name: "22 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[12] = [
 { name: "24 Moons (Sand)", types: ["Sand_Moons"] },
@@ -378,19 +380,19 @@ bingoList[13] = [
 { name: "1 Moon from Goombas", types: ["Goomba"] },
 { name: "5 Multi Moons", types: ["Multi_Moons"] },
 { name: "30 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
-{ name: "5 Checkpoints (Wooded)", types: ["Wooded"] }
+{ name: "5 Checkpoints (Wooded)", types: ["Wooded"] },
+{ name: "24 Unique Captures", types: ["Unique_Captures"] },
+{ name: "Purchase 6 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[14] = [
 { name: "6 Moons from sub-areas (Metro)", types: ["Metro"] },
 { name: "Purchase 5 Moons", types: ["Shop_Moons"] },
-{ name: "Purchase 4 Regional Coin Outfits", types: ["Regional_Outfits"] },
 { name: "2 Warp-Painting Moons", types: ["Warp_Painting"] },
 { name: "125 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "6 Moons from sub-areas (Wooded)", types: ["Wooded"] },
 { name: "3 Moons from Shiny Rocks", types: ["Shiny_Rocks"] },
 { name: "4 Moons from sub-areas (Cap)", types: ["Cap"] },
 { name: "40 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
-{ name: "Purchase 4 Yellow Coin Outfits", types: ["Yellow_Outfits"] },
 { name: "70 Regional Coins (Sand)", types: ["Sand_Regional"] }
 ];
 bingoList[15] = [
@@ -403,17 +405,17 @@ bingoList[15] = [
 { name: "8 Moons from sub-areas (Wooded)", types: ["Wooded"] },
 { name: "16 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
 { name: "2 Ground-Pound Moons (Wooded)", types: ["Wooded", "Deep_Woods"] },
-{ name: "3 Ground-Pound Moons (Wooded)", types: ["Wooded", "Deep_Woods"] }
+{ name: "3 Ground-Pound Moons (Wooded)", types: ["Wooded", "Deep_Woods"] },
+{ name: "26 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[16] = [
 { name: "150 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "6 Timer Challenges", types: ["Timer"] },
-{ name: "16 Unique Captures", types: ["Unique_Captures"] },
 { name: "7 Treasure Chest Moons", types: ["Treasure_Chest"] },
-{ name: "9 Moons from Nuts", types: ["Nuts"] },
 { name: "35 Regional Coins (Metro)", types: ["Metro_Regional"] },
 { name: "3 Checkpoints (Seaside)", types: ["Late_Game", "Seaside"] },
-{ name: "100 Moons (Total)", types: ["Total_Moons"] }
+{ name: "100 Moons (Total)", types: ["Total_Moons"] },
+{ name: "Purchase 7 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[17] = [
 { name: "10 Moons (Cap)", types: ["Cap_Moons"] },
@@ -424,27 +426,27 @@ bingoList[17] = [
 { name: "Outfit-Door (Seaside)", types: ["Late_Game", "Locked_Door"] },
 { name: "Captain Toad (Seaside)", types: ["Late_Game", "Seaside"] },
 { name: "Outfit-Door (Snow)", types: ["Late_Game", "Locked_Door"] },
-{ name: "60 Regional Coins (Wooded)", types: ["Wooded_Regional"] }
+{ name: "60 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "28 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[18] = [
 { name: "16 Moons (Lake)", types: ["Lake_Moons"] },
 { name: "8 Moons from sub-areas (Metro)", types: ["Metro"] },
 { name: "175 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "Have 1500 Coins", types: ["Coins"] },
-{ name: "Purchase 5 Regional Coin Outfits", types: ["Regional_Outfits"] },
-{ name: "Finish Wooded with No Nut Moons", types: ["No_Moons"] },
+{ name: "Finish Wooded with No Nut Moons", types: ["Nuts", "No_Moons"] },
 { name: "5 Checkpoints (Seaside)", types: ["Late_Game", "Seaside"] },
 { name: "Uncork 2 Fountains (Seaside)", types: ["Late_Game", "Uncork"] }
 ];
 bingoList[19] = [
 { name: "3 Warp-Painting Moons", types: ["Warp_Painting"] },
-{ name: "18 Unique Captures", types: ["Unique_Captures"] },
 { name: "8 Moons (Cap)", types: ["Cap_Moons"] },
 { name: "28 Moons (Sand)", types: ["Sand_Moons"] },
 { name: "5 Captain Toad Moons", types: ["Captain_Toad"] },
 { name: "7 Timer Challenges", types: ["Timer"] },
 { name: "Uncork 3 Fountains (Seaside)", types: ["Late_Game", "Uncork"] },
-{ name: "25 Regional Coins (Seaside)", types: ["Late_Game", "Seaside_Regional"] }
+{ name: "25 Regional Coins (Seaside)", types: ["Late_Game", "Seaside_Regional"] },
+{ name: "Purchase 8 Full Costume Sets", types: ["Outfits"] }
 ];
 bingoList[20] = [
 { name: "200 Total Regional Coins", types: ["Regional_Coins"] },
@@ -460,12 +462,12 @@ bingoList[21] = [
 { name: "9 Treasure Chest Moons", types: ["Treasure_Chest"] },
 { name: "18 Moons (Cascade)", types: ["Cascade_Moons"] },
 { name: "35 Regional Coins (Seaside)", types: ["Late_Game", "Seaside_Regional"] },
-{ name: "16 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons"] },
+{ name: "16 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons", "Seaside_Long1"] },
 { name: "16 Moons (Snow)", types: ["Late_Game", "Snow_Moons"] },
 { name: "3 Barrier-Moons (Snow)", types: ["Late_Game", "Snow"] },
 { name: "Look at 4 Hint Arts", types: ["Late_Game", "Hint_View"] },
-{ name: "4 Ground-Pound Moons (Seaside)", types: ["Late_Game", "Seaside"] },
-{ name: "14 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons"] }
+{ name: "4 Ground-Pound Moons (Seaside)", types: ["Late_Game", "Seaside", "Seaside_Long2"] },
+{ name: "14 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons", "Seaside_Long1"] }
 ];
 bingoList[22] = [
 { name: "6 Moons from Moon Shards", types: ["Moon_Shards"] },
@@ -474,7 +476,7 @@ bingoList[22] = [
 { name: "4 Moons from sub-areas (Seaside)", types: ["Late_Game", "Seaside"] },
 { name: "40 Regional Coins (Seaside)", types: ["Late_Game", "Seaside_Regional"] },
 { name: "110 Moons (Total)", types: ["Total_Moons"] },
-{ name: "5 Ground-Pound Moons (Seaside)", types: ["Late_Game", "Seaside"] }
+{ name: "5 Ground-Pound Moons (Seaside)", types: ["Late_Game", "Seaside", "Seaside_Long2"] }
 ];
 bingoList[23] = [
 { name: "45 Regional Coins (Lost)", types: ["Lost_Regional"] },
@@ -490,18 +492,17 @@ bingoList[24] = [
 { name: "6 Moons from Music Notes", types: ["Music_Notes"] },
 { name: "7 Moons from 8-bit Sections", types: ["8bit"] },
 { name: "45 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
-{ name: "38 Moons (Metro)", types: ["Metro_Moons"] },
-{ name: "Finish Metro with No NPC Moons", types: ["No_Moons"] },
+{ name: "38 Moons (Metro)", types: ["Metro_Moons", "Metro_Long"] },
+{ name: "Finish Metro with No NPC Moons", types: ["No_Moons", "Metro_Long"] },
 { name: "225 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "20 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
-{ name: "20 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[25] = [
 { name: "World Peace Restored! (Metro)", types: ["World_Peace"] },
 { name: "24 Moons (Snow)", types: ["Late_Game", "Snow_Moons"] },
 { name: "24 Moons (Lake)", types: ["Lake_Moons"] },
 { name: "World Peace Restored! (Seaside)", types: ["Late_Game", "World_Peace"] },
-{ name: "Finish Seaside with No Underwater Moons", types: ["Late_Game", "No_Moons"] },
+{ name: "Finish Seaside with No Underwater Moons", types: ["Late_Game", "No_Moons", "Seaside_Long1", "Seaside_Long2"] },
 { name: "4 Barrier-Moons (Snow)", types: ["Late_Game", "Snow"] },
-{ name: "18 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons"] }
+{ name: "18 Moons (Seaside)", types: ["Late_Game", "Seaside_Moons", "Seaside_Long1"] }
 ];
