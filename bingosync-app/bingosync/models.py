@@ -274,6 +274,7 @@ class GameType(Enum):
     rabi_ribi = 47
     generic_bingo = 48
     generic_bingo_deluxe = 49
+    harry_potter_2 = 50
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -353,6 +354,7 @@ GAME_TYPE_NAMES = {
     GameType.rabi_ribi: "Rabi-Ribi",
     GameType.generic_bingo: "Generic Bingo",
     GameType.generic_bingo_deluxe: "Generic Bingo Deluxe",
+    GameType.harry_potter_2: "Harry Potter and the Chamber of Secrets",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -405,6 +407,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.rabi_ribi: "Rabi-Ribi",
     GameType.generic_bingo: "Generic",
     GameType.generic_bingo_deluxe: "Generic Deluxe",
+    GameType.harry_potter_2: "HP2",
 }
 
 class LockoutMode(Enum):
