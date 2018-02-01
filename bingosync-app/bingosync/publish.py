@@ -23,6 +23,10 @@ def publish_connection_event(connection_event):
     data = connection_event.to_json()
     _publish_json(data, connection_event.player.room)
 
+def publish_new_card_event(new_card_event):
+    data = new_card_event.to_json()
+    _publish_json(data, new_card_event.player.room)
+
 def _publish_json(data, room):
     data["room"] = room.encoded_uuid
     requests.put(SOCKETS_PUBLISH_URL, data=json.dumps(data))
