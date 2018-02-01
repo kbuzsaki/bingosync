@@ -83,6 +83,8 @@ function squareHasColor($square, colorClass) {
     });
 }
 
+var refreshBoard = function () {};
+
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
         $square.html('<div class="starred hidden"></div><div class="shadow"></div><div class="vertical-center text-container"></div>');
@@ -99,12 +101,15 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
         }
     }
 
-    $.ajax({
-        "url": boardUrl,
-        "success": function(result) {
-            updateBoard($board, result);
-        }
-    });
+    refreshBoard = function () {
+        $.ajax({
+            "url": boardUrl,
+            "success": function(result) {
+                updateBoard($board, result);
+            }
+        });
+    };
+    refreshBoard();
 
     if (!isSpectator) {
         $board.find(".square").on("click", function(ev) {
@@ -305,6 +310,12 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var revealedMessage = playerName + " revealed the card";
             return $("<div>", {"class": "revealed-message", html: timeHtml + " " + revealedMessage}).toHtml();
         }
+        else if(json["type"] === "new-card") {
+            var playerColorClass = getPlayerColorClass(json["player_color"]);
+            var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
+            var newCardMessage = playerName + " generated a new card";
+            return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
+        }
 
         // otherwise first format the name of the message sender
         var playerSpan = processPlayerJson(json["player"], getPlayerColorClass(json["player_color"]));
@@ -386,6 +397,9 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             else if(json["event_type"] === "disconnected") {
                 $("#" + json["player"]["uuid"]).remove();
             }
+        }
+        else if(json["type"] === "new-card") {
+            refreshBoard();
         }
         result = processChatJson(json);
         appendChatMessage(result, json["type"] + "-entry");
