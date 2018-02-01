@@ -162,3 +162,10 @@ class GoalListConverterForm(forms.Form):
     def get_goal_list(self):
         return self.json_str
 
+# just for generating html form for the modal popup
+class NewCardForm(forms.Form):
+    game_type = forms.ChoiceField(label="Game", choices=GameType.form_choices())
+    #custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
+    lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
+    seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
+    hide_card = forms.BooleanField(label="Hide Card Initially", required=False)

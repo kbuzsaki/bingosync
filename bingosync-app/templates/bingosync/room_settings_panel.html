@@ -14,6 +14,11 @@
             <tr><td><b>Seed:</b></td><td>{{ game.seed }}</td></tr>
             <tr><td><b>Game:</b></td><td>{{ game.game_type|hovertext_game_type }}</td></tr>
             <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}<div id="is-lockout" class="hidden" value="{% if game.lockout_mode_value == 2 %}lockout{% else %}non_lockout{% endif %}"></td></tr>
+            <tr><td colspan="2">
+                <div class="btn btn-default" id="new-card" data-toggle="modal" data-target="#new-card-dialog">
+                    New Card
+                </div>
+            </td></tr>
         </table>
     </div>
 </div>
