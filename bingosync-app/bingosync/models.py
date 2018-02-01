@@ -215,7 +215,7 @@ class Room(models.Model):
 
     @property
     def current_game(self):
-        return self.games[0]
+        return Game.objects.filter(room=self).order_by("-created_date").first()
 
     @property
     def games(self):
@@ -438,10 +438,15 @@ class Event(models.Model):
 
     @staticmethod
     def get_all_for_room(room):
-        all_events = []
-        for event_class in Event.event_classes():
-            all_events.extend(event_class.objects.filter(player__room=room))
-        return sorted(all_events, key=lambda event: event.timestamp)
+        chat_events = list(ChatEvent.objects.filter(player__room=room))
+        goal_events = list(GoalEvent.objects.filter(player__room=room))
+        color_events = list(ColorEvent.objects.filter(player__room=room))
+        revealed_events = list(RevealedEvent.objects.filter(player__room=room))
+        connection_events = list(ConnectionEvent.objects.filter(player__room=room))
+        new_card_events = list(NewCardEvent.objects.filter(player__room=room))
+        all_events = chat_events + goal_events + color_events + revealed_events + connection_events
+        all_events.sort(key=lambda event: event.timestamp)
+        return all_events
 
     @staticmethod
     def get_latest_for_room(room):
@@ -471,6 +476,16 @@ class ChatEvent(Event):
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
             "text": self.body,
+            "timestamp": self.json_timestamp
+        }
+
+class NewCardEvent(Event):
+
+    def to_json(self):
+        return {
+            "type": "new-card",
+            "player": self.player.to_json(),
+            "player_color": self.player_color.name,
             "timestamp": self.json_timestamp
         }
 

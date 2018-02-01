@@ -3,17 +3,20 @@ from django.shortcuts import render, redirect
 from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
+from django.db import transaction
 
 import json
 import requests
+import random
 
 from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
-from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
-from .models import Room, Game, Player, Color, Event, ChatEvent, RevealedEvent, ConnectionEvent
+from .forms import RoomForm, JoinRoomForm, GoalListConverterForm, NewCardForm
+from .models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
+from .models import ConnectionEvent, NewCardEvent
 from .game_type import ALL_VARIANTS
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
-from .publish import publish_connection_event
+from .publish import publish_connection_event, publish_new_card_event
 from .util import generate_encoded_uuid
 
 def rooms(request):
@@ -52,13 +55,19 @@ def room_view(request, encoded_room_uuid):
             return _join_room(request, join_form, room)
     else:
         try:
-            room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+            room = Room.get_for_encoded_uuid_ir_404(encoded_room_uuid)
+            initial_values = {
+                "game_type": room.current_game.game_type.value,
+                "lockout_mode": room.current_game.lockout_mode.value
+            }
+            new_card_form = NewCardForm(initial=initial_values)
             player = _get_session_player(request.session, room)
             params = {
                 "room": room,
                 "game": room.current_game,
                 "player": player,
                 "sockets_url": SOCKETS_URL,
+                "new_card_form": new_card_form,
                 "temporary_socket_key": _create_temporary_socket_key(player)
             }
             return render(request, "bingosync/bingosync.html", params)
@@ -78,6 +87,43 @@ def room_board(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     board = room.current_game.board
     return JsonResponse(board, safe=False)
+
+@csrf_exempt
+def new_card(request):
+    data = json.loads(request.body.decode("utf8"))
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+
+    #create new game
+    game_type = GameType.for_value(int(data["game_type"]))
+    lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
+    seed = data["seed"]
+
+    #maybe do hide card option
+    #hide_card = data["hide_card"]
+
+    # TODO: figure out how to do custom game type maybe
+    ###if game_type == GameType.custom:
+    ###    if not seed:
+    ###        seed = "0"
+    ###    board_json = data["custom_board"]
+    ###else:
+    if not seed:
+        seed = str(random.randint(1, 1000000))
+    board_json = game_type.generator_instance().get_card(seed)
+
+    with transaction.atomic():
+        # TODO if allowing hide card option, update room setting for it here
+
+        game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
+
+        room.update_active()
+
+    new_card_event = NewCardEvent(player=player, player_color_value=player.color.value)
+    new_card_event.save()
+    publish_new_card_event(new_card_event)
+    return HttpResponse("Recieved data: " + str(data))
 
 def history(request):
     hide_solo = request.GET.get('hide_solo')

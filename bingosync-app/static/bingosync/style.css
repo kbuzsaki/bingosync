@@ -415,6 +415,11 @@
     color: #888;
 }
 
+.new-card-message {
+    font-style: italic;
+    color: #888;
+}
+
 .history-placeholder {
     font-style: italic;
     color: #888;
