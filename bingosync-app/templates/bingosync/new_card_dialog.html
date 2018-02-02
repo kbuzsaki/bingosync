@@ -49,4 +49,9 @@
             });
         });
     });
+    function refreshNewCardDialog() {
+        var form = $("#new-card-form");
+        form.find("select[name=game_type]").val($("#game-id").attr('value'));
+        form.find("select[name=lockout_mode]").val($("#is-lockout").attr('value') === 'lockout' ? 2 : 1);
+    }
 </script>
