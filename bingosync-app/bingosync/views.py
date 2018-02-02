@@ -88,6 +88,15 @@ def room_board(request, encoded_room_uuid):
     board = room.current_game.board
     return JsonResponse(board, safe=False)
 
+# AJAX view to render the room settings panel
+def room_settings(request, encoded_room_uuid):
+    if not request.is_ajax():
+        return HttpResponseBadRequest("This view accepts only AJAX requests")
+    params = {
+        "game": Room.get_for_encoded_uuid(encoded_room_uuid).current_game
+    }
+    return render(request, "bingosync/room_settings_panel.html", params)
+
 @csrf_exempt
 def new_card(request):
     data = json.loads(request.body.decode("utf8"))

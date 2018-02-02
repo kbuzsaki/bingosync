@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^room/(?P<encoded_room_uuid>.+)/board$', views.room_board, name='room_board'),
     url(r'^room/(?P<encoded_room_uuid>.+)/feed$', views.room_feed, name='room_feed'),
     url(r'^room/(?P<encoded_room_uuid>.+)/disconnect$', views.room_disconnect, name='room_disconnect'),
+    url(r'^room/(?P<encoded_room_uuid>.+)/room-settings$', views.room_settings, name='room_settings'),
     url(r'^room/(?P<encoded_room_uuid>.+)$', views.room_view, name='room_view'),
     url(r'^history', views.history, name='history'),
     url(r'^convert', views.goal_converter, name='goal_converter'),
