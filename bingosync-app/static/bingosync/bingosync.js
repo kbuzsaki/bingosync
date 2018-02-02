@@ -3,13 +3,14 @@ BLANK_COLOR = "blank";
 
 var IS_LOCKOUT = null;
 
-$(function () {
+function refreshLockoutType() {
     if ($('#is-lockout').attr('value') === 'lockout') {
         IS_LOCKOUT = true;
     } else {
         IS_LOCKOUT = false;
     }
-});
+}
+refreshLockoutType();
 
 function getSquareColorClass(color) {
     return color + "square";
@@ -102,6 +103,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     }
 
     refreshBoard = function () {
+        refreshSettingsPanel();
         $.ajax({
             "url": boardUrl,
             "success": function(result) {
