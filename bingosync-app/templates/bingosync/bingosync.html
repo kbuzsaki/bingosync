@@ -42,7 +42,7 @@
                         <div class="flex-col-content m-b-l">
                             {% include 'bingosync/players_panel.html' %}
                         </div>
-                        <div class="flex-col-footer m-b-l">
+                        <div class="flex-col-footer m-b-l" id="room-settins-container">
                             {% include 'bingosync/room_settings_panel.html' %}
                         </div>
                         <div class="flex-col-footer">
@@ -90,6 +90,17 @@
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
     });
+    function refreshSettingsPanel() {
+        var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
+        $.ajax({
+            "url": roomSettingsUrl,
+            "success": function(result) {
+                $("#room-settins-container").html(result);
+                refreshNewCardDialog();
+                refreshLockoutType();
+            }
+        });
+    }
 </script>
 {% endblock %}
 
