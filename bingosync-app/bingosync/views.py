@@ -4,6 +4,7 @@ from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
 from django.db import transaction
+from django.template import loader
 
 import json
 import requests
@@ -84,10 +85,17 @@ def room_board(request, encoded_room_uuid):
 def room_settings(request, encoded_room_uuid):
     if not request.is_ajax():
         return HttpResponseBadRequest("This view accepts only AJAX requests")
-    params = {
-        "game": Room.get_for_encoded_uuid(encoded_room_uuid).current_game
+    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    game = room.current_game
+    panel = loader.get_template("bingosync/room_settings_panel.html").render({"game": game}, request)
+    settings = {
+        "hide_card": room.hide_card,
+        "lockout_mode": str(game.lockout_mode),
+        "game": str(game.game_type),
+        "game_id": str(game.game_type_value),
+        "seed": game.seed,
     }
-    return render(request, "bingosync/room_settings_panel.html", params)
+    return JsonResponse({"panel": panel, "settings": settings});
 
 @csrf_exempt
 def new_card(request):
@@ -101,25 +109,26 @@ def new_card(request):
     lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
     seed = data["seed"]
 
-    #maybe do hide card option
-    #hide_card = data["hide_card"]
+    hide_card = data["hide_card"]
 
-    # TODO: figure out how to do custom game type maybe
-    ###if game_type == GameType.custom:
-    ###    if not seed:
-    ###        seed = "0"
-    ###    board_json = data["custom_board"]
-    ###else:
-    if not seed:
-        seed = str(random.randint(1, 1000000))
-    board_json = game_type.generator_instance().get_card(seed)
+    if game_type == GameType.custom:
+        if not seed:
+            seed = "0"
+        try:
+            board_json = json.loads(data["custom_json"])
+        except:
+            return HttpResponseBadRequest("Invalid Board JSON")
+    else:
+        if not seed:
+            seed = str(random.randint(1, 1000000))
+        board_json = game_type.generator_instance().get_card(seed)
 
     with transaction.atomic():
-        # TODO if allowing hide card option, update room setting for it here
-
         game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
 
-        room.update_active()
+        if hide_card != room.hide_card:
+            room.hide_card = hide_card
+        room.update_active() # This saves the room
 
     new_card_event = NewCardEvent(player=player, player_color_value=player.color.value)
     new_card_event.save()

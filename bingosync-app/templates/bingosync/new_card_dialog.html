@@ -25,7 +25,7 @@
         var newCardUrl = "{% url 'new_card' %}";
         $('#generate-new-card').on('click', function() {
             var formData = $("#new-card-form").serializeArray();
-            var data = {"hide_card": 0};
+            var data = {"hide_card": false};
             formData.forEach(function (input) {
                 if (input['name'] === 'hide_card') {
                     data['hide_card'] = input['value'] === 'on';
@@ -40,18 +40,46 @@
                 "data": JSON.stringify(data),
                 "success": function () {
                     $("#new-card-dialog").modal("hide");
-                    // TODO update room settings panel
-                    // oh, I guess also the initial values in the new card form too
                 },
                 "error": function(result) {
+                    if (result.responseText === "Invalid Board JSON") {
+                        $jsonInput = $("#id_custom_json");
+                        $jsonInput.parent().addClass("has-error");
+                        $jsonInput.after("<span class='help-block'>Invalid JSON</span>");
+                        $jsonInput.on("change keyup paste", function () {
+                            $(this).siblings(".help-block").remove();
+                            $(this).parent().removeClass("has-error");
+                            $(this).off("change keyup paste");
+                        });
+                    }
                     console.log(result);
                 }
             });
         });
+        $customJson = $("#id_custom_json").parent().parent();
+        $gameType = $("#id_game_type");
+        if ($gameType.val() != 18) {
+            $customJson.addClass("hidden");
+        }
+        $gameType.on("change", function() {
+            if ($gameType.val() == 18) {
+                $customJson.removeClass("hidden");
+            } else {
+                $customJson.addClass("hidden");
+            }
+        });
     });
     function refreshNewCardDialog() {
+        //hide the dialog if it's open
+        $("#new-card-dialog").modal("hide");
+
         var form = $("#new-card-form");
-        form.find("select[name=game_type]").val($("#game-id").attr('value'));
-        form.find("select[name=lockout_mode]").val($("#is-lockout").attr('value') === 'lockout' ? 2 : 1);
+        form.find("select[name=game_type]").val(ROOM_SETTINGS.game_id);
+        form.find("select[name=lockout_mode]").val(ROOM_SETTINGS.lockout_mode === 'Lockout' ? 2 : 1);
+        form.find("input[name=hide_card]").prop("checked", ROOM_SETTINGS.hide_card);
+
+        // Always leave the seed and custom json blank
+        form.find("input[name=seed]").val("");
+        form.find("input[name=custom_json]").val("");
     }
 </script>
