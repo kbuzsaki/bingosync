@@ -1,16 +1,8 @@
 COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
 BLANK_COLOR = "blank";
 
-var IS_LOCKOUT = null;
-
-function refreshLockoutType() {
-    if ($('#is-lockout').attr('value') === 'lockout') {
-        IS_LOCKOUT = true;
-    } else {
-        IS_LOCKOUT = false;
-    }
-}
-refreshLockoutType();
+// global variable for the room settings
+var ROOM_SETTINGS = null;
 
 function getSquareColorClass(color) {
     return color + "square";
@@ -22,7 +14,7 @@ function getPlayerColorClass(color) {
 
 function setSquareColor($square, newColor, removeColor) {
     var newColorClass = getSquareColorClass(newColor);
-    if (!IS_LOCKOUT) {
+    if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
         if (removeColor) {
             $square.children('.' + newColorClass).remove();
         } else if (!squareHasColor($square, newColorClass)) {
@@ -111,7 +103,12 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             }
         });
     };
-    refreshBoard();
+    $.ajax({
+        "url": boardUrl,
+        "success": function(result) {
+            updateBoard($board, result);
+        }
+    });
 
     if (!isSpectator) {
         $board.find(".square").on("click", function(ev) {
@@ -130,7 +127,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
                 removeColor = true;
             }
             // the square is a different color, but we allow multiple colors, so add it
-            else if (!IS_LOCKOUT) {
+            else if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
                 removeColor = false;
             }
             // the square is colored a different color and we don't allow multiple colors, so don't do anything
@@ -192,23 +189,27 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     });
 }
 
-function initializeBoardCover($boardCover, boardRevealedUrl) {
-    if ($boardCover) {
-        $boardCover.on("click", function() {
-            $(this).parent().removeClass("hidden-card");
-            $(this).remove();
-            $.ajax({
-                "url": boardRevealedUrl,
-                "type": "PUT",
-                "data": JSON.stringify({
-                    "room": window.sessionStorage.getItem("room"),
-                }),
-                "error": function(result) {
-                    console.log(result);
-                }
-            });
-        });
+function initializeBoardCover(boardRevealedUrl, showNow) {
+    $boardCover = $(".board-cover");
+    if (!showNow) {
+        $boardCover.hide();
     }
+    $boardCover.on("click", function() {
+        if (!$(this).is(":visible")) {
+            return;
+        }
+        $(this).hide();
+        $.ajax({
+            "url": boardRevealedUrl,
+            "type": "PUT",
+            "data": JSON.stringify({
+                "room": window.sessionStorage.getItem("room"),
+            }),
+            "error": function(result) {
+                console.log(result);
+            }
+        });
+    });
 }
 
 function getColorCount($board, colorClass) {
