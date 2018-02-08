@@ -22,13 +22,11 @@
                     {% include 'bingosync/color_chooser.html' %}
                 <div class="board-container{{ room.hide_card|yesno:" hidden-card," }}">
                     {% include 'bingosync/board.html' %}
-                    {% if room.hide_card %}
-                        <div class="board-cover">
-                            <div class="board-cover-text unselectable">
-                                Click to Reveal
-                            </div>
+                    <div class="board-cover">
+                        <div class="board-cover-text unselectable">
+                            Click to Reveal
                         </div>
-                    {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,6 +56,14 @@
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
+        // populate initial settings
+        ROOM_SETTINGS = {
+            lockout_mode: "{{ game.lockout_mode }}",
+            hide_card: "{{ room.hide_card }}",
+            game: "{{ game.game_type }}",
+            game_id: "{{ game.game_type_value }}",
+            seed: "{{ game.seed }}",
+        };
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
         var chatUrl = "{% url 'chat_message' %}";
@@ -74,9 +80,7 @@
         // asynchronously load and populate the board
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), isSpectator);
 
-        {% if room.hide_card %}
-            initializeBoardCover($(".board-cover"), boardRevealedUrl);
-        {% endif %}
+        initializeBoardCover(boardRevealedUrl, {{ room.hide_card|yesno:"true,false" }});
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
@@ -95,9 +99,15 @@
         $.ajax({
             "url": roomSettingsUrl,
             "success": function(result) {
-                $("#room-settins-container").html(result);
+                $("#room-settins-container").html(result.panel);
+                ROOM_SETTINGS = result.settings;
+                if (ROOM_SETTINGS.hide_card) {
+                    $('.board-cover').show();
+                }
                 refreshNewCardDialog();
-                refreshLockoutType();
+            },
+            "error": function(result) {
+                console.log(result);
             }
         });
     }
