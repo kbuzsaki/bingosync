@@ -420,6 +420,11 @@
     color: #888;
 }
 
+.new-card-message .game-title,.new-card-message .seed {
+    font-weight: bold;
+    color: #c8c8c8;
+}
+
 .history-placeholder {
     font-style: italic;
     color: #888;
