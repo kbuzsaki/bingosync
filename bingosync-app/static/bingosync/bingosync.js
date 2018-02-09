@@ -317,7 +317,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         else if(json["type"] === "new-card") {
             var playerColorClass = getPlayerColorClass(json["player_color"]);
             var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
-            var newCardMessage = playerName + " generated a new card";
+            var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml();
+            if (json["game"] !== "Custom (Advanced)") {
+                newCardMessage += ". seed: " + $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
+            }
             return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
         }
 
