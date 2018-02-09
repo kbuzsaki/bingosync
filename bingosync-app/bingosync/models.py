@@ -223,6 +223,17 @@ class Room(models.Model):
     def creator(self):
         return self.players.order_by("created_date").first()
 
+    @property
+    def settings(self):
+        game = self.current_game
+        return {
+            "hide_card": self.hide_card,
+            "lockout_mode": str(game.lockout_mode),
+            "game": str(game.game_type),
+            "game_id": game.game_type_value,
+            "seed": game.seed,
+        }
+
 @unique
 class GameType(Enum):
     ocarina_of_time = 1
@@ -302,7 +313,11 @@ class GameType(Enum):
     def form_choices():
         # filter out custom and then put it at the end
         choices = [choice for choice in GameType.sorted_choices() if choice[0] != GameType.custom.value]
-        return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.long_name)]
+        return choices + [(GameType.custom.value, GameType.custom.long_name)]
+
+    @staticmethod
+    def form_choices_with_blank():
+        return [(None, '')] + GameType.form_choices()
 
 GAME_TYPE_NAMES = {
     GameType.ocarina_of_time: "Zelda: Ocarina of Time",
@@ -602,7 +617,7 @@ class Event(models.Model):
         revealed_events = list(RevealedEvent.objects.filter(player__room=room))
         connection_events = list(ConnectionEvent.objects.filter(player__room=room))
         new_card_events = list(NewCardEvent.objects.filter(player__room=room))
-        all_events = chat_events + goal_events + color_events + revealed_events + connection_events
+        all_events = chat_events + goal_events + color_events + revealed_events + connection_events + new_card_events
         all_events.sort(key=lambda event: event.timestamp)
         return all_events
 
@@ -623,12 +638,16 @@ class ChatEvent(Event):
         }
 
 class NewCardEvent(Event):
+    game_type_value = models.IntegerField(choices=GameType.sorted_choices())
+    seed = models.IntegerField(default=0)
 
     def to_json(self):
         return {
             "type": "new-card",
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
+            "game": GameType.for_value(self.game_type_value).long_name,
+            "seed": self.seed,
             "timestamp": self.json_timestamp
         }
 

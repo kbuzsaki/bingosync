@@ -40,7 +40,7 @@
                         <div class="flex-col-content m-b-l">
                             {% include 'bingosync/players_panel.html' %}
                         </div>
-                        <div class="flex-col-footer m-b-l" id="room-settins-container">
+                        <div class="flex-col-footer m-b-l" id="room-settings-container">
                             {% include 'bingosync/room_settings_panel.html' %}
                         </div>
                         <div class="flex-col-footer">
@@ -58,12 +58,11 @@
     $(document).ready(function() {
         // populate initial settings
         ROOM_SETTINGS = {
-            lockout_mode: "{{ game.lockout_mode }}",
-            hide_card: "{{ room.hide_card }}",
-            game: "{{ game.game_type }}",
-            game_id: "{{ game.game_type_value }}",
-            seed: "{{ game.seed }}",
+        {% for key, value in room.settings.items %}
+            "{{ key }}": "{{ value }}",
+        {% endfor %}
         };
+
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
         var chatUrl = "{% url 'chat_message' %}";
@@ -80,7 +79,7 @@
         // asynchronously load and populate the board
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), isSpectator);
 
-        initializeBoardCover(boardRevealedUrl, {{ room.hide_card|yesno:"true,false" }});
+        initializeBoardCover(boardRevealedUrl, ROOM_SETTINGS.hide_card);
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
