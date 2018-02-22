@@ -219,19 +219,26 @@ bingoGenerator = function(bingoList, opts) {
     }
 }
 
-//Version 1.2.1 of Pikmin 2 Bingo
- 
+//Version 1.2.2 of Pikmin 2 Bingo
+
+//Changes since 1.2.1:
+//Reworded a few goals
+//Fixed text going outside the box for some goals
+//Changed the Bottlecaps / Milk Covers goal to be more balanced between versions
+//Changed the goal "4 treasures worth 200 Pokos or more" to 6
+//Changed the goal "4 treasures worth 30 Pokos or fewer" to 7, and to be more balanced between versions
+
 //Changes since 1.2:
 //Made all of the changes suggested here: https://pastebin.com/54aDpt0f
 //Moved other things around a little bit to have at least 4 goals per difficulty
- 
+
 //Changes since 1.1:
 //Made some vague goals more specific
 //Removed some stupid goals (No Yellows, No Sprays, No Treasure Gauge, and 2500 Pokos)
 //Made some much needed difficulty changes to some goals
 //Added many goals for certain treasure "themes":
 //Food treasures, bottle caps, BK fossils, the 3 gemstones, SH marbles, SCx capacitors, scallop shells, rubber ducks, and batteries.
- 
+
 //Changes since 1.0:
 //Made some vague goals more specific
 //Added goals for (large number) of certain types of Pikmin
@@ -240,8 +247,8 @@ bingoGenerator = function(bingoList, opts) {
 //Previously I had a lot of types to filter what goals could be in the same row,
 //to prevent, say, 2 specific treasures in the same cave.
 //I removed a lot of those entirely, so it becomes more possible for "unbalanced" cards.
- 
- 
+
+
 var bingoList = [];
 bingoList[1] = [
   { name: "Get a Pikmin Extinction inside a cave", types: ["selfharm"] },
@@ -299,9 +306,9 @@ bingoList[9] = [
 ];
 bingoList[10] = [
   { name: "Kill 8 Water Dumples", types: ["xenemy"] },
-  { name: "Kill all 2 Hermit Crawmads in PP", types: ["allenemy"] },
+  { name: "Kill both Hermit Crawmads in PP", types: ["allenemy"] },
   { name: "45 Purples", types: ["onetype"] },
-  { name: "Destroy all 2 electric gates in AW", types: ["elecgate","awgate"] },
+  { name: "Destroy both electric gates in AW", types: ["elecgate","awgate"] },
   { name: "Collect all 3 Wogpoles in AW", types: ["wogpole"] },
 ];
 bingoList[11] = [
@@ -326,16 +333,16 @@ bingoList[13] = [
   { name: "200 Total Pikmin", types: ["masspik"] },
 ];
 bingoList[14] = [
-  { name: "Collect Temporal Mechanism (VoR)", types: ["vor","fiery"] },
+  { name: "Temporal Mechanism (VoR)", types: ["vor","fiery"] },
   { name: "5 Spicy Sprays and 5 Bitter Sprays", types: ["spray"] },
-  { name: "4 treasures worth 30 Pokos or fewer", types: ["lowpoko"] },
+  { name: "7 treasures worth 30 Pokos or fewer (10 if on JP)", types: ["lowpoko"] },
   { name: "Make 4 Candypop Buds in FC wilt", types: ["cpb"] },
   { name: "100 Blues", types: ["onetype","masspik"] },
 ];
 bingoList[15] = [
   { name: "Destroy all 6 poison geysers in AW", types: ["poisongate","awgate"] },
   { name: "Collect 2 Gattling Groinks", types: ["xenemy"] },
-  { name: "Thirst Activator(US)/Perfect Container(PAL) (SCx7)", types: ["hipoko"] },
+  { name: "Thirst Activator (SCx7)", types: ["hipoko"] },
   { name: "Leviathan Feather (SH1) and Science Project (SH6)", types: ["lowpoko","theme"] },
 ];
 bingoList[16] = [
@@ -351,19 +358,19 @@ bingoList[17] = [
   { name: "Make a Yellow Candypop Bud wilt", types: ["ylw","cpb"] },
 ];
 bingoList[18] = [
-  { name: "4 treasures worth 200 Pokos or more (EC Globe doesn't count)", types: ["hipoko"] },
+  { name: "6 treasures worth 200 Pokos or more (EC Globe doesn't count)", types: ["hipoko"] },
   { name: "100 Yellows", types: ["onetype","masspik","ylw"] },
   { name: "Clear SCx6", types: ["clear"] },
-  { name: "4 bottle cap treasures (milk covers if on JP)", types: ["theme"] },
+  { name: "4 bottle cap treasures (or 7 milk covers)", types: ["theme"] },
 ];
 bingoList[19] = [
   { name: "Kill 5 Breadbugs", types: ["breadbug"] },
-  { name: "Optical Illustration(US)/Pondering Emblem(PAL) (PP)", types: ["pp","ppgate"] },
+  { name: "Optical Illustration (PP)", types: ["pp","ppgate"] },
   { name: "Collect all 5 Wogpoles in PP", types: ["wogpole","ppgate"] },
   { name: "Stellar Orb (SCx9)", types: ["hardboss"] },
 ];
 bingoList[20] = [
-  { name: "Destroy all 2 black gates in PP", types: ["blkgate","ppgate"] },
+  { name: "Destroy both black gates in PP", types: ["blkgate","ppgate"] },
   { name: "Destroy all 3 electric gates in PP", types: ["elecgate","ppgate"] },
   { name: "Onion Replica (PP)", types: ["pp","blkgate","void","lowpoko"] },
   { name: "Crystallized Telekenesis, Telepathy, and Clairvoyance (SH 1, 4, and 5)", types: ["theme"] },
@@ -388,7 +395,7 @@ bingoList[23] = [
 ];
 bingoList[24] = [
   { name: "Professional Noisemaker (SmC5)", types: ["hardboss"] },
-  { name: "Endless Repository(US)/Permanent Container(PAL) (SR5)", types: [] },
+  { name: "Endless Repository (SR5)", types: [] },
   { name: "Collect all above-ground treasures in PP", types: ["clear","pp"] },
   { name: "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)", types: ["theme"] },
 ];
