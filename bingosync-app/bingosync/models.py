@@ -265,7 +265,7 @@ class GameType(Enum):
     rayman_ps1 = 38
     pokemon_crystal_randomizer = 39
     pokemon_emerald_randomizer = 40
-    pokemon_crystal_tournament = 41
+    pokemon_crystal_classic_randomizer = 41
     sonic_adventure_2_dark_story = 42
     sonic_adventure_2_long = 43
     zelda_skyward_sword = 44
@@ -344,9 +344,9 @@ GAME_TYPE_NAMES = {
     GameType.alttp_randomizer: "Zelda: A Link To The Past - Randomizer",
     GameType.pokemon_platinum: "Pokémon Platinum",
     GameType.rayman_ps1: "Rayman (PS1)",
-    GameType.pokemon_crystal_randomizer: "Pokémon Crystal - Randomizer",
+    GameType.pokemon_crystal_randomizer: "Pokémon Crystal - Current Randomizer",
     GameType.pokemon_emerald_randomizer: "Pokémon Emerald - Randomizer",
-    GameType.pokemon_crystal_tournament: "Pokémon Crystal - Tournament",
+    GameType.pokemon_crystal_classic_randomizer: "Pokémon Crystal - Classic Randomizer",
     GameType.sonic_adventure_2_dark_story: "Sonic Adventure 2 - Dark Story",
     GameType.sonic_adventure_2_long: "Sonic Adventure 2 - Long",
     GameType.zelda_skyward_sword: "Zelda: Skyward Sword",
@@ -398,9 +398,9 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.alttp_randomizer: "ALttP Random",
     GameType.pokemon_platinum: "Poké Plat.",
     GameType.rayman_ps1: "Rayman",
-    GameType.pokemon_crystal_randomizer: "Crystal Random",
+    GameType.pokemon_crystal_randomizer: "Crystal Current",
     GameType.pokemon_emerald_randomizer: "Emerald Random",
-    GameType.pokemon_crystal_tournament: "Crystal Tournament",
+    GameType.pokemon_crystal_classic_randomizer: "Crystal Classic",
     GameType.sonic_adventure_2_dark_story: "SA2 Dark",
     GameType.sonic_adventure_2_long: "SA2 Long",
     GameType.zelda_skyward_sword: "Zelda: SS",
