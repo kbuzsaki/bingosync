@@ -188,6 +188,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
 function initializeBoardCover($boardCover, boardRevealedUrl) {
     if ($boardCover) {
         $boardCover.on("click", function() {
+            $(this).parent().removeClass("hidden-card");
             $(this).remove();
             $.ajax({
                 "url": boardRevealedUrl,

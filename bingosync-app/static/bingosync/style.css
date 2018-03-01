@@ -170,6 +170,12 @@
     overflow: hidden;
 }
 
+/* square that is covered by a board cover, hides the goal text */
+.hidden-card .square {
+    text-indent: 120%;
+    white-space: nowrap;
+}
+
 .square .bg-color, .square .shadow {
     height: inherit;
     position: absolute;

@@ -20,7 +20,7 @@
         <div class="col-md-6">
             <div class="fill-parent" style="text-align: center">
                     {% include 'bingosync/color_chooser.html' %}
-                <div class="board-container">
+                <div class="board-container{{ room.hide_card|yesno:" hidden-card," }}">
                     {% include 'bingosync/board.html' %}
                     {% if room.hide_card %}
                         <div class="board-cover">
