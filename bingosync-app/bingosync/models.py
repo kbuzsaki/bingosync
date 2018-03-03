@@ -277,6 +277,7 @@ class GameType(Enum):
     harry_potter_2 = 50
     pokemon_emerald_randomizer_prelilycove = 51
     hollow_knight = 52
+    jade_cocoon = 53
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -359,6 +360,7 @@ GAME_TYPE_NAMES = {
     GameType.harry_potter_2: "Harry Potter and the Chamber of Secrets",
     GameType.pokemon_emerald_randomizer_prelilycove: "Pokémon Emerald - Pre-Lilycove Randomizer",
     GameType.hollow_knight: "Hollow Knight",
+    GameType.jade_cocoon: "Jade Cocoon: Story of the Tamamayu",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -414,6 +416,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.harry_potter_2: "HP2",
     GameType.pokemon_emerald_randomizer_prelilycove: "Emerald Pre-Lilycove",
     GameType.hollow_knight: "Hollow Knight",
+    GameType.jade_cocoon: "Jade Cocoon: SotT",
 }
 
 class LockoutMode(Enum):
