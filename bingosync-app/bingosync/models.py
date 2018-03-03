@@ -275,7 +275,7 @@ class GameType(Enum):
     generic_bingo = 48
     generic_bingo_deluxe = 49
     harry_potter_2 = 50
-    pokemon_emerald_randomizer_prelilycove = 51
+    pokemon_emerald_randomizer_short = 51
     hollow_knight = 52
     jade_cocoon = 53
 
@@ -358,7 +358,7 @@ GAME_TYPE_NAMES = {
     GameType.generic_bingo: "Generic Bingo",
     GameType.generic_bingo_deluxe: "Generic Bingo Deluxe",
     GameType.harry_potter_2: "Harry Potter and the Chamber of Secrets",
-    GameType.pokemon_emerald_randomizer_prelilycove: "Pokémon Emerald - Pre-Lilycove Randomizer",
+    GameType.pokemon_emerald_randomizer_short: "Pokémon Emerald - Short Randomizer",
     GameType.hollow_knight: "Hollow Knight",
     GameType.jade_cocoon: "Jade Cocoon: Story of the Tamamayu",
 }
@@ -414,7 +414,7 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.generic_bingo: "Generic",
     GameType.generic_bingo_deluxe: "Generic Deluxe",
     GameType.harry_potter_2: "HP2",
-    GameType.pokemon_emerald_randomizer_prelilycove: "Emerald Pre-Lilycove",
+    GameType.pokemon_emerald_randomizer_short: "Emerald Short",
     GameType.hollow_knight: "Hollow Knight",
     GameType.jade_cocoon: "Jade Cocoon: SotT",
 }
