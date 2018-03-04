@@ -42,10 +42,10 @@
                     $("#new-card-dialog").modal("hide");
                 },
                 "error": function(result) {
-                    if (result.responseText === "Invalid Board JSON") {
+                    if (result.responseText && result.responseText.substr(0, 14).toLowerCase() === "invalid board:") {
                         $jsonInput = $("#id_custom_json");
                         $jsonInput.parent().addClass("has-error");
-                        $jsonInput.after("<span class='help-block'>Invalid JSON</span>");
+                        $jsonInput.after("<span class='help-block'>" + result.responseText.substr(14) + "</span>");
                         $jsonInput.on("change keyup paste", function () {
                             $(this).siblings(".help-block").remove();
                             $(this).parent().removeClass("has-error");

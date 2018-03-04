@@ -107,7 +107,17 @@ def new_card(request):
         try:
             board_json = json.loads(data["custom_json"])
         except:
-            return HttpResponseBadRequest("Invalid Board JSON")
+            return HttpResponseBadRequest("Invalid board: Invalid JSON")
+
+        if not isinstance(board_json, list):
+            return HttpResponseBadRequest("Ivalid board: Board must be a list")
+
+        if len(board_json) != 25:
+            return HttpResponseBadRequest("Invalid board: Expected 25 squares but got " + str(len(board_json)))
+
+        for i, square in enumerate(board_json):
+            if "name" not in square:
+                return HttpResponseBadRequest("Invalid board: Square " + str(i + 1) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
     else:
         if not seed:
             seed = str(random.randint(1, 1000000))

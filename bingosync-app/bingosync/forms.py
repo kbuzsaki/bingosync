@@ -50,7 +50,7 @@ class RoomForm(forms.Form):
 
             for i, square in enumerate(custom_board):
                 if "name" not in square:
-                    raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+                    raise forms.ValidationError("Square " + str(i + 1) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
             cleaned_data["custom_board"] = custom_board
 
     def create_room(self):
