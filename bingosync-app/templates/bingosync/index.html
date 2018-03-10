@@ -53,7 +53,7 @@
                 <div class="panel-heading">
                     New Room
                 </div>
-                <div class="panel-body">
+                <div id="new_room_form" class="panel-body">
                     <form class="form-horizontal" action="/" method="post">
                         {% csrf_token %}
                         {{ form|bootstrap_horizontal:"col-md-3" }}
@@ -63,9 +63,10 @@
                             </div>
                         </div>
                     </form>
-                    <!-- this blob gets swapped into the form above because django-bootstrap-form
+                    <!-- these blobs get swapped into the form above because django-bootstrap-form
                          isn't *quite* flexible enough to let me hide it by default otherwise -->
-                    <div id="real_custom_json" class="form-group hidden">
+                    <!-- custom board json -->
+                    <div class="real-custom-json form-group hidden">
                         <label class="control-label col-md-3 " for="id_custom_json">Board</label>
                         <div class="col-md-9">
                             <textarea class="form-control" name="custom_json" cols="40" rows="6"
@@ -76,29 +77,27 @@
   ... ]'></textarea>
                         </div>
                     </div>
+                    <!-- game variant selector -->
+                    <div class="real-variant-type form-group hidden">
+                        <label class="control-label col-md-3 " for="id_variant_type">Variant</label>
+                        <div class=" col-md-9 ">
+                            <select name="variant_type" class=" form-control" required>
+                                {% for variant in variants %}
+                                    <option group="{{ variant.group.value }}" value="{{ variant.value }}">
+                                        {{ variant.variant_name }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <p class="help-block">
+                                No other variants available
+                            </p>
+                        </div>
+                    </div>
                     <script src="{% static "bingosync/home.js" %}"></script>
                     <script>
                         $(document).ready(function() {
-                            // grab the data from the old custom json field, if any, and remove it
-                            var $oldCustomJson = $("#id_custom_json");
-                            var oldCustomJsonVal = $oldCustomJson.val();
-                            $oldCustomJson.remove();
-
-                            // hackily swap in the real field from the hidden template thing above
-                            var $gameType = $("#id_game_type");
-                            var $customJson = $("#real_custom_json");
-                            $customJson.insertAfter($gameType.parent().parent());
-                            $customJson.find("textarea").text(oldCustomJsonVal);
-
-                            // show / hide the custom json field depending on whether custom is selected
-                            $gameType.on("change", function() {
-                                if ($gameType.val() == 18) {
-                                    $customJson.removeClass("hidden");
-                                } else {
-                                    $customJson.addClass("hidden");
-                                }
-                            });
-                            $gameType.change();
+                            var $newRoomForm = $("#new_room_form");
+                            initializeNewRoomForm($newRoomForm);
 
                             var $roomsPanel = $("#rooms_panel");
                             initializeRoomsPanel($roomsPanel);
