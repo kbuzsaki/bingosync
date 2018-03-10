@@ -11,6 +11,7 @@ from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from .models import Room, Game, Player, Color, Event, ChatEvent, RevealedEvent, ConnectionEvent
+from .game_type import ALL_VARIANTS
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
 from .publish import publish_connection_event
 from .util import generate_encoded_uuid
@@ -23,6 +24,8 @@ def rooms(request):
             creator = room.creator
             _save_session_player(request.session, creator)
             return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
+        else:
+            print("Form errors:", form.errors)
     else:
         form = RoomForm()
 
@@ -32,6 +35,7 @@ def rooms(request):
     params = {
         "form": form,
         "rooms": rooms,
+        "variants": ALL_VARIANTS,
         "hide_idle_rooms": any_idle_rooms and not all_idle_rooms,
     }
     return render(request, "bingosync/index.html", params)
