@@ -26,9 +26,13 @@ def rooms(request):
     else:
         form = RoomForm()
 
+    rooms = Room.get_listed_rooms()
+    any_idle_rooms = any(room.is_idle for room in rooms)
+    all_idle_rooms = all(room.is_idle for room in rooms)
     params = {
         "form": form,
-        "rooms": Room.get_listed_rooms()
+        "rooms": rooms,
+        "hide_idle_rooms": any_idle_rooms and not all_idle_rooms,
     }
     return render(request, "bingosync/index.html", params)
 

@@ -2,6 +2,7 @@ from django.db import models, transaction
 from django.urls import reverse
 from django.utils import timezone
 
+import datetime
 from uuid import uuid4
 from enum import Enum, unique
 import re
@@ -160,6 +161,8 @@ class CompositeColor:
             self._colors.add(color)
 
 
+STALE_THRESHOLD = datetime.timedelta(hours=3)
+
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=255)
@@ -188,7 +191,7 @@ class Room(models.Model):
         active_rooms = Room.objects.filter(active=True)
         # use -len(players) so that high numbers of players are at the top
         # but otherwise names are sorted lexicographically descending
-        key = lambda room: (-len(room.connected_players), room.name)
+        key = lambda room: (room.is_idle, -len(room.connected_players), room.name)
         return sorted(active_rooms, key=key)
 
     @staticmethod
@@ -214,6 +217,16 @@ class Room(models.Model):
     @property
     def connected_players(self):
         return [player for player in self.players if player.connected]
+
+    @property
+    def latest_event_timestamp(self):
+        events = Event.get_all_for_room(self)
+        return events[-1].timestamp if events else self.created_date
+
+    @property
+    def is_idle(self):
+        idle_time = datetime.datetime.now(datetime.timezone.utc) - self.latest_event_timestamp
+        return idle_time > STALE_THRESHOLD
 
     def update_active(self):
         self.active = len(self.connected_players) > 0

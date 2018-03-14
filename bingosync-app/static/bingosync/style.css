@@ -436,6 +436,36 @@
     display: none;
 }
 
+/* styling for idle room rows in the rooms list */
+.idle-room {
+    color: #888;
+}
+
+.idle-room a {
+    color: #ccc;
+}
+
+.hide-idle-rooms .idle-room {
+    display: none;
+}
+
+/*
+ * Styling for the buttons to show and hide idle rooms when they are hidden.
+ * The show button only needs to display when rooms are not hidden, while
+ * the hide button only needs to display when rooms are hidden.
+ */
+.show-button {
+    display: none;
+}
+
+.hide-idle-rooms .show-button {
+    display: inline;
+}
+
+.hide-idle-rooms .hide-button {
+    display: none;
+}
+
 /* bootstrap form overrides */
 .help-block {
     color: #b0b0b0;

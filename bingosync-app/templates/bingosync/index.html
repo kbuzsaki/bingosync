@@ -6,13 +6,13 @@
 {% block page_content %}
     <div class="row m-b-l">
         <div class="col-md-7">
-            <div class="panel panel-default">
+            <div id="rooms_panel" class="panel panel-default {{ hide_idle_rooms|yesno:"hide-idle-rooms," }}">
                 <div class="panel-heading">
                     Active Rooms
                 </div>
                 <div class="panel-body">
                     {% if rooms %}
-                        <div style="margin: 5px; min-height: 120px; border-radius: 5px">
+                        <div style="margin: 5px; border-radius: 5px">
                             <table class="table">
                                 <thead>
                                     <th>Room</th>
@@ -22,7 +22,7 @@
                                 </thead>
                                 <tbody>
                                 {% for room in rooms %}
-                                    <tr>
+                                <tr class="{{ room.is_idle|yesno:"idle-room," }}">
                                         <td><a href="{{ room.get_absolute_url }}">{{ room.name }}</a></td>
                                         <td>{{ room.creator.name }}</td>
                                         <td>{{ room.current_game.game_type|hovertext_game_type }}</td>
@@ -31,6 +31,14 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
+                            <div>
+                                {% if hide_idle_rooms %}
+                                    <div class="text-center">
+                                        <a href="#" class="show-button">Show Idle Rooms</a>
+                                        <a href="#" class="hide-button">Hide Idle Rooms</a>
+                                    </div>
+                                {% endif %}
+                            </div>
                         </div>
                     {% else %}
                         <div>
@@ -68,6 +76,7 @@
   ... ]'></textarea>
                         </div>
                     </div>
+                    <script src="{% static "bingosync/home.js" %}"></script>
                     <script>
                         $(document).ready(function() {
                             // grab the data from the old custom json field, if any, and remove it
@@ -90,6 +99,9 @@
                                 }
                             });
                             $gameType.change();
+
+                            var $roomsPanel = $("#rooms_panel");
+                            initializeRoomsPanel($roomsPanel);
                         });
                     </script>
                 </div>
