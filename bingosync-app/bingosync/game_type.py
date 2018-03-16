@@ -57,6 +57,7 @@ class GameType(Enum):
     pokemon_emerald_randomizer_short = 51
     hollow_knight = 52
     jade_cocoon = 53
+    mass_effect_2 = 54
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -140,6 +141,7 @@ GAME_TYPE_NAMES = {
     GameType.pokemon_emerald_randomizer_short: "Pokémon Emerald - Short Randomizer",
     GameType.hollow_knight: "Hollow Knight",
     GameType.jade_cocoon: "Jade Cocoon: Story of the Tamamayu",
+    GameType.mass_effect_2: "Mass Effect 2",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -196,5 +198,6 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.pokemon_emerald_randomizer_short: "Emerald Short",
     GameType.hollow_knight: "Hollow Knight",
     GameType.jade_cocoon: "Jade Cocoon: SotT",
+    GameType.mass_effect_2: "Mass Effect 2",
 }
 
