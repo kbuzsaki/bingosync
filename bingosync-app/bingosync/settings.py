@@ -136,6 +136,8 @@ GEN_TESTDATA_DIR = os.path.join(TESTDATA_DIR, "gen_output")
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
