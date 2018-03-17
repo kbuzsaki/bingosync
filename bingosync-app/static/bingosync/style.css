@@ -455,7 +455,12 @@
  * the hide button only needs to display when rooms are hidden.
  */
 .show-button {
+    color: #ddd;
     display: none;
+}
+
+.hide-button {
+    color: #ddd;
 }
 
 .hide-idle-rooms .show-button {
