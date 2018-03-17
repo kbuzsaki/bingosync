@@ -220,8 +220,8 @@ class Room(models.Model):
 
     @property
     def latest_event_timestamp(self):
-        events = Event.get_all_for_room(self)
-        return events[-1].timestamp if events else self.created_date
+        latest_event = Event.get_latest_for_room(self)
+        return latest_event.timestamp if latest_event else self.created_date
 
     @property
     def is_idle(self):
@@ -422,18 +422,33 @@ class Event(models.Model):
         return self.timestamp.replace().timestamp()
 
     @staticmethod
+    def event_classes():
+        return [ChatEvent, GoalEvent, ColorEvent, RevealedEvent, ConnectionEvent]
+
+    @staticmethod
     def get_all_for_room(room):
-        chat_events = list(ChatEvent.objects.filter(player__room=room))
-        goal_events = list(GoalEvent.objects.filter(player__room=room))
-        color_events = list(ColorEvent.objects.filter(player__room=room))
-        revealed_events = list(RevealedEvent.objects.filter(player__room=room))
-        connection_events = list(ConnectionEvent.objects.filter(player__room=room))
-        all_events = chat_events + goal_events + color_events + revealed_events + connection_events
-        all_events.sort(key=lambda event: event.timestamp)
-        return all_events
+        all_events = []
+        for event_class in Event.event_classes():
+            all_events.extend(event_class.objects.filter(player__room=room))
+        return sorted(all_events, key=lambda event: event.timestamp)
+
+    @staticmethod
+    def get_latest_for_room(room):
+        latest_events = []
+        for event_class in Event.event_classes():
+            try:
+                latest_event = event_class.objects.filter(player__room=room).latest()
+                latest_events.append(latest_event)
+            except event_class.DoesNotExist:
+                pass
+        if latest_events:
+            return sorted(latest_events, key=lambda event: event.timestamp)[-1]
+        else:
+            return None
 
     class Meta:
         abstract = True
+        get_latest_by = "timestamp"
 
 
 class ChatEvent(Event):
