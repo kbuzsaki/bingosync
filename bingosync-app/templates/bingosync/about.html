@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    What is Bingosync?
+                    Using Bingosync
                 </div>
                 <div class="panel-body">
                     <p>
@@ -19,8 +19,11 @@
                         <a href="http://bingosync.com">bingosync.com</a>,
                         you will get a unique URL that you can share with other people to let
                         them join your room. When multiple people are in the same room
-                        the squares on the bingoboard is synchronized between them in
+                        the squares on the bingoboard are synchronized between them in
                         real time, letting you plan and keep track of bingo progress together.
+                        Left click on a goal to change its color publicly, right click on a goal
+                        to "star" it privately. You can use starring to plan your goals without
+                        other players seeing.
                     </p>
                     <p>
                         Common applications of bingosync include team bingo "blackout" races like
@@ -34,63 +37,95 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    About Bingo and Bingosync
+                    Adding or Updating Generators
                 </div>
                 <div class="panel-body">
                     <p>
-                        As far as I'm aware, the practice of speedrunning bingo races
-                        originated on
-                        <a href="http://www.speedrunslive.com">speedrunslive.com</a>.
-                        You can view the speedrunslive bingo generators
-                        <a href="http://www.speedrunslive.com/tools/">here</a>.
-                        Most of Bingosync's generators are copied from speedrunslive so
-                        you can get the same board on both sites by using the same seed.
-                        The pikmin generator was adapted from
-                        <a href="http://www.mrdsreview.net/bingo/">mrdsreview.net</a>
-                        and the super mario sunshine generator was adapted from
-                        <a href="http://nkitten.net/bingo/sms/beta/3g/">nkitten.net</a>.
-                        The goal list for final fantasy 1 was written by
-                        <a href="https://twitter.com/crrool">@Crrool</a> and
-                        <a href="https://twitter.com/Lenophail">@Lenophail</a>.
-                        The generator for crash twinsanity was adapted from
-                        <a href="http://beyondtwinsanity.com/bingo/twinsanity/">beyondtwinsanity.com</a>.
-                        The goal list for lufia 2 was provided by
-                        <a href="https://twitter.com/crrool">@Crrool</a>.
+                        New generators and generator variants are welcome from anyone! To add a new
+                        generator, just send me:
+                        <ol>
+                            <li>The generator or goal list you'd like to use</li>
+                            <li>The name you'd like (for the room creation dropdown)</li>
+                            <li>The abbreviated name you'd like (for the rooms list)</li>
+                        </ol>
+                        To update an existing generator, send me the new generator or goal list you'd
+                        like and make sure that you have permission from whoever requested the old
+                        version of that generator.
                     </p>
                     <p>
-                        About a year ago, the popular solution for "bingo-syncing" was
-                        <a href="http://bingosync.twitchtools.tv/">bingosync.twitchtools.tv</a>
-                        which appears to now be defunct. I wrote
-                        <a href="http://bingosync.com">bingosync.com</a>
-                        in order to replace
-                        <a href="http://bingosync.twitchtools.tv/">bingosync.twitchtools.tv</a>
-                        when I learned that it had shut down. Maybe someday I'll buy
-                        the twitchtools.tv domain and have it redirect to bingosync.com :)
+                        If you're just starting out and need to make a goal list, there are two
+                        main ways to make one:
+                        <ol>
+                            <li>Make an SRL-style goal list with 25 difficulty tiers.
+                                (<a href="https://pastebin.com/Ue2wcMcY">example</a>)</li>
+                            <li>Make a simple list of just the goal names that you want.
+                                (<a href="https://pastebin.com/J8aRHmrM">example</a>)</li>
+                        </ol>
                     </p>
                     <p>
-                        The source code for Bingosync is hosted on
-                        <a href="https://github.com/kbuzsaki/bingosync">github</a>,
-                        feel free to check it out or message me about it!
+                        An SRL-style goal list takes more work but can produce more balanced boards.
+                        The generator will try to use 1 goal from each difficulty tier and arrange
+                        them so that every row, column, and diagonal adds up to the same difficulty
+                        value. If 2 goals have one of the same "types" then it will refuse to put
+                        them in the same row. This lets you keep incompatible or broken goal pairs
+                        from appearing together.
+                    </p>
+                    <p>
+                        A generator made with a simple goal list will randomly choose goals from
+                        the list without regard for conflicts or synergy. This list can just be a
+                        pastebin with each goal name on a separate line.
+                    </p>
+                    <p>
+                        If your generator doesn't fit into one of these categories or has special
+                        requirements, get in contact with me and we can work it out.
+                    </p>
+                    <p>
+                        You can contact me on twitter at <a href="https://twitter.com/saltor6">@saltor6</a>,
+                        on discord at Saltor#4306,
+                        on twitch at <a href="https://twitch.tv/saltor6">twitch.tv/saltor6</a>,
+                        or by filing an issue on
+                        <a href="https://github.com/kbuzsaki/bingosync/issues">github</a>.
                     </p>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    About Me
+                    Custom Boards
                 </div>
                 <div class="panel-body">
                     <p>
-                        Bingosync is written and maintained by me, Kyle Buzsaki. I go by
-                        the aliases "Saltor", "Saltor6", and "kbuzsaki".
+                        You can make a room with a specific custom board without creating a generator
+                        by using the "Custom&nbsp;(Advanced)" game type. You can then paste a 25 element
+                        JSON list containing the goals for your card into the text box. Here's an
+                        example list: <a href="https://pastebin.com/kqGNx5A8">pastebin.com/kqGNx5A8</a>
                     </p>
                     <p>
-                        If you have any questions, requests, or suggestions, you can
-                        contact me on twitter
-                        <a href="https://twitter.com/saltor6">@Saltor6</a>,
-                        on twitch at
-                        <a href="https://twitch.tv/saltor6">twitch.tv/saltor6</a>,
-                        or on the speedrunslive irc where I go by "Saltor". I idle in the
-                        #zelda and #bingoleague channels.
+                        The custom board mode can only be used to make a board with a specific list
+                        of 25 goals. It won't randomize the card for you like a regular generator.
+                        If you want to have a randomized card you either need to randomize it yourself
+                        before creating the room or make a regular generator instead.
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Development
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Bingosync's source code can be found on
+                        <a href="https://github.com/kbuzsaki/bingosync">github</a>.
+                        It's primarily written and maintained by me,
+                        <a href="http://github.com/kbuzsaki">kbuzsaki</a>, with contributions from
+                        several others. Issues and pull requests are welcome!
+                    </p>
+                    <p>
+                        If you have any questions, requests, or suggestions,
+                        you can contact me on twitter at <a href="https://twitter.com/saltor6">@saltor6</a>,
+                        on discord at Saltor#4306,
+                        on twitch at <a href="https://twitch.tv/saltor6">twitch.tv/saltor6</a>,
+                        or by filing an issue on
+                        <a href="https://github.com/kbuzsaki/bingosync/issues">github</a>.
                     </p>
                 </div>
             </div>
