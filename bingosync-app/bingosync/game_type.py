@@ -62,11 +62,35 @@ class GameType(Enum):
     happy_wheels_level_editor = 56
 
     def __str__(self):
-        return GAME_TYPE_SHORT_NAMES[self]
+        return self.short_name
+
+    @property
+    def group(self):
+        return GAME_TYPE_GROUPS[self]
+
+    @property
+    def group_name(self):
+        return GAME_TYPE_GROUP_NAMES[self]
 
     @property
     def long_name(self):
-        return GAME_TYPE_NAMES[self]
+        return GAME_TYPE_LONG_NAMES[self]
+
+    @property
+    def short_name(self):
+        return GAME_TYPE_SHORT_NAMES[self]
+
+    @property
+    def variant_name(self):
+        return GAME_TYPE_VARIANT_NAMES[self]
+
+    @property
+    def is_game_group(self):
+        return self.group == self
+
+    @property
+    def is_custom(self):
+        return self == GameType.custom
 
     @staticmethod
     def for_value(value):
@@ -80,130 +104,154 @@ class GameType(Enum):
         return [(game_type.value, game_type.long_name) for game_type in GameType]
 
     @staticmethod
-    def sorted_choices():
-        return list(sorted(GameType.choices(), key=lambda el: el[1]))
+    def game_choices():
+        choices = [(gt.value, gt.group_name) for gt in GAME_GROUPS if gt.is_game_group and not gt.is_custom]
+        choices = list(sorted(choices, key=lambda el: el[1]))
+        return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.group_name)]
 
     @staticmethod
-    def form_choices():
-        # filter out custom and then put it at the end
-        choices = [choice for choice in GameType.sorted_choices() if choice[0] != GameType.custom.value]
-        return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.long_name)]
+    def variant_choices():
+        return [(gt.value, gt.variant_name) for gt in ALL_VARIANTS]
 
-GAME_TYPE_NAMES = {
-    GameType.ocarina_of_time: "Zelda: Ocarina of Time",
-    GameType.super_mario_64: "Super Mario 64",
-    GameType.majoras_mask: "Zelda: Majora's Mask",
-    GameType.super_metroid: "Super Metroid",
-    GameType.castlevania_sotn: "Castlevania: Symphony of the Night",
-    GameType.super_mario_world: "Super Mario World",
-    GameType.pokemon_red_blue: "Pokémon Red/Blue",
-    GameType.pokemon_crystal: "Pokémon Crystal",
-    GameType.donkey_kong_64: "Donkey Kong 64",
-    GameType.pikmin: "Pikmin",
-    GameType.super_mario_sunshine: "Super Mario Sunshine",
-    GameType.pokemon_red_blue_randomizer: "Pokémon Red/Blue - Randomizer",
-    GameType.final_fantasy_1: "Final Fantasy 1",
-    GameType.crash_twinsanity: "Crash Twinsanity",
-    GameType.lufia_2: "Lufia 2: Ancient Cave",
-    GameType.lego_star_wars: "Lego Star Wars",
-    GameType.spyro_2: "Spyro 2: Ripto's Rage",
-    GameType.custom: "Custom (Advanced)",
-    GameType.pokemon_snap: "Pokémon Snap",
-    GameType.ocarina_of_time_blackout: "Zelda: Ocarina of Time - Blackout",
-    GameType.ocarina_of_time_short: "Zelda: Ocarina of Time - Short",
-    GameType.ocarina_of_time_short_blackout: "Zelda: Ocarina of Time - Short Blackout",
-    GameType.pokemon_ruby_sapphire: "Pokémon Ruby/Sapphire",
-    GameType.adams_family: "The Addams Family (SNES)",
-    GameType.sonic_adventure_2: "Sonic Adventure 2",
-    GameType.dark_souls: "Dark Souls",
-    GameType.road_trip_adventure: "Road Trip Adventure",
-    GameType.psychonauts: "Psychonauts",
-    GameType.super_mario_galaxy: "Super Mario Galaxy",
-    GameType.banjo_tooie: "Banjo-Tooie",
-    GameType.ff4_ancient_cave: "Final Fantasy 4 - Ancient Cave",
-    GameType.zelda_botw: "Zelda: Breath of the Wild",
-    GameType.sonic_adventure_2_hero_story: "Sonic Adventure 2 - Hero Story",
-    GameType.the_witness: "The Witness",
-    GameType.pikmin_2: "Pikmin 2",
-    GameType.alttp_randomizer: "Zelda: A Link to the Past - Randomizer",
-    GameType.pokemon_platinum: "Pokémon Platinum",
-    GameType.rayman_ps1: "Rayman (PS1)",
-    GameType.pokemon_crystal_randomizer: "Pokémon Crystal - Current Randomizer",
-    GameType.pokemon_emerald_randomizer: "Pokémon Emerald - Randomizer",
-    GameType.pokemon_crystal_classic_randomizer: "Pokémon Crystal - Classic Randomizer",
-    GameType.sonic_adventure_2_dark_story: "Sonic Adventure 2 - Dark Story",
-    GameType.sonic_adventure_2_long: "Sonic Adventure 2 - Long",
-    GameType.zelda_skyward_sword: "Zelda: Skyward Sword",
-    GameType.super_mario_odyssey: "Super Mario Odyssey",
-    GameType.super_mario_odyssey_long: "Super Mario Odyssey - Long",
-    GameType.rabi_ribi: "Rabi-Ribi",
-    GameType.generic_bingo: "Generic Bingo",
-    GameType.generic_bingo_deluxe: "Generic Bingo Deluxe",
-    GameType.harry_potter_2: "Harry Potter and the Chamber of Secrets",
-    GameType.pokemon_emerald_randomizer_short: "Pokémon Emerald - Short Randomizer",
-    GameType.hollow_knight: "Hollow Knight",
-    GameType.jade_cocoon: "Jade Cocoon: Story of the Tamamayu",
-    GameType.mass_effect_2: "Mass Effect 2",
-    GameType.alttp_enemy_randomizer: "Zelda: A Link to the Past - Enemy Randomizer",
-    GameType.happy_wheels_level_editor: "Happy Wheels Level Editor",
+
+DEFAULT_VARIANT_NAME = "Normal"
+def singleton_group(game_type, name, short_name):
+    return {
+        game_type: {
+            "name": name,
+            "variants": [
+                (game_type, DEFAULT_VARIANT_NAME, short_name),
+            ],
+        }
+    }
+
+
+GAME_GROUPS = {
+    GameType.ocarina_of_time: {
+        "name": "Zelda: Ocarina of Time",
+        "variants": [
+            (GameType.ocarina_of_time, "Normal", "Zelda: OoT"),
+            (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
+            (GameType.ocarina_of_time_short, "Short", "OoT Short"),
+            (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
+        ],
+    },
+    GameType.pokemon_emerald_randomizer: {
+        "name": "Pokémon Emerald",
+        "variants": [
+            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald Random"),
+            (GameType.pokemon_emerald_randomizer_short, "Short Randomizer", "Emerald Short"),
+        ],
+    },
+    GameType.pokemon_crystal: {
+        "name": "Pokémon Crystal",
+        "variants": [
+            (GameType.pokemon_crystal, "Normal", "Poké Crystal"),
+            (GameType.pokemon_crystal_randomizer, "Current Randomizer", "Crystal Current"),
+            (GameType.pokemon_crystal_classic_randomizer, "Classic Randomizer", "Crystal Classic"),
+        ],
+    },
+    GameType.pokemon_red_blue: {
+        "name": "Pokémon Red/Blue",
+        "variants": [
+            (GameType.pokemon_red_blue, "Normal", "Poké Red/Blue"),
+            (GameType.pokemon_red_blue_randomizer, "Randomizer", "Red/Blue Random"),
+        ],
+    },
+    GameType.sonic_adventure_2: {
+        "name": "Sonic Adventure 2",
+        "variants": [
+            (GameType.sonic_adventure_2, "Normal", "SA2"),
+            (GameType.sonic_adventure_2_hero_story, "Hero Story", "SA2 Hero"),
+            (GameType.sonic_adventure_2_dark_story, "Dark Story", "SA2 Dark"),
+            (GameType.sonic_adventure_2_long, "Long", "SA2 Long"),
+        ],
+    },
+    GameType.super_mario_odyssey: {
+        "name": "Super Mario Odyssey",
+        "variants": [
+            (GameType.super_mario_odyssey, "Normal", "SMO"),
+            (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
+        ],
+    },
+    GameType.generic_bingo: {
+        "name": "Generic Bingo",
+        "variants": [
+            (GameType.generic_bingo, "Normal", "Generic"),
+            (GameType.generic_bingo_deluxe, "Deluxe", "Generic Deluxe"),
+        ],
+    },
+    GameType.alttp_randomizer: {
+        "name": "Zelda: A Link to the Past",
+        "variants": [
+            (GameType.alttp_randomizer, "Randomizer", "ALttP Random"),
+            (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
+        ],
+    },
+    GameType.ff4_ancient_cave: {
+        "name": "Final Fantasy 4",
+        "variants": [
+            (GameType.ff4_ancient_cave, "Ancient Cave", "FF4 Ancient Cave"),
+        ],
+    },
+    GameType.lufia_2: {
+        "name": "Lufia 2",
+        "variants": [
+            (GameType.lufia_2, "Ancient Cave", "Lufia 2 AC"),
+        ],
+    },
+    **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
+    **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
+    **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
+    **singleton_group(GameType.castlevania_sotn, "Castlevania: Symphony of the Night", "CV: SotN"),
+    **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
+    **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
+    **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
+    **singleton_group(GameType.super_mario_sunshine, "Super Mario Sunshine", "SMS"),
+    **singleton_group(GameType.final_fantasy_1, "Final Fantasy 1", "FF1"),
+    **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
+    **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
+    **singleton_group(GameType.spyro_2, "Spyro 2: Ripto's Rage", "Spyro 2"),
+    **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
+    **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
+    **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
+    **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
+    **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
+    **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
+    **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
+    **singleton_group(GameType.banjo_tooie, "Banjo-Tooie", "Banjo-Tooie"),
+    **singleton_group(GameType.zelda_botw, "Zelda: Breath of the Wild", "Zelda: BotW"),
+    **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
+    **singleton_group(GameType.pikmin_2, "Pikmin 2", "Pikmin 2"),
+    **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
+    **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
+    **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
+    **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
+    **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
+    **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
+    **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
+    **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
+    **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
+    **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
 }
 
-GAME_TYPE_SHORT_NAMES = {
-    GameType.ocarina_of_time: "Zelda: OoT",
-    GameType.super_mario_64: "SM64",
-    GameType.majoras_mask: "Zelda: MM",
-    GameType.super_metroid: "Super Metroid",
-    GameType.castlevania_sotn: "CV: SotN",
-    GameType.super_mario_world: "SMW",
-    GameType.pokemon_red_blue: "Poké Red/Blue",
-    GameType.pokemon_crystal: "Poké Crystal",
-    GameType.donkey_kong_64: "DK64",
-    GameType.pikmin: "Pikmin",
-    GameType.super_mario_sunshine: "SMS",
-    GameType.pokemon_red_blue_randomizer: "Red/Blue Random",
-    GameType.final_fantasy_1: "FF1",
-    GameType.crash_twinsanity: "Crash Twins.",
-    GameType.lufia_2: "Lufia 2",
-    GameType.lego_star_wars: "Lego SW",
-    GameType.spyro_2: "Spyro 2",
-    GameType.custom: "Custom",
-    GameType.pokemon_snap: "Poké Snap",
-    GameType.ocarina_of_time_blackout: "OoT Blackout",
-    GameType.ocarina_of_time_short: "OoT Short",
-    GameType.ocarina_of_time_short_blackout: "OoT Short Blackout",
-    GameType.pokemon_ruby_sapphire: "Poké Ruby/Sapph",
-    GameType.adams_family: "Addams Family",
-    GameType.sonic_adventure_2: "SA2",
-    GameType.dark_souls: "Dark Souls",
-    GameType.road_trip_adventure: "Road Trip Adv.",
-    GameType.psychonauts: "Psychonauts",
-    GameType.super_mario_galaxy: "SM Galaxy",
-    GameType.banjo_tooie: "Banjo-Tooie",
-    GameType.ff4_ancient_cave: "FF4 Ancient Cave",
-    GameType.zelda_botw: "Zelda: BotW",
-    GameType.sonic_adventure_2_hero_story: "SA2 Hero",
-    GameType.the_witness: "The Witness",
-    GameType.pikmin_2: "Pikmin 2",
-    GameType.alttp_randomizer: "ALttP Random",
-    GameType.pokemon_platinum: "Poké Plat.",
-    GameType.rayman_ps1: "Rayman",
-    GameType.pokemon_crystal_randomizer: "Crystal Current",
-    GameType.pokemon_emerald_randomizer: "Emerald Random",
-    GameType.pokemon_crystal_classic_randomizer: "Crystal Classic",
-    GameType.sonic_adventure_2_dark_story: "SA2 Dark",
-    GameType.sonic_adventure_2_long: "SA2 Long",
-    GameType.zelda_skyward_sword: "Zelda: SS",
-    GameType.super_mario_odyssey: "SMO",
-    GameType.super_mario_odyssey_long: "SMO Long",
-    GameType.rabi_ribi: "Rabi-Ribi",
-    GameType.generic_bingo: "Generic",
-    GameType.generic_bingo_deluxe: "Generic Deluxe",
-    GameType.harry_potter_2: "HP2",
-    GameType.pokemon_emerald_randomizer_short: "Emerald Short",
-    GameType.hollow_knight: "Hollow Knight",
-    GameType.jade_cocoon: "Jade Cocoon: SotT",
-    GameType.mass_effect_2: "Mass Effect 2",
-    GameType.alttp_enemy_randomizer: "ALttP Enemizer",
-    GameType.happy_wheels_level_editor: "HW Level Editor",
-}
-
+GAME_TYPE_GROUPS = {}
+GAME_TYPE_GROUP_NAMES = {}
+GAME_TYPE_LONG_NAMES = {}
+GAME_TYPE_SHORT_NAMES = {}
+GAME_TYPE_VARIANT_NAMES = {}
+ALL_VARIANTS = []
+for group, entry in GAME_GROUPS.items():
+    name = entry["name"]
+    variants = entry["variants"]
+    for game, variant_name, short_name in variants:
+        if len(variants) == 1 and variant_name == "Normal":
+            long_name = name
+        else:
+            long_name = name + " - " + variant_name
+        GAME_TYPE_GROUPS[game] = group
+        GAME_TYPE_GROUP_NAMES[game] = name
+        GAME_TYPE_LONG_NAMES[game] = long_name
+        GAME_TYPE_SHORT_NAMES[game] = short_name
+        GAME_TYPE_VARIANT_NAMES[game] = variant_name
+        ALL_VARIANTS.append(game)

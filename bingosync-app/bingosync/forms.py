@@ -24,7 +24,8 @@ class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
-    game_type = forms.ChoiceField(label="Game", choices=GameType.form_choices())
+    game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
+    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=forms.HiddenInput(), required=False)
     custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
@@ -52,6 +53,11 @@ class RoomForm(forms.Form):
                 if "name" not in square:
                     raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
             cleaned_data["custom_board"] = custom_board
+        else:
+            try:
+                cleaned_data["game_type"] = str(int(cleaned_data.get("variant_type", "")))
+            except ValueError:
+                pass
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
