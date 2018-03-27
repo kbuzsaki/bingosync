@@ -60,6 +60,10 @@ class GameType(Enum):
     mass_effect_2 = 54
     alttp_enemy_randomizer = 55
     happy_wheels_level_editor = 56
+    secret_of_mana = 57
+    secret_of_mana_german = 58
+    secret_of_mana_short = 59
+    secret_of_mana_short_german = 60
 
     def __str__(self):
         return self.short_name
@@ -134,6 +138,15 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
             (GameType.ocarina_of_time_short, "Short", "OoT Short"),
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
+        ],
+    },
+    GameType.secret_of_mana: {
+        "name": "Secret of Mana",
+        "variants": [
+            (GameType.secret_of_mana, "Normal", "SoM"),
+            (GameType.secret_of_mana_german, "German", "SoM German"),
+            (GameType.secret_of_mana_short, "Short", "SoM Short"),
+            (GameType.secret_of_mana_short_german, "Short German", "SoM Short German"),
         ],
     },
     GameType.pokemon_emerald_randomizer: {
