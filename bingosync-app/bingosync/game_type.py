@@ -59,6 +59,7 @@ class GameType(Enum):
     jade_cocoon = 53
     mass_effect_2 = 54
     alttp_enemy_randomizer = 55
+    happy_wheels_level_editor = 56
 
     def __str__(self):
         return GAME_TYPE_SHORT_NAMES[self]
@@ -144,6 +145,7 @@ GAME_TYPE_NAMES = {
     GameType.jade_cocoon: "Jade Cocoon: Story of the Tamamayu",
     GameType.mass_effect_2: "Mass Effect 2",
     GameType.alttp_enemy_randomizer: "Zelda: A Link to the Past - Enemy Randomizer",
+    GameType.happy_wheels_level_editor: "Happy Wheels Level Editor",
 }
 
 GAME_TYPE_SHORT_NAMES = {
@@ -202,5 +204,6 @@ GAME_TYPE_SHORT_NAMES = {
     GameType.jade_cocoon: "Jade Cocoon: SotT",
     GameType.mass_effect_2: "Mass Effect 2",
     GameType.alttp_enemy_randomizer: "ALttP Enemizer",
+    GameType.happy_wheels_level_editor: "HW Level Editor",
 }
 
