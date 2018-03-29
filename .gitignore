@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -59,3 +60,8 @@ target/
 
 # site secret key
 bingosync-app/bingosync/secret_settings.py
+
+# misc ignores
+backups/
+misc/
+bingosync-app/generators/working
