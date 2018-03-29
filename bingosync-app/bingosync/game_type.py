@@ -64,6 +64,8 @@ class GameType(Enum):
     secret_of_mana_german = 58
     secret_of_mana_short = 59
     secret_of_mana_short_german = 60
+    final_fantasy_1_randomizer_short = 61
+    final_fantasy_1_randomizer_long = 62
 
     def __str__(self):
         return self.short_name
@@ -207,6 +209,14 @@ GAME_GROUPS = {
             (GameType.ff4_ancient_cave, "Ancient Cave", "FF4 Ancient Cave"),
         ],
     },
+    GameType.final_fantasy_1: {
+        "name": "Final Fantasy 1",
+        "variants": [
+            (GameType.final_fantasy_1, "Normal", "FF1"),
+            (GameType.final_fantasy_1_randomizer_short, "Randomizer Short", "FF1 Random Short"),
+            (GameType.final_fantasy_1_randomizer_long, "Randomizer Long (Defeat Chaos)", "FF1 Random Long"),
+        ],
+    },
     GameType.lufia_2: {
         "name": "Lufia 2",
         "variants": [
@@ -221,7 +231,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.super_mario_sunshine, "Super Mario Sunshine", "SMS"),
-    **singleton_group(GameType.final_fantasy_1, "Final Fantasy 1", "FF1"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
     **singleton_group(GameType.spyro_2, "Spyro 2: Ripto's Rage", "Spyro 2"),
