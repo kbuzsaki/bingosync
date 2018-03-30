@@ -66,6 +66,7 @@ class GameType(Enum):
     secret_of_mana_short_german = 60
     final_fantasy_1_randomizer_short = 61
     final_fantasy_1_randomizer_long = 62
+    ff4_free_enterprise = 63
 
     def __str__(self):
         return self.short_name
@@ -206,7 +207,8 @@ GAME_GROUPS = {
     GameType.ff4_ancient_cave: {
         "name": "Final Fantasy 4",
         "variants": [
-            (GameType.ff4_ancient_cave, "Ancient Cave", "FF4 Ancient Cave"),
+            (GameType.ff4_ancient_cave, "Ancient Cave", "FF4 AC"),
+            (GameType.ff4_free_enterprise, "Free Enterprise", "FF4 FE"),
         ],
     },
     GameType.final_fantasy_1: {
