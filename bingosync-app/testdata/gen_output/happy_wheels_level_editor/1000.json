@@ -1,6 +1,6 @@
 [
     {
-        "name": "2 colors only (+op. banned)"
+        "name": "No art shapes"
     },
     {
         "name": "Max. interactives w/h: 50"
@@ -9,69 +9,69 @@
         "name": "Playable char.: Helicopter man"
     },
     {
-        "name": "No 'set to vehicle'"
+        "name": "Alignment 3 only"
     },
     {
-        "name": "Banned tr. action: wake from sleep"
+        "name": "Max. vehicle acceleration: 5"
     },
     {
-        "name": "Forced char.: Helicopter man"
+        "name": "Min. motor speed amount: 20"
     },
     {
-        "name": "Alignment 1 only"
+        "name": "No low-op. shapes"
     },
     {
-        "name": "No groups"
+        "name": "Tr. only connectable to tr."
     },
     {
         "name": "Building time: 2 days"
     },
     {
-        "name": "Level mood: sad"
+        "name": "Bluish colors only"
     },
     {
-        "name": "Repeat type 1 only"
+        "name": "Char. moving backwards"
     },
     {
-        "name": "Vehicle ch. during level"
+        "name": "Numbers only (texts)"
     },
     {
-        "name": "Throwing game incl."
+        "name": "Interactives den.: 0.1"
     },
     {
-        "name": "Slow part incl."
+        "name": "No cyanish colors"
     },
     {
-        "name": "Min. art shape w/h: 100"
+        "name": "Tr. only connectable to tr."
     },
     {
-        "name": "Vehicle acceleration: 1"
+        "name": "Font 3 only"
     },
     {
-        "name": "Pure black/white only (+op. banned)"
+        "name": "No tr."
     },
     {
-        "name": "Max. tr.: 20"
+        "name": "Highly saturated colors only"
     },
     {
-        "name": "No special items"
+        "name": "No sliding joints"
     },
     {
-        "name": "Boss battle incl. (2 attacks min.)"
+        "name": "All movement special items"
     },
     {
         "name": "Text rotation: 90 and -90 degrees."
     },
     {
-        "name": "Activate object tr. only"
+        "name": "'Collide connected' joints only"
     },
     {
-        "name": "Font 1 only"
+        "name": "Max. tr. w/h: 10"
     },
     {
-        "name": "Min. shapes left: 700"
+        "name": "Max. tr.: 5"
     },
     {
-        "name": "Customized walking char."
+        "name": "Force char.: false"
     }
 ]

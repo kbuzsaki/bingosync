@@ -1,77 +1,77 @@
 [
     {
-        "name": "Customized walking char."
+        "name": "Max. editor space: height: 500"
     },
     {
-        "name": "Max. editor space: width: 1000"
+        "name": "Customized flying char."
     },
     {
-        "name": "Piston incl."
+        "name": "20 colors only"
     },
     {
-        "name": "Col. 1 only"
+        "name": "Building time: 5 days"
     },
     {
         "name": "Music/beat incl."
     },
     {
-        "name": "Max. editor space: width: 5000"
+        "name": "Animated font"
     },
     {
         "name": "No polygons"
     },
     {
-        "name": "No background art"
+        "name": "Triggered by 6 only"
     },
     {
-        "name": "Building time: 12 hours"
+        "name": "Pure black/white only (+op. banned)"
     },
     {
-        "name": "Alignment 1 only"
+        "name": "Min. font size: 15"
     },
     {
         "name": "3-corners art shapes"
     },
     {
-        "name": "Spikefall incl."
+        "name": "Banned tr. action: set to fixed"
     },
     {
-        "name": "Main environment: city"
+        "name": "Max. text tools: 1 (no customized fonts)"
     },
     {
-        "name": "All movement special items"
+        "name": "Min. 5 coins victory"
     },
     {
-        "name": "Max. editor space: height: 1000"
+        "name": "Col. 4 only"
     },
     {
-        "name": "One word per line only (texts)"
+        "name": "Hide'n'seek part incl."
     },
     {
-        "name": "White outlines forced"
+        "name": "Building time: 2 days"
     },
     {
         "name": "No fixed interactives"
     },
     {
-        "name": "Font 5 only"
+        "name": "No jets attached to vehicles"
     },
     {
-        "name": "Min. 20 coins victory"
+        "name": "Purplish colors only"
     },
     {
         "name": "No checkpoints"
     },
     {
-        "name": "No pin joints"
+        "name": "Standard colors only"
     },
     {
-        "name": "Main movement: down"
+        "name": "Max. motor torque: 5"
     },
     {
-        "name": "Playable char.: Santa Claus"
+        "name": "Max. tr.: 20"
     },
     {
-        "name": "2 colors only (+op. banned)"
+        "name": "No main char."
     }
 ]

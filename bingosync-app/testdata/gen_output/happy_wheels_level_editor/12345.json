@@ -1,77 +1,77 @@
 [
     {
-        "name": "Building time: 2 days"
+        "name": "White outlines forced"
     },
     {
-        "name": "No motors"
+        "name": "Max. tr.: 50"
     },
     {
-        "name": "No checkpoints"
+        "name": "No customized font"
     },
     {
-        "name": "Triggered by 4 only"
+        "name": "Max. motor torque: 5"
     },
     {
-        "name": "3-corners art shapes"
+        "name": "Col. 2 only"
     },
     {
-        "name": "No polygons"
+        "name": "End screen incl."
     },
     {
-        "name": "Pure black/white only (+op. banned)"
+        "name": "Building time: 12 hours"
     },
     {
-        "name": "Triggered by 6 only"
+        "name": "No interactive groups"
     },
     {
-        "name": "Customized char."
+        "name": "Max. art shape w/h: 50"
     },
     {
-        "name": "Alignment 1 only"
+        "name": "ch. op. time: 0 sec."
     },
     {
-        "name": "Triggered by 1 only"
+        "name": "Main environment: forest"
     },
     {
-        "name": "Font 1 only"
+        "name": "Main movement: right"
     },
     {
-        "name": "Hide'n'seek part incl."
+        "name": "Forced char.: Irresponsible mum"
     },
     {
-        "name": "Max. editor space: height: 500"
+        "name": "No fixed interactives"
     },
     {
-        "name": "Customized walking char."
+        "name": "Triggered by 5 only (single triggering)"
     },
     {
         "name": "Max. editor space: width: 1000"
     },
     {
-        "name": "Repeat type 1 only"
+        "name": "Level mood: romantic"
     },
     {
-        "name": "No saturation (B'n'W)"
+        "name": "Repeat type 4 only"
     },
     {
-        "name": "Font 4 only"
+        "name": "Font 3 only"
     },
     {
-        "name": "Min. 5 coins victory"
+        "name": "All movement special items"
     },
     {
-        "name": "Slow part incl."
+        "name": "No triggered by 6"
     },
     {
-        "name": "Intro incl."
+        "name": "Customized font"
     },
     {
-        "name": "No main char."
+        "name": "2 colors only (+op. banned)"
     },
     {
-        "name": "Highly saturated colors only"
+        "name": "Playable char.: Santa Claus"
     },
     {
-        "name": "No tr. clocks"
+        "name": "No sliding joints"
     }
 ]

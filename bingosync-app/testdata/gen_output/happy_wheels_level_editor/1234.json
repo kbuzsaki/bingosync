@@ -1,33 +1,33 @@
 [
     {
-        "name": "Forced char.: Irresponsible dad"
+        "name": "No rectangle interactives"
     },
     {
-        "name": "Max. editor space: height: 500"
+        "name": "Force char.: false"
     },
     {
-        "name": "Animated font"
+        "name": "Max. font size: 10"
     },
     {
         "name": "Triggered by 6 only"
     },
     {
-        "name": "Art style: Three-dimensional"
+        "name": "All blade weapons"
     },
     {
         "name": "3 colors only"
     },
     {
-        "name": "Max. motor torque: 100"
+        "name": "Customized font"
     },
     {
-        "name": "Playable char.: Segway guy"
+        "name": "Forced char.: Wheelchair guy"
     },
     {
         "name": "Max. editor space: width: 1000"
     },
     {
-        "name": "Min. interactives den.: 100"
+        "name": "No sliding joints"
     },
     {
         "name": "Building time: 12 hours"
@@ -36,42 +36,42 @@
         "name": "No tr. delay"
     },
     {
-        "name": "Col. 4 only"
+        "name": "Pinkish colors only"
     },
     {
-        "name": "Secret victory incl."
+        "name": "No punctuation marks (texts)"
     },
     {
-        "name": "Max. text tools: 10 (no customized fonts)"
+        "name": "Banned col.: 6"
     },
     {
-        "name": "Elevator part incl."
+        "name": "Activate object tr. only"
     },
     {
-        "name": "Text op. 100 only"
+        "name": "No wheel vehicles"
     },
     {
-        "name": "3-corners art shapes"
+        "name": "Min. shapes left: 700"
     },
     {
-        "name": "Main environment: not on earth"
+        "name": "Playable char.: Indiana Jones"
     },
     {
-        "name": "Max. targets per tr.: 2"
+        "name": "Highly saturated colors only"
     },
     {
-        "name": "Main environment: forest"
+        "name": "Forced char.: Effective shopper"
     },
     {
         "name": "Blank white background"
     },
     {
-        "name": "No vehicle space/shift/ctrl actions"
+        "name": "No 'collide connected'"
     },
     {
-        "name": "No checkpoints"
+        "name": "No customized font"
     },
     {
-        "name": "No main char."
+        "name": "No activate object tr."
     }
 ]
