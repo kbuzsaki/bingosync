@@ -1,9 +1,9 @@
 [
     {
-        "name": "Get Imp's Ring"
+        "name": "Get Amulet Ring"
     },
     {
-        "name": "Level Gloves to 7 (at least on 1 char)"
+        "name": "Level Spear to 8 (at least on 1 char)"
     },
     {
         "name": "Never Kill Normal Enemies in Great Palace and Undercity"
@@ -12,13 +12,13 @@
         "name": "Never Kill Normal Enemies in the Lofty Mountains, the Palace of Darkness and the true Courage"
     },
     {
-        "name": "Level Sword to 8 (at least on 1 char)"
+        "name": "Get Vampire Cape"
     },
     {
         "name": "Get Faerie's Ring"
     },
     {
-        "name": "Level Undine to 7 (at least on 1 char)"
+        "name": "Level Axe to 7 (at least on 1 char)"
     },
     {
         "name": "Kill 10 Bossenemies without Weapons"
@@ -27,7 +27,7 @@
         "name": "Level Javelin to 8 (at least on 1 char)"
     },
     {
-        "name": "Level Gnom to 7 (at least on 1 char)"
+        "name": "Level Undine to 7 (at least on 1 char)"
     },
     {
         "name": "Get Faerie Cloak"
@@ -45,10 +45,10 @@
         "name": "Level Lumina to 7"
     },
     {
-        "name": "Get Ninja Gloves"
+        "name": "Level Sword to 8 (at least on 1 char)"
     },
     {
-        "name": "Level Spear to 8 (at least on 1 char)"
+        "name": "Get Ninja Gloves"
     },
     {
         "name": "Get Power Suit"
@@ -57,7 +57,7 @@
         "name": "Kill 25 Bossenemies without Magic"
     },
     {
-        "name": "Level Axe to 7 (at least on 1 char)"
+        "name": "Level Whip to 8 (at least on 1 char)"
     },
     {
         "name": "Level Luna to 7 (at least on 1 char)"
@@ -66,12 +66,12 @@
         "name": "Never Kill Normal Enemies in the Upper Lands until you reach Desert/Ice Country (except the 3 Pebblers)"
     },
     {
+        "name": "Level Gloves to 7 (at least on 1 char)"
+    },
+    {
         "name": "Level Boomerang to 8 (at least on 1 char)"
     },
     {
         "name": "Get Dragon Ring"
-    },
-    {
-        "name": "Never Kill Normal Enemies in the Desert and the Fire Palace"
     }
 ]

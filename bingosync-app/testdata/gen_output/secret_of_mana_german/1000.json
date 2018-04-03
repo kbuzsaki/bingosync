@@ -3,7 +3,7 @@
         "name": "Erhalte Magisches Seil, Schrumpfhammer und Moogle G\u00fcrtel"
     },
     {
-        "name": "Erhalte Drachenspirale"
+        "name": "Erhalte Drachenring"
     },
     {
         "name": "Level Elektra auf 7 (mindestens auf einem Char)"
@@ -27,7 +27,7 @@
         "name": "Erhalte Greifenhelm"
     },
     {
-        "name": "Erhalte Elfenumhang"
+        "name": "Erhalte Elfenweste"
     },
     {
         "name": "T\u00f6te keine Normale Gegner auf der kompletten Dracheninsel"
@@ -36,42 +36,42 @@
         "name": "Level Nacturn auf 7"
     },
     {
-        "name": "T\u00f6te 25 Bosse ohne Magie"
-    },
-    {
         "name": "T\u00f6te 15 Bosse ohne Magie"
     },
     {
-        "name": "T\u00f6te keine Normale Gegner in auf der Weihnachtsinsel und im Eistempel"
+        "name": "T\u00f6te keine Normale Gegner in auf der Weihnachts- insel und im Eistempel"
     },
     {
-        "name": "Level frosta auf 7 (mindestens auf einem Char)"
+        "name": "Level Frosta auf 7 (mindestens auf einem Char)"
     },
     {
         "name": "Level Lunatic auf 7 (mindestens auf einem Char)"
     },
     {
-        "name": "Erhalte G\u00f6tteranzug"
+        "name": "Erhalte G\u00f6tterrobe"
     },
     {
         "name": "T\u00f6te keine Normale Gegner in der W\u00fcste und im Feuertempel"
     },
     {
-        "name": "Level Bumerang auf 8 (mindestens auf einem Char)"
-    },
-    {
-        "name": "Erhalte Elfenarmring"
+        "name": "Erhalte Elfenarmband"
     },
     {
         "name": "Erhalte Fetischring"
     },
     {
-        "name": "Level Bogen auf 8 (mindestens auf einem Char)"
+        "name": "Level Bumerang auf 8 (mindestens auf einem Char)"
     },
     {
         "name": "Level Harzinger auf 7 (mindestens auf einem Char)"
     },
     {
         "name": "Level Vesuvio auf 7 (mindestens auf einem Char)"
+    },
+    {
+        "name": "T\u00f6te 25 Bosse ohne Magie"
+    },
+    {
+        "name": "Level Klaue auf 7 (mindestens auf einem Char)"
     }
 ]

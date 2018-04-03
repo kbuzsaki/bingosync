@@ -113,7 +113,7 @@ var bingoList = [
     "Level Whip to 2 (at least on 1 char)",
     "Level Axe to 2 (at least on 1 char)",
     "Level Undine to 2 (at least on 1 char)",
-    "Level Gnom to 2 (at least on 1 char)",
+    "Level Gnome to 2 (at least on 1 char)",
     "Kill Mantis Ant without dying",
     "Kill Tropikallo without killing the Vine",
     "Kill Spikey Tiger without using range Weapons",
