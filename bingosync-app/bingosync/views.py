@@ -122,7 +122,7 @@ def room_disconnect(request, encoded_room_uuid):
 
 @csrf_exempt
 def goal_selected(request):
-    data = json.loads(request.body.decode("utf8"))
+    data = parse_body_json_or_400(request, required_keys=["room", "slot", "color", "remove_color"])
 
     room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
@@ -139,7 +139,7 @@ def goal_selected(request):
 
 @csrf_exempt
 def chat_message(request):
-    data = json.loads(request.body.decode("utf8"))
+    data = parse_body_json_or_400(request, required_keys=["room", "text"])
 
     room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
@@ -152,7 +152,7 @@ def chat_message(request):
 
 @csrf_exempt
 def select_color(request):
-    data = json.loads(request.body.decode("utf8"))
+    data = parse_body_json_or_400(request, required_keys=["room", "color"])
 
     room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
@@ -164,7 +164,7 @@ def select_color(request):
 
 @csrf_exempt
 def board_revealed(request):
-    data = json.loads(request.body.decode("utf8"))
+    data = parse_body_json_or_400(request, required_keys=["room"])
 
     room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
@@ -271,4 +271,22 @@ def _get_temporary_socket_player_uuid(temporary_socket_key):
         return encoded_player_uuid
     else:
         raise NotAuthenticatedError()
+
+
+# Helpers for parsing request input
+
+class InvalidRequestJsonError(Exception):
+    pass
+
+def parse_body_json_or_400(request, *, required_keys=[]):
+    try:
+        data = json.loads(request.body.decode("utf8"))
+    except json.JSONDecodeError:
+        raise InvalidRequestJsonError("Failed to parse body")
+
+    for key in required_keys:
+        if key not in data:
+            raise InvalidRequestJsonError("Request body \"" + str(data) + "\" missing key: '" + str(key) + "'")
+
+    return data
 

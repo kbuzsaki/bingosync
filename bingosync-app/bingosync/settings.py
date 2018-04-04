@@ -54,6 +54,7 @@ MIDDLEWARE = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'bingosync.middleware.NotAuthenticatedMiddleware',
+    'bingosync.middleware.InvalidRequestMiddleware',
 )
 
 ROOT_URLCONF = 'bingosync.urls'
