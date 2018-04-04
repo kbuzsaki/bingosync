@@ -183,7 +183,10 @@ class Room(models.Model):
 
     @staticmethod
     def get_for_encoded_uuid(encoded_room_uuid):
-        decoded_uuid = decode_uuid(encoded_room_uuid)
+        try:
+            decoded_uuid = decode_uuid(encoded_room_uuid)
+        except ValueError:
+            raise Room.DoesNotExist("Malformed encoded uuid: '" + str(encoded_room_uuid) + "'")
         return Room.objects.get(uuid=decoded_uuid)
 
     @staticmethod
