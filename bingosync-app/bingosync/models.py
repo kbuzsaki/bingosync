@@ -1,4 +1,5 @@
 from django.db import models, transaction
+from django.http import Http404
 from django.urls import reverse
 from django.utils import timezone
 
@@ -188,6 +189,13 @@ class Room(models.Model):
         except ValueError:
             raise Room.DoesNotExist("Malformed encoded uuid: '" + str(encoded_room_uuid) + "'")
         return Room.objects.get(uuid=decoded_uuid)
+
+    @staticmethod
+    def get_for_encoded_uuid_or_404(encoded_room_uuid):
+        try:
+            return Room.get_for_encoded_uuid(encoded_room_uuid)
+        except Room.DoesNotExist:
+            raise Http404
 
     @staticmethod
     def get_listed_rooms():

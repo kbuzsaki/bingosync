@@ -48,11 +48,11 @@ def room_view(request, encoded_room_uuid):
             _save_session_player(request.session, player)
             return redirect("room_view", encoded_room_uuid=encoded_room_uuid)
         else:
-            room = Room.get_for_encoded_uuid(encoded_room_uuid)
+            room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
             return _join_room(request, join_form, room)
     else:
         try:
-            room = Room.get_for_encoded_uuid(encoded_room_uuid)
+            room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
             player = _get_session_player(request.session, room)
             params = {
                 "room": room,
@@ -75,7 +75,7 @@ def _join_room(request, join_form, room):
     return render(request, "bingosync/join_room.html", params)
 
 def room_board(request, encoded_room_uuid):
-    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     board = room.current_game.board
     return JsonResponse(board, safe=False)
 
@@ -110,13 +110,13 @@ def about(request):
     return render(request, "bingosync/about.html")
 
 def room_feed(request, encoded_room_uuid):
-    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     all_events = Event.get_all_for_room(room)
     all_jsons = [event.to_json() for event in all_events]
     return JsonResponse(all_jsons, safe=False)
 
 def room_disconnect(request, encoded_room_uuid):
-    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     _clear_session_player(request.session, room)
     return redirect("rooms")
 
@@ -124,7 +124,7 @@ def room_disconnect(request, encoded_room_uuid):
 def goal_selected(request):
     data = json.loads(request.body.decode("utf8"))
 
-    room = Room.get_for_encoded_uuid(data["room"])
+    room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
     game = room.current_game
     slot = int(data["slot"])
@@ -141,7 +141,7 @@ def goal_selected(request):
 def chat_message(request):
     data = json.loads(request.body.decode("utf8"))
 
-    room = Room.get_for_encoded_uuid(data["room"])
+    room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
     text = data["text"]
 
@@ -154,7 +154,7 @@ def chat_message(request):
 def select_color(request):
     data = json.loads(request.body.decode("utf8"))
 
-    room = Room.get_for_encoded_uuid(data["room"])
+    room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
     color = Color.for_name(data["color"])
 
@@ -166,7 +166,7 @@ def select_color(request):
 def board_revealed(request):
     data = json.loads(request.body.decode("utf8"))
 
-    room = Room.get_for_encoded_uuid(data["room"])
+    room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
 
     revealed_event = RevealedEvent(player=player, player_color_value=player.color.value)
