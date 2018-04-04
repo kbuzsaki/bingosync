@@ -53,6 +53,7 @@ MIDDLEWARE = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'bingosync.middleware.NotAuthenticatedMiddleware',
 )
 
 ROOT_URLCONF = 'bingosync.urls'
