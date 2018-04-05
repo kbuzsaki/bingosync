@@ -251,7 +251,10 @@ def _get_session_player(session, room):
 def _clear_session_player(session, room):
     # have to set the session this way so that it saves properly
     authorized_rooms = session.get(AUTHORIZED_ROOMS, {})
-    del authorized_rooms[room.encoded_uuid]
+    try:
+        del authorized_rooms[room.encoded_uuid]
+    except KeyError:
+        print("Attempted to double-disconnect from room:", room)
     session[AUTHORIZED_ROOMS] = authorized_rooms
 
 def _save_session_player(session, player):
