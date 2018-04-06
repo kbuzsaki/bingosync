@@ -25,10 +25,12 @@ class RoomForm(forms.Form):
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
-    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=forms.HiddenInput(), required=False)
+    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(),
+                                     widget=forms.HiddenInput(), required=False)
     custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
-    seed = forms.CharField(label="Seed", widget=forms.NumberInput(), help_text="Leave blank for a random seed", required=False)
+    seed = forms.CharField(label="Seed", widget=forms.NumberInput(attrs={"min": 0, "max": 2147483647}),
+                           help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
     hide_card = forms.BooleanField(label="Hide Card Initially", required=False)
 
