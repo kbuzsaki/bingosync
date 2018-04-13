@@ -54,6 +54,8 @@ class RoomForm(forms.Form):
             for i, square in enumerate(custom_board):
                 if "name" not in square:
                     raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+                elif square["name"] == "":
+                    raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
             cleaned_data["custom_board"] = custom_board
         else:
             try:
