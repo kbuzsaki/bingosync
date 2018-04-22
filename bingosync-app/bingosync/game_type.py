@@ -68,7 +68,8 @@ class GameType(Enum):
     final_fantasy_1_randomizer_long = 62
     ff4_free_enterprise = 63
     spyro_2_4_0 = 64
-
+    ygo_forbiddenmemories = 65
+    
     def __str__(self):
         return self.short_name
 
@@ -264,6 +265,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
+    **singleton_group(GameType.ygo_forbiddenmemories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
 }
 
 GAME_TYPE_GROUPS = {}
