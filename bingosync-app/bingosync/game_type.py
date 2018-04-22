@@ -67,6 +67,7 @@ class GameType(Enum):
     final_fantasy_1_randomizer_short = 61
     final_fantasy_1_randomizer_long = 62
     ff4_free_enterprise = 63
+    spyro_2_4_0 = 64
 
     def __str__(self):
         return self.short_name
@@ -219,6 +220,13 @@ GAME_GROUPS = {
             (GameType.final_fantasy_1_randomizer_long, "Randomizer Long (Defeat Chaos)", "FF1 Random Long"),
         ],
     },
+    GameType.spyro_2: {
+        "name": "Spyro 2: Ripto's Rage",
+        "variants": [
+            (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
+            (GameType.spyro_2_4_0, "4.0", "Spyro 2 - 4.0"),
+        ],
+    },
     GameType.lufia_2: {
         "name": "Lufia 2",
         "variants": [
@@ -235,7 +243,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_sunshine, "Super Mario Sunshine", "SMS"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
-    **singleton_group(GameType.spyro_2, "Spyro 2: Ripto's Rage", "Spyro 2"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
