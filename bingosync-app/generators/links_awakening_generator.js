@@ -76,10 +76,14 @@ bingoGenerator = function(bingoList, opts) {
         randomind = Math.floor(Math.random() * bingoList.length);
         randomkey = bingoList[randomind];
 
-        bingoList = bingoList.filter(function(goals) {
-            return (!goals.hasOwnProperty("group")
-                    || goals["group"] != randomkey["group"])
-        });
+        if (randomkey.hasOwnProperty("group")) {
+            bingoList = bingoList.filter(function(goals) {
+                return (!goals.hasOwnProperty("group")
+                        || goals["group"] != randomkey["group"])
+            });
+        } else {
+            bingoList.splice(randomind, 1);
+        }
 
         var goal = randomkey["name"];
         selectedGoals[i] = {"name": goal};
@@ -170,8 +174,6 @@ var bingoList = [
 {"name": "Save Papahl on the mountain"},
 {"name": "Kiki Bridge"},
 {"name": "Save Marin on the Mountain Bridge"},
-{"name": "End with <10 rupees"},
-{"name": "End with 999 rupees"},
 {"name": "Bonk the Beach Monkey"},
 {"name": "Kill an enemy with an enemy"},
 {"name": "Kill an enemy after transforming"},
@@ -232,4 +234,6 @@ var bingoList = [
 {"name": "8+ Heart Containers", "group": "hps"},
 {"name": "9+ Heart Containers", "group": "hps"},
 {"name": "10+ Heart Containers", "group": "hps"},
+{"name": "End with <10 rupees", "group": "rupees"},
+{"name": "End with 999 rupees", "group": "rupees"},
 ];
