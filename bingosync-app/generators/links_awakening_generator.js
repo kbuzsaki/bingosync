@@ -76,10 +76,10 @@ bingoGenerator = function(bingoList, opts) {
         randomind = Math.floor(Math.random() * bingoList.length);
         randomkey = bingoList[randomind];
 
-        bingoList = bingoList.filter(goals =>
-            (!goals.hasOwnProperty("group")
-            || goals["group"] != randomkey["group"])
-        );
+        bingoList = bingoList.filter(function(goals) {
+            return (!goals.hasOwnProperty("group")
+                    || goals["group"] != randomkey["group"])
+        });
 
         var goal = randomkey["name"];
         selectedGoals[i] = {"name": goal};
