@@ -69,6 +69,7 @@ class GameType(Enum):
     ff4_free_enterprise = 63
     spyro_2_4_0 = 64
     yugioh_forbidden_memories = 65
+    links_awakening = 66
 
     def __str__(self):
         return self.short_name
@@ -232,6 +233,12 @@ GAME_GROUPS = {
         "name": "Lufia 2",
         "variants": [
             (GameType.lufia_2, "Ancient Cave", "Lufia 2 AC"),
+        ],
+    },
+    GameType.links_awakening: {
+        "name": "Zelda: Link's Awakening",
+        "variants": [
+            (GameType.links_awakening, "Randomizer", "LADX Random"),
         ],
     },
     **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
