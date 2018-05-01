@@ -52,8 +52,12 @@ def parametrize_test(test_class, name_template, testfn, arglists):
         test_func = make_test(testfn, args)
         setattr(test_class, test_name, test_func)
 
-class GeneratorTest(test.SimpleTestCase):
-    """ Shell test class that has test methods added later with parametrize_test() below. """
-    pass
-parametrize_test(GeneratorTest, "get_card_{.name}", test_get_card, [TEST_TYPES])
-parametrize_test(GeneratorTest, "correctness_{.name}_{}", test_card_correctness, [TEST_TYPES, TEST_SEEDS])
+# Some python voodoo that generates a testcase class for each GameType.
+# This improves performance for ./manage.py test --parallel, where each TestCase class
+# is the unit of parallelism.
+for gt in TEST_TYPES:
+    name = "GeneratorTest" + str(gt.value)
+    test_class = type(name, (test.SimpleTestCase,), {})
+    parametrize_test(test_class, "get_card_{.name}", test_get_card, [[gt]])
+    parametrize_test(test_class, "correctness_{.name}_{}", test_card_correctness, [[gt], TEST_SEEDS])
+    globals()[name] = test_class
