@@ -511,7 +511,7 @@ bingoList = {
     ],
     "14": [
         {
-            "name": "Defeat all 14 trainers in Routes 6 and 8"
+            "name": "Defeat all 15 trainers in Routes 6 and 8"
         },
         {
             "name": "Kill or catch both Pokeflute Pokemon"
