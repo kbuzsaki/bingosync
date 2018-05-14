@@ -71,6 +71,7 @@ class GameType(Enum):
     yugioh_forbidden_memories = 65
     links_awakening = 66
     dark_souls_3 = 67
+    bloodborne = 68
 
     def __str__(self):
         return self.short_name
@@ -255,6 +256,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
+    **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
