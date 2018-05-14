@@ -273,7 +273,8 @@ bingoList[5] = [
 { name: "6 Moons (Cap)", types: ["Cap_Moons"] },
 { name: "5 Moons from Music Notes", types: ["Music_Notes"] },
 { name: "3 Moons from Shiny Rocks", types: ["Shiny_Rocks"] },
-{ name: "45 Regional Coins (Cascade)", types: ["Cascade_Regional"] }
+{ name: "45 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
+{ name: "2 Moons from Slots", types: ["Slots"] }
 ];
 bingoList[6] = [
 { name: "20 Regional Coins (Lake)", types: ["Lake_Regional"] },
@@ -282,7 +283,8 @@ bingoList[6] = [
 { name: "20 Regional Coins (Lost)", types: ["Lost_Regional"] },
 { name: "30 Regional Coins (Cap)", types: ["Cap_Regional"] },
 { name: "5 Moons (Deep Woods)", types: ["Deep_Woods"] },
-{ name: "45 Regional Coins (Sand)", types: ["Sand_Regional"] }
+{ name: "45 Regional Coins (Sand)", types: ["Sand_Regional"] },
+{ name: "Herding Sheep in the Dunes (Sand)", types: ["Sand"] }
 ];
 bingoList[7] = [
 { name: "Purchase 6 Moons", types: ["Shop_Moons"] },
@@ -342,7 +344,7 @@ bingoList[11] = [
 { name: "30 Regional Coins (Lost)", types: ["Lost_Regional"] },
 { name: "10 Moons from Nuts", types: ["Nuts"] },
 { name: "24 Unique Captures", types: ["Unique_Captures"] },
-{ name: "55 Regional Coins (Sand)", types: ["Sand_Regional"] }
+{ name: "55 Regional Coins (Sand)", types: ["Sand_Regional"] },
 ];
 bingoList[12] = [
 { name: "34 Moons (Sand)", types: ["Sand_Moons", "Sand_Condition"] },
@@ -381,7 +383,8 @@ bingoList[14] = [
 { name: "6 Moons from sub-areas (Cap)", types: ["Cap"] },
 { name: "50 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
 { name: "60 Regional Coins (Sand)", types: ["Sand_Regional"] },
-{ name: "60 Regional Coins (Metro)", types: ["Metro_Regional"] }
+{ name: "60 Regional Coins (Metro)", types: ["Metro_Regional"] },
+{ name: "1 Checkpoint (Luncheon)", types: ["Luncheon"] }
 ];
 bingoList[15] = [
 { name: "18 Moons (Lost)", types: ["Lost_Moons"] },
@@ -405,7 +408,8 @@ bingoList[16] = [
 { name: "50 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
 { name: "World Peace in 4 Kingdoms (excl. Cap, Cloud, Lost)", types: ["World_Peace"] },
 { name: "40 Regional Coins (Lost)", types: ["Lost_Regional"] },
-{ name: "20 Regional Coins (Snow)", types: ["Snow_Regional"] }
+{ name: "20 Regional Coins (Snow)", types: ["Snow_Regional"] },
+{ name: "Jump-Rope Hero (Metro)", types: ["Metro"] }
 ];
 bingoList[17] = [
 { name: "10 Moons (Cap)", types: ["Cap_Moons"] },
@@ -424,9 +428,10 @@ bingoList[18] = [
 { name: "225 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "7 Checkpoints (Seaside)", types: ["Seaside"] },
 { name: "Uncork 4 Fountains (Seaside)", types: ["Uncork"] },
-{ name: "10 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "12 Moons (Snow)", types: ["Snow_Moons"] },
 { name: "25 Regional Coins (Snow)", types: ["Snow_Regional"] },
-{ name: "World Peace Restored! (Sand)", types: ["World_Peace"] }
+{ name: "World Peace Restored! (Sand)", types: ["World_Peace"] },
+{ name: "4 Moons (Luncheon)", types: ["Luncheon_Moons"] }
 ];
 bingoList[19] = [
 { name: "4 Warp-Painting Moons", types: ["Warp_Painting"] },
@@ -435,8 +440,10 @@ bingoList[19] = [
 { name: "9 Timer Challenges", types: ["Timer"] },
 { name: "45 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
 { name: "Purchase 10 Full Costume Sets", types: ["Outfits"] },
-{ name: "10 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
-{ name: "2 Barrier-Moons (Snow)", types: ["Snow"] }
+{ name: "14 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
+{ name: "3 Barrier-Moons (Snow)", types: ["Snow"] },
+{ name: "14 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "32 Unique Captures", types: ["Unique_Captures"] }
 ];
 bingoList[20] = [
 { name: "250 Total Regional Coins", types: ["Regional_Coins"] },
@@ -445,19 +452,23 @@ bingoList[20] = [
 { name: "50 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
 { name: "30 Regional Coins (Snow)", types: ["Snow_Regional"] },
 { name: "24 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
-{ name: "12 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
-{ name: "12 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "16 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
+{ name: "16 Moons (Snow)", types: ["Snow_Moons"] },
+{ name: "4 Moons from Wooden Crates", types: ["Crates"] },
+{ name: "3 Moons from Slots", types: ["Slots"] },
+{ name: "6 Moons (Luncheon)", types: ["Luncheon_Moons"] }
 ];
 bingoList[21] = [
 { name: "7 Stickers", types: ["Stickers"] },
 { name: "11 Treasure Chest Moons", types: ["Treasure_Chest"] },
 { name: "20 Moons (Cascade)", types: ["Cascade_Moons"] },
 { name: "55 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
-{ name: "14 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
+{ name: "18 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
 { name: "14 Moons (Snow)", types: ["Snow_Moons"] },
-{ name: "3 Barrier-Moons (Snow)", types: ["Snow"] },
+{ name: "4 Barrier-Moons (Snow)", types: ["Snow"] },
 { name: "Look at 5 Hint Arts", types: ["Hint_View"] },
-{ name: "70 Regional Coins (Wooded)", types: ["Wooded_Regional"] }
+{ name: "70 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
+{ name: "18 Moons (Snow)", types: ["Snow_Moons"] }
 ];
 bingoList[22] = [
 { name: "7 Moons from Moon Shards", types: ["Moon_Shards"] },
@@ -465,14 +476,24 @@ bingoList[22] = [
 { name: "4 Moons from sub-areas (Seaside)", types: ["Seaside"] },
 { name: "60 Regional Coins (Seaside)", types: ["Seaside_Regional"] },
 { name: "120 Moons (Total)", types: ["Total_Moons"] },
-{ name: "5 Ground-Pound Moons (Seaside)", types: ["Seaside", "Seaside_ConditionB"] }
+{ name: "5 Ground-Pound Moons (Seaside)", types: ["Seaside", "Seaside_ConditionB"] },
+{ name: "10 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "8 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "The Broodals Are After Some Cookin' (Luncheon)", types: ["Luncheon_Story"] },
+{ name: "1 Ground-Pound Moon (Luncheon)", types: ["Luncheon"] }
 ];
 bingoList[23] = [
 { name: "35 Regional Coins (Snow)", types: ["Snow_Regional"] },
 { name: "World Peace Restored! (Metro)", types: ["World_Peace"] },
 { name: "6 Ground-Pound Moons (Seaside)", types: ["Seaside", "Seaside_ConditionB"] },
 { name: "20 Moons (Lost)", types: ["Lost_Moons"] },
-{ name: "4 Barrier-Moons (Snow)", types: ["Snow"] }
+{ name: "10 Non-Underwater Moons (Seaside)", types: ["No_Moons", "Seaside_ConditionA", "Seaside_ConditionB"] },
+{ name: "15 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "10 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "2 Moons from sub-areas (Luncheon)", types: ["Luncheon"] },
+{ name: "1 Moon from Golden Turnips", types: ["Turnips"] },
+{ name: "2 Checkpoints (Luncheon)", types: ["Luncheon"] },
+{ name: "2 Ground-Pound Moons (Luncheon)", types: ["Luncheon"] }
 ];
 bingoList[24] = [
 { name: "7 Moons from Music Notes", types: ["Music_Notes"] },
@@ -480,12 +501,21 @@ bingoList[24] = [
 { name: "42 Moons (Metro)", types: ["Metro_Moons"] },
 { name: "275 Total Regional Coins", types: ["Regional_Coins"] },
 { name: "26 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
-{ name: "40 Moons (Sand)", types: ["Sand_Moons", "Sand_Condition"] }
+{ name: "40 Moons (Sand)", types: ["Sand_Moons", "Sand_Condition"] },
+{ name: "20 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "12 Moons (Luncheon)", types: ["Luncheon_Moons"] },
+{ name: "3 Ground-Pound Moons (Luncheon)", types: ["Luncheon"] }
 ];
 bingoList[25] = [
 { name: "World Peace Restored! (Seaside)", types: ["World_Peace"] },
 { name: "24 Moons (Lake)", types: ["Lake_Moons"] },
-{ name: "10 Non-Underwater Moons (Seaside)", types: ["No_Moons", "Seaside_ConditionA", "Seaside_ConditionB"] },
 { name: "World Peace Restored! (Snow)", types: ["World_Peace"] },
-{ name: "16 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] }
+{ name: "20 Moons (Seaside)", types: ["Seaside_Moons", "Seaside_ConditionA"] },
+{ name: "25 Regional Coins (Luncheon)", types: ["Luncheon_Regional"] },
+{ name: "Under the Cheese Rocks (Luncheon)", types: ["Luncheon_Story"] },
+{ name: "4 Moons from sub-areas (Luncheon)", types: ["Luncheon"] },
+{ name: "3 Checkpoints (Luncheon)", types: ["Luncheon"] },
+{ name: "Capture both the Cactus and the Meat", types: ["Capture_Both"] },
+{ name: "Capture both the Tree and the Meat", types: ["Capture_Both"] },
+{ name: "Capture the Cactus, the Tree and the Meat", types: ["Capture_Both"] }
 ];
