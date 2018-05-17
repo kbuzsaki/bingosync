@@ -1,77 +1,77 @@
 [
     {
-        "name": "Evolve something at Level 15"
+        "name": "Aromatherapy, Heal Bell, Refresh, or Wish"
     },
     {
-        "name": "10 Hoenn Pokemon"
-    },
-    {
-        "name": "TM19 (Giga Drain)"
-    },
-    {
-        "name": "TM41 (Torment)"
-    },
-    {
-        "name": "Vulpix, Growlithe, Mankey, or Meowth"
-    },
-    {
-        "name": "HM04 (Strength)"
-    },
-    {
-        "name": "Shiftry, Zangoose, Mawile, or Solrock"
-    },
-    {
-        "name": "A Pokemon with 4 non-TM status moves"
-    },
-    {
-        "name": "Evolve something with a Moon Stone"
-    },
-    {
-        "name": "Call a Kindler"
-    },
-    {
-        "name": "One Lv50 Pokemon"
-    },
-    {
-        "name": "Lock-On, Mind Reader, Foresight, or Odor Sleuth"
-    },
-    {
-        "name": "White Herb"
-    },
-    {
-        "name": "Bashful, Docile, Hardy, Quirky, or Serious"
-    },
-    {
-        "name": "Adamant, Brave, Lonely, or Naughty"
-    },
-    {
-        "name": "Barrage, Icicle Spear, Bone Rush, or Arm Thrust"
-    },
-    {
-        "name": "Soft Sand"
-    },
-    {
-        "name": "HM05 (Flash)"
-    },
-    {
-        "name": "Fix the generator in New Mauville"
+        "name": "Evolve something at Level 30"
     },
     {
         "name": "Call a Picnicker"
     },
     {
-        "name": "Defeat all 11 trainers on Route 110"
+        "name": "Call an Expert"
+    },
+    {
+        "name": "Defeat all 9 trainers in Lavaridge Gym"
+    },
+    {
+        "name": "TM45 (Attract)"
+    },
+    {
+        "name": "TM15 (Hyper Beam)"
+    },
+    {
+        "name": "Barrage, Icicle Spear, Bone Rush, or Arm Thrust"
     },
     {
         "name": "2 Fighting-type Pokemon"
     },
     {
-        "name": "20 TMs"
+        "name": "Dragonair, Pupitar, Metang, or Shelgon"
     },
     {
-        "name": "Take all of the Berry Master's Berries"
+        "name": "Illuminate, Stench, Run Away, or Pickup"
     },
     {
-        "name": "Call a Fisherman"
+        "name": "Win a Tag Battle"
+    },
+    {
+        "name": "Beat the Verdanturf Battle Tent"
+    },
+    {
+        "name": "Hasty, Jolly, Naive, or Timid"
+    },
+    {
+        "name": "Catch 2 Pokemon in the Safari Zone"
+    },
+    {
+        "name": "Defeat all 8 trainers on Route 103"
+    },
+    {
+        "name": "Call a Cooltrainer"
+    },
+    {
+        "name": "TM46 (Thief)"
+    },
+    {
+        "name": "Get an item made on Route 113"
+    },
+    {
+        "name": "Groudon, Kyogre, or Rayquaza"
+    },
+    {
+        "name": "Defeat all 11 trainers on Route 110"
+    },
+    {
+        "name": "Defeat all 7 trainers in Dewford Gym"
+    },
+    {
+        "name": "Evolve something with a Leaf Stone"
+    },
+    {
+        "name": "TM17 (Protect)"
+    },
+    {
+        "name": "Call a Gentleman"
     }
 ]

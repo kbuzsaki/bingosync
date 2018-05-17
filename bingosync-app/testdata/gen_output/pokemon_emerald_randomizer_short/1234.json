@@ -1,77 +1,77 @@
 [
     {
-        "name": "6 Flying-type Pokemon"
+        "name": "Exp. Share"
     },
     {
-        "name": "Mew, Celebi, Jirachi, or Deoxys"
+        "name": "Take all of the Berry Master's Berries"
     },
     {
-        "name": "Magneton, Rhydon, or Porygon2"
+        "name": "Chlorophyll, Swift Swim, Rain Dish, or Sand Veil"
     },
     {
-        "name": "Evolve 4 Pokemon"
+        "name": "Static, Flame Body, Poison Point, or Cute Charm"
     },
     {
-        "name": "Graveler, Haunter, Machoke, or Kadabra"
+        "name": "Item in Scorched Slab"
     },
     {
-        "name": "Call a Fisherman"
+        "name": "Any 2 baby Pokemon"
     },
     {
-        "name": "Silk Scarf"
+        "name": "Call a Bug Maniac"
     },
     {
-        "name": "A Pokemon with 4 non-TM status moves"
+        "name": "Barrage, Icicle Spear, Bone Rush, or Arm Thrust"
     },
     {
-        "name": "Shiftry, Zangoose, Mawile, or Solrock"
+        "name": "TM15 (Hyper Beam)"
     },
     {
-        "name": "TM05 (Roar)"
+        "name": "Call a Gentleman"
     },
     {
-        "name": "Call a Lady"
-    },
-    {
-        "name": "Adamant, Brave, Lonely, or Naughty"
-    },
-    {
-        "name": "TM28 (Dig)"
-    },
-    {
-        "name": "Block, Mean Look, Spider Web, or Spikes"
-    },
-    {
-        "name": "TM35 (Flamethrower)"
-    },
-    {
-        "name": "Ludicolo, Seviper, Sableye, or Lunatone"
-    },
-    {
-        "name": "TM44 (Rest)"
-    },
-    {
-        "name": "Sharpedo, Wailord, Camerupt, or Claydol"
-    },
-    {
-        "name": "Groudon, Kyogre, or Rayquaza"
-    },
-    {
-        "name": "Win a Tag Battle"
-    },
-    {
-        "name": "Lickitung, Mr. Mime, or Farfetch'd"
-    },
-    {
-        "name": "Call a PKMN Breeder"
+        "name": "Dragonair, Pupitar, Metang, or Shelgon"
     },
     {
         "name": "Catch 2 Pokemon in the Safari Zone"
     },
     {
-        "name": "Macho Brace"
+        "name": "Call a Ruin Maniac"
     },
     {
-        "name": "Fix the generator in New Mauville"
+        "name": "Defeat all 6 trainers in Mauville Gym"
+    },
+    {
+        "name": "Call a Swimmer"
+    },
+    {
+        "name": "Soft Sand"
+    },
+    {
+        "name": "A Pokemon with fewer than 4 moves"
+    },
+    {
+        "name": "Arena Trap, Shadow Tag, or Magnet Pull"
+    },
+    {
+        "name": "Lotad Doll"
+    },
+    {
+        "name": "Evolve something at Level 15"
+    },
+    {
+        "name": "Smoke Ball"
+    },
+    {
+        "name": "Grovyle, Combusken, or Marshtomp"
+    },
+    {
+        "name": "Met at Team Magma Hideout"
+    },
+    {
+        "name": "Call a Battle Girl"
+    },
+    {
+        "name": "Get the Mystery Gift"
     }
 ]
