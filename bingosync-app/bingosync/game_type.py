@@ -72,6 +72,7 @@ class GameType(Enum):
     links_awakening = 66
     dark_souls_3 = 67
     bloodborne = 68
+    cuphead = 69
 
     def __str__(self):
         return self.short_name
@@ -277,6 +278,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
+    **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
 }
 
 GAME_TYPE_GROUPS = {}
