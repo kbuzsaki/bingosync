@@ -67,7 +67,7 @@ class GameType(Enum):
     final_fantasy_1_randomizer_short = 61
     final_fantasy_1_randomizer_long = 62
     ff4_free_enterprise = 63
-    spyro_2_4_0 = 64
+    spyro_2_4_x = 64
     yugioh_forbidden_memories = 65
     links_awakening = 66
     dark_souls_3 = 67
@@ -229,7 +229,7 @@ GAME_GROUPS = {
         "name": "Spyro 2: Ripto's Rage",
         "variants": [
             (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
-            (GameType.spyro_2_4_0, "4.0", "Spyro 2 - 4.0"),
+            (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
         ],
     },
     GameType.lufia_2: {

@@ -366,235 +366,266 @@ bingoGenerator = function (bingoList, opts) {
 
 var bingoList = [];
 bingoList[1] = [
-  { name: "Outdoor Lamps & Tractor Path", boardtypes: ["outdoorlamps","tractorpath"] },
-  { name: "100% Glimmer", boardtypes: ["max1a"] },
-  { name: "All gems in Glimmer", boardtypes: ["max1b"] },
-  { name: "All orbs in Glimmer", boardtypes: ["max1c"] },
-  { name: "4+ orbs in Hurricos & Magma Cone", boardtypes: [] },
-  { name: "Lizard Hunt & Hockey 2", boardtypes: [] },
-  { name: "Use all superfly powerups", boardtypes: [] },
-  { name: "Buy climb with 10+ orbs", boardtypes: [] },
-  { name: "Outdoor Lamps & Party Crashers", boardtypes: ["outdoorlamps","partycrashers"] }
+{ name: "All gems in Glimmer & Scorch Skill Point", types: ["gem1"] },
+{ name: "All orbs in Robotica Farms", types: ["orb3"] },
+{ name: "Outdoor Lamps & Tractor Path", types: ["outdoorlamps","tractorpath","glirob"] },
+{ name: "Outdoor Lamps & Party Crashers", types: ["outdoorlamps","partycrashers","glimag"] },
+{ name: "4+ orbs in Hurricos & Magma Cone", types: [] },
+{ name: "Speak to all 9 instances of Zoe", types: [] },
+{ name: "Use all '2' powerups", types: ["2p"] },
+{ name: "100% Glimmer", types: ["max1"] }
 ];
 bingoList[2] = [
-  { name: "Hula Girls & Turtle Boxes", boardtypes: ["hulagirls","turtleboxes"] },
-  { name: "100% Idol Springs", boardtypes: ["max1a"] },
-  { name: "All gems in Idol Springs", boardtypes: ["max1b"] },
-  { name: "All orbs in Idol Springs", boardtypes: ["max1c"] },
-  { name: "4+ orbs in Glimmer & Sunny Beach", boardtypes: [] },
-  { name: "Turtle Soup 2 & Factory Glide 1", boardtypes: ["turtlesoup2","factoryglide1"] },
-  { name: "Break 11 Strong Chests", boardtypes: [] },
-  { name: "Hula Girls & Mantas 2", boardtypes: ["hulagirls","mantas2"] }
+{ name: "All gems in Hurricos", types: ["gem1"] },
+{ name: "All orbs in Shady Oasis", types: ["orb3"] },
+{ name: "Lightning Orbs & Lamp Thieves", types: ["lightningorbs","lampthieves","hursha"] },
+{ name: "Lightning Orbs & Floating Mines", types: ["lightningorbs","floatingmines","hurbre"] },
+{ name: "5+ orbs in Breeze Harbour and Zephyr", types: [] },
+{ name: "Buy Climb & Headbash", types: [] },
+{ name: "Use all invincibility powerups", types: [] },
+{ name: "100% Hurricos", types: ["max1"] }
 ];
 bingoList[3] = [
-  { name: "Hockey 1 & Pencil", boardtypes: ["hockey","pencil"] },
-  { name: "100% Colossus", boardtypes: ["max1a"] },
-  { name: "All gems in Colossus", boardtypes: ["max1a"] },
-  { name: "All orbs in Colossus", boardtypes: ["max1a"] },
-  { name: "4+ orbs in Skelos Badlands & Mystic Marsh", boardtypes: [] },
-  { name: "Hockey 2 & Factory Glide 2", boardtypes: ["hockey2","factoryglide2"] },
-  { name: "12 Summer Forest orbs", boardtypes: [] },
-  { name: "Hockey 1 & Dinos 2", boardtypes: ["hockey1","dinos2"] }
+{ name: "All orbs in Breeze Harbor", types: ["orb2"] },
+{ name: "All orbs in Hurricos", types: ["orb1"] },
+{ name: "Factory Glide 2 & Trolley", types: ["factoryglide2","trolley","hurbre"] },
+{ name: "Trolley & Lamp Thieves", types: ["trolley","lampthieves","bresha"] },
+{ name: "Break 3 Mystery Jars", types: [] },
+{ name: "600 combined gems in Skelos Badlands & Shady Oasis", types: [] },
+{ name: "Use all '18' powerups", types: ["18p"] },
+{ name: "100% Breeze Harbor", types: ["max2"] }
 ];
 bingoList[4] = [
-  { name: "Lightning Orbs & Lamp Thieves", boardtypes: ["lightningorbs","lampthieves"] },
-  { name: "100% Hurricos", boardtypes: ["max1a"] },
-  { name: "All orbs in Hurricos", boardtypes: ["max1b"] },
-  { name: "All gems in Hurricos", boardtypes: ["max1c"] },
-  { name: "5+ orbs in Breeze Harbor & Zephyr", boardtypes: [] },
-  { name: "Factory Glide 1 & Cowleks 2", boardtypes: ["factoryglide1","cowleks2"] },
-  { name: "10 Autumn Plains orbs", boardtypes: [] },
-  { name: "Collect 8 pink gems", boardtypes: [] },
-  { name: "Lightning Orbs & Floating Mines", boardtypes: ["lightningorbs","floatingmines"] }
+{ name: "All gems in Crystal Glacier", types: ["gem2"] },
+{ name: "All orbs in Fracture Hills", types: ["orb3"] },
+{ name: "George & Juliet 2", types: ["george","juliet2","cryzep"] },
+{ name: "George & Faun", types: ["george","faun","cryfra"] },
+{ name: "250 gems in both Zephyr and Shady Oasis", types: [] },
+{ name: "Use all supercharge powerups", types: [] },
+{ name: "10 Autumn Plains orbs", types: [] },
+{ name: "100% Crystal Glacier", types: ["max2"] }
 ];
 bingoList[5] = [
-  { name: "George & Juliet 2", boardtypes: ["george","juliet2"] },
-  { name: "100% Crystal Glacier", boardtypes: ["max2a"] },
-  { name: "All orbs in Crystal Glacier", boardtypes: ["max2b"] },
-  { name: "All gems in Crystal Glacier", boardtypes: ["max2c"] },
-  { name: "4+ orbs in Colossus & Fracture Hills", boardtypes: [] },
-  { name: "250 gems in both Crystal Glacier & Metropolis", boardtypes: [] },
-  { name: "250 gems in both Colossus & Sunny Beach", boardtypes: [] },
-  { name: "800+ homeworld gems", boardtypes: [] },
-  { name: "George & Faun", boardtypes: ["george","faun"] }
+{ name: "Unlock all speedways", types: [] },
+{ name: "All gems in 3 speedways", types: [] },
+{ name: "All gems in 3 speedways", types: [] },
+{ name: "Ocean & Canyon orbs", types: [] },
+{ name: "Ocean & Metro orbs", types: [] },
+{ name: "Metro & Icy orbs", types: [] },
+{ name: "Icy & Canyon orbs", types: [] },
+{ name: "Unlock all speedways", types: [] }
 ];
 bingoList[6] = [
-  { name: "Bombo & UFOs 1", boardtypes: ["bombo","ufos1"] },
-  { name: "100% Scorch", boardtypes: ["max3a"] },
-  { name: "All orbs in Scorch", boardtypes: ["max3b"] },
-  { name: "All gems in Scorch", boardtypes: ["max3c"] },
-  { name: "5+ orbs in Cloud Temples & Metropolis", boardtypes: [] },
-  { name: "All enemies in Scorch", boardtypes: [] },
-  { name: "All end of level orbs", boardtypes: [] },
-  { name: "Break 15 firework bottles", boardtypes: [] },
-  { name: "Bombo & Bells", boardtypes: ["bombo","bells"] }
+{ name: "100% Autumn Plains", types: ["hw1"] },
+{ name: "100% Winter Tundra", types: ["hw2"] },
+{ name: "All Boss Skill Points", types: ["hw3"] },
+{ name: "1000 Winter Tundra gems", types: ["hw4"] },
+{ name: "1200 Autumn Plains gems", types: ["hw5"] },
+{ name: "1000 Summer Forest gems", types: ["hw6"] },
+{ name: "Enter 3 inactive portals from out of bounds", types: ["hw7"] },
+{ name: "800 Homeworld gems", types: ["hw8"] },
+{ name: "7 Homeworld orbs", types: ["hw9"] },
+{ name: "Unlock Aquaria, Zephyr and Shady", types: ["hw10"] },
+{ name: "100% Summer Forest", types: ["hw11"] }
 ];
 bingoList[7] = [
-  { name: "2 Professor Orbs", boardtypes: [] },
-  { name: "Enter 3 inactive portals from out of bounds", boardtypes: [] },
-  { name: "Climb a ladder in 4 different levels", boardtypes: [] },
-  { name: "4+ orbs in Aquaria Towers & Scorch", boardtypes: [] },
-  { name: "Speak to all 8 instances of Zoe", boardtypes: [] }
+{ name: "Break 15 butterfly jars", types: ["misc1"] },
+{ name: "Ignite 4 rockets", types: ["misc2"] },
+{ name: "Break 3 headbash chests", types: ["misc3"] },
+{ name: "Stand on 10 portals & both Skelos skulls", types: ["misc4"] },
+{ name: "Stand on 5 portals you own the talismans for", types: ["misc5"] },
+{ name: "Enter 8 return home portals", types: ["misc6"] },
+{ name: "7 skill points", types: ["misc7"] },
+{ name: "Collect 8 pink gems", types: ["misc8"] },
+{ name: "Break 15 firework bottles", types: ["misc9"] },
+{ name: "Defeat all enemies in 5 levels", types: ["misc10"] },
+{ name: "Break 11 strong chests", types: ["misc11"] }
 ];
 bingoList[8] = [
-  { name: "Use all '14' powerups", boardtypes: [] },
-  { name: "Break 3 Mystery Jars", boardtypes: [] },
-  { name: "Use all '15' powerups", boardtypes: [] }
+{ name: "All gems in Metropolis", types: ["gem3"] },
+{ name: "All orbs in Scorch", types: ["orb2"] },
+{ name: "Bells & Ox", types: ["bells","ox","clomet"] },
+{ name: "Monkeys & Ox", types: ["monkeys","ox","scomet"] },
+{ name: "Use all '2' powerups", types: ["2p"] },
+{ name: "Use all '20' powerups", types: ["20p"] },
+{ name: "8 Winter Tundra orbs", types: [] },
+{ name: "100% Metropolis", types: ["max3"] }
 ];
 bingoList[9] = [
-  { name: "Ignite 4 rockets", boardtypes: [] },
-  { name: "Buy Swim with 8+ orbs", boardtypes: [] },
-  { name: "Unlock Aquaria Towers, Zephyr & Shady Oasis", boardtypes: [] },
-  { name: "Collect all spirit particles in 5 levels", boardtypes: [] }
+{ name: "Turtle Soup 2 & UFOs 2", types: ["turtlesoup2","ufos2","sunmet"] },
+{ name: "Alchemist & Popcorn 2", types: ["alchemist","popcorn2","framag"] },
+{ name: "Cowleks 2 & UFOs 2", types: ["cowleks2","ufos2","zepmet"] },
+{ name: "Lizard Hunt & #BoneDance", types: ["lizardhunt","bonedance","gliske"] },
+{ name: "Talismans in Hurricos, Scorch & Magma Cone", types: [] },
+{ name: "Talismans in Idol Springs, Zephyr & Shady Oasis", types: [] },
+{ name: "Talismans in Colossus, Aquaria Towers & Breeze Harbor", types: [] },
+{ name: "Talismans in Sunny Beach, Skelos Badlands & Scorch", types: [] },
+{ name: "Lizard Hunt & Hockey 2", types: ["lizardhunt","hockey2","glicol"] }
 ];
 bingoList[10] = [
-  { name: "Agent 0 & Monkeys", boardtypes: ["agent0","monkeys"] },
-  { name: "100% Cloud Temples", boardtypes: ["max3a"] },
-  { name: "All gems in Cloud Temples", boardtypes: ["max3b"] },
-  { name: "All orbs in Cloud Temples", boardtypes: ["max3c"] },
-  { name: "600+ gems in Scorch & Metropolis", boardtypes: [] },
-  { name: "All enemies in Cloud Temples", boardtypes: [] },
-  { name: "Break 4 Headbash Chests", boardtypes: [] },
-  { name: "250 gems in both Scorch & Mystic Marsh", boardtypes: [] },
-  { name: "Agent 0 & UFOs 1", boardtypes: ["agent0","ufos1"] }
+{ name: "All gems in Colossus", types: ["gem1"] },
+{ name: "All gems in Mystic Marsh", types: ["gem3"] },
+{ name: "Hockey 1 & Basil", types: ["hockey1","basil","colmys"] },
+{ name: "Hockey 1 & Dinos 1", types: ["hockey1","dinos1","colske"] },
+{ name: "4+ orbs in Skelos Badlands & Mystic Marsh", types: [] },
+{ name: "650 combined gems in Glimmer & Skelos Badlands", types: [] },
+{ name: "Seaweed Skill Point", types: [] },
+{ name: "100% Colossus", types: ["max1"] }
 ];
 bingoList[11] = [
-  { name: "Earthshapers & Draclets", boardtypes: ["earthshapers","draclets"] },
-  { name: "100% Fracture Hills", boardtypes: ["max3a"] },
-  { name: "All orbs in Fracture Hills", boardtypes: ["max3b"] },
-  { name: "All gems in Fracture Hills", boardtypes: ["max2c"] },
-  { name: "Defeat all enemies in Fracture Hills", boardtypes: [] },
-  { name: "300 gems in both Skelos Badlands & Breeze Harbor", boardtypes: [] },
-  { name: "Alchemist & Popcorn 2", boardtypes: [] },
-  { name: "Earthshapers & Juliet 2", boardtypes: ["earthshapers","juliet2"] }
+{ name: "All gems in Idol Springs", types: ["gem1"] },
+{ name: "All orbs in Aquaria Towers", types: ["orb1"] },
+{ name: "Hula Girls & Turtle Boxes", types: ["hulagirls","turtleboxes","idosun"] },
+{ name: "Hula Girls & Mantas 2", types: ["hulagirls","mantas2","idoaqu"] },
+{ name: "4+ orbs in Glimmer & Sunny Beach", types: [] },
+{ name: "Buy Swim with 8+ orbs", types: [] },
+{ name: "Use all fireball powerups", types: [] },
+{ name: "100% Idol Springs", types: ["max1"] }
 ];
 bingoList[12] = [
-  { name: "Trolley & Factory Glide 2", boardtypes: ["trolley","factoryglide2"] },
-  { name: "100% Breeze Harbor", boardtypes: ["max2a"] },
-  { name: "All orbs in Breeze Harbor", boardtypes: ["max2b"] },
-  { name: "All gems in Breeze Harbor", boardtypes: ["max2c"] },
-  { name: "650+ gems in Hurricos & Breeze Harbor", boardtypes: [] },
-  { name: "Stand on 10 Portals & both Skelos Skulls", boardtypes: [] },
-  { name: "Activate 5 different powerup types", boardtypes: [] },
-  { name: "Use all invincibility powerups", boardtypes: [] },
-  { name: "Trolley & Lamp Thieves", boardtypes: ["trolley","lampthieves"] }
+{ name: "All gems in Sunny Beach", types: ["gem1"] },
+{ name: "All orbs in Idol Springs", types: ["orb1"] },
+{ name: "Turtle Soup 1 & Mantas 2", types: ["turtlesoup1","mantas2","sunaqu"] },
+{ name: "Puzzle & Turtle Soup 1", types: ["puzzle","turtlesoup1","idosun"] },
+{ name: "Plant all seeds in Zephyr", types: [] },
+{ name: "600 combined gems in Magma Cone & Aquaria Towers", types: [] },
+{ name: "12 Summer Forest orbs", types: [] },
+{ name: "100% Sunny Beach", types: ["max1"] }
 ];
 bingoList[13] = [
-  { name: "Popcorn 1 & Indoor Lamps", boardtypes: ["popcorn1","indoorlamps"] },
-  { name: "100% Magma Cone", boardtypes: ["max2a"] },
-  { name: "All gems in Magma Cone", boardtypes: ["max2b"] },
-  { name: "All orbs in Magma Cone", boardtypes: ["max2c"] },
-  { name: "600+ gems in Glimmer & Crystal Glacier", boardtypes: [] },
-  { name: "Break 15 butterfly jars", boardtypes: [] },
-  { name: "Popcorn 2 & Mantas 1", boardtypes: ["popcorn2","mantas1"] },
-  { name: "Popcorn 1 & Tractor Path", boardtypes: ["popcorn1","tractorpath"] }
+{ name: "All gems in Robotica Farms", types: ["gem3"] },
+{ name: "All gems in Magma Cone", types: ["gem2"] },
+{ name: "Indoor Lamps & Robot Scarecrows", types: ["indoorlamps","robotscarecrows","glirob"] },
+{ name: "Party Crashers & Robot Scarecrows", types: ["partycrashers","robotscarecrows","magrob"] },
+{ name: "Pay Moneybags 7 times", types: [] },
+{ name: "250 gems in both Glimmer & Metropolis", types: [] },
+{ name: "Use all superfly powerups", types: [] },
+{ name: "100% Robotica Farms", types: ["max3"] }
 ];
 bingoList[14] = [
-  { name: "Turtle Soup 1 & Mantas 2", boardtypes: ["turtlesoup1","mantas2"] },
-  { name: "100% Sunny Beach", boardtypes: ["max1a"] },
-  { name: "All gems in Sunny Beach", boardtypes: ["max1b"] },
-  { name: "All orbs in Sunny Beach", boardtypes: ["max1c"] },
-  { name: "600+ gems in Idol Springs & Skelos Badlands", boardtypes: [] },
-  { name: "Seaweed Skill Point", boardtypes: [] },
-  { name: "275 gems in both Idol Springs & Fracture Hills", boardtypes: [] },
-  { name: "Use all fireball powerups", boardtypes: [] },
-  { name: "Turtle Soup 1 & Puzzle", boardtypes: ["turtlesoup1","puzzle"] }
+{ name: "All gems in Aquaria Towers", types: ["gem1"] },
+{ name: "All orbs in Sunny Beach", types: ["orb1"] },
+{ name: "Puzzle & Seahorses", types: ["puzzle","seahorses","idoaqu"] },
+{ name: "Turtle Boxes & Seahorses", types: ["turtleboxes","seahorses","sunaqu"] },
+{ name: "250 gems in both Idol Springs & Cloud Temples", types: [] },
+{ name: "Use all '14' powerups", types: ["14p"] },
+{ name: "All enemies in Aquaria Towers", types: [] },
+{ name: "100% Aquaria Towers", types: ["max1"] }
 ];
 bingoList[15] = [
-  { name: "Dinos 1 & Spirit Statues", boardtypes: ["dinos1","spiritstatues"] },
-  { name: "100% Skelos Badlands", boardtypes: ["max2a"] },
-  { name: "All gems in Skelos Badlands", boardtypes: ["max2b"] },
-  { name: "All orbs in Skelos Badlands", boardtypes: ["max2c"] },
-  { name: "600+ gems in Colossus & Shady Oasis", boardtypes: [] },
-  { name: "7 skill points", boardtypes: [] },
-  { name: "#BoneDance & Turtle Soup 2", boardtypes: ["bonedance","turtlesoup2"] },
-  { name: "Dinos 1 & Pencil", boardtypes: ["dinos1","pencil"] }
+{ name: "All gems in Skelos Badlands", types: ["gem2"] },
+{ name: "All orbs in Colossus", types: ["orb1"] },
+{ name: "Spirit Statues & Dinos 1", types: ["spiritstatues","dinos1","colske"] },
+{ name: "Dinos 1 & Basil", types: ["dinos1","basil","skemys"] },
+{ name: "300 gems in both Idol Springs and Colossus", types: [] },
+{ name: "Use all spring powerups", types: [] },
+{ name: "2 Professor orbs", types: [] },
+{ name: "100% Skelos Badlands", types: ["max2"] }
 ];
 bingoList[16] = [
-  { name: "1000+ Summer Forest gems", boardtypes: [] },
-  { name: "100% Summer Forest", boardtypes: [] },
-  { name: "100% Winter Tundra", boardtypes: [] },
-  { name: "Hockey Skill Point", boardtypes: [] }
+{ name: "All orbs in Mystic Marsh", types: ["orb3"] },
+{ name: "All orbs in Skelos Badlands", types: ["orb2"] },
+{ name: "Dinos 2 & Pencil", types: ["dinos2","pencil","skemys"] },
+{ name: "Spirit Statues & Pencil", types: ["spiritstatues","pencil","colmys"] },
+{ name: "Hockey Skill Point", types: [] },
+{ name: "Use all '18' powerups", types: ["18p"] },
+{ name: "All enemies in Mystic Marsh", types: [] },
+{ name: "100% Mystic Marsh", types: ["max3"] }
 ];
 bingoList[17] = [
-  { name: "Ocean & Icy orbs", boardtypes: [] },
-  { name: "All gems in 3 speedways", boardtypes: [] },
-  { name: "Metro & Icy orbs", boardtypes: [] },
-  { name: "Ocean & Canyon orbs", boardtypes: [] },
-  { name: "Metro & Canyon orbs", boardtypes: [] }
+{ name: "All gems in Scorch", types: ["gem2"] },
+{ name: "All gems in Cloud Temples", types: ["gem3"] },
+{ name: "Bombo & UFOs 1", types: ["bombo","ufos1","scomet"] },
+{ name: "Bombo & Bells", types: ["bombo","bells","scoclo"] },
+{ name: "5+ orbs in Cloud Temples & Metropolis", types: [] },
+{ name: "600 combined gems in Fracture Hills & Metropolis", types: [] },
+{ name: "All enemies in Scorch", types: [] },
+{ name: "100% Scorch", types: ["max2"] }
 ];
 bingoList[18] = [
-  { name: "Stand on 5 portals you own the talisman for", boardtypes: [] },
-  { name: "Use all '2' powerups", boardtypes: [] },
-  { name: "Use all '18' powerups", boardtypes: [] },
-  { name: "Use all '20' powerups", boardtypes: [] }
+{ name: "100% Autumn Plains", types: ["hw1"] },
+{ name: "100% Winter Tundra", types: ["hw2"] },
+{ name: "All Boss Skill Points", types: ["hw3"] },
+{ name: "1000 Winter Tundra gems", types: ["hw4"] },
+{ name: "1200 Autumn Plains gems", types: ["hw5"] },
+{ name: "1000 Summer Forest gems", types: ["hw6"] },
+{ name: "Enter 3 inactive portals from out of bounds", types: ["hw7"] },
+{ name: "800 Homeworld gems", types: ["hw8"] },
+{ name: "7 Homeworld orbs", types: ["hw9"] },
+{ name: "Unlock Aquaria, Zephyr and Shady", types: ["hw10"] },
+{ name: "100% Summer Forest", types: ["hw11"] }
 ];
 bingoList[19] = [
-  { name: "Collect an orb in 10 different levels", boardtypes: [] },
-  { name: "Talk to Brother Curtis with 4+ Talismans & 4+ orbs", boardtypes: [] },
-  { name: "Unlock all speedways", boardtypes: [] },
-  { name: "Use all supercharge powerups", boardtypes: [] }
+{ name: "Break 15 butterfly jars", types: ["misc1"] },
+{ name: "Ignite 4 rockets", types: ["misc2"] },
+{ name: "Break 3 headbash chests", types: ["misc3"] },
+{ name: "Stand on 10 portals & both Skelos skulls", types: ["misc4"] },
+{ name: "Stand on 5 portals you own the talismans for", types: ["misc5"] },
+{ name: "Enter 8 return home portals", types: ["misc6"] },
+{ name: "7 skill points", types: ["misc7"] },
+{ name: "Collect 8 pink gems", types: ["misc8"] },
+{ name: "Break 15 firework bottles", types: ["misc9"] },
+{ name: "Defeat all enemies in 5 levels", types: ["misc10"] },
+{ name: "Break 11 strong chests", types: ["misc11"] }
 ];
 bingoList[20] = [
-  { name: "Ox & Bells", boardtypes: ["ox","bombo"] },
-  { name: "100% Metropolis", boardtypes: ["max3a"] },
-  { name: "All orbs in Metropolis", boardtypes: ["max3b"] },
-  { name: "All gems in Metropolis", boardtypes: ["max3c"] },
-  { name: "1000+ gems in Winter Tundra", boardtypes: [] },
-  { name: "All boss skill points", boardtypes: [] },
-  { name: "250 gems in both Cloud Temples & Robotica Farms", boardtypes: [] },
-  { name: "Ox & Monkeys", boardtypes: ["ox","monkeys"] }
+{ name: "All orbs in Cloud Temples", types: ["orb3"] },
+{ name: "All orbs in Metropolis", types: ["orb3"] },
+{ name: "Monkeys & Agent 0", types: ["monkeys","agent0","scoclo"] },
+{ name: "Agent 0 & UFOs 1", types: ["agent0","ufos1","clomet"] },
+{ name: "Use all '20' powerups", types: ["20p"] },
+{ name: "250 gems in both Scorch & Fracture Hills", types: [] },
+{ name: "Use 5 unique powerup types", types: [] },
+{ name: "100% Cloud Temples", types: ["max3"] }
 ];
 bingoList[21] = [
-  { name: "Cowleks 1 & Faun", boardtypes: ["cowleks1","faun"] },
-  { name: "100% Zephyr", boardtypes: ["max2a"] },
-  { name: "All orbs in Zephyr", boardtypes: ["max2b"] },
-  { name: "All gems in Zephyr", boardtypes: ["max2c"] },
-  { name: "600+ gems in Sunny Beach & Zephyr", boardtypes: [] },
-  { name: "Defeat all enemies in Zephyr", boardtypes: [] },
-  { name: "Plant all seeds in Zephyr", boardtypes: [] },
-  { name: "Cowleks 2 & UFOs 2", boardtypes: ["cowleks2","ufos2"] },
-  { name: "Cowleks 1 & Draclets", boardtypes: ["cowleks1","draclets"] }
+{ name: "Turtle Soup 2 & Alchemist", types: ["turtlesoup2","alchemist","sunfra"] },
+{ name: "Mantas 1 & Popcorn 2", types: ["mantas1","popcorn2","aqumag"] },
+{ name: "Factory Glide 1 & Cowleks 2", types: ["factoryglide1","cowleks2","hurzep"] },
+{ name: "Mantas 2 & #BoneDance", types: ["mantas2","bonedance","aquske"] },
+{ name: "20 orbs", types: [] },
+{ name: "20 orbs", types: [] },
+{ name: "2000 gems", types: [] },
+{ name: "2000 gems", types: [] },
+{ name: "Hockey 2 & Factory Glide 1", types: ["hockey2","factoryglide1","colhur"] }
 ];
 bingoList[22] = [
-  { name: "Hippos & Floating Mines", boardtypes: ["hippos","floatingmines"] },
-  { name: "100% Shady Oasis", boardtypes: ["max3a"] },
-  { name: "All orbs in Shady Oasis", boardtypes: ["max3b"] },
-  { name: "All gems in Shady Oasis", boardtypes: ["max3c"] },
-  { name: "Talismans in Hurricos, Aquaria Towers & Shady Oasis", boardtypes: [] },
-  { name: "Buy headbash with 4 talismans", boardtypes: [] },
-  { name: "Pay moneybags 7 times", boardtypes: [] },
-  { name: "20 orbs", boardtypes: [] },
-  { name: "Hippos & Factory Glide 2", boardtypes: ["hippos","factoryglide2"] }
+{ name: "All gems in Shady Oasis", types: ["gem3"] },
+{ name: "All gems in Breeze Harbor", types: ["gem2"] },
+{ name: "Floating Mines & Hippos", types: ["floatingmines","hippos","bresha"] },
+{ name: "Factory Glide 2 & Hippos", types: ["factoryglide2","hippos","hursha"] },
+{ name: "Speak to Brother Curtis with 4+ talismans & 4+ orbs", types: [] },
+{ name: "250 gems in both Sunny Beach & Breeze Harbor", types: [] },
+{ name: "All end of level orbs", types: [] },
+{ name: "100% Shady Oasis", types: ["max3"] }
 ];
 bingoList[23] = [
-  { name: "Basil & Dinos 2", boardtypes: ["basil","dinos2"] },
-  { name: "100% Mystic Marsh", boardtypes: ["max3a"] },
-  { name: "All gems in Mystic Marsh", boardtypes: ["max3b"] },
-  { name: "All orbs in Mystic Marsh", boardtypes: ["max3c"] },
-  { name: "Talismans in Colossus, Skelos Badlands & Fracture Hills", boardtypes: [] },
-  { name: "All enemies in Mystic Marsh", boardtypes: [] },
-  { name: "Enter 8 return home portals", boardtypes: [] },
-  { name: "9 Winter Tundra orbs", boardtypes: [] },
-  { name: "Basil & Spirit Statues", boardtypes: ["basil","spiritstatues"] }
+{ name: "All gems in Fracture Hills", types: ["gem2"] },
+{ name: "All orbs in Zephyr", types: ["orb2"] },
+{ name: "Draclets & Earthshapers", types: ["draclets","earthshapers"] },
+{ name: "Juliet 2 &  Earthshapers", types: ["juliet2","earthshapers","zepfra"] },
+{ name: "Use all '14' powerups", types: ["14p"] },
+{ name: "Use all '15' powerups", types: ["15p"] },
+{ name: "All enemies in Fracture Hills", types: [] },
+{ name: "100% Fracture Hills", types: ["max3"] }
 ];
 bingoList[24] = [
-  { name: "Seahorses & Puzzle", boardtypes: ["seahorses","puzzle"] },
-  { name: "100% Aquaria Towers", boardtypes: ["max1a"] },
-  { name: "All gems in Aquaria Towers", boardtypes: ["max1b"] },
-  { name: "All orbs in Aquaria Towers", boardtypes: ["max1c"] },
-  { name: "Talismans in Idol Springs, Sunny Beach & Scorch", boardtypes: [] },
-  { name: "Mantas 1 & #BoneDance", boardtypes: ["mantas1","bonedance"] },
-  { name: "Defeat all enemies in Aquaria Towers", boardtypes: [] },
-  { name: "Seahorses & Turtle Boxes", boardtypes: ["seahorses","turtleboxes"] }
+{ name: "All gems in Zephyr", types: ["gem2"] },
+{ name: "All orbs in Crystal Glacier", types: ["orb2"] },
+{ name: "Cowleks 1 & Faun", types: ["cowleks1","faun","zepfra"] },
+{ name: "Draclets & Cowleks 1", types: ["draclets","cowleks1","cryzep"] },
+{ name: "4+ orbs in Colossus & Fracture Hills", types: [] },
+{ name: "650 combined gems in Hurricos & Fracture Hills", types: [] },
+{ name: "All enemies in Zephyr", types: [] },
+{ name: "100% Zephyr", types: ["max2"] }
 ];
 bingoList[25] = [
-  { name: "Robot Scarecrows & Party Crashers", boardtypes: ["robotscarecrows","partycrashers"] },
-  { name: "100% Robotica Farms", boardtypes: ["max3a"] },
-  { name: "All gems in Robotica Farms", boardtypes: ["max3b"] },
-  { name: "All orbs in Robotica Farms", boardtypes: ["max3c"] },
-  { name: "Talismans in Crystal Glacier, Magma Cone & Zephyr", boardtypes: [] },
-  { name: "Unlock Cloud Temples", boardtypes: [] },
-  { name: "100% Autumn Plains", boardtypes: [] },
-  { name: "Robot Scarecrows & Indoor Lamps", boardtypes: ["robotscarecrows","partycrashers"] }
+{ name: "All orbs in Magma Cone", types: ["orb2"] },
+{ name: "All orbs in Glimmer", types: ["orb1"] },
+{ name: "Indoor Lamps & Popcorn 1", types: ["indoorlamps","popcorn1","glimag"] },
+{ name: "Popcorn 1 & Tractor Path", types: ["popcorn1","tractorpath","robmag"] },
+{ name: "Use all '15' powerups", types: ["15p"] },
+{ name: "600 combined gems in Crystal Glacier and Robotica Farms", types: [] },
+{ name: "Unlock Cloud Temples", types: [] },
+{ name: "100% Magma Cone", types: ["max2"] }
 ];
