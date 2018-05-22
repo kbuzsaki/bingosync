@@ -73,6 +73,7 @@ class GameType(Enum):
     dark_souls_3 = 67
     bloodborne = 68
     cuphead = 69
+    pokemon_black_white = 70
 
     def __str__(self):
         return self.short_name
@@ -256,6 +257,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
+    **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
