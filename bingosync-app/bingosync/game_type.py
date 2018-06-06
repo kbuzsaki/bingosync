@@ -75,6 +75,7 @@ class GameType(Enum):
     cuphead = 69
     pokemon_black_white = 70
     battleblock_theater = 71
+    battle_for_bikini_bottom = 72
 
     def __str__(self):
         return self.short_name
@@ -283,6 +284,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
+    **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
 }
 
 GAME_TYPE_GROUPS = {}
