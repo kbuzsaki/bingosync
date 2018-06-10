@@ -77,6 +77,7 @@ class GameType(Enum):
     battleblock_theater = 71
     battle_for_bikini_bottom = 72
     luigis_mansion = 73
+    luigis_mansion_dark_moon = 74
 
     def __str__(self):
         return self.short_name
@@ -287,6 +288,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
+    **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
 }
 
 GAME_TYPE_GROUPS = {}
