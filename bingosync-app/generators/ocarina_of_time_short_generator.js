@@ -270,18 +270,21 @@ BingoGenerator.prototype.generateMagicSquare = function() {
 };
 
 function weightedShuffle(arr) {
-    return arr.map(el => ({
-            el,
-            sortVal: (el.weight || 0) + Math.random() + Math.random() + Math.random() + Math.random() - 2
-        }))
-        .sort(({
-            sortVal: sv1
-        }, {
-            sortVal: sv2
-        }) => sv2 - sv1)
-        .map(({
-            el
-        }) => el);
+    return arr.map(function(el) {
+            var sortVal = (el.weight || 0) + Math.random() + Math.random() + Math.random() + Math.random() - 2;
+            return {
+                el: el,
+                sortVal: sortVal
+            };
+        })
+        .sort(function(pair1, pair2) {
+            var sv1 = pair1.sortVal;
+            var sv2 = pair2.sortVal;
+            return sv2 - sv1;
+        })
+        .map(function(pair) {
+            return pair.el;
+        });
 }
 
 /**
