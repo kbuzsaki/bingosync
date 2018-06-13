@@ -743,87 +743,40 @@ bingoList[13] = [
   { name: "100% Clear 3 Chapter 8 scenes", types: [] },
 ];
 bingoList[14] = [
-  { name: "Clear 6 Chapter 1 scenes", types: [] },
-  { name: "Clear 6 Chapter 2 scenes", types: [] },
-  { name: "Clear 6 Chapter 3 scenes", types: [] },
-  { name: "Clear 6 Chapter 4 scenes", types: [] },
-  { name: "Clear 6 Chapter 5 scenes", types: [] },
-  { name: "Clear 6 Chapter 6 scenes", types: [] },
-  { name: "Clear 6 Chapter 7 scenes", types: [] },
-  { name: "Clear 6 Chapter 8 scenes", types: [] },
+  { name: "Clear Encores in Ch1", types: [] },
+  { name: "Clear Encores in Ch2", types: [] },
+  { name: "Clear Encores in Ch3", types: [] },
+  { name: "Clear Encores in Ch4", types: [] },
+  { name: "Clear Encores in Ch5", types: [] },
+  { name: "Clear Encores in Ch6", types: [] },
+  { name: "Clear Encores in Ch7", types: [] },
+  { name: "Clear Encores in Ch8", types: [] },
 ];
 bingoList[15] = [
-  { name: "100% Clear 6 Chapter 1 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 2 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 3 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 4 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 5 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 6 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 7 scenes", types: [] },
-  { name: "100% Clear 6 Chapter 8 scenes", types: [] },
+  { name: "100% Encores in Ch1", types: [] },
+  { name: "100% Encores in Ch2", types: [] },
+  { name: "100% Encores in Ch3", types: [] },
+  { name: "100% Encores in Ch4", types: [] },
+  { name: "100% Encores in Ch5", types: [] },
+  { name: "100% Encores in Ch6", types: [] },
+  { name: "100% Encores in Ch7", types: [] },
+  { name: "100% Encores in Ch8", types: [] },
 ];
 bingoList[16] = [
-  { name: "Clear all Chapter 1 scenes", types: [] },
-  { name: "Clear all Chapter 2 scenes", types: [] },
-  { name: "Clear all Chapter 3 scenes", types: [] },
-  { name: "Clear all Chapter 4 scenes", types: [] },
-  { name: "Clear all Chapter 5 scenes", types: [] },
-  { name: "Clear all Chapter 6 scenes", types: [] },
-  { name: "Clear all Chapter 7 scenes", types: [] },
-  { name: "Clear all Chapter 8 scenes", types: [] },
+  { name: "3-2 Pacifict", types: [] },
+  { name: "3-2 Genocide", types: [] },
+  { name: "1-8 Pacifict", types: [] },
+  { name: "1-8 Genocide", types: [] },
+  { name: "3-5 Pacifict", types: [] },
+  { name: "3-5 Genocide", types: [] },
+  { name: "7-9 Pacifict", types: [] },
+  { name: "7-9 Genocide", types: [] },
+  { name: "6-3 Pacifict", types: [] },
+  { name: "6-3 Genocide", types: [] },
+  { name: "7-5 Pacifict", types: [] },
+  { name: "7-5 Genocide", types: [] },
 ];
 bingoList[17] = [
-  { name: "100% Clear all Chapter 1 scenes", types: [] },
-  { name: "100% Clear all Chapter 2 scenes", types: [] },
-  { name: "100% Clear all Chapter 3 scenes", types: [] },
-  { name: "100% Clear all Chapter 4 scenes", types: [] },
-  { name: "100% Clear all Chapter 5 scenes", types: [] },
-  { name: "100% Clear all Chapter 6 scenes", types: [] },
-  { name: "100% Clear all Chapter 7 scenes", types: [] },
-  { name: "100% Clear all Chapter 8 scenes", types: [] },
-];
-bingoList[18] = [
-  { name: "5 unique yarns in Chapter 1", types: [] },
-  { name: "5 unique yarns in Chapter 2", types: [] },
-  { name: "5 unique yarns in Chapter 3", types: [] },
-  { name: "5 unique yarns in Chapter 4", types: [] },
-  { name: "5 unique yarns in Chapter 5", types: [] },
-  { name: "5 unique yarns in Chapter 6", types: [] },
-  { name: "5 unique yarns in Chapter 7", types: [] },
-  { name: "5 unique yarns in Chapter 8", types: [] },
-];
-bingoList[19] = [
-  { name: "40 unique gems in Chapter 1", types: [] },
-  { name: "40 unique gems in Chapter 2", types: [] },
-  { name: "40 unique gems in Chapter 3", types: [] },
-  { name: "40 unique gems in Chapter 4", types: [] },
-  { name: "40 unique gems in Chapter 5", types: [] },
-  { name: "40 unique gems in Chapter 6", types: [] },
-  { name: "40 unique gems in Chapter 7", types: [] },
-  { name: "40 unique gems in Chapter 8", types: [] },
-];
-bingoList[20] = [
-  { name: "1 golden hat", types: ["goldhat","global"] },
-  { name: "100 unique gems", types: ["xgems","global"] },
-  { name: "20 unique stage clears", types: ["xstages","global"] },
-  { name: "10 unique yarns", types: ["xyarns","global"] },
-  { name: "20 NPC kills", types: ["killenemy","global"] },
-];
-bingoList[21] = [
-  { name: "2 golden hats", types: ["goldhat","global"] },
-  { name: "150 unique gems", types: ["xgems","global"] },
-  { name: "30 unique stage clears", types: ["xstages","global"] },
-  { name: "15 unique yarns", types: ["xyarns","global"] },
-  { name: "25 NPC kills", types: ["killenemy","global"] },
-];
-bingoList[22] = [
-  { name: "3 golden hats", types: ["goldhat","global"] },
-  { name: "200 unique gems", types: ["xgems","global"] },
-  { name: "40 unique stage clears", types: ["xstages","global"] },
-  { name: "20 unique yarns", types: ["xyarns","global"] },
-  { name: "30 NPC kills", types: ["killenemy","global"] },
-];
-bingoList[23] = [
   { name: "Get all checkpoints in 7-5", types: ["cpget"] },
   { name: "Skip all checkpoints in 7-3", types: ["cpskip"] },
   { name: "Get all checkpoints in 1-7", types: ["cpget"] },
@@ -832,6 +785,44 @@ bingoList[23] = [
   { name: "Skip all checkpoints in 8-2", types: ["cpskip"] },
   { name: "Skip all checkpoints in 3-2", types: ["cpskip"] },
   { name: "Skip all checkpoints in 2-5", types: ["cpskip"] },
+];
+bingoList[18] = [
+  { name: "1 golden hat", types: [] },
+  { name: "2 golden hats", types: [] },
+  { name: "3 golden hats", types: [] },
+];
+bingoList[19] = [
+  { name: "50 unique gems", types: [] },
+  { name: "100 unique gems", types: [] },
+  { name: "150 unique gems", types: [] },
+  { name: "200 unique gems", types: [] },
+];
+bingoList[20] = [
+  { name: "10 unique yarns", types: [] },
+  { name: "15 unique yarns", types: [] },
+  { name: "20 unique yarns", types: [] },
+  { name: "25 unique yarns", types: [] },
+  { name: "30 unique yarns", types: [] },
+];
+bingoList[21] = [
+  { name: "15 NPC kills", types: [] },
+  { name: "20 NPC kills", types: [] },
+  { name: "25 NPC kills", types: [] },
+  { name: "30 NPC kills", types: [] },
+];
+bingoList[22] = [
+  { name: "20 unique stage clears", types: [] },
+  { name: "25 unique stage clears", types: [] },
+  { name: "30 unique stage clears", types: [] },
+  { name: "35 unique stage clears", types: [] },
+  { name: "40 unique stage clears", types: [] },
+];
+bingoList[23] = [
+  { name: "10 unique clock stamps", types: [] },
+  { name: "15 unique clock stamps", types: [] },
+  { name: "20 unique clock stamps", types: [] },
+  { name: "25 unique clock stamps", types: [] },
+  { name: "30 unique clock stamps", types: [] },
 ];
 bingoList[24] = [
   { name: "Vacuum a cat's grenade and die from it", types: ["grenade"] },
@@ -848,5 +839,5 @@ bingoList[25] = [
   { name: "Bring a rock to the end of 6-4", types: ["boulders"] },
   { name: "Watch two full cutscenes", types: ["cutscene"] },
   { name: "8-Secret cleared without ever standing still", types: ["clear"] },
-  { name: "Finish a non-secret stage with 0 jumps", types: ["jumpless"] },
+  { name: "Finish a stage with 0 jumps", types: ["jumpless"] },
 ];
