@@ -78,7 +78,7 @@ class GameType(Enum):
     battle_for_bikini_bottom = 72
     luigis_mansion = 73
     luigis_mansion_dark_moon = 74
-    yokus_island_adventure = 75
+    yokus_island_express = 75
 
     def __str__(self):
         return self.short_name
@@ -290,7 +290,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
-    **singleton_group(GameType.yokus_island_adventure, "Yoku's Island Adventure", "Yoku's IE"),
+    **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
 }
 
 GAME_TYPE_GROUPS = {}
