@@ -81,6 +81,7 @@ class GameType(Enum):
     yokus_island_express = 75
     league_of_legends_aram = 76
     legend_of_mana = 77
+    castlevania_aria_of_sorrow = 78
 
     def __str__(self):
         return self.short_name
@@ -295,6 +296,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
+    **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
 }
 
 GAME_TYPE_GROUPS = {}
