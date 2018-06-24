@@ -80,6 +80,7 @@ class GameType(Enum):
     luigis_mansion_dark_moon = 74
     yokus_island_express = 75
     league_of_legends_aram = 76
+    legend_of_mana = 77
 
     def __str__(self):
         return self.short_name
