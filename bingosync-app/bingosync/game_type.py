@@ -79,6 +79,7 @@ class GameType(Enum):
     luigis_mansion = 73
     luigis_mansion_dark_moon = 74
     yokus_island_express = 75
+    league_of_legends_aram = 76
 
     def __str__(self):
         return self.short_name
@@ -291,6 +292,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
+    **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
+    **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
 }
 
 GAME_TYPE_GROUPS = {}
