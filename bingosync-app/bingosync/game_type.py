@@ -82,6 +82,7 @@ class GameType(Enum):
     league_of_legends_aram = 76
     legend_of_mana = 77
     castlevania_aria_of_sorrow = 78
+    nier_automata = 79
 
     def __str__(self):
         return self.short_name
@@ -297,6 +298,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
+    **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
 }
 
 GAME_TYPE_GROUPS = {}
