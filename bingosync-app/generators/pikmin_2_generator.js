@@ -1,5 +1,5 @@
 //Uses SRL Generator
-
+ 
 (function(j, i, g, m, k, n, o) {
     function q(b) {
         var e, f, a = this,
@@ -25,7 +25,7 @@
         };
         a.g(g)
     }
-
+ 
     function p(b, e, f, a, c) {
         f = [];
         c = typeof b;
@@ -36,7 +36,7 @@
                 } catch (d) {}
                 return f.length ? f : b + (c != "string" ? "\0" : "")
     }
-
+ 
     function l(b, e, f, a) {
         b += "";
         for (a = f = 0; a < b.length; a++) {
@@ -67,7 +67,7 @@
     n = k * 2;
     l(i.random(), j)
 })([], Math, 256, 6, 52);
-
+ 
 bingoGenerator = function(bingoList, opts) {
     var LANG = opts.lang || 'name';
     var MODE = opts.mode || "normal";
@@ -77,7 +77,7 @@ bingoGenerator = function(bingoList, opts) {
     if (true) {
         Math.seedrandom(SEED);
         var MAX_SEED = 999999;
-
+ 
         var lineCheckList = [];
         if (size == 5) {
             lineCheckList[1] = [1, 2, 3, 4, 5, 10, 15, 20, 6, 12, 18, 24];
@@ -106,7 +106,7 @@ bingoGenerator = function(bingoList, opts) {
             lineCheckList[24] = [20, 21, 22, 24, 3, 8, 13, 18];
             lineCheckList[25] = [0, 6, 12, 18, 20, 21, 22, 23, 19, 14, 9, 4];
         }
-
+ 
         function mirror(i) {
             if (i == 0) {
                 i = 4;
@@ -119,7 +119,7 @@ bingoGenerator = function(bingoList, opts) {
             }
             return i;
         }
-
+ 
         function difficulty(i) {
             var Num3 = SEED % 1000;
             var Rem8 = Num3 % 8;
@@ -161,7 +161,7 @@ bingoGenerator = function(bingoList, opts) {
             value++;
             return value;
         }
-
+ 
         function checkLine(i, typesA) {
             var synergy = 0;
             for (var j = 0; j < lineCheckList[i].length; j++) {
@@ -218,27 +218,40 @@ bingoGenerator = function(bingoList, opts) {
         return bingoBoard;
     }
 }
-
-//Version 1.2.2 of Pikmin 2 Bingo
-
+ 
+//Version 1.2.3 of Pikmin 2 Bingo
+ 
+//Changes since 1.2.2:
+//Moved "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)" from 23 to 24
+//Moved "Mirrored Stage (SR3)" from 21 to 23
+//Moved "Onion Replica (PP)" from 20 to 21
+//Moved "Destroy both electric gates in AW" from 10 to 15
+//Moved "Collect an Empress Bulblax" from 5 to 1
+//Moved "Kill Louie twice" from 1 to 5
+//Added "Survival Ointment (WFG4) and Healing Cask (AW)" to difficulty 2
+//Added "Superstick Textile (WFG3) and Exhausted Superstick (SCx1)" to difficulty 15
+//Added "6 fully buried treasures" to difficulty 20
+//Removed "Never do Early Blues"
+//Removed "Collect all above-ground treasures in PP"
+ 
 //Changes since 1.2.1:
 //Reworded a few goals
-//Fixed text going outside the box for some goals
+//Fixed a bug with text going outside the box for some goals
 //Changed the Bottlecaps / Milk Covers goal to be more balanced between versions
 //Changed the goal "4 treasures worth 200 Pokos or more" to 6
 //Changed the goal "4 treasures worth 30 Pokos or fewer" to 7, and to be more balanced between versions
-
+ 
 //Changes since 1.2:
 //Made all of the changes suggested here: https://pastebin.com/54aDpt0f
 //Moved other things around a little bit to have at least 4 goals per difficulty
-
+ 
 //Changes since 1.1:
 //Made some vague goals more specific
 //Removed some stupid goals (No Yellows, No Sprays, No Treasure Gauge, and 2500 Pokos)
 //Made some much needed difficulty changes to some goals
 //Added many goals for certain treasure "themes":
 //Food treasures, bottle caps, BK fossils, the 3 gemstones, SH marbles, SCx capacitors, scallop shells, rubber ducks, and batteries.
-
+ 
 //Changes since 1.0:
 //Made some vague goals more specific
 //Added goals for (large number) of certain types of Pikmin
@@ -247,20 +260,21 @@ bingoGenerator = function(bingoList, opts) {
 //Previously I had a lot of types to filter what goals could be in the same row,
 //to prevent, say, 2 specific treasures in the same cave.
 //I removed a lot of those entirely, so it becomes more possible for "unbalanced" cards.
-
-
+ 
+ 
 var bingoList = [];
 bingoList[1] = [
   { name: "Get a Pikmin Extinction inside a cave", types: ["selfharm"] },
   { name: "Toxic Toadstool (WFG4)", types: ["wfg"] },
   { name: "Prototype Detector (HoB5)", types: ["empress","hipoko"] },
-  { name: "Kill Louie twice", types: ["selfharm"] },
+  { name: "Collect an Empress Bulblax", types: ["empress"] },
 ];
 bingoList[2] = [
   { name: "Enter SmC", types: ["caveenter"] },
   { name: "Kill 10 Mitites on HoB4", types: ["hobenemies"] },
   { name: "Kill the Burrowing Snagret in VoR", types: ["snagret"] },
   { name: "Discover Yellow Pikmin", types: ["ylw"] },
+  { name: "Survival Ointment (WFG4) and Healing Cask (AW)", types: ["theme"] },
 ];
 bingoList[3] = [
   { name: "Get a non-Red Pikmin Extinction", types: ["ylw","selfharm"] },
@@ -276,9 +290,9 @@ bingoList[4] = [
 ];
 bingoList[5] = [
   { name: "60 Yellows", types: ["ylw","onetype"] },
-  { name: "Collect an Empress Bulblax", types: ["empress"] },
   { name: "Collect a 5-Pellet of each color", types: ["pellet"] },
   { name: "Collect 2 Burrowing Snagret heads", types: ["snagret"] },
+  { name: "Kill Louie twice", types: ["selfharm"] },
 ];
 bingoList[6] = [
   { name: "Destroy the poison gate in VoR", types: ["poisongate"] },
@@ -308,7 +322,6 @@ bingoList[10] = [
   { name: "Kill 8 Water Dumples", types: ["xenemy"] },
   { name: "Kill both Hermit Crawmads in PP", types: ["allenemy"] },
   { name: "45 Purples", types: ["onetype"] },
-  { name: "Destroy both electric gates in AW", types: ["elecgate","awgate"] },
   { name: "Collect all 3 Wogpoles in AW", types: ["wogpole"] },
 ];
 bingoList[11] = [
@@ -328,7 +341,6 @@ bingoList[12] = [
 bingoList[13] = [
   { name: "Drain the main lake in PP", types: ["drain"] },
   { name: "Build all 3 bridges in AW", types: ["bridge"] },
-  { name: "Never do Early Blues", types: ["awgate","instant"] },
   { name: "150 Reds", types: ["onetype","masspik","red"] },
   { name: "200 Total Pikmin", types: ["masspik"] },
 ];
@@ -344,6 +356,8 @@ bingoList[15] = [
   { name: "Collect 2 Gattling Groinks", types: ["xenemy"] },
   { name: "Thirst Activator (SCx7)", types: ["hipoko"] },
   { name: "Leviathan Feather (SH1) and Science Project (SH6)", types: ["lowpoko","theme"] },
+  { name: "Destroy both electric gates in AW", types: ["elecgate","awgate"] },
+  { name: "Superstick Textile (WFG3) and Exhausted Superstick (SCx1)", types: ["theme"] },
 ];
 bingoList[16] = [
   { name: "Unspeakable Wonder (VoR)", types: ["vor"] },
@@ -372,14 +386,14 @@ bingoList[19] = [
 bingoList[20] = [
   { name: "Destroy both black gates in PP", types: ["blkgate","ppgate"] },
   { name: "Destroy all 3 electric gates in PP", types: ["elecgate","ppgate"] },
-  { name: "Onion Replica (PP)", types: ["pp","blkgate","void","lowpoko"] },
   { name: "Crystallized Telekenesis, Telepathy, and Clairvoyance (SH 1, 4, and 5)", types: ["theme"] },
+  { name: "6 fully buried treasures", types: ["theme","vor"] },
 ];
 bingoList[21] = [
   { name: "Collect the 20-Pellet in AW", types: ["pellet"] },
   { name: "Repugnant Appendage (FC8)", types: ["easyboss","empress"] },
-  { name: "Mirrored Stage (SR3)", types: [] },
   { name: "Clear FC6", types: ["clear"] },
+  { name: "Onion Replica (PP)", types: ["pp","blkgate","void","lowpoko"] },
 ];
 bingoList[22] = [
   { name: "Collect 8 Dweevils (of any kind)", types: ["xenemy"] },
@@ -391,12 +405,12 @@ bingoList[23] = [
   { name: "Clear SH6", types: ["clear","lowpoko","snagret"] },
   { name: "Decorative Goo (AW)", types: ["awgate","aw"] },
   { name: "Memorial Shell (CoS3) and Scrumptious Shell (SR3)", types: ["theme"] },
-  { name: "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)", types: ["theme"] },
+  { name: "Mirrored Stage (SR3)", types: [] },
 ];
 bingoList[24] = [
   { name: "Professional Noisemaker (SmC5)", types: ["hardboss"] },
   { name: "Endless Repository (SR5)", types: [] },
-  { name: "Collect all above-ground treasures in PP", types: ["clear","pp"] },
+  { name: "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)", types: ["theme"] },
   { name: "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)", types: ["theme"] },
 ];
 bingoList[25] = [
