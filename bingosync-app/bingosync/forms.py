@@ -24,7 +24,7 @@ class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
-    game_type = forms.ChoiceField(label="Game", choices=GameType.form_choices_with_blank())
+    game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
     variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(),
                                      widget=forms.HiddenInput(), required=False)
     custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
@@ -176,7 +176,8 @@ class GoalListConverterForm(forms.Form):
 
 # just for generating html form for the modal popup
 class NewCardForm(forms.Form):
-    game_type = forms.ChoiceField(label="Game", choices=GameType.form_choices())
+    game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
+    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices())
     custom_json = forms.CharField(label="Board", widget=forms.Textarea({"cols":40, "rows":6, "placeholder":(
         "Paste the board as a 25 element JSON goal list, e.g:\n"
         "[ {'name': 'first goal'},\n"
