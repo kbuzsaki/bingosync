@@ -56,7 +56,7 @@ def room_view(request, encoded_room_uuid):
             return _join_room(request, join_form, room)
     else:
         try:
-            room = Room.get_for_encoded_uuid_ir_404(encoded_room_uuid)
+            room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
             initial_values = {
                 "game_type": room.current_game.game_type.value,
                 "lockout_mode": room.current_game.lockout_mode.value
