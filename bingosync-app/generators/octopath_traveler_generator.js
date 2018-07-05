@@ -68,32 +68,36 @@
 })([], Math, 256, 6, 52);
 
 bingoGenerator = function(bingoList, opts) {
-  const LANG = opts.lang || 'name';
-  const MODE = opts.mode || 'normal';
-  const cardType = 'Normal';
-  const SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
-  const size = 5;
+  var LANG = opts.lang || 'name';
+  var MODE = opts.mode || 'normal';
+  var cardType = 'Normal';
+  var SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
+  var size = 5;
 
   // octopath generator by @CAD97
   Math.seedrandom(SEED);
 
   function shuffle(list) {
-    for (let i = list.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [list[i], list[j]] = [list[j], list[i]];
+    for (var i = list.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = list[i];
+      list[i] = list[j];
+      list[j] = tmp;
     }
     return list;
   }
   function transpose(matrix) {
-    for (let i = 0; i < matrix.length; i++) {
-      for (let j = 0; j < i; j++) {
-        [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]]
+    for (var i = 0; i < matrix.length; i++) {
+      for (var j = 0; j < i; j++) {
+        var tmp = matrix[i][j];
+        matrix[i][j] = matrix[j][i];
+        matrix[j][i] = tmp;
       }
     }
     return matrix;
   }
   function horizontalMirror(matrix) {
-    for (let i = 0; i < matrix.length; i++) {
+    for (var i = 0; i < matrix.length; i++) {
       matrix[i] = matrix[i].reverse();
     }
     return matrix;
@@ -105,13 +109,13 @@ bingoGenerator = function(bingoList, opts) {
     return Math.random() < 0.5;
   }
   function randomPop(arr) {
-    const i = Math.floor(Math.random() * arr.length);
-    const ret = arr[i];
+    var i = Math.floor(Math.random() * arr.length);
+    var ret = arr[i];
     arr.splice(i, 1);
     return ret;
   }
 
-  let boardLayout = [
+  var boardLayout = [
     [0, 2, 4, 6, 7],
     [1, 3, 2, 5, 4],
     [3, 4, 1, 2, 6],
@@ -125,8 +129,15 @@ bingoGenerator = function(bingoList, opts) {
 
   // SRL generators use board[1]-board[25] and put an empty value
   // in board[0], so start with a filler undefined.
-  return [undefined].concat(...boardLayout.map(row =>
-    row.map(idx => randomPop(bingoList[idx]))));
+  var board = [undefined];
+  for (var i = 0; i < boardLayout.length; i++) {
+      var row = boardLayout[i];
+      for (var j = 0; j < row.length; j++) {
+          var idx = row[j];
+          board.push(randomPop(bingoList[idx]));
+      }
+  }
+  return board;
 }
 
 var bingoList = [];
