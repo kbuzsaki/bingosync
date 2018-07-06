@@ -300,7 +300,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
-    **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath Trav."),
+    **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
 }
 
 GAME_TYPE_GROUPS = {}
