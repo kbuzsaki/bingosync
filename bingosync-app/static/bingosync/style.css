@@ -375,6 +375,15 @@
     border: solid 2px #eee;
 }
 
+.chat-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #aaa;
+    font-size: 80%;
+    text-align: center;
+    background-color: #181818;
+}
+
 .connection-message {
     font-style: italic;
     color: #888;

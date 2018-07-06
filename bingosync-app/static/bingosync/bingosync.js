@@ -344,20 +344,34 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     }
 
     var $chatHistory = $chatBody.find(".chat-history");
+    var populateChatHistory = function (result) {
+        $chatHistory.html('');
+        if (!result.allIncluded) {
+            var link = $("<div>", {"class": "chat-link", html: "Click to load full history"});
+            link.click(function () {
+                $.ajax({
+                    "url": chatHistoryUrl + '?full=true',
+                    "success": populateChatHistory,
+                    "error": function(result) {
+                        console.log(result);
+                    }
+                });
+            });
+            $chatHistory.append(link);
+        }
+        for(var i = 0; i < result.events.length; i++) {
+            var chatJson = result.events[i];
+            message = processChatJson(chatJson);
+            var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
+            $chatHistory.append(entry);
+        }
+        if($chatBody[0] !== undefined) {
+            $chatBody.scrollTop($chatBody[0].scrollHeight);
+        }
+    };
     $.ajax({
         "url": chatHistoryUrl,
-        "success": function(result) {
-            $chatHistory.html('');
-            for(var i = 0; i < result.length; i++) {
-                var chatJson = result[i];
-                message = processChatJson(chatJson);
-                var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
-                $chatHistory.append(entry);
-            }
-            if($chatBody[0] !== undefined) {
-                $chatBody.scrollTop($chatBody[0].scrollHeight);
-            }
-        },
+        "success": populateChatHistory,
         "error": function(result) {
             console.log(result);
         }

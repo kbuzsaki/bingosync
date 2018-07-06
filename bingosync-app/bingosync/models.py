@@ -454,6 +454,17 @@ class Event(models.Model):
         return sorted(all_events, key=lambda event: event.timestamp)
 
     @staticmethod
+    def get_all_recent_for_room(room):
+        recent_events = []
+        total_events = 0;
+        for event_class in Event.event_classes():
+            total_events += event_class.objects.filter(player__room=room).count()
+            recent_events.extend(event_class.objects.filter(player__room=room).filter(timestamp__gte=datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)))
+        all_included = total_events == len(recent_events)
+        recent_events = sorted(recent_events, key=lambda event: event.timestamp)
+        return {'events': recent_events, 'all_included': all_included}
+
+    @staticmethod
     def get_latest_for_room(room):
         latest_events = []
         for event_class in Event.event_classes():

@@ -175,9 +175,18 @@ def about(request):
 
 def room_feed(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
-    all_events = Event.get_all_for_room(room)
-    all_jsons = [event.to_json() for event in all_events]
-    return JsonResponse(all_jsons, safe=False)
+    events_to_return = []
+    all_included = True
+
+    if request.GET.get('full') == 'true':
+        events_to_return = Event.get_all_for_room(room)
+    else:
+        recent_events = Event.get_all_recent_for_room(room)
+        events_to_return = recent_events["events"]
+        all_included = recent_events["all_included"]
+
+    all_jsons = [event.to_json() for event in events_to_return]
+    return JsonResponse({'events': all_jsons, 'allIncluded': all_included}, safe=False)
 
 def room_disconnect(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
