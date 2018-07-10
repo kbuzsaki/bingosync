@@ -137,7 +137,7 @@ class GameType(Enum):
 
     @staticmethod
     def variant_choices():
-        return [(gt.value, gt.variant_name) for gt in ALL_VARIANTS]
+        return [(group_gt.value, [(gt.value, name) for gt, name, short_name in group['variants']]) for group_gt, group in GAME_GROUPS.items()]
 
 
 DEFAULT_VARIANT_NAME = "Normal"

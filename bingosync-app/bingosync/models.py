@@ -255,6 +255,8 @@ class Room(models.Model):
             "lockout_mode": str(game.lockout_mode),
             "game": str(game.game_type),
             "game_id": game.game_type_value,
+            "variant": str(game.game_type),
+            "variant_id": game.game_type_value,
             "seed": game.seed,
         }
 
