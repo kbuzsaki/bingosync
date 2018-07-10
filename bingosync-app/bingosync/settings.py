@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrapform',
+    'crispy_forms',
     'url_tools',
     'bingosync'
 )
@@ -157,3 +158,5 @@ SOCKETS_URL = "ws://" + BASE_SOCKETS_URL
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
 
+# crispy forms confiuguration
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

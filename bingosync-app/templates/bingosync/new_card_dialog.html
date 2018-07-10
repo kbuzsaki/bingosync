@@ -1,5 +1,7 @@
+{% load staticfiles %}
 {% load bootstrap %}
 {% load app_filters %}
+{% load crispy_forms_tags %}
 
 <div id="new-card-dialog" class="modal fade">
     <div class="modal-dialog">
@@ -10,7 +12,7 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" id="new-card-form">
-                    {{ new_card_form|bootstrap_horizontal:"col-md-3" }}
+                    {% crispy new_card_form %}
                 </form>
             </div>
             <div class="modal-footer">
@@ -20,6 +22,7 @@
         </div>
     </div>
 </div>
+<script src="{% static "bingosync/home.js" %}"></script>
 <script>
     $(document).ready(function() {
         var newCardUrl = "{% url 'new_card' %}";
@@ -56,30 +59,24 @@
                 }
             });
         });
-        $customJson = $("#id_custom_json").parent().parent();
-        $gameType = $("#id_game_type");
-        if ($gameType.val() != 18) {
-            $customJson.addClass("hidden");
-        }
-        $gameType.on("change", function() {
-            if ($gameType.val() == 18) {
-                $customJson.removeClass("hidden");
-            } else {
-                $customJson.addClass("hidden");
-            }
-        });
+        initializeGameSelectForm($('#new-card-form'));
     });
     function refreshNewCardDialog() {
         //hide the dialog if it's open
         $("#new-card-dialog").modal("hide");
 
-        var form = $("#new-card-form");
-        form.find("select[name=game_type]").val(ROOM_SETTINGS.game_id);
-        form.find("select[name=lockout_mode]").val(ROOM_SETTINGS.lockout_mode === 'Lockout' ? 2 : 1);
-        form.find("input[name=hide_card]").prop("checked", ROOM_SETTINGS.hide_card);
+        var $form = $("#new-card-form");
+        var $variantSelector = $form.find("select[name=variant_type]");
+        $variantSelector.val(ROOM_SETTINGS.game_id);
+        // Set the game selector to the group of the selected variant
+        $form.find("select[name=game_type]").val($variantSelector.find(':selected').attr('data-group'));
+        $form.find("select[name=lockout_mode]").val(ROOM_SETTINGS.lockout_mode === 'Lockout' ? 2 : 1);
+        $form.find("input[name=hide_card]").prop("checked", ROOM_SETTINGS.hide_card);
 
         // Always leave the seed and custom json blank
-        form.find("input[name=seed]").val("");
-        form.find("input[name=custom_json]").val("");
+        $form.find("input[name=seed]").val("");
+        $form.find("input[name=custom_json]").val("");
+
+        $form.find("select[name=game_type]").change();
     }
 </script>

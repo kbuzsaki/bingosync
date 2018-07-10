@@ -3,6 +3,7 @@ chardet==3.0.4
 Django==1.11.8
 django-bootstrap-form==3.3
 django-url-tools-py3==0.2.0
+django-crispy-forms==1.7.2
 idna==2.6
 psycopg2==2.7.3.2
 PyExecJS==1.5.1

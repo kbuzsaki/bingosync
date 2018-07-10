@@ -12,13 +12,15 @@ import random
 
 from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
-from .forms import RoomForm, JoinRoomForm, GoalListConverterForm, NewCardForm
+from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from .models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
 from .models import ConnectionEvent, NewCardEvent
 from .game_type import ALL_VARIANTS
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
 from .publish import publish_connection_event, publish_new_card_event
 from .util import generate_encoded_uuid
+
+from crispy_forms.layout import Layout, Field
 
 def rooms(request):
     if request.method == "POST":
@@ -61,7 +63,17 @@ def room_view(request, encoded_room_uuid):
                 "game_type": room.current_game.game_type.value,
                 "lockout_mode": room.current_game.lockout_mode.value
             }
-            new_card_form = NewCardForm(initial=initial_values)
+            new_card_form = RoomForm(initial=initial_values)
+            new_card_form.helper.layout = Layout(
+                    "game_type",
+                    "variant_type",
+                    "custom_json",
+                    "lockout_mode",
+                    "seed",
+                    "hide_card",
+            )
+            new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
+            new_card_form.helper['custom_json'].wrap(Field, wrapper_class='hidden')
             player = _get_session_player(request.session, room)
             params = {
                 "room": room,
@@ -126,7 +138,15 @@ def new_card(request):
         for i, square in enumerate(board_json):
             if "name" not in square:
                 return HttpResponseBadRequest("Invalid board: Square " + str(i + 1) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+            elif square["name"] == "":
+                return HttpResponseBadRequest("Invalid board: Square " + str(1 + i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
     else:
+        try:
+            # variant_type is not sent if the game only has 1 variant, so use it if
+            # it's present but fall back to the regular game_type otherwise
+            game_type = GameType.for_value(int(data["variant_type"]))
+        except KeyError:
+            pass
         if not seed:
             seed = str(random.randint(1, 1000000))
         board_json = game_type.generator_instance().get_card(seed)
