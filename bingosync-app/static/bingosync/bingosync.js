@@ -193,12 +193,14 @@ function initializeBoardCover(boardRevealedUrl, showNow) {
     $boardCover = $(".board-cover");
     if (!showNow) {
         $boardCover.hide();
+        $(".board-container").removeClass('hidden-card');
     }
     $boardCover.on("click", function() {
         if (!$(this).is(":visible")) {
             return;
         }
         $(this).hide();
+        $(".board-container").removeClass('hidden-card');
         $.ajax({
             "url": boardRevealedUrl,
             "type": "PUT",

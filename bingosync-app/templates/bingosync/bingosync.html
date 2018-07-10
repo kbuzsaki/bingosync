@@ -114,6 +114,7 @@
                 ROOM_SETTINGS = result.settings;
                 if (ROOM_SETTINGS.hide_card) {
                     $('.board-cover').show();
+                    $(".board-container").addClass('hidden-card');
                 }
                 refreshNewCardDialog();
             },
