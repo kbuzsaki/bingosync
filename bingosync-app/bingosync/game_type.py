@@ -84,6 +84,7 @@ class GameType(Enum):
     castlevania_aria_of_sorrow = 78
     nier_automata = 79
     octopath_traveler = 80
+    splatoon_2_octo_expansion = 81
 
     def __str__(self):
         return self.short_name
@@ -301,6 +302,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
+    **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
 }
 
 GAME_TYPE_GROUPS = {}
