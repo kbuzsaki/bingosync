@@ -253,8 +253,8 @@ class Room(models.Model):
         return {
             "hide_card": self.hide_card,
             "lockout_mode": str(game.lockout_mode),
-            "game": str(game.game_type),
-            "game_id": game.game_type_value,
+            "game": str(game.game_type.group),
+            "game_id": game.game_type.group.value,
             "variant": str(game.game_type),
             "variant_id": game.game_type_value,
             "seed": game.seed,

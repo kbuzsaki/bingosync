@@ -60,8 +60,10 @@ def room_view(request, encoded_room_uuid):
         try:
             room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
             initial_values = {
-                "game_type": room.current_game.game_type.value,
-                "lockout_mode": room.current_game.lockout_mode.value
+                "game_type": room.current_game.game_type.group.value,
+                "variant_type": room.current_game.game_type.value,
+                "lockout_mode": room.current_game.lockout_mode.value,
+                "hide_card": room.hide_card,
             }
             new_card_form = RoomForm(initial=initial_values)
             new_card_form.helper.layout = Layout(
