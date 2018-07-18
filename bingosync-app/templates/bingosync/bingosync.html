@@ -115,6 +115,9 @@
                 if (ROOM_SETTINGS.hide_card) {
                     $('.board-cover').show();
                     $(".board-container").addClass('hidden-card');
+                } else {
+                    $('.board-cover').hide();
+                    $(".board-container").removeClass('hidden-card');
                 }
                 refreshNewCardDialog();
             },
