@@ -85,6 +85,7 @@ class GameType(Enum):
     nier_automata = 79
     octopath_traveler = 80
     splatoon_2_octo_expansion = 81
+    pokemon_emerald_randomizer = 82
 
     def __str__(self):
         return self.short_name
@@ -170,9 +171,10 @@ GAME_GROUPS = {
             (GameType.secret_of_mana_short_german, "Short German", "SoM Short German"),
         ],
     },
-    GameType.pokemon_emerald_old_randomizer: {
+    GameType.pokemon_emerald_randomizer: {
         "name": "Pokémon Emerald",
         "variants": [
+            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald"),
             (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
             (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
         ],
