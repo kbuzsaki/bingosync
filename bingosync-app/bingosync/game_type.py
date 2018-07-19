@@ -43,7 +43,7 @@ class GameType(Enum):
     pokemon_platinum = 37
     rayman_ps1 = 38
     pokemon_crystal_randomizer = 39
-    pokemon_emerald_randomizer = 40
+    pokemon_emerald_old_randomizer = 40
     pokemon_crystal_classic_randomizer = 41
     sonic_adventure_2_dark_story = 42
     sonic_adventure_2_long = 43
@@ -54,7 +54,7 @@ class GameType(Enum):
     generic_bingo = 48
     generic_bingo_deluxe = 49
     harry_potter_2 = 50
-    pokemon_emerald_randomizer_short = 51
+    pokemon_emerald_old_randomizer_short = 51
     hollow_knight = 52
     jade_cocoon = 53
     mass_effect_2 = 54
@@ -170,11 +170,11 @@ GAME_GROUPS = {
             (GameType.secret_of_mana_short_german, "Short German", "SoM Short German"),
         ],
     },
-    GameType.pokemon_emerald_randomizer: {
+    GameType.pokemon_emerald_old_randomizer: {
         "name": "Pokémon Emerald",
         "variants": [
-            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald Random"),
-            (GameType.pokemon_emerald_randomizer_short, "Short Randomizer", "Emerald Short"),
+            (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
+            (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
         ],
     },
     GameType.pokemon_crystal: {
