@@ -132,7 +132,7 @@ def new_card(request):
             return HttpResponseBadRequest("Invalid board: Invalid JSON")
 
         if not isinstance(board_json, list):
-            return HttpResponseBadRequest("Ivalid board: Board must be a list")
+            return HttpResponseBadRequest("Invalid board: Board must be a list")
 
         if len(board_json) != 25:
             return HttpResponseBadRequest("Invalid board: Expected 25 squares but got " + str(len(board_json)))
