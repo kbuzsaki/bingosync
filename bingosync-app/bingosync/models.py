@@ -498,8 +498,12 @@ class ChatEvent(Event):
         }
 
 class NewCardEvent(Event):
-    game_type_value = models.IntegerField(choices=GameType.game_choices())
+    game_type_value = models.IntegerField(choices=GameType.choices())
     seed = models.IntegerField(default=0)
+
+    @property
+    def game_type(self):
+        return GameType.for_value(self.game_type_value)
 
     def to_json(self):
         return {

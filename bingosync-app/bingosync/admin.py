@@ -8,7 +8,7 @@ import json
 import pprint
 
 from .models import Room, Game, Square, Player
-from .models import ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent
+from .models import ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent, NewCardEvent
 from .models import FilteredPattern
 
 class GameInline(admin.StackedInline):
@@ -157,6 +157,11 @@ class RevealedEventAdmin(admin.ModelAdmin):
 class ConnectionEventAdmin(admin.ModelAdmin):
     raw_id_fields = ["player"]
     list_display = ["__str__", "timestamp", "player", "event_type"]
+
+@admin.register(NewCardEvent)
+class NewCardEventAdmin(admin.ModelAdmin):
+    raw_id_fields = ["player"]
+    list_display = ["__str__", "timestamp", "player", "game_type", "seed"]
 
 
 @admin.register(FilteredPattern)
