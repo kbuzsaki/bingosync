@@ -86,6 +86,7 @@ class GameType(Enum):
     octopath_traveler = 80
     splatoon_2_octo_expansion = 81
     pokemon_emerald_randomizer = 82
+    resident_evil_hd_randomizer = 83
 
     def __str__(self):
         return self.short_name
@@ -256,6 +257,12 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.resident_evil_hd_randomizer: {
+        "name": "Resident Evil: HD",
+        "variants": [
+            (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
         ],
     },
     **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
