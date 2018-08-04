@@ -192,15 +192,13 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
 function initializeBoardCover(boardRevealedUrl, showNow) {
     $boardCover = $(".board-cover");
     if (!showNow) {
-        $boardCover.hide();
-        $(".board-container").removeClass('hidden-card');
+        revealBoard();
     }
     $boardCover.on("click", function() {
         if (!$(this).is(":visible")) {
             return;
         }
-        $(this).hide();
-        $(".board-container").removeClass('hidden-card');
+        revealBoard();
         $.ajax({
             "url": boardRevealedUrl,
             "type": "PUT",
@@ -212,6 +210,19 @@ function initializeBoardCover(boardRevealedUrl, showNow) {
             }
         });
     });
+}
+
+function hideBoard() {
+    $('.board-cover').show();
+    $(".board-container").addClass('hidden-card');
+}
+
+function revealBoard() {
+    $(".board-cover").hide();
+    $(".board-container").removeClass('hidden-card');
+    $("#the-seed").text(ROOM_SETTINGS.seed);
+    $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+    refitGoalText();
 }
 
 function getColorCount($board, colorClass) {
@@ -279,7 +290,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         return name;
     }
     function processChatJson(json) {
-        console.log(json);
+        //console.log(json);
         // Generate readable timestamp
         var zeroPad = function (str, length) {
             return ('000000' + str).slice(-length);
@@ -319,9 +330,11 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         else if(json["type"] === "new-card") {
             var playerColorClass = getPlayerColorClass(json["player_color"]);
             var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
-            var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml();
+            var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml() + ". ";
             if (json["game"] !== "Custom (Advanced)") {
-                newCardMessage += ". seed: " + $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
+                newCardMessage += " seed: ";
+                //newCardMessage += $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
+                newCardMessage += $("<span>", {"class": "seed-wait", text: '...'}).toHtml();
             }
             return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
         }
@@ -386,7 +399,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     };
     chatSocket.onmessage = function (evt) {
         var json = JSON.parse(evt.data);
-        console.log(json);
+        //console.log(json);
         if(json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
             setSquareColors($square, json["square"]["colors"]);
@@ -422,6 +435,8 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             }
         }
         else if(json["type"] === "new-card") {
+            // if the card was never revealed show what the seed was in the chat anyway
+            $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
             refreshBoard();
         }
         result = processChatJson(json);

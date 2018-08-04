@@ -11,7 +11,7 @@
     </div>
     <div class="panel-body">
         <table id="settings-table">
-            <tr><td><b>Seed:</b></td><td>{{ game.seed }}</td></tr>
+            <tr><td><b>Seed:</b></td><td><span id="the-seed">{% if room.settings.hide_card %}<strong>Hidden<strong>{% else %}{{ game.seed }}{% endif %}</span></td></tr>
             <tr><td><b>Game:</b></td><td>{{ game.game_type|hovertext_game_type }}</td></tr>
             <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}</td></tr>
             <tr><td colspan="2">
