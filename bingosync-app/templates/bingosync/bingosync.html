@@ -112,12 +112,13 @@
                 $("#room-settings-container").html(result.panel);
                 roomSettingsCollapserEvent();
                 ROOM_SETTINGS = result.settings;
+                $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait');
                 if (ROOM_SETTINGS.hide_card) {
-                    $('.board-cover').show();
-                    $(".board-container").addClass('hidden-card');
+                    hideBoard();
+                    $seedInChat.text("Hidden").addClass('seed-hidden');
                 } else {
-                    $('.board-cover').hide();
-                    $(".board-container").removeClass('hidden-card');
+                    revealBoard();
+                    $seedInChat.text(ROOM_SETTINGS.seed).addClass('seed');
                 }
                 refreshNewCardDialog();
             },

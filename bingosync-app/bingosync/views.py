@@ -106,7 +106,7 @@ def room_board(request, encoded_room_uuid):
 # AJAX view to render the room settings panel
 def room_settings(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid(encoded_room_uuid)
-    panel = loader.get_template("bingosync/room_settings_panel.html").render({"game": room.current_game}, request)
+    panel = loader.get_template("bingosync/room_settings_panel.html").render({"game": room.current_game, "room": room}, request)
     return JsonResponse({"panel": panel, "settings": room.settings});
 
 @csrf_exempt
