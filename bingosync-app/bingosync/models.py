@@ -239,6 +239,15 @@ class Room(models.Model):
         idle_time = datetime.datetime.now(datetime.timezone.utc) - self.latest_event_timestamp
         return idle_time > STALE_THRESHOLD
 
+    @property
+    def is_seed_hidden(self):
+        if self.hide_card:
+            latest_game_start = self.current_game.created_date
+            latest_revealed_event = Event.get_latest_for_room(self, RevealedEvent)
+            return True if not latest_revealed_event else latest_game_start >= latest_revealed_event.timestamp
+        else:
+            return False
+
     def update_active(self):
         self.active = len(self.connected_players) > 0
         self.save()
@@ -467,9 +476,10 @@ class Event(models.Model):
         return {'events': recent_events, 'all_included': all_included}
 
     @staticmethod
-    def get_latest_for_room(room):
+    def get_latest_for_room(room, event_type=False):
         latest_events = []
-        for event_class in Event.event_classes():
+        included_types = [event_type] if event_type else Event.event_classes()
+        for event_class in included_types:
             try:
                 latest_event = event_class.objects.filter(player__room=room).latest()
                 latest_events.append(latest_event)
@@ -505,6 +515,11 @@ class NewCardEvent(Event):
     def game_type(self):
         return GameType.for_value(self.game_type_value)
 
+    @property
+    def is_current(self):
+        new_card_events = NewCardEvent.objects.filter(player__room=self.player.room).order_by("timestamp")
+        return new_card_events.last() == self
+
     def to_json(self):
         return {
             "type": "new-card",
@@ -512,6 +527,7 @@ class NewCardEvent(Event):
             "player_color": self.player_color.name,
             "game": GameType.for_value(self.game_type_value).long_name,
             "seed": self.seed,
+            "is_current": self.is_current,
             "timestamp": self.json_timestamp
         }
 

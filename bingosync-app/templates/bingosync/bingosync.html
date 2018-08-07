@@ -63,7 +63,6 @@
             "{{ key }}": {% autoescape off %}{{ value|format_js_val }}{% endautoescape %},
         {% endfor %}
         };
-        console.log(ROOM_SETTINGS);
 
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
