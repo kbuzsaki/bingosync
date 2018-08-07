@@ -333,8 +333,11 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml() + ". ";
             if (json["game"] !== "Custom (Advanced)") {
                 newCardMessage += " seed: ";
-                //newCardMessage += $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
-                newCardMessage += $("<span>", {"class": "seed-wait", text: '...'}).toHtml();
+                if (json["is_current"]) {
+                    newCardMessage += $("<span>", {"class": "seed-wait", text: '...'}).toHtml();
+                } else {
+                    newCardMessage += $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
+                }
             }
             return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
         }
@@ -380,6 +383,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
             $chatHistory.append(entry);
         }
+        $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait').addClass('seed-hidden').text("Hidden");
         if($chatBody[0] !== undefined) {
             $chatBody.scrollTop($chatBody[0].scrollHeight);
         }

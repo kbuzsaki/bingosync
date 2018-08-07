@@ -32,7 +32,11 @@
                                 <td>{{ room.creator.name }}</td>
                                 <td title="{{ room.created_date }}">{{ room.created_date|timesince }} ago</td>
                                 <td>{{ room.current_game.game_type|hovertext_game_type }}</td>
-                                <td>{{ room.current_game.seed }}</td>
+                                {% if room.is_seed_hidden %}
+                                    <td>Hidden</td>
+                                {% else %}
+                                    <td>{{ room.current_game.seed }}</td>
+                                {% endif %}
                                 <td>{{ room.players|length }}</td>
                             </tr>
                         {% endfor %}
