@@ -87,6 +87,8 @@ class GameType(Enum):
     splatoon_2_octo_expansion = 81
     pokemon_emerald_randomizer = 82
     resident_evil_hd_randomizer = 83
+    wii_sports_resort = 84
+    wii_sports_resort_all_stamps = 85
 
     def __str__(self):
         return self.short_name
@@ -245,6 +247,13 @@ GAME_GROUPS = {
         "variants": [
             (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
             (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
+        ],
+    },
+    GameType.wii_sports_resort: {
+            "name": "Wii Sports Resort",
+        "variants": [
+            (GameType.wii_sports_resort, "Normal", "WSR"),
+            (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
         ],
     },
     GameType.lufia_2: {
