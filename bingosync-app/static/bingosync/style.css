@@ -429,7 +429,7 @@
     color: #888;
 }
 
-.new-card-message .game-title,.new-card-message .seed {
+.new-card-message .game-title,.new-card-message .seed, .new-card-message .seed-hidden {
     font-weight: bold;
     color: #c8c8c8;
 }
