@@ -241,12 +241,11 @@ class Room(models.Model):
 
     @property
     def is_seed_hidden(self):
-        if self.hide_card:
-            latest_game_start = self.current_game.created_date
-            latest_revealed_event = Event.get_latest_for_room(self, RevealedEvent)
-            return True if not latest_revealed_event else latest_game_start >= latest_revealed_event.timestamp
-        else:
+        if not self.hide_card:
             return False
+        latest_game_start = self.current_game.created_date
+        latest_revealed_event = RevealedEvent.objects.filter(player__room=self).order_by("timestamp").last()
+        return not latest_revealed_event or latest_game_start >= latest_revealed_event.timestamp
 
     def update_active(self):
         self.active = len(self.connected_players) > 0
@@ -476,10 +475,9 @@ class Event(models.Model):
         return {'events': recent_events, 'all_included': all_included}
 
     @staticmethod
-    def get_latest_for_room(room, event_type=False):
+    def get_latest_for_room(room):
         latest_events = []
-        included_types = [event_type] if event_type else Event.event_classes()
-        for event_class in included_types:
+        for event_class in Event.event_classes():
             try:
                 latest_event = event_class.objects.filter(player__room=room).latest()
                 latest_events.append(latest_event)
