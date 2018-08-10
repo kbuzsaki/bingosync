@@ -89,6 +89,7 @@ class GameType(Enum):
     resident_evil_hd_randomizer = 83
     wii_sports_resort = 84
     wii_sports_resort_all_stamps = 85
+    cardfight_vanguard = 86
 
     def __str__(self):
         return self.short_name
@@ -321,6 +322,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
+    **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
 }
 
 GAME_TYPE_GROUPS = {}
