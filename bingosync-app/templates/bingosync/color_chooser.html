@@ -1,6 +1,11 @@
 <div id="color-chooser" class="panel panel-default">
     <div class="panel-heading">
-        Choose Color
+        <span>
+            Choose Color
+        </span>
+        <span id="color-chooser-collapse" class="btn btn-default btn-xs pull-right collapse-button">
+            <div class="flipped">^</div>
+        </span>
     </div>
     <div class="panel-body">
         <div class="row">
@@ -14,5 +19,25 @@
             <!-- space column -->
             <div class="col-md-1"></div>
         </div>
+        <!-- hide the lower row by default, it gets shown with slideToggle() -->
+        <div class="row js-lower-row" style="overflow: hidden; display: none">
+            <!-- space column -->
+            <div class="col-md-1"></div>
+            <div class="col-md-2 btn color-chooser navysquare" squareColor="navy">navy</div>
+            <div class="col-md-2 btn color-chooser tealsquare" squareColor="teal">teal</div>
+            <div class="col-md-2 btn color-chooser pinksquare" squareColor="pink">pink</div>
+            <div class="col-md-2 btn color-chooser brownsquare" squareColor="brown">brown</div>
+            <div class="col-md-2 btn color-chooser yellowsquare" squareColor="yellow">yellow</div>
+            <!-- space column -->
+            <div class="col-md-1"></div>
+        </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $("#color-chooser-collapse").on("mousedown", function() {
+            $("#color-chooser .js-lower-row").slideToggle(50);
+            $(this).children().toggleClass("flipped");
+        });
+    });
+</script>
