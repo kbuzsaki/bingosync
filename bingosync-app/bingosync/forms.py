@@ -36,7 +36,7 @@ class RoomForm(forms.Form):
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
-    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=GroupedSelect, 
+    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=GroupedSelect,
                            help_text="No other variants available", required=False)
     custom_json = forms.CharField(label="Board", widget=forms.Textarea(attrs={'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
@@ -139,7 +139,7 @@ class JoinRoomForm(forms.Form):
             "encoded_room_uuid": room.encoded_uuid,
             "room_name": room.name,
             "creator_name": room.creator.name,
-            "game_name": str(room.current_game.game_type)
+            "game_name": room.current_game.game_type.long_name,
         }
         return JoinRoomForm(initial=initial_values)
 
