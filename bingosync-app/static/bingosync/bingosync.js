@@ -12,6 +12,18 @@ function getPlayerColorClass(color) {
     return color + "player";
 }
 
+function getSquareColors($square) {
+    colors = {};
+    $square.children('.bg-color').each(function() {
+        for (var color in $(this).getClasses()) {
+            if (color.indexOf("square") !== -1) {
+                colors[color] = true;
+            }
+        }
+    });
+    return colors;
+}
+
 function setSquareColor($square, newColor, removeColor) {
     var newColorClass = getSquareColorClass(newColor);
     if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
@@ -90,11 +102,8 @@ function setPlayerColor($playerEntry, newColor) {
 }
 
 function squareHasColor($square, colorClass) {
-    return $square.children('.bg-color').any(function () {
-        if (colorClass in $(this).getClasses()) {
-            return true;
-        }
-    });
+    colors = getSquareColors($square);
+    return colors[colorClass];
 }
 
 var refreshBoard = function () {};
@@ -140,7 +149,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             // Are we adding or removing the color
             var removeColor;
             // the square is blank and we're painting it
-            if(squareHasColor($(this), getSquareColorClass("blank"))) {
+            if($.isEmptyObject(getSquareColors($(this)))) {
                 removeColor = false;
             }
             // the square is colored the same as the chosen color so we're clearing it (or just removing the chosen color from the square's colors)
