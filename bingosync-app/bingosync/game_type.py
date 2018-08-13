@@ -90,6 +90,7 @@ class GameType(Enum):
     wii_sports_resort = 84
     wii_sports_resort_all_stamps = 85
     cardfight_vanguard = 86
+    super_mario_odyssey_short = 87
 
     def __str__(self):
         return self.short_name
@@ -211,6 +212,7 @@ GAME_GROUPS = {
         "name": "Super Mario Odyssey",
         "variants": [
             (GameType.super_mario_odyssey, "Normal", "SMO"),
+            (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
             (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
         ],
     },
