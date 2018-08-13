@@ -1,4 +1,4 @@
-COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
+COLORS = ["blank", "red", "blue", "green", "purple", "orange", "navy", "teal", "pink", "brown", "yellow"];
 BLANK_COLOR = "blank";
 
 // global variable for the room settings
@@ -27,10 +27,26 @@ function setSquareColor($square, newColor, removeColor) {
     }
 }
 
+ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
+
+function sortColors(colors) {
+    orderedColors = [];
+    for (var i = 0; i < ORDERED_COLORS.length; i++) {
+        if (colors.indexOf(ORDERED_COLORS[i]) !== -1) {
+            orderedColors.push(ORDERED_COLORS[i]);
+        }
+    }
+    return orderedColors;
+}
+
 function setSquareColors($square, colors) {
     $square.children('.bg-color').remove();
     colors = colors.split(' ');
     var shadow = $square.children('.shadow');
+    colors = sortColors(colors);
+    $square.attr("title", colors.join("\n"));
+    // the color offsets seem to work right-to-left, so reverse the array first
+    colors.reverse();
     colors.forEach(function (color) {
         shadow.before('<div class="bg-color ' + getSquareColorClass(color) + '"></div>');
     });
@@ -44,7 +60,12 @@ function updateColorOffsets($square) {
         2: ['0', '0'],
         3: ['0', '36', '-34'],
         4: ['0', '46', '0', '-48'],
-        5: ['0', '56', '18', '-18', '-56']
+        5: ['0', '56', '18', '-18', '-56'],
+        6: ['0', '60', '30', '0', '-30', '-60'],
+        7: ['0', '64', '38', '13', '-13', '-38', '-64'],
+        8: ['0', '64', '41', '20', '0', '-21', '-41', '-64'],
+        9: ['0', '66', '45', '27', '9', '-9', '-27', '-45', '-66'],
+        10: ['0', '68', '51', '34', '17', '0', '-17', '-34', '-51', '-68']
     };
     var translations = translatePercent[numColors];
 
