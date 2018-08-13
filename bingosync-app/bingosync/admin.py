@@ -8,7 +8,7 @@ import json
 import pprint
 
 from .models import Room, Game, Square, Player
-from .models import ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent, NewCardEvent
+from .models import Event, ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent, NewCardEvent
 from .models import FilteredPattern
 
 class GameInline(admin.StackedInline):
@@ -57,6 +57,16 @@ class ConnectionEventInline(admin.TabularInline):
     raw_id_fields = ["player"]
     extra = 0
 
+class RevealedEventInline(admin.TabularInline):
+    model = RevealedEvent
+    raw_id_fields = ["player"]
+    extra = 0
+
+class NewCardEventInline(admin.TabularInline):
+    model = NewCardEvent
+    raw_id_fields = ["player"]
+    extra = 0
+
 def filter_room_and_creator_name(modeladmin, request, queryset):
     for room in queryset:
         room.name = FilteredPattern.filter_string(room.name)
@@ -72,7 +82,16 @@ class RoomAdmin(admin.ModelAdmin):
     actions = [filter_room_and_creator_name]
     view_on_site = True
 
-    readonly_fields = ["passphrase"]
+    fieldsets = (
+        (None, {
+            "fields": ("name", "created_date", "active", "hide_card", "passphrase"),
+        }),
+        ("Event Data", {
+            "classes": ("collapse",),
+            "fields": ("event_data",),
+        }),
+    )
+    readonly_fields = ["passphrase", "event_data"]
 
     def num_games(self, room):
         return len(room.games)
@@ -85,6 +104,12 @@ class RoomAdmin(admin.ModelAdmin):
     def encoded_uuid(self, room):
         return room.encoded_uuid
     encoded_uuid.short_description = "Base 64 UUID"
+
+    def event_data(self, room):
+        events = Event.get_all_for_room(room)
+        return ("<pre><code>" + json.dumps([event.to_json() for event in events], indent=4) + "</pre></code>")
+    event_data.short_description = "Event Data"
+    event_data.allow_tags = True
 
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
@@ -122,7 +147,8 @@ def filter_player_name(modeladmin, request, queryset):
 
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
-    inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline]
+    inlines = [ChatEventInline, GoalEventInline, ColorEventInline, ConnectionEventInline,
+               RevealedEventInline, NewCardEventInline]
     raw_id_fields = ["room"]
     list_display = ["__str__", "created_date", "connected", "is_spectator", "room", "color"]
     actions = [disconnect_players, disconnect_players_if_connected, filter_player_name]
