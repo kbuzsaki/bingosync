@@ -197,6 +197,8 @@ def about(request):
 
 def room_feed(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+    # lookup the player to force authentication
+    _get_session_player(request.session, room)
     events_to_return = []
     all_included = True
 
