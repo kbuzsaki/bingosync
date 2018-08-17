@@ -91,6 +91,7 @@ class GameType(Enum):
     wii_sports_resort_all_stamps = 85
     cardfight_vanguard = 86
     super_mario_odyssey_short = 87
+    yooka_laylee = 88
 
     def __str__(self):
         return self.short_name
@@ -325,6 +326,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
+    **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
 }
 
 GAME_TYPE_GROUPS = {}
