@@ -46,6 +46,9 @@ class BingoGenerator:
 
 
 def process_card(card):
-    # for some reason the first element of the list is a garbage None?
-    card = card[1:]
+    # the regular SRL generator includes an extra null element at the front, so ignore that
+    if len(card) == 26:
+        card = card[1:]
+    if len(card) != 25:
+        raise Exception("bad card length: " + str(len(card)) + ", card: " + str(card))
     return [{"name": goal.get("name", "")} for goal in card]
