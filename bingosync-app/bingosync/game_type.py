@@ -92,6 +92,7 @@ class GameType(Enum):
     cardfight_vanguard = 86
     super_mario_odyssey_short = 87
     yooka_laylee = 88
+    ocarina_of_time_item_randomizer = 89
 
     def __str__(self):
         return self.short_name
@@ -166,6 +167,7 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
             (GameType.ocarina_of_time_short, "Short", "OoT Short"),
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
+            (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
         ],
     },
     GameType.secret_of_mana: {
