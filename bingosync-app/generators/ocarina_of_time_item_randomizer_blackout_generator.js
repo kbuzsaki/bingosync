@@ -251,7 +251,7 @@ bingoGenerator = function(bingoList, opts) {
 							// loop checking board rows
 							for (var k=0; k<board[j].length; k++) {
 								// loop checking board columns
-								if (board[j][k].groups.includes(goal.groups[i])) {
+								if (board[j][k].groups.indexOf(goal.groups[i]) !== -1) {
 									conflict = goal.groups[i]; // conflict found !!
 									break;
 								}
@@ -267,28 +267,28 @@ bingoGenerator = function(bingoList, opts) {
 						for (var j=1; j<row && !conflict; j++) {
 							// current row
 							var square = board[j-1][col-1];
-							if (square.groups.includes(goal.groups[i])) {
+							if (square.groups.indexOf(goal.groups[i]) !== -1) {
 								conflict = square; // conflict found !!
 							}
 						}
 						for (var j=1; j<col && !conflict; j++) {
 							// current col
 							var square = board[row-1][j-1];
-							if (board[row-1][j-1].groups.includes(goal.groups[i])) {
+							if (board[row-1][j-1].groups.indexOf(goal.groups[i]) !== -1) {
 								conflict = board[row-1][j-1]; // conflict found !!
 							}
 						}
 						for (var j=1; j<row && row==col && !conflict; j++) {
 							// tlbr
 							var square = board[j-1][j-1];
-							if (square.groups.includes(goal.groups[i])) {
+							if (square.groups.indexOf(goal.groups[i]) !== -1) {
 								conflict = square;
 							}
 						}
 						for (var j=1; j<row && 6-row==col && !conflict; j++) {
 							// bltr
 							var square = board[j-1][j-1];
-							if (square.groups.includes(goal.groups[i])) {
+							if (square.groups.indexOf(goal.groups[i]) !== -1) {
 								conflict = square;
 							}
 						}
