@@ -93,6 +93,7 @@ class GameType(Enum):
     super_mario_odyssey_short = 87
     yooka_laylee = 88
     ocarina_of_time_item_randomizer = 89
+    ocarina_of_time_item_randomizer_blackout = 90
 
     def __str__(self):
         return self.short_name
@@ -168,6 +169,7 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_short, "Short", "OoT Short"),
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
             (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
+            (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
         ],
     },
     GameType.secret_of_mana: {
