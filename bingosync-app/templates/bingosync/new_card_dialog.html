@@ -11,7 +11,7 @@
                 <h4 class="modal-title" id="myModalLabel">Generate New Card</h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="new-card-form">
+                <form id="new-card-form" class="form-horizontal">
                     {% crispy new_card_form %}
                 </form>
             </div>
@@ -26,7 +26,7 @@
 <script>
     $(document).ready(function() {
         var newCardUrl = "{% url 'new_card' %}";
-        $('#generate-new-card').on('click', function() {
+        var submitNewCardForm = function() {
             var formData = $("#new-card-form").serializeArray();
             var data = {"hide_card": false};
             formData.forEach(function (input) {
@@ -58,8 +58,16 @@
                     console.log(result);
                 }
             });
+        }
+
+        var $form = $('#new-card-form')
+        initializeGameSelectForm($form);
+        $form.on('submit', function(ev) {
+            ev.preventDefault();
+            submitNewCardForm();
         });
-        initializeGameSelectForm($('#new-card-form'));
+        $('#generate-new-card').on('click', submitNewCardForm);
+
     });
     function refreshNewCardDialog() {
         //hide the dialog if it's open
