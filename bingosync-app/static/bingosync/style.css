@@ -100,6 +100,18 @@
     margin-bottom: 0px;
 }
 
+.panel-body-overflow-container {
+    /* panel-header is ~40px tall, so body should be 100% minus header height */
+    height: calc(100% - 40px);
+}
+
+/* for use with panel-body-overflow-container above */
+.panel-overflow-inner {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
 .panel-window {
     height: 100%;
 }
@@ -353,6 +365,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.player-panel-entry {
+    white-space: nowrap;
 }
 
 .playername {
