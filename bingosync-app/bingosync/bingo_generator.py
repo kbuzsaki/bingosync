@@ -1,6 +1,6 @@
+import json
 import os
-
-import execjs
+import subprocess
 
 
 GEN_DIR = "generators"
@@ -31,8 +31,13 @@ class BingoGenerator:
         BingoGenerator.CACHED_INSTANCES[game_name] = load_generator(game_name)
 
     def __init__(self, generator_js):
-        self.generator_js = generator_js
-        self.context = execjs.compile(generator_js)
+        self.generator_js_bytes = generator_js.encode("utf-8")
+
+    def eval(self, js_command):
+        js_eval = "\nconsole.log(JSON.stringify(" + js_command + "));"
+        full_command = self.generator_js_bytes + js_eval.encode("utf-8")
+        out = subprocess.check_output(["node", "-"], input=full_command)
+        return json.loads(out.decode("utf-8"))
 
     def get_card(self, seed=None):
         opts = "{}"
@@ -41,7 +46,7 @@ class BingoGenerator:
             opts = "{ seed: \"" + str(seed) + "\" }"
 
         js_command = "bingoGenerator(bingoList, " + opts + ")"
-        card = self.context.eval(js_command)
+        card = self.eval(js_command)
         return process_card(card)
 
 
