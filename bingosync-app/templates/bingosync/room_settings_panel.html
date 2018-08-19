@@ -10,15 +10,27 @@
         </span>
     </div>
     <div class="panel-body">
-        <table id="settings-table">
-            <tr><td><b>Seed:</b></td><td><span id="the-seed">{% if room.settings.hide_card %}<strong>Hidden<strong>{% else %}{{ game.seed }}{% endif %}</span></td></tr>
-            <tr><td><b>Game:</b></td><td>{{ game.game_type|hovertext_game_type }}</td></tr>
-            <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}</td></tr>
-            <tr><td colspan="2">
-                <div class="btn btn-default" id="new-card" data-toggle="modal" data-target="#new-card-dialog">
-                    New Card
-                </div>
-            </td></tr>
-        </table>
+        <div class="table-wrapper">
+            <table id="settings-table" >
+                <tr><td><b>Seed:</b></td><td>
+                    <span id="the-seed">
+                        {% if room.settings.hide_card %}
+                            <strong>Hidden<strong>
+                        {% else %}
+                            {{ game.seed }}
+                        {% endif %}
+                    </span>
+                </td></tr>
+                <tr><td><b>Game:</b></td><td nowrap>{{ game.game_type|hovertext_game_type }}</td></tr>
+                <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}</td></tr>
+                <tr><td colspan="2">
+                </td></tr>
+            </table>
+        </div>
+        <div style="margin-top: 8px; text-align: center">
+            <div id="new-card" class="btn btn-default" data-toggle="modal" data-target="#new-card-dialog">
+                New Card
+            </div>
+        </div>
     </div>
 </div>
