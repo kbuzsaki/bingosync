@@ -94,6 +94,7 @@ class GameType(Enum):
     yooka_laylee = 88
     ocarina_of_time_item_randomizer = 89
     ocarina_of_time_item_randomizer_blackout = 90
+    doom = 91
 
     def __str__(self):
         return self.short_name
@@ -331,6 +332,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
+    **singleton_group(GameType.doom, "DOOM", "DOOM"),
 }
 
 GAME_TYPE_GROUPS = {}
