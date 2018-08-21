@@ -21,7 +21,11 @@ bingoGenerator = function(bingoList, opts) {
             usedGoals[randIndex] = true;
 
             var goal = bingoList[randIndex];
-            bingoBoard[i] = {"name": goal};
+            if (typeof goal == 'string') {
+                bingoBoard[i] = {"name": goal};
+            } else {
+                bingoBoard[i] = goal;
+            }
         }
 
         return bingoBoard;
