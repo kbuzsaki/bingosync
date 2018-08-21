@@ -95,6 +95,7 @@ class GameType(Enum):
     ocarina_of_time_item_randomizer = 89
     ocarina_of_time_item_randomizer_blackout = 90
     doom = 91
+    pokemon_heartgold_soulsilver = 92
 
     def __str__(self):
         return self.short_name
@@ -333,6 +334,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.doom, "DOOM", "DOOM"),
+    **singleton_group(GameType.pokemon_heartgold_soulsilver, "Pokémon HeartGold/SoulSilver", "Poké HG/SS"),
 }
 
 GAME_TYPE_GROUPS = {}
