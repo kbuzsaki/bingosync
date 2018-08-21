@@ -281,6 +281,12 @@ GAME_GROUPS = {
             (GameType.links_awakening, "Randomizer", "LADX Random"),
         ],
     },
+    GameType.pokemon_heartgold_soulsilver: {
+        "name": "Pokémon HeartGold/SoulSilver",
+        "variants": [
+            (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
+        ],
+    },
     GameType.resident_evil_hd_randomizer: {
         "name": "Resident Evil: HD",
         "variants": [
@@ -337,7 +343,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
-    **singleton_group(GameType.pokemon_heartgold_soulsilver, "Pokémon HeartGold/SoulSilver", "Poké HG/SS"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
 }
 
