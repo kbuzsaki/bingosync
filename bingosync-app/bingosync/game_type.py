@@ -94,7 +94,7 @@ class GameType(Enum):
     yooka_laylee = 88
     ocarina_of_time_item_randomizer = 89
     ocarina_of_time_item_randomizer_blackout = 90
-    doom = 91
+    doom_2016 = 91
     pokemon_heartgold_soulsilver = 92
     super_mario_galaxy_2 = 93
     super_mario_odyssey_all_kingdoms = 94
@@ -336,7 +336,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
-    **singleton_group(GameType.doom, "DOOM", "DOOM"),
+    **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.pokemon_heartgold_soulsilver, "Pokémon HeartGold/SoulSilver", "Poké HG/SS"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
 }
