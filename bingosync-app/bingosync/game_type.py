@@ -97,6 +97,7 @@ class GameType(Enum):
     doom = 91
     pokemon_heartgold_soulsilver = 92
     super_mario_galaxy_2 = 93
+    super_mario_odyssey_all_kingdoms = 94
 
     def __str__(self):
         return self.short_name
@@ -222,6 +223,7 @@ GAME_GROUPS = {
             (GameType.super_mario_odyssey, "Normal", "SMO"),
             (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
             (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
+            (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
         ],
     },
     GameType.generic_bingo: {
