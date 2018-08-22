@@ -94,8 +94,12 @@ class GameType(Enum):
     yooka_laylee = 88
     ocarina_of_time_item_randomizer = 89
     ocarina_of_time_item_randomizer_blackout = 90
-    zelda_botw_short = 91
-    zelda_botw_long = 92
+    doom_2016 = 91
+    pokemon_heartgold_soulsilver = 92
+    super_mario_galaxy_2 = 93
+    super_mario_odyssey_all_kingdoms = 94
+    zelda_botw_short = 95
+    zelda_botw_long = 96
 
     def __str__(self):
         return self.short_name
@@ -221,6 +225,7 @@ GAME_GROUPS = {
             (GameType.super_mario_odyssey, "Normal", "SMO"),
             (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
             (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
+            (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
         ],
     },
     GameType.generic_bingo: {
@@ -276,6 +281,12 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.pokemon_heartgold_soulsilver: {
+        "name": "Pokémon HeartGold/SoulSilver",
+        "variants": [
+            (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
         ],
     },
     GameType.resident_evil_hd_randomizer: {
@@ -340,6 +351,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
+    **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
+    **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
 }
 
 GAME_TYPE_GROUPS = {}

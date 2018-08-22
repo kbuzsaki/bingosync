@@ -37,7 +37,7 @@ class BingoGenerator:
         js_eval = "\nconsole.log(JSON.stringify(" + js_command + "));"
         full_command = self.generator_js_bytes + js_eval.encode("utf-8")
         out = subprocess.check_output(["node", "-"], input=full_command)
-        return json.loads(out)
+        return json.loads(out.decode("utf-8"))
 
     def get_card(self, seed=None):
         opts = "{}"
