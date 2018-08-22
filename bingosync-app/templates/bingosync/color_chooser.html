@@ -3,7 +3,7 @@
         <span>
             Choose Color
         </span>
-        <span id="advanced-settigns-button" class="btn btn-default btn-xs pull-left settings-button" data-toggle="modal" data-target="#advanced-settings">⛭</span>
+        <span id="settigns-button" class="btn btn-default btn-xs pull-left settings-button" data-toggle="modal" data-target="#settings-window">⛭</span>
         <span id="color-chooser-collapse" class="btn btn-default btn-xs pull-right collapse-button">
             <div class="flipped">^</div>
         </span>
@@ -32,10 +32,10 @@
             <!-- space column -->
             <div class="col-md-1"></div>
         </div>
-        <div id="advanced-settings" class="modal fade js-advanced" style="margin-top: 1em; display: none">
+        <div id="settings-window" class="modal fade" style="margin-top: 1em; display: none">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"><h4 class="modal-title">Advanced Settigns</h4></div>
+                    <div class="modal-header"><h4 class="modal-title">Display Settigns</h4></div>
                     <div class="modal-body">
                         <div class="form-horizontal text-left">
                             <div class="form-group">
@@ -73,7 +73,7 @@
             $(this).children().toggleClass("flipped");
         });
 
-        $('#advanced-settings').find('.checkboxinput').each(function () {
+        $('#settings-window').find('.checkboxinput').each(function () {
             var optName = this.id;
             var $this = $(this);
             $this.change(function () {
