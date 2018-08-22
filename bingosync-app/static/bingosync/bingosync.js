@@ -328,6 +328,39 @@ function getColorCount($board, colorClass) {
     return $board.find("." + colorClass).not('.clone').size();
 }
 
+function getBingoCount($board, colorClass) {
+    if (typeof $board === 'undefined') {
+        $board = $('#bingo');
+    }
+    var tlbr = [0, 1, 2, 3, 4];
+    var bltr = [4, 3, 2, 1, 0];
+
+    var diagonals = [1, 1];
+    var columns = [1, 1, 1, 1, 1];
+    var rows = [1, 1, 1, 1, 1];
+
+    for (var row = 0; row < 5; row++) {
+        var $row = $board.find('.row' + (row + 1));
+        if ($row.find('.' + colorClass).not('.clone').length < 5) {
+            rows[row] = 0;
+        }
+        if (diagonals[0] === 1 && $row.filter('.tlbr').find('.' + colorClass).length < 1) {
+            diagonals[0] = 0;
+        }
+        if (diagonals[1] === 1 && $row.filter('.bltr').find('.' + colorClass).length < 1) {
+            diagonals[1] = 0;
+        }
+        for (var col = 0; col < 5; col++) {
+            if (columns[col] === 1 && $row.filter('.col' + (col + 1)).find('.' + colorClass).length < 1) {
+                columns[col] = 0;
+            }
+        }
+    }
+    var sum = 0;
+    diagonals.concat(columns).concat(rows).forEach(function (val) { sum += val; });
+    return sum;
+}
+
 function updateGoalCounters($board, $goalCounters) {
     var blackText = $('#black-on-selected').prop('checked');
     var darkColors = ['navysquare', 'purplesquare', 'brownsquare'];
