@@ -369,6 +369,9 @@
     font-weight: bold;
     line-height: 1;
 }
+.goalcounter.wide-score {
+    width: 5ch;
+}
 
 .player-panel-entry {
     white-space: nowrap;
@@ -382,7 +385,7 @@
 }
 
 .greenplayer {
-    color: #1bb383;
+    color: #1ac522;
 }
 
 .redplayer {

@@ -50,6 +50,12 @@
                                     <input type="checkbox" class="checkboxinput" id="black-on-selected"> Black text on selected goals
                                 </label>
                             </div>
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="black-on-selected" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="show-bingo-score"> Show score as Goals/Bingos
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -73,6 +79,7 @@
             $this.change(function () {
                 window.localStorage.setItem('option-' + optName, $this.prop('checked') ? 1 : 0);
                 updateAllSquares(); 
+                updateGoalCounters($('#bingo'));
             });
 
             var optSetting = parseInt(window.localStorage.getItem('option-' + optName));

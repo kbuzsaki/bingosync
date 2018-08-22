@@ -167,6 +167,7 @@ function setPlayerColor($playerEntry, newColor) {
         $playerGoalCounter.removeClass(getSquareColorClass(color));
     });
     $playerGoalCounter.addClass(getSquareColorClass(newColor));
+    $playerGoalCounter.attr('data-color', newColor);
 }
 
 function squareHasColor($square, colorClass) {
@@ -190,7 +191,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             $square = $board.find("#slot" + (i + 1));
             updateSquare($square, json[i]);
         }
-        updateGoalCounters($board, $('#players-panel'));
+        updateGoalCounters($board);
     }
 
     refreshBoard = function () {
@@ -329,9 +330,6 @@ function getColorCount($board, colorClass) {
 }
 
 function getBingoCount($board, colorClass) {
-    if (typeof $board === 'undefined') {
-        $board = $('#bingo');
-    }
     var tlbr = [0, 1, 2, 3, 4];
     var bltr = [4, 3, 2, 1, 0];
 
@@ -361,13 +359,22 @@ function getBingoCount($board, colorClass) {
     return sum;
 }
 
-function updateGoalCounters($board, $goalCounters) {
+function updateGoalCounters($board) {
     var blackText = $('#black-on-selected').prop('checked');
     var darkColors = ['navysquare', 'purplesquare', 'brownsquare'];
-    var lightColors = ['yellowsquare', 'orangesquare', 'pinksquare'];
+    var lightColors = ['yellowsquare', 'pinksquare'];
+
+    var showBingos = $('#show-bingo-score').prop('checked');
     $(".goalcounter").each(function() {
-        var colorClass = $(this).attr('class').split(' ')[1];
-        $(this).html(getColorCount($board, colorClass));
+        var colorClass = getSquareColorClass($(this).attr('data-color'));
+        var text = getColorCount($board, colorClass);
+        if (showBingos) {
+            text += '/' + getBingoCount($board, colorClass);
+            $(this).addClass('wide-score');
+        } else {
+            $(this).removeClass('wide-score');
+        }
+        $(this).text(text);
         if ((blackText || lightColors.indexOf(colorClass) !== -1) && darkColors.indexOf(colorClass) === -1) {
             $(this).css('color', 'black');
         } else {
@@ -548,19 +555,19 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         if(json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
             setSquareColors($square, json["square"]["colors"]);
-            updateGoalCounters($board, $playersPanel);
+            updateGoalCounters($board);
         }
         else if(json["type"] === "color") {
             var $playerEntry = $playersPanel.find("#" + json["player"]["uuid"]);
             setPlayerColor($playerEntry, json["player"]["color"]);
-            updateGoalCounters($board, $playersPanel);
+            updateGoalCounters($board);
         }
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
                 // only insert if the uuid is not already listed
                 if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
                     var colorClass = getSquareColorClass(json["player"]["color"]);
-                    var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
+                    var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, "data-color": json["player"]["color"], html: "0"});
                     var playerName = $("<span>", {"class": "playername", text: " " + json["player"]["name"]});
                     var playerDiv = $("<div>", {"id": json["player"]["uuid"]});
                     playerDiv.append(goalCounter);
@@ -572,7 +579,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
                         return possibleNextName > json["player"]["name"].toLowerCase();
                     });
 
-                    updateGoalCounters($board, $playersPanel);
+                    updateGoalCounters($board);
                 }
             }
             else if(json["event_type"] === "disconnected") {
