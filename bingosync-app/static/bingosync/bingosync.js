@@ -56,6 +56,7 @@ function setSquareColors($square, colors) {
     colors = colors.split(' ');
     var shadow = $square.children('.shadow');
     colors = sortColors(colors);
+
     $square.attr("title", colors.join("\n"));
     // the color offsets seem to work right-to-left, so reverse the array first
     colors.reverse();
@@ -65,8 +66,36 @@ function setSquareColors($square, colors) {
     updateColorOffsets($square);
 }
 
+function getMyColor () {
+    return $('#color-chooser').find(".chosen-color").attr("squareColor");
+}
+
+function updateAllSquares() {
+    $('#bingo').find(".square").each(function () { updateColorOffsets($(this)); });
+}
+
 function updateColorOffsets($square) {
+    var emphasize = $('#emphasize-my-color').prop('checked');
+    var myColor = getSquareColorClass(getMyColor());
+
+    $square.children('.bg-color').filter('.clone').remove();
     var $colorElements = $square.children('.bg-color');
+
+    // Custom styling for selected goals
+    var $text = $square.children('.text-container');
+    var blackText = $('#black-on-selected').prop('checked');
+    if (!blackText || $colorElements.length === 0) {
+        $text.css('color', '');
+        $text.css('text-shadow', '');
+    } else {
+        $text.css('color', 'black');
+        $text.css('text-shadow', '1px 1px 2px #ffffff');
+    }
+
+    // Emphasizing brings my color as a circle to the front
+    if (emphasize) {
+        $colorElements = $colorElements.not('.' + myColor);
+    }
     var numColors = $colorElements.length;
     var translatePercent = {
         2: ['0', '0'],
@@ -85,11 +114,50 @@ function updateColorOffsets($square) {
     var curHeight = $colorElements.height();
     var targetAngle = Math.atan(curWidth/curHeight);
 
+    $colorElements.removeAttr('style');
     $($colorElements[0]).css('transform', '');
     for (var i = 1; i < $colorElements.length; ++i) {
         var transform = 'skew(-' + targetAngle + 'rad) translateX(' + translations[i] + '%)';
         $($colorElements[i]).css('transform', transform);
-        $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
+        if (blackText) {
+            $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
+        } else {
+            $($colorElements[i]).css('border-right', 'solid 1.5px #222222');
+        }
+    }
+    if (emphasize) {
+        var $myBg = $square.children('.bg-color').filter('.' + myColor);
+        $myBg.removeAttr('style');
+        var $shadow = $square.children('.shadow');
+        $myBg.remove();
+        $shadow.before($myBg); // show above other colors
+        var squareHeight = $shadow.height();
+        var squareWidth = $shadow.width();
+        var $circle = null;
+        if (numColors > 0 && $myBg.length > 0) {
+            $circle = $myBg;
+            if (blackText) {
+                $circle.css('border', 'solid 2px #eeeeee');
+            } else {
+                $circle.css('border', 'solid 2px #141414');
+            }
+        } else {
+            $circle = $myBg.clone();
+            $circle.addClass('clone');
+            if (blackText) {
+                $circle.css('border', 'solid 2px rgba(255, 255, 255, 0.4)');
+            } else {
+                $circle.css('border', 'solid 2px rgba(0, 0, 0, 0.4)');
+            }
+            $shadow.before($circle);
+        }
+        var diameter = Math.min(squareHeight, squareWidth) * 0.7;
+        $circle.css('top', (squareHeight - diameter)/2 + 'px');
+        $circle.css('left', (squareWidth - diameter)/2 + 'px');
+        $circle.css('width', diameter + 'px');
+        $circle.css('height', diameter + 'px');
+
+        $circle.css('border-radius', '50%');
     }
 }
 
@@ -122,6 +190,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             $square = $board.find("#slot" + (i + 1));
             updateSquare($square, json[i]);
         }
+        updateGoalCounters($board, $('#players-panel'));
     }
 
     refreshBoard = function () {
@@ -184,7 +253,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     }
 
     $(window).resize(function () {
-        $board.find(".square").each(function () { updateColorOffsets($(this)); });
+        updateAllSquares();
     });
 
     function addRowHover(name) {
@@ -256,13 +325,21 @@ function revealBoard() {
 }
 
 function getColorCount($board, colorClass) {
-    return $board.find("." + colorClass).size();
+    return $board.find("." + colorClass).not('.clone').size();
 }
 
 function updateGoalCounters($board, $goalCounters) {
+    var blackText = $('#black-on-selected').prop('checked');
+    var darkColors = ['navysquare', 'purplesquare', 'brownsquare'];
+    var lightColors = ['yellowsquare', 'orangesquare', 'pinksquare'];
     $(".goalcounter").each(function() {
         var colorClass = $(this).attr('class').split(' ')[1];
         $(this).html(getColorCount($board, colorClass));
+        if ((blackText || lightColors.indexOf(colorClass) !== -1) && darkColors.indexOf(colorClass) === -1) {
+            $(this).css('color', 'black');
+        } else {
+            $(this).css('color', '');
+        }
     });
 }
 
@@ -287,6 +364,7 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
                 console.log(result);
             }
         });
+        updateAllSquares();
     });
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }

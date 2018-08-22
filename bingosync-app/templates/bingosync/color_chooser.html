@@ -3,6 +3,7 @@
         <span>
             Choose Color
         </span>
+        <span id="advanced-settigns-button" class="btn btn-default btn-xs pull-left settings-button" data-toggle="modal" data-target="#advanced-settings">⛭</span>
         <span id="color-chooser-collapse" class="btn btn-default btn-xs pull-right collapse-button">
             <div class="flipped">^</div>
         </span>
@@ -31,6 +32,32 @@
             <!-- space column -->
             <div class="col-md-1"></div>
         </div>
+        <div id="advanced-settings" class="modal fade js-advanced" style="margin-top: 1em; display: none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Advanced Settigns</h4></div>
+                    <div class="modal-body">
+                        <div class="form-horizontal text-left">
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="emphasize-my-color" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="emphasize-my-color"> Emphasize my color
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="black-on-selected" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="black-on-selected"> Black text on selected goals
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script>
@@ -38,6 +65,21 @@
         $("#color-chooser-collapse").on("mousedown", function() {
             $("#color-chooser .js-lower-row").slideToggle(50);
             $(this).children().toggleClass("flipped");
+        });
+
+        $('#advanced-settings').find('.checkboxinput').each(function () {
+            var optName = this.id;
+            var $this = $(this);
+            $this.change(function () {
+                window.localStorage.setItem('option-' + optName, $this.prop('checked') ? 1 : 0);
+                updateAllSquares(); 
+            });
+
+            var optSetting = parseInt(window.localStorage.getItem('option-' + optName));
+            if (optSetting === 1) {
+                $this.prop('checked', true);
+                $this.trigger('change');
+            }
         });
     });
 </script>
