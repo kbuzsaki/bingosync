@@ -100,6 +100,7 @@ class GameType(Enum):
     super_mario_odyssey_all_kingdoms = 94
     zelda_botw_short = 95
     zelda_botw_long = 96
+    binding_of_isaac = 97
 
     def __str__(self):
         return self.short_name
@@ -353,6 +354,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
+    **singleton_group(GameType.binding_of_isaac, "Binding of Isaac", "Isaac"),
 }
 
 GAME_TYPE_GROUPS = {}
