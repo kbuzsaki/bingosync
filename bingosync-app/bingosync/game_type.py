@@ -296,6 +296,12 @@ GAME_GROUPS = {
             (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
         ],
     },
+    GameType.super_mario_sunshine: {
+        "name": "Super Mario Sunshine",
+        "variants": [
+            (GameType.super_mario_sunshine, "Normal", "SMS"),
+        ],
+    },
     GameType.resident_evil_hd_randomizer: {
         "name": "Resident Evil: HD",
         "variants": [
@@ -317,7 +323,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
-    **singleton_group(GameType.super_mario_sunshine, "Super Mario Sunshine", "SMS"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
