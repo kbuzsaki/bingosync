@@ -147,12 +147,18 @@ class GameType(Enum):
     @staticmethod
     def game_choices():
         choices = [(gt.value, gt.group_name) for gt in GAME_GROUPS if gt.is_game_group and not gt.is_custom]
-        choices = list(sorted(choices, key=lambda el: el[1]))
+        choices = list(sorted(choices, key=lambda el: strip_articles(el[1])))
         return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.group_name)]
 
     @staticmethod
     def variant_choices():
         return [(group_gt.value, [(gt.value, name) for gt, name, short_name in group['variants']]) for group_gt, group in GAME_GROUPS.items()]
+
+def strip_articles(name):
+    """A hacky sort key that ignores things like 'The ' """
+    if name.startswith("The "):
+        return name[4:]
+    return name
 
 
 DEFAULT_VARIANT_NAME = "Normal"
@@ -354,7 +360,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
-    **singleton_group(GameType.binding_of_isaac, "Binding of Isaac", "Isaac"),
+    **singleton_group(GameType.binding_of_isaac, "The Binding of Isaac: Afterbirth+", "Isaac AB+"),
 }
 
 GAME_TYPE_GROUPS = {}
