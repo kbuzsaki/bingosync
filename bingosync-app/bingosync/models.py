@@ -17,11 +17,18 @@ from itertools import combinations, chain
 @unique
 class Color(Enum):
     blank = 1
+    # 5 original colors
     red = 2
     blue = 3
     green = 4
     orange = 5
     purple = 6
+    # 5 expanded colors
+    navy = 7
+    teal = 8
+    pink = 9
+    brown = 10
+    yellow = 11
 
     def __str__(self):
         return self.name.capitalize()
@@ -215,7 +222,7 @@ class Room(models.Model):
 
     @property
     def current_game(self):
-        return self.games[0]
+        return Game.objects.filter(room=self).order_by("-created_date").first()
 
     @property
     def games(self):
@@ -239,6 +246,14 @@ class Room(models.Model):
         idle_time = datetime.datetime.now(datetime.timezone.utc) - self.latest_event_timestamp
         return idle_time > STALE_THRESHOLD
 
+    @property
+    def is_seed_hidden(self):
+        if not self.hide_card:
+            return False
+        latest_game_start = self.current_game.created_date
+        latest_revealed_event = RevealedEvent.objects.filter(player__room=self).order_by("timestamp").last()
+        return not latest_revealed_event or latest_game_start >= latest_revealed_event.timestamp
+
     def update_active(self):
         self.active = len(self.connected_players) > 0
         self.save()
@@ -247,6 +262,18 @@ class Room(models.Model):
     def creator(self):
         return self.players.order_by("created_date").first()
 
+    @property
+    def settings(self):
+        game = self.current_game
+        return {
+            "hide_card": self.hide_card,
+            "lockout_mode": str(game.lockout_mode),
+            "game": str(game.game_type.group),
+            "game_id": game.game_type.group.value,
+            "variant": str(game.game_type),
+            "variant_id": game.game_type_value,
+            "seed": game.seed,
+        }
 
 class LockoutMode(Enum):
     non_lockout = 1
@@ -434,7 +461,7 @@ class Event(models.Model):
 
     @staticmethod
     def event_classes():
-        return [ChatEvent, GoalEvent, ColorEvent, RevealedEvent, ConnectionEvent]
+        return [ChatEvent, GoalEvent, ColorEvent, RevealedEvent, ConnectionEvent, NewCardEvent]
 
     @staticmethod
     def get_all_for_room(room):
@@ -442,6 +469,17 @@ class Event(models.Model):
         for event_class in Event.event_classes():
             all_events.extend(event_class.objects.filter(player__room=room))
         return sorted(all_events, key=lambda event: event.timestamp)
+
+    @staticmethod
+    def get_all_recent_for_room(room):
+        recent_events = []
+        total_events = 0;
+        for event_class in Event.event_classes():
+            total_events += event_class.objects.filter(player__room=room).count()
+            recent_events.extend(event_class.objects.filter(player__room=room).filter(timestamp__gte=datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)))
+        all_included = total_events == len(recent_events)
+        recent_events = sorted(recent_events, key=lambda event: event.timestamp)
+        return {'events': recent_events, 'all_included': all_included}
 
     @staticmethod
     def get_latest_for_room(room):
@@ -471,6 +509,30 @@ class ChatEvent(Event):
             "player": self.player.to_json(),
             "player_color": self.player_color.name,
             "text": self.body,
+            "timestamp": self.json_timestamp
+        }
+
+class NewCardEvent(Event):
+    game_type_value = models.IntegerField(choices=GameType.choices())
+    seed = models.IntegerField(default=0)
+
+    @property
+    def game_type(self):
+        return GameType.for_value(self.game_type_value)
+
+    @property
+    def is_current(self):
+        new_card_events = NewCardEvent.objects.filter(player__room=self.player.room).order_by("timestamp")
+        return new_card_events.last() == self
+
+    def to_json(self):
+        return {
+            "type": "new-card",
+            "player": self.player.to_json(),
+            "player_color": self.player_color.name,
+            "game": GameType.for_value(self.game_type_value).long_name,
+            "seed": self.seed,
+            "is_current": self.is_current,
             "timestamp": self.json_timestamp
         }
 

@@ -19,10 +19,30 @@ def get_golden_data(game_type, seed):
     with open(output_path) as infile:
         return json.load(infile)
 
+def freeze_dict(d):
+    return tuple(tuple(sorted(element.items())) for element in d)
+
+class GoldenDataTestCase(test.TestCase):
+
+    def test_golden_data(self):
+        data_map = {}
+        for game_type in TEST_TYPES:
+            for seed in TEST_SEEDS:
+                golden_data = freeze_dict(get_golden_data(game_type, seed))
+                if golden_data in data_map:
+                    original_type, original_seed = data_map[golden_data]
+                    self.fail("got duplicate card from ({}, {}), original was ({}, {})"
+                            .format(game_type.name, seed, original_type.name, original_seed))
+                else:
+                    data_map[golden_data] = game_type, seed
+
+
 def test_get_card(self, game_type):
     """ Tests whether the generator generates any valid card """
     board_json = game_type.generator_instance().get_card(1)
     self.assertEqual(len(board_json), 25)
+    for i, el in enumerate(board_json):
+        self.assertIn("name", el, "i: " + str(i) + ", el: " + repr(el))
 
 def test_card_correctness(self, game_type, seed):
     """ Tests whether the generator generates the correct card as compared to golden data """

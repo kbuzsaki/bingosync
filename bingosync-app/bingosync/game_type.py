@@ -43,7 +43,7 @@ class GameType(Enum):
     pokemon_platinum = 37
     rayman_ps1 = 38
     pokemon_crystal_randomizer = 39
-    pokemon_emerald_randomizer = 40
+    pokemon_emerald_old_randomizer = 40
     pokemon_crystal_classic_randomizer = 41
     sonic_adventure_2_dark_story = 42
     sonic_adventure_2_long = 43
@@ -54,7 +54,7 @@ class GameType(Enum):
     generic_bingo = 48
     generic_bingo_deluxe = 49
     harry_potter_2 = 50
-    pokemon_emerald_randomizer_short = 51
+    pokemon_emerald_old_randomizer_short = 51
     hollow_knight = 52
     jade_cocoon = 53
     mass_effect_2 = 54
@@ -67,11 +67,42 @@ class GameType(Enum):
     final_fantasy_1_randomizer_short = 61
     final_fantasy_1_randomizer_long = 62
     ff4_free_enterprise = 63
-    spyro_2_4_0 = 64
+    spyro_2_4_x = 64
     yugioh_forbidden_memories = 65
     links_awakening = 66
     dark_souls_3 = 67
     bloodborne = 68
+    cuphead = 69
+    pokemon_black_white = 70
+    battleblock_theater = 71
+    battle_for_bikini_bottom = 72
+    luigis_mansion = 73
+    luigis_mansion_dark_moon = 74
+    yokus_island_express = 75
+    league_of_legends_aram = 76
+    legend_of_mana = 77
+    castlevania_aria_of_sorrow = 78
+    nier_automata = 79
+    octopath_traveler = 80
+    splatoon_2_octo_expansion = 81
+    pokemon_emerald_randomizer = 82
+    resident_evil_hd_randomizer = 83
+    wii_sports_resort = 84
+    wii_sports_resort_all_stamps = 85
+    cardfight_vanguard = 86
+    super_mario_odyssey_short = 87
+    yooka_laylee = 88
+    ocarina_of_time_item_randomizer = 89
+    ocarina_of_time_item_randomizer_blackout = 90
+    doom_2016 = 91
+    pokemon_heartgold_soulsilver = 92
+    super_mario_galaxy_2 = 93
+    super_mario_odyssey_all_kingdoms = 94
+    zelda_botw_short = 95
+    zelda_botw_long = 96
+    binding_of_isaac = 97
+    super_mario_sunshine_tournament = 98
+    super_mario_sunshine_lockout = 99
 
     def __str__(self):
         return self.short_name
@@ -118,12 +149,18 @@ class GameType(Enum):
     @staticmethod
     def game_choices():
         choices = [(gt.value, gt.group_name) for gt in GAME_GROUPS if gt.is_game_group and not gt.is_custom]
-        choices = list(sorted(choices, key=lambda el: el[1]))
+        choices = list(sorted(choices, key=lambda el: strip_articles(el[1])))
         return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.group_name)]
 
     @staticmethod
     def variant_choices():
-        return [(gt.value, gt.variant_name) for gt in ALL_VARIANTS]
+        return [(group_gt.value, [(gt.value, name) for gt, name, short_name in group['variants']]) for group_gt, group in GAME_GROUPS.items()]
+
+def strip_articles(name):
+    """A hacky sort key that ignores things like 'The ' """
+    if name.startswith("The "):
+        return name[4:]
+    return name
 
 
 DEFAULT_VARIANT_NAME = "Normal"
@@ -146,6 +183,8 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
             (GameType.ocarina_of_time_short, "Short", "OoT Short"),
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
+            (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
+            (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
         ],
     },
     GameType.secret_of_mana: {
@@ -160,8 +199,9 @@ GAME_GROUPS = {
     GameType.pokemon_emerald_randomizer: {
         "name": "Pokémon Emerald",
         "variants": [
-            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald Random"),
-            (GameType.pokemon_emerald_randomizer_short, "Short Randomizer", "Emerald Short"),
+            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald"),
+            (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
+            (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
         ],
     },
     GameType.pokemon_crystal: {
@@ -192,7 +232,9 @@ GAME_GROUPS = {
         "name": "Super Mario Odyssey",
         "variants": [
             (GameType.super_mario_odyssey, "Normal", "SMO"),
+            (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
             (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
+            (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
         ],
     },
     GameType.generic_bingo: {
@@ -228,7 +270,14 @@ GAME_GROUPS = {
         "name": "Spyro 2: Ripto's Rage",
         "variants": [
             (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
-            (GameType.spyro_2_4_0, "4.0", "Spyro 2 - 4.0"),
+            (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
+        ],
+    },
+    GameType.wii_sports_resort: {
+            "name": "Wii Sports Resort",
+        "variants": [
+            (GameType.wii_sports_resort, "Normal", "WSR"),
+            (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
         ],
     },
     GameType.lufia_2: {
@@ -243,6 +292,34 @@ GAME_GROUPS = {
             (GameType.links_awakening, "Randomizer", "LADX Random"),
         ],
     },
+    GameType.pokemon_heartgold_soulsilver: {
+        "name": "Pokémon HeartGold/SoulSilver",
+        "variants": [
+            (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
+        ],
+    },
+    GameType.super_mario_sunshine_tournament: {
+        "name": "Super Mario Sunshine",
+        "variants": [
+            (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
+            (GameType.super_mario_sunshine, "Normal", "SMS"),
+            (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
+        ],
+    },
+    GameType.resident_evil_hd_randomizer: {
+        "name": "Resident Evil: HD",
+        "variants": [
+            (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
+        ],
+    },
+    GameType.zelda_botw: {
+        "name": "Zelda: Breath of the Wild",
+        "variants": [
+            (GameType.zelda_botw, "Normal", "BotW Normal"),
+            (GameType.zelda_botw_short, "Short", "BotW Short"),
+            (GameType.zelda_botw_long, "Long", "BotW Long"),
+        ],
+    },
     **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
@@ -250,11 +327,11 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
-    **singleton_group(GameType.super_mario_sunshine, "Super Mario Sunshine", "SMS"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
+    **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
@@ -263,7 +340,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.banjo_tooie, "Banjo-Tooie", "Banjo-Tooie"),
-    **singleton_group(GameType.zelda_botw, "Zelda: Breath of the Wild", "Zelda: BotW"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.pikmin_2, "Pikmin 2", "Pikmin 2"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
@@ -277,6 +353,23 @@ GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
+    **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
+    **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
+    **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
+    **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
+    **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
+    **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
+    **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
+    **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
+    **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
+    **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
+    **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
+    **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
+    **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
+    **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
+    **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
+    **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
+    **singleton_group(GameType.binding_of_isaac, "The Binding of Isaac: Afterbirth+", "Isaac AB+"),
 }
 
 GAME_TYPE_GROUPS = {}

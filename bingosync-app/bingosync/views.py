@@ -3,18 +3,24 @@ from django.shortcuts import render, redirect
 from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
+from django.db import transaction
+from django.template import loader
 
 import json
 import requests
+import random
 
 from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
 from .bingo_generator import BingoGenerator
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
-from .models import Room, Game, Player, Color, Event, ChatEvent, RevealedEvent, ConnectionEvent
+from .models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
+from .models import ConnectionEvent, NewCardEvent
 from .game_type import ALL_VARIANTS
 from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
-from .publish import publish_connection_event
+from .publish import publish_connection_event, publish_new_card_event
 from .util import generate_encoded_uuid
+
+from crispy_forms.layout import Layout, Field
 
 def rooms(request):
     if request.method == "POST":
@@ -53,12 +59,30 @@ def room_view(request, encoded_room_uuid):
     else:
         try:
             room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+            initial_values = {
+                "game_type": room.current_game.game_type.group.value,
+                "variant_type": room.current_game.game_type.value,
+                "lockout_mode": room.current_game.lockout_mode.value,
+                "hide_card": room.hide_card,
+            }
+            new_card_form = RoomForm(initial=initial_values)
+            new_card_form.helper.layout = Layout(
+                    "game_type",
+                    "variant_type",
+                    "custom_json",
+                    "lockout_mode",
+                    "seed",
+                    "hide_card",
+            )
+            new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
+            new_card_form.helper['custom_json'].wrap(Field, wrapper_class='hidden')
             player = _get_session_player(request.session, room)
             params = {
                 "room": room,
                 "game": room.current_game,
                 "player": player,
                 "sockets_url": SOCKETS_URL,
+                "new_card_form": new_card_form,
                 "temporary_socket_key": _create_temporary_socket_key(player)
             }
             return render(request, "bingosync/bingosync.html", params)
@@ -78,6 +102,68 @@ def room_board(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     board = room.current_game.board
     return JsonResponse(board, safe=False)
+
+# AJAX view to render the room settings panel
+def room_settings(request, encoded_room_uuid):
+    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    panel = loader.get_template("bingosync/room_settings_panel.html").render({"game": room.current_game, "room": room}, request)
+    return JsonResponse({"panel": panel, "settings": room.settings});
+
+@csrf_exempt
+def new_card(request):
+    data = json.loads(request.body.decode("utf8"))
+
+    room = Room.get_for_encoded_uuid(data["room"])
+    player = _get_session_player(request.session, room)
+
+    #create new game
+    game_type = GameType.for_value(int(data["game_type"]))
+    lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
+    seed = data["seed"]
+
+    hide_card = data["hide_card"]
+
+    if game_type == GameType.custom:
+        if not seed:
+            seed = "0"
+        try:
+            board_json = json.loads(data["custom_json"])
+        except:
+            return HttpResponseBadRequest("Invalid board: Invalid JSON")
+
+        if not isinstance(board_json, list):
+            return HttpResponseBadRequest("Invalid board: Board must be a list")
+
+        if len(board_json) != 25:
+            return HttpResponseBadRequest("Invalid board: Expected 25 squares but got " + str(len(board_json)))
+
+        for i, square in enumerate(board_json):
+            if "name" not in square:
+                return HttpResponseBadRequest("Invalid board: Square " + str(i + 1) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+            elif square["name"] == "":
+                return HttpResponseBadRequest("Invalid board: Square " + str(1 + i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
+    else:
+        try:
+            # variant_type is not sent if the game only has 1 variant, so use it if
+            # it's present but fall back to the regular game_type otherwise
+            game_type = GameType.for_value(int(data["variant_type"]))
+        except KeyError:
+            pass
+        if not seed:
+            seed = str(random.randint(1, 1000000))
+        board_json = game_type.generator_instance().get_card(seed)
+
+    with transaction.atomic():
+        game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
+
+        if hide_card != room.hide_card:
+            room.hide_card = hide_card
+        room.update_active() # This saves the room
+
+        new_card_event = NewCardEvent(player=player, player_color_value=player.color.value, game_type_value=game_type.value, seed=seed)
+        new_card_event.save()
+    publish_new_card_event(new_card_event)
+    return HttpResponse("Recieved data: " + str(data))
 
 def history(request):
     hide_solo = request.GET.get('hide_solo')
@@ -111,9 +197,20 @@ def about(request):
 
 def room_feed(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
-    all_events = Event.get_all_for_room(room)
-    all_jsons = [event.to_json() for event in all_events]
-    return JsonResponse(all_jsons, safe=False)
+    # lookup the player to force authentication
+    _get_session_player(request.session, room)
+    events_to_return = []
+    all_included = True
+
+    if request.GET.get('full') == 'true':
+        events_to_return = Event.get_all_for_room(room)
+    else:
+        recent_events = Event.get_all_recent_for_room(room)
+        events_to_return = recent_events["events"]
+        all_included = recent_events["all_included"]
+
+    all_jsons = [event.to_json() for event in events_to_return]
+    return JsonResponse({'events': all_jsons, 'allIncluded': all_included}, safe=False)
 
 def room_disconnect(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)

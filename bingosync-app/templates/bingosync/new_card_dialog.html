@@ -1,0 +1,90 @@
+{% load staticfiles %}
+{% load bootstrap %}
+{% load app_filters %}
+{% load crispy_forms_tags %}
+
+<div id="new-card-dialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Generate New Card</h4>
+            </div>
+            <div class="modal-body">
+                <form id="new-card-form" class="form-horizontal">
+                    {% crispy new_card_form %}
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="generate-new-card">Generate Card</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static "bingosync/home.js" %}"></script>
+<script>
+    $(document).ready(function() {
+        var newCardUrl = "{% url 'new_card' %}";
+        var submitNewCardForm = function() {
+            var formData = $("#new-card-form").serializeArray();
+            var data = {"hide_card": false};
+            formData.forEach(function (input) {
+                if (input['name'] === 'hide_card') {
+                    data['hide_card'] = input['value'] === 'on';
+                } else {
+                    data[input['name']] = input['value'];
+                }
+            });
+            data.room = window.sessionStorage.getItem("room");
+            $.ajax({
+                "url": newCardUrl,
+                "type": "PUT",
+                "data": JSON.stringify(data),
+                "success": function () {
+                    $("#new-card-dialog").modal("hide");
+                },
+                "error": function(result) {
+                    if (result.responseText && result.responseText.substr(0, 14).toLowerCase() === "invalid board:") {
+                        $jsonInput = $("#id_custom_json");
+                        $jsonInput.parent().addClass("has-error");
+                        $jsonInput.after("<span class='help-block'>" + result.responseText.substr(14) + "</span>");
+                        $jsonInput.on("change keyup paste", function () {
+                            $(this).siblings(".help-block").remove();
+                            $(this).parent().removeClass("has-error");
+                            $(this).off("change keyup paste");
+                        });
+                    }
+                    console.log(result);
+                }
+            });
+        }
+
+        var $form = $('#new-card-form')
+        initializeGameSelectForm($form);
+        $form.on('submit', function(ev) {
+            ev.preventDefault();
+            submitNewCardForm();
+        });
+        $('#generate-new-card').on('click', submitNewCardForm);
+
+    });
+    function refreshNewCardDialog() {
+        //hide the dialog if it's open
+        $("#new-card-dialog").modal("hide");
+
+        var $form = $("#new-card-form");
+        var $variantSelector = $form.find("select[name=variant_type]");
+        $variantSelector.val(ROOM_SETTINGS.game_id);
+        // Set the game selector to the group of the selected variant
+        $form.find("select[name=game_type]").val($variantSelector.find(':selected').attr('data-group'));
+        $form.find("select[name=lockout_mode]").val(ROOM_SETTINGS.lockout_mode === 'Lockout' ? 2 : 1);
+        $form.find("input[name=hide_card]").prop("checked", ROOM_SETTINGS.hide_card);
+
+        // Always leave the seed and custom json blank
+        $form.find("input[name=seed]").val("");
+        $form.find("input[name=custom_json]").val("");
+
+        $form.find("select[name=game_type]").change();
+    }
+</script>

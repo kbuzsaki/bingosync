@@ -42,6 +42,10 @@
     user-select: none;
 }
 
+.flipped {
+    transform: rotate(180deg);
+}
+
 .sidebar-right {
     display: flex;
     flex-flow: column;
@@ -94,6 +98,18 @@
 
 .flex-col-footer .panel {
     margin-bottom: 0px;
+}
+
+.panel-body-overflow-container {
+    /* panel-header is ~40px tall, so body should be 100% minus header height */
+    height: calc(100% - 40px);
+}
+
+/* for use with panel-body-overflow-container above */
+.panel-overflow-inner {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .panel-window {
@@ -238,7 +254,6 @@
     border-collapse: separate;
 }
 
-/* ripped these gradients from the slate theme */
 .greensquare {
     background-image: linear-gradient(#31D814, #00B500 60%, #20A00A);
 }
@@ -255,9 +270,28 @@
     background-image: linear-gradient(#409CFF, #37A1DE 60%, #088CBD);
 }
 
-/* had to generate this one using an online tool... */
 .purplesquare {
-    background-image: linear-gradient(#CF6BF5, #B038DC);
+    background-image: linear-gradient(#822dbf, #7120ab);
+}
+
+.pinksquare {
+    background-image: linear-gradient(#ed86aa, #cc6e8f);
+}
+
+.brownsquare {
+    background-image: linear-gradient(#ab5c23, #6d3811);
+}
+
+.tealsquare {
+    background-image: linear-gradient(#419695, #2e7372);
+}
+
+.navysquare {
+    background-image: linear-gradient(#0d48b5, #022b75);
+}
+
+.yellowsquare {
+    background-image: linear-gradient(#d8d014, #c1ba0b);
 }
 
 .starred {
@@ -333,6 +367,10 @@
     user-select: none;
 }
 
+.player-panel-entry {
+    white-space: nowrap;
+}
+
 .playername {
 }
 
@@ -357,7 +395,27 @@
 }
 
 .purpleplayer {
-    color: #da75ff;
+    color: #822dbf;
+}
+
+.navyplayer {
+    color: #0d48b5;
+}
+
+.tealplayer {
+    color: #419695;
+}
+
+.pinkplayer {
+    color: #de799c;
+}
+
+.brownplayer {
+    color: #ab5c23;
+}
+
+.yellowplayer {
+    color: #c1ba0b;
 }
 
 .color-chooser {
@@ -373,6 +431,15 @@
 .chosen-color,
 .chosen-color:hover {
     border: solid 2px #eee;
+}
+
+.chat-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #aaa;
+    font-size: 80%;
+    text-align: center;
+    background-color: #181818;
 }
 
 .connection-message {
@@ -413,6 +480,16 @@
 .revealed-message {
     font-style: italic;
     color: #888;
+}
+
+.new-card-message {
+    font-style: italic;
+    color: #888;
+}
+
+.new-card-message .game-title,.new-card-message .seed, .new-card-message .seed-hidden {
+    font-weight: bold;
+    color: #c8c8c8;
 }
 
 .history-placeholder {
@@ -484,4 +561,9 @@
 .form-group .checkbox {
     padding-top: 0;
     min-height: 0;
+}
+
+/* hide asterisk denoting required inputs */
+.asteriskField {
+    display: none;
 }

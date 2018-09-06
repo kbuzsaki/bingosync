@@ -10,6 +10,11 @@ from .models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
 
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
+from .widgets import GroupedSelect
+
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Field
+
 
 logger = logging.getLogger(__name__)
 
@@ -20,19 +25,37 @@ def make_read_only_char_field(*args, **kwargs):
 ROOM_NAME_MAX_LENGTH = Room._meta.get_field("name").max_length
 PLAYER_NAME_MAX_LENGTH = Player._meta.get_field("name").max_length
 
+CUSTOM_JSON_PLACEHOLDER_TEXT = """Paste the board as a 25 element JSON goal list, e.g:
+[ {"name": "Collect 3 Fire Flowers"},
+  {"name": "Defeat Phantom Ganon"},
+  {"name": "Catch a Pokemon while Surfing"},
+  ... ]"""
+
 class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
     nickname = forms.CharField(label="Nickname", max_length=PLAYER_NAME_MAX_LENGTH)
     game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
-    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(),
-                                     widget=forms.HiddenInput(), required=False)
-    custom_json = forms.CharField(label="Board", widget=forms.HiddenInput(), required=False)
+    variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=GroupedSelect,
+                           help_text="No other variants available", required=False)
+    custom_json = forms.CharField(label="Board", widget=forms.Textarea(attrs={'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(attrs={"min": 0, "max": 2147483647}),
                            help_text="Leave blank for a random seed", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
     hide_card = forms.BooleanField(label="Hide Card Initially", required=False)
+
+    def __init__(self, *args, **kwargs):
+        super(RoomForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.form_tag = False
+
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = 'col-md-3'
+        self.helper.field_class = 'col-md-9'
+        # variant and custom_json hidden by default
+        self.helper['variant_type'].wrap(Field, wrapper_class='hidden')
+        self.helper['custom_json'].wrap(Field, wrapper_class='hidden')
 
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()
@@ -53,9 +76,9 @@ class RoomForm(forms.Form):
 
             for i, square in enumerate(custom_board):
                 if "name" not in square:
-                    raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+                    raise forms.ValidationError("Square " + str(1 + i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
                 elif square["name"] == "":
-                    raise forms.ValidationError("Square " + str(i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
+                    raise forms.ValidationError("Square " + str(1 + i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
             cleaned_data["custom_board"] = custom_board
         else:
             try:
@@ -116,7 +139,7 @@ class JoinRoomForm(forms.Form):
             "encoded_room_uuid": room.encoded_uuid,
             "room_name": room.name,
             "creator_name": room.creator.name,
-            "game_name": str(room.current_game.game_type)
+            "game_name": room.current_game.game_type.long_name,
         }
         return JoinRoomForm(initial=initial_values)
 
@@ -173,4 +196,3 @@ class GoalListConverterForm(forms.Form):
 
     def get_goal_list(self):
         return self.json_str
-

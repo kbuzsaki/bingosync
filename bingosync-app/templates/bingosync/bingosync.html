@@ -1,5 +1,6 @@
 {% extends "bingosync/base.html" %}
 {% load staticfiles %}
+{% load app_filters %}
 
 <!-- bingosync.html doesn't use the same layout conventiona s the rest of the
      site because the main layout flexboxes screw with the fill-parent based
@@ -22,13 +23,11 @@
                     {% include 'bingosync/color_chooser.html' %}
                 <div class="board-container{{ room.hide_card|yesno:" hidden-card," }}">
                     {% include 'bingosync/board.html' %}
-                    {% if room.hide_card %}
-                        <div class="board-cover">
-                            <div class="board-cover-text unselectable">
-                                Click to Reveal
-                            </div>
+                    <div class="board-cover">
+                        <div class="board-cover-text unselectable">
+                            Click to Reveal
                         </div>
-                    {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,7 +41,7 @@
                         <div class="flex-col-content m-b-l">
                             {% include 'bingosync/players_panel.html' %}
                         </div>
-                        <div class="flex-col-footer m-b-l">
+                        <div class="flex-col-footer m-b-l" id="room-settings-container">
                             {% include 'bingosync/room_settings_panel.html' %}
                         </div>
                         <div class="flex-col-footer">
@@ -54,9 +53,17 @@
         </div>
     </div>
 </div>
+{% include 'bingosync/new_card_dialog.html' %}
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
+        // populate initial settings
+        ROOM_SETTINGS = {
+        {% for key, value in room.settings.items %}
+            "{{ key }}": {% autoescape off %}{{ value|format_js_val }}{% endautoescape %},
+        {% endfor %}
+        };
+
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
         var chatUrl = "{% url 'chat_message' %}";
@@ -73,9 +80,7 @@
         // asynchronously load and populate the board
         initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), isSpectator);
 
-        {% if room.hide_card %}
-            initializeBoardCover($(".board-cover"), boardRevealedUrl);
-        {% endif %}
+        initializeBoardCover(boardRevealedUrl, ROOM_SETTINGS.hide_card);
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
@@ -88,7 +93,39 @@
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
+
+        roomSettingsCollapserEvent();
     });
+    function roomSettingsCollapserEvent() {
+        // collapse event for the room settings panel
+        // I put it here becuase the template is loaded each time a new card is created
+        $("#room-settings-collapse").on("mousedown", function() {
+            $("#room-settings .panel-body").toggle(50);
+        });
+    }
+    function refreshSettingsPanel() {
+        var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
+        $.ajax({
+            "url": roomSettingsUrl,
+            "success": function(result) {
+                $("#room-settings-container").html(result.panel);
+                roomSettingsCollapserEvent();
+                ROOM_SETTINGS = result.settings;
+                $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait');
+                if (ROOM_SETTINGS.hide_card) {
+                    hideBoard();
+                    $seedInChat.text("Hidden").addClass('seed-hidden');
+                } else {
+                    revealBoard();
+                    $seedInChat.text(ROOM_SETTINGS.seed).addClass('seed');
+                }
+                refreshNewCardDialog();
+            },
+            "error": function(result) {
+                console.log(result);
+            }
+        });
+    }
 </script>
 {% endblock %}
 

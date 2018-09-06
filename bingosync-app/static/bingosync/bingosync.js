@@ -1,15 +1,8 @@
-COLORS = ["blank", "red", "blue", "green", "purple", "orange"];
+COLORS = ["blank", "red", "blue", "green", "purple", "orange", "navy", "teal", "pink", "brown", "yellow"];
 BLANK_COLOR = "blank";
 
-var IS_LOCKOUT = null;
-
-$(function () {
-    if ($('#is-lockout').attr('value') === 'lockout') {
-        IS_LOCKOUT = true;
-    } else {
-        IS_LOCKOUT = false;
-    }
-});
+// global variable for the room settings
+var ROOM_SETTINGS = null;
 
 function getSquareColorClass(color) {
     return color + "square";
@@ -19,9 +12,21 @@ function getPlayerColorClass(color) {
     return color + "player";
 }
 
+function getSquareColors($square) {
+    colors = {};
+    $square.children('.bg-color').each(function() {
+        for (var color in $(this).getClasses()) {
+            if (color.indexOf("square") !== -1) {
+                colors[color] = true;
+            }
+        }
+    });
+    return colors;
+}
+
 function setSquareColor($square, newColor, removeColor) {
     var newColorClass = getSquareColorClass(newColor);
-    if (!IS_LOCKOUT) {
+    if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
         if (removeColor) {
             $square.children('.' + newColorClass).remove();
         } else if (!squareHasColor($square, newColorClass)) {
@@ -34,10 +39,26 @@ function setSquareColor($square, newColor, removeColor) {
     }
 }
 
+ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
+
+function sortColors(colors) {
+    orderedColors = [];
+    for (var i = 0; i < ORDERED_COLORS.length; i++) {
+        if (colors.indexOf(ORDERED_COLORS[i]) !== -1) {
+            orderedColors.push(ORDERED_COLORS[i]);
+        }
+    }
+    return orderedColors;
+}
+
 function setSquareColors($square, colors) {
     $square.children('.bg-color').remove();
     colors = colors.split(' ');
     var shadow = $square.children('.shadow');
+    colors = sortColors(colors);
+    $square.attr("title", colors.join("\n"));
+    // the color offsets seem to work right-to-left, so reverse the array first
+    colors.reverse();
     colors.forEach(function (color) {
         shadow.before('<div class="bg-color ' + getSquareColorClass(color) + '"></div>');
     });
@@ -51,7 +72,12 @@ function updateColorOffsets($square) {
         2: ['0', '0'],
         3: ['0', '36', '-34'],
         4: ['0', '46', '0', '-48'],
-        5: ['0', '56', '18', '-18', '-56']
+        5: ['0', '56', '18', '-18', '-56'],
+        6: ['0', '60', '30', '0', '-30', '-60'],
+        7: ['0', '64', '38', '13', '-13', '-38', '-64'],
+        8: ['0', '64', '41', '20', '0', '-21', '-41', '-64'],
+        9: ['0', '66', '45', '27', '9', '-9', '-27', '-45', '-66'],
+        10: ['0', '68', '51', '34', '17', '0', '-17', '-34', '-51', '-68']
     };
     var translations = translatePercent[numColors];
 
@@ -76,12 +102,11 @@ function setPlayerColor($playerEntry, newColor) {
 }
 
 function squareHasColor($square, colorClass) {
-    return $square.children('.bg-color').any(function () {
-        if (colorClass in $(this).getClasses()) {
-            return true;
-        }
-    });
+    colors = getSquareColors($square);
+    return colors[colorClass];
 }
+
+var refreshBoard = function () {};
 
 function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
     function updateSquare($square, json) {
@@ -99,6 +124,15 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
         }
     }
 
+    refreshBoard = function () {
+        refreshSettingsPanel();
+        $.ajax({
+            "url": boardUrl,
+            "success": function(result) {
+                updateBoard($board, result);
+            }
+        });
+    };
     $.ajax({
         "url": boardUrl,
         "success": function(result) {
@@ -115,7 +149,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             // Are we adding or removing the color
             var removeColor;
             // the square is blank and we're painting it
-            if(squareHasColor($(this), getSquareColorClass("blank"))) {
+            if($.isEmptyObject(getSquareColors($(this)))) {
                 removeColor = false;
             }
             // the square is colored the same as the chosen color so we're clearing it (or just removing the chosen color from the square's colors)
@@ -123,7 +157,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
                 removeColor = true;
             }
             // the square is a different color, but we allow multiple colors, so add it
-            else if (!IS_LOCKOUT) {
+            else if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
                 removeColor = false;
             }
             // the square is colored a different color and we don't allow multiple colors, so don't do anything
@@ -185,23 +219,40 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     });
 }
 
-function initializeBoardCover($boardCover, boardRevealedUrl) {
-    if ($boardCover) {
-        $boardCover.on("click", function() {
-            $(this).parent().removeClass("hidden-card");
-            $(this).remove();
-            $.ajax({
-                "url": boardRevealedUrl,
-                "type": "PUT",
-                "data": JSON.stringify({
-                    "room": window.sessionStorage.getItem("room"),
-                }),
-                "error": function(result) {
-                    console.log(result);
-                }
-            });
-        });
+function initializeBoardCover(boardRevealedUrl, showNow) {
+    $boardCover = $(".board-cover");
+    if (!showNow) {
+        revealBoard();
     }
+    $boardCover.on("click", function() {
+        if (!$(this).is(":visible")) {
+            return;
+        }
+        revealBoard();
+        $.ajax({
+            "url": boardRevealedUrl,
+            "type": "PUT",
+            "data": JSON.stringify({
+                "room": window.sessionStorage.getItem("room"),
+            }),
+            "error": function(result) {
+                console.log(result);
+            }
+        });
+    });
+}
+
+function hideBoard() {
+    $('.board-cover').show();
+    $(".board-container").addClass('hidden-card');
+}
+
+function revealBoard() {
+    $(".board-cover").hide();
+    $(".board-container").removeClass('hidden-card');
+    $("#the-seed").text(ROOM_SETTINGS.seed);
+    $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+    refitGoalText();
 }
 
 function getColorCount($board, colorClass) {
@@ -269,7 +320,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         return name;
     }
     function processChatJson(json) {
-        console.log(json);
+        //console.log(json);
         // Generate readable timestamp
         var zeroPad = function (str, length) {
             return ('000000' + str).slice(-length);
@@ -306,6 +357,20 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             var revealedMessage = playerName + " revealed the card";
             return $("<div>", {"class": "revealed-message", html: timeHtml + " " + revealedMessage}).toHtml();
         }
+        else if(json["type"] === "new-card") {
+            var playerColorClass = getPlayerColorClass(json["player_color"]);
+            var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
+            var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml() + ". ";
+            if (json["game"] !== "Custom (Advanced)") {
+                newCardMessage += " seed: ";
+                if (json["is_current"]) {
+                    newCardMessage += $("<span>", {"class": "seed-wait", text: '...'}).toHtml();
+                } else {
+                    newCardMessage += $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
+                }
+            }
+            return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
+        }
 
         // otherwise first format the name of the message sender
         var playerSpan = processPlayerJson(json["player"], getPlayerColorClass(json["player_color"]));
@@ -327,20 +392,35 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     }
 
     var $chatHistory = $chatBody.find(".chat-history");
+    var populateChatHistory = function (result) {
+        $chatHistory.html('');
+        if (!result.allIncluded) {
+            var link = $("<div>", {"class": "chat-link", html: "Click to load full history"});
+            link.click(function () {
+                $.ajax({
+                    "url": chatHistoryUrl + '?full=true',
+                    "success": populateChatHistory,
+                    "error": function(result) {
+                        console.log(result);
+                    }
+                });
+            });
+            $chatHistory.append(link);
+        }
+        for(var i = 0; i < result.events.length; i++) {
+            var chatJson = result.events[i];
+            message = processChatJson(chatJson);
+            var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
+            $chatHistory.append(entry);
+        }
+        $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait').addClass('seed-hidden').text("Hidden");
+        if($chatBody[0] !== undefined) {
+            $chatBody.scrollTop($chatBody[0].scrollHeight);
+        }
+    };
     $.ajax({
         "url": chatHistoryUrl,
-        "success": function(result) {
-            $chatHistory.html('');
-            for(var i = 0; i < result.length; i++) {
-                var chatJson = result[i];
-                message = processChatJson(chatJson);
-                var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
-                $chatHistory.append(entry);
-            }
-            if($chatBody[0] !== undefined) {
-                $chatBody.scrollTop($chatBody[0].scrollHeight);
-            }
-        },
+        "success": populateChatHistory,
         "error": function(result) {
             console.log(result);
         }
@@ -353,7 +433,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     };
     chatSocket.onmessage = function (evt) {
         var json = JSON.parse(evt.data);
-        console.log(json);
+        //console.log(json);
         if(json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
             setSquareColors($square, json["square"]["colors"]);
@@ -387,6 +467,11 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             else if(json["event_type"] === "disconnected") {
                 $("#" + json["player"]["uuid"]).remove();
             }
+        }
+        else if(json["type"] === "new-card") {
+            // if the card was never revealed show what the seed was in the chat anyway
+            $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+            refreshBoard();
         }
         result = processChatJson(json);
         appendChatMessage(result, json["type"] + "-entry");

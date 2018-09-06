@@ -72,445 +72,327 @@ bingoGenerator = function(bingoList, opts) {
     var cardType = "Normal";
     var SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
     var size = 5;
-
-    // simpler generator that just does a random choice without duplicates
-    Math.seedrandom(SEED);
     if (true) {
-        var usedGoals = {};
-        var bingoBoard = [];
+        Math.seedrandom(SEED);
+        var MAX_SEED = 999999;
 
-        for (var i = 1; i <= 25; i++) {
-            var randIndex = Math.floor(Math.random() * bingoList.length);
-            while (usedGoals[randIndex]) {
-                randIndex = Math.floor(Math.random() * bingoList.length);
-            }
-            usedGoals[randIndex] = true;
-
-            var goal = bingoList[randIndex];
-            bingoBoard[i] = {"name": goal};
+        var lineCheckList = [];
+        if (size == 5) {
+            lineCheckList[1] = [1, 2, 3, 4, 5, 10, 15, 20, 6, 12, 18, 24];
+            lineCheckList[2] = [0, 2, 3, 4, 6, 11, 16, 21];
+            lineCheckList[3] = [0, 1, 3, 4, 7, 12, 17, 22];
+            lineCheckList[4] = [0, 1, 2, 4, 8, 13, 18, 23];
+            lineCheckList[5] = [0, 1, 2, 3, 8, 12, 16, 20, 9, 14, 19, 24];
+            lineCheckList[6] = [0, 10, 15, 20, 6, 7, 8, 9];
+            lineCheckList[7] = [0, 12, 18, 24, 5, 7, 8, 9, 1, 11, 16, 21];
+            lineCheckList[8] = [5, 6, 8, 9, 2, 12, 17, 22];
+            lineCheckList[9] = [4, 12, 16, 20, 9, 7, 6, 5, 3, 13, 18, 23];
+            lineCheckList[10] = [4, 14, 19, 24, 8, 7, 6, 5];
+            lineCheckList[11] = [0, 5, 15, 20, 11, 12, 13, 14];
+            lineCheckList[12] = [1, 6, 16, 21, 10, 12, 13, 14];
+            lineCheckList[13] = [0, 6, 12, 18, 24, 20, 16, 8, 4, 2, 7, 17, 22, 10, 11, 13, 14];
+            lineCheckList[14] = [3, 8, 18, 23, 10, 11, 12, 14];
+            lineCheckList[15] = [4, 9, 19, 24, 10, 11, 12, 13];
+            lineCheckList[16] = [0, 5, 10, 20, 16, 17, 18, 19];
+            lineCheckList[17] = [15, 17, 18, 19, 1, 6, 11, 21, 20, 12, 8, 4];
+            lineCheckList[18] = [15, 16, 18, 19, 2, 7, 12, 22];
+            lineCheckList[19] = [15, 16, 17, 19, 23, 13, 8, 3, 24, 12, 6, 0];
+            lineCheckList[20] = [4, 9, 14, 24, 15, 16, 17, 18];
+            lineCheckList[21] = [0, 5, 10, 15, 16, 12, 8, 4, 21, 22, 23, 24];
+            lineCheckList[22] = [20, 22, 23, 24, 1, 6, 11, 16];
+            lineCheckList[23] = [2, 7, 12, 17, 20, 21, 23, 24];
+            lineCheckList[24] = [20, 21, 22, 24, 3, 8, 13, 18];
+            lineCheckList[25] = [0, 6, 12, 18, 20, 21, 22, 23, 19, 14, 9, 4];
         }
 
+        function mirror(i) {
+            if (i == 0) {
+                i = 4;
+            } else if (i == 1) {
+                i = 3;
+            } else if (i == 3) {
+                i = 1;
+            } else if (i == 4) {
+                i = 0;
+            }
+            return i;
+        }
+
+        function difficulty(i) {
+            var Num3 = SEED % 1000;
+            var Rem8 = Num3 % 8;
+            var Rem4 = Math.floor(Rem8 / 2);
+            var Rem2 = Rem8 % 2;
+            var Rem5 = Num3 % 5;
+            var Rem3 = Num3 % 3;
+            var RemT = Math.floor(Num3 / 120);
+            var Table5 = [0];
+            Table5.splice(Rem2, 0, 1);
+            Table5.splice(Rem3, 0, 2);
+            Table5.splice(Rem4, 0, 3);
+            Table5.splice(Rem5, 0, 4);
+            Num3 = Math.floor(SEED / 1000);
+            Num3 = Num3 % 1000;
+            Rem8 = Num3 % 8;
+            Rem4 = Math.floor(Rem8 / 2);
+            Rem2 = Rem8 % 2;
+            Rem5 = Num3 % 5;
+            Rem3 = Num3 % 3;
+            RemT = RemT * 8 + Math.floor(Num3 / 120);
+            var Table1 = [0];
+            Table1.splice(Rem2, 0, 1);
+            Table1.splice(Rem3, 0, 2);
+            Table1.splice(Rem4, 0, 3);
+            Table1.splice(Rem5, 0, 4);
+            i--;
+            RemT = RemT % 5;
+            x = (i + RemT) % 5;
+            y = Math.floor(i / 5);
+            var e5 = Table5[(x + 3 * y) % 5];
+            var e1 = Table1[(3 * x + y) % 5];
+            value = 5 * e5 + e1;
+            if (MODE == "short") {
+                value = Math.floor(value / 2);
+            } else if (MODE == "long") {
+                value = Math.floor((value + 25) / 2);
+            }
+            value++;
+            return value;
+        }
+
+        function checkLine(i, typesA) {
+            var synergy = 0;
+            for (var j = 0; j < lineCheckList[i].length; j++) {
+                var typesB = bingoBoard[lineCheckList[i][j] + 1].types;
+                if (typeof typesB != 'undefined') {
+                    for (var k = 0; k < typesA.length; k++) {
+                        for (var l = 0; l < typesB.length; l++) {
+                            if (typesA[k] == typesB[l]) {
+                                synergy++;
+                                if (k == 0) {
+                                    synergy++
+                                };
+                                if (l == 0) {
+                                    synergy++
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            return synergy;
+        }
+        var bingoBoard = [];
+        for (var i = 1; i <= 25; i++) {
+            bingoBoard[i] = {
+                difficulty: difficulty(i)
+            };
+        }
+        for (var i = 1; i <= 25; i++) {
+            var getDifficulty = bingoBoard[i].difficulty;
+            var RNG = Math.floor(bingoList[getDifficulty].length * Math.random());
+            if (RNG == bingoList[getDifficulty].length) {
+                RNG--;
+            };
+            var j = 0,
+                synergy = 0,
+                currentObj = null,
+                minSynObj = null;
+            do {
+                currentObj = bingoList[getDifficulty][(j + RNG) % bingoList[getDifficulty].length];
+                synergy = checkLine(i, currentObj.types);
+                if (minSynObj == null || synergy < minSynObj.synergy) {
+                    minSynObj = {
+                        synergy: synergy,
+                        value: currentObj
+                    };
+                }
+                j++;
+            } while ((synergy != 0) && (j < bingoList[getDifficulty].length));
+            bingoBoard[i].types = minSynObj.value.types;
+            bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
+            bingoBoard[i].synergy = minSynObj.synergy;
+        }
         return bingoBoard;
     }
-};
+}
 
-var bingoList = [
-    "Use no X items",
-    "No potions of any kind in battle",
-    "Use no TMs",
-    "Only Poke balls or Great balls",
-    "Use no Repels",
-    "Do not white out",
-    "Master ball",
-    "Lucky egg",
-    "Any pokemon with the ability Speed Boost",
-    "Any pokemon with the ability Drought",
-    "Any pokemon with the ability Trace",
-    "Any pokemon with the ability Pressure",
-    "Any pokemon with the ability Drizzle",
-    "Any pokemon with the ability Rough Skin",
-    "Any pokemon with Careful Nature",
-    "Any pokemon with Quiet Nature",
-    "Any pokemon with Lonely Nature",
-    "Any pokemon with Impish Nature",
-    "Any pokemon with Serious Nature",
-    "Any pokemon with Hasty Nature",
-    "Any pokemon with Timid Nature",
-    "Any pokemon with Quirky Nature",
-    "Any pokemon with Brave Nature",
-    "Any pokemon with Docile Nature",
-    "Pokemon with a multi-hit move",
-    "Hit a OHKO move",
-    "Pokemon with 4 water moves",
-    "Pokemon with 4 grass moves",
-    "Pokemon with 4 fire moves",
-    "Pokemon with 4 poison moves",
-    "Pokemon with 4 electric moves",
-    "Pokemon with 4 psychic moves",
-    "Pokemon with 4 steel moves",
-    "Pokemon with 1 fire, 1 water, 1 grass, and 1 electric move",
-    "Pokemon with a recharge move",
-    "Pokemon with a turn charging move",
-    "Pokemon with a weather move",
-    "Pokemon with a consecutively executed move",
-    "Pokemon with a multi hit move",
-    "Pokemon with a self healing move",
-    "Pokemon with 4 non-damage dealing moves",
-    "Pokemon with 4 non-normal moves",
-    "Pokemon with 4 damage dealing moves",
-    "Pokemon with 4 normal moves",
-    "Pokemon with 4 STAB moves",
-    "Pokemon with Tackle",
-    "Pokemon with Sacred Fire",
-    "Pokemon with Doom Desire",
-    "3 Pokemon over 200 lbs (90.75 kg)",
-    "3 Pokemon under 5 lbs (2.25 kg)",
-    "Pokemon with a 5 pp move",
-    "Obtain the Pokenav",
-    "Deliver the letter to Steven",
-    "Win 6 soda pops",
-    "TM 46",
-    "Leave 2 pokemon at the daycare",
-    "3 Badges",
-    "Obtain a Macho Brace",
-    "Buy a lava cookie",
-    "Watch your interview on TV",
-    "TM 05",
-    "Hoenn dex 10 owned",
-    "National dex 20 owned",
-    "Battle 50 trainers",
-    "View a replica SS Anne",
-    "Complete level 1 of Trick Master",
-    "Evolve a pokemon at level 30 or higher",
-    "Defeat a trainer in a Pokenav rematch",
-    "Defeat Wally",
-    "Finish inside your house",
-    "Defeat all 10 trainers on Route 116",
-    "Defeat all 7 trainers in Dewford Gym",
-    "Defeat all 9 trainers on route 117",
-    "Defeat all 4 trainers on route 112",
-    "Change wallpaper of a PC box",
-    "Defeat 4 bug catchers",
-    "Restore your party's health outside of a Pokemon Center",
-    "Catch a pokemon in very tall grass",
-    "Get a berry from the Berry Master's wife",
-    "$50,000 or more",
-    "Wailmer Pail",
-    "Itemfinder",
-    "Soot Sack",
-    "Go-Goggles",
-    "Escape from battle with a Fluffy Tail",
-    "Release starter before level 10",
-    "Register MOM in the Pokenav",
-    "Register Profesor Birch in the Pokenav",
-    "Amulet Coin",
-    "Plant 5 berries",
-    "Defeat 7 youngsters",
-    "Defeat 2 Ladys",
-    "Defeat 2 Rich Boys",
-    "Defeat 3 Twins",
-    "Defeat 8 Hikers",
-    "Defeat 3 Pokefans",
-    "Defeat 6 Guitarists",
-    "Defeat 3 Aroma Ladys",
-    "Stop a Pokemon from evolving",
-    "Pokemon with 4 HM moves",
-    "Defeat every trainer in each gym you enter",
-    "Teach 3 gym leader TMs",
-    "Register 10 people in the Pokenav",
-    "5 double battles",
-    "50 berries in bag",
-    "3 match win streak at battle tent",
-    "Complete level 2 of Trick Master",
-    "Defeat Rival 3 times",
-    "Use itemfinder to find a hidden item",
-    "HM06 Rock Smash",
-    "3 HMs",
-    "Defeat all 6 Cycling Road trainers",
-    "Coin case",
-    "Win on the slot machines",
-    "Win a spin of roulette",
-    "Collect an egg from the daycare",
-    "Talk to 6 overworld pokemon",
-    "4 HMs",
-    "Have Lanette name the PC storage system",
-    "Perform a trick on a Mach Bike",
-    "Perform a trick on a Acro Bike",
-    "Craft any item at the Glass Workshop",
-    "Defeat 4 trainers at the Winstrate house",
-    "Defeat Maxie",
-    "4 Badges",
-    "Catch a Pokemon while surfing",
-    "Hoenn dex 100 seen",
-    "National dex 200 seen",
-    "Hoenn dex 15 owned",
-    "National dex 25 owned",
-    "3 pokemon at or above Lv 40",
-    "5 pokemon at or above Lv 35",
-    "6 pokemon at or above Lv 30",
-    "Battle 75 trainers",
-    "Complete level 3 of Trick Master",
-    "10 different berries",
-    "8 key items",
-    "5 types of Poke balls",
-    "15 TMs",
-    "Catch a Pokemon while surfing",
-    "Catch a Pokemon by fishing",
-    "Defeat all 9 trainers on route 103",
-    "Defeat all 10 non-desert trainers on route 111",
-    "Defeat all 8 desert trainers on route 111",
-    "Defeat all 10 trainers on route 113",
-    "Defeat all 10 trainers on route 115",
-    "Defeat all 9 trainers (including Magma) on Mt. Chimney",
-    "Defeat all 6 trainers (including Magma) on Jagged Pass",
-    "Catch a Pokemon in Mirage Tower",
-    "Revive a fossil",
-    "Fill a PC box",
-    "Have the Move Reminder/Maniac reteach a move",
-    "Defeat all 12 trainers on route 114",
-    "Defeat all 8 trainers in the Petalburg Gym",
-    "HM 02",
-    "Catch 5 pokemon in the Safari Zone",
-    "Delete a move",
-    "$75,000 or more",
-    "2 fishing rods",
-    "Use HP Up, Protein, Iron, Calcium, Zinc, and Carbos",
-    "Own 10 different Poison type Pokemon",
-    "Own 10 different Flying type Pokemon",
-    "Own 10 different Normal type Pokemon",
-    "Own 10 different Grass type Pokemon",
-    "Own 10 different Water type Pokemon",
-    "Own 8 different Bug type Pokemon",
-    "Own 6 different Ground type Pokemon",
-    "Own 6 different Fire type Pokemon",
-    "Own 6 different Psychic type Pokemon",
-    "Own 6 different Pokemon with no shared type",
-    "Own 6 different dual typed Pokemon",
-    "Own 6 different single typed pokemon",
-    "Own 6 different Rock type Pokemon",
-    "Own 5 different Fighting type Pokemon",
-    "Own 5 different Electric type Pokemon",
-    "Own 5 different 4x weakness Pokemon",
-    "Own 5 different starters/starter evolutions",
-    "Own 5 Legendary or Mythical Pokemon",
-    "Own 3 different Dark type Pokemon",
-    "Own 3 different Dragon type Pokemon",
-    "Own 3 different Steel type Pokemon",
-    "Own 3 different Ghost type Pokemon",
-    "Own 3 different Ice type Pokemon",
-    "Own 3 baby Pokemon",
-    "Own 3 Eevee family Pokemon",
-    "Defeat 4 Lasses",
-    "Defeat 5 Fisherman",
-    "Defeat 5 Ruin Maniacs",
-    "Defeat 7 Battle Girls",
-    "Teach 10 TMs",
-    "3 pokemon with status conditions",
-    "Faint 2 pokemon with 1 move",
-    "Evolve a pokemon twice",
-    "Evolve 3 different pokemon",
-    "Evolve 3 pokemon with different stones",
-    "Starter Pokemon never faints",
-    "Teach TM 49",
-    "TM 32",
-    "TM 01",
-    "A pokemon with a move that causes the user to faint",
-    "Register 20 people in the Pokenav",
-    "10 double battles",
-    "Hatch an egg",
-    "TM 32",
-    "Win Verdanturf Town battle tent",
-    "Any Lv 50 Pokemon",
-    "Make a secret base",
-    "Win Fallarbor Town battle tent",
-    "5 Badges",
-    "6 Badges",
-    "5 HMs",
-    "TM 24",
-    "TM 10",
-    "Hoenn dex 125 seen",
-    "National dex 250 seen",
-    "Hoenn dex 20 owned",
-    "National dex 35 owned",
-    "75 berries in bag",
-    "Defeat Team Aqua at the Weather Institute",
-    "Defeat Rival 4 times",
-    "6 HMs",
-    "Devon Scope",
-    "Kill or catch 2 Kecleons",
-    "Battle 125 trainers",
-    "Make a Pokeblock",
-    "Come in 4th place in a Pokemon Contest",
-    "View a very old painting",
-    "TM 44",
-    "Defeat a non-rival trainer a 3rd time",
-    "Complete level 4 of Trick Master",
-    "Complete level 5 of Trick Master",
-    "Defeat all 8 trainers on route 118",
-    "Defeat all 17 trainers on route 119",
-    "Defeat all 14 trainers on route 120",
-    "Defeat all 10 trainers on route 121",
-    "Catch a pokemon underwater",
-    "$100,000 or more",
-    "$150,000 or more",
-    "Magma Emblem",
-    "All 3 fishing rods",
-    "Defeat any gym leader without losing any HP",
-    "Defeat 5 Swimmers",
-    "Defeat 10 Bird Keepers",
-    "Smach 10 rocks",
-    "Defeat 3 Psychics (trainers)",
-    "Defeat 4 Pokemon Breeders",
-    "Move a boulder",
-    "Exactly $0",
-    "Complete one in-game trade",
-    "Leave Skitty and Wailord at the daycare",
-    "Lugia or Ho-Oh",
-    "Raikou, Entei, or Suicune",
-    "Zapdos and Raikou",
-    "Moltres and Entei",
-    "Articuno and Regice",
-    "Regirock, Regice, or Registeel",
-    "Articuno, Zapdos, or Moltres",
-    "Rayquaza",
-    "Kyogre and Groudon",
-    "Treecko and Deoxys",
-    "Jirachi",
-    "Latios and Latias",
-    "2 of Metagross, Tyranitar, Salamance, or Dragonite",
-    "Huntail or Gorebyss",
-    "Walerin or Poliwrath",
-    "Banette or Dusclops",
-    "Castform",
-    "Milotic or Gyarados",
-    "Magikarp and Feebas",
-    "Any 2 fossil Pokemon",
-    "Corphish",
-    "Lunatone or Solrock",
-    "Chikorita and Celebi",
-    "Zangoose or Seviper",
-    "Cacnea",
-    "Torkoal",
-    "Wailord and Skitty",
-    "Sharpedo",
-    "Bulbasaur and Mew",
-    "Plusle and Minun",
-    "Manectric or Raichu",
-    "Medicham or Hariyama",
-    "Shedinja",
-    "Slaking or Exploud",
-    "Breloom",
-    "Masquerain or Butterfree",
-    "Gardevoir",
-    "Female Wingull nicknamed Peeko",
-    "Swellow, Fearow, or Noctowl",
-    "Linoone, Sentret, or Raticate",
-    "Celebi",
-    "Blissey",
-    "Miltank",
-    "Sudowoodo",
-    "Smoochum, Elekid or Magby",
-    "Hitmonlee, Hitmonchan, or Hitmontop",
-    "Skarmory",
-    "Delibird",
-    "Smeargle or Ditto",
-    "Spinda",
-    "Dustox or Beautifly",
-    "Ledian or Ariados",
-    "2 of Pichu, Cleffa, Igglybuff, or Togepi",
-    "Venusaur, Meganium, or Sceptile",
-    "Charizard, Typlosion, or Blaziken",
-    "Blastoise, Feraligatr, or Swampert",
-    "Exeggutor, Xatu, or Grumpig",
-    "Ampharos",
-    "Scizor, Heracross, or Pinsir",
-    "Shuckle",
-    "Granbull, Wigglytuff, or Clefable",
-    "Unown",
-    "Wobbuffet",
-    "Slowking or Slowbro",
-    "Politioed or Poliwrath",
-    "Miltank nicknamed Moo",
-    "Sunflora nicknamed Sunny",
-    "Bellossom or Vileplume",
-    "Mewtwo or Mew",
-    "Mr. Mime nicknamed Mimey",
-    "Farfetch'd nicknamed Dux",
-    "Rhydon or Donphan",
-    "Porygon or Porygon2",
-    "Kangaskhan nicknamed Jumpy",
-    "Kingler or Octillery",
-    "Seviper or Arbok",
-    "Swalot or Muk",
-    "Roselia or Victreebel",
-    "Tebtacruel or Qwilfish",
-    "Ursaring or Tauros",
-    "Rapidash, Arcanine, or Ninetails",
-    "Chimecho",
-    "Whiscash or Quagsire",
-    "Camerupt or Houndoom",
-    "Kingdra or Flygon",
-    "Absol",
-    "Male & Female Luvdisc nicknamed Caserin & Luverin",
-    "Sharpedo or Starmie",
-    "Male Pikachu nicknamed Sparky",
-    "Charmeleon nicknamed Zippo",
-    "Female Meowth nicknamed Meowzie",
-    "Growlithe nicknamed Growlie",
-    "Feraligatr nicknamed Wani-Wani",
-    "Female Misdreavus nicknamed Little Miss",
-    "Jigglypuff nicknamed Pink",
-    "Male Delcatty nicknamed Johnny",
-    "Pupitar nicknamed Cruise",
-    "Butterfree nicknamed Happy",
-    "Taillow nicknamed Rose",
-    "Female Pikachu nicknamed Volty",
-    "Beldum nickname Iron",
-    "Female Rhyhorn nicknamed Hornlette",
-    "Mr. Mime nicknamed Marcel",
-    "Nidoran F nicknamed Spot",
-    "Nidorina nicknamed Terry",
-    "Lickitung nicknamed Marc",
-    "Jynx nicknamed Lola",
-    "Electrode nicknamed Doris",
-    "Tangela nicknamed Crinkles",
-    "Seel nicknamed Sailor",
-    "Mr. Mime nicknamed Miles",
-    "Machamp nicknamed Ricky",
-    "Dugtrio nicknamed Gurio",
-    "Parasect nicknamed Spike",
-    "Rhydon nicknamed Buffy",
-    "Dewgong nicknamed Cezanne",
-    "Muk nicknamed Sticky",
-    "Beedrill nicknamed Chikuchiku",
-    "Mew nicknamed Bart",
-    "Pidgeot nicknamed Marty",
-    "Beedrill nicknamed Stinger",
-    "Male Onix nicknamed Rocky",
-    "Female Machop nicknamed Muscle",
-    "Voltorb nicknamed Volty",
-    "Female Rhydon nicknamed Don",
-    "Male Aerodactyl nicknamed Aeroy",
-    "Male Rapidash nicknamed Runny",
-    "Female Dodrio nicknamed Doris",
-    "Male Xatu nicknamed Paul",
-    "Magneton nicknamed Maggie.",
-    "Male makuhita nicknamed Makit",
-    "Female Skitty nicknamed Skitit",
-    "Female Corsola nicknamed Coroso",
-    "Male Seedot nicknamed Dots",
-    "Female Plusle nicknamed Pluses",
-    "Male Horsea nicknamed Seasor",
-    "Male Meowth nicknamed Meowow",
-    "Male Elekid nicknamed Zaprong",
-    "Male Steelix nicknamed Rusty",
-    "Chansey nicknamed Pinky",
-    "Female Charizard nicknamed Charla",
-    "Nidorina and Nidorino nicknamed Maria and Tony",
-    "Mareep nicknamed Fluffy",
-    "Male Pikachu nicknamed Puka",
-    "2 Bellossom nickanmed Bella and Belle",
-    "Scizor nicknamed Masamune",
-    "Pidgey nicknamed Ken",
-    "Zubat nicknamed Mimi",
-    "3 Swinub nicknamed Su, Ein, and Ub",
-    "Natu nicknamed Naughty",
-    "Flaaffy nicknamed Hannah",
-    "Linoone nicknamed Tokin",
-    "Dunsparce, Tauros, or Stantler",
-    "Any pokemon exactly 1' tall",
-    "Any pokemon exactly 2' tall",
-    "Scyther or Yanma",
-    "Ludicolo or Shiftry",
-    "Volbeat and Illumise",
-    "Claydol or Piloswine",
-    "Relicanth or Mantine",
-    "Forretress or Mawile",
-    "Sableye or Gengar",
-    "Ursaring or Donphan",
-    "Primeape or Persian",
-    "Kecleon",
-    "Glalie or Lapras",
-    "Bulbasaur and Deoxys"
+/*
+Update notes:
+- "Evolve a Pokémon with a stone" has been removed until stones are purchasable with the speedchoice.
+- "Nidoking or Nidoqueen" and "Shiftry or Ludicolo" have been changed to "Nidorino or Nidorina" and "Nuzleaf and Lombre" until stones are purchasable with the speedchoice.
+- "Soot Sack" has been changed to "White Flute" and has been re-weighted appropriately.
+- "7 different types of Berry" has been changed to "Kelpsy Berry".
+- "3 Lv30+ Pokémon" has been changed to "5 different Lv30+ Pokémon".
+- "Defeat 5 Ninja Boys" has been changed to " Defeat 8 Ninja Boys".
+- "2 eggs" has been changed to "Hatch an egg".
+- "Don't use more than one TM" has been removed.
+- "Defeat a Lv40+ Pokémon" has been removed.
+- "$50,000" has been removed.
+- "Teach 8 moves via Move Tutor" has been added.
+- "Complete Trainer Hill" has been added.
+- "TM26 (Earthquake)" has been added.
+- "TM45 (Attract)" has been added.
+- "Complete 3 Battle Tents" has been added.
+- "Defeat Gabby & Ty 6 times" has been added.
+- "Defeat 6 trainers on Route 113" has been added.
+- "Defeat all 6 trainers on Route 125" has been changed to "Defeat all 8 trainers on Route 125".
+- "Defeat all 7 trainers on Route 123" has been changed to "Defeat 9 trainers on Route 123".
+- Various Pokémon goals have been adjusted.
+- Various goals have had their weights adjusted.
+*/
+
+var bingoList = [];
+
+bingoList[1] = [
+ { name: "TM05 (Roar)", types: ["114", "tm"] },
+ { name: "HM01 (Cut)", types: ["rustboro", "hm"] },
+ { name: "TM45 (Attract)", types: ["verdanturf", "tm"] },
+ { name: "Quick Claw", types: ["school"] }
 ];
-
+bingoList[2] = [
+ { name: "Coin Case", types: ["mail"] },
+ { name: "7 different types of PokéBall", types: ["balls"] },
+ { name: "TM36 (Sludge Bomb)", types: ["dewford", "tm"] },
+ { name: "A Pokémon with 4 moves sharing its type(s)", types: ["move"] }
+];
+bingoList[3] = [
+ { name: "Defeat a Legendary Pokémon", types: ["legendary"] },
+ { name: "Rematch a trainer with Match Call", types: ["pokenav"] },
+ { name: "A Pokémon with a status-related ability", types: ["ability"] },
+ { name: "A Pokémon with a stat-related ability", types: ["ability"] }
+];
+bingoList[4] = [
+ { name: "Sell a Rare Candy", types: ["candy"] },
+ { name: "Defeat the Winstrate Family", types: ["trainer"] },
+ { name: "Defeat 6 trainers on Route 113", types: ["trainer"] },
+ { name: "A Pokémon with 4 non-TM non-damaging moves", types: ["move"] }
+];
+bingoList[5] = [
+ { name: "Clefable, Wigglytuff, or Delcatty", types: ["stone"] },
+ { name: "Raichu, Arcanine, or Ninetales", types: ["stone"] },
+ { name: "Vileplume, Victreebel, or Exeggutor", types: ["stone"] },
+ { name: "Poliwrath, Starmie, or Cloyster", types: ["stone"] }
+];
+bingoList[6] = [
+ { name: "Beedrill, Butterfree, Dustox or Beautifly", types: ["bugs"] },
+ { name: "Nidorino or Nidorina", types: ["nido"] },
+ { name: "Lombre or Nuzleaf", types: ["leaves"] },
+ { name: "A Pokémon with a weather-related ability", types: ["ability"] }
+];
+bingoList[7] = [
+ { name: "Hatch an egg", types: ["egg"] },
+ { name: "Defeat both Pokémon Breeders on Route 117", types: ["trainer"] },
+ { name: "Defeat all 5 Triathletes on Cycling Road", types: ["trainer"] },
+ { name: "$0 on hand", types: ["money"] }
+];
+bingoList[8] = [
+ { name: "Wobbuffet, Flaaffy, or Furret", types: ["15"] },
+ { name: "Ivysaur, Bayleef, or Grovyle", types: ["starters"] },
+ { name: "Wartortle, Croconaw, or Marshtomp", types: ["starters"] },
+ { name: "Charmeleon, Quilava, or Combusken", types: ["starters"] }
+];
+bingoList[9] = [
+ { name: "Kelpsy Berry", types: ["berry"] },
+ { name: "Release starter before Lv11", types: ["release"] },
+ { name: "TM19 (Giga Drain)", types: ["grass", "tm"] },
+ { name: "Catch a Pokémon in the Safari Zone", types: ["lilycove"] }
+];
+bingoList[10] = [
+ { name: "Mightyena, Linoone, or Raticate", types: ["18/20"] },
+ { name: "Azumarill, Gyarados, or Quagsire", types: ["18/20"] },
+ { name: "Kirlia, Loudred, or Kadabra", types: ["20/16"] },
+ { name: "Masquerain, Ninjask, or Shedinja", types: ["22/20/18"] }
+];
+bingoList[11] = [
+ { name: "Burn, Paralyze, or Poison Kecleon", types: ["status"] },
+ { name: "Revive a fossil", types: ["fossil"] },
+ { name: "Complete all 3 Battle Tents", types: ["trainer"] },
+ { name: "Lileep, Anorith, Kabuto, or Omanyte", types: ["fossil"] }
+];
+bingoList[12] = [
+ { name: "Evolve 4 different Pokémon", types: ["raise"] },
+ { name: "Complete Trainer Hill", types: ["trainer"] },
+ { name: "2 different baby Pokémon", types: ["baby"] },
+ { name: "2 different Eevee evolutions", types: ["eevee"] }
+];
+bingoList[13] = [
+ { name: "TM27 (Return)", types: ["tm"] },
+ { name: "White Flute", types: ["113"] },
+ { name: "Exp. Share", types: ["rustboro"] },
+ { name: "TM44 (Rest)", types: ["lilycove"] }
+];
+bingoList[14] = [
+ { name: "Manectric, Houndoom, or Grumpig", types: ["trio"] },
+ { name: "Swellow, Pelipper, or Pidgeotto", types: ["trio"] },
+ { name: "Breloom, Hariyama, or Vigoroth", types: ["trio"] },
+ { name: "Slugma, Numel, or Torkoal", types: ["trio"] },
+ { name: "Barboach, Corphish, or Luvdisc", types: ["trio"] }
+];
+bingoList[15] = [
+ { name: "Trade a Pokémon", types: ["trade"] },
+ { name: "Don't use Repels", types: ["instant"] },
+ { name: "TM10 (Hidden Power)", types: ["tm", "fortree"] },
+ { name: "HM08 (Dive)", types: ["mossdeep", "hm"] }
+];
+bingoList[16] = [
+ { name: "Pikachu, Plusle, or Minun", types: ["trio"] },
+ { name: "Swablu, Zangoose, or Seviper", types: ["trio"] },
+ { name: "Roselia, Volbeat, or Illumise", types: ["trio"] },
+ { name: "Flygon, Claydol, or Cacturne", types: ["trio"] },
+ { name: "Skarmory, Spinda, or Sandshrew", types: ["trio"] }
+];
+bingoList[17] = [
+ { name: "Defeat 4 Kecleons", types: ["scope"] },
+ { name: "20+ Pokémon owned", types: ["pkmn"] },
+ { name: "All fishing rods", types: ["mossdeep"] },
+ { name: "Defeat 8 Ninja Boys", types: ["trainer"] }
+];
+bingoList[18] = [
+ { name: "Own 5 different Bug type Pokémon", types: ["pkmn"] },
+ { name: "Own 6 different Flying type Pokémon", types: ["pkmn"] },
+ { name: "Own 7 different Normal type Pokémon", types: ["pkmn"] },
+ { name: "Own 8 different Water type Pokémon", types: ["pkmn"] }
+];
+bingoList[19] = [
+ { name: "Nosepass, Sableye, or Mawile", types: ["trio"] },
+ { name: "Glalie, Sharpedo, or Walrein", types: ["trio"] },
+ { name: "Chimecho, Banette, or Dusclops", types: ["trio"] },
+ { name: "Aggron, Salamence, or Metagross", types: ["trio"] },
+ { name: "Regirock, Regice, or Registeel", types: ["trio"] }
+];
+bingoList[20] = [
+ { name: "Catch a Pokémon on Mt. Pyre summit", types: ["pyre"] },
+ { name: "Catch Deoxys at Birth Island", types: ["deoxys"] },
+ { name: "Catch Latias or Latios at Southern Island", types: ["eon"] },
+ { name: "Catch a Pokémon on Mirage Island", types: ["50"] }
+];
+bingoList[21] = [
+ { name: "Defeat 10 Swimmers", types: ["water", "trainer"] },
+ { name: "Complete 3 Trick House mazes", types: ["candy", "trainer"] },
+ { name: "Defeat all 8 trainers on Route 125", types: ["trainer"] },
+ { name: "Defeat 9 trainers on Route 123", types: ["trainer"] }
+];
+bingoList[22] = [
+ { name: "90 Pokémon seen", types: ["pkmn"] },
+ { name: "Teach 8 moves via Move Tutor", types: ["tutor"] },
+ { name: "Stop the same Pokémon evolving 4 times", types: ["raise"] },
+ { name: "Mental Herb", types: ["fortree"] }
+];
+bingoList[23] = [
+ { name: "5 different Lv30+ Pokémon", types: ["30"] },
+ { name: "Kyogre, Groudon, or Rayquaza", types: ["covers"] },
+ { name: "TM24 (Thunderbolt)", types: ["mauville", "tm"] },
+ { name: "Defeat Rival 4", types: ["lilycove"] }
+];
+bingoList[24] = [
+ { name: "Feather Badge", types: ["feather"] },
+ { name: "Mind Badge", types: ["mind"] },
+ { name: "Defeat Gabby & Ty 6 times", types: ["trainer", "tv"] },
+ { name: "30+ Pokémon owned", types: ["pkmn"] }
+];
+bingoList[25] = [
+ { name: "7 badges", types: ["badges"] },
+ { name: "TM26 (Earthquake)", types: ["tm", "seafloor"] },
+ { name: "Participate in a Contest", types: ["contest"] }
+];
