@@ -1,9 +1,9 @@
 [
     {
-        "name": "Enter a god room"
+        "name": "Bomb 3 beggars of the same time"
     },
     {
-        "name": "15 cents in coins on the floor of a single room"
+        "name": "Kill It Lives without opening any chests during the run"
     },
     {
         "name": "Take 3 batteries"
@@ -12,66 +12,66 @@
         "name": "Satisfy a slot machine"
     },
     {
-        "name": "Finish a run with Isaac"
+        "name": "Bomb 6 tinted rocks"
     },
     {
-        "name": "Enter a room locked twice"
+        "name": "Beat It Lives without using active item during the run"
     },
     {
         "name": "Hold a penny trinket"
     },
     {
-        "name": "Enter 3 secret rooms"
+        "name": "Destroy a golden poop"
     },
     {
-        "name": "Get an item that does not make you shoot tears (lasers, bombs...)"
+        "name": "Get 2 effects on your tears"
     },
     {
-        "name": "Kill the Bloat in a Boss room without taking damage"
+        "name": "Bomb 5 shopkeepers"
     },
     {
-        "name": "Full clear The Void"
+        "name": "30 coins"
     },
     {
-        "name": "Kill ??? without shooting"
-    },
-    {
-        "name": "Kill It Lives without ever gaining blue hearts"
-    },
-    {
-        "name": "Kill the Bloat in a Boss room without taking damage"
-    },
-    {
-        "name": "Finish a run with The Lost"
-    },
-    {
-        "name": "Kill ??? without shooting"
-    },
-    {
-        "name": "Kill Delirium with a bomb"
-    },
-    {
-        "name": "Beat The Lamb without picking up any bomb during the run"
-    },
-    {
-        "name": "Finish a run with the seed KEEP TRAK"
+        "name": "Kill Mom's foot with your character's basic damage stat"
     },
     {
         "name": "Kill It Lives without ever gaining blue hearts"
     },
     {
-        "name": "Kill Delirium with a bomb"
+        "name": "Enter a super secret room in a XL floor"
     },
     {
-        "name": "Get a Super Meat Boy (lv4)"
+        "name": "Get 10+ damage stat"
     },
     {
-        "name": "Beat The Lamb without picking up any bomb during the run"
+        "name": "Get 2 slots for space items, trinkets or pills/cards"
     },
     {
-        "name": "Kill The Hush without using keys or coins in Blue Womb"
+        "name": "Refill your life by 3 red hearts in the same room"
     },
     {
-        "name": "Kill The Hush without using keys or coins in Blue Womb"
+        "name": "Complete a non-empty room without moving"
+    },
+    {
+        "name": "Get 2 Mom items"
+    },
+    {
+        "name": "Kill Satan without gaining any heart container during the run"
+    },
+    {
+        "name": "Refill your life by 3 red hearts in the same room"
+    },
+    {
+        "name": "Lose 3 hearts by walking on creep"
+    },
+    {
+        "name": "Hold a penny trinket"
+    },
+    {
+        "name": "Finish a run with ??? or Keeper"
+    },
+    {
+        "name": "Enter 3 sacrifice rooms"
     }
 ]
