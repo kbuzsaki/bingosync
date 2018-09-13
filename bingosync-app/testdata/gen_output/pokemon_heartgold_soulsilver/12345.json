@@ -1,77 +1,77 @@
 [
     {
-        "name": "Ability from a legendary"
+        "name": "Ability that affects Speed"
     },
     {
-        "name": "Get gift Eevee"
+        "name": "Glacier Badge"
     },
     {
-        "name": "Electrizer, Magmarizer, Protector or Reaper Cloth"
+        "name": "Everstone"
     },
     {
-        "name": "Slowpoketail"
+        "name": "Solve a puzzle in Ruins of Alph"
     },
     {
-        "name": "Zangoose or Seviper"
+        "name": "Zangoose, Seviper, Scyther or Pinsir"
     },
     {
-        "name": "Magmotar or Electevire"
+        "name": "Miltank, Tauros, Farfetch'd or Snubbull"
     },
     {
         "name": "Use Struggle"
     },
     {
+        "name": "TM36 Sludge Bomb"
+    },
+    {
+        "name": "A Pok\u00e9mon that\u2019s 300 lbs. or more"
+    },
+    {
+        "name": "Numel, Carvanha, Baltoy or Gulpin"
+    },
+    {
         "name": "TM21 (Frustration) or TM27 (Return)"
     },
     {
-        "name": "A Pok\u00e9mon that\u2019s 2\u201d or less"
+        "name": "Defeat a Gym Leader with animations on"
     },
     {
-        "name": "No money on hand or mom"
+        "name": "Get gift Tyrogue"
     },
     {
-        "name": "TM18 Rain Dance"
+        "name": "Trigger Suicune-cutscene on Route 42"
     },
     {
-        "name": "Ability that affects Attack"
-    },
-    {
-        "name": "Defeat a Gym Leader with a Pok\u00e9mon 10 levels lower"
-    },
-    {
-        "name": "Get dressed as a Rocket Grunt"
-    },
-    {
-        "name": "Teddiursa or Phanpy"
-    },
-    {
-        "name": "Finish a battle in redbar"
-    },
-    {
-        "name": "Defeat all 4 trainers in Goldenrod Tunnel"
-    },
-    {
-        "name": "Get an item from your companion"
+        "name": "Get Kenya"
     },
     {
         "name": "Defeat all trainers in National Park"
     },
     {
-        "name": "A negative ability"
+        "name": "Ability that gives an immunity"
     },
     {
-        "name": "Numel or Carvanha"
+        "name": "Get gift Eevee"
     },
     {
-        "name": "Stop starter from evolving 6 times"
+        "name": "Ditto, Stantler, Kecleon or Chatot"
     },
     {
-        "name": "Don\u2019t heal at Pok\u00e9mon Centers"
+        "name": "A shiny Pok\u00e9mon"
     },
     {
-        "name": "Get a Silver Wind/Ancientpower/Ominous Wind boost"
+        "name": "Obtain a fossil Pok\u00e9mon"
     },
     {
-        "name": "TM09 Bullet Seed"
+        "name": "TM05 Roar"
+    },
+    {
+        "name": "Don\u2019t use X items"
+    },
+    {
+        "name": "Get dressed as a Rocket Grunt"
+    },
+    {
+        "name": "TM10 Hidden Power"
     }
 ]
