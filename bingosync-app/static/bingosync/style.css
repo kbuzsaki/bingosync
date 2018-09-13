@@ -367,6 +367,11 @@
     user-select: none;
 }
 
+#players-panel {
+    height: 100%;
+    overflow: auto;
+}
+
 .player-panel-entry {
     white-space: nowrap;
 }
