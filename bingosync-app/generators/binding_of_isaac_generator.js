@@ -223,7 +223,7 @@ var hardChallenges = [
   { name: "Get the Seraphim transformation", types: ["transformation","godRoom"] },
   { name: "Use Lemon Party pill or Lemon Mishap on Isaac", types: ["getPills"] },
   { name: "Kill Isaac with half a heart during the whole fight", types: ["halfHP","beatIsaac"] },
-  { name: "Accept any devil deal the game proposes you and beat It Lives", types: ["devilRoom","beatItLives"] },
+  { name: "Accept every devil deal the game proposes you and beat It Lives", types: ["devilRoom","beatItLives"] },
   { name: "Full clear Cathedral", types: ["fullClearlv7"] },
   { name: "Full clear Sheol", types: ["fullClearlv7"] },
   { name: "Full clear The Chest", types: ["fullClearlv8"] },

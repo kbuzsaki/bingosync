@@ -33,34 +33,22 @@
         "name": "30 coins"
     },
     {
-        "name": "Complete a Danks Depths floor without taking damage"
+        "name": "15 blue flies around you"
     },
     {
-        "name": "Finish a run with The Lost"
+        "name": "Kill ??? without shooting"
     },
     {
-        "name": "Kill Mom's foot with your character's basic damage stat"
-    },
-    {
-        "name": "Regenerate at least half a heart"
-    },
-    {
-        "name": "Kill Polycephalus or The Stain"
-    },
-    {
-        "name": "Kill 10 champion enemies"
-    },
-    {
-        "name": "Get 3 HP up items"
-    },
-    {
-        "name": "Get a poker card (Ace of */ 2 of */Joker)"
-    },
-    {
-        "name": "Kill Isaac with half a heart during the whole fight"
+        "name": "Charm an enemy"
     },
     {
         "name": "Beat a full Fistula, Terratoma or Envy"
+    },
+    {
+        "name": "Stomp 5 enemies"
+    },
+    {
+        "name": "Get hurt by a red beam"
     },
     {
         "name": "Get Piercing tears"
@@ -69,9 +57,21 @@
         "name": "Die on a spider"
     },
     {
-        "name": "Beat any boss only by pressing moving arrows"
+        "name": "Use Suicide King card"
     },
     {
-        "name": "Complete a non-empty room without moving"
+        "name": "Reroll 3 times the same thing"
+    },
+    {
+        "name": "Finish the Boss Rush before 20 minutes"
+    },
+    {
+        "name": "Bomb an angel"
+    },
+    {
+        "name": "Kill It Lives without opening any chests during the run"
+    },
+    {
+        "name": "Get 30 items"
     }
 ]

@@ -27,28 +27,16 @@
         "name": "Full clear + no damage in a whole floor (except Basement 1/2)"
     },
     {
-        "name": "30 coins"
+        "name": "5 blue spiders around you"
     },
     {
-        "name": "Kill 5 enemies while at half a HP"
-    },
-    {
-        "name": "Use 5 red-back cards"
-    },
-    {
-        "name": "Beat The Lamb after beating Isaac"
-    },
-    {
-        "name": "Complete a Danks Depths floor without taking damage"
-    },
-    {
-        "name": "Complete Basement 1 with The Lost"
+        "name": "Bomb 30 rocks"
     },
     {
         "name": "Use a Card against humanity"
     },
     {
-        "name": "Kill the Basement 1 boss under 1 minute"
+        "name": "Get a Super Meat Boy (lv4)"
     },
     {
         "name": "Enter the Void"
@@ -57,21 +45,33 @@
         "name": "Bomb an angel"
     },
     {
-        "name": "Don't take any pedestal item in Basement 1 and 2 and beat Satan"
+        "name": "Get Piercing tears"
     },
     {
         "name": "Lose 2 hearts by walking on creep"
     },
     {
-        "name": "Use 5 red-back cards"
+        "name": "Bomb 3 beggars of the same time"
     },
     {
-        "name": "Enter a god room"
+        "name": "Kill 2 Sin bosses"
     },
     {
-        "name": "Beat Isaac without buying anything from shops"
+        "name": "Enter I AM ERROR room"
     },
     {
-        "name": "Get through Caves 1 and 2 without taking damage"
+        "name": "Destroy a black poop"
+    },
+    {
+        "name": "Finish a run with Lilith or Magdalene"
+    },
+    {
+        "name": "Hold a worm trinket"
+    },
+    {
+        "name": "Use 8 different pills"
+    },
+    {
+        "name": "Charm an enemy"
     }
 ]

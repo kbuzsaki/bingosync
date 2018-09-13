@@ -4,7 +4,7 @@ isATypeAlreadyUsed = function (goal, typesList) { // takes a goal and returns if
     var currentTypes = goal.types;
     var test = false;
     for (var j=0;j< currentTypes.length;j++) {
-        if (currentTypes[j] in typesList) {
+        if (typesList.indexOf(currentTypes[j]) > -1) {
             test = true;
         }
     return test;
