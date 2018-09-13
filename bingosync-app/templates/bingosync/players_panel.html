@@ -5,7 +5,7 @@
         Players
     </div>
     <div class="panel-body panel-body-overflow-container">
-        <div id="players-panel" class="panel-overflow-inner">
+        <div id="players-panel">
             {% for player in room.connected_players %}
                 {% if not player.is_spectator %}
                 <div id="{{ player.encoded_uuid }}" class="player-panel-entry">
