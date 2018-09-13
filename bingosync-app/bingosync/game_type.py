@@ -103,6 +103,7 @@ class GameType(Enum):
     binding_of_isaac = 97
     super_mario_sunshine_tournament = 98
     super_mario_sunshine_lockout = 99
+    super_mario_odyssey_all_kingdoms_post_game = 100
 
     def __str__(self):
         return self.short_name
@@ -235,6 +236,7 @@ GAME_GROUPS = {
             (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
             (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
             (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
+            (GameType.super_mario_odyssey_all_kingdoms_post_game, "All Kingdoms + Post Game", "SMO AK + PG"),
         ],
     },
     GameType.generic_bingo: {
