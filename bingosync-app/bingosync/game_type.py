@@ -105,6 +105,7 @@ class GameType(Enum):
     super_mario_sunshine_lockout = 99
     super_mario_odyssey_all_kingdoms_post_game = 100
     super_smash_bros_brawl_all_brawl = 101
+    super_smash_bros_brawl_basic = 102
 
     def __str__(self):
         return self.short_name
@@ -313,6 +314,7 @@ GAME_GROUPS = {
         "name": "Super Smash Bros. Brawl",
         "variants": [
             (GameType.super_smash_bros_brawl_all_brawl, "All Brawl", "SSBB All"),
+            (GameType.super_smash_bros_brawl_basic, "Basic", "SSBB Basic"),
         ],
     },
     GameType.resident_evil_hd_randomizer: {
