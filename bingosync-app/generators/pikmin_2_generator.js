@@ -1,7 +1,14 @@
 //Uses SRL Generator
 bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
-//Version 1.2.3 of Pikmin 2 Bingo
+//Version 1.3 of Pikmin 2 Bingo
+
+//Changes since 1.2.3:
+//Completely revamped the difficulties of nearly every goal
+//All changes can be seen here: https://docs.google.com/spreadsheets/d/1vP53wri6P6i5DYWvKPWRSfiO2v--OghUmD7MYI716ew/edit?usp=sharing
+//Completely revamped the type system; too complicated to explain here
+//Reworded a few goals
+//Removed: "Collect the 20-Pellet in AW", "Destroy both electric gates in AW", "Destroy both black gates in PP", "Destroy all 3 electric gates in PP", "Destroy 4 poison gates", and "Decorative Goo (AW)"
 
 //Changes since 1.2.2:
 //Moved "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)" from 23 to 24
@@ -46,158 +53,152 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
 var bingoList = [];
 bingoList[1] = [
-  { name: "Get a Pikmin Extinction inside a cave", types: ["selfharm"] },
-  { name: "Toxic Toadstool (WFG4)", types: ["wfg"] },
-  { name: "Prototype Detector (HoB5)", types: ["empress","hipoko"] },
-  { name: "Collect an Empress Bulblax", types: ["empress"] },
+  { name: "Discover Yellow Pikmin", types: ["1"] },
+  { name: "Kill all 10 Mitites on HoB4", types: ["6"] },
+  { name: "Toxic Toadstool (WFG4)", types: ["10"] },
+  { name: "Survival Ointment (WFG4) and Healing Cask (AW)", types: ["11"] },
 ];
 bingoList[2] = [
-  { name: "Enter SmC", types: ["caveenter"] },
-  { name: "Kill 10 Mitites on HoB4", types: ["hobenemies"] },
-  { name: "Kill the Burrowing Snagret in VoR", types: ["snagret"] },
-  { name: "Discover Yellow Pikmin", types: ["ylw"] },
-  { name: "Survival Ointment (WFG4) and Healing Cask (AW)", types: ["theme"] },
+  { name: "Collect a 1-Pellet of each color", types: ["2"] },
+  { name: "Collect an Empress Bulblax", types: ["7"] },
+  { name: "Prototype Detector (HoB5)", types: ["10"] },
+  { name: "Get a Pikmin Extinction inside a cave", types: ["12"] },
 ];
 bingoList[3] = [
-  { name: "Get a non-Red Pikmin Extinction", types: ["ylw","selfharm"] },
-  { name: "Pilgrim Bulb (AW)", types: ["aw"] },
-  { name: "Have a Leaf Pikmin in the ground mature into a Flower Pikmin", types: ["mature"] },
-  { name: "Collect a 1-Pellet of each color", types: ["pellet"] },
+  { name: "Collect a 5-Pellet of each color", types: ["2"] },
+  { name: "Collect all 3 Wogpoles in AW", types: ["7"] },
+  { name: "Pilgrim Bulb (AW)", types: ["10"] },
+  { name: "Destroy a Burgeoning Spiderwort mold", types: ["13"] },
 ];
 bingoList[4] = [
-  { name: "5 food treasures", types: ["theme"] },
-  { name: "Activate every dormant bomb rock on SCx7", types: ["scxbomb"] },
-  { name: "Make a Red Candypop Bud wilt", types: ["red","cpb"] },
-  { name: "Enter all 4 caves in AW", types: ["caveenter"] },
+  { name: "Make a Crimson Candypop Bud wilt", types: ["3"] },
+  { name: "Collect 2 Burrowing Snagrets", types: ["7"] },
+  { name: "Impediment Scourge (PP)", types: ["10"] },
+  { name: "Kill Louie twice", types: ["12"] },
 ];
 bingoList[5] = [
-  { name: "60 Yellows", types: ["ylw","onetype"] },
-  { name: "Collect a 5-Pellet of each color", types: ["pellet"] },
-  { name: "Collect 2 Burrowing Snagret heads", types: ["snagret"] },
-  { name: "Kill Louie twice", types: ["selfharm"] },
+  { name: "60 Yellows", types: ["1"] },
+  { name: "Kill all 3 Creeping Chrysanthemums in AW", types: ["6"] },
+  { name: "Aquatic Mine (PP)", types: ["10"] },
+  { name: "Get a non-Red Pikmin Extinction", types: ["12"] },
 ];
 bingoList[6] = [
-  { name: "Destroy the poison gate in VoR", types: ["poisongate"] },
-  { name: "Crystal Clover (BK1) and Crystal King (BK4)", types: ["theme"] },
-  { name: "Trigger all 3 hazard cutscenes (Poison, Fire, and Water)", types: ["selfharm"] },
-  { name: "Enter all 3 caves in VoR", types: ["caveenter"] },
+  { name: "8 Spicy Sprays", types: ["4"] },
+  { name: "Kill the Burrowing Snagret in VoR", types: ["6"] },
+  { name: "Complete HoB", types: ["8"] },
+  { name: "Kill 5 Bulbmin (Children, not parents)", types: ["12"] },
 ];
 bingoList[7] = [
-  { name: "50 Reds, 50 Yellows, and 50 Blues", types: ["red","ylw","masspik"] },
-  { name: "Kill 8 Blowhogs (of any kind)", types: ["xenemy"] },
-  { name: "Fossilized Ursidae (VoR)", types: ["vor"] },
-  { name: "Complete HoB", types: ["clear"] },
+  { name: "50 Reds, 50 Yellows, and 50 Blues", types: ["1"] },
+  { name: "Kill 8 Water Dumples", types: ["6"] },
+  { name: "Enter all 4 caves in AW", types: ["9"] },
+  { name: "Trigger all 3 hazard cutscenes (Poison, Fire, and Water)", types: ["12"] },
 ];
 bingoList[8] = [
-  { name: "Destroy a Burgeoning Spiderwort mold", types: ["mold"] },
-  { name: "Turn 15 Bulbmin into other types", types: ["blb"] },
-  { name: "8 Spicy Sprays", types: ["spray"] },
-  { name: "Kill all enemies in HoB and WFG", types: ["allenemy"] },
+  { name: "100 Blues", types: ["1"] },
+  { name: "Kill both Hermit Crawmads in PP", types: ["6"] },
+  { name: "Fossilized Ursidae (VoR)", types: ["10"] },
+  { name: "Activate every dormant Bomb Rock on SCx7", types: ["13"] },
 ];
 bingoList[9] = [
-  { name: "Kill all 3 Creeping Chrysanthemums in AW", types: ["allenemy"] },
-  { name: "Impediment Scourge (PP)", types: ["pp"] },
-  { name: "Olimarnite Shell (BK3) and Colossal Fossil (BK6)", types: ["theme"] },
-  { name: "Enter all 4 caves in PP", types: ["caveenter"] },
+  { name: "200 Total Pikmin", types: ["1"] },
+  { name: "Kill 8 Blowhogs (of any kind)", types: ["6"] },
+  { name: "The Key (CoS5)", types: ["10"] },
+  { name: "Have a Leaf Pikmin in the ground mature into a Flower Pikmin", types: ["13"] },
 ];
 bingoList[10] = [
-  { name: "Kill 8 Water Dumples", types: ["xenemy"] },
-  { name: "Kill both Hermit Crawmads in PP", types: ["allenemy"] },
-  { name: "45 Purples", types: ["onetype"] },
-  { name: "Collect all 3 Wogpoles in AW", types: ["wogpole"] },
+  { name: "100 Pikmin of a single type", types: ["1"] },
+  { name: "Kill all enemies in HoB and WFG", types: ["6"] },
+  { name: "Justice Alloy (SH7)", types: ["10"] },
+  { name: "5 food treasures", types: ["11"] },
 ];
 bingoList[11] = [
-  { name: "Clear FC3", types: ["clear"] },
-  { name: "Make 5 Candypop Buds in SCx wilt", types: ["cpb"] },
-  { name: "Clear SCx3", types: ["clear"] },
-  { name: "8 Bitter Sprays", types: ["spray"] },
-  { name: "45 Whites", types: ["onetype"] },
+  { name: "45 Purples", types: ["1"] },
+  { name: "Clear GK4", types: ["8"] },
+  { name: "Enter SmC", types: ["9"] },
+  { name: "4 Explorer's Kit treasures (Spherical Atlas doesn't count)", types: ["11"] },
 ];
 bingoList[12] = [
-  { name: "Aquatic Mine (PP)", types: ["pp"] },
-  { name: "100 Pikmin of a single type", types: ["onetype","masspik"] },
-  { name: "Kill 5 Bulbmin", types: ["blb","selfharm"] },
-  { name: "The Key (CoS5)", types: ["easyboss","cos"] },
-  { name: "Justice Alloy (SH7)", types: ["hardboss"] },
+  { name: "100 Yellows", types: ["1"] },
+  { name: "Collect 2 Gatling Groinks", types: ["7"] },
+  { name: "Enter all 3 caves in VoR (EC must be entered again)", types: ["9"] },
+  { name: "Crystal Clover (BK1) and Crystal King (BK4)", types: ["11"] },
 ];
 bingoList[13] = [
-  { name: "Drain the main lake in PP", types: ["drain"] },
-  { name: "Build all 3 bridges in AW", types: ["bridge"] },
-  { name: "150 Reds", types: ["onetype","masspik","red"] },
-  { name: "200 Total Pikmin", types: ["masspik"] },
+  { name: "150 Reds", types: ["1"] },
+  { name: "Clear FC3", types: ["8"] },
+  { name: "Air Brake (AW)", types: ["10"] },
+  { name: "Leviathan Feather (SH1) and Science Project (SH6)", types: ["11"] },
 ];
 bingoList[14] = [
-  { name: "Temporal Mechanism (VoR)", types: ["vor","fiery"] },
-  { name: "5 Spicy Sprays and 5 Bitter Sprays", types: ["spray"] },
-  { name: "7 treasures worth 30 Pokos or fewer (10 if on JP)", types: ["lowpoko"] },
-  { name: "Make 4 Candypop Buds in FC wilt", types: ["cpb"] },
-  { name: "100 Blues", types: ["onetype","masspik"] },
+  { name: "45 Whites", types: ["1"] },
+  { name: "Clear SCx3", types: ["8"] },
+  { name: "Thirst Activator (SCx7)", types: ["10"] },
+  { name: "Olimarnite Shell (BK3) and Colossal Fossil (BK6)", types: ["11"] },
 ];
 bingoList[15] = [
-  { name: "Destroy all 6 poison geysers in AW", types: ["poisongate","awgate"] },
-  { name: "Collect 2 Gattling Groinks", types: ["xenemy"] },
-  { name: "Thirst Activator (SCx7)", types: ["hipoko"] },
-  { name: "Leviathan Feather (SH1) and Science Project (SH6)", types: ["lowpoko","theme"] },
-  { name: "Destroy both electric gates in AW", types: ["elecgate","awgate"] },
-  { name: "Superstick Textile (WFG3) and Exhausted Superstick (SCx1)", types: ["theme"] },
+  { name: "Drain the main lake in PP", types: ["5"] },
+  { name: "Clear SCx6", types: ["8"] },
+  { name: "Stellar Orb (SCx9)", types: ["10"] },
+  { name: "Superstick Textile (WFG3) and Exhausted Superstick (SCx1)", types: ["11"] },
 ];
 bingoList[16] = [
-  { name: "Unspeakable Wonder (VoR)", types: ["vor"] },
-  { name: "3 Explorer's Kit treasures", types: ["easyboss","hardboss"] },
-  { name: "Collect all 3 Cannon Beetle corpses in VoR", types: ["allenemy"] },
-  { name: "Petrified Heart (WFG2), Tear Stone (BK2), and Regal Diamond (CoS5)", types: ["theme"] },
+  { name: "Make a Golden Candypop Bud wilt", types: ["3"] },
+  { name: "Clear FC6", types: ["8"] },
+  { name: "Repugnant Appendage (FC8)", types: ["10"] },
+  { name: "6 treasures worth 200 Pokos or more (Spherical Atlas doesn't count)", types: ["11"] },
 ];
 bingoList[17] = [
-  { name: "Clear GK4", types: ["clear"] },
-  { name: "Kill 2 Fiery Bulblaxes", types: ["fiery"] },
-  { name: "Build all 3 bridges in PP", types: ["bridge"] },
-  { name: "Make a Yellow Candypop Bud wilt", types: ["ylw","cpb"] },
+  { name: "Make 5 Candypop Buds in SCx wilt", types: ["3"] },
+  { name: "Clear SH6", types: ["8"] },
+  { name: "Unspeakable Wonder (VoR)", types: ["10"] },
+  { name: "Petrified Heart (WFG2), Tear Stone (BK2), and Regal Diamond (CoS5)", types: ["11"] },
 ];
 bingoList[18] = [
-  { name: "6 treasures worth 200 Pokos or more (EC Globe doesn't count)", types: ["hipoko"] },
-  { name: "100 Yellows", types: ["onetype","masspik","ylw"] },
-  { name: "Clear SCx6", types: ["clear"] },
-  { name: "4 bottle cap treasures (or 7 milk covers)", types: ["theme"] },
+  { name: "Build all 3 bridges in PP", types: ["5"] },
+  { name: "Kill 2 Fiery Bulblaxes", types: ["6"] },
+  { name: "Temporal Mechanism (VoR)", types: ["10"] },
+  { name: "Crystallized Telekinesis, Telepathy, and Clairvoyance (SH1, 4, and 5)", types: ["11"] },
 ];
 bingoList[19] = [
-  { name: "Kill 5 Breadbugs", types: ["breadbug"] },
-  { name: "Optical Illustration (PP)", types: ["pp","ppgate"] },
-  { name: "Collect all 5 Wogpoles in PP", types: ["wogpole","ppgate"] },
-  { name: "Stellar Orb (SCx9)", types: ["hardboss"] },
+  { name: "Make 4 Candypop Buds in FC wilt", types: ["3"] },
+  { name: "Kill 5 Breadbugs", types: ["6"] },
+  { name: "Onion Replica (PP)", types: ["10"] },
+  { name: "7 treasures worth 30 Pokos or fewer (10 if on JP)", types: ["11"] },
 ];
 bingoList[20] = [
-  { name: "Destroy both black gates in PP", types: ["blkgate","ppgate"] },
-  { name: "Destroy all 3 electric gates in PP", types: ["elecgate","ppgate"] },
-  { name: "Crystallized Telekenesis, Telepathy, and Clairvoyance (SH 1, 4, and 5)", types: ["theme"] },
-  { name: "6 fully buried treasures", types: ["theme","vor"] },
+  { name: "Turn 15 Bulbmin into other types", types: ["3"] },
+  { name: "Collect 8 Dweevils (of any kind)", types: ["7"] },
+  { name: "Optical Illustration (PP)", types: ["10"] },
+  { name: "4 bottle cap treasures (7 milk cover treasures if on JP)", types: ["11"] },
 ];
 bingoList[21] = [
-  { name: "Collect the 20-Pellet in AW", types: ["pellet"] },
-  { name: "Repugnant Appendage (FC8)", types: ["easyboss","empress"] },
-  { name: "Clear FC6", types: ["clear"] },
-  { name: "Onion Replica (PP)", types: ["pp","blkgate","void","lowpoko"] },
+  { name: "Build all 3 bridges in AW", types: ["5"] },
+  { name: "Collect all 3 Cannon Beetles in VoR", types: ["7"] },
+  { name: "Enter all 4 caves in PP", types: ["9"] },
+  { name: "Network Mainbrain, Vacuum Processor, and Indomitable CPU (SCx2, 6, and 7)", types: ["11"] },
 ];
 bingoList[22] = [
-  { name: "Collect 8 Dweevils (of any kind)", types: ["xenemy"] },
-  { name: "Destroy 4 poison gates", types: ["poisongate"] },
-  { name: "Air Brake (AW)", types: ["aw"] },
-  { name: "Network Mainbrain, Indomitable CPU, and Vacuum Processor (SCx 2, 6, and 7)", types: ["theme"] },
+  { name: "5 Spicy Sprays and 5 Bitter Sprays", types: ["4"] },
+  { name: "Collect all 5 Wogpoles in PP", types: ["7"] },
+  { name: "Professional Noisemaker (SmC5)", types: ["10"] },
+  { name: "6 fully buried treasures", types: ["11"] },
 ];
 bingoList[23] = [
-  { name: "Clear SH6", types: ["clear","lowpoko","snagret"] },
-  { name: "Decorative Goo (AW)", types: ["awgate","aw"] },
-  { name: "Memorial Shell (CoS3) and Scrumptious Shell (SR3)", types: ["theme"] },
-  { name: "Mirrored Stage (SR3)", types: [] },
+  { name: "Destroy the poison gate in VoR", types: ["5"] },
+  { name: "Clear SmC3", types: ["8"] },
+  { name: "Mirrored Stage (SR3)", types: ["10"] },
+  { name: "Memorial Shell (CoS3) and Scrumptious Shell (SR3)", types: ["11"] },
 ];
 bingoList[24] = [
-  { name: "Professional Noisemaker (SmC5)", types: ["hardboss"] },
-  { name: "Endless Repository (SR5)", types: [] },
-  { name: "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)", types: ["theme"] },
-  { name: "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)", types: ["theme"] },
+  { name: "8 Bitter Sprays", types: ["4"] },
+  { name: "Clear SmC4", types: ["8"] },
+  { name: "Endless Repository (SR5)", types: ["10"] },
+  { name: "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)", types: ["11"] },
 ];
 bingoList[25] = [
-  { name: "Clear SmC3", types: ["clear"] },
-  { name: "Clear SmC4", types: ["clear"] },
-  { name: "Amplified Amplifier (SR7)", types: ["easyboss"] },
-  { name: "Clear SR6", types: ["clear"] },
+  { name: "Destroy all 6 gas pipes in AW", types: ["5"] },
+  { name: "Clear SR6", types: ["8"] },
+  { name: "Amplified Amplifier (SR7)", types: ["10"] },
+  { name: "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)", types: ["11"] },
 ];
