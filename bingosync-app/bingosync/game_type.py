@@ -106,6 +106,7 @@ class GameType(Enum):
     super_mario_odyssey_all_kingdoms_post_game = 100
     super_smash_bros_brawl_all_brawl = 101
     super_smash_bros_brawl_basic = 102
+    transistor = 103
 
     def __str__(self):
         return self.short_name
@@ -381,6 +382,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.binding_of_isaac, "The Binding of Isaac: Afterbirth+", "Isaac AB+"),
+    **singleton_group(GameType.transistor, "Transistor", "Transistor"),
 }
 
 GAME_TYPE_GROUPS = {}
