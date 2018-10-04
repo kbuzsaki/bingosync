@@ -1,7 +1,17 @@
-//Uses SRL Generator
 bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
-//Version 1.3 of Pikmin 2 Bingo
+//Version 1.3.1 of Pikmin 2 Bingo
+
+//Changes since 1.3:
+//The "Region Friendly Update"
+//Renamed a lot of goals to include PAL names for certain treasures
+//Changed "6 treasures worth 200 Pokos or more" to "7 treasures worth 160 Pokos or more" (more PAL friendly, accounts for new race file setup)
+//Changed "7 treasures worth 30 Pokos or fewer (10 if on JP)" to "6 treasures worth 25 Pokos or fewer" (less biased towards NTSC-J)
+//Changed "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)" to remove Courage Reactor (accounts for new race file setup)
+//Added "12 treasures worth exactly 100 Pokos" to difficulty 20
+//Added "5 above ground treasures" to difficulty 1
+//Removed "4 bottle cap treasures (7 milk cover treasures if on JP)" (less biased towards NTSC-J, more PAL friendly)
+//Removed "Survival Ointment (WFG4) and Healing Cask (AW)" (the theme only makes sense on NTSC-U)
 
 //Changes since 1.2.3:
 //Completely revamped the difficulties of nearly every goal
@@ -56,7 +66,7 @@ bingoList[1] = [
   { name: "Discover Yellow Pikmin", types: ["1"] },
   { name: "Kill all 10 Mitites on HoB4", types: ["6"] },
   { name: "Toxic Toadstool (WFG4)", types: ["10"] },
-  { name: "Survival Ointment (WFG4) and Healing Cask (AW)", types: ["11"] },
+  { name: "5 above ground treasures", types: ["11"] },
 ];
 bingoList[2] = [
   { name: "Collect a 1-Pellet of each color", types: ["2"] },
@@ -116,7 +126,7 @@ bingoList[11] = [
   { name: "45 Purples", types: ["1"] },
   { name: "Clear GK4", types: ["8"] },
   { name: "Enter SmC", types: ["9"] },
-  { name: "4 Explorer's Kit treasures (Spherical Atlas doesn't count)", types: ["11"] },
+  { name: "4 Explorer's Kit treasures", types: ["11"] },
 ];
 bingoList[12] = [
   { name: "100 Yellows", types: ["1"] },
@@ -146,7 +156,7 @@ bingoList[16] = [
   { name: "Make a Golden Candypop Bud wilt", types: ["3"] },
   { name: "Clear FC6", types: ["8"] },
   { name: "Repugnant Appendage (FC8)", types: ["10"] },
-  { name: "6 treasures worth 200 Pokos or more (Spherical Atlas doesn't count)", types: ["11"] },
+  { name: "7 treasures worth 160 Pokos or more", types: ["11"] },
 ];
 bingoList[17] = [
   { name: "Make 5 Candypop Buds in SCx wilt", types: ["3"] },
@@ -164,13 +174,13 @@ bingoList[19] = [
   { name: "Make 4 Candypop Buds in FC wilt", types: ["3"] },
   { name: "Kill 5 Breadbugs", types: ["6"] },
   { name: "Onion Replica (PP)", types: ["10"] },
-  { name: "7 treasures worth 30 Pokos or fewer (10 if on JP)", types: ["11"] },
+  { name: "6 treasures worth 25 Pokos or fewer", types: ["11"] },
 ];
 bingoList[20] = [
   { name: "Turn 15 Bulbmin into other types", types: ["3"] },
   { name: "Collect 8 Dweevils (of any kind)", types: ["7"] },
-  { name: "Optical Illustration (PP)", types: ["10"] },
-  { name: "4 bottle cap treasures (7 milk cover treasures if on JP)", types: ["11"] },
+  { name: "Optical Illustration [US] / Abstract Masterpiece [PAL] (PP)", types: ["10"] },
+  { name: "12 treasures worth exactly 100 Pokos", types: ["11"] },
 ];
 bingoList[21] = [
   { name: "Build all 3 bridges in AW", types: ["5"] },
@@ -193,12 +203,12 @@ bingoList[23] = [
 bingoList[24] = [
   { name: "8 Bitter Sprays", types: ["4"] },
   { name: "Clear SmC4", types: ["8"] },
-  { name: "Endless Repository (SR5)", types: ["10"] },
+  { name: "Endless Repository [US] / Permanent Container [PAL] (SR5)", types: ["10"] },
   { name: "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)", types: ["11"] },
 ];
 bingoList[25] = [
   { name: "Destroy all 6 gas pipes in AW", types: ["5"] },
   { name: "Clear SR6", types: ["8"] },
   { name: "Amplified Amplifier (SR7)", types: ["10"] },
-  { name: "Courage Reactor (VoR), Durable Energy Cell (SR2), and Proton AA (SmC4)", types: ["11"] },
+  { name: "Durable Energy Cell (SR2) and Proton AA (SmC4)", types: ["11"] },
 ];
