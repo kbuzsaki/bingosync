@@ -361,8 +361,6 @@ function getBingoCount($board, colorClass) {
 
 function updateGoalCounters($board) {
     var blackText = $('#black-on-selected').prop('checked');
-    var darkColors = ['navysquare', 'purplesquare', 'brownsquare'];
-    var lightColors = ['yellowsquare', 'pinksquare'];
 
     var showBingos = $('#show-bingo-score').prop('checked');
     $(".goalcounter").each(function() {
@@ -375,11 +373,6 @@ function updateGoalCounters($board) {
             $(this).removeClass('wide-score');
         }
         $(this).text(text);
-        if ((blackText || lightColors.indexOf(colorClass) !== -1) && darkColors.indexOf(colorClass) === -1) {
-            $(this).css('color', 'black');
-        } else {
-            $(this).css('color', '');
-        }
     });
 }
 

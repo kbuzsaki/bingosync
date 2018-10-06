@@ -1,0 +1,119 @@
+/* standard theme */
+.yellowsquare.goalcounter {
+    color: #000;
+}
+.pinksquare.goalcounter {
+    color: #000;
+}
+
+/* dark theme */
+body.dark-theme .greensquare {
+    background-image: linear-gradient(#156307, #153315 60%, #166907);
+}
+
+body.dark-theme .redsquare {
+    background-image: linear-gradient(#670705, #290403 60%, #4c0705);
+}
+body.dark-theme .redsquare.goalcounter {
+    background: #670705;
+}
+
+body.dark-theme .orangesquare {
+    background-image: linear-gradient(#b53f07, #5d1b06 30%, #290e02 75%, #791c06);
+}
+body.dark-theme .orangesquare.goalcounter {
+    background: #d83e1a;
+    color: #000;
+}
+
+body.dark-theme .bluesquare {
+    background-image: linear-gradient(#409CFF,  #141E23 35%, #141E23 75%, #088CBD);
+}
+body.dark-theme .bluesquare.goalcounter {
+    background: #0f96c7;
+    color: #000;
+}
+
+body.dark-theme .purplesquare {
+    background-image: linear-gradient(#5b1e88, #1e052f 50%, #551286);
+}
+
+body.dark-theme .pinksquare {
+    background-image: linear-gradient(#ed86aa, #310716 20%, #310716 80%, #cc6e8f);
+}
+body.dark-theme .pinksquare.goalcounter {
+    background: #ed86aa;
+}
+
+body.dark-theme .brownsquare {
+    background-image: linear-gradient(#693007, #291201);
+}
+body.dark-theme .brownsquare.goalcounter {
+    background: #693109;
+}
+
+body.dark-theme .tealsquare {
+    background-image: linear-gradient(#0f5f71, #082225 30%, #082225 70%, #085d46);
+}
+
+body.dark-theme .navysquare {
+    background-image: linear-gradient(#022b75, #03132f);
+}
+body.dark-theme .navysquare.goalcounter {
+    background: #022b75;
+}
+
+body.dark-theme .yellowsquare {
+    background-image: linear-gradient(#3c3903 10%, #d8d014 20%,  #423f04 30%, #423f04 70%, #d8d014 80%, #383502 90%);
+}
+body.dark-theme .yellowsquare.goalcounter {
+    background: #d8d014;
+}
+
+
+/* light theme */
+body.light-theme .goalcounter {
+    color: #000;
+}
+body.light-theme .greensquare {
+    background-image: linear-gradient(#31D814, #a8f3a6 35%, #90f38d 75%, #20A00A);
+}
+
+body.light-theme .redsquare {
+    background-image: linear-gradient(#ff5d59, #ff9592 60%, #CE302C);
+}
+
+body.light-theme .orangesquare {
+    background-image: linear-gradient(#ffd96f, #f17c38 60%, #b1361a);
+}
+
+body.light-theme .bluesquare {
+    background-image: linear-gradient(#89c0fb, #4abaf9 35%, #37b8ff 75%, #1ca1d2);
+}
+
+body.light-theme .purplesquare {
+    background-image: linear-gradient(#822dbf, #c0a6d2 35%, #c0a6d2 65%, #7120ab);
+}
+
+body.light-theme .pinksquare {
+    background-image: linear-gradient(#ffc7db, #ff6ea1);
+}
+
+body.light-theme .brownsquare {
+    background-image: linear-gradient(#ffa361, #6b5341);
+}
+
+body.light-theme .tealsquare {
+    background-image: linear-gradient(#afefe3, #1bb383, #6eff9b);
+}
+
+body.light-theme .navysquare {
+    background-image: linear-gradient(#377dfd, #2840e4);
+}
+body.light-theme .navysquare.goalcounter {
+    background: #1f5ed2;
+}
+
+body.light-theme .yellowsquare {
+    background-image: linear-gradient(#fffa84, #b9b310);
+}

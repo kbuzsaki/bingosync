@@ -425,7 +425,12 @@
 }
 
 .color-chooser {
+    font-weight: bold;
     color: #fff;
+}
+.color-chooser.dark-text {
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 1px 1px 2px;
 }
 
 .color-chooser:hover {
