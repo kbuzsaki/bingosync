@@ -109,6 +109,7 @@ class GameType(Enum):
     transistor = 103
     sonic_adventure_dx = 104
     new_super_mario_bros_wii = 105
+    celeste = 106
 
     def __str__(self):
         return self.short_name
@@ -387,6 +388,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMBW"),
+    **singleton_group(GameType.celeste, "Celeste", "Celeste"),
 }
 
 GAME_TYPE_GROUPS = {}
