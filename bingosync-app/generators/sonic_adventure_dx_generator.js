@@ -17,7 +17,7 @@ var bingoList =
     "Beat Tails' Sky Deck Without Flying",
     "Beat Tails' Speed Highway Without Flying",
     "Beat Tails' Windy Valley Without Flying",
-    "Beat Twinkle Circuit With Car Number 1",
+    "Beat Twinkle Circuit With Exactly 1 Ring",
     "Beat Zero With 0 Rings",
     "Beat a Big Stage with 25 Rings",
     "Beat a Gamma Stage Without Destroying Anything",
