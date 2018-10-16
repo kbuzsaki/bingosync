@@ -16,8 +16,6 @@ from django.forms import RadioSelect
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Field
 
-from .custom_boards.custom_board_form_data import CUSTOM_JSON_PLACEHOLDER_TEXT, CUSTOM_SIMPLE_PLACEHOLDER_TEXT, CUSTOM_BOARD_TYPE_CHOICES
-
 logger = logging.getLogger(__name__)
 
 def make_read_only_char_field(*args, **kwargs):
@@ -36,14 +34,14 @@ class RoomForm(forms.Form):
                            help_text="No other variants available", required=False)
     custom_board_type = forms.ChoiceField(
         label="Custom Board Type",
-        choices=CUSTOM_BOARD_TYPE_CHOICES, 
+        choices=[("Simple", "Simple"), ("JSON", "JSON")], 
         widget=RadioSelect(),
         required=False
     )
     custom_json = forms.CharField(
         label="Board", 
         widget=forms.Textarea(
-            attrs = {'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), 
+            attrs = {'rows': 6}), 
             required=False
         )
     randomize_custom = forms.BooleanField(

@@ -89,7 +89,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bingosync',
-        'USER': 'kyle' if IS_PROD else 'kbuzsaki',
+        'USER': 'kyle' if IS_PROD else 'quinton',
     }
 }
 

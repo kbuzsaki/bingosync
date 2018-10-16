@@ -1,3 +1,16 @@
+var CUSTOM_JSON_PLACEHOLDER_TEXT = 
+`Paste the board as a 25 element JSON goal list, e.g:
+[ {"name": "Collect 3 Fire Flowers"},
+{"name": "Defeat Phantom Ganon"},
+{"name": "Catch a Pokemon while Surfing"},
+... ]`;
+
+var CUSTOM_SIMPLE_PLACEHOLDER_TEXT = 
+`Paste the board as a 25 element goal list, eg:
+Collect 3 Fire Flowers
+Defeat Phantom Ganon
+Catch a Pokemon while Surfing`;
+
 function initializeRoomsPanel($roomsPanel) {
     $roomsPanel.find(".show-button").on("click", function(e) {
         e.preventDefault();
@@ -25,19 +38,6 @@ function initializeGameSelectForm($form) {
 
     // selection of customBoardType changes the placeholder text in custom JSON
     $customBoardType.on("change", () => {
-        var CUSTOM_JSON_PLACEHOLDER_TEXT = 
-`Paste the board as a 25 element JSON goal list, e.g:
-[ {"name": "Collect 3 Fire Flowers"},
-{"name": "Defeat Phantom Ganon"},
-{"name": "Catch a Pokemon while Surfing"},
-... ]`;
-
-        var CUSTOM_SIMPLE_PLACEHOLDER_TEXT = 
-`Paste the board as a 25 element goal list, eg:
-Collect 3 Fire Flowers
-Defeat Phantom Ganon
-Catch a Pokemon while Surfing`;
-
         if ($customBoardType.filter(":checked").val() === "Simple") {
             $customJson.attr("placeholder", CUSTOM_SIMPLE_PLACEHOLDER_TEXT)
         } else if ($customBoardType.filter(":checked").val() === "JSON") {
@@ -61,7 +61,7 @@ Catch a Pokemon while Surfing`;
             $customBoardTypeContainer.removeClass("hidden");
             $randomizeCustomContainer.removeClass("hidden");
             $customBoardType.prop("checked", true);
-
+            $customJson.attr("placeholder", CUSTOM_JSON_PLACEHOLDER_TEXT);
         } else {
             // any other game type has a variant, so show the matching variants
             var $selectedGameType = $gameType.find("option:selected");
