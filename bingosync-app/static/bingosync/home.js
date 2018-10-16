@@ -88,7 +88,10 @@ function initializeGameSelectForm($form) {
             }
 
             $customJsonContainer.addClass("hidden");
-            $variantTypeContainer.removeClass("hidden");
+            $customBoardTypeContainer.addClass("hidden");
+            $randomizeCustomContainer.addClass("hidden");
+            $variantTypeContainer.addClass("hidden");
+
         }
     });
     $gameType.change();

@@ -66,7 +66,7 @@ class RoomForm(forms.Form):
         self.helper['variant_type'].wrap(Field, wrapper_class='hidden')
         self.helper['custom_json'].wrap(Field, wrapper_class='hidden')
         self.helper['custom_board_type'].wrap(Field, wrapper_class='hidden')
-        self.helper['randomize'].wrap(Field, wrapper_class='hidden')
+        self.helper['randomize_custom'].wrap(Field, wrapper_class='hidden')
 
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()

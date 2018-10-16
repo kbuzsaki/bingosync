@@ -28,11 +28,13 @@
         var newCardUrl = "{% url 'new_card' %}";
         var submitNewCardForm = function() {
             var formData = $("#new-card-form").serializeArray();
-            var data = {"hide_card": false};
+            var data = {"hide_card": false, "randomize_custom": false};
             formData.forEach(function (input) {
                 if (input['name'] === 'hide_card') {
                     data['hide_card'] = input['value'] === 'on';
-                } else {
+                } else if (input['name'] === 'randomize_custom') {
+                    data['randomize_custom'] = input['value'] === 'on';
+                }else {
                     data[input['name']] = input['value'];
                 }
             });

@@ -69,12 +69,15 @@ def room_view(request, encoded_room_uuid):
             new_card_form.helper.layout = Layout(
                     "game_type",
                     "variant_type",
+                    "custom_board_type",
                     "custom_json",
+                    "randomize_custom",
                     "lockout_mode",
                     "seed",
                     "hide_card",
             )
             new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
+            new_card_form.helper['custom_board_type'].wrap(Field, wrapper_class='hidden')
             new_card_form.helper['custom_json'].wrap(Field, wrapper_class='hidden')
             player = _get_session_player(request.session, room)
             params = {
@@ -120,22 +123,36 @@ def new_card(request):
     game_type = GameType.for_value(int(data["game_type"]))
     lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
     seed = data["seed"]
-
     hide_card = data["hide_card"]
 
     if game_type == GameType.custom:
+        custom_board_data = data["custom_json"]
+        custom_board_type = data["custom_board_type"]
+        randomize = data["randomize_custom"]
+
         if not seed:
             seed = "0"
-        try:
-            board_json = json.loads(data["custom_json"])
-        except:
-            return HttpResponseBadRequest("Invalid board: Invalid JSON")
+
+        if custom_board_type == "JSON":
+            try:
+                board_json = json.loads(custom_board_data)
+            except:
+                return HttpResponseBadRequest("Invalid Board Json")
+        else:
+            try:
+                board_json = RoomForm.convert_simple_to_json(custom_board_data)
+            except:
+                return HttpResponseBadRequest("Simple Board List Invalid")
 
         if not isinstance(board_json, list):
-            return HttpResponseBadRequest("Invalid board: Board must be a list")
+            return HttpResponseBadRequest("Board must be a list")
+        
+        if randomize: 
+            random.shuffle(board_json)
+            board_json = board_json[:25]
 
         if len(board_json) != 25:
-            return HttpResponseBadRequest("Invalid board: Expected 25 squares but got " + str(len(board_json)))
+            return HttpResponseBadRequest("Invalid board length " + str(len(board_json)) + ", expected 25")
 
         for i, square in enumerate(board_json):
             if "name" not in square:
@@ -389,4 +406,3 @@ def parse_body_json_or_400(request, *, required_keys=[]):
             raise InvalidRequestJsonError("Request body \"" + str(data) + "\" missing key: '" + str(key) + "'")
 
     return data
-
