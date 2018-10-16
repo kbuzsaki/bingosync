@@ -112,6 +112,7 @@ class GameType(Enum):
     celeste = 106
     paper_mario = 107
     mega_man_11 = 108
+    world_of_warcraft = 109
 
     def __str__(self):
         return self.short_name
@@ -393,6 +394,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
     **singleton_group(GameType.paper_mario, "Paper Mario", "The Pape"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
+    **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW")
 }
 
 GAME_TYPE_GROUPS = {}
