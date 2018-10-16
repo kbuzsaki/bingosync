@@ -11,10 +11,12 @@ from .models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 
 from .widgets import GroupedSelect
+from django.forms import RadioSelect
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Field
 
+from .custom_boards.custom_board_form_data import CUSTOM_JSON_PLACEHOLDER_TEXT, CUSTOM_SIMPLE_PLACEHOLDER_TEXT, CUSTOM_BOARD_TYPE_CHOICES
 
 logger = logging.getLogger(__name__)
 
@@ -25,12 +27,6 @@ def make_read_only_char_field(*args, **kwargs):
 ROOM_NAME_MAX_LENGTH = Room._meta.get_field("name").max_length
 PLAYER_NAME_MAX_LENGTH = Player._meta.get_field("name").max_length
 
-CUSTOM_JSON_PLACEHOLDER_TEXT = """Paste the board as a 25 element JSON goal list, e.g:
-[ {"name": "Collect 3 Fire Flowers"},
-  {"name": "Defeat Phantom Ganon"},
-  {"name": "Catch a Pokemon while Surfing"},
-  ... ]"""
-
 class RoomForm(forms.Form):
     room_name = forms.CharField(label="Room Name", max_length=ROOM_NAME_MAX_LENGTH)
     passphrase = forms.CharField(label="Password", widget=forms.PasswordInput())
@@ -38,7 +34,21 @@ class RoomForm(forms.Form):
     game_type = forms.ChoiceField(label="Game", choices=GameType.game_choices())
     variant_type = forms.ChoiceField(label="Variant", choices=GameType.variant_choices(), widget=GroupedSelect,
                            help_text="No other variants available", required=False)
-    custom_json = forms.CharField(label="Board", widget=forms.Textarea(attrs={'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), required=False)
+    custom_board_type = forms.ChoiceField(
+        label="Custom Board Type",
+        choices=CUSTOM_BOARD_TYPE_CHOICES, 
+        widget=RadioSelect(),
+        required=False
+    )
+    custom_json = forms.CharField(
+        label="Board", 
+        widget=forms.Textarea(
+            attrs = {'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), 
+            required=False
+        )
+    randomize_custom = forms.BooleanField(
+        label="Randomize? (Supports >25 Goals)",
+        required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
     seed = forms.CharField(label="Seed", widget=forms.NumberInput(attrs={"min": 0, "max": 2147483647}),
                            help_text="Leave blank for a random seed", required=False)
@@ -53,23 +63,36 @@ class RoomForm(forms.Form):
         self.helper.form_class = 'form-horizontal'
         self.helper.label_class = 'col-md-3'
         self.helper.field_class = 'col-md-9'
+
         # variant and custom_json hidden by default
         self.helper['variant_type'].wrap(Field, wrapper_class='hidden')
         self.helper['custom_json'].wrap(Field, wrapper_class='hidden')
+        self.helper['custom_board_type'].wrap(Field, wrapper_class='hidden')
+        self.helper['randomize'].wrap(Field, wrapper_class='hidden')
 
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()
 
         game_type = GameType.for_value(int(cleaned_data.get("game_type", "0")))
         if game_type == GameType.custom:
-            custom_json = cleaned_data["custom_json"]
-            try:
-                custom_board = json.loads(custom_json)
-            except:
-                raise forms.ValidationError("Invalid Board Json")
+            custom_board_data = cleaned_data["custom_json"]
+            custom_board_type = cleaned_data["custom_board_type"]
+            randomize = cleaned_data["randomize_custom"]
+
+            if custom_board_type == "JSON":
+                try:
+                    custom_board = json.loads(custom_board_data)
+                except:
+                    raise forms.ValidationError("Invalid Board Json")
+            else:
+                custom_board = self.convert_simple_to_json(custom_board_data)
 
             if not isinstance(custom_board, list):
                 raise forms.ValidationError("Board must be a list")
+            
+            if randomize: 
+                random.shuffle(custom_board)
+                custom_board = custom_board[:25]
 
             if len(custom_board) != 25:
                 raise forms.ValidationError("Invalid board length " + str(len(custom_board)) + ", expected 25")
@@ -123,6 +146,15 @@ class RoomForm(forms.Form):
 
             room.update_active()
         return room
+
+    @staticmethod
+    def convert_simple_to_json(simpleGoalString):
+        goal_list = simpleGoalString.splitlines()
+        goal_list_length = len(goal_list)
+        if goal_list_length < 25:
+            raise forms.ValidationError("Not enough goals passed in.")
+        else:
+            return list(map(lambda item: {'name': item}, goal_list))
 
 class JoinRoomForm(forms.Form):
     encoded_room_uuid = forms.CharField(label="Room UUID", max_length=128, widget=forms.HiddenInput())
