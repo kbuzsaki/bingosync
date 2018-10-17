@@ -1,77 +1,77 @@
 [
     {
-        "name": "Raticate, Furret, Mightyena, or Linoone"
+        "name": "Murkrow, Misdreavus, Ariados, or Ledian"
     },
     {
-        "name": "Call a Tuber"
+        "name": "Fix the generator in New Mauville"
     },
     {
-        "name": "TM41 (Torment)"
-    },
-    {
-        "name": "Beat Brendan/May in Rustboro"
-    },
-    {
-        "name": "Illuminate, Stench, Run Away, or Pickup"
-    },
-    {
-        "name": "Secret Base above the sand slope on Route 115"
-    },
-    {
-        "name": "Overgrow, Blaze, Torrent, or Swarm"
-    },
-    {
-        "name": "Defeat the Winstrate Family"
-    },
-    {
-        "name": "Bayleef, Quilava, or Croconaw"
-    },
-    {
-        "name": "Hasty, Jolly, Naive, or Timid"
+        "name": "TM28 (Dig)"
     },
     {
         "name": "Defeat all 7 trainers on the Abandoned Ship"
     },
     {
-        "name": "Regirock, Regice, or Registeel"
-    },
-    {
-        "name": "Lotad Doll"
-    },
-    {
-        "name": "Call a Sailor"
-    },
-    {
-        "name": "TM43 (Secret Power)"
-    },
-    {
-        "name": "Arena Trap, Shadow Tag, or Magnet Pull"
-    },
-    {
-        "name": "Call a Cooltrainer"
-    },
-    {
-        "name": "TM05 (Roar)"
-    },
-    {
-        "name": "Sandshrew, Phanpy, Spheal, or Shroomish"
-    },
-    {
-        "name": "Call a Ruin Maniac"
-    },
-    {
-        "name": "TM15 (Hyper Beam)"
-    },
-    {
-        "name": "Defeat all 7 trainers in Fortree Gym"
-    },
-    {
-        "name": "Masquerain, Medicham, or Roselia"
+        "name": "Super Rod"
     },
     {
         "name": "Met at Petalburg City"
     },
     {
-        "name": "Defeat all 16 trainers on Route 109"
+        "name": "Secret Base in the desert on Route 111"
+    },
+    {
+        "name": "Guts, Marvel Scale, Shed Skin, or Natural Cure"
+    },
+    {
+        "name": "Articuno, Zapdos, or Moltres"
+    },
+    {
+        "name": "Barrage, Icicle Spear, Bone Rush, or Arm Thrust"
+    },
+    {
+        "name": "Overgrow, Blaze, Torrent, or Swarm"
+    },
+    {
+        "name": "Raikou, Entei, or Suicune"
+    },
+    {
+        "name": "HM01 (Cut)"
+    },
+    {
+        "name": "Beat five levels of the Trick House"
+    },
+    {
+        "name": "TM32 (Double Team)"
+    },
+    {
+        "name": "Secret Base across the bike rails on Route 119"
+    },
+    {
+        "name": "Call a Beauty"
+    },
+    {
+        "name": "Smoke Ball"
+    },
+    {
+        "name": "A Pokemon with fewer than 4 moves"
+    },
+    {
+        "name": "TM05 (Roar)"
+    },
+    {
+        "name": "Chlorophyll, Swift Swim, Rain Dish, or Sand Veil"
+    },
+    {
+        "name": "Ludicolo, Seviper, Sableye, or Lunatone"
+    },
+    {
+        "name": "Double Team, Minimize, Smokescreen, or Sand-Attack"
+    },
+    {
+        "name": "Defeat all 6 trainers in Mauville Gym"
+    },
+    {
+        "name": "TM15 (Hyper Beam)"
     }
 ]
