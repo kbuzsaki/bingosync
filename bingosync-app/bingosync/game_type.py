@@ -339,12 +339,7 @@ GAME_GROUPS = {
             (GameType.zelda_botw_long, "Long", "BotW Long"),
         ],
     },
-    GameType.super_mario_63: {
-        "name": "Super Mario 63",
-        "variants": [
-            (GameType.super_mario_63, "Normal", "SM63"),
-        ],
-    },
+    **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
