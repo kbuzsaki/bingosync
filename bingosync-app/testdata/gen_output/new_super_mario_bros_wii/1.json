@@ -1,6 +1,6 @@
 [
     {
-        "name": "Beat every stage in W5"
+        "name": "Beat every stage in W2"
     },
     {
         "name": "Collect 70 total Star Coins"
@@ -9,19 +9,19 @@
         "name": "Hit the red switch (W3)"
     },
     {
-        "name": "Beat every stage in W2"
+        "name": "Beat 8-Fortress damageless"
+    },
+    {
+        "name": "Complete 10 castle or fortress stages (final bowser counts)"
     },
     {
         "name": "Collect all star coins in 8-6"
     },
     {
-        "name": "Collect all red coins for 5 different red coin rings"
+        "name": "Get a perfect Red Toad House (collect maximum amount of items)"
     },
     {
-        "name": "Enter 3 separate cannons"
-    },
-    {
-        "name": "Beat 8-Fortress (final Bowser)"
+        "name": "Beat 8-1 with no run button"
     },
     {
         "name": "Collect 60 total Star Coins"
@@ -30,7 +30,7 @@
         "name": "Beat 2 airship levels"
     },
     {
-        "name": "Beat 5 of the Koopalings at least once"
+        "name": "Beat 7-3 damageless"
     },
     {
         "name": "Reach 99 lives"
@@ -42,16 +42,16 @@
         "name": "Beat 4 levels where you have to go underwater"
     },
     {
-        "name": "Complete 11 castle or fortress stages (final bowser counts)"
+        "name": "Complete 8 castle or fortress stages (final bowser counts)"
     },
     {
         "name": "Obtain 5 different secret exits"
     },
     {
-        "name": "Use no more than one cannon (can be marked anytime so long as it is never violated)"
+        "name": "Reach W5 with no cannon"
     },
     {
-        "name": "Defeat Wendy"
+        "name": "Enter 3 separate cannons"
     },
     {
         "name": "Collect a Star coin in W7"
@@ -60,18 +60,18 @@
         "name": "Collect 50 total Star Coins"
     },
     {
-        "name": "Reach W5 with no cannon"
+        "name": "Get both exits in 6-6"
     },
     {
-        "name": "Get a perfect Red Toad House (collect maximum amount of items)"
+        "name": "Beat 5 of the Koopalings at least once"
     },
     {
         "name": "Beat 4-airship"
     },
     {
-        "name": "Collect 16 Star coins in W8"
+        "name": "Collect 15 Star coins in W6"
     },
     {
-        "name": "Get both exits in 3-Ghost"
+        "name": "Get both exits in 7-ghost"
     }
 ]
