@@ -113,6 +113,7 @@ class GameType(Enum):
     paper_mario = 107
     mega_man_11 = 108
     world_of_warcraft = 109
+    super_mario_63 = 110
 
     def __str__(self):
         return self.short_name
@@ -338,6 +339,7 @@ GAME_GROUPS = {
             (GameType.zelda_botw_long, "Long", "BotW Long"),
         ],
     },
+    **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),

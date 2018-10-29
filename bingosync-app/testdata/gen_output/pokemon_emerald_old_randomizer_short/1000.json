@@ -3,75 +3,75 @@
         "name": "Aromatherapy, Heal Bell, Refresh, or Wish"
     },
     {
-        "name": "Evolve something at Level 30"
+        "name": "Evolve something at Level 15"
     },
     {
-        "name": "Call a Picnicker"
-    },
-    {
-        "name": "Call an Expert"
-    },
-    {
-        "name": "Defeat all 9 trainers in Lavaridge Gym"
-    },
-    {
-        "name": "TM45 (Attract)"
-    },
-    {
-        "name": "TM15 (Hyper Beam)"
-    },
-    {
-        "name": "Barrage, Icicle Spear, Bone Rush, or Arm Thrust"
-    },
-    {
-        "name": "2 Fighting-type Pokemon"
-    },
-    {
-        "name": "Dragonair, Pupitar, Metang, or Shelgon"
-    },
-    {
-        "name": "Illuminate, Stench, Run Away, or Pickup"
-    },
-    {
-        "name": "Win a Tag Battle"
-    },
-    {
-        "name": "Beat the Verdanturf Battle Tent"
-    },
-    {
-        "name": "Hasty, Jolly, Naive, or Timid"
-    },
-    {
-        "name": "Catch 2 Pokemon in the Safari Zone"
-    },
-    {
-        "name": "Defeat all 8 trainers on Route 103"
-    },
-    {
-        "name": "Call a Cooltrainer"
-    },
-    {
-        "name": "TM46 (Thief)"
+        "name": "Call a male School Kid"
     },
     {
         "name": "Get an item made on Route 113"
     },
     {
-        "name": "Groudon, Kyogre, or Rayquaza"
+        "name": "Illuminate, Stench, Run Away, or Pickup"
     },
     {
-        "name": "Defeat all 11 trainers on Route 110"
+        "name": "TM35 (Flamethrower)"
     },
     {
-        "name": "Defeat all 7 trainers in Dewford Gym"
+        "name": "TM09 (Bullet Seed)"
     },
     {
-        "name": "Evolve something with a Leaf Stone"
+        "name": "Mist Ball, Luster Purge, Doom Desire, or Psycho Boost"
     },
     {
-        "name": "TM17 (Protect)"
+        "name": "2 Dragon-type Pokemon"
     },
     {
-        "name": "Call a Gentleman"
+        "name": "Bayleef, Quilava, or Croconaw"
+    },
+    {
+        "name": "Super Rod"
+    },
+    {
+        "name": "Clear Body, White Smoke, Cloud Nine, or Air Lock"
+    },
+    {
+        "name": "Release your starter before Lv11"
+    },
+    {
+        "name": "Block, Mean Look, Spider Web, or Spikes"
+    },
+    {
+        "name": "Any 50% recovery move (except Wish)"
+    },
+    {
+        "name": "Static, Flame Body, Poison Point, or Cute Charm"
+    },
+    {
+        "name": "Call a Beauty"
+    },
+    {
+        "name": "TM36 (Sludge Bomb)"
+    },
+    {
+        "name": "Bold, Impish, Lax, or Relaxed"
+    },
+    {
+        "name": "Gligar, Delibird, Mantine, or Skarmory"
+    },
+    {
+        "name": "Win a Tag Battle"
+    },
+    {
+        "name": "Color Change, Synchronize, or Trace"
+    },
+    {
+        "name": "Evolve something at Level 30"
+    },
+    {
+        "name": "TM12 (Taunt)"
+    },
+    {
+        "name": "Call a Double Battle team"
     }
 ]
