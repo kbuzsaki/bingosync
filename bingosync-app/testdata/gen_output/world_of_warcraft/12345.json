@@ -1,77 +1,77 @@
 [
     {
-        "name": "Click the meeting stone of a Legion Raid"
+        "name": "Die from lava or fire"
     },
     {
-        "name": "Complete a World Quest"
-    },
-    {
-        "name": "Ring a gong"
-    },
-    {
-        "name": "Use a soulstone that was placed on you by another player"
-    },
-    {
-        "name": "/pet a hunter's pet"
-    },
-    {
-        "name": "Kill an elite murloc"
-    },
-    {
-        "name": "/wave an opposing faction leader"
-    },
-    {
-        "name": "/wave a darnassus banker"
-    },
-    {
-        "name": "Click the meeting stone of a WotLK Dungeon"
+        "name": "Drink 3 different potions"
     },
     {
         "name": "Get Drunk"
     },
     {
-        "name": "Ride the deeprum tram from one side to the other"
+        "name": "Blow open 2 doors (Zul'Farrak, Blackrock Depths, Deadmines, etc.)"
     },
     {
-        "name": "Receive Blessing of Kings from a paladin"
+        "name": "jump off dalaran and die"
     },
     {
-        "name": "Win an Arena Skirmish"
+        "name": "Visit 3 capital cities"
     },
     {
-        "name": "Open a non-weekly treasure chest "
+        "name": "Jump off the sword in silithus"
     },
     {
-        "name": "Kill a boss with a chance to drop a mount"
+        "name": "Speak to Franclorn Forgewright."
     },
     {
-        "name": "Get teleported out of another classes Order Hall"
+        "name": "Click the meeting stone of a WoD Dungeon"
     },
     {
-        "name": "Click the meeting stone of a WoD Raid"
+        "name": "Die by drowning"
     },
     {
-        "name": "Take a portal to Ancient Dalaran"
+        "name": "Ring a gong"
     },
     {
-        "name": "Open a dialogue box with Thrall"
+        "name": "Defeat Hogger"
     },
     {
-        "name": "Gain the \"Well Fed\" buff from another player's feast"
+        "name": "Kill an elite skeleton"
     },
     {
-        "name": "Capture an objective in Arathi Basin"
+        "name": "/wave an undercity banker"
     },
     {
-        "name": "Complete a quest which requires you to go to another continent"
+        "name": "Survive a jump off Thunder Bluff"
     },
     {
-        "name": "Complete a single boss raid"
+        "name": "Kill an elite ghost"
     },
     {
-        "name": "Enter a controllable vehicle"
+        "name": "Click the meeting stone of a BfA Raid"
     },
     {
-        "name": "Get kicked out of flying 2 person mount"
+        "name": "Read a book"
+    },
+    {
+        "name": "Use a flight path"
+    },
+    {
+        "name": "Kill an elite murloc"
+    },
+    {
+        "name": "Loot a rare quality item"
+    },
+    {
+        "name": "Take a portal to Ancient Dalaran / Dalaran Crater"
+    },
+    {
+        "name": "Buy from 3 different dungeon vendors"
+    },
+    {
+        "name": "Click the meeting stone of a Classic Raid"
+    },
+    {
+        "name": "Take a boat or zep"
     }
 ]

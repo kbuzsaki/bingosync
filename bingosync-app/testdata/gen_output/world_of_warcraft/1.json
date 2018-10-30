@@ -1,77 +1,77 @@
 [
     {
-        "name": "Die in a capital city of the opposing faction"
+        "name": "Ride the deeprum tram from one side to the other"
     },
     {
-        "name": "Get teleported out of another classes Order Hall"
+        "name": "Lay down on a bed in the Lions Pride Inn"
     },
     {
-        "name": "Use a soulstone that was placed on you by another player"
-    },
-    {
-        "name": "Complete a single boss raid"
-    },
-    {
-        "name": "Capture an objective in Arathi Basin"
-    },
-    {
-        "name": "Gather the materials and cook a meat dish"
-    },
-    {
-        "name": "Kill an elite dragonkin"
-    },
-    {
-        "name": "Click the meeting stone of a Legion Raid"
-    },
-    {
-        "name": "Kill a player of the opposing faction"
-    },
-    {
-        "name": "Win a pet battle"
-    },
-    {
-        "name": "Click the meeting stone of a WotLK Dungeon"
-    },
-    {
-        "name": "Sell an item to a vendor within a raid instance"
+        "name": "Blow open 2 doors (Zul'Farrak, Blackrock Depths, Deadmines, etc.)"
     },
     {
         "name": "Take a boat or zep"
     },
     {
-        "name": "Complete a quest which requires you to go to another continent"
-    },
-    {
-        "name": "Accept a summon"
-    },
-    {
-        "name": "Take a portal to Ancient Dalaran"
-    },
-    {
-        "name": "/hug a druid in cat form"
-    },
-    {
-        "name": "Kill an elite ghost"
-    },
-    {
-        "name": "Loot and equip a new appearance for your character"
-    },
-    {
-        "name": "Visit the Ironforge Airport"
-    },
-    {
-        "name": "Get Polymorphed into anything other than a sheep"
+        "name": "Obtain Ressurection Sickness"
     },
     {
         "name": "Walk through the Dark Portal"
     },
     {
-        "name": "Click the meeting stone of a Classic Dungeon"
+        "name": "Visit 3 capital cities"
     },
     {
-        "name": "Control Razorgore in BWL"
+        "name": "Die from lava or fire"
     },
     {
-        "name": "Enter a controllable vehicle"
+        "name": "Click the meeting stone of a Burning Crusade Dungeon"
+    },
+    {
+        "name": "Click the meeting stone of a WoD Dungeon"
+    },
+    {
+        "name": "\"/love 3 different squirrels\""
+    },
+    {
+        "name": "Get kicked out of flying 2 person mount"
+    },
+    {
+        "name": "Click the meeting stone of a Classic Raid"
+    },
+    {
+        "name": "/wave an opposing faction leader"
+    },
+    {
+        "name": "Use a flight path"
+    },
+    {
+        "name": "send a letter"
+    },
+    {
+        "name": "Talk to 5 innkeepers"
+    },
+    {
+        "name": "Kill an elite murloc"
+    },
+    {
+        "name": "Die to fatigue"
+    },
+    {
+        "name": "Sell an item to a vendor within a raid instance"
+    },
+    {
+        "name": "Beat a dungeon in reverse order"
+    },
+    {
+        "name": "Read a book"
+    },
+    {
+        "name": "Click the meeting stone of a MoP Dungeon"
+    },
+    {
+        "name": "Click the meeting stone of a WotLK Dungeon"
+    },
+    {
+        "name": "Kneel before your faction's current leader"
     }
 ]
