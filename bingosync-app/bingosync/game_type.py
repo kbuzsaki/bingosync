@@ -114,6 +114,7 @@ class GameType(Enum):
     mega_man_11 = 108
     world_of_warcraft = 109
     super_mario_63 = 110
+    pokepark_wii = 111
 
     def __str__(self):
         return self.short_name
@@ -395,6 +396,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMBW"),
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
     **singleton_group(GameType.paper_mario, "Paper Mario", "The Pape"),
+    **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW")
 }
