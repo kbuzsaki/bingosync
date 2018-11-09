@@ -115,6 +115,7 @@ class GameType(Enum):
     world_of_warcraft = 109
     super_mario_63 = 110
     pokepark_wii = 111
+    super_mario_sunshine_1v1 = 112
 
     def __str__(self):
         return self.short_name
@@ -317,6 +318,7 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
             (GameType.super_mario_sunshine, "Normal", "SMS"),
             (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
+            (GameType.super_mario_sunshine_1v1, "1v1", "SMS 1v1"),
         ],
     },
     GameType.super_smash_bros_brawl_all_brawl: {
