@@ -84,7 +84,7 @@ bingoList[12] = [
 { name: "5 Boss Shines", jp: "ボス5体撃破", types: ["XBoss_Shines", "Unique_Boss", "Bianco_Boss", "Pinna_Boss", "Ricco_Boss", "Wiggler", "Sirena_Early", "Noki_Boss", "5_Bosses"] },
 { name: "5 Hidden Shines", jp: "隠しシャイン5枚", types: ["Hidden_Shines", "Ricco_Hidden", "Bianco_Hidden", "Pianta_Hidden", "Gelato_Hidden", "Sirena_Hidden", "Noki_Hidden", "Secret_Shines", "Hidden_Plaza"] },
 { name: "9 Shines from Delfino Plaza", jp: "ドルピックタウンのシャイン9枚", types: ["Plaza_M", "Plaza_Shines", "Shadow_Plaza", "Hidden_Plaza", "Plaza_Mix_Up", "Pianta_8"] },
-{ name: "Runaway Ferris Wheel (Pinna 5) from the back Hoverless", jp: "ピンナ5を裏側からホバー禁止でクリア", types: ["Pinna_Hoverless", "Pinna_Early", "Butterfly", "Pinna_Shines"] }
+{ name: "Pinna 5 from the back Hoverless", jp: "ピンナ5を裏側からホバー禁止でクリア", types: ["Pinna_Hoverless", "Pinna_Early", "Butterfly", "Pinna_Shines"] }
 ];
 bingoList[13] = [
 { name: "Collect 15 Shines", jp: "シャイン28枚", types: ["Total_Shines", "X_Lives"] },
@@ -150,7 +150,7 @@ bingoList[23] = [
 { name: "Defeat Shadow Mario in Pianta Village", jp: "モンテのむらのニセマリオ撃破", types: ["Pianta_Late", "Pianta_Shadow", "Pianta_8", "X_Lives", "Pianta_Yoshi", "Pianta_6"] }
 ];
 bingoList[24] = [
-{ name: "Collect Two 100 Coin Shine from a Secret Level", jp: "ヒミツ内部で100枚コインのシャイン取得", types: ["Secret_100"] },
+{ name: "Collect Two 100 Coin Shines from Secret Levels", jp: "ヒミツ内部で100枚コインのシャイン取得", types: ["Secret_100"] },
 { name: "Four 100 Coin Shines", jp: "100枚コインのシャイン4枚", types: ["X100_Coins", "Bianco_100", "Ricco_100", "Gelato_100", "Pinna_100", "Sirena_100", "Noki_100", "Pianta_100"] },
 { name: "75 Total Blue Coins", jp: "青コイン合計75枚", types: ["XTotal_Blues"] }
 ];

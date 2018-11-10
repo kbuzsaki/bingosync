@@ -315,8 +315,8 @@ GAME_GROUPS = {
     GameType.super_mario_sunshine_tournament: {
         "name": "Super Mario Sunshine",
         "variants": [
-            (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
             (GameType.super_mario_sunshine, "Normal", "SMS"),
+            (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
             (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
             (GameType.super_mario_sunshine_1v1, "1v1", "SMS 1v1"),
         ],
