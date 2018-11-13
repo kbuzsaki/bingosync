@@ -312,7 +312,7 @@ GAME_GROUPS = {
             (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
         ],
     },
-    GameType.super_mario_sunshine_tournament: {
+    GameType.super_mario_sunshine: {
         "name": "Super Mario Sunshine",
         "variants": [
             (GameType.super_mario_sunshine, "Normal", "SMS"),
