@@ -1,9 +1,9 @@
 [
     {
-        "name": "Get a score higher than 5 in 4 gates on Power Cruising"
+        "name": "Finish any 3 Hole course in Golf without touching bunkers or water"
     },
     {
-        "name": "Get any stamp in Archery"
+        "name": "Get 50 or more points in Archery - Expert"
     },
     {
         "name": "Win a match of Swordplay - Duel without getting stuned by an opponent's block"
@@ -12,66 +12,66 @@
         "name": "Take a picture with Gwen in Skydiving"
     },
     {
-        "name": "Get a score of over 1500 in Bowling - 100-Pin Game"
+        "name": "Get 1000 or more points in Wakeboarding - Intermediate"
     },
     {
-        "name": "Complete any 3 hole course Blind (Holding 2 before selecting course)"
-    },
-    {
-        "name": "Get any stamp in Power Crusing"
-    },
-    {
-        "name": "Hit 10 cans in Table Tennis - Return Challenge"
+        "name": "Complete Classic B in Golf"
     },
     {
         "name": "Get any stamp in Bowling - 100 Pin Game"
     },
     {
-        "name": "Get any stamp in Swordplay - Duel"
+        "name": "Give up on 2 different holes in Golf with only water hazards"
     },
     {
-        "name": "Complete the \"Across the Bridge\" race in Cycling"
+        "name": "Get a score higher than 5 in 4 gates on Power Cruising"
     },
     {
-        "name": "Get under par on Classic B in Golf"
+        "name": "Get any stamp in Canoeing"
     },
     {
-        "name": "Get over 100 points in Table Tennis - Return Challenge"
-    },
-    {
-        "name": "Ride over 3 different rocks/bananas in Cycling (Doesn't have to be all in 1 race)"
-    },
-    {
-        "name": "Get over 150 points in Bowling - Spin Control"
-    },
-    {
-        "name": "Get par on Resort A in Golf"
-    },
-    {
-        "name": "Stun your opponent by blocking 7 times in Swordplay - Duel"
-    },
-    {
-        "name": "Get a score of over 70 points in Archery - Intermediate"
-    },
-    {
-        "name": "Gain 50 points in Table Tennis - Return Challenge without hitting any can"
-    },
-    {
-        "name": "Get a turkey in any bowling mode"
-    },
-    {
-        "name": "Complete the Power Crusing course \"Lagoon\""
-    },
-    {
-        "name": "Give Up on 5 different holes in Golf"
-    },
-    {
-        "name": "Get any stamp in Golf"
+        "name": "Complete Classic C in Golf"
     },
     {
         "name": "Get the i Point in the Volcano in Island Flyover"
     },
     {
-        "name": "Hit the barriers every throw in Bowling - Spin Control (Minus the 10th frame)"
+        "name": "Get any stamp in Power Crusing"
+    },
+    {
+        "name": "Slice two clocks in Swordplay - Speed Slice"
+    },
+    {
+        "name": "Get any stamp in Skydiving"
+    },
+    {
+        "name": "Get 3 spares in any Bowling mode"
+    },
+    {
+        "name": "Get any stamp in Swordplay - Showdown"
+    },
+    {
+        "name": "Stun your opponent by blocking 7 times in Swordplay - Duel"
+    },
+    {
+        "name": "Complete the \"Up the Volcano\" race in Cycling"
+    },
+    {
+        "name": "Get 3 mid-air catches in Frisbee Dog"
+    },
+    {
+        "name": "Complete Resort A in Golf"
+    },
+    {
+        "name": "Get two slam dunks in Basketball - Pickup game"
+    },
+    {
+        "name": "Get any stamp in Basketball - 3 Point Contest"
+    },
+    {
+        "name": "Get over 100 points in Bowling - Spin Control"
+    },
+    {
+        "name": "Hit the server's face with a ball 10 times in Table Tennis - Return Challenge"
     }
 ]
