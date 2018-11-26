@@ -1,0 +1,35 @@
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+
+var bingoList =
+[
+    "(Golf) 9-Hole Game",
+    "(Golf) Beginner",
+    "(Golf) Expert",
+    "(Golf) Intermediate",
+    "(Tennis) Best of 3",
+    "(Tennis) Best of 5",
+    "(Tennis) Single Game",
+    "(Training) (Golf) Target Practice",
+    "(Training) Batting Practice",
+    "(Training) Dodging",
+    "(Training) Hitting Home Runs",
+    "(Training) Hitting The Green",
+    "(Training) Picking Up Spares",
+    "(Training) Power Throws",
+    "(Training) Putting",
+    "(Training) Returning Balls",
+    "(Training) Spin Control",
+    "(Training) Swing Control",
+    "(Training) Target Practice",
+    "(Training) Throwing Punches",
+    "(Training) Timing Your Swing",
+    "(Training) Working The Bag",
+    "Baseball",
+    "Baseball Pro",
+    "Bowling",
+    "Bowling Pro",
+    "Boxing",
+    "Boxing Pro",
+    "Golf Pro",
+    "Tennis Pro"
+];
