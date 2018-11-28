@@ -117,6 +117,7 @@ class GameType(Enum):
     pokepark_wii = 111
     super_mario_sunshine_1v1 = 112
     wii_sports = 113
+    zelda_wind_waker_sd = 114
 
     def __str__(self):
         return self.short_name
@@ -403,6 +404,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
+    **singleton_group(GameType.zelda_wind_waker_sd, "Zelda: The Wind Waker SD", "TWW SD"),
 }
 
 GAME_TYPE_GROUPS = {}
