@@ -217,7 +217,7 @@ bingoGenerator = function(bingoList, opts) {
     }
 };
 
-var bingoListVersion = "2.1";
+var bingoListVersion = "2.4";
 var bingoList = [];
 
 bingoList[1] = [
@@ -226,27 +226,31 @@ bingoList[1] = [
   { name: "Glittering Spores", types: ["Bottles", "Faron"] },
   { name: "Revitalizing Potion", types: ["Bottles", "Potions"] },
   { name: "Bottled Water", types: ["Bottles"] },
+  { name: "Practice Sword", types: ["Skyloft"] },
 ];
 bingoList[2] = [
   { name: "Heart Potion", types: ["Potions"] },
-  { name: "Practice Sword", types: ["Skyloft"] },
   { name: "Chandelier Heart Piece", types: ["Hearts", "Pumpkin"] },
   { name: "Complete a ringer skydive", types: ["Sky"] },
   { name: "Mushroom Spores", types: ["Bottles", "Faron"] },
+  { name: "100 Rupees before Faron", types: ["Skyloft", "Rupees"] },
+  { name: "Sailcloth", types: ["Sailcloth", "Skyloft"] },
 ];
 bingoList[3] = [
   { name: "Guardian Potion", types: ["Bottles", "Potions"] },
   { name: "Hot Pumpkin Soup", types: ["Bottles"] },
+  { name: "Cold Pumpkin Soup", types: ["Bottles"] },
   { name: "Kill three guays in the sky", types: ["Sky"] },
-  { name: "Beedle's Gratitude Crystal", types: ["Crystals"] },
+  { name: "Beedle's Scattered Crystal", types: ["Crystals"] },
   { name: "10 Blessed Butterflies", types: ["Bugs"] },
 ];
 bingoList[4] = [
   { name: "Heart Dowsing Target", types: ["Misc"] },
-  { name: "Floria Waterfall Bird Statue", types: ["Faron"] },
-  { name: "Sailcloth", types: ["Sailcloth", "Skyloft"] },
+  { name: "Floria Waterfall Bird Statue", types: ["Faron", "Statues"] },
+  { name: "Both Deep Woods Statues", types: ["Faron", "Statues"] },
   { name: "Finish the Sword Tutorial", types: ["Skyloft"] },
-  { name: "Finish with 6 Hearts", types: ["Restriction", "Hearts"] },
+  { name: "Two Lumpy Pumpkin Scattered Crystals", types: ["Crystals", "Pumpkin"] },
+  { name: "Skyview Temple Heart Piece", types: ["Skyview", "Hearts"] },
 ];
 bingoList[5] = [
   { name: "3 Extra Wallets", types: ["Rupees"] },
@@ -254,6 +258,7 @@ bingoList[5] = [
   { name: "5 Starry Fireflies", types: ["Bugs"] },
   { name: "Sleep in Zelda's Bed", types: ["Skyloft", "Sailcloth"] },
   { name: "Win the Wing Ceremony Twice", types: ["BiT", "Skyloft"] },
+  { name: "Bring Hot Soup to Eagus", types: ["Bottles", "Pumpkin"] },
 ];
 bingoList[6] = [
   { name: "3 Blue Bird Feathers", types: ["Treasures"] },
@@ -272,7 +277,7 @@ bingoList[7] = [
   { name: "500 Rupees", types: ["Rupees"] },
 ];
 bingoList[8] = [
-  { name: "10 Scattered Gratitude Crystals", types: ["Crystals"] },
+  { name: "10 Scattered Crystals", types: ["Crystals"] },
   { name: "3 Bottles", types: ["Bottles"] },
   { name: "Batreaux's Heart Piece", types: ["Hearts", "Crystals"] },
   { name: "Orielle's Gratitude Crystals", types: ["Crystals"] },
@@ -297,7 +302,7 @@ bingoList[10] = [
 ];
 bingoList[11] = [
   { name: "10 Volcanic Ladybugs", types: ["Bugs"] },
-  { name: "60 Deku Seeds", types: ["Ammo"] },
+  { name: "60 Deku Seed Capacity", types: ["Ammo"] },
   { name: "5 Eldin Ore", types: ["Treasures"] },
   { name: "3 Medals", types: ["Medals"] },
   { name: "Treasure Medal", types: ["Medals"] },
@@ -331,8 +336,8 @@ bingoList[15] = [
   { name: "7 Pouch Slots", types: ["Pouch", "Rupees"] },
   { name: "1000 Rupees", types: ["Rupees"] },
   { name: "10 Goddess Cubes", types: ["Cubes"] },
-  { name: "30 Bombs", types: ["Ammo"] },
-  { name: "Bug Medal", types: ["Medals"] },
+  { name: "30 Bomb Capacity", types: ["Ammo"] },
+  { name: "Bug Medal", types: ["Medals", "Rupees"] },
   { name: "Reinforced Shield", types: ["Shields"] },
 ];
 bingoList[16] = [
@@ -359,6 +364,7 @@ bingoList[18] = [
   { name: "12 Hearts", types: ["Hearts"] },
   { name: "1500 Rupees", types: ["Rupees"] },
   { name: "8 Heart Pieces", types: ["Hearts"] },
+  { name: "All 15 Scattered Crystals", types: ["Crystals"] },
 ];
 bingoList[19] = [
   { name: "Fortified Shield", types: ["Shields"] },
