@@ -118,6 +118,7 @@ class GameType(Enum):
     super_mario_sunshine_1v1 = 112
     wii_sports = 113
     zelda_wind_waker_sd = 114
+    dream = 115
 
     def __str__(self):
         return self.short_name
@@ -359,6 +360,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
+    **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
