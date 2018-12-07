@@ -177,7 +177,7 @@ var bingoList = {
 "GardenStag":{"Name":"Unlock Queen's Garden Stag", "excludes":[]},
 "DeepStag":{"Name":"Unlock Deepnest Stag","excludes":["Midwife"]},
 "Pins":{"Name":"Buy 6 map pins from Iselda (All but two)","excludes":["PinsAll"]},
-"PinsAll":{"Name":"Buy 8 map pins from Iselda (All)","excludes":["Pins"]}
+"PinsAll":{"Name":"Buy 8 map pins from Iselda (All)","excludes":["Pins"]},
 "KingStag":{"Name":"Unlock Queen's Stag + King's Stag Stations","excludes":[]},
 "HornetMom":{"Name":"Talk to Hornet at CoT Statue + Herrah","excludes":["Herrah"]},
 "ClothQuest":{"Name":"Watch Cloth Die","excludes":["Traitor"]},
