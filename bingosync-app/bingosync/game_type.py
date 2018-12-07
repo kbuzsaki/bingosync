@@ -119,6 +119,7 @@ class GameType(Enum):
     wii_sports = 113
     zelda_wind_waker_sd = 114
     dream = 115
+    toy_story_2 = 116
 
     def __str__(self):
         return self.short_name
@@ -399,6 +400,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
+    **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
