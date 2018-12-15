@@ -96,7 +96,6 @@ bingoList[13] = [
 bingoList[14] = [
     {name: "Green Forest M4 A-Rank", types: ["greenforest", "arank"]},
     {name: "Pumpkin Hill M5 A-Rank", types: ["pumpkinhill", "arank"]},
-    {name: "Security Hall M1 Hintless", types: ["securityhall"]},
     {name: "Mission Street M2", types: ["missionstreet"]},
     {name: "Complete Mission Street M1 with 100+ Rings", types: ["missionstreet"]},
     {name: "2 Chao Boxes in Mission Street and finish", types: ["missionstreet"]},
