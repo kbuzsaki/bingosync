@@ -164,7 +164,7 @@ bingoGenerator = function(bingoList, opts) {
             var synergy = 0;
             for (var j = 0; j < lineCheckList[i].length; j++) {
                 var typesB = bingoBoard[lineCheckList[i][j] + 1].types;
-                if (typeof typesB != 'undefined') {
+                if (typeof typesA != 'undefined' && typeof typesB != 'undefined') {
                     for (var k = 0; k < typesA.length; k++) {
                         for (var l = 0; l < typesB.length; l++) {
                             if (typesA[k] == typesB[l]) {
