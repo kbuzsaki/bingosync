@@ -121,6 +121,7 @@ class GameType(Enum):
     dream = 115
     toy_story_2 = 116
     mario_party_advance = 117
+    darkest_dungeon = 118
 
     def __str__(self):
         return self.short_name
@@ -362,6 +363,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
+    **singleton_group(GameType.darkest_dungeon, "Darkest Dungeon", "Darkest Dungeon"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
