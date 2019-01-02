@@ -122,6 +122,7 @@ class GameType(Enum):
     toy_story_2 = 116
     mario_party_advance = 117
     darkest_dungeon = 118
+    club_penguin = 119
 
     def __str__(self):
         return self.short_name
@@ -358,6 +359,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.castlevania_sotn, "Castlevania: Symphony of the Night", "CV: SotN"),
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
+    **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
