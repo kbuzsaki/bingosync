@@ -3,58 +3,58 @@
         "name": "Talk to Theo in Awake"
     },
     {
-        "name": "35 Berries"
+        "name": "40 Berries"
     },
     {
-        "name": "Use 6 Binoculars"
-    },
-    {
-        "name": "All Berries in 2500M (8)"
-    },
-    {
-        "name": "Get a 1-Up"
-    },
-    {
-        "name": "Complete PICO-8"
-    },
-    {
-        "name": "Get 1 Key in Search"
-    },
-    {
-        "name": "10 Berries in 3A"
-    },
-    {
-        "name": "All Berries in Start of 5A (12)"
-    },
-    {
-        "name": "Use 5 Binoculars in B-Sides"
-    },
-    {
-        "name": "The Summit Heart"
-    },
-    {
-        "name": "Get 1 Blue and 1 Red Heart"
+        "name": "Get a 1-Up in 3 Chapters"
     },
     {
         "name": "5 Gems in the Summit"
     },
     {
-        "name": "Use 3 Binoculars in B-Sides"
+        "name": "All Berries in Huge Mess (7)"
     },
     {
-        "name": "All Berries in Crossing (9)"
+        "name": "Jump on 15 Snowballs"
     },
     {
-        "name": "Kill a Seeker"
+        "name": "All Berries in Search (6)"
     },
     {
-        "name": "All Berries in Shrine (9)"
+        "name": "Grabless Depths (5A Checkpoint)"
     },
     {
-        "name": "Get 3 Keys in Search"
+        "name": "45 Berries"
     },
     {
-        "name": "Mirror Temple B-Side"
+        "name": "Use 5 Binoculars in B-Sides"
+    },
+    {
+        "name": "15 Berries in 4 Chapters"
+    },
+    {
+        "name": "1 Blue and 1 Red Heart"
+    },
+    {
+        "name": "Use 1 Binocular in 3 Chapters"
+    },
+    {
+        "name": "Stun Seekers 20 times"
+    },
+    {
+        "name": "Grabless Huge Mess (3A Checkpoint)"
+    },
+    {
+        "name": "Complete 1 B-Side"
+    },
+    {
+        "name": "Get a 1-Up in 5A"
+    },
+    {
+        "name": "10 Berries in 5 Chapters"
+    },
+    {
+        "name": "Mirror Temple Cassette"
     },
     {
         "name": "5 Cassettes"
@@ -63,15 +63,15 @@
         "name": "Old Site B-Side"
     },
     {
-        "name": "Golden Ridge B-Side"
+        "name": "Get 2 Keys in Search"
     },
     {
-        "name": "Grabless Elevator Shaft (3A Checkpoint)"
+        "name": "Complete 2 B-Sides"
     },
     {
-        "name": "Forsaken City Heart"
+        "name": "Forsaken City Cassette"
     },
     {
-        "name": "65 Berries"
+        "name": "15 Berries in 3 Chapters"
     }
 ]
