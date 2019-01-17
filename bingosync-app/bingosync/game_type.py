@@ -124,6 +124,7 @@ class GameType(Enum):
     darkest_dungeon = 118
     club_penguin = 119
     slime_rancher = 120
+    slime_rancher_lockout = 121
 
     def __str__(self):
         return self.short_name
@@ -320,6 +321,13 @@ GAME_GROUPS = {
             (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
         ],
     },
+    GameType.slime_rancher: {
+        "name": "Slime Rancher",
+        "variants": [
+            (GameType.slime_rancher, "Normal", "Slime Rancher"),
+            (GameType.slime_rancher_lockout, "Lockout", "Slime Rancher Lockout"),
+        ],
+    },
     GameType.super_mario_sunshine: {
         "name": "Super Mario Sunshine",
         "variants": [
@@ -398,7 +406,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
-    **singleton_group(GameType.slime_rancher, "Slime Rancher", "Slime Rancher"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
