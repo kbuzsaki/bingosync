@@ -26,8 +26,8 @@ bingoList[3] = [
   { name: "Stun Oshiro 15 times", types: ["oshiro_stun","task"] },
   { name: "Hit a Kevin block from all 4 sides", types: ["task"] },
   { name: "Easteregg room in Reflection", types: ["task","lategame"] },
-  { name: "All Berries in Crossing (9)", types: ["checkpoint_berries"] },
-  { name: "All Berries in Chasm (5)", types: ["checkpoint_berries"] },
+  { name: "All Berries in Crossing (9)", types: ["earlygame"] },
+  { name: "All Berries in Chasm (5)", types: ["earlygame"] },
   { name: "Grabless Huge Mess (3A Checkpoint)", types: ["grabless"] },
   { name: "Get a 1-Up in 4A", types: ["1up"] },
 ];
@@ -59,7 +59,7 @@ bingoList[6] = [
   { name: "Stun Seekers 10 times", types: ["seeker","task"] },
   { name: "15 Berries in 4A", types: ["amount_berries"] },
   { name: "20 Berries in 4A", types: ["amount_berries"] },
-  { name: "All Berries in Intervention (8)", types: ["checkpoint_berries","earlygame"] },
+  { name: "All Berries in Intervention (8)", types: ["earlygame"] },
 ];
 bingoList[7] = [
   { name: "Complete 2 B-Sides", types: ["amount_chapters"] },
@@ -197,7 +197,7 @@ bingoList[20] = [
   { name: "Golden Ridge B-Side", types: ["4b"] },
   { name: "All Berries in Elevator Shaft (4)", types: ["checkpoint_berries"] },
   { name: "Grabless 6A", types: ["grabless","lategame"] },
-  { name: "All Berries in Start of 2A (9)", types: ["checkpoint_berries"] },
+  { name: "All Berries in Start of 2A (9)", types: ["earlygame"] },
   { name: "Use 1 Binocular in 5 Chapters", types: ["binoculars"] },
   { name: "Use 2 Binoculars in 4 Chapters", types: ["binoculars"] },
 ];
