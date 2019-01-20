@@ -125,6 +125,9 @@ class GameType(Enum):
     club_penguin = 119
     slime_rancher = 120
     slime_rancher_lockout = 121
+    zelda_botw_jp = 122
+    zelda_botw_jp_short = 123
+    zelda_botw_jp_long = 124
 
     def __str__(self):
         return self.short_name
@@ -356,6 +359,9 @@ GAME_GROUPS = {
             (GameType.zelda_botw, "Normal", "BotW Normal"),
             (GameType.zelda_botw_short, "Short", "BotW Short"),
             (GameType.zelda_botw_long, "Long", "BotW Long"),
+            (GameType.zelda_botw_jp, "Normal - JP", "BotW JP Normal"),
+            (GameType.zelda_botw_jp_short, "Short - JP", "BotW JP Short"),
+            (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
         ],
     },
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
