@@ -34,7 +34,7 @@ bingoList[9] = [
 ];
 bingoList[10] = [
   { name: "Open the Ancient Gate", types: [] },
-  { name: "You can only use a maximum of one Slime Key", types: [] }
+  { name: "You can only use a maximum of one Slime Key", types: ["restriction"] }
 ];
 bingoList[11] = [
   { name: "Pop the Crystal Gordo", types: [] },
@@ -76,7 +76,6 @@ bingoList[19] = [
   { name: "1 Gilded Ginger", types: [] }
 ];
 bingoList[20] = [
-  { name: "Unlock Mochi's Extra Mile", types: ["rangeexchange"] },
   { name: "Have 1 Echo of each color in your ranch", types: [] },
   { name: "Activate 4 Desert Fountains", types: ["fountains"] }
 ];
@@ -98,5 +97,6 @@ bingoList[24] = [
   { name: "Complete 10 Range Exchange trades", types: ["rangeexchange"] }
 ];
 bingoList[25] = [
+  { name: "Unlock Mochi's Extra Mile", types: ["rangeexchange"] },
   { name: "Create 5 total Apiarys, Drills, or Pumps", types: ["lab"] }
 ];

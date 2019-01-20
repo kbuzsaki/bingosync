@@ -33,8 +33,7 @@ bingoList[9] = [
   { name: "Pop the Dry Reef Tabby Gordo", types: [] }
 ];
 bingoList[10] = [
-  { name: "Open the Ancient Gate", types: [] },
-  { name: "You can only use a maximum of one Slime Key", types: [] }
+  { name: "Open the Ancient Gate", types: [] }
 ];
 bingoList[11] = [
   { name: "Pop the Crystal Gordo", types: [] },
