@@ -1,77 +1,77 @@
 [
     {
-        "name": "Any Tier 2 apprenitce boss"
+        "name": "CM with 4 of same hero in a party"
     },
     {
-        "name": "Necromancer"
+        "name": "Hold 67,500 gold"
     },
     {
-        "name": "Hag"
-    },
-    {
-        "name": "Shambler or Collector"
-    },
-    {
-        "name": "Veteran level hero"
-    },
-    {
-        "name": "No stress buildings used"
-    },
-    {
-        "name": "Two hero afflicted at the same time"
-    },
-    {
-        "name": "Swine prince"
-    },
-    {
-        "name": "70,000 Gold"
-    },
-    {
-        "name": "No torches"
-    },
-    {
-        "name": "Crocodlie"
-    },
-    {
-        "name": "Level 4 building upgrade"
-    },
-    {
-        "name": "Kill a Cultist Priest"
-    },
-    {
-        "name": "Find a hidden room"
-    },
-    {
-        "name": "All Heros in roster"
+        "name": "Cure 5 diseases"
     },
     {
         "name": "Siren"
     },
     {
-        "name": "Finish at camp"
+        "name": "Veteran level hero"
     },
     {
-        "name": "Heal 0 with an occultist"
+        "name": "No heroes died"
     },
     {
-        "name": "3 Crimson cursed character"
+        "name": "Vestal and Abomination in Bar"
     },
     {
-        "name": "Camping ambushed!"
+        "name": "Upgrade a single building stat 4 times"
     },
     {
-        "name": "Die of a heart attack"
+        "name": "Any Tier 2 apprenitce boss"
     },
     {
-        "name": "First farmstead mission."
+        "name": "Receive this goal while camping"
     },
     {
-        "name": "Resist 4 deathblows"
+        "name": "CM without melee attacks"
+    },
+    {
+        "name": "Hold 60 crests"
+    },
+    {
+        "name": "Do not use Tavern nor Abby"
+    },
+    {
+        "name": "Collect 4 journals"
     },
     {
         "name": "Complete a long mission"
     },
     {
-        "name": "5 heroes died"
+        "name": "Use no torches"
+    },
+    {
+        "name": "CM with 1 virtuous"
+    },
+    {
+        "name": "Swine prince"
+    },
+    {
+        "name": "Complete a medium mission"
+    },
+    {
+        "name": "Heal 0 with an occultist"
+    },
+    {
+        "name": "A negitive effect from either the abby or Tavern"
+    },
+    {
+        "name": "CM with a Arbalist 4 times"
+    },
+    {
+        "name": "CM without ranged attacks"
+    },
+    {
+        "name": "Crocodilian"
+    },
+    {
+        "name": "Sell 10 trinkets"
     }
 ]
