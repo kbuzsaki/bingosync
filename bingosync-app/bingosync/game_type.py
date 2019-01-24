@@ -128,6 +128,7 @@ class GameType(Enum):
     zelda_botw_jp = 122
     zelda_botw_jp_short = 123
     zelda_botw_jp_long = 124
+    darkest_dungeon_lockout = 125
 
     def __str__(self):
         return self.short_name
@@ -277,6 +278,13 @@ GAME_GROUPS = {
             (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
         ],
     },
+    GameType.darkest_dungeon: {
+        "name": "Darkest Dungeon",
+        "variants": [
+            (GameType.darkest_dungeon, "Normal", "Darkest Dungeon"),
+            (GameType.darkest_dungeon_lockout, "Lockout", "DD Lockout"),
+        ],
+    },
     GameType.ff4_ancient_cave: {
         "name": "Final Fantasy 4",
         "variants": [
@@ -380,7 +388,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
-    **singleton_group(GameType.darkest_dungeon, "Darkest Dungeon", "Darkest Dungeon"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
