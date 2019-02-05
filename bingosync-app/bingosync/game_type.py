@@ -130,6 +130,7 @@ class GameType(Enum):
     zelda_botw_jp_long = 124
     darkest_dungeon_lockout = 125
     ittle_dew_2 = 126
+    super_paper_mario = 127
 
     def __str__(self):
         return self.short_name
@@ -429,6 +430,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
+    **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
