@@ -27,7 +27,18 @@
     $(document).ready(function() {
         var newCardUrl = "{% url 'new_card' %}";
         var submitNewCardForm = function() {
-            var formData = $("#new-card-form").serializeArray();
+            var $newCardForm = $("#new-card-form");
+
+            // Only do reportValidity check if the function exists.
+            // Otherwise in old browsers the modal will be broken.
+            if (typeof $newCardForm.get(0).reportValidity === "function") {
+                var formValid = $newCardForm.get(0).reportValidity();
+                if (!formValid) {
+                    return;
+                }
+            }
+
+            var formData = $newCardForm.serializeArray();
             var data = {"hide_card": false};
             formData.forEach(function (input) {
                 if (input['name'] === 'hide_card') {
