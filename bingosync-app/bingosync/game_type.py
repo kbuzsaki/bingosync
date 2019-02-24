@@ -132,6 +132,7 @@ class GameType(Enum):
     ittle_dew_2 = 126
     super_paper_mario = 127
     lego_batman = 128
+    into_the_breach = 129
 
     def __str__(self):
         return self.short_name
@@ -397,6 +398,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
+    **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.ittle_dew_2, "Ittle Dew 2", "Ittle Dew 2"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
