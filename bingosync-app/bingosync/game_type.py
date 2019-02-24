@@ -131,6 +131,7 @@ class GameType(Enum):
     darkest_dungeon_lockout = 125
     ittle_dew_2 = 126
     super_paper_mario = 127
+    lego_batman = 128
 
     def __str__(self):
         return self.short_name
@@ -400,7 +401,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
-    **singleton_group(GameType.lego_star_wars, "Lego Star Wars", "Lego SW"),
+    **singleton_group(GameType.lego_batman, "LEGO Batman: The Video Game", "LEGO Batman"),
+    **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
