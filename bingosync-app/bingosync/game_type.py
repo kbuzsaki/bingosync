@@ -134,6 +134,7 @@ class GameType(Enum):
     lego_batman = 128
     into_the_breach = 129
     make_a_good_megaman_level_2 = 130
+    super_mario_sunshine_1v1_beta = 131
 
     def __str__(self):
         return self.short_name
@@ -351,6 +352,7 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
             (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
             (GameType.super_mario_sunshine_1v1, "1v1", "SMS 1v1"),
+            (GameType.super_mario_sunshine_1v1_beta, "1v1 Beta", "SMS 1v1 Beta"),
         ],
     },
     GameType.super_smash_bros_brawl_all_brawl: {
