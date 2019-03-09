@@ -135,6 +135,7 @@ class GameType(Enum):
     into_the_breach = 129
     make_a_good_megaman_level_2 = 130
     super_mario_sunshine_1v1_beta = 131
+    lego_pirates_of_the_caribbean = 132
 
     def __str__(self):
         return self.short_name
@@ -407,6 +408,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
     **singleton_group(GameType.lego_batman, "LEGO Batman: The Video Game", "LEGO Batman"),
+    **singleton_group(GameType.lego_pirates_of_the_caribbean, "LEGO Pirates of the Caribbean", "LEGO PotC"),
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
