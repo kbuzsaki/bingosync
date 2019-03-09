@@ -5,11 +5,12 @@ bingoList[1] = [
   { name: "All Berries in Awake (1)", types: ["checkpoint_berries","earlygame"] },
   { name: "Talk to Theo in Crossing", types: ["cutscene","earlygame"] },
   { name: "Talk to Theo in Elevator Shaft", types: ["cutscene"] },
-  { name: "Forsaken City Heart", types: ["hearts","earlygame"] },
+  { name: "Forsaken City Blue Heart", types: ["hearts","earlygame"] },
   { name: "Forsaken City Cassette", types: ["1b","earlygame"] },
   { name: "All Berries in Presidential Suite (3)", types: ["checkpoint_berries"] },
   { name: "Grabless Presidential Suite (3A Checkpoint)", types: ["grabless"] },
   { name: "Get a 1-Up in 2A", types: ["1up"] },
+  { name: "Complete Awake without dashing", types: ["dashless","earlygame"] },
 ];
 bingoList[2] = [
   { name: "2 optional Theo Cutscenes", types: ["cutscene"] },
@@ -19,7 +20,8 @@ bingoList[2] = [
   { name: "Take hidden path before Cliff Face", types: ["task"] },
   { name: "All Berries in Unraveling (1)", types: ["checkpoint_berries"] },
   { name: "All Berries in Rescue (1)", types: ["checkpoint_berries"] },
-  { name: "Grabless Search (5A Checkpoint)", types: ["grabless"] },
+  { name: "2 Winged Berries", types: ["special_berries","earlygame"] },
+  { name: "3 Winged Berries", types: ["special_berries","earlygame"] },
 ];
 bingoList[3] = [
   { name: "Stun Oshiro 10 times", types: ["oshiro_stun","task"] },
@@ -30,9 +32,9 @@ bingoList[3] = [
   { name: "All Berries in Chasm (5)", types: ["earlygame"] },
   { name: "Grabless Huge Mess (3A Checkpoint)", types: ["grabless"] },
   { name: "Get a 1-Up in 4A", types: ["1up"] },
+  { name: "2 Seeded Berries", types: ["special_berries"] },
 ];
 bingoList[4] = [
-  { name: "Complete Awake without dashing", types: ["dashless","earlygame"] },
   { name: "Read Diary in Elevator Shaft", types: ["cutscene"] },
   { name: "Celestial Resort Cassette", types: ["3b"] },
   { name: "All Berries in Start of 4A (8)", types: ["checkpoint_berries"] },
@@ -40,16 +42,19 @@ bingoList[4] = [
   { name: "All Berries in Old Trail (7)", types: ["checkpoint_berries"] },
   { name: "All Berries in Start of 1A (6)", types: ["checkpoint_berries","earlygame"] },
   { name: "Get a 1-Up in 5A", types: ["1up"] },
+  { name: "4 Winged Berries", types: ["special_berries"] },
+  { name: "5 Winged Berries", types: ["special_berries"] },
 ];
 bingoList[5] = [
   { name: "Talk to Theo in Search", types: ["cutscene"] },
   { name: "All 4 optional Theo Cutscenes", types: ["cutscene"] },
   { name: "Reflection Cutscene in Hollows", types: ["cutscene","lategame"] },
-  { name: "Old Site Heart", types: ["hearts","earlygame"] },
+  { name: "Old Site Blue Heart", types: ["hearts","earlygame"] },
   { name: "All Berries in Start of 3A (11)", types: ["checkpoint_berries"] },
   { name: "15 Berries in 3A", types: ["amount_berries"] },
   { name: "Grabless Depths (5A Checkpoint)", types: ["grabless"] },
   { name: "10 Berries in 3 Chapters", types: ["amount_berries"] },
+  { name: "Grabless Lake (6A Checkpoint)", types: ["grabless"] },
 ];
 bingoList[6] = [
   { name: "Complete 1 B-Side", types: ["amount_chapters"] },
@@ -60,6 +65,7 @@ bingoList[6] = [
   { name: "15 Berries in 4A", types: ["amount_berries"] },
   { name: "20 Berries in 4A", types: ["amount_berries"] },
   { name: "All Berries in Intervention (8)", types: ["earlygame"] },
+  { name: "Grabless Hollows (6A Checkpoint)", types: ["grabless"] },
 ];
 bingoList[7] = [
   { name: "Complete 2 B-Sides", types: ["amount_chapters"] },
@@ -70,6 +76,7 @@ bingoList[7] = [
   { name: "Grabless Elevator Shaft (3A Checkpoint)", types: ["grabless"] },
   { name: "Grabless 3A", types: ["grabless"] },
   { name: "Get a 1-Up in 2 Chapters", types: ["1up"] },
+  { name: "Grabless Search (5A Checkpoint)", types: ["grabless"] },
 ];
 bingoList[8] = [
   { name: "Reach Old Site in PICO-8", types: ["pico-8"] },
@@ -80,6 +87,7 @@ bingoList[8] = [
   { name: "All Berries in Cliff Face (5)", types: ["checkpoint_berries"] },
   { name: "Only bottom route in Hollows", types: ["reflection_pathing","lategame"] },
   { name: "2 Hearts", types: ["amount_hearts"] },
+  { name: "Use 3 Binoculars in 2 Chapters", types: ["binoculars"] },
 ];
 bingoList[9] = [
   { name: "Use 3 Binoculars in B-Sides", types: ["binoculars"] },
@@ -88,8 +96,9 @@ bingoList[9] = [
   { name: "Stun Seekers 30 times", types: ["seeker","task"] },
   { name: "Only top route in Hollows", types: ["reflection_pathing","lategame"] },
   { name: "Find Letter and PICO-8 in Huge Mess", types: ["task"] },
-  { name: "Golden Ridge Heart", types: ["hearts"] },
+  { name: "Golden Ridge Blue Heart", types: ["hearts"] },
   { name: "15 Berries in 2 Chapters", types: ["amount_berries"] },
+  { name: "10 Berries in 4 Chapters", types: ["amount_berries"] },
 ];
 bingoList[10] = [
   { name: "Grabless 2A", types: ["grabless"] },
@@ -99,7 +108,8 @@ bingoList[10] = [
   { name: "All Berries in 1000M (6)", types: ["lategame"] },
   { name: "All Berries in 3000M (7)", types: ["lategame"] },
   { name: "All Berries in Huge Mess (7)", types: ["checkpoint_berries"] },
-  { name: "10 Berries in 4 Chapters", types: ["amount_berries"] },
+  { name: "Grabless 5A", types: ["grabless"] },
+  { name: "Grabless Rescue (5A Checkpoint)", types: ["grabless"] },
 ];
 bingoList[11] = [
   { name: "Huge Mess: Chest -> Books -> Towel", types: ["huge_mess_pathing"] },
@@ -110,16 +120,18 @@ bingoList[11] = [
   { name: "Use all Binoculars in 4A (3)", types: ["task","binoculars"] },
   { name: "Use 5 Binoculars in B-Sides", types: ["binoculars"] },
   { name: "Use 6 Binoculars in B-Sides", types: ["binoculars"] },
+  { name: "3 Seeded Berries", types: ["special_berries"] },
 ];
 bingoList[12] = [
   { name: "Huge Mess: Chest -> Towel -> Books", types: ["huge_mess_pathing"] },
   { name: "Huge Mess: Books -> Towel -> Chest", types: ["huge_mess_pathing"] },
   { name: "Huge Mess: Towel -> Books -> Chest", types: ["huge_mess_pathing"] },
   { name: "Jump on 8 Snowballs", types: ["snowballs","task"] },
-  { name: "Celestial Resort Heart", types: ["hearts"] },
+  { name: "Celestial Resort Blue Heart", types: ["hearts"] },
   { name: "10 Berries in 2A", types: ["amount_berries"] },
   { name: "1 Blue and 1 Red Heart", types: ["amount_hearts"] },
   { name: "5 Berries in 4 Chapters", types: ["amount_berries"] },
+  { name: "Get a 1-Up in 3 Chapters", types: ["1up"] },
 ];
 bingoList[13] = [
   { name: "0M and 500M Gems", types: ["gems","lategame"] },
@@ -128,8 +140,9 @@ bingoList[13] = [
   { name: "Old Site B-Side", types: ["2b"] },
   { name: "Old Site Cassette", types: ["2b","earlygame"] },
   { name: "20 Berries", types: ["amount_berries"] },
-  { name: "Mirror Temple Heart", types: ["hearts"] },
+  { name: "Mirror Temple Blue Heart", types: ["hearts"] },
   { name: "5 Berries in 5 Chapters", types: ["amount_berries"] },
+  { name: "Blue and Red Heart in Old Site", types: ["hearts","2b"] },
 ];
 bingoList[14] = [
   { name: "2 Cassettes", types: ["amount_cassettes"] },
@@ -139,7 +152,8 @@ bingoList[14] = [
   { name: "Golden Ridge Cassette", types: ["4b"] },
   { name: "Use 5 Binoculars", types: ["binoculars"] },
   { name: "Use 6 Binoculars", types: ["binoculars"] },
-  { name: "Get a 1-Up in 3 Chapters", types: ["1up"] },
+  { name: "6 Winged Berries", types: ["special_berries"] },
+  { name: "7 Winged Berries", types: ["special_berries"] },
 ];
 bingoList[15] = [
   { name: "2 Hearts and 2 Cassettes", types: ["amount_hearts","amount_cassettes"] },
@@ -150,6 +164,7 @@ bingoList[15] = [
   { name: "Get 10 Berries in PICO-8", types: ["pico-8"] },
   { name: "All Collectibles in 2A", types: ["amount_berries"] },
   { name: "Complete PICO-8", types: ["pico-8"] },
+  { name: "Blue and Red Heart in Mirror Temple", types: ["hearts","5b"] },
 ];
 bingoList[16] = [
   { name: "4 Hearts", types: ["amount_hearts"] },
@@ -160,6 +175,7 @@ bingoList[16] = [
   { name: "All Collectibles in 3A", types: ["amount_berries"] },
   { name: "Use 1 Binocular in 3 Chapters", types: ["binoculars"] },
   { name: "Use 2 Binoculars in 2 Chapters", types: ["binoculars"] },
+  { name: "Get 15 Berries in PICO-8", types: ["pico-8"] },
 ];
 bingoList[17] = [
   { name: "4 Cassettes", types: ["amount_cassettes"] },
@@ -170,6 +186,7 @@ bingoList[17] = [
   { name: "Grabless Unraveling (5A Checkpoint)", types: ["grabless"] },
   { name: "Complete 2 Chapters Grabless", types: ["grabless"] },
   { name: "3 Hearts and 3 Cassettes", types: ["amount_hearts","amount_cassettes"] },
+  { name: "4 Hearts and 4 Cassettes", types: ["amount_hearts","amount_cassettes"] },
 ];
 bingoList[18] = [
   { name: "Winged Golden Berry", types: ["dashless"] },
@@ -180,16 +197,18 @@ bingoList[18] = [
   { name: "All Berries in 2000M (8)", types: ["lategame"] },
   { name: "All Berries in 2500M (8)", types: ["lategame"] },
   { name: "5 Gems in the Summit", types: ["gems","lategame"] },
+  { name: "15 Berries in 4 Chapters", types: ["amount_berries"] },
 ];
 bingoList[19] = [
   { name: "Jump on 15 Snowballs", types: ["snowballs","task"] },
   { name: "Jump on 20 Snowballs", types: ["snowballs","task"] },
-  { name: "Reflection Heart", types: ["hearts","lategame"] },
+  { name: "Reflection Blue Heart", types: ["hearts","lategame"] },
   { name: "25 Berries", types: ["amount_berries"] },
   { name: "30 Berries", types: ["amount_berries"] },
   { name: "2 Blue and 2 Red Hearts", types: ["amount_hearts"] },
   { name: "Use 1 Binocular in 4 Chapters", types: ["binoculars"] },
   { name: "Use 2 Binoculars in 3 Chapters", types: ["binoculars"] },
+  { name: "Complete 2 A-Sides and 2 B-Sides", types: ["amount_chapters"] }
 ];
 bingoList[20] = [
   { name: "All Flags in 3000M", types: ["task","lategame"] },
@@ -200,6 +219,7 @@ bingoList[20] = [
   { name: "All Berries in Start of 2A (9)", types: ["earlygame"] },
   { name: "Use 1 Binocular in 5 Chapters", types: ["binoculars"] },
   { name: "Use 2 Binoculars in 4 Chapters", types: ["binoculars"] },
+  { name: "Blue and Red Heart in Golden Ridge", types: ["hearts","4b"] },
 ];
 bingoList[21] = [
   { name: "Get two 1-Ups", types: ["1up"] },
@@ -210,6 +230,7 @@ bingoList[21] = [
   { name: "The Summit Cassette", types: ["7b","lategame"] },
   { name: "Talk to Old Lady in Core", types: ["lategame","core"] },
   { name: "Visit the Bird's Nest in Epilogue", types: ["task","lategame"] },
+  { name: "Blue and Red Heart in Forsaken City", types: ["hearts","1b"] },
 ];
 bingoList[22] = [
   { name: "Grabless Cliff Face (4A Checkpoint)", types: ["grabless"] },
@@ -220,6 +241,7 @@ bingoList[22] = [
   { name: "45 Berries", types: ["amount_berries"] },
   { name: "50 Berries", types: ["amount_berries"] },
   { name: "3 Blue and 3 Red Hearts", types: ["amount_hearts"] },
+  { name: "Blue and Red Heart in Reflection", types: ["hearts","lategame"] },
 ];
 bingoList[23] = [
   { name: "All Berries in Into the Core (1)", types: ["checkpoint_berries","core","lategame"] },
@@ -230,6 +252,7 @@ bingoList[23] = [
   { name: "Use 8 Binoculars", types: ["binoculars"] },
   { name: "Get 3 Keys in Search", types: ["search","task"] },
   { name: "10 Berries in 5 Chapters", types: ["amount_berries"] },
+  { name: "Complete 3 A-Sides and 3 B-Sides", types: ["amount_chapters"] },
 ];
 bingoList[24] = [
   { name: "65 Berries", types: ["big_berries"] },
@@ -240,14 +263,16 @@ bingoList[24] = [
   { name: "Use 9 Binoculars", types: ["binoculars"] },
   { name: "Use 10 Binoculars", types: ["binoculars"] },
   { name: "15 Berries in 3 Chapters", types: ["amount_berries"] },
+  { name: "Blue and Red Heart in Celestial Resort", types: ["hearts","3b"] },
 ];
 bingoList[25] = [
-  { name: "15 Berries in 4 Chapters", types: ["amount_berries"] },
-  { name: "The Summit Heart", types: ["hearts","lategame"] },
+  { name: "4 Seeded Berries", types: ["special_berries"] },
+  { name: "The Summit Blue Heart", types: ["hearts","lategame"] },
   { name: "100 Berries", types: ["big_berries"] },
   { name: "All Collectibles in 8A", types: ["core","lategame"] },
   { name: "Clear Core", types: ["core","lategame"] },
   { name: "All Collectibles in 7A", types: ["amount_berries","lategame"] },
   { name: "Complete 5 B-Sides", types: ["amount_chapters"] },
   { name: "The Summit B-Side", types: ["7b","lategame"] },
+  { name: "Blue and Red Heart in The Summit", types: ["hearts","lategame"] },
 ];
