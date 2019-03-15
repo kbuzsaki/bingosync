@@ -136,6 +136,7 @@ class GameType(Enum):
     make_a_good_megaman_level_2 = 130
     super_mario_sunshine_1v1_beta = 131
     lego_pirates_of_the_caribbean = 132
+    banjo_dreamie = 133
 
     def __str__(self):
         return self.short_name
@@ -382,6 +383,7 @@ GAME_GROUPS = {
     },
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.banjo_tooie, "Banjo-Tooie", "Banjo-Tooie"),
+    **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.binding_of_isaac, "The Binding of Isaac: Afterbirth+", "Isaac AB+"),
