@@ -137,6 +137,7 @@ class GameType(Enum):
     super_mario_sunshine_1v1_beta = 131
     lego_pirates_of_the_caribbean = 132
     banjo_dreamie = 133
+    chibi_robo = 134
 
     def __str__(self):
         return self.short_name
@@ -392,6 +393,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.castlevania_sotn, "Castlevania: Symphony of the Night", "CV: SotN"),
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
+    **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
