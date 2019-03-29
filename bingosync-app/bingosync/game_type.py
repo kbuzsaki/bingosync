@@ -138,6 +138,7 @@ class GameType(Enum):
     lego_pirates_of_the_caribbean = 132
     banjo_dreamie = 133
     chibi_robo = 134
+    touhou_luna_nights = 135
 
     def __str__(self):
         return self.short_name
@@ -446,6 +447,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
+    **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "Touhou LN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
