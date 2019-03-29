@@ -139,6 +139,8 @@ class GameType(Enum):
     banjo_dreamie = 133
     chibi_robo = 134
     touhou_luna_nights = 135
+    ittle_dew_2_blackout = 136
+    ittle_dew_2_expert = 137
 
     def __str__(self):
         return self.short_name
@@ -324,6 +326,14 @@ GAME_GROUPS = {
             (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
         ],
     },
+    GameType.ittle_dew_2: {
+        "name": "Ittle Dew 2",
+        "variants": [
+            (GameType.ittle_dew_2, "Normal", "Ittle Dew 2"),
+            (GameType.ittle_dew_2_blackout, "Blackout/Lockout", "ID2 Blackout"),
+            (GameType.ittle_dew_2_expert, "Expert", "ID2 Expert")
+        ],
+    },
     GameType.lufia_2: {
         "name": "Lufia 2",
         "variants": [
@@ -408,7 +418,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
-    **singleton_group(GameType.ittle_dew_2, "Ittle Dew 2", "Ittle Dew 2"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
