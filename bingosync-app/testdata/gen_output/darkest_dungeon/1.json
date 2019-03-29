@@ -1,77 +1,77 @@
 [
     {
-        "name": "CM with a Arbalist 4 times"
+        "name": "CM with 3 of same hero in a party"
     },
     {
-        "name": "Complete a long mission"
+        "name": "CM without melee attacks"
     },
     {
-        "name": "Siren"
+        "name": "Sell 10 trinkets"
     },
     {
-        "name": "CM with a Abomination 4 times"
+        "name": "CM with 3 heroes on deaths door"
     },
     {
-        "name": "Do not use Tavern nor Abby"
+        "name": "Destroy 6 corpses"
     },
     {
-        "name": "Cure 5 diseases"
+        "name": "Cure 4 diseases"
     },
     {
         "name": "No heroes died"
     },
     {
-        "name": "CM with 4 of same hero in a party"
+        "name": "CM while only using AoE attacks"
     },
     {
-        "name": "Collect 4 journals"
+        "name": "10 Afflicted characters in roster"
     },
     {
-        "name": "3 Crimson Curse characters in roster"
+        "name": "Any Tier 1 Apprentice boss"
     },
     {
-        "name": "Beat a camping ambush!"
+        "name": "Use all unique camping abilties (one hero)"
     },
     {
-        "name": "Use no torches"
+        "name": "CM with an Antiquarian 3 times"
     },
     {
-        "name": "CM with three afflicted"
+        "name": "7 heroes died"
     },
     {
-        "name": "A negitive effect from either the abby or Tavern"
+        "name": "Heal 0 with an occultist"
     },
     {
-        "name": "Hag"
-    },
-    {
-        "name": "Swine prince"
+        "name": "Shambler/Collector/Shreiker"
     },
     {
         "name": "Vestal and Abomination in Bar"
     },
     {
-        "name": "Necromancer"
+        "name": "Lose someone while they're on the enemy side"
     },
     {
-        "name": "Complete a medium mission"
+        "name": "Collect 4 journals"
     },
     {
-        "name": "CM without ranged attacks"
+        "name": "CM with an Arbalist 3 times"
     },
     {
-        "name": "Receive this goal while camping"
+        "name": "Over 30 damage from Crit attack"
     },
     {
-        "name": "All 15 original heroes"
+        "name": "All 15 original heroes in roster"
     },
     {
-        "name": "Die of a heart attack"
+        "name": "CM with an Abomination 4 times"
+    },
+    {
+        "name": "CM with three afflicted"
+    },
+    {
+        "name": "A extra effect from Abbey or Tavern"
     },
     {
         "name": "CM with a Plague doctor 5 times"
-    },
-    {
-        "name": "Sell 10 trinkets"
     }
 ]

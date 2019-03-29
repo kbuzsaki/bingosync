@@ -1,9 +1,9 @@
 [
     {
-        "name": "CM with a Vestal 5 times"
+        "name": "CM with a Plague doctor 5 times"
     },
     {
-        "name": "Collect 4 journals"
+        "name": "CM without bringing any provisions"
     },
     {
         "name": "Veteran level hero"
@@ -12,66 +12,66 @@
         "name": "Vestal and Abomination in Bar"
     },
     {
-        "name": "CM with three afflicted"
+        "name": "CM with an Antiquarian 3 times"
     },
     {
-        "name": "Any Tier 2 apprenitce boss"
+        "name": "All 15 original heroes in roster"
     },
     {
-        "name": "Do not use Tavern nor Abby"
+        "name": "Die from the crimson curse"
     },
     {
-        "name": "Resist 4 deathblows in single battle by same character"
-    },
-    {
-        "name": "Complete a long mission"
-    },
-    {
-        "name": "Enter a hidden room"
-    },
-    {
-        "name": "Beat a camping ambush!"
-    },
-    {
-        "name": "No retreats from battle"
-    },
-    {
-        "name": "Hold 60 crests"
-    },
-    {
-        "name": "Use no torches"
+        "name": "Reach 8 active Buffs (one hero)"
     },
     {
         "name": "CM without ranged attacks"
     },
     {
-        "name": "Hold 67,500 gold"
+        "name": "Do not use Tavern nor Abbey"
+    },
+    {
+        "name": "Any Tier 1 Apprentice boss"
+    },
+    {
+        "name": "No retreats from battle"
+    },
+    {
+        "name": "Hold Exactly 0 Gold"
+    },
+    {
+        "name": "Use all unique camping abilties (one hero)"
+    },
+    {
+        "name": "Hold over 55,555 gold"
+    },
+    {
+        "name": "CM with three afflicted"
+    },
+    {
+        "name": "Kill Wilbur before Swine"
+    },
+    {
+        "name": "Use no torches"
+    },
+    {
+        "name": "CM with 1 virtuous"
+    },
+    {
+        "name": "Any zone to level 3"
+    },
+    {
+        "name": "Over 20 damage from one DOT"
+    },
+    {
+        "name": "Cure 4 diseases"
+    },
+    {
+        "name": "Lose someone while they're on the enemy side"
+    },
+    {
+        "name": "Save someone from the Pot"
     },
     {
         "name": "CM without melee attacks"
-    },
-    {
-        "name": "CM with a Abomination 4 times"
-    },
-    {
-        "name": "CM first farmstead"
-    },
-    {
-        "name": "Receive this goal while camping"
-    },
-    {
-        "name": "Die of a heart attack"
-    },
-    {
-        "name": "Necromancer"
-    },
-    {
-        "name": "Siren"
-    },
-    {
-        "name": "All 15 original heroes"
-    },
-    {
-        "name": "Complete a medium mission"
     }
 ]

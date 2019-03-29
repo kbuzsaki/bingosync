@@ -1,15 +1,15 @@
 [
     {
-        "name": "CM with 4 of same hero in a party"
+        "name": "CM using only 3 heroes"
     },
     {
-        "name": "Hold 67,500 gold"
+        "name": "Hold over 55,555 gold"
     },
     {
-        "name": "Cure 5 diseases"
+        "name": "Crocodilian"
     },
     {
-        "name": "Siren"
+        "name": "Sell 10 trinkets"
     },
     {
         "name": "Veteran level hero"
@@ -18,60 +18,60 @@
         "name": "No heroes died"
     },
     {
-        "name": "Vestal and Abomination in Bar"
+        "name": "Use no torches"
     },
     {
         "name": "Upgrade a single building stat 4 times"
     },
     {
-        "name": "Any Tier 2 apprenitce boss"
+        "name": "All zones level 1"
     },
     {
-        "name": "Receive this goal while camping"
+        "name": "Over 20 damage from one DOT"
     },
     {
-        "name": "CM without melee attacks"
+        "name": "Two deaths via heart attack"
     },
     {
-        "name": "Hold 60 crests"
+        "name": "CM while only using AoE attacks"
     },
     {
-        "name": "Do not use Tavern nor Abby"
+        "name": "CM with an Antiquarian 3 times"
     },
     {
-        "name": "Collect 4 journals"
+        "name": "Hold Exactly 0 Gold"
     },
     {
-        "name": "Complete a long mission"
+        "name": "Die from the crimson curse"
     },
     {
-        "name": "Use no torches"
-    },
-    {
-        "name": "CM with 1 virtuous"
-    },
-    {
-        "name": "Swine prince"
-    },
-    {
-        "name": "Complete a medium mission"
-    },
-    {
-        "name": "Heal 0 with an occultist"
-    },
-    {
-        "name": "A negitive effect from either the abby or Tavern"
-    },
-    {
-        "name": "CM with a Arbalist 4 times"
+        "name": "CM without bringing any provisions"
     },
     {
         "name": "CM without ranged attacks"
     },
     {
-        "name": "Crocodilian"
+        "name": "CM first farmstead"
     },
     {
-        "name": "Sell 10 trinkets"
+        "name": "Shambler/Collector/Shreiker"
+    },
+    {
+        "name": "Collect 4 journals"
+    },
+    {
+        "name": "Hold 55 crests"
+    },
+    {
+        "name": "5 Crimson curse heroes in roster"
+    },
+    {
+        "name": "CM with 3 heroes on deaths door"
+    },
+    {
+        "name": "CM with three afflicted"
+    },
+    {
+        "name": "Crit heal two different abilities(same battle)"
     }
 ]
