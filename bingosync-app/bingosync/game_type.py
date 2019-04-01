@@ -141,6 +141,7 @@ class GameType(Enum):
     touhou_luna_nights = 135
     ittle_dew_2_blackout = 136
     ittle_dew_2_expert = 137
+    iconoclasts = 138
 
     def __str__(self):
         return self.short_name
@@ -417,6 +418,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
+    **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
