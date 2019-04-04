@@ -18,7 +18,7 @@ bingoList[2] = [
 { name: "Blue Fire", types: ["BottleContent"] },
 { name: "Defeat a Skull Kid", types: [] },
 { name: "Goron Tunic", types: ["SoloTunics"] },
-{ name: "Plant bean in Death Mountain Crater", types: [] },
+{ name: "Plant bean in Death Mountain Crater", types: ["Beans"] },
 { name: "Ruto's Letter", types: ["Scale"] },
 { name: "Bottled Poe", types: ["BottleContent"] },
 { name: "Red Potion", types: ["BottleContent"] },
