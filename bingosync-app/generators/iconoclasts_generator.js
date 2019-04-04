@@ -4,20 +4,20 @@
 // Reduces fluff in bingoList object if there's a method to set defaults
 function preprocessBingoList(bingoList) {
     for (const key of Object.keys(bingoList)) {
-        bingoList[key].Name = key;
-        
+        bingoList[key].name = key;
+
         if (!bingoList[key].hasOwnProperty("Desc")) {
             bingoList[key].Desc = "#!#" + key + "#!#";
         }
-        
+
         if (!bingoList[key].hasOwnProperty("Type")) {
             bingoList[key].Type = "Generic";
         }
-        
+
         if (!bingoList[key].hasOwnProperty("Excludes")) {
             bingoList[key].Excludes = [];
         }
-        
+
         if (!bingoList[key].hasOwnProperty("Prereqs")) {
             bingoList[key].Prereqs = [];
         }
@@ -27,11 +27,11 @@ function preprocessBingoList(bingoList) {
 bingoGenerator = function(bingoList, opts) {
     // Make sure everything exists that should
     preprocessBingoList(bingoList);
-    
+
     // Separate goals into currently choosable / unchoosable
     var choosable = [];
     var unchoosable = [];
-    
+
     for (const key of Object.keys(bingoList)) {
         if (bingoList[key].Prereqs.length > 0) {
             unchoosable.push(key);
@@ -39,26 +39,26 @@ bingoGenerator = function(bingoList, opts) {
             choosable.push(key);
         }
     }
-    
+
     // Create counts for all types
     var types = { };
     for (const key of Object.keys(bingoTypes)) {
         types[key] = bingoTypes[key].Max;
     }
-    
+
     // Seed the random
     Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()).toString());
-    
+
     var chosenGoals = [];
     for (var i = 0; i < 25; i++) {
         // Get a random goal, add to chosen
         var index = Math.floor(Math.random() * choosable.length);
         var goal = bingoList[choosable[index]];
-        chosenGoals.push({ "Name": goal.Desc });
-        
+        chosenGoals.push({ "name": goal.Desc });
+
         // Remove chosen goal from choosable list
         choosable.splice(index, 1);
-        
+
         // Increment type counter, remove other goals of type if relevant
         types[goal.Type]--;
         if (types[goal.Type] <= 0) {
@@ -68,7 +68,7 @@ bingoGenerator = function(bingoList, opts) {
                     j--;
                 }
             }
-            
+
             // Gotta check both arrays
             // Pretty dumb code duplication but at this point I'm not gonna bother changing the design
             for (var j = 0; j < unchoosable.length; j++) {
@@ -78,7 +78,7 @@ bingoGenerator = function(bingoList, opts) {
                 }
             }
         }
-        
+
         // Remove excluded goals if relevant
         for (var j = 0; j < goal.Excludes.length; j++) {
             for (var k = 0; k < choosable.length; k++) {
@@ -87,7 +87,7 @@ bingoGenerator = function(bingoList, opts) {
                     k--;
                 }
             }
-            
+
             for (var k = 0; k < unchoosable.length; k++) {
                 if (unchoosable[k] == goal.Excludes[j]) {
                     unchoosable.splice(k, 1);
@@ -95,11 +95,11 @@ bingoGenerator = function(bingoList, opts) {
                 }
             }
         }
-        
+
         // Check for newly choosable goals
         for (var j = 0; j < unchoosable.length; j++) {
             for (var k = 0; k < bingoList[unchoosable[j]].Prereqs.length; k++) {
-                if (bingoList[unchoosable[j]].Prereqs[k] === goal.Name) {
+                if (bingoList[unchoosable[j]].Prereqs[k] === goal.name) {
                     choosable.push(unchoosable[j]);
                     unchoosable.splice(j, 1);
                     j--;
@@ -108,7 +108,7 @@ bingoGenerator = function(bingoList, opts) {
             }
         }
     }
-    
+
     return chosenGoals;
 }
 
