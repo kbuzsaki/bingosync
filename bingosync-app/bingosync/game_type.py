@@ -142,6 +142,7 @@ class GameType(Enum):
     ittle_dew_2_blackout = 136
     ittle_dew_2_expert = 137
     iconoclasts = 138
+    ocarina_of_time_beta_quest = 139
 
     def __str__(self):
         return self.short_name
@@ -224,6 +225,7 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
             (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
             (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
+            (GameType.ocarina_of_time_beta_quest, "Beta Quest", "OoT BQ"),
         ],
     },
     GameType.secret_of_mana: {
