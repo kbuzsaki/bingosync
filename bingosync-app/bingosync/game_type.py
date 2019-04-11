@@ -143,6 +143,7 @@ class GameType(Enum):
     ittle_dew_2_expert = 137
     iconoclasts = 138
     ocarina_of_time_beta_quest = 139
+    octopath_traveler_story = 140
 
     def __str__(self):
         return self.short_name
@@ -349,6 +350,13 @@ GAME_GROUPS = {
             (GameType.links_awakening, "Randomizer", "LADX Random"),
         ],
     },
+    GameType.octopath_traveler: {
+        "name": "Octopath Traveler",
+        "variants": [
+            (GameType.octopath_traveler, "Standard", "Octopath"),
+            (GameType.octopath_traveler, "Story", "Octopath Story"),
+        ],
+    },    
     GameType.pokemon_heartgold_soulsilver: {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
@@ -437,7 +445,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMBW"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
-    **singleton_group(GameType.octopath_traveler, "Octopath Traveler", "Octopath"),
     **singleton_group(GameType.paper_mario, "Paper Mario", "The Pape"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_2, "Pikmin 2", "Pikmin 2"),

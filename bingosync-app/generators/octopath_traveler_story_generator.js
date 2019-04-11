@@ -1,0 +1,33 @@
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+
+var bingoList = [
+	"Ophilia 1",
+	"Ophilia 2",
+	"Ophilia 3",
+	"Ophilia 4",
+	"Cyrus 1",
+	"Cyrus 2",
+	"Cyrus 3",
+	"Cyrus 4",
+	"Tressa 1",
+	"Tressa 2",
+	"Tressa 3",
+	"Tressa 4",
+	"Olberic 1",
+	"Olberic 2",
+	"Olberic 3",
+	"Olberic 4",
+	"Primrose 1",
+	"Primrose 2",
+	"Primrose 3",
+	"Primrose 4",
+	"Alfyn 1",
+	"Alfyn 2",
+	"Alfyn 3",
+	"Alfyn 4",
+	"Therion 1",
+	"Therion 2",
+	"Therion 3",
+	"Therion 4",
+	"Any 4"
+];
