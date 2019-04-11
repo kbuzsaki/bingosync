@@ -106,5 +106,4 @@ var bingoList = [
 	"Complete an extra prologue",
 	"Cross three consecutive screens with no encounters",
 	"Restore reputation twice",
-	"Sing (or hum or whistle) along with an ingame banger",
 ];
