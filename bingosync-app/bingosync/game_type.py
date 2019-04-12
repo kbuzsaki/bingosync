@@ -354,9 +354,9 @@ GAME_GROUPS = {
         "name": "Octopath Traveler",
         "variants": [
             (GameType.octopath_traveler, "Standard", "Octopath"),
-            (GameType.octopath_traveler, "Story", "Octopath Story"),
+            (GameType.octopath_traveler_story, "Story", "Octopath Story"),
         ],
-    },    
+    },
     GameType.pokemon_heartgold_soulsilver: {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
