@@ -1,4 +1,4 @@
-bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
+bingoGenerator = require("./generators/generator_bases/srl_generator_v5_blackout.js");
 
 var bingoList = [];
 bingoList[1] = [
