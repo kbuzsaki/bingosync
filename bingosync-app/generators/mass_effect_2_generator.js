@@ -18,6 +18,7 @@ bingoList[3] = [
   { "name": "Complete 1 firewalker mission", types: ["fw"] },
   { "name": "N7 MSV Estevanico", types: ["n7"] },
   { "name": "N7 Wrecked Merchant Freighter", types: ["n7", "n7a"] },
+  { "name": "Dance in all nightclubs" },
 ];
 bingoList[4] = [
   { "name": "N7 Abandoned Research Station", types: ["n7", "n7a"] },
@@ -31,7 +32,7 @@ bingoList[5] = [
   { "name": "2 +10% Shotgun damage upgrades", types: ["sg"] },
   { "name": "2 +10% Sniper Rifle Damage upgrades", types: ["sr"] },
   { "name": "Get discounts at every store on the citadel", types: ["shop"] },
-   { "name": "Complete 3 Citadel Assignments", types: ["Acitadel"] },
+  { "name": "Complete 3 Citadel Assignments", types: ["Acitadel"] },
 ];
 bingoList[6] = [
   { "name": "Zaeed Loyalty", types: ["loyal"] },
@@ -57,6 +58,7 @@ bingoList[8] = [
   { "name": "N7 Quarian Crash Site", types: ["n7"] },
   { "name": "2 10% Shield upgrades", types: ["shield"] },
   { "name": "Shoot Conrad Verner", types: ["Aillium"] },
+  { "name": "Make a Krogan and an Asari fall in love", types: ["Aillium"] },
   { "name": "Recruit Tali", types: ["recruit", "Tali"] },
   { "name": "Complete a recruit without guns", types: ["recruit"] },
   { "name": "Complete a recruit without powers", types: ["recruit"] },
@@ -112,7 +114,7 @@ bingoList[14] = [
 bingoList[15] = [
   { "name": "Garrus Loyalty", types: ["loyal", "garrus"] },
   { "name": "4 10% Tech Damage upgrades", types: ["td"] },
-  { "name": "12 total upgrades", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] },
+  { "name": "12 total upgrades", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] }, 
 ];
 bingoList[16] = [
   { "name": "4 Sniper Rifle 10% damage upgrades", types: ["sr"] },
@@ -122,7 +124,7 @@ bingoList[16] = [
 bingoList[17] = [
   { "name": "Samara Loyalty", types: ["loyal"] },
   { "name": "4 Shotgun 10% damage upgrades", types: ["sg"] },
-  { "name": "Acquire Reaper IFF and activate Legion", types: ["recruit", "Legion"] },
+  { "name": "Acquire Reaper IFF and activate Legion", types: ["recruit", "Legion"] },	
 ];
 bingoList[18] = [
   { "name": "Thane Loyalty", types: ["loyal", "thane"] },
@@ -132,22 +134,24 @@ bingoList[18] = [
 bingoList[19] = [
   { "name": "Kill the Reaper Core without using HW", types: ["recruit", "Legion"] },
   { "name": "Tali Loyalty", types: ["loyal", "tali"] },
-  { "name": "Acquire 7 (non-ship) upgrades of a single type", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] },
+  { "name": "Acquire 6 (non-ship) upgrades of a single type", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] }, 
 ];
 bingoList[20] = [
   { "name": "Complete 3 Loyalty Missions", types: ["loyal"] },
   { "name": "In the Arrival DLC, complete Object Rho fight without dying on Veteran difficulty", types: ["dlc"] },
-  { "name": "Legion Loyalty", types: ["loyal", "legion"] },
+  { "name": "Legion Loyalty", types: ["loyal", "legion"] },  
+  { "name": "Complete Vulcan Station (Overlord)", types: ["dlc"] },
 ];
 bingoList[21] = [
   { "name": "Acquire 10 model ships", types: ["shop"] },
-  { "name": "Kill Tela Vasir (Shadow Broker DLC)", types: ["dlc"] },
-  { "name": "Complete Vulcan Station (Overlord)", types: ["dlc"] },
+  { "name": "Kill Tela Vasir (Shadow Broker DLC)", types: ["dlc"] },  
+  { "name": "Complete Prometheus Station (Overlord)", types: ["dlc"] },  
 ];
 bingoList[22] = [
-  { "name": "Acquire 11 party members", types: ["recruit"] },
+  { "name": "Acquire 11 party members", types: ["recruit"] },	
   { "name": "Acquire all ship upgrades", types: ["recruit"] },
-  { "name": "Resolve legion-tali loyalty conflict", types: ["loyal", "tali", "legion"] },
+  { "name": "Resolve legion-tali loyalty conflict", types: ["loyal", "tali", "legion"] },  
+  { "name": "Resolve miranda-jack loyalty conflict", types: ["loyal", "miranda", "jack"] }, 
 ];
 bingoList[23] = [
   { "name": "Romance Miranda", types: ["rom", "miranda"] },
@@ -159,11 +163,15 @@ bingoList[24] = [
  { "name": "Acquire 12 party members", types: ["recruit"] },
  { "name": "Romance Thane", types: ["rom", "thane"] },
  { "name": "Romance Tali", types: ["rom", "tali"] },
- { "name": "Kill Jacob", types: ["rom", "tali"] },
-
+ { "name": "Kill Jacob" },
+ { “name”: “Complete 4 loyalties”},
+ 
 ];
 bingoList[25] = [
-  { "name": "Morinth Loyalty", types: ["loyal", "morinth"] },
+  { "name": "Morinth Gameover", types: ["loyal", "morinth"] },
   { "name": "Enable veteran difficulty at the start, and never reduce the difficulty below veteran" },
   { "name": "Kill the Human-Reaper" },
+  { "name": "Complete the run glitchless" },
+  { “name”: “Finish Arrival”, types: [“dlc”] },
+
 ];
