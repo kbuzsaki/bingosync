@@ -148,6 +148,7 @@ class GameType(Enum):
     kirby_and_the_amazing_mirror = 142
     jak_and_dexter = 143
     wii_sports_resort_all_stamps_lite = 144
+    castlevania_sotn_randomizer = 145
 
     def __str__(self):
         return self.short_name
@@ -298,6 +299,13 @@ GAME_GROUPS = {
             (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
         ],
     },
+    GameType.castlevania_sotn: {
+        "name": "Castlevania: Symphony of the Night",
+        "variants": [
+            (GameType.castlevania_sotn, "Normal", "SotN"),
+            (GameType.castlevania_sotn_randomizer, "Randomizer", "SotN Randomizer"),
+        ],
+    },
     GameType.darkest_dungeon: {
         "name": "Darkest Dungeon",
         "variants": [
@@ -418,7 +426,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
-    **singleton_group(GameType.castlevania_sotn, "Castlevania: Symphony of the Night", "CV: SotN"),
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
