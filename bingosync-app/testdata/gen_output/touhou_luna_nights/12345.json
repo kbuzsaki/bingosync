@@ -1,15 +1,15 @@
 [
     {
-        "name": "Discover the Warp Zone in All Stages"
+        "name": "Carry a Shop Ticket into the Nitori Battle"
     },
     {
         "name": "Get the Knife Upgrade in Stage 4"
     },
     {
-        "name": "Get the Eternal Clock in Stage 2"
+        "name": "Get the Eternal Clock in Stage 1"
     },
     {
-        "name": "Obtain 250 Topaz Jewels"
+        "name": "Obtain 5 Emerald Jewels"
     },
     {
         "name": "Use a Shop Ticket in the Remilia Battle"
@@ -27,25 +27,28 @@
         "name": "Break the Ruby Jewel Tower"
     },
     {
-        "name": "Get the Shield Dagger Skill"
+        "name": "Get the Screw Knife Ability"
     },
     {
         "name": "Reach Level 10"
     },
     {
-        "name": "Finish Off Flandre with Auto Aim"
+        "name": "Dunk a Wastebin in All Stages"
     },
     {
         "name": "Get the Knife Upgrade in Stage 2"
     },
     {
-        "name": "Receive a Shop Ticket from Nitori"
+        "name": "Receive 3 Shop Tickets from Nitori"
     },
     {
-        "name": "Get the HP Upgrade in All Stages"
+        "name": "Get the Grip Knife Ability"
     },
     {
-        "name": "Get All Abilities"
+        "name": "Finish Off Remilia with Shield Dagger"
+    },
+    {
+        "name": "Discover the Warp Zone in All Stages"
     },
     {
         "name": "Get the Knife Upgrade in Stage 1"
@@ -57,21 +60,18 @@
         "name": "Buy 3 HP Recoveries from Nitori's Shop"
     },
     {
-        "name": "Reach 130 TIME Gauge"
+        "name": "Get the Shield Dagger Skill"
     },
     {
-        "name": "Get the Chainsaw Skill"
+        "name": "Obtain 50 Topaz Jewels"
     },
     {
-        "name": "Get the Knife Upgrade in All Stages"
+        "name": "Get the Blue Key"
+    },
+    {
+        "name": "Get the HP Upgrade in Stage 5"
     },
     {
         "name": "Reach 27 Time Stop Knives"
-    },
-    {
-        "name": "Get the Grip Knife Ability"
-    },
-    {
-        "name": "Beat Nitori without reaching Phase 2"
     }
 ]

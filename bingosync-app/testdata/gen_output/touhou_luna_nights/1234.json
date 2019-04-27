@@ -18,13 +18,13 @@
         "name": "Break the Amethyst Jewel Tower"
     },
     {
-        "name": "Get the Grip Knife Ability"
+        "name": "Get the Green Key"
     },
     {
         "name": "Get the Yellow Key"
     },
     {
-        "name": "Get the Auto Aim Skill"
+        "name": "Get All Skills"
     },
     {
         "name": "Get the HP Upgrade in Stage 1"
@@ -36,10 +36,10 @@
         "name": "Get the Screw Knife Ability"
     },
     {
-        "name": "Get the Knife Upgrade in Stage 2"
+        "name": "Get the Knife Upgrade in Stage 1"
     },
     {
-        "name": "Reach Level 20"
+        "name": "Reach Level 5"
     },
     {
         "name": "Get the Knife Upgrade in Stage 3"
@@ -51,10 +51,10 @@
         "name": "Get the Knife Upgrade in Stage 5"
     },
     {
-        "name": "Finish Off Flandre with Auto Aim"
+        "name": "Discover the Warp Zone in Stage 2"
     },
     {
-        "name": "Discover the Warp Zone in Stage 3"
+        "name": "Finish Off Meiling with a Slide"
     },
     {
         "name": "Buy 1 HP Recovery from Nitori's Shop"
@@ -66,12 +66,12 @@
         "name": "Get the Eternal Clock in Stage 4"
     },
     {
-        "name": "Get the MP Upgrade in Stage 3"
-    },
-    {
-        "name": "Obtain 25 Sapphire Jewels"
-    },
-    {
         "name": "Get the MP Upgrade in Stage 2"
+    },
+    {
+        "name": "Obtain 250 Amethyst Jewels"
+    },
+    {
+        "name": "Break All Jewel Towers"
     }
 ]

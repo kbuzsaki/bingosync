@@ -1,15 +1,15 @@
 [
     {
-        "name": "Dunk All Wastebins in All Stages"
+        "name": "Discover the Warp Zone in Stage 5"
     },
     {
-        "name": "Get All Skills"
+        "name": "Get All Keys"
     },
     {
-        "name": "Obtain 250 Topaz Jewels"
+        "name": "Obtain 5 Emerald Jewels"
     },
     {
-        "name": "Discover the Warp Zone in Stage 4"
+        "name": "Discover the Warp Zone in Stage 3"
     },
     {
         "name": "Get the Green Key"
@@ -21,10 +21,10 @@
         "name": "Get the Purple Key"
     },
     {
-        "name": "Discover the Warp Zone in All Stages"
+        "name": "Carry a Shop Ticket into the Nitori Battle"
     },
     {
-        "name": "Get All Keys"
+        "name": "Get All Abilities"
     },
     {
         "name": "100% the Map"
@@ -36,7 +36,7 @@
         "name": "Reach Level 5"
     },
     {
-        "name": "Dunk a Wastebin in All Stages"
+        "name": "Dunk Wastebin 3 in All Stages"
     },
     {
         "name": "Beat Nitori without using Time Stop"
@@ -45,7 +45,7 @@
         "name": "Get the HP Upgrade in Stage 4"
     },
     {
-        "name": "Reach 130 TIME Gauge"
+        "name": "Reach 145 TIME Gauge"
     },
     {
         "name": "Use a Shop Ticket in the Meiling Battle"
@@ -54,13 +54,16 @@
         "name": "Get the MP Upgrade in Stage 3"
     },
     {
-        "name": "Get the Blue Key"
+        "name": "Get the Auto Aim Skill"
     },
     {
-        "name": "Finish Off Meiling with a Slide"
+        "name": "Finish Off Marisa with Stun Knife"
     },
     {
-        "name": "Obtain 500 Aquamarine Jewels"
+        "name": "Get the HP Upgrade in Stage 3"
+    },
+    {
+        "name": "Obtain 50 Topaz Jewels"
     },
     {
         "name": "Get the Sliding Knife Ability"
@@ -69,9 +72,6 @@
         "name": "Break the Amethyst Jewel Tower"
     },
     {
-        "name": "Dunk Wastebin 3 in All Stages"
-    },
-    {
-        "name": "Finish Off Patchouli with a Double Jump"
+        "name": "Dunk Wastebin 2 in All Stages"
     }
 ]
