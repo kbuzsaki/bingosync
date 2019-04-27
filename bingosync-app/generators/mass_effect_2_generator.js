@@ -114,7 +114,7 @@ bingoList[14] = [
 bingoList[15] = [
   { "name": "Garrus Loyalty", types: ["loyal", "garrus"] },
   { "name": "4 10% Tech Damage upgrades", types: ["td"] },
-  { "name": "12 total upgrades", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] }, 
+  { "name": "12 total upgrades", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] },
 ];
 bingoList[16] = [
   { "name": "4 Sniper Rifle 10% damage upgrades", types: ["sr"] },
@@ -124,7 +124,7 @@ bingoList[16] = [
 bingoList[17] = [
   { "name": "Samara Loyalty", types: ["loyal"] },
   { "name": "4 Shotgun 10% damage upgrades", types: ["sg"] },
-  { "name": "Acquire Reaper IFF and activate Legion", types: ["recruit", "Legion"] },	
+  { "name": "Acquire Reaper IFF and activate Legion", types: ["recruit", "Legion"] },
 ];
 bingoList[18] = [
   { "name": "Thane Loyalty", types: ["loyal", "thane"] },
@@ -134,24 +134,24 @@ bingoList[18] = [
 bingoList[19] = [
   { "name": "Kill the Reaper Core without using HW", types: ["recruit", "Legion"] },
   { "name": "Tali Loyalty", types: ["loyal", "tali"] },
-  { "name": "Acquire 6 (non-ship) upgrades of a single type", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] }, 
+  { "name": "Acquire 6 (non-ship) upgrades of a single type", types: ["td", "sg", "ar", "pst", "sr", "smg", "shield", "hp", "hwa", "mg", "bd","td"] },
 ];
 bingoList[20] = [
   { "name": "Complete 3 Loyalty Missions", types: ["loyal"] },
   { "name": "In the Arrival DLC, complete Object Rho fight without dying on Veteran difficulty", types: ["dlc"] },
-  { "name": "Legion Loyalty", types: ["loyal", "legion"] },  
+  { "name": "Legion Loyalty", types: ["loyal", "legion"] },
   { "name": "Complete Vulcan Station (Overlord)", types: ["dlc"] },
 ];
 bingoList[21] = [
   { "name": "Acquire 10 model ships", types: ["shop"] },
-  { "name": "Kill Tela Vasir (Shadow Broker DLC)", types: ["dlc"] },  
-  { "name": "Complete Prometheus Station (Overlord)", types: ["dlc"] },  
+  { "name": "Kill Tela Vasir (Shadow Broker DLC)", types: ["dlc"] },
+  { "name": "Complete Prometheus Station (Overlord)", types: ["dlc"] },
 ];
 bingoList[22] = [
-  { "name": "Acquire 11 party members", types: ["recruit"] },	
+  { "name": "Acquire 11 party members", types: ["recruit"] },
   { "name": "Acquire all ship upgrades", types: ["recruit"] },
-  { "name": "Resolve legion-tali loyalty conflict", types: ["loyal", "tali", "legion"] },  
-  { "name": "Resolve miranda-jack loyalty conflict", types: ["loyal", "miranda", "jack"] }, 
+  { "name": "Resolve legion-tali loyalty conflict", types: ["loyal", "tali", "legion"] },
+  { "name": "Resolve miranda-jack loyalty conflict", types: ["loyal", "miranda", "jack"] },
 ];
 bingoList[23] = [
   { "name": "Romance Miranda", types: ["rom", "miranda"] },
@@ -164,14 +164,12 @@ bingoList[24] = [
  { "name": "Romance Thane", types: ["rom", "thane"] },
  { "name": "Romance Tali", types: ["rom", "tali"] },
  { "name": "Kill Jacob" },
- { “name”: “Complete 4 loyalties”},
- 
+ { "name": "Complete 4 loyalties"}
 ];
 bingoList[25] = [
   { "name": "Morinth Gameover", types: ["loyal", "morinth"] },
   { "name": "Enable veteran difficulty at the start, and never reduce the difficulty below veteran" },
   { "name": "Kill the Human-Reaper" },
   { "name": "Complete the run glitchless" },
-  { “name”: “Finish Arrival”, types: [“dlc”] },
-
+  { "name": "Finish Arrival", types: ["dlc"] }
 ];
