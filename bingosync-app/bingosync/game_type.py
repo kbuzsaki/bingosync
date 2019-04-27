@@ -145,6 +145,7 @@ class GameType(Enum):
     ocarina_of_time_beta_quest = 139
     octopath_traveler_story = 140
     dragon_warrior_monsters = 141
+    kirby_and_the_amazing_mirror = 142
 
     def __str__(self):
         return self.short_name
@@ -433,6 +434,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
+    **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
     **singleton_group(GameType.lego_batman, "LEGO Batman: The Video Game", "LEGO Batman"),
