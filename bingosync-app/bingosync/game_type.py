@@ -147,6 +147,7 @@ class GameType(Enum):
     dragon_warrior_monsters = 141
     kirby_and_the_amazing_mirror = 142
     jak_and_dexter = 143
+    wii_sports_resort_all_stamps_lite = 144
 
     def __str__(self):
         return self.short_name
@@ -331,6 +332,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.wii_sports_resort, "Normal", "WSR"),
             (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
+            (GameType.wii_sports_resort_all_stamps_lite, "All Stamps Lite", "WSR Stamps Lite"),
         ],
     },
     GameType.ittle_dew_2: {
