@@ -149,6 +149,7 @@ class GameType(Enum):
     jak_and_dexter = 143
     wii_sports_resort_all_stamps_lite = 144
     castlevania_sotn_randomizer = 145
+    binding_of_isaac_racing = 146
 
     def __str__(self):
         return self.short_name
@@ -299,6 +300,13 @@ GAME_GROUPS = {
             (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
         ],
     },
+    GameType.binding_of_isaac: {
+        "name": "The Binding of Isaac: Afterbirth+",
+        "variants": [
+            (GameType.binding_of_isaac, "Normal", "Isaac AB+"),
+            (GameType.binding_of_isaac_racing, "Racing+", "Isaac R+"),
+        ],
+    },
     GameType.castlevania_sotn: {
         "name": "Castlevania: Symphony of the Night",
         "variants": [
@@ -422,7 +430,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
-    **singleton_group(GameType.binding_of_isaac, "The Binding of Isaac: Afterbirth+", "Isaac AB+"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
