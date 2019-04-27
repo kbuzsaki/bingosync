@@ -8,10 +8,23 @@ from bingosync.settings import GEN_TESTDATA_DIR
 
 TEST_SEEDS = [1, 1000, 1234, 12345]
 
+def try_parse_game_type(gt_str):
+    if not gt_str:
+        return None
+    try:
+        return GameType[gt_str]
+    except KeyError:
+        try:
+            return GameType.for_value(int(gt_str))
+        except ValueError:
+            print("Invalid gt: '" + gt_str + "'")
+            return None
+
 class Command(BaseCommand):
     help = 'Generates test data for the bingogenerators'
 
     def add_arguments(self, parser):
+        parser.add_argument("-g", dest="game_type", default="", help="Game type")
         parser.add_argument('--regen',
                             action='store_true',
                             dest='regen',
@@ -19,7 +32,11 @@ class Command(BaseCommand):
                             help='Regenerate board data that already exists')
 
     def handle(self, *args, **options):
-        testable_types = [game_type for game_type in GameType if game_type != GameType.custom]
+        game_type = try_parse_game_type(options["game_type"])
+        if game_type:
+            testable_types = [game_type]
+        else:
+            testable_types = [game_type for game_type in GameType if game_type != GameType.custom]
         for game_type in testable_types:
             for seed in TEST_SEEDS:
                 if options["regen"] or not data_exists(game_type, seed):
