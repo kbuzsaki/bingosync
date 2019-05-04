@@ -150,6 +150,7 @@ class GameType(Enum):
     wii_sports_resort_all_stamps_lite = 144
     castlevania_sotn_randomizer = 145
     binding_of_isaac_racing = 146
+    terraria = 147
 
     def __str__(self):
         return self.short_name
@@ -488,6 +489,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
+    **singleton_group(GameType.terraria, "Terraria", "Terraria"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
