@@ -151,6 +151,7 @@ class GameType(Enum):
     castlevania_sotn_randomizer = 145
     binding_of_isaac_racing = 146
     terraria = 147
+    lego_batman_short = 148
 
     def __str__(self):
         return self.short_name
@@ -360,6 +361,13 @@ GAME_GROUPS = {
             (GameType.ittle_dew_2_expert, "Expert", "ID2 Expert")
         ],
     },
+    GameType.lego_batman: {
+        "name": "LEGO Batman: The Video Game",
+        "variants": [
+            (GameType.lego_batman, "Normal", "LEGO Batman"),
+            (GameType.lego_batman_short, "Short", "LEGO Batman Short"),
+        ],
+    },
     GameType.lufia_2: {
         "name": "Lufia 2",
         "variants": [
@@ -456,7 +464,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
-    **singleton_group(GameType.lego_batman, "LEGO Batman: The Video Game", "LEGO Batman"),
     **singleton_group(GameType.lego_pirates_of_the_caribbean, "LEGO Pirates of the Caribbean", "LEGO PotC"),
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
