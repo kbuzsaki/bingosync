@@ -92,7 +92,7 @@ var mediumChallenges = [
   { name: "Get +80 tear delay and finish the run", types: ["completeGame"] },
   { name: "Proc Judas Shadow after Dead Cat", types: ["resurrection"] },
   { name: "Charm 3 mobs in the same room", types: ["enemyStatusEffect"] },
-  { name: "Play as 3 different characters in one run", types: ["resurrection"] },,
+  { name: "Play as 3 different characters in one run", types: ["resurrection"] },
   { name: "Beat a final boss with 1/2 health", types: ["health"] },
   { name: "Have 20 Dips simultaneously alive", types: ["poop"] },
   { name: "Reroll a single item pedestal 5 times", types: ["reroll"] },
