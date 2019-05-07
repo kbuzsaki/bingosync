@@ -152,6 +152,7 @@ class GameType(Enum):
     binding_of_isaac_racing = 146
     terraria = 147
     lego_batman_short = 148
+    crash_team_racing = 149
 
     def __str__(self):
         return self.short_name
@@ -445,6 +446,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.celeste, "Celeste", "Celeste"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
+    **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
