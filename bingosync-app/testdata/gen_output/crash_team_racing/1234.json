@@ -1,9 +1,9 @@
 [
     {
-        "name": "Adventure - Drive through all 5 Hub areas"
+        "name": "Adventure - Successfully land the 360 in Cortex Castle"
     },
     {
-        "name": "TT - Beat the Mystery Caves Oxide Ghost"
+        "name": "TT - Beat the Sewer Speedway Oxide Ghost"
     },
     {
         "name": "Misc. - Collect 200 Gems in Collosus in the Spyro 2 Demo (Cheat Code)"
@@ -12,10 +12,10 @@
         "name": "Misc. - Reach the exit of Magma Cone in the Spyro 2 Demo (Cheat Code)"
     },
     {
-        "name": "Adventure - Starting from the Save Screen, do 10 laps around The Lost Ruins"
+        "name": "Adventure - Beat Ripper Roo with Polar/Pura"
     },
     {
-        "name": "Adventure - Get 4 Tokens"
+        "name": "Adventure - Get 16 Trophies"
     },
     {
         "name": "TT - Beat 3 Oxide Ghosts with Polar/Pura"
@@ -24,13 +24,13 @@
         "name": "Arcade - Win a 3-Lap race from a lap behind in Arcade Single Mode"
     },
     {
-        "name": "TT - Beat the Papu's Pyramids Oxide Ghost"
+        "name": "TT - Beat the Blizzard Bluff Oxide Ghost"
     },
     {
         "name": "TT - Beat 1 N. Tropy Ghosts with Ripper Roo"
     },
     {
-        "name": "Adventure - Collect 6 C's in CTR Tokens"
+        "name": "Adventure - Get 4 Tokens"
     },
     {
         "name": "Arcade - Complete 2 7-Lap Races"
@@ -39,13 +39,19 @@
         "name": "TT - Beat the Oxide Station Oxide Ghost without using any SC"
     },
     {
-        "name": "Misc. - Watch the entire Scrapbook without skipping (Cheat Code)"
+        "name": "Misc. - Hit 3 unique CPU's with the '3 Missile' item consecutively"
+    },
+    {
+        "name": "TT - Beat an N. Tropy Ghost whilst holding L2 at all times during the level"
     },
     {
         "name": "Arcade - Finish Nitro Cup"
     },
     {
         "name": "Adventure - Go through the secret door on all 3 laps of Tiger Temple"
+    },
+    {
+        "name": "TT - Beat the Mystery Caves Oxide Ghost"
     },
     {
         "name": "Adventure - Get 3 Relics"
@@ -63,15 +69,9 @@
         "name": "Arcade - Activate the Icy Tracks cheat and beat an Arcade Cup (Cheat Code | Must be deactivated before continuing)"
     },
     {
-        "name": "Adventure - 100% 1 Hub"
-    },
-    {
-        "name": "TT - Beat the Sewer Speedway Oxide Ghost"
+        "name": "TT - Beat the Papu's Pyramids Oxide Ghost"
     },
     {
         "name": "TT - Beat the Polar Pass Oxide Ghost"
-    },
-    {
-        "name": "Misc. - Hit 3 unique CPU's with the 'Aku/Uka Mask' item before it runs out"
     }
 ]
