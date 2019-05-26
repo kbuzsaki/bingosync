@@ -153,6 +153,7 @@ class GameType(Enum):
     terraria = 147
     lego_batman_short = 148
     crash_team_racing = 149
+    simpsons_hit_and_run = 150
 
     def __str__(self):
         return self.short_name
@@ -489,6 +490,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
+    **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
