@@ -154,6 +154,7 @@ class GameType(Enum):
     lego_batman_short = 148
     crash_team_racing = 149
     simpsons_hit_and_run = 150
+    paper_mario_new = 151
 
     def __str__(self):
         return self.short_name
@@ -389,6 +390,13 @@ GAME_GROUPS = {
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
         ],
     },
+    GameType.paper_mario: {
+        "name": "Paper Mario",
+        "variants": [
+            (GameType.paper_mario, "Normal", "The Pape"),
+            (GameType.paper_mario_new, "New", "The Pape (New)"),
+        ],
+    },
     GameType.pokemon_heartgold_soulsilver: {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
@@ -478,7 +486,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMBW"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
-    **singleton_group(GameType.paper_mario, "Paper Mario", "The Pape"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_2, "Pikmin 2", "Pikmin 2"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
