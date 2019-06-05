@@ -155,6 +155,7 @@ class GameType(Enum):
     crash_team_racing = 149
     simpsons_hit_and_run = 150
     paper_mario_new = 151
+    super_mario_64_randomizer_lockout = 152
 
     def __str__(self):
         return self.short_name
@@ -410,6 +411,13 @@ GAME_GROUPS = {
             (GameType.slime_rancher_lockout, "Lockout", "Slime Rancher Lockout"),
         ],
     },
+    GameType.super_mario_64: {
+        "name": "Super Mario 64",
+        "variants": [
+            (GameType.super_mario_64, "Normal", "SM64"),
+            (GameType.super_mario_64_randomizer_lockout, "Randomizer Lockout", "SM64 Randomizer"),
+        ],
+    },
     GameType.super_mario_sunshine: {
         "name": "Super Mario Sunshine",
         "variants": [
@@ -501,7 +509,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
-    **singleton_group(GameType.super_mario_64, "Super Mario 64", "SM64"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
