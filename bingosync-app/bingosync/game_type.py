@@ -157,6 +157,7 @@ class GameType(Enum):
     paper_mario_new = 151
     super_mario_64_randomizer_lockout = 152
     dark_devotion = 153
+    dark_souls_2 = 154
 
     def __str__(self):
         return self.short_name
@@ -470,6 +471,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
+    **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
