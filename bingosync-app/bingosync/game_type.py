@@ -156,6 +156,7 @@ class GameType(Enum):
     simpsons_hit_and_run = 150
     paper_mario_new = 151
     super_mario_64_randomizer_lockout = 152
+    dark_devotion = 153
 
     def __str__(self):
         return self.short_name
@@ -467,6 +468,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
+    **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
