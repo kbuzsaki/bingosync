@@ -2,7 +2,7 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v8.js");
 
 var bingoList = [];
 bingoList[1] = [
-  { name: "Obtain a full stack of 999 of any block", types: [] },
+  { name: "Obtain a stack of 999 of any tile without duping", types: [] },
   { name: "Cook a marshmallow", types: [] },
   { name: "Drown AND suffocate to death", types: ["death"] },
   { name: "Craft a Legendary Wooden Sword", types: [] },
@@ -44,13 +44,13 @@ bingoList[7] = [
   { name: "Record a boss track with a Music Box", types: [] },
 ];
 bingoList[8] = [
-  { name: "Complete a Pirate Invasion", types: [] },
-  { name: "Complete the Hardmode Goblin Army", types: [] },
+  { name: "Complete a Pirate Invasion", types: ["event"] },
+  { name: "Complete the Hardmode Goblin Army", types: ["event"] },
   { name: "Find and defeat Doctor Bones", types: ["enemy"] },
   { name: "Defeat Queen Bee", types: [] },
 ];
 bingoList[9] = [
-  { name: "Complete Old One's Army Tier 1", types: ["ooa"] },
+  { name: "Complete Old One's Army Tier 1", types: ["ooa","event"] },
   { name: "Find and rescue the stylist", types: ["npc"] },
   { name: "Obtain a Reaver Shark", types: ["fishing"] },
   { name: "Obtain all 4 Strange Plants at once", types: [] },
@@ -68,7 +68,7 @@ bingoList[11] = [
   { name: "Open 4 dungeon chests", types: [] },
 ];
 bingoList[12] = [
-  { name: "Complete Old One's Army Tier 2", types: ["ooa"] },
+  { name: "Complete Old One's Army Tier 2", types: ["ooa","event"] },
   { name: "Fish up 3 Golden Crates", types: ["fishing"] },
   { name: "Have 15 Buffs and/or Debuffs active at one time", types: ["buffs"] },
   { name: "Kill a Rainbow Slime", types: ["enemy"] },
@@ -104,8 +104,8 @@ bingoList[17] = [
   { name: "Catch a Crystal Serpent, Toxikarp, or Bladetongue", types: ["fishing"] },
 ];
 bingoList[18] = [
-  { name: "Complete Old One's Army Tier 3", types: ["ooa"] },
-  { name: "Complete Martian Madness", types: [] },
+  { name: "Complete Old One's Army Tier 3", types: ["ooa","event"] },
+  { name: "Complete Martian Madness", types: ["event"] },
   { name: "Obtain a full set of Shroomite Armor", types: [] },
   { name: "Obtain 8 different wings", types: [] },
 ];
@@ -119,35 +119,35 @@ bingoList[20] = [
   { name: "Obtain 4 Light Pets", types: [] },
   { name: "Purchase a Magic Lantern", types: ["luck"] },
   { name: "Craft the Celestial Shell", types: ["craft"] },
-  { name: "Obtain the Spectre Staff, Inferno Fork, and Shadowbeam Staff", types: ["luck"] },
+  { name: "Obtain the 2 of the following: Spectre Staff, Inferno Fork, and Shadowbeam Staff", types: ["luck"] },
 ];
 bingoList[21] = [
   { name: "Craft the Terra Blade", types: ["herosword"] },
-  { name: "Accrue 10 platinum coins at once", types: [] },
+  { name: "Accrue 8 platinum coins at once without duping", types: [] },
   { name: "Defeat the Dungeon Guardian", types: [] },
   { name: "Kill Golem without using wings", types: ["golem","meme"] },
 ];
 bingoList[22] = [
-  { name: "Reach Wave 15 of the Pumpkin Moon", types: [] },
+  { name: "Reach Wave 15 of the Pumpkin Moon", types: ["event"] },
   { name: "Use only 1 class after defeating a boss", types: ["restriction","class"] },
   { name: "Purify your world until there is less than 5% world evil", types: [] },
   { name: "Keep 2 accessory slots unused/in vanity permanently", types: ["restriction"] },
 ];
 bingoList[23] = [
-  { name: "Reach Wave 15 of Frost Moon", types: [] },
+  { name: "Reach Wave 15 of Frost Moon", types: ["event"] },
   { name: "Defeat the Lunatic Cultist after summoning 4 decoys", types: ["cultist","meme"] },
   { name: "Obtain a Unicorn on a Stick", types: ["luck","meme"] },
   { name: "Obtain a Lucky Coin or Coin Gun", types: ["luck"] },
 ];
 bingoList[24] = [
   { name: "Craft the Ankh Shield", types: ["craft"] },
-  { name: "Craft the Cell Phone", types: ["craft"] },
+  { name: "Spread the world's Hallow to over 50%", types: ["craft"] },
   { name: "Defeat, from maximum health, Enraged Duke Fishron", types: ["duke"] },
   { name: "Never exceed 200 max health", types: ["health","restriction"] },
 ];
 bingoList[25] = [
   { name: "Defeat the Moonlord", types: [] },
-  { name: "Complete every Lunar Pillar with their respective class", types: ["class"] },
-  { name: "Complete all 8 events: Goblins, Pirates, Martians, Pumpkin Moon, Frost Moon, Solar Eclipse, Old One's Army, and Celestial Pillars", types: [] },
+  { name: "Complete every Lunar Pillar with their respective class", types: ["class","event"] },
+  { name: "Complete all 8 events: Goblins, Pirates, Martians, Pumpkin Moon, Frost Moon, Solar Eclipse, Old One's Army, and Celestial Pillars", types: ["event"] },
   { name: "Craft the Drill Containment Unit", types: ["craft"] },
 ];
