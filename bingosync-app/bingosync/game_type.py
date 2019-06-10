@@ -158,6 +158,7 @@ class GameType(Enum):
     super_mario_64_randomizer_lockout = 152
     dark_devotion = 153
     dark_souls_2 = 154
+    terraria_pre_hardmode = 155
 
     def __str__(self):
         return self.short_name
@@ -443,6 +444,13 @@ GAME_GROUPS = {
             (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
         ],
     },
+    GameType.terraria: {
+        "name": "Terraria",
+        "variants": [
+            (GameType.terraria, "Normal", "Terraria"),
+            (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
+        ],
+    },
     GameType.zelda_botw: {
         "name": "Zelda: Breath of the Wild",
         "variants": [
@@ -518,7 +526,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
-    **singleton_group(GameType.terraria, "Terraria", "Terraria"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
