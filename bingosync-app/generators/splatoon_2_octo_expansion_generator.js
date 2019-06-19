@@ -13,7 +13,7 @@ bingoList[2] = [
     {name: "Unlock I (green) line", types: ["enemy"]},
     {name: "Complete 6 connector (square) stations", types: ["lines"]},
     {name: "Get 5000 credits", types: ["credits"]},
-    {name: "Get a loan from Marina and pay it back", types: ["credits"]},
+    {name: "Beat 1 “Bust the Targets” level", types: ["targets"]},
     {name: "Beat 1 level with brella", types: ["brella"]}
 ];
 
@@ -52,6 +52,7 @@ bingoList[7] = [
     {name: "Beat 2 stations using all 3 supplied weapons", types: ["misc"]},
     {name: "Unlock 6 lines", types: ["lines"]},
     {name: "Beat 3 levels using a brush", types: ["brush"]},
+    {name: "Beat 4 “Bust the Targets” levels", types: ["targets"]},
     {name: "Complete 10 connector (square) stations", types: ["lines"]}
 ];
 
@@ -105,6 +106,7 @@ bingoList[13] = [
     {name: "Collect 10 armor upgrades", types: ["armor"]},
     {name: "Beat 5 levels using a brush", types: ["brush"]},
     {name: "Beat all levels on 3 lines", types: ["lines"]},
+    {name: "Beat 7 “Bust the Targets” levels", types: ["targets"]},
     {name: "Beat both rainmaker levels", types: ["A", "F"]}
 ];
 
@@ -157,8 +159,7 @@ bingoList[19] = [
     {name: "Beat 7 levels using a slosher", types: ["slosher"]},
     {name: "Beat 7 levels using a brella", types: ["brella"]},
     {name: "Beat 8 8-Ball levels", types: ["8ball"]},
-    {name: "Beat 9 levels using blaster", types: ["blaster"]},
-    {name: "Collect 40 power egg containers", types: ["credits"]}
+    {name: "Beat 9 levels using blaster", types: ["blaster"]}
 ];
 
 bingoList[20] = [
@@ -172,7 +173,6 @@ bingoList[20] = [
 bingoList[21] = [
     {name: "Beat all 4 boss fights", types: ["boss"]},
     {name: "Beat 12 levels using a charger", types: ["charger"]},
-    {name: "Collect 20 armor upgrades", types: ["armor"]},
     {name: "Beat 5 levels using all 3 supplied weapons", types: ["misc"]},
     {name: "Beat 5 levels using dualies", types: ["dual"]}
 ];
@@ -186,7 +186,6 @@ bingoList[22] = [
 
 bingoList[23] = [
     {name: "Beat 9 levels using a brush", types: ["brush"]},
-    {name: "Collect 50 power egg containers", types: ["credits"]},
     {name: "Beat 9 levels using a roller", types: ["roller"]}
 ];
 
