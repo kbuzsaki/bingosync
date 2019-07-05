@@ -159,6 +159,7 @@ class GameType(Enum):
     dark_devotion = 153
     dark_souls_2 = 154
     terraria_pre_hardmode = 155
+    wii_sports_club = 156
 
     def __str__(self):
         return self.short_name
@@ -531,6 +532,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
+    **singleton_group(GameType.wii_sports_club, "Wii Sports Club", "Wii Sports Club"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
