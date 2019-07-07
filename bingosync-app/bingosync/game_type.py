@@ -160,6 +160,7 @@ class GameType(Enum):
     dark_souls_2 = 154
     terraria_pre_hardmode = 155
     wii_sports_club = 156
+    mario_maker_2 = 157
 
     def __str__(self):
         return self.short_name
@@ -502,6 +503,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
+    **singleton_group(GameType.mario_maker_2, "Super Mario Maker 2", "Mario Maker 2"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
