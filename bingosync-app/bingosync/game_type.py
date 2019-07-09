@@ -161,6 +161,7 @@ class GameType(Enum):
     terraria_pre_hardmode = 155
     wii_sports_club = 156
     mario_maker_2 = 157
+    minecraft_randomizer = 158
 
     def __str__(self):
         return self.short_name
@@ -387,6 +388,12 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.minecraft_randomizer: {
+        "name": "Minecraft",
+        "variants": [
+            (GameType.minecraft_randomizer, "Randomizer", "MC Random"),
         ],
     },
     GameType.octopath_traveler: {
