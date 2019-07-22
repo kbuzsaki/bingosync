@@ -159,7 +159,7 @@ class GameType(Enum):
     dark_devotion = 153
     dark_souls_2 = 154
     terraria_pre_hardmode = 155
-    wii_sports_club = 156
+    wii_sports_club_all_sports = 156
     mario_maker_2 = 157
     minecraft_randomizer = 158
     new_super_mario_bros_ds = 159
@@ -461,6 +461,12 @@ GAME_GROUPS = {
             (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
         ],
     },
+    GameType.wii_sports_club_all_sports: {
+        "name": "Wii Sports Club",
+        "variants": [
+            (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
+        ],
+    },
     GameType.zelda_botw: {
         "name": "Zelda: Breath of the Wild",
         "variants": [
@@ -543,7 +549,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
-    **singleton_group(GameType.wii_sports_club, "Wii Sports Club", "Wii Sports Club"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
