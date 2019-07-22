@@ -53,7 +53,7 @@ bingoList[5] = [
 { name: "Rattlesnake Reflexes (Golf Stamp)", types: ["Tennisstempel"] },
 { name: "Win a Single-Game Match without using your front Mii (Tennis)", types: ["Tennismatch","Ohnepunkt"] },
 { name: "Reach Level 4 (Bowling)", types: ["Bowlinglevel","Level45"] },
-{ name: "Score 33.0m/167.3ft.+ (Bowling Pro Putter)", types: ["Putt","Golfscore"] },
+{ name: "Score 34.0m/111.5ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
 { name: "Get a score of -2 or better on Resort B (Golf)", types: ["Golf3"] },
 { name: "Get a score of -3 or better on Resort 9 Hole (Golf)", types: ["Golf9"] },
 { name: "Score 750+ points (Baseball Pitch Perfect)", types: ["Geschenke","Baseballpunkte"] },
@@ -108,7 +108,7 @@ bingoList[10] = [
 { name: "Score 2400+ points (Bowling 100-Pin Pro)", types: ["Dreiwurf","Bowlingpunkte"] },
 { name: "Split-Frame-Spare (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Hit 8+ pins in every frame (Bowling Spin Control)", types: ["Bowlingausweichen"] },
-{ name: "Score 55.0m/278.8ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
+{ name: "Score 51.0m/167.3ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
 { name: "Score 320.0+ points (Golf Driver Challenge)", types: ["Scheibe","Golfscore"] },
 { name: "Score 10.0+ points with every ball (Golf Driver Challenge)", types: ["Scheibe","Golfetc"] },
 { name: "Get a score of -5 or better on Classic 9 Hole (Golf)", types: ["Golf9"] },
@@ -150,7 +150,7 @@ bingoList[12] = [
 { name: "Reach Level 4 (Boxing)", types: ["Boxenlevel","Level45"] },
 ];
 bingoList[13] = [
-{ name: "Score 135m/225yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
+{ name: "Score 225m/110yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
 { name: "Reach Level 5 (Tennis)", types: ["Tennislevel","Level45"] },
 { name: "Clear stage 12 with 4+ balls left (Bowling Spare Pickups)", types: ["Spare","Bowlingsonstiges"] },
 { name: "Score 160+ points without getting any strikes (Bowling 10-Pin Game)", types: ["Bowling10weiteres"] },
@@ -174,7 +174,7 @@ bingoList[14] = [
 bingoList[15] = [
 { name: "Forehand Master (Tennis Stamp)", types: ["Tennisstempel"] },
 { name: "Clear all stages in levels 1 and 2 without any mistakes (Bowling Tricky Pins)", types: ["Kunstwurf","Bowlingsonstiges"] },
-{ name: "Score 68.8m/348.5ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
+{ name: "Score 85.0m/278.8ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
 { name: "Get a ball into a hole (Golf Chip-In Bingo)", types: ["Bingo","Golfetc"] },
 { name: "Get a score of -3 or better on Resort B (Golf)", types: ["Golf3"] },
 { name: "Get a score of -9 or better on Classic/Resort 18 Hole (Golf)", types: ["Golf18","Minus9"] },
@@ -184,7 +184,7 @@ bingoList[15] = [
 ];
 bingoList[16] = [
 { name: "Score 270+ points (Tennis Ring Master)", types: ["Ringe","Tennispunkte"] },
-{ name: "Score 170m/346yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
+{ name: "Score 346m/170yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
 { name: "Score 500+ points without touching any star (Bowling Spare Pickups)", types: ["Spare","Bowlingsonstiges"] },
 { name: "Standstill Shooter (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Bowl a perfect game (100-Pin Bowling)", types: ["Bowling100","Perfekt"] },
@@ -201,7 +201,7 @@ bingoList[16] = [
 ];
 bingoList[17] = [
 { name: "Score 80+ points without hitting any ring (sound) (Tennis Ring Master)", types: ["Ringe","Tennisweiteres"] },
-{ name: "Score 270m/550yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
+{ name: "Score 550m/270yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
 { name: "Clear 13+ stages with 3+ balls left (Bowling Tricky Pins)", types: ["Kunstwurf","Bowlingsonstiges"] },
 { name: "Score 820+ points without hitting the red button (Bowling 100-Pin Pro)", types: [] },
 { name: "Score 2500+ points without hittinh the red button (Bowling 100-Pin Game)", types: ["Bowling100"] },
@@ -274,5 +274,5 @@ bingoList[25] = [
 { name: "Hitting the Wall (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Score 245+ points (Bowling Spin Control)", types: ["Bowlingausweichen","Perfekt"] },
 { name: "The Albatross (Golf Stamp)", types: ["Golfstempel"] },
-{ name: "Get 3+ Chip-Ins in a 3 Hole game (Golf)", types: ["Golfweiteres"] },
+{ name: "Get 3 Chip-Ins in a 3 Hole game (Golf)", types: ["Golfweiteres"] },
 ];
