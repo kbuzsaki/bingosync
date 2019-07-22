@@ -163,6 +163,7 @@ class GameType(Enum):
     mario_maker_2 = 157
     minecraft_randomizer = 158
     new_super_mario_bros_ds = 159
+    wii_sports_club_golf_only = 160
 
     def __str__(self):
         return self.short_name
@@ -465,6 +466,7 @@ GAME_GROUPS = {
         "name": "Wii Sports Club",
         "variants": [
             (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
+            (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
         ],
     },
     GameType.zelda_botw: {
