@@ -165,6 +165,7 @@ class GameType(Enum):
     new_super_mario_bros_ds = 159
     wii_sports_club_golf_only = 160
     hat_in_time = 161
+    wii_sports_series_all_sports = 162
 
     def __str__(self):
         return self.short_name
@@ -471,6 +472,12 @@ GAME_GROUPS = {
         "variants": [
             (GameType.terraria, "Normal", "Terraria"),
             (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
+        ],
+    },
+    GameType.wii_sports_series_all_sports: {
+        "name": "Wii Sports Series",
+        "variants": [
+            (GameType.wii_sports_series_all_sports, "All Sports", "WSS All Sports")
         ],
     },
     GameType.wii_sports_club_all_sports: {
