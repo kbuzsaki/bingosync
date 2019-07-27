@@ -164,6 +164,7 @@ class GameType(Enum):
     minecraft_randomizer = 158
     new_super_mario_bros_ds = 159
     wii_sports_club_golf_only = 160
+    hat_in_time = 161
 
     def __str__(self):
         return self.short_name
@@ -223,6 +224,8 @@ def strip_articles(name):
     """A hacky sort key that ignores things like 'The ' """
     if name.startswith("The "):
         return name[4:]
+    elif name.startswith("A "):
+        return name[2:]
     return name
 
 
@@ -513,6 +516,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
+    **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
