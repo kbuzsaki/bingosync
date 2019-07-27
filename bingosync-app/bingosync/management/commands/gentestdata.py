@@ -17,7 +17,6 @@ def try_parse_game_type(gt_str):
         try:
             return GameType.for_value(int(gt_str))
         except ValueError:
-            print("Invalid gt: '" + gt_str + "'")
             return None
 
 class Command(BaseCommand):
@@ -32,11 +31,16 @@ class Command(BaseCommand):
                             help='Regenerate board data that already exists')
 
     def handle(self, *args, **options):
-        game_type = try_parse_game_type(options["game_type"])
-        if game_type:
+        game_type_str = options["game_type"]
+        if game_type_str:
+            game_type = try_parse_game_type(game_type_str)
+            if not game_type:
+                print("Could not parse game type string: '" + game_type_str + "'")
+                return
             testable_types = [game_type]
         else:
             testable_types = [game_type for game_type in GameType if game_type != GameType.custom]
+
         for game_type in testable_types:
             for seed in TEST_SEEDS:
                 if options["regen"] or not data_exists(game_type, seed):
