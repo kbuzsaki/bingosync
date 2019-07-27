@@ -215,7 +215,9 @@ class GameType(Enum):
 
     @staticmethod
     def variant_choices():
-        return [(group_gt.value, [(gt.value, name) for gt, name, short_name in group['variants']]) for group_gt, group in GAME_GROUPS.items()]
+        return [(group_gt.value,
+                 [(gt.value, name) for gt, name, short_name in group['variants'] if gt not in HIDDEN_VARIANTS])
+                for group_gt, group in GAME_GROUPS.items()]
 
 def strip_articles(name):
     """A hacky sort key that ignores things like 'The ' """
@@ -235,6 +237,12 @@ def singleton_group(game_type, name, short_name):
         }
     }
 
+# specific game type variants to hide from the variant dropdown as a "soft removal"
+# don't actually remove the variant so that it still shows the correct data for historical rooms.
+# this will probably break if all of the variants for a game group are hidden.
+HIDDEN_VARIANTS = {
+    GameType.super_mario_sunshine_1v1_beta,
+}
 
 GAME_GROUPS = {
     GameType.ocarina_of_time: {
