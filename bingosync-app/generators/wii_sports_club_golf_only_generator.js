@@ -3,7 +3,7 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 var bingoList = [];
 bingoList[1] = [
 { name: "Score points with every ball (Chip-In Bingo)", types: ["Bingo","Golfetc"] },
-{ name: "Under Par (Stamp)", types: ["Golfstempel","Golf3","Golf9","Golf18","Golfweiteres"] },
+{ name: "Under Par/Underachiever (Stamp)", types: ["Golfstempel","Golf3","Golf9","Golf18","Golfweiteres"] },
 { name: "Reach Level 3", types: ["Golflevel","Level34"] },
 ];
 bingoList[2] = [
@@ -23,12 +23,12 @@ bingoList[4] = [
 ];
 bingoList[5] = [
 { name: "Get a score of -2 or better on Resort B", types: ["Golf3"] },
-{ name: "Chip It in (Stamp)", types: ["Golfstempel"] },
+{ name: "Chip It in/Chip-In Wizard (Stamp)", types: ["Golfstempel"] },
 { name: "Score 51.0m/167.3ft.+ (Pro Putter)", types: ["Putt","Golfscore"] },
 { name: "Score 400.0+ points without a x10.0-multiplier (Driver Challenge)", types: ["Scheibe","Golfetc"] },
 ];
 bingoList[6] = [
-{ name: "Fairway to Go! (Stamp)", types: ["Golfstempel"] },
+{ name: "Fairway to Go!/Fairway or Bust (Stamp)", types: ["Golfstempel"] },
 { name: "The Scret Shot (Stamp)", types: ["Golfstempel","LC"] },
 { name: "Reach Level 4", types: ["Golflevel","Level34"] },
 ];
@@ -37,6 +37,7 @@ bingoList[7] = [
 { name: "Play all 3 Hole B courses", types: ["Golf3ABC"] },
 { name: "Play all 3 Hole C courses", types: ["Golf3ABC"] },
 ];
+
 bingoList[8] = [
 { name: "Score 135+ points (Chip-In Bingo)", types: ["Bingo","Golfscore"] },
 { name: "Score 10.0+ points with every ball (Driver Challenge)", types: ["Scheibe","Golfetc"] },
@@ -64,7 +65,7 @@ bingoList[11] = [
 ];
 bingoList[12] = [
 { name: "Score 18.0+ points with every ball (Driver Challenge)", types: ["Scheibe","Golfetc"] },
-{ name: "King of Clubs (Stamp)", types: ["Golfstempel","Minus9"] },
+{ name: "King of Clubs/Birdie Watcher (Stamp)", types: ["Golfstempel","Minus9"] },
 { name: "Get a score of -3 or better on Resort C", types: ["Golf3"] },
 { name: "Get a score of -3 or better on Lakeside A", types: ["Golf3"] },
 { name: "Reach Level 5", types: ["Golflevel","Level56"] },
@@ -107,7 +108,7 @@ bingoList[18] = [
 bingoList[19] = [
 { name: "Get a score of -8 or better on Lakeside/Classic", types: ["Golf18","Minus9"] },
 { name: "Get 9+ balls into a hole (Pro Putter)", types: ["Putt","Golfetc"] },
-{ name: "Score 195+ points", types: ["Bingo","Golfscore"] },
+{ name: "Score 195+ points (Chip-In Bingo)", types: ["Bingo","Golfscore"] },
 ];
 bingoList[20] = [
 { name: "Play all 9 Hole courses", types: ["Golfmulti"] },
@@ -116,13 +117,13 @@ bingoList[20] = [
 ];
 bingoList[21] = [
 { name: "Score 95.0m/311.6ft.+ (Pro Putter)", types: ["Putt","Golfscore"] },
-{ name: "Long-Range Putter (Stamp)", types: ["Golfstempel"] },
+{ name: "Long-Range Putter/Power Putter (Stamp)", types: ["Golfstempel"] },
 { name: "Score 520.0+ points (Driver Challenge)", types: ["Scheibe","Golfscore"] },
 { name: "Get a score of -4 or better in any 3 Hole game", types: ["Golfweiteres"] },
 ];
 bingoList[22] = [
 { name: "Get all 10 balls into a hole (Pro Putter)", types: ["Putt","Golfetc"] },
-{ name: "Hone-in-One (Stamp)", types: ["Golfstempel"] },
+{ name: "Hole-in-One (Stamp)", types: ["Golfstempel"] },
 { name: "Get a score of -9 or better on Classic", types: ["Golf9"] },
 { name: "Get a score of -14 or better on Classic/Resort", types: ["Golf18","Minus9"] },
 ];
@@ -134,11 +135,11 @@ bingoList[23] = [
 bingoList[24] = [
 { name: "Get a score of -6 or better on Lakeside", types: ["Golf9"] },
 { name: "Get a score of -12 or better on Resort/Lakeside", types: ["Golf18","Minus9"] },
-{ name: "Play all 18 Hole courses", types: ["Golfmulti"] },
+{ name: "Play 2+ 18 Hole courses", types: ["Golfmulti"] },
 { name: "Achieve a gold medal or better in every training", types: ["Golfmedalien"] },
 ];
 bingoList[25] = [
 { name: "Get a score of -10 or better in any 9 Hole game", types: ["Golfweiteres"] },
-{ name: "Ace of Clubs (Stamp)", types: ["Golfstempel"] },
-{ name: "The Albatross (Stamp)", types: ["Golfstempel"] },
+{ name: "Ace of Clubs/Birdie of Prey (Stamp)", types: ["Golfstempel"] },
+{ name: "The Albatross/Soaring with the Albatross (Stamp)", types: ["Golfstempel"] },
 ];

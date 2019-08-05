@@ -4,7 +4,7 @@ var bingoList = [];
 bingoList[1] = [
 { name: "Win a Single-Game Match (Tennis)", types: ["Tennismatch"] },
 { name: "100-Pin Strike (Bowling Stamp)", types: ["Bowlingstempel","Allesmussweg","Perfekt"] },
-{ name: "Under Par (Golf Stamp)", types: ["Golfstempel","Golf3","Golf9","Golf18","Golfweiteres"] },
+{ name: "Under Par/Underachiever (Golf Stamp)", types: ["Golfstempel","Golf3","Golf9","Golf18","Golfweiteres"] },
 { name: "Get a score of -1 or better on Classic A (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Classic B (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Resort A (Golf)", types: ["Golf3"] },
@@ -12,15 +12,15 @@ bingoList[1] = [
 { name: "Score 500+ points (Boxing Plate Smasher)", types: ["Boxenpkt","Scheibenschlag"] },
 ];
 bingoList[2] = [
-{ name: "Smash Point (Tennis Stamp)", types: ["Tennisstempel"] },
+{ name: "Smash Point/Smash Hitter (Tennis Stamp)", types: ["Tennisstempel"] },
 { name: "Win a Two-Game Match (Tennis)", types: ["Tennismatch"] },
-{ name: "Score 150+ points Bowling Tricky Pins", types: ["Kunstwurf","Bowlingpunkte"] },
+{ name: "Score 150+ points (Bowling Tricky Pins)", types: ["Kunstwurf","Bowlingpunkte"] },
 { name: "Get a score of -1 or better on Classic C (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Resort C (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Lakeside A (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Classic 9 Hole (Golf)", types: ["Golf9"] },
 { name: "Score 1300m/4265ft.+ (Baseball Homer Hero)", types: ["Home","Baseballpunkte"] },
-{ name: "Home Run (Baseball Stamp)", types: ["Baseballstempel","Homerundoppel"] },
+{ name: "Home Run/Home Runner (Baseball Stamp)", types: ["Baseballstempel","Homerundoppel"] },
 { name: "Score 250+ points (Boxing Fowl Dodgeball)", types: ["Boxenpkt","Beschuss"] },
 ];
 bingoList[3] = [
@@ -28,7 +28,7 @@ bingoList[3] = [
 { name: "Score 1075+ points (Bowling Spare Pickups)", types: ["Spare","Bowlingpunkte"] },
 { name: "Score 800+ points (Bowling 100-Pin Pro)", types: ["Dreiwurf","Bowlingpunkte"] },
 { name: "The Bare Minimum (Bowling Stamp)", types: ["Bowlingstempel","Allesmussweg"] },
-{ name: "The Secret Strike (Bowling Stamp)", types: ["Bowlingstempel"] },
+{ name: "The Secret Strike/Secret Striker (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Reach Level 3 (Bowling)", types: ["Bowlinglevel","Level3"] },
 { name: "Get a score of -1 or better on Resort 9 Hole (Golf)", types: ["Golf9"] },
 { name: "Score 550+ points (Boxing Plate Smasher)", types: ["Boxenpkt","Scheibenschlag"] },
@@ -36,10 +36,10 @@ bingoList[3] = [
 bingoList[4] = [
 { name: "Score 100+ points (Tennis Ring Master)", types: ["Ringe","Tennispunkte"] },
 { name: "Win a Three-Game Match (Tennis)", types: ["Tennismatch"] },
-{ name: "Gobble Gobble (Bowling Stamp)", types: ["Bowlingstempel","Turkey"] },
+{ name: "Gobble Gobble/Turkey Wrangler (Bowling Stamp)", types: ["Bowlingstempel","Turkey"] },
 { name: "Score 2000+ points (Bowling 100-Pin Game)", types: ["Bowling100"] },
 { name: "Play a 10-Pin Game, 100-Pin Game and Spin Control (Bowling)", types: ["Bowling","Allemodi"] },
-{ name: "Chip It in (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "Chip It in/Chip-In Wizard (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Get a score of -1 or better on Lakeside B (Golf)", types: ["Golf3"] },
 { name: "Get a score of -2 or better on Classic A (Golf)", types: ["Golf3"] },
 { name: "Get a score of -2 or better on Classic B (Golf)", types: ["Golf3"] },
@@ -50,7 +50,7 @@ bingoList[4] = [
 ];
 bingoList[5] = [
 { name: "Score 140+ points (Tennis Tennis Moles)", types: ["Maulwurf","Tennispunkte"] },
-{ name: "Rattlesnake Reflexes (Golf Stamp)", types: ["Tennisstempel"] },
+{ name: "Rattlesnake Reflexes (Tennis Stamp)", types: ["Tennisstempel"] },
 { name: "Win a Single-Game Match without using your front Mii (Tennis)", types: ["Tennismatch","Ohnepunkt"] },
 { name: "Reach Level 4 (Bowling)", types: ["Bowlinglevel","Level45"] },
 { name: "Score 34.0m/111.5ft.+ (Golf Pro Putter)", types: ["Putt","Golfscore"] },
@@ -58,7 +58,7 @@ bingoList[5] = [
 { name: "Get a score of -3 or better on Resort 9 Hole (Golf)", types: ["Golf9"] },
 { name: "Score 750+ points (Baseball Pitch Perfect)", types: ["Geschenke","Baseballpunkte"] },
 { name: "Score 600+ points (Boxing Plate Smasher)", types: ["Boxenpkt","Scheibenschlag"] },
-{ name: "Counter Puncher (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Counter Puncher/Cruel Counter (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[6] = [
 { name: "30-Shot Rally (Tennis Stamp)", types: ["Tennisstempel"] },
@@ -67,7 +67,7 @@ bingoList[6] = [
 { name: "Get a score of -1 or better on Lakeside C (Golf)", types: ["Golf3"] },
 { name: "Get a score of -2 or better on Classic C (Golf)", types: ["Golf3"] },
 { name: "Score 315+ points (Boxing Fowl Dodgeball)", types: ["Boxenpkt","Beschuss"] },
-{ name: "Closely Guarded (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Closely Guarded/Guard Master (Boxing Stamp)", types: ["Boxenstempel"] },
 { name: "Win a match (Boxing)", types: ["Boxenmatch"] },
 ];
 bingoList[7] = [
@@ -76,10 +76,10 @@ bingoList[7] = [
 { name: "Score 95+ points (Golf Chip-In Bingo)", types: ["Bingo","Golfscore"] },
 { name: "Get a score of -2 or better on Resort C (Golf)", types: ["Golf3"] },
 { name: "Get a score of -1 or better on Classic/Resort 18 Hole (Golf)", types: ["Golf18"] },
-{ name: "The Hat Trick (Baseball Stamp)", types: ["Baseballstempel"] },
+{ name: "The Hat Trick/Strikeout Stringer (Baseball Stamp)", types: ["Baseballstempel"] },
 { name: "Score 650+ points (Boxing Plate Smasher)", types: ["Boxenpkt","Scheibenschlag"] },
-{ name: "Lightning Round (Boxing Stamp)", types: ["Boxenstempel"] },
-{ name: "Dazed and Contused (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Lightning Round/Fast-Fists KO (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Dazed and Contused/Opporzunist (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[8] = [
 { name: "Score 160+ points (Tennis Ring Master)", types: ["Ringe","Tennispunkte"] },
@@ -92,16 +92,16 @@ bingoList[8] = [
 { name: "Get a score of -1 or better on Lakeside/Classic 18 Hole (Golf)", types: ["Golf18"] },
 { name: "Play all 3 Hole A courses (Golf)", types: ["Golf3ABC"] },
 { name: "Score 2600m/8530ft.+ (Baseball Homer Hero)", types: ["Home","Baseballpunkte"] },
-{ name: "Pitch Perfect (Baseball Stamp)", types: ["Baseballstempel"] },
-{ name: "Upper Deck (Boxing Stamp)", types: ["Boxenstempel"] },
-{ name: "On the Ropes (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Pitch Perfect/Strike Stringer (Baseball Stamp)", types: ["Baseballstempel"] },
+{ name: "Upper Deck/Uppercutter (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "On the Ropes/Close Call (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[9] = [
-{ name: "Tennis Pro (Tennis Stamp)", types: ["Tennisstempel","Ohnepunkt"] },
+{ name: "Tennis Pro/Tennis Ace (Tennis Stamp)", types: ["Tennisstempel","Ohnepunkt"] },
 { name: "Reach Level 3 (Tennis)", types: ["Tennislevel","Level3"] },
 { name: "Score 1750+ points (Bowling Spare Pickups)", types: ["Spare","Bowlingpunkte"] },
 { name: "Get 5+ strikes in a row in every mode (Bowling)", types: ["Bowling","Turkey"] },
-{ name: "Fairway to Go! (Bowling Stamp)", types: ["Golfstempel"] },
+{ name: "Fairway to Go!/Fairway or Bust (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Score 1300m/4265ft.+ without any mistakes (Baseball Homer Hero)", types: ["Home","Baseballusw"] },
 ];
 bingoList[10] = [
@@ -128,14 +128,14 @@ bingoList[11] = [
 { name: "Get a score of -5 or better on Lakeside/Classic 18 Hole (Golf)", types: ["Golf18"] },
 { name: "Score 900+ points (Baseball Wall Breaker)", types: ["Wand","Baseballpunkte"] },
 { name: "Score 1000+ points (Baseball Pitch Perfect", types: [] },
-{ name: "Three and Out (Baseball Stamp)", types: ["Baseballstempel"] },
+{ name: "Three and Out/Three for All (Baseball Stamp)", types: ["Baseballstempel"] },
 { name: "Score 450+ points (Boxing Picky Puncher)", types: ["Boxenpkt","Sandsack"] },
-{ name: "Totally Hookes (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Totally Hookes/Stone Fists (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[12] = [
 { name: "Get the ball through 12+ red rings (Tennis Ring Master)", types: ["Ringe","Tennisweiteres"] },
-{ name: "Back-and-Forth Battler (Tennis Stamp)", types: [] },
-{ name: "Run Them Ragged (Tennis Stamp)", types: ["Tennisstempel"] },
+{ name: "Back-and-Forth Battler/Nail Biter (Tennis Stamp)", types: [] },
+{ name: "Run Them Ragged/3K Runner (Tennis Stamp)", types: ["Tennisstempel"] },
 { name: "Perfect Game (Bowling Stamp)", types: ["Bowlingstempel","Perfekt"] },
 { name: "Score 2600+ points (Bowling 100-Pin Game)", types: ["Bowling100"] },
 { name: "Score 180+ points (Bowling Spin Control)", types: ["Bowlingausweichen"] },
@@ -165,9 +165,9 @@ bingoList[14] = [
 { name: "Score 120+ points without hittling any blue/+1 moles (Tennis Tennis Moles)", types: ["Maulwurf","Tennisweiteres"] },
 { name: "Score 250+ points (Bowling 10-Pin Game)", types: ["Bowling10"] },
 { name: "Get a strike or spare every frame (Bowling Spin Control)", types: ["Bowlingausweichen","Allesmussweg"] },
-{ name: "King of Clubs (Golf Stamp)", types: ["Golfstempel","Minus9"] },
+{ name: "King of Clubs/Birdie Watcher (Golf Stamp)", types: ["Golfstempel","Minus9"] },
 { name: "Reach Level 5 (Golf)", types: ["Golflevel","Level45"] },
-{ name: "Safe Hands (Baseball Stamp)", types: ["Baseballstempel"] },
+{ name: "Safe Hands/Critical Catcher (Baseball Stamp)", types: ["Baseballstempel"] },
 { name: "Hit 3+ Home Runs in a game (Baseball)", types: ["Baseballspiel","Homerundoppel"] },
 { name: "Reach Level 5 (Boxing)", types: ["Level45"] },
 ];
@@ -180,13 +180,13 @@ bingoList[15] = [
 { name: "Get a score of -9 or better on Classic/Resort 18 Hole (Golf)", types: ["Golf18","Minus9"] },
 { name: "Score 1050+ points (Baseball Wall Breaker)", types: ["Wand","Baseballpunkte"] },
 { name: "Score 525+ points (Boxing Picky Puncher)", types: ["Boxenpkt","Sandsack"] },
-{ name: "Comeback Kid (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "Comeback Kid/Comeback Champ (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[16] = [
 { name: "Score 270+ points (Tennis Ring Master)", types: ["Ringe","Tennispunkte"] },
 { name: "Score 346m/170yd.+ (Tennis Runner Ducky)", types: ["Ente","Tennispunkte"] },
 { name: "Score 500+ points without touching any star (Bowling Spare Pickups)", types: ["Spare","Bowlingsonstiges"] },
-{ name: "Standstill Shooter (Bowling Stamp)", types: ["Bowlingstempel"] },
+{ name: "Standstill Shooter/Straight Shooter (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Bowl a perfect game (100-Pin Bowling)", types: ["Bowling100","Perfekt"] },
 { name: "Score 155+ points (Golf Chip-In Bingo)", types: ["Bingo","Golfscore"] },
 { name: "Score 520.0+ points (Golf Driver Challenge)", types: [] },
@@ -197,7 +197,7 @@ bingoList[16] = [
 { name: "Score 1400+ points (Baseball Wall Breaker", types: ["Wand","Baseballpunkte"] },
 { name: "Score 1250+ points (Baseball Pitch Perfect)", types: ["Geschenke","Baseballpunkte"] },
 { name: "Get a 30+ combo (Boxing Picky Puncher)", types: [] },
-{ name: "A Straight Fight (Boxing Stamp)", types: ["Boxenstempel"] },
+{ name: "A Straight Fight/Straight Fight (Boxing Stamp)", types: ["Boxenstempel"] },
 ];
 bingoList[17] = [
 { name: "Score 80+ points without hitting any ring (sound) (Tennis Ring Master)", types: ["Ringe","Tennisweiteres"] },
@@ -242,8 +242,8 @@ bingoList[20] = [
 ];
 bingoList[21] = [
 { name: "Score 240+ points (Bowling Spin Control)", types: ["Bowlingausweichen"] },
-{ name: "Hone-in-One (Golf Stamp)", types: ["Golfstempel"] },
-{ name: "Shutout Game (Baseball Stamp)", types: ["Baseballstempel"] },
+{ name: "Hole-in-One (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "Shutout Game/Shutout King (Baseball Stamp)", types: ["Baseballstempel"] },
 { name: "Score 8+ points in a game (Baseball)", types: ["Baseballspiel"] },
 { name: "Get a 50+ combo (Boxing Picky Puncher)", types: ["Boxenwtrs","Sandsack"] },
 { name: "Win a match without knocking your opponent down (Boxing)", types: ["Boxenmatch"] },
@@ -256,23 +256,23 @@ bingoList[22] = [
 { name: "Get a score of -4 or better in a 3 Hole game (Golf)", types: ["Golfweiteres"] },
 ];
 bingoList[23] = [
-{ name: "Smash Shot Slammer (Tennis Stamp)", types: ["Tennisstempel"] },
+{ name: "Smash Shot Slammer/Smash Shooter (Tennis Stamp)", types: ["Tennisstempel"] },
 { name: "Bowl a perfect game (Bowling 10-Pin Game)", types: ["Bowling10","Perfekt"] },
 { name: "Get 9+ balls into a hole (Golf Pro Putter)", types: ["Putt","Golfetc"] },
-{ name: "Long-Range Putter (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "Long-Range Putter/Power Putter (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Get a score of -12 or better on Lakeside/Classic 18 Hole (Golf)", types: ["Golf18","Minus9"] },
 { name: "Reach Level 5 (Baseball)", types: ["Baseballlevel","Level45"] },
 ];
 bingoList[24] = [
 { name: "Clear 14 stages (Bowling Tricky Pins)", types: ["Kunstwurf","Bowlingsonstiges"] },
-{ name: "Ace of Clubs (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "Ace of Clubs/Birdie of Prey (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Get a score of -6 or better on Lakeside 9 Hole (Golf)", types: ["Golf9","Minus9"] },
 { name: "Get a score of -11 or better on Resort/Lakeside 18 Hole (Golf)", types: ["Golf18","Minus9"] },
 { name: "Score 400+ points without getting hit (Boxing Fowl Dodgeball)", types: ["Boxenwtrs","Beschuss"] },
 ];
 bingoList[25] = [
-{ name: "Hitting the Wall (Bowling Stamp)", types: ["Bowlingstempel"] },
+{ name: "Hitting the Wall/Barrier Teaser (Bowling Stamp)", types: ["Bowlingstempel"] },
 { name: "Score 245+ points (Bowling Spin Control)", types: ["Bowlingausweichen","Perfekt"] },
-{ name: "The Albatross (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "The Albatross/Soaring with the Albatross (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Get 3 Chip-Ins in a 3 Hole game (Golf)", types: ["Golfweiteres"] },
 ];

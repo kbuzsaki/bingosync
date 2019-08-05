@@ -36,7 +36,7 @@ bingoList[3] = [
 { name: "Play all 3 modes in Bowling (Resort)", types: ["RN","bow"] },
 { name: "Ducks in a Row (Resort Canoeing Stamp)", types: ["RS","can"] },
 { name: "Win a Three-Game-Match of Tennis (Club)", types: ["CN","ten"] },
-{ name: "Standstill Shooter (Club Bowling Stamp)", types: ["CS","bow"] },
+{ name: "Standstill Shooter/Straight Shooter (Club Bowling Stamp)", types: ["CS","bow"] },
 { name: "Play all 3 modes in Bowling (Club)", types: ["CN","bow"] },
 { name: "Win a Two-Game-Match of Tennis in both games (OG and Club)", types: ["ten"] },
 ];
@@ -50,7 +50,7 @@ bingoList[4] = [
 { name: "Chip In (Resort Golf Stamp)", types: ["RS","gol"] },
 { name: "Last Gasp (Resort Cycling Stamp)", types: ["RS","cyc"] },
 { name: "30-Shot Rally (Club Tennis Stamp)", types: ["CS","ten"] },
-{ name: "The Secret Strike (Club Bowling Stamp)", types: ["CS","bow"] },
+{ name: "The Secret Strike/Secret Striker (Club Bowling Stamp)", types: ["CS","bow"] },
 { name: "Score 2400+ points in Bowling: 100-Pin Game (Club)", types: ["CN","bow"] },
 { name: "Flag it Down (Club Golf Stamp)", types: ["CS","gol"] },
 { name: "Hit a duck 2+ times in Golf (Club)", types: ["CN","gol"] },
@@ -84,7 +84,7 @@ bingoList[7] = [
 { name: "Clear 8+ stages in \"Putting\" (OG Golf Training)", types: ["OGT","gol"] },
 { name: "Pop all 5 balloons in Frisbee Dog, not in practise (Resort)", types: ["RN","fri"] },
 { name: "Split Spare (Resort Bowling: Standard Game Stamp)", types: ["RS","bow"] },
-{ name: "Fairway to Go! (Club Golf Stamp)", types: ["CS","gol"] },
+{ name: "Fairway to Go!/Fairway or Bust (Club Golf Stamp)", types: ["CS","gol"] },
 { name: "Score 1111+ points in \"Pitch Perfect\" (Club Baseball Training)", types: ["CT","bas"] },
 { name: "Score 525+ points in \"Picky Puncher\" (Club Boxing Training)", types: ["CT","box"] },
 { name: "Get a silver medal in any Bowling Training in both games (OG and Club)", types: ["bow"] },
@@ -174,7 +174,7 @@ bingoList[14] = [
 { name: "Reach Pro Class in Archery (Resort)", types: ["RN","arc"] },
 { name: "Get a score of -7 or better on any 9 Hole course in Golf (Resort)", types: ["RN","gol"] },
 { name: "Pop 200+ balloons in Air Sports: Island Flyover (Resort)", types: ["RN","air"] },
-{ name: "King of Clubs (Club Golf Stamp)", types: ["CS","air"] },
+{ name: "King of Clubs/Bridie Watcher (Club Golf Stamp)", types: ["CS","air"] },
 { name: "Win a game of Baseball with the Mercy rule (Club)", types: ["CN","bas"] },
 { name: "Reach Level 3 in Boxing (Club)", types: ["CN","box"] },
 { name: "Reach Skill Level 400+ in 2+ sports in both games (OG and Resort)", types: ["mehreresportarten"] },
@@ -223,7 +223,7 @@ bingoList[17] = [
 ];
 bingoList[18] = [
 { name: "Recycler (Resort Table Tennis: Return Challenge Stamp)", types: ["RS","tab"] },
-{ name: "Run Them Ragged (Club Tennis Stamp)", types: ["CT","ten"] },
+{ name: "Run Them Ragged/3K Runner (Club Tennis Stamp)", types: ["CT","ten"] },
 { name: "Reach Level 4 in Bowling (Club)", types: ["CN","bow"] },
 { name: "Get a Bingo in \"Chip-In Bingo\" (Club Golf Training)", types: ["CT","gol"] },
 { name: "Get a score of -4 or better on Lakeside 9 Hole in Golf (Club)", types: ["CT","gol"] },
@@ -259,7 +259,7 @@ bingoList[22] = [
 { name: "Reach Pro Class in Swordplay: Speed Slice (Resort)", types: ["RN","swo"] },
 { name: "Buzzer Beater (Resort Basketball: Pick Up Game Stamp)", types: ["RS","bas"] },
 { name: "Snap any red tape in Canoeing (Resort)", types: ["RN","can"] },
-{ name: "Long-Range Putter (Club Golf Stamp)", types: ["CS","gol"] },
+{ name: "Long-Range Putter/Power Putter (Club Golf Stamp)", types: ["CS","gol"] },
 { name: "Score 630+ points total in Spin Control in 3 games in a row (Resort)", types: ["RN","bow"] },
 ];
 bingoList[23] = [
