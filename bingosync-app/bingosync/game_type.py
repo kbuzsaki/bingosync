@@ -166,6 +166,7 @@ class GameType(Enum):
     wii_sports_club_golf_only = 160
     hat_in_time = 161
     wii_sports_series_all_sports = 162
+    super_metroid_experimental = 163
 
     def __str__(self):
         return self.short_name
@@ -454,6 +455,13 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_1v1_beta, "1v1 Beta", "SMS 1v1 Beta"),
         ],
     },
+    GameType.super_metroid: {
+        "name": "Super Metroid",
+        "variants": [
+            (GameType.super_metroid, "Normal", "Super Metroid"),
+            (GameType.super_metroid_experimental, "Experimental", "Super Metroid Exp."),
+        ],
+    },
     GameType.super_smash_bros_brawl_all_brawl: {
         "name": "Super Smash Bros. Brawl",
         "variants": [
@@ -563,7 +571,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
-    **singleton_group(GameType.super_metroid, "Super Metroid", "Super Metroid"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
