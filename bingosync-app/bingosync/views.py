@@ -271,6 +271,40 @@ def board_revealed(request):
     publish_revealed_event(revealed_event)
     return HttpResponse("Received data: " + str(data))
 
+@csrf_exempt
+def join_room_api(request):
+    # grab data from input json
+    try:
+        raw_data = parse_body_json_or_400(request, required_keys=["room", "nickname", "password"])
+    except InvalidRequestJsonError as e:
+        return JsonResponse({"error": str(e)})
+
+    room = Room.get_for_encoded_uuid_or_404(raw_data["room"])
+
+    # use a JoinRoomForm to share validation with the regular path
+    form_data = JoinRoomForm.for_room(room).initial
+    form_data.update({
+        "player_name": raw_data["nickname"],
+        "passphrase": raw_data["password"],
+        "is_spectator": raw_data.get("is_specator", False),
+    })
+    join_form = JoinRoomForm(form_data)
+    if join_form.is_valid():
+        player = join_form.create_player()
+        _save_session_player(request.session, player)
+        return redirect("get_socket_key", encoded_room_uuid=room.encoded_uuid)
+    else:
+        return HttpResponse(join_form.errors.as_json(), content_type="application/json", status=400)
+
+def get_socket_key(request, encoded_room_uuid):
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+    player = _get_session_player(request.session, room)
+    data = {
+        "socket_key": _create_temporary_socket_key(player),
+    }
+    return JsonResponse(data)
+
+
 # TODO: add authentication to limit this route to tornado
 @csrf_exempt
 def user_connected(request, encoded_player_uuid):
@@ -382,7 +416,7 @@ def parse_body_json_or_400(request, *, required_keys=[]):
     try:
         data = json.loads(request.body.decode("utf8"))
     except json.JSONDecodeError:
-        raise InvalidRequestJsonError("Failed to parse body")
+        raise InvalidRequestJsonError("Request body was not valid JSON.")
 
     for key in required_keys:
         if key not in data:

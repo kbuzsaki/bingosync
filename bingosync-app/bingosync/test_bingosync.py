@@ -1,5 +1,7 @@
 from django import test
 
+import json
+
 from . import models, forms
 
 NO_ACTIVE_ROOMS_TEXT = "No active rooms right now"
@@ -56,4 +58,55 @@ class HomeTestCase(test.TestCase):
         room_td = '<td><a href="' + room.get_absolute_url() + '">Test Room</a></td>'
         self.assertContains(resp, room_td)
         self.assertContains(resp, MAKE_ROOM_BUTTON, html=True)
+
+class ApiTestCase(test.TestCase):
+
+    def test_join_room_api(self):
+        # create a room to join
+        room_resp = self.client.post("/", {
+            "room_name": "Test Room",
+            "passphrase": "test password",
+            "nickname": "Bingoer",
+            "game_type": str(models.GameType.ocarina_of_time.value),
+            "lockout_mode": str(models.LockoutMode.lockout.value),
+        }, follow=True)
+
+        room_encoded_uuid = room_resp.context["room"].encoded_uuid
+
+        # join the room via api, expect to get redirected to the socket key endpoint
+        join_room_resp = self.client.post("/api/join-room", json.dumps({
+            "room": room_encoded_uuid,
+            "nickname": "other user",
+            "password": "test password",
+        }), content_type="application/json", follow=True)
+        self.assertTrue("socket_key" in join_room_resp.json())
+
+        # request a socket key explicitly as well
+        socket_key_resp = self.client.get("/api/get-socket-key/" + room_encoded_uuid)
+        self.assertTrue("socket_key" in socket_key_resp.json())
+        socket_key = socket_key_resp.json()["socket_key"]
+
+        # check that the socket key is valid
+        check_socket_key_resp = self.client.get("/api/socket/" + socket_key)
+        self.assertEqual(check_socket_key_resp.status_code, 200)
+
+    def test_join_room_api_wrong_password(self):
+        # create a room to join
+        room_resp = self.client.post("/", {
+            "room_name": "Test Room",
+            "passphrase": "test password",
+            "nickname": "Bingoer",
+            "game_type": str(models.GameType.ocarina_of_time.value),
+            "lockout_mode": str(models.LockoutMode.lockout.value),
+        }, follow=True)
+
+        room_encoded_uuid = room_resp.context["room"].encoded_uuid
+
+        # try to join the room via api, but give the wrong password
+        join_room_resp = self.client.post("/api/join-room", json.dumps({
+            "room": room_encoded_uuid,
+            "nickname": "other user",
+            "password": "wrong password",
+        }), content_type="application/json", follow=True)
+        self.assertContains(join_room_resp, "Incorrect Password", status_code=400)
 

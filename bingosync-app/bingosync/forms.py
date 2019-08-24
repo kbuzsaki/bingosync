@@ -155,7 +155,7 @@ class JoinRoomForm(forms.Form):
         if encoded_room_uuid and passphrase:
             room = Room.get_for_encoded_uuid(encoded_room_uuid)
             if not hashers.check_password(passphrase, room.passphrase):
-                raise forms.ValidationError("Incorrect Passphrase")
+                raise forms.ValidationError("Incorrect Password")
 
     def create_player(self):
         room = Room.get_for_encoded_uuid(self.cleaned_data["encoded_room_uuid"])
