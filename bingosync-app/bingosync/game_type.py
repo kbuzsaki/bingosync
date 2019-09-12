@@ -167,6 +167,7 @@ class GameType(Enum):
     hat_in_time = 161
     wii_sports_series_all_sports = 162
     super_metroid_experimental = 163
+    super_metroid_double_anti_bingo = 164
 
     def __str__(self):
         return self.short_name
@@ -460,6 +461,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.super_metroid, "Normal", "Super Metroid"),
             (GameType.super_metroid_experimental, "Experimental", "Super Metroid Exp."),
+            (GameType.super_metroid_double_anti_bingo, "Double Anti-Bingo", "Super Metroid DAB"),
         ],
     },
     GameType.super_smash_bros_brawl_all_brawl: {
