@@ -169,6 +169,7 @@ class GameType(Enum):
     super_metroid_experimental = 163
     super_metroid_double_anti_bingo = 164
     final_fantasy_1_randomizer_winter_dab = 165
+    super_metroid_alttp_crossover_randomizer = 166
 
     def __str__(self):
         return self.short_name
@@ -575,6 +576,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
+    **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
+            "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
     **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
