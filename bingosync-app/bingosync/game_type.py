@@ -171,6 +171,7 @@ class GameType(Enum):
     final_fantasy_1_randomizer_winter_dab = 165
     super_metroid_alttp_crossover_randomizer = 166
     disneys_magical_mirror = 167
+    myst = 168
 
     def __str__(self):
         return self.short_name
@@ -557,6 +558,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
+    **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
