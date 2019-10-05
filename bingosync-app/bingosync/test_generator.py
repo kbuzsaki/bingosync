@@ -11,6 +11,9 @@ from .settings import GEN_TESTDATA_DIR
 TEST_TYPES = [game_type for game_type in GameType if game_type != GameType.custom]
 TEST_SEEDS = [1, 1000, 1234, 12345]
 
+# games that are intentionally close to duplicates of another game
+DUPLICATE_GUARD_BLACKLIST = {GameType.super_metroid_double_anti_bingo}
+
 def get_golden_data(game_type, seed):
     output_path = os.path.join(GEN_TESTDATA_DIR, game_type.name, str(seed) + ".json")
     if not os.path.exists(output_path):
@@ -29,7 +32,7 @@ class GoldenDataTestCase(test.TestCase):
         for game_type in TEST_TYPES:
             for seed in TEST_SEEDS:
                 golden_data = freeze_dict(get_golden_data(game_type, seed))
-                if golden_data in data_map:
+                if golden_data in data_map and game_type not in DUPLICATE_GUARD_BLACKLIST:
                     original_type, original_seed = data_map[golden_data]
                     self.fail("got duplicate card from ({}, {}), original was ({}, {})"
                             .format(game_type.name, seed, original_type.name, original_seed))
