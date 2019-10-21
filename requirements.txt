@@ -1,6 +1,6 @@
 certifi==2017.11.5
 chardet==3.0.4
-Django==1.11.8
+Django==1.11.23
 django-bootstrap-form==3.3
 django-crispy-forms==1.7.2
 django-url-tools-py3==0.2.0
