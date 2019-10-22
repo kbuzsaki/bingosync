@@ -1,77 +1,77 @@
 [
     {
-        "name": "Visit all three towns in any zone"
+        "name": "Recruit all male travellers"
     },
     {
-        "name": "Visit 5 ruins dungeons"
+        "name": "Recruit all female travellers"
     },
     {
-        "name": "Restore reputation twice"
+        "name": "Have 1 of each 'Bottle of _ Dust' item"
     },
     {
-        "name": "Complete an extra prologue"
+        "name": "Successfully inflict Blind, Poison, Sleep, and Confusion in one fight"
     },
     {
-        "name": "Visit all eight towns in ring three"
+        "name": "Finish a boss with a Guide or Allure NPC"
     },
     {
-        "name": "Complete a Chapter 3"
-    },
-    {
-        "name": "Collect from 4 bosses"
-    },
-    {
-        "name": "Equip passives from four separate jobs on one traveler"
-    },
-    {
-        "name": "Purchase/Steal all items in a Chapter 2+ town"
-    },
-    {
-        "name": "Defeat an optional boss"
-    },
-    {
-        "name": "Complete a Chapter 2+ in the Flatlands"
-    },
-    {
-        "name": "Have 3000 max HP on a character"
-    },
-    {
-        "name": "Capture 3 unique beasts with 7+ strength"
-    },
-    {
-        "name": "Open 25 chests"
-    },
-    {
-        "name": "Get a EXP/JP boost from Bewildering Grace"
-    },
-    {
-        "name": "Visit 5 forest dungeons"
-    },
-    {
-        "name": "Expose all the weaknesses of a boss"
-    },
-    {
-        "name": "Open 10 purple chests"
-    },
-    {
-        "name": "Visit all towns in the Frostlands"
-    },
-    {
-        "name": "Complete a Chapter 2+ in the Highlands"
-    },
-    {
-        "name": "Have 500 PAtk on a character (incl. weapon)"
-    },
-    {
-        "name": "Lose a Challenge/Provoke against two Moms"
+        "name": "Obtain two Essence of Pomegranate"
     },
     {
         "name": "Kill a Cait"
     },
     {
-        "name": "Buy 99 Healing Grapes"
+        "name": "Obtain a weapon with an elemental boost"
     },
     {
-        "name": "Complete four Chapter 2s"
+        "name": "Teach BewilderingGrace to four travellers"
+    },
+    {
+        "name": "Win a fight with a JP or XP boost"
+    },
+    {
+        "name": "Talk to two Dogs"
+    },
+    {
+        "name": "Have 3000+ max hp on one traveller"
+    },
+    {
+        "name": "Defeat a beast Ch 2 boss"
+    },
+    {
+        "name": "Collect 30k+ leaves in one encounter and win"
+    },
+    {
+        "name": "Reach 600 EAtk on a single traveller (incl. weapon)"
+    },
+    {
+        "name": "Acquire an Alluring Ribbon"
+    },
+    {
+        "name": "Equip passives from four different jobs on a single traveller"
+    },
+    {
+        "name": "Defeat the Snake Charmer / Giant Python"
+    },
+    {
+        "name": "Defeat the Buffalo encounter at Stonegard"
+    },
+    {
+        "name": "Finish an encounter with a Guide or Allure NPC"
+    },
+    {
+        "name": "Reach 500k leaves"
+    },
+    {
+        "name": "Use five soulstone(L) of a single element"
+    },
+    {
+        "name": "Capture three unique beasts with 7+ strength"
+    },
+    {
+        "name": "Finish a Ch 2+ boss with Bewildering Grace"
+    },
+    {
+        "name": "Recruit every traveller"
     }
 ]

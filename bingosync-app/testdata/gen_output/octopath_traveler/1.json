@@ -1,77 +1,77 @@
 [
     {
-        "name": "Visit all towns in the Highlands"
+        "name": "Obtain a Forbidden weapon"
     },
     {
-        "name": "Scrutinize/Inquire all NPCs in a Chapter 2+ town"
+        "name": "Teach BewilderingGrace to four travellers"
     },
     {
-        "name": "Buy 99 Inspiriting Plums"
+        "name": "Finish a Ch 2+ boss with Bewildering Grace"
     },
     {
-        "name": "Visit all towns in the Flatlands"
-    },
-    {
-        "name": "Collect from 4 bosses"
-    },
-    {
-        "name": "Get a 1500+ leaf discount on a Purchase"
-    },
-    {
-        "name": "Have 1500 max HP on a character"
-    },
-    {
-        "name": "Complete 10 Side Stories"
-    },
-    {
-        "name": "Visit 5 building dungeons"
-    },
-    {
-        "name": "Recruit all eight travelers"
-    },
-    {
-        "name": "Complete a Chapter 2+ in the Flatlands"
-    },
-    {
-        "name": "Open 25 chests"
-    },
-    {
-        "name": "Visit all eight towns in ring two"
-    },
-    {
-        "name": "Acquire four secondary jobs"
-    },
-    {
-        "name": "Capture 5 unique beasts with exactly 4 strength"
-    },
-    {
-        "name": "Equip four amulets"
-    },
-    {
-        "name": "Complete an extra prologue"
+        "name": "Defeat the Buffalo encounter at Stonegard"
     },
     {
         "name": "Kill a Cait"
     },
     {
-        "name": "Challenge/Provoke five NPCs on a town screen in one visit (you may lose)"
+        "name": "Finish a foe with poison damage"
     },
     {
-        "name": "Visit 5 cave dungeons"
+        "name": "Visit every town"
     },
     {
-        "name": "Have two equipment that boost a stat 300+"
+        "name": "Capture three beasts with 4+ strength"
     },
     {
-        "name": "Have 500 PAtk on a character (incl. weapon)"
+        "name": "Defeat an optional boss"
     },
     {
-        "name": "Complete four Chapter 2s"
+        "name": "Sucessfully Scrutinize for a Money Item twice"
     },
     {
-        "name": "Visit 5 forest dungeons"
+        "name": "Talk to two Dogs"
     },
     {
-        "name": "Acquire eight secondary jobs"
+        "name": "Defeat the Devourer of Men"
+    },
+    {
+        "name": "Deal 9999 damage in a single hit"
+    },
+    {
+        "name": "Get a Game Over"
+    },
+    {
+        "name": "Capture three beasts with 6+ strength"
+    },
+    {
+        "name": "Obtain a secret job"
+    },
+    {
+        "name": "Successfully inflict Blind, Poison, Sleep, and Confusion in one fight"
+    },
+    {
+        "name": "Capture three unique beasts with 7+ strength"
+    },
+    {
+        "name": "Have two equipment with +300"
+    },
+    {
+        "name": "Capture three beasts with 5+ strength"
+    },
+    {
+        "name": "Defeat a boss with 100k+ hp"
+    },
+    {
+        "name": "Use ten Soulstone (L)s on a single encounter"
+    },
+    {
+        "name": "Obtain two Essence of Pomegranate"
+    },
+    {
+        "name": "Acquire an Alluring Ribbon"
+    },
+    {
+        "name": "Complete two non-Kit Side Stories"
     }
 ]
