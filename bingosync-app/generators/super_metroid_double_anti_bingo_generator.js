@@ -256,7 +256,7 @@ name:"Defeat Crocomire",types:["crocomire"]}];
 bingoList[7]=[{
 name:"Activate Norfair Map Station",types:["norfairmap"]},{
 name:"Wave Beam",types:["wavebeam"]},{
-name:"Defeat Crocomire and skip Hi-Jump Boots",types:["hijump","crocomire"]},{
+name:"Collect all 10 Wrecked Ship Super Missiles",types:["supermissile"]},{
 name:"100+ Missiles",types:["missile"]},{
 name:"7+ Energy Tanks",types:["energytank"]}];
 bingoList[8]=[{
@@ -269,7 +269,7 @@ bingoList[9]=[{
 name:"Activate 4+ Brinstar Save Stations",types:["save"]},{
 name:"30+ Power Bombs",types:["powerbomb"]},{
 name:"125+ Missiles",types:["missile"]},{
-name:"Collect all 10 Wrecked Ship Super Missiles",types:["supermissile"]},{
+name:"Defeat Crocomire and skip Hi-Jump Boots",types:["hijump","crocomire"]},{
 name:"8+ Energy Tanks",types:["energytank"]}];
 bingoList[10]=[{
 name:"Activate Maridia Map Station",types:["maridiamap"]},{
@@ -296,9 +296,9 @@ name:"Wrecked Ship Reserve Tank",types:["reservetank","speedbooster"]},{
 name:"Collect all 5 Brinstar Energy Tanks",types:["energytank","speedbooster"]},{
 name:"Collect all 60 Brinstar Missiles",types:["missile"]}];
 bingoList[14]=[{
-name:"Finish in Springball room",types:["finish"]},{
+name:"Finish in Springball room",types:["finish","springball"]},{
 name:"Finish in an Elevator",types:["finish","forgottenarea","norfairelev"]},{
-name:"Finish in X-Ray Scope room",types:["finish"]},{
+name:"Finish in X-Ray Scope room",types:["finish","xrayscope"]},{
 name:"Finish in Grapple Beam room",types:["finish","grapplebeam"]},{
 name:"Finish in Kraid's room",types:["finish","variasuit"]},{
 name:"Finish at Landing site",types:["finish","landing"]}];
@@ -375,7 +375,7 @@ name:"Collect all 4 Norfair Energy Tanks",types:["energytank","ridley","norfaire
 name:"35+ Super Missiles",types:["supermissile"]}];
 bingoList[25]=[{
 name:"Collect Plasma Beam or defeat Ridley",types:["plasma","ridley","draygon"]},{
-name:"Collect all 15 Maridia Super Missiles",types:["supermissile"]},{
+name:"Collect all 15 Maridia Super Missiles",types:["supermissile","speedbooster"]},{
 name:"Activate all Maridia Save Stations",types:["save","forgottenarea"]},{
 name:"Collect 15 of 20 Lower Norfair Missiles",types:["missiles","norfairelev"]},{
 name:"11+ Energy Tanks",types:["energytank"]},{
