@@ -172,6 +172,7 @@ class GameType(Enum):
     super_metroid_alttp_crossover_randomizer = 166
     disneys_magical_mirror = 167
     myst = 168
+    super_mario_sunshine_2v2 = 169
 
     def __str__(self):
         return self.short_name
@@ -252,6 +253,7 @@ def singleton_group(game_type, name, short_name):
 # this will probably break if all of the variants for a game group are hidden.
 HIDDEN_VARIANTS = {
     GameType.super_mario_sunshine_1v1_beta,
+    GameType.super_mario_sunshine_tournament,
 }
 
 GAME_GROUPS = {
@@ -459,6 +461,7 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
             (GameType.super_mario_sunshine_1v1, "1v1", "SMS 1v1"),
             (GameType.super_mario_sunshine_1v1_beta, "1v1 Beta", "SMS 1v1 Beta"),
+            (GameType.super_mario_sunshine_2v2, "2v2", "SMS 2v2"),
         ],
     },
     GameType.super_metroid: {
