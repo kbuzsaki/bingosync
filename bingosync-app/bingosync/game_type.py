@@ -173,6 +173,7 @@ class GameType(Enum):
     disneys_magical_mirror = 167
     myst = 168
     super_mario_sunshine_2v2 = 169
+    lego_star_wars_the_complete_saga_ds = 170
 
     def __str__(self):
         return self.short_name
@@ -553,6 +554,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
     **singleton_group(GameType.lego_pirates_of_the_caribbean, "LEGO Pirates of the Caribbean", "LEGO PotC"),
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
+    **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
+            "LEGO SW: TCS DS"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
