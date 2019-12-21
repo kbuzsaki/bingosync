@@ -174,6 +174,7 @@ class GameType(Enum):
     myst = 168
     super_mario_sunshine_2v2 = 169
     lego_star_wars_the_complete_saga_ds = 170
+    celeste_blackout = 171
 
     def __str__(self):
         return self.short_name
@@ -347,6 +348,13 @@ GAME_GROUPS = {
         "variants": [
             (GameType.castlevania_sotn, "Normal", "SotN"),
             (GameType.castlevania_sotn_randomizer, "Randomizer", "SotN Randomizer"),
+        ],
+    },
+    GameType.celeste: {
+        "name": "Celeste",
+        "variants": [
+            (GameType.celeste, "Normal", "Celeste"),
+            (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
         ],
     },
     GameType.darkest_dungeon: {
@@ -525,7 +533,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
-    **singleton_group(GameType.celeste, "Celeste", "Celeste"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
