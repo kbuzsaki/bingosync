@@ -33,19 +33,24 @@ class BingoGenerator:
     def __init__(self, generator_js):
         self.generator_js_bytes = generator_js.encode("utf-8")
 
+    def validate_custom_json(self, custom_json):
+        return []
+
     def eval(self, js_command):
         js_eval = "\nconsole.log(JSON.stringify(" + js_command + "));"
         full_command = self.generator_js_bytes + js_eval.encode("utf-8")
         out = subprocess.check_output(["node", "-"], input=full_command)
         return json.loads(out.decode("utf-8"))
 
-    def get_card(self, seed=None):
-        opts = "{}"
+    def get_card(self, seed=None, custom_board=None):
+        opts = {}
         if seed is not None:
             # the generator *actually* treats the seed as a string
-            opts = "{ seed: \"" + str(seed) + "\" }"
+            opts["seed"] = str(seed)
+        if custom_board is not None:
+            opts["custom_board"] = custom_board
 
-        js_command = "bingoGenerator(bingoList, " + opts + ")"
+        js_command = "bingoGenerator(bingoList, " + json.dumps(opts) + ")"
         card = self.eval(js_command)
         return process_card(card)
 

@@ -8,7 +8,7 @@ import sys
 from .models import GameType
 from .settings import GEN_TESTDATA_DIR
 
-TEST_TYPES = [game_type for game_type in GameType if game_type != GameType.custom]
+TEST_TYPES = [game_type for game_type in GameType if not game_type.is_custom]
 TEST_SEEDS = [1, 1000, 1234, 12345]
 
 # games that are intentionally close to duplicates of another game

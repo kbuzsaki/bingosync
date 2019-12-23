@@ -1,6 +1,7 @@
 from enum import Enum, unique
 
 from .bingo_generator import BingoGenerator
+from .custom_generator import CustomGenerator
 
 @unique
 class GameType(Enum):
@@ -175,6 +176,7 @@ class GameType(Enum):
     super_mario_sunshine_2v2 = 169
     lego_star_wars_the_complete_saga_ds = 170
     celeste_blackout = 171
+    custom_randomized = 172
 
     def __str__(self):
         return self.short_name
@@ -205,14 +207,22 @@ class GameType(Enum):
 
     @property
     def is_custom(self):
-        return self == GameType.custom
+        return self == GameType.custom or self == GameType.custom_randomized
+
+    @property
+    def uses_seed(self):
+        # fixed custom is the one game type that doesn't use a seed
+        return self != GameType.custom
 
     @staticmethod
     def for_value(value):
         return list(GameType)[value - 1]
 
     def generator_instance(self):
-        return BingoGenerator.instance(self.name)
+        if self.is_custom:
+            return CustomGenerator(self)
+        else:
+            return BingoGenerator.instance(self.name)
 
     @staticmethod
     def choices():
@@ -222,7 +232,8 @@ class GameType(Enum):
     def game_choices():
         choices = [(gt.value, gt.group_name) for gt in GAME_GROUPS if gt.is_game_group and not gt.is_custom]
         choices = list(sorted(choices, key=lambda el: strip_articles(el[1])))
-        return [(None, '')] + choices + [(GameType.custom.value, GameType.custom.group_name)]
+        custom_choices = [(gt.value, gt.group_name) for gt in [GameType.custom]]
+        return [(None, '')] + choices + custom_choices
 
     @staticmethod
     def variant_choices():
@@ -355,6 +366,13 @@ GAME_GROUPS = {
         "variants": [
             (GameType.celeste, "Normal", "Celeste"),
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
+        ],
+    },
+    GameType.custom: {
+        "name": "Custom (Advanced)",
+        "variants": [
+            (GameType.custom, "Fixed Board", "Custom"),
+            (GameType.custom_randomized, "Randomized", "Rand. Custom"),
         ],
     },
     GameType.darkest_dungeon: {
@@ -538,7 +556,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
-    **singleton_group(GameType.custom, "Custom (Advanced)", "Custom"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),

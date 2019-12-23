@@ -94,6 +94,26 @@ class CustomTestCase(test.TestCase):
         board_goals = [filter_keys(square, ["name"]) for square in game.board]
         self.assertEqual(board_goals, custom_goals)
 
+    def test_random_custom(self):
+        self.maxDiff = 100000
+        custom_goals = self.numeric_goals
+        create_resp = self.make_room_with_custom_json(custom_json=json.dumps(custom_goals),
+                variant_type=str(models.GameType.custom_randomized.value),
+                seed="1234")
+        game = create_resp.context["room"].current_game
+
+        board_goals = [filter_keys(square, ["name"]) for square in game.board]
+        self.assertNotEqual(board_goals, custom_goals)
+        self.assertEqual(set(tuple(goal.items()) for goal in board_goals),
+                         set(tuple(goal.items()) for goal in custom_goals))
+        self.assertEqual(board_goals, [
+            {"name": "goal 9" }, {"name": "goal 11"}, {"name": "goal 25"}, {"name": "goal 10"}, {"name": "goal 3" },
+            {"name": "goal 14"}, {"name": "goal 21"}, {"name": "goal 12"}, {"name": "goal 15"}, {"name": "goal 20"},
+            {"name": "goal 16"}, {"name": "goal 24"}, {"name": "goal 17"}, {"name": "goal 7" }, {"name": "goal 4" },
+            {"name": "goal 18"}, {"name": "goal 22"}, {"name": "goal 23"}, {"name": "goal 13"}, {"name": "goal 5" },
+            {"name": "goal 2" }, {"name": "goal 19"}, {"name": "goal 6" }, {"name": "goal 8" }, {"name": "goal 1"}])
+
+
     def test_invalid_json(self):
         create_resp = self.make_room_with_custom_json(custom_json="foo")
         self.assertContains(create_resp, "Invalid Board Json")
@@ -106,7 +126,7 @@ class CustomTestCase(test.TestCase):
         custom_goals = list(self.numeric_goals)
         del custom_goals[-1]
         create_resp = self.make_room_with_custom_json(custom_json=json.dumps(custom_goals))
-        self.assertContains(create_resp, "Invalid board length 24, expected 25")
+        self.assertContains(create_resp, "must have exactly 25 goals (found 24)")
 
     def test_invalid_missing_name(self):
         # pretend there's a typo
