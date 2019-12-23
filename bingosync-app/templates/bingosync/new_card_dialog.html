@@ -86,7 +86,7 @@
 
         var $form = $("#new-card-form");
         var $variantSelector = $form.find("select[name=variant_type]");
-        $variantSelector.val(ROOM_SETTINGS.game_id);
+        $variantSelector.val(ROOM_SETTINGS.variant_id);
         // Set the game selector to the group of the selected variant
         $form.find("select[name=game_type]").val($variantSelector.find(':selected').attr('data-group'));
         $form.find("select[name=lockout_mode]").val(ROOM_SETTINGS.lockout_mode === 'Lockout' ? 2 : 1);

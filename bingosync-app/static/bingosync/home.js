@@ -24,12 +24,8 @@ function initializeGameSelectForm($form) {
             // empty is no game type, so hide the extra inputs
             $customJsonContainer.addClass("hidden");
             $variantTypeContainer.addClass("hidden");
-        } else if ($gameType.val() == 18) {
-            // 18 is the custom game type, so show the json input
-            $customJsonContainer.removeClass("hidden");
-            $variantTypeContainer.addClass("hidden");
         } else {
-            // any other game type has a variant, so show the matching variants
+            // filter to only show the matching variants for this game type
             var $selectedGameType = $gameType.find("option:selected");
             var $selectedVariantType = $variantType.find("option:selected");
 
@@ -38,7 +34,9 @@ function initializeGameSelectForm($form) {
             var $goodVariants = $variantOptions.filter(matchCondition);
             var $badVariants = $variantOptions.not(matchCondition);
             $goodVariants.removeClass("hidden");
+            $goodVariants.prop("disabled", false);
             $badVariants.addClass("hidden");
+            $badVariants.prop("disabled", true);
 
             // choose a the default option if the current variant doesn't match
             if (!$goodVariants.is($selectedVariantType)) {
@@ -53,9 +51,17 @@ function initializeGameSelectForm($form) {
                 $variantHelpBlock.addClass("hidden");
             }
 
-            $customJsonContainer.addClass("hidden");
             $variantTypeContainer.removeClass("hidden");
+
+            // 18 and 172 are the custom game types, so show the json input
+            if ($gameType.val() == 18 || $gameType.val() == 172) {
+                $customJsonContainer.removeClass("hidden");
+            } else {
+                $customJsonContainer.addClass("hidden");
+            }
         }
     });
-    $gameType.change();
+    // trigger an on change event in a timeout to hack around the form data
+    // not being immediately visible when the back button is used
+    setTimeout(function() { $gameType.change(); }, 0);
 }

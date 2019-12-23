@@ -10,8 +10,9 @@ import json
 import requests
 import random
 
-from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL
+from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
 from .bingo_generator import BingoGenerator
+from .custom_generator import InvalidBoardException
 from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from .models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
 from .models import ConnectionEvent, NewCardEvent
@@ -31,7 +32,8 @@ def rooms(request):
             _save_session_player(request.session, creator)
             return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
         else:
-            print("Form errors:", form.errors)
+            if IS_PROD:
+                print("Form errors:", form.errors)
     else:
         form = RoomForm()
 
@@ -116,42 +118,32 @@ def new_card(request):
     room = Room.get_for_encoded_uuid(data["room"])
     player = _get_session_player(request.session, room)
 
+    lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
+    hide_card = data["hide_card"]
+    seed = data["seed"]
+    custom_json = data.get("custom_json", "")
+
     #create new game
     game_type = GameType.for_value(int(data["game_type"]))
-    lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
-    seed = data["seed"]
-
-    hide_card = data["hide_card"]
-
-    if game_type == GameType.custom:
-        if not seed:
-            seed = "0"
-        try:
-            board_json = json.loads(data["custom_json"])
-        except:
-            return HttpResponseBadRequest("Invalid board: Invalid JSON")
-
-        if not isinstance(board_json, list):
-            return HttpResponseBadRequest("Invalid board: Board must be a list")
-
-        if len(board_json) != 25:
-            return HttpResponseBadRequest("Invalid board: Expected 25 squares but got " + str(len(board_json)))
-
-        for i, square in enumerate(board_json):
-            if "name" not in square:
-                return HttpResponseBadRequest("Invalid board: Square " + str(i + 1) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
-            elif square["name"] == "":
-                return HttpResponseBadRequest("Invalid board: Square " + str(1 + i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
-    else:
-        try:
-            # variant_type is not sent if the game only has 1 variant, so use it if
-            # it's present but fall back to the regular game_type otherwise
+    try:
+        # variant_type is not sent if the game only has 1 variant, so use it if
+        # it's present but fall back to the regular game_type otherwise
+        if "variant_type" in data:
             game_type = GameType.for_value(int(data["variant_type"]))
-        except KeyError:
-            pass
-        if not seed:
-            seed = str(random.randint(1, 1000000))
-        board_json = game_type.generator_instance().get_card(seed)
+    except ValueError:
+        pass
+
+    generator = game_type.generator_instance()
+
+    try:
+        custom_board = generator.validate_custom_json(custom_json)
+    except InvalidBoardException as e:
+        return HttpResponseBadRequest("Invalid board: " + str(e))
+
+    if not seed:
+        seed = str(random.randint(1, 1000000)) if game_type.uses_seed else "0"
+
+    board_json = game_type.generator_instance().get_card(seed, custom_board)
 
     with transaction.atomic():
         game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
@@ -163,6 +155,7 @@ def new_card(request):
         new_card_event = NewCardEvent(player=player, player_color_value=player.color.value, game_type_value=game_type.value, seed=seed)
         new_card_event.save()
     publish_new_card_event(new_card_event)
+
     return HttpResponse("Recieved data: " + str(data))
 
 def history(request):

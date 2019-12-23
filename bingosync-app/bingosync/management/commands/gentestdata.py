@@ -39,7 +39,7 @@ class Command(BaseCommand):
                 return
             testable_types = [game_type]
         else:
-            testable_types = [game_type for game_type in GameType if game_type != GameType.custom]
+            testable_types = [game_type for game_type in GameType if not game_type.is_custom]
 
         for game_type in testable_types:
             for seed in TEST_SEEDS:

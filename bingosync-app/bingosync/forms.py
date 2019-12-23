@@ -6,6 +6,8 @@ import json
 import logging
 import random
 
+from .custom_generator import InvalidBoardException
+
 from .models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
 
 from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
@@ -25,7 +27,7 @@ def make_read_only_char_field(*args, **kwargs):
 ROOM_NAME_MAX_LENGTH = Room._meta.get_field("name").max_length
 PLAYER_NAME_MAX_LENGTH = Player._meta.get_field("name").max_length
 
-CUSTOM_JSON_PLACEHOLDER_TEXT = """Paste the board as a 25 element JSON goal list, e.g:
+CUSTOM_JSON_PLACEHOLDER_TEXT = """Paste the board as a JSON list of goals, e.g:
 [ {"name": "Collect 3 Fire Flowers"},
   {"name": "Defeat Phantom Ganon"},
   {"name": "Catch a Pokemon while Surfing"},
@@ -60,33 +62,22 @@ class RoomForm(forms.Form):
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()
 
+        try:
+            # variant_type is not sent if the game only has 1 variant, so use it if
+            # it's present but fall back to the regular game_type otherwise
+            if "variant_type" in cleaned_data:
+                cleaned_data["game_type"] = str(int(cleaned_data["variant_type"]))
+        except ValueError:
+            pass
+
         game_type = GameType.for_value(int(cleaned_data.get("game_type", "0")))
-        if game_type == GameType.custom:
-            custom_json = cleaned_data["custom_json"]
-            try:
-                custom_board = json.loads(custom_json)
-            except:
-                raise forms.ValidationError("Invalid Board Json")
+        generator = game_type.generator_instance()
 
-            if not isinstance(custom_board, list):
-                raise forms.ValidationError("Board must be a list")
-
-            if len(custom_board) != 25:
-                raise forms.ValidationError("Invalid board length " + str(len(custom_board)) + ", expected 25")
-
-            for i, square in enumerate(custom_board):
-                if "name" not in square:
-                    raise forms.ValidationError("Square " + str(1 + i) + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
-                elif square["name"] == "":
-                    raise forms.ValidationError("Square " + str(1 + i) + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
-            cleaned_data["custom_board"] = custom_board
-        else:
-            try:
-                # variant_type is not sent if the game only has 1 variant, so use it if
-                # it's present but fall back to the regular game_type otherwise
-                cleaned_data["game_type"] = str(int(cleaned_data.get("variant_type", "")))
-            except ValueError:
-                pass
+        custom_json = cleaned_data.get("custom_json", "")
+        try:
+            cleaned_data["custom_board"] = generator.validate_custom_json(custom_json)
+        except InvalidBoardException as e:
+            raise forms.ValidationError(e)
 
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
@@ -95,6 +86,7 @@ class RoomForm(forms.Form):
         game_type = GameType.for_value(int(self.cleaned_data["game_type"]))
         lockout_mode = LockoutMode.for_value(int(self.cleaned_data["lockout_mode"]))
         seed = self.cleaned_data["seed"]
+        custom_board = self.cleaned_data.get("custom_board", [])
         is_spectator = self.cleaned_data["is_spectator"]
         hide_card = self.cleaned_data["hide_card"]
 
@@ -102,21 +94,18 @@ class RoomForm(forms.Form):
         room_name = FilteredPattern.filter_string(room_name)
         nickname = FilteredPattern.filter_string(nickname)
 
-        if game_type == GameType.custom:
-            if not seed:
-                seed = "0"
-            board_json = self.cleaned_data["custom_board"]
-        else:
-            if not seed:
-                seed = str(random.randint(1, 1000000))
-            board_json = game_type.generator_instance().get_card(seed)
+        if not seed:
+            seed = str(random.randint(1, 1000000)) if game_type.uses_seed else "0"
+
+        board_json = game_type.generator_instance().get_card(seed, custom_board)
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
             room = Room(name=room_name, passphrase=encrypted_passphrase, hide_card=hide_card)
             room.save()
 
-            game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
+            game = Game.from_board(board_json, room=room, game_type_value=game_type.value,
+                    lockout_mode_value=lockout_mode.value, seed=seed)
 
             creator = Player(room=room, name=nickname, is_spectator=is_spectator)
             creator.save()
