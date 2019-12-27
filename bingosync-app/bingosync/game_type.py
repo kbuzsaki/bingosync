@@ -177,6 +177,7 @@ class GameType(Enum):
     lego_star_wars_the_complete_saga_ds = 170
     celeste_blackout = 171
     custom_randomized = 172
+    final_fantasy_8 = 173
 
     def __str__(self):
         return self.short_name
@@ -565,6 +566,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
+    **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
