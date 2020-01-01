@@ -14,9 +14,10 @@ from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
 from bingosync.bingo_generator import BingoGenerator
 from bingosync.custom_generator import InvalidBoardException
 from bingosync.forms import RoomForm, JoinRoomForm, GoalListConverterForm
-from bingosync.models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
-from bingosync.models import ConnectionEvent, NewCardEvent
-from bingosync.game_type import ALL_VARIANTS
+from bingosync.models.colors import Color
+from bingosync.models.game_type import GameType, ALL_VARIANTS
+from bingosync.models.events import Event, ChatEvent, RevealedEvent, ConnectionEvent, NewCardEvent
+from bingosync.models.rooms import Room, Game, LockoutMode, Player
 from bingosync.publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
 from bingosync.publish import publish_connection_event, publish_new_card_event
 from bingosync.util import generate_encoded_uuid

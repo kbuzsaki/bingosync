@@ -7,7 +7,7 @@ import datetime
 from uuid import uuid4
 from enum import Enum, unique
 
-from bingosync.game_type import GameType
+from bingosync.models.game_type import GameType
 from bingosync.models.colors import Color, CompositeColor
 from bingosync.models.events import Event, GoalEvent, ColorEvent, RevealedEvent, ConnectionEventType, ConnectionEvent
 from bingosync.util import encode_uuid, decode_uuid

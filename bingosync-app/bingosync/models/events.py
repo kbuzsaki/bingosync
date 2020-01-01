@@ -4,8 +4,8 @@ from django.utils import timezone
 import datetime
 from enum import Enum, unique
 
-from bingosync.game_type import GameType
 from bingosync.models.colors import Color
+from bingosync.models.game_type import GameType
 
 class Event(models.Model):
     player = models.ForeignKey("bingosync.Player", on_delete=models.CASCADE)

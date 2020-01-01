@@ -16,7 +16,7 @@ class CustomGenerator:
         self.game_type = game_type
 
     def validate_custom_json(self, custom_json):
-        from bingosync.game_type import GameType
+        from bingosync.models.game_type import GameType
         try:
             custom_board = json.loads(custom_json)
         except json.decoder.JSONDecodeError as e:
@@ -43,7 +43,7 @@ class CustomGenerator:
         return custom_board
 
     def get_card(self, seed, custom_board):
-        from bingosync.game_type import GameType
+        from bingosync.models.game_type import GameType
         if self.game_type == GameType.custom:
             return custom_board
         elif self.game_type == GameType.custom_randomized:
