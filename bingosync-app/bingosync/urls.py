@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from . import views
+from bingosync import views
 
 urlpatterns = [
     url(r'^$', views.rooms, name='rooms'),

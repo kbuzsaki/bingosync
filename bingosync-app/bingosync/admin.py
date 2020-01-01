@@ -7,9 +7,10 @@ from django.urls import reverse
 import json
 import pprint
 
-from .models import Room, Game, Square, Player
-from .models import Event, ChatEvent, GoalEvent, ColorEvent, ConnectionEvent, RevealedEvent, NewCardEvent
-from .models import FilteredPattern
+from bingosync.models.rooms import Room, Game, Square, Player
+from bingosync.models.events import Event, ChatEvent, NewCardEvent, GoalEvent, ColorEvent, RevealedEvent
+from bingosync.models.events import ConnectionEvent
+from bingosync.models.misc import FilteredPattern
 
 class GameInline(admin.StackedInline):
     model = Game

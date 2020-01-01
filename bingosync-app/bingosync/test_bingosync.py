@@ -2,7 +2,7 @@ from django import test
 
 import json
 
-from . import models, forms
+from bingosync import models, forms
 
 NO_ACTIVE_ROOMS_TEXT = "No active rooms right now"
 MAKE_ROOM_BUTTON = '<input type="submit" class="form-control" value="Make Room" />'

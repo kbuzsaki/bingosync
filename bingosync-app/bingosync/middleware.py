@@ -1,6 +1,6 @@
 from django.views import defaults
 
-from .views import NotAuthenticatedError, InvalidRequestJsonError
+from bingosync.views import NotAuthenticatedError, InvalidRequestJsonError
 
 class NotAuthenticatedMiddleware:
 

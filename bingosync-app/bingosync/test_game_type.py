@@ -1,6 +1,6 @@
 from django import test
 
-from . import game_type
+from bingosync import game_type
 
 class GametypeTestCase(test.SimpleTestCase):
 

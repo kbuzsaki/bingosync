@@ -6,13 +6,10 @@ import json
 import logging
 import random
 
-from .custom_generator import InvalidBoardException
-
-from .models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
-
-from .goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
-
-from .widgets import GroupedSelect
+from bingosync.custom_generator import InvalidBoardException
+from bingosync.models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
+from bingosync.goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
+from bingosync.widgets import GroupedSelect
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Field

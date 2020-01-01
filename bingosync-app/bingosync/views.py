@@ -10,16 +10,16 @@ import json
 import requests
 import random
 
-from .settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
-from .bingo_generator import BingoGenerator
-from .custom_generator import InvalidBoardException
-from .forms import RoomForm, JoinRoomForm, GoalListConverterForm
-from .models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
-from .models import ConnectionEvent, NewCardEvent
-from .game_type import ALL_VARIANTS
-from .publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
-from .publish import publish_connection_event, publish_new_card_event
-from .util import generate_encoded_uuid
+from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
+from bingosync.bingo_generator import BingoGenerator
+from bingosync.custom_generator import InvalidBoardException
+from bingosync.forms import RoomForm, JoinRoomForm, GoalListConverterForm
+from bingosync.models import Room, Game, GameType, LockoutMode, Player, Color, Event, ChatEvent, RevealedEvent
+from bingosync.models import ConnectionEvent, NewCardEvent
+from bingosync.game_type import ALL_VARIANTS
+from bingosync.publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
+from bingosync.publish import publish_connection_event, publish_new_card_event
+from bingosync.util import generate_encoded_uuid
 
 from crispy_forms.layout import Layout, Field
 

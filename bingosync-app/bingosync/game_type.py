@@ -1,7 +1,7 @@
 from enum import Enum, unique
 
-from .bingo_generator import BingoGenerator
-from .custom_generator import CustomGenerator
+from bingosync.bingo_generator import BingoGenerator
+from bingosync.custom_generator import CustomGenerator
 
 @unique
 class GameType(Enum):
