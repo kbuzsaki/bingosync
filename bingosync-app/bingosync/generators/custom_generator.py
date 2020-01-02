@@ -3,7 +3,7 @@
 
 import json
 
-from bingosync.bingo_generator import BingoGenerator
+from bingosync.generators.bingo_generator import BingoGenerator
 
 class InvalidBoardException(Exception):
     pass

@@ -11,8 +11,7 @@ import requests
 import random
 
 from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
-from bingosync.bingo_generator import BingoGenerator
-from bingosync.custom_generator import InvalidBoardException
+from bingosync.generators import InvalidBoardException
 from bingosync.forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from bingosync.models.colors import Color
 from bingosync.models.game_type import GameType, ALL_VARIANTS

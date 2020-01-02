@@ -6,7 +6,7 @@ import json
 import logging
 import random
 
-from bingosync.custom_generator import InvalidBoardException
+from bingosync.generators import InvalidBoardException
 from bingosync.models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
 from bingosync.goals_converter import download_and_get_converted_goal_list, DEFAULT_DOWNLOAD_URL
 from bingosync.widgets import GroupedSelect
