@@ -9,6 +9,7 @@ from django.template import loader
 import json
 import requests
 import random
+import logging
 
 from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
 from bingosync.generators import InvalidBoardException
@@ -23,6 +24,8 @@ from bingosync.util import generate_encoded_uuid
 
 from crispy_forms.layout import Layout, Field
 
+logger = logging.getLogger(__name__)
+
 def rooms(request):
     if request.method == "POST":
         form = RoomForm(request.POST)
@@ -32,8 +35,7 @@ def rooms(request):
             _save_session_player(request.session, creator)
             return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
         else:
-            if IS_PROD:
-                print("Form errors:", form.errors)
+            logger.warn("RoomForm errors: %r", form.errors)
     else:
         form = RoomForm()
 
@@ -378,7 +380,7 @@ def _clear_session_player(session, room):
     try:
         del authorized_rooms[room.encoded_uuid]
     except KeyError:
-        print("Attempted to double-disconnect from room:", room)
+        logger.warn("Attempted to double-disconnect from room: %r", room)
     session[AUTHORIZED_ROOMS] = authorized_rooms
 
 def _save_session_player(session, player):

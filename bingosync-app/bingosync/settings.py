@@ -21,13 +21,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 IS_PROD = False
 
-from bingosync import secret_settings
-SECRET_KEY = secret_settings.SECRET_KEY
+from bingosync.secret_settings import SECRET_KEY, ADMINS, SERVER_EMAIL, DB_USER
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not IS_PROD
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 25
 
 
 # Application definition
@@ -89,7 +91,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bingosync',
-        'USER': 'kyle' if IS_PROD else 'kbuzsaki',
+        'USER': DB_USER,
     }
 }
 
@@ -110,31 +112,79 @@ USE_TZ = True
 
 # Logging
 # https://docs.djangoproject.com/en/1.8/topics/logging/
+LOG_DIR_ROOT = os.path.join(BASE_DIR, "logs")
+MAX_LOG_FILE_SIZE = 10 * (1024 ** 2)
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '\u001b[1m{levelname:4.4} {module}.{funcName}:\u001b[0m {message}',
+            'style': '{'
+        },
+        'verbose': {
+            'format': '\u001b[1m{levelname:4.4} {asctime} {module}.{funcName}:\u001b[0m {message}',
+            'style': '{'
+        },
+    },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'info_log': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(LOG_DIR_ROOT, 'info.log'),
+            'mode': 'a',
+            'maxBytes': MAX_LOG_FILE_SIZE,
+            'backupCount': 3,
+            'formatter': 'verbose',
+        },
+        'warn_log': {
+            'level': 'WARNING',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(LOG_DIR_ROOT, 'warn.log'),
+            'mode': 'a',
+            'maxBytes': MAX_LOG_FILE_SIZE,
+            'backupCount': 3,
+            'formatter': 'verbose',
+        },
+        'error_log': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(LOG_DIR_ROOT, 'error.log'),
+            'mode': 'a',
+            'maxBytes': MAX_LOG_FILE_SIZE,
+            'backupCount': 3,
+            'formatter': 'verbose',
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
-        'django.request': {
-            'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        'bingosync': {
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
+            'level': 'INFO',
         },
     },
 }
+
 
 # base directory for data consumed in tests
 TESTDATA_DIR = os.path.join(BASE_DIR, "testdata")
 
 # base directory for data consumed in test_generator.py
 GEN_TESTDATA_DIR = os.path.join(TESTDATA_DIR, "gen_output")
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
@@ -149,14 +199,18 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = '/var/www/bingosync.com/static/'
 
+
 INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
 PUBLIC_SOCKETS_URL = "sockets.bingosync.com"
 
-BASE_SOCKETS_URL = PUBLIC_SOCKETS_URL if IS_PROD else INTERNAL_SOCKETS_URL
-SOCKETS_URL = "ws://" + BASE_SOCKETS_URL
+if IS_PROD:
+    SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
+else:
+    SOCKETS_URL = "ws://" + INTERNAL_SOCKETS_URL
 
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
+
 
 # crispy forms confiuguration
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
