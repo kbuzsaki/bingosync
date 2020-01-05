@@ -178,6 +178,7 @@ class GameType(Enum):
     custom_randomized = 172
     final_fantasy_8 = 173
     revenge_of_the_bird_king = 174
+    mgs_peace_walker = 175
 
     def __str__(self):
         return self.short_name
@@ -590,6 +591,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
+    **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
