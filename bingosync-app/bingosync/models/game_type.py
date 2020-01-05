@@ -233,7 +233,7 @@ class GameType(Enum):
     @staticmethod
     def game_choices():
         choices = [(gt.value, gt.group_name) for gt in GAME_GROUPS if gt.is_game_group and not gt.is_custom]
-        choices = list(sorted(choices, key=lambda el: strip_articles(el[1])))
+        choices = list(sorted(choices, key=lambda el: strip_articles(el[1]).lower()))
         custom_choices = [(gt.value, gt.group_name) for gt in [GameType.custom]]
         return [(None, '')] + choices + custom_choices
 
