@@ -177,6 +177,7 @@ class GameType(Enum):
     celeste_blackout = 171
     custom_randomized = 172
     final_fantasy_8 = 173
+    revenge_of_the_bird_king = 174
 
     def __str__(self):
         return self.short_name
@@ -603,6 +604,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
+    **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
