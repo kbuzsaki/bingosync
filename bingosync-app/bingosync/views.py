@@ -35,7 +35,8 @@ def rooms(request):
             _save_session_player(request.session, creator)
             return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
         else:
-            logger.warn("RoomForm errors: %r", form.errors)
+            logger.warning("RoomForm errors: %r, custom_json was: %r", form.errors,
+                    form.data.get("custom_json", "")[:2000])
     else:
         form = RoomForm()
 
