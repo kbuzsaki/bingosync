@@ -48,6 +48,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE = (
+    'bingosync.middleware.RequestLoggingMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -170,6 +171,11 @@ LOGGING = {
         'django': {
             'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+        'django.server': {
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'ERROR'),
+            'propagate': False,
         },
         'bingosync': {
             'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
