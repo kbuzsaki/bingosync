@@ -179,6 +179,7 @@ class GameType(Enum):
     final_fantasy_8 = 173
     revenge_of_the_bird_king = 174
     mgs_peace_walker = 175
+    yokus_island_express_randomizer = 176
 
     def __str__(self):
         return self.short_name
@@ -534,6 +535,13 @@ GAME_GROUPS = {
             (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
         ],
     },
+    GameType.yokus_island_express: {
+        "name": "Yoku's Island Express",
+        "variants": [
+            (GameType.yokus_island_express, "Normal", "Yoku's IE"),
+            (GameType.yokus_island_express_randomizer, "Randomizer", "Yoku's IE Rando"),
+        ],
+    },
     GameType.zelda_botw: {
         "name": "Zelda: Breath of the Wild",
         "variants": [
@@ -624,7 +632,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
-    **singleton_group(GameType.yokus_island_express, "Yoku's Island Express", "Yoku's IE"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
