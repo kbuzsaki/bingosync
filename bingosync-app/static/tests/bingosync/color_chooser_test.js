@@ -59,10 +59,7 @@
         window.sessionStorage.setItem("room", "some_room_id");
         $.mockjax({
             url: this.colorSelectedUrl,
-            data: function(json) {
-                assert.deepEqual(JSON.parse(json), {color: "blue", room: "some_room_id"});
-                return true;
-            },
+            data: assert.dataJsonEquals({color: "blue", room: "some_room_id"}),
             onAfterSuccess: assert.async()
         });
 
@@ -78,10 +75,7 @@
         window.sessionStorage.setItem("room", "some_room_id");
         $.mockjax({
             url: this.colorSelectedUrl,
-            data: function(json) {
-                assert.deepEqual(JSON.parse(json), {color: "green", room: "some_room_id"});
-                return true;
-            },
+            data: assert.dataJsonEquals({color: "green", room: "some_room_id"}),
             onAfterSuccess: assert.async()
         });
 
