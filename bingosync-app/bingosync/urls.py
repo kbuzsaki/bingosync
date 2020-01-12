@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from bingosync import views
+from bingosync import views, settings
 
 urlpatterns = [
     url(r'^$', views.rooms, name='rooms'),
@@ -42,3 +42,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
 
+# only add the route for running javascript tests in development mode
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^jstests', views.jstests, name='jstests'),
+    ]

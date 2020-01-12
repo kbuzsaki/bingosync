@@ -362,6 +362,10 @@ def goal_converter(request):
     return render(request, "bingosync/convert.html", {"form": form})
 
 
+def jstests(request):
+    return render(request, "bingosync/tests/jstest.html", {})
+
+
 # Helpers for interacting with sessions
 
 AUTHORIZED_ROOMS = 'authorized_rooms'
