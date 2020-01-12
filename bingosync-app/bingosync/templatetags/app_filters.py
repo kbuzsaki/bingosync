@@ -3,6 +3,8 @@ from django.utils.html import escape
 from django.utils.safestring import mark_safe
 from numbers import Number
 
+import json
+
 register = template.Library()
 
 @register.filter
@@ -26,3 +28,6 @@ def format_js_val(value):
     else:
         return '"' + value + '"'
 
+@register.filter
+def jsonify(d):
+    return json.dumps(d)
