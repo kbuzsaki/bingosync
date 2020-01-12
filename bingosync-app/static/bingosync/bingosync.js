@@ -85,7 +85,7 @@ function squareHasColor($square, colorClass) {
 
 var refreshBoard = function () {};
 
-function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpectator) {
+function initializeBoard($board, boardUrl, goalSelectedUrl, colorChooser, isSpectator) {
     function updateSquare($square, json) {
         $square.html('<div class="starred hidden"></div><div class="shadow"></div><div class="vertical-center text-container"></div>');
         $square.children(".text-container").text(json["name"]);
@@ -120,7 +120,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     if (!isSpectator) {
         $board.find(".square").on("click", function(ev) {
             var goal = $(this).html();
-            var chosenColor = $colorChooser.find(".chosen-color").attr("squareColor");
+            var chosenColor = colorChooser.getChosenColor();
             var chosenColorClass = getSquareColorClass(chosenColor);
 
             // Are we adding or removing the color
@@ -241,31 +241,6 @@ function updateGoalCounters($board, $goalCounters) {
         var colorClass = $(this).attr('class').split(' ')[1];
         $(this).html(getColorCount($board, colorClass));
     });
-}
-
-function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
-    var $colorChoosers = $colorChooser.find(".color-chooser");
-    $colorChoosers.on("click", function(ev) {
-        // don't do anything if the color is already the chosen color
-        if("chosen-color" in $(this).getClasses()) {
-            return;
-        }
-
-        $colorChoosers.removeClass("chosen-color");
-        $(this).addClass("chosen-color");
-        $.ajax({
-            "url": colorSelectedUrl,
-            "type": "PUT",
-            "data": JSON.stringify({
-                "room": window.sessionStorage.getItem("room"),
-                "color": $(this).attr("squareColor")
-            }),
-            "error": function(result) {
-                console.log(result);
-            }
-        });
-    });
-    $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
 
 // so many parameters :(
