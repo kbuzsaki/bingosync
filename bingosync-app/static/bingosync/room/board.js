@@ -166,6 +166,10 @@ var Board = (function(){
         return this.squares[parseInt(slot.substring(4))-1];
     };
 
+    Board.prototype.getColorCount = function(colorClass) {
+        return this.$board.find("." + colorClass).size();
+    };
+
     Board.prototype.clickSquare = function(ev, $square) {
         console.log("in clickSquare");
         var goal = $square.html();
