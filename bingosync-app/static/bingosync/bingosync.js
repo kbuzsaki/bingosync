@@ -1,16 +1,5 @@
-COLORS = ["blank", "red", "blue", "green", "purple", "orange", "navy", "teal", "pink", "brown", "yellow"];
-BLANK_COLOR = "blank";
-
 // global variable for the room settings
 var ROOM_SETTINGS = null;
-
-function getSquareColorClass(color) {
-    return color + "square";
-}
-
-function getPlayerColorClass(color) {
-    return color + "player";
-}
 
 function getSquareColors($square) {
     colors = {};
@@ -37,18 +26,6 @@ function setSquareColor($square, newColor, removeColor) {
         $square.children('.bg-color').remove();
         $square.children('.shadow').before('<div class="bg-color ' + newColorClass + '"></div>');
     }
-}
-
-ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
-
-function sortColors(colors) {
-    orderedColors = [];
-    for (var i = 0; i < ORDERED_COLORS.length; i++) {
-        if (colors.indexOf(ORDERED_COLORS[i]) !== -1) {
-            orderedColors.push(ORDERED_COLORS[i]);
-        }
-    }
-    return orderedColors;
 }
 
 function setSquareColors($square, colors) {
