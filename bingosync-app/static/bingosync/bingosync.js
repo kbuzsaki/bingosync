@@ -1,14 +1,6 @@
 // global variable for the room settings
 var ROOM_SETTINGS = null;
 
-function setPlayerColor($playerEntry, newColor) {
-    var $playerGoalCounter = $playerEntry.find(".goalcounter");
-    COLORS.forEach(function(color) {
-        $playerGoalCounter.removeClass(getSquareColorClass(color));
-    });
-    $playerGoalCounter.addClass(getSquareColorClass(newColor));
-}
-
 var refreshBoard = function () {};
 
 function initializeBoardCover(boardRevealedUrl, showNow) {
@@ -47,19 +39,8 @@ function revealBoard() {
     refitGoalText();
 }
 
-function getColorCount($board, colorClass) {
-    return $board.find("." + colorClass).size();
-}
-
-function updateGoalCounters($board, $goalCounters) {
-    $(".goalcounter").each(function() {
-        var colorClass = $(this).attr('class').split(' ')[1];
-        $(this).html(getColorCount($board, colorClass));
-    });
-}
-
 // so many parameters :(
-function initializeChatSocket($chatWindow, board, $playersPanel, $chatSettings,
+function initializeChatSocket($chatWindow, board, playersPanel, $chatSettings,
                               socketsUrl, chatUrl, chatHistoryUrl, socketKey) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
@@ -206,35 +187,19 @@ function initializeChatSocket($chatWindow, board, $playersPanel, $chatSettings,
             return;
         } else if (json["type"] === "goal") {
             board.getSquare(json["square"]["slot"]).setColors(json["square"]["colors"]);
-            updateGoalCounters(board.$board, $playersPanel);
+            playersPanel.updateGoalCounters(board);
         }
         else if(json["type"] === "color") {
-            var $playerEntry = $playersPanel.find("#" + json["player"]["uuid"]);
-            setPlayerColor($playerEntry, json["player"]["color"]);
-            updateGoalCounters(board.$board, $playersPanel);
+            playersPanel.setPlayer(json["player"]);
+            playersPanel.updateGoalCounters(board);
         }
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
-                // only insert if the uuid is not already listed
-                if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
-                    var colorClass = getSquareColorClass(json["player"]["color"]);
-                    var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
-                    var playerName = $("<span>", {"class": "playername", text: " " + json["player"]["name"]});
-                    var playerDiv = $("<div>", {"id": json["player"]["uuid"]});
-                    playerDiv.append(goalCounter);
-                    playerDiv.append(playerName);
-
-                    $playersPanel.insertOnce(playerDiv, function($possibleNext) {
-                        var possibleNextName = $.trim($possibleNext.find(".playername").text()).toLowerCase();
-                        console.log("comparing " + possibleNextName);
-                        return possibleNextName > json["player"]["name"].toLowerCase();
-                    });
-
-                    updateGoalCounters(board.$board, $playersPanel);
-                }
+                playersPanel.setPlayer(json["player"]);
+                playersPanel.updateGoalCounters(board);
             }
             else if(json["event_type"] === "disconnected") {
-                $("#" + json["player"]["uuid"]).remove();
+                playersPanel.removePlayer(json["player"]);
             }
         }
         else if(json["type"] === "new-card") {
