@@ -1,75 +1,6 @@
 // global variable for the room settings
 var ROOM_SETTINGS = null;
 
-function getSquareColors($square) {
-    colors = {};
-    $square.children('.bg-color').each(function() {
-        for (var color in $(this).getClasses()) {
-            if (color.indexOf("square") !== -1) {
-                colors[color] = true;
-            }
-        }
-    });
-    return colors;
-}
-
-function setSquareColor($square, newColor, removeColor) {
-    var newColorClass = getSquareColorClass(newColor);
-    if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
-        if (removeColor) {
-            $square.children('.' + newColorClass).remove();
-        } else if (!squareHasColor($square, newColorClass)) {
-            $square.children('.blanksquare').remove();
-            $square.children('.shadow').before('<div class="bg-color ' + newColorClass + '"></div>');
-        }
-    } else {
-        $square.children('.bg-color').remove();
-        $square.children('.shadow').before('<div class="bg-color ' + newColorClass + '"></div>');
-    }
-}
-
-function setSquareColors($square, colors) {
-    $square.children('.bg-color').remove();
-    colors = colors.split(' ');
-    var shadow = $square.children('.shadow');
-    colors = sortColors(colors);
-    $square.attr("title", colors.join("\n"));
-    // the color offsets seem to work right-to-left, so reverse the array first
-    colors.reverse();
-    colors.forEach(function (color) {
-        shadow.before('<div class="bg-color ' + getSquareColorClass(color) + '"></div>');
-    });
-    updateColorOffsets($square);
-}
-
-function updateColorOffsets($square) {
-    var $colorElements = $square.children('.bg-color');
-    var numColors = $colorElements.length;
-    var translatePercent = {
-        2: ['0', '0'],
-        3: ['0', '36', '-34'],
-        4: ['0', '46', '0', '-48'],
-        5: ['0', '56', '18', '-18', '-56'],
-        6: ['0', '60', '30', '0', '-30', '-60'],
-        7: ['0', '64', '38', '13', '-13', '-38', '-64'],
-        8: ['0', '64', '41', '20', '0', '-21', '-41', '-64'],
-        9: ['0', '66', '45', '27', '9', '-9', '-27', '-45', '-66'],
-        10: ['0', '68', '51', '34', '17', '0', '-17', '-34', '-51', '-68']
-    };
-    var translations = translatePercent[numColors];
-
-    var curWidth = $colorElements.width();
-    var curHeight = $colorElements.height();
-    var targetAngle = Math.atan(curWidth/curHeight);
-
-    $($colorElements[0]).css('transform', '');
-    for (var i = 1; i < $colorElements.length; ++i) {
-        var transform = 'skew(-' + targetAngle + 'rad) translateX(' + translations[i] + '%)';
-        $($colorElements[i]).css('transform', transform);
-        $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
-    }
-}
-
 function setPlayerColor($playerEntry, newColor) {
     var $playerGoalCounter = $playerEntry.find(".goalcounter");
     COLORS.forEach(function(color) {
@@ -78,123 +9,7 @@ function setPlayerColor($playerEntry, newColor) {
     $playerGoalCounter.addClass(getSquareColorClass(newColor));
 }
 
-function squareHasColor($square, colorClass) {
-    colors = getSquareColors($square);
-    return colors[colorClass];
-}
-
 var refreshBoard = function () {};
-
-function initializeBoard($board, boardUrl, goalSelectedUrl, colorChooser, isSpectator) {
-    function updateSquare($square, json) {
-        $square.html('<div class="starred hidden"></div><div class="shadow"></div><div class="vertical-center text-container"></div>');
-        $square.children(".text-container").text(json["name"]);
-        setSquareColors($square, json["colors"]);
-
-        refitGoalText();
-    }
-
-    function updateBoard($board, json) {
-        for(var i = 0; i < json.length; i++) {
-            $square = $board.find("#slot" + (i + 1));
-            updateSquare($square, json[i]);
-        }
-    }
-
-    refreshBoard = function () {
-        refreshSettingsPanel();
-        $.ajax({
-            "url": boardUrl,
-            "success": function(result) {
-                updateBoard($board, result);
-            }
-        });
-    };
-    $.ajax({
-        "url": boardUrl,
-        "success": function(result) {
-            updateBoard($board, result);
-        }
-    });
-
-    if (!isSpectator) {
-        $board.find(".square").on("click", function(ev) {
-            var goal = $(this).html();
-            var chosenColor = colorChooser.getChosenColor();
-            var chosenColorClass = getSquareColorClass(chosenColor);
-
-            // Are we adding or removing the color
-            var removeColor;
-            // the square is blank and we're painting it
-            if($.isEmptyObject(getSquareColors($(this)))) {
-                removeColor = false;
-            }
-            // the square is colored the same as the chosen color so we're clearing it (or just removing the chosen color from the square's colors)
-            else if(squareHasColor($(this), chosenColorClass)) {
-                removeColor = true;
-            }
-            // the square is a different color, but we allow multiple colors, so add it
-            else if (ROOM_SETTINGS.lockout_mode !== "Lockout") {
-                removeColor = false;
-            }
-            // the square is colored a different color and we don't allow multiple colors, so don't do anything
-            else {
-                return;
-            }
-
-            $.ajax({
-                "url": goalSelectedUrl,
-                "type": "PUT",
-                "data": JSON.stringify({
-                    "room": window.sessionStorage.getItem("room"),
-                    // substring to get rid of the 'slot' in e.g. 'slot12'
-                    "slot": $(this).attr("id").substring(4),
-                    "color": chosenColor,
-                    // if we are removing the color, we need to know which color we are removing
-                    "remove_color": removeColor
-                }),
-                "error": function(result) {
-                    console.log(result);
-                }
-            });
-        });
-    }
-
-    $(window).resize(function () {
-        $board.find(".square").each(function () { updateColorOffsets($(this)); });
-    });
-
-    function addRowHover(name) {
-        $board.find("#" + name).hover(
-            function() {
-                $board.find("." + name).addClass("hover");
-            },
-            function() {
-                $board.find("." + name).removeClass("hover");
-            }
-        );
-    }
-
-    addRowHover("row1");
-    addRowHover("row2");
-    addRowHover("row3");
-    addRowHover("row4");
-    addRowHover("row5");
-    addRowHover("col1");
-    addRowHover("col2");
-    addRowHover("col3");
-    addRowHover("col4");
-    addRowHover("col5");
-    addRowHover("tlbr");
-    addRowHover("bltr");
-
-    // add starring ability via right click
-    $(".square").on("contextmenu", function(e) {
-        e.preventDefault();
-        $(this).children(".starred").toggleClass("hidden");
-        return false;
-    });
-}
 
 function initializeBoardCover(boardRevealedUrl, showNow) {
     $boardCover = $(".board-cover");
@@ -244,7 +59,7 @@ function updateGoalCounters($board, $goalCounters) {
 }
 
 // so many parameters :(
-function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
+function initializeChatSocket($chatWindow, board, $playersPanel, $chatSettings,
                               socketsUrl, chatUrl, chatHistoryUrl, socketKey) {
     var $chatBody =  $chatWindow.find(".chat-body");
     var $chatInput = $chatWindow.find(".chat-input");
@@ -390,14 +205,13 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             console.log("Got error message from socket: ", json);
             return;
         } else if (json["type"] === "goal") {
-            var $square = $("#" + json["square"]["slot"]);
-            setSquareColors($square, json["square"]["colors"]);
-            updateGoalCounters($board, $playersPanel);
+            board.getSquare(json["square"]["slot"]).setColors(json["square"]["colors"]);
+            updateGoalCounters(board.$board, $playersPanel);
         }
         else if(json["type"] === "color") {
             var $playerEntry = $playersPanel.find("#" + json["player"]["uuid"]);
             setPlayerColor($playerEntry, json["player"]["color"]);
-            updateGoalCounters($board, $playersPanel);
+            updateGoalCounters(board.$board, $playersPanel);
         }
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
@@ -416,7 +230,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
                         return possibleNextName > json["player"]["name"].toLowerCase();
                     });
 
-                    updateGoalCounters($board, $playersPanel);
+                    updateGoalCounters(board.$board, $playersPanel);
                 }
             }
             else if(json["event_type"] === "disconnected") {
