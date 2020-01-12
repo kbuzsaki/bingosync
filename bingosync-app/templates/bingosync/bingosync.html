@@ -58,6 +58,7 @@
 <script src="{% static "bingosync/room/color_chooser.js" %}"></script>
 <script src="{% static "bingosync/room/board.js" %}"></script>
 <script src="{% static "bingosync/room/players_panel.js" %}"></script>
+<script src="{% static "bingosync/room/room_settings_panel.js" %}"></script>
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
@@ -75,6 +76,7 @@
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'goal_selected' %}";
         var boardRevealedUrl = "{% url 'board_revealed' %}";
+        var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
         var player = JSON.parse('{{ player.to_json|jsonify|safe }}');
@@ -84,10 +86,11 @@
         var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
         var board = new Board($("#bingo"), player, colorChooser, boardUrl, goalSelectedUrl);
         refreshBoard = function () {
-            refreshSettingsPanel();
+            roomSettingsPanel.reloadSettings();
             board.reloadBoard();
         };
         var playersPanel = new PlayersPanel($("#players-panel"));
+        var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
 
         initializeBoardCover(boardRevealedUrl, ROOM_SETTINGS.hide_card);
 
@@ -97,39 +100,7 @@
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
-
-        roomSettingsCollapserEvent();
     });
-    function roomSettingsCollapserEvent() {
-        // collapse event for the room settings panel
-        // I put it here becuase the template is loaded each time a new card is created
-        $("#room-settings-collapse").on("mousedown", function() {
-            $("#room-settings .panel-body").toggle(50);
-        });
-    }
-    function refreshSettingsPanel() {
-        var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
-        $.ajax({
-            "url": roomSettingsUrl,
-            "success": function(result) {
-                $("#room-settings-container").html(result.panel);
-                roomSettingsCollapserEvent();
-                ROOM_SETTINGS = result.settings;
-                $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait');
-                if (ROOM_SETTINGS.hide_card) {
-                    hideBoard();
-                    $seedInChat.text("Hidden").addClass('seed-hidden');
-                } else {
-                    revealBoard();
-                    $seedInChat.text(ROOM_SETTINGS.seed).addClass('seed');
-                }
-                refreshNewCardDialog();
-            },
-            "error": function(result) {
-                console.log(result);
-            }
-        });
-    }
 </script>
 {% endblock %}
 
