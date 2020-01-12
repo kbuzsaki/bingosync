@@ -55,6 +55,7 @@
 </div>
 {% include 'bingosync/new_card_dialog.html' %}
 <script src="{% static "bingosync/room/util.js" %}"></script>
+<script src="{% static "bingosync/room/color_chooser.js" %}"></script>
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
@@ -74,23 +75,21 @@
         var boardRevealedUrl = "{% url 'board_revealed' %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
+        var player = JSON.parse('{{ player.to_json|jsonify|safe }}');
         var isSpectator = {{ player.is_spectator|yesno:"true,false" }};
 
         window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
 
+        var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
+
         // asynchronously load and populate the board
-        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, $("#color-chooser"), isSpectator);
+        initializeBoard($("#bingo"), boardUrl, goalSelectedUrl, colorChooser, isSpectator);
 
         initializeBoardCover(boardRevealedUrl, ROOM_SETTINGS.hide_card);
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), $("#bingo"), $("#players-panel"), $("#chat-settings"),
                              socketsUrl, chatUrl, chatHistoryUrl, temporarySocketKey);
-
-        {% if not player.is_spectator %}
-            // enable choosing color
-            initializeColorChooser($("#color-chooser"), "{{ player.color.goal_class }}", colorSelectedUrl);
-        {% endif %}
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
