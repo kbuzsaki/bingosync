@@ -1,10 +1,3 @@
-// global variable for the room settings
-var ROOM_SETTINGS = null;
-
-var refreshBoard = function () {};
-var hideBoard = function() {};
-var revealBoard = function() {};
-
 function initializeBoardCover(boardRevealedUrl, showNow) {
     $boardCover = $(".board-cover");
     if (!showNow) {
