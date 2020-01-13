@@ -169,7 +169,6 @@ var Board = (function(){
     };
 
     Board.prototype.clickSquare = function(ev, $square) {
-        console.log("in clickSquare");
         var goal = $square.html();
         var chosenColor = this.colorChooser.getChosenColor();
         var chosenColorClass = getSquareColorClass(chosenColor);
