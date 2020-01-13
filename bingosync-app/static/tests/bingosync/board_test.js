@@ -13,7 +13,7 @@
             this.getBoardUrl = "/fake/get/board/url";
             this.selectGoalUrl = "/fake/select/goal/url";
 
-            this.boardJson = JSON.stringify([
+            this.boardData = [
                 {"name": "goal 1", "slot": "slot1", "colors": "blank"},
                 {"name": "goal 2", "slot": "slot2", "colors": "blank"},
                 {"name": "goal 3", "slot": "slot3", "colors": "blank"},
@@ -38,7 +38,9 @@
                 {"name": "goal 22", "slot": "slot22", "colors": "blank"},
                 {"name": "goal 23", "slot": "slot23", "colors": "blank"},
                 {"name": "goal 24", "slot": "slot24", "colors": "blank"},
-                {"name": "goal 25", "slot": "slot25", "colors": "blank"}]);
+                {"name": "goal 25", "slot": "slot25", "colors": "blank"}];
+
+            window.sessionStorage.setItem("room", "some_room_id");
         }
     });
 
@@ -51,7 +53,7 @@
         var done = assert.async();
         $.mockjax({
             url: this.getBoardUrl,
-            responseText: JSON.parse(this.boardJson),
+            responseText: this.boardData,
             onAfterSuccess: function() {
                 for (var i = 0; i < 25; i++) {
                     var square = board.squares[i];
@@ -63,5 +65,107 @@
         });
 
         board.reloadBoard();
+    });
+
+    QUnit.test("applies color to square on click", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        $.mockjax({
+            url: this.getBoardUrl,
+            responseText: this.boardData,
+            onAfterSuccess: function() {
+                board.$board.find("#slot7").click();
+            }
+        });
+        $.mockjax({
+            url: this.selectGoalUrl,
+            data: assert.dataJsonEquals({room: "some_room_id", slot: "7", color: "blue", remove_color: false}),
+            onAfterSuccess: assert.async()
+        });
+
+        board.reloadBoard();
+    });
+
+    QUnit.test("clears color on click when already colored", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        this.boardData[5].colors = "blue";
+        $.mockjax({
+            url: this.getBoardUrl,
+            responseText: this.boardData,
+            onAfterSuccess: function() {
+                board.$board.find("#slot6").click();
+            }
+        });
+        $.mockjax({
+            url: this.selectGoalUrl,
+            data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: true}),
+            onAfterSuccess: assert.async()
+        });
+
+        board.reloadBoard();
+    });
+
+    QUnit.test("adds second color when not in lockout", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        this.boardData[5].colors = "green";
+        ROOM_SETTINGS = {
+            lockout_mode: "Non-Lockout"
+        };
+
+        $.mockjax({
+            url: this.getBoardUrl,
+            responseText: this.boardData,
+            onAfterSuccess: function() {
+                board.$board.find("#slot6").click();
+            }
+        });
+        $.mockjax({
+            url: this.selectGoalUrl,
+            data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: false}),
+            onAfterSuccess: assert.async()
+        });
+
+        board.reloadBoard();
+    });
+
+    QUnit.test("does not add second color when in lockout", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        this.boardData[5].colors = "green";
+        ROOM_SETTINGS = {
+            lockout_mode: "Lockout"
+        };
+
+        $.mockjax({
+            url: this.getBoardUrl,
+            responseText: this.boardData,
+            onAfterSuccess: function() {
+                board.$board.find("#slot6").click();
+            }
+        });
+        // set up a select handler to fail the test if it's called
+        $.mockjax({
+            url: this.selectGoalUrl,
+            data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: false}),
+            response: function(r) {
+                assert.notOk(true, "select called with: " + JSON.stringify(r));
+            }
+        });
+
+        board.reloadBoard();
+
+        // wait a bit  to see if the handler fires
+        assert.expect(0);
+        setTimeout(assert.async(), 100);
     });
 })();
