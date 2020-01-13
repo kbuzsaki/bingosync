@@ -73,19 +73,13 @@
         var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
 
         $.mockjax({
-            url: this.getBoardUrl,
-            responseText: this.boardData,
-            onAfterSuccess: function() {
-                board.$board.find("#slot7").click();
-            }
-        });
-        $.mockjax({
             url: this.selectGoalUrl,
             data: assert.dataJsonEquals({room: "some_room_id", slot: "7", color: "blue", remove_color: false}),
             onAfterSuccess: assert.async()
         });
 
-        board.reloadBoard();
+        board.setJson(this.boardData);
+        board.$board.find("#slot7").click();
     });
 
     QUnit.test("clears color on click when already colored", function(assert) {
@@ -93,21 +87,15 @@
         var colorChooser = new ColorChooser($("#color-chooser"), player, "");
         var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
 
-        this.boardData[5].colors = "blue";
-        $.mockjax({
-            url: this.getBoardUrl,
-            responseText: this.boardData,
-            onAfterSuccess: function() {
-                board.$board.find("#slot6").click();
-            }
-        });
         $.mockjax({
             url: this.selectGoalUrl,
             data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: true}),
             onAfterSuccess: assert.async()
         });
 
-        board.reloadBoard();
+        this.boardData[5].colors = "blue";
+        board.setJson(this.boardData);
+        board.$board.find("#slot6").click();
     });
 
     QUnit.test("adds second color when not in lockout", function(assert) {
@@ -115,25 +103,16 @@
         var colorChooser = new ColorChooser($("#color-chooser"), player, "");
         var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
 
-        this.boardData[5].colors = "green";
-        ROOM_SETTINGS = {
-            lockout_mode: "Non-Lockout"
-        };
-
-        $.mockjax({
-            url: this.getBoardUrl,
-            responseText: this.boardData,
-            onAfterSuccess: function() {
-                board.$board.find("#slot6").click();
-            }
-        });
         $.mockjax({
             url: this.selectGoalUrl,
             data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: false}),
             onAfterSuccess: assert.async()
         });
 
-        board.reloadBoard();
+        ROOM_SETTINGS = {lockout_mode: "Non-Lockout"};
+        this.boardData[5].colors = "green";
+        board.setJson(this.boardData);
+        board.$board.find("#slot6").click();
     });
 
     QUnit.test("does not add second color when in lockout", function(assert) {
@@ -141,28 +120,18 @@
         var colorChooser = new ColorChooser($("#color-chooser"), player, "");
         var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
 
-        this.boardData[5].colors = "green";
-        ROOM_SETTINGS = {
-            lockout_mode: "Lockout"
-        };
-
-        $.mockjax({
-            url: this.getBoardUrl,
-            responseText: this.boardData,
-            onAfterSuccess: function() {
-                board.$board.find("#slot6").click();
-            }
-        });
         // set up a select handler to fail the test if it's called
         $.mockjax({
             url: this.selectGoalUrl,
-            data: assert.dataJsonEquals({room: "some_room_id", slot: "6", color: "blue", remove_color: false}),
             response: function(r) {
                 assert.notOk(true, "select called with: " + JSON.stringify(r));
             }
         });
 
-        board.reloadBoard();
+        ROOM_SETTINGS = {lockout_mode: "Lockout"};
+        this.boardData[5].colors = "green";
+        board.setJson(this.boardData);
+        board.$board.find("#slot6").click();
 
         // wait a bit  to see if the handler fires
         assert.expect(0);
