@@ -21,3 +21,9 @@ function sortColors(colors) {
     return orderedColors;
 }
 
+// global variables that are overwritten in bingosync.html main
+var ROOM_SETTINGS = null;
+var refreshBoard = function () {};
+var hideBoard = function() {};
+var revealBoard = function() {};
+
