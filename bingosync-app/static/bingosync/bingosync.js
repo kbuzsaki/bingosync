@@ -2,6 +2,8 @@
 var ROOM_SETTINGS = null;
 
 var refreshBoard = function () {};
+var hideBoard = function() {};
+var revealBoard = function() {};
 
 function initializeBoardCover(boardRevealedUrl, showNow) {
     $boardCover = $(".board-cover");
@@ -24,19 +26,6 @@ function initializeBoardCover(boardRevealedUrl, showNow) {
             }
         });
     });
-}
-
-function hideBoard() {
-    $('.board-cover').show();
-    $(".board-container").addClass('hidden-card');
-}
-
-function revealBoard() {
-    $(".board-cover").hide();
-    $(".board-container").removeClass('hidden-card');
-    $("#the-seed").text(ROOM_SETTINGS.seed);
-    $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
-    refitGoalText();
 }
 
 // so many parameters :(
@@ -257,20 +246,4 @@ function initializeChatSettings($chatSettings, $chatWindow) {
     });
 }
 
-function refitGoalText() {
-    var $allText = $('.square div.text-container');
-    var maxHeight = $('.square').height();
-
-    $allText.each(function () {
-        var $thisText = $(this);
-        $thisText.css('font-size', '100%');
-        var currentPercent = 100;
-        while($thisText.height() > maxHeight) {
-            currentPercent -= 2;
-            $thisText.css('font-size', currentPercent + "%" );
-        }
-    });
-}
-
-window.addEventListener('resize', refitGoalText, false);
 

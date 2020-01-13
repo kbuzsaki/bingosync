@@ -87,8 +87,6 @@ var Board = (function(){
                           '<div class="vertical-center text-container"></div>');
         this.$square.children(".text-container").text(json["name"]);
         setSquareColors(this.$square, json["colors"]);
-
-        refitGoalText();
     };
 
     var Board = function($board, playerJson, colorChooser, getBoardUrl, selectGoalUrl) {
@@ -103,7 +101,6 @@ var Board = (function(){
             var $square = $board.find("#slot" + (i + 1));
             this.squares.push(new Square($square));
         }
-        this.reloadBoard();
 
         var that = this;
         if (!this.isSpectator) {
@@ -150,6 +147,7 @@ var Board = (function(){
         for(var i = 0; i < json.length; i++) {
             this.squares[i].setJson(json[i]);
         }
+        this.refitGoalText();
     };
 
     Board.prototype.reloadBoard = function() {
@@ -208,6 +206,21 @@ var Board = (function(){
             }),
             "error": function(result) {
                 console.log(result);
+            }
+        });
+    };
+
+    Board.prototype.refitGoalText = function() {
+        var $allText = $('.square div.text-container');
+        var maxHeight = $('.square').height();
+
+        $allText.each(function () {
+            var $thisText = $(this);
+            $thisText.css('font-size', '100%');
+            var currentPercent = 100;
+            while($thisText.height() > maxHeight) {
+                currentPercent -= 2;
+                $thisText.css('font-size', currentPercent + "%" );
             }
         });
     };
