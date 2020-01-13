@@ -3,12 +3,12 @@
 
     QUnit.module("ColorChooser", {
         beforeEach: function() {
+            $.mockjax.clear();
+            sessionStorage.clear();
+
             this.$fixture = $("#qunit-fixture");
             this.$chooserPanel = this.$fixture.find("#color-chooser");
             this.colorSelectedUrl = "/fake/color/selected/url";
-        },
-        afterEach: function() {
-            $.mockjax.clear();
         }
     });
 

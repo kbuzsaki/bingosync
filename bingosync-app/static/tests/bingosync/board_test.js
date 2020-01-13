@@ -3,6 +3,9 @@
 
     QUnit.module("Board", {
         beforeEach: function() {
+            $.mockjax.clear();
+            sessionStorage.clear();
+
             this.$fixture = $("#qunit-fixture");
             this.$chooserPanel = $("#color-chooser");
             this.$board = this.$fixture.find("#bingo");
@@ -36,9 +39,6 @@
                 {"name": "goal 23", "slot": "slot23", "colors": "blank"},
                 {"name": "goal 24", "slot": "slot24", "colors": "blank"},
                 {"name": "goal 25", "slot": "slot25", "colors": "blank"}]);
-        },
-        afterEach: function() {
-            $.mockjax.clear();
         }
     });
 
