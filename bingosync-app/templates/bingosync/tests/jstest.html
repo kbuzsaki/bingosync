@@ -12,8 +12,11 @@
     <div id="qunit-fixture">
         <!-- fixture data for color_chooser_test.js -->
         <div>{% include 'bingosync/color_chooser.html' %}</div>
-        <!-- fixture data for board_test.js -->
-        <div class="board-container">{% include 'bingosync/board.html' %}</div>
+        <!-- fixture data for board_test.js and board_cover_test.js -->
+        <div class="board-container">
+            {% include 'bingosync/board.html' %}
+            <div class="board-cover"><div class="board-cover-text unselectable">Click to Reveal</div></div>
+        </div>
     </div>
     <!-- implementation -->
     <script src="{% static "jquery.min.js" %}"></script>
@@ -21,6 +24,7 @@
     <script src="{% static "bingosync/room/util.js" %}"></script>
     <script src="{% static "bingosync/room/color_chooser.js" %}"></script>
     <script src="{% static "bingosync/room/board.js" %}"></script>
+    <script src="{% static "bingosync/room/board_cover.js" %}"></script>
     <!-- test fixtures -->
     <script src="{% static "tests/qunit-2.9.2.js" %}"></script>
     <script src="{% static "tests/qunit-dom-0.9.2.js" %}"></script>
@@ -29,5 +33,6 @@
     <!-- actual tests -->
     <script src="{% static "tests/bingosync/color_chooser_test.js" %}"></script>
     <script src="{% static "tests/bingosync/board_test.js" %}"></script>
+    <script src="{% static "tests/bingosync/board_cover_test.js" %}"></script>
 </body>
 </html>

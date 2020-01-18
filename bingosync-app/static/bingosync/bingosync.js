@@ -1,25 +1,3 @@
-function initializeBoardCover(boardRevealedUrl, showNow) {
-    $boardCover = $(".board-cover");
-    if (!showNow) {
-        revealBoard();
-    }
-    $boardCover.on("click", function() {
-        if (!$(this).is(":visible")) {
-            return;
-        }
-        revealBoard();
-        $.ajax({
-            "url": boardRevealedUrl,
-            "type": "PUT",
-            "data": JSON.stringify({
-                "room": window.sessionStorage.getItem("room"),
-            }),
-            "error": function(result) {
-                console.log(result);
-            }
-        });
-    });
-}
 
 // so many parameters :(
 function initializeChatSocket($chatWindow, board, playersPanel, $chatSettings,
