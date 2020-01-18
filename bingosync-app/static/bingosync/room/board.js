@@ -1,6 +1,18 @@
 var Board = (function(){
     "use strict";
 
+    var ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
+
+    function sortColors(colors) {
+        var orderedColors = [];
+        for (var i = 0; i < ORDERED_COLORS.length; i++) {
+            if (colors.indexOf(ORDERED_COLORS[i]) !== -1) {
+                orderedColors.push(ORDERED_COLORS[i]);
+            }
+        }
+        return orderedColors;
+    }
+
     function getSquareColors($square) {
         var colors = {};
         $square.children('.bg-color').each(function() {
