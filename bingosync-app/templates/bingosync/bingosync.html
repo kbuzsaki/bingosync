@@ -57,6 +57,7 @@
 <script src="{% static "bingosync/room/util.js" %}"></script>
 <script src="{% static "bingosync/room/color_chooser.js" %}"></script>
 <script src="{% static "bingosync/room/board.js" %}"></script>
+<script src="{% static "bingosync/room/board_cover.js" %}"></script>
 <script src="{% static "bingosync/room/players_panel.js" %}"></script>
 <script src="{% static "bingosync/room/room_settings_panel.js" %}"></script>
 <script src="{% static "bingosync/bingosync.js" %}"></script>
@@ -85,18 +86,17 @@
 
         var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
         var board = new Board($("#bingo"), player, colorChooser, boardUrl, goalSelectedUrl);
+        var boardCover = new BoardCover($(".board-container"), ROOM_SETTINGS.hide_card, boardRevealedUrl);
         board.reloadBoard();
         refreshBoard = function () {
             roomSettingsPanel.reloadSettings();
             board.reloadBoard();
         };
         hideBoard = function() {
-            $('.board-cover').show();
-            $(".board-container").addClass('hidden-card');
+            boardCover.setBoardHidden(true);
         };
         revealBoard = function() {
-            $(".board-cover").hide();
-            $(".board-container").removeClass('hidden-card');
+            boardCover.setBoardHidden(false);
             $("#the-seed").text(ROOM_SETTINGS.seed);
             var $seedHidden = $("#bingo-chat .new-card-message .seed-hidden");
             $seedHidden.text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
@@ -106,8 +106,6 @@
 
         var playersPanel = new PlayersPanel($("#players-panel"));
         var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
-
-        initializeBoardCover(boardRevealedUrl, ROOM_SETTINGS.hide_card);
 
         // open the chat web socket
         initializeChatSocket($("#bingo-chat"), board, playersPanel, $("#chat-settings"),
