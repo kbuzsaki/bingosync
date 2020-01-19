@@ -200,6 +200,10 @@ function initializeChatSocket($chatWindow, board, playersPanel, $chatSettings,
 }
 
 function initializeChatSettings($chatSettings, $chatWindow) {
+    $("#chat-settings-collapse").on("mousedown", function() {
+        $("#chat-settings .panel-body").toggle(50);
+    });
+
     $chatSettings.find("#chat-entry-toggle").on("change", function() {
         $chatWindow.find(".chat-entry").toggle(this.checked);
     });
