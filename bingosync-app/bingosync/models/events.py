@@ -76,6 +76,7 @@ class ChatEvent(Event):
 class NewCardEvent(Event):
     game_type_value = models.IntegerField(choices=GameType.choices())
     seed = models.IntegerField(default=0)
+    hide_card = models.BooleanField(default=False)
 
     @property
     def game_type(self):
