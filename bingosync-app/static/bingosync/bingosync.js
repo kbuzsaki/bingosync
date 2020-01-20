@@ -1,139 +1,5 @@
 
-// so many parameters :(
-function initializeChatSocket($chatWindow, board, playersPanel, $chatSettings,
-                              socketsUrl, chatUrl, chatHistoryUrl, socketKey) {
-    var $chatBody =  $chatWindow.find(".chat-body");
-    var $chatInput = $chatWindow.find(".chat-input");
-    var $chatSend =  $chatWindow.find(".chat-send");
-
-    function appendChatMessage(message, messageType) {
-        var entry = $("<div>", {"class": messageType, html: message});
-        var setting = $chatSettings.find("#" + messageType + "-toggle");
-        entry.toggle(setting.prop("checked"));
-        $chatBody.append(entry);
-        if($chatBody[0] !== undefined) {
-            $chatBody.scrollTop($chatBody[0].scrollHeight);
-        }
-    }
-
-    function processPlayerJson(playerJson, playerColor) {
-        if(playerColor === undefined) {
-            playerColor = getPlayerColorClass(playerJson["color"]);
-        }
-        var playerName = playerJson["name"];
-        if (playerJson["is_spectator"]) {
-            playerName += " (spectator)";
-        }
-        var name = $("<span>", {"class": "chat-name " + playerColor, text: playerName}).toHtml();
-        return name;
-    }
-    function processChatJson(json) {
-        //console.log(json);
-        // Generate readable timestamp
-        var zeroPad = function (str, length) {
-            return ('000000' + str).slice(-length);
-        };
-        var eventTime = new Date(json.timestamp*1000);
-        var timeString = zeroPad(eventTime.getHours(), 2) + ':' + zeroPad(eventTime.getMinutes(), 2) + ':' + zeroPad(eventTime.getSeconds(), 2);
-        var timeHtml = $("<span>", {"class": "chat-timestamp", html: timeString});
-        if (!$('#timestamp-toggle').prop("checked")) {
-            timeHtml.hide();
-        }
-        timeHtml = timeHtml.toHtml();
-
-        // connection and color messages don't have a player span, so do them first
-        if (json["type"] === "connection") {
-            var connectionPlayerName = json["player"]["name"];
-            if (json["player"]["is_spectator"]) {
-                connectionPlayerName += " (spectator)";
-            }
-
-            var connectionMessage = $("<span>", {text: connectionPlayerName + " " + json["event_type"]}).toHtml();
-            return $("<div>", {"class": "connection-message", html: timeHtml + " - " + connectionMessage}).toHtml();
-        }
-        else if(json["type"] === "color") {
-            var playerColorClass = getPlayerColorClass(json["player_color"]);
-            var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
-            var newColorClass = getPlayerColorClass(json["color"]);
-            var colorName = $("<span>", {"class": "color-name " + newColorClass, text: json["color"]}).toHtml();
-            var colorMessage = playerName + " changed color to " + colorName;
-            return $("<div>", {"class": "color-message", html: timeHtml + " " + colorMessage}).toHtml();
-        }
-        else if(json["type"] === "revealed") {
-            var playerColorClass = getPlayerColorClass(json["player_color"]);
-            var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
-            var revealedMessage = playerName + " revealed the card";
-            return $("<div>", {"class": "revealed-message", html: timeHtml + " " + revealedMessage}).toHtml();
-        }
-        else if(json["type"] === "new-card") {
-            var playerColorClass = getPlayerColorClass(json["player_color"]);
-            var playerName = $("<span>", {"class": playerColorClass, text: json["player"]["name"]}).toHtml();
-            var newCardMessage = playerName + " generated a new card for " + $("<span>", {"class": "game-title", text: json["game"]}).toHtml() + ". ";
-            if (json["game"] !== "Custom (Advanced)") {
-                newCardMessage += " seed: ";
-                if (json["is_current"]) {
-                    newCardMessage += $("<span>", {"class": "seed-wait", text: '...'}).toHtml();
-                } else {
-                    newCardMessage += $("<span>", {"class": "seed", text: json["seed"]}).toHtml();
-                }
-            }
-            return $("<div>", {"class": "new-card-message", html: timeHtml + " " + newCardMessage}).toHtml();
-        }
-
-        // otherwise first format the name of the message sender
-        var playerSpan = processPlayerJson(json["player"], getPlayerColorClass(json["player_color"]));
-        if(json["type"] === "chat") {
-            var message = $("<span>", {"class": "chat-message", text: json["text"]}).toHtml();
-            return $("<div>", {html: timeHtml + " " + playerSpan + ": " + message}).toHtml();
-        }
-        else if(json["type"] === "goal") {
-            var colorClass = json["remove"] ? getPlayerColorClass('blank') : getPlayerColorClass(json["color"]);
-            var goal = $("<span>", {"class": "goal-name " + colorClass, text: json["square"]["name"]}).toHtml();
-
-            if(json["remove"]) {
-                return $("<div>", {"class": "goal-message", html: timeHtml + " " + playerSpan + " cleared " + goal}).toHtml();
-            }
-            else {
-                return $("<div>", {"class": "goal-message", html: timeHtml + " " + playerSpan + " marked " + goal}).toHtml();
-            }
-        }
-    }
-
-    var $chatHistory = $chatBody.find(".chat-history");
-    var populateChatHistory = function (result) {
-        $chatHistory.html('');
-        if (!result.allIncluded) {
-            var link = $("<div>", {"class": "chat-link", html: "Click to load full history"});
-            link.click(function () {
-                $.ajax({
-                    "url": chatHistoryUrl + '?full=true',
-                    "success": populateChatHistory,
-                    "error": function(result) {
-                        console.log(result);
-                    }
-                });
-            });
-            $chatHistory.append(link);
-        }
-        for(var i = 0; i < result.events.length; i++) {
-            var chatJson = result.events[i];
-            message = processChatJson(chatJson);
-            var entry = $("<div>", {"class": chatJson["type"] + "-entry", html: message});
-            $chatHistory.append(entry);
-        }
-        $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait').addClass('seed-hidden').text("Hidden");
-        if($chatBody[0] !== undefined) {
-            $chatBody.scrollTop($chatBody[0].scrollHeight);
-        }
-    };
-    $.ajax({
-        "url": chatHistoryUrl,
-        "success": populateChatHistory,
-        "error": function(result) {
-            console.log(result);
-        }
-    });
-
+function initializeChatSocket(chatPanel, board, playersPanel, socketsUrl, socketKey) {
     var chatSocket = new WebSocket(socketsUrl);
     chatSocket.onopen = function() {
         console.log("socket opened!");
@@ -171,30 +37,13 @@ function initializeChatSocket($chatWindow, board, playersPanel, $chatSettings,
         } else {
             console.log("unrecognized event type: ", json);
         }
-        result = processChatJson(json);
-        appendChatMessage(result, json["type"] + "-entry");
+        chatPanel.handleEvent(json);
     };
     chatSocket.onclose = function() {
         var disconnectText = "*** Disconnected from server, try refreshing.";
         var message = $("<div>", {"class": "connection-message", text: disconnectText}).toHtml();
-        appendChatMessage(message);
+        chatPanel.appendChatMessage(message);
     };
-
-    $chatSend.on("click", function(ev) {
-        $.ajax({
-            "url": chatUrl,
-            "type": "PUT",
-            "data": JSON.stringify({
-                "room": window.sessionStorage.getItem("room"),
-                "text": $chatInput.val()
-            }),
-            "error": function(result) {
-                console.log(result);
-            }
-        });
-        $chatInput.val('');
-        return false;
-    });
 
     return chatSocket;
 }
