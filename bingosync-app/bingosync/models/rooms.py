@@ -26,6 +26,9 @@ class Room(models.Model):
     def __str__(self):
         return self.name
 
+    def __repr__(self):
+        return "<Room: id: {!r}, uuid: {!r}>".format(self.id, self.encoded_uuid)
+
     def get_absolute_url(self):
         from bingosync.views import room_view
         kwargs = {
@@ -258,6 +261,9 @@ class Player(models.Model):
 
     def __str__(self):
         return self.name
+
+    def __repr__(self):
+        return "<Player: id: {!r}, uuid: {!r}, name: {!r}>".format(self.id, self.encoded_uuid, self.name)
 
     @property
     def encoded_uuid(self):
