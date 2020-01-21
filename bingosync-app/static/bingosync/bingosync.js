@@ -472,6 +472,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             // if the card was never revealed show what the seed was in the chat anyway
             $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
             refreshBoard();
+        } else if (json["type"] === "chat") {
+            // no special effects for chat, it just gets logged
+        } else {
+            console.log("unrecognized event type: ", json);
         }
         result = processChatJson(json);
         appendChatMessage(result, json["type"] + "-entry");
