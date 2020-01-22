@@ -121,7 +121,7 @@ bingoList[11] = [
 { name: "Reach Level 4 (Tennis)", types: ["Tennislevel","Level45"] },
 { name: "Score 750+ points without hitting the red button (Bowling 100-Pin Pro)", types: ["Dreiwurf","Bowlingsonstiges"] },
 { name: "Flag it Down (Golf Stamp)", types: ["Golfstempel"] },
-{ name: "The Scret Shot (Golf Stamp)", types: ["Golfstempel"] },
+{ name: "The Secret Shot (Golf Stamp)", types: ["Golfstempel"] },
 { name: "Get a score of -2 or better on Lakeside B (Golf)", types: ["Golf3"] },
 { name: "Get a score of -2 or better on Lakeside C (Golf)", types: ["Golf3"] },
 { name: "Get a score of -5 or better on Resort 9 Hole (Golf)", types: ["Golf9"] },

@@ -29,7 +29,7 @@ bingoList[5] = [
 ];
 bingoList[6] = [
 { name: "Fairway to Go!/Fairway or Bust (Stamp)", types: ["Golfstempel"] },
-{ name: "The Scret Shot (Stamp)", types: ["Golfstempel","LC"] },
+{ name: "The Secret Shot (Stamp)", types: ["Golfstempel","LC"] },
 { name: "Reach Level 4", types: ["Golflevel","Level34"] },
 ];
 bingoList[7] = [
