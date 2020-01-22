@@ -94,8 +94,9 @@ class NewCardEvent(Event):
             "player_color": self.player_color.name,
             "game": GameType.for_value(self.game_type_value).long_name,
             "seed": self.seed,
+            "hide_card": self.hide_card,
             "is_current": self.is_current,
-            "timestamp": self.json_timestamp
+            "timestamp": self.json_timestamp,
         }
 
 class GoalEvent(Event):

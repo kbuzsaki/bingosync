@@ -155,7 +155,8 @@ def new_card(request):
             room.hide_card = hide_card
         room.update_active() # This saves the room
 
-        new_card_event = NewCardEvent(player=player, player_color_value=player.color.value, game_type_value=game_type.value, seed=seed)
+        new_card_event = NewCardEvent(player=player, player_color_value=player.color.value,
+                game_type_value=game_type.value, seed=seed, hide_card=hide_card)
         new_card_event.save()
     publish_new_card_event(new_card_event)
 
