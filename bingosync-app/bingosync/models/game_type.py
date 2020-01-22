@@ -180,6 +180,7 @@ class GameType(Enum):
     revenge_of_the_bird_king = 174
     mgs_peace_walker = 175
     yokus_island_express_randomizer = 176
+    wii_sports_club_all_sports = 177
 
     def __str__(self):
         return self.short_name
@@ -531,6 +532,7 @@ GAME_GROUPS = {
     GameType.wii_sports_club_all_sports: {
         "name": "Wii Sports Club",
         "variants": [
+            (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
             (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
             (GameType.wii_sports_club_all_sports_expert, "All Sports Expert", "WSC All Sports Expert"),
         ],
