@@ -159,7 +159,7 @@ class GameType(Enum):
     dark_devotion = 153
     dark_souls_2 = 154
     terraria_pre_hardmode = 155
-    wii_sports_club_all_sports = 156
+    wii_sports_club_all_sports_expert = 156
     mario_maker_2 = 157
     minecraft_randomizer = 158
     new_super_mario_bros_ds = 159
@@ -531,8 +531,8 @@ GAME_GROUPS = {
     GameType.wii_sports_club_all_sports: {
         "name": "Wii Sports Club",
         "variants": [
-            (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
             (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
+            (GameType.wii_sports_club_all_sports_expert, "All Sports Expert", "WSC All Sports Expert"),
         ],
     },
     GameType.yokus_island_express: {
