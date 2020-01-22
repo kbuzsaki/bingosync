@@ -434,7 +434,10 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
     chatSocket.onmessage = function (evt) {
         var json = JSON.parse(evt.data);
         //console.log(json);
-        if(json["type"] === "goal") {
+        if (json["type"] === "error") {
+            console.log("Got error message from socket: ", json);
+            return;
+        } else if (json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
             setSquareColors($square, json["square"]["colors"]);
             updateGoalCounters($board, $playersPanel);
@@ -473,7 +476,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
             $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
             refreshBoard();
         } else if (json["type"] === "chat") {
-            // no special effects for chat, it just gets logged
+            // no special effects for chat, it just gets written to the panel
         } else {
             console.log("unrecognized event type: ", json);
         }
