@@ -61,6 +61,7 @@
 <script src="{% static "bingosync/room/players_panel.js" %}"></script>
 <script src="{% static "bingosync/room/room_settings_panel.js" %}"></script>
 <script src="{% static "bingosync/room/chat_panel.js" %}"></script>
+<script src="{% static "bingosync/room/chat_socket.js" %}"></script>
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
@@ -107,7 +108,9 @@
         // open the chat web socket
         var chatPanel = new ChatPanel($("#bingo-chat"), $("#chat-settings"), chatUrl, chatHistoryUrl);
         chatPanel.reloadChatHistory(/*full=*/false);
-        initializeChatSocket(chatPanel, board, playersPanel, socketsUrl, temporarySocketKey);
+
+        var chatSocket = new ChatSocket(chatPanel, board, playersPanel, socketsUrl);
+        chatSocket.init(temporarySocketKey);
 
         // hook up chat contents toggling
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
