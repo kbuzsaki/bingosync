@@ -65,11 +65,7 @@
 <script>
     $(document).ready(function() {
         // populate initial settings
-        ROOM_SETTINGS = {
-        {% for key, value in room.settings.items %}
-            "{{ key }}": {% autoescape off %}{{ value|format_js_val }}{% endautoescape %},
-        {% endfor %}
-        };
+        ROOM_SETTINGS = JSON.parse('{{ room.settings|jsonify|escapejs }}');
 
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
@@ -81,7 +77,7 @@
         var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
-        var player = JSON.parse('{{ player.to_json|jsonify|safe }}');
+        var player = JSON.parse('{{ player.to_json|jsonify|escapejs }}');
 
         window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
 
