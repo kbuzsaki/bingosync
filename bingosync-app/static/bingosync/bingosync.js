@@ -56,6 +56,7 @@ function setSquareColors($square, colors) {
     colors = colors.split(' ');
     var shadow = $square.children('.shadow');
     colors = sortColors(colors);
+
     $square.attr("title", colors.join("\n"));
     // the color offsets seem to work right-to-left, so reverse the array first
     colors.reverse();
@@ -65,8 +66,36 @@ function setSquareColors($square, colors) {
     updateColorOffsets($square);
 }
 
+function getMyColor () {
+    return $('#color-chooser').find(".chosen-color").attr("squareColor");
+}
+
+function updateAllSquares() {
+    $('#bingo').find(".square").each(function () { updateColorOffsets($(this)); });
+}
+
 function updateColorOffsets($square) {
+    var emphasize = $('#emphasize-my-color').prop('checked');
+    var myColor = getSquareColorClass(getMyColor());
+
+    $square.children('.bg-color').filter('.clone').remove();
     var $colorElements = $square.children('.bg-color');
+
+    // Custom styling for selected goals
+    var $text = $square.children('.text-container');
+    var blackText = $('#black-on-selected').prop('checked');
+    if (!blackText || $colorElements.length === 0) {
+        $text.css('color', '');
+        $text.css('text-shadow', '');
+    } else {
+        $text.css('color', 'black');
+        $text.css('text-shadow', '1px 1px 2px #ffffff');
+    }
+
+    // Emphasizing brings my color as a circle to the front
+    if (emphasize) {
+        $colorElements = $colorElements.not('.' + myColor);
+    }
     var numColors = $colorElements.length;
     var translatePercent = {
         2: ['0', '0'],
@@ -85,11 +114,50 @@ function updateColorOffsets($square) {
     var curHeight = $colorElements.height();
     var targetAngle = Math.atan(curWidth/curHeight);
 
+    $colorElements.removeAttr('style');
     $($colorElements[0]).css('transform', '');
     for (var i = 1; i < $colorElements.length; ++i) {
         var transform = 'skew(-' + targetAngle + 'rad) translateX(' + translations[i] + '%)';
         $($colorElements[i]).css('transform', transform);
-        $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
+        if (blackText) {
+            $($colorElements[i]).css('border-right', 'solid 1.5px #444444');
+        } else {
+            $($colorElements[i]).css('border-right', 'solid 1.5px #222222');
+        }
+    }
+    if (emphasize) {
+        var $myBg = $square.children('.bg-color').filter('.' + myColor);
+        $myBg.removeAttr('style');
+        var $shadow = $square.children('.shadow');
+        $myBg.remove();
+        $shadow.before($myBg); // show above other colors
+        var squareHeight = $shadow.height();
+        var squareWidth = $shadow.width();
+        var $circle = null;
+        if (numColors > 0 && $myBg.length > 0) {
+            $circle = $myBg;
+            if (blackText) {
+                $circle.css('border', 'solid 2px #eeeeee');
+            } else {
+                $circle.css('border', 'solid 2px #141414');
+            }
+        } else {
+            $circle = $myBg.clone();
+            $circle.addClass('clone');
+            if (blackText) {
+                $circle.css('border', 'solid 2px rgba(255, 255, 255, 0.4)');
+            } else {
+                $circle.css('border', 'solid 2px rgba(0, 0, 0, 0.4)');
+            }
+            $shadow.before($circle);
+        }
+        var diameter = Math.min(squareHeight, squareWidth) * 0.7;
+        $circle.css('top', (squareHeight - diameter)/2 + 'px');
+        $circle.css('left', (squareWidth - diameter)/2 + 'px');
+        $circle.css('width', diameter + 'px');
+        $circle.css('height', diameter + 'px');
+
+        $circle.css('border-radius', '50%');
     }
 }
 
@@ -99,6 +167,7 @@ function setPlayerColor($playerEntry, newColor) {
         $playerGoalCounter.removeClass(getSquareColorClass(color));
     });
     $playerGoalCounter.addClass(getSquareColorClass(newColor));
+    $playerGoalCounter.attr('data-color', newColor);
 }
 
 function squareHasColor($square, colorClass) {
@@ -122,6 +191,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
             $square = $board.find("#slot" + (i + 1));
             updateSquare($square, json[i]);
         }
+        updateGoalCounters($board);
     }
 
     refreshBoard = function () {
@@ -184,7 +254,7 @@ function initializeBoard($board, boardUrl, goalSelectedUrl, $colorChooser, isSpe
     }
 
     $(window).resize(function () {
-        $board.find(".square").each(function () { updateColorOffsets($(this)); });
+        updateAllSquares();
     });
 
     function addRowHover(name) {
@@ -256,13 +326,53 @@ function revealBoard() {
 }
 
 function getColorCount($board, colorClass) {
-    return $board.find("." + colorClass).size();
+    return $board.find("." + colorClass).not('.clone').size();
 }
 
-function updateGoalCounters($board, $goalCounters) {
+function getBingoCount($board, colorClass) {
+    var tlbr = [0, 1, 2, 3, 4];
+    var bltr = [4, 3, 2, 1, 0];
+
+    var diagonals = [1, 1];
+    var columns = [1, 1, 1, 1, 1];
+    var rows = [1, 1, 1, 1, 1];
+
+    for (var row = 0; row < 5; row++) {
+        var $row = $board.find('.row' + (row + 1));
+        if ($row.find('.' + colorClass).not('.clone').length < 5) {
+            rows[row] = 0;
+        }
+        if (diagonals[0] === 1 && $row.filter('.tlbr').find('.' + colorClass).length < 1) {
+            diagonals[0] = 0;
+        }
+        if (diagonals[1] === 1 && $row.filter('.bltr').find('.' + colorClass).length < 1) {
+            diagonals[1] = 0;
+        }
+        for (var col = 0; col < 5; col++) {
+            if (columns[col] === 1 && $row.filter('.col' + (col + 1)).find('.' + colorClass).length < 1) {
+                columns[col] = 0;
+            }
+        }
+    }
+    var sum = 0;
+    diagonals.concat(columns).concat(rows).forEach(function (val) { sum += val; });
+    return sum;
+}
+
+function updateGoalCounters($board) {
+    var blackText = $('#black-on-selected').prop('checked');
+
+    var showBingos = $('#show-bingo-score').prop('checked');
     $(".goalcounter").each(function() {
-        var colorClass = $(this).attr('class').split(' ')[1];
-        $(this).html(getColorCount($board, colorClass));
+        var colorClass = getSquareColorClass($(this).attr('data-color'));
+        var text = getColorCount($board, colorClass);
+        if (showBingos) {
+            text += '/' + getBingoCount($board, colorClass);
+            $(this).addClass('wide-score');
+        } else {
+            $(this).removeClass('wide-score');
+        }
+        $(this).text(text);
     });
 }
 
@@ -287,6 +397,7 @@ function initializeColorChooser($colorChooser, initialColor, colorSelectedUrl) {
                 console.log(result);
             }
         });
+        updateAllSquares();
     });
     $colorChooser.find("." + initialColor).addClass("chosen-color");
 }
@@ -440,19 +551,19 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
         } else if (json["type"] === "goal") {
             var $square = $("#" + json["square"]["slot"]);
             setSquareColors($square, json["square"]["colors"]);
-            updateGoalCounters($board, $playersPanel);
+            updateGoalCounters($board);
         }
         else if(json["type"] === "color") {
             var $playerEntry = $playersPanel.find("#" + json["player"]["uuid"]);
             setPlayerColor($playerEntry, json["player"]["color"]);
-            updateGoalCounters($board, $playersPanel);
+            updateGoalCounters($board);
         }
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
                 // only insert if the uuid is not already listed
                 if($playersPanel.find("#" + json["player"]["uuid"]).length === 0) {
                     var colorClass = getSquareColorClass(json["player"]["color"]);
-                    var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
+                    var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, "data-color": json["player"]["color"], html: "0"});
                     var playerName = $("<span>", {"class": "playername", text: " " + json["player"]["name"]});
                     var playerDiv = $("<div>", {"id": json["player"]["uuid"]});
                     playerDiv.append(goalCounter);
@@ -464,7 +575,7 @@ function initializeChatSocket($chatWindow, $board, $playersPanel, $chatSettings,
                         return possibleNextName > json["player"]["name"].toLowerCase();
                     });
 
-                    updateGoalCounters($board, $playersPanel);
+                    updateGoalCounters($board);
                 }
             }
             else if(json["event_type"] === "disconnected") {

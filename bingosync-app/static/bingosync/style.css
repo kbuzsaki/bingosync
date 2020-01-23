@@ -170,6 +170,7 @@
 .square {
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    font-weight: bold;
     padding: 0 5px;
     cursor: pointer;
     width: 105px;
@@ -283,7 +284,7 @@
 }
 
 .tealsquare {
-    background-image: linear-gradient(#419695, #2e7372);
+    background-image: linear-gradient(#1bb383, #085d46);
 }
 
 .navysquare {
@@ -358,13 +359,18 @@
     border: 1px solid transparent;
     white-space: nowrap;
     width: 3ch;
-    padding: 0px 0px;
+    padding: 4px 2px 1px 2px;
     margin: 2px 0px;
     border-radius: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-weight: bold;
+    line-height: 1;
+}
+.goalcounter.wide-score {
+    width: 5ch;
 }
 
 #players-panel {
@@ -384,7 +390,7 @@
 }
 
 .greenplayer {
-    color: #62c462;
+    color: #1ac522;
 }
 
 .redplayer {
@@ -408,7 +414,7 @@
 }
 
 .tealplayer {
-    color: #419695;
+    color: #095a44;
 }
 
 .pinkplayer {
@@ -424,7 +430,12 @@
 }
 
 .color-chooser {
+    font-weight: bold;
     color: #fff;
+}
+.color-chooser.dark-text {
+    color: #000;
+    text-shadow: rgb(255, 255, 255) 1px 1px 2px;
 }
 
 .color-chooser:hover {
@@ -571,4 +582,10 @@
 /* hide asterisk denoting required inputs */
 .asteriskField {
     display: none;
+}
+
+.settings-button {
+    padding: 2px 0 0 0;
+    line-height: 1;
+    font-size: 130%;
 }

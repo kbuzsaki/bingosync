@@ -3,6 +3,7 @@
         <span>
             Choose Color
         </span>
+        <span id="settigns-button" class="btn btn-default btn-xs pull-left settings-button" data-toggle="modal" data-target="#settings-window">⛭</span>
         <span id="color-chooser-collapse" class="btn btn-default btn-xs pull-right collapse-button">
             <div class="flipped">^</div>
         </span>
@@ -31,6 +32,50 @@
             <!-- space column -->
             <div class="col-md-1"></div>
         </div>
+        <div id="settings-window" class="modal fade" style="margin-top: 1em; display: none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Display Settigns</h4></div>
+                    <div class="modal-body">
+                        <div class="form-horizontal text-left">
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="emphasize-my-color" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="emphasize-my-color"> Emphasize my color
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="black-on-selected" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="black-on-selected"> Black text on selected goals
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <label for="show-bingo-score" class="col-md-9">
+                                    <input type="checkbox" class="checkboxinput" id="show-bingo-score"> Show score as Goals/Bingos
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-9">Theme:</div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <select class="select form-control col-md-6" id="color-theme-select">
+                                        <option value="none">Standard</option>
+                                        <option value="light-theme">Light Style</option>
+                                        <option value="dark-theme">Dark Style</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script>
@@ -39,5 +84,49 @@
             $("#color-chooser .js-lower-row").slideToggle(50);
             $(this).children().toggleClass("flipped");
         });
+
+        $('#settings-window').find('.checkboxinput').each(function () {
+            var optName = this.id;
+            var $this = $(this);
+            $this.change(function () {
+                window.localStorage.setItem('option-' + optName, $this.prop('checked') ? 1 : 0);
+                updateAllSquares(); 
+                updateGoalCounters($('#bingo'));
+                if (optName === 'black-on-selected') {
+                    if ($this.prop('checked')) {
+                        $('.color-chooser').addClass('dark-text');
+                    } else {
+                        $('.color-chooser').removeClass('dark-text');
+                    }
+                }
+            });
+
+            var optSetting = parseInt(window.localStorage.getItem('option-' + optName));
+            if (optSetting === 1) {
+                $this.prop('checked', true);
+                $this.trigger('change');
+            }
+        });
+        $('#color-theme-select').change(function () {
+            var theme = $(this).val();
+            window.localStorage.setItem('option-color-theme', theme);
+
+            var classList = $('body').attr('class');
+            if (!classList) {
+                classList = "";
+            }
+            classList = classList.split(/\s+/).filter(function (classStr) {
+                return classStr.indexOf('-theme') === -1; // get all the classes on the body that aren't themes
+            });
+            if (theme !== 'none') {
+                classList.push(theme);
+            }
+            $('body').attr('class', classList.join(' '));
+        });
+        var curStyle = window.localStorage.getItem('option-color-theme');
+        if (curStyle && curStyle !== 'none') {
+            $('#color-theme-select').val(curStyle);
+            $('#color-theme-select').trigger('change');
+        }
     });
 </script>
