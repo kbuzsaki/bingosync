@@ -1,7 +1,7 @@
 from collections import defaultdict
 import json
 import csv
-from urllib.request import urlopen
+import requests
 import os
 import traceback
 import re
@@ -223,7 +223,9 @@ DEFAULT_DOWNLOAD_URL = BASE_URL + "?key=1dRpwfIV2vDRL_Hq-pBj3U7wq7XwZ9JPW9Ac8hK5
 def download_goal_csv(download_url=None):
     if not download_url:
         download_url = DEFAULT_DOWNLOAD_URL
-    data = urlopen(download_url).read().decode('utf-8')
+    r = requests.get(download_url)
+    r.encoding = 'utf-8'
+    data = r.text
     return StringIO(data)
 
 def get_converted_goal_list(csv_file=None):
