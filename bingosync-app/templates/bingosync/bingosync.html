@@ -65,8 +65,9 @@
 <script src="{% static "bingosync/bingosync.js" %}"></script>
 <script>
     $(document).ready(function() {
-        // populate initial settings
         ROOM_SETTINGS = JSON.parse('{{ room.settings|jsonify|escapejs }}');
+        var player = JSON.parse('{{ player.to_json|jsonify|escapejs }}');
+        window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
 
         var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
         var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
@@ -78,14 +79,18 @@
         var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
-        var player = JSON.parse('{{ player.to_json|jsonify|escapejs }}');
-
-        window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
-
+        // Construct all of the UI components
         var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
         var board = new Board($("#bingo"), player, colorChooser, boardUrl, goalSelectedUrl);
         var boardCover = new BoardCover($(".board-container"), ROOM_SETTINGS.hide_card, boardRevealedUrl);
-        board.reloadBoard();
+        var playersPanel = new PlayersPanel($("#players-panel"));
+        var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
+        var chatPanel = new ChatPanel($("#bingo-chat"), $("#chat-settings"), chatUrl, chatHistoryUrl);
+        initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
+
+        var chatSocket = new ChatSocket(chatPanel, board, playersPanel, socketsUrl);
+
+        // initialize magic global hack hooks
         refreshBoard = function () {
             roomSettingsPanel.reloadSettings();
             board.reloadBoard();
@@ -102,18 +107,10 @@
         };
         window.addEventListener('resize', function() { board.refitGoalText(); }, false);
 
-        var playersPanel = new PlayersPanel($("#players-panel"));
-        var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
-
-        // open the chat web socket
-        var chatPanel = new ChatPanel($("#bingo-chat"), $("#chat-settings"), chatUrl, chatHistoryUrl);
+        // Load in all of the actual data
+        board.reloadBoard();
         chatPanel.reloadChatHistory(/*full=*/false);
-
-        var chatSocket = new ChatSocket(chatPanel, board, playersPanel, socketsUrl);
         chatSocket.init(temporarySocketKey);
-
-        // hook up chat contents toggling
-        initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
     });
 </script>
 {% endblock %}
