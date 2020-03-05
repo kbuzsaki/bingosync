@@ -182,6 +182,7 @@ class GameType(Enum):
     yokus_island_express_randomizer = 176
     wii_sports_club_all_sports = 177
     sekiro = 178
+    hollow_knight_randomizer = 179
 
     def __str__(self):
         return self.short_name
@@ -583,6 +584,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hollow_knight, "Hollow Knight", "Hollow Knight"),
+    **singleton_group(GameType.hollow_knight_item_rando, "Hollow Knight Item Randomizer", "HK Item Rando"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
