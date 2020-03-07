@@ -42,9 +42,9 @@ bingoGenerator = function(bingoList, opts) {
 
     // Create counts for all types
     var types = { };
-    ////for (const key of Object.keys(bingoTypes)) {
-    ////    types[key] = bingoTypes[key].Max;
-    ////}
+    for (const key of Object.keys(bingoTypes)) {
+        types[key] = bingoTypes[key].Max;
+    }
 
     // Seed the random
     Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()).toString());
@@ -54,8 +54,7 @@ bingoGenerator = function(bingoList, opts) {
         // Get a random goal, add to chosen
         var index = Math.floor(Math.random() * choosable.length);
         var goal = bingoList[choosable[index]];
-        chosenGoals.push({ 
-            "Desc": goal.Desc });
+        chosenGoals.push({ "name": goal.Desc });
 
         // Remove chosen goal from choosable list
         choosable.splice(index, 1);
@@ -64,7 +63,7 @@ bingoGenerator = function(bingoList, opts) {
         types[goal.Type]--;
         if (types[goal.Type] <= 0) {
             for (var j = 0; j < choosable.length; j++) {
-                if (choosable[j].Type === goal.Type) {
+                if (bingoList[choosable[j]].Type === goal.Type) {
                     choosable.splice(j, 1);
                     j--;
                 }
@@ -100,7 +99,7 @@ bingoGenerator = function(bingoList, opts) {
         // Check for newly choosable goals
         for (var j = 0; j < unchoosable.length; j++) {
             for (var k = 0; k < bingoList[unchoosable[j]].Prereqs.length; k++) {
-                if (bingoList[unchoosable[j]].Prereqs[k] === goal.Name) {
+                if (bingoList[unchoosable[j]].Prereqs[k] === goal.name) {
                     choosable.push(unchoosable[j]);
                     unchoosable.splice(j, 1);
                     j--;
@@ -154,8 +153,15 @@ var bingoList = {
       "Desc": "Flukemarm"
   },
 
+  "Flukemarm2":{
+      "Desc": "Ascended Flukemarm",
+      "Type": "Tiebreaker",
+      "Excludes": [ "Flukemarm", "Godhome", "2Keys", "Jiji", "Ordeal20", "Springs" ]
+  },
+
   "GPZote":{
       "Desc": "Grey Prince Zote",
+      "Type": "Tiebreaker",
       "Excludes": [ "DeepnestZote", "ColoZote", "Colo1" ]
   },
 
@@ -189,11 +195,19 @@ var bingoList = {
   },
 
   "TLord":{
-      "Desc": "Traitor Lord"
+      "Desc": "Traitor Lord",
+      "Excludes": [ "WhiteLady" ]
   },
 
   "TMGrimm":{
-      "Desc":"Troupe Master Grimm"
+      "Desc":"Troupe Master Grimm",
+      "Excludes": [ "NKGrimm", "Brumm", "CarefreeMelody" ]
+  },
+
+  "NKGrimm":{
+      "Desc": "Nightmare King Grimm",
+      "Type": "Tiebreaker",
+      "Excludes": [ "TMGrimm", "CarefreeMelody" ]
   },
 
   "Uumuu":{
@@ -249,22 +263,27 @@ var bingoList = {
 
   "2Warriors":{
       "Desc":"Kill 2 Soul Warriors",
-      "Excludes":["SSoulCheck"]
+      "Excludes":[ "SSoulCheck" ]
   },
 
   "Aluba":{
       "Desc":"Kill an Aluba",
-      "Excludes":["Aluba2"]
+      "Excludes":[ "Aluba2" ]
   },
 
   "Aluba2":{
       "Desc":"Kill two different Alubas",
-      "Excludes":["Aluba"]
+      "Excludes":[ "Aluba" ]
   },
 
   "Colo1":{
       "Desc":"Colosseum 1",
-      "Excludes":["ColoZote"]
+      "Excludes":[ "ColoZote" ]
+  },
+
+  "Colo3":{
+      "Desc":"Colosseum 3",
+      "Type":"Tiebreaker"
   },
 
   "ColoZote":{
@@ -285,17 +304,17 @@ var bingoList = {
   },
 
   "Maggots":{
-      "Desc":"Kill three different Maggots"
+      "Desc":"Kill two different Maggots"
   },
 
   "Millibelle":{
       "Desc":"Kill Millibelle", 
-      "Excludes":["2Keys", "Godhome"]
+      "Excludes":[ "2Keys", "Godhome", "Jiji", "Springs", "Flukemarm2", "Ordeal20" ]
   },
 
   "Mimics":{
       "Desc":"Kill 4 Mimics", 
-      "Excludes":["PeaksGrub", "DeepnestGrubs"]
+      "Excludes":[ "PeaksGrub", "DeepnestGrubs" ]
   },
 
   "Myla":{
@@ -322,11 +341,7 @@ var bingoList = {
 
   "DeepStag":{
       "Desc":"Ride the stag to Distant Village",
-      "Excludes":["Midwife"]
-  },
-
-  "DWielder":{
-      "Desc":"Obtain Dream Wielder"
+      "Excludes":[ "Midwife", "VisitDistantHive" ]
   },
 
   "GardenStag":{
@@ -335,7 +350,8 @@ var bingoList = {
 
   "HiddenStag":{
       "Desc":"Ride the stag to Hidden Station",
-      "Excludes":[ "WPShadeSkip" ]},
+      "Excludes":[ "WPShadeSkip" ]
+  },
 
   "KingStag":{
       "Desc":"Ride the stag to King's Station"
@@ -347,8 +363,18 @@ var bingoList = {
 
 
 
+  "CarefreeMelody":{
+    "Desc": "Obtain Carefree Melody",
+    "Type": "Tiebreaker",
+    "Excludes": [ "NKGrimm" ]
+  },
+
   "Compass":{
       "Desc":"Obtain Wayward Compass"
+  },
+
+  "DWielder":{
+      "Desc":"Obtain Dream Wielder"
   },
 
   "FCharms":{
@@ -462,7 +488,7 @@ var bingoList = {
 
   "MantisClaw":{
       "Desc":"Obtain Mantis Claw", 
-      "Excludes":[ "SanctuarySkip", "WPShadeSkip", "VillageJournal", "CHeartSkip"]
+      "Excludes":[ "SanctuarySkip", "WPShadeSkip", "VillageJournal", "CHeartSkip" ]
   },
 
   "SCloak":{
@@ -504,12 +530,12 @@ var bingoList = {
 
   "2Ore":{
       "Desc":"Obtain 2 Pale Ore", 
-      "Excludes":["Nail3"]
+      "Excludes":[ "Nail3" ]
   },
 
   "2Keys":{
       "Desc":"Use 2 Simple Keys",
-      "Excludes":[ "Springs", "Godhome", "Millibelle"]
+      "Excludes":[ "Springs", "Godhome", "Millibelle", "Jiji", "Flukemarm2", "Ordeal20" ]
   },
 
   "3Maps":{
@@ -537,8 +563,8 @@ var bingoList = {
   },
 
   "Lantern":{
-      "Desc":"Lumafly Lantern", 
-      "Excludes":["JoniDarkRoom"]
+      "Desc":"Obtain Lumafly Lantern", 
+      "Excludes":[ "JoniDarkRoom" ]
   },
 
   "Mask1":{
@@ -554,7 +580,7 @@ var bingoList = {
   },
 
   "Seals":{
-      "Desc":"Have 5 Hallownest Seals"
+      "Desc":"Obtain 5 Hallownest Seals"
   },
 
   "SoulVessel":{
@@ -563,7 +589,7 @@ var bingoList = {
 
   "TramPass":{
       "Desc":"Obtain Tram Pass", 
-      "Excludes":["HiveMask", "HiveKnight"]
+      "Excludes":[ "HiveMask", "HiveKnight", "PinsAll" ]
   },
 
   "WorldSense":{
@@ -581,12 +607,12 @@ var bingoList = {
 
   "Dreamers":{
       "Desc":"Get 2 Dreamer's checks",
-      "Excludes":["Uumuu", "WK"]
+      "Excludes":[ "Uumuu", "WK" ]
   },
 
   "GreenpathRoot":{
       "Desc":"Complete the Greenpath Root",
-      "Excludes":["Trees4"]
+      "Excludes":[ "Trees4" ]
   },
 
   "HallownestCrown":{
@@ -595,12 +621,12 @@ var bingoList = {
 
   "Fountain":{
       "Desc":"Buy the Basin fountain check",
-      "Excludes":["3kgeo", "4kgeo"]
+      "Excludes":[ "3000", "4000" ]
   },
 
   "GWombSkip":{
       "Desc":"Check Glowing Womb", 
-      "Excludes":[ "CHeart"]
+      "Excludes":[ "CHeart" ]
   },
 
   "HiveMask":{
@@ -615,30 +641,30 @@ var bingoList = {
 
   "KEdgeRoot":{
       "Desc":"Complete the Kingdom's Edge Root",
-      "Excludes":["Trees4"]
+      "Excludes":[ "Trees4" ]
   },
 
   "LoveKeySkip":{
       "Desc":"Check Love Key", 
-      "Excludes":[ "Tear"]
+      "Excludes":[ "Tear" ]
   },
 
   "Nailmasters":{
       "Desc":"Check 2 Nailmasters", 
-      "Excludes":[ "Sheo"]
+      "Excludes":[ "Sheo" ]
   },
 
   "SanctuarySkip":{
-      "Desc":"Check the journal below Stone Sancturary",
-      "Excludes":[ "MantisClaw"]
+      "Desc":"Check the journal below Stone Sanctuary",
+      "Excludes":[ "MantisClaw" ]
   },
 
   "Sheo":{
       "Desc":"Check Sheo", 
-      "Excludes":[ "Nailmasters"]
+      "Excludes":[ "Nailmasters" ]
   },
 
-  "AllShops":{
+  "Shops":{
       "Desc":"Visit every shop"
   },
 
@@ -648,27 +674,27 @@ var bingoList = {
 
   "SSoulCheck":{
       "Desc":"Check Shade Soul",
-      "Excludes":[ "2Warriors"]
+      "Excludes":[ "2Warriors" ]
   },
 
   "TearCheck":{
       "Desc":"Check Isma's Tear",
-      "Excludes":[ "CHeart"]
+      "Excludes":[ "CHeart" ]
   },
 
   "Trees4":{
       "Desc":"Complete 4 full dream trees",
-      "Excludes":[ "GreenpathRoot", "KEdgeRoot"]
+      "Excludes":[ "GreenpathRoot", "KEdgeRoot" ]
   },
 
   "UnnSkip":{
       "Desc":"Check Shape of Unn",
-      "Excludes":[ "Tear"]
+      "Excludes":[ "Tear" ]
   },
 
   "VillageJournal":{
       "Desc":"Check the journal above Mantis Village",
-      "Excludes":[ "MantisClaw"]
+      "Excludes":[ "MantisClaw" ]
   },
 
   "VoidHeart":{
@@ -677,33 +703,33 @@ var bingoList = {
 
 
   "CoTGrubs":{
-      "Desc":"Check 5 grub locations in CoT"
+      "Desc":"Check/Free all grubs in CoT (5)"
   },
 
   "CrossroadsCanyonGrubs":{
-      "Desc":"Check 5 grub locations in Crossroads + 1 in Fog Canyon",
-      "Excludes":[ "CHeart"]
+      "Desc":"Check/Free all grubs in Crossroads (5) + Fog Canyon (1)",
+      "Excludes":[ "CHeart" ]
   },
 
   "DeepnestGrubs":{
-      "Desc":"Check 5 grub locations in Deepnest",
-      "Excludes":["Mimics"]
+      "Desc":"Check/Free all grubs in Deepnest (5)",
+      "Excludes":[ "Mimics" ]
   },
 
   "FunGreenGrub":{
-      "Desc":"Check 4 grub locations in Greenpath + 2 in Fungal"
+      "Desc":"Check/Free all grubs in Greenpath (4) and in Fungal (2)"
   },
 
   "PeaksGrub":{
-      "Desc":"Check 7 grub locations in Crystal Peaks",
-      "Excludes":["Mimics"]},
+      "Desc":"Check/Free all grubs in Crystal Peaks (7)",
+      "Excludes":[ "Mimics" ]},
 
   "QueenGrub":{
-      "Desc":"Check 3 grub locations in Queen's Garden"
+      "Desc":"Check/Free all grubs in Queen's Gardens (3)"
   },
 
   "WaterGrub":{
-      "Desc": "Check 3 grub locations in Waterways"
+      "Desc": "Check/Free all grubs in Waterways (3)"
   },
 
 
@@ -713,7 +739,7 @@ var bingoList = {
 
   "3Floors":{
       "Desc":"Break 3 floors using Dive",
-      "Excludes":["DDark", "Dive"]
+      "Excludes":[ "DDark", "Dive" ]
   },
 
   "420Rock":{
@@ -726,22 +752,22 @@ var bingoList = {
 
   "3000":{
       "Desc":"Spend 3000 geo",
-      "Excludes":["Fountain", "4000"]
+      "Excludes":[ "Fountain", "4000" ]
   },
 
   "4000":{
       "Desc":"Spend 4000 geo", 
-      "Excludes":["Fountain", "3000", "5000"]
+      "Excludes":[ "Fountain", "3000", "5000" ]
   },
 
   "5000":{
       "Desc":"Spend 5000 geo", 
-      "Excludes":["Fountain", "4000"]
+      "Excludes":[ "Fountain", "4000" ]
   },
 
   "Bank":{
       "Desc":"Have 1500 geo in the bank",
-      "Excludes":["Millibelle"]
+      "Excludes":[ "Millibelle" ]
   },
 
   "Bardoon":{
@@ -750,6 +776,11 @@ var bingoList = {
 
   "BrettaSly":{
       "Desc":"Rescue Bretta + Sly"
+  },
+
+  "Brumm":{
+    "Desc":"Get Brumm's flame",
+    "Excludes": [ "TMGrimm" ]
   },
 
   "ClothQuest":{
@@ -762,7 +793,11 @@ var bingoList = {
 
   "DeepnestZote":{
       "Desc":"Rescue Zote in Deepnest",
-      "Excludes":["ColoZote", "GPZote"]
+      "Excludes":[ "ColoZote", "GPZote" ]
+  },
+
+  "DirtmouthElevator":{
+      "Desc":"Open the Dirtmouth/Crystal Peaks elevator"
   },
 
   "ElderFlower":{
@@ -779,22 +814,25 @@ var bingoList = {
 
   "Godhome":{
       "Desc":"Enter Godhome",
-      "Excludes":["2Keys", "Millibelle"]
+      "Excludes":[ "2Keys", "Millibelle", "Flukemarm2", "Jiji", "Springs", "Ordeal20" ]
   },
 
   "GoamGarpede":{
-      "Desc":"Goam and Garpede Journal Entries", 
-      "Excludes":["Journal"]
+      "Desc":"Goam and Garpede Journal Entries"
   },
 
-  "HiddenStation":{
-      "Desc":"Sit down in Hidden Station",
-      "Excludes":["HiddenStag", "Wings"]
+  "Jiji":{
+      "Desc":"Open Jiji's Hut",
+      "Excludes":[ "2Keys", "Millibelle", "Flukemarm2", "Godhome", "Springs", "Ordeal20" ]
+  },
+
+  "HopperHell":{
+      "Desc":"Hit the Oro scarecrow up until the hoppers spawn"
   },
 
   "JuggleNosk":{
       "Desc":"Juggle Nosk's Mask 3 times without dropping it",
-      "Excludes":["Nosk"]
+      "Excludes":[ "Nosk" ]
   },
 
   "Lemm":{
@@ -803,21 +841,45 @@ var bingoList = {
 
   "LegEater":{
       "Desc":"Buy out Leg Eater",
-      "Excludes":["3000", "4000", "5000"]
+      "Excludes":[ "3000", "4000", "5000" ]
   },
 
   "LifebloodRoom":{
       "Desc":"Enter the Lifeblood Core room without wearing any Lifeblood charms"
   },
 
+  "LoreBasin":{
+    "Desc":"Read the lore tablet in Ancient Basin"
+  },
+
+  "LoreCliffs":{
+    "Desc":"Read the lore tablet in Howling Cliffs"
+  },
+
+  "LoreKEdge":{
+    "Desc":"Read the lore tablet in Kingdom's Edge (requires Spore Shroom)"
+  },
+
+  "LoreSanctum":{
+    "Desc":"Read both lore tablets in Soul Sanctum"
+  },
+
   "MaskMaker":{
       "Desc":"Talk to Mask Maker",
-      "Excludes":["Midwife"]
+      "Excludes":[ "Midwife" ]
   },
 
   "Midwife":{
       "Desc":"Talk to Midwife",
-      "Excludes":[ "MaskMaker", "DeepStag"]
+      "Excludes":[ "MaskMaker", "DeepStag", "VisitDistantHive" ]
+  },
+
+  "MossProphet":{
+      "Desc":"Bow to Moss Prophet, dead or alive"
+  },
+
+  "MrMushroom1":{
+      "Desc":"Interact with Mr. Mushroom once"
   },
 
   "Nail2":{
@@ -826,51 +888,116 @@ var bingoList = {
 
   "Nail3":{
       "Desc":"Nail 3",
-      "Excludes":["2Ore"]
+      "Excludes":[ "2Ore" ]
+  },
+
+  "Ordeal20":{
+      "Desc":"Eternal Ordeal: 20 Zotes",
+      "Type": "Tiebreaker",
+      "Excludes":[ "Godhome", "Flukemarm2", "2Keys", "Millibelle", "Jiji", "Springs" ]
   },
 
   "Pins":{
       "Desc":"Buy 6 map pins from Iselda (All but two)",
-      "Excludes":["PinsAll"]
+      "Excludes":[ "PinsAll" ]
   },
 
   "PinsAll":{
       "Desc":"Buy 8 map pins from Iselda (All)",
-      "Excludes":["Pins", "TramPass"]
+      "Excludes":[ "Pins", "TramPass" ]
   },
 
   "Revek":{
-      "Desc":"Parry Revek 3 times without dying (Glade of Hope Guard)", 
-      "Excludes":["ShrineOfBelievers"]
+      "Desc":"Parry Revek 3 times without dying (Spirit's Glade Guard)", 
+      "Excludes":[ "ShrineOfBelievers" ]
   },
 
   "Salubra":{
       "Desc":"Buy out Salubra", 
-      "Excludes":["3000", "4000", "5000" ]
+      "Excludes":[ "3000", "4000", "5000" ]
   },
 
   "Springs":{
-      "Desc":"Take a bath in all 4 Hot Springs"
+      "Desc":"Take a bath in 4 different Hot Springs", 
+      "Excludes":[ "2Keys", "SpringSplash", "Millibelle", "Jiji", "Flukemarm2", "Ordeal20", "Godhome" ]
+  },
+
+  "SpringSplash":{
+      "Desc":"Splash the NPC in the Colosseum's hot spring", 
+      "Excludes":[ "Springs" ]
   },
 
   "ShrineOfBelievers":{
       "Desc":"Visit Shrine of Believers", 
-      "Excludes":["Revek"]
+      "Excludes":[ "Revek" ]
   },
   
   "Tendrils":{
-      "Desc":"Void Tendrils Journal Entry", 
-      "Excludes":["Journal"]
+      "Desc":"Void Tendrils Journal Entry"
+  },
+
+  "Tiso":{
+    "Desc": "Dream Nail Tiso's corpse"
+  },
+
+  "Tuk":{
+      "Desc":"Buy two rancid eggs from Tuk", 
+      "Excludes":[ "RancidEggs" ]
   },
 
   "Tolls":{
       "Desc":"Spend geo on 6 tolls or their check"
   },
 
+  "VisitDistantHive":{
+      "Desc":"Visit Distant Village or Hive",
+      "Excludes": [ "TramPass", "DeepStag", "Midwife" ]
+
+  },
+
+  "VisitLakes":{
+      "Desc":"Visit Lake of Unn or Blue Lake"
+  },
+
+
+  "VisitMounds":{
+      "Desc":"Visit Overgrown Mound or Crystallized Mound"
+  },
+
+
+  "VisitSanctumWaterways":{
+      "Desc":"Visit Soul Sanctum or Royal Waterways"
+  },
+
+  "VisitTower":{
+      "Desc":"Visit Tower of Love",
+      "Excludes": [ "LoveKey", "Collector" ]
+  },
+
   "WhiteLady":{
-      "Desc":"Dream nail White Lady", 
-      "Excludes":["TLord"]
+      "Desc":"Dream Nail White Lady", 
+      "Excludes":[ "TLord" ]
+  },
+
+  "Willow":{
+    "Desc": "Dream Nail Willoh's meal"
+  },
+
+  "WPShadeSkip":{
+      "Desc":"Sit down in Hidden Station",
+      "Excludes":[ "HiddenStag", "Wings" ]
   }
+
 };
 
-document.getElementById("p").innerText = JSON.stringify(bingoGenerator(bingoList, { "seed": 1234 }), null, 4);
+var bingoTypes = {
+
+    "Generic":{
+        "Max":Number.MAX_SAFE_INTEGER
+    },
+
+    "Tiebreaker":{
+        "Max":1
+    }
+
+};
