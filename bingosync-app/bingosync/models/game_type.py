@@ -185,6 +185,7 @@ class GameType(Enum):
     hollow_knight_item_rando = 179
     monster_rancher_2 = 180
     lucah_boad = 181
+    wii_play = 182
 
     def __str__(self):
         return self.short_name
@@ -645,6 +646,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
+    **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
