@@ -1,18 +1,18 @@
 [
     {
-        "name": "Collect an Empress Bulblax"
+        "name": "Collect a 1-Pellet of each color"
     },
     {
-        "name": "Enter all 4 caves in PP"
+        "name": "Clear SH6"
     },
     {
-        "name": "Olimarnite Shell (BK3) and Colossal Fossil (BK6)"
+        "name": "Danger Chime (FC3) and Spouse Alert (FC7)"
     },
     {
-        "name": "Build all 3 bridges in PP"
+        "name": "Defeat all enemies on SCx6"
     },
     {
-        "name": "Defeat all enemies in HoB and WFG"
+        "name": "Justice Alloy (SH7)"
     },
     {
         "name": "Make 4 Candypop Buds in FC wilt"
@@ -27,51 +27,51 @@
         "name": "6 fully buried treasures"
     },
     {
-        "name": "Enter SmC"
+        "name": "45 Purples"
     },
     {
-        "name": "Destroy all 6 gas pipes in AW"
-    },
-    {
-        "name": "Crystal Clover (BK1) and Crystal King (BK4)"
+        "name": "Clear SR6"
     },
     {
         "name": "Make a Golden Candypop Bud wilt"
     },
     {
-        "name": "Have a Leaf Pikmin in the ground mature into a Flower Pikmin"
+        "name": "Defeat all enemies on SH4"
     },
     {
-        "name": "Pilgrim Bulb (AW)"
+        "name": "Forged Courage (BK7)"
+    },
+    {
+        "name": "Destroy a Burgeoning Spiderwort mold"
     },
     {
         "name": "Defeat the Burrowing Snagret in VoR"
     },
     {
-        "name": "Kill Louie twice"
+        "name": "Collect 2 Burrowing Snagrets"
+    },
+    {
+        "name": "Clear SmC4"
     },
     {
         "name": "Destroy the poison gate in VoR"
     },
     {
-        "name": "Clear SCx6"
-    },
-    {
         "name": "Make 5 Candypop Buds in SCx wilt"
     },
     {
-        "name": "Clear FC3"
+        "name": "150 Reds"
     },
     {
-        "name": "Turn 15 Bulbmin into other types"
+        "name": "Defeat 8 Dweevils (of any kind)"
     },
     {
-        "name": "50 Reds, 50 Yellows, and 50 Blues"
+        "name": "Enter all 4 caves in AW"
     },
     {
         "name": "Toxic Toadstool (WFG4)"
     },
     {
-        "name": "Paradoxical Enigma (CoS2) and Rubber Ugly (SR6)"
+        "name": "Clear SR3"
     }
 ]
