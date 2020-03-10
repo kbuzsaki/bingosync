@@ -184,6 +184,7 @@ class GameType(Enum):
     sekiro = 178
     hollow_knight_item_rando = 179
     monster_rancher_2 = 180
+    lucah_boad = 181
 
     def __str__(self):
         return self.short_name
@@ -602,6 +603,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
             "LEGO SW: TCS DS"),
+    **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
     **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
