@@ -183,6 +183,7 @@ class GameType(Enum):
     wii_sports_club_all_sports = 177
     sekiro = 178
     hollow_knight_item_rando = 179
+    monster_rancher_2 = 180
 
     def __str__(self):
         return self.short_name
@@ -610,6 +611,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.monster_rancher_2, "Monster Rancher 2", "MR2"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
