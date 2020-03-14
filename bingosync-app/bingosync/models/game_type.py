@@ -9,7 +9,7 @@ class GameType(Enum):
     majoras_mask = 3
     super_metroid = 4
     castlevania_sotn = 5
-    super_mario_world = 6
+    super_mario_world_legacy = 6
     pokemon_red_blue = 7
     pokemon_crystal = 8
     donkey_kong_64 = 9
@@ -507,6 +507,12 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_2v2, "2v2", "SMS 2v2"),
         ],
     },
+    GameType.super_mario_world_legacy: {
+        "name": "Super Mario World",
+        "variants": [
+            (GameType.super_mario_world_legacy, "Legacy", "SMW Legacy"),
+        ],
+    },
     GameType.super_metroid: {
         "name": "Super Metroid",
         "variants": [
@@ -638,7 +644,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
-    **singleton_group(GameType.super_mario_world, "Super Mario World", "SMW"),
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
