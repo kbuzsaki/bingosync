@@ -186,6 +186,7 @@ class GameType(Enum):
     monster_rancher_2 = 180
     lucah_boad = 181
     wii_play = 182
+    super_mario_world = 183
 
     def __str__(self):
         return self.short_name
@@ -507,10 +508,11 @@ GAME_GROUPS = {
             (GameType.super_mario_sunshine_2v2, "2v2", "SMS 2v2"),
         ],
     },
-    GameType.super_mario_world_legacy: {
+    GameType.super_mario_world: {
         "name": "Super Mario World",
         "variants": [
-            (GameType.super_mario_world_legacy, "Legacy", "SMW Legacy"),
+            (GameType.super_mario_world, "Normal", "SMW"),
+            (GameType.super_mario_world_legacy, "Legacy SRL", "SMW Legacy"),
         ],
     },
     GameType.super_metroid: {
