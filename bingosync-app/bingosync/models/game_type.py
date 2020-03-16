@@ -187,6 +187,7 @@ class GameType(Enum):
     lucah_boad = 181
     wii_play = 182
     super_mario_world = 183
+    illusion_of_gaia_rando = 184
 
     def __str__(self):
         return self.short_name
@@ -602,6 +603,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
+    **singleton_group(GameType.illusion_of_gaia_rando, "Illusion of Gaia Rando", "IoGR"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.jak_and_daxter, "Jak and Daxter: The Precursor Legacy", "J&D: TPL"),
