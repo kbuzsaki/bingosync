@@ -4,7 +4,6 @@ var bingoList = [];
 bingoList[1] = [
   { name: "Talk to Theo in Crossing", types: ["earlygame","cutscene"] },
   { name: "Complete 1A Start without jumping", types: ["earlygame","task"] },
-  { name: "2 Winged Berries", types: ["special_berries","earlygame"] },
   { name: "All Berries in Start of 1A (6)", types: ["checkpoint_berries"] },
   { name: "All Berries in Chasm (5)", types: ["checkpoint_berries"] },
   { name: "Get a 1-Up in 1A", types: ["1up","earlygame"] },
@@ -12,6 +11,7 @@ bingoList[1] = [
   { name: "Complete Chasm without dashing", types: ["earlygame","task"] },
   { name: "Complete 1A Start without dashing", types: ["earlygame","task"] },
   { name: "Forsaken City Cassette", types: ["1b","earlygame"] },
+  { name: "Old Site Blue Heart", types: ["hearts","earlygame"] },
 ];
 bingoList[2] = [
   { name: "Get two 1-Ups", types: ["1up"] },
@@ -23,11 +23,11 @@ bingoList[2] = [
   { name: "Complete Awake without jumping", types: ["earlygame","awake"] },
   { name: "Complete Awake without dashing", types: ["earlygame","awake"] },
   { name: "All Berries in Start of 2A (9)", types: ["checkpoint_berries"] },
-  { name: "Old Site Blue Heart", types: ["hearts","earlygame"] },
+  { name: "2 Hearts", types: ["amount_hearts"] },
 
 ];
 bingoList[3] = [
-  { name: "2 Hearts", types: ["amount_hearts"] },
+  { name: "5 Berries in 3 Chapters", types: ["amount_berries"] },
   { name: "Complete 1 B-Side", types: ["amount_chapters"] },
   { name: "Read the Poem in 2A", types: ["earlygame","awake"] },
   { name: "Talk to Theo in Elevator Shaft", types: ["resort_cutscene","cutscene"] },
@@ -193,8 +193,7 @@ bingoList[16] = [
   { name: "Celestial Resort B-Side", types: ["3b"] },
   { name: "Only bottom route in Hollows", types: ["task","reflection_pathing"] },
   { name: "Get 2 Keys in Search", types: ["task","search"] },
-  { name: "Get 3 Keys in Search", types: ["task","search"] },
-
+  { name: "Get 3 Keys in Search", types: ["task","search"] }
 ];
 bingoList[17] = [
   { name: "Don't skip final 4A Cutscene", types: ["cutscene","task"] },
@@ -289,7 +288,7 @@ bingoList[24] = [
   { name: "All Berries in 3000M (7)", types: ["lategame"] },
   { name: "All Berries in Hot and Cold (3)", types: ["checkpoint_berries","core"] },
   { name: "Use 2 Binoculars in 4 Chapters", types: ["binoculars"] },
-  { name: "Clear Core", types: ["core"] },
+  { name: "Core Blue Heart", types: ["core"] },
   { name: "Get 5 Keys in Power Source", types: ["ch9","binoculars"] },
 ];
 bingoList[25] = [
@@ -300,7 +299,7 @@ bingoList[25] = [
   { name: "Complete 5 B-Sides", types: ["amount_chapters"] },
   { name: "15 Berries in 4 Chapters", types: ["amount_berries","big_berries"] },
   { name: "All Collectibles in 7A", types: ["lategame"] },
-  { name: "Empty Space", types: ["ch9"] },
+  { name: "Reach Event Horizon (9 Checkpoint)", types: ["ch9"] },
   { name: "All Collectibles in 8A", types: ["checkpoint_berries","core"] },
   { name: "The Summit Blue Heart", types: ["gems","hearts"] },
 ];
