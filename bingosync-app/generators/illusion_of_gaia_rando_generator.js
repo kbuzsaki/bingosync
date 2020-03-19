@@ -34,7 +34,7 @@ bingoGenerator = function(bingoList, opts) {
         for (var i = 1; i <= 25; i++) {
             var randIndex = Math.floor(Math.random() * bingoList.length);
             while (usedGoals[randIndex] ||
-              (statueGoalAdded && statueGoalAdded(bingoList[randIndex])) ||
+              (statueGoalAdded && isStatueGoal(bingoList[randIndex])) ||
               (jewelGoalAdded && isJewelGoal(bingoList[randIndex])) ||
               (hintGoalAdded && isHintGoal(bingoList[randIndex]))) {
                 randIndex = Math.floor(Math.random() * bingoList.length);
