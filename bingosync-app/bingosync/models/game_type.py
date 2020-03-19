@@ -431,6 +431,12 @@ GAME_GROUPS = {
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
         ],
     },
+    GameType.illusion_of_gaia_rando: {
+        "name": "Illusion of Gaia",
+        "variants": [
+            (GameType.illusion_of_gaia_rando, "Randomizer", "IoGR"),
+        ],
+    },
     GameType.ittle_dew_2: {
         "name": "Ittle Dew 2",
         "variants": [
@@ -603,7 +609,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
-    **singleton_group(GameType.illusion_of_gaia_rando, "Illusion of Gaia Rando", "IoGR"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.jak_and_daxter, "Jak and Daxter: The Precursor Legacy", "J&D: TPL"),
