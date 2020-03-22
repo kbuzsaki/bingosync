@@ -189,6 +189,7 @@ class GameType(Enum):
     super_mario_world = 183
     illusion_of_gaia_rando = 184
     pikmin_2_all_areas_unlocked = 185
+    yugioh_forbidden_memories_alternate = 186
 
     def __str__(self):
         return self.short_name
@@ -579,6 +580,13 @@ GAME_GROUPS = {
             (GameType.yokus_island_express_randomizer, "Randomizer", "Yoku's IE Rando"),
         ],
     },
+    GameType.yugioh_forbidden_memories: {
+        "name": "Yu-Gi-Oh! Forbidden Memories",
+        "variants": [
+            (GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
+			(GameType.yugioh_forbidden_memories_alternate, "Yu-Gi-Oh! Forbidden Memories", "YGO FM (Type B)"),
+        ],
+    },
     GameType.zelda_botw: {
         "name": "Zelda: Breath of the Wild",
         "variants": [
@@ -671,7 +679,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
-    **singleton_group(GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_wind_waker_sd, "Zelda: The Wind Waker SD", "TWW SD"),
 }
