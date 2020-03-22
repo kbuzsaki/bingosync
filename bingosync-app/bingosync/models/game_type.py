@@ -576,7 +576,7 @@ GAME_GROUPS = {
         "name": "Yu-Gi-Oh! Forbidden Memories",
         "variants": [
             (GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
-            (GameType.yugioh_forbidden_memories_alternate, "Yu-Gi-Oh! Forbidden Memories", "YGO FM (Type B)"),
+            (GameType.yugioh_forbidden_memories_alternate, "Yu-Gi-Oh! Forbidden Memories (Type B)", "YGO FM (Type B)"),
         ],
     },
     GameType.zelda_botw: {
