@@ -188,7 +188,7 @@ class GameType(Enum):
     wii_play = 182
     super_mario_world = 183
     illusion_of_gaia_rando = 184
-	yugioh_forbidden_memories_alternate = 185
+    yugioh_forbidden_memories_alternate = 185
 
     def __str__(self):
         return self.short_name
@@ -576,7 +576,7 @@ GAME_GROUPS = {
         "name": "Yu-Gi-Oh! Forbidden Memories",
         "variants": [
             (GameType.yugioh_forbidden_memories, "Yu-Gi-Oh! Forbidden Memories", "YGO FM"),
-			(GameType.yugioh_forbidden_memories_alternate, "Yu-Gi-Oh! Forbidden Memories", "YGO FM (Type B)"),
+            (GameType.yugioh_forbidden_memories_alternate, "Yu-Gi-Oh! Forbidden Memories", "YGO FM (Type B)"),
         ],
     },
     GameType.zelda_botw: {
