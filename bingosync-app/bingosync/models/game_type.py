@@ -188,6 +188,7 @@ class GameType(Enum):
     wii_play = 182
     super_mario_world = 183
     illusion_of_gaia_rando = 184
+    pikmin_2_all_areas_unlocked = 185
 
     def __str__(self):
         return self.short_name
@@ -484,6 +485,13 @@ GAME_GROUPS = {
             (GameType.paper_mario_new, "New", "The Pape (New)"),
         ],
     },
+    GameType.pikmin_2: {
+        "name": "Pikmin 2",
+        "variants": [
+            (GameType.pikmin_2, "Normal", "Pikmin 2"),
+            (GameType.pikmin_2_all_areas_unlocked, "All Areas Unlocked", "Pikmin 2 AAU"),
+        ],
+    },
     GameType.pokemon_heartgold_soulsilver: {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
@@ -635,7 +643,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
-    **singleton_group(GameType.pikmin_2, "Pikmin 2", "Pikmin 2"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
