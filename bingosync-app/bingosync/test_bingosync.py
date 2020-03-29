@@ -72,6 +72,34 @@ class CustomTestCase(test.TestCase):
             {"name": "goal 16"}, {"name": "goal 17"}, {"name": "goal 18"}, {"name": "goal 19"}, {"name": "goal 20"},
             {"name": "goal 21"}, {"name": "goal 22"}, {"name": "goal 23"}, {"name": "goal 24"}, {"name": "goal 25"}]
 
+        self.numeric_srl_goals = [
+            [{"name": "goal 01a"}, {"name": "goal 01b"}],
+            [{"name": "goal 02a"}, {"name": "goal 02b"}],
+            [{"name": "goal 03a"}, {"name": "goal 03b"}],
+            [{"name": "goal 04a"}, {"name": "goal 04b"}],
+            [{"name": "goal 05a"}, {"name": "goal 05b"}],
+            [{"name": "goal 06a"}, {"name": "goal 06b"}],
+            [{"name": "goal 07a"}, {"name": "goal 07b"}],
+            [{"name": "goal 08a"}, {"name": "goal 08b"}],
+            [{"name": "goal 09a"}, {"name": "goal 09b"}],
+            [{"name": "goal 10a"}, {"name": "goal 10b"}],
+            [{"name": "goal 11a"}, {"name": "goal 11b"}],
+            [{"name": "goal 12a"}, {"name": "goal 12b"}],
+            [{"name": "goal 13a"}, {"name": "goal 13b"}],
+            [{"name": "goal 14a"}, {"name": "goal 14b"}],
+            [{"name": "goal 15a"}, {"name": "goal 15b"}],
+            [{"name": "goal 16a"}, {"name": "goal 16b"}],
+            [{"name": "goal 17a"}, {"name": "goal 17b"}],
+            [{"name": "goal 18a"}, {"name": "goal 18b"}],
+            [{"name": "goal 19a"}, {"name": "goal 19b"}],
+            [{"name": "goal 20a"}, {"name": "goal 20b"}],
+            [{"name": "goal 21a"}, {"name": "goal 21b"}],
+            [{"name": "goal 22a"}, {"name": "goal 22b"}],
+            [{"name": "goal 23a"}, {"name": "goal 23b"}],
+            [{"name": "goal 24a"}, {"name": "goal 24b"}],
+            [{"name": "goal 25a"}, {"name": "goal 25b"}]
+        ]
+
     def make_room_with_custom_json(self, **overrides):
         args = {
             "room_name": "Test Room",
@@ -113,6 +141,21 @@ class CustomTestCase(test.TestCase):
             {"name": "goal 18"}, {"name": "goal 22"}, {"name": "goal 23"}, {"name": "goal 13"}, {"name": "goal 5" },
             {"name": "goal 2" }, {"name": "goal 19"}, {"name": "goal 6" }, {"name": "goal 8" }, {"name": "goal 1"}])
 
+    def test_srl_v5_custom(self):
+        self.maxDiff = 100000
+        create_resp = self.make_room_with_custom_json(custom_json=json.dumps(self.numeric_srl_goals),
+                variant_type=str(models.GameType.custom_srl_v5.value),
+                seed="1234")
+        game = create_resp.context["room"].current_game
+
+        board_goals = [filter_keys(square, ["name"]) for square in game.board]
+        self.assertEqual(board_goals, [
+            {"name": "goal 02a"}, {"name": "goal 21a"}, {"name": "goal 14b"}, {"name": "goal 18b"}, {"name": "goal 10a"},
+            {"name": "goal 19a"}, {"name": "goal 08b"}, {"name": "goal 05b"}, {"name": "goal 22a"}, {"name": "goal 11b"},
+            {"name": "goal 25a"}, {"name": "goal 12b"}, {"name": "goal 16b"}, {"name": "goal 09b"}, {"name": "goal 03b"},
+            {"name": "goal 06a"}, {"name": "goal 04b"}, {"name": "goal 23b"}, {"name": "goal 15a"}, {"name": "goal 17a"},
+            {"name": "goal 13a"}, {"name": "goal 20a"}, {"name": "goal 07b"}, {"name": "goal 01b"}, {"name": "goal 24b"}])
+
 
     def test_invalid_json(self):
         create_resp = self.make_room_with_custom_json(custom_json="foo")
@@ -144,6 +187,41 @@ class CustomTestCase(test.TestCase):
 
         create_resp = self.make_room_with_custom_json(custom_json=json.dumps(custom_goals))
         self.assertContains(create_resp, "Square 3 ({&quot;name&quot;: &quot;&quot;}) has an empty &quot;name")
+
+    def test_invalid_srl_num_tiers(self):
+        custom_goals = list(self.numeric_srl_goals)[:24]
+
+        create_resp = self.make_room_with_custom_json(variant_type=str(models.GameType.custom_srl_v5.value), custom_json=json.dumps(custom_goals))
+        self.assertContains(create_resp, "An SRL goal list must have exactly 25 tiers (found 24)")
+
+    def test_invalid_srl_non_list_tier(self):
+        custom_goals = self.numeric_srl_goals
+        custom_goals[2] = {"foo": "bar"}
+
+        create_resp = self.make_room_with_custom_json(variant_type=str(models.GameType.custom_srl_v5.value), custom_json=json.dumps(custom_goals))
+        self.assertContains(create_resp, "Element at difficulty tier 3 was not a list (found {&quot;foo&quot;: &quot;bar&quot;})")
+
+    def test_invalid_srl_empty_tier(self):
+        custom_goals = self.numeric_srl_goals
+        custom_goals[2] = []
+
+        create_resp = self.make_room_with_custom_json(variant_type=str(models.GameType.custom_srl_v5.value), custom_json=json.dumps(custom_goals))
+        self.assertContains(create_resp, "Goal list at difficulty tier 3 was empty")
+
+    def test_invalid_srl_missing_name(self):
+        custom_goals = self.numeric_srl_goals
+        custom_goals[2][0] = {"naem": "foo"}
+
+        create_resp = self.make_room_with_custom_json(variant_type=str(models.GameType.custom_srl_v5.value), custom_json=json.dumps(custom_goals))
+        self.assertContains(create_resp, "Goal 1 ({&quot;naem&quot;: &quot;foo&quot;}) in difficulty tier 3 is missing a &quot;name&quot; attribute")
+
+    def test_invalid_srl_empty_name(self):
+        custom_goals = self.numeric_srl_goals
+        custom_goals[2][0] = {"name": ""}
+
+        create_resp = self.make_room_with_custom_json(variant_type=str(models.GameType.custom_srl_v5.value), custom_json=json.dumps(custom_goals))
+        self.assertContains(create_resp, "Goal 1 ({&quot;name&quot;: &quot;&quot;}) in difficulty tier 3 has an empty &quot;name&quot; attribute")
+
 
 class ApiTestCase(test.TestCase):
 

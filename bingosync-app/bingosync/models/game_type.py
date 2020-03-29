@@ -188,6 +188,7 @@ class GameType(Enum):
     illusion_of_gaia_rando = 184
     pikmin_2_all_areas_unlocked = 185
     yugioh_forbidden_memories_alternate = 186
+    custom_srl_v5 = 187
 
     def __str__(self):
         return self.short_name
@@ -218,7 +219,7 @@ class GameType(Enum):
 
     @property
     def is_custom(self):
-        return self == GameType.custom or self == GameType.custom_randomized
+        return self in (GameType.custom, GameType.custom_randomized, GameType.custom_srl_v5)
 
     @property
     def uses_seed(self):
@@ -384,7 +385,8 @@ GAME_GROUPS = {
         "name": "Custom (Advanced)",
         "variants": [
             (GameType.custom, "Fixed Board", "Custom"),
-            (GameType.custom_randomized, "Randomized", "Rand. Custom"),
+            (GameType.custom_randomized, "Randomized", "Custom (Rand)"),
+            (GameType.custom_srl_v5, "SRL v5", "Custom (SRLv5)"),
         ],
     },
     GameType.darkest_dungeon: {

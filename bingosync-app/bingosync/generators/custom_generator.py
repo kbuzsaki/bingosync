@@ -50,6 +50,41 @@ def _parse_simple_list(custom_board, game_type):
     return custom_board
 
 
+def _validate_difficulty_tier(goals, tier):
+    if not isinstance(goals, list):
+        raise InvalidBoardException(
+                'Element at difficulty tier {} was not a list (found {})'.format(tier, json.dumps(goals)))
+
+    if not goals:
+        raise InvalidBoardException(
+                'Goal list at difficulty tier {} was empty'.format(tier))
+
+    for i, goal in enumerate(goals):
+        if "name" not in goal:
+            raise InvalidBoardException(
+                    'Goal {} ({}) in difficulty tier {} is missing a "name" attribute'
+                    .format(i+1, json.dumps(goal), tier))
+        if goal["name"] == "":
+            raise InvalidBoardException(
+                    'Goal {} ({}) in difficulty tier {} has an empty "name" attribute'
+                    .format(i+1, json.dumps(goal), tier))
+
+
+def _parse_srl_v5_list(custom_board):
+    if not isinstance(custom_board, list):
+        raise InvalidBoardException('Board must be a list')
+
+    if len(custom_board) != 25:
+        raise InvalidBoardException(
+                'An SRL goal list must have exactly 25 tiers (found {})'.format(len(custom_board)))
+
+    for i, goals in enumerate(custom_board):
+        _validate_difficulty_tier(goals, i+1)
+
+    return [None] + custom_board
+
+
+
 class CustomGenerator:
 
     def __init__(self, game_type):
@@ -67,14 +102,18 @@ class CustomGenerator:
 
         if self.game_type in (GameType.custom, GameType.custom_randomized):
             return _parse_simple_list(custom_board, self.game_type)
+        elif self.game_type == GameType.custom_srl_v5:
+            return _parse_srl_v5_list(custom_board)
 
         raise Exception('Unrecognized custom game type: {}'.format(self.game_type))
 
     def get_card(self, seed, custom_board):
         if self.game_type == GameType.custom:
             return custom_board
-        elif self.game_type == GameType.custom_randomized:
+        elif self.game_type in (GameType.custom_randomized, GameType.custom_srl_v5):
             return BingoGenerator.instance(str(self.game_type.name)).get_card(seed, custom_board)
+
+        raise Exception('Unrecognized custom game type: {}'.format(self.game_type))
 
 
 
