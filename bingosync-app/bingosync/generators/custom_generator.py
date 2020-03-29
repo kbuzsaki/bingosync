@@ -1,14 +1,27 @@
 # utility functions for handling the "custom" GameTypes
 # packaged as a "Generator" to allow some generic handling
 
+from django.utils import safestring
+
 import json
+import urllib.parse
 
 from bingosync.generators.bingo_generator import BingoGenerator
 from bingosync.models.game_type import GameType
 
 
 class InvalidBoardException(Exception):
-    pass
+
+    def __str__(self):
+        # propagate the SafeText up to the template if that's the entire message
+        if len(self.args) == 1 and isinstance(self.args[0], safestring.SafeText):
+            return self.args[0]
+        return super().__str__()
+
+
+def _make_jsonlint_link(custom_json):
+    href = 'https://jsonlint.com/?' + urllib.parse.urlencode({'json': custom_json}, quote_via=urllib.parse.quote)
+    return '<a href="{}" target="_blank">jsonlint</a>'.format(href)
 
 
 def _validate_square(i, square):
@@ -49,7 +62,8 @@ class CustomGenerator:
         try:
             custom_board = json.loads(custom_json)
         except json.decoder.JSONDecodeError as e:
-            raise InvalidBoardException('Invalid Board Json')
+            raise InvalidBoardException(safestring.mark_safe(
+                'Couldn\'t parse board json, try {}'.format(_make_jsonlint_link(custom_json))))
 
         if self.game_type in (GameType.custom, GameType.custom_randomized):
             return _parse_simple_list(custom_board, self.game_type)

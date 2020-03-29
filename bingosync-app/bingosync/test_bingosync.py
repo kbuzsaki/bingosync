@@ -116,7 +116,7 @@ class CustomTestCase(test.TestCase):
 
     def test_invalid_json(self):
         create_resp = self.make_room_with_custom_json(custom_json="foo")
-        self.assertContains(create_resp, "Invalid Board Json")
+        self.assertContains(create_resp, "Couldn't parse board json")
 
     def test_invalid_not_list(self):
         create_resp = self.make_room_with_custom_json(custom_json='{"some_dict": "value"}')
