@@ -4,6 +4,7 @@
 import json
 
 from bingosync.generators.bingo_generator import BingoGenerator
+from bingosync.models.game_type import GameType
 
 
 class InvalidBoardException(Exception):
@@ -20,7 +21,6 @@ def _validate_square(i, square):
 
 
 def _parse_simple_list(custom_board, game_type):
-    from bingosync.models.game_type import GameType
     if not isinstance(custom_board, list):
         raise InvalidBoardException("Board must be a list")
 
@@ -45,7 +45,6 @@ class CustomGenerator:
         self.game_type = game_type
 
     def validate_custom_json(self, custom_json):
-        from bingosync.models.game_type import GameType
         try:
             custom_board = json.loads(custom_json)
         except json.decoder.JSONDecodeError as e:
@@ -57,7 +56,6 @@ class CustomGenerator:
         raise Exception("Unrecognized custom game type: " + str(self.game_type))
 
     def get_card(self, seed, custom_board):
-        from bingosync.models.game_type import GameType
         if self.game_type == GameType.custom:
             return custom_board
         elif self.game_type == GameType.custom_randomized:

@@ -1,7 +1,5 @@
 from enum import Enum, unique
 
-from bingosync.generators import BingoGenerator, CustomGenerator
-
 @unique
 class GameType(Enum):
     ocarina_of_time = 1
@@ -232,6 +230,7 @@ class GameType(Enum):
         return list(GameType)[value - 1]
 
     def generator_instance(self):
+        from bingosync.generators import BingoGenerator, CustomGenerator
         if self.is_custom:
             return CustomGenerator(self)
         else:
