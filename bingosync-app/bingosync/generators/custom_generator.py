@@ -84,6 +84,32 @@ def _parse_srl_v5_list(custom_board):
     return [None] + custom_board
 
 
+def _parse_isaac_list(custom_board):
+    if not isinstance(custom_board, list):
+        raise InvalidBoardException('Board must be a list')
+
+    if len(custom_board) != 4:
+        raise InvalidBoardException(
+                'An Isaac goal list must have exactly 4 tiers (found {})'.format(len(custom_board)))
+
+    for i, goals in enumerate(custom_board):
+        _validate_difficulty_tier(goals, i+1)
+
+    if len(custom_board[0]) < 10:
+        raise InvalidBoardException(
+                'An Isaac goal list must have at least 10 easy goals (found {})'.format(len(custom_board[0])))
+    if len(custom_board[1]) < 10:
+        raise InvalidBoardException(
+                'An Isaac goal list must have at least 10 medium goals (found {})'.format(len(custom_board[1])))
+    if len(custom_board[2]) < 4:
+        raise InvalidBoardException(
+                'An Isaac goal list must have at least 4 hard goals (found {})'.format(len(custom_board[2])))
+    if len(custom_board[3]) < 1:
+        raise InvalidBoardException(
+                'An Isaac goal list must have at least 1 very hard goal (found {})'.format(len(custom_board[3])))
+
+    return [None] + custom_board
+
 
 class CustomGenerator:
 
@@ -104,13 +130,15 @@ class CustomGenerator:
             return _parse_simple_list(custom_board, self.game_type)
         elif self.game_type == GameType.custom_srl_v5:
             return _parse_srl_v5_list(custom_board)
+        elif self.game_type == GameType.custom_isaac:
+            return _parse_isaac_list(custom_board)
 
         raise Exception('Unrecognized custom game type: {}'.format(self.game_type))
 
     def get_card(self, seed, custom_board):
         if self.game_type == GameType.custom:
             return custom_board
-        elif self.game_type in (GameType.custom_randomized, GameType.custom_srl_v5):
+        elif self.game_type in (GameType.custom_randomized, GameType.custom_srl_v5, GameType.custom_isaac):
             return BingoGenerator.instance(str(self.game_type.name)).get_card(seed, custom_board)
 
         raise Exception('Unrecognized custom game type: {}'.format(self.game_type))

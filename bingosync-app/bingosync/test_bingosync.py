@@ -100,6 +100,15 @@ class CustomTestCase(test.TestCase):
             [{"name": "goal 25a"}, {"name": "goal 25b"}]
         ]
 
+        self.numeric_isaac_goals = [
+            [{"name": "easy 1"}, {"name": "easy 2"}, {"name": "easy 3"}, {"name": "easy 4"}, {"name": "easy 5"},
+             {"name": "easy 6"}, {"name": "easy 7"}, {"name": "easy 8"}, {"name": "easy 9"}, {"name": "easy 10"}],
+            [{"name": "medium 1"}, {"name": "medium 2"}, {"name": "medium 3"}, {"name": "medium 4"}, {"name": "medium 5"},
+             {"name": "medium 6"}, {"name": "medium 7"}, {"name": "medium 8"}, {"name": "medium 9"}, {"name": "medium 10"}],
+            [{"name": "hard 1"}, {"name": "hard 2"}, {"name": "hard 3"}, {"name": "hard 4"}],
+            [{"name": "very hard 1"}]]
+
+
     def make_room_with_custom_json(self, **overrides):
         args = {
             "room_name": "Test Room",
@@ -156,6 +165,20 @@ class CustomTestCase(test.TestCase):
             {"name": "goal 06a"}, {"name": "goal 04b"}, {"name": "goal 23b"}, {"name": "goal 15a"}, {"name": "goal 17a"},
             {"name": "goal 13a"}, {"name": "goal 20a"}, {"name": "goal 07b"}, {"name": "goal 01b"}, {"name": "goal 24b"}])
 
+    def test_isaac_custom(self):
+        self.maxDiff = 100000
+        create_resp = self.make_room_with_custom_json(custom_json=json.dumps(self.numeric_isaac_goals),
+                variant_type=str(models.GameType.custom_isaac.value),
+                seed="1234")
+        game = create_resp.context["room"].current_game
+
+        board_goals = [filter_keys(square, ["name"]) for square in game.board]
+        self.assertEqual(board_goals, [
+            {'name': 'medium 4'}, {'name': 'hard 2'}, {'name': 'easy 10'}, {'name': 'easy 10'}, {'name': 'medium 4'},
+            {'name': 'hard 1'}, {'name': 'easy 6'}, {'name': 'medium 9'}, {'name': 'medium 5'}, {'name': 'easy 6'},
+            {'name': 'easy 2'}, {'name': 'medium 8'}, {'name': 'very hard 1'}, {'name': 'medium 10'}, {'name': 'easy 7'},
+            {'name': 'medium 5'}, {'name': 'easy 7'}, {'name': 'medium 10'}, {'name': 'easy 4'}, {'name': 'hard 1'},
+            {'name': 'easy 4'}, {'name': 'medium 2'}, {'name': 'easy 8'}, {'name': 'hard 3'}, {'name': 'medium 8'}])
 
     def test_invalid_json(self):
         create_resp = self.make_room_with_custom_json(custom_json="foo")

@@ -189,6 +189,7 @@ class GameType(Enum):
     pikmin_2_all_areas_unlocked = 185
     yugioh_forbidden_memories_alternate = 186
     custom_srl_v5 = 187
+    custom_isaac = 188
 
     def __str__(self):
         return self.short_name
@@ -219,7 +220,7 @@ class GameType(Enum):
 
     @property
     def is_custom(self):
-        return self in (GameType.custom, GameType.custom_randomized, GameType.custom_srl_v5)
+        return self in (GameType.custom, GameType.custom_randomized, GameType.custom_srl_v5, GameType.custom_isaac)
 
     @property
     def uses_seed(self):
@@ -387,6 +388,7 @@ GAME_GROUPS = {
             (GameType.custom, "Fixed Board", "Custom"),
             (GameType.custom_randomized, "Randomized", "Custom (Rand)"),
             (GameType.custom_srl_v5, "SRL v5", "Custom (SRLv5)"),
+            (GameType.custom_isaac, "Binding of Isaac", "Custom (Isaac)"),
         ],
     },
     GameType.darkest_dungeon: {
