@@ -190,6 +190,7 @@ class GameType(Enum):
     yugioh_forbidden_memories_alternate = 186
     custom_srl_v5 = 187
     custom_isaac = 188
+    kingdom_hearts_final_mix = 189
 
     def __str__(self):
         return self.short_name
@@ -631,6 +632,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.jak_and_daxter, "Jak and Daxter: The Precursor Legacy", "J&D: TPL"),
+    **singleton_group(GameType.kingdom_hearts_final_mix, "Kingdom Hearts Final Mix", "KHFM"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
