@@ -5,8 +5,37 @@ import json
 
 from bingosync.generators.bingo_generator import BingoGenerator
 
+
 class InvalidBoardException(Exception):
     pass
+
+
+def _validate_square(i, square):
+    if "name" not in square:
+        raise InvalidBoardException("Square " + str(1 + i)
+                + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
+    elif square["name"] == "":
+        raise InvalidBoardException("Square " + str(1 + i)
+                + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
+
+
+def _parse_simple_list(custom_board, game_type):
+    from bingosync.models.game_type import GameType
+    if not isinstance(custom_board, list):
+        raise InvalidBoardException("Board must be a list")
+
+    if game_type == GameType.custom and len(custom_board) != 25:
+        raise InvalidBoardException("A fixed board must have exactly 25 goals (found "
+                + str(len(custom_board)) + ")")
+    elif game_type == GameType.custom_randomized and len(custom_board) < 25:
+        raise InvalidBoardException("A randomized board must have at least 25 goals (found "
+                + str(len(custom_board)) + ")")
+
+    for i, square in enumerate(custom_board):
+        _validate_square(i, square)
+
+    return custom_board
+
 
 class CustomGenerator:
 
@@ -22,25 +51,10 @@ class CustomGenerator:
         except json.decoder.JSONDecodeError as e:
             raise InvalidBoardException("Invalid Board Json")
 
-        if not isinstance(custom_board, list):
-            raise InvalidBoardException("Board must be a list")
+        if self.game_type in (GameType.custom, GameType.custom_randomized):
+            return _parse_simple_list(custom_board, self.game_type)
 
-        if self.game_type == GameType.custom and len(custom_board) != 25:
-            raise InvalidBoardException("A fixed board must have exactly 25 goals (found "
-                    + str(len(custom_board)) + ")")
-        elif self.game_type == GameType.custom_randomized and len(custom_board) < 25:
-            raise InvalidBoardException("A randomized board must have at least 25 goals (found "
-                    + str(len(custom_board)) + ")")
-
-        for i, square in enumerate(custom_board):
-            if "name" not in square:
-                raise InvalidBoardException("Square " + str(1 + i)
-                        + " (" + json.dumps(square) + ") is missing a \"name\" attribute")
-            elif square["name"] == "":
-                raise InvalidBoardException("Square " + str(1 + i)
-                        + " (" + json.dumps(square) + ") has an empty \"name\" attribute")
-
-        return custom_board
+        raise Exception("Unrecognized custom game type: " + str(self.game_type))
 
     def get_card(self, seed, custom_board):
         from bingosync.models.game_type import GameType
