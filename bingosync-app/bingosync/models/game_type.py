@@ -388,7 +388,7 @@ GAME_GROUPS = {
             (GameType.custom, "Fixed Board", "Custom"),
             (GameType.custom_randomized, "Randomized", "Custom (Rand)"),
             (GameType.custom_srl_v5, "SRL v5", "Custom (SRLv5)"),
-            (GameType.custom_isaac, "Binding of Isaac", "Custom (Isaac)"),
+            (GameType.custom_isaac, "Isaac", "Custom (Isaac)"),
         ],
     },
     GameType.darkest_dungeon: {
