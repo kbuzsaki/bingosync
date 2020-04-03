@@ -118,19 +118,23 @@ var bingoList = {
 //Bosses. Dream versions grouped instead of alphabetical
 
   "BVessel":{
-      "Desc":"Broken Vessel"
+      "Desc":"Broken Vessel",
+      "Excludes": ["LostKin"]
   },
 
   "LostKin":{
-      "Desc":"Lost Kin"
+      "Desc":"Lost Kin",
+      "Excludes": ["BVessel"]
   },
 
   "CG1":{
-      "Desc": "Crystal Guardian 1"
+      "Desc": "Crystal Guardian 1",
+      "Excludes": ["CG2"]
   },
 
   "CG2": {
-      "Desc":"Crystal Guardian 2"
+      "Desc":"Crystal Guardian 2",
+      "Excludes": ["CG1"]
   },
 
   "Collector":{
@@ -138,8 +142,16 @@ var bingoList = {
   },
 
   "DDefender":{
-      "Desc":"Dung Defender"
+      "Desc":"Dung Defender",
+      "Excludes": ["WhiteDefender"]
   },
+
+  "WhiteDefender":{
+    "Desc":"Defeat White Defender twice",
+    "Type": "Tiebreaker",
+    "Excludes": ["DDefender"]
+  },
+
 
   "FChamp": {
       "Desc": "Failed Champion"
@@ -156,18 +168,18 @@ var bingoList = {
   "Flukemarm2":{
       "Desc": "Ascended Flukemarm",
       "Type": "Tiebreaker",
-      "Excludes": [ "Flukemarm", "Godhome", "2Keys", "Jiji", "Ordeal20", "Springs" ]
+      "Excludes": ["Godhome"]
   },
 
   "GPZote":{
       "Desc": "Grey Prince Zote",
       "Type": "Tiebreaker",
-      "Excludes": [ "DeepnestZote", "ColoZote", "Colo1" ]
+      "Excludes": [ "ColoZote", "Colo1" ]
   },
 
   "HiveKnight":{
       "Desc": "Hive Knight",
-      "Excludes": [ "HiveMask", "TramPass" ]
+      "Excludes": [ "HiveMask" ]
   },
 
   "Hornet2": {
@@ -179,7 +191,8 @@ var bingoList = {
   },
 
   "Nosk":{
-      "Desc": "Nosk"
+      "Desc": "Nosk",
+      "Excludes": ["Juggle"]
   },
 
   "PaleLurker":{
@@ -187,11 +200,13 @@ var bingoList = {
   },
 
   "SoulMaster": {
-      "Desc": "Soul Master"
+      "Desc": "Soul Master",
+      "Excludes": ["SoulTyrant"]
   },
 
   "SoulTyrant": {
-      "Desc": "Soul Tyrant"
+      "Desc": "Soul Tyrant",
+      "Excludes": [ "SoulMaster" ]
   },
 
   "TLord":{
@@ -200,14 +215,13 @@ var bingoList = {
   },
 
   "TMGrimm":{
-      "Desc":"Troupe Master Grimm",
-      "Excludes": [ "NKGrimm", "Brumm", "CarefreeMelody" ]
+      "Desc":"Troupe Master Grimm"
   },
 
   "NKGrimm":{
       "Desc": "Nightmare King Grimm",
       "Type": "Tiebreaker",
-      "Excludes": [ "TMGrimm", "CarefreeMelody" ]
+      "Excludes": [ "CarefreeMelody" ]
   },
 
   "Uumuu":{
@@ -267,13 +281,11 @@ var bingoList = {
   },
 
   "Aluba":{
-      "Desc":"Kill an Aluba",
-      "Excludes":[ "Aluba2" ]
+      "Desc":"Kill an Aluba"
   },
 
   "Aluba2":{
-      "Desc":"Kill two different Alubas",
-      "Excludes":[ "Aluba" ]
+      "Desc":"Kill two different Alubas"
   },
 
   "Colo1":{
@@ -288,7 +300,7 @@ var bingoList = {
 
   "ColoZote":{
       "Desc":"Defeat Colosseum Zote",
-      "Excludes":[ "DeepnestZote", "Colo1", "GPZote" ]
+      "Excludes":["Colo1", "GPZote" ]
   },
 
   "Devout":{
@@ -308,13 +320,11 @@ var bingoList = {
   },
 
   "Millibelle":{
-      "Desc":"Kill Millibelle", 
-      "Excludes":[ "2Keys", "Godhome", "Jiji", "Springs", "Flukemarm2", "Ordeal20" ]
+      "Desc":"Slash Millibelle in Pleasure House"
   },
 
   "Mimics":{
-      "Desc":"Kill 4 Mimics", 
-      "Excludes":[ "PeaksGrub", "DeepnestGrubs" ]
+      "Desc":"Kill 4 Mimics"
   },
 
   "Myla":{
@@ -466,7 +476,7 @@ var bingoList = {
 
   "DDark":{
       "Desc":"Descending Dark",
-      "Excludes":[ "SSoul", "Shriek", "3Floors" ]
+      "Excludes":[ "SSoul", "Shriek" ]
   },
 
   "DNail":{
@@ -534,8 +544,7 @@ var bingoList = {
   },
 
   "2Keys":{
-      "Desc":"Use 2 Simple Keys",
-      "Excludes":[ "Springs", "Godhome", "Millibelle", "Jiji", "Flukemarm2", "Ordeal20" ]
+      "Desc":"Use 2 Simple Keys"
   },
 
   "3Maps":{
@@ -589,7 +598,7 @@ var bingoList = {
 
   "TramPass":{
       "Desc":"Obtain Tram Pass", 
-      "Excludes":[ "HiveMask", "HiveKnight", "PinsAll" ]
+      "Excludes":[ "PinsAll" ]
   },
 
   "WorldSense":{
@@ -601,18 +610,17 @@ var bingoList = {
   //Checks (Grubs are grouped)
 
 
-  "Cornifer5":{
-      "Desc":"Interact with 5 Cornifer locations"
+  "Cornifer3":{
+      "Desc":"Interact with 3 Cornifer locations"
   },
 
   "Dreamers":{
       "Desc":"Get 2 Dreamer's checks",
-      "Excludes":[ "Uumuu", "WK" ]
+      "Excludes":[ "Uumuu", "WK", "VisitDistantHive" ]
   },
 
   "GreenpathRoot":{
-      "Desc":"Complete the Greenpath Root",
-      "Excludes":[ "Trees4" ]
+      "Desc":"Complete the Greenpath Root"
   },
 
   "HallownestCrown":{
@@ -631,7 +639,7 @@ var bingoList = {
 
   "HiveMask":{
       "Desc":"Check the Hive Mask Shard", 
-      "Excludes":[ "TramPass", "HiveKnight"]
+      "Excludes":[ "HiveKnight" ]
   },
 
   "JoniDarkRoom":{
@@ -640,8 +648,7 @@ var bingoList = {
   },
 
   "KEdgeRoot":{
-      "Desc":"Complete the Kingdom's Edge Root",
-      "Excludes":[ "Trees4" ]
+      "Desc":"Complete the Kingdom's Edge Root"
   },
 
   "LoveKeySkip":{
@@ -650,8 +657,7 @@ var bingoList = {
   },
 
   "Nailmasters":{
-      "Desc":"Check 2 Nailmasters", 
-      "Excludes":[ "Sheo" ]
+      "Desc":"Check 2 Nailmasters"
   },
 
   "SanctuarySkip":{
@@ -660,8 +666,7 @@ var bingoList = {
   },
 
   "Sheo":{
-      "Desc":"Check Sheo", 
-      "Excludes":[ "Nailmasters" ]
+      "Desc":"Check Sheo"
   },
 
   "Shops":{
@@ -683,8 +688,7 @@ var bingoList = {
   },
 
   "Trees4":{
-      "Desc":"Complete 4 full dream trees",
-      "Excludes":[ "GreenpathRoot", "KEdgeRoot" ]
+      "Desc":"Complete 4 full dream trees"
   },
 
   "UnnSkip":{
@@ -712,8 +716,7 @@ var bingoList = {
   },
 
   "DeepnestGrubs":{
-      "Desc":"Check/Free all grubs in Deepnest (5)",
-      "Excludes":[ "Mimics" ]
+      "Desc":"Check/Free all grubs in Deepnest (5)"
   },
 
   "FunGreenGrub":{
@@ -721,8 +724,8 @@ var bingoList = {
   },
 
   "PeaksGrub":{
-      "Desc":"Check/Free all grubs in Crystal Peaks (7)",
-      "Excludes":[ "Mimics" ]},
+      "Desc":"Check/Free all grubs in Crystal Peaks (7)"
+  },
 
   "QueenGrub":{
       "Desc":"Check/Free all grubs in Queen's Gardens (3)"
@@ -739,7 +742,7 @@ var bingoList = {
 
   "3Floors":{
       "Desc":"Break 3 floors using Dive",
-      "Excludes":[ "DDark", "Dive" ]
+      "Excludes":[ "Dive" ]
   },
 
   "420Rock":{
@@ -762,12 +765,11 @@ var bingoList = {
 
   "5000":{
       "Desc":"Spend 5000 geo", 
-      "Excludes":[ "Fountain", "4000" ]
+      "Excludes":[ "4000" ]
   },
 
   "Bank":{
-      "Desc":"Have 1500 geo in the bank",
-      "Excludes":[ "Millibelle" ]
+      "Desc":"Have 1500 geo in the bank"
   },
 
   "Bardoon":{
@@ -779,12 +781,11 @@ var bingoList = {
   },
 
   "Brumm":{
-    "Desc":"Get Brumm's flame",
-    "Excludes": [ "TMGrimm" ]
+    "Desc":"Get Brumm's flame"
   },
 
   "ClothQuest":{
-      "Desc":"Watch Cloth sleep"
+      "Desc":"Wake up Cloth in Dirtmouth"
   },
 
   "CrestElevator":{
@@ -792,8 +793,7 @@ var bingoList = {
   },
 
   "DeepnestZote":{
-      "Desc":"Rescue Zote in Deepnest",
-      "Excludes":[ "ColoZote", "GPZote" ]
+      "Desc":"Rescue Zote in Deepnest"
   },
 
   "DirtmouthElevator":{
@@ -814,7 +814,7 @@ var bingoList = {
 
   "Godhome":{
       "Desc":"Enter Godhome",
-      "Excludes":[ "2Keys", "Millibelle", "Flukemarm2", "Jiji", "Springs", "Ordeal20" ]
+      "Excludes":[ "Flukemarm2", "Ordeal20" ]
   },
 
   "GoamGarpede":{
@@ -822,8 +822,7 @@ var bingoList = {
   },
 
   "Jiji":{
-      "Desc":"Open Jiji's Hut",
-      "Excludes":[ "2Keys", "Millibelle", "Flukemarm2", "Godhome", "Springs", "Ordeal20" ]
+      "Desc":"Open Jiji's Hut"
   },
 
   "HopperHell":{
@@ -840,8 +839,7 @@ var bingoList = {
   },
 
   "LegEater":{
-      "Desc":"Buy out Leg Eater",
-      "Excludes":[ "3000", "4000", "5000" ]
+      "Desc":"Buy out Leg Eater"
   },
 
   "LifebloodRoom":{
@@ -865,13 +863,12 @@ var bingoList = {
   },
 
   "MaskMaker":{
-      "Desc":"Talk to Mask Maker",
-      "Excludes":[ "Midwife" ]
+      "Desc":"Talk to Mask Maker"
   },
 
   "Midwife":{
       "Desc":"Talk to Midwife",
-      "Excludes":[ "MaskMaker", "DeepStag", "VisitDistantHive" ]
+      "Excludes":[ "DeepStag", "VisitDistantHive" ]
   },
 
   "MossProphet":{
@@ -879,7 +876,7 @@ var bingoList = {
   },
 
   "MrMushroom1":{
-      "Desc":"Interact with Mr. Mushroom once"
+      "Desc":"Interact with Mr. Mushroom once (Does not require Spore Shroom)"
   },
 
   "Nail2":{
@@ -894,7 +891,7 @@ var bingoList = {
   "Ordeal20":{
       "Desc":"Eternal Ordeal: 20 Zotes",
       "Type": "Tiebreaker",
-      "Excludes":[ "Godhome", "Flukemarm2", "2Keys", "Millibelle", "Jiji", "Springs" ]
+      "Excludes":[ "Godhome" ]
   },
 
   "Pins":{
@@ -913,18 +910,15 @@ var bingoList = {
   },
 
   "Salubra":{
-      "Desc":"Buy out Salubra", 
-      "Excludes":[ "3000", "4000", "5000" ]
+      "Desc":"Buy out Salubra"
   },
 
   "Springs":{
-      "Desc":"Take a bath in 4 different Hot Springs", 
-      "Excludes":[ "2Keys", "SpringSplash", "Millibelle", "Jiji", "Flukemarm2", "Ordeal20", "Godhome" ]
+      "Desc":"Take a bath in 4 different Hot Springs"
   },
 
   "SpringSplash":{
-      "Desc":"Splash the NPC in the Colosseum's hot spring", 
-      "Excludes":[ "Springs" ]
+      "Desc":"Splash the NPC in the Colosseum's hot spring"
   },
 
   "ShrineOfBelievers":{
@@ -937,16 +931,11 @@ var bingoList = {
   },
 
   "Tiso":{
-    "Desc": "Dream Nail Tiso's corpse"
+    "Desc": "Swat away Tiso's shield from his corpse"
   },
 
   "Tuk":{
-      "Desc":"Buy two rancid eggs from Tuk", 
-      "Excludes":[ "RancidEggs" ]
-  },
-
-  "Tolls":{
-      "Desc":"Spend geo on 6 tolls or their check"
+      "Desc":"Talk to Tuk"
   },
 
   "VisitDistantHive":{
@@ -961,7 +950,7 @@ var bingoList = {
 
 
   "VisitMounds":{
-      "Desc":"Visit Overgrown Mound or Crystallized Mound"
+      "Desc":"Visit Overgrown Mound or Crystallized Mound (Crystallized requires dive)"
   },
 
 
@@ -970,8 +959,7 @@ var bingoList = {
   },
 
   "VisitTower":{
-      "Desc":"Visit Tower of Love",
-      "Excludes": [ "LoveKey", "Collector" ]
+      "Desc":"Visit Tower of Love (Love Key not required)"
   },
 
   "WhiteLady":{
