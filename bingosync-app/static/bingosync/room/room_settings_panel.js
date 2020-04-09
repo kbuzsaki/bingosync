@@ -30,7 +30,7 @@ var RoomSettingsPanel = (function(){
                 ROOM_SETTINGS = result.settings;
 
                 // TODO: extract seed reveal to a chat panel class
-                $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait');
+                var $seedInChat = $("#bingo-chat .new-card-message .seed-wait").removeClass('seed-wait');
                 if (ROOM_SETTINGS.hide_card) {
                     hideBoard();
                     $seedInChat.text("Hidden").addClass('seed-hidden');
