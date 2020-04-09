@@ -191,6 +191,7 @@ class GameType(Enum):
     custom_srl_v5 = 187
     custom_isaac = 188
     kingdom_hearts_final_mix = 189
+    pokemon_emerald_vanilla = 190
 
     def __str__(self):
         return self.short_name
@@ -312,6 +313,7 @@ GAME_GROUPS = {
             (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald"),
             (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
             (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
+            (GameType.pokemon_emerald_vanilla, "Vanilla", "Emerald Vanilla"),
         ],
     },
     GameType.pokemon_crystal: {
