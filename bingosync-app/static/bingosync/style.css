@@ -173,7 +173,7 @@
     padding: 0 5px;
     cursor: pointer;
     width: 100px;
-    height: 95px;
+    height: 100px;
     text-align: center;
     border: 1px #424242 solid;
     background: #181818;
@@ -226,7 +226,6 @@
     color: #3c70df;
     font-weight: 700;
     border: 1px #0a245a solid;
-    border-left-width: 0;
 }
 #bingo tr:first-child td:hover,
 #bingo tr:last-child td:hover {
@@ -240,7 +239,6 @@
     color: #3c70df;
     font-weight: 700;
     border: 1px #0a245a solid;
-    border-top-width: 0;
 }
 #bingo tr:first-child td:first-child {
     border-width:1px;
