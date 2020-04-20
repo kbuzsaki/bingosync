@@ -192,6 +192,7 @@ class GameType(Enum):
     custom_isaac = 188
     kingdom_hearts_final_mix = 189
     pokemon_emerald_vanilla = 190
+    the_witness_low = 191
 
     def __str__(self):
         return self.short_name
@@ -565,6 +566,13 @@ GAME_GROUPS = {
             (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
         ],
     },
+    GameType.terraria: {
+        "name": "The Witness",
+        "variants": [
+            (GameType.the_witness, "Normal", "The Witness"),
+            (GameType.the_witness_low, "Low%", "The Witness Low%"),
+        ],
+    },
     GameType.wii_sports_series_all_sports: {
         "name": "Wii Sports Series",
         "variants": [
@@ -678,7 +686,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "PapMarioWii"),
-    **singleton_group(GameType.the_witness, "The Witness", "The Witness"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
