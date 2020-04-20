@@ -1,7 +1,6 @@
 var bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
 var bingoList = [];
-
 bingoList[1] = [
     {name:'Tutorial Hallway EP'},
     {name:'Tutorial Cloud EP'},
@@ -13,32 +12,32 @@ bingoList[1] = [
     {name:'Short Sewer EP'},
     {name:'Tutorial Patio Roof Audio Log', types: ['audio_log']},
     {name:'Tutorial Garden EP'},
-    {name:'Move any object that is not a Boat, Door, Staircase, or Laser'},
-    {name:'Turn on the EEE Lightswitch'}
+    {name:'Move any object that isn't a Boat, Door, Staircase, or Laser'},
+    {name:'Turn on the EEE Lightswitch'},
 ];
 bingoList[2] = [
     {name:'Tutorial Vault', types: ['vault']},
     {name:'Tutorial Path EP'},
     {name:'Tutorial Gate Audio Log', types: ['audio_log']},
     {name:'Tractor EP'},
-    {name:'Tutorial Dots Panels (5)'},
+    {name:'Dots Tutorial Panels (5)'},
     {name:'Symmetry Discarded Panel', types: ['discard']},
     {name:'Glass Factory Yellow Vase EP'},
-    {name:'Tutorial Stones Panels (9)'},
+    {name:'Stones Tutorial Panels (9)'},
     {name:'Glass Factory Vertical Symmetry Panels (5)'},
-    {name:'Orchard Panels (5)'},
+    {name:'Orchard Apple Tree Panels (5)'},
     {name:'Tutorial Discarded Panel', types: ['discard']},
-    {name:'Glass Factory Melting Panels (3)'}
+    {name:'Glass Factory Melting Panels (3)'},
 ];
 bingoList[3] = [
     {name:'Town: Open the Windmill'},
     {name:'Town Orange Crate Discarded Panel'},
     {name:'Town Redirect Black Line EP'},
-    {name:'Town Church Panels (2)'},
+    {name:'Town Church Stars and Lattice Panels'},
     {name:'Town Bell Tower Black Line EP'},
     {name:'Town Eraser Panel'},
     {name:'Town Rooftop Discarded Panel', types: ['discard']},
-    {name:'Town Bridge Underside EP'}
+    {name:'Town Bridge Underside EP'},
 ];
 bingoList[4] = [
     {name:'Desert Sand Snake EP'},
@@ -49,7 +48,7 @@ bingoList[4] = [
     {name:'Mill Rooftop Vent EP'},
     {name:'Shadows: Open the Tutorial Door'},
     {name:'Keep Purple Flowers EP'},
-    {name:'Shadows Laser Panel'}
+    {name:'Shadows Laser'},
 ];
 bingoList[5] = [
     {name:'Jungle Entrance EP'},
@@ -63,7 +62,7 @@ bingoList[5] = [
     {name:'Jungle Green Leaf Moss EP'},
     {name:'Jungle Bamboo Sky EPs (2)'},
     {name:'Jungle Waves Set 2 Panels (4)'},
-    {name:'Jungle Moss Same Start Point EPs (3)'}
+    {name:'Jungle Moss Same Start Point EPs (3)'},
 ];
 bingoList[6] = [
     {name:'Desert Facade EPs (2)'},
@@ -73,7 +72,7 @@ bingoList[6] = [
     {name:'Desert Stairs EPs (2)'},
     {name:'Desert Island EP'},
     {name:'Desert Broken Wall EPs (2)'},
-    {name:'Desert Vault', types: ['vault']}
+    {name:'Desert Vault', types: ['vault']},
 ];
 bingoList[7] = [
     {name:'Town Tower Underside EPs (4)'},
@@ -82,8 +81,8 @@ bingoList[7] = [
     {name:'Theater Discarded Panel', types: ['discard']},
     {name:'Theater Church EP'},
     {name:'Theater Exit Panels (2)'},
-    {name:'Theater Book EPs (2)'},
-    {name:'Theater Video Panels (6)'}
+    {name:'Theater Window and Doorway EPs'},
+    {name:'Theater Video Panels (6)'},
 ];
 bingoList[8] = [
     {name:'Monastery Entrance Doors (2)'},
@@ -96,22 +95,22 @@ bingoList[8] = [
     {name:'Monastery Left Courtyard EP'},
     {name:'Monastery Left Shutters Audio Log', types: ['audio_log']},
     {name:'Monastery Laser'},
-    {name:'Monastery Shutter EPs (3)'}
+    {name:'Monastery Shutter EPs (3)'},
 ];
 bingoList[9] = [
-    {name:'Treehouse Beach Shadow EPs (2)'},
+    {name:'Treehouse Floor Shadow EPs (2)'},
     {name:'Mountainside Bush and Cove EPs (2)'},
-    {name:'Treehouse Drawbridge Panel'},
+    {name:'Treehouse Drawbridge Control Panel'},
     {name:'Mountainside Discarded Panel', types: ['discard']},
-    {name:'Mountain Vault', types: ['vault']},
+    {name:'Mountainside Vault', types: ['vault']},
     {name:'Mountaintop River EP'},
     {name:'Mountaintop River Panel'},
     {name:'Mountaintop Black Arch EP'},
-    {name:'Mountaintop White Arch EPs (2)'}
+    {name:'Mountaintop White Arch EPs (2)'},
 ];
 bingoList[10] = [
     {name:'Mill Discarded Panel', types: ['discard']},
-    {name:'Mill Door Panels (2)'},
+    {name:'Mill Entry Door Panels (2)'},
     {name:'Mill Sand Pile and Shore EPs (2)'},
     {name:'Quarry: Summon the Boat'},
     {name:'Boathouse: Raise the Ramp'},
@@ -119,7 +118,7 @@ bingoList[10] = [
     {name:'Boathouse Erasers and Shapers Panels (5)'},
     {name:'Mill Upper Row Panels (8)'},
     {name:'Boathouse: Move the Ramp'},
-    {name:'Boathouse Hook Control Panel'}
+    {name:'Boathouse Hook Control Panel'},
 ];
 bingoList[11] = [
     {name:'Town Maze, Bridge, and Blue Panels (7)'},
@@ -129,17 +128,17 @@ bingoList[11] = [
     {name:'Summon Boat at Town'},
     {name:'Town Obelisk Audio Log', types: ['audio_log']},
     {name:'Windmill Second Blade EP'},
-    {name:'Windmill Third Blade EP'}
+    {name:'Windmill Third Blade EP'},
 ];
 bingoList[12] = [
-    {name:'Any 7 Non-Laser Panels that do not increase solve count'},
+    {name:'Any 7 Non-Laser Panels that don't increase solve count'},
     {name:'Bunker Entry Door Panel'},
     {name:'Any 2 Vaults', types: ['vault']},
     {name:'Any 8 Audio Logs', types: ['audio_log']},
     {name:'Any 2 Discarded Panels', types: ['discard']},
     {name:'Shadows Tutorial Panels (8)'},
     {name:'Any 4 Straight Line EPs'},
-    {name:'Any 2 Boat EPs', types: ['boat_ep']}
+    {name:'Any 2 Boat EPs', types: ['boat_ep']},
 ];
 bingoList[13] = [
     {name:'Keep Hedge Maze Panels (4)'},
@@ -150,7 +149,7 @@ bingoList[13] = [
     {name:'Shipwreck Discarded Panel', types: ['discard']},
     {name:'Shipwreck Vault', types: ['vault']},
     {name:'Shipwreck Rope EPs (2)'},
-    {name:'Shipwreck Stern EP'}
+    {name:'Shipwreck Stern EP'},
 ];
 bingoList[14] = [
     {name:'Bunker Tutorial Panels (5)'},
@@ -161,17 +160,17 @@ bingoList[14] = [
     {name:'Bunker Ultraviolet Panels (2)'},
     {name:'Bunker Doorway EP'},
     {name:'Jungle Laser'},
-    {name:'Bunker Elevator Panel'}
+    {name:'Bunker Elevator Panel'},
 ];
 bingoList[15] = [
     {name:'Symmetry Black Dots Panels (5)'},
     {name:'Glass Factory Black Line EP'},
     {name:'Glass Factory Black Line Reflection EP'},
     {name:'Symmetry Transparent Panels (5)'},
-    {name:'Symmetry Solid Colored Lines Panels (6)'},
-    {name:'Symmetry Fading Colored Lines Panels (7)'},
+    {name:'Symmetry Colored Dots Panels (6)'},
+    {name:'Symmetry Fading Lines Panels (7)'},
     {name:'Summon Boat at Symmetry'},
-    {name:'Symmetry Laser'}
+    {name:'Symmetry Laser'},
 ];
 bingoList[16] = [
     {name:'Desert Surface Panels (8)'},
@@ -181,7 +180,7 @@ bingoList[16] = [
     {name:'Desert Laser', types: ['desert_laser']},
     {name:'Desert Flood Room EP'},
     {name:'Desert Elevator EP', types: ['desert_laser']},
-    {name:'Desert Broken Wall Audio Log', types: ['audio_log']}
+    {name:'Desert Broken Wall Audio Log', types: ['audio_log']},
 ];
 bingoList[17] = [
     {name:'Swamp Tutorial Panels (14)'},
@@ -194,7 +193,7 @@ bingoList[17] = [
     {name:'Swamp Discontinuous Panels (4)'},
     {name:'Swamp: Close the Flood Gate'},
     {name:'Swamp Stern of Boat EP'},
-    {name:'Swamp Floodgate EP'}
+    {name:'Swamp Floodgate EP'},
 ];
 bingoList[18] = [
     {name:'Keep Dirt Path EP'},
@@ -207,20 +206,9 @@ bingoList[18] = [
     {name:'Keep Corridor Audio Log', types: ['audio_log']},
     {name:'Keep Laser Panels (2)'},
     {name:'Keep Pressure Plate EPs (5)'},
-    {name:'Keep Front Wall Audio Log', types: ['audio_log']}
+    {name:'Keep Front Wall Audio Log', types: ['audio_log']},
 ];
 bingoList[19] = [
-    {name:'Mill Stairs Audio Log', types: ['audio_log']},
-    {name:'Boathouse Ramp Hook EP'},
-    {name:'Mill Control Room Panels (2)'},
-    {name:'Mill Stairs Control Panel'},
-    {name:'Boathouse Ramp in Motion EP'},
-    {name:'Mill Left Light EP'},
-    {name:'Mill Right Light EP'},
-    {name:'Boathouse Erasers and Star Panels (7)'},
-    {name:'Boathouse Erasers, Shapers, and Stars Panels (5)'}
-];
-bingoList[20] = [
     {name:'Shadows Follow Panels (5)'},
     {name:'Shadows Avoid Panels (8)'},
     {name:'Shadows Orange Crate Audio Log', types: ['audio_log']},
@@ -228,19 +216,31 @@ bingoList[20] = [
     {name:'Any 3 Vaults', types: ['vault']},
     {name:'Any 4 Discarded Panels', types: ['discard']},
     {name:'Peninsula Audio Log', types: ['audio_log']},
-    {name:'Treehouse Buoy EP'}
+    {name:'Treehouse Buoy EP'},
+];
+bingoList[20] = [
+    {name:'Mill Stairs Audio Log', types: ['audio_log']},
+    {name:'Boathouse Front Ramp EP'},
+    {name:'Mill Control Room Panels (2)'},
+    {name:'Mill Stairs Control Panel'},
+    {name:'Boathouse Back Ramp EP'},
+    {name:'Mill Ramp Light EP'},
+    {name:'Mill Lift Light EP'},
+    {name:'Boathouse Erasers and Star Panels (7)'},
+    {name:'Boathouse Erasers, Shapers, and Stars Panels (5)'},
+    {name:'Mill Railroad EP'},
 ];
 bingoList[21] = [
     {name:'Boat Tutorial Moss EP', types: ['boat_ep']},
-    {name:'Boat CW Shipwreck Underside EP', types: ['boat_ep']},
-    {name:'Boat CCW Shipwreck Underside EP', types: ['boat_ep']},
+    {name:'Boat Shipwreck CW Underside EP', types: ['boat_ep']},
+    {name:'Boat Shipwreck CCW Underside EP', types: ['boat_ep']},
     {name:'Boat Orange Crate EP', types: ['boat_ep']},
     {name:'Boat Long Sewer EP', types: ['boat_ep']},
     {name:'Boat Tutorial Reflection EP', types: ['boat_ep']},
     {name:'Boat Tutorial EP', types: ['boat_ep']},
     {name:'Boat Bunker EP', types: ['boat_ep']},
     {name:'Boat Desert EP', types: ['boat_ep']},
-    {name:'Boat Green Shipwreck EP', types: ['boat_ep']}
+    {name:'Boat Shipwreck Green EP', types: ['boat_ep']},
 ];
 bingoList[22] = [
     {name:'Town Laser'},
@@ -252,32 +252,31 @@ bingoList[22] = [
     {name:'Couch EP'},
     {name:'Bunker Green Room EP'},
     {name:'Any 12 Audio Logs', types: ['audio_log']},
-    {name:'Mill Railroad EP'},
-    {name:'Bunker Laser'}
+    {name:'Bunker Laser'},
 ];
 bingoList[23] = [
-    {name:'Swamp Bridge CW Shadow EP'},
-    {name:'Swamp Bridge CCW Shadow EP'},
-    {name:'Swamp Purple Shaper Panel'},
+    {name:'Swamp CW Bridge Shadow EP'},
+    {name:'Swamp CCW Bridge Shadow EP'},
+    {name:'Swamp Purple Tetris Panel'},
     {name:'Treehouse Yellow Bridge Panels (9)'},
     {name:'Boat Treehouse Rock Audio Log', types: ['audio_log']},
     {name:'Swamp Blue Underwater Panels (5)'},
     {name:'Swamp Underwater Yellow and Orange Line EPs (2)'},
-    {name:'Treehouse Laser Door Panel'},
-    {name:'Swamp Teal Underwater Panels (5)'}
+    {name:'Treehouse Laser Door Control Panel'},
+    {name:'Swamp Teal Underwater Panels (5)'},
 ];
 bingoList[24] = [
     {name:'Treehouse Green Bridge Panels (7)'},
     {name:'Treehouse Green Bridge Discarded Panel'},
     {name:'Swamp Purple Sand EPs (3)'},
-    {name:'Swamp Sliding Bridge Underwater EP'},
+    {name:'Swamp Underwater Bridge EP'},
     {name:'Treehouse Right Orange Bridge Panels (12)'},
     {name:'Treehouse Laser Discarded Panel'},
     {name:'Treehouse Purple Bridge Panels (12)'},
     {name:'Swamp Shortcut Audio Log', types: ['audio_log']},
     {name:'Treehouse Left Orange Bridge Panels (15)'},
     {name:'Treehouse Burned House Shadow EP'},
-    {name:'Treehouse Short Bridge EP'}
+    {name:'Treehouse Short Bridge EP'},
 ];
 bingoList[25] = [
     {name:'Quarry Laser'},
@@ -290,5 +289,5 @@ bingoList[25] = [
     {name:'Quarry Obelisk'},
     {name:'Desert Obelisk'},
     {name:'Cloud Cycle EP'},
-    {name:'Treehouse Obelisk'}
+    {name:'Treehouse Obelisk'},
 ];
