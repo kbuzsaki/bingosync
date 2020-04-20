@@ -12,7 +12,7 @@ bingoList[1] = [
     {name:'Short Sewer EP'},
     {name:'Tutorial Patio Roof Audio Log', types: ['audio_log']},
     {name:'Tutorial Garden EP'},
-    {name:'Move any object that isn't a Boat, Door, Staircase, or Laser'},
+    {name:'Move any object that is not a Boat, Door, Staircase, or Laser'},
     {name:'Turn on the EEE Lightswitch'},
 ];
 bingoList[2] = [

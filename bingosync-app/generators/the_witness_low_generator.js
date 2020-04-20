@@ -25,9 +25,9 @@ bingoList[4] = [
     {name:'Any 12 Audio Logs'},
 ];
 bingoList[5] = [
-    {name:'Move any object that isn't a Boat, Door, Staircase, or Laser'},
+    {name:'Move any object that is not a Boat, Door, Staircase, or Laser'},
     {name:'Shadows: Open the Tutorial Door'},
-    {name:'Any 7 Non-Laser Panels that don't increase solve count'},
+    {name:'Any 7 Non-Laser Panels that do not increase solve count'},
 ];
 bingoList[6] = [
     {name:'Tutorial Hallway EP'},
