@@ -131,7 +131,7 @@ bingoList[11] = [
     {name:'Windmill Third Blade EP'},
 ];
 bingoList[12] = [
-    {name:'Any 7 Non-Laser Panels that don't increase solve count'},
+    {name:'Any 7 Non-Laser Panels that do not increase solve count'},
     {name:'Bunker Entry Door Panel'},
     {name:'Any 2 Vaults', types: ['vault']},
     {name:'Any 8 Audio Logs', types: ['audio_log']},
