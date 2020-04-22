@@ -193,6 +193,7 @@ class GameType(Enum):
     kingdom_hearts_final_mix = 189
     pokemon_emerald_vanilla = 190
     the_witness_low = 191
+    cat_quest_2 = 192
 
     def __str__(self):
         return self.short_name
@@ -620,6 +621,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
+    **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
