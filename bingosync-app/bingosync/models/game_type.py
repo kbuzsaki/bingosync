@@ -194,6 +194,7 @@ class GameType(Enum):
     pokemon_emerald_vanilla = 190
     the_witness_low = 191
     cat_quest_2 = 192
+    sonic_adventure_2_nightmare = 193
 
     def __str__(self):
         return self.short_name
@@ -340,6 +341,7 @@ GAME_GROUPS = {
             (GameType.sonic_adventure_2_hero_story, "Hero Story", "SA2 Hero"),
             (GameType.sonic_adventure_2_dark_story, "Dark Story", "SA2 Dark"),
             (GameType.sonic_adventure_2_long, "Long", "SA2 Long"),
+            (GameType.sonic_adventure_2_nightmare, "Nightmare", "SA2 Nightmare"),
         ],
     },
     GameType.super_mario_odyssey: {
