@@ -4,32 +4,35 @@ var bingoList = [];
 bingoList[1] = [
     {name: "City Escape M2", types: ["cityescape"]},
     {name: "2 Chao Boxes in City Escape and finish", types: ["cityescape"]},
-    {name: "5 hidden Chao animals in City Escape and finish", types: ["cityescape"]},
-    {name: "Rename a Chao after a person you're racing", types: ["multistory"]},
+    {name: "5 hidden animals in City Escape and finish", types: ["cityescape"]},
+    {name: "Rename a Chao the name of your opponent", types: ["multistory"]},
     {name: "Complete City Escape M1 with a Magnetic Shield", types: ["cityescape"]},
     {name: "Iron Gate M2", types: ["irongate"]},
     {name: "Complete Iron Gate M1 with 100+ Rings", types: ["irongate"]},
     {name: "2 Chao Boxes in Iron Gate and finish", types: ["irongate"]},
-    {name: "5 hidden Chao animals in Iron Gate and finish", types: ["irongate"]},
+    {name: "5 hidden animals in Iron Gate and finish", types: ["irongate"]},
     {name: "Wild Canyon M1 Hintless", types: ["wildcanyon"]},
     {name: "Dry Lagoon M1 Hintless", types: ["drylagoon"]},
     {name: "City Escape M3", types: ["cityescape"]},
     {name: "Wild Canyon M2", types: ["wildcanyon"]},
     {name: "Complete Wild Canyon M1 with 100+ Rings", types: ["wildcanyon"]},
     {name: "2 Chao Boxes in Wild Canyon and finish", types: ["wildcanyon"]},
-    {name: "5 hidden Chao animals in Wild Canyon and finish", types: ["wildcanyon"]},
+    {name: "5 hidden animals in Wild Canyon and finish", types: ["wildcanyon"]},
     {name: "Wild Canyon M3", types: ["wildcanyon"]},
     {name: "Rouge's Mystic Melody", types: ["drylagoon"]},
-    {name: "Knuckles' Mystic Melody", types: ["wildcanyon"]}
+    {name: "Knuckles' Mystic Melody", types: ["wildcanyon"]},
+    {name: "Speedshoes twice in any level and finish", types: ["multistory"]},
+    {name: "Magnetic Shield twice in any level and finish", types: ["multistory"]}
 ];
 bingoList[2] = [
     {name: "Wild Canyon M3 B-Rank", types: ["wildcanyon", "brank"]},
     {name: "Dry Lagoon M2", types: ["drylagoon"]},
     {name: "Complete Dry Lagoon M1 with 100+ Rings", types: ["drylagoon"]},
     {name: "2 Chao Boxes in Dry Lagoon and finish", types: ["drylagoon"]},
-    {name: "5 hidden Chao animals in Dry Lagoon and finish", types: ["drylagoon"]},
+    {name: "5 hidden animals in Dry Lagoon and finish", types: ["drylagoon"]},
     {name: "Wild Canyon M4", types: ["wildcanyon"]},
-    {name: "Dry Lagoon M3", types: ["drylagoon"]}
+    {name: "Dry Lagoon M3", types: ["drylagoon"]},
+    {name: "5 Emblems (Team Combined)", types: ["emblems"]}
 ];
 bingoList[3] = [
      {name: "Wild Canyon M4 B-Rank", types: ["wildcanyon", "brank"]},
@@ -37,7 +40,8 @@ bingoList[3] = [
     {name: "City Escape M4", types: ["cityescape"]},
     {name: "Defeat both Big Foot and Hot Shot", types: ["multistory"]},
     {name: "Unlock Chao Garden for all Hero Story characters", types: ["chaogarden"]},
-    {name: "Complete Metal Harbor via the Upper Handle of the Rocket", types: ["metalharbor"]}
+    {name: "Complete Metal Harbor via the Upper Handle of the Rocket", types: ["metalharbor"]},
+    {name: "3 Mech Missions A-Rank (Team Combined)", types: ["multistory"]}
 ];
 bingoList[4] = [
     {name: "City Escape M4 A-Rank", types: ["cityescape", "arank"]},
@@ -46,7 +50,7 @@ bingoList[4] = [
     {name: "Prison Lane M2", types: ["prisonlane"]},
     {name: "Complete Prison Lane M1 with 100+ Rings", types: ["prisonlane"]},
     {name: "2 Chao Boxes in Prison Lane and finish", types: ["prisonlane"]},
-    {name: "5 hidden Chao animals in Prison Lane and finish", types: ["prisonlane"]},
+    {name: "5 hidden animals in Prison Lane and finish", types: ["prisonlane"]},
     {name: "Destroy the Gold Beetle in 3 Hero Story stages", types: ["goldbeetle"]},
     {name: "Wild Canyon All Missions A-Rank", types: ["wildcanyon", "arank", "allmissions"]},
     {name: "Complete Prison Lane M1 with a Green Shield", types: ["prisonlane"]}
@@ -56,8 +60,8 @@ bingoList[5] = [
     {name: "Sand Ocean M2", types: ["sandocean"]},
     {name: "Complete Sand Ocean M1 with 100+ Rings", types: ["sandocean"]},
     {name: "2 Chao Boxes in Sand Ocean and finish", types: ["sandocean"]},
-    {name: "5 hidden Chao animals in Sand Ocean and finish", types: ["sandocean"]},
-    {name: "Beginner Chao Karate Emblem (with a new Chao)", types: ["multistory"]},
+    {name: "5 hidden animals in Sand Ocean and finish", types: ["sandocean"]},
+    {name: "Beginner Chao Karate Emblem", types: ["multistory"]},
     {name: "City Escape M5", types: ["cityescape"]},
     {name: "Finish any mission with 25+ Lives (No Underflow)", types: ["multistory"]}
 ];
@@ -68,7 +72,7 @@ bingoList[6] = [
     {name: "Shadow's Flame Ring", types: ["radicalhighway"]},
     {name: "Metal Harbor M2", types: ["metalharbor"]},
     {name: "2 Chao Boxes in Metal Harbor and finish", types: ["metalharbor"]},
-    {name: "5 hidden Chao animals in Metal Harbor and finish", types: ["metalharbor"]},
+    {name: "5 hidden animals in Metal Harbor and finish", types: ["metalharbor"]},
     {name: "Pacifist Metal Harbor M1", types: ["metalharbor"]},
     {name: "Unlock Chao Garden for all Dark Story characters", types: ["chaogarden"]},
     {name: "Metal Harbor M3", types: ["metalharbor"]}
@@ -79,7 +83,7 @@ bingoList[7] = [
     {name: "Radical Highway M2", types: ["radicalhighway"]},
     {name: "Complete Radical Highway M1 with 100+ Rings", types: ["radicalhighway"]},
     {name: "2 Chao Boxes in Radical Highway and finish", types: ["radicalhighway"]},
-    {name: "5 hidden Chao animals in Radical Highway and finish", types: ["radicalhighway"]},
+    {name: "5 hidden animals in Radical Highway and finish", types: ["radicalhighway"]},
     {name: "Destroy the Gold Beetle in 3 Dark Story stages", types: ["goldbeetle"]},
     {name: "Pacifist Radical Highway M1", types: ["radicalhighway"]}
 ];
@@ -94,11 +98,11 @@ bingoList[9] = [
     {name: "Egg Quarters M2", types: ["eggquarters"]},
     {name: "Complete Egg Quarters M1 with 100+ Rings", types: ["eggquarters"]},
     {name: "2 Chao Boxes in Egg Quarters and finish", types: ["eggquarters"]},
-    {name: "5 hidden Chao animals in Egg Quarters and finish", types: ["eggquarters"]},
+    {name: "5 hidden animals in Egg Quarters and finish", types: ["eggquarters"]},
     {name: "Complete Egg Quarters M1 with a Magnetic Shield", types: ["eggquarters"]},
     {name: "Complete Green Forest M1 with 100+ Rings", types: ["greenforest"]},
     {name: "2 Chao Boxes in Green Forest and finish", types: ["greenforest"]},
-    {name: "5 hidden Chao animals in Green Forest and finish", types: ["greenforest"]},
+    {name: "5 hidden animals in Green Forest and finish", types: ["greenforest"]},
     {name: "Pacifist Green Forest M1", types: ["greenforest"]},
     {name: "Complete Green Forest M1 with a Magnetic Shield", types: ["greenforest"]},
     {name: "Metal Harbor M5", types: ["metalharbor"]}
@@ -119,7 +123,7 @@ bingoList[11] = [
     {name: "Pumpkin Hill M2", types: ["pumpkinhill"]},
     {name: "Complete Pumpkin Hill M1 with 100+ Rings", types: ["pumpkinhill"]},
     {name: "2 Chao Boxes in Pumpkin Hill and finish", types: ["pumpkinhill"]},
-    {name: "5 hidden Chao animals in Pumpkin Hill and finish", types: ["pumpkinhill"]},
+    {name: "5 hidden animals in Pumpkin Hill and finish", types: ["pumpkinhill"]},
     {name: "Pumpkin Hill M3", types: ["pumpkinhill"]},
     {name: "Egg Quarters M4", types: ["eggquarters"]},
     {name: "Destroy the Gold Beetle in 5 different stages", types: ["goldbeetle",  "multistory"]}
@@ -130,7 +134,7 @@ bingoList[12] = [
     {name: "Sand Ocean M3", types: ["sandocean"]},
     {name: "Complete Lost Colony M1 with 100+ Rings", types: ["lostcolony"]},
     {name: "2 Chao Boxes in Lost Colony and finish", types: ["lostcolony"]},
-    {name: "5 hidden Chao animals in Lost Colony and finish", types: ["lostcolony"]},
+    {name: "5 hidden animals in Lost Colony and finish", types: ["lostcolony"]},
     {name: "Radical Highway M5", types: ["radicalhighway"]},
     {name: "Pumpkin Hill M4", types: ["pumpkinhill"]},
     {name: "10 Emblems", types: ["emblems", "multistory"]}
@@ -146,7 +150,7 @@ bingoList[13] = [
     {name: "Weapons Bed M2", types: ["weaponsbed"]},
     {name: "Complete Weapons Bed M1 with 100+ Rings", types: ["weaponsbed"]},
     {name: "2 Chao Boxes in Weapons Bed and finish", types: ["weaponsbed"]},
-    {name: "5 hidden Chao animals in Weapons Bed and finish", types: ["weaponsbed"]},
+    {name: "5 hidden animals in Weapons Bed and finish", types: ["weaponsbed"]},
     {name: "Pacifist Weapons Bed M1", types: ["weaponsbed"]},
     {name: "Sand Ocean M4", types: ["sandocean"]},
     {name: "Knuckles' Air Necklace", types: ["aquaticmine"]},
@@ -168,21 +172,21 @@ bingoList[14] = [
     {name: "Iron Gate M4", types: ["irongate"]},
     {name: "Complete Mission Street M1 with 100+ Rings", types: ["missionstreet"]},
     {name: "2 Chao Boxes in Mission Street and finish", types: ["missionstreet"]},
-    {name: "5 hidden Chao animals in Mission Street and finish", types: ["missionstreet"]},
+    {name: "5 hidden animals in Mission Street and finish", types: ["missionstreet"]},
     {name: "Destroy the Gold Beetle in 6 Hero Story stages", types: ["goldbeetle"]},
     {name: "Pacifist Mission Street M1", types: ["missionstreet"]},
     {name: "Lost Colony M3", types: ["lostcolony"]},
     {name: "Weapons Bed M3", types: ["weaponsbed"]},
     {name: "Dr Eggman's Laser Blaster", types: ["irongate"]},
     {name: "2 Chao Boxes in Aquatic Mine and finish", types: ["aquaticmine"]},
-    {name: "5 hidden Chao animals in Aquatic Mine and finish", types: ["aquaticmine"]},
+    {name: "5 hidden animals in Aquatic Mine and finish", types: ["aquaticmine"]},
     {name: "Green Forest M5", types: ["greenforest"]},
     {name: "Aquatic Mine M3", types: ["aquaticmine"]},
     {name: "Game Over during Flying Dog", types: ["gameover"]},
     {name: "Security Hall M2", types: ["securityhall"]},
     {name: "Complete Security Hall M1 with 100+ Rings", types: ["securityhall"]},
     {name: "2 Chao Boxes in Security Hall and finish", types: ["securityhall"]},
-    {name: "5 hidden Chao animals in Security Hall and finish", types: ["securityhall"]},
+    {name: "5 hidden animals in Security Hall and finish", types: ["securityhall"]},
     {name: "Destroy the Gold Beetle in 6 Dark Story stages", types: ["goldbeetle"]},
     {name: "Complete Security Hall M1 with a Magnetic Shield", types: ["securityhall"]}
 ];
@@ -213,7 +217,7 @@ bingoList[16] = [
     {name: "Weapons Bed M5", types: ["weaponsbed"]},
     {name: "Complete White Jungle M1 with 100+ Rings", types: ["whitejungle"]},
     {name: "2 Chao Boxes in White Jungle and finish", types: ["whitejungle"]},
-    {name: "5 hidden Chao animals in White Jungle and finish", types: ["whitejungle"]},
+    {name: "5 hidden animals in White Jungle and finish", types: ["whitejungle"]},
     {name: "Game Over during Sonic 1", types: ["gameover"]},
     {name: "Pacifist White Jungle M1", types: ["whitejungle"]},
     {name: "Beginner Kart Racing Emblem", types: ["multistory"]},
@@ -227,14 +231,14 @@ bingoList[17] = [
     {name: "Hidden Base M2", types: ["hiddenbase"]},
     {name: "Complete Hidden Base M1 with 100+ Rings", types: ["hiddenbase"]},
     {name: "2 Chao Boxes in Hidden Base and finish", types: ["hiddenbase"]},
-    {name: "5 hidden Chao animals in Hidden Base and finish", types: ["hiddenbase"]},
+    {name: "5 hidden animals in Hidden Base and finish", types: ["hiddenbase"]},
     {name: "White Jungle M3", types: ["whitejungle"]},
     {name: "Game Over during Pyramid Cave M1", types: ["pyramidcave",  "gameover"]},
     {name: "Pyramid Cave M2", types: ["pyramidcave"]},
     {name: "Lost Colony M5", types: ["lostcolony"]},
     {name: "Complete Pyramid Cave M1 with 100+ Rings", types: ["pyramidcave"]},
     {name: "2 Chao Boxes in Pyramid Cave and finish", types: ["pyramidcave"]},
-    {name: "5 hidden Chao animals in Pyramid Cave and finish", types: ["pyramidcave"]},
+    {name: "5 hidden animals in Pyramid Cave and finish", types: ["pyramidcave"]},
     {name: "Game Over during Route 280 M1", types: ["route280",  "gameover"]},
     {name: "Route 101 M4", types: ["route101"]},
     {name: "Aquatic Mine M5 B-Rank", types: ["aquaticmine", "brank"]}
@@ -251,7 +255,7 @@ bingoList[18] = [
     {name: "Death Chamber M2", types: ["deathchamber"]},
     {name: "Complete Death Chamber M1 with 100+ Rings", types: ["deathchamber"]},
     {name: "2 Chao Boxes in Death Chamber and finish", types: ["deathchamber"]},
-    {name: "5 hidden Chao animals in Death Chamber and finish", types: ["deathchamber"]},
+    {name: "5 hidden animals in Death Chamber and finish", types: ["deathchamber"]},
     {name: "Prison Lane M3", types: ["prisonlane"]}
 ];
 bingoList[19] = [
@@ -262,7 +266,7 @@ bingoList[19] = [
     {name: "Sky Rail M2", types: ["skyrail"]},
     {name: "Complete Sky Rail M1 with 100+ Rings", types: ["skyrail"]},
     {name: "2 Chao Boxes in Sky Rail and finish", types: ["skyrail"]},
-    {name: "5 hidden Chao animals in Sky Rail and finish", types: ["skyrail"]},
+    {name: "5 hidden animals in Sky Rail and finish", types: ["skyrail"]},
     {name: "Death Chamber M3", types: ["deathchamber"]},
     {name: "Pyramid Cave M4", types: ["pyramidcave"]},
     {name: "Sky Rail M3", types: ["skyrail"]},
@@ -283,7 +287,7 @@ bingoList[20] = [
     {name: "Mad Space M2", types: ["madspace"]},
     {name: "Complete Mad Space M1 with 100+ Rings", types: ["madspace"]},
     {name: "2 Chao Boxes in Mad Space and finish", types: ["madspace"]},
-    {name: "5 hidden Chao animals in Mad Space and finish", types: ["madspace"]},
+    {name: "5 hidden animals in Mad Space and finish", types: ["madspace"]},
     {name: "Sky Rail M4", types: ["skyrail"]},
     {name: "Pyramid Cave M5", types: ["pyramidcave"]},
     {name: "Defeat both Shadow 1 and Sonic 1", types: ["multistory"]},
@@ -302,7 +306,7 @@ bingoList[21] = [
     {name: "Dr Eggman's Protective Armor", types: ["cosmicwall"]},
     {name: "Complete Eternal Engine M1 with 100+ Rings", types: ["eternalengine"]},
     {name: "2 Chao Boxes in Eternal Engine and finish", types: ["eternalengine"]},
-    {name: "5 hidden Chao animals in Eternal Engine and finish", types: ["eternalengine"]},
+    {name: "5 hidden animals in Eternal Engine and finish", types: ["eternalengine"]},
     {name: "Meteor Herd M1 Hintless", types: ["meteorherd"]},
     {name: "Complete Eternal Engine M1 with a Magnetic Shield", types: ["eternalengine"]},
     {name: "Knuckles' Sunglasses", types: ["meteorherd"]},
@@ -317,7 +321,7 @@ bingoList[22] = [
     {name: "Tails' Laser Blaster", types: ["eternalengine"]},
     {name: "Complete Meteor Herd M1 with 100+ Rings", types: ["meteorherd"]},
     {name: "2 Chao Boxes in Meteor Herd and finish", types: ["meteorherd"]},
-    {name: "5 hidden Chao animals in Meteor Herd and finish", types: ["meteorherd"]},
+    {name: "5 hidden animals in Meteor Herd and finish", types: ["meteorherd"]},
     {name: "20 Emblems", types: ["emblems", "multistory"]},
     {name: "Destroy the Gold Beetle in 10 different stages", types: ["goldbeetle",  "multistory"]},
     {name: "Mad Space M5", types: ["madspace"]},
@@ -335,11 +339,11 @@ bingoList[23] = [
     {name: "Meteor Herd M5", types: ["meteorherd"]},
     {name: "Cosmic Wall M2", types: ["cosmicwall"]},
     {name: "Complete Cosmic Wall M1 with 100+ Rings", types: ["cosmicwall"]},
-    {name: "5 hidden Chao animals in Cosmic Wall and finish", types: ["cosmicwall"]},
+    {name: "5 hidden animals in Cosmic Wall and finish", types: ["cosmicwall"]},
     {name: "Crazy Gadget M2", types: ["crazygadget"]},
     {name: "Complete Crazy Gadget M1 with 100+ Rings", types: ["crazygadget"]},
     {name: "2 Chao Boxes in Crazy Gadget and finish", types: ["crazygadget"]},
-    {name: "5 hidden Chao animals in Crazy Gadget and finish", types: ["crazygadget"]},
+    {name: "5 hidden animals in Crazy Gadget and finish", types: ["crazygadget"]},
     {name: "Complete Crazy Gadget M1 with a Magnetic Shield", types: ["crazygadget"]},
     {name: "Complete Crazy Gadget via all 5 Checkpoints", types: ["crazygadget"]},
     {name: "Complete Cosmic Wall via all 7 Checkpoints", types: ["cosmicwall"]}
@@ -363,7 +367,7 @@ bingoList[24] = [
     {name: "Final Rush M2", types: ["finalrush"]},
     {name: "Complete Final Rush M1 with 100+ Rings", types: ["finalrush"]},
     {name: "2 Chao Boxes in Final Rush and finish", types: ["finalrush"]},
-    {name: "5 hidden Chao animals in Final Rush and finish", types: ["finalrush"]},
+    {name: "5 hidden animals in Final Rush and finish", types: ["finalrush"]},
     {name: "All Hero Story Character's Upgrades", types: ["finalrush"]},
     {name: "Complete Final Rush M1 with a Magnetic Shield", types: ["finalrush"]},
     {name: "Mission Street M5", types: ["missionstreet"]},
@@ -371,7 +375,7 @@ bingoList[24] = [
     {name: "Final Chase M2", types: ["finalchase"]},
     {name: "Complete Final Chase M1 with 100+ Rings", types: ["finalchase"]},
     {name: "2 Chao Boxes in Final Chase and finish", types: ["finalchase"]},
-    {name: "5 hidden Chao animals in Final Chase and finish", types: ["finalchase"]},
+    {name: "5 hidden animals in Final Chase and finish", types: ["finalchase"]},
     {name: "All Dark Story Character's Upgrades", types: ["finalchase"]}
 ];
 bingoList[25] = [
