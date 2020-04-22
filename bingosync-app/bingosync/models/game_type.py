@@ -566,7 +566,7 @@ GAME_GROUPS = {
             (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
         ],
     },
-    GameType.terraria: {
+    GameType.the_witness: {
         "name": "The Witness",
         "variants": [
             (GameType.the_witness, "Normal", "The Witness"),
