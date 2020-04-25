@@ -10,7 +10,8 @@
                 {% if not player.is_spectator %}
                 <div id="{{ player.encoded_uuid }}" class="player-panel-entry">
                     <span class="goalcounter {{ player.color.goal_class }}">
-                        {{ game|num_goals:player.color }}
+                        <span class="squarecounter" title="Squares with color.">0</span>
+                        <span class="rowcounter" title="Rows with color.">(0)</span>
                     </span>
                     <span class="playername">
                         {{ player.name }}

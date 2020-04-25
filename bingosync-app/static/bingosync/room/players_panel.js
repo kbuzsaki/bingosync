@@ -37,7 +37,8 @@ var PlayersPanel = (function(){
     PlayersPanel.prototype.updateGoalCounters = function(board) {
         this.$playersPanel.find(".goalcounter").each(function() {
             var colorClass = $(this).attr('class').split(' ')[1];
-            $(this).html(board.getColorCount(colorClass));
+            $(this).find(".squarecounter").html(board.getColorCount(colorClass));
+            $(this).find(".rowcounter").html("(" + board.getRowCount(colorClass) + ")");
         });
     };
 
