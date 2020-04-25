@@ -9,7 +9,8 @@ var PlayersPanel = (function(){
         if(this.$playersPanel.find("#" + playerJson["uuid"]).length === 0) {
             // insert if the uuid is not already listed
             var colorClass = getSquareColorClass(playerJson["color"]);
-            var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "0"});
+            var goalCounter = $("<span>", {"class": "goalcounter " + colorClass, html: "<span class=\"squarecounter\" title=\"Squares with color.\">0</span> <span class=\"rowcounter\" title=\"Rows with color.\">(0)</span>"});
+
             var playerName = $("<span>", {"class": "playername", text: " " + playerJson["name"]});
             var playerDiv = $("<div>", {"id": playerJson["uuid"]});
             playerDiv.append(goalCounter);
