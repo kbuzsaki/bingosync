@@ -137,4 +137,32 @@
         assert.expect(0);
         setTimeout(assert.async(), 100);
     });
+
+    QUnit.test("gets square count when blank", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        board.setJson(this.boardData);
+        for (var color of ["red", "blue", "green"]) {
+            assert.equal(board.getColorCount(getSquareColorClass(color)), 0);
+        }
+        assert.equal(board.getColorCount(getSquareColorClass("blank")), 25);
+    });
+
+    QUnit.test("gets square count when set", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        this.boardData[0].colors = "red";
+        this.boardData[1].colors = "red green";
+        this.boardData[2].colors = "green blue";
+        this.boardData[16].colors = "red";
+        board.setJson(this.boardData);
+        assert.equal(board.getColorCount(getSquareColorClass("red")), 3);
+        assert.equal(board.getColorCount(getSquareColorClass("green")), 2);
+        assert.equal(board.getColorCount(getSquareColorClass("blue")), 1);
+        assert.equal(board.getColorCount(getSquareColorClass("purple")), 0);
+    });
 })();
