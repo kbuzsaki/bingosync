@@ -165,4 +165,60 @@
         assert.equal(board.getColorCount(getSquareColorClass("blue")), 1);
         assert.equal(board.getColorCount(getSquareColorClass("purple")), 0);
     });
+
+    QUnit.test("gets row count when blank", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        board.setJson(this.boardData);
+        for (var color of ["red", "blue", "green"]) {
+            assert.equal(board.getRowCount(getSquareColorClass(color)), 0);
+        }
+    });
+
+    QUnit.test("gets row count when set", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        // red has row1 and col2
+        // green has col2
+        // blue has bltr and some misc squares
+        // purple is just misc squares
+        this.boardData[0].colors = "red";
+        this.boardData[1].colors = "red green";
+        this.boardData[2].colors = "red blue";
+        this.boardData[3].colors = "red blue";
+        this.boardData[4].colors = "red blue";
+        this.boardData[6].colors = "red green purple";
+        this.boardData[8].colors = "blue";
+        this.boardData[11].colors = "red green";
+        this.boardData[12].colors = "blue";
+        this.boardData[16].colors = "red green blue";
+        this.boardData[20].colors = "blue purple";
+        this.boardData[21].colors = "red green";
+        board.setJson(this.boardData);
+        assert.equal(board.getRowCount(getSquareColorClass("red")), 2);
+        assert.equal(board.getRowCount(getSquareColorClass("green")), 1);
+        assert.equal(board.getRowCount(getSquareColorClass("blue")), 1);
+        assert.equal(board.getRowCount(getSquareColorClass("purple")), 0);
+    });
+
+    QUnit.test("gets row count blacked out", function(assert) {
+        var player = {is_spectator: false, color: "blue"};
+        var colorChooser = new ColorChooser($("#color-chooser"), player, "");
+        var board = new Board(this.$board, player, colorChooser, this.getBoardUrl, this.selectGoalUrl);
+
+        for (var i = 0; i < this.boardData.length; i++) {
+            this.boardData[i].colors = "red";
+        }
+        board.setJson(this.boardData);
+        assert.equal(board.getRowCount(getSquareColorClass("red")), 12);
+
+        // losing upper left square loses row1, col1, and tlbr
+        this.boardData[0].colors = "blue";
+        board.setJson(this.boardData);
+        assert.equal(board.getRowCount(getSquareColorClass("red")), 9);
+    });
 })();

@@ -174,6 +174,17 @@ var Board = (function(){
         return this.$board.find("." + colorClass).size();
     };
 
+    Board.prototype.getRowCount = function(colorClass) {
+        var that = this;
+        return ROW_NAMES.filter(function(row_name) {
+            var rowSquares = that.$board.find("." + row_name);
+            var coloredSquares = rowSquares.filter(function() {
+                return squareHasColor($(this), colorClass);
+            });
+            return coloredSquares.size() == rowSquares.size();
+        }).length;
+    };
+
     Board.prototype.clickSquare = function(ev, $square) {
         var goal = $square.html();
         var chosenColor = this.colorChooser.getChosenColor();
