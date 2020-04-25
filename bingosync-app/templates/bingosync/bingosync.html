@@ -90,10 +90,15 @@
 
         var chatSocket = new ChatSocket(chatPanel, board, playersPanel, socketsUrl);
 
+        // hacky callback to trigger an update of the playersPanel counters whenever we update the board.
+        var updateGoalCounters = function() {
+            playersPanel.updateGoalCounters(board);
+        };
+
         // initialize magic global hack hooks
         refreshBoard = function () {
             roomSettingsPanel.reloadSettings();
-            board.reloadBoard();
+            board.reloadBoard(updateGoalCounters);
         };
         hideBoard = function() {
             boardCover.setBoardHidden(true);
@@ -108,7 +113,7 @@
         window.addEventListener('resize', function() { board.refitGoalText(); }, false);
 
         // Load in all of the actual data
-        board.reloadBoard();
+        board.reloadBoard(updateGoalCounters);
         chatPanel.reloadChatHistory(/*full=*/false);
         chatSocket.init(temporarySocketKey);
     });

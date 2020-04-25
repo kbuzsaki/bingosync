@@ -156,12 +156,15 @@ var Board = (function(){
         this.refitGoalText();
     };
 
-    Board.prototype.reloadBoard = function() {
+    Board.prototype.reloadBoard = function(callback) {
         var that = this;
         $.ajax({
             "url": this.getBoardUrl,
             "success": function(result) {
                 that.setJson(result);
+                if (callback !== undefined) {
+                    callback();
+                }
             }
         });
     };
