@@ -3,6 +3,9 @@ var Board = (function(){
 
     var ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
 
+    var ROW_NAMES = ["row1", "row2", "row3", "row4", "row5",
+                     "col1", "col2", "col3", "col4", "col5", "tlbr", "bltr"];
+
     function sortColors(colors) {
         var orderedColors = [];
         for (var i = 0; i < ORDERED_COLORS.length; i++) {
@@ -130,18 +133,9 @@ var Board = (function(){
             );
         }
 
-        addRowHover("row1");
-        addRowHover("row2");
-        addRowHover("row3");
-        addRowHover("row4");
-        addRowHover("row5");
-        addRowHover("col1");
-        addRowHover("col2");
-        addRowHover("col3");
-        addRowHover("col4");
-        addRowHover("col5");
-        addRowHover("tlbr");
-        addRowHover("bltr");
+        for (var i = 0; i < ROW_NAMES.length; i++) {
+            addRowHover(ROW_NAMES[i]);
+        }
 
         $(window).resize(function () {
             that.$squares.each(function () { updateColorOffsets($(this)); });
