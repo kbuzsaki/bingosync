@@ -93,7 +93,7 @@ bingoList[12] = [
 { name: "Ranger Set", types:["Items"]},
 { name: "All Overworld Spells", types:["Spell"]},
 { name: "Pawple Ninja Set", types:["Items"]},
-{ name: "Rivals of A King + Fur's Crowd Quests", types:["Questline"]},
+{ name: "Rivals of A Kind + Fur's Crowd Quests", types:["Questline"]},
 { name: "Max Out 3 Spells", types:["Spell", "Gold"]},
 ];
 
@@ -110,7 +110,7 @@ bingoList[14] = [
 { name: "Furrible Cave", types:["Dungeons"]},
 { name: "Fire Mage Set", types:["Items"]},
 { name: "Pawasis Cave", types:["Dungeons"]},
-{ name: "Trest Ruins", types:["Ruins"]},
+{ name: "Tres Ruins", types:["Ruins"]},
 ];
 
 bingoList[15] = [
@@ -195,8 +195,8 @@ bingoList[24] = [
 
 bingoList[25] = [
 { name: "Acquire 10 sets", types:["Completion", "Items"]},
-{ name: "Acquire all 8 magic weapons", types:["Completion", "Items"]},
-{ name: "Acquire all 16 melee weapons", types:["Completion", "Items"]},
-{ name: "Acquire all 16 headgear", types:["Completion", "Items"]},
-{ name: "Acquire all 20 armor", types:["Completion", "Items"]},
+{ name: "Acquire 8 magic weapons", types:["Completion", "Items"]},
+{ name: "Acquire 16 melee weapons", types:["Completion", "Items"]},
+{ name: "Acquire 16 headgear", types:["Completion", "Items"]},
+{ name: "Acquire 20 armor", types:["Completion", "Items"]},
 ];
