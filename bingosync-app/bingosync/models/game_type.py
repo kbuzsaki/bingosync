@@ -195,6 +195,7 @@ class GameType(Enum):
     the_witness_low = 191
     cat_quest_2 = 192
     sonic_adventure_2_nightmare = 193
+    jak_and_daxter_easy = 194
 
     def __str__(self):
         return self.short_name
@@ -457,6 +458,13 @@ GAME_GROUPS = {
             (GameType.ittle_dew_2_expert, "Expert", "ID2 Expert")
         ],
     },
+    GameType.jak_and_daxter: {
+        "name": "Jak and Daxter: The Precursor Legacy",
+        "variants": [
+            (GameType.jak_and_daxter, "Normal", "J&D: TPL"),
+            (GameType.jak_and_daxter_easy, "Easy", "J&D: TPL Easy"),
+        ],
+    },
     GameType.lego_batman: {
         "name": "LEGO Batman: The Video Game",
         "variants": [
@@ -645,7 +653,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
-    **singleton_group(GameType.jak_and_daxter, "Jak and Daxter: The Precursor Legacy", "J&D: TPL"),
     **singleton_group(GameType.kingdom_hearts_final_mix, "Kingdom Hearts Final Mix", "KHFM"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
