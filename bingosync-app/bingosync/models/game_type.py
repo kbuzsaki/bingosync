@@ -196,6 +196,7 @@ class GameType(Enum):
     cat_quest_2 = 192
     sonic_adventure_2_nightmare = 193
     jak_and_daxter_easy = 194
+    celeste_long = 195
 
     def __str__(self):
         return self.short_name
@@ -387,6 +388,7 @@ GAME_GROUPS = {
         "name": "Celeste",
         "variants": [
             (GameType.celeste, "Normal", "Celeste"),
+            (GameType.celeste_long, "Long", "Celeste"),
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
         ],
     },
