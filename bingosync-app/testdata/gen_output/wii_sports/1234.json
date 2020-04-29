@@ -1,77 +1,77 @@
 [
     {
-        "name": "(Training) Dodging"
+        "name": "Get 3 Strikeouts in Baseball"
     },
     {
-        "name": "(Training) Picking Up Spares"
+        "name": "Get a Silver Medal in any Training Game"
     },
     {
-        "name": "Tennis Pro"
+        "name": "Win any match with the blue courts(Hold 2 until courts show up)"
     },
     {
-        "name": "(Training) Hitting Home Runs"
+        "name": "Win any match in Tennis without losing a single point"
     },
     {
-        "name": "(Golf) Expert"
+        "name": "Get a Bunt Single in Baseball"
     },
     {
-        "name": "(Training) Spin Control"
+        "name": "Finish Intermediate in Golf"
     },
     {
-        "name": "Bowling"
+        "name": "Get at least 15 points in Batting Practice(Baseball Training)"
     },
     {
-        "name": "(Training) Power Throws"
+        "name": "Have the CPU commit an error in Baseball"
     },
     {
-        "name": "(Training) Swing Control"
+        "name": "Get a Triple in Baseball"
     },
     {
-        "name": "(Golf) Intermediate"
+        "name": "Get at least 200 points in Target Practice(Golf Training)"
     },
     {
-        "name": "Baseball Pro"
+        "name": "Finish any 3-Hole Golf course without touching bunkers or water"
     },
     {
-        "name": "(Training) Throwing Punches"
+        "name": "Get within 500 ft. in Hitting the Green(Golf Training)"
     },
     {
-        "name": "Golf Pro"
+        "name": "Get at least 450 points in Power Throws(Bowling Training)"
     },
     {
-        "name": "(Training) Timing Your Swing"
+        "name": "Win a Single Match in Tennis"
     },
     {
-        "name": "(Training) (Golf) Target Practice"
+        "name": "Get a Ground Rule Double in Baseball"
     },
     {
-        "name": "(Training) Hitting The Green"
+        "name": "Get at least 5 points in Target Practice(Tennis Training)"
     },
     {
-        "name": "(Tennis) Best of 3"
+        "name": "Get 165 or more points in a Standard Game of Bowling"
     },
     {
-        "name": "(Training) Returning Balls"
+        "name": "Finish any Golf course Blind(Hold 2)"
     },
     {
-        "name": "(Training) Working The Bag"
+        "name": "Give Up on any 3-hole Course in Golf"
     },
     {
-        "name": "Boxing"
+        "name": "Get at least 12 points in Returning Balls(Tennis Training)"
     },
     {
-        "name": "(Training) Putting"
+        "name": "Get past at least 7 stages in Picking Up Spares(Bowling Training)"
     },
     {
-        "name": "Boxing Pro"
+        "name": "Win a Best-of-5 Match in Tennis"
     },
     {
-        "name": "(Tennis) Best of 5"
+        "name": "Get all gutters in Bowling(Except the third throw on the 10th Frame)"
     },
     {
-        "name": "(Golf) Beginner"
+        "name": "Win a Match in Boxing without dodging(No Slow-Mo Punches)"
     },
     {
-        "name": "Baseball"
+        "name": "Get 2 Home Runs in Baseball"
     }
 ]

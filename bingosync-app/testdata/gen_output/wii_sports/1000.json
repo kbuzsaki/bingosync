@@ -1,77 +1,77 @@
 [
     {
-        "name": "(Golf) 9-Hole Game"
+        "name": "Complete a Wii Fitness training session"
     },
     {
-        "name": "(Training) (Golf) Target Practice"
+        "name": "Get 2 Home Runs in Baseball"
     },
     {
-        "name": "(Training) Target Practice"
+        "name": "Get at least 30 points in Throwing Punches(Boxing Training)"
     },
     {
-        "name": "(Training) Throwing Punches"
+        "name": "Get at least 5 points in Target Practice(Tennis Training)"
     },
     {
-        "name": "Golf Pro"
+        "name": "Win a Single Match in Tennis"
     },
     {
-        "name": "(Training) Returning Balls"
+        "name": "Get at least 12 points in Returning Balls(Tennis Training)"
     },
     {
-        "name": "(Training) Power Throws"
+        "name": "Get a Triple in Baseball"
     },
     {
-        "name": "Bowling"
+        "name": "Have the CPU commit an error in Baseball"
     },
     {
-        "name": "(Golf) Beginner"
+        "name": "Finish 9-Hole Game in Golf"
     },
     {
-        "name": "(Golf) Intermediate"
+        "name": "Finish any 3-Hole Golf course without touching bunkers or water"
     },
     {
-        "name": "Tennis Pro"
+        "name": "Win any match with the blue courts(Hold 2 until courts show up)"
     },
     {
-        "name": "Boxing Pro"
+        "name": "Win a Match in Boxing without dodging(No Slow-Mo Punches)"
     },
     {
-        "name": "(Training) Timing Your Swing"
+        "name": "Get at least 50 points in Dodging(Boxing Training)"
     },
     {
-        "name": "Baseball Pro"
+        "name": "Give Up on any 3-hole Course in Golf"
     },
     {
-        "name": "(Training) Spin Control"
+        "name": "Get within 500 ft. in Hitting the Green(Golf Training)"
     },
     {
-        "name": "(Training) Working The Bag"
+        "name": "Get at least 15 points in Working the Bag(Boxing Training)"
     },
     {
-        "name": "(Tennis) Best of 3"
+        "name": "Get past at least 7 stages in Picking Up Spares(Bowling Training)"
     },
     {
-        "name": "Boxing"
+        "name": "Finish any Golf course Blind(Hold 2)"
     },
     {
-        "name": "(Training) Swing Control"
+        "name": "Win a Match in Boxing"
     },
     {
-        "name": "(Golf) Expert"
+        "name": "Get a Turkey in Bowling"
     },
     {
-        "name": "(Training) Dodging"
+        "name": "Get at least 200 points in Target Practice(Golf Training)"
     },
     {
-        "name": "(Training) Putting"
+        "name": "Finish Intermediate in Golf"
     },
     {
-        "name": "Baseball"
+        "name": "Get 3 Strikes in Bowling(Doesn\u2019t have to be a Turkey)"
     },
     {
-        "name": "(Training) Picking Up Spares"
+        "name": "Get all gutters in Bowling(Except the third throw on the 10th Frame)"
     },
     {
-        "name": "(Tennis) Single Game"
+        "name": "Get past at least 7 stages in Spin Control(Bowling Training)"
     }
 ]
