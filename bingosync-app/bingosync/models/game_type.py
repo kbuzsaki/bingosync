@@ -388,8 +388,8 @@ GAME_GROUPS = {
         "name": "Celeste",
         "variants": [
             (GameType.celeste, "Normal", "Celeste"),
-            (GameType.celeste_long, "Long", "Celeste"),
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
+            (GameType.celeste_long, "Long", "Celeste Long"),
         ],
     },
     GameType.custom: {
