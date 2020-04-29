@@ -199,6 +199,7 @@ class GameType(Enum):
     celeste_long = 195
     celeste_cn = 196
     celeste_blackout_cn = 197
+    hollow_knight_cn = 198
 
     def __str__(self):
         return self.short_name
@@ -448,6 +449,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.hollow_knight, "Normal", "Hollow Knight"),
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
+            (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
