@@ -118,8 +118,8 @@ bingoList[17] = [
 bingoList[18] = [
 { name: "12 Blue Coins from Noki"},
 { name: "1 Shine from each Level"},
-{ name: "2 Shine from 5 Levels"},
-{ name: "Defeat Both Cannon Moles"}
+{ name: "2 Shines from 5 Levels"},
+{ name: "Defeat Both Cannon Moles AND Collect Their Shines"}
 ];
 bingoList[19] = [
 { name: "6 Boss Shines"},
@@ -130,14 +130,16 @@ bingoList[19] = [
 bingoList[20] = [
 { name: "Defeat the Eel"},
 { name: "20 Blue Coins from Noki"},
-{ name: "80 Total Blue Coins"},
-{ name: "Three 100 Coin Shines"}
+{ name: "Three 100 Coin Shines"},
+{ name: "Collect 7 Shines in a Secret"}
 ];
 bingoList[21] = [
 { name: "8 Shines from a Single Level"},
 { name: "Collect 12 Level Shines"},
 { name: "12 Shines from Delfino (With Blue Trades)"},
-{ name: "15 Shines from Delfino (With Blue Trades)"}
+{ name: "15 Shines from Delfino (With Blue Trades)"},
+{ name: "80 Total Blue Coins"}
+
 ];
 bingoList[22] = [
 { name: "3 Shines from 4 Levels"},
