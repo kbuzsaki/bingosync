@@ -147,7 +147,7 @@ var bingoList = {
   },
 
   "WhiteDefender":{
-    "Desc":"Defeat White Defender twice",
+    "Desc":"Defeat double damage White Defender",
     "Type": "Tiebreaker",
     "Excludes": ["DDefender"]
   },
@@ -191,8 +191,7 @@ var bingoList = {
   },
 
   "Nosk":{
-      "Desc": "Nosk",
-      "Excludes": ["Juggle"]
+      "Desc": "Nosk"
   },
 
   "PaleLurker":{
@@ -315,12 +314,17 @@ var bingoList = {
       "Desc":"Kill Gorgeous Husk"
   },
 
+  "LoreVillage":{
+    "Desc":"Kill a Kingsmould"
+  },
+
   "Maggots":{
       "Desc":"Kill two different Maggots"
   },
 
   "Millibelle":{
-      "Desc":"Slash Millibelle in Pleasure House"
+      "Desc":"Slash Millibelle in Pleasure House",
+      "Excludes":[ "Bank" ]
   },
 
   "Mimics":{
@@ -375,40 +379,39 @@ var bingoList = {
 
   "CarefreeMelody":{
     "Desc": "Obtain Carefree Melody",
-    "Type": "Tiebreaker",
     "Excludes": [ "NKGrimm" ]
   },
 
-  "Compass":{
-      "Desc":"Obtain Wayward Compass"
+  "CompassSwarm":{
+      "Desc":"Obtain Wayward Compass or Gathering Swarm"
   },
 
-  "DWielder":{
-      "Desc":"Obtain Dream Wielder"
+  "DWielderShield":{
+      "Desc":"Obtain Dream Wielder or Dreamshield"
   },
 
   "FCharms":{
       "Desc":"Obtain two Unbreakable charms"
   },
 
-  "Flukenest":{
-      "Desc":"Obtain Flukenest"
+  "FlukenestFury":{
+      "Desc":"Obtain Flukenest or Fury or the Fallen"
   },
 
-  "Grubsong":{
-      "Desc":"Obtain Grubsong"
+  "GrubsongElegy":{
+      "Desc":"Obtain Grubsong or Grubberfly's Elegy"
   },
 
-  "GWomb":{
-      "Desc":"Obtain Glowing Womb"
+  "GWombWeavers":{
+      "Desc":"Obtain Glowing Womb or Weaversong"
   },
 
-  "HeavyBlow":{
-      "Desc":"Obtain Heavy Blow" 
+  "HeavyBlowSteady":{
+      "Desc":"Obtain Heavy Blow or Steady Body" 
   },
 
-  "Hiveblood":{
-      "Desc":"Obtain Hiveblood" 
+  "HivebloodShadow":{
+      "Desc":"Obtain Hiveblood or Sharp Shadow" 
   },
 
   "LifebloodCharms":{
@@ -416,43 +419,31 @@ var bingoList = {
   },
 
   "Longnail":{
-      "Desc":"Obtain Longnail"
+      "Desc":"Obtain Longnail or Mark of Pride"
   },
 
-  "MoP":{
-      "Desc":"Obtain MoP"
-  },
-
-  "QSlash":{
-      "Desc":"Obtain Quick Slash"
+  "QSlashGlory":{
+      "Desc":"Obtain Quick Slash or Nailmaster's Glory"
   },
 
   "QuickDeepFocus":{
       "Desc":"Obtain Quick Focus or Deep Focus"
   },
 
-  "ShamanStone":{
-      "Desc":"Obtain Shaman Stone"
-  },
-
-  "SharpShadow":{
-      "Desc":"Obtain Sharp Shadow"
-  },
-
-  "SpellTwister":{
-      "Desc":"Obtain Spell Twister"
+  "ShamanStoneTwister":{
+      "Desc":"Obtain Shaman Stone or Spell Twister"
   },
 
   "SprintmasterDashmaster":{
       "Desc":"Obtain Sprintmaster or Dashmaster"
   },
 
-  "Weaversong":{
-      "Desc":"Obtain Weaversong"
+  "SoulTools":{
+      "Desc":"Obtain Soul Eater or Soul Catcher"
   },
 
-  "Unn":{
-      "Desc":"Obtain Shape of Unn"
+  "UnnShell":{
+      "Desc":"Obtain Shape of Unn or Baldur Shell"
   },
 
   "LoveKey":{
@@ -464,14 +455,6 @@ var bingoList = {
   "CHeart":{
       "Desc":"Obtain Crystal Heart",
       "Excludes": [ "CrossroadsCanyonGrubs", "GWombSkip", "CHeartSkip", "TearCheck" ]
-  },
-
-  "Cyclone":{
-      "Desc":"Obtain Cyclone Slash"
-  },
-
-  "DashSlash":{
-      "Desc":"Obtain Dash Slash"
   },
 
   "DDark":{
@@ -492,13 +475,13 @@ var bingoList = {
       "Excludes":[ "3Floors" ]
   },
 
-  "GreatSlash":{
-      "Desc":"Obtain Great Slash"
-  },
-
   "MantisClaw":{
       "Desc":"Obtain Mantis Claw", 
       "Excludes":[ "SanctuarySkip", "WPShadeSkip", "VillageJournal", "CHeartSkip" ]
+  },
+
+  "NailArts":{
+      "Desc":"Obtain 2 Nail Arts"
   },
 
   "SCloak":{
@@ -769,7 +752,8 @@ var bingoList = {
   },
 
   "Bank":{
-      "Desc":"Have 1500 geo in the bank"
+      "Desc":"Have 1500 geo in the bank",
+      "Excludes":[ "Millibelle" ]
   },
 
   "Bardoon":{
@@ -785,7 +769,7 @@ var bingoList = {
   },
 
   "ClothQuest":{
-      "Desc":"Wake up Cloth in Dirtmouth"
+      "Desc":"Complete either ending of the Cloth questline"
   },
 
   "CrestElevator":{
@@ -794,6 +778,10 @@ var bingoList = {
 
   "DeepnestZote":{
       "Desc":"Rescue Zote in Deepnest"
+  },
+
+  "DefenderSign":{
+    "Desc":"Read the Dung Defender sign before Isma's Grove"
   },
 
   "DirtmouthElevator":{
@@ -829,10 +817,6 @@ var bingoList = {
       "Desc":"Hit the Oro scarecrow up until the hoppers spawn"
   },
 
-  "JuggleNosk":{
-      "Desc":"Juggle Nosk's Mask 3 times without dropping it",
-      "Excludes":[ "Nosk" ]
-  },
 
   "Lemm":{
       "Desc":"Talk to Lemm with Defender's Crest equipped"
@@ -840,6 +824,10 @@ var bingoList = {
 
   "LegEater":{
       "Desc":"Buy out Leg Eater"
+  },
+
+ "Lifeblood":{
+      "Desc":"10 Lifeblood masks at the same time"
   },
 
   "LifebloodRoom":{
@@ -851,6 +839,10 @@ var bingoList = {
   },
 
   "LoreCliffs":{
+    "Desc":"Read 3 lore tablets in Teacher's Archives"
+  },
+
+  "LoreCliffs":{
     "Desc":"Read the lore tablet in Howling Cliffs"
   },
 
@@ -858,9 +850,18 @@ var bingoList = {
     "Desc":"Read the lore tablet in Kingdom's Edge (requires Spore Shroom)"
   },
 
+  "LorePilgrims":{
+    "Desc":"Read two Pilgrim's Way lore tablets"
+  },
+
   "LoreSanctum":{
     "Desc":"Read both lore tablets in Soul Sanctum"
   },
+
+  "LoreVillage":{
+    "Desc":"Read both lore tablets in Mantis Village"
+  },
+
 
   "MaskMaker":{
       "Desc":"Talk to Mask Maker"
