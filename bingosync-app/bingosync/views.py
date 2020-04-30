@@ -95,6 +95,21 @@ def room_view(request, encoded_room_uuid):
             join_form = JoinRoomForm.for_room(room)
             return _join_room(request, join_form, room)
 
+def popout_board(request, encoded_room_uuid):
+    public_access_key = request.GET.get("key",None)
+    # check access key
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+    # print(room.encoded_public_access_key+':'+public_access_key)
+    if room.encoded_public_access_key == None or not room.encoded_public_access_key == public_access_key:
+        return HttpResponseBadRequest("invalid key:")
+    params = {
+        "room": room,
+        "game": room.current_game,
+        "sockets_url": SOCKETS_URL,
+        "temporary_socket_key": _create_temporary_room_socket_key(room)
+    }
+    return render(request, "bingosync/popout_board.html", params)
+
 def _join_room(request, join_form, room):
     params = {
         "form": join_form,
@@ -320,13 +335,24 @@ def user_disconnected(request, encoded_player_uuid):
 
 # TODO: add authentication to limit this route to tornado
 def check_socket_key(request, socket_key):
+    encoded_uuid = cache.get(socket_key)
+    if not encoded_uuid:
+        raise Http404("Invalid socket key")
     try:
-        encoded_player_uuid = _get_temporary_socket_player_uuid(socket_key)
-        player = Player.get_for_encoded_uuid(encoded_player_uuid)
-        json_response = {
-            "room": player.room.encoded_uuid,
-            "player": player.encoded_uuid
-        }
+        if encoded_uuid.startswith("room:"):
+            encoded_room_uuid = encoded_uuid[5:]
+            json_response = {
+                "room": encoded_room_uuid,
+                "player":""
+            }
+        else:
+            if encoded_uuid.startswith("player:"):
+                encoded_uuid = encoded_uuid[7:]
+            player = Player.get_for_encoded_uuid(encoded_uuid)
+            json_response = {
+                "room": player.room.encoded_uuid,
+                "player": player.encoded_uuid
+            }
         return JsonResponse(json_response)
     except NotAuthenticatedError:
         raise Http404("Invalid socket key")
@@ -397,15 +423,13 @@ def _save_session_player(session, player):
 
 def _create_temporary_socket_key(player):
     temporary_socket_key = generate_encoded_uuid()
-    cache.set(temporary_socket_key, player.encoded_uuid)
+    cache.set(temporary_socket_key, "player:"+player.encoded_uuid)
     return temporary_socket_key
 
-def _get_temporary_socket_player_uuid(temporary_socket_key):
-    encoded_player_uuid = cache.get(temporary_socket_key)
-    if encoded_player_uuid:
-        return encoded_player_uuid
-    else:
-        raise NotAuthenticatedError()
+def _create_temporary_room_socket_key(room: Room):
+    temporary_socket_key = generate_encoded_uuid()
+    cache.set(temporary_socket_key, "room:"+room.encoded_uuid)
+    return temporary_socket_key
 
 
 # Helpers for parsing request input

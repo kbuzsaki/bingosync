@@ -23,6 +23,15 @@
                 </td></tr>
                 <tr><td><b>Game:</b></td><td nowrap>{{ game.game_type|hovertext_game_type }}</td></tr>
                 <tr><td><b>Mode:</b></td><td>{{ game.lockout_mode }}</td></tr>
+                {% if room.public_access_key %}
+                    <tr>
+                        <td colspan="2">
+                            <a href="{% url 'popout_board' room.encoded_uuid %}?key={{room.encoded_public_access_key}}" target="_blank">
+                                Popout URL
+                            </a>
+                        </td>
+                    </tr>
+                {% endif %}
                 <tr><td colspan="2">
                 </td></tr>
             </table>

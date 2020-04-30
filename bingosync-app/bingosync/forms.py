@@ -5,6 +5,7 @@ from django.contrib.auth import hashers
 import json
 import logging
 import random
+from uuid import uuid4
 
 from bingosync.generators import InvalidBoardException
 from bingosync.models import Room, GameType, LockoutMode, Game, Player, FilteredPattern
@@ -98,7 +99,7 @@ class RoomForm(forms.Form):
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
-            room = Room(name=room_name, passphrase=encrypted_passphrase, hide_card=hide_card)
+            room = Room(name=room_name, passphrase=encrypted_passphrase, hide_card=hide_card, public_access_key=uuid4())
             room.save()
 
             game = Game.from_board(board_json, room=room, game_type_value=game_type.value,

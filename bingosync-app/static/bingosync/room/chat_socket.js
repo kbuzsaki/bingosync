@@ -25,7 +25,9 @@ var ChatSocket = (function(){
     ChatSocket.prototype.onSocketClose = function() {
         var disconnectText = "*** Disconnected from server, try refreshing.";
         var message = $("<div>", {"class": "connection-message", text: disconnectText}).toHtml();
-        this.chatPanel.appendChatMessage(message);
+        if (this.chatPanel !== null) {
+            this.chatPanel.appendChatMessage(message);
+        }
     };
 
     ChatSocket.prototype.onSocketMessage = function(evt) {
@@ -52,16 +54,26 @@ var ChatSocket = (function(){
             }
         }
         else if(json["type"] === "new-card") {
+            console.log(JSON.stringify(json));
             // TODO: remove this external dependency
             // if the card was never revealed show what the seed was in the chat anyway
-            $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+            if (this.chatPanel !== null) {
+                $("#bingo-chat .new-card-message .seed-hidden").text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+            }
+            if (json["hide_card"]) {
+                hideBoard();
+            } else {
+                revealBoard();
+            }
             refreshBoard();
         } else if (json["type"] === "chat") {
             // no special effects for chat, it just gets written to the panel
         } else {
             console.log("unrecognized event type: ", json);
         }
-        this.chatPanel.handleEvent(json);
+        if (this.chatPanel !== null) {
+            this.chatPanel.handleEvent(json);
+        }
     };
 
 

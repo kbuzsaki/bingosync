@@ -1,0 +1,82 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load app_filters %}
+
+<!-- bingosync.html doesn't use the same layout conventiona s the rest of the
+     site because the main layout flexboxes screw with the fill-parent based
+     layout that the chat and sidebar use
+ -->
+{% block page_body %}
+<div style="text-align: center" class="board-container{{ room.hide_card|yesno:" hidden-card," }}">
+    {% include 'bingosync/board.html' %}
+    <div class="board-cover">
+        <div class="board-cover-text unselectable">
+            Click to Reveal
+        </div>
+    </div>
+</div>
+<script src="{% static "bingosync/room/util.js" %}"></script>
+<script src="{% static "bingosync/room/color_chooser.js" %}"></script>
+<script src="{% static "bingosync/room/board.js" %}"></script>
+<script src="{% static "bingosync/room/board_cover.js" %}"></script>
+<script src="{% static "bingosync/room/players_panel.js" %}"></script>
+<script src="{% static "bingosync/room/room_settings_panel.js" %}"></script>
+<script src="{% static "bingosync/room/chat_panel.js" %}"></script>
+<script src="{% static "bingosync/room/chat_socket.js" %}"></script>
+<script src="{% static "bingosync/bingosync.js" %}"></script>
+<script>
+    $(document).ready(function() {
+        ROOM_SETTINGS = JSON.parse('{{ room.settings|jsonify|escapejs }}');
+        window.sessionStorage.setItem("room", "{{ room.encoded_uuid }}");
+
+        var boardUrl = "{% url 'room_board' room.encoded_uuid %}";
+        // var chatHistoryUrl = "{% url 'room_feed' room.encoded_uuid %}";
+        // var chatUrl = "{% url 'chat_message' %}";
+        // var colorSelectedUrl = "{% url 'select_color' %}";
+        var socketsUrl = "{{ sockets_url }}/broadcast";
+        var goalSelectedUrl = "{% url 'goal_selected' %}";
+        // var boardRevealedUrl = "{% url 'board_revealed' %}";
+        // var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
+        var temporarySocketKey = "{{ temporary_socket_key }}";
+
+        // Construct all of the UI components
+        // var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
+        var board = new Board($("#bingo"), {"is_spectator":true}, /*colorChooser*/ null, boardUrl, /*goalSelectedUrl*/ null);
+        var boardCover = new BoardCover($(".board-container"), ROOM_SETTINGS.hide_card, /*boardRevealedUrl*/ null);
+        var playersPanel = new PlayersPanel($("#players-panel"));
+        // var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
+        // var chatPanel = new ChatPanel($("#bingo-chat"), $("#chat-settings"), chatUrl, chatHistoryUrl);
+        initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
+
+        var chatSocket = new ChatSocket(/*chatPanel=*/null, board, playersPanel, socketsUrl);
+
+        // hacky callback to trigger an update of the playersPanel counters whenever we update the board.
+        var updateGoalCounters = function() {
+            playersPanel.updateGoalCounters(board);
+        };
+
+        // initialize magic global hack hooks
+        refreshBoard = function () {
+            // roomSettingsPanel.reloadSettings();
+            board.reloadBoard(updateGoalCounters);
+        };
+        hideBoard = function() {
+            boardCover.setBoardHidden(true);
+        };
+        revealBoard = function() {
+            boardCover.setBoardHidden(false);
+            // $("#the-seed").text(ROOM_SETTINGS.seed);
+            // var $seedHidden = $("#bingo-chat .new-card-message .seed-hidden");
+            // $seedHidden.text(ROOM_SETTINGS.seed).removeClass('seed-hidden').addClass('seed');
+            board.refitGoalText();
+        };
+        window.addEventListener('resize', function() { board.refitGoalText(); }, false);
+
+        // Load in all of the actual data
+        board.reloadBoard(updateGoalCounters);
+        // chatPanel.reloadChatHistory(/*full=*/false);
+        chatSocket.init(temporarySocketKey);
+    });
+</script>
+{% endblock %}
+

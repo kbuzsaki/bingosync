@@ -22,6 +22,7 @@ class Room(models.Model):
     passphrase = models.CharField(max_length=255)
     active = models.BooleanField("Active", default=False)
     hide_card = models.BooleanField("Initially Hide Card", default=False)
+    public_access_key = models.UUIDField(default=None, null=True)
 
     def __str__(self):
         return self.name
@@ -66,6 +67,10 @@ class Room(models.Model):
     @property
     def encoded_uuid(self):
         return encode_uuid(self.uuid)
+
+    @property
+    def encoded_public_access_key(self):
+        return None if self.public_access_key == None else encode_uuid(self.public_access_key)
 
     @property
     def current_game(self):
