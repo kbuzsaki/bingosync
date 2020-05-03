@@ -147,7 +147,7 @@ var bingoList = {
   },
 
   "WhiteDefender":{
-    "Desc":"Defeat double damage White Defender",
+    "Desc":"Defeat White Defender",
     "Type": "Tiebreaker",
     "Excludes": ["DDefender"]
   },
@@ -165,17 +165,14 @@ var bingoList = {
       "Desc": "Flukemarm"
   },
 
-  "Flukemarm2":{
-      "Desc": "Ascended Flukemarm",
-      "Type": "Tiebreaker",
-      "Excludes": ["Godhome"]
-  },
+  /* Disabled but not forgotten my king PepeHands
 
   "GPZote":{
       "Desc": "Grey Prince Zote",
-      "Type": "Tiebreaker",
-      "Excludes": [ "ColoZote", "Colo1" ]
+      "Type": "Tiebreaker"
   },
+
+  */
 
   "HiveKnight":{
       "Desc": "Hive Knight",
@@ -198,6 +195,11 @@ var bingoList = {
       "Desc":"Pale Lurker"
   },
 
+  "Radiant": { // Under I know you're reading this and I hope it fills you with joy
+      "Desc": "Any one Radiant Boss",
+      "Excludes": ["Godhome", "Ordeal20"]
+  },
+
   "SoulMaster": {
       "Desc": "Soul Master",
       "Excludes": ["SoulTyrant"]
@@ -210,7 +212,7 @@ var bingoList = {
 
   "TLord":{
       "Desc": "Traitor Lord",
-      "Excludes": [ "WhiteLady" ]
+      "Excludes": [ "WhiteLady", "ClothQuest" ]
   },
 
   "TMGrimm":{
@@ -292,14 +294,14 @@ var bingoList = {
       "Excludes":[ "ColoZote" ]
   },
 
-  "Colo3":{
-      "Desc":"Colosseum 3",
-      "Type":"Tiebreaker"
-  },
-
   "ColoZote":{
       "Desc":"Defeat Colosseum Zote",
-      "Excludes":["Colo1", "GPZote" ]
+      "Excludes":["Colo1" ]
+  },
+
+
+  "CrystalCrawler":{
+      "Desc":"Crystal Crawler Journal Entry"
   },
 
   "Devout":{
@@ -314,7 +316,7 @@ var bingoList = {
       "Desc":"Kill Gorgeous Husk"
   },
 
-  "LoreVillage":{
+  "Kingsmould":{
     "Desc":"Kill a Kingsmould"
   },
 
@@ -375,6 +377,11 @@ var bingoList = {
       "Desc":"Ride the stag to Queen's Station"
   },
 
+
+
+  "5Charms":{
+    "Desc": "Have 5 or more Charms",
+  },
 
 
   "CarefreeMelody":{
@@ -653,7 +660,8 @@ var bingoList = {
   },
 
   "Shops":{
-      "Desc":"Visit every shop"
+      "Desc":"Visit all 4 shops (Sly, Iselda, Salubra and Leg Eater)",
+      "Excludes":[ "Cloth" ]
   },
 
   "StagVessel":{
@@ -768,8 +776,14 @@ var bingoList = {
     "Desc":"Get Brumm's flame"
   },
 
+  "Cloth":{
+      "Desc":"Talk to Cloth",
+      "Excludes":[ "Shops" ]
+  }, 
+
   "ClothQuest":{
-      "Desc":"Complete either ending of the Cloth questline"
+      "Desc":"Complete either ending of the Cloth questline",
+      "Excludes":[ "TLord", "WhiteLady" ]
   },
 
   "CrestElevator":{
@@ -785,7 +799,7 @@ var bingoList = {
   },
 
   "DirtmouthElevator":{
-      "Desc":"Open the Dirtmouth/Crystal Peaks elevator"
+      "Desc":"Open the Dirtmouth / Crystal Peaks elevator"
   },
 
   "ElderFlower":{
@@ -802,7 +816,7 @@ var bingoList = {
 
   "Godhome":{
       "Desc":"Enter Godhome",
-      "Excludes":[ "Flukemarm2", "Ordeal20" ]
+      "Excludes":[ "Ordeal20", "Radiant" ]
   },
 
   "GoamGarpede":{
@@ -816,7 +830,6 @@ var bingoList = {
   "HopperHell":{
       "Desc":"Hit the Oro scarecrow up until the hoppers spawn"
   },
-
 
   "Lemm":{
       "Desc":"Talk to Lemm with Defender's Crest equipped"
@@ -862,7 +875,6 @@ var bingoList = {
     "Desc":"Read both lore tablets in Mantis Village"
   },
 
-
   "MaskMaker":{
       "Desc":"Talk to Mask Maker"
   },
@@ -892,7 +904,12 @@ var bingoList = {
   "Ordeal20":{
       "Desc":"Eternal Ordeal: 20 Zotes",
       "Type": "Tiebreaker",
-      "Excludes":[ "Godhome" ]
+      "Excludes":[ "Godhome", "Radiant" ]
+  },
+
+  "PoP":{
+      "Desc":"Complete Path of Pain",
+      "Type": "Tiebreaker",
   },
 
   "Pins":{
@@ -912,6 +929,10 @@ var bingoList = {
 
   "Salubra":{
       "Desc":"Buy out Salubra"
+  },
+
+  "ShadeGates":{
+      "Desc":"Slash two Shade Gates"
   },
 
   "Springs":{
@@ -965,7 +986,7 @@ var bingoList = {
 
   "WhiteLady":{
       "Desc":"Dream Nail White Lady", 
-      "Excludes":[ "TLord" ]
+      "Excludes":[ "TLord", "ClothQuest" ]
   },
 
   "Willow":{
