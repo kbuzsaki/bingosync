@@ -200,6 +200,7 @@ class GameType(Enum):
     celeste_cn = 196
     celeste_blackout_cn = 197
     hollow_knight_cn = 198
+    wii_party_global_trot = 199
 
     def __str__(self):
         return self.short_name
@@ -618,6 +619,12 @@ GAME_GROUPS = {
         "variants": [
             (GameType.yugioh_forbidden_memories, "Normal", "YGO FM"),
             (GameType.yugioh_forbidden_memories_alternate, "Type B", "YGO FM (Type B)"),
+        ],
+    },
+    GameType.wii_party_global_trot: {
+        "name": "Wii Party",
+        "variants": [
+            (GameType.wii_party_global_trot, "Global Trot", "Wii Party GT"),
         ],
     },
     GameType.zelda_botw: {
