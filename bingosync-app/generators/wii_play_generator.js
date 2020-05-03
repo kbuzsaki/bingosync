@@ -43,7 +43,7 @@ var bingoList = [
     "Get killed by a yellow tank’s mine in Tanks",
     "Get specifically Silver in Fishing (1600 - 2290)",
     "Get specifically Silver in Shooting Range (400 - 499)",
-    "Hit 200 points in Charge, than turn around and hit the back fence",
+    "Hit 100 points in Charge, than turn around and hit the back fence",
     "Hit a Red Hopping Scarecrow in Charge",
     "Kill a tank with a mine in Tanks",
     "Reach the max time of 120 sec in Find Mii",
