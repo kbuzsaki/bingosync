@@ -13,7 +13,7 @@ from bingosync.models.events import Event, GoalEvent, ColorEvent, RevealedEvent,
 from bingosync.util import encode_uuid, decode_uuid
 
 
-STALE_THRESHOLD = datetime.timedelta(hours=3)
+STALE_THRESHOLD = datetime.timedelta(minutes=90)
 
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
