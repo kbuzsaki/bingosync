@@ -202,6 +202,7 @@ class GameType(Enum):
     hollow_knight_cn = 198
     wii_party_global_trot = 199
     pokemon_sword_shield = 200
+    otogi = 201
 
     def __str__(self):
         return self.short_name
@@ -692,6 +693,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
+    **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
