@@ -205,6 +205,8 @@ class GameType(Enum):
     otogi = 201
     zelda_minish_cap_randomizer = 202
     yooka_laylee_impossible_lair = 203
+    banjo_tooie_short = 204
+    banjo_tooie_long = 205
 
     def __str__(self):
         return self.short_name
@@ -376,6 +378,14 @@ GAME_GROUPS = {
         "variants": [
             (GameType.alttp_randomizer, "Randomizer", "ALttP Random"),
             (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
+        ],
+    },
+    GameType.banjo_tooie: {
+        "name": "Banjo-Tooie",
+        "variants": [
+            (GameType.banjo_tooie, "Normal", "Banjo-Tooie"),
+            (GameType.banjo_tooie_short, "Short", "Banjo-Tooie Short"),
+            (GameType.banjo_tooie_long, "Long", "Banjo-Tooie Long"),
         ],
     },
     GameType.binding_of_isaac: {
@@ -643,7 +653,6 @@ GAME_GROUPS = {
         ],
     },
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
-    **singleton_group(GameType.banjo_tooie, "Banjo-Tooie", "Banjo-Tooie"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
