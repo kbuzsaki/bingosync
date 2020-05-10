@@ -203,7 +203,7 @@ class GameType(Enum):
     wii_party_global_trot = 199
     pokemon_sword_shield = 200
     otogi = 201
-    zelda_minish_cap = 202
+    zelda_minish_cap_randomizer = 202
     yooka_laylee_impossible_lair = 203
 
     def __str__(self):
@@ -726,7 +726,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
-    **singleton_group(GameType.zelda_minish_cap, "Zelda: The Minish Cap", "Zelda: TMC"),
+    **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_wind_waker_sd, "Zelda: The Wind Waker SD", "TWW SD"),
 }
