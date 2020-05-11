@@ -786,13 +786,11 @@ var bingoList = {
     "SCx3": {
         "Desc": "Clear SCx3",
         "Diff": 16,
-        "Excludes": ["SCx5", "SCx6"],
         "Synergy": ["SCxEarly", "ACBs"]
     },
     "SCx5": {
         "Desc": "Clear SCx5",
         "Diff": 16,
-        "Excludes": ["SCx3", "SCx6"],
         "Synergy": ["SCxLate"]
     },
     "SCx6Enemy": {
@@ -804,7 +802,7 @@ var bingoList = {
     "SCx6": {
         "Desc": "Clear SCx6",
         "Diff": 19,
-        "Excludes": ["SCx3", "SCx5", "SCx6Enemy"],
+        "Excludes": ["SCx6Enemy"],
         "Synergy": ["SCxLate"]
     },
     "SCx7Bombs": {
