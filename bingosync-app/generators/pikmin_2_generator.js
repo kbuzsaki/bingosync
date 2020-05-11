@@ -310,7 +310,7 @@ bingoGenerator = function(bingoList, opts) {
         
         //remove the chosen goal and any duplicates of it completely
         for (var j = 0; j < choosable.length; j++) {
-            if (choosable[j] == goal) {
+            if (choosable[j] == goal.name) {
                 choosable.splice(j, 1);
             }
         }
@@ -355,7 +355,7 @@ bingoGenerator = function(bingoList, opts) {
                     }
                 }
             }
-            choosable.concat(temp);
+            choosable = choosable.concat(temp);
         }
     }
     return chosenGoals;
