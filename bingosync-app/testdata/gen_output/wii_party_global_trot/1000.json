@@ -3,13 +3,13 @@
         "name": "Become a Super Mii and buy a photo."
     },
     {
-        "name": "Fly in a plain."
+        "name": "Get a photo from any African country."
     },
     {
         "name": "Have more coins than your opponents combined."
     },
     {
-        "name": "Have the same (minimum) distance to 2 Hot Spots."
+        "name": "Have more than 50 coins."
     },
     {
         "name": "Win 5 minigames in a row."
@@ -18,7 +18,7 @@
         "name": "Have 2 helicopter cards at once."
     },
     {
-        "name": "Get the last picture in the round."
+        "name": "Get the first photo of a new tour."
     },
     {
         "name": "Move more than 7 spaces in one turn."
@@ -36,10 +36,7 @@
         "name": "Travel the same amount of spaces 3 turns in a row."
     },
     {
-        "name": "Land on a Surprise-space."
-    },
-    {
-        "name": "Move in a train."
+        "name": "Have the same (minimum) distance to 2 Hot Spots."
     },
     {
         "name": "Land on the same space an opponent is standing on."
@@ -48,30 +45,33 @@
         "name": "Have 5 special cards at once."
     },
     {
-        "name": "Have 2 train cards at once."
-    },
-    {
-        "name": "Land on the Start again."
+        "name": "Land on a Surprise-space."
     },
     {
         "name": "Steal/Get coins from an opponent."
     },
     {
-        "name": "Get a photo from any American country."
-    },
-    {
-        "name": "Have cards that sum up to 20 or more."
+        "name": "Get the last picture in the round."
     },
     {
         "name": "Collect at least 40 coins from minigames."
     },
     {
-        "name": "Get a photo from any European country."
+        "name": "Get a photo from any Asian country."
     },
     {
         "name": "Get transported by an UFO."
     },
     {
-        "name": "Have more than 50 coins."
+        "name": "Land on the Start again."
+    },
+    {
+        "name": "Move in a train."
+    },
+    {
+        "name": "Collect 4 photos in total."
+    },
+    {
+        "name": "Fly in a helicopter."
     }
 ]

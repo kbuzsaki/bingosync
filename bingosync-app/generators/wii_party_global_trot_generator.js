@@ -10,6 +10,7 @@ var bingoList = [
     "Fly in a balloon.",
     "Fly in a helicopter.",
     "Fly in a plain.",
+    "Get a photo from any African country.",
     "Get a photo from any American country.",
     "Get a photo from any Asian country.",
     "Get a photo from any European country.",

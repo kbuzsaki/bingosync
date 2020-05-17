@@ -1,9 +1,9 @@
 [
     {
-        "name": "Get a photo from any American country."
+        "name": "Get a photo from any African country."
     },
     {
-        "name": "Get the last picture in the round."
+        "name": "Get the first photo of a new tour."
     },
     {
         "name": "Steal/Get coins from an opponent."
@@ -12,19 +12,16 @@
         "name": "Fly in a plain."
     },
     {
-        "name": "Have 5 special cards at once."
-    },
-    {
         "name": "Have 2 train cards at once."
     },
     {
-        "name": "Land on the same space an opponent is standing on."
+        "name": "Have 2 helicopter cards at once."
+    },
+    {
+        "name": "Land on the Start again."
     },
     {
         "name": "Fly in a helicopter."
-    },
-    {
-        "name": "Get the first photo of a new tour."
     },
     {
         "name": "Become a Super Mii and buy a photo."
@@ -36,13 +33,13 @@
         "name": "Travel the same amount of spaces 3 turns in a row."
     },
     {
-        "name": "Get paid 10 coins for a job."
+        "name": "Get a photo from any European country."
     },
     {
         "name": "Buy all 3 cards from a shop."
     },
     {
-        "name": "Have more coins than your opponents combined."
+        "name": "Have cards that sum up to 20 or more."
     },
     {
         "name": "Take 2 jobs in successive rounds."
@@ -51,13 +48,13 @@
         "name": "Win an 1 vs. 3 minigame."
     },
     {
-        "name": "Land on the Start again."
+        "name": "Land on a Surprise-space."
     },
     {
-        "name": "Get paid less than 5 coins for a job."
+        "name": "Get the last picture in the round."
     },
     {
-        "name": "Have cards that sum up to 20 or more."
+        "name": "Get paid 10 coins for a job."
     },
     {
         "name": "Move in a train."
@@ -66,10 +63,13 @@
         "name": "Collect at least 40 coins from minigames."
     },
     {
+        "name": "Get paid less than 5 coins for a job."
+    },
+    {
         "name": "Collect 4 photos in total."
     },
     {
-        "name": "Get a photo from any European country."
+        "name": "Get a photo from any Asian country."
     },
     {
         "name": "Move more than 7 spaces in one turn."
