@@ -207,6 +207,7 @@ class GameType(Enum):
     yooka_laylee_impossible_lair = 203
     banjo_tooie_short = 204
     banjo_tooie_long = 205
+    need_for_speed_carbon = 206
 
     def __str__(self):
         return self.short_name
@@ -701,6 +702,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.monster_rancher_2, "Monster Rancher 2", "MR2"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
+    **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
