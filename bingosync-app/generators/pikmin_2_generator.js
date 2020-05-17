@@ -81,7 +81,7 @@ function magicSquare() {
     table1[3] = [0, 5, 15, 20, 10];
     table1[4] = [0, 5, 20, 10, 15];
     table1[5] = [0, 5, 20, 15, 10];
-    
+
     var table2 = [];
     table2[0] = [0, 1, 2, 3, 4];
     table2[1] = [0, 1, 2, 4, 3];
@@ -107,7 +107,7 @@ function magicSquare() {
     table2[21] = [0, 4, 2, 3, 1];
     table2[22] = [0, 4, 3, 1, 2];
     table2[23] = [0, 4, 3, 2, 1];
-    
+
     var randTable1 = table1[Math.floor(6 * Math.random())];
     var randTable2 = table2[Math.floor(24 * Math.random())];
     /*for (var x = 0; x <= 4; x++) {
@@ -126,27 +126,27 @@ function magicSquare() {
     h = randTable2[2];
     i = randTable2[3];
     j = randTable2[4];
-    
+
     var template = [];
     template[0] = [(A+f+1), (B+i+1), (C+g+1), (D+j+1), (E+h+1)];
     template[1] = [(D+g+1), (E+j+1), (A+h+1), (B+f+1), (C+i+1)];
     template[2] = [(B+h+1), (C+f+1), (D+i+1), (E+g+1), (A+j+1)];
     template[3] = [(E+i+1), (A+g+1), (B+j+1), (C+h+1), (D+f+1)];
     template[4] = [(C+j+1), (D+h+1), (E+f+1), (A+i+1), (B+g+1)];
-    
+
     //here starts the translocations, rotations, and reflections that increase the possible magic squares to 28800
     var ro = Math.floor(4 * Math.random());
     var rf = Math.floor(2 * Math.random());
     var tH = Math.floor(5 * Math.random());
     var tV = Math.floor(5 * Math.random());
-    
+
     template = translocate(template, tH, 0);
     template = translocate(template, tV, 1);
     template = rotate(template, ro);
     if (rf == 1) {
         template.reverse();
     }
-    
+
     function inverse(t) { //inverts the table
         var s = [];
         for (var j = 0; j < t.length; j++) {
@@ -203,7 +203,7 @@ function magicSquare() {
     catch(err) {
         console.log(err);
     }*/
-    
+
     return template;
 }
 
@@ -246,12 +246,12 @@ bingoGenerator = function(bingoList, opts) {
 
     //Seed the random
     seed = Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()));
-    console.log("Seed: " + seed);
-    
+    //console.log("Seed: " + seed);
+
     //create a 1-dimensional array from the 2-dimensional matrix magicSquare[][]
     var square = magicSquare();
     var bingoBoard = square[0].concat(square[1], square[2], square[3], square[4]);
-    
+
     var unchosenDiffs = bingoBoard.slice();
     var chosenGoals = [];
     for (var i = 1; i <= 25; i++) {
@@ -288,7 +288,7 @@ bingoGenerator = function(bingoList, opts) {
                 }
             }
         }
-        
+
         //finally, choosing goals can begin
         //Get a random goal, add to chosen
         var index = Math.floor(Math.random() * choosable.length);
@@ -307,7 +307,7 @@ bingoGenerator = function(bingoList, opts) {
         }
         chosenGoals[diffIndex] = { "name": goal.Desc };
         //console.log("Goal " + i + " chosen: " + goal.name + "; difficulty: " + goal.Diff);
-        
+
         //remove the chosen goal and any duplicates of it completely
         for (var j = 0; j < choosable.length; j++) {
             if (choosable[j] == goal.name) {
@@ -319,7 +319,7 @@ bingoGenerator = function(bingoList, opts) {
         if (unchosenDiffIndex != -1) {
             unchosenDiffs.splice(unchosenDiffIndex, 1);
         }
-        
+
         //console.log(goal);
         //remove all goals of the same difficulty from choosable[], also remove excluded goals if relevant
         for (var j = 0; j < choosable.length; j++) {
@@ -347,7 +347,7 @@ bingoGenerator = function(bingoList, opts) {
                     temp.push(m);
                 }
                 for (var l = 0; l < bingoList[choosable[k]].Synergy.length; l++) { //check if it shares a synergy group that isn't an existing goal
-                    if (goal.Synergy[j] == bingoList[choosable[k]].Synergy[l] 
+                    if (goal.Synergy[j] == bingoList[choosable[k]].Synergy[l]
                         && !choosable.includes(bingoList[choosable[k]].Synergy[l])
                         && !unchoosable.includes(bingoList[choosable[k]].Synergy[l])) {
                             var n = choosable[k];
@@ -362,7 +362,7 @@ bingoGenerator = function(bingoList, opts) {
 }
 
 var bingoList = {
-    
+
     //Goals sorted by area, general goals first
     /*"Key": {
         "Desc": "Desc",
@@ -371,7 +371,7 @@ var bingoList = {
         "Synergy": []
     },
     */
-    
+
     //Pikmin-related goals
     "150R": {
         "Desc": "150 Reds",
@@ -437,7 +437,7 @@ var bingoList = {
         "Diff": 16,
         "Synergy": ["150R", "150OneType"]
     },
-    
+
     //Pellet-related goals
     "1Pellet": {
         "Desc": "Collect a 1-Pellet of each color",
@@ -454,7 +454,7 @@ var bingoList = {
         "Excludes": ["AM"],
         "Synergy": ["1Y"]
     },
-    
+
     //Enemy-related goals
     "Dumples": {
         "Desc": "Defeat 8 Water Dumples",
@@ -500,7 +500,7 @@ var bingoList = {
         "Excludes": ["Empress", "Gauge", "Emperor"],
         "Synergy": ["RushBoots"]
     },
-    
+
     //Obstacle-related goals
     "ElecGates": {
         "Desc": "Destroy 2 electric gates",
@@ -512,7 +512,7 @@ var bingoList = {
         "Diff": 16,
         "Excludes": ["VoRPoisonGate", "AWGasPipes"]
     },
-    
+
     //Themed treasure goals
     "4EK": {
         "Desc": "4 Explorer's Kit treasures",
@@ -553,7 +553,7 @@ var bingoList = {
         "Desc": "12 treasures worth exactly 100 Pokos",
         "Diff": 25
     },
-    
+
     //Spray-related goals
     "1Spicy": {
         "Desc": "Discover Spicy Sprays",
@@ -582,7 +582,7 @@ var bingoList = {
         "Diff": 17,
         "Synergy": ["Spicy", "Bitter"]
     },
-    
+
     //Misc goals
     "Extinction": {
         "Desc": "Get a non-Red Pikmin Extinction",
@@ -615,8 +615,8 @@ var bingoList = {
         "Diff": 8,
         "Synergy": ["CPB"]
     },
-    
-    
+
+
     //Awakening Wood Above Ground
     "AWEnter": {
         "Desc": "Enter all 4 caves in AW",
@@ -651,7 +651,7 @@ var bingoList = {
         "Diff": 16,
         "Synergy": ["AWBridges"]
     },
-    
+
     //Hole of Beasts
     "Empress": {
         "Desc": "Defeat an Empress Bulblax",
@@ -674,13 +674,13 @@ var bingoList = {
         "Diff": 7,
         "Synergy": ["Gauge"]
     },
-    
+
     //White Flower Garden
     "TToadstool": {
         "Desc": "Toxic Toadstool (WFG4)",
         "Diff": 1
     },
-    
+
     //Snagret Hole
     "SH4Enemy": {
         "Desc": "Defeat all enemies on SH4",
@@ -708,7 +708,7 @@ var bingoList = {
         "Diff": 11,
         "Synergy": ["SH", "EK"]
     },
-    
+
     //Bulblax Kingdom
     "CrystalCK": {
         "Desc": "Crystal Clover (BK1) and Crystal King (BK4)",
@@ -732,7 +732,7 @@ var bingoList = {
         "Excludes": ["Empire"],
         "Synergy": ["BK", "EK"]
     },
-    
+
     //Valley of Repose Above Ground
     "VoREnter": {
         "Desc": "Enter all 3 caves in VoR",
@@ -770,7 +770,7 @@ var bingoList = {
         "Diff": 19,
         "Synergy": ["FarVoR"]
     },
-    
+
     //Subterranean Complex
     "SCxCPB": {
         "Desc": "Make 5 Candypop Buds in SCx wilt",
@@ -827,7 +827,7 @@ var bingoList = {
         "Diff": 20,
         "Synergy": ["EK", "SCxLate"]
     },
-    
+
     //Frontier Cavern
     "FCCPB": {
         "Desc": "Make 4 Candypop Buds in FC wilt",
@@ -868,7 +868,7 @@ var bingoList = {
         "Diff": 20,
         "Synergy": ["Empress", "Empire", "EK", "FCLate"]
     },
-    
+
     //Perplexing Pool Above Ground
     "1Y": {
         "Desc": "Discover Yellow Pikmin",
@@ -912,7 +912,7 @@ var bingoList = {
         "Desc": "Onion Replica (PP)",
         "Diff": 20
     },
-    
+
     //Citadel of Spiders
     "CoS4Enemy": {
         "Desc": "Defeat all enemies on CoS4",
@@ -924,7 +924,7 @@ var bingoList = {
         "Diff": 10,
         "Synergy": ["CoS"]
     },
-    
+
     //Glutton's Kitchen
     "Breadbugs": {
         "Desc": "Defeat 5 Breadbugs",
@@ -947,7 +947,7 @@ var bingoList = {
         "Diff": 12,
         "Synergy": ["GK", "Food", "EK", "Breadbugs"]
     },
-    
+
     //Submerged Castle
     "SmC3": {
         "Desc": "Clear SmC3",
@@ -964,7 +964,7 @@ var bingoList = {
         "Diff": 21,
         "Synergy": ["SmC", "EK"]
     },
-    
+
     //Shower Room
     "Jellyfloats": {
         "Desc": "Defeat 4 Jellyfloats (of any kind)",
@@ -1004,7 +1004,7 @@ var bingoList = {
         "Diff": 19,
         "Synergy": ["SRLate", "EK"]
     },
-    
+
     //Multi-cave / area goals
     "Chance": {
         "Desc": "Luck Wafer (HoB4) and Chance Totem (AW)",
