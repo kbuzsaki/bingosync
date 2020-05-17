@@ -72,6 +72,14 @@ bingoGenerator = function(bingoList, opts) {
     var cardType = "Normal";
     var SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
     var size = 5;
+
+    // The original SRL generators were written with 1-indexed difficuty tiers.
+    // If we get a goal list that is 0-indexed, hack it to be 1-indexed instead.
+    if (bingoList.length === 25) {
+        var originalBingoList = bingoList;
+        bingoList = [undefined].concat(originalBingoList);  // filler value for index 0
+    }
+
     if (true) {
         Math.seedrandom(SEED);
         var MAX_SEED = 999999;
