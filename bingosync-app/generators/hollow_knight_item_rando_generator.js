@@ -277,7 +277,7 @@ var bingoList = {
   //Enemies
 
   "2Warriors":{
-      "Desc":"Kill 2 Soul Warriors",
+      "Desc":"Kill two Soul Warriors",
       "Excludes":[ "SSoulCheck" ]
   },
 
@@ -306,6 +306,10 @@ var bingoList = {
 
   "Devout":{
       "Desc":"Kill 6 different Stalking Devouts"
+  },
+
+  "Durandoo":{
+      "Desc":"Kill a Durandoo"
   },
 
   "GHopper":{
@@ -381,6 +385,10 @@ var bingoList = {
 
   "5Charms":{
     "Desc": "Have 5 or more Charms",
+  },
+
+  "5CharmsEquipped":{
+    "Desc": "Equip 5 Charms at the same time",
   },
 
 
@@ -465,7 +473,7 @@ var bingoList = {
   },
 
   "DDark":{
-      "Desc":"Descending Dark",
+      "Desc":"Obtain Descending Dark",
       "Excludes":[ "SSoul", "Shriek" ]
   },
 
@@ -605,7 +613,7 @@ var bingoList = {
   },
 
   "Dreamers":{
-      "Desc":"Get 2 Dreamer's checks",
+      "Desc":"Get 2 Dreamer's checks (Requires Dream nail)",
       "Excludes":[ "Uumuu", "WK", "VisitDistantHive" ]
   },
 
@@ -790,6 +798,10 @@ var bingoList = {
       "Desc":"Use City Crest + Ride both CoT large elevators"
   },
 
+  "DamnItGrimmchild":{ //https://clips.twitch.tv/LivelySpookyBibimbapTakeNRG
+      "Desc":"Kill 3 Oomas using a minion charm"
+  },
+
   "DeepnestZote":{
       "Desc":"Rescue Zote in Deepnest"
   },
@@ -827,12 +839,16 @@ var bingoList = {
       "Desc":"Open Jiji's Hut"
   },
 
+  "Hazard":{
+      "Desc":"Push an enemy into a deadly hazard"
+  },
+
   "HopperHell":{
       "Desc":"Hit the Oro scarecrow up until the hoppers spawn"
   },
 
   "Lemm":{
-      "Desc":"Talk to Lemm with Defender's Crest equipped"
+      "Desc":"Talk to Lemm in his shop with Defender's Crest equipped"
   },
 
   "LegEater":{
@@ -851,7 +867,7 @@ var bingoList = {
     "Desc":"Read the lore tablet in Ancient Basin"
   },
 
-  "LoreCliffs":{
+  "LoreArchives":{
     "Desc":"Read 3 lore tablets in Teacher's Archives"
   },
 
@@ -859,12 +875,16 @@ var bingoList = {
     "Desc":"Read the lore tablet in Howling Cliffs"
   },
 
+  "LoreGreenpath":{
+    "Desc":"Read three lore tablets in Greenpath"
+  },
+
   "LoreKEdge":{
     "Desc":"Read the lore tablet in Kingdom's Edge (requires Spore Shroom)"
   },
 
   "LorePilgrims":{
-    "Desc":"Read two Pilgrim's Way lore tablets"
+    "Desc":"Read both Pilgrim's Way lore tablets"
   },
 
   "LoreSanctum":{
@@ -873,6 +893,10 @@ var bingoList = {
 
   "LoreVillage":{
     "Desc":"Read both lore tablets in Mantis Village"
+  },
+
+  "Telescope":{
+      "Desc":"Charged Lumafly Journal Entry"
   },
 
   "MaskMaker":{
@@ -905,6 +929,10 @@ var bingoList = {
       "Desc":"Eternal Ordeal: 20 Zotes",
       "Type": "Tiebreaker",
       "Excludes":[ "Godhome", "Radiant" ]
+  },
+
+  "Overcharm":{
+      "Desc":"Talk to Salubra while overcharmed"
   },
 
   "PoP":{
@@ -948,12 +976,16 @@ var bingoList = {
       "Excludes":[ "Revek" ]
   },
   
+  "Telescope":{
+      "Desc":"Look through Lurien's telescope"
+  },
+
   "Tendrils":{
       "Desc":"Void Tendrils Journal Entry"
   },
 
   "Tiso":{
-    "Desc": "Swat away Tiso's shield from his corpse"
+    "Desc": "Swat Tiso's shield away from his corpse"
   },
 
   "Tuk":{
@@ -970,11 +1002,9 @@ var bingoList = {
       "Desc":"Visit Lake of Unn or Blue Lake"
   },
 
-
   "VisitMounds":{
-      "Desc":"Visit Overgrown Mound or Crystallized Mound (Crystallized requires dive)"
+      "Desc":"Visit Overgrown Mound or Crystalised Mound (Crystalised requires dive)"
   },
-
 
   "VisitSanctumWaterways":{
       "Desc":"Visit Soul Sanctum or Royal Waterways"
