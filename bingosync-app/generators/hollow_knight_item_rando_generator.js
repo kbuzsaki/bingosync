@@ -895,7 +895,7 @@ var bingoList = {
     "Desc":"Read both lore tablets in Mantis Village"
   },
 
-  "Telescope":{
+  "Lumafly":{
       "Desc":"Charged Lumafly Journal Entry"
   },
 
