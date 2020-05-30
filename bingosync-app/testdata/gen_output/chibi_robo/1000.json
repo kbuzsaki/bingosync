@@ -3,7 +3,7 @@
         "name": "10 Unique Trash"
     },
     {
-        "name": "All Doors Basement"
+        "name": "All Doors Backyard"
     },
     {
         "name": "Frog Suit"
@@ -21,7 +21,7 @@
         "name": "Buy Hot Rod"
     },
     {
-        "name": "Open Bedroom Shortcut"
+        "name": "Pajamas"
     },
     {
         "name": "3 Frog Rings"
@@ -33,13 +33,16 @@
         "name": "White Brick"
     },
     {
-        "name": "Ticket Stub Delivery"
+        "name": "Mug"
     },
     {
-        "name": "Mr Prongs Sticker"
+        "name": "Obtain Squirter"
     },
     {
         "name": "Obtain Spoon"
+    },
+    {
+        "name": "Ticket Stub Delivery"
     },
     {
         "name": "Fill Crayon Box"
@@ -51,10 +54,16 @@
         "name": "6 Frog Rings"
     },
     {
-        "name": "Shoot 6 Sunshine Stickers"
+        "name": "Snorkels"
+    },
+    {
+        "name": "All Doors Basement"
     },
     {
         "name": "Buy Space Scrambler"
+    },
+    {
+        "name": "Free Funky Phil"
     },
     {
         "name": "5 Candy Bags"
@@ -63,15 +72,6 @@
         "name": "All Doors Kitchen"
     },
     {
-        "name": "Green Brick"
-    },
-    {
         "name": "Cooking Sticker"
-    },
-    {
-        "name": "Obtain Pirate Ship"
-    },
-    {
-        "name": "Give a Flower to Mom"
     }
 ]
