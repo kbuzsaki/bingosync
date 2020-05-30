@@ -209,6 +209,7 @@ class GameType(Enum):
     banjo_tooie_long = 205
     need_for_speed_carbon = 206
     kotor = 207
+    sonic_r = 208
 
     def __str__(self):
         return self.short_name
@@ -724,6 +725,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
+    **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
