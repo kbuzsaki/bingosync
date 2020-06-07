@@ -210,6 +210,7 @@ class GameType(Enum):
     need_for_speed_carbon = 206
     kotor = 207
     sonic_r = 208
+    celeste_turkish = 209
 
     def __str__(self):
         return self.short_name
@@ -413,6 +414,7 @@ GAME_GROUPS = {
             (GameType.celeste_long, "Long", "Celeste Long"),
             (GameType.celeste_cn, "Normal - CN", "Celeste CN"),
             (GameType.celeste_blackout_cn, "Blackout - CN", "Celeste Blackout CN"),
+            (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
         ],
     },
     GameType.custom: {
