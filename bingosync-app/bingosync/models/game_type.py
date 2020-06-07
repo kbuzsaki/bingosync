@@ -211,6 +211,7 @@ class GameType(Enum):
     kotor = 207
     sonic_r = 208
     celeste_turkish = 209
+    mgs_portable_ops_plus_training = 210
 
     def __str__(self):
         return self.short_name
@@ -510,6 +511,12 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.mgs_portable_ops_plus_training: {
+        "name": "MGS: Portable Ops+",
+        "variants": [
+            (GameType.mgs_portable_ops_plus_training, "Training", "MPO+ Training"),
         ],
     },
     GameType.minecraft_randomizer: {
