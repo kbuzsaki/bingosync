@@ -213,6 +213,8 @@ class GameType(Enum):
     celeste_turkish = 209
     mgs_portable_ops_plus_training = 210
     old_school_runescape = 211
+    super_mario_sunshine_jp = 212
+    super_mario_sunshine_1v1_jp = 213
 
     def __str__(self):
         return self.short_name
@@ -577,9 +579,11 @@ GAME_GROUPS = {
         "name": "Super Mario Sunshine",
         "variants": [
             (GameType.super_mario_sunshine, "Normal", "SMS"),
+            (GameType.super_mario_sunshine_jp, "Normal - JP", "SMS JP"),
             (GameType.super_mario_sunshine_tournament, "Tournament", "SMS Tournament"),
             (GameType.super_mario_sunshine_lockout, "Lockout", "SMS Lockout"),
             (GameType.super_mario_sunshine_1v1, "1v1", "SMS 1v1"),
+            (GameType.super_mario_sunshine_1v1_jp, "1v1 - JP", "SMS 1v1 JP"),
             (GameType.super_mario_sunshine_1v1_beta, "1v1 Beta", "SMS 1v1 Beta"),
             (GameType.super_mario_sunshine_2v2, "2v2", "SMS 2v2"),
         ],
