@@ -212,6 +212,7 @@ class GameType(Enum):
     sonic_r = 208
     celeste_turkish = 209
     mgs_portable_ops_plus_training = 210
+    old_school_runescape = 211
 
     def __str__(self):
         return self.short_name
@@ -530,6 +531,12 @@ GAME_GROUPS = {
         "variants": [
             (GameType.octopath_traveler, "Standard", "Octopath"),
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
+        ],
+    },
+    GameType.old_school_runescape: {
+        "name": "Old School Runescape",
+        "variants": [
+            (GameType.old_school_runescape, "F2P + Entrana", "OSRS")
         ],
     },
     GameType.paper_mario: {
