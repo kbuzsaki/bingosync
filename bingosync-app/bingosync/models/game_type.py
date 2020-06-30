@@ -215,6 +215,7 @@ class GameType(Enum):
     old_school_runescape = 211
     super_mario_sunshine_jp = 212
     super_mario_sunshine_1v1_jp = 213
+    xc_future_connected = 214
 
     def __str__(self):
         return self.short_name
@@ -759,6 +760,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
+    **singleton_group(GameType.xc_future_connected, "Xenoblade Chronicles Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
