@@ -100,7 +100,6 @@ bingoList[16] = [
   { name: "Hekasa", types: ["Blue"] }
 ];
 bingoList[17] = [
-  { name: "All FB in Alcamoth", types: ["FB"] },
   { name: "Custodian Barreldart", types: ["UM", "FB"] },
   { name: "Terpsichorean Cenoth", types: ["UM"] },
   { name: "15 Arts Coins", types: ["Coin"] }
