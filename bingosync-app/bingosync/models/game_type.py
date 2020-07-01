@@ -476,7 +476,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight, "Normal", "Hollow Knight"),
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
             (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
-            (GameType.hollow_knight_item_rando_cn, "Random - CN", "HK Random CN"),
+            (GameType.hollow_knight_item_rando_cn, "Item Randomizer - CN", "HK Random CN"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
