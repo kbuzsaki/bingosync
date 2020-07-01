@@ -6,16 +6,17 @@ bingoList[1] = [
     { name:"Activate both secrets in Willow from out of bounds" , types: ["willow"] },
 ];
 bingoList[2] = [
-    { name:"Complete Willow without using the mouse" , types: ["willow"] },
     { name:"Get all of the beans in the chasm" , types: ["rictu"] },
-    { name:"Get Hagrid's Wizard Card during your first night at Hogwarts" , types: ["cards", "outside"] },
+    { name:"Get Hagrid's Wizard Card during your first night at Hogwarts" , types: ["cards", "outside"] }
 ];
 bingoList[3] = [
+    { name:"Get 10 Wizard Cards before entering Rictusempra" , types: ["cards"] },
     { name:"Get 8 challenge stars in Rictusempra" , types: ["rictu", "stars"] },
     { name:"Hit 10 cauldrons" , types: ["collection"] },
-    { name:"Get on top of Hagrid's Hut" , types: ["outside"] },
+    { name:"Get on top of Hagrid's Hut" , types: ["inside"] },
 ];
 bingoList[4] = [
+    { name:"Complete Rictusempra without Jumping" , types: ["rictu"] },
     { name:"Get all Rictusempra secrets" , types: ["rictu", "cards"] },
     { name:"Put 15 crabs into pits during Rictusempra" , types: ["rictu"] },
     { name:"Kill Peeves" , types: ["skurge"] },
@@ -30,10 +31,9 @@ bingoList[5] = [
     { name:"Get the 16 beans on Lockhart's balcony" , types: [ "stairs"] },
 ];
 bingoList[6] = [
-    { name:"Complete Rictusempra without using the mouse" , types: ["rictu"] },
     { name:"Get 8 Skurge challenge stars" , types: ["skurge", "stars"] },
     { name:"Get all Skurge secrets" , types: ["skurge", "cards"] },
-    { name:"Clip 4 gnomes out of bounds" , types: ["bicorn"] },
+    { name:"Clip 4 gnomes out of bounds" , types: ["skurge"] },
     { name:"Enter Quidditch practice from out of bounds" , types: ["outside"] },
 ];
 bingoList[7] = [
@@ -42,22 +42,18 @@ bingoList[7] = [
     { name:"Lose a Quidditch match by 250 points" , types: ["outside"] },
 ];
 bingoList[8] = [
-    { name:"Complete Skurge without using the mouse" , types: ["skurge"] },
     { name:"Get enough ingredients for 4 potions during Bicorn" , types: ["bicorn", "potions"] },
     { name:"Complete all 10 duels" , types: ["duels", "beans"] },
     { name:"Activate a potion cauldron with a gnome" , types: ["potions"] },
-    { name:"Get to the Diffindo classroom before Quidditch practice" , types: ["outside"] },
 ];
 bingoList[9] = [
     { name:"Complete Diffindo without casting Diffindo" , types: ["diffindo"] },
     { name:"Empty 5 bean boxes" , types: ["collection"] },
     { name:"Buy the Quidditch Armor" , types: ["beans"] },
-    { name:"Talk to Percy, Hagrid, Snape, and Madam Pomfrey" , types: ["inside", "outside", "stairs"] }
+    { name:"Talk to Percy, Hagrid, Snape, and Madam Pomfrey" , types: ["inside" , "outside" , "stairs"] },
 ];
 bingoList[10] = [
-    { name:"Beat Peter without Expelliarmus" , types: ["duels", "beans"] },
     { name:"Get 9 Diffindo challenge stars" , types: ["diffindo", "stars"] },
-    { name:"Complete Diffindo without using the mouse" , types: ["diffindo"] },
     { name:"Have 15 potions" , types: ["potions"] },
     { name:"Buy the Nimbus 2001" , types: ["beans"] },
 ];
@@ -65,11 +61,10 @@ bingoList[11] = [
     { name:"Make a 5 mushroom high tower in Diffindo" , types: ["diffindo"] },
     { name:"Get all Boomslang secrets" , types: ["boom", "cards"] },
     { name:"Collect 3 chocolate frogs in Boomslang" , types: ["boom"] },
-    { name:"Buy 3 Bronze Wizard Cards" , types: ["cards", "beans"] },
+    { name:"Buy 4 Bronze Wizard Cards" , types: ["cards", "beans"] },
     { name:"Get 2 health increases" , types: ["cards", "beans"] },
 ];
 bingoList[12] = [
-    { name:"Beat Malfoy with only Mimblewimble"  , types: ["diffindo"] },
     { name:"Cut all Venomous Tentacula heads off in Boomslang" , types: ["boom"] },
     { name:"Collect 17 challenge stars" , types: ["stars"] },
     { name:"Finish with 1000 beans"  , types: ["beans"] },
@@ -82,14 +77,12 @@ bingoList[13] = [
     { name:"Get 2 keys" , types: ["cards", "beans"] },
 ];
 bingoList[14] = [
-    { name:"Let McGonagall fall down during the second Nick cutscene" , types: ["stairs", "goyle"] },
-    { name:"Buy 4 Silver Wizard Cards" , types: ["cards", "beans"] },
+    { name:"Let McGonagall fall down during the second Nick cutscene" , types: ["stairs",  "goyle"] },
+    { name:"Buy 3 Silver Wizard Cards" , types: ["cards", "beans"] },
     { name:"Collect 23 wizard cards" , types: ["cards"] },
     { name:"Get all Goyle secrets" , types: ["goyle", "cards"] },
 ];
 bingoList[15] = [
-    { name:"Win a Quidditch match by 60 points" , types: ["outside"] },
-    { name:"Open 5 of each of the 4 chest types" , types: ["collection"] },
     { name:"Hit 8 different Lumos statues in Goyle" , types: ["goyle"] },
     { name:"Knock over 8 flower pots" , types: ["collection", "boom"] },
 ];
@@ -111,25 +104,29 @@ bingoList[18] = [
 ];
 bingoList[19] = [
     { name:"Get 5 secrets as Harry in Slytherin" , types: ["slyth"] },
-    { name:"Complete Spongify without using the mouse" , types: ["sponge"] },
-    { name:"Jump on 5 Spongify tiles in a row without landing" , types: ["sponge"] },
     { name:"Enter Forest from out of bounds" , types: ["forest"] },
     { name:"Get 3 keys" , types: ["cards", "beans"] },
+    { name:"Get all 4 completion stars" , types: ["sponge", "compstar"] },
+    { name:"Have a score on all 6 Quidditch Matches" , types: ["sponge"] },
 ];
 bingoList[20] = [
-    { name:"Get all 4 completion stars" , types: ["sponge", "compstar"] },
-    { name:"Open all 5 Peeves chests" , types: ["goyle"] },
+{ name:"Put 4 imps into the same hole" , types: ["sponge"] },
+    { name:"Open all 5 Peeves chests" , types: ["spongify"] },
     { name:"Collect 8 beans from the Great Hall at night" , types: ["inside", "forest"] },
     { name:"Get all Grounds secrets in both day and night" , types: ["cards"] },
     { name:"Get all Entry Hall secrets" , types: ["cards", "inside"] },
+    { name:"Complete the Gryffindor Challenge" , types: ["gyff"] },
 ];
 bingoList[21] = [
     { name:"Have 9 Slytherins surrounding you on the table in Slytherin" , types: ["slyth"] },
     { name:"Get all Forest secrets" , types: ["forest", "cards"] },
     { name:"Get all Grand Staircase secrets" , types: ["cards", "stairs", "sponge"] },
     { name:"Hit all of the ropes in the Aragog fight" , types: ["forest"] },
+    { name:"Get all Challenge Stars in the Gryffindor Challenge" , types: ["gyff", "stars"] },
+    { name:"Get all secrets in the Gryffindor Challenge" , types: ["gyff"] },
 ];
 bingoList[22] = [
+    { name: "Complete Forest without jumping" , types: ["forest"] },
     { name:"Kill 12 spiders in the Aragog fight" , types: ["forest"] },
     { name:"Get 8 Spongify challenge stars" , types: ["sponge", "stars"] },
     { name:"Cast on 5 Lumos statues during Spongify" , types: ["sponge"] },
@@ -138,16 +135,14 @@ bingoList[22] = [
 bingoList[23] = [
     { name:"Get all Spongify secrets" , types: ["sponge", "cards"] },
     { name:"All Chamber secrets" , types: ["chamber"] },
-    { name:"Skip the boulder cutscene in Chamber" , types: ["chamber"] },
     { name:"Collect 53 wizard cards" , types: ["cards"] },
 ];
 bingoList[24] = [
-    { name:"Put 4 imps into the same hole" , types: ["sponge"] },
+    { name:"Complete Chamber without Jumping" , types: ["chamber"] },
     { name:"Avoid fire damage from the snake statues in Chamber" , types: ["chamber"] },
-    { name:"Finish the game" , types: ["chamber"] },
 ];
 bingoList[25] = [
-    { name:"Take no damage in the Basilisk fight" , types: ["chamber"] },
     { name:"Get the Harry Potter Wizard Card" , types: ["cards"] },
     { name:"Get 5 health increases" , types: ["cards", "beans"] },
+    { name:"Finish the game" , types: ["chamber"] },
 ];

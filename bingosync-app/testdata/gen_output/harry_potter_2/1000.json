@@ -1,12 +1,12 @@
 [
     {
-        "name": "Put 4 imps into the same hole"
+        "name": "Complete Chamber without Jumping"
     },
     {
         "name": "Walk up the stairs to Girl's Dormitory in Slytherin"
     },
     {
-        "name": "Hit 8 different Lumos statues in Goyle"
+        "name": "Knock over 8 flower pots"
     },
     {
         "name": "Empty 10 armor stands"
@@ -15,13 +15,13 @@
         "name": "Activate both secrets in Willow from out of bounds"
     },
     {
-        "name": "Complete Diffindo without using the mouse"
+        "name": "Have 15 potions"
     },
     {
         "name": "Get all of the beans in the chasm"
     },
     {
-        "name": "Hit all of the ropes in the Aragog fight"
+        "name": "Get all Challenge Stars in the Gryffindor Challenge"
     },
     {
         "name": "Get 5 secrets as Harry in Slytherin"
@@ -42,13 +42,13 @@
         "name": "Get behind the Quidditch gate"
     },
     {
-        "name": "Use all 9 Spongify tiles in the Grand Staircase area"
+        "name": "Cast on 5 Lumos statues during Spongify"
     },
     {
         "name": "Get on top of Hagrid's Hut"
     },
     {
-        "name": "Take no damage in the Basilisk fight"
+        "name": "Finish the game"
     },
     {
         "name": "Buy 8 Bronze Wizard Cards"
@@ -72,6 +72,6 @@
         "name": "All Chamber secrets"
     },
     {
-        "name": "Collect 8 beans from the Great Hall at night"
+        "name": "Get all Grounds secrets in both day and night"
     }
 ]

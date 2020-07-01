@@ -215,7 +215,12 @@ class GameType(Enum):
     old_school_runescape = 211
     super_mario_sunshine_jp = 212
     super_mario_sunshine_1v1_jp = 213
+<<<<<<< HEAD
     xc_future_connected = 214
+=======
+    xenoblade_chronicles_future_connected = 214
+    hollow_knight_item_rando_cn = 215
+>>>>>>> 73fc817ce0b66a16152ea2e114d63a795d3c069c
 
     def __str__(self):
         return self.short_name
@@ -475,6 +480,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight, "Normal", "Hollow Knight"),
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
             (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
+            (GameType.hollow_knight_item_rando_cn, "Item Randomizer - CN", "HK Random CN"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
@@ -760,7 +766,11 @@ GAME_GROUPS = {
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
+<<<<<<< HEAD
     **singleton_group(GameType.xc_future_connected, "Xenoblade Chronicles Future Connected", "XC FC"),
+=======
+    **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
+>>>>>>> 73fc817ce0b66a16152ea2e114d63a795d3c069c
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
