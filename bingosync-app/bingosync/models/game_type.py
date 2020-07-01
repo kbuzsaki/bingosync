@@ -216,6 +216,7 @@ class GameType(Enum):
     super_mario_sunshine_jp = 212
     super_mario_sunshine_1v1_jp = 213
     xenoblade_chronicles_future_connected = 214
+    hollow_knight_item_rando_cn = 215
 
     def __str__(self):
         return self.short_name
@@ -475,6 +476,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight, "Normal", "Hollow Knight"),
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
             (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
+            (GameType.hollow_knight_item_rando_cn, "Random - CN", "HK Random CN"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
