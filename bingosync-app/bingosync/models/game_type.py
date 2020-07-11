@@ -129,7 +129,7 @@ class GameType(Enum):
     darkest_dungeon_lockout = 125
     ittle_dew_2 = 126
     super_paper_mario = 127
-    lego_batman = 128
+    lego_batman_long = 128
     into_the_breach = 129
     make_a_good_megaman_level_2 = 130
     super_mario_sunshine_1v1_beta = 131
@@ -149,7 +149,7 @@ class GameType(Enum):
     castlevania_sotn_randomizer = 145
     binding_of_isaac_racing = 146
     terraria = 147
-    lego_batman_short = 148
+    lego_batman = 148
     crash_team_racing = 149
     simpsons_hit_and_run = 150
     paper_mario_new = 151
@@ -504,7 +504,7 @@ GAME_GROUPS = {
         "name": "LEGO Batman: The Video Game",
         "variants": [
             (GameType.lego_batman, "Normal", "LEGO Batman"),
-            (GameType.lego_batman_short, "Short", "LEGO Batman Short"),
+            (GameType.lego_batman_long, "Long", "LEGO Batman Long"),
         ],
     },
     GameType.lufia_2: {
