@@ -1,7 +1,7 @@
 var bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
- 
+
 var thisVersion = "v3 beta 9";
- 
+
 var bingoList = [];
 bingoList[1] = [
 { name: "11 Delfino Blue Coins"},
@@ -45,19 +45,18 @@ bingoList[6] = [
 { name: "5 Enemy Blue Coins"}
 ];
 bingoList[7] = [
-{ name: "Defeat 2 Blooper Bosses"},
-{ name: "6 Shines from Ricco"},
-{ name: "2 Hidden Shines in Gelato"},
 { name: "Complete a Boss Rematch"},
+{ name: "6 Shines from Ricco"},
+{ name: "2 Hidden Shines in 1 Level (NO Gelato)"},
+{ name: "20 Bianco Blue Coins"},
 { name: "100 Coin Shine from Bianco"}
 ];
 bingoList[8] = [
-{ name: "20 Bianco Blue Coins"},
 { name: "16 Pianta Blue Coins"},
 { name: "2 Rocket Nozzle Unlocks"},
-{ name: "4 Shines from Gelato"},
-{ name: "5 Shines from Gelato OR Both Gold Bird Shines"},
-{ name: "4 Shines from Pianta"}
+{ name: "2 Hidden Shines in Gelato"},
+{ name: "4 Shines from Pianta"},
+{ name: "100 Coin Shine from Gelato"}
 ];
 bingoList[9] = [
 { name: "4 Unique Boss Shines"},
@@ -89,10 +88,10 @@ bingoList[13] = [
 { name: "Pinna 4 Sprayless"},
 { name: "Pinna 5 from the back Hoverless"},
 { name: "1 Hidden Shine in Pianta"},
-{ name: "20 Blue Coins from 2 Levels"}
+{ name: "20 Blue Coins from 2 Levels"},
 ];
 bingoList[14] = [
-{ name: "Both Bell Shines"},
+{ name: "Both Bell Shines OR Lighthouse Shine"},
 { name: "Lily Pad NO Fruit Clipping"},
 { name: "Ride Yoshi in 2 Worlds"},
 { name: "4 Hidden Shines"},
@@ -106,9 +105,9 @@ bingoList[15] = [
 ];
 bingoList[16] = [
 { name: "7 Blue Bird Blue Coins"},
-{ name: "100 Coin Shine from Gelato"},
 { name: "1 Butterfly Blue Coin (No Pinna)"},
-{ name: "8 NPC Blue Coins OR Ricco 8"},
+{ name: "4 Shines from Gelato"},
+{ name: "5 Shines from Gelato OR Both Gold Bird Shines"},
 { name: "3 Rocket Nozzle Unlocks"}
 ];
 bingoList[17] = [
@@ -145,10 +144,11 @@ bingoList[21] = [
 bingoList[22] = [
 { name: "3 Shines from 4 Levels"},
 { name: "4 Shines from 3 Levels"},
-{ name: "2 Hidden Shines in 1 Level (NO Gelato)"},
+{ name: "2 Shines from 7 Worlds OR Defeat King Boo"},
 { name: "2 Turbo Nozzle Unlocks"}
 ];
 bingoList[23] = [
+{ name: "8 NPC Blue Coins OR Ricco 8"},
 { name: "1 Shadow Mario Shine"},
 { name: "Pianta Shadow Mario"},
 { name: "2 Piantissimo Shines"},
