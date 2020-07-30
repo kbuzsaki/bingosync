@@ -23,6 +23,7 @@ bingoList[2] = [
 { name: "25 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
 { name: "10 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
 { name: "Captain Toad (Cap)", types: ["Cap", "Captain_Toad"] },
+{ name: "1 Moon from Seeds", types: ["Seeds"] },
 { name: "Plant 1 Seed (Lake)", types: ["Lake", "Seeds"] }
 ];
 bingoList[3] = [
@@ -219,8 +220,7 @@ bingoList[17] = [
 { name: "Captain Toad (Seaside)", types: ["Late_Game", "Seaside", "Captain_Toad"] },
 { name: "50 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
 { name: "28 Unique Captures", types: ["Unique_Captures"] },
-{ name: "2 Moons from Keys", types: ["Keys"] },
-{ name: "1 Moon from Seeds", types: ["Seeds"] }
+{ name: "2 Moons from Keys", types: ["Keys"] }
 ];
 bingoList[18] = [
 { name: "16 Moons (Lake)", types: ["Lake_Moons"] },
