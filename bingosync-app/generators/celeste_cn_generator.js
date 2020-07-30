@@ -4,7 +4,6 @@ var bingoList = [];
 bingoList[1] = [
   { name: "1A-2/十字路 Theo对话", types: ["earlygame","cutscene"] },
   { name: "1A-1/开始 无跳", types: ["earlygame","task"] },
-  { name: "2飞草莓", types: ["special_berries","earlygame"] },
   { name: "1A-1/开始 6草莓", types: ["checkpoint_berries"] },
   { name: "1A-3/峡谷 5草莓", types: ["checkpoint_berries"] },
   { name: "1A 1-Up", types: ["1up","earlygame"] },
@@ -12,6 +11,7 @@ bingoList[1] = [
   { name: "1A-3/峡谷 无冲", types: ["earlygame","task"] },
   { name: "1A-1/开始 无冲", types: ["earlygame","task"] },
   { name: "1A 磁带", types: ["1b","earlygame"] },
+  { name: "2A 蓝心", types: ["hearts","earlygame"] },
 ];
 bingoList[2] = [
   { name: "两个 1-Up", types: ["1up"] },
@@ -23,11 +23,11 @@ bingoList[2] = [
   { name: "2A-3/唤醒 无跳", types: ["earlygame","awake"] },
   { name: "2A-3/唤醒 无冲", types: ["earlygame","awake"] },
   { name: "2A-1/开始 9草莓", types: ["checkpoint_berries"] },
-  { name: "2A 蓝心", types: ["hearts","earlygame"] },
+  { name: "2水晶之心", types: ["amount_hearts"] },
 
 ];
 bingoList[3] = [
-  { name: "2水晶之心", types: ["amount_hearts"] },
+  { name: "三章节 各5草莓", types: ["amount_berries"] },
   { name: "1个B面", types: ["amount_chapters"] },
   { name: "2A-3/唤醒 读诗词", types: ["earlygame","awake"] },
   { name: "3A-3/电梯井 Theo对话", types: ["resort_cutscene","cutscene"] },
@@ -60,7 +60,7 @@ bingoList[5] = [
   { name: "5A 1-Up", types: ["1up","challenge"] },
   { name: "3A-3/电梯井 4草莓", types: ["checkpoint_berries"] },
   { name: "四个章节 各5草莓", types: ["amount_berries"] },
-  { name: "1个kevin 4方向", types: ["task"] },
+  { name: "1个 kevin4方向", types: ["task"] },
 ];
 bingoList[6] = [
   { name: "3A-2/乱七八糟 7草莓", types: ["checkpoint_berries"] },
@@ -193,8 +193,7 @@ bingoList[16] = [
   { name: "通关3B", types: ["3b"] },
   { name: "6-3/洞穴 全走下面", types: ["task","reflection_pathing"] },
   { name: "5A-4/搜寻 2钥匙", types: ["task","search"] },
-  { name: "5A-4/搜寻 3钥匙", types: ["task","search"] },
-
+  { name: "5A-4/搜寻 3钥匙", types: ["task","search"] }
 ];
 bingoList[17] = [
   { name: "4A 不跳过结尾剧情", types: ["cutscene","task"] },
@@ -289,7 +288,7 @@ bingoList[24] = [
   { name: "3000米 7草莓", types: ["lategame"] },
   { name: "8A-3/冰火两重天 3草莓", types: ["checkpoint_berries","core"] },
   { name: "四个章节 各2望远镜", types: ["binoculars"] },
-  { name: "通关8A", types: ["core"] },
+  { name: "8A 蓝心", types: ["core"] },
   { name: "9-3/能源 5钥匙", types: ["ch9","binoculars"] },
 ];
 bingoList[25] = [
@@ -300,7 +299,7 @@ bingoList[25] = [
   { name: "5个B面", types: ["amount_chapters"] },
   { name: "四个章节 各15草莓", types: ["amount_berries","big_berries"] },
   { name: "7A 全部收集品", types: ["lategame"] },
-  { name: "第九章 假心", types: ["ch9"] },
+  { name: "到达9-5/视界线", types: ["ch9"] },
   { name: "8A 全部收集品", types: ["checkpoint_berries","core"] },
   { name: "7A 蓝心", types: ["gems","hearts"] },
 ];
