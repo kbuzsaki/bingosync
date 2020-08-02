@@ -1,5 +1,5 @@
 // Twinsanity Bingo
-// version 5
+// version 7
 // by BetaM
 
 bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
@@ -7,135 +7,136 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 var bingoList = [];
 
 bingoList[1] = [
- { name: "Gain a life from monkeys",types: []},
- { name: "Highest reachable point of the beach chunk",types: []},
- { name: "Roll an acorn to the top of the cliff" ,types: []},
+{ name: "Gain a life from monkeys",types: []},
+{ name: "Highest reachable point of the beach chunk",types: []},
+{ name: "Do the Nut Skip" ,types: []},
+{ name: "Defeat the invisible bats in Jungle Bungle's cave" ,types: []},
+{ name: "Get all gems in Jungle Bungle" ,types: []}
 ];
 bingoList[2] = [
-{ name: "Push a tribesman into a hole" ,types: []},
-{ name: "Reach the secret beach" ,types: []},
-{ name: "Stop the bouncy crates in JB" ,types: []},
-{ name: "Ride Cortex's plasma for 5 seconds" ,types: []}
+{ name: "Defeat the clapping tribesmen" ,types: []},
+{ name: "Warp to the secret beach using a haystack" ,types: []},
+{ name: "Feed bombs to every totem that takes it" ,types: []},
+{ name: "Get all gems in Cavern Catastrophe" ,types: []},
 ];
 bingoList[3] = [
 { name: "Get 2 Cortex in a single cutscene" ,types: []},
-{ name: "Take Cortex to the first beach" ,types: []},
- { name: "Touch CoCortex" ,types: []}
+{ name: "Worm Minigame with Cortex Worms" ,types: []},
+{ name: "Get all gems in Totem Hokum" ,types: []}
 ];
 bingoList[4] = [
-{ name: "Destroy 5 life crates as the ball" ,types: []},
-{ name: "Activate all the crystals in Cavern" ,types: []},
-{ name: "Complete Ernest Emu's worm minigame" ,types: []},
-{ name: "Teleport to the void at drill chase" ,types: []}
+{ name: "Stop all the bouncy crates in Jungle Bungle" ,types: []},
+{ name: "Teleport to the void at the drill chase" ,types: []},
+{ name: "Get all gems in Ice Climb" ,types: []}
 ];
 bingoList[5] = [
-{ name: "Do the Boat OoB and cross the river" ,types: []},
-{ name: "Cheat death in Totem Hokum" ,types: []},
-{ name: "Hug Papu Papu" ,types: []},
-{ name: "Kill everything in the village" ,types: []},
+{ name: "Roll into the Mechabandicoot crash site" ,types: []},
+{ name: "Collect 3 lives in Rollerbrawl form" ,types: []},
+{ name: "Activate all the crystals in Cavern" ,types: []},
+{ name: "Get on the watchtower at the start of the bee chase" ,types: []},
+{ name: "Get all gems in Slip Slide Icecapades" ,types: []}
 ];
 bingoList[6] = [
-{ name: "Escape from the village" ,types: []},
-{ name: "Look at Tikimon from below" ,types: []},
-{ name: "Escape back to the village after the chase" ,types: []}
-];
+{ name: "Totempole cutscene without worm bounce" ,types: []},
+{ name: "Take all the non-gem paths in Cavern" ,types: []},
+{ name: "Get all gems in Hi-Seas Hijinks" ,types: []},
+]; 
 bingoList[7] = [
-{ name: "Backtrack from the drill fight and collect a gem" ,types: []},
-{ name: "Go back into Cavern from the farm" ,types: []},
-{ name: "Beat Tikimon" ,types: []}
+{ name: "Beat Uka Uka" ,types: []},
+{ name: "Beat Dingodile" ,types: []},
+{ name: "Beat Tikimon" ,types: []},
 ];
 bingoList[8] = [
 { name: "Collect all gems in Iceberg Lab" ,types: []},
 { name: "Collect all gems in N.Sanity Island" ,types: []},
-{ name: "Collect all gems in the AoE hub" ,types: []},
-{ name: "Collect all gems in TI and BP" ,types: []}
+{ name: "Collect all gems in Academy of Evil" ,types: []},
+{ name: "Collect all gems in Twinsanity Island" ,types: []}
 ];
 bingoList[9] = [
-{ name: "Bodyslam Cortex 4 times in the boss fight" ,types: []},
-{ name: "Go through the drill chase without the drill" ,types: []},
-{ name: "Escape from the drill chase" ,types: []}
+{ name: "Defeat Cortex while standing on the outer ring" ,types: []},
+{ name: "Escape out of a boss arena" ,types: []},
+{ name: "Get all gems in Boiler Room Doom" ,types: []},
 ];
 bingoList[10] = [
-{ name: "Take Cortex with you to the penguins" ,types: []},
-{ name: "Kill all dogs" ,types: []},
-{ name: "Kill all the chickens at the farm" ,types: []}
+{ name: "Defeat all tribesmen in boats" ,types: []},
+{ name: "Defeat all dogs" ,types: []},
+{ name: "Defeat all chicken at the farm" ,types: []},
+{ name: "Defeat all enemies after the bus chase" ,types: []},
+{ name: "Defeat all ants in Iceberg Lab" ,types: []},
+{ name: "Defeat all drill ants" ,types: []},
+{ name: "Get all gems in Classroom Chaos" ,types: []},
 ];
 bingoList[11] = [
 { name: "Damage boost from a bat" ,types: []},
 { name: "Yellow gem in IC using Cortex" ,types: []},
-{ name: "Make N. Gin hit himself 3 times in one shot" ,types: []}
+{ name: "Get all gems in Rooftop Rampage" ,types: []},
 ];
 bingoList[12] = [
-{ name: "Beat the ant fight in Iceberg Lab" ,types: []},
 { name: "Go through the shortcut to HSH" ,types: []},
-{ name: "Beat all enemies after the bus chase" ,types: []}
+{ name: "Get all gems in Rockslide Rumble" ,types: []},
 ];
 bingoList[13] = [
-{ name: "Destroy all life crates on ice before HSH" ,types: []},
-{ name: "Kill every swinger in the swinger room" ,types: []},
-{ name: "Follow the mystery springs in HSH" ,types: []}
+{ name: "Defeat every swinger in the swinger room" ,types: []},
+{ name: "Follow the mystery springs in HSH" ,types: []},
+{ name: "Get all gems in Bandicoot Pursuit" ,types: []},
 ];
 bingoList[14] = [
 { name: "Touch N.Gin" ,types: []},
-{ name: "Ride SSI backwards until the first checkpoint" ,types: []},
-{ name: "Beat the AA crossroad puzzle" ,types: []},
+{ name: "Destroy all life crates on slippery ice" ,types: []},
+{ name: "Make N. Gin hit himself 3 times in one hit" ,types: []},
+{ name: "Get all gems in Ant Agony" ,types: []},
 ];
 bingoList[15] = [
-{ name: "Kill airship ants by sliding as Cortex" ,types: []},
+{ name: "Get the yellow gem in HSH from OoB" ,types: []},
 { name: "Destroy all life crates in the walrus chase" ,types: []},
 { name: "Make an ant spin you on a gargoyle post 3 times" ,types: []},
-{ name: "Ride the bus" ,types: []}
 ];
 bingoList[16] = [
-{ name: "Go OoB in Boiler Room Doom" ,types: []},
-{ name: "Collect the first gem in BRD as Zombie" ,types: []},
-{ name: "Skip 3 puzzles in BRD" ,types: []}
+{ name: "Skip 2 puzzles in Boiler" ,types: []},
+{ name: "Beat Amberly without glitches" ,types: []}
 ];
 bingoList[17] = [
-{ name: "Stay on the BRD rodeo for 5 seconds" ,types: []},
-{ name: "Fall into the hole below the slime" ,types: []},
-{ name: "Beat a frog room as Cortex" ,types: []}
+{ name: "Beat SSI without hitting switches" ,types: []},
+{ name: "Get into a cutscene as an unintended character/combo" ,types: []},
+{ name: "Beat CC without ringing bells" ,types: []}
 ];
 bingoList[18] = [
-{ name: "Feed bombs to every totem" ,types: []},
-{ name: "Kill 3 invisible enemies in Classroom" ,types: []}
+{ name: "Fall into the hole below the rising slime" ,types: []},
+{ name: "Defeat 3 invisible enemies in Classroom" ,types: []}
 ];
 bingoList[19] = [
 { name: "Avoid ringing bells in Rooftop yourself" ,types: []},
-{ name: "Beat Amberly glitchless" ,types: []},
-{ name: "Avoid all gems in a Humiliskate level" ,types: []}
+
+{ name: "Avoid all gems in a Humiliskate level" ,types: []},
+{ name: "Skip all Cortex chase triggers in BP" ,types: []},
+{ name: "Skip all Cortex chase triggers in TH" ,types: []}
 ];
 bingoList[20] = [
 { name: "Collect 3 Cortex lives as Crash" ,types: []},
-{ name: "Roll a ball into the shortcut cave in TI" ,types: []},
-{ name: "Destroy all life boxes in TI" ,types: []},
-{ name: "Collect all stuff in drills in Rockslide" ,types: []}
+{ name: "99 Ammo" ,types: []}
 ];
 bingoList[21] = [
 { name: "Get all 3 caged gems glitchless in TI" ,types: []},
 { name: "Break all blue light bulbs in AA" ,types: []},
-{ name: "Go through 2 sets of color cycles backwards" ,types: []},
-{ name: "Bypass the final colors using the wall" ,types: []}
 ];
 bingoList[22] = [
-{ name: "Skip all Cortex triggers in BP" ,types: []},
-{ name: "Backtrack from AA's entrance to BP while OoB" ,types: []},
-{ name: "Kill an Ant Flyer by sliding into it", types: []},
-{ name: "Fix the Evil Crash glitch", types: []}
+{ name: "Activate the button at the big ant fight in AA" ,types: []},
+{ name: "AA ball puzzle without crossing the gap (trickshot)" ,types: []},
+{ name: "Break the BP cannon by shooting balls OoB", types: []},
 ];
 bingoList[23] = [
-{ name: "Gain invulnerability 5 times" ,types: []},
-{ name: "50 lives" ,types: []},
-{ name: "Beat any boss twice" ,types: []}
+{ name: "Beat the final boss" ,types: []},
+{ name: "50 Lives" ,types: []},
+{ name: "Beat any boss twice" ,types: []},
 ];
 bingoList[24] = [
-{ name: "Touch the real Coco before she gets zapped" ,types: []},
-{ name: "Reach AA treasure room" ,types: []},
-{ name: "Enter a slide without triggering its cutscene" ,types: []}
+{ name: "Get invincibility in Rockslide Rumble" ,types: []},
+{ name: "All Wumpa at the bottom of the 10th Dimension Lab" ,types: []},
+{ name: "Stand on a Red Sphere stuck in midair" ,types: []}
 ];
 bingoList[25] = [
-{ name: "100% two levels from different hubs" ,types: []},
+{ name: "Get all gems in 3 levels" ,types: []},
 { name: "Collect at least 4 gems in every Hub" ,types: []},
-{ name: "Collect 10 gems in a hub" ,types: []},
+{ name: "Collect 10 gems in a set of 4 levels" ,types: []},
 { name: "Collect at least 8 crystals" ,types: []}
 ];
