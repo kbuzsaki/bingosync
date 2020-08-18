@@ -23,7 +23,6 @@ bingoList[2] = [
 { name: "25 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
 { name: "10 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
 { name: "Captain Toad (Cap)", types: ["Cap", "Captain_Toad"] },
-{ name: "1 Moon from Seeds", types: ["Seeds"] },
 { name: "Plant 1 Seed (Lake)", types: ["Lake", "Seeds"] }
 ];
 bingoList[3] = [
