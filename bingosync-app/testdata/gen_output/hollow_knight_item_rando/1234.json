@@ -1,77 +1,80 @@
+
+
 [
     {
-        "name": "Obtain Grubsong or Grubberfly's Elegy"
+        "name": "Talk to Mask Maker"
     },
     {
-        "name": "Obtain Mantis Claw"
+        "name": "Obtain Carefree Melody"
     },
     {
-        "name": "Dream Nail Willoh's meal"
+        "name": "Check Love Key"
     },
     {
-        "name": "Visit Distant Village or Hive"
+        "name": "Obtain 2 Nail Arts"
     },
     {
-        "name": "Obtain Quick Slash or Nailmaster's Glory"
+        "name": "Check 2 Nailmasters"
     },
     {
-        "name": "Any one Radiant Boss"
+        "name": "Visit Shrine of Believers"
     },
     {
-        "name": "Interact with 3 Cornifer locations"
+        "name": "Obtain Heavy Blow or Steady Body"
     },
     {
-        "name": "10 Lifeblood masks at the same time"
+        "name": "Visit Overgrown Mound or Crystalised Mound (Crystalised requires dive)"
     },
     {
-        "name": "Obtain Shade Soul"
+        "name": "Check the journal below Stone Sanctuary"
     },
     {
-        "name": "Check the Hive Mask Shard"
+        "name": "Read the lore tablet in Howling Cliffs"
     },
     {
-        "name": "Nightmare King Grimm"
-    },
-    {
-        "name": "Talk to Emilitia (shortcut out of sewers)"
+        "name": "Complete the Kingdom's Edge Root"
     },
     {
         "name": "Check Void Heart"
     },
     {
-        "name": "Splash the NPC in the Colosseum's hot spring"
+        "name": "Check three different spell locations"
     },
     {
-        "name": "Check/Free all grubs in CoT (5)"
+        "name": "Slash Millibelle in Pleasure House"
     },
     {
-        "name": "Obtain the Love Key"
+        "name": "Read the Dung Defender sign before Isma's Grove"
     },
     {
-        "name": "Check/Free all grubs in Queen's Gardens (3)"
+        "name": "Obtain Hiveblood or Sharp Shadow"
     },
     {
-        "name": "Swat Tiso's shield away from his corpse"
+        "name": "Buy out Leg Eater"
     },
     {
-        "name": "Obtain two Lifeblood charms"
+        "name": "Obtain 5 Hallownest Seals"
+    },
+    {
+        "name": "Check Glowing Womb"
+    },
+    {
+        "name": "Kill an Aluba"
     },
     {
         "name": "Kill a Kingsmould"
     },
     {
-        "name": "Obtain Shape of Unn or Baldur Shell"
+        "name": "Swat Tiso's shield away from his corpse"
     },
     {
-        "name": "Galien"
+        "name": "Talk to Salubra while overcharmed"
     },
     {
-        "name": "Push an enemy into a deadly hazard"
+        "name": "Check Crystal Heart"
     },
     {
-        "name": "Obtain 4 Rancid Eggs"
-    },
-    {
-        "name": "Get Brumm's flame"
+        "name": "Kill 4 Mimics"
     }
 ]
+

@@ -1,77 +1,80 @@
+
+
 [
     {
-        "name": "Kill a Durandoo"
+        "name": "Obtain Grubsong or Grubberfly's Elegy"
+    },
+    {
+        "name": "Check the journal below Stone Sanctuary"
+    },
+    {
+        "name": "Visit all 4 shops (Sly, Iselda, Salubra and Leg Eater)"
+    },
+    {
+        "name": "Read two lore tablets in City of Tears proper (No sub areas)"
+    },
+    {
+        "name": "Charged Lumafly Journal Entry"
+    },
+    {
+        "name": "Obtain Soul Eater or Soul Catcher"
+    },
+    {
+        "name": "Obtain two Unbreakable charms"
+    },
+    {
+        "name": "Defeat Crystal Guardian 2"
     },
     {
         "name": "Check/Free all grubs in Greenpath (4) and in Fungal (2)"
     },
     {
-        "name": "Obtain Lumafly Lantern"
+        "name": "Visit Queen's Gardens or Cast Off Shell"
     },
     {
-        "name": "Nail 2"
+        "name": "Defeat Hive Knight"
     },
     {
-        "name": "Dream Nail Willoh's meal"
+        "name": "Obtain Sprintmaster or Dashmaster"
     },
     {
-        "name": "Read the Dung Defender sign before Isma's Grove"
+        "name": "Obtain 1 extra mask"
     },
     {
-        "name": "Talk to Tuk"
+        "name": "Obtain Wayward Compass or Gathering Swarm"
     },
     {
-        "name": "Slash two Shade Gates"
+        "name": "Get 2 Dreamer's checks (Requires Dream nail)"
     },
     {
-        "name": "Traitor Lord"
+        "name": "Talk to Bardoon"
+    },
+    {
+        "name": "Defeat Nosk"
+    },
+    {
+        "name": "Dream Nail Marissa"
+    },
+    {
+        "name": "Check Crystal Heart"
+    },
+    {
+        "name": "Defeat No Eyes"
+    },
+    {
+        "name": "Ride the stag to Hidden Station"
+    },
+    {
+        "name": "Spend 4000 geo"
+    },
+    {
+        "name": "Obtain Flukenest or Fury of the Fallen"
     },
     {
         "name": "Talk to the Fluke Hermit"
     },
     {
-        "name": "Buy 6 map pins from Iselda (All but two)"
-    },
-    {
-        "name": "Kill 6 different Stalking Devouts"
-    },
-    {
-        "name": "Defeat Colosseum Zote"
-    },
-    {
-        "name": "Obtain Quick Focus or Deep Focus"
-    },
-    {
-        "name": "Check Isma's Tear"
-    },
-    {
-        "name": "Obtain Godtuner"
-    },
-    {
-        "name": "Void Tendrils Journal Entry"
-    },
-    {
-        "name": "Interact with 3 Cornifer locations"
-    },
-    {
-        "name": "Obtain Dream Gate"
-    },
-    {
-        "name": "Kill a Great Hopper"
-    },
-    {
-        "name": "Check Shade Soul"
-    },
-    {
-        "name": "Obtain Abyss Shriek"
-    },
-    {
-        "name": "Visit Shrine of Believers"
-    },
-    {
-        "name": "Markoth"
-    },
-    {
-        "name": "Enter Godhome"
+        "name": "Check Void Heart"
     }
 ]
+
