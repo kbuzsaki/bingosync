@@ -449,11 +449,13 @@ var bingoList = {
     "Desc": "Mate Flukemarm"
   },
 
+/*
   "GPZote": {
     "Desc": "Mate o Príncipe Cinza Zote",
     "Types": ["Tiebreaker"],
     "Excludes": ["ColoZote", "DeepnestZote", "Colo1"]
   },
+*/
 
   "HiveKnight": {
     "Desc": "Mate o Cavaleiro da Colmeia",
@@ -474,16 +476,19 @@ var bingoList = {
     "Excludes": ["PaleOreCheck"]
   },
 
+/*
   "OroMato": {
-    "Desc": "Mate Oro and Mato",
+    "Desc": "Mate Oro e Mato",
     "Types": ["Tiebreaker"],
     "Excludes": ["Godhome", "Radiant"]
   },
+*/
 
   "PaleLurker": {
     "Desc": "Mate o Pale Lurker"
   },
 
+/*
   "PaintmasterSheo": {
     "Desc": "Mate o Mestre da Pintura Sheo",
     "Types": ["Tiebreaker"],
@@ -495,6 +500,7 @@ var bingoList = {
     "Types": ["Tiebreaker"],
     "Excludes": ["Godhome", "Radiant"]
   },
+*/
 
   "Radiant": { // Under I know you're reading this and I hope it fills you with joy
     "Desc": "Mate qualquer chefe radiante",
@@ -604,10 +610,12 @@ var bingoList = {
     "Excludes": ["ColoZote", "GPZote"]
   },
 
+/*
   "Colo3": {
     "Desc": "Coliseu 3",
     "Types": ["Tiebreaker"]
   },
+*/
 
   "ColoZote": {
     "Desc": "Mate Zote no Coliseu",
@@ -884,11 +892,13 @@ var bingoList = {
     "Excludes": ["KEGrubs", "35Grub"]
   },
 
+/*
   "35Grub": {
     "Desc": "Obtenha 35 larvas",
     "Excludes": ["KEGrubs", "15Grub", "DeepnestGrubs", "BasinGrubs", "CrossroadsCanyonGrubs", "PeaksGrub", "QueenGrub", "WaterGrub", "FunGreenGrub"],
     "Types": ["Tiebreaker"]
   },
+*/
 
   "2Ore": {
     "Desc": "Obtenha 2 Minérios Palido",
@@ -1125,11 +1135,13 @@ var bingoList = {
     "Desc": "Verifique todas larvas em: Caminho Verde(4); Ermos Fúngicos (2)"
   },
 
+/*
   "KEGrubs": {
     "Desc": "Verifique todas larvas em: Borda do Reino (7)",
     "Excludes": ["3Floors", "15Grub", "TramPass", "HiveMask", "Collector", "LoveKey"],
     "Types": ["Tiebreaker"]
   },
+*/
 
   "PeaksGrub": {
     "Desc": "Verifique todas larvas em: Pico de Cristal (7)"
@@ -1458,7 +1470,7 @@ var bingoList = {
   },
 
   "VoidPool": {
-    "Desc": "Nade em uma piscina de sombras"
+    "Desc": "Nade em um lago de sombra"
   },
 
   "WhiteLady": {
