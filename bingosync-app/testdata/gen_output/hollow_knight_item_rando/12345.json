@@ -1,80 +1,77 @@
-
-
 [
     {
-        "name": "Obtain Grubsong or Grubberfly's Elegy"
+        "name": "Visit Overgrown Mound or Crystalised Mound (Crystalised requires dive)"
     },
     {
-        "name": "Check the journal below Stone Sanctuary"
+        "name": "Splash the NPC in the Colosseum's hot spring"
     },
     {
-        "name": "Visit all 4 shops (Sly, Iselda, Salubra and Leg Eater)"
+        "name": "Defeat Troupe Master Grimm"
     },
     {
-        "name": "Read two lore tablets in City of Tears proper (No sub areas)"
+        "name": "Goam and Garpede Journal Entries"
     },
     {
-        "name": "Charged Lumafly Journal Entry"
+        "name": "Buy out Salubra"
     },
     {
-        "name": "Obtain Soul Eater or Soul Catcher"
+        "name": "Kill a Great Hopper"
     },
     {
-        "name": "Obtain two Unbreakable charms"
-    },
-    {
-        "name": "Defeat Crystal Guardian 2"
-    },
-    {
-        "name": "Check/Free all grubs in Greenpath (4) and in Fungal (2)"
-    },
-    {
-        "name": "Visit Queen's Gardens or Cast Off Shell"
-    },
-    {
-        "name": "Defeat Hive Knight"
+        "name": "Kill a Durandoo"
     },
     {
         "name": "Obtain Sprintmaster or Dashmaster"
     },
     {
-        "name": "Obtain 1 extra mask"
-    },
-    {
-        "name": "Obtain Wayward Compass or Gathering Swarm"
-    },
-    {
-        "name": "Get 2 Dreamer's checks (Requires Dream nail)"
-    },
-    {
-        "name": "Talk to Bardoon"
-    },
-    {
-        "name": "Defeat Nosk"
-    },
-    {
-        "name": "Dream Nail Marissa"
-    },
-    {
-        "name": "Check Crystal Heart"
-    },
-    {
-        "name": "Defeat No Eyes"
-    },
-    {
-        "name": "Ride the stag to Hidden Station"
-    },
-    {
-        "name": "Spend 4000 geo"
-    },
-    {
-        "name": "Obtain Flukenest or Fury of the Fallen"
-    },
-    {
-        "name": "Talk to the Fluke Hermit"
-    },
-    {
         "name": "Check Void Heart"
+    },
+    {
+        "name": "Obtain Tram Pass"
+    },
+    {
+        "name": "Visit Distant Village or Hive"
+    },
+    {
+        "name": "Check Glowing Womb"
+    },
+    {
+        "name": "Obtain Abyss Shriek"
+    },
+    {
+        "name": "Kill 6 different Stalking Devouts"
+    },
+    {
+        "name": "Check Shape of Unn"
+    },
+    {
+        "name": "Obtain 2 Pale Ore"
+    },
+    {
+        "name": "Slash the Beast's Den Trilobite"
+    },
+    {
+        "name": "Defeat Xero"
+    },
+    {
+        "name": "Enter Godhome"
+    },
+    {
+        "name": "Nail 2"
+    },
+    {
+        "name": "Obtain 1 Arcane Egg"
+    },
+    {
+        "name": "Check the Stag Nest vessel fragment"
+    },
+    {
+        "name": "Check Isma's Tear"
+    },
+    {
+        "name": "Buy the Basin fountain check"
+    },
+    {
+        "name": "Complete Path of Pain"
     }
 ]
-

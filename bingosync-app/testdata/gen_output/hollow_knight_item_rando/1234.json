@@ -1,80 +1,77 @@
-
-
 [
     {
-        "name": "Talk to Mask Maker"
-    },
-    {
-        "name": "Obtain Carefree Melody"
-    },
-    {
-        "name": "Check Love Key"
-    },
-    {
-        "name": "Obtain 2 Nail Arts"
-    },
-    {
-        "name": "Check 2 Nailmasters"
-    },
-    {
-        "name": "Visit Shrine of Believers"
-    },
-    {
-        "name": "Obtain Heavy Blow or Steady Body"
-    },
-    {
-        "name": "Visit Overgrown Mound or Crystalised Mound (Crystalised requires dive)"
-    },
-    {
-        "name": "Check the journal below Stone Sanctuary"
+        "name": "Bow to the Fungal Core Elder"
     },
     {
         "name": "Read the lore tablet in Howling Cliffs"
     },
     {
-        "name": "Complete the Kingdom's Edge Root"
+        "name": "Obtain 2 Pale Ore"
     },
     {
-        "name": "Check Void Heart"
+        "name": "Check Love Key"
     },
     {
-        "name": "Check three different spell locations"
+        "name": "Defeat Nightmare King Grimm"
     },
     {
-        "name": "Slash Millibelle in Pleasure House"
+        "name": "Talk to the Fluke Hermit"
     },
     {
-        "name": "Read the Dung Defender sign before Isma's Grove"
-    },
-    {
-        "name": "Obtain Hiveblood or Sharp Shadow"
-    },
-    {
-        "name": "Buy out Leg Eater"
-    },
-    {
-        "name": "Obtain 5 Hallownest Seals"
-    },
-    {
-        "name": "Check Glowing Womb"
-    },
-    {
-        "name": "Kill an Aluba"
-    },
-    {
-        "name": "Kill a Kingsmould"
+        "name": "Check the journal above Mantis Village"
     },
     {
         "name": "Swat Tiso's shield away from his corpse"
     },
     {
-        "name": "Talk to Salubra while overcharmed"
+        "name": "Check/Free all grubs in Ancient Basin (2)"
+    },
+    {
+        "name": "Obtain the Love Key"
+    },
+    {
+        "name": "Check/Free all grubs in Crystal Peaks (7)"
+    },
+    {
+        "name": "Visit Overgrown Mound or Crystalised Mound (Crystalised requires dive)"
+    },
+    {
+        "name": "Obtain Longnail or Mark of Pride"
+    },
+    {
+        "name": "Kill a Lightseed"
+    },
+    {
+        "name": "Obtain Shape of Unn or Baldur Shell"
+    },
+    {
+        "name": "Defeat Galien"
+    },
+    {
+        "name": "Talk to Lemm in his shop with Defender's Crest equipped"
     },
     {
         "name": "Check Crystal Heart"
     },
     {
-        "name": "Kill 4 Mimics"
+        "name": "Get Brumm's flame"
+    },
+    {
+        "name": "Bow to Moss Prophet, dead or alive"
+    },
+    {
+        "name": "Sit down in Hidden Station"
+    },
+    {
+        "name": "Talk to Bardoon"
+    },
+    {
+        "name": "Defeat Mantis Lords"
+    },
+    {
+        "name": "Obtain Vengeful Spirit"
+    },
+    {
+        "name": "Obtain Godtuner"
     }
 ]
-
