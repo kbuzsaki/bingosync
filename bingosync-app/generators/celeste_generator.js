@@ -42,7 +42,6 @@ bingoList[4] = [
   { name: "All Collectibles in 1A", types: ["amount_berries"] },
   { name: "5 Berries in 4 Chapters", types: ["amount_berries"] },
   { name: "Complete Crossing without dashing", types: ["challenge","task"] },
-  { name: "Old Site Cassette", types: ["2b","earlygame"] },
   { name: "Complete Shrine without dashing", types: ["task"] },
   { name: "Grabless Start of 4A", types: ["grabless"] },
   { name: "Get a 1-Up in 4A", types: ["1up","challenge"] },
