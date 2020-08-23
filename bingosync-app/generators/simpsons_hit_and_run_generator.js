@@ -11,13 +11,13 @@ var bingoList = [
 			"name": "Fail a mission"
 		},
 		{
-			"name": "Inanimate Carbon Rod"
+			"name": "Carbon Rod (1)"
 		},
 		{
-			"name": "Boudoir Album"
+			"name": "Boudoir Album (4)"
 		},
 		{
-			"name": "Human Cookbook"
+			"name": "Human Cookbook (7)"
 		},
 		{
 			"name": "Destroy the Monkey Box in Bart 1"
@@ -29,32 +29,32 @@ var bingoList = [
 			"name": "Destroy a car with a ground pound"
 		},
 		{
-			"name": "Soy Pop"
+			"name": "Soy Pop(3)"
 		}
 	],
 	[{
-			"name": "BORT License Plate"
+			"name": "BORT License Plate (6)"
 		},
 		{
-			"name": "Gabbo Doll"
+			"name": "Gabbo Doll (6)"
 		},
 		{
-			"name": "Hot Dog"
+			"name": "Hot Dog (5)"
 		},
 		{
 			"name": "Enter all interiors in Bart 2"
 		},
 		{
-			"name": "Apus Tshirt"
+			"name": "Apus Tshirt (5)"
 		},
 		{
-			"name": "Prop 24 Sign"
+			"name": "Prop 24 Sign (5)"
 		},
 		{
-			"name": "Chutney Squishie Card"
+			"name": "Chutney Squishie Card (5)"
 		},
 		{
-			"name": "Hell Toupee on foot"
+			"name": "Hell Toupee on foot (7)"
 		},
 		{
 			"name": "Destroy 10 tomacco plants in Homer 1"
@@ -67,10 +67,10 @@ var bingoList = [
 			"name": "Run over Snake in an armoured truck"
 		},
 		{
-			"name": "Kick Kearny into Studio A"
+			"name": "Kick Kearney into Studio A"
 		},
 		{
-			"name": "Hearse in the tractor beam"
+			"name": "Non-Traffic Hearse in the tractor beam"
 		},
 		{
 			"name": "Kick 10 different NPCs"
@@ -107,13 +107,13 @@ var bingoList = [
 			"name": "Ground pound the Squeaky-Voiced teen 3 times"
 		},
 		{
-			"name": "Collect all the ufo wreckage coins in Homer 2"
+			"name": "Collect all the boxes and vends under Burns' office in Homer 2"
 		},
 		{
 			"name": "Blow up a car between train carts"
 		},
 		{
-			"name": "Run a home run in 3 different levels"
+			"name": "Run a home run behind the school in 3 different levels"
 		},
 		{
 			"name": "Skip a mission without manually restarting"
@@ -122,7 +122,7 @@ var bingoList = [
 			"name": "5 Wasps in Marge"
 		},
 		{
-			"name": "Australian Boot"
+			"name": "Australian Boot (6)"
 		}
 	],
 	[{
@@ -153,14 +153,14 @@ var bingoList = [
 			"name": "5 Freebies"
 		},
 		{
-			"name": "Mr. Honeybunny"
+			"name": "Mr. Honeybunny (2)"
 		}
 	],
 	[{
 			"name": "Watch the Flowers by Irene Cutscene"
 		},
 		{
-			"name": "Skip a main story cutscene in Apu"
+			"name": "Skip the Apu movie"
 		},
 		{
 			"name": "Power plant carpark gag as Homer Muumuu"
@@ -175,7 +175,7 @@ var bingoList = [
 			"name": "Enter the DMV in Better than Beef"
 		},
 		{
-			"name": "Cross the finish line from behind in Vox Nerduli"
+			"name": "Finish Vox Nerduli going past the mueseum"
 		},
 		{
 			"name": "Lead Skinner to the Police Station in Detention Deficit Disorder"
@@ -206,10 +206,10 @@ var bingoList = [
 			"name": "Any street races in Homer 2"
 		},
 		{
-			"name": "Skip a main story cutscene in Bart 2"
+			"name": "Skip the Bart 2 movie"
 		},
 		{
-			"name": "Put otto in the well"
+			"name": "Put any NPC in the well"
 		},
 		{
 			"name": "Get a Duff Brewery Mascot under the springfield sign"
@@ -256,7 +256,7 @@ var bingoList = [
 			"name": "Activate both Powerplant gags during Bonestorm Storm"
 		},
 		{
-			"name": "Kick Bart of a Boat"
+			"name": "Kick Bart off a Boat"
 		},
 		{
 			"name": "Destroy 5 Traffic Cars"
@@ -324,7 +324,7 @@ var bingoList = [
 			"name": "Have a car ends with Truck in the phonebooth"
 		},
 		{
-			"name": "Get Hit and Run only kicking tombstones in the Cemetery"
+			"name": "Get a full Hit and Run meter by kicking only tombstones in the Cemetery"
 		}, {
 			"name": "All Homer 1 outfits"
 		},
@@ -375,7 +375,7 @@ var bingoList = [
 			"name": "Get Busted as inmate Marge"
 		},
 		{
-			"name": "Get to Krusty Lu in 6-1 without picking up a kid going through the pier"
+			"name": "Get to the Krusty Lu without picking up a kid in Going to the Lu, going the intended way"
 		}
 	],
 	[{
@@ -450,7 +450,7 @@ var bingoList = [
 			"name": "All Bart 1 outfits"
 		},
 		{
-			"name": "Skip a main story cutscene in Bart 1"
+			"name": "Skip the Bart 1 movie"
 		},
 		{
 			"name": "S-M-R-T in Duff Truck"
@@ -543,7 +543,7 @@ var bingoList = [
 			"name": "Complete 2 story missions in order without warping"
 		},
 		{
-			"name": "Complete Bonestorm Storm whilst collecting the first drop pass the Simpsons house"
+			"name": "Complete Bonestorm Storm whilst collecting the first drop past the Simpsons house"
 		},
 		{
 			"name": "All Bart 1 cards"
@@ -568,7 +568,7 @@ var bingoList = [
 		}
 	],
 	[{
-			"name": "Milhouse Race with Nightboat"
+			"name": "Milhouse Race with Knightboat"
 		},
 		{
 			"name": "Operation Hellfish"
@@ -704,7 +704,7 @@ var bingoList = [
 			"name": "5 outfits"
 		},
 		{
-			"name": "Complete 3 missions with a secret car"
+			"name": "Complete 3  different missions with a secret car"
 		},
 		{
 			"name": "Drive all secret cars"
@@ -805,7 +805,7 @@ var bingoList = [
 			"name": "Complete 2 missions that require a costume or car purchase"
 		},
 		{
-			"name": "Complete 5 missions with a secret car"
+			"name": "Complete 5 different missions with a secret car"
 		},
 		{
 			"name": "Have 2 sedans in the phonebooth"
@@ -814,10 +814,10 @@ var bingoList = [
 			"name": "Complete 3 follow missions"
 		},
 		{
-			"name": "Complete 6 Story Missions as Homer"
+			"name": "Complete 5 Story Missions in Homer 1/2"
 		},
 		{
-			"name": "Complete 6 Story Missions as Bart"
+			"name": "Complete 5 Story Missions in Bart 1/2"
 		},
 		{
 			"name": "Complete a mission in every level"
