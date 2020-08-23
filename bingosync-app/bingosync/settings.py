@@ -15,7 +15,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -220,3 +219,7 @@ SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
 
 # crispy forms confiuguration
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# Calling django.setup() here works around an issue with running tests in parallel
+import django
+django.setup()
