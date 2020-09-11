@@ -218,6 +218,7 @@ class GameType(Enum):
     xenoblade_chronicles_future_connected = 214
     hollow_knight_item_rando_cn = 215
     hollow_knight_item_rando_pt = 216
+    spyro_2_4_no_ds = 217
 
     def __str__(self):
         return self.short_name
@@ -461,6 +462,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
             (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
+            (GameType.spyro_2_4_no_ds, "4.1 No Dragon Shores", "Spyro 2 - 4.1 No DS"),
         ],
     },
     GameType.wii_sports_resort: {
