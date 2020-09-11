@@ -221,6 +221,7 @@ class GameType(Enum):
     spyro_2_4_no_ds = 217
     kingdom_hearts_2_final_mix = 218
     sludgelife = 219
+    undertale = 220
 
     def __str__(self):
         return self.short_name
@@ -767,6 +768,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
+    **singleton_group(GameType.undertale, "Undertale", "Undertale"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
