@@ -220,6 +220,7 @@ class GameType(Enum):
     hollow_knight_item_rando_pt = 216
     spyro_2_4_no_ds = 217
     kingdom_hearts_2_final_mix = 218
+    sludgelife = 219
 
     def __str__(self):
         return self.short_name
@@ -753,6 +754,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
+    **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
