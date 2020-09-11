@@ -1,77 +1,77 @@
 [
     {
-        "name": "Magic Bar"
-    },
-    {
-        "name": "3 Compasses"
-    },
-    {
-        "name": "Requiem of Spirit"
-    },
-    {
-        "name": "Green Potion"
-    },
-    {
-        "name": "30 Deku Nuts"
-    },
-    {
-        "name": "Defeat a White Wolfos"
-    },
-    {
-        "name": "20 Deku Sticks"
-    },
-    {
-        "name": "1 Skulltula from each Child Dungeon"
+        "name": "Defeat a Skull Kid"
     },
     {
         "name": "Goron's Ruby"
     },
     {
-        "name": "Milk"
-    },
-    {
-        "name": "All 4 Skulltulas in Jabu-Jabu"
-    },
-    {
-        "name": "6 unused keys in Gerudo Training Grounds"
-    },
-    {
-        "name": "Plant 4 Magic Beans"
-    },
-    {
-        "name": "Both Child Lost Woods area Skulltulas"
-    },
-    {
-        "name": "Keaton Mask"
-    },
-    {
-        "name": "Map & Compass in Bottom of the Well"
-    },
-    {
-        "name": "Skull Mask"
-    },
-    {
-        "name": "All 5 Child Death Mountain area Skulltulas"
+        "name": "3 Compasses"
     },
     {
         "name": "Ruto's Letter"
     },
     {
+        "name": "Lost Dog HP"
+    },
+    {
+        "name": "Defeat all Lizalfos in Dodongo's Cavern"
+    },
+    {
+        "name": "20 Deku Sticks"
+    },
+    {
+        "name": "8 Magic Beans"
+    },
+    {
+        "name": "All 5 Child Death Mountain area Skulltulas"
+    },
+    {
+        "name": "Defeat a White Wolfos"
+    },
+    {
+        "name": "All 5 Skulltulas in Dodongo's Cavern"
+    },
+    {
+        "name": "6 unused keys in Gerudo Training Grounds"
+    },
+    {
+        "name": "Both Child Kokiri Forest area Skulltulas"
+    },
+    {
+        "name": "Plant 4 Magic Beans"
+    },
+    {
+        "name": "6 Hearts"
+    },
+    {
+        "name": "30 Deku Nuts"
+    },
+    {
+        "name": "Plant 7 Magic Beans"
+    },
+    {
+        "name": "Requiem of Spirit"
+    },
+    {
         "name": "Defeat Queen Gohma"
     },
     {
-        "name": "All 3 Child Lake Hylia Skulltulas"
+        "name": "30 Deku Sticks"
+    },
+    {
+        "name": "Boomerang"
     },
     {
         "name": "Fairy Slingshot"
     },
     {
-        "name": "Bottled Poe"
+        "name": "Green Potion"
     },
     {
-        "name": "4 Maps"
+        "name": "Win Bombchu Bowling Prize"
     },
     {
-        "name": "Beat Dodongo's Cavern"
+        "name": "Plant 6 Magic Beans"
     }
 ]
