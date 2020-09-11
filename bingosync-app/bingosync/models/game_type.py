@@ -219,6 +219,7 @@ class GameType(Enum):
     hollow_knight_item_rando_cn = 215
     hollow_knight_item_rando_pt = 216
     spyro_2_4_no_ds = 217
+    kingdom_hearts_2_final_mix = 218
 
     def __str__(self):
         return self.short_name
@@ -712,6 +713,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.kingdom_hearts_final_mix, "Kingdom Hearts Final Mix", "KHFM"),
+    **singleton_group(GameType.kingdom_hearts_2_final_mix, "Kingdom Hearts II Final Mix", "KH2FM"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.kotor, "Star Wars: Knights of the Old Republic", "KotOR"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
