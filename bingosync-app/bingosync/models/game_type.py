@@ -223,6 +223,7 @@ class GameType(Enum):
     sludgelife = 219
     undertale = 220
     pikmin_3 = 221
+    zelda_twilight_princess = 222
 
     def __str__(self):
         return self.short_name
@@ -779,6 +780,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
+    **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
     **singleton_group(GameType.zelda_wind_waker_sd, "Zelda: The Wind Waker SD", "TWW SD"),
 }
 
