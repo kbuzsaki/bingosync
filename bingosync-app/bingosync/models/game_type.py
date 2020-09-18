@@ -222,6 +222,7 @@ class GameType(Enum):
     kingdom_hearts_2_final_mix = 218
     sludgelife = 219
     undertale = 220
+    pikmin_3 = 221
 
     def __str__(self):
         return self.short_name
@@ -742,6 +743,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
+    **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
