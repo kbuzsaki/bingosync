@@ -224,7 +224,7 @@ class GameType(Enum):
     undertale = 220
     pikmin_3 = 221
     zelda_twilight_princess = 222
-    _102_dalmations = 223
+    _102_dalmatians = 223
 
     def __str__(self):
         return self.short_name
@@ -688,7 +688,7 @@ GAME_GROUPS = {
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
         ],
     },
-    **singleton_group(GameType._102_dalmations, "102 Dalmations: Puppies to the Rescue", "102 Dal: PTTR"),
+    **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
