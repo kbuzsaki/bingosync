@@ -42,7 +42,7 @@ bingoList[6] = [
 { name: "3 Hidden Shines"},
 { name: "9 Sirena Blue Coins"},
 { name: "2 Hidden Reds Hoverless"},
-{ name: "5 Enemy Blue Coins"}
+{ name: "4 Unique Boss Shines"}
 ];
 bingoList[7] = [
 { name: "Complete a Boss Rematch"},
@@ -59,11 +59,11 @@ bingoList[8] = [
 { name: "100 Coin Shine from Gelato"}
 ];
 bingoList[9] = [
-{ name: "4 Unique Boss Shines"},
+{ name: "5 Enemy Blue Coins"},
 { name: "4 Red Coin Shines"},
 { name: "23 Ricco Blue Coins"},
 { name: "5 Blue Bird Blue Coins"},
-{ name: "12 Pinna Blue Coins"}
+{ name: "16 Pinna Blue Coins"}
 ];
 bingoList[10] = [
 { name: "4 Boss Shines"},
@@ -80,15 +80,16 @@ bingoList[11] = [
 ];
 bingoList[12] = [
 { name: "1 Hidden Shine in Pinna"},
-{ name: "All Pinna Baskets OR 4 Fruit Lady Blue Coins"},
-{ name: "Enter 6 Pipes and Collect their Shines"},
+{ name: "7 Pinna Beach Blue Coins OR 4 Fruit Lady Blue Coins"},
+{ name: "20 Blue Coins from 2 Levels"},
 { name: "5 Boss Shines"}
 ];
 bingoList[13] = [
 { name: "Pinna 4 Sprayless"},
 { name: "Pinna 5 from the back Hoverless"},
 { name: "1 Hidden Shine in Pianta"},
-{ name: "20 Blue Coins from 2 Levels"},
+{ name: "Enter 6 Pipes and Collect their Shines"},
+{ name: "Enter 9 Pipes and Collect their Shines"}
 ];
 bingoList[14] = [
 { name: "Both Bell Shines OR Lighthouse Shine"},
@@ -107,7 +108,7 @@ bingoList[16] = [
 { name: "7 Blue Bird Blue Coins"},
 { name: "1 Butterfly Blue Coin (No Pinna)"},
 { name: "4 Shines from Gelato"},
-{ name: "5 Shines from Gelato OR Both Gold Bird Shines"},
+{ name: "5 Shines from Gelato OR 12 Noki Blue Coins"},
 { name: "3 Rocket Nozzle Unlocks"}
 ];
 bingoList[17] = [
@@ -117,7 +118,7 @@ bingoList[17] = [
 { name: "18 Sirena Blue Coins"}
 ];
 bingoList[18] = [
-{ name: "12 Noki Blue Coins"},
+{ name: "Both Gold Bird Shines"},
 { name: "1 Shine from each Level"},
 { name: "2 Shines from 5 Levels"},
 { name: "Defeat Both Cannon Moles AND Collect Their Shines"}
@@ -144,7 +145,7 @@ bingoList[21] = [
 bingoList[22] = [
 { name: "3 Shines from 4 Levels"},
 { name: "4 Shines from 3 Levels"},
-{ name: "2 Shines from 7 Worlds OR Defeat King Boo"},
+{ name: "2 Shines from 7 Worlds"},
 { name: "2 Turbo Nozzle Unlocks"}
 ];
 bingoList[23] = [
