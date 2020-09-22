@@ -48,6 +48,7 @@ def ping_with_retry(url, retry_count=DEFAULT_RETRY_COUNT):
 
     if retry_count <= 0:
         print("Ran out of retries, for url '" + url + "', giving up.")
+        return
 
     client = AsyncHTTPClient()
     client.fetch(url, retry_callback)
@@ -111,7 +112,8 @@ class SocketRouter:
 
     def register(self, room_uuid, player_uuid, socket):
         self.log_sockets("registering socket...")
-        if not self.sockets_by_room[room_uuid][player_uuid]:
+        # don't post new player if it's from a public view that has no uuid
+        if not self.sockets_by_room[room_uuid][player_uuid] and not player_uuid == '':
             print("posting connect")
             post_player_connection(player_uuid)
         self.sockets_by_room[room_uuid][player_uuid].add(socket)
@@ -126,8 +128,9 @@ class SocketRouter:
                 if player_sockets:
                     player_sockets.discard(socket)
                     if not player_sockets:
-                        print("posting disconnect", player_uuid)
-                        post_player_disconnection(player_uuid)
+                        if not player_uuid == '':
+                            print("posting disconnect", player_uuid)
+                            post_player_disconnection(player_uuid)
                         if CLEANUP_SOCKETS_DICT_ON_DISCONNECT:
                             del room_sockets[player_uuid]
                             break
