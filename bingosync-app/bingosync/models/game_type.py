@@ -225,6 +225,8 @@ class GameType(Enum):
     pikmin_3 = 221
     zelda_twilight_princess = 222
     _102_dalmatians = 223
+    hollow_knight_item_rando_cursed = 224
+    hollow_knight_item_rando_tiebreakerless = 225
 
     def __str__(self):
         return self.short_name
@@ -487,6 +489,8 @@ GAME_GROUPS = {
             (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
             (GameType.hollow_knight_item_rando_cn, "Item Randomizer - CN", "HK Random CN"),
             (GameType.hollow_knight_item_rando_pt, "Item Randomizer - Portuguese", "HK Random PT"),
+            (GameType.hollow_knight_item_rando_cursed, "Item Randomizer - Cursed", "HK Item Rando Cursed"),
+            (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless")
         ],
     },
     GameType.illusion_of_gaia_rando: {
