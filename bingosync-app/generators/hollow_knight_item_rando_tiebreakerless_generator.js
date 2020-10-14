@@ -385,11 +385,7 @@ bingoGenerator = function(bingoList, opts) {
   return chosenGoals;
 }
 
-var bingoTypes = {
-  "Tiebreaker": {
-    "Max": 0
-  }
-};
+var bingoTypes = {};
 
 var bingoList = {
   //Sorted alphabetically and grouped
@@ -431,11 +427,11 @@ var bingoList = {
     "Excludes": ["WhiteDefender"]
   },
 
-  "WhiteDefender": {
+  /*"WhiteDefender": {
     "Desc": "Defeat White Defender",
     "Types": ["Tiebreaker"],
     "Excludes": ["DDefender", "MrMushroom1"]
-  },
+  },*/
 
   "FChamp": {
     "Desc": "Defeat Failed Champion"
@@ -527,11 +523,11 @@ var bingoList = {
     "Desc": "Defeat Troupe Master Grimm"
   },
 
-  "NKGrimm": {
+  /*"NKGrimm": {
     "Desc": "Defeat Nightmare King Grimm",
     "Types": ["Tiebreaker"],
     "Excludes": ["CarefreeMelody"]
-  },
+  },*/
 
   "Uumuu": {
     "Desc": "Defeat Uumuu"
@@ -1370,22 +1366,22 @@ var bingoList = {
     "Desc": "Use a Nail Art in its vanilla Nailmaster's Hut"
   },
 
-  "Ordeal20": {
+  /*"Ordeal20": {
     "Desc": "Eternal Ordeal: 20 Zotes",
     "Types": ["Tiebreaker"],
     "Excludes": ["Godhome", "Radiant"]
-  },
+  },*/
 
   "Overcharm": {
     "Desc": "Talk to Salubra while overcharmed"
   },
 
-  "PoP": {
+  /*"PoP": {
     "Desc": "Complete Path of Pain",
     "Types": ["Tiebreaker"],
     "Excludes": ["Kingsmould"]
   },
-
+*/
   "Pins": {
     "Desc": "Buy 6 map pins from Iselda (All but two)",
     "Excludes": ["PinsAll"],
