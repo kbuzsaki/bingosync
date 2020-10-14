@@ -228,6 +228,7 @@ class GameType(Enum):
     hollow_knight_item_rando_cursed = 224
     hollow_knight_item_rando_tiebreakerless = 225
     a_bugs_life = 226
+    bloodstained_rando = 227
 
     def __str__(self):
         return self.short_name
@@ -700,6 +701,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
+    **singleton_group(GameType.bloodstained_rando, "Bloodstained: Ritual of the Night Randomizer", "Bloodstained Rando"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
