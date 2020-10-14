@@ -227,6 +227,7 @@ class GameType(Enum):
     _102_dalmatians = 223
     hollow_knight_item_rando_cursed = 224
     hollow_knight_item_rando_tiebreakerless = 225
+    a_bugs_life = 226
 
     def __str__(self):
         return self.short_name
@@ -693,6 +694,7 @@ GAME_GROUPS = {
         ],
     },
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
+    **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
