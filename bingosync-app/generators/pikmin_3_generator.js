@@ -135,19 +135,16 @@ function magicSquare() {
     template = translocate(template, tH, 0);
     template = translocate(template, tV, 1);
     template = rotate(template, ro);
-    if (rf == 1) {
+    if (rf == 1)
         template.reverse();
-    }
 
     function inverse(t) { //inverts the table
         var s = [];
-        for (var j = 0; j < t.length; j++) {
+        for (var j = 0; j < t.length; j++)
             s.push([]);
-        }
         for (var j = 0; j < t.length; j++) {
-            for (var k = 0; k < t.length; k++) {
+            for (var k = 0; k < t.length; k++)
                 s[j][k] = t[k][j];
-            }
         }
     }
 
@@ -183,54 +180,54 @@ function magicSquare() {
 function preprocessBingoList(bingoList) {
     for (const key of Object.keys(bingoList)) {
         bingoList[key].name = key;
-
-        if (!bingoList[key].hasOwnProperty("Desc")) {
-            bingoList[key].Desc = "#!#" + key + "#!#";
-        }
-
-        if (!bingoList[key].hasOwnProperty("Diff")) {
-            bingoList[key].Diff = 0;
-        }
         
-        if (!bingoList[key].hasOwnProperty("Types")) {
+        if (!bingoList[key].hasOwnProperty("Desc"))
+            bingoList[key].Desc = "#!#" + key + "#!#";
+
+        if (!bingoList[key].hasOwnProperty("Diff"))
+            bingoList[key].Diff = 0;
+        
+        if (!bingoList[key].hasOwnProperty("Types"))
             bingoList[key].Types = [];
-        }
 
-        if (!bingoList[key].hasOwnProperty("Excludes")) {
+        if (!bingoList[key].hasOwnProperty("Excludes"))
             bingoList[key].Excludes = [];
-        }
 
-        if (!bingoList[key].hasOwnProperty("Synergy")) {
+        if (!bingoList[key].hasOwnProperty("Synergy"))
             bingoList[key].Synergy = [];
-        }
+        
+        if (!bingoList[key].hasOwnProperty("Score"))
+            bingoList[key].Score = 0;
     }
 }
 
 //synerGen: a bingo generator based on SRLv5 and Hollow Knight's generators.
 bingoGenerator = function(bingoList, opts) {
     
-    //Make sure everything exists that should
+    //Make sure everything exists that should, pull out maxScore and bingoTypes from bingoList
+    var bingoTypes = bingoList.bingoTypes;
+    delete bingoList.bingoTypes;
+    var maxScore = bingoList.maxScore;
+    delete bingoList.maxScore;
     preprocessBingoList(bingoList);
 
     //Separate goals into currently choosable / unchoosable (all goals are choosable at the start)
     var choosable = [];
     var unchoosable = [];
-    for (const key of Object.keys(bingoList)) {
+    for (const key of Object.keys(bingoList))
         choosable.push(key);
-    }
     
     //Create counts for all types
     var types = { };
     for (const key of Object.keys(bingoTypes)) {
-        if (!bingoTypes[key].hasOwnProperty("Max")) {
+        if (!bingoTypes[key].hasOwnProperty("Max"))
             bingoTypes.key.Max = 5;
-        }
         types[key] = bingoTypes[key].Max;
     }
-
+    
     //Seed the random
     seed = Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()));
-    console.log(seed);
+    //console.log(seed);
 
     //create a 1-dimensional array from the 2-dimensional matrix magicSquare[][]
     var square = magicSquare();
@@ -238,9 +235,8 @@ bingoGenerator = function(bingoList, opts) {
 
     var unchosenDiffs = bingoBoard.slice();
     var chosenGoals = [];
-    for (var i = 1; i <= 25; i++) {
+    for (var i = 1; i <= 25; i++)
         chosenGoals.push("");
-    }
     
     for (var i = 1; i <= 25; i++) {
         
@@ -251,26 +247,21 @@ bingoGenerator = function(bingoList, opts) {
             for (var j of unchosenDiffs) {
                 var plusOne = j + 1;
                 var minusOne = j - 1;
-                if (!newChoosableDiffs.includes(plusOne) && plusOne <= 25) {
+                if (!newChoosableDiffs.includes(plusOne) && plusOne <= 25)
                     newChoosableDiffs.push(plusOne);
-                }
-                if (!newChoosableDiffs.includes(minusOne) && minusOne >= 1) {
+                if (!newChoosableDiffs.includes(minusOne) && minusOne >= 1)
                     newChoosableDiffs.push(minusOne);
-                }
             }
             for (var k = 0; k < unchoosable.length; k++) {
                 if (newChoosableDiffs.includes(bingoList[unchoosable[k]].Diff)) {
-                    var l = unchoosable.splice(k, 1);
-                    choosable = choosable.concat(l);
+                    choosable = choosable.concat(unchoosable.splice(k, 1));
                     k--;
                 }
             }
             //if choosable[] is still empty, just move everything from unchoosable[] back
             if (choosable.length == 0) {
-                while (unchoosable.length > 0) {
-                    var l = unchoosable.splice(0, 1);
-                    choosable = choosable.concat(l);
-                }
+                while (unchoosable.length > 0)
+                    choosable = choosable.concat(unchoosable.splice(0, 1));
             }
         }
 
@@ -327,19 +318,23 @@ bingoGenerator = function(bingoList, opts) {
                 }
             }
         }
-
-        //remove all goals of the same difficulty from choosable[], also remove excluded goals if relevant
+        
+        //decrement score
+        maxScore = maxScore - goal.Score;
+        //remove all goals of the same difficulty from choosable[], also remove excluded goals and goals with too high score if relevant
         for (var j = 0; j < choosable.length; j++) {
             if (bingoList[choosable[j]].Diff == goal.Diff && goal.Diff != 0) {
-                var l = choosable.splice(j, 1);
-                unchoosable = unchoosable.concat(l);
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
                 j--;
                 continue;
             }
+            if (bingoList[choosable[j]].Score > maxScore) {
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
+                j--;
+            }
             for (var k = 0; k < goal.Excludes.length; k++) {
                 if (choosable[j] == goal.Excludes[k]) {
-                    var m = choosable.splice(j, 1);
-                    unchoosable = unchoosable.concat(m);
+                    unchoosable = unchoosable.concat(choosable.splice(j, 1));
                     j--;
                 }
             }
@@ -349,17 +344,13 @@ bingoGenerator = function(bingoList, opts) {
         for (var j = 0; j < goal.Synergy.length; j++) {
             var temp = [];
             for (var k = 0; k < choosable.length; k++) {
-                if (goal.Synergy[j] == choosable[k]) { //check if the goal itself is a synergy
-                    var m = choosable[k];
-                    temp.push(m);
-                }
+                if (goal.Synergy[j] == choosable[k]) //check if the goal itself is a synergy
+                    temp.push(choosable[k]);
                 for (var l = 0; l < bingoList[choosable[k]].Synergy.length; l++) { //check if it shares a synergy group that isn't an existing goal
                     if (goal.Synergy[j] == bingoList[choosable[k]].Synergy[l]
                         && !choosable.includes(bingoList[choosable[k]].Synergy[l])
-                        && !unchoosable.includes(bingoList[choosable[k]].Synergy[l])) {
-                            var n = choosable[k];
-                            temp.push(n);
-                    }
+                        && !unchoosable.includes(bingoList[choosable[k]].Synergy[l]))
+                            temp.push(choosable[k]);
                 }
             }
             choosable = choosable.concat(temp);
@@ -368,15 +359,17 @@ bingoGenerator = function(bingoList, opts) {
     return chosenGoals;
 }
 
-var bingoTypes = { 
-    "Tiebreaker": {"Max": 1}, //4 Total
-    "FO": {"Max": 3}, //8 Total
-    "Revisit": {"Max": 5}, //12 Total
-    "SpecificFruit": {"Max": 5}, //22 Total
-    "FC": {"Max": 1} //4 Total
-};
-
 var bingoList = { 
+    //initialization
+    "bingoTypes": {
+        "Tiebreaker": {"Max": 1}, //4 Total
+        "FO": {"Max": 3}, //8 Total
+        "Revisit": {"Max": 5}, //12 Total
+        "SpecificFruit": {"Max": 5}, //22 Total
+        "FC": {"Max": 1} //4 Total
+    },
+    "maxScore": 0,
+    
     //Pikmin growth
     "1Pellet": {
         "Desc": "Collect a 1-Pellet of each color",
@@ -509,8 +502,7 @@ var bingoList = {
     },
     "HayRamp": {
         "Desc": "Build 1 Hay Ramp",
-        "Diff": 6,
-        "Excludes": ["HayRamp-NoSwap"]
+        "Diff": 6
     },
     "5Stick": {
         "Desc": "Unearth all 5 Climbing Sticks",
@@ -548,11 +540,6 @@ var bingoList = {
     "TRElectrode": {
         "Desc": "Activate the Electrode in Twilight River",
         "Diff": 7
-    },
-    "HayRamp-NoSwap": {
-        "Desc": "Build the Hay Ramp in Distant Tundra without swapping captains",
-        "Diff": 9,
-        "Excludes": ["HayRamp"]
     },
     "TRBridges": {
         "Desc": "Build both bridges in Twilight River",
