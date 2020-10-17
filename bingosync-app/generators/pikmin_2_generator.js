@@ -70,8 +70,6 @@
 //Create a magic square that the board will be based on
 function magicSquare() {
     var A = B = C = D = E = f = g = h = i = j = 0;
-    //var tableA = [A, B, C, D, E];
-    //var tableF = [f, g, h, i, j];
     //this whole thing generates one of the 144 "unique" 5x5 magic squares
     //for more info visit https://www.grogono.com/magic/5x5pan144.php
     var table1 = [];
@@ -110,12 +108,6 @@ function magicSquare() {
 
     var randTable1 = table1[Math.floor(6 * Math.random())];
     var randTable2 = table2[Math.floor(24 * Math.random())];
-    /*for (var x = 0; x <= 4; x++) {
-        tableA[x] = randTable1[x];
-    }
-    for (var y = 0; y <= 4; y++) {
-        tableF[y] = randTable2[y];
-    }*/
     A = randTable1[0];
     B = randTable1[1];
     C = randTable1[2];
@@ -143,19 +135,16 @@ function magicSquare() {
     template = translocate(template, tH, 0);
     template = translocate(template, tV, 1);
     template = rotate(template, ro);
-    if (rf == 1) {
+    if (rf == 1)
         template.reverse();
-    }
 
     function inverse(t) { //inverts the table
         var s = [];
-        for (var j = 0; j < t.length; j++) {
+        for (var j = 0; j < t.length; j++)
             s.push([]);
-        }
         for (var j = 0; j < t.length; j++) {
-            for (var k = 0; k < t.length; k++) {
+            for (var k = 0; k < t.length; k++)
                 s[j][k] = t[k][j];
-            }
         }
     }
 
@@ -183,70 +172,62 @@ function magicSquare() {
         }
         return t;
     }
-    //do a checksum to make sure it's a valid magic square
-    /*try {
-        var checksumTotal = 0
-        for (var x = 0; x <= 4; x++) {
-            var checksumLine = 0;
-            for (var y = 0; y <= 4; y++) {
-                checksumTotal += template[x][y];
-                checksumLine += template[x][y];
-            }
-            if (checksumLine != 65) {
-                throw "Line sum is not 65";
-            }
-        }
-        if (checksumTotal != 325) {
-            throw "Sum is not 325";
-        }
-    }
-    catch(err) {
-        console.log(err);
-    }*/
 
     return template;
 }
-
 
 //Reduces fluff in bingoList object if there's a method to set defaults
 function preprocessBingoList(bingoList) {
     for (const key of Object.keys(bingoList)) {
         bingoList[key].name = key;
-
-        if (!bingoList[key].hasOwnProperty("Desc")) {
+        
+        if (!bingoList[key].hasOwnProperty("Desc"))
             bingoList[key].Desc = "#!#" + key + "#!#";
-        }
 
-        if (!bingoList[key].hasOwnProperty("Diff")) {
-            bingoList[key].Diff = 13;
-        }
+        if (!bingoList[key].hasOwnProperty("Diff"))
+            bingoList[key].Diff = 0;
+        
+        if (!bingoList[key].hasOwnProperty("Types"))
+            bingoList[key].Types = [];
 
-        if (!bingoList[key].hasOwnProperty("Excludes")) {
+        if (!bingoList[key].hasOwnProperty("Excludes"))
             bingoList[key].Excludes = [];
-        }
 
-        if (!bingoList[key].hasOwnProperty("Synergy")) {
+        if (!bingoList[key].hasOwnProperty("Synergy"))
             bingoList[key].Synergy = [];
-        }
+        
+        if (!bingoList[key].hasOwnProperty("Score"))
+            bingoList[key].Score = 0;
     }
 }
 
 //synerGen: a bingo generator based on SRLv5 and Hollow Knight's generators.
 bingoGenerator = function(bingoList, opts) {
-    //Make sure everything exists that should
+    
+    //Make sure everything exists that should, pull out maxScore and bingoTypes from bingoList
+    var bingoTypes = bingoList.bingoTypes;
+    delete bingoList.bingoTypes;
+    var maxScore = bingoList.maxScore;
+    delete bingoList.maxScore;
     preprocessBingoList(bingoList);
 
     //Separate goals into currently choosable / unchoosable (all goals are choosable at the start)
     var choosable = [];
     var unchoosable = [];
-    for (const key of Object.keys(bingoList)) {
+    for (const key of Object.keys(bingoList))
         choosable.push(key);
+    
+    //Create counts for all types
+    var types = { };
+    for (const key of Object.keys(bingoTypes)) {
+        if (!bingoTypes[key].hasOwnProperty("Max"))
+            bingoTypes.key.Max = 5;
+        types[key] = bingoTypes[key].Max;
     }
-    //console.log("Total goals: " + choosable.length);
-
+    
     //Seed the random
     seed = Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()));
-    //console.log("Seed: " + seed);
+    //console.log(seed);
 
     //create a 1-dimensional array from the 2-dimensional matrix magicSquare[][]
     var square = magicSquare();
@@ -254,38 +235,33 @@ bingoGenerator = function(bingoList, opts) {
 
     var unchosenDiffs = bingoBoard.slice();
     var chosenGoals = [];
-    for (var i = 1; i <= 25; i++) {
+    for (var i = 1; i <= 25; i++)
         chosenGoals.push("");
-    }
+    
     for (var i = 1; i <= 25; i++) {
+        
         //this is necessary on the edge case that all the exclusions and difficulties wind up eliminating every goal
         if (choosable.length == 0) {
-            //console.log("\nchoosable is empty, current unchoosable goals: " + unchoosable.length);
             var newChoosableDiffs = [];
             //add all goals with difficulty one more or less than any of the remaining difficulties back into choosable[]
             for (var j of unchosenDiffs) {
                 var plusOne = j + 1;
                 var minusOne = j - 1;
-                if (!newChoosableDiffs.includes(plusOne) && plusOne <= 25) {
+                if (!newChoosableDiffs.includes(plusOne) && plusOne <= 25)
                     newChoosableDiffs.push(plusOne);
-                }
-                if (!newChoosableDiffs.includes(minusOne) && minusOne >= 1) {
+                if (!newChoosableDiffs.includes(minusOne) && minusOne >= 1)
                     newChoosableDiffs.push(minusOne);
-                }
             }
             for (var k = 0; k < unchoosable.length; k++) {
                 if (newChoosableDiffs.includes(bingoList[unchoosable[k]].Diff)) {
-                    var l = unchoosable.splice(k, 1);
-                    choosable = choosable.concat(l);
+                    choosable = choosable.concat(unchoosable.splice(k, 1));
                     k--;
                 }
             }
             //if choosable[] is still empty, just move everything from unchoosable[] back
             if (choosable.length == 0) {
-                while (unchoosable.length > 0) {
-                    var l = unchoosable.splice(0, 1);
-                    choosable = choosable.concat(l);
-                }
+                while (unchoosable.length > 0)
+                    choosable = choosable.concat(unchoosable.splice(0, 1));
             }
         }
 
@@ -294,19 +270,23 @@ bingoGenerator = function(bingoList, opts) {
         var index = Math.floor(Math.random() * choosable.length);
         var goal = bingoList[choosable[index]];
         var diff = goal.Diff;
-        var diffIndex = bingoBoard.indexOf(diff);
+        var diffIndex = 0;
+        if (goal.Diff == 0) {
+            diffIndex = chosenGoals.indexOf("");
+        } else {
+            diffIndex = bingoBoard.indexOf(diff);
         //deal with the edge case of the difficulty not matching
-        if (chosenGoals[diffIndex] != "") {
-            diffIndex = bingoBoard.indexOf(diff + 1);
             if (chosenGoals[diffIndex] != "") {
-                diffIndex = bingoBoard.indexOf(diff - 1);
+                diffIndex = bingoBoard.indexOf(diff + 1);
                 if (chosenGoals[diffIndex] != "") {
-                    diffIndex = chosenGoals.indexOf("");
+                    diffIndex = bingoBoard.indexOf(diff - 1);
+                    if (chosenGoals[diffIndex] != "") {
+                        diffIndex = chosenGoals.indexOf("");
+                    }
                 }
             }
         }
         chosenGoals[diffIndex] = { "name": goal.Desc };
-        //console.log("Goal " + i + " chosen: " + goal.name + "; difficulty: " + goal.Diff);
 
         //remove the chosen goal and any duplicates of it completely
         for (var j = 0; j < choosable.length; j++) {
@@ -316,43 +296,61 @@ bingoGenerator = function(bingoList, opts) {
         }
         //remove the goal's difficulty from unchosenDiffs[]
         var unchosenDiffIndex = unchosenDiffs.indexOf(goal.Diff);
+        if (goal.Diff == 0) {
+            unchosenDiffIndex = unchosenDiffs.indexOf(bingoBoard[diffIndex]);
+        }
         if (unchosenDiffIndex != -1) {
             unchosenDiffs.splice(unchosenDiffIndex, 1);
         }
-
-        //console.log(goal);
-        //remove all goals of the same difficulty from choosable[], also remove excluded goals if relevant
+        
+        //increment type counters if relevant, also remove other goals of the same type if relevant
+        for (var j = 0; j < goal.Types.length; j++) {
+            types[goal.Types[j]]--;
+            if (types[goal.Types] <= 0) {
+                for (var k = 0; k < choosable.length; k++) {
+                    for (var l = 0; l < bingoList[choosable[k]].Types.length; l++) {
+                        if (bingoList[choosable[k]].Types[l] === goal.Types[j]) {
+                            unchoosable = unchoosable.concat(choosable.splice(k, 1));
+                            k--;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        
+        //decrement score
+        maxScore = maxScore - goal.Score;
+        //remove all goals of the same difficulty from choosable[], also remove excluded goals and goals with too high score if relevant
         for (var j = 0; j < choosable.length; j++) {
-            if (bingoList[choosable[j]].Diff == goal.Diff) {
-                var l = choosable.splice(j, 1);
-                unchoosable = unchoosable.concat(l);
+            if (bingoList[choosable[j]].Diff == goal.Diff && goal.Diff != 0) {
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
                 j--;
                 continue;
             }
+            if (bingoList[choosable[j]].Score > maxScore) {
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
+                j--;
+            }
             for (var k = 0; k < goal.Excludes.length; k++) {
                 if (choosable[j] == goal.Excludes[k]) {
-                    var m = choosable.splice(j, 1);
-                    unchoosable = unchoosable.concat(m);
+                    unchoosable = unchoosable.concat(choosable.splice(j, 1));
                     j--;
                 }
             }
         }
-        //console.log("Current unchoosable goals: " + unchoosable.length);
+
         //duplicate all goals sharing synergies with the chosen goal in choosable[] to make them more likely to be chosen
         for (var j = 0; j < goal.Synergy.length; j++) {
             var temp = [];
             for (var k = 0; k < choosable.length; k++) {
-                if (goal.Synergy[j] == choosable[k]) { //check if the goal itself is a synergy
-                    var m = choosable[k];
-                    temp.push(m);
-                }
+                if (goal.Synergy[j] == choosable[k]) //check if the goal itself is a synergy
+                    temp.push(choosable[k]);
                 for (var l = 0; l < bingoList[choosable[k]].Synergy.length; l++) { //check if it shares a synergy group that isn't an existing goal
                     if (goal.Synergy[j] == bingoList[choosable[k]].Synergy[l]
                         && !choosable.includes(bingoList[choosable[k]].Synergy[l])
-                        && !unchoosable.includes(bingoList[choosable[k]].Synergy[l])) {
-                            var n = choosable[k];
-                            temp.push(n);
-                    }
+                        && !unchoosable.includes(bingoList[choosable[k]].Synergy[l]))
+                            temp.push(choosable[k]);
                 }
             }
             choosable = choosable.concat(temp);
@@ -362,16 +360,9 @@ bingoGenerator = function(bingoList, opts) {
 }
 
 var bingoList = {
-
+    "bingoTypes": { },
+    "maxScore": 0,
     //Goals sorted by area, general goals first
-    /*"Key": {
-        "Desc": "Desc",
-        "Diff": 13,
-        "Excludes": [],
-        "Synergy": []
-    },
-    */
-
     //Pikmin-related goals
     "150R": {
         "Desc": "150 Reds",
