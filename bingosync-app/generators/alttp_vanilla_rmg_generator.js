@@ -76,7 +76,7 @@ bingoList[6] = [
     { name: "Translate all 4 pieces of Hylian text ", types: ["Light World Exploration","Book"] },
     { name: "Get Tier 3 from 4 different Pull Spots", types: ["Overworld Exploration","Secret"] },
     { name: "All 3 medallions", types: ["Book","Overworld Exploration"] },
-    { name: "1+ Bonk Rocks on 3 Overworld Screens", types: ["Light World Exploration"] }
+    { name: "1+ Bonk Rocks on 3 Overworld Screens", types: ["Light World Exploration"] },
     { name: "Enter and Exit 3 Different DLC Trap Rooms", types: ["Secret","Dungeons"] },
     { name: "Flute, no Moon Pearl", types: ["Item Collection","Item Restriction"] }
 ];
@@ -161,7 +161,7 @@ bingoList[14] = [
 ];
 bingoList[15] = [
     { name: "Finish 2 dungeons without their Big Keys", types: ["Dungeon Prize","Item Restriction"] },
-    { name: "Crystal #2", types: ["Swamp Palace","Dungeon Prize"] }
+    { name: "Crystal #2", types: ["Swamp Palace","Dungeon Prize"] },
     { name: "Red Sword, Red Shield, Red Mail", types: ["Item Collection","Ganons Tower"] },
     { name: "Defeat all 6 Freezors in Ice Palace", types: ["Ice Palace","Dungeon Completion","Enemy Hunt"] },
     { name: "3 telepathy tiles in Ice Palace", types: ["Ice Palace","Telepathy Tiles"] },

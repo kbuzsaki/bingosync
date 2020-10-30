@@ -229,6 +229,7 @@ class GameType(Enum):
     hollow_knight_item_rando_tiebreakerless = 225
     a_bugs_life = 226
     bloodstained_rando = 227
+    alttp_vanilla_rmg = 228
 
     def __str__(self):
         return self.short_name
@@ -400,6 +401,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.alttp_randomizer, "Randomizer", "ALttP Random"),
             (GameType.alttp_enemy_randomizer, "Enemy Randomizer", "ALttP Enemizer"),
+            (GameType.alttp_vanilla_rmg, "Vanilla", "ALttP Vanilla"),
         ],
     },
     GameType.banjo_tooie: {
