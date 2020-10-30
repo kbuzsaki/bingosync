@@ -231,6 +231,7 @@ class GameType(Enum):
     bloodstained_rando = 227
     alttp_vanilla_rmg = 228
     ocarina_of_time_item_randomizer_short =  229
+    pokemon_omega_ruby_alpha_sapphire = 230
 
     def __str__(self):
         return self.short_name
@@ -760,6 +761,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
+    **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
     **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
