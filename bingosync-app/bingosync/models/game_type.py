@@ -230,6 +230,7 @@ class GameType(Enum):
     a_bugs_life = 226
     bloodstained_rando = 227
     alttp_vanilla_rmg = 228
+    ocarina_of_time_item_randomizer_short =  229
 
     def __str__(self):
         return self.short_name
@@ -333,6 +334,7 @@ GAME_GROUPS = {
             (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
             (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
             (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
+            (GameType.ocarina_of_time_item_randomizer_short, "Item Randomizer Short", "OoT IR Short"),
             (GameType.ocarina_of_time_beta_quest, "Beta Quest", "OoT BQ"),
         ],
     },
