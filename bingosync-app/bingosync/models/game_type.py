@@ -234,6 +234,7 @@ class GameType(Enum):
     pokemon_omega_ruby_alpha_sapphire = 230
     monster_rancher_2_rng_lite = 231
     fallout_new_vegas = 232
+    minecraft_advancements = 233
 
     def __str__(self):
         return self.short_name
@@ -552,6 +553,7 @@ GAME_GROUPS = {
         "name": "Minecraft",
         "variants": [
             (GameType.minecraft_randomizer, "Randomizer", "MC Random"),
+            (GameType.minecraft_advancements, "Advancements", "MC Advancements"),
         ],
     },
     GameType.monster_rancher_2: {
