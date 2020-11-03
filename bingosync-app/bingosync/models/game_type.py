@@ -232,6 +232,7 @@ class GameType(Enum):
     alttp_vanilla_rmg = 228
     ocarina_of_time_item_randomizer_short =  229
     pokemon_omega_ruby_alpha_sapphire = 230
+    monster_rancher_2_rng_lite = 231
 
     def __str__(self):
         return self.short_name
@@ -552,6 +553,13 @@ GAME_GROUPS = {
             (GameType.minecraft_randomizer, "Randomizer", "MC Random"),
         ],
     },
+    GameType.monster_rancher_2: {
+        "name": "Monster Rancher 2",
+        "variants": [
+            (GameType.monster_rancher_2, "Normal", "MR2"),
+            (GameType.monster_rancher_2_rng_lite, "RNG Lite", "MR2 RNG Lite"),
+        ],
+    },
     GameType.octopath_traveler: {
         "name": "Octopath Traveler",
         "variants": [
@@ -751,7 +759,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
-    **singleton_group(GameType.monster_rancher_2, "Monster Rancher 2", "MR2"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
