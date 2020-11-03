@@ -236,6 +236,7 @@ class GameType(Enum):
     fallout_new_vegas = 232
     minecraft_advancements = 233
     donald_duck_goin_quackers = 234
+    monsters_inc_scare_island = 235
 
     def __str__(self):
         return self.short_name
@@ -765,6 +766,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
