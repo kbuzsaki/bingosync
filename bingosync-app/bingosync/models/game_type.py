@@ -237,6 +237,7 @@ class GameType(Enum):
     minecraft_advancements = 233
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
+    kingdom_hearts_2_final_mix_current = 236
 
     def __str__(self):
         return self.short_name
@@ -526,6 +527,13 @@ GAME_GROUPS = {
             (GameType.jak_and_daxter_easy, "Easy", "J&D: TPL Easy"),
         ],
     },
+    GameType.kingdom_hearts_2_final_mix: {
+        "name": "Kingdom Hearts II Final Mix",
+        "variants": [
+            (GameType.kingdom_hearts_2_final_mix, "Original", "KH2FM"),
+            (GameType.kingdom_hearts_2_final_mix_current, "Current", "KH2FM Current"),
+        ],
+    },
     GameType.lego_batman: {
         "name": "LEGO Batman: The Video Game",
         "variants": [
@@ -747,7 +755,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.kingdom_hearts_final_mix, "Kingdom Hearts Final Mix", "KHFM"),
-    **singleton_group(GameType.kingdom_hearts_2_final_mix, "Kingdom Hearts II Final Mix", "KH2FM"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
     **singleton_group(GameType.kotor, "Star Wars: Knights of the Old Republic", "KotOR"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
