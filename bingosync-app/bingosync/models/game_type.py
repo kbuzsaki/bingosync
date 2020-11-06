@@ -238,6 +238,7 @@ class GameType(Enum):
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
     kingdom_hearts_2_final_mix_current = 236
+    luigis_mansion_all_doors_unlocked = 237
 
     def __str__(self):
         return self.short_name
@@ -547,6 +548,13 @@ GAME_GROUPS = {
             (GameType.lufia_2, "Ancient Cave", "Lufia 2 AC"),
         ],
     },
+    GameType.luigis_mansion: {
+        "name": "Luigi's Mansion",
+        "variants": [
+            (GameType.luigis_mansion, "Normal", "Luigi's Mansion"),
+            (GameType.luigis_mansion_all_doors_unlocked, "All Doors Unlocked", "LM ADU"),
+        ],
+    },
     GameType.links_awakening: {
         "name": "Zelda: Link's Awakening",
         "variants": [
@@ -764,7 +772,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
             "LEGO SW: TCS DS"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
-    **singleton_group(GameType.luigis_mansion, "Luigi's Mansion", "Luigi's Mansion"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
