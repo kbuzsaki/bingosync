@@ -243,6 +243,7 @@ class GameType(Enum):
     medabots_ax_rokusho = 239
     pen_pen_triicelon = 240
     spelunky_2 = 241
+    nights_into_dreams = 242
 
     def __str__(self):
         return self.short_name
@@ -791,6 +792,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
+    **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
