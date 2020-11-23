@@ -240,6 +240,7 @@ class GameType(Enum):
     kingdom_hearts_2_final_mix_current = 236
     luigis_mansion_all_doors_unlocked = 237
     spyro_3_year_of_the_dragon = 238
+    medabots_ax_rokusho = 239
 
     def __str__(self):
         return self.short_name
@@ -779,6 +780,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.mario_maker_2, "Super Mario Maker 2", "Mario Maker 2"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
+    **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
