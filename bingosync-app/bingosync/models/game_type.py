@@ -241,6 +241,7 @@ class GameType(Enum):
     luigis_mansion_all_doors_unlocked = 237
     spyro_3_year_of_the_dragon = 238
     medabots_ax_rokusho = 239
+    pen_pen_triicelon = 240
 
     def __str__(self):
         return self.short_name
@@ -790,6 +791,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
+    **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
