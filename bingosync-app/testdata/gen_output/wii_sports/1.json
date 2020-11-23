@@ -1,6 +1,6 @@
 [
     {
-        "name": "Get 3 Spares in Bowling"
+        "name": "Get 2 Home Runs in Baseball"
     },
     {
         "name": "Get a Triple in Baseball"
@@ -9,10 +9,10 @@
         "name": "Win a Best-of-5 Match in Tennis"
     },
     {
-        "name": "Get 2 Home Runs in Baseball"
+        "name": "Get 165 or more points in a Standard Game of Bowling"
     },
     {
-        "name": "Get at least 15 points in Batting Practice(Baseball Training)"
+        "name": "Get at least 15 points in Working the Bag(Boxing Training)"
     },
     {
         "name": "Get at least 12 points in Returning Balls(Tennis Training)"
@@ -22,9 +22,6 @@
     },
     {
         "name": "Get 140 or more points without a gutter ball"
-    },
-    {
-        "name": "Get a Silver Medal in any Training Game"
     },
     {
         "name": "Complete a Wii Fitness training session"
@@ -42,7 +39,7 @@
         "name": "Finish Beginner in Golf"
     },
     {
-        "name": "Get at least 25 points in Swing Control(Baseball Training)"
+        "name": "Get at least 30 points in Throwing Punches(Boxing Training)"
     },
     {
         "name": "Win a Match in Boxing while only using one hand(doesn\u2019t matter which hand)"
@@ -60,10 +57,13 @@
         "name": "Get a Gold Medal in any Training Game"
     },
     {
+        "name": "Get at least 25 points in Swing Control(Baseball Training)"
+    },
+    {
         "name": "Win a Match in Boxing"
     },
     {
-        "name": "Give Up on any 3-hole Course in Golf"
+        "name": "Have the CPU commit an error in Baseball"
     },
     {
         "name": "Finish Intermediate in Golf"
@@ -72,6 +72,6 @@
         "name": "Get 3 Strikes in Bowling(Doesn\u2019t have to be a Turkey)"
     },
     {
-        "name": "Get a Ground Rule Double in Baseball"
+        "name": "Get a Silver Medal in any Training Game"
     }
 ]
