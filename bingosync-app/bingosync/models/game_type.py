@@ -242,6 +242,7 @@ class GameType(Enum):
     spyro_3_year_of_the_dragon = 238
     medabots_ax_rokusho = 239
     pen_pen_triicelon = 240
+    spelunky_2 = 241
 
     def __str__(self):
         return self.short_name
@@ -811,6 +812,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
+    **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
