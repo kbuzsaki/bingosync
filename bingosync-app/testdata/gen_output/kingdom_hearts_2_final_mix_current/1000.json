@@ -3,13 +3,13 @@
         "name": "Clash with Xemnas"
     },
     {
-        "name": "Defeat the Elemental Lords"
+        "name": "Defeat the Experiment"
     },
     {
-        "name": "Have 30 Potions In Your Inventory"
+        "name": "Have 4-in-a-row Ansem Reports"
     },
     {
-        "name": "Have 7 Unique Donald Shields"
+        "name": "Have 7 Unique Goofy Shields"
     },
     {
         "name": "Use any Donald or Goofy Limit"
@@ -21,43 +21,46 @@
         "name": "Get 250 points in a Skateboard minigame"
     },
     {
-        "name": "Reach Moogle Level 2"
+        "name": "Reach Valor Form Level 3"
     },
     {
         "name": "Complete Duality/Two Sides Puzzle"
     },
     {
-        "name": "Defeat Future Pete in Timeless River"
+        "name": "Defeat Groundshaker"
     },
     {
         "name": "Win the Struggle against Setzer"
     },
     {
-        "name": "Use a Summon Limit"
+        "name": "Use an Auto Form"
     },
     {
-        "name": "Have A Draw Equipped"
+        "name": "Have some Finny Fun"
     },
     {
-        "name": "Reach Level 20"
+        "name": "Reach Level 45"
     },
     {
-        "name": "Use One Of Any Mega Item"
+        "name": "Reach Level 33"
+    },
+    {
+        "name": "Use a Tent"
     },
     {
         "name": "Have 10000 Munny"
     },
     {
-        "name": "Kill or Be Killed by a Data Org Member"
+        "name": "Lose a Struggle"
     },
     {
-        "name": "Defeat Hades"
+        "name": "Defeat Jafar"
     },
     {
-        "name": "Speak with the Fairies in Yen Sid's Tower"
+        "name": "Turn the Valves in the Cavern of Remembrance"
     },
     {
-        "name": "Defeat the Experiment"
+        "name": "Defeat the MCP"
     },
     {
         "name": "Get Curaga or Reflega"
@@ -69,9 +72,6 @@
         "name": "Defeat Demyx in Hollow Bastion"
     },
     {
-        "name": "Enter the Throne Room"
-    },
-    {
-        "name": "Get Level 3 Dodge Roll"
+        "name": "Equip an Ultimate Weapon to a Main Party Member"
     }
 ]
