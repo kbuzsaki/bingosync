@@ -148,7 +148,7 @@ class GameType(Enum):
     wii_sports_resort_all_stamps_lite = 144
     castlevania_sotn_randomizer = 145
     binding_of_isaac_racing = 146
-    terraria = 147
+    terraria_1_3 = 147
     lego_batman = 148
     crash_team_racing = 149
     simpsons_hit_and_run = 150
@@ -156,7 +156,7 @@ class GameType(Enum):
     super_mario_64_randomizer_lockout = 152
     dark_devotion = 153
     dark_souls_2 = 154
-    terraria_pre_hardmode = 155
+    terraria_1_3_pre_hardmode = 155
     wii_sports_club_all_sports_expert = 156
     mario_maker_2 = 157
     minecraft_randomizer = 158
@@ -682,11 +682,11 @@ GAME_GROUPS = {
             (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
         ],
     },
-    GameType.terraria: {
+    GameType.terraria_1_3: {
         "name": "Terraria",
         "variants": [
-            (GameType.terraria, "Normal", "Terraria"),
-            (GameType.terraria_pre_hardmode, "Pre-Hardmode", "Terraria PreHM"),
+            (GameType.terraria_1_3, "1.3 Hardmode", "Terraria 1.3 HM"),
+            (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
         ],
     },
     GameType.the_witness: {
