@@ -15,11 +15,11 @@ bingoList[2] = [
 
 ];
 bingoList[3] = [
-  { name: "Talk to a Lefeinish without the SLAB", types: ["npc"] },
+  { name: "Talk to a Lefeinish without translating the SLAB", types: ["npc"] },
   { name: "Talk to 5 Cardia Dragons", types: ["talk"] },
   { name: "Talk to 5 Bats in Marsh", types: ["talk"] },
   { name: "Do a Full Lap of Ice Floor 2", types: ["walk"] },
-  { name: "Buy Everything at the Caravan", types: ["shop"] },
+  { name: "Buy One of Everything at the Caravan", types: ["shop"] },
 
 ];
 bingoList[4] = [
@@ -27,7 +27,6 @@ bingoList[4] = [
   { name: "Talk to 5 Mermaids", types: ["talk"] },
   { name: "Kill 4 Different Zombies", types: ["hunt"] },
   { name: "Save in the Lake North of Waterfall", types: ["walk"] },
-
 ];
 bingoList[5] = [
   { name: "Melee the Pirates", types: ["garland"] },
@@ -64,6 +63,7 @@ bingoList[9] = [
   { name: "Throw Masmune into Space (3F Window)", types: ["masa"] },
   { name: "Gain 40,000G in One Shop", types: ["sale"] },
   { name: "Kill 3 Different Dinosaurs", types: ["hunt"] },
+  { name: "Do Not Talk to Hint NPCs", types: ["hint"] },
 
 ];
 bingoList[10] = [
@@ -88,13 +88,14 @@ bingoList[12] = [
 
 ];
 bingoList[13] = [
-  { name: "See HEAT or CREMATE", types: ["skill"] },
+  { name: "See a Fire-elemental Skill or Spell", types: ["skill"] },
   { name: "Defeat Tiamat 1", types: ["tiamat"] },
+  { name: "Talk to 5 Different Hint NPCs", types: ["hint"] },
 
 ];
 bingoList[14] = [
   { name: "Kill 2 Different Worms", types: ["hunt"] },
-  { name: "See FLASH or TRANCE", types: ["skill"] },
+  { name: "Use Only Blessed Equipment", types: ["blurse"] },
 
 ];
 bingoList[15] = [
@@ -105,31 +106,31 @@ bingoList[15] = [
 ];
 bingoList[16] = [
   { name: "Take 2 Black Mages", types: ["class"] },
-  { name: "See SCORCH or BLAZE", types: ["skill"] },
   { name: "Canoe from Elfland to Ice Cave", types: ["walk"] },
 
 ];
 bingoList[17] = [
-  { name: "Quake the Dead", types: ["lich"] },
-  { name: "See GLANCE or GLARE", types: ["skill"] },
+  { name: "Defeat Lich with QAKE", types: ["lich"] },
 
 ];
 bingoList[18] = [
   { name: "Take 0 or 3 Fighters", types: ["class"] },
-  { name: "Confuse Kary", types: ["kary"] },
+  { name: "Successfully Confuse Kary", types: ["kary"] },
 
 ];
 bingoList[19] = [
   { name: "Hit Level 40 on at Least One Character", types: ["level"] },
+  { name: "Use Only Cursed Weapons", types: ["blurse"] },
 
 ];
 bingoList[20] = [
   { name: "Kill 3 Different Dragons", types: ["hunt"] },
+  { name: "Use Only Cursed Armor", types: ["blurse"] },
 
 ];
 bingoList[21] = [
   { name: "Take 1 None", types: ["class"] },
-  { name: "Braken the Kraken", types: ["kraken"] },
+  { name: "Defeat Kraken with BRAK", types: ["kraken"] },
 
 ];
 bingoList[22] = [
@@ -139,17 +140,18 @@ bingoList[22] = [
 ];
 bingoList[23] = [
   { name: "Take Two White Mages", types: ["class"] },
-  { name: "Bane the Dragon", types: ["tiamat"]}
+  { name: "Defeat Tiamat with BANE", types: ["tiamat"]}
 ];
 bingoList[24] = [
-  { name: "See TOXIC or POISON", types: ["skill"] },
-  { name: "Use No Swords", types: ["swords"] },
+  { name: "See a Status-elemental Skill or Spell", types: ["skill"] },
+  { name: "Equip No Swords", types: ["swords"] },
   { name: "Hit Level 50 on at Least One Character", types: ["level"] },
 
 ];
 bingoList[25] = [
   { name: "Take Two Thieves", types: ["class"] },
-  { name: "See BRAK or BANE", types: ["skill"] },
-  { name: "Successfully use LAMP", types: ["spell"] },
+  { name: "See a Poison-elemental Skill or Spell", types: ["skill"] },
+  { name: "Successfully Cure a Status Ailment in Battle with White Magic", types: ["spell"] },
+  { name: "Cast a Spell of Every Element in Battle", types: ["spell"] },
 
 ];

@@ -1,6 +1,6 @@
 [
     {
-        "name": "See TOXIC or POISON"
+        "name": "See a Status-elemental Skill or Spell"
     },
     {
         "name": "Take 0 or 3 Fighters"
@@ -21,19 +21,19 @@
         "name": "Kill 3 Different Wolves"
     },
     {
-        "name": "Braken the Kraken"
+        "name": "Defeat Kraken with BRAK"
     },
     {
         "name": "Hit Level 40 on at Least One Character"
     },
     {
-        "name": "See HEAT or CREMATE"
+        "name": "See a Fire-elemental Skill or Spell"
     },
     {
         "name": "Canoe from Elfland to Ice Cave"
     },
     {
-        "name": "See FLASH or TRANCE"
+        "name": "Use Only Blessed Equipment"
     },
     {
         "name": "Do Not Use TMPR"
@@ -45,13 +45,13 @@
         "name": "Use No CABINs or HOUSEs"
     },
     {
-        "name": "Buy Everything at the Caravan"
+        "name": "Buy One of Everything at the Caravan"
     },
     {
-        "name": "See BRAK or BANE"
+        "name": "See a Poison-elemental Skill or Spell"
     },
     {
-        "name": "Quake the Dead"
+        "name": "Defeat Lich with QAKE"
     },
     {
         "name": "Defeat Every Trap Tile in Ice Cave"
@@ -72,6 +72,6 @@
         "name": "Take Two White Mages"
     },
     {
-        "name": "Kill 3 Different Dragons"
+        "name": "Use Only Cursed Armor"
     }
 ]
