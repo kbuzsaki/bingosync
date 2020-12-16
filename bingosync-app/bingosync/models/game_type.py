@@ -247,6 +247,9 @@ class GameType(Enum):
     skyrim = 243
     jak_and_daxter_new_game_plus = 244
     pokemon_colosseum = 245
+    zelda_botw_french = 246
+    zelda_botw_french_short = 247
+    zelda_botw_french_long = 248
 
     def __str__(self):
         return self.short_name
@@ -733,6 +736,9 @@ GAME_GROUPS = {
             (GameType.zelda_botw, "Normal", "BotW Normal"),
             (GameType.zelda_botw_short, "Short", "BotW Short"),
             (GameType.zelda_botw_long, "Long", "BotW Long"),
+            (GameType.zelda_botw_french, "Normal - FR", "BotW FR Normal"),
+            (GameType.zelda_botw_french_short, "Short - FR", "BotW FR Short"),
+            (GameType.zelda_botw_french_long, "Long - FR", "BotW FR Long"),
             (GameType.zelda_botw_jp, "Normal - JP", "BotW JP Normal"),
             (GameType.zelda_botw_jp_short, "Short - JP", "BotW JP Short"),
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
