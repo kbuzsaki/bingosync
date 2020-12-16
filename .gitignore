@@ -65,3 +65,6 @@ bingosync-app/bingosync/secret_settings.py
 backups/
 misc/
 bingosync-app/generators/working
+dumps/
+lbingosync.scpt
+bingosync-app/tools
