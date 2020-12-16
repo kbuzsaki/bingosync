@@ -245,6 +245,7 @@ class GameType(Enum):
     spelunky_2 = 241
     nights_into_dreams = 242
     skyrim = 243
+    jak_and_daxter_new_game_plus = 244
 
     def __str__(self):
         return self.short_name
@@ -533,6 +534,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.jak_and_daxter, "Normal", "J&D: TPL"),
             (GameType.jak_and_daxter_easy, "Easy", "J&D: TPL Easy"),
+            (GameType.jak_and_daxter_new_game_plus, "NG+", "J&D: TPL NG+"),
         ],
     },
     GameType.kingdom_hearts_2_final_mix: {
