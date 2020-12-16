@@ -244,6 +244,7 @@ class GameType(Enum):
     pen_pen_triicelon = 240
     spelunky_2 = 241
     nights_into_dreams = 242
+    skyrim = 243
 
     def __str__(self):
         return self.short_name
@@ -811,6 +812,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
+    **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
