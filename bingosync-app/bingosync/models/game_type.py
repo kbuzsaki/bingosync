@@ -246,6 +246,7 @@ class GameType(Enum):
     nights_into_dreams = 242
     skyrim = 243
     jak_and_daxter_new_game_plus = 244
+    pokemon_colosseum = 245
 
     def __str__(self):
         return self.short_name
@@ -802,6 +803,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
+    **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
