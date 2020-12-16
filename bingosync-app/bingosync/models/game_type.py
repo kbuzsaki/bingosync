@@ -335,6 +335,7 @@ def singleton_group(game_type, name, short_name):
 # this will probably break if all of the variants for a game group are hidden.
 HIDDEN_VARIANTS = {
     GameType.super_mario_sunshine_1v1_beta,
+    GameType.super_mario_sunshine_lockout,
     GameType.super_mario_sunshine_tournament,
 }
 
