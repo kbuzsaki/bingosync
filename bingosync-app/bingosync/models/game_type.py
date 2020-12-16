@@ -250,6 +250,7 @@ class GameType(Enum):
     zelda_botw_french = 246
     zelda_botw_french_short = 247
     zelda_botw_french_long = 248
+    terraria = 249
 
     def __str__(self):
         return self.short_name
@@ -682,9 +683,10 @@ GAME_GROUPS = {
             (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
         ],
     },
-    GameType.terraria_1_3: {
+    GameType.terraria: {
         "name": "Terraria",
         "variants": [
+            (GameType.terraria, "Pre-Hardmode", "Terraria PreHM"),
             (GameType.terraria_1_3, "1.3 Hardmode", "Terraria 1.3 HM"),
             (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
         ],
