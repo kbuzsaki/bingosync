@@ -45,7 +45,7 @@ bingoList[6] = [
 ];
 bingoList[7] = [
  {name: "Find Kato Disc Chips On Expedition", types: ["items","expedition"] },
- {name: "Unlock Dragon", types: ["unlock","long"] },
+ {name: "Combine With Dragon Tusk", types: ["unlock","long"] },
  {name: "Truancy", types: ["quick","ranch"] },
  {name: "Wins/Losses Mirrored On Grid", types: ["rng","battles"] },
  {name: "999 Damage", types: ["fight"] },
@@ -72,7 +72,7 @@ bingoList[10] = [
  {name: "8 Monsters Spell Trainer Name In Freezer", types: ["freezer"] },
 ];
 bingoList[11] = [
- {name: "Unlock Ghost", types: ["unlock","death","long"] },
+ {name: "Combine With Ghost Stick", types: ["unlock","death","long"] },
  {name: "Refuse 1 Ranch Upgrade", types: ["ranch"] },
  {name: "0 to 99 Guts", types: ["fight"] },
  {name: "Defeat 3 Different Mocchis", types: ["battles"] },
@@ -93,7 +93,7 @@ bingoList[13] = [
  {name: "Defeat 3 Different Suezos", types: ["battles"] },
 ];
 bingoList[14] = [
- {name: "Unlock Joker", types: ["unlock","expedition"] },
+ {name: "Combine With Joker Mask", types: ["unlock","expedition"] },
  {name: "Failure 3 Times In A Row", types: ["ranch","quick"] },
  {name: "1 Damage", types: ["fight"] },
  {name: "3 \"I Regret…\"s At The Shrine", types: ["rng"] },
@@ -102,7 +102,7 @@ bingoList[14] = [
 bingoList[15] = [
  {name: "Beat Your Monster In Mudball Fight", types: ["play","ranch"] },
  {name: "50000G", types: ["money"] },
- {name: "Unlock Centaur", types: ["unlock"] },
+ {name: "Combine With Centaur Spear", types: ["unlock"] },
  {name: "Crit 1 Damage", types: ["fightrng"] },
  {name: "0 Funeral Attendees", types: ["quick","death"] },
 ];
@@ -143,7 +143,7 @@ bingoList[20] = [
 ];
 bingoList[21] = [
  {name: "Power And Win", types: ["fightrng","specials"] },
- {name: "Unlock Durahan", types: ["unlock","expedition"] },
+ {name: "Combine With Double Edged", types: ["unlock","expedition"] },
  {name: "Never See Kavaro", types: ["expedition"] },
  {name: "Dig Up Hotsprings", types: ["monspec","ranch"] },
  {name: "Search Elephant Statue", types: ["expedition"] },
@@ -172,7 +172,8 @@ bingoList[24] = [
 bingoList[25] = [
  {name: "800+ Power", types: ["stats"] },
  {name: "Feed Monster 12 Milk", types: ["food"] },
- {name: "Unlock Phoenix", types: ["unlock","expedition"] },
+ {name: "Combine With Phoenix Feather", types: ["unlock","expedition"] },
  {name: "Kitty’s Bang Doesn’t KO", types: ["fight"] },
  {name: "Naga Or Monol On Ranch", types: ["ranch","monspec"] },
 ];
+

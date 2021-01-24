@@ -252,6 +252,7 @@ class GameType(Enum):
     zelda_botw_french_long = 248
     terraria = 249
     phasmophobia = 250
+    monster_rancher_2_viewers = 251
 
     def __str__(self):
         return self.short_name
@@ -594,6 +595,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.monster_rancher_2, "Normal", "MR2"),
             (GameType.monster_rancher_2_rng_lite, "RNG Lite", "MR2 RNG Lite"),
+            (GameType.monster_rancher_2_viewers, "Viewers", "MR2 Viewers"),
         ],
     },
     GameType.octopath_traveler: {
