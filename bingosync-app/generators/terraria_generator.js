@@ -17,7 +17,7 @@ bingoList[2] = [
   { name: "Hammer an Altar until you die", types: [] },
   { name: "Equip 5 different Accessories", types: ["ME.15"] },
   { name: "Obtain a Legendary Wooden Sword", types: [] },
-  { name: "Have 2 \"Unpleasant\" Tools/Weapons", types: [] },
+  { name: "Kill a Town NPC, Enemy, and yourself with explosive bunnies", types: [] },
   { name: "Have an Eater of Souls or Crimera spawn from hitting a tree", types: [] },
   { name: "Never use an axe", types: ["ME.1"] },
 ];
@@ -56,7 +56,7 @@ bingoList[6] = [
   { name: "Collect all 5 unique Pre-HM Wooden Armor Sets", types: ["ME.14"] },
   { name: "Wear a full set of Pumpkin armor", types: [] },
   { name: "Wear a full set of Fossil armor", types: [] },
-  { name: "Get 2 Summon Staves", types: [] },
+  { name: "Get 2 unique Summon Staves", types: [] },
   { name: "Obtain 8 unique hooks", types: [] },
   { name: "Defeat the Goblin Army", types: [] },
   { name: "Sell a Flaming Mace", types: [] },
@@ -77,7 +77,7 @@ bingoList[8] = [
   { name: "Catch and contain 4 unique critters", types: [] },
   { name: "Make Lemonade or Apple Juice", types: [] },
   { name: "Wear one of the Vanity Contest winner sets", types: [] },
-  { name: "Obtain 3 unique types of grass seeds", types: [] },
+  { name: "Obtain 4 unique types of grass seeds", types: [] },
   { name: "Obtain 3 different Watches", types: [] },
   { name: "Survive a Blood Moon (Stay alive)", types: [] },
 ];
@@ -159,7 +159,7 @@ bingoList[16] = [
   { name: "Kill a monster with the Coffin Minecart", types: [] },
   { name: "Craft a Gravedigger's shovel and destroy 500 blocks with it", types: [] },
   { name: "Craft a Band of Starpower or Panic Necklace", types: [] },
-  { name: "Kill a Maggot Zombie, Hoppin' Jack, and Raven", types: [] },
+  { name: "Kill a Maggot Zombie, Ghost, and Raven", types: [] },
 ];
 bingoList[17] = [
   { name: "Get Gnomed (die)", types: [] },
@@ -213,11 +213,11 @@ bingoList[21] = [
 ];
 bingoList[22] = [
   { name: "Defeat Wall of Flesh", types: ["ME.8.1","ME.8.2"] },
-  { name: "Mine an entire Floating Island", types: [] },
+  { name: "Destroy an entire Floating Island (including walls)", types: [] },
   { name: "Drain both Oceans completely", types: [] },
   { name: "Destroy all the leaf blocks from a living tree", types: [] },
   { name: "Fish up a Reaver Shark, Sawtooth Shark, or a Rock Fish", types: [] },
-  { name: "Completely destroy a bee hive without dying in the process", types: [] },
+  { name: "Completely destroy a bee hive (including walls) without dying in the process", types: [] },
   { name: "Fall from the surface all the way to the underworld without breaking your fall", types: [] },
   { name: "Cap spawns using beehives", types: [] },
 ];
