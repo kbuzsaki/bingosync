@@ -254,6 +254,7 @@ class GameType(Enum):
     phasmophobia = 250
     monster_rancher_2_viewers = 251
     rayman_legends = 252
+    smash_ultimate_world_of_light = 253
 
     def __str__(self):
         return self.short_name
@@ -833,6 +834,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
+    **singleton_group(GameType.smash_ultimate_world_of_light, "Smash Ultimate: World of Light", "Smush: WoL"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
