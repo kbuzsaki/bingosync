@@ -253,6 +253,7 @@ class GameType(Enum):
     terraria = 249
     phasmophobia = 250
     monster_rancher_2_viewers = 251
+    rayman_legends = 252
 
     def __str__(self):
         return self.short_name
@@ -824,6 +825,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
+    **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
