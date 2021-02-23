@@ -1,0 +1,77 @@
+[
+    {
+        "name": "BREAKER stays off"
+    },
+    {
+        "name": "GHOST NAME said 3 times when first entering map"
+    },
+    {
+        "name": "COMPLETE Asylum map"
+    },
+    {
+        "name": "ENTERING VAN only 2 times unless leaving map"
+    },
+    {
+        "name": "FLASHLIGHTS are forbidden"
+    },
+    {
+        "name": "GHOST TRIGGERS Sound Sensor"
+    },
+    {
+        "name": "GHOST TRIGGERS Motion Sensor"
+    },
+    {
+        "name": "TAKE PHOTO of Salt (stepped in)"
+    },
+    {
+        "name": "EVIDENCE items can't include EMF Reader or Thermometer"
+    },
+    {
+        "name": "SANITY must finish at 100"
+    },
+    {
+        "name": "LEAVE WITH 2 of any carryable item from house"
+    },
+    {
+        "name": "SANITY dropped by spending 2 minutes in the dark before starting map"
+    },
+    {
+        "name": "TAKE PHOTO of a Ghost Event (Interaction)"
+    },
+    {
+        "name": "GHOST TRIGGERS sink (Dirty Water) or breaker"
+    },
+    {
+        "name": "LOCATE GHOST with Sensors (Motion and Sound) only"
+    },
+    {
+        "name": "TAKE PHOTO of a telephone"
+    },
+    {
+        "name": "GHOST NAME said 3 times in bathroom before leaving map"
+    },
+    {
+        "name": "GHOST TRIGGERS Salt"
+    },
+    {
+        "name": "HUNTED 3 or more times"
+    },
+    {
+        "name": "GHOST ROOM triggers Motion Sensor"
+    },
+    {
+        "name": "TAKE PHOTO of the breaker"
+    },
+    {
+        "name": "SANITY Pills must all be thrown into the ghost room"
+    },
+    {
+        "name": "EVIDENCE items unlocked alphabetically by each labelled photo taken"
+    },
+    {
+        "name": "TAKE PHOTO of the EMF Reader with a reading of 2 or greater"
+    },
+    {
+        "name": "GHOST ROOM triggers Sound Sensor"
+    }
+]

@@ -251,6 +251,11 @@ class GameType(Enum):
     zelda_botw_french_short = 247
     zelda_botw_french_long = 248
     terraria = 249
+    phasmophobia = 250
+    monster_rancher_2_viewers = 251
+    rayman_legends = 252
+    smash_ultimate_world_of_light = 253
+    tony_hawks_pro_skater_1_2 = 254
 
     def __str__(self):
         return self.short_name
@@ -593,6 +598,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.monster_rancher_2, "Normal", "MR2"),
             (GameType.monster_rancher_2_rng_lite, "RNG Lite", "MR2 RNG Lite"),
+            (GameType.monster_rancher_2_viewers, "Viewers", "MR2 Viewers"),
         ],
     },
     GameType.octopath_traveler: {
@@ -808,6 +814,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
+    **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
@@ -820,6 +827,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
+    **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
@@ -827,6 +835,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
+    **singleton_group(GameType.smash_ultimate_world_of_light, "Smash Ultimate: World of Light", "Smush: WoL"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
@@ -838,6 +847,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
+    **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
