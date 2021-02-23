@@ -163,9 +163,15 @@ def new_card(request):
     return HttpResponse("Recieved data: " + str(data))
 
 def history(request):
+    game_id = request.GET.get('game')
     hide_solo = request.GET.get('hide_solo')
 
-    if hide_solo:
+    if game_id is not None:
+        if hide_solo:
+            base_rooms = Room.get_by_game_type_with_multiple_players(game_id)
+        else:
+            base_rooms = Room.get_by_game_type(game_id)
+    elif hide_solo:
         base_rooms = Room.get_with_multiple_players()
     else:
         base_rooms = Room.objects.all()
@@ -186,6 +192,7 @@ def history(request):
     params = {
         'hide_solo': hide_solo,
         'rooms': rooms,
+        'games': GameType.game_choices()
     }
     return render(request, "bingosync/history.html", params)
 
