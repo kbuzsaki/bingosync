@@ -258,6 +258,8 @@ class GameType(Enum):
     tony_hawks_pro_skater_1_2 = 254
     riven = 255
     world_of_warcraft_new_character = 256
+    metroid_prime_randomizer_balanced = 257
+    metroid_prime_randomizer_chaos = 258
 
     def __str__(self):
         return self.short_name
@@ -580,6 +582,13 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.metroid_prime_randomizer_balanced: {
+        "name": "Metroid Prime",
+        "variants": [
+            (GameType.metroid_prime_randomizer_balanced, "Randomizer Balanced", "MPR Balanced"),
+            (GameType.metroid_prime_randomizer_chaos, "Randomizer Chaos", "MPR Chaos"),
         ],
     },
     GameType.mgs_portable_ops_plus_training: {
