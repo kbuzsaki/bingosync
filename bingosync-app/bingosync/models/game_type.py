@@ -257,6 +257,7 @@ class GameType(Enum):
     smash_ultimate_world_of_light = 253
     tony_hawks_pro_skater_1_2 = 254
     riven = 255
+    world_of_warcraft_new_character = 256
 
     def __str__(self):
         return self.short_name
@@ -719,6 +720,13 @@ GAME_GROUPS = {
             (GameType.wii_sports_club_all_sports_expert, "All Sports Expert", "WSC All Sports Expert"),
         ],
     },
+    GameType.world_of_warcraft: {
+        "name": "World of Warcraft",
+        "variants": [
+            (GameType.world_of_warcraft, "Normal", "WoW"),
+            (GameType.world_of_warcraft_new_character, "New Character", "WoW New Char"),
+        ],
+    },
     GameType.yokus_island_express: {
         "name": "Yoku's Island Express",
         "variants": [
@@ -856,7 +864,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.undertale, "Undertale", "Undertale"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
-    **singleton_group(GameType.world_of_warcraft, "World of Warcraft", "WoW"),
     **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
