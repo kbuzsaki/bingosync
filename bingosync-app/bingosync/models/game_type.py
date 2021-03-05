@@ -256,6 +256,7 @@ class GameType(Enum):
     rayman_legends = 252
     smash_ultimate_world_of_light = 253
     tony_hawks_pro_skater_1_2 = 254
+    riven = 255
 
     def __str__(self):
         return self.short_name
@@ -830,6 +831,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
+    **singleton_group(GameType.riven, "Riven: The Sequel to Myst", "Riven"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
