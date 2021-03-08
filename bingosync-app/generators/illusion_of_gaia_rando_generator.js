@@ -108,11 +108,6 @@ var bingoList = [
       "Difficulty": 1
     },
     {
-      "Name": "Discard a status upgrade gem",
-      "Type": "Generic",
-      "Difficulty": 1
-    },
-    {
       "Name": "Talk to all your friends in Seaside Palace",
       "Type": "Generic",
       "Difficulty": 1
@@ -160,6 +155,11 @@ var bingoList = [
     {
       "Name": "Get a Hint",
       "Type": "Hints",
+      "Difficulty": 1
+    },
+    {
+      "Name": "Check on a slave in Freejia",
+      "Type": "Generic",
       "Difficulty": 1
     },
     {
@@ -259,6 +259,21 @@ var bingoList = [
     },
     {
       "Name": "Complete the snake game. Twice.",
+      "Type": "Generic",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Get all the help you can from Lilly",
+      "Type": "Lilly",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Die to a boss who is under 20 hp",
+      "Type": "Generic",
+      "Difficulty": 2
+    },
+    {
+      "Name": "Get morphed back to Will, outside of a DS",
       "Type": "Generic",
       "Difficulty": 2
     },
@@ -363,6 +378,46 @@ var bingoList = [
       "Difficulty": 3
     },
     {
+      "Name": "Kill 5 Flies",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Zombies",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Tuts",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Invisible Enemies",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Whirligigs",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Flasher",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 5 Golems",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
+      "Name": "Kill 2 King bats",
+      "Type": "Hunting",
+      "Difficulty": 3
+    },
+    {
       "Name": "Survive Killer 6",
       "Type": "Generic",
       "Difficulty": 4
@@ -379,6 +434,11 @@ var bingoList = [
     },
     {
       "Name": "Defeat Viper",
+      "Type": "Viper",
+      "Difficulty": 4
+    },
+    {
+      "Name": "Return to Viper's room to get to the palace",
       "Type": "Viper",
       "Difficulty": 4
     },
@@ -438,7 +498,12 @@ var bingoList = [
       "Difficulty": 4
     },
     {
-      "Name": "Ladies' Man",
+      "Name": "Speak to 2 queens",
+      "Type": "Generic",
+      "Difficulty": 5
+    },
+    {
+      "Name": "Defeat a boss with a special ability",
       "Type": "Generic",
       "Difficulty": 5
     },
@@ -449,6 +514,11 @@ var bingoList = [
     },
     {
       "Name": "Defeat the vampires as Will",
+      "Type": "Vampires",
+      "Difficulty": 5
+    },
+    {
+      "Name": "Finish the vampires with a timer <30",
       "Type": "Vampires",
       "Difficulty": 5
     },
@@ -470,6 +540,11 @@ var bingoList = [
     {
       "Name": "Defeat Mummy Queen as Freedan",
       "Type": "Mummy",
+      "Difficulty": 5
+    },
+    {
+      "Name": "Do the boss rush",
+      "Type": "Generic",
       "Difficulty": 5
     },
     {
@@ -541,6 +616,16 @@ var bingoList = [
       "Name": "Get 50 Red Jewels",
       "Type": "Jewels",
       "Difficulty": 6
+    },
+    {
+      "Name": "Find 2 empty checks",
+      "Type": "Generic",
+      "Difficulty": 6
+    },
+    {
+      "Name": "Clear the mansion with a visual glitch active",
+      "Type": "Generic",
+      "Difficulty": 6
     }
 ];
 
@@ -549,12 +634,14 @@ var typeLimits = {
     "Statue": 1,
     "Jewels": 1,
     "Hints": 1,
+    "Lilly": 1,
     "Castoth": 1,
     "Viper": 1,
     "Vampires": 1,
     "Sandfanger": 1,
     "Mummy":  1,
     "Journal": 1,
+    "Hunting": 1,
     "Abilities": 2
 };
 
