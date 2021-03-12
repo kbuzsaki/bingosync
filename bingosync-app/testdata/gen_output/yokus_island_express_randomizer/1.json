@@ -1,30 +1,30 @@
 [
     {
-        "name": "Complete Umbaba's Puzzle"
-    },
-    {
-        "name": "Forgive Kickback"
-    },
-    {
-        "name": "Save all 4 Traitor Spirits"
-    },
-    {
         "name": "Collect the entire Fleek Fruit Heart"
     },
     {
-        "name": "Jump across the Lava Pool"
-    },
-    {
-        "name": "Have 450 Fruits on hand once"
-    },
-    {
-        "name": "Open 10 Chests"
-    },
-    {
-        "name": "Collect the Crimson Sprinkles (Red)"
-    },
-    {
         "name": "Find Piles of Gold in 2 Locations"
+    },
+    {
+        "name": "Roll 5 Boulders or Snowballs"
+    },
+    {
+        "name": "Collect the Sweet Sprinkles (Violet)"
+    },
+    {
+        "name": "Hit the Owl in the Ore Station"
+    },
+    {
+        "name": "Go through 5 Hidden Tunnels"
+    },
+    {
+        "name": "Obtain the Sootling on a Leash"
+    },
+    {
+        "name": "Collect the Creepy Sprinkles (Green)"
+    },
+    {
+        "name": "Fill a Bucket with Water"
     },
     {
         "name": "Activate 20 Scarabs"
@@ -36,7 +36,7 @@
         "name": "Trade with Splank"
     },
     {
-        "name": "Destroy Fosfor's Secret Fruit Supply"
+        "name": "Deliver Treek's Package"
     },
     {
         "name": "Activate Spina and Screetch Totems"
@@ -54,24 +54,24 @@
         "name": "Obtain the Skvader"
     },
     {
-        "name": "Get Access to the Underdark Ruins"
+        "name": "Free Ojva from the Ice"
     },
     {
-        "name": "Fall Off 4 Cliffs for 2s Airtime"
+        "name": "Equip the Ruby-Ball-Look"
+    },
+    {
+        "name": "Obtain 5 Wallet Upgrades"
     },
     {
         "name": "Scare a Bat"
+    },
+    {
+        "name": "Save all 4 Traitor Spirits"
     },
     {
         "name": "Open the Door ahead of the Screech"
     },
     {
         "name": "Activate any 3 Totems"
-    },
-    {
-        "name": "Deliver Treek's Package"
-    },
-    {
-        "name": "Fall into Thorns 30 times"
     }
 ]

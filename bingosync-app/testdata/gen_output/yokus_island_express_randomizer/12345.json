@@ -1,15 +1,15 @@
 [
     {
-        "name": "Collect the Crimson Sprinkles (Red)"
+        "name": "Collect the Ceremony Instruments"
     },
     {
-        "name": "Obtain the Ivory Peaks Tracker"
+        "name": "Obtain the Grand Postmaster Badge"
     },
     {
-        "name": "Go through 5 Hidden Tunnels"
+        "name": "Give Skeeper 100 Fruits"
     },
     {
-        "name": "Save all 4 Traitor Spirits"
+        "name": "Roll 5 Boulders or Snowballs"
     },
     {
         "name": "Wake up Baldino"
@@ -33,31 +33,28 @@
         "name": "Take the Spider Orphan to the Tree"
     },
     {
-        "name": "Destroy the Crystal at Tower's Peak"
+        "name": "Collect the Creepy Sprinkles (Green)"
     },
     {
-        "name": "Obtain the Gorilla Woods Tracker"
-    },
-    {
-        "name": "Look through 5 Telescopes"
-    },
-    {
-        "name": "Find Piles of Gold in 2 Locations"
-    },
-    {
-        "name": "Collect the Deadly Sprinkles (Black)"
+        "name": "Destroy Fosfor's Secret Fruit Supply"
     },
     {
         "name": "Obtain the Dive Fish"
     },
     {
-        "name": "Free Ojva from the Ice"
+        "name": "Look through 5 Telescopes"
+    },
+    {
+        "name": "Fall into Thorns 30 times"
+    },
+    {
+        "name": "Forgive Kickback"
     },
     {
         "name": "Trade with Sumoe"
     },
     {
-        "name": "Collect the Ceremony Instruments"
+        "name": "Close the Ore Station Hatches"
     },
     {
         "name": "Open the Blue Chest"
@@ -66,12 +63,15 @@
         "name": "Scare a Bat"
     },
     {
-        "name": "Get Sush back to work"
+        "name": "Get Access to the Underdark Ruins"
     },
     {
-        "name": "Obtain the Crystal Deep Tracker"
+        "name": "Obtain any 3 Trackers"
     },
     {
-        "name": "Start the Rocket of the Space Monks"
+        "name": "Jump across the Lava Pool"
+    },
+    {
+        "name": "Spin Blue Pinwheels in 2 Locations"
     }
 ]
