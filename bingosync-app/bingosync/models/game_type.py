@@ -159,7 +159,7 @@ class GameType(Enum):
     terraria_1_3_pre_hardmode = 155
     wii_sports_club_all_sports_expert = 156
     mario_maker_2 = 157
-    minecraft_randomizer = 158
+    minecraft_randomizer_1_16_5 = 158
     new_super_mario_bros_ds = 159
     wii_sports_club_golf_only = 160
     hat_in_time = 161
@@ -619,10 +619,10 @@ GAME_GROUPS = {
             (GameType.mgs_portable_ops_plus_training, "Training", "MPO+ Training"),
         ],
     },
-    GameType.minecraft_randomizer: {
+    GameType.minecraft_randomizer_1_16_5: {
         "name": "Minecraft",
         "variants": [
-            (GameType.minecraft_randomizer, "Randomizer", "MC Random"),
+            (GameType.minecraft_randomizer_1_16_5, "Randomizer 1.16.5", "MC Random 1.16.5"),
             (GameType.minecraft_advancements, "Advancements", "MC Advancements"),
         ],
     },
