@@ -1,77 +1,77 @@
 [
     {
-        "name": "Acquire 3 spirits from chests"
+        "name": "Defeat Mario in 3 different battles"
     },
     {
-        "name": "Defeat Ike in 3 different battles"
+        "name": "Lose a match by timing out"
     },
     {
-        "name": "Fully clear Beachside Town"
+        "name": "Defeat an Ace at a spirit disadvantage"
     },
     {
-        "name": "Fully clear Mountain Falls"
+        "name": "Collect 3 different powers as Kirby in 1 fight"
     },
     {
-        "name": "Use 3 different fighting styles in 3 fights"
+        "name": "Obtain the The Boss spirit"
     },
     {
-        "name": "Don\u2019t get frozen on an ice floor stage"
+        "name": "Finish with >200 orbs"
+    },
+    {
+        "name": "Clear 7 environmental blocks"
+    },
+    {
+        "name": "Defeat 3 spirits from the Animal Crossing series"
+    },
+    {
+        "name": "Defeat Young Link in 3 different battles"
     },
     {
         "name": "Defeat Wario in 3 different battles"
     },
     {
-        "name": "Make 2 spirits via fusion"
+        "name": "Summon 3 spirits using materials bought from a shop"
     },
     {
-        "name": "Beat 3 fights with no spirits"
+        "name": "Rescue Peach with Mario"
     },
     {
-        "name": "Clear 5 environmental blocks"
-    },
-    {
-        "name": "Win a fight with a projectile reflect"
-    },
-    {
-        "name": "Unlock Sheik, Marth, and Villager"
-    },
-    {
-        "name": "Fully clear Power Plant"
-    },
-    {
-        "name": "Level 3 spirits to 99"
-    },
-    {
-        "name": "Kirby Kamikaze"
-    },
-    {
-        "name": "Unlock 5 Mii Costumes"
-    },
-    {
-        "name": "Finish a stamina match with < 10 health"
-    },
-    {
-        "name": "Don\u2019t get poisoned on a poison floor stage"
-    },
-    {
-        "name": "Fully clear World Tour"
-    },
-    {
-        "name": "Defeat 3 Giant Enemies"
-    },
-    {
-        "name": "Teach 1 spirit 3 different fighting styles"
-    },
-    {
-        "name": "Defeat Isabelle in 3 different battles"
-    },
-    {
-        "name": "Defeat Wolf with Fox or Falco"
+        "name": "Obtain the Strong-Wind, Lava-Floor, and Poison Damage Reduced skills-185"
     },
     {
         "name": "Finish in Space"
     },
     {
-        "name": "Beat 5 spirits from the Pokemon series"
+        "name": "Win a fight after getting your Shield broken 3 times"
+    },
+    {
+        "name": "Spend 5k in the shops"
+    },
+    {
+        "name": "Win 3 fights at over 200%"
+    },
+    {
+        "name": "Acquire 4 spirits from chests"
+    },
+    {
+        "name": "Defeat 3 Assist Trophies"
+    },
+    {
+        "name": "Defeat Snake in 3 different battles"
+    },
+    {
+        "name": "Use an ice attack with 3 different characters"
+    },
+    {
+        "name": "Obtain the M. Bison or Shine Sprite spirit"
+    },
+    {
+        "name": "Never use a neutral primary spirit"
+    },
+    {
+        "name": "Press the Red Button in Console City"
+    },
+    {
+        "name": "Don\u2019t get burnt on a lava floor stage"
     }
 ]
