@@ -1,9 +1,9 @@
 [
     {
-        "name": "Equip a Cosmic Armor/Accessory"
+        "name": "Fight Alongside Cloud and Win"
     },
     {
-        "name": "Find one of the Presents"
+        "name": "Gain an Accessory Slot"
     },
     {
         "name": "Witness Saix enter his Berserk state"
@@ -12,40 +12,40 @@
         "name": "Win the Pain and Panic Cup"
     },
     {
-        "name": "Find 5 Recipes"
+        "name": "Find Pooh in the Spooky Cave"
     },
     {
-        "name": "Defeat Final Xemnas"
+        "name": "Defeat Genie Jafar"
     },
     {
-        "name": "Have 20 AP Boosts in your inventory"
+        "name": "Have 3 Even Numbered Ansem Reports"
     },
     {
-        "name": "Reach Valor Form Level 3"
+        "name": "Reach Summon Level 4"
     },
     {
-        "name": "Get 250 points in a Skateboard minigame"
+        "name": "Get Level 3 Aerial Dodge"
     },
     {
-        "name": "Have 30 Potions In Your Inventory"
+        "name": "Have 4-in-a-row Ansem Reports"
     },
     {
-        "name": "Defeat Hades"
+        "name": "Defeat Old Pete"
     },
     {
-        "name": "Reach Level 33"
+        "name": "Reach Level 20"
     },
     {
-        "name": "Have 7 Unique Keyblades"
+        "name": "Have A Draw Equipped"
     },
     {
-        "name": "Use any Donald or Goofy Limit"
+        "name": "Use an Auto Form"
     },
     {
         "name": "Have some Finny Fun"
     },
     {
-        "name": "Find a Proof of the Mushroom XIII"
+        "name": "Gain 10 HP"
     },
     {
         "name": "Kill or Be Killed by a Data Org Member"
@@ -54,24 +54,24 @@
         "name": "Win the Cerberus Cup"
     },
     {
-        "name": "Defeat the Experiment"
+        "name": "Defeat the MCP"
     },
     {
-        "name": "Defeat Oogie Boogie"
+        "name": "Find the Ice Cream or the Picture"
     },
     {
-        "name": "Reach Master Form Level 7"
+        "name": "Defeat Roxas"
     },
     {
-        "name": "Have 2 Drive Recoveries"
+        "name": "Reach Level 45"
+    },
+    {
+        "name": "Have 14 Keyblades"
     },
     {
         "name": "Obtain Thundaga or Magnega"
     },
     {
-        "name": "Spin the Carousel in Halloween Town"
-    },
-    {
-        "name": "Defeat Demyx in Hollow Bastion"
+        "name": "Spin the Carousel in Christmas Town"
     }
 ]
