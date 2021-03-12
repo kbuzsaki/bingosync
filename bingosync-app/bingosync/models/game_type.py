@@ -270,6 +270,7 @@ class GameType(Enum):
     lego_batman_random_level_numbers = 266
     world_of_warcraft_random_level_one = 267
     halo_master_chief_collection = 268
+    runescape_3_clue_scroll = 269
 
     def __str__(self):
         return self.short_name
@@ -663,6 +664,12 @@ GAME_GROUPS = {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
             (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
+        ],
+    },
+    GameType.runescape_3_clue_scroll: {
+        "name": "Runescape 3",
+        "variants": [
+            (GameType.runescape_3_clue_scroll, "Clue Scroll", "RS3 Clue"),
         ],
     },
     GameType.slime_rancher: {
