@@ -264,6 +264,10 @@ class GameType(Enum):
     links_awakening_switch = 260
     mario_sports_mix = 261
     pokemon_x_y = 262
+    lego_batman_semi_random_level_names = 263
+    lego_batman_semi_random_level_numbers = 264
+    lego_batman_random_level_names = 265
+    lego_batman_random_level_numbers = 266
 
     def __str__(self):
         return self.short_name
@@ -567,6 +571,10 @@ GAME_GROUPS = {
         "variants": [
             (GameType.lego_batman, "Normal", "LEGO Batman"),
             (GameType.lego_batman_long, "Long", "LEGO Batman Long"),
+            (GameType.lego_batman_semi_random_level_names, "Semi-Random Level Names", "LEGO Batman Semi-Random Names"),
+            (GameType.lego_batman_semi_random_level_numbers, "Semi-Random Level Numbers", "LEGO Batman Semi-Random Numbers"),
+            (GameType.lego_batman_random_level_names, "Random Level Names", "LEGO Batman Random Names"),
+            (GameType.lego_batman_random_level_numbers, "Random Level Numbers", "LEGO Batman Random Numbers"),
         ],
     },
     GameType.lufia_2: {
