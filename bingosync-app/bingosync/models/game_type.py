@@ -262,6 +262,7 @@ class GameType(Enum):
     metroid_prime_randomizer_chaos = 258
     stardew_valley = 259
     links_awakening_switch = 260
+    mario_sports_mix = 261
 
     def __str__(self):
         return self.short_name
@@ -827,6 +828,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_maker_2, "Super Mario Maker 2", "Mario Maker 2"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
+    **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
