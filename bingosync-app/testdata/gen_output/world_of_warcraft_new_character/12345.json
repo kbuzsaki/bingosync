@@ -1,77 +1,77 @@
 [
     {
-        "name": "Complete a world quest"
-    },
-    {
-        "name": "Obtain an elemental item"
-    },
-    {
-        "name": "Kill a kobald"
-    },
-    {
-        "name": "Visit Booty Bay"
-    },
-    {
-        "name": "Visit the past (other than using the dark portal/chromie time)"
-    },
-    {
-        "name": "Ring a gong"
-    },
-    {
-        "name": "Visit the Exodaar"
-    },
-    {
-        "name": "Visit a worldtree"
-    },
-    {
-        "name": "Cast a fire spell"
-    },
-    {
-        "name": "Slay 10 critters for the achieve 'Pest control'"
-    },
-    {
-        "name": "Visit a necropolis/ziggurat"
-    },
-    {
         "name": "Complete an archeological artifact"
     },
     {
-        "name": "Gather 5 different herbs"
-    },
-    {
-        "name": "Obtain a silly hat"
+        "name": "Obtain an item that starts a quest"
     },
     {
         "name": "Kill a mammoth"
     },
     {
+        "name": "Visit 3 starting subzones"
+    },
+    {
+        "name": "Visit the past (other than using the dark portal/chromie time)"
+    },
+    {
+        "name": "Set something on fire"
+    },
+    {
         "name": "Visit the Black Temple"
     },
     {
-        "name": "Kill an orc"
+        "name": "Visit a lake"
     },
     {
-        "name": "Jump off Mount Hyjal"
+        "name": "Cast a holy spell"
     },
     {
-        "name": "Obtain a key"
+        "name": "Slay 5 critters for the achieve 'Pest control'"
     },
     {
-        "name": "Kill 25 critters"
+        "name": "Visit a battleground portal"
+    },
+    {
+        "name": "Complete the Draenor introduction scenario"
+    },
+    {
+        "name": "Get 2 professions to level 20"
+    },
+    {
+        "name": "Obtain a tooth"
+    },
+    {
+        "name": "Kill a murloc"
     },
     {
         "name": "Visit somewhere windy"
     },
     {
-        "name": "Click an Eastern Kingdoms dungeon waystone"
+        "name": "Kill an orc"
     },
     {
-        "name": "Summon a demon"
+        "name": "Have 500 health"
     },
     {
-        "name": "Visit Silvermoon City"
+        "name": "Obtain a silly hat"
     },
     {
-        "name": "Kill a clefthoof"
+        "name": "Kill 100 critters"
+    },
+    {
+        "name": "Visit somewhere snowy"
+    },
+    {
+        "name": "Complete 30 quests"
+    },
+    {
+        "name": "Survey a whole dig site"
+    },
+    {
+        "name": "Visit 8 capital cities"
+    },
+    {
+        "name": "Kill a bird"
     }
 ]
