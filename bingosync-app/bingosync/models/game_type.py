@@ -263,6 +263,7 @@ class GameType(Enum):
     stardew_valley = 259
     links_awakening_switch = 260
     mario_sports_mix = 261
+    pokemon_x_y = 262
 
     def __str__(self):
         return self.short_name
@@ -852,6 +853,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
     **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
+    **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
