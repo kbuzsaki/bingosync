@@ -272,6 +272,7 @@ class GameType(Enum):
     halo_master_chief_collection = 268
     runescape_3_clue_scroll = 269
     hades = 270
+    minecraft_randomizer_1_8_9 = 271
 
     def __str__(self):
         return self.short_name
@@ -623,6 +624,7 @@ GAME_GROUPS = {
         "name": "Minecraft",
         "variants": [
             (GameType.minecraft_randomizer_1_16_5, "Randomizer 1.16.5", "MC Random 1.16.5"),
+            (GameType.minecraft_randomizer_1_8_9, "Randomizer 1.8.9", "MC Random 1.8.9"),
             (GameType.minecraft_advancements, "Advancements", "MC Advancements"),
         ],
     },
