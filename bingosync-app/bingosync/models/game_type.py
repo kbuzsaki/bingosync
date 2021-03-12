@@ -268,6 +268,7 @@ class GameType(Enum):
     lego_batman_semi_random_level_numbers = 264
     lego_batman_random_level_names = 265
     lego_batman_random_level_numbers = 266
+    world_of_warcraft_random_level_one = 267
 
     def __str__(self):
         return self.short_name
@@ -752,6 +753,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.world_of_warcraft, "Normal", "WoW"),
             (GameType.world_of_warcraft_new_character, "New Character", "WoW New Char"),
+            (GameType.world_of_warcraft_random_level_one, "Random Level 1", "WoW RL1"),
         ],
     },
     GameType.yokus_island_express: {
