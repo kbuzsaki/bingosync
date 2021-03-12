@@ -261,6 +261,7 @@ class GameType(Enum):
     metroid_prime_randomizer_balanced = 257
     metroid_prime_randomizer_chaos = 258
     stardew_valley = 259
+    links_awakening_switch = 260
 
     def __str__(self):
         return self.short_name
@@ -583,6 +584,12 @@ GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.links_awakening_switch: {
+        "name": "Zelda: Link's Awakening (Switch)",
+        "variants": [
+            (GameType.links_awakening_switch, "Normal", "LAS"),
         ],
     },
     GameType.metroid_prime_randomizer_balanced: {
