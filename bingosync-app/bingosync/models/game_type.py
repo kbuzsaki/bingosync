@@ -271,6 +271,7 @@ class GameType(Enum):
     world_of_warcraft_random_level_one = 267
     halo_master_chief_collection = 268
     runescape_3_clue_scroll = 269
+    hades = 270
 
     def __str__(self):
         return self.short_name
@@ -826,6 +827,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
+    **singleton_group(GameType.hades, "Hades", "Hades"),
     **singleton_group(GameType.halo_master_chief_collection, "Halo: The Master Chief Collection", "Halo MCC"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
