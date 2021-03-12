@@ -260,6 +260,7 @@ class GameType(Enum):
     world_of_warcraft_new_character = 256
     metroid_prime_randomizer_balanced = 257
     metroid_prime_randomizer_chaos = 258
+    stardew_valley = 259
 
     def __str__(self):
         return self.short_name
@@ -860,6 +861,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
+    **singleton_group(GameType.stardew_valley, "Stardew Valley", "Stardew Valley"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
