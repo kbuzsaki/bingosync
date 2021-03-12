@@ -1,42 +1,42 @@
 [
     {
-        "name": "9 E-Tanks"
+        "name": "Activate the Observatory"
     },
     {
         "name": "Defeat Ghosts in 2 Rooms"
     },
     {
-        "name": "Use 1 Missile Station"
+        "name": "Use 1 Phendrana Save Station"
     },
     {
-        "name": "5 Mini-Bosses"
+        "name": "6 E-Tanks"
     },
     {
         "name": "Get Gravity Chamber Item (lower)"
     },
     {
-        "name": "Get Biohazard Containment Item"
+        "name": "Get Dynamo Item (upper)"
     },
     {
         "name": "Main Power Bombs"
     },
     {
-        "name": "4 Major Bosses"
+        "name": "4 Mini-Bosses"
     },
     {
-        "name": "Defeat Flying Pirates in 6 Rooms"
+        "name": "Defeat Flying Pirates in 9 Rooms"
     },
     {
         "name": "1 Beam Combo"
     },
     {
-        "name": "2 Suits"
+        "name": "2 Sheegoths"
     },
     {
         "name": "Use 5 Spinners (must have Boost)"
     },
     {
-        "name": "Defeat 1 Large Enemy with Flamethrower"
+        "name": "Defeat 13 different Metroids"
     },
     {
         "name": "100 Missiles"
@@ -54,10 +54,10 @@
         "name": "Ice Spreader"
     },
     {
-        "name": "Defeat Ghosts in 6 Rooms"
+        "name": "Defeat Shadow Pirates in 2 Rooms"
     },
     {
-        "name": "Defeat 3 Power Pirates with Super Missiles"
+        "name": "Defeat 3 Wave Pirates with Wavebuster"
     },
     {
         "name": "Get Phendrana Shorelines Item (Spider Track)"
@@ -66,12 +66,12 @@
         "name": "Use 10 Spinners (must have Boost)"
     },
     {
-        "name": "Use 1 Phendrana Save Station"
-    },
-    {
         "name": "Plasma Beam"
     },
     {
         "name": "2 Mini-Bosses"
+    },
+    {
+        "name": "Cloaked Drone"
     }
 ]

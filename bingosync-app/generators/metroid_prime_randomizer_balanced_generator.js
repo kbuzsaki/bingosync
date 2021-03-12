@@ -42,7 +42,6 @@ bingoList[6] = [
   { name: "Use 1 Phendrana Save Station", types: ["phendrana","station"] },
 ];
 bingoList[7] = [
-  { name: "3 Plated Beetles", types: ["chozo","hunting"] },
   { name: "Defeat Shadow Pirates in 2 Rooms", types: ["hunting"] },
   { name: "Get 1 Duplicate or Nothing Item", types: ["collect"] },
   { name: "Get Ruined Courtyard Item", types: ["phendrana","location"] },

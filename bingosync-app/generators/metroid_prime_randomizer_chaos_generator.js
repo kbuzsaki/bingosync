@@ -23,7 +23,6 @@ var bingoList = [
     "3 Elite Pirates",
     "3 Major Bosses",
     "3 Mini-Bosses",
-    "3 Plated Beetles",
     "3 Power Bomb Expansions",
     "3 Sheegoths",
     "3 Suits",

@@ -3,7 +3,7 @@
         "name": "4 Major Bosses"
     },
     {
-        "name": "Get Storage Cave Item"
+        "name": "Get Storage Depot A Item"
     },
     {
         "name": "Get 1 Duplicate or Nothing Item"
@@ -24,40 +24,43 @@
         "name": "Use 2 Phendrana Save Stations"
     },
     {
-        "name": "2 Sheegoths"
+        "name": "2 Power Bomb Expansions"
     },
     {
         "name": "Phazon Elite"
     },
     {
-        "name": "Use 2 Mines Save Stations"
-    },
-    {
-        "name": "Defeat 13 different Metroids"
-    },
-    {
-        "name": "Get Ruined Courtyard Item"
-    },
-    {
-        "name": "Get Life Grove Tunnel Item"
-    },
-    {
-        "name": "Defeat Flying Pirates in 3 Rooms"
+        "name": "Use 2 Missile Stations"
     },
     {
         "name": "4 Mini-Bosses"
     },
     {
+        "name": "Defeat 3 Ice Pirates with Ice Spreader"
+    },
+    {
+        "name": "Get Ruined Courtyard Item"
+    },
+    {
+        "name": "Get Arbor Chamber Item"
+    },
+    {
+        "name": "Get Life Grove Tunnel Item"
+    },
+    {
+        "name": "Defeat Flying Pirates in 6 Rooms"
+    },
+    {
         "name": "Get Research Lab Hydra Item"
     },
     {
-        "name": "Defeat Ghosts in 2 Rooms"
+        "name": "Defeat Ghosts in 4 Rooms"
     },
     {
         "name": "Use 7 Spinners (must have Boost)"
     },
     {
-        "name": "3 Sheegoths"
+        "name": "3 Suits"
     },
     {
         "name": "Phazon Suit"
@@ -66,12 +69,9 @@
         "name": "Use 2 Chozo Save Stations"
     },
     {
-        "name": "Defeat Shadow Pirates in 2 Rooms"
+        "name": "Defeat Shadow Pirates in 4 Rooms"
     },
     {
         "name": "Get Quarantine Monitor Item"
-    },
-    {
-        "name": "Use 2 Map Stations"
     }
 ]

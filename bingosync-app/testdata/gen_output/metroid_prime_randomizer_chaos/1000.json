@@ -3,7 +3,7 @@
         "name": "1 Beam Combo"
     },
     {
-        "name": "6 E-Tanks"
+        "name": "70 Missiles"
     },
     {
         "name": "Get Processing Center Access Item"
@@ -15,10 +15,10 @@
         "name": "Use 5 Spinners (must have Boost)"
     },
     {
-        "name": "Get Arbor Chamber Item"
+        "name": "Get Biohazard Containment Item"
     },
     {
-        "name": "Defeat Ghosts in 2 Rooms"
+        "name": "Defeat Ghosts in 4 Rooms"
     },
     {
         "name": "Spider Ball"
@@ -36,7 +36,7 @@
         "name": "Use 2 Phendrana Save Stations"
     },
     {
-        "name": "Get Training Chamber Item"
+        "name": "Grapple Beam"
     },
     {
         "name": "Phazon Elite"
@@ -49,9 +49,6 @@
     },
     {
         "name": "Get Life Grove Tunnel Item"
-    },
-    {
-        "name": "Get Biohazard Containment Item"
     },
     {
         "name": "Ice Beam"
@@ -73,5 +70,8 @@
     },
     {
         "name": "Get Main Plaza Tree Item"
+    },
+    {
+        "name": "2 Mini-Bosses"
     }
 ]
