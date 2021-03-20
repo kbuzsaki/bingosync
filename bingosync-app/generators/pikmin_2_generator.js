@@ -151,11 +151,6 @@ var bingoList = {
         "Diff": 13,
         "Synergy": ["EK"]
     },
-    "Food": {
-        "Desc": "5 food treasures",
-        "Diff": 7,
-        "Synergy": ["GBB", "SmC"]
-    },
     "BuriedTreasure": {
         "Desc": "6 fully buried treasures",
         "Diff": 22,
@@ -296,7 +291,7 @@ var bingoList = {
         "Diff": 1
     },
     "Gauge": {
-        "Desc": "Prototype Detector",
+        "Desc": "Prototype Detector (HoB5)",
         "Diff": 2,
         "Excludes": ["Empress", "Empire"],
         "Synergy": ["BuriedTreasure", "HoBClear", "EK"]
@@ -336,7 +331,7 @@ var bingoList = {
         "Synergy": ["SH"]
     },
     "Pileated": {
-        "Desc": "Justice Alloy",
+        "Desc": "Justice Alloy (SH7)",
         "Diff": 11,
         "Synergy": ["SH", "EK"]
     },
@@ -536,7 +531,7 @@ var bingoList = {
         "Excludes": ["10Pellet"]
     },
     "OI": {
-        "Desc": "Optical Illustration [US] / Abstract Masterpiece [PAL]",
+        "Desc": "Optical Illustration [US] / Abstract Masterpiece [PAL] (PP)",
         "Diff": 23,
         "Synergy": ["ElecGates"]
     },
