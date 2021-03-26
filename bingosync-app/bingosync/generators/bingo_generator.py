@@ -61,4 +61,4 @@ def process_card(card):
         card = card[1:]
     if len(card) != 25:
         raise Exception("bad card length: " + str(len(card)) + ", card: " + str(card))
-    return [{"name": goal.get("name", "")} for goal in card]
+    return [{"name": goal.get("name", ""), "image": goal.get("image", "")} for goal in card]

@@ -212,6 +212,12 @@
     -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
 }
 
+.square .image-container img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .blanksquare:hover,
 .blanksquare.hover {
     background: #0a245a;

@@ -367,6 +367,7 @@ bingoGenerator = function (bingoList, opts) {
 
         bingoBoard[sq].types = minSynObj.value.types;
         bingoBoard[sq].name = minSynObj.value[LANG] || minSynObj.value.name;
+        bingoBoard[sq].image = minSynObj.value.image;
         bingoBoard[sq].child = minSynObj.value.child;
         bingoBoard[sq].synergy = minSynObj.synergy;
     }

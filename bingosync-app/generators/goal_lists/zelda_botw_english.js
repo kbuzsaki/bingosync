@@ -547,7 +547,7 @@ bingoList[23] = [
     { name: "Collect 6 Picture Memories", types: ["Camera"] },
     { name: "Remake a Champion's Weapon or Shield", types: ["Equipment","Divine Beast","Gems"] },
     { name: "Climbing Gear ★", types: ["Clothes","Climbing Gear","Great Fairy"] },
-    { name: "Activate 8 Towers", types: ["Tower"] }
+    { name: "Activate 8 Towers", types: ["Tower"], image: "https://cdn.discordapp.com/attachments/291280900187095041/824313156620386354/Unbenannt-1.png" }
 ];
 bingoList[24] = [
     { name: "45 Koroks", types: ["Korok"] },
