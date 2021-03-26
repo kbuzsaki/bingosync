@@ -21,4 +21,19 @@ function initializeChatSettings($chatSettings, $chatWindow) {
     });
 }
 
+function initializeDisplaySettings($displaySettings, $boardWindow) {
+    $("#display-settings-collapse").on("mousedown", function() {
+        $("#display-settings .panel-body").toggle(50);
+    });
 
+    $displaySettings.find("#use-images-toggle").on("change", function() {
+        $boardWindow.find(".square").each(function() {
+            var srcValue = $(this).find("img").attr("src");
+            if (srcValue) {
+                // There is an image, toggle the image visibility and the text visibility
+                $(this).children(".text-container").toggleClass("hidden");
+                $(this).children(".image-container").toggleClass("hidden");
+            }
+        })
+    });
+}

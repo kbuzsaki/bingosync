@@ -44,6 +44,9 @@
                         <div class="flex-col-footer m-b-l" id="room-settings-container">
                             {% include 'bingosync/room_settings_panel.html' %}
                         </div>
+                        <div class="flex-col-footer m-b-l">
+                            {% include 'bingosync/display_settings_panel.html' %}
+                        </div>
                         <div class="flex-col-footer">
                             {% include 'bingosync/chat_settings_panel.html' %}
                         </div>
@@ -87,6 +90,7 @@
         var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
         var chatPanel = new ChatPanel($("#bingo-chat"), $("#chat-settings"), chatUrl, chatHistoryUrl);
         initializeChatSettings($("#chat-settings"), $("#bingo-chat"));
+        initializeDisplaySettings($("#display-settings"), $("#bingo"));
 
         var chatSocket = new ChatSocket(chatPanel, board, playersPanel, socketsUrl);
 
