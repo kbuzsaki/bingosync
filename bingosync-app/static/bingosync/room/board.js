@@ -102,7 +102,7 @@ var Board = (function(){
                           '<div class="vertical-center text-container"></div>' +
                           '<div class="vertical-center image-container hidden"><img/></div>');
         this.$square.children(".text-container").text(json["name"]);
-        this.$square.children(".image-container").children('img').attr('src', json["image"]).attr('alt', json["name"]);
+        this.$square.children(".image-container").children('img').attr('src', json["image"]).attr('title', json["name"]);
         setSquareColors(this.$square, json["colors"]);
     };
 
