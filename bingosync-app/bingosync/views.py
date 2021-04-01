@@ -10,6 +10,9 @@ import json
 import requests
 import random
 import logging
+import tarfile
+import os.path
+import mimetypes
 
 from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
 from bingosync.generators import InvalidBoardException
@@ -360,6 +363,19 @@ def goal_converter(request):
         form = GoalListConverterForm.get()
 
     return render(request, "bingosync/convert.html", {"form": form})
+
+@csrf_exempt
+def images(request, game_name, game_file_name, goal_file_name):
+    try:
+        gamefilename = os.path.join("generators/goal_images/", game_name, game_file_name + ".tar.gz")
+        gamefile = tarfile.open(gamefilename)
+        goal_image = gamefile.extractfile(goal_file_name).read()
+    except:
+        raise Http404("Not Found")
+
+    mime_type = mimetypes.guess_type(goal_file_name)[0]
+    response = HttpResponse(goal_image, content_type=mime_type or "image/png")
+    return response
 
 
 def jstests(request):
