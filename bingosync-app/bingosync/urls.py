@@ -25,7 +25,6 @@ urlpatterns = [
     url(r'^room/(?P<encoded_room_uuid>.+)/disconnect$', views.room_disconnect, name='room_disconnect'),
     url(r'^room/(?P<encoded_room_uuid>.+)/room-settings$', views.room_settings, name='room_settings'),
     url(r'^room/(?P<encoded_room_uuid>.+)$', views.room_view, name='room_view'),
-    url(r'^images/(?P<game_name>.+)/(?P<game_file_name>.+)/(?P<goal_file_name>.+)$', views.images, name='images'),
     url(r'^history', views.history, name='history'),
     url(r'^convert', views.goal_converter, name='goal_converter'),
     url(r'^about', views.about, name='about'),

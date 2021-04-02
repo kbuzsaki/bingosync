@@ -211,7 +211,7 @@ bingoGenerator = function(bingoList, opts) {
             bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
             bingoBoard[i].synergy = minSynObj.synergy;
         }
-        return bingoBoard;
+        return { "board": bingoBoard, "path": opts.path };
     }
 }
 

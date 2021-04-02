@@ -222,7 +222,7 @@ bingoGenerator = function(bingoList, opts) {
             bingoBoard[i].image = minSynObj.value.image;
             bingoBoard[i].synergy = minSynObj.synergy;
         }
-        return bingoBoard;
+        return { "board": bingoBoard, "path": opts.path };
     }
 }
 

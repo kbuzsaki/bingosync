@@ -356,7 +356,7 @@ bingoGenerator = function(bingoList, opts) {
             choosable = choosable.concat(temp);
         }
     }
-    return chosenGoals;
+    return { "board": chosenGoals };
 }
 
 module.exports = bingoGenerator;

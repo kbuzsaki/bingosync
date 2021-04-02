@@ -23,7 +23,7 @@ bingoGenerator = function(bingoList, opts) {
         selectedGoals[i] = {"name": goal};
     }
 
-    return selectedGoals;
+    return { "board": selectedGoals };
 };
 
 module.exports = bingoGenerator;

@@ -334,7 +334,7 @@ bingoGenerator = function(bingoList, opts) {
 		}
 	}
 
-  	return card;
+  	return { "board": card, "path": opts.path };
 }
 
 module.exports = bingoGenerator;

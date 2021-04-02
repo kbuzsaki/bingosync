@@ -33,7 +33,7 @@ bingoGenerator = function(bingoList, opts) {
             }
         }
 
-        return bingoBoard;
+        return { "board": bingoBoard };
     }
 };
 

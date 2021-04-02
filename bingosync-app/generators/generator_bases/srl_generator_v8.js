@@ -372,7 +372,7 @@ bingoGenerator = function (bingoList, opts) {
         bingoBoard[sq].synergy = minSynObj.synergy;
     }
 
-    return bingoBoard;
+    return { "board": bingoBoard, "path": opts.path };
 };
 
 module.exports = bingoGenerator;

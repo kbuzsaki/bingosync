@@ -57,8 +57,16 @@ class BingoGenerator:
 
 def process_card(card):
     # the regular SRL generator includes an extra null element at the front, so ignore that
-    if len(card) == 26:
-        card = card[1:]
-    if len(card) != 25:
-        raise Exception("bad card length: " + str(len(card)) + ", card: " + str(card))
-    return [{"name": goal.get("name", ""), "image": goal.get("image", "")} for goal in card]
+    if len(card["board"]) == 26:
+        card["board"] = card["board"][1:]
+    if len(card["board"]) != 25:
+        raise Exception("bad card length: " + str(len(card["board"])) + ", card: " + str(card))
+
+    return [{"name": goal.get("name", ""), "image": format_image(card.get("path", None), goal.get("image")) or ""} for goal in card["board"]]
+
+def format_image(imagePath, goal_image):
+    if goal_image is not None and imagePath is not None:
+        if ":" not in goal_image:
+            # relative path to image pack, append info
+            goal_image = "/static/goal_images/" + imagePath + "/" + goal_image
+    return goal_image
