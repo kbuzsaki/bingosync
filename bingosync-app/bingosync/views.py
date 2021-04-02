@@ -10,9 +10,6 @@ import json
 import requests
 import random
 import logging
-import tarfile
-import os.path
-import mimetypes
 
 from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
 from bingosync.generators import InvalidBoardException
@@ -233,14 +230,6 @@ def goal_selected(request):
         return HttpResponseBadRequest("Blocked by Lockout")
     publish_goal_event(goal_event)
     return HttpResponse("Recieved data: " + str(data))
-
-def goal_counter(request):
-    data = parse_body_json_or_400(request, required_keys=["room", "slot", "new_count"])
-    room = Room.get_for_encoded_uuid_or_404(data["room"])
-    player = _get_session_player(request.session, room)
-    game = room.current_game
-    slot = int(data["slot"])
-    count = int(data["new_count"])
 
 @csrf_exempt
 def chat_message(request):
