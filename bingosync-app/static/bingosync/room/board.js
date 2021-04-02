@@ -104,6 +104,11 @@ var Board = (function(){
         this.$square.children(".text-container").text(json["name"]);
         if (json["image"]) {
             this.$square.children(".image-container").children('img').attr('src', json["image"]).attr('title', json["name"]);
+            if ($('#use-images-toggle').is(':checked')) {
+                // Use images is already selected so toggle hidden for these elements
+                this.$square.children(".image-container").toggleClass("hidden");
+                this.$square.children(".text-container").toggleClass("hidden");
+            }
         }
         setSquareColors(this.$square, json["colors"]);
     };
