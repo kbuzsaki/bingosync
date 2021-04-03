@@ -72,7 +72,7 @@ bingoGenerator = function (bingoList, opts) {
             bingoBoard[i] = bingoList[4][randIndex];
         }
     }
-    return { "board": bingoBoard } ;
+    return bingoBoard;
 };
 
 module.exports = bingoGenerator;
