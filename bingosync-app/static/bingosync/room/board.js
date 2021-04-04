@@ -78,6 +78,7 @@ var Board = (function(){
     var Square = function($square) {
         this.$square = $square;
         this.$square.on("click", this.onClick);
+        this.counterValue = 0;
     };
 
     Square.prototype.setColors = function(colors) {
@@ -98,23 +99,50 @@ var Board = (function(){
     };
 
     Square.prototype.setJson = function(json) {
+        var oSquare = this;
         this.$square.html('<div class="starred hidden"></div><div class="shadow"></div>' +
-                          '<div class="vertical-center text-container"></div>' +
-                          '<div class="vertical-center image-container hidden"><img/></div>');
-        this.$square.children(".text-container").text(json["name"]);
+                          '<div class="counter hidden"><button class="counterbutton minus">-</button>' +
+                          '<div class="counter-value">0</div><button class="counterbutton plus">+</button></div>' +
+                          '<div class="text-area"><div class="text-container"></div></div>' +
+                          '<div class="image-container hidden"><img/></div>');
+        this.$square.find(".text-container").text(json["name"]);
 
         if (json["image"]) {
             this.$square.children(".image-container").children('img').attr('src', json["image"]).attr('title', json["name"]);
-            if ($('#use-images-toggle').is(':checked')) {
-                // Use images is already selected so toggle hidden for these elements
-                this.$square.children(".image-container").toggleClass("hidden");
-                this.$square.children(".text-container").toggleClass("hidden");
-            }
         }
+
+        this.$counterValue = this.$square.find(".counter-value");
+
+        this.$square.find(".plus").on("click", function(e) { 
+            oSquare.incrementCounter();
+            return false;
+        });
+
+        this.$square.find(".minus").on("click", function() {
+            oSquare.decrementCounter();
+            return false;
+        });
         setSquareColors(this.$square, json["colors"]);
     };
 
+    Square.prototype.incrementCounter = function() {
+        this.counterValue += 1;
+        this.updateCounterValue();
+    }
+
+    Square.prototype.decrementCounter = function() {
+        if (this.counterValue > 0) {
+            this.counterValue -= 1;
+            this.updateCounterValue()
+        }
+    }
+
+    Square.prototype.updateCounterValue = function() {
+        this.$counterValue.text(this.counterValue);
+    }
+
     var Board = function($board, playerJson, colorChooser, getBoardUrl, selectGoalUrl) {
+        window.oBoard = this;
         this.$board = $board;
         this.$squares = $board.find(".square");
         this.isSpectator = playerJson.is_spectator;
@@ -163,6 +191,15 @@ var Board = (function(){
         for(var i = 0; i < json.length; i++) {
             this.squares[i].setJson(json[i]);
         }
+
+        if ($('#use-images-toggle').is(':checked')) {
+            this.toggleImages();
+        }
+
+        if ($('#show-counters-toggle').is(":checked")) {
+            this.toggleCounters(true);
+        }
+
         this.refitGoalText();
     };
 
@@ -253,6 +290,33 @@ var Board = (function(){
             }
         });
     };
+
+    Board.prototype.toggleImages = function() {
+        this.$squares.each(function() {
+            var srcValue = $(this).find("img").attr("src");
+            if (srcValue) {
+                // There is an image, toggle the image visibility and the text visibility
+                $(this).children(".text-area").toggleClass("hidden");
+                $(this).children(".image-container").toggleClass("hidden");
+            }
+        });
+    }
+
+    Board.prototype.toggleCounters = function(enabled) {
+        this.$squares.each(function() {
+            $(this).find(".counter").toggleClass("hidden");
+            if (enabled) {
+                $(this).find(".text-area").height("80%");
+                $(this).find(".image-container").height("80%");
+            }
+            else {
+                $(this).find(".text-area").height("100%");
+                $(this).find(".image-container").height("100%");
+            }
+        });
+
+        this.refitGoalText();
+    }
 
     return Board;
 })();

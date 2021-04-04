@@ -27,13 +27,10 @@ function initializeDisplaySettings($displaySettings, $boardWindow) {
     });
 
     $displaySettings.find("#use-images-toggle").on("change", function() {
-        $boardWindow.find(".square").each(function() {
-            var srcValue = $(this).find("img").attr("src");
-            if (srcValue) {
-                // There is an image, toggle the image visibility and the text visibility
-                $(this).children(".text-container").toggleClass("hidden");
-                $(this).children(".image-container").toggleClass("hidden");
-            }
-        })
+        oBoard.toggleImages();
+    });
+
+    $displaySettings.find("#show-counters-toggle").on("change", function() {
+        oBoard.toggleCounters(this.checked);
     });
 }
