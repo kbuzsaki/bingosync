@@ -1,4 +1,4 @@
-bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
+var bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
 var bingoList = [];
 bingoList[1] = [
@@ -35,7 +35,6 @@ bingoList[4] = [
   { name: "AP Puzzle", types: ["puzzle","ap"] },
   { name: "All Al's Penthouse Tokens", types: ["total","ap"] },
   { name: "AP Boss", types: ["boss","ap"] },
-  { name: "1-Up in EH", types: ["life","eh"] },
   { name: "Tennis Life (ATB)", types: ["life","atb"] },
   { name: "Touch 5 Infoboxes", types: ["event","heybuzz"] },
   { name: "Southeast Battery (BA)", types: ["battery","ba"] },
@@ -130,7 +129,7 @@ bingoList[13] = [
   { name: "1 AI Collectable", types: ["collectable","ai"] },
   { name: "Gumball Battery (ATB)", types: ["battery","atb"] },
 ];
-bingoList[14] = [
+bingoList[14] = [  
   { name: "CY Coin", types: ["coin","cy"] },
   { name: "EH Coin", types: ["coin","eh"] },
   { name: "All Andy's Neighborhood Tokens", types: ["total","an"] },
@@ -210,6 +209,7 @@ bingoList[22] = [
   { name: "Inflate Rubber Duck (AN)", types: ["an","event"] },
   { name: "Wash Battery (AN)", types: ["battery","an"] },
   { name: "Closest Battery (TBE)", types: ["battery","tbe"] },
+  { name: "Helicopter Battery (TT)", types: ["battery","tt"] },
 ];
 bingoList[23] = [
   { name: "AN Collectable", types: ["collectable","an"] },
@@ -228,6 +228,7 @@ bingoList[24] = [
   { name: "Jump into Water", types: ["event"] },
   { name: "Swing Battery (AN)", types: ["battery","an"] },
   { name: "Rightmost Battery (TBE)", types: ["battery","tbe"] },
+  { name: "Luggage Battery (AI)", types: ["battery","ai"] },
 ];
 bingoList[25] = [
   { name: "AN Puzzle", types: ["puzzle","an"] },
