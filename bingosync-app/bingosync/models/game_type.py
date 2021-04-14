@@ -274,6 +274,7 @@ class GameType(Enum):
     hades = 270
     minecraft_randomizer_1_8_9 = 271
     soul_knight = 272
+    escape_from_tarkov = 273
 
     def __str__(self):
         return self.short_name
@@ -828,6 +829,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
+    **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
