@@ -553,7 +553,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight_item_rando_pt, "Item Randomizer - Portuguese", "HK Random PT"),
             (GameType.hollow_knight_item_rando_cursed, "Item Randomizer - Cursed", "HK Item Rando Cursed"),
             (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless"),
-            (GameType.hollow_knight_cratthew, "Cratthew", "Hollow Knight Cratthew"),
+            (GameType.hollow_knight_cratthew, "Cratthew", "HK Cratthew"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
@@ -624,8 +624,8 @@ GAME_GROUPS = {
     GameType.mario_maker_2: {
         "name": "Super Mario Maker 2",
         "variants": [
-            (GameType.mario_maker_2, "Super Mario Maker 2", "Normal"),
-            (GameType.mario_maker_2_2021, "Super Mario Maker 2", "2021"),
+            (GameType.mario_maker_2, "Normal", "Mario Maker 2"),
+            (GameType.mario_maker_2_2021, "2021", "Mario Maker 2 - 2021"),
         ],
     },
     GameType.metroid_prime_randomizer_balanced: {
