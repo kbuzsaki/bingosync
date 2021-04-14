@@ -278,6 +278,7 @@ class GameType(Enum):
     hollow_knight_cratthew = 274
     mario_maker_2_2021 = 275
     video_games = 276
+    halo_master_chief_collection_synergy = 277
 
     def __str__(self):
         return self.short_name
@@ -533,6 +534,13 @@ GAME_GROUPS = {
             (GameType.wii_sports_resort, "Normal", "WSR"),
             (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
             (GameType.wii_sports_resort_all_stamps_lite, "All Stamps Lite", "WSR Stamps Lite"),
+        ],
+    },
+    GameType.halo_master_chief_collection: {
+        "name": "Halo: The Master Chief Collection",
+        "variants": [
+            (GameType.halo_master_chief_collection, "Normal", "Halo MCC"),
+            (GameType.halo_master_chief_collection_synergy, "Synergy", "Halo MCC Synergy"),
         ],
     },
     GameType.hollow_knight: {
@@ -844,7 +852,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
-    **singleton_group(GameType.halo_master_chief_collection, "Halo: The Master Chief Collection", "Halo MCC"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),

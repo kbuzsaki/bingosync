@@ -1,30 +1,30 @@
 [
     {
-        "name": "The Library(1)"
+        "name": "The Library(1)(I)"
     },
     {
-        "name": "Tsavo Highway(3)"
+        "name": "Tsavo Highway(3)(L)"
     },
     {
-        "name": "Beat 1 tank level"
+        "name": "Beat 1 tank level(T)"
     },
     {
-        "name": "Keyes(1)"
+        "name": "Keyes(1)(I)"
     },
     {
-        "name": "Beat 2 flying levels"
+        "name": "Beat 2 flying levels(F)"
     },
     {
-        "name": "High Charity(2)"
+        "name": "High Charity(2)(I)"
     },
     {
-        "name": "Kikowani Station(Odst)"
+        "name": "Kikowani Station(Odst)(F)"
     },
     {
         "name": "Get a score of 20,000 or more"
     },
     {
-        "name": "Halo(3)"
+        "name": "Halo(3)(IL)"
     },
     {
         "name": "Beat 3 levels on medium"
@@ -36,7 +36,7 @@
         "name": "Beat a level with the Scarab skull active"
     },
     {
-        "name": "Metropolis(2)"
+        "name": "Metropolis(2)(T)"
     },
     {
         "name": "Kill 50 infection forms"
@@ -45,19 +45,19 @@
         "name": "Get 50 Beat downs"
     },
     {
-        "name": "Nightfall(Reach)"
+        "name": "Nightfall(Reach)(IS)"
     },
     {
         "name": "Beat 1 level on legendary"
     },
     {
-        "name": "Two betrayals(1)"
+        "name": "Two betrayals(1)(IF)"
     },
     {
         "name": "Beat a level with the Catch skull active"
     },
     {
-        "name": "The arbiter(2)"
+        "name": "The arbiter(2)(IF)"
     },
     {
         "name": "Beat a level with the Iron skull active"
@@ -69,9 +69,9 @@
         "name": "Kill 2 Hunters"
     },
     {
-        "name": "Beat 3 tank levels"
+        "name": "Beat 3 tank levels(T)"
     },
     {
-        "name": "New Alexandria(Reach)"
+        "name": "New Alexandria(Reach)(IF)"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "name": "Exodus(Reach)"
+        "name": "Exodus(Reach)(I)"
     },
     {
         "name": "Pick up 6 collectables"
@@ -9,34 +9,34 @@
         "name": "Beat a level with the Recession skull active"
     },
     {
-        "name": "The storm(3)"
+        "name": "The storm(3)(L)"
     },
     {
-        "name": "Outskirts(2)"
+        "name": "Outskirts(2)(IL)"
     },
     {
         "name": "Kill 4 Hunters"
     },
     {
-        "name": "Pillar of Autumn (1)"
+        "name": "Pillar of Autumn (1)(I)"
     },
     {
-        "name": "Tsavo Highway(3)"
+        "name": "Tsavo Highway(3)(L)"
     },
     {
         "name": "Beat 1 level on legendary"
     },
     {
-        "name": "Kizingo Boulevard(Odst)"
+        "name": "Kizingo Boulevard(Odst)(T)"
     },
     {
-        "name": "Beat 2 sniper levels"
+        "name": "Beat 2 sniper levels(S)"
     },
     {
         "name": "Beat a level with the Acrophobia skull active"
     },
     {
-        "name": "Requiem(4)"
+        "name": "Requiem(4)(L)"
     },
     {
         "name": "Beat a level with the Fog skull active"
@@ -60,13 +60,13 @@
         "name": "Pick up four collectables"
     },
     {
-        "name": "Beat 2 flying levels"
+        "name": "Beat 2 flying levels(F)"
     },
     {
         "name": "Beat 3 levels on medium"
     },
     {
-        "name": "The Great Journey(2)"
+        "name": "The Great Journey(2)(TF)"
     },
     {
         "name": "Kill 2 Wraiths"
