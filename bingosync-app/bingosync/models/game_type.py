@@ -276,6 +276,7 @@ class GameType(Enum):
     soul_knight = 272
     escape_from_tarkov = 273
     hollow_knight_cratthew = 274
+    mario_maker_2_2021 = 275
 
     def __str__(self):
         return self.short_name
@@ -611,6 +612,13 @@ GAME_GROUPS = {
             (GameType.links_awakening_switch, "Normal", "LAS"),
         ],
     },
+    GameType.mario_maker_2: {
+        "name": "Super Mario Maker 2",
+        "variants": [
+            (GameType.mario_maker_2, "Super Mario Maker 2", "Normal"),
+            (GameType.mario_maker_2_2021, "Super Mario Maker 2", "2021"),
+        ],
+    },
     GameType.metroid_prime_randomizer_balanced: {
         "name": "Metroid Prime",
         "variants": [
@@ -855,7 +863,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
-    **singleton_group(GameType.mario_maker_2, "Super Mario Maker 2", "Mario Maker 2"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
