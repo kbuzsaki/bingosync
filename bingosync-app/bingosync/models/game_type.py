@@ -275,6 +275,7 @@ class GameType(Enum):
     minecraft_randomizer_1_8_9 = 271
     soul_knight = 272
     escape_from_tarkov = 273
+    hollow_knight_cratthew = 274
 
     def __str__(self):
         return self.short_name
@@ -541,7 +542,8 @@ GAME_GROUPS = {
             (GameType.hollow_knight_item_rando_cn, "Item Randomizer - CN", "HK Random CN"),
             (GameType.hollow_knight_item_rando_pt, "Item Randomizer - Portuguese", "HK Random PT"),
             (GameType.hollow_knight_item_rando_cursed, "Item Randomizer - Cursed", "HK Item Rando Cursed"),
-            (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless")
+            (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless"),
+            (GameType.hollow_knight_cratthew, "Cratthew", "Hollow Knight Cratthew"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
