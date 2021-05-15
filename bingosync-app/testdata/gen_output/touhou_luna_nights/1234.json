@@ -1,77 +1,77 @@
 [
     {
-        "name": "Defeat a Wisp in Stage 6"
+        "name": "Die in Stage 1"
     },
     {
-        "name": "Discover the Warp Zone in Stage 6"
+        "name": "Dunk All Wastebins in Stage 3"
     },
     {
         "name": "Use a Shop Ticket in the Remilia Battle"
     },
     {
-        "name": "Use Thousand Dagger in Stage 2"
+        "name": "Use Stun Knife in Stage 4"
     },
     {
-        "name": "Die in Stage 5"
+        "name": "Discover the Warp Zone in Stage 1"
     },
     {
-        "name": "Beat Reimu Ground with only Auto Aim"
+        "name": "Beat Remilia without taking damage"
     },
     {
-        "name": "Get the Blue Key"
+        "name": "Get hit by Reimu Ground's Taser Whip"
     },
     {
-        "name": "Obtain 100 Aquamarine Jewels"
+        "name": "Jump around the Blue Door in Stage 2"
     },
     {
-        "name": "Dunk All Wastebins in Stage 4"
+        "name": "Fall through the ground in Stage 3"
     },
     {
-        "name": "Get the Eternal Clock in All Stages"
+        "name": "Get hit by a Lightning Shaman in Stage 6"
     },
     {
-        "name": "Break All Jewel Towers"
+        "name": "Break 3 Wooden Boxes"
     },
     {
-        "name": "Get the Screw Knife Ability"
+        "name": "Get the Red Key"
+    },
+    {
+        "name": "Get the Eternal Clock in Stage 4"
+    },
+    {
+        "name": "Use Double Jump in Stage 2"
+    },
+    {
+        "name": "Get the Green Key"
+    },
+    {
+        "name": "Dunk All Wastebins in Stage 2"
     },
     {
         "name": "Get the HP Upgrade in Stage 2"
     },
     {
-        "name": "Use Lost Holy Sword in Stage 5"
+        "name": "Use Shield Dagger in Stage 3"
     },
     {
-        "name": "Get the HP Upgrade in Stage 4"
+        "name": "Discover the Warp Zone in Stage 2"
     },
     {
-        "name": "Discover the Warp Zone in Stage 4"
+        "name": "Complete Boss Rush without Basic Knives"
     },
     {
-        "name": "Get the Knife Upgrade in All Stages"
+        "name": "Dunk All Wastebins in Stage 1"
     },
     {
-        "name": "Use Sliding Knife in Stage 1"
+        "name": "Break the Amethyst Jewel Tower"
     },
     {
-        "name": "Die in Stage 6"
+        "name": "Get the Sliding Knife Ability"
     },
     {
-        "name": "Complete Boss Rush without basic knives"
+        "name": "Get hit by Meiling's Fkying Kick"
     },
     {
-        "name": "Break the Emerald Jewel Tower"
-    },
-    {
-        "name": "Get the Stun Knife Skill"
-    },
-    {
-        "name": "Get All Key Items"
-    },
-    {
-        "name": "Get the MP Upgrade in All Stages"
-    },
-    {
-        "name": "Reach Level 15"
+        "name": "Get the Knife Upgrade in Stage 4"
     }
 ]
