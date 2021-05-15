@@ -281,6 +281,7 @@ class GameType(Enum):
     halo_master_chief_collection_synergy = 277
     cyberpunk_2077 = 278
     splatoon_2_hero_mode = 279
+    chess_dot_com = 280
 
     def __str__(self):
         return self.short_name
@@ -842,6 +843,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
+    **singleton_group(GameType.chess_dot_com, "Chess.com", "Chess.com"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
