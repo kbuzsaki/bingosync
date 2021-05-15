@@ -279,6 +279,7 @@ class GameType(Enum):
     mario_maker_2_2021 = 275
     video_games = 276
     halo_master_chief_collection_synergy = 277
+    cyberpunk_2077 = 278
 
     def __str__(self):
         return self.short_name
@@ -838,6 +839,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
+    **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
