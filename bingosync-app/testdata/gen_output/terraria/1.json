@@ -1,9 +1,9 @@
 [
     {
-        "name": "Create a Void Vault or a Void Bag"
+        "name": "Craft Potions: Featherfall, Calming"
     },
     {
-        "name": "Destroy all the leaf blocks from a living tree"
+        "name": "Destroy all the leaf blocks from a living tree (free if no living trees)"
     },
     {
         "name": "Fill an NPC house with bars"
@@ -21,7 +21,7 @@
         "name": "Obtain 8 unique hooks"
     },
     {
-        "name": "Obtain Golf Cart Keys"
+        "name": "Get an item with a Light Red rarity"
     },
     {
         "name": "Obtain 3 different Sentry Rods"
@@ -45,7 +45,7 @@
         "name": "Kill a monster with the Coffin Minecart"
     },
     {
-        "name": "Create the following biome: Evil Jungle"
+        "name": "Craft Potions: Titan"
     },
     {
         "name": "Open 3 Shadow Chests"
@@ -54,7 +54,7 @@
         "name": "Obtain an Enchanted Sword or Terragrim"
     },
     {
-        "name": "Kill a critter that has become corrupted"
+        "name": "Place all 4 different sandcastles"
     },
     {
         "name": "Obtain an Obsidian Lock Box"
@@ -63,7 +63,7 @@
         "name": "Get thorned to death"
     },
     {
-        "name": "Go to the entrance of the Lihzahrd Temple"
+        "name": "Sell 100 hellstone"
     },
     {
         "name": "Obtain 5 different minecarts"
