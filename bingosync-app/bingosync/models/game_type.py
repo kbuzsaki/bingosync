@@ -280,6 +280,7 @@ class GameType(Enum):
     video_games = 276
     halo_master_chief_collection_synergy = 277
     cyberpunk_2077 = 278
+    splatoon_2_hero_mode = 279
 
     def __str__(self):
         return self.short_name
@@ -704,6 +705,13 @@ GAME_GROUPS = {
             (GameType.slime_rancher_lockout, "Lockout", "Slime Rancher Lockout"),
         ],
     },
+    GameType.splatoon_2_octo_expansion: {
+        "name": "Splatoon 2",
+        "variants": [
+            (GameType.splatoon_2_octo_expansion, "Octo Expansion", "Splatoon 2: OE"),
+            (GameType.splatoon_2_hero_mode, "Hero Mode", "Splatoon 2: Hero Mode"),
+        ],
+    },
     GameType.super_mario_64: {
         "name": "Super Mario 64",
         "variants": [
@@ -916,7 +924,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
-    **singleton_group(GameType.splatoon_2_octo_expansion, "Splatoon 2: Octo Expansion", "Splatoon 2: OE"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.stardew_valley, "Stardew Valley", "Stardew Valley"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
