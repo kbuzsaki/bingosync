@@ -283,6 +283,7 @@ class GameType(Enum):
     splatoon_2_hero_mode = 279
     chess_dot_com = 280
     saga_frontier = 281
+    cod_warzone = 282
 
     def __str__(self):
         return self.short_name
@@ -847,6 +848,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.chess_dot_com, "Chess.com", "Chess.com"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
+    **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
