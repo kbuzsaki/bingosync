@@ -219,6 +219,7 @@ bingoGenerator = function(bingoList, opts) {
             } while ((synergy != 0) && (j < bingoList[getDifficulty].length));
             bingoBoard[i].types = minSynObj.value.types;
             bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
+            bingoBoard[i].image = minSynObj.value.image;
             bingoBoard[i].synergy = minSynObj.synergy;
         }
         return bingoBoard;

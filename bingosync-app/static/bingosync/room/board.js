@@ -99,8 +99,18 @@ var Board = (function(){
 
     Square.prototype.setJson = function(json) {
         this.$square.html('<div class="starred hidden"></div><div class="shadow"></div>' +
-                          '<div class="vertical-center text-container"></div>');
+                          '<div class="vertical-center text-container"></div>' +
+                          '<div class="vertical-center image-container hidden"><img/></div>');
         this.$square.children(".text-container").text(json["name"]);
+
+        if (json["image"]) {
+            this.$square.children(".image-container").children('img').attr('src', json["image"]).attr('title', json["name"]);
+            if ($('#use-images-toggle').is(':checked')) {
+                // Use images is already selected so toggle hidden for these elements
+                this.$square.children(".image-container").toggleClass("hidden");
+                this.$square.children(".text-container").toggleClass("hidden");
+            }
+        }
         setSquareColors(this.$square, json["colors"]);
     };
 
