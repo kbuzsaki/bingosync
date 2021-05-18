@@ -21,4 +21,16 @@ function initializeChatSettings($chatSettings, $chatWindow) {
     });
 }
 
+function initializeDisplaySettings($displaySettings, $boardWindow) {
+    $("#display-settings-collapse").on("mousedown", function() {
+        $("#display-settings .panel-body").toggle(50);
+    });
 
+    $displaySettings.find("#use-images-toggle").on("change", function() {
+        oBoard.toggleImages();
+    });
+
+    $displaySettings.find("#show-counters-toggle").on("change", function() {
+        oBoard.toggleCounters(this.checked);
+    });
+}

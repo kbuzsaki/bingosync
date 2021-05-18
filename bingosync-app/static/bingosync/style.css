@@ -170,7 +170,6 @@
 .square {
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-    padding: 0 5px;
     cursor: pointer;
     width: 105px;
     height: 95px;
@@ -193,7 +192,7 @@
 }
 
 .square .bg-color, .square .shadow {
-    height: inherit;
+    height: 100%;
     position: absolute;
     left: -2px;
     right: -2px;
@@ -210,6 +209,12 @@
     box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
+}
+
+.square .image-container img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .blanksquare:hover,
@@ -574,4 +579,44 @@
 /* hide asterisk denoting required inputs */
 .asteriskField {
     display: none;
+}
+
+.counterbutton {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    border: 0;
+}
+
+.minus {
+    left: 0;
+}
+
+.plus {
+    right: 0;
+}
+
+.counter {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.counter-value {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-area {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

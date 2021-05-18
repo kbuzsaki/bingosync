@@ -68,3 +68,7 @@ bingosync-app/generators/working
 dumps/
 lbingosync.scpt
 bingosync-app/tools
+
+# mac
+.DS_Store
+bingosync-app/.DS_Store
