@@ -56,7 +56,7 @@ bingoList[3] = [
     { name: "2 Dog Treasures", types: ["Dog Treasure"] },
     { name: "1 Shrine from 3 Regions", types: ["Shrine"] },
     { name: "Wheat Bread", types: ["Cooking"] },
-    { name: "Full set of 'Boko' weapons", types: ["Equipment"] },
+    { name: "Obtain a 'Boko' weapon, bow, and shield", types: ["Equipment"] },
     { name: "Game Over from Cuccos", types: ["Cucco"] },
     { name: "Kill an enemy using only a Shield", types: ["Combat"] },
     { name: "Open 1 Xenoblade Chests", types: ["Side Quest"] },
@@ -157,7 +157,7 @@ bingoList[5] = [
     { name: "3 Dog Treasures", types: ["Dog Treasure"] },
     { name: "1 Shrine from 4 Regions", types: ["Shrine"] },
     { name: "5 Unique Royal Guard Weapons", types: ["Equipment"] },
-    { name: "Full set of 'Lizal' weapons ", types: ["Equipment"] },
+    { name: "Obtain a 'Lizal' weapon, bow, and shield", types: ["Equipment"] },
     { name: "Game Over from Lava", types: ["Eldin"] },
     { name: "Creamy Heart Soup", types: ["Cooking"] },
     { name: "Seafood Paella", types: ["Cooking"] },
@@ -643,7 +643,7 @@ bingoList[22] = [
     { name: "Activate 7 Towers", types: ["Tower"] },
     { name: "14 Side Quests", types: ["Side Quest"] },
     { name: "Obtain a Horn from each Dragon", types: ["Dragon"] },
-    { name: "Full set of 'Ancient' weapons", types: ["Equipment"] }
+    { name: "Obtain an 'Ancient' weapon, bow, and shield", types: ["Equipment"] }
 ];
 bingoList[23] = [
     { name: "'Face the Frost Talus' Side Quest", types: ["Side Quest","Tabantha","Hebra","Cold Resistance"] },
