@@ -8,7 +8,7 @@ bingoList[1] = [
     { name: "Any 'Boko' Equipment item", types: ["Equipment"] },
     { name: "3 Dueling Peaks Koroks", types: ["Korok","Dueling Peaks"] },
     { name: "3 Central Tower Koroks", types: ["Korok","Central Hyrule"] },
-    { name: "1 Dog Treasures", types: ["Dog Treasure"] },
+    { name: "1 Dog Treasure", types: ["Dog Treasure"] },
     { name: "Game Over from Fall Damage", types: ["Plateau"] }
 ];
 bingoList[2] = [
@@ -59,7 +59,7 @@ bingoList[3] = [
     { name: "Obtain a 'Boko' weapon, bow, and shield", types: ["Equipment"] },
     { name: "Game Over from Cuccos", types: ["Cucco"] },
     { name: "Kill an enemy using only a Shield", types: ["Combat"] },
-    { name: "Open 1 Xenoblade Chests", types: ["Side Quest"] },
+    { name: "Open 1 Xenoblade Chest", types: ["Side Quest"] },
     { name: "Salmon Meuniere", types: ["Cooking"] },
     { name: "Mount 3 different creatures", types: ["Mount"] }
 ];
@@ -198,9 +198,9 @@ bingoList[6] = [
     { name: "Obtain 5 fairies", types: ["Fairy"] },
     { name: "Collect 10 Acorns", types: ["Acorn"] },
     { name: "Extravagant Saddle", types: ["Horse"] },
-    { name: "Activate Wasteland and Gerudo Tower", types: ["Tower"] },
-    { name: "Activate Woodland and Hateno Tower", types: ["Tower"] },
-    { name: "Glide 600 distance in the Gliding Minigame", types: ["Minigame"] }
+    { name: "Activate Wasteland and Gerudo Towers", types: ["Tower"] },
+    { name: "Activate Woodland and Hateno Towers", types: ["Tower"] },
+    { name: "600m in the Gliding Minigame", types: ["Minigame"] }
 ];
 bingoList[7] = [
     { name: "15 Koroks", types: ["Korok"] },
@@ -237,7 +237,7 @@ bingoList[7] = [
     { name: "Sleep in 5 different beds", types: ["Bed"] },
     { name: "Knight's Bridle", types: ["Horse"] },
     { name: "Mount 5 different creatures", types: ["Mount"] },
-    { name: "Activate Central and Akkala Tower", types: ["Tower"] }
+    { name: "Activate Central and Akkala Towers", types: ["Tower"] }
 ];
 bingoList[8] = [
     { name: "7 Great Plateau Koroks", types: ["Korok","Plateau"] },
@@ -313,7 +313,7 @@ bingoList[9] = [
     { name: "Obtain 20 Bomb Arrows", types: ["Equipment"] },
     { name: "Visit the Edge of the World", types: ["Tower"] },
     { name: "Knight's Saddle", types: ["Horse"] },
-    { name: "Activate Hebra and Eldin Tower", types: ["Tower"] }
+    { name: "Activate Hebra and Eldin Towers", types: ["Tower"] }
 ];
 bingoList[10] = [
     { name: "9 Wasteland Koroks", types: ["Korok","Wasteland"] },
@@ -336,7 +336,7 @@ bingoList[10] = [
     { name: "Play the Bowling Minigame", types: ["Minigame","Hebra","Cold Resistance"] },
     { name: "Open 5 Chests in a Labyrinth", types: ["Shrine"] },
     { name: "Complete the Yiga Clan Hideout & Kohga Without Skips", types: ["Miniboss"] },
-    { name: "Discover 1 Secret Hot Springs ", types: ["Hebra", "Cold Resistance"] },
+    { name: "Discover 1 Secret Hot Spring", types: ["Hebra", "Cold Resistance"] },
     { name: "Mount 7 different creatures", types: ["Mount"] },
     { name: "Buy from Beedle in 7 Locations", types: ["Beedle"] }
 ];
@@ -433,14 +433,14 @@ bingoList[13] = [
     { name: "Obtain a Material directly from Dinraal", types: ["Dragon"] },
     { name: "Finish Basic Shield Surfing Minigame", types: ["Minigame","Hebra","Cold Resistance"] },
     { name: "Snow Boots", types: ["Clothes","Boots","Side Quest","Gerudo","Camera"] },
-    { name: "Kill a Igneo Talus", types: ["Rupee","Gems","Miniboss","Talus","Eldin"] },   
+    { name: "Kill a Igneo Talus", types: ["Rupee","Gems","Miniboss","Talus","Eldin"] },
     { name: "Zora Greaves", types: ["Clothes","Zora Gear","Lanayru","Camera"] },
     { name: "Kill a Guardian Scout IV", types: ["Shrine", "Miniboss", "Guardian"] },
     { name: "Take a Picture of all 4 Guardian Scout Types", types: ["Guardian", "Camera", "Compendium"] },
     { name: "Refine a Rusty Shield using an Octorok", types: ["Equipment"] },
     { name: "Bowl a Strike in the Bowling Minigame", types: ["Minigame","Hebra","Cold Resistance"] },
     { name: "Obtain 10 Ancient Arrows", types: ["Equipment"] },
-    { name: "Discover 2 Secret Hot Springs ", types: ["Hebra", "Cold Resistance"] }
+    { name: "Discover 2 Secret Hot Springs", types: ["Hebra", "Cold Resistance"] }
 ];
 bingoList[14] = [
     { name: "25 Koroks", types: ["Korok"] },
@@ -499,7 +499,7 @@ bingoList[15] = [
     { name: "Stasis +", types: ["Camera","Rune Upgrade","Hateno"] },
     { name: "10 Equipment in Compendium", types: ["Camera","Compendium"] },
     { name: "15 Bird Pictures in Compendium", types: ["Camera", "Compendium"] },
-    { name: "Discover 3 Secret Hot Springs ", types: ["Hebra", "Cold Resistance"] },
+    { name: "Discover 3 Secret Hot Springs", types: ["Hebra", "Cold Resistance"] },
     { name: "Open 3 Xenoblade Chests", types: ["Side Quest"] },
     { name: "Mount 9 different creatures", types: ["Mount"] }
 ];
@@ -606,7 +606,7 @@ bingoList[20] = [
     { name: "Mipha's Grace", types: ["Divine Beast","Lanayru"] },
     { name: "Collect 4 Picture Memories", types: ["Camera"] },
     { name: "4 Stamina Vessels", types: ["Shrine","Stamina"] },
-    { name: "20 Equipment in Compendium", types: ["Camera","Compendium"] },   
+    { name: "20 Equipment in Compendium", types: ["Camera","Compendium"] },
     { name: "Full Climber's Set", types: ["Clothes","Climbing Gear"] },
     { name: "20 Targets in Flight Range Minigame", types: ["Minigame","Tabantha","Cold Resistance"] },
     { name: "'The Stolen Heirloom' Shrine Quest", types: ["Shrine","Shrine Quest","Dueling Peaks","Heirloom","Camera"] }
@@ -662,7 +662,7 @@ bingoList[24] = [
     { name: "Urbosa's Fury", types: ["Divine Beast","Wasteland"] },
     { name: "Defeat Dark Beast Ganon", types: ["Hyrule Castle"] },
     { name: "Activate 9 Towers", types: ["Tower"] },
-    { name: "'From the Ground Up' Side Quest ", types: ["Side Quest", "Tarrey Town"] },
+    { name: "'From the Ground Up' Side Quest", types: ["Side Quest", "Tarrey Town"] },
     { name: "'The Weapon Connoisseur' Side Quest", types: ["Side Quest", "Equipment"] }
 ];
 bingoList[25] = [
