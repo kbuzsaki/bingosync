@@ -874,7 +874,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
-    **singleton_group(GameType.donald_duck_goin_quackers, "Donal Duck: Goin' Quackers!", "DD: GQ!"),
+    **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
