@@ -294,6 +294,8 @@ class GameType(Enum):
     snailiad = 290
     geometry_dash = 291
     mario_kart_double_dash = 292
+    bowsers_fury_blackout = 293
+    bowsers_fury_lockout = 294
 
     def __str__(self):
         return self.short_name
@@ -483,6 +485,13 @@ GAME_GROUPS = {
         "variants": [
             (GameType.binding_of_isaac, "Normal", "Isaac AB+"),
             (GameType.binding_of_isaac_racing, "Racing+", "Isaac R+"),
+        ],
+    },
+    GameType.bowsers_fury_blackout: {
+        "name": "Bowser's Fury",
+        "variants": [
+            (GameType.bowsers_fury_blackout, "Blackout", "Bowser's Fury Blackout"),
+            (GameType.bowsers_fury_lockout,  "Lockout",  "Bowser's Fury Lockout"),
         ],
     },
     GameType.castlevania_sotn: {
