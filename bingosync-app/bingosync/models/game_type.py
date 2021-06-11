@@ -284,6 +284,7 @@ class GameType(Enum):
     chess_dot_com = 280
     saga_frontier = 281
     cod_warzone = 282
+    mario_kart_8_deluxe = 283
 
     def __str__(self):
         return self.short_name
@@ -886,6 +887,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
+    **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
