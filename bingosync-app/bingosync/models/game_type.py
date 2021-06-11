@@ -292,6 +292,8 @@ class GameType(Enum):
     new_super_mario_bros_u = 288
     hollow_knight_item_rando_dab = 289
     snailiad = 290
+    geometry_dash = 291
+    mario_kart_double_dash = 292
 
     def __str__(self):
         return self.short_name
@@ -883,6 +885,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
+    **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
@@ -905,6 +908,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
+    **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
