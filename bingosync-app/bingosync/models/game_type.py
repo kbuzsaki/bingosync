@@ -284,7 +284,13 @@ class GameType(Enum):
     chess_dot_com = 280
     saga_frontier = 281
     cod_warzone = 282
-    hollow_knight_item_rando_dab = 283
+    mario_kart_8_deluxe = 283
+    crystalis = 284
+    golden_sun_lost_age_randomizer = 285
+    metroid_prime_2_randomizer_balanced = 286
+    metroid_prime_2_randomizer_chaos = 287
+    new_super_mario_bros_u = 288
+    hollow_knight_item_rando_dab = 289
 
     def __str__(self):
         return self.short_name
@@ -360,12 +366,12 @@ def strip_articles(name):
 
 
 DEFAULT_VARIANT_NAME = "Normal"
-def singleton_group(game_type, name, short_name):
+def singleton_group(game_type, name, short_name, variant_name=DEFAULT_VARIANT_NAME):
     return {
         game_type: {
             "name": name,
             "variants": [
-                (game_type, DEFAULT_VARIANT_NAME, short_name),
+                (game_type, variant_name, short_name),
             ],
         }
     }
@@ -642,6 +648,13 @@ GAME_GROUPS = {
             (GameType.metroid_prime_randomizer_chaos, "Randomizer Chaos", "MPR Chaos"),
         ],
     },
+    GameType.metroid_prime_2_randomizer_balanced: {
+    "name": "Metroid Prime 2: Echoes",
+    "variants": [
+        (GameType.metroid_prime_2_randomizer_balanced, "Randomizer Balanced", "MP2 Balanced"),
+        (GameType.metroid_prime_2_randomizer_chaos, "Randomizer Chaos", "MP2 Chaos"),
+    ],
+    },
     GameType.mgs_portable_ops_plus_training: {
         "name": "MGS: Portable Ops+",
         "variants": [
@@ -853,6 +866,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
+    **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
@@ -868,6 +882,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
+    **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
@@ -888,6 +903,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
+    **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
@@ -898,6 +914,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
+    **singleton_group(GameType.new_super_mario_bros_u, "New Super Mario Bros. U", "NSMBU"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
