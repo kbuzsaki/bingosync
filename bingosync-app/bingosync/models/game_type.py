@@ -287,6 +287,8 @@ class GameType(Enum):
     mario_kart_8_deluxe = 283
     crystalis = 284
     golden_sun_lost_age_randomizer = 285
+    metroid_prime_2_randomizer_balanced = 286
+    metroid_prime_2_randomizer_chaos = 287
 
     def __str__(self):
         return self.short_name
@@ -642,6 +644,13 @@ GAME_GROUPS = {
             (GameType.metroid_prime_randomizer_balanced, "Randomizer Balanced", "MPR Balanced"),
             (GameType.metroid_prime_randomizer_chaos, "Randomizer Chaos", "MPR Chaos"),
         ],
+    },
+    GameType.metroid_prime_2_randomizer_balanced: {
+    "name": "Metroid Prime 2: Echoes",
+    "variants": [
+        (GameType.metroid_prime_2_randomizer_balanced, "Randomizer Balanced", "MP2 Balanced"),
+        (GameType.metroid_prime_2_randomizer_chaos, "Randomizer Chaos", "MP2 Chaos"),
+    ],
     },
     GameType.mgs_portable_ops_plus_training: {
         "name": "MGS: Portable Ops+",
