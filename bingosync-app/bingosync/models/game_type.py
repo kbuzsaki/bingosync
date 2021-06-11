@@ -286,6 +286,7 @@ class GameType(Enum):
     cod_warzone = 282
     mario_kart_8_deluxe = 283
     crystalis = 284
+    golden_sun_lost_age_randomizer = 285
 
     def __str__(self):
         return self.short_name
@@ -869,6 +870,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
+    **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
