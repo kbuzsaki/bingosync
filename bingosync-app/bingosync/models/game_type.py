@@ -289,6 +289,7 @@ class GameType(Enum):
     golden_sun_lost_age_randomizer = 285
     metroid_prime_2_randomizer_balanced = 286
     metroid_prime_2_randomizer_chaos = 287
+    new_super_mario_bros_u = 288
 
     def __str__(self):
         return self.short_name
@@ -911,6 +912,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_ds, "New Super Mario Bros. DS", "NSMB DS"),
+    **singleton_group(GameType.new_super_mario_bros_u, "New Super Mario Bros. U", "NSMBU"),
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
