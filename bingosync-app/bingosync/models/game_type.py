@@ -290,6 +290,7 @@ class GameType(Enum):
     metroid_prime_2_randomizer_balanced = 286
     metroid_prime_2_randomizer_chaos = 287
     new_super_mario_bros_u = 288
+    hollow_knight_item_rando_dab = 289
 
     def __str__(self):
         return self.short_name
@@ -564,6 +565,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight_item_rando_pt, "Item Randomizer - Portuguese", "HK Random PT"),
             (GameType.hollow_knight_item_rando_cursed, "Item Randomizer - Cursed", "HK Item Rando Cursed"),
             (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless"),
+            (GameType.hollow_knight_item_rando_dab, "Item Randomizer - DAB", "HK Item Rando DAB"),
             (GameType.hollow_knight_cratthew, "Cratthew", "HK Cratthew"),
         ],
     },
