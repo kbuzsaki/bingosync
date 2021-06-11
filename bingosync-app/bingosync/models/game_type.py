@@ -285,6 +285,7 @@ class GameType(Enum):
     saga_frontier = 281
     cod_warzone = 282
     mario_kart_8_deluxe = 283
+    crystalis = 284
 
     def __str__(self):
         return self.short_name
@@ -360,12 +361,12 @@ def strip_articles(name):
 
 
 DEFAULT_VARIANT_NAME = "Normal"
-def singleton_group(game_type, name, short_name):
+def singleton_group(game_type, name, short_name, variant_name=DEFAULT_VARIANT_NAME):
     return {
         game_type: {
             "name": name,
             "variants": [
-                (game_type, DEFAULT_VARIANT_NAME, short_name),
+                (game_type, variant_name, short_name),
             ],
         }
     }
@@ -852,6 +853,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
+    **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
