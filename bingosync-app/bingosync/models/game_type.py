@@ -296,6 +296,7 @@ class GameType(Enum):
     mario_kart_double_dash = 292
     bowsers_fury_blackout = 293
     bowsers_fury_lockout = 294
+    super_meat_boy = 295
 
     def __str__(self):
         return self.short_name
@@ -969,6 +970,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
+    **singleton_group(GameType.super_meat_boy, "Super Meat Boy", "Super Meat Boy"),
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
