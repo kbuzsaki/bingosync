@@ -29,10 +29,10 @@ bingoList[7] = [
   { name: "Don't use fruit to feed Gordos", types: ["restriction", "nofruit"] }
 ];
 bingoList[8] = [
-  { name: "1 farm of each plantable fruit in your ranch", types: [] }
+  { name: "1 farm of each plantable fruit in your ranch", types: ["multiplot"] }
 ];
 bingoList[9] = [
-  { name: "1 farm of each plantable veggie in your ranch", types: [] },
+  { name: "1 farm of each plantable veggie in your ranch", types: ["multiplot"] },
   { name: "Pop the Tabby Gordo near the Moss Blanket", types: [] }
 ];
 bingoList[10] = [
