@@ -67,9 +67,9 @@ bingoList[9] = [
 bingoList[10] = [
 { name: "The Library(1)(I)", types: ["level5"] },
 { name: "Outskirts(2)(ILS)", types: ["level3"] },
-{ name: "Kill 50 infection forms", types: ["kill2"] },
+{ name: "Kill 15 Carrier forms", types: ["kill2"] },
 { name: "Beat a level with the Tough Luck skull active", types: ["skull"] },
-{ name: "Beat 2 levels on heroic", types: ["difficulty"] },
+{ name: "Beat 2 levels on Heroic", types: ["difficulty"] },
 ];
 bingoList[11] = [
 { name: "The Oracle(2)(LT)", types: ["level5"] },
@@ -123,7 +123,7 @@ bingoList[17] = [
 bingoList[18] = [
 { name: "The arbiter(2)(IF)", types: ["level3"] },
 { name: "Kizingo Boulevard(Odst)(T)", types: ["level2"] },
-{ name: "Kill 50 combat forms", types: ["kill3"] },
+{ name: "Kill 50 Combat forms", types: ["kill3"] },
 { name: "Get 50 Beat downs", types: ["collect"] },
 { name: "Beat 1 tank level(T)", types: ["tank"] },
 ];
@@ -137,7 +137,7 @@ bingoList[19] = [
 bingoList[20] = [
 { name: "Uprising(2)(L)", types: ["level3"] },
 { name: "Oni sword base(Reach)(L)", types: ["level2"] },
-{ name: "Kill 70 infection forms", types: ["kill3"] },
+{ name: "Kill 70 Combat forms", types: ["kill3"] },
 { name: "Kill 20 Drones", types: ["kill"] },
 { name: "Beat 2 tank level(T)", types: ["tank"] },
 ];
