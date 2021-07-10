@@ -297,6 +297,7 @@ class GameType(Enum):
     bowsers_fury_blackout = 293
     bowsers_fury_lockout = 294
     super_meat_boy = 295
+    pokemon_crystal_randomizer_tournament = 296
 
     def __str__(self):
         return self.short_name
@@ -429,6 +430,7 @@ GAME_GROUPS = {
             (GameType.pokemon_crystal, "Normal", "Poké Crystal"),
             (GameType.pokemon_crystal_randomizer, "Current Randomizer", "Crystal Current"),
             (GameType.pokemon_crystal_classic_randomizer, "Classic Randomizer", "Crystal Classic"),
+            (GameType.pokemon_crystal_randomizer_tournament, "2021 Summer Tournament Randomizer", "Crystal Tournament"),
         ],
     },
     GameType.pokemon_red_blue: {
