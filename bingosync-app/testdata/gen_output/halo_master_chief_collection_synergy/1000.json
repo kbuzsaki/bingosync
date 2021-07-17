@@ -15,7 +15,7 @@
         "name": "Pick up six collectables"
     },
     {
-        "name": "Kill 50 infection forms"
+        "name": "Kill 15 Carrier forms"
     },
     {
         "name": "Kill 20 grunts"
@@ -72,6 +72,6 @@
         "name": "Kill 20 Knights"
     },
     {
-        "name": "Kill 70 infection forms"
+        "name": "Kill 70 Combat forms"
     }
 ]
