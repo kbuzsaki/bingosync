@@ -301,6 +301,7 @@ class GameType(Enum):
     new_super_mario_bros_2 = 297
     crash_bandicoot_4 = 298
     kingdom_hearts_final_mix_randomizer = 299
+    celeste_portuguese = 300
 
     def __str__(self):
         return self.short_name
@@ -514,6 +515,7 @@ GAME_GROUPS = {
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
             (GameType.celeste_long, "Long", "Celeste Long"),
             (GameType.celeste_cn, "Normal - CN", "Celeste CN"),
+            (GameType.celeste_portuguese, "Normal - Portuguese", "Celeste PT"),
             (GameType.celeste_blackout_cn, "Blackout - CN", "Celeste Blackout CN"),
             (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
         ],
