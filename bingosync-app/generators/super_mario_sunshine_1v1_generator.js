@@ -13,23 +13,24 @@ bingoList[1] = [
 bingoList[2] = [
 { name: "Two 100 Coin Shines"},
 { name: "50 Yellow Coins from 2 Levels OR 150 Delfino Yellow Coins"},
-{ name: "Bianco 4 Hoverless"},
+{ name: "1 Bianco Hidden Shine"},
 { name: "1 Turbo Nozzle Unlock"},
 { name: "Pianta 100 Coin Shine"}
 ];
 bingoList[3] = [
 { name: "18 Lives"},
-{ name: "20 Lives"},
+{ name: "22 Lives"},
 { name: "Ricco 100 Coin Shine"},
 { name: "Gelato 100 Coin Shine"},
-{ name: "1 Bianco Hidden Shine"}
+{ name: "15 Gelato Blue Coins"},
+
 ];
 bingoList[4] = [
-{ name: "15 Gelato Blue Coins"},
-{ name: "5 Linked Blue Coin Pairs"},
+{ name: "Bianco 4 Hoverless"},
+{ name: "23 Ricco Blue Coins"},
 { name: "3 Boss Shines"},
 { name: "1 Ricco Hidden Shine"},
-{ name: "Pianta 3 Damageless"}
+{ name: "16 Pianta Blue Coins"}
 ];
 bingoList[5] = [
 { name: "3 Fruit Lady Blue Coins"},
@@ -53,7 +54,7 @@ bingoList[7] = [
 { name: "7 Shines in Secrets"}
 ];
 bingoList[8] = [
-{ name: "16 Pianta Blue Coins"},
+{ name: "Pianta 3 Damageless"},
 { name: "2 Rocket Nozzle Unlocks"},
 { name: "4 Unique Boss Shines"},
 { name: "4 Pianta Shines"},
@@ -62,7 +63,7 @@ bingoList[8] = [
 bingoList[9] = [
 { name: "3 Secret Shines"},
 { name: "4 Red Coin Shines"},
-{ name: "23 Ricco Blue Coins"},
+{ name: "5 Linked Blue Coin Pairs"},
 { name: "5 Blue Bird Blue Coins"},
 { name: "16 Pinna Blue Coins"}
 ];
@@ -85,18 +86,18 @@ bingoList[12] = [
 { name: "7 Pinna Beach Blue Coins OR 4 Fruit Lady Blue Coins"},
 { name: "20 Blue Coins from 2 Levels"},
 { name: "4 Hidden Shines"},
-{ name: "All 15 Pinna Yellow Button Coins"}
+{ name: "10 Yellow Button Coins"}
 ];
 bingoList[13] = [
 { name: "6 Pinna Shines"},
 { name: "Pinna 5 from the back Hoverless"},
-{ name: "1 Butterfly Blue Coin (No Pinna)"},
+{ name: "1 Butterfly Blue Coin (NO Pinna)"},
 { name: "Eel Shine"},
 { name: "Sirena 4 Hidden Shine"},
 ];
 bingoList[14] = [
 { name: "Both Bell Shines OR Lighthouse Shine"},
-{ name: "Pinna 4 AND Lily Pad Shines"},
+{ name: "Lily pad NO Pipe Clips"},
 { name: "Ride Yoshi in 2 Worlds"},
 { name: "5 Boss Shines"},
 { name: "5 Red Coin Shines"}
@@ -144,15 +145,15 @@ bingoList[20] = [
 { name: "Three 100 Coin Shines"}
 ];
 bingoList[21] = [
+{ name: "3 Shines from 4 Levels"},
+{ name: "4 Shines from 3 Levels"},
 { name: "2 Turbo Nozzle Unlocks"},
-{ name: "8 Episode Shines"},
 { name: "13 Shines from Delfino (With Blue Trades)"},
-{ name: "6 Shines from 2 Worlds"},
 { name: "80 Total Blue Coins"}
 ];
 bingoList[22] = [
-{ name: "3 Shines from 4 Levels"},
-{ name: "4 Shines from 3 Levels"},
+{ name: "8 Episode Shines"},
+{ name: "6 Shines from 2 Worlds"},
 { name: "1 Shine from each Level"},
 { name: "12 Level Shines"},
 { name: "8 Shines from 1 Level"}
