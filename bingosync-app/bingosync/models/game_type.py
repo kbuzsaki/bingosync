@@ -299,6 +299,7 @@ class GameType(Enum):
     super_meat_boy = 295
     pokemon_crystal_randomizer_tournament = 296
     new_super_mario_bros_2 = 297
+    crash_bandicoot_4 = 298
 
     def __str__(self):
         return self.short_name
@@ -880,6 +881,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
+    **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
