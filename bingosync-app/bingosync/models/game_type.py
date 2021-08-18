@@ -302,6 +302,9 @@ class GameType(Enum):
     crash_bandicoot_4 = 298
     kingdom_hearts_final_mix_randomizer = 299
     celeste_portuguese = 300
+    octopath_traveler_short = 301
+    ocotpath_traveler_medium = 302
+    octopath_traveler_long = 303
 
     def __str__(self):
         return self.short_name
@@ -709,6 +712,9 @@ GAME_GROUPS = {
         "variants": [
             (GameType.octopath_traveler, "Standard", "Octopath"),
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
+            (GameType.octopath_traveler_short, "Short Card", "Octopath - Short Game"),
+            (GameType.octopath_traveler_short, "Medium Card", "Octopath - Medium Game"),
+            (GameType.octopath_traveler_short, "Long Card", "Octopath - Long Game")
         ],
     },
     GameType.old_school_runescape: {
