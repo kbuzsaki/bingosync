@@ -713,8 +713,8 @@ GAME_GROUPS = {
             (GameType.octopath_traveler, "Standard", "Octopath"),
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
             (GameType.octopath_traveler_short, "Short Card", "Octopath - Short Game"),
-            (GameType.octopath_traveler_short, "Medium Card", "Octopath - Medium Game"),
-            (GameType.octopath_traveler_short, "Long Card", "Octopath - Long Game")
+            (GameType.octopath_traveler_medium, "Medium Card", "Octopath - Medium Game"),
+            (GameType.octopath_traveler_long, "Long Card", "Octopath - Long Game")
         ],
     },
     GameType.old_school_runescape: {
