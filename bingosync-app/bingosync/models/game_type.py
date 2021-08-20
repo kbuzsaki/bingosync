@@ -303,7 +303,7 @@ class GameType(Enum):
     kingdom_hearts_final_mix_randomizer = 299
     celeste_portuguese = 300
     octopath_traveler_short = 301
-    ocotpath_traveler_medium = 302
+    octopath_traveler_medium = 302
     octopath_traveler_long = 303
 
     def __str__(self):
