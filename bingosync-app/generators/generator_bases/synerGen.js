@@ -69,7 +69,7 @@
 
 //synerGen: a bingo generator based on SRLv5 and Hollow Knight's generators.
 bingoGenerator = function(bingoList, opts) {
-    
+
     //Create a magic square that the board will be based on
     function magicSquare() {
         var A = B = C = D = E = f = g = h = i = j = 0;
@@ -178,18 +178,18 @@ bingoGenerator = function(bingoList, opts) {
 
         return template;
     }
-    
+
     //Reduces fluff in bingoList object if there's a method to set defaults
     function preprocessBingoList(bingoList) {
         for (const key of Object.keys(bingoList)) {
             bingoList[key].name = key;
-            
+
             if (!bingoList[key].hasOwnProperty("Desc"))
                 bingoList[key].Desc = "#!#" + key + "#!#";
 
             if (!bingoList[key].hasOwnProperty("Diff"))
                 bingoList[key].Diff = 0;
-            
+
             if (!bingoList[key].hasOwnProperty("Types"))
                 bingoList[key].Types = [];
 
@@ -198,12 +198,12 @@ bingoGenerator = function(bingoList, opts) {
 
             if (!bingoList[key].hasOwnProperty("Synergy"))
                 bingoList[key].Synergy = [];
-            
+
             if (!bingoList[key].hasOwnProperty("Score"))
                 bingoList[key].Score = 0;
         }
     }
-    
+
     //Make sure everything exists that should, pull out maxScore and bingoTypes from bingoList
     var bingoTypes = bingoList.bingoTypes;
     delete bingoList.bingoTypes;
@@ -216,15 +216,15 @@ bingoGenerator = function(bingoList, opts) {
     var unchoosable = [];
     for (const key of Object.keys(bingoList))
         choosable.push(key);
-    
+
     //Create counts for all types
     var types = { };
     for (const key of Object.keys(bingoTypes)) {
         if (!bingoTypes[key].hasOwnProperty("Max"))
-            bingoTypes.key.Max = 5;
+            bingoTypes[key].Max = 5;
         types[key] = bingoTypes[key].Max;
     }
-    
+
     //Seed the random
     seed = Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()));
     //console.log(seed);
@@ -237,9 +237,9 @@ bingoGenerator = function(bingoList, opts) {
     var chosenGoals = [];
     for (var i = 1; i <= 25; i++)
         chosenGoals.push("");
-    
+
     for (var i = 1; i <= 25; i++) {
-        
+
         //this is necessary on the edge case that all the exclusions and difficulties wind up eliminating every goal
         if (choosable.length == 0) {
             var newChoosableDiffs = [];
@@ -302,11 +302,11 @@ bingoGenerator = function(bingoList, opts) {
         if (unchosenDiffIndex != -1) {
             unchosenDiffs.splice(unchosenDiffIndex, 1);
         }
-        
+
         //increment type counters if relevant, also remove other goals of the same type if relevant
         for (var j = 0; j < goal.Types.length; j++) {
             types[goal.Types[j]]--;
-            if (types[goal.Types] <= 0) {
+            if (types[goal.Types[j]] <= 0) {
                 for (var k = 0; k < choosable.length; k++) {
                     for (var l = 0; l < bingoList[choosable[k]].Types.length; l++) {
                         if (bingoList[choosable[k]].Types[l] === goal.Types[j]) {
@@ -318,7 +318,7 @@ bingoGenerator = function(bingoList, opts) {
                 }
             }
         }
-        
+
         //decrement score
         maxScore = maxScore - goal.Score;
         //remove all goals of the same difficulty from choosable[], also remove excluded goals and goals with too high score if relevant
