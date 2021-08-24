@@ -54,7 +54,7 @@ var bingoList = {
         "specific_character": {"Max": 4},
         "exploration": {"Max": 4},
         "chest": {"Max": 2},
-        "chest_set": {"Max": 2},
+        "chest_set": {"Max": 1},
         "chest_counts": {"Max": 1},
         "combat": {"Max": 4},
         "subjob": {"Max": 2},
@@ -174,120 +174,127 @@ var bingoList = {
         "#_ss_post_game": {"Max": 1}
 },
 
-"800_elem_atk": {
-        "Desc": "800+ Elemental Attack",
+"40_t_m_sstones": {
+        "Desc": "40 Soulstone (M)'s",
         "Diff": 1,
-        "Types": ["elem_atk","stats","#_elem_atk"]
+        "Types": ["item_count","soulstone","item_set","items","progression","#_t_m_sstones"]
 },
 
-"70_t_brown_chests": {
-        "Desc": "Open 70 Brown Chests",
+"45_u_armors": {
+        "Desc": "45 Unique Armors",
         "Diff": 1,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
+        "Types": ["broad_item_set","armor","items","#_u_armors"]
 },
 
-"42_t_red_chests": {
-        "Desc": "Open 42 Red Chests",
+"4_ss_III_sets": {
+        "Desc": "4 (III) Side Stories",
         "Diff": 1,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
+        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets"]
 },
 
-"15_u_rats_bl": {
-        "Desc": "Capture 15 Unique Ratkin/Ratking",
+"9_ss_cliftlands": {
+        "Desc": "9 Side Stories in Cliftlands (No Kit)",
         "Diff": 1,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_rats_bl"]
+        "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
 },
 
-"40_t_pouches": {
-        "Desc": "40 Money Pouches",
-        "Diff": 2,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
+"3_ch_3": {
+        "Desc": "Complete 3 Chapter 3's",
+        "Diff": 1,
+        "Types": ["chapter","progression","#_ch_3"],
+        "Excludes": ["1_ch_2","2_ch_2","3_ch_2","1_ch_3","2_ch_3"]
 },
 
-"25_u_accuracy": {
-        "Desc": "25 Unique Accuracy Equipments",
-        "Diff": 2,
-        "Types": ["broad_item_set","armor","weapon","accuracy","items","#_u_accuracy"]
+"6_u_dragon": {
+        "Desc": "6 Unique Dragon Equipments",
+        "Diff": 1,
+        "Types": ["item_set","armor","weapon","crit","items","#_u_dragon"]
 },
 
-"12_t_items": {
-        "Desc": "12 Pages in All Items",
-        "Diff": 2,
-        "Types": ["broad_item_set","item_count","items","#_t_items"]
+"25_u_speed": {
+        "Desc": "25 Unique Speed Equipments",
+        "Diff": 1,
+        "Types": ["broad_item_set","armor","weapon","speed","items","#_u_speed"]
 },
 
-"800_elem_def": {
-        "Desc": "800+ Elemental Defense",
-        "Diff": 2,
-        "Types": ["elem_def","stats","#_elem_def"]
+"5_u_boss_drop": {
+        "Desc": "5 Unique Boss Equipment Drops",
+        "Diff": 1,
+        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
 },
 
-"550_critical": {
-        "Desc": "550+ Critical",
-        "Diff": 2,
-        "Types": ["crit","stats","#_critical"]
+"30_side_stories": {
+        "Desc": "30 Side Stories",
+        "Diff": 1,
+        "Types": ["broad_ss_set","side_stories","ss_II","#_side_stories"]
 },
 
-"9_ss_coastlands": {
-        "Desc": "9 Side Stories in Coastlands",
-        "Diff": 2,
-        "Types": ["ss_set","ss_coastlands","side_stories","ss_boss","#_ss_coastlands"]
-},
-
-"15_u_lizards_bl": {
-        "Desc": "Capture 15 Unique Lizardmen/Lizardking",
-        "Diff": 2,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_lizards_bl"]
-},
-
-"15_u_frogs_bl": {
-        "Desc": "Capture 15 Unique Froggen/Frogking",
-        "Diff": 2,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_frogs_bl"]
-},
-
-"15_u_birds_bl": {
-        "Desc": "Capture 15 Unique Birdian/Birdking",
-        "Diff": 2,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_birds_bl"]
+"9_ss_woodlands": {
+        "Desc": "9 Side Stories in Woodlands (No Kit)",
+        "Diff": 1,
+        "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
 "7_ch_2": {
         "Desc": "Complete 7 Chapter 2's",
-        "Diff": 2,
+        "Diff": 1,
         "Types": ["chapter","progression","#_ch_2"],
         "Excludes": ["5_ch_1","6_ch_1","7_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2"]
 },
 
-"25_u_gold_items": {
-        "Desc": "25 Unique Gold Items",
-        "Diff": 3,
-        "Types": ["broad_item_set","gold_item","items","#_u_gold_items"]
+"16_u_shields": {
+        "Desc": "16 Unique Shields",
+        "Diff": 2,
+        "Types": ["broad_item_set","armor","items","progression","#_u_shields"]
 },
 
-"12_t_olives": {
-        "Desc": "12 Olive (L)'s",
-        "Diff": 3,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+"400_sp": {
+        "Desc": "400+ SP",
+        "Diff": 2,
+        "Types": ["sp","stats","#_sp"]
 },
 
-"9_ss_sunlands": {
-        "Desc": "9 Side Stories in Sunlands",
-        "Diff": 3,
-        "Types": ["ss_set","ss_sunlands","side_stories","ss_boss","#_ss_sunlands"]
+"str_8_bl": {
+        "Desc": "Capture a Strength 8 Monster",
+        "Diff": 2,
+        "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
 },
 
-"24_t_purple_chests": {
-        "Desc": "Open 24 Purple Chests",
-        "Diff": 3,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
+"7_u_phys_staves": {
+        "Desc": "7 Unique Physical Staves",
+        "Diff": 2,
+        "Types": ["item_set","weapon","phys_atk","items","#_u_phys_staves"]
 },
 
-"dreisang": {
-        "Desc": "Defeat Dreisang",
-        "Diff": 3,
-        "Types": ["boss","subjob","advanced_boss","exploration"],
-        "Excludes": ["1_advanced_bosses"]
+"4_alluring": {
+        "Desc": "4 Alluring Ribbons",
+        "Diff": 2,
+        "Types": ["item_set","accessory","side_stories","items","progression","#_alluring"]
+},
+
+"750_phys_atk": {
+        "Desc": "750+ Physical Attack",
+        "Diff": 2,
+        "Types": ["phys_atk","stats","#_phys_atk"]
+},
+
+"730_evasion": {
+        "Desc": "730+ Evasion",
+        "Diff": 2,
+        "Types": ["evasion","stats","#_evasion"]
+},
+
+"14_u_magic_bl": {
+        "Desc": "Capture 14 Unique Elemental Themed Enemies",
+        "Diff": 2,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
+},
+
+"ch_3_slow": {
+        "Desc": "Chapter 3 Boss without Soulstones or Vets",
+        "Diff": 2,
+        "Types": ["combat_challenge","boss","progression","combat"]
 },
 
 "4_u_rune": {
@@ -296,71 +303,71 @@ var bingoList = {
         "Types": ["item_set","weapon","elem_atk","items","progression","#_u_rune"]
 },
 
-"5_u_boss_drop": {
-        "Desc": "5 Unique Boss Equipment Drops",
+"900_elem_def": {
+        "Desc": "900+ Elemental Defense",
         "Diff": 3,
-        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
+        "Types": ["elem_def","stats","#_elem_def"]
 },
 
-"30_u_body_armors": {
-        "Desc": "30 Unique Body Armors",
+"600_critical": {
+        "Desc": "600+ Critical",
         "Diff": 3,
-        "Types": ["broad_item_set","armor","items","#_u_body_armors"]
+        "Types": ["crit","stats","#_critical"]
 },
 
-"40_t_town_boosts": {
-        "Desc": "40 Town Boost Infos",
+"15_u_lizards_bl": {
+        "Desc": "Capture 15 Unique Lizardmen / Lizardking",
         "Diff": 3,
-        "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_lizards_bl"]
 },
 
-"30_side_stories": {
-        "Desc": "30 Side Stories",
+"15_u_frogs_bl": {
+        "Desc": "Capture 15 Unique Froggen / Frogking",
         "Diff": 3,
-        "Types": ["broad_ss_set","side_stories","ss_II","#_side_stories"]
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_frogs_bl"]
 },
 
-"ss_boss_5": {
-        "Desc": "SS: Into Thin Air",
+"15_u_birds_bl": {
+        "Desc": "Capture 15 Unique Birdian / Birdking",
         "Diff": 3,
-        "Types": ["ss_specific","ss_woodlands","ss_boss","boss","advanced_boss","side_stories"]
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_birds_bl"]
 },
 
-"3_ss_bosses": {
-        "Desc": "Defeat 3 Side Story Bosses",
+"15_u_rats_bl": {
+        "Desc": "Capture 15 Unique Ratkin / Ratking",
         "Diff": 3,
-        "Types": ["ss_set","ss_boss","boss","side_stories","#_ss_bosses"]
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_rats_bl"]
 },
 
-"8_optional_bosses": {
-        "Desc": "Defeat 8 Unique Optional Bosses",
+"ch_3_no_boost": {
+        "Desc": "Chapter 3 Boss without Boosting",
         "Diff": 3,
+        "Types": ["combat_challenge","boss","progression","combat"]
+},
+
+"20_u_spears": {
+        "Desc": "20 Unique Spears",
+        "Diff": 4,
+        "Types": ["broad_item_set","weapon","items","#_u_spears"]
+},
+
+"9_optional_bosses": {
+        "Desc": "Defeat 9 Unique Optional Bosses",
+        "Diff": 4,
         "Types": ["boss","exploration","#_optional_bosses"]
 },
 
-"50_u_weapons": {
-        "Desc": "50 Unique Weapons",
+"dreisang": {
+        "Desc": "Defeat Dreisang",
         "Diff": 4,
-        "Types": ["broad_item_set","weapon","items","#_u_weapons"]
+        "Types": ["boss","subjob","advanced_boss","exploration"],
+        "Excludes": ["1_advanced_bosses"]
 },
 
-"12_u_elem_reduce": {
-        "Desc": "12 Unique Elemental Reduction Equipments",
+"1_advanced_bosses": {
+        "Desc": "Defeat 1 Advanced Job Boss",
         "Diff": 4,
-        "Types": ["item_set","armor","accessory","elem_reduce","items","progression","#_u_elem_reduce"]
-},
-
-"750_phys_def": {
-        "Desc": "750+ Physical Defense",
-        "Diff": 4,
-        "Types": ["phys_def","stats","#_phys_def"]
-},
-
-"6_ss_III_sets": {
-        "Desc": "6 (III) Side Stories",
-        "Diff": 4,
-        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
-        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets"]
+        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
 },
 
 "8_ch_2": {
@@ -370,64 +377,71 @@ var bingoList = {
         "Excludes": ["5_ch_1","6_ch_1","7_ch_1","8_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","7_ch_2"]
 },
 
-"25_u_elem_wpn": {
-        "Desc": "25 Unique Elemental Non-Staff Weapons",
+"20_t_elem_amulets": {
+        "Desc": "20 Elemental Reduction Amulets/Charms",
         "Diff": 5,
-        "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
+        "Types": ["item_set","item_count","elem_reduce","accessory","items","progression","side_stories","#_t_elem_amulets"]
 },
 
-"25_u_critical": {
-        "Desc": "25 Unique Critical Equipments",
+"850_elem_atk": {
+        "Desc": "850+ Elemental Attack",
         "Diff": 5,
-        "Types": ["broad_item_set","armor","weapon","crit","items","#_u_critical"]
+        "Types": ["elem_atk","stats","#_elem_atk"]
 },
 
-"20_u_spears": {
-        "Desc": "20 Unique Spears",
+"4_ss_region_sets": {
+        "Desc": "4 Side Stories in Each Region",
         "Diff": 5,
-        "Types": ["broad_item_set","weapon","items","#_u_spears"]
+        "Types": ["broad_ss_set","side_stories","#_ss_region_sets"]
 },
 
-"75_t_chests": {
-        "Desc": "Open 75 Total Chests",
+"7_ss_II_sets": {
+        "Desc": "7 (II) Side Stories",
+        "Diff": 5,
+        "Types": ["ss_set","ss_chain","ss_II","side_stories","#_ss_II_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets"]
+},
+
+"9_ss_coastlands": {
+        "Desc": "9 Side Stories in Coastlands (No Kit)",
+        "Diff": 5,
+        "Types": ["ss_set","ss_coastlands","side_stories","ss_boss","#_ss_coastlands"]
+},
+
+"10_ss_riverlands": {
+        "Desc": "10 Side Stories in Riverlands (No Kit)",
+        "Diff": 5,
+        "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
+},
+
+"30_t_l_sstones": {
+        "Desc": "30 Soulstone (L)'s",
+        "Diff": 5,
+        "Types": ["item_count","soulstone","item_set","items","#_t_l_sstones"]
+},
+
+"12_t_olives": {
+        "Desc": "12 Olive (L)'s",
+        "Diff": 5,
+        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+},
+
+"20_t_stones": {
+        "Desc": "20 Status Stones",
+        "Diff": 5,
+        "Types": ["item_set","item_count","status_stone","accessory","items","progression","#_t_stones"]
+},
+
+"105_t_chests": {
+        "Desc": "Open 105 Total Chests",
         "Diff": 5,
         "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
-"1_advanced_bosses": {
-        "Desc": "Defeat 1 Advanced Job Bosses",
+"25_u_bl": {
+        "Desc": "Capture 25 Unique Monsters",
         "Diff": 5,
-        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
-},
-
-"14_u_magic_bl": {
-        "Desc": "Capture 14 Unique Magic Enemies",
-        "Diff": 5,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
-},
-
-"str_8_bl": {
-        "Desc": "Capture a Strength 8 Monster",
-        "Diff": 5,
-        "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
-},
-
-"25_u_evasion": {
-        "Desc": "25 Unique Evasion Equipments",
-        "Diff": 6,
-        "Types": ["broad_item_set","armor","weapon","evasion","items","#_u_evasion"]
-},
-
-"40_t_m_sstones": {
-        "Desc": "40 Soulstone (M)'s",
-        "Diff": 6,
-        "Types": ["item_count","soulstone","item_set","items","#_t_m_sstones"]
-},
-
-"16_t_l_nuts": {
-        "Desc": "16 Nut (L)'s",
-        "Diff": 6,
-        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_l_nuts"]
+        "Types": ["combat_counts","specific_character","beast_lore","combat","#_u_bl"]
 },
 
 "20_u_swords": {
@@ -436,54 +450,65 @@ var bingoList = {
         "Types": ["broad_item_set","weapon","items","#_u_swords"]
 },
 
-"20_u_bows": {
-        "Desc": "20 Unique Bows",
+"20_u_axes": {
+        "Desc": "20 Unique Axes",
         "Diff": 6,
-        "Types": ["broad_item_set","weapon","items","#_u_bows"]
+        "Types": ["broad_item_set","weapon","items","#_u_axes"]
 },
 
-"4_alluring": {
-        "Desc": "4 Alluring Ribbons",
+"10_ss_cliftlands": {
+        "Desc": "10 Side Stories in Cliftlands (No Kit)",
         "Diff": 6,
-        "Types": ["item_set","accessory","side_stories","items","progression","#_alluring"]
+        "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
 },
 
-"4_ss_region_sets": {
-        "Desc": "4 Side Stories in Each Region",
+"40_weakness_sets": {
+        "Desc": "40 Revealed Weakness Sets",
         "Diff": 6,
-        "Types": ["broad_ss_set","side_stories","#_ss_region_sets"]
-},
-
-"40_u_accessories": {
-        "Desc": "40 Unique Accessories",
-        "Diff": 7,
-        "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","progression","side_stories","#_u_accessories"]
-},
-
-"400_sp": {
-        "Desc": "400+ SP",
-        "Diff": 7,
-        "Types": ["sp","stats","#_sp"]
-},
-
-"730_evasion": {
-        "Desc": "730+ Evasion",
-        "Diff": 7,
-        "Types": ["evasion","stats","#_evasion"]
-},
-
-"steorra": {
-        "Desc": "Defeat Steorra",
-        "Diff": 7,
-        "Types": ["boss","subjob","advanced_boss","exploration"],
-        "Excludes": ["1_advanced_bosses"]
+        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
 },
 
 "4_ch_3": {
         "Desc": "Complete 4 Chapter 3's",
-        "Diff": 7,
+        "Diff": 6,
         "Types": ["chapter","progression","#_ch_3"],
         "Excludes": ["1_ch_2","2_ch_2","3_ch_2","4_ch_2","1_ch_3","2_ch_3","3_ch_3"]
+},
+
+"450_accuracy": {
+        "Desc": "450+ Accuracy",
+        "Diff": 6,
+        "Types": ["accuracy","stats","#_accuracy"]
+},
+
+"600_speed": {
+        "Desc": "600+ Speed",
+        "Diff": 6,
+        "Types": ["speed","stats","#_speed"]
+},
+
+"25_u_accuracy": {
+        "Desc": "25 Unique Accuracy Equipments",
+        "Diff": 7,
+        "Types": ["broad_item_set","armor","weapon","accuracy","items","#_u_accuracy"]
+},
+
+"6_u_boss_drop": {
+        "Desc": "6 Unique Boss Equipment Drops",
+        "Diff": 7,
+        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
+},
+
+"16_t_l_nuts": {
+        "Desc": "16 Nut (L)'s",
+        "Diff": 7,
+        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_l_nuts"]
+},
+
+"20_u_bows": {
+        "Desc": "20 Unique Bows",
+        "Diff": 7,
+        "Types": ["broad_item_set","weapon","items","#_u_bows"]
 },
 
 "7_u_necklaces": {
@@ -492,83 +517,67 @@ var bingoList = {
         "Types": ["item_set","accessory","stat_accessory","items","#_u_necklaces"]
 },
 
-"750_phys_atk": {
-        "Desc": "750+ Physical Attack",
+"5_ss_III_sets": {
+        "Desc": "5 (III) Side Stories",
         "Diff": 7,
-        "Types": ["phys_atk","stats","#_phys_atk"]
+        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets"]
 },
 
-"900_elem_def": {
-        "Desc": "900+ Elemental Defense",
+"9_ss_sunlands": {
+        "Desc": "9 Side Stories in Sunlands (No Kit)",
         "Diff": 7,
-        "Types": ["elem_def","stats","#_elem_def"]
+        "Types": ["ss_set","ss_sunlands","side_stories","ss_boss","#_ss_sunlands"]
 },
 
-"600_critical": {
-        "Desc": "600+ Critical",
-        "Diff": 7,
-        "Types": ["crit","stats","#_critical"]
+"12_t_items": {
+        "Desc": "12 Pages in All Items",
+        "Diff": 8,
+        "Types": ["broad_item_set","item_count","items","#_t_items"]
 },
 
-"80_t_brown_chests": {
-        "Desc": "Open 80 Brown Chests",
-        "Diff": 7,
+"825_phys_def": {
+        "Desc": "825+ Physical Defense",
+        "Diff": 8,
+        "Types": ["phys_def","stats","#_phys_def"]
+},
+
+"40_side_stories": {
+        "Desc": "40 Side Stories",
+        "Diff": 8,
+        "Types": ["broad_ss_set","side_stories","ss_II","#_side_stories"]
+},
+
+"8_ss_II_sets": {
+        "Desc": "8 (II) Side Stories",
+        "Diff": 8,
+        "Types": ["ss_set","ss_chain","ss_II","side_stories","#_ss_II_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","7_ss_II_sets"]
+},
+
+"3_ss_bosses": {
+        "Desc": "Defeat 3 Side Story Bosses",
+        "Diff": 8,
+        "Types": ["ss_set","ss_boss","boss","side_stories","#_ss_bosses"]
+},
+
+"90_t_brown_chests": {
+        "Desc": "Open 90 Brown Chests",
+        "Diff": 8,
         "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
 },
 
-"48_t_red_chests": {
-        "Desc": "Open 48 Red Chests",
-        "Diff": 7,
+"54_t_red_chests": {
+        "Desc": "Open 54 Red Chests",
+        "Diff": 8,
         "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
 },
 
-"7_ss_III_sets": {
-        "Desc": "7 (III) Side Stories",
+"steorra": {
+        "Desc": "Defeat Steorra",
         "Diff": 8,
-        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
-        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","7_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets","6_ss_III_sets"]
-},
-
-"9_optional_bosses": {
-        "Desc": "Defeat 9 Unique Optional Bosses",
-        "Diff": 8,
-        "Types": ["boss","exploration","#_optional_bosses"]
-},
-
-"ch_3_no_boost": {
-        "Desc": "Chapter 3 Boss without Boosting",
-        "Diff": 8,
-        "Types": ["combat_challenge","boss","progression","combat"]
-},
-
-"6_u_boss_drop": {
-        "Desc": "6 Unique Boss Equipment Drops",
-        "Diff": 8,
-        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
-},
-
-"50_t_nuts": {
-        "Desc": "50 Nuts",
-        "Diff": 8,
-        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_nuts"]
-},
-
-"20_u_axes": {
-        "Desc": "20 Unique Axes",
-        "Diff": 8,
-        "Types": ["broad_item_set","weapon","items","#_u_axes"]
-},
-
-"20_t_elem_amulets": {
-        "Desc": "20 Elemental Reduction Amulets/Charms",
-        "Diff": 8,
-        "Types": ["item_set","item_count","elem_reduce","accessory","items","progression","side_stories","#_t_elem_amulets"]
-},
-
-"850_elem_atk": {
-        "Desc": "850+ Elemental Attack",
-        "Diff": 8,
-        "Types": ["elem_atk","stats","#_elem_atk"]
+        "Types": ["boss","subjob","advanced_boss","exploration"],
+        "Excludes": ["1_advanced_bosses"]
 },
 
 "balogar": {
@@ -578,314 +587,216 @@ var bingoList = {
         "Excludes": ["1_advanced_bosses"]
 },
 
-"2_ch_4": {
-        "Desc": "Complete 2 Chapter 4's",
-        "Diff": 8,
-        "Types": ["chapter","progression","#_ch_4"],
-        "Excludes": ["1_ch_2","2_ch_2","1_ch_3","2_ch_3","1_ch_4"]
-},
-
-"20_u_daggers": {
-        "Desc": "20 Unique Daggers",
+"25_u_critical": {
+        "Desc": "25 Unique Critical Equipments",
         "Diff": 9,
-        "Types": ["broad_item_set","weapon","items","#_u_daggers"]
+        "Types": ["broad_item_set","armor","weapon","crit","items","#_u_critical"]
 },
 
-"28_t_purple_chests": {
-        "Desc": "Open 28 Purple Chests",
+"50_t_nuts": {
+        "Desc": "50 Nuts",
         "Diff": 9,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
+        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_nuts"]
 },
 
-"18_u_lizards_bl": {
-        "Desc": "Capture 18 Unique Lizardmen/Lizardking",
+"40_u_accessories": {
+        "Desc": "40 Unique Accessories",
         "Diff": 9,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_lizards_bl"]
-},
-
-"18_u_frogs_bl": {
-        "Desc": "Capture 18 Unique Froggen/Frogking",
-        "Diff": 9,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_frogs_bl"]
-},
-
-"18_u_birds_bl": {
-        "Desc": "Capture 18 Unique Birdian/Birdking",
-        "Diff": 9,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_birds_bl"]
-},
-
-"18_u_rats_bl": {
-        "Desc": "Capture 18 Unique Ratkin/Ratking",
-        "Diff": 9,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_rats_bl"]
-},
-
-"30_t_l_sstones": {
-        "Desc": "30 Soulstone (L)'s",
-        "Diff": 10,
-        "Types": ["item_count","soulstone","item_set","items","#_t_l_sstones"]
-},
-
-"20_t_stones": {
-        "Desc": "20 Status Stones",
-        "Diff": 10,
-        "Types": ["item_set","item_count","status_stone","accessory","items","progression","#_t_stones"]
-},
-
-"40_side_stories": {
-        "Desc": "40 Side Stories",
-        "Diff": 10,
-        "Types": ["broad_ss_set","side_stories","ss_II","#_side_stories"]
-},
-
-"40_weakness_sets": {
-        "Desc": "40 Revealed Weakness Sets",
-        "Diff": 10,
-        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
-},
-
-"6_ss_post_game": {
-        "Desc": "6 Post Game Side Stories",
-        "Diff": 10,
-        "Types": ["side_stories","broad_ss_set","progression","#_ss_post_game"]
-},
-
-"450_accuracy": {
-        "Desc": "450+ Accuracy",
-        "Diff": 10,
-        "Types": ["accuracy","stats","#_accuracy"]
-},
-
-"25_t_m_nuts": {
-        "Desc": "25 Nut (M)'s",
-        "Diff": 11,
-        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_m_nuts"]
-},
-
-"825_phys_def": {
-        "Desc": "825+ Physical Defense",
-        "Diff": 11,
-        "Types": ["phys_def","stats","#_phys_def"]
-},
-
-"600_speed": {
-        "Desc": "600+ Speed",
-        "Diff": 11,
-        "Types": ["speed","stats","#_speed"]
-},
-
-"20_u_staves": {
-        "Desc": "20 Unique Staves",
-        "Diff": 11,
-        "Types": ["broad_item_set","weapon","items","#_u_staves"]
-},
-
-"2_advanced_bosses": {
-        "Desc": "Defeat 2 Advanced Job Bosses",
-        "Diff": 11,
-        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
+        "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","progression","side_stories","#_u_accessories"]
 },
 
 "5500_hp": {
         "Desc": "5500+ HP",
-        "Diff": 11,
+        "Diff": 9,
         "Types": ["hp","stats","#_hp"]
 },
 
-"5_ss_region_sets": {
-        "Desc": "5 Side Stories in Each Region",
-        "Diff": 11,
-        "Types": ["broad_ss_set","side_stories","ss_II","#_ss_region_sets"]
+"2_ch_4": {
+        "Desc": "Complete 2 Chapter 4's",
+        "Diff": 9,
+        "Types": ["chapter","progression","#_ch_4"],
+        "Excludes": ["1_ch_2","2_ch_2","1_ch_3","2_ch_3","1_ch_4"]
 },
 
-"90_t_chests": {
-        "Desc": "Open 90 Total Chests",
-        "Diff": 11,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
-},
-
-"7_u_boss_drop": {
-        "Desc": "7 Unique Boss Equipment Drops",
-        "Diff": 12,
-        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
-},
-
-"11_ss_riverlands": {
-        "Desc": "11 Side Stories in Riverlands",
-        "Diff": 12,
-        "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
-},
-
-"90_t_brown_chests": {
-        "Desc": "Open 90 Brown Chests",
-        "Diff": 12,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"54_t_red_chests": {
-        "Desc": "Open 54 Red Chests",
-        "Diff": 12,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-},
-
-"32_t_purple_chests": {
-        "Desc": "Open 32 Purple Chests",
-        "Diff": 12,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"5_ch_3": {
-        "Desc": "Complete 5 Chapter 3's",
-        "Diff": 12,
-        "Types": ["chapter","progression","#_ch_3"],
-        "Excludes": ["5_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3"]
-},
-
-"5_u_adamantine": {
-        "Desc": "5 Unique Adamantine Equipments",
-        "Diff": 13,
-        "Types": ["item_set","weapon","elem_atk","armor","items","progression","ss_specific","side_stories","#_u_adamantine"]
-},
-
-"30_u_elem_wpn": {
-        "Desc": "30 Unique Elemental Non-Staff Weapons",
-        "Diff": 13,
-        "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
-},
-
-"15_t_olives": {
-        "Desc": "15 Olive (L)'s",
-        "Diff": 13,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+"50_u_weapons": {
+        "Desc": "50 Unique Weapons",
+        "Diff": 10,
+        "Types": ["broad_item_set","weapon","items","#_u_weapons"]
 },
 
 "15_u_elem_reduce": {
         "Desc": "15 Unique Elemental Reduction Equipments",
-        "Diff": 13,
+        "Diff": 10,
         "Types": ["item_set","armor","accessory","elem_reduce","items","progression","side_stories","#_u_elem_reduce"]
 },
 
 "450_sp": {
         "Desc": "450+ SP",
-        "Diff": 13,
+        "Diff": 10,
         "Types": ["sp","stats","#_sp"]
 },
 
-"10_ss_flatlands": {
-        "Desc": "10 Side Stories in Flatlands",
-        "Diff": 13,
-        "Types": ["ss_set","ss_flatlands","side_stories","progression","#_ss_flatlands"]
+"10_ss_highlands": {
+        "Desc": "10 Side Stories in Highlands (No Kit)",
+        "Diff": 10,
+        "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
-"11_ss_cliftlands": {
-        "Desc": "11 Side Stories in Cliftlands",
-        "Diff": 13,
-        "Types": ["ss_set","ss_cliftlands","side_stories","progression","#_ss_cliftlands"]
+"36_t_purple_chests": {
+        "Desc": "Open 36 Purple Chests",
+        "Diff": 10,
+        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
 },
 
-"18_u_magic_bl": {
-        "Desc": "Capture 18 Unique Magic Enemies",
-        "Diff": 13,
-        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
+"25_u_elem_wpn": {
+        "Desc": "25 Unique Elemental Non-Staff Weapons",
+        "Diff": 11,
+        "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
 },
 
-"20_t_l_nuts": {
-        "Desc": "20 Nut (L)'s",
-        "Diff": 14,
-        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_l_nuts"]
+"25_u_evasion": {
+        "Desc": "25 Unique Evasion Equipments",
+        "Diff": 11,
+        "Types": ["broad_item_set","armor","weapon","evasion","items","#_u_evasion"]
 },
 
-"60_u_weapons": {
-        "Desc": "60 Unique Weapons",
-        "Diff": 14,
-        "Types": ["broad_item_set","weapon","items","#_u_weapons"]
+"20_u_daggers": {
+        "Desc": "20 Unique Daggers",
+        "Diff": 11,
+        "Types": ["broad_item_set","weapon","items","#_u_daggers"]
 },
 
-"55_u_armors": {
-        "Desc": "55 Unique Armors",
-        "Diff": 14,
-        "Types": ["broad_item_set","armor","items","#_u_armors"]
+"25_t_m_nuts": {
+        "Desc": "25 Nut (M)'s",
+        "Diff": 12,
+        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_m_nuts"]
+},
+
+"30_u_headgears": {
+        "Desc": "30 Unique Headgears",
+        "Diff": 12,
+        "Types": ["broad_item_set","armor","items","#_u_headgears"]
+},
+
+"30_u_body_armors": {
+        "Desc": "30 Unique Body Armors",
+        "Diff": 12,
+        "Types": ["broad_item_set","armor","items","#_u_body_armors"]
 },
 
 "650_critical": {
         "Desc": "650+ Critical",
-        "Diff": 14,
+        "Diff": 12,
         "Types": ["crit","stats","#_critical"]
-},
-
-"ss_boss_2": {
-        "Desc": "SS: Scardy Sheep",
-        "Diff": 14,
-        "Types": ["ss_specific","ss_flatlands","ss_boss","specific_character","boss","advanced_boss","progression","side_stories"]
 },
 
 "10_optional_bosses": {
         "Desc": "Defeat 10 Unique Optional Bosses",
-        "Diff": 14,
+        "Diff": 12,
         "Types": ["boss","exploration","#_optional_bosses"]
-},
-
-"10_ss_frostlands": {
-        "Desc": "10 Side Stories in Frostlands",
-        "Diff": 14,
-        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
-},
-
-"12_ss_riverlands": {
-        "Desc": "12 Side Stories in Riverlands",
-        "Diff": 14,
-        "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
-},
-
-"10_ss_woodlands": {
-        "Desc": "10 Side Stories in Woodlands",
-        "Diff": 14,
-        "Types": ["ss_set","ss_woodlands","side_stories","progression","ss_boss","advanced_boss","#_ss_woodlands"]
-},
-
-"winnehild": {
-        "Desc": "Defeat Winnehild",
-        "Diff": 14,
-        "Types": ["boss","subjob","advanced_boss","exploration"],
-        "Excludes": ["1_advanced_bosses"]
-},
-
-"50_t_m_sstones": {
-        "Desc": "50 Soulstone (M)'s",
-        "Diff": 15,
-        "Types": ["item_count","soulstone","item_set","items","#_t_m_sstones"]
 },
 
 "50_t_town_boosts": {
         "Desc": "50 Town Boost Infos",
-        "Diff": 15,
+        "Diff": 12,
         "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
 },
 
-"15_t_items": {
-        "Desc": "15 Pages in All Items",
-        "Diff": 15,
-        "Types": ["broad_item_set","item_count","items","#_t_items"]
+"18_u_magic_bl": {
+        "Desc": "Capture 18 Unique Elemental Themed Enemies",
+        "Diff": 12,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
+},
+
+"50_t_m_sstones": {
+        "Desc": "50 Soulstone (M)'s",
+        "Diff": 13,
+        "Types": ["item_count","soulstone","item_set","items","progression","#_t_m_sstones"]
+},
+
+"20_u_staves": {
+        "Desc": "20 Unique Staves",
+        "Diff": 13,
+        "Types": ["broad_item_set","weapon","items","#_u_staves"]
+},
+
+"10_ss_frostlands": {
+        "Desc": "10 Side Stories in Frostlands (No Kit)",
+        "Diff": 13,
+        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
+},
+
+"100_t_brown_chests": {
+        "Desc": "Open 100 Brown Chests",
+        "Diff": 13,
+        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
+},
+
+"60_t_red_chests": {
+        "Desc": "Open 60 Red Chests",
+        "Diff": 13,
+        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
+},
+
+"40_t_purple_chests": {
+        "Desc": "Open 40 Purple Chests",
+        "Diff": 13,
+        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
+},
+
+"7_u_boss_drop": {
+        "Desc": "7 Unique Boss Equipment Drops",
+        "Diff": 14,
+        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
+},
+
+"2_advanced_bosses": {
+        "Desc": "Defeat 2 Advanced Job Bosses",
+        "Diff": 14,
+        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
+},
+
+"5_ch_3": {
+        "Desc": "Complete 5 Chapter 3's",
+        "Diff": 14,
+        "Types": ["chapter","progression","#_ch_3"],
+        "Excludes": ["5_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3"]
 },
 
 "900_elem_atk": {
         "Desc": "900+ Elemental Attack",
-        "Diff": 15,
+        "Diff": 14,
         "Types": ["elem_atk","stats","#_elem_atk"]
 },
 
-"10_ss_coastlands": {
-        "Desc": "10 Side Stories in Coastlands",
-        "Diff": 15,
-        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
+"10_ss_flatlands": {
+        "Desc": "10 Side Stories in Flatlands (No Kit)",
+        "Diff": 14,
+        "Types": ["ss_set","ss_flatlands","side_stories","progression","#_ss_flatlands"]
 },
 
-"6_ch_3": {
-        "Desc": "Complete 6 Chapter 3's",
+"5_ss_region_sets": {
+        "Desc": "5 Side Stories in Each Region",
+        "Diff": 14,
+        "Types": ["broad_ss_set","side_stories","ss_II","#_ss_region_sets"]
+},
+
+"800_phys_atk": {
+        "Desc": "800+ Physical Attack",
         "Diff": 15,
-        "Types": ["chapter","progression","#_ch_3"],
-        "Excludes": ["5_ch_1","6_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3"]
+        "Types": ["phys_atk","stats","#_phys_atk"]
+},
+
+"120_t_chests": {
+        "Desc": "Open 120 Total Chests",
+        "Diff": 15,
+        "Types": ["chest","chest_counts","exploration","#_t_chests"]
+},
+
+"55_u_armors": {
+        "Desc": "55 Unique Armors",
+        "Diff": 15,
+        "Types": ["broad_item_set","armor","items","#_u_armors"]
 },
 
 "780_evasion": {
@@ -894,71 +805,151 @@ var bingoList = {
         "Types": ["evasion","stats","#_evasion"]
 },
 
-"8_ss_III_sets": {
-        "Desc": "8 (III) Side Stories",
+"5_u_adamantine": {
+        "Desc": "5 Unique Adamantine Equipments",
         "Diff": 15,
-        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
-        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","7_ss_II_sets","8_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets","6_ss_III_sets","7_ss_III_sets"]
-},
-
-"4_ss_bosses": {
-        "Desc": "Defeat 4 Side Story Bosses",
-        "Diff": 15,
-        "Types": ["ss_set","ss_boss","boss","side_stories","progression","#_ss_bosses"]
-},
-
-"36_t_purple_chests": {
-        "Desc": "Open 36 Purple Chests",
-        "Diff": 15,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"str_9_bl": {
-        "Desc": "Capture a Strength 9 Monster",
-        "Diff": 15,
-        "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
+        "Types": ["item_set","weapon","elem_atk","armor","items","progression","ss_specific","side_stories","#_u_adamantine"]
 },
 
 "999_elem_def": {
         "Desc": "999+ Elemental Defense",
-        "Diff": 16,
+        "Diff": 15,
         "Types": ["elem_def","stats","#_elem_def"]
+},
+
+"winnehild": {
+        "Desc": "Defeat Winnehild",
+        "Diff": 15,
+        "Types": ["boss","subjob","advanced_boss","exploration"],
+        "Excludes": ["1_advanced_bosses"]
+},
+
+"20_t_l_nuts": {
+        "Desc": "20 Nut (L)'s",
+        "Diff": 15,
+        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_l_nuts"]
+},
+
+"18_u_lizards_bl": {
+        "Desc": "Capture 18 Unique Lizardmen / Lizardking",
+        "Diff": 15,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_lizards_bl"]
+},
+
+"18_u_frogs_bl": {
+        "Desc": "Capture 18 Unique Froggen / Frogking",
+        "Diff": 15,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_frogs_bl"]
+},
+
+"18_u_birds_bl": {
+        "Desc": "Capture 18 Unique Birdian / Birdking",
+        "Diff": 15,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_birds_bl"]
+},
+
+"18_u_rats_bl": {
+        "Desc": "Capture 18 Unique Ratkin / Ratking",
+        "Diff": 15,
+        "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_rats_bl"]
+},
+
+"15_t_items": {
+        "Desc": "15 Pages in All Items",
+        "Diff": 16,
+        "Types": ["broad_item_set","item_count","items","#_t_items"]
+},
+
+"900_phys_def": {
+        "Desc": "900+ Physical Defense",
+        "Diff": 16,
+        "Types": ["phys_def","stats","#_phys_def"]
+},
+
+"650_speed": {
+        "Desc": "650+ Speed",
+        "Diff": 16,
+        "Types": ["speed","stats","#_speed"]
+},
+
+"6_ss_III_sets": {
+        "Desc": "6 (III) Side Stories",
+        "Diff": 16,
+        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets"]
+},
+
+"6_ch_3": {
+        "Desc": "Complete 6 Chapter 3's",
+        "Diff": 16,
+        "Types": ["chapter","progression","#_ch_3"],
+        "Excludes": ["5_ch_1","6_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3"]
+},
+
+"25_t_stones": {
+        "Desc": "25 Status Stones",
+        "Diff": 16,
+        "Types": ["item_set","item_count","status_stone","accessory","items","progression","#_t_stones"]
+},
+
+"60_t_town_boosts": {
+        "Desc": "60 Town Boost Infos",
+        "Diff": 16,
+        "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
+},
+
+"10_ss_coastlands": {
+        "Desc": "10 Side Stories in Coastlands (No Kit)",
+        "Diff": 16,
+        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
+},
+
+"15_t_olives": {
+        "Desc": "15 Olive (L)'s",
+        "Diff": 16,
+        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+},
+
+"11_ss_riverlands": {
+        "Desc": "11 Side Stories in Riverlands (No Kit)",
+        "Diff": 16,
+        "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
+},
+
+"str_9_bl": {
+        "Desc": "Capture a Strength 9 Monster",
+        "Diff": 16,
+        "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
+},
+
+"6_ss_post_game": {
+        "Desc": "6 Post Game Side Stories",
+        "Diff": 16,
+        "Types": ["side_stories","broad_ss_set","progression","#_ss_post_game"]
+},
+
+"12_t_strong_amulets": {
+        "Desc": "12 Strong Elemental Reduction Amulets",
+        "Diff": 17,
+        "Types": ["item_set","item_count","accessory","elem_reduce","items","progression","#_t_strong_amulets"]
+},
+
+"500_sp": {
+        "Desc": "500+ SP",
+        "Diff": 17,
+        "Types": ["sp","stats","#_sp"]
 },
 
 "50_side_stories": {
         "Desc": "50 Side Stories",
-        "Diff": 16,
+        "Diff": 17,
         "Types": ["broad_ss_set","side_stories","ss_II","ss_III","#_side_stories"]
 },
 
-"10_ss_sunlands": {
-        "Desc": "10 Side Stories in Sunlands",
-        "Diff": 16,
-        "Types": ["ss_set","ss_sunlands","side_stories","progression","ss_boss","#_ss_sunlands"]
-},
-
-"25_u_bows": {
-        "Desc": "25 Unique Bows",
-        "Diff": 16,
-        "Types": ["broad_item_set","weapon","items","#_u_bows"]
-},
-
-"800_phys_atk": {
-        "Desc": "800+ Physical Attack",
-        "Diff": 16,
-        "Types": ["phys_atk","stats","#_phys_atk"]
-},
-
-"105_t_chests": {
-        "Desc": "Open 105 Total Chests",
-        "Diff": 16,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
-},
-
-"35_u_elem_wpn": {
-        "Desc": "35 Unique Elemental Non-Staff Weapons",
+"10_ss_woodlands": {
+        "Desc": "10 Side Stories in Woodlands (No Kit)",
         "Diff": 17,
-        "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
+        "Types": ["ss_set","ss_woodlands","side_stories","progression","ss_boss","advanced_boss","#_ss_woodlands"]
 },
 
 "8_u_boss_drop": {
@@ -970,98 +961,117 @@ var bingoList = {
 "40_t_l_sstones": {
         "Desc": "40 Soulstone (L)'s",
         "Diff": 17,
-        "Types": ["item_count","soulstone","item_set","items","#_t_l_sstones"]
+        "Types": ["item_count","soulstone","item_set","items","progression","#_t_l_sstones"]
 },
 
-"900_phys_def": {
-        "Desc": "900+ Physical Defense",
+"6500_hp": {
+        "Desc": "6500+ HP",
         "Diff": 17,
-        "Types": ["phys_def","stats","#_phys_def"]
+        "Types": ["hp","stats","#_hp"]
 },
 
-"6_ss_region_sets": {
-        "Desc": "6 Side Stories in Each Region",
+"500_accuracy": {
+        "Desc": "500+ Accuracy",
         "Diff": 17,
-        "Types": ["broad_ss_set","side_stories","ss_II","#_ss_region_sets"]
+        "Types": ["accuracy","stats","#_accuracy"]
+},
+
+"11_ss_cliftlands": {
+        "Desc": "11 Side Stories in Cliftlands (No Kit)",
+        "Diff": 17,
+        "Types": ["ss_set","ss_cliftlands","side_stories","progression","#_ss_cliftlands"]
+},
+
+"60_u_weapons": {
+        "Desc": "60 Unique Weapons",
+        "Diff": 18,
+        "Types": ["broad_item_set","weapon","items","#_u_weapons"]
+},
+
+"830_evasion": {
+        "Desc": "830+ Evasion",
+        "Diff": 18,
+        "Types": ["evasion","stats","#_evasion"]
+},
+
+"135_t_chests": {
+        "Desc": "Open 135 Total Chests",
+        "Diff": 18,
+        "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
 "3_ch_4": {
         "Desc": "Complete 3 Chapter 4's",
-        "Diff": 17,
+        "Diff": 18,
         "Types": ["chapter","progression","#_ch_4"],
         "Excludes": ["1_ch_2","2_ch_2","3_ch_2","1_ch_3","2_ch_3","3_ch_3","1_ch_4","2_ch_4"]
 },
 
-"25_u_spears": {
-        "Desc": "25 Unique Spears",
-        "Diff": 17,
-        "Types": ["broad_item_set","weapon","items","#_u_spears"]
+"6_ss_region_sets": {
+        "Desc": "6 Side Stories in Each Region",
+        "Diff": 18,
+        "Types": ["broad_ss_set","side_stories","ss_II","#_ss_region_sets"]
 },
 
-"70_u_weapons": {
-        "Desc": "70 Unique Weapons",
-        "Diff": 17,
-        "Types": ["broad_item_set","weapon","items","progression","#_u_weapons"]
+"10_ss_sunlands": {
+        "Desc": "10 Side Stories in Sunlands (No Kit)",
+        "Diff": 18,
+        "Types": ["ss_set","ss_sunlands","side_stories","progression","ss_boss","#_ss_sunlands"]
 },
 
-"650_speed": {
-        "Desc": "650+ Speed",
-        "Diff": 17,
-        "Types": ["speed","stats","#_speed"]
+"12_ss_riverlands": {
+        "Desc": "12 Side Stories in Riverlands (No Kit)",
+        "Diff": 18,
+        "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
+},
+
+"60_t_nuts": {
+        "Desc": "60 Nuts",
+        "Diff": 18,
+        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_nuts"]
+},
+
+"18_u_elem_reduce": {
+        "Desc": "18 Unique Elemental Reduction Equipments",
+        "Diff": 18,
+        "Types": ["item_set","armor","accessory","elem_reduce","items","#_u_elem_reduce"]
 },
 
 "3_advanced_bosses": {
         "Desc": "Defeat 3 Advanced Job Bosses",
-        "Diff": 17,
+        "Diff": 18,
         "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
 },
 
-"25_u_swords": {
-        "Desc": "25 Unique Swords",
-        "Diff": 18,
-        "Types": ["broad_item_set","weapon","items","#_u_swords"]
-},
-
-"25_u_daggers": {
-        "Desc": "25 Unique Daggers",
-        "Diff": 18,
-        "Types": ["broad_item_set","weapon","items","#_u_daggers"]
-},
-
-"25_u_axes": {
-        "Desc": "25 Unique Axes",
-        "Diff": 18,
-        "Types": ["broad_item_set","weapon","items","#_u_axes"]
-},
-
-"25_t_stones": {
-        "Desc": "25 Status Stones",
-        "Diff": 18,
-        "Types": ["item_set","item_count","status_stone","accessory","items","progression","#_t_stones"]
-},
-
-"11_ss_highlands": {
-        "Desc": "11 Side Stories in Highlands",
-        "Diff": 18,
-        "Types": ["ss_set","ss_highlands","side_stories","progression","#_ss_highlands"]
-},
-
-"100_t_brown_chests": {
-        "Desc": "Open 100 Brown Chests",
-        "Diff": 18,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"60_t_red_chests": {
-        "Desc": "Open 60 Red Chests",
-        "Diff": 18,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-},
-
-"500_sp": {
-        "Desc": "500+ SP",
+"700_critical": {
+        "Desc": "700+ Critical",
         "Diff": 19,
-        "Types": ["sp","stats","#_sp"]
+        "Types": ["crit","stats","#_critical"]
+},
+
+"7_ss_III_sets": {
+        "Desc": "7 (III) Side Stories",
+        "Diff": 19,
+        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","7_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets","6_ss_III_sets"]
+},
+
+"11_ss_frostlands": {
+        "Desc": "11 Side Stories in Frostlands (No Kit)",
+        "Diff": 19,
+        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
+},
+
+"ss_boss_5": {
+        "Desc": "SS: Into Thin Air",
+        "Diff": 19,
+        "Types": ["ss_specific","ss_woodlands","ss_boss","boss","advanced_boss","side_stories"]
+},
+
+"850_phys_atk": {
+        "Desc": "850+ Physical Attack",
+        "Diff": 19,
+        "Types": ["phys_atk","stats","#_phys_atk"]
 },
 
 "7_ch_3": {
@@ -1071,144 +1081,35 @@ var bingoList = {
         "Excludes": ["5_ch_1","6_ch_1","7_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","7_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","6_ch_3"]
 },
 
-"12_t_strong_amulets": {
-        "Desc": "12 Strong Elemental Reduction Amulets",
+"25_t_elem_amulets": {
+        "Desc": "25 Elemental Reduction Amulets/Charms",
         "Diff": 19,
-        "Types": ["item_set","item_count","accessory","elem_reduce","items","progression","#_t_strong_amulets"]
+        "Types": ["item_set","item_count","elem_reduce","accessory","items","progression","side_stories","#_t_elem_amulets"]
 },
 
-"60_t_town_boosts": {
-        "Desc": "60 Town Boost Infos",
-        "Diff": 19,
-        "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
-},
-
-"830_evasion": {
-        "Desc": "830+ Evasion",
-        "Diff": 19,
-        "Types": ["evasion","stats","#_evasion"]
-},
-
-"6500_hp": {
-        "Desc": "6500+ HP",
-        "Diff": 19,
-        "Types": ["hp","stats","#_hp"]
-},
-
-"500_accuracy": {
-        "Desc": "500+ Accuracy",
-        "Diff": 19,
-        "Types": ["accuracy","stats","#_accuracy"]
-},
-
-"25_u_staves": {
-        "Desc": "25 Unique Staves",
-        "Diff": 19,
-        "Types": ["broad_item_set","weapon","items","#_u_staves"]
-},
-
-"40_t_purple_chests": {
-        "Desc": "Open 40 Purple Chests",
-        "Diff": 19,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"4_ch_4": {
-        "Desc": "Complete 4 Chapter 4's",
-        "Diff": 19,
-        "Types": ["chapter","progression","#_ch_4"],
-        "Excludes": ["1_ch_2","2_ch_2","3_ch_2","4_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","1_ch_4","2_ch_4","3_ch_4"]
-},
-
-"50_u_accessories": {
-        "Desc": "50 Unique Accessories",
+"25_u_axes": {
+        "Desc": "25 Unique Axes",
         "Diff": 20,
-        "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","progression","side_stories","#_u_accessories"]
+        "Types": ["broad_item_set","weapon","items","#_u_axes"]
 },
 
-"4_advanced_bosses": {
-        "Desc": "Defeat 4 Advanced Job Bosses",
-        "Diff": 20,
-        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
-},
-
-"8_ch_3": {
-        "Desc": "Complete 8 Chapter 3's",
-        "Diff": 20,
-        "Types": ["chapter","progression","#_ch_3"],
-        "Excludes": ["5_ch_1","6_ch_1","7_ch_1","8_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","7_ch_2","8_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","6_ch_3","7_ch_3"]
-},
-
-"18_t_items": {
-        "Desc": "18 Pages in All Items",
-        "Diff": 20,
-        "Types": ["broad_item_set","item_count","items","progression","#_t_items"]
-},
-
-"120_t_chests": {
-        "Desc": "Open 120 Total Chests",
+"150_t_chests": {
+        "Desc": "Open 150 Total Chests",
         "Diff": 20,
         "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
-"60_t_nuts": {
-        "Desc": "60 Nuts",
+"11_ss_highlands": {
+        "Desc": "11 Side Stories in Highlands (No Kit)",
         "Diff": 20,
-        "Types": ["item_count","nut","item_set","items","progression","side_stories","#_t_nuts"]
+        "Types": ["ss_set","ss_highlands","side_stories","progression","#_ss_highlands"]
 },
 
-"18_u_elem_reduce": {
-        "Desc": "18 Unique Elemental Reduction Equipments",
+"4_ch_4": {
+        "Desc": "Complete 4 Chapter 4's",
         "Diff": 20,
-        "Types": ["item_set","armor","accessory","elem_reduce","items","#_u_elem_reduce"]
-},
-
-"700_critical": {
-        "Desc": "700+ Critical",
-        "Diff": 20,
-        "Types": ["crit","stats","#_critical"]
-},
-
-"11_ss_frostlands": {
-        "Desc": "11 Side Stories in Frostlands",
-        "Diff": 21,
-        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
-},
-
-"9_u_boss_drop": {
-        "Desc": "9 Unique Boss Equipment Drops",
-        "Diff": 21,
-        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
-},
-
-"10_ss_post_game": {
-        "Desc": "10 Post Game Side Stories",
-        "Diff": 21,
-        "Types": ["side_stories","broad_ss_set","progression","#_ss_post_game"]
-},
-
-"850_phys_atk": {
-        "Desc": "850+ Physical Attack",
-        "Diff": 21,
-        "Types": ["phys_atk","stats","#_phys_atk"]
-},
-
-"13_ss_riverlands": {
-        "Desc": "13 Side Stories in Riverlands",
-        "Diff": 21,
-        "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
-},
-
-"5_ss_bosses": {
-        "Desc": "Defeat 5 Side Story Bosses",
-        "Diff": 21,
-        "Types": ["ss_set","ss_boss","boss","side_stories","progression","advanced_boss","#_ss_bosses"]
-},
-
-"25_t_elem_amulets": {
-        "Desc": "25 Elemental Reduction Amulets/Charms",
-        "Diff": 21,
-        "Types": ["item_set","item_count","elem_reduce","accessory","items","progression","side_stories","#_t_elem_amulets"]
+        "Types": ["chapter","progression","#_ch_4"],
+        "Excludes": ["1_ch_2","2_ch_2","3_ch_2","4_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","1_ch_4","2_ch_4","3_ch_4"]
 },
 
 "60_side_stories": {
@@ -1217,40 +1118,65 @@ var bingoList = {
         "Types": ["broad_ss_set","side_stories","ss_II","ss_III","#_side_stories"]
 },
 
-"11_ss_coastlands": {
-        "Desc": "11 Side Stories in Coastlands",
-        "Diff": 22,
-        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
+"4_advanced_bosses": {
+        "Desc": "Defeat 4 Advanced Job Bosses",
+        "Diff": 21,
+        "Types": ["boss","subjob","advanced_boss","exploration","#_advanced_bosses"]
+},
+
+"8_ch_3": {
+        "Desc": "Complete 8 Chapter 3's",
+        "Diff": 21,
+        "Types": ["chapter","progression","#_ch_3"],
+        "Excludes": ["5_ch_1","6_ch_1","7_ch_1","8_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","7_ch_2","8_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","6_ch_3","7_ch_3"]
+},
+
+"9_u_boss_drop": {
+        "Desc": "9 Unique Boss Equipment Drops",
+        "Diff": 21,
+        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
+},
+
+"50_t_l_sstones": {
+        "Desc": "50 Soulstone (L)'s",
+        "Diff": 21,
+        "Types": ["item_count","soulstone","item_set","items","progression","#_t_l_sstones"]
+},
+
+"25_u_spears": {
+        "Desc": "25 Unique Spears",
+        "Diff": 21,
+        "Types": ["broad_item_set","weapon","items","#_u_spears"]
+},
+
+"25_u_daggers": {
+        "Desc": "25 Unique Daggers",
+        "Diff": 21,
+        "Types": ["broad_item_set","weapon","items","#_u_daggers"]
+},
+
+"50_u_accessories": {
+        "Desc": "50 Unique Accessories",
+        "Diff": 21,
+        "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","progression","side_stories","#_u_accessories"]
+},
+
+"18_t_items": {
+        "Desc": "18 Pages in All Items",
+        "Diff": 21,
+        "Types": ["broad_item_set","item_count","items","progression","#_t_items"]
 },
 
 "880_evasion": {
         "Desc": "880+ Evasion",
-        "Diff": 22,
+        "Diff": 21,
         "Types": ["evasion","stats","#_evasion"]
 },
 
-"11_ss_woodlands": {
-        "Desc": "11 Side Stories in Woodlands",
-        "Diff": 22,
-        "Types": ["ss_set","ss_woodlands","side_stories","progression","ss_boss","advanced_boss","#_ss_woodlands"]
-},
-
-"7_ss_region_sets": {
-        "Desc": "7 Side Stories in Each Region",
-        "Diff": 22,
-        "Types": ["broad_ss_set","side_stories","ss_II","ss_III","#_ss_region_sets"]
-},
-
-"135_t_chests": {
-        "Desc": "Open 135 Total Chests",
-        "Diff": 22,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
-},
-
-"80_u_weapons": {
-        "Desc": "80 Unique Weapons",
-        "Diff": 22,
-        "Types": ["broad_item_set","weapon","items","progression","#_u_weapons"]
+"4_ss_bosses": {
+        "Desc": "Defeat 4 Side Story Bosses",
+        "Diff": 21,
+        "Types": ["ss_set","ss_boss","boss","side_stories","progression","#_ss_bosses"]
 },
 
 "str_10_bl": {
@@ -1259,77 +1185,65 @@ var bingoList = {
         "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
 },
 
-"50_t_l_sstones": {
-        "Desc": "50 Soulstone (L)'s",
+"30_u_elem_wpn": {
+        "Desc": "30 Unique Elemental Non-Staff Weapons",
         "Diff": 22,
-        "Types": ["item_count","soulstone","item_set","items","#_t_l_sstones"]
+        "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
 },
 
-"5_ch_4": {
-        "Desc": "Complete 5 Chapter 4's",
+"70_u_weapons": {
+        "Desc": "70 Unique Weapons",
         "Diff": 22,
-        "Types": ["chapter","progression","#_ch_4"],
-        "Excludes": ["5_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","1_ch_4","2_ch_4","3_ch_4","4_ch_4"]
+        "Types": ["broad_item_set","weapon","items","progression","#_u_weapons"]
+},
+
+"11_ss_coastlands": {
+        "Desc": "11 Side Stories in Coastlands (No Kit)",
+        "Diff": 22,
+        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
 },
 
 "12_ss_frostlands": {
-        "Desc": "12 Side Stories in Frostlands",
-        "Diff": 23,
+        "Desc": "12 Side Stories in Frostlands (No Kit)",
+        "Diff": 22,
         "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
 },
 
-"11_ss_flatlands": {
-        "Desc": "11 Side Stories in Flatlands",
+"25_u_staves": {
+        "Desc": "25 Unique Staves",
         "Diff": 23,
+        "Types": ["broad_item_set","weapon","items","#_u_staves"]
+},
+
+"8_ss_III_sets": {
+        "Desc": "8 (III) Side Stories",
+        "Diff": 23,
+        "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
+        "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets","4_ss_II_sets","5_ss_II_sets","6_ss_II_sets","7_ss_II_sets","8_ss_II_sets","1_ss_III_sets","2_ss_III_sets","3_ss_III_sets","4_ss_III_sets","5_ss_III_sets","6_ss_III_sets","7_ss_III_sets"]
+},
+
+"ss_boss_2": {
+        "Desc": "SS: Scardy Sheep",
+        "Diff": 23,
+        "Types": ["ss_specific","ss_flatlands","ss_boss","specific_character","boss","advanced_boss","progression","side_stories"]
+},
+
+"25_u_swords": {
+        "Desc": "25 Unique Swords",
+        "Diff": 23,
+        "Types": ["broad_item_set","weapon","items","#_u_swords"]
+},
+
+"11_ss_flatlands": {
+        "Desc": "11 Side Stories in Flatlands (No Kit)",
+        "Diff": 24,
         "Types": ["ss_set","ss_flatlands","side_stories","progression","ss_boss","advanced_boss","#_ss_flatlands"]
 },
 
-"10_u_boss_drop": {
-        "Desc": "10 Unique Boss Equipment Drops",
-        "Diff": 23,
-        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
-},
-
-"14_ss_riverlands": {
-        "Desc": "14 Side Stories in Riverlands",
-        "Diff": 23,
+"13_ss_riverlands": {
+        "Desc": "13 Side Stories in Riverlands (No Kit)",
+        "Diff": 24,
         "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
-},
-
-"70_side_stories": {
-        "Desc": "70 Side Stories",
-        "Diff": 23,
-        "Types": ["broad_ss_set","side_stories","progression","ss_boss","ss_II","ss_III","#_side_stories"]
-},
-
-"11_ss_sunlands": {
-        "Desc": "11 Side Stories in Sunlands",
-        "Diff": 23,
-        "Types": ["ss_set","ss_sunlands","side_stories","progression","ss_boss","#_ss_sunlands"]
-},
-
-"12_ss_cliftlands": {
-        "Desc": "12 Side Stories in Cliftlands",
-        "Diff": 23,
-        "Types": ["ss_set","ss_cliftlands","side_stories","progression","#_ss_cliftlands"]
-},
-
-"150_t_chests": {
-        "Desc": "Open 150 Total Chests",
-        "Diff": 24,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
-},
-
-"21_t_items": {
-        "Desc": "21 Pages in All Items",
-        "Diff": 24,
-        "Types": ["broad_item_set","item_count","items","progression","#_t_items"]
-},
-
-"90_u_weapons": {
-        "Desc": "90 Unique Weapons",
-        "Diff": 24,
-        "Types": ["broad_item_set","weapon","items","progression","#_u_weapons"]
 },
 
 "7500_hp": {
@@ -1338,82 +1252,81 @@ var bingoList = {
         "Types": ["hp","stats","#_hp"]
 },
 
-"930_evasion": {
-        "Desc": "930+ Evasion",
+"10_u_boss_drop": {
+        "Desc": "10 Unique Boss Equipment Drops",
         "Diff": 24,
-        "Types": ["evasion","stats","#_evasion"]
+        "Types": ["broad_item_set","armor","weapon","progression","items","progression","#_u_boss_drop"]
 },
 
-"12_ss_coastlands": {
-        "Desc": "12 Side Stories in Coastlands",
-        "Diff": 24,
-        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
-},
-
-"8_ss_region_sets": {
-        "Desc": "8 Side Stories in Each Region",
+"7_ss_region_sets": {
+        "Desc": "7 Side Stories in Each Region",
         "Diff": 24,
         "Types": ["broad_ss_set","side_stories","ss_II","ss_III","#_ss_region_sets"]
 },
 
-"6_ch_4": {
-        "Desc": "Complete 6 Chapter 4's",
-        "Diff": 24,
-        "Types": ["chapter","progression","#_ch_4"],
-        "Excludes": ["5_ch_1","6_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","6_ch_3","1_ch_4","2_ch_4","3_ch_4","4_ch_4","5_ch_4"]
-},
-
-"60_u_accessories": {
-        "Desc": "60 Unique Accessories",
-        "Diff": 25,
-        "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","progression","side_stories","#_u_accessories"]
-},
-
-"13_ss_frostlands": {
-        "Desc": "13 Side Stories in Frostlands",
-        "Diff": 25,
-        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
-},
-
-"80_side_stories": {
-        "Desc": "80 Side Stories",
-        "Diff": 25,
-        "Types": ["broad_ss_set","side_stories","progression","ss_boss","ss_II","ss_III","#_side_stories"]
-},
-
-"12_ss_flatlands": {
-        "Desc": "12 Side Stories in Flatlands",
-        "Diff": 25,
-        "Types": ["ss_set","ss_flatlands","side_stories","progression","ss_boss","advanced_boss","#_ss_flatlands"]
-},
-
-"16_ss_post_game": {
-        "Desc": "16 Post Game Side Stories",
+"10_ss_post_game": {
+        "Desc": "10 Post Game Side Stories",
         "Diff": 25,
         "Types": ["side_stories","broad_ss_set","progression","#_ss_post_game"]
 },
 
-"7_ch_4": {
-        "Desc": "Complete 7 Chapter 4's",
-        "Diff": 25,
-        "Types": ["chapter","progression","#_ch_4"],
-        "Excludes": ["5_ch_1","6_ch_1","7_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","6_ch_2","7_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","6_ch_3","7_ch_3","1_ch_4","2_ch_4","3_ch_4","4_ch_4","5_ch_4","6_ch_4"]
-},
-
-"100_u_weapons": {
-        "Desc": "100 Unique Weapons",
-        "Diff": 25,
-        "Types": ["broad_item_set","weapon","items","progression","#_u_weapons"]
-},
-
-"24_t_items": {
-        "Desc": "24 Pages in All Items",
+"21_t_items": {
+        "Desc": "21 Pages in All Items",
         "Diff": 25,
         "Types": ["broad_item_set","item_count","items","progression","#_t_items"]
 },
 
-"15_ss_riverlands": {
-        "Desc": "15 Side Stories in Riverlands",
+"70_side_stories": {
+        "Desc": "70 Side Stories",
+        "Diff": 25,
+        "Types": ["broad_ss_set","side_stories","progression","ss_boss","ss_II","ss_III","#_side_stories"]
+},
+
+"11_ss_woodlands": {
+        "Desc": "11 Side Stories in Woodlands (No Kit)",
+        "Diff": 25,
+        "Types": ["ss_set","ss_woodlands","side_stories","progression","ss_boss","advanced_boss","#_ss_woodlands"]
+},
+
+"5_ch_4": {
+        "Desc": "Complete 5 Chapter 4's",
+        "Diff": 25,
+        "Types": ["chapter","progression","#_ch_4"],
+        "Excludes": ["5_ch_1","1_ch_2","2_ch_2","3_ch_2","4_ch_2","5_ch_2","1_ch_3","2_ch_3","3_ch_3","4_ch_3","5_ch_3","1_ch_4","2_ch_4","3_ch_4","4_ch_4"]
+},
+
+"930_evasion": {
+        "Desc": "930+ Evasion",
+        "Diff": 25,
+        "Types": ["evasion","stats","#_evasion"]
+},
+
+"11_ss_sunlands": {
+        "Desc": "11 Side Stories in Sunlands (No Kit)",
+        "Diff": 25,
+        "Types": ["ss_set","ss_sunlands","side_stories","progression","ss_boss","#_ss_sunlands"]
+},
+
+"13_ss_frostlands": {
+        "Desc": "13 Side Stories in Frostlands (No Kit)",
+        "Diff": 25,
+        "Types": ["ss_set","ss_frostlands","side_stories","progression","ss_boss","#_ss_frostlands"]
+},
+
+"12_ss_coastlands": {
+        "Desc": "12 Side Stories in Coastlands (No Kit)",
+        "Diff": 25,
+        "Types": ["ss_set","ss_coastlands","side_stories","progression","ss_boss","#_ss_coastlands"]
+},
+
+"25_u_bows": {
+        "Desc": "25 Unique Bows",
+        "Diff": 25,
+        "Types": ["broad_item_set","weapon","items","#_u_bows"]
+},
+
+"14_ss_riverlands": {
+        "Desc": "14 Side Stories in Riverlands (No Kit)",
         "Diff": 25,
         "Types": ["ss_set","ss_riverlands","side_stories","progression","#_ss_riverlands"]
 }
