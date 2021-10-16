@@ -159,7 +159,7 @@ class GameType(Enum):
     terraria_1_3_pre_hardmode = 155
     wii_sports_club_all_sports_expert = 156
     mario_maker_2 = 157
-    minecraft_randomizer_1_16_5 = 158
+    minecraft_1_16_1 = 158
     new_super_mario_bros_ds = 159
     wii_sports_club_golf_only = 160
     hat_in_time = 161
@@ -234,7 +234,7 @@ class GameType(Enum):
     pokemon_omega_ruby_alpha_sapphire = 230
     monster_rancher_2_rng_lite = 231
     fallout_new_vegas = 232
-    minecraft_advancements = 233
+    minecraft_1_17_1 = 233
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
     kingdom_hearts_2_final_mix_current = 236
@@ -272,7 +272,7 @@ class GameType(Enum):
     halo_master_chief_collection = 268
     runescape_3_clue_scroll = 269
     hades = 270
-    minecraft_randomizer_1_8_9 = 271
+    minecraft_1_8_9 = 271
     soul_knight = 272
     escape_from_tarkov = 273
     hollow_knight_cratthew = 274
@@ -690,12 +690,12 @@ GAME_GROUPS = {
             (GameType.mgs_portable_ops_plus_training, "Training", "MPO+ Training"),
         ],
     },
-    GameType.minecraft_randomizer_1_16_5: {
+    GameType.minecraft_1_16_1: {
         "name": "Minecraft",
         "variants": [
-            (GameType.minecraft_randomizer_1_16_5, "Randomizer 1.16.5", "MC Random 1.16.5"),
-            (GameType.minecraft_randomizer_1_8_9, "Randomizer 1.8.9", "MC Random 1.8.9"),
-            (GameType.minecraft_advancements, "Advancements", "MC Advancements"),
+            (GameType.minecraft_1_16_1, "1.16.1", "Minecraft 1.16.1"),
+            (GameType.minecraft_1_8_9, "1.8.9", "Minecraft 1.8.9"),
+            (GameType.minecraft_1_17_1, "Most recent (1.17.1)", "Minecraft 1.17.1"),
         ],
     },
     GameType.monster_rancher_2: {
