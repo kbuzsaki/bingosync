@@ -317,6 +317,7 @@ class GameType(Enum):
     monster_hunter_world = 313
     majoras_mask_item_randomizer = 314
     luigis_mansion_3 = 315
+    fantastic_contraption = 316
 
     def __str__(self):
         return self.short_name
@@ -946,6 +947,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
+    **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
