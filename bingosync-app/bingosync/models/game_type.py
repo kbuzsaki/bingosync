@@ -309,6 +309,7 @@ class GameType(Enum):
     octopath_traveler_long = 305
     stardew_valley_challenge_cup = 306
     salt_and_sanctuary = 307
+    untitled_goose_game = 308
 
     def __str__(self):
         return self.short_name
@@ -1013,6 +1014,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.undertale, "Undertale", "Undertale"),
+    **singleton_group(GameType.untitled_goose_game, "Untitled Goose Game", "Goose Game"),
     **singleton_group(GameType.video_games, "Video Games Bingo", "Video Games"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
