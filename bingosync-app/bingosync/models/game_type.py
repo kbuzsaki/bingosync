@@ -310,6 +310,7 @@ class GameType(Enum):
     stardew_valley_challenge_cup = 306
     salt_and_sanctuary = 307
     untitled_goose_game = 308
+    deaths_door = 309
 
     def __str__(self):
         return self.short_name
@@ -922,6 +923,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
+    **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
