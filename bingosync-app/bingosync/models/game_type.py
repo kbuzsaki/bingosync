@@ -307,6 +307,7 @@ class GameType(Enum):
     octopath_traveler_short = 303
     octopath_traveler_medium = 304
     octopath_traveler_long = 305
+    stardew_valley_challenge_cup = 306
 
     def __str__(self):
         return self.short_name
@@ -765,6 +766,13 @@ GAME_GROUPS = {
             (GameType.splatoon_2_hero_mode, "Hero Mode", "Splatoon 2: Hero Mode"),
         ],
     },
+    GameType.stardew_valley: {
+        "name": "Stardew Valley",
+        "variants": [
+            (GameType.stardew_valley, "Normal", "Stardew Valley"),
+            (GameType.stardew_valley_challenge_cup, "Challenge Cup", "Stardew Valley CC"),
+        ],
+    },
     GameType.super_mario_64: {
         "name": "Super Mario 64",
         "variants": [
@@ -991,7 +999,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
-    **singleton_group(GameType.stardew_valley, "Stardew Valley", "Stardew Valley"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
