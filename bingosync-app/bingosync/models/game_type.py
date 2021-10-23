@@ -304,6 +304,9 @@ class GameType(Enum):
     celeste_portuguese = 300
     yokus_island_express_simplified = 301
     yokus_island_express_randomizer_simplified = 302
+    octopath_traveler_short = 303
+    octopath_traveler_medium = 304
+    octopath_traveler_long = 305
 
     def __str__(self):
         return self.short_name
@@ -711,6 +714,9 @@ GAME_GROUPS = {
         "variants": [
             (GameType.octopath_traveler, "Standard", "Octopath"),
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
+            (GameType.octopath_traveler_short, "Short Card", "Octopath - Short Game"),
+            (GameType.octopath_traveler_medium, "Medium Card", "Octopath - Medium Game"),
+            (GameType.octopath_traveler_long, "Long Card", "Octopath - Long Game")
         ],
     },
     GameType.old_school_runescape: {
