@@ -308,6 +308,7 @@ class GameType(Enum):
     octopath_traveler_medium = 304
     octopath_traveler_long = 305
     stardew_valley_challenge_cup = 306
+    salt_and_sanctuary = 307
 
     def __str__(self):
         return self.short_name
@@ -988,6 +989,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.riven, "Riven: The Sequel to Myst", "Riven"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.saga_frontier, "SaGa Frontier (PS1)", "SaGa Frontier (PS1)"),
+    **singleton_group(GameType.salt_and_sanctuary, "Salt and Sanctuary", "Salt and Sanctuary"),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
