@@ -321,6 +321,7 @@ class GameType(Enum):
     luigis_mansion_all_rooms = 317
     zelda_wind_waker_randomizer = 318
     doodle_champion_island_games_begin = 319
+    quest_for_glory_vga = 320
 
     def __str__(self):
         return self.short_name
@@ -1023,6 +1024,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
+    **singleton_group(GameType.quest_for_glory_vga, "Quest for Glory 1 VGA", "QFG1 VGA"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
     **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
