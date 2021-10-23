@@ -319,6 +319,7 @@ class GameType(Enum):
     luigis_mansion_3 = 315
     fantastic_contraption = 316
     luigis_mansion_all_rooms = 317
+    zelda_wind_waker_randomizer = 318
 
     def __str__(self):
         return self.short_name
@@ -920,6 +921,13 @@ GAME_GROUPS = {
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
         ],
     },
+    GameType.zelda_wind_waker_sd: {
+        "name": "Zelda: The Wind Waker SD",
+        "variants": [
+            (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
+            (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
+        ],
+    },
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
     **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
@@ -1054,7 +1062,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
-    **singleton_group(GameType.zelda_wind_waker_sd, "Zelda: The Wind Waker SD", "TWW SD"),
 }
 
 GAME_TYPE_GROUPS = {}
