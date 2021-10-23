@@ -315,6 +315,7 @@ class GameType(Enum):
     celeste_classic_mods = 311
     dont_starve_together = 312
     monster_hunter_world = 313
+    majoras_mask_item_randomizer = 314
 
     def __str__(self):
         return self.short_name
@@ -675,6 +676,13 @@ GAME_GROUPS = {
             (GameType.links_awakening_switch, "Normal", "LAS"),
         ],
     },
+    GameType.majoras_mask: {
+        "name": "Zelda: Majora's Mask",
+        "variants": [
+            (GameType.majoras_mask, "Normal", "Zelda: MM"),
+            (GameType.majoras_mask_item_randomizer, "Item Randomizer", "Zelda: MM IR"),
+        ],
+    },
     GameType.mario_maker_2: {
         "name": "Super Mario Maker 2",
         "variants": [
@@ -959,7 +967,6 @@ GAME_GROUPS = {
             "LEGO SW: TCS DS"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
-    **singleton_group(GameType.majoras_mask, "Zelda: Majora's Mask", "Zelda: MM"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
