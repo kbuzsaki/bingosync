@@ -311,6 +311,7 @@ class GameType(Enum):
     salt_and_sanctuary = 307
     untitled_goose_game = 308
     deaths_door = 309
+    hogs_of_war = 310
 
     def __str__(self):
         return self.short_name
@@ -939,6 +940,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
+    **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
