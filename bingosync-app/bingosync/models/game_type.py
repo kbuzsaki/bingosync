@@ -402,6 +402,7 @@ HIDDEN_VARIANTS = {
     GameType.super_mario_sunshine_1v1_beta,
     GameType.super_mario_sunshine_lockout,
     GameType.super_mario_sunshine_tournament,
+    GameType.video_games,
 }
 
 GAME_GROUPS = {
