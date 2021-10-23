@@ -273,7 +273,7 @@ var bingoList = {
   },
 
   "Maggots": {
-    "Desc": "Kill two different Maggots"
+    "Desc": "Mate dois vermes distintos"
   },
 
   "Marissa": {
@@ -282,7 +282,7 @@ var bingoList = {
   },
 
   "Millibelle": {
-    "Desc": "Ataque Millibelle na Casa dos Prazer",
+    "Desc": "Ataque Millibelle na Casa dos Prazeres",
     "Excludes": ["Bank"]
   },
 
@@ -499,9 +499,8 @@ var bingoList = {
   },
 
 
-
   "15Grub": {
-    "Desc": "Obtenha 15 larvas",
+    "Desc": "Salve ou obtenha 15 larvas",
     "Excludes": ["KEGrubs", "35Grub"]
   },
 
@@ -514,7 +513,7 @@ var bingoList = {
 */
 
   "2Ore": {
-    "Desc": "Obtenha 2 Minérios Palido",
+    "Desc": "Obtenha 2 Minérios Palidos",
     "Excludes": ["Nail3"],
     "Score": 0.71
   },
@@ -684,7 +683,7 @@ var bingoList = {
   },
 
   "Shops": {
-    "Desc": "Visite todos as lojas(Sly, Iselda, Salubra e Come Pernas)",
+    "Desc": "Visite todas as lojas(Sly, Iselda, Salubra e Come Pernas)",
     "Excludes": ["Cloth"]
   },
 
@@ -840,7 +839,7 @@ var bingoList = {
   },
 
   "DamnItGrimmchild": { //https://clips.twitch.tv/LivelySpookyBibimbapTakeNRG
-    "Desc": "KMate 3 Oomas com uma invocação(amuleto)",
+    "Desc": "Mate 3 Oomas com uma invocação(amuleto)",
     "Score": 0.87
   },
 
