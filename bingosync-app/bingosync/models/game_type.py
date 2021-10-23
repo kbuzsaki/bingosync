@@ -316,6 +316,7 @@ class GameType(Enum):
     dont_starve_together = 312
     monster_hunter_world = 313
     majoras_mask_item_randomizer = 314
+    luigis_mansion_3 = 315
 
     def __str__(self):
         return self.short_name
@@ -967,6 +968,7 @@ GAME_GROUPS = {
             "LEGO SW: TCS DS"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
+    **singleton_group(GameType.luigis_mansion_3, "Luigi's Mansion 3", "LM 3"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
