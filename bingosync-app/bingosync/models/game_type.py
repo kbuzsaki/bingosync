@@ -313,6 +313,7 @@ class GameType(Enum):
     deaths_door = 309
     hogs_of_war = 310
     celeste_classic_mods = 311
+    dont_starve_together = 312
 
     def __str__(self):
         return self.short_name
@@ -929,6 +930,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
+    **singleton_group(GameType.dont_starve_together, "Don't Starve Together", "Don't Starve Together"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
