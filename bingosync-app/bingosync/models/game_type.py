@@ -302,9 +302,11 @@ class GameType(Enum):
     crash_bandicoot_4 = 298
     kingdom_hearts_final_mix_randomizer = 299
     celeste_portuguese = 300
-    octopath_traveler_short = 301
-    octopath_traveler_medium = 302
-    octopath_traveler_long = 303
+    yokus_island_express_simplified = 301
+    yokus_island_express_randomizer_simplified = 302
+    octopath_traveler_short = 303
+    octopath_traveler_medium = 304
+    octopath_traveler_long = 305
 
     def __str__(self):
         return self.short_name
@@ -851,8 +853,10 @@ GAME_GROUPS = {
     GameType.yokus_island_express: {
         "name": "Yoku's Island Express",
         "variants": [
-            (GameType.yokus_island_express, "Normal", "Yoku's IE"),
+            (GameType.yokus_island_express, "Vanilla", "Yoku's IE"),
+            (GameType.yokus_island_express_simplified, "Vanilla (Simplified)", "Yoku's IE Simple"),
             (GameType.yokus_island_express_randomizer, "Randomizer", "Yoku's IE Rando"),
+            (GameType.yokus_island_express_randomizer_simplified, "Randomizer (Simplified)", "Yoku's IE Rando Simple"),
         ],
     },
     GameType.yugioh_forbidden_memories: {

@@ -1,77 +1,77 @@
 [
     {
-        "name": "Collect the Ceremony Instruments"
-    },
-    {
-        "name": "Obtain the Grand Postmaster Badge"
-    },
-    {
-        "name": "Give Skeeper 100 Fruits"
-    },
-    {
-        "name": "Roll 5 Boulders or Snowballs"
-    },
-    {
-        "name": "Wake up Baldino"
-    },
-    {
-        "name": "Obtain the Sootling on a Leash"
-    },
-    {
-        "name": "Upgrade the Skvader to Fat Skvader"
-    },
-    {
-        "name": "Trade with Liquorice"
-    },
-    {
-        "name": "Activate the Gorilla Woods Beeline"
-    },
-    {
-        "name": "Open all 4 Doors in the Slug Gardens"
-    },
-    {
-        "name": "Take the Spider Orphan to the Tree"
-    },
-    {
         "name": "Collect the Creepy Sprinkles (Green)"
     },
     {
-        "name": "Destroy Fosfor's Secret Fruit Supply"
+        "name": "Obtain the Slug Vacuum"
     },
     {
-        "name": "Obtain the Dive Fish"
-    },
-    {
-        "name": "Look through 5 Telescopes"
-    },
-    {
-        "name": "Fall into Thorns 30 times"
-    },
-    {
-        "name": "Forgive Kickback"
-    },
-    {
-        "name": "Trade with Sumoe"
-    },
-    {
-        "name": "Close the Ore Station Hatches"
-    },
-    {
-        "name": "Open the Blue Chest"
+        "name": "Hit the Owl in the Orestation"
     },
     {
         "name": "Scare a Bat"
     },
     {
-        "name": "Get Access to the Underdark Ruins"
+        "name": "Use 2 Keys"
     },
     {
-        "name": "Obtain any 3 Trackers"
+        "name": "Open the Blue Chest"
     },
     {
-        "name": "Jump across the Lava Pool"
+        "name": "Upgrade to Fast Dive Fish"
     },
     {
-        "name": "Spin Blue Pinwheels in 2 Locations"
+        "name": "Talk to Zo, Rolypoly, Leeper, Ithaqua"
+    },
+    {
+        "name": "Activate the Horned Statue"
+    },
+    {
+        "name": "Open the Underbelly Door"
+    },
+    {
+        "name": "Talk to Sweepers, Dolphin, Plissken, Kambi"
+    },
+    {
+        "name": "Collect the Ceremony Instruments"
+    },
+    {
+        "name": "Destroy the Crystals above The Dolphin"
+    },
+    {
+        "name": "Obtain the Scarab Tracker"
+    },
+    {
+        "name": "Obtain the Boon of Plenty"
+    },
+    {
+        "name": "Find 3 Main Items"
+    },
+    {
+        "name": "Obtain the Noisemaker"
+    },
+    {
+        "name": "Free Ojva from the Ice"
+    },
+    {
+        "name": "Trade with Sumoe"
+    },
+    {
+        "name": "Collect 25 Fruit in the Waterfall Pit"
+    },
+    {
+        "name": "Pay Skeeper 100 Fruits"
+    },
+    {
+        "name": "Start the Rocket of the Space Monks"
+    },
+    {
+        "name": "Get Sush back to Work"
+    },
+    {
+        "name": "Obtain the Mail Bag"
+    },
+    {
+        "name": "Take the Spider Orphan to the Tree"
     }
 ]
