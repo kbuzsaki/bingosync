@@ -314,6 +314,7 @@ class GameType(Enum):
     hogs_of_war = 310
     celeste_classic_mods = 311
     dont_starve_together = 312
+    monster_hunter_world = 313
 
     def __str__(self):
         return self.short_name
@@ -968,6 +969,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
