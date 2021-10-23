@@ -1,151 +1,54 @@
 bingoGenerator = require("./generators/generator_bases/simple_generator.js");
 
 var bingoList = [
-    {
-        "name": "Rec Room"
-    },
-    {
-        "name": "Sealed Room"
-    },
-    {
-        "name": "Hidden Room"
-    },
-    {
-        "name": "Study"
-    },
-    {
-        "name": "Master Bedroom"
-    },
-    {
-        "name": "Parlor"
-    },
-    {
-        "name": "Foyer"
-    },
-    {
-        "name": "Twins’ Room"
-    },
-    {
-        "name": "Anteroom"
-    },
-    {
-        "name": "Wardrobe Room"
-    },
-    {
-        "name": "Butler’s Room"
-    },
-    {
-        "name": "Armory"
-    },
-    {
-        "name": "Artist’s Studio"
-    },
-    {
-        "name": "Astral Hall"
-    },
-    {
-        "name": "2F Balcony"
-    },
-    {
-        "name": "3F Balcony"
-    },
-    {
-        "name": "Ball Room"
-    },
-    {
-        "name": "1F Bathroom"
-    },
-    {
-        "name": "2F Bathroom"
-    },
-    {
-        "name": "Billiards Room"
-    },
-    {
-        "name": "Boneyard"
-    },
-    {
-        "name": "Bottom of the Well"
-    },
-    {
-        "name": "Breaker Room"
-    },
-    {
-        "name": "Cellar"
-    },
-    {
-        "name": "Ceramics Studio"
-    },
-    {
-        "name": "Conservatory"
-    },
-    {
-        "name": "Dining Room"
-    },
-    {
-        "name": "Fortune-Teller’s Room"
-    },
-    {
-        "name": "Laundry Room"
-    },
-    {
-        "name": "Graveyard"
-    },
-    {
-        "name": "Guest Room"
-    },
-    {
-        "name": "Sitting Room"
-    },
-    {
-        "name": "Kitchen"
-    },
-    {
-        "name": "Mirror Room"
-    },
-    {
-        "name": "Nana’s Room"
-    },
-    {
-        "name": "Nursery"
-    },
-    {
-        "name": "Observatory"
-    },
-    {
-        "name": "Pipe Room"
-    },
-    {
-        "name": "Projection Room"
-    },
-    {
-        "name": "Roof"
-    },
-    {
-        "name": "Safari Room"
-    },
-    {
-        "name": "Storage Room"
-    },
-    {
-        "name": "Tea Room"
-    },
-    {
-        "name": "Telephone Room"
-    },
-    {
-        "name": "1F Washroom"
-    },
-    {
-        "name": "2F Washroom"
-    },
-    {
-        "name": "Courtyard"
-    },
-    {
-        "name": "Clockworks Room"
-    },
-    {
-        "name": "Cold Storage"
-    }
+    "\"Clear\" 5 Rooms in the Blackout",
+    "30 Gold Bars",
+    "750 Bills",
+    "750 Coins",
+    "All Area 1 Boos",
+    "All Area 3 Boos",
+    "All Basement Boos",
+    "All Unique Chests",
+    "Capture Breaker Room Speedy Spirit",
+    "Capture Jarvis",
+    "Capture Petunia",
+    "Capture Shivers",
+    "Catch 5 Speedy Spirits",
+    "Catch all Cheese Gold Mice",
+    "Cheer Up all Toads (Excluding Blackout)",
+    "Clear 5 Rooms in Normal Mansion (Not Training Room)",
+    "Clear all Attic Rooms",
+    "Clear all Outside Areas",
+    "Clear all Washrooms and Bathrooms",
+    "Clockworks Boo",
+    "Collect 5 Rubies",
+    "Collect 50 Small Pearls",
+    "Collect 6 Emeralds",
+    "Collect 6 Sapphires",
+    "Collect Grimmly’s Key",
+    "Collect Sealed Room Key",
+    "Collect all Basement Keys",
+    "Collect all Large Hearts (Restores 50 HP)",
+    "Defeat 3 Fire Ghosts",
+    "Defeat 3 Ice Ghosts",
+    "Defeat all Blackout Speedy Spirits",
+    "Destroy all Unique Fake Doors (Excluding Blackout)",
+    "Get 2 Silver Diamonds",
+    "Get 20 Gold Bars",
+    "Get 4 Mario Items",
+    "Get 650 Bills",
+    "Get 650 Coins",
+    "Get Chauncey’s Key",
+    "Get Mario’s Shoe",
+    "Get Plant Gold Diamond",
+    "Get Secret Altar Sapphire",
+    "Get Van Gore’s Key",
+    "Get all Element Pickups",
+    "Mirror warp at 5 different mirrors",
+    "Spin all the Fans",
+    "Take down All Posters",
+    "Talk to Blackout Toad",
+    "Unlock all Doors Guarded by Area Keys",
+    "Water a Plant in 5 Different Rooms",
+    "Water all Plants on the 2 Balconies"
 ];
