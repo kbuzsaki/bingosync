@@ -318,6 +318,7 @@ class GameType(Enum):
     majoras_mask_item_randomizer = 314
     luigis_mansion_3 = 315
     fantastic_contraption = 316
+    luigis_mansion_all_rooms = 317
 
     def __str__(self):
         return self.short_name
@@ -664,6 +665,13 @@ GAME_GROUPS = {
         "variants": [
             (GameType.luigis_mansion, "Normal", "Luigi's Mansion"),
             (GameType.luigis_mansion_all_doors_unlocked, "All Doors Unlocked", "LM ADU"),
+            (GameType.luigis_mansion_all_rooms, "All Rooms", "LM All Rooms"),
+        ],
+    },
+    GameType.links_awakening: {
+        "name": "Zelda: Link's Awakening",
+        "variants": [
+            (GameType.links_awakening, "Randomizer", "LADX Random"),
         ],
     },
     GameType.links_awakening: {
