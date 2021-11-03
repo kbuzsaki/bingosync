@@ -547,7 +547,7 @@ GAME_GROUPS = {
         "name": "Crash Twinsanity",
         "variants": [
             (GameType.crash_twinsanity, "Normal", "Crash Twinsanity"),
-            (GameType.crash_twinsanity, "Hoverless", "Twinsanity Hoverless"),
+            (GameType.crash_twinsanity_hoverless_variant, "Hoverless", "Twinsanity Hoverless"),
         ],
     },
     GameType.custom: {
