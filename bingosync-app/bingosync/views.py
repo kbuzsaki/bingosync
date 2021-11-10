@@ -298,6 +298,7 @@ def get_socket_key(request, encoded_room_uuid):
     player = _get_session_player(request.session, room)
     data = {
         "socket_key": _create_temporary_socket_key(player),
+        "sockets_url": SOCKETS_URL,
     }
     return JsonResponse(data)
 
