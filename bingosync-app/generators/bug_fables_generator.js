@@ -358,37 +358,37 @@ var bingoList = {
     
     //cave of trials
     "cot10": {
-        "Desc": "",
+        "Desc": "Complete 10 Battles in Cave of Trials",
         "Diff": 9,
         "Excludes": ["cot15"]
     },
     "cot15": {
-        "Desc": "",
+        "Desc": "Complete 15 Battles in Cave of Trials",
         "Diff": 12,
         "Excludes": ["cot10","cot20"]
     },
     "cot20": {
-        "Desc": "",
+        "Desc": "Complete 20 Battles in Cave of Trials",
         "Diff": 15,
         "Excludes": ["cot15","cot25"]
     },
     "cot25": {
-        "Desc": "",
+        "Desc": "Complete 25 Battles in Cave of Trials",
         "Diff": 18,
         "Excludes": ["cot20","cot30"]
     },
     "cot30": {
-        "Desc": "",
+        "Desc": "Complete 30 Battles in Cave of Trials",
         "Diff": 21,
         "Excludes": ["cot25","cot35"]
     },
     "cot35": {
-        "Desc": "",
+        "Desc": "Complete 35 Battles in Cave of Trials",
         "Diff": 23,
         "Excludes": ["cot30","cot40"]
     },
     "cot40": {
-        "Desc": "",
+        "Desc": "Complete 40 Battles in Cave of Trials",
         "Diff": 25,
         "Excludes": ["cot35"]
     },
