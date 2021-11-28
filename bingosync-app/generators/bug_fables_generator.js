@@ -9,7 +9,7 @@ bingoGenerator = require("./generators/generator_bases/synerGen.js");
         "chapter": {"Max": 2}, //8 total (5 counting hardmode exclusions)
         "quest": {"Max": 6}, //22 total
         "collectible": {"Max": 6}, //16 total
-        "medal": {"Max": 6} //14 total
+        "medal": {"Max": 6}, //14 total
         "cooking": {"Max": 2} //7 total
     },
     "maxScore": 0,
