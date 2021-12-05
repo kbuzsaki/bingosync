@@ -234,7 +234,7 @@ class GameType(Enum):
     pokemon_omega_ruby_alpha_sapphire = 230
     monster_rancher_2_rng_lite = 231
     fallout_new_vegas = 232
-    minecraft_1_17_1 = 233
+    minecraft_1_18 = 233
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
     kingdom_hearts_2_final_mix_current = 236
@@ -729,7 +729,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.minecraft_1_16_1, "1.16.1", "Minecraft 1.16.1"),
             (GameType.minecraft_1_8_9, "1.8.9", "Minecraft 1.8.9"),
-            (GameType.minecraft_1_17_1, "Most recent (1.17.1)", "Minecraft 1.17.1"),
+            (GameType.minecraft_1_18, "Most recent (1.18)", "Minecraft 1.18"),
         ],
     },
     GameType.monster_rancher_2: {
