@@ -69,7 +69,6 @@ bingoList[9] = [
     {name: "Reach the top of Tundaria Tower", types: ["clear", "towers"]},
     {name: "Obtain Meditation Rod or Thanatos Mace", types: ["equip"]},
     {name: "Check the Fujin Shield chest", types: ["loc", "airs_rock"]},
-    {name: "Obtain the Black Crystal", types: ["item"]},
     {name: "Use the Ruin Key", types: ["action"]},
     {name: "Obtain 2 Mist Potions", types: ["item"]}
 ];
