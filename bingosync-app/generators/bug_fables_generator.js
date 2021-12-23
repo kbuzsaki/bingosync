@@ -1,677 +1,867 @@
 bingoGenerator = require("./generators/generator_bases/synerGen.js");
 
-//initialization
+var bingoList = {
+    //initialization
     "bingoTypes": {
-        "boss": {"Max": 4}, //21 total (14 counting hardmode exclusions)
-        "miniboss": {"Max": 3}, //13 total (10 counting hardmode exclusions)
+        "boss": {"Max": 4}, //22 total (15 counting hardmode exclusions)
+        "miniboss": {"Max": 4}, //20 total (13 counting hardmode exclusions)
         "bounty": {"Max": 1}, //5 total
-        "hardmode": {"Max": 3}, //12 total
-        "chapter": {"Max": 2}, //8 total (5 counting hardmode exclusions)
+        "hard": {"Max": 4}, //16 total
+        "chapter": {"Max": 3}, //9 total (5 counting hardmode exclusions)
         "quest": {"Max": 6}, //22 total
-        "collectible": {"Max": 6}, //16 total
-        "medal": {"Max": 6}, //14 total
-        "cooking": {"Max": 2} //7 total
+        "collectible": {"Max": 8}, //29 total
+        "#_cb": {"Max": 3}, //6 total
+        "area_cb": {"Max": 3}, //7 total
+        "medal": {"Max": 6}, //19 total
+        "cooking": {"Max": 4}, //10 total
+        "#_rank": {"Max": 2}, //6 total
+        "stat_rank": {"Max": 1}, //5 total
+        "cot": {"Max": 2}, //5 total
+        "ability": {"Max": 2}, //5 total
+        "spy": {"Max": 2} //4 total
     },
     "maxScore": 0,
     
-    //abilities
-    "fly": {
-        "Desc": "Learn the Bee Fly ability",
-        "Diff": 16
+    "ch_2": {
+        "Desc": "Complete Chapter 2",
+        "Diff": 6,
+        "Types": ["chapter","boss"]
     },
-    "dash": {
-        "Desc": "Learn the upgraded Horn Dash ability",
-        "Diff": 18
-    },
-    "ice": {
-        "Desc": "Learn the Icicle ability",
-        "Diff": 17
-    },
-    
-    //bosses
-    "zm1": {
-        "Desc": "Defeat Zasp & Mothiva 1",
-        "Diff": 3,
-        "Types": ["miniboss"]
-    },
-    "afunny": {
-        "Desc": "Defeat Ahoneynation",
-        "Diff": 7,
-        "Types": ["miniboss"]
-    },
-    "asto": {
-        "Desc": "Defeat Astotheles",
-        "Diff": 7,
-        "Excludes": ["astohard"],
-        "Types": ["miniboss"]
-    },
-    "kalikabbu": {
-        "Desc": "Defeat Kali & Kabbu",
+    "ch_3": {
+        "Desc": "Complete Chapter 3",
         "Diff": 9,
+        "Excludes": ["boss_hard_b33"],
+        "Types": ["chapter","boss"]
+    },
+    "ch_4": {
+        "Desc": "Complete Chapter 4",
+        "Diff": 15,
+        "Excludes": ["boss_hard_watcher"],
+        "Types": ["chapter","boss"]
+    },
+    "ch_5": {
+        "Desc": "Complete Chapter 5",
+        "Diff": 17,
+        "Excludes": ["boss_hard_ultimax"],
+        "Types": ["chapter","miniboss"]
+    },
+    "ch_6": {
+        "Desc": "Complete Chapter 6",
+        "Diff": 24,
+        "Excludes": ["boss_hard_tank"],
+        "Types": ["chapter","boss"]
+    },
+    "boss_hard_hard_hits": {
+        "Desc": "Defeat any boss/miniboss with both Hard Mode and Hard Hits equipped",
+        "Diff": 12,
+        "Types": ["boss","miniboss","hard"]
+    },
+    "boss_hard_spider": {
+        "Desc": "Defeat Spider with Hard Mode equipped",
+        "Diff": 2,
+        "Types": ["boss","hard"]
+    },
+    "boss_zm1": {
+        "Desc": "Defeat Zasp & Mothiva 1",
+        "Diff": 5,
+        "Types": ["miniboss"]
+    },
+    "boss_scarlet": {
+        "Desc": "Defeat Monsieur Scarlet",
+        "Diff": 7,
+        "Excludes": ["boss_hard_scarlet"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_scarlet": {
+        "Desc": "Defeat Monsieur Scarlet with Hard Mode equipped",
+        "Diff": 9,
+        "Excludes": ["boss_scarlet"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_ahoneynation": {
+        "Desc": "Defeat Ahoneynation",
+        "Diff": 9,
+        "Excludes": ["boss_hard_ahoneynation"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_ahoneynation": {
+        "Desc": "Defeat Ahoneynation with Hard Mode equipped",
+        "Diff": 10,
+        "Excludes": ["boss_ahoneynation"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_hard_b33": {
+        "Desc": "Defeat Heavy Drone B-33 with Hard Mode equipped",
+        "Diff": 11,
+        "Excludes": ["ch_3"],
+        "Types": ["boss","hard","chapter"]
+    },
+    "boss_broodmother": {
+        "Desc": "Defeat Broodmother",
+        "Diff": 13,
+        "Excludes": ["boss_hard_broodmother"],
+        "Types": ["boss"]
+    },
+    "boss_hard_broodmother": {
+        "Desc": "Defeat Broodmother with Hard Mode equipped",
+        "Diff": 16,
+        "Excludes": ["boss_broodmother"],
+        "Types": ["boss","hard"]
+    },
+    "boss_chomper": {
+        "Desc": "Defeat Mother Chomper",
+        "Diff": 14,
+        "Excludes": ["boss_hard_chomper"],
+        "Types": ["boss"]
+    },
+    "boss_hard_chomper": {
+        "Desc": "Defeat Mother Chomper with Hard Mode equipped",
+        "Diff": 18,
+        "Excludes": ["boss_chomper"],
+        "Types": ["boss","hard"]
+    },
+    "boss_asto": {
+        "Desc": "Defeat Astotheles",
+        "Diff": 10,
+        "Excludes": ["boss_hard_asto"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_asto": {
+        "Desc": "Defeat Astotheles with Hard Mode equipped",
+        "Diff": 12,
+        "Excludes": ["boss_asto"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_scorp": {
+        "Desc": "Defeat Dune Scorpion",
+        "Diff": 12,
+        "Excludes": ["boss_hard_scorp"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_scorp": {
+        "Desc": "Defeat Dune Scorpion with Hard Mode equipped",
+        "Diff": 15,
+        "Excludes": ["boss_scorp"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_hard_watcher": {
+        "Desc": "Defeat the Watcher with Hard Mode equipped",
+        "Diff": 19,
+        "Excludes": ["ch_4"],
+        "Types": ["boss","hard","chapter"]
+    },
+    "boss_beast": {
+        "Desc": "Defeat the Beast",
+        "Diff": 17,
+        "Excludes": ["boss_hard_beast"],
+        "Types": ["boss"]
+    },
+    "boss_hard_beast": {
+        "Desc": "Defeat the Beast with Hard Mode equipped",
+        "Diff": 20,
+        "Excludes": ["boss_beast"],
+        "Types": ["boss","hard"]
+    },
+    "boss_hard_ultimax": {
+        "Desc": "Defeat General Ultimax with Hard Mode equipped",
+        "Diff": 19,
+        "Excludes": ["ch_5"],
+        "Types": ["miniboss","hard","chapter"]
+    },
+    "boss_primal": {
+        "Desc": "Defeat Primal Weevil",
+        "Diff": 20,
+        "Excludes": ["boss_hard_primal"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_primal": {
+        "Desc": "Defeat Primal Weevil with Hard Mode equipped",
+        "Diff": 23,
+        "Excludes": ["boss_primal"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_zm2": {
+        "Desc": "Defeat Zasp & Mothiva 2",
+        "Diff": 21,
+        "Excludes": ["boss_hard_zm2"],
+        "Types": ["miniboss"]
+    },
+    "boss_hard_zm2": {
+        "Desc": "Defeat Zasp & Mothiva 2 with Hard Mode equipped",
+        "Diff": 24,
+        "Excludes": ["boss_zm2"],
+        "Types": ["miniboss","hard"]
+    },
+    "boss_hard_tank": {
+        "Desc": "Defeat ULTIMAX Tank with Hard Mode equipped",
+        "Diff": 25,
+        "Excludes": ["ch_6"],
+        "Types": ["boss","hard","chapter"]
+    },
+    "boss_kali": {
+        "Desc": "Defeat Kali & Kabbu",
+        "Diff": 11,
         "Types": ["miniboss","quest"]
     },
-    "brood": {
-        "Desc": "Defeat Broodmother",
-        "Diff": 11,
-        "Excludes": ["broodhard"],
-        "Types": ["boss"]
-    },
-    "mother": {
-        "Desc": "Defeat Mother Chomper",
-        "Diff": 12,
-        "Excludes": ["motherhard"],
-        "Types": ["boss"]
-    },
-    "devourer": {
-        "Desc": "Defeat Devourer",
-        "Diff": 13,
-        "Types": ["boss","bounty"]
-    },
-    "beast": {
-        "Desc": "Defeat the Beast",
-        "Diff": 15,
-        "Excludes": ["beasthard"],
-        "Types": ["boss"]
-    },
-    "wyrm": {
-        "Desc": "Defeat Tidal Wyrm",
-        "Diff": 17,
-        "Types": ["boss","bounty"]
-    },
-    "riz": {
+    "boss_riz": {
         "Desc": "Defeat Riz",
-        "Diff": 17,
+        "Diff": 19,
         "Types": ["miniboss"]
     },
-    "primal": {
-        "Desc": "Defeat Primal Weevil",
-        "Diff": 18,
-        "Excludes": ["primalhard"],
+    "boss_carmina": {
+        "Desc": "Defeat Carmina (in battle)",
+        "Diff": 23,
         "Types": ["miniboss"]
     },
-    "monarch": {
-        "Desc": "Defeat False Monarch",
+    "boss_seedling": {
+        "Desc": "Defeat Seedling King",
+        "Diff": 22,
+        "Types": ["boss","bounty"]
+    },
+    "boss_devourer": {
+        "Desc": "Defeat Devourer",
+        "Diff": 16,
+        "Types": ["boss","bounty"]
+    },
+    "boss_wyrm": {
+        "Desc": "Defeat Tidal Wyrm",
         "Diff": 19,
         "Types": ["boss","bounty"]
     },
-    "zm2": {
-        "Desc": "Defeat Zasp & Mothiva 2",
-        "Diff": 20,
-        "Excludes": ["zm2hard"],
-        "Types": ["miniboss"]
-    },
-    "king": {
-        "Desc": "Defeat Seedling King",
+    "boss_monarch": {
+        "Desc": "Defeat False Monarch",
         "Diff": 21,
         "Types": ["boss","bounty"]
     },
-    "carmina": {
-        "Desc": "Defeat Carmina (in battle)",
-        "Diff": 22,
-        "Types": ["miniboss"]
-    },
-    "peacock": {
+    "boss_peacock": {
         "Desc": "Defeat Peacock Spider",
         "Diff": 24,
         "Types": ["boss","bounty"]
     },
-    "ch2": {
-        "Desc": "Complete Chapter 2",
-        "Diff": 4,
-        "Types": ["boss","chapter"]
-    },
-    "ch3": {
-        "Desc": "Complete Chapter 3",
-        "Diff": 7,
-        "Excludes": ["b33hard"],
-        "Types": ["boss","chapter"]
-    },
-    "ch4": {
-        "Desc": "Complete Chapter 4",
-        "Diff": 13,
-        "Excludes": ["watcherhard"],
-        "Types": ["boss","chapter"]
-    },
-    "ch5": {
-        "Desc": "Complete Chapter 5",
-        "Diff": 15,
-        "Types": ["miniboss","chapter"]
-    },
-    "ch6": {
-        "Desc": "Complete Chapter 6",
-        "Diff": 23,
-        "Excludes": ["tankhard"],
-        "Types": ["boss","chapter"]
-    },
-    
-    //bosses on hard mode
-    "spuderhard": {
-        "Desc": "Defeat Spider with Hard Mode equipped",
-        "Diff": 2,
-        "Types": ["boss","hardmode"]
-    },
-    "scarlethard": {
-        "Desc": "Defeat Monsieur Scarlet with Hard Mode equipped",
-        "Diff": 5,
-        "Types": ["miniboss","hardmode"]
-    },
-    "b33hard": {
-        "Desc": "Defeat Heavy Drone B-33 with Hard Mode equipped",
-        "Diff": 8,
-        "Excludes": ["ch3"],
-        "Types": ["boss","hardmode","chapter"]
-    },
-    "astohard": {
-        "Desc": "Defeat Astotheles with Hard Mode equipped",
-        "Diff": 10,
-        "Excludes": ["asto"],
-        "Types": ["miniboss","hardmode"]
-    },
-    "broodhard": {
-        "Desc": "Defeat Broodmother with Hard Mode equipped",
-        "Diff": 14,
-        "Excludes": ["brood"],
-        "Types": ["boss","hardmode"]
-    },
-    "motherhard": {
-        "Desc": "Defeat Mother Chomper with Hard Mode equipped",
-        "Diff": 16,
-        "Excludes": ["mother"],
-        "Types": ["boss","hardmode"]
-    },
-    "watcherhard": {
-        "Desc": "Defeat the Watcher with Hard Mode equipped",
-        "Diff": 17,
-        "Excludes": ["ch4"],
-        "Types": ["boss","hardmode","chapter"]
-    },
-    "beasthard": {
-        "Desc": "Defeat the Beast with Hard Mode equipped",
-        "Diff": 18,
-        "Excludes": ["beast"],
-        "Types": ["boss","hardmode"]
-    },
-    "primalhard": {
-        "Desc": "Defeat Primal Weevil with Hard Mode equipped",
-        "Diff": 22,
-        "Excludes": ["primal"],
-        "Types": ["miniboss","hardmode"]
-    },
-    "zm2hard": {
-        "Desc": "Defeat Zasp & Mothiva 2 with Hard Mode equipped",
-        "Diff": 24,
-        "Excludes": ["zm2"],
-        "Types": ["miniboss","hardmode"]
-    },
-    "zommothhard": {
+    "boss_hard_zommoth": {
         "Desc": "Defeat Zommoth with Hard Mode equipped",
         "Diff": 25,
-        "Excludes": ["leifquest"],
-        "Types": ["boss","hardmode"]
+        "Excludes": ["quest_leif"],
+        "Types": ["boss","hard"]
     },
-    "tankhard": {
-        "Desc": "Defeat ULTIMAX Tank with Hard Mode equipped",
-        "Diff": 25,
-        "Excludes": ["ch6"],
-        "Types": ["boss","hardmode","chapter"]
+    "quest_vi": {
+        "Desc": "Complete Vi's Request",
+        "Diff": 13
     },
-    
-    //quests
-    "leifquest": {
+    "quest_leif": {
         "Desc": "Complete Leif's Request",
         "Diff": 23,
-        "Excludes": ["zommothhard"],
+        "Excludes": ["boss_hard_zommoth"],
         "Types": ["boss"]
     },
-    "viquest": {
-        "Desc": "Complete Vi's Request",
-        "Diff": 21
-    },
-    "eetl": {
+    "quest_parts_delivery": {
         "Desc": "Complete \"Parts Delivery\"",
-        "Diff": 1,
+        "Diff": 2,
         "Types": ["quest"]
     },
-    "tod": {
+    "quest_lost_toy": {
         "Desc": "Complete \"Lost Toy\"",
-        "Diff": 1,
-        "Types": ["quest"]
-    },
-    "hat": {
-        "Desc": "Complete \"Dropped My Hat!\"",
         "Diff": 2,
         "Types": ["quest"]
     },
-    "chuck": {
+    "quest_hearty_breakfast": {
         "Desc": "Complete \"I Want A New Taste\"",
-        "Diff": 2,
+        "Diff": 3,
         "Types": ["quest"]
     },
-    "cablecar": {
+    "quest_favorite_one": {
+        "Desc": "Complete \"Dropped My Hat!\"",
+        "Diff": 3,
+        "Types": ["quest"]
+    },
+    "quest_cable_car": {
         "Desc": "Complete \"Cable Car Bodyguard\"",
-        "Diff": 3,
+        "Diff": 5,
         "Types": ["quest"]
     },
-    "crisbee": {
+    "quest_crisbee": {
         "Desc": "Complete \"I Wanna Get Better!\"",
-        "Diff": 3,
+        "Diff": 4,
         "Types": ["quest"]
     },
-    "kut": {
+    "quest_kut": {
         "Desc": "Complete \"My Specialty\"",
-        "Diff": 5,
-        "Types": ["quest"]
-    },
-    "fry": {
-        "Desc": "Complete \"A Smiling Dish\"",
-        "Diff": 5,
-        "Excludes": ["dinner"],
-        "Types": ["quest"]
-    },
-    "mm": {
-        "Desc": "Complete \"Theater Help Wanted!\"",
-        "Diff": 5,
-        "Types": ["quest"]
-    },
-    "dinner": {
-        "Desc": "Complete \"Team Snakemouth...\"",
         "Diff": 6,
-        "Excludes": ["fry"],
         "Types": ["quest"]
     },
-    "tangy": {
-        "Desc": "Complete \"Huuuuuuuuu...!!!\"",
+    "quest_fry": {
+        "Desc": "Complete \"A Smiling Dish\"",
+        "Diff": 7,
+        "Excludes": ["quest_aria"],
+        "Types": ["quest"]
+    },
+    "quest_aria": {
+        "Desc": "Complete \"Team Snakemouth...\"",
         "Diff": 8,
+        "Excludes": ["quest_fry"],
         "Types": ["quest"]
     },
-    "doll": {
+    "quest_theater": {
+        "Desc": "Complete \"Theater Help Wanted!\"",
+        "Diff": 7,
+        "Types": ["quest"]
+    },
+    "quest_tanjy": {
+        "Desc": "Complete \"Huuuuuuuuu...!!!\"",
+        "Diff": 10,
+        "Types": ["quest"]
+    },
+    "quest_mothiva_doll": {
         "Desc": "Complete \"Lost Item\"",
-        "Diff": 9,
+        "Diff": 13,
+        "Excludes": ["statberry_heart_1"],
         "Types": ["quest"]
     },
-    "ore": {
+    "quest_ore": {
         "Desc": "Complete \"Ore Wanted\"",
-        "Diff": 11,
-        "Types": ["quest"]
-    },
-    "spycards": {
-        "Desc": "Complete \"Card Masters of Bugaria\"",
-        "Diff": 12,
-        "Excludes": ["tourney","blankcard"],
-        "Types": ["quest"]
-    },
-    "badbook": {
-        "Desc": "Complete \"Awful's Beauty\"",
         "Diff": 13,
         "Types": ["quest"]
     },
-    "cennpisci": {
-        "Desc": "Complete \"Explorer Check!\"",
-        "Diff": 14,
-        "Types": ["quest"]
-    }, 
-    "wizard": {
-        "Desc": "Complete \"Find The Ingredients!\"",
+    "quest_bad_book": {
+        "Desc": "Complete \"Awful's Beauty\"",
         "Diff": 15,
         "Types": ["quest"]
     },
-    "claw": {
+    "quest_cenn_pisci": {
+        "Desc": "Complete \"Explorer Check!\"",
+        "Diff": 16,
+        "Types": ["quest","miniboss"]
+    },
+    "quest_wizard": {
+        "Desc": "Complete \"Find The Ingredients!\"",
+        "Diff": 17,
+        "Types": ["quest"]
+    },
+    "quest_claw": {
         "Desc": "Complete \"My Mecha Claw!\"",
-        "Diff": 18,
-        "Types": ["quest"]
-    },
-    "sophie": {
-        "Desc": "Complete \"Rare Item Wanted!\"",
-        "Diff": 19,
-        "Types": ["quest"]
-    },
-    "mun": {
-        "Desc": "Complete \"Help Me Get It Back!\"",
         "Diff": 20,
         "Types": ["quest"]
     },
-    "elom": {
-        "Desc": "Complete \"In Search of Something\"",
-        "Diff": 22,
+    "quest_leaf_cloak": {
+        "Desc": "Complete \"Help Me Get It Back!\"",
+        "Diff": 21,
         "Types": ["quest"]
     },
-    
-    
-    //collectibles
-    "10d": {
+    "quest_sophie": {
+        "Desc": "Complete \"Rare Item Wanted!\"",
+        "Diff": 21,
+        "Types": ["quest"]
+    },
+    "quest_spycards": {
+        "Desc": "Complete \"Card Masters of Bugaria\"",
+        "Diff": 15,
+        "Types": ["quest"]
+    },
+    "quest_elom": {
+        "Desc": "Complete \"In Search of Something\"",
+        "Diff": 23,
+        "Types": ["quest"]
+    },
+    "discovery_10": {
         "Desc": "10 Discoveries",
         "Diff": 1,
-        "Excludes": ["15d"],
+        "Excludes": ["discovery_15"],
         "Types": ["collectible"]
     },
-    "15d": {
+    "discovery_15": {
         "Desc": "15 Discoveries",
         "Diff": 2,
-        "Excludes": ["10d","20d"],
+        "Excludes": ["discovery_10","discovery_20"],
         "Types": ["collectible"]
     },
-    "20d": {
+    "discovery_20": {
         "Desc": "20 Discoveries",
-        "Diff": 5,
-        "Excludes": ["15d","25d"],
+        "Diff": 6,
+        "Excludes": ["discovery_15","discovery_25"],
         "Types": ["collectible"]
     },
-    "25d": {
+    "discovery_25": {
         "Desc": "25 Discoveries",
-        "Diff": 7,
-        "Excludes": ["20d","30d"],
+        "Diff": 10,
+        "Excludes": ["discovery_20","discovery_30"],
         "Types": ["collectible"]
     },
-    "30d": {
+    "discovery_30": {
         "Desc": "30 Discoveries",
-        "Diff": 11,
-        "Excludes": ["25d","35d"],
+        "Diff": 14,
+        "Excludes": ["discovery_25","discovery_35"],
         "Types": ["collectible"]
     },
-    "35d": {
+    "discovery_35": {
         "Desc": "35 Discoveries",
-        "Diff": 17,
-        "Excludes": ["30d","40d"],
+        "Diff": 19,
+        "Excludes": ["discovery_30","discovery_40"],
         "Types": ["collectible"]
     },
-    "40d": {
+    "discovery_40": {
         "Desc": "40 Discoveries",
         "Diff": 24,
-        "Excludes": ["35d"],
+        "Excludes": ["discovery_35"],
         "Types": ["collectible"]
     },
-    "10cb": {
+    "cb_5": {
+        "Desc": "5 Crystal Berries",
+        "Diff": 2,
+        "Types": ["collectible","#_cb"]
+    },
+    "cb_10": {
         "Desc": "10 Crystal Berries",
-        "Diff": 4,
-        "Excludes": ["15cb"],
-        "Types": ["collectible"]
+        "Diff": 6,
+        "Types": ["collectible","#_cb"]
     },
-    "15cb": {
+    "cb_15": {
         "Desc": "15 Crystal Berries",
-        "Diff": 6,
-        "Excludes": ["10cb","20cb"],
-        "Types": ["collectible"]
+        "Diff": 8,
+        "Types": ["collectible","#_cb"]
     },
-    "20cb": {
+    "cb_20": {
         "Desc": "20 Crystal Berries",
-        "Diff": 9,
-        "Excludes": ["15cb","25cb"],
-        "Types": ["collectible"]
+        "Diff": 11,
+        "Types": ["collectible","#_cb"]
     },
-    "25cb": {
+    "cb_25": {
         "Desc": "25 Crystal Berries",
-        "Diff": 14,
-        "Excludes": ["20cb","30cb"],
-        "Types": ["collectible"]
+        "Diff": 16,
+        "Types": ["collectible","#_cb"]
     },
-    "30cb": {
+    "cb_30": {
         "Desc": "30 Crystal Berries",
-        "Diff": 22,
-        "Excludes": ["25cb"],
+        "Diff": 23,
+        "Types": ["collectible","#_cb"]
+    },
+    "cb_snakemouth": {
+        "Desc": "2 Crystal Berries in Snakemouth Den",
+        "Diff": 1,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_golden": {
+        "Desc": "2 Crystal Berries in Golden Path",
+        "Diff": 5,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_factory": {
+        "Desc": "2 Crystal Berries in Honey Factory",
+        "Diff": 8,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_hideout": {
+        "Desc": "2 Crystal Berries in Bandit Hideout",
+        "Diff": 9,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_grasslands": {
+        "Desc": "2 Crystal Berries in Far Grasslands",
+        "Diff": 18,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_termite": {
+        "Desc": "2 Crystal Berries in the Termite Kingdom",
+        "Diff": 21,
+        "Types": ["collectible","area_cb"]
+    },
+    "cb_giant": {
+        "Desc": "2 Crystal Berries in the Giant's Lair",
+        "Diff": 25,
+        "Types": ["collectible","area_cb"]
+    },
+    "lore_3": {
+        "Desc": "3 Lore Books",
+        "Diff": 3,
+        "Excludes": ["lore_5"],
         "Types": ["collectible"]
     },
-    "5lb": {
+    "lore_5": {
         "Desc": "5 Lore Books",
-        "Diff": 6,
-        "Excludes": ["10lb"],
+        "Diff": 8,
+        "Excludes": ["lore_3","lore_8"],
         "Types": ["collectible"]
     },
-    "10lb": {
+    "lore_8": {
+        "Desc": "8 Lore Books",
+        "Diff": 11,
+        "Excludes": ["lore_5","lore_10"],
+        "Types": ["collectible"]
+    },
+    "lore_10": {
         "Desc": "10 Lore Books",
-        "Diff": 13,
-        "Excludes": ["5lb","15lb"],
+        "Diff": 15,
+        "Excludes": ["lore_8"],
         "Types": ["collectible"]
     },
-    "15lb": {
+    "lore_15": {
         "Desc": "15 Lore Books",
-        "Diff": 19,
-        "Excludes": ["10lb","20lb"],
+        "Diff": 20,
         "Types": ["collectible"]
     },
-    "20lb": {
+    "lore_20": {
         "Desc": "20 Lore Books",
         "Diff": 25,
-        "Excludes": ["15lb"],
         "Types": ["collectible"]
     },
-    
-    
-    //cave of trials
-    "cot5": {
-        "Desc": "Complete 5 Battles in Cave of Trials",
-        "Diff": 12,
-        "Excludes": ["cot10"]
+    "medal_hp_plus": {
+        "Desc": "3 HP Pluses",
+        "Diff": 7,
+        "Types": ["medal"]
     },
-    "cot10": {
-        "Desc": "Complete 10 Battles in Cave of Trials",
-        "Diff": 15,
-        "Excludes": ["cot5","cot15"]
+    "medal_bug_me_not": {
+        "Desc": "Bug Me Not!",
+        "Diff": 1,
+        "Types": ["medal"]
     },
-    "cot15": {
-        "Desc": "Complete 15 Battles in Cave of Trials",
-        "Diff": 18,
-        "Excludes": ["cot10","cot20"]
-    },
-    "cot20": {
-        "Desc": "Complete 20 Battles in Cave of Trials",
-        "Diff": 21,
-        "Excludes": ["cot15","cot25"]
-    },
-    "cot25": {
-        "Desc": "Complete 25 Battles in Cave of Trials",
-        "Diff": 25,
-        "Excludes": ["cot20"]
-    },
-    
-    
-    //rank ups
-    "lv6": {
-        "Desc": "Reach Rank 6",
-        "Diff": 8,
-        "Excludes": ["lv9"]
-    },
-    "lv9": {
-        "Desc": "Reach Rank 9",
-        "Diff": 12,
-        "Excludes": ["lv6","lv11"]
-    },
-    "lv11": {
-        "Desc": "Reach Rank 11",
-        "Diff": 16,
-        "Excludes": ["lv9","lv13"]
-    },
-    "lv13": {
-        "Desc": "Reach Rank 13",
-        "Diff": 20,
-        "Excludes": ["lv11","lv15"]
-    },
-    "lv15": {
-        "Desc": "Reach Rank 15",
-        "Diff": 24,
-        "Excludes": ["lv13"]
-    },
-    "lvhp": {
-        "Desc": "Rank up HP twice",
-        "Diff": 6,
-        "Excludes": ["lvtp","lvmp"]
-    },
-    "lvtp": {
-        "Desc": "Rank up TP four times",
-        "Diff": 10,
-        "Excludes": ["lvhp","lvmp"]
-    },
-    "lvmp": {
-        "Desc": "Rank up MP four times",
-        "Diff": 9,
-        "Excludes": ["lvhp","lvtp"]
-    },
-    
-    
-    //medals
-    "back": {
+    "medal_back_support": {
         "Desc": "Back Support",
+        "Diff": 4,
+        "Types": ["medal"]
+    },
+    "medal_strong_start": {
+        "Desc": "Strong Start",
         "Diff": 3,
         "Types": ["medal"]
     },
-    "hawk": {
+    "medal_tardigrade": {
         "Desc": "Tardigrade Shield",
-        "Diff": 4,
+        "Diff": 5,
         "Types": ["medal"]
     },
-    "shock": {
+    "medal_meditation": {
+        "Desc": "Meditation",
+        "Diff": 10,
+        "Types": ["medal"]
+    },
+    "medal_shock_trooper": {
         "Desc": "Shock Trooper",
-        "Diff": 6,
+        "Diff": 8,
         "Types": ["medal"]
     },
-    "specs": {
+    "medal_spy_specs": {
         "Desc": "Spy Specs",
-        "Diff": 8,
-        "Excludes": ["detect"],
-        "Types": ["medal"]
-    },
-    "berserk": {
-        "Desc": "Berserker",
-        "Diff": 8,
-        "Types": ["medal"]
-    },
-    "detect": {
-        "Desc": "Detector",
-        "Diff": 10,
-        "Excludes": ["specs"],
-        "Types": ["medal"]
-    },
-    "house": {
-        "Desc": "Charge Up",
-        "Diff": 10,
-        "Excludes": ["metalisland","statberry"],
-        "Types": ["medal"]
-    },
-    "jaws": {
-        "Desc": "Antlion Jaws",
-        "Diff": 10,
-        "Types": ["medal"]
-    },
-    "frostbite": {
-        "Desc": "Frostbite",
         "Diff": 11,
+        "Excludes": ["medal_detector"],
         "Types": ["medal"]
     },
-    "front": {
-        "Desc": "Front Support",
-        "Diff": 16,
+    "medal_detector": {
+        "Desc": "Detector",
+        "Diff": 12,
+        "Excludes": ["medal_spy_specs"],
         "Types": ["medal"]
     },
-    "eternal": {
+    "medal_charge_up": {
+        "Desc": "Charge Up",
+        "Diff": 13,
+        "Excludes": ["statberry_vendor","misc_metal_island","statberry_bond_2"],
+        "Types": ["medal"]
+    },
+    "medal_berserker": {
+        "Desc": "Berserker",
+        "Diff": 10,
+        "Types": ["medal"]
+    },
+    "medal_antlion": {
+        "Desc": "Antlion Jaws",
+        "Diff": 12,
+        "Types": ["medal"]
+    },
+    "medal_frostbite": {
+        "Desc": "Frostbite",
+        "Diff": 13,
+        "Types": ["medal"]
+    },
+    "medal_eternal_venom": {
         "Desc": "Eternal Venom",
-        "Diff": 19,
-        "Types": ["medal"]
-    },
-    "exfreeze": {
-        "Desc": "Extra Freeze",
         "Diff": 20,
         "Types": ["medal"]
     },
-    "lifecast": {
+    "medal_front_support": {
+        "Desc": "Front Support",
+        "Diff": 18,
+        "Types": ["medal"]
+    },
+    "medal_life_cast": {
         "Desc": "Life Cast",
+        "Diff": 22,
+        "Types": ["medal"]
+    },
+    "medal_extra_freeze": {
+        "Desc": "Extra Freeze",
         "Diff": 21,
         "Types": ["medal"]
     },
-    "mirror": {
+    "medal_status_mirror": {
         "Desc": "Status Mirror",
         "Diff": 24,
         "Types": ["medal"]
     },
-    
-    
-    //cooking
-    "bigmistake": {
+    "medal_luckier_day": {
+        "Desc": "Luckier Day",
+        "Diff": 17,
+        "Types": ["medal"]
+    },
+    "recipe_10": {
+        "Desc": "10 Recipes",
+        "Diff": 1,
+        "Excludes": ["recipe_15","recipe_20"],
+        "Types": ["cooking"]
+    },
+    "recipe_15": {
+        "Desc": "15 Recipes",
+        "Diff": 3,
+        "Excludes": ["recipe_10","recipe_20"],
+        "Types": ["cooking"]
+    },
+    "recipe_20": {
+        "Desc": "20 Recipes",
+        "Diff": 4,
+        "Excludes": ["recipe_10","recipe_15"],
+        "Types": ["cooking"]
+    },
+    "recipe_big_mistake": {
         "Desc": "Cook a Big Mistake",
         "Diff": 1,
         "Types": ["cooking"]
     },
-    "danger": {
+    "recipe_danger_dish": {
         "Desc": "Cook a Danger Dish",
-        "Diff": 3,
+        "Diff": 4,
         "Types": ["cooking"]
     },
-    "hustle": {
+    "recipe_hustle_candy": {
         "Desc": "Cook a Hustle Candy",
         "Diff": 4,
         "Types": ["cooking"]
     },
-    "squart": {
+    "recipe_squart": {
         "Desc": "Cook a Squash Tart",
-        "Diff": 11,
+        "Diff": 13,
         "Types": ["cooking"]
     },
-    "shake": {
-        "Desc": "Cook a Miracle Shake",
-        "Diff": 12,
-        "Excludes": ["smoothie"],
-        "Types": ["cooking"]
-    },
-    "cherrybomb": {
+    "recipe_cherry_bomb": {
         "Desc": "Cook Cherry Bombs",
+        "Diff": 16,
+        "Types": ["cooking"]
+    },
+    "recipe_miracle_shake": {
+        "Desc": "Cook a Miracle Shake",
         "Diff": 14,
+        "Excludes": ["recipe_berry_smoothie"],
         "Types": ["cooking"]
     },
-    "smoothie": {
+    "recipe_berry_smoothie": {
         "Desc": "Cook a Berry Smoothie",
-        "Diff": 15,
-        "Excludes": ["shake"],
+        "Diff": 17,
+        "Excludes": ["recipe_miracle_shake"],
         "Types": ["cooking"]
     },
-    
-    
-    //misc
-    "metalisland": {
-        "Desc": "Visit Metal Island",
-        "Diff": 4,
-        "Excludes": ["house","statberry"]
-    },
-    "blankcard": {
-        "Desc": "Obtain the Blank Card",
+    "rank_4": {
+        "Desc": "Reach Rank 4",
         "Diff": 7,
-        "Excludes": ["spycards"]
+        "Types": ["#_rank"]
     },
-    "tourney": {
-        "Desc": "Win the Spy Cards Tournament",
+    "rank_6": {
+        "Desc": "Reach Rank 6",
+        "Diff": 10,
+        "Types": ["#_rank"]
+    },
+    "rank_9": {
+        "Desc": "Reach Rank 9",
+        "Diff": 15,
+        "Types": ["#_rank"]
+    },
+    "rank_11": {
+        "Desc": "Reach Rank 11",
+        "Diff": 18,
+        "Types": ["#_rank"]
+    },
+    "rank_13": {
+        "Desc": "Reach Rank 13",
+        "Diff": 22,
+        "Types": ["#_rank"]
+    },
+    "rank_15": {
+        "Desc": "Reach Rank 15",
+        "Diff": 25,
+        "Types": ["#_rank"]
+    },
+    "rank_hp_2": {
+        "Desc": "Rank up HP twice",
+        "Diff": 7,
+        "Types": ["stat_rank"]
+    },
+    "rank_tp_2": {
+        "Desc": "Rank up TP twice",
+        "Diff": 3,
+        "Types": ["stat_rank"]
+    },
+    "rank_tp_4": {
+        "Desc": "Rank up TP four times",
+        "Diff": 12,
+        "Types": ["stat_rank"]
+    },
+    "rank_mp_2": {
+        "Desc": "Rank up MP twice",
+        "Diff": 5,
+        "Types": ["stat_rank"]
+    },
+    "rank_mp_4": {
+        "Desc": "Rank up MP four times",
+        "Diff": 11,
+        "Types": ["stat_rank"]
+    },
+    "cot_5": {
+        "Desc": "Complete 5 battles in Cave of Trials",
+        "Diff": 14,
+        "Types": ["cot"]
+    },
+    "cot_10": {
+        "Desc": "Complete 10 battles in Cave of Trials",
+        "Diff": 17,
+        "Types": ["cot"]
+    },
+    "cot_15": {
+        "Desc": "Complete 15 battles in Cave of Trials",
         "Diff": 20,
-        "Excludes": ["spycards"]
+        "Types": ["cot"]
     },
-    "plush": {
+    "cot_20": {
+        "Desc": "Complete 20 battles in Cave of Trials",
+        "Diff": 22,
+        "Types": ["cot"]
+    },
+    "cot_25": {
+        "Desc": "Complete 25 battles in Cave of Trials",
+        "Diff": 25,
+        "Types": ["cot"]
+    },
+    "ability_dig": {
+        "Desc": "Learn the Beetle Dig ability",
+        "Diff": 8,
+        "Excludes": ["cb_cerise"],
+        "Types": ["ability"]
+    },
+    "ability_dash": {
+        "Desc": "Learn the upgraded Horn Dash ability",
+        "Diff": 20,
+        "Types": ["ability"]
+    },
+    "ability_fly": {
+        "Desc": "Learn the Bee Fly ability",
+        "Diff": 18,
+        "Types": ["ability"]
+    },
+    "ability_shield": {
+        "Desc": "Learn the Bubble Shield ability",
+        "Diff": 7,
+        "Types": ["ability"]
+    },
+    "ability_icicle": {
+        "Desc": "Learn the Icicle ability",
+        "Diff": 19,
+        "Types": ["ability"]
+    },
+    "spy_5": {
+        "Desc": "5 Spies",
+        "Diff": 1,
+        "Types": ["spy"]
+    },
+    "spy_10": {
+        "Desc": "10 Spies",
+        "Diff": 5,
+        "Types": ["spy"]
+    },
+    "spy_15": {
+        "Desc": "15 Spies",
+        "Diff": 9,
+        "Types": ["spy"]
+    },
+    "spy_20": {
+        "Desc": "20 Spies",
+        "Diff": 14,
+        "Types": ["spy"]
+    },
+    "statberry_heart_1": {
+        "Desc": "1 Heart Berry",
+        "Diff": 6,
+        "Excludes": ["quest_mothiva_doll"]
+    },
+    "statberry_heart_2": {
+        "Desc": "2 Heart Berries",
+        "Diff": 11
+    },
+    "statberry_bond_1": {
+        "Desc": "1 Bond Berry",
+        "Diff": 9
+    },
+    "statberry_bond_2": {
+        "Desc": "2 Bond Berries",
+        "Diff": 15,
+        "Excludes": ["medal_charge_up","misc_metal_island","statberry_vendor"]
+    },
+    "mines_2": {
+        "Desc": "Unlock 2 tunnels to the Ant Mines",
+        "Diff": 4
+    },
+    "mines_3": {
+        "Desc": "Unlock 3 tunnels to the Ant Mines",
+        "Diff": 14
+    },
+    "misc_plush": {
         "Desc": "Buy the Green Ranger Plushie",
         "Diff": 2
     },
-    "chompy": {
-        "Desc": "Equip a bow on Chompy",
-        "Diff": 13
+    "misc_metal_island": {
+        "Desc": "Visit Metal Island",
+        "Diff": 6,
+        "Excludes": ["medal_charge_up","statberry_vendor","statberry_bond_2"]
     },
-    "status": {
-        "Desc": "Use all 4 types of status bombs (Poison, Sleep, Numb, Frost)",
+    "misc_blank_card": {
+        "Desc": "Obtain the Blank Card",
+        "Diff": 9
+    },
+    "cb_cerise": {
+        "Desc": "Rescue Cerise",
+        "Diff": 8,
+        "Excludes": ["ability_dig"],
+        "Types": ["collectible"]
+    },
+    "misc_chompy_bow": {
+        "Desc": "Equip a bow on Chompy",
         "Diff": 16
     },
-    "kenny": {
+    "misc_status_bombs": {
+        "Desc": "Use all 4 types of status bombs (Poison, Sleep, Numb, Frost)",
+        "Diff": 18
+    },
+    "lore_kenny": {
         "Desc": "Get the Lore Book from Kenny",
-        "Diff": 19
+        "Diff": 21,
+        "Types": ["collectible"]
     },
-    "spidercb": {
+    "cb_pink_spider": {
         "Desc": "Get the Crystal Berry from the Pink Spider",
-        "Diff": 21
-    },
-    "statberry": {
-        "Desc": "Buy every stat-boosting berry from the vendor in Defiant Root",
-        "Diff": 23,
-        "Excludes": ["metalisland","house"]
-    },
-    "mk": {
-        "Desc": "9500 Points in Mite Knight",
         "Diff": 22,
-        "Excludes": ["fj"]
+        "Types": ["collectible"]
     },
-    "fj": {
-        "Desc": "4500 Points in Flower Journey",
+    "misc_spy_cards_tourney": {
+        "Desc": "Win the Spy Cards Tournament",
+        "Diff": 22
+    },
+    "arcade_mite_knight": {
+        "Desc": "9500 Points in Mite Knight",
         "Diff": 23,
-        "Excludes": ["mk"]
+        "Excludes": ["arcade_flower_journey"]
+    },
+    "arcade_flower_journey": {
+        "Desc": "4500 Points in Flower Journey",
+        "Diff": 24,
+        "Excludes": ["arcade_mite_knight"]
+    },
+    "statberry_vendor": {
+        "Desc": "Buy every stat-boosting berry from the vendor in Defiant Root",
+        "Diff": 25,
+        "Excludes": ["medal_charge_up","misc_metal_island","statberry_bond_2"]
     }
 }
