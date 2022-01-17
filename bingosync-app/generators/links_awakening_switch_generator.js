@@ -1,155 +1,271 @@
-bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+bingoGenerator = require("./generators/generator_bases/ladx_generator.js");
 
 var bingoList = [
-    "Bonk the beach monkey",
-    "Buy a new Shield",
-    "Catch 3 fish",
-    "Catch 6 fish",
-    "Collect 10 Seashells",
-    "Collect 3 Chamber Stones",
-    "Collect 4 Heart Pieces",
-    "Collect 5 Seashells",
-    "Collect 6 Chamber Stones",
-    "Collect 8 Heart Pieces",
-    "Collect the 5 Golden Leaves",
-    "Complete a Chamber Dungeon",
-    "Do 2 sets of 3-of-a-Kind",
-    "Do 3 sets of chess",
-    "Eat a green apple",
-    "Eat a red apple",
-    "Eat an apple",
-    "Empty out the Trendy Game",
-    "Get Arrows",
-    "Get Blue Mail",
-    "Get Bombs",
-    "Get Bow",
-    "Get Bracelet",
-    "Get Christine's Letter",
-    "Get Conch Horn",
-    "Get Coral Triangle",
-    "Get Flippers",
-    "Get Full Moon Cello",
-    "Get Hookshot",
-    "Get L2 Bracelet",
-    "Get Magic Powder",
-    "Get Magic Rod",
-    "Get Medicine",
-    "Get Mirror Shield",
-    "Get Organ of Evening Calm",
-    "Get Pegasus Boots",
-    "Get Red Mail",
-    "Get Roc's Feather",
-    "Get Sea Lily's Bell",
-    "Get Shovel",
-    "Get Surf Harp",
-    "Get Thunder Drum",
-    "Get Wind Marimba",
-    "Get a Bottle",
-    "Get a capacity upgrade",
-    "Get all overworld warps",
-    "Get the Angler Key",
-    "Get the Bananas",
-    "Get the Bird Key",
-    "Get the Boomerang",
-    "Get the Broom",
-    "Get the Dog Food",
-    "Get the Face Key",
-    "Get the Fishing Hook",
-    "Get the Heavyweight Lure",
-    "Get the Hibiscus",
-    "Get the Honeycomb",
-    "Get the Lens",
-    "Get the Mermaid Scale",
-    "Get the Mushroom again",
-    "Get the Necklace",
-    "Get the Pineapple",
-    "Get the Ribbon",
-    "Get the Slime Key",
-    "Get the Stick",
-    "Get the Tail Key",
-    "Get the Yoshi Doll",
-    "Get under 30 seconds in the Raft Race",
-    "Heal at 3 Fairy Fountains",
-    "Kill Angler Fish",
-    "Kill Blaino",
-    "Kill Boss Buzz Blob",
-    "Kill D1 Rolling Bones",
-    "Kill D2 Hinox",
-    "Kill D3 Dodongo Snakes",
-    "Kill D4 Cueball",
-    "Kill D6 Dodongo Snakes",
-    "Kill D6 Smasher",
-    "Kill D7 Hinox",
-    "Kill D8 Cueball",
-    "Kill D8 Dodongo Snakes",
-    "Kill D8 Hinox",
-    "Kill D8 Rolling Bones",
-    "Kill D8 Smasher",
-    "Kill Dethl",
-    "Kill Evil Eagle",
-    "Kill Evil Orb",
-    "Kill Facade",
-    "Kill Genie",
-    "Kill Gohmas",
-    "Kill Grim Creeper",
-    "Kill Hot Head",
-    "Kill Master Stalfos at least once",
-    "Kill Moblin King",
-    "Kill Moldorm",
-    "Kill Slime Eel",
-    "Kill Slime Eye",
-    "Kill Stone Hinox",
-    "Kill Turtle Rock",
-    "Kill an Anti-Kirby",
-    "Kill an enemy with an enemy",
-    "Kill the Ball and Chain Soldier",
-    "Kill the Giant Ghini",
-    "Kill the Mad Bomber",
-    "Learn Ballad",
-    "Learn Ballad at Animal Village",
-    "Learn Ballad at Mabe Village",
-    "Learn Frog Song",
-    "Learn Mambo",
-    "Map and Compass in Color Dungeon",
-    "Map and Compass in D1",
-    "Map and Compass in D2",
-    "Map and Compass in D3",
-    "Map and Compass in D4",
-    "Map and Compass in D5",
-    "Map and Compass in D6",
-    "Map and Compass in D7",
-    "Map and Compass in D8",
-    "Map completion in Color Dungeon",
-    "Map completion in D1",
-    "Map completion in D2",
-    "Map completion in D3",
-    "Map completion in D4",
-    "Map completion in D5",
-    "Map completion in D6",
-    "Map completion in D7",
-    "Map completion in D8",
-    "Map completion in overworld",
-    "Marin Trendy Game event",
-    "Marin cliff cutscene",
-    "Marin date",
-    "Play the Raft Ride",
-    "Put the Ghost to rest",
-    "Return Bow-Wow",
-    "Revive the Rooster",
-    "Save Marin on the bridge",
-    "Speak with an Owl Statue in Color Dungeon",
-    "Speak with an Owl Statue in D1",
-    "Speak with an Owl Statue in D2",
-    "Speak with an Owl Statue in D3",
-    "Speak with an Owl Statue in D4",
-    "Speak with an Owl Statue in D5",
-    "Speak with an Owl Statue in D6",
-    "Speak with an Owl Statue in D7",
-    "Speak with an Owl Statue in D8",
-    "Summon a Cucco storm",
-    "Talk to 4 Owl Statues in the overworld",
-    "Talk to 6 Owl Statues in the overworld",
-    "Talk to a Cukeman",
-    "Totaka's Song in Richard's Villa",
-    "Two followers at once"
+    {
+        "name": "Bonk the Beach Monkey"
+    },
+    {
+        "name": "Lose shield"
+    },
+    {
+        "name": "5 Golden Leaves"
+    },
+    {
+        "name": "Clear out Trendy Game"
+    },
+    {
+        "name": "Kill all Ghinis in the Graveyard"
+    },
+    {
+        "name": "Summon a cucco storm"
+    },
+    {
+        "name": "Heal at 3 Fairy Fountains"
+    },
+    {
+        "name": "Revived by Medicine"
+    },
+    {
+        "name": "Read all books"
+    },
+    {
+        "name": "Get a bottle"
+    },
+    {
+        "name": "Get the Mushroom again"
+    },
+    {
+        "name": "Pegasus Boots"
+    },
+    {
+        "name": "Flippers"
+    },
+    {
+        "name": "Boomerang"
+    },
+    {
+        "name": "Game Over"
+    },
+    {
+        "name": "Angler Key"
+    },
+    {
+        "name": "Face Key"
+    },
+    {
+        "name": "Bird Key"
+    },
+    {
+        "name": "Overworld map completion"
+    },
+    {
+        "name": "Build the Kanalet bridge"
+    },
+    {
+        "name": "Talk to a Buzz Blob"
+    },
+    {
+        "name": "Manbo's Mambo"
+    },
+    {
+        "name": "Frog Song of Soul"
+    },
+    {
+        "name": "Pick up Trendy Owner"
+    },
+
+
+    // group filtering
+    {
+        "name": "Collect 5 Seashells",
+        "group": "Seashells"
+    },
+    {
+        "name": "Collect 10 Seashells",
+        "group": "Seashells"
+    },
+    {
+        "name": "Collect 4 Heart Pieces",
+        "group": "Hearts"
+    },
+    {
+        "name": "Collect 8 Heart Pieces",
+        "group": "Hearts"
+    },
+    {
+        "name": "Get Red Mail",
+        "group": "Mail"
+    },
+    {
+        "name": "Get Blue Mail",
+        "group": "Mail"
+    },
+    {
+        "name": "Powder capacity upgrade",
+        "group": "Capacity"
+    },
+    {
+        "name": "Bomb capacity upgrade",
+        "group": "Capacity"
+    },
+    {
+        "name": "Arrow capacity upgrade",
+        "group": "Capacity"
+    },
+    {
+        "name": "Catch 3 fish",
+        "group": "Fish"
+    },
+    {
+        "name": "Catch 6 fish",
+        "group": "Fish"
+    },
+    {
+        "name": "Eat a green apple",
+        "group": "Apple"
+    },
+    {
+        "name": "Eat a red apple",
+        "group": "Apple"
+    },
+    {
+        "name": "Learn Ballad at Mabe",
+        "group": "Ballad"
+    },
+    {
+        "name": "Learn Ballad at Animal Village",
+        "group": "Ballad"
+    },
+    {
+        "name": "Bow-Wow",
+        "group": "Follower"
+    },
+    {
+        "name": "Marin",
+        "group": "Follower"
+    },
+    {
+        "name": "Ghost",
+        "group": "Follower"
+    },
+    {
+        "name": "Rooster",
+        "group": "Follower"
+    },
+    {
+        "name": "Full Moon Cello",
+        "group": "Instrument"
+    },
+    {
+        "name": "Conch Horn",
+        "group": "Instrument"
+    },
+    {
+        "name": "Sea Lily's Bell",
+        "group": "Instrument"
+    },
+    {
+        "name": "Surf Harp",
+        "group": "Instrument"
+    },
+    {
+        "name": "Wind Marimba",
+        "group": "Instrument"
+    },
+    {
+        "name": "Coral Triangle",
+        "group": "Instrument"
+    },
+    {
+        "name": "Organ of Evening Calm",
+        "group": "Instrument"
+    },
+    {
+        "name": "Thunder Drum",
+        "group": "Instrument"
+    },
+    {
+        "name": "3 Overworld Owl Statues",
+        "group": "OwStatue"
+    },
+    {
+        "name": "6 Overworld Owl Statues",
+        "group": "OwStatue"
+    },
+    {
+        "name": "4 Telephone Booths",
+        "group": "Telephone"
+    },
+    {
+        "name": "8 Telephone Booths",
+        "group": "Telephone"
+    },
+    {
+        "name": "4 Overworld Warps",
+        "group": "Warps"
+    },
+    {
+        "name": "8 Overworld Warps",
+        "group": "Warps"
+    },
+    {
+        "name": "Play the Rapid's Ride",
+        "group": "Rapids"
+    },
+    {
+        "name": "Play the Rapid's Race",
+        "group": "Rapids"
+    },
+    {
+        "name": "End with 0 rupees",
+        "group": "Rupees"
+    },
+    {
+        "name": "End with 420 rupees",
+        "group": "Rupees"
+    },
+    {
+        "name": "Buy the Shovel",
+        "group": "Shop"
+    },
+    {
+        "name": "Steal from the Shop",
+        "group": "Shop"
+    },
+    {
+        "name": "Color Dungeon Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D1 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D2 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D3 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D4 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D5 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D6 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D7 Owl Statue",
+        "group": "DStatue"
+    },
+    {
+        "name": "D8 Owl Statue",
+        "group": "DStatue"
+    },
 ];
