@@ -27,6 +27,7 @@ var bingoList = [
     {"name": "Summon a Cucco storm"},
     {"name": "Talk to a Cukeman"},
     {"name": "Two followers at once"},
+    {"name": "Drown an enemy"},
 
     {"name": "Get a Bottle", "group": "bottle"},
     {"name": "Capture a Fairy", "group": "bottle"},
