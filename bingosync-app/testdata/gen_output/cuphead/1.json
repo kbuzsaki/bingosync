@@ -1,77 +1,77 @@
 [
     {
-        "name": "S rank airplane Boss with Peashooter"
+        "name": "Beat an Isle 3 Boss with Chaser (Expert)"
     },
     {
-        "name": "Grim with Spread in Regular"
+        "name": "Defeat King Dice without any hearts"
     },
     {
-        "name": "Beat 3 Bosses with Chaser (normal)"
+        "name": "Reach Isle 3 without any upgrades"
     },
     {
-        "name": "Beat Hilda without killing any minios"
-    },
-    {
-        "name": "Don't use Lobber and Roundabout"
-    },
-    {
-        "name": "Beat a Boss with Revert Directional Controls"
-    },
-    {
-        "name": "Ride the beam in Brieny fight"
-    },
-    {
-        "name": "Octopus Skip"
-    },
-    {
-        "name": "Beat any Boss on Expert using whetstone only"
-    },
-    {
-        "name": "Kill a minion in Cala Maria"
-    },
-    {
-        "name": "Beat The Devil without taking a hit"
-    },
-    {
-        "name": "Don't pick the Bomb Upgrade"
-    },
-    {
-        "name": "Don't use Airplane Nukes"
-    },
-    {
-        "name": "Clear Mausoleums"
-    },
-    {
-        "name": "Beat Train without parrying the wheels"
-    },
-    {
-        "name": "Have less than 20 Deaths before Isle 3"
-    },
-    {
-        "name": "Get Wally's knockout, when his heart is out"
-    },
-    {
-        "name": "Non Airplane Bosses in Isle 2 with Peashooter"
-    },
-    {
-        "name": "Get all 3 Slot combinations in Ribby n Croaks"
+        "name": "Beat all 5 Bon Bon minions"
     },
     {
         "name": "Don't use Exs in Isle 2"
     },
     {
-        "name": "Never use shortcuts"
+        "name": "Don't take a hit for 3 fights in a row"
     },
     {
-        "name": "Collect 30 Coins"
+        "name": "Knockout with Super 3"
     },
     {
-        "name": "Buy all the charms"
+        "name": "Beat a boss with Mini Airplane"
     },
     {
-        "name": "Obtain at least 3 P ranks"
+        "name": "All Non Airplane Bosses in Isle 2 with Peashooter only"
+    },
+    {
+        "name": "Beat The Bee without Pressing Down"
+    },
+    {
+        "name": "Swing roundabout Ex 5 times"
+    },
+    {
+        "name": "Clear Mausoleums"
+    },
+    {
+        "name": "Beat 3 Bosses with Chaser (regular)"
+    },
+    {
+        "name": "Get a rank of at least A+ on all Isle 1 bosses"
     },
     {
         "name": "Run N Gun Pacifist, no damage"
+    },
+    {
+        "name": "Unlock the 2-Strip video filter"
+    },
+    {
+        "name": "Kill a minion in Cala Maria"
+    },
+    {
+        "name": "Defeat all King Dice's minions in a single gauntlet"
+    },
+    {
+        "name": "Collect at least 1 S on each of 3 Isles"
+    },
+    {
+        "name": "Get Wally's knockout, when his heart is out"
+    },
+    {
+        "name": "Ride the beam in Briney fight"
+    },
+    {
+        "name": "Never use shortcuts"
+    },
+    {
+        "name": "Beat Hilda without killing any minions"
+    },
+    {
+        "name": "Beat Cala Maria without getting petrified"
+    },
+    {
+        "name": "Hit the Start Over at King Dice"
     }
 ]

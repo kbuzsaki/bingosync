@@ -1,0 +1,33 @@
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+
+var bingoList = [
+    "100% Items",
+    "100% Map",
+    "100% ending (iris)",
+    "Beat Boss Rush",
+    "Beat Moon snail",
+    "Beat Shellbreaker",
+    "Beat Space Box",
+    "Beat Stompy",
+    "Beat the game (Slug)",
+    "Die to Moon Snail",
+    "Get 1 row of hearts",
+    "Get 10 Helix Fragments",
+    "Get 15 Helix Fragments",
+    "Get 20 Helix Fragments",
+    "Get 25 Helix Fragments",
+    "Get 30 Helix Fragments",
+    "Get 5 Helix Fragments",
+    "Get Devastator",
+    "Get Full Metal Snail",
+    "Get Gravity Snail",
+    "Get Ice Snail",
+    "Get Peashooter",
+    "Get Rainbow Wave",
+    "Get Rapid Fire",
+    "Get Shell Shield",
+    "Get normal boomerang",
+    "Get super secret boomerang",
+    "Max out health",
+    "True 100%"
+];

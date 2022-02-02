@@ -89,7 +89,7 @@ bingoList[8] = [
   { name: "Use 5 Binoculars in B-Sides", types: ["binoculars"] },
   { name: "5 Berries in 5 Chapters", types: ["amount_berries"] },
   { name: "Grabless Huge Mess", types: ["grabless"] },
-  { name: "Huge Mess: Towel -> Books -> Chest", types: ["huge_mess_pathing"] },
+  { name: "Huge Mess: Books -> Towel -> Chest", types: ["huge_mess_pathing"] },
   { name: "Huge Mess: Books -> Chest -> Towel", types: ["huge_mess_pathing"] },
   { name: "Huge Mess: Towel -> Chest -> Books", types: ["huge_mess_pathing"] },
   { name: "Jump on 10 Snowballs", types: ["snowballs"] },
@@ -101,8 +101,8 @@ bingoList[9] = [
   { name: "Grabless Cliff Face", types: ["grabless"] },
   { name: "4 Blue Hearts", types: ["hearts"] },
   { name: "Find Theo's Phone in 5A", types: ["cutscene"] },
-  { name: "Grabless Cliff Face", types: ["grabless"] },
   { name: "Celestial Resort Cassette", types: ["3b"] },
+  { name: "Grabless Unraveling", types: ["grabless"] },
 ];
 bingoList[10] = [
   { name: "Get 2 Keys in 5B", types: ["5b","task"] },
@@ -126,7 +126,6 @@ bingoList[11] = [
 ];
 bingoList[12] = [
   { name: "Complete 2 B-Sides", types: ["amount_chapters"] },
-  { name: "Grabless Unraveling", types: ["grabless"] },
   { name: "Get the Key in Depths", types: ["task"] },
   { name: "All Berries in Rescue (1)", types: ["checkpoint_berries"] },
   { name: "Mirror Temple Blue Heart", types: ["hearts"] },
@@ -174,13 +173,12 @@ bingoList[16] = [
   { name: "20 Berries in 5A", types: ["amount_berries"] },
   { name: "Use 7 Binoculars", types: ["binoculars"] },
   { name: "Use 8 Binoculars", types: ["binoculars"] },
-  { name: "Use 2 Binoculars in 5 Chapters", types: ["binoculars"] },
+  { name: "Use 2 Binoculars in 3 Chapters", types: ["binoculars"] },
   { name: "Get 15 Berries in PICO-8", types: ["pico-8","challenge"] },
   { name: "Celestial Resort B-Side", types: ["3b"] },
   { name: "Only bottom route in Hollows", types: ["task","reflection_pathing"] },
   { name: "Get 2 Keys in Search", types: ["task","search"] },
   { name: "Get 3 Keys in Search", types: ["task","search"] },
-  { name: "All Berries in Into the Core (1)", types: ["checkpoint_berries", "core"] },
 
 ];
 bingoList[17] = [
@@ -210,7 +208,7 @@ bingoList[19] = [
   { name: "45 Berries", types: ["amount_berries"] },
   { name: "50 Berries", types: ["amount_berries"] },
   { name: "Reach Rock Bottom (6A/6B Checkpoint)", types: ["6b","lategame"] },
-  { name: "Use 2 Binoculars in 3 Chapters", types: ["binoculars"] },
+  { name: "Use 2 Binoculars in 4 Chapters", types: ["binoculars"] },
   { name: "Blue and Red Heart in Mirror Temple", types: ["5b"] },
   { name: "All Berries in Heart of the Mountain (1)", types: ["checkpoint_berries","core"] },
   { name: "Use all Binoculars in 500M (3)", types: ["binoculars","lategame"] },
@@ -274,7 +272,7 @@ bingoList[24] = [
   { name: "All Berries in 2500M (8)", types: ["lategame"] },
   { name: "All Berries in 3000M (7)", types: ["lategame"] },
   { name: "All Berries in Hot and Cold (3)", types: ["checkpoint_berries","core"] },
-  { name: "Use 2 Binoculars in 4 Chapters", types: ["binoculars"] },
+  { name: "Use 2 Binoculars in 5 Chapters", types: ["binoculars"] },
   { name: "Core Blue Heart", types: ["core"] },
   { name: "Visit the Bird's Nest in Epilogue", types: ["task","lategame"] },
 ];

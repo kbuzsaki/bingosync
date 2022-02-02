@@ -1,60 +1,6 @@
 [
     {
-        "name": "Defeat Kickback"
-    },
-    {
-        "name": "Get Bling Sprinkles (Yellow)"
-    },
-    {
-        "name": "Repair the Bridge"
-    },
-    {
-        "name": "Complete Statue Puzzle"
-    },
-    {
-        "name": "Get Fat Skvader"
-    },
-    {
-        "name": "Get Deadly Sprinkles (Black)"
-    },
-    {
-        "name": "Get the Sootling-on-a-Leash"
-    },
-    {
-        "name": "Bring back the surviving Egg"
-    },
-    {
-        "name": "Get 5 Wallet Upgrades"
-    },
-    {
-        "name": "Activate 20 Scarabs"
-    },
-    {
-        "name": "Activate Spina and Screetch Totem"
-    },
-    {
-        "name": "Saves 4 Traitors Spirits"
-    },
-    {
-        "name": "Feed Fosfor Poison Toadstool"
-    },
-    {
-        "name": "Activate Ape and Orestation Totem"
-    },
-    {
-        "name": "Get Ivory Peaks Tracker"
-    },
-    {
-        "name": "Save Chief Boon"
-    },
-    {
-        "name": "Take Spider Orphan to Tree"
-    },
-    {
-        "name": "Get Sweet Sprinkles (Violet)"
-    },
-    {
-        "name": "Get Boon of Plenty!"
+        "name": "Complete Umbaba's Puzzle"
     },
     {
         "name": "Forgive Kickback"
@@ -63,15 +9,69 @@
         "name": "Scare a Bat"
     },
     {
-        "name": "Roll 5 Boulders / Snowballs"
+        "name": "Collect the Ocean Fruit Heart"
     },
     {
-        "name": "Open Blue Chest"
+        "name": "Obtain 7 Wallet Upgrades"
     },
     {
-        "name": "Activate Ivory Peaks Beeline"
+        "name": "Look through 5 Telescopes"
     },
     {
-        "name": "Feed Fosfor Juicy Cove Mushroom"
+        "name": "Open the Blue Chest"
+    },
+    {
+        "name": "Collect the Creepy Sprinkles (Green)"
+    },
+    {
+        "name": "Find Piles of Gold in 2 Locations"
+    },
+    {
+        "name": "Activate 20 Scarabs"
+    },
+    {
+        "name": "Activate the Ivory Peaks Beeline"
+    },
+    {
+        "name": "Trade with Splank"
+    },
+    {
+        "name": "Destroy the Crystal at Tower's Peak"
+    },
+    {
+        "name": "Activate Spina and Screetch Totems"
+    },
+    {
+        "name": "Obtain the Ivory Peaks Tracker"
+    },
+    {
+        "name": "Take the Spider Orphan to the Tree"
+    },
+    {
+        "name": "Upgrade to the Fat Skvader"
+    },
+    {
+        "name": "Open 6 Doors/Hatches in the Gorilla Woods"
+    },
+    {
+        "name": "Get Access to the Underdark Ruins"
+    },
+    {
+        "name": "Equip the Ruby-Ball-Look"
+    },
+    {
+        "name": "Upgrade to Slug Vacuum Deluxe"
+    },
+    {
+        "name": "Obtain the Grand Postmaster Badge"
+    },
+    {
+        "name": "Start the Rocket of the Space Monks"
+    },
+    {
+        "name": "Plant 3 Spores"
+    },
+    {
+        "name": "Activate the Crystal Deep Beeline"
     }
 ]

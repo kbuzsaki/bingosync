@@ -15,6 +15,7 @@ var bingoList = [
     "Beat moskito after beating sax",
     "Beat moskito’s nest with 1 punch",
     "Beat mr sax with only 12 punches and without getting hit",
+    "Beat mr skops without using punch",
     "Beat skops 1 without standing on a surface apart from the start and 3 red platforms",
     "Beat the 2nd screen of Twilight Gulch without taking a hit",
     "Beat the BH4 Magician under 23 seconds without using run and helicopter",

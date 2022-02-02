@@ -18,10 +18,10 @@
         "name": "Get at least 12 points in Returning Balls(Tennis Training)"
     },
     {
-        "name": "Get a Triple in Baseball"
+        "name": "Get a Turkey in Bowling"
     },
     {
-        "name": "Have the CPU commit an error in Baseball"
+        "name": "Hit at least 5 Home Runs In Hitting Home Runs(Baseball Training)"
     },
     {
         "name": "Finish 9-Hole Game in Golf"
@@ -36,7 +36,7 @@
         "name": "Win a Match in Boxing without dodging(No Slow-Mo Punches)"
     },
     {
-        "name": "Get at least 50 points in Dodging(Boxing Training)"
+        "name": "Get past at least 5 stages in Putting(Golf Training)"
     },
     {
         "name": "Give Up on any 3-hole Course in Golf"
@@ -57,21 +57,21 @@
         "name": "Win a Match in Boxing"
     },
     {
-        "name": "Get a Turkey in Bowling"
-    },
-    {
         "name": "Get at least 200 points in Target Practice(Golf Training)"
     },
     {
         "name": "Finish Intermediate in Golf"
     },
     {
-        "name": "Get 3 Strikes in Bowling(Doesn\u2019t have to be a Turkey)"
+        "name": "Get 3 Strikeouts in Baseball"
     },
     {
         "name": "Get all gutters in Bowling(Except the third throw on the 10th Frame)"
     },
     {
         "name": "Get past at least 7 stages in Spin Control(Bowling Training)"
+    },
+    {
+        "name": "Get at least 450 points in Power Throws(Bowling Training)"
     }
 ]

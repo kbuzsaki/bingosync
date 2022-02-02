@@ -20,7 +20,6 @@ var bingoList = [
     "Get 3 Strikes in Bowling(Doesn’t have to be a Turkey)",
     "Get a Bunt Single in Baseball",
     "Get a Gold Medal in any Training Game",
-    "Get a Ground Rule Double in Baseball",
     "Get a Silver Medal in any Training Game",
     "Get a Triple in Baseball",
     "Get a Turkey in Bowling",

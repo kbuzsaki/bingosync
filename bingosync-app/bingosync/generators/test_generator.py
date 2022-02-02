@@ -12,7 +12,10 @@ TEST_TYPES = [game_type for game_type in GameType if not game_type.is_custom]
 TEST_SEEDS = [1, 1000, 1234, 12345]
 
 # games that are intentionally close to duplicates of another game
-DUPLICATE_GUARD_BLACKLIST = {GameType.super_metroid_double_anti_bingo}
+DUPLICATE_GUARD_BLACKLIST = {
+    GameType.super_metroid_double_anti_bingo,
+    GameType.hollow_knight_item_rando_tiebreakerless,
+}
 
 def get_golden_data(game_type, seed):
     output_path = os.path.join(GEN_TESTDATA_DIR, game_type.name, str(seed) + ".json")

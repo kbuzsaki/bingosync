@@ -1,33 +1,36 @@
 [
     {
+        "name": "Beat a boss with Mini Airplane"
+    },
+    {
+        "name": "Grim with Spread in Regular"
+    },
+    {
         "name": "Don't take a hit for 3 fights in a row"
+    },
+    {
+        "name": "Reach Isle 3 without any upgrades"
+    },
+    {
+        "name": "Use at least one of each weapon's Ex"
     },
     {
         "name": "Knockout with Super 3"
     },
     {
-        "name": "Never use shortcuts"
+        "name": "Unlock the 2-Strip video filter"
     },
     {
-        "name": "Buy all the charms"
+        "name": "S rank any plane level with Machine gun Only"
     },
     {
-        "name": "Defeat all King Dice's minions in a single gauntlet"
+        "name": "Beat The Bee without Pressing Down"
     },
     {
-        "name": "Ride the beam in Brieny fight"
+        "name": "Listen to the Quartet's song"
     },
     {
-        "name": "Beat a plane boss with just whetstone"
-    },
-    {
-        "name": "King Dice without picking any hearts"
-    },
-    {
-        "name": "Get a rank of at least A+ on all Isle 1 bosses"
-    },
-    {
-        "name": "Pop 5 Balloons in Funfair Fever "
+        "name": "Run N Gun Pacifist, no damage"
     },
     {
         "name": "Collect 30 Coins"
@@ -36,42 +39,39 @@
         "name": "Grab the juggler's Secret Coin"
     },
     {
-        "name": "Beat all 5 Bon Bon minions"
+        "name": "Swing roundabout Ex 5 times"
     },
     {
-        "name": "Reach Isle 3 without any upgrades"
+        "name": "Don't use either Lobber or Roundabout"
     },
     {
-        "name": "Collect at least 1 S on each of 3 Isles"
-    },
-    {
-        "name": "Beat Bee without Pressing Down"
-    },
-    {
-        "name": "Beat Train without parrying the wheels"
-    },
-    {
-        "name": "Clear All Run n' Guns"
+        "name": "Defeat 3 Bosses on Simple"
     },
     {
         "name": "Get all 3 Slot combinations in Ribby n Croaks"
     },
     {
-        "name": "Clear Mausoleums"
+        "name": "Defeat all King Dice's minions in a single gauntlet"
     },
     {
-        "name": "Don't pick the Bomb Upgrade"
+        "name": "Beat a Boss with Uncharged Charge Shot"
     },
     {
-        "name": "Swing  roundabout Ex 5 times"
+        "name": "Never use shortcuts"
     },
     {
-        "name": "Run N Gun Pacifist, no damage"
+        "name": "Ride the beam in Briney fight"
     },
     {
-        "name": "Unlock the 2-Strip video filter"
+        "name": "Dodge Werner Werman charge attack with no springs"
     },
     {
-        "name": "Beat a Isle 3 Boss with Chaser (Expert)"
+        "name": "Don't use Exs in Isle 2"
+    },
+    {
+        "name": "Beat 3 Bosses with Chaser (regular)"
+    },
+    {
+        "name": "Beat all 5 Bon Bon minions"
     }
 ]

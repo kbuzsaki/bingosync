@@ -1,12 +1,12 @@
 [
     {
-        "name": "Get 140 or more points without a gutter ball"
+        "name": "Finish any game in Baseball with a mercy rule"
     },
     {
         "name": "Get at least 5 points in Target Practice(Tennis Training)"
     },
     {
-        "name": "Get at least 10 points in Timing your Swing(Tennis Training)"
+        "name": "Get at least 12 points in Returning Balls(Tennis Training)"
     },
     {
         "name": "Win a Best-of-5 Match in Tennis"
@@ -27,7 +27,10 @@
         "name": "Finish any 3-Hole Golf course without touching bunkers or water"
     },
     {
-        "name": "Get within 500 ft. in Hitting the Green(Golf Training)"
+        "name": "Give Up on any 3-hole Course in Golf"
+    },
+    {
+        "name": "Get 140 or more points without a gutter ball"
     },
     {
         "name": "Get a Bunt Single in Baseball"
@@ -36,37 +39,34 @@
         "name": "Get at least 450 points in Power Throws(Bowling Training)"
     },
     {
-        "name": "Win a Single Match in Tennis"
-    },
-    {
-        "name": "Get at least 15 points in Working the Bag(Boxing Training)"
+        "name": "Get at least 200 points in Target Practice(Golf Training)"
     },
     {
         "name": "Get a Silver Medal in any Training Game"
     },
     {
-        "name": "Get a Triple in Baseball"
+        "name": "Get a Turkey in Bowling"
+    },
+    {
+        "name": "Win a Single Match in Tennis"
     },
     {
         "name": "Finish any game in Baseball"
     },
     {
-        "name": "Give Up on any 3-hole Course in Golf"
-    },
-    {
         "name": "Win a Match in Boxing"
     },
     {
-        "name": "Get a Turkey in Bowling"
+        "name": "Get all gutters in Bowling(Except the third throw on the 10th Frame)"
     },
     {
         "name": "Get at least 30 points in Throwing Punches(Boxing Training)"
     },
     {
-        "name": "Win a Match in Boxing while only using one hand(doesn\u2019t matter which hand)"
+        "name": "Get at least 15 points in Working the Bag(Boxing Training)"
     },
     {
-        "name": "Get at least 15 points in Batting Practice(Baseball Training)"
+        "name": "Win a Match in Boxing while only using one hand(doesn\u2019t matter which hand)"
     },
     {
         "name": "Finish Beginner in Golf"
