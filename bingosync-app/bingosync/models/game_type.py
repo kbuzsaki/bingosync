@@ -322,6 +322,7 @@ class GameType(Enum):
     zelda_wind_waker_randomizer = 318
     doodle_champion_island_games_begin = 319
     quest_for_glory_vga = 320
+    hollow_knight_item_rando_jp = 321
 
     def __str__(self):
         return self.short_name
@@ -603,6 +604,7 @@ GAME_GROUPS = {
             (GameType.hollow_knight_item_rando, "Item Randomizer", "HK Item Rando"),
             (GameType.hollow_knight_cn, "Normal - CN", "Hollow Knight CN"),
             (GameType.hollow_knight_item_rando_cn, "Item Randomizer - CN", "HK Random CN"),
+            (GameType.hollow_knight_item_rando_jp, "Item Randomizer - JP", "HK Random JP"),
             (GameType.hollow_knight_item_rando_pt, "Item Randomizer - Portuguese", "HK Random PT"),
             (GameType.hollow_knight_item_rando_cursed, "Item Randomizer - Cursed", "HK Item Rando Cursed"),
             (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless"),
