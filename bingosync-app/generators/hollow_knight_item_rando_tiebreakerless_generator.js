@@ -882,7 +882,7 @@ var bingoList = {
   },
 
   "Jiji": {
-    "Desc": "Open Jiji's Hut"
+    "Desc": "Open Jiji's Hut and buy out Jiji"
   },
 
   "HopperHell": {
@@ -1100,6 +1100,14 @@ var bingoList = {
   "WPShadeSkip": {
     "Desc": "Sit down in Hidden Station",
     "Excludes": ["HiddenStag", "Wings"]
+  },
+
+  "Grubfather": {
+    "Desc": "Get all the Grubfather checks"
+  },
+
+  "Seer": {
+    "Desc": "Get all the Seer checks"
   }
 
 };

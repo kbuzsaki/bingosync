@@ -108,8 +108,7 @@ var bingoList=[[],
     {name: "Check Glowing Womb", types: ["crossroads"]}, 
     {name: "Check 2 Nailmasters", types: ["edge", "cliffs"]}, 
     {name: "Open the Dirtmouth / Crystal Peaks elevator", types: ["peak", "cdash"]}, 
-    {name: "Buy out Leg Eater", types: ["geo"]}, 
-    {name: "Buy out Salubra", types: ["geo"]}
+    {name: "Buy out Leg Eater", types: ["geo"]}
 ],
 [
     {name: "Obtain 2 Nail Arts", types: []}, 

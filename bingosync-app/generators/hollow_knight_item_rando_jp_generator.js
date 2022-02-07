@@ -9,7 +9,6 @@ var bingoList = {
 
   //Bosses. Dream versions grouped instead of alphabetical
 
-  //Credit to unyo for translating
 
   "2DreamBosses": {
     "Desc": "夢見の再戦ボスを2人倒す"
@@ -239,7 +238,7 @@ var bingoList = {
   },
 
   "CrystalCrawler": {
-    "Desc": "狩猟者の書にスイショウズリズリを登録する"
+    "Desc": "スイショウズリズリを倒す"
   },
 
   "Devout": {
@@ -290,7 +289,7 @@ var bingoList = {
   },
 
   "Mimics": {
-    "Desc": "幼虫モドキを4体倒す"
+    "Desc": "幼虫モドキの場所を4か所チェックする"
   },
 
   "Myla": {
@@ -374,7 +373,7 @@ var bingoList = {
   },
 
   "FCharms": {
-    "Desc": "壊れぬチャームを2つ入手する",
+    "Desc": "繊細なチャームを3つ全て入手する",
     "Score": 1.00
   },
 
