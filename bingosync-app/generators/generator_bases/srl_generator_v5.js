@@ -191,10 +191,12 @@ bingoGenerator = function(bingoList, opts) {
             return synergy;
         }
         var bingoBoard = [];
+        var picked = [];
         for (var i = 1; i <= 25; i++) {
             bingoBoard[i] = {
                 difficulty: difficulty(i)
             };
+            picked[i] = [];
         }
         for (var i = 1; i <= 25; i++) {
             var getDifficulty = bingoBoard[i].difficulty;
@@ -205,21 +207,29 @@ bingoGenerator = function(bingoList, opts) {
             var j = 0,
                 synergy = 0,
                 currentObj = null,
-                minSynObj = null;
+                minSynObj = null,
+                goalPicked = false;
             do {
                 currentObj = bingoList[getDifficulty][(j + RNG) % bingoList[getDifficulty].length];
                 synergy = checkLine(i, currentObj.types);
-                if (minSynObj == null || synergy < minSynObj.synergy) {
+                goalPicked = picked[getDifficulty].includes(currentObj[LANG] || currentObj.name);
+                if ((minSynObj == null || synergy < minSynObj.synergy) && !goalPicked) {
                     minSynObj = {
                         synergy: synergy,
                         value: currentObj
                     };
+                    if (goalPicked) {
+                        synergy = -1;
+                    }
                 }
                 j++;
             } while ((synergy != 0) && (j < bingoList[getDifficulty].length));
             bingoBoard[i].types = minSynObj.value.types;
             bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
             bingoBoard[i].synergy = minSynObj.synergy;
+            if ((MODE == "short" || MODE == "long") && bingoList[getDifficulty].length - picked[getDifficulty].length > 1) {
+                picked[getDifficulty].push(bingoBoard[i].name);
+            }
         }
         return bingoBoard;
     }
