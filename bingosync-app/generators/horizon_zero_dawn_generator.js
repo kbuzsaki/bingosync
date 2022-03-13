@@ -70,25 +70,26 @@ bingoList[14] = [
 ];
 bingoList[15] = [
 	{ name: "Defeat the Stormbird at Gaia Prime"},
-	{ name: "Clear RHO Cauldron"},
-	{ name: "Complete 12 Errands"}
+	{ name: "Use a Ropecaster to tie-down 2 Stormbirds"}
 ];
 bingoList[16] = [
-	{ name: "Kill a Rockbreaker"},
-	{ name: "Clear XI Cauldron"}
-];
-bingoList[17] = [
-	{ name: "Clear ZETA Cauldron"}
-];
-bingoList[18] = [
 	{ name: "Kill 3 Thunderjaws"},
+	{ name: "Kill 2 Scorchers"},
 	{ name: "Kill 2 Stormbirds"}
 ];
+bingoList[17] = [
+	{ name: "Kill a Rockbreaker"},
+	{ name: "Clear RHO Cauldron"}
+];
+bingoList[18] = [
+	{ name: "Clear ZETA Cauldron"}
+];
 bingoList[19] = [
-	{ name: "Use a Ropecaster to tie-down 3 Stormbirds"}
+	{ name: "Clear XI Cauldron"}
 ];
 bingoList[20] = [
-	{ name: "Override 4 Types of Machines"}
+	{ name: "Override 4 Types of Machines"},
+	{ name: "Complete 12 Errands"}
 ];
 bingoList[21] = [
 	{ name: "Override 8 Types of Machines"},
