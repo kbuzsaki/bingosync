@@ -323,6 +323,7 @@ class GameType(Enum):
     doodle_champion_island_games_begin = 319
     quest_for_glory_vga = 320
     reventure = 321
+    horizon_zero_dawn = 322
 
     def __str__(self):
         return self.short_name
@@ -977,6 +978,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
+    **singleton_group(GameType.horizon_zero_dawn, "Horizon Zero Dawn", "HZD"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
