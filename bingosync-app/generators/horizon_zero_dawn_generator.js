@@ -88,11 +88,11 @@ bingoList[19] = [
 	{ name: "Clear XI Cauldron"}
 ];
 bingoList[20] = [
-	{ name: "Override 4 Types of Machines"},
+	{ name: "Override 12 Types of Machines"},
 	{ name: "Complete 12 Errands"}
 ];
 bingoList[21] = [
-	{ name: "Override 8 Types of Machines"},
+	{ name: "Override 16 Types of Machines"},
 	{ name: "Collect All Blazing Suns from 5 Hunting Grounds"}
 ];
 bingoList[22] = [
