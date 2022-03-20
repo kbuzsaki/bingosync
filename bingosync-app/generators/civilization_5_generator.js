@@ -14,7 +14,7 @@ var bingoList = [
     "Industrial age",
     "Be so unhappy that a rebellion starts",
     "2000 gold",
-    "Max level unit",
+    "Level 5 unit",
     "5 of one luxury",
     "Full social policy",
     "Build 3 cities",
