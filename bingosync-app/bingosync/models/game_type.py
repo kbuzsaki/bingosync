@@ -323,6 +323,7 @@ class GameType(Enum):
     doodle_champion_island_games_begin = 319
     quest_for_glory_vga = 320
     reventure = 321
+    civilization_v = 322
 
     def __str__(self):
         return self.short_name
@@ -1068,6 +1069,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
+    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V")
 }
 
 GAME_TYPE_GROUPS = {}
