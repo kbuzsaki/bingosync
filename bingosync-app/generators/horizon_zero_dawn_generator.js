@@ -52,7 +52,7 @@ bingoList[9] = [
 bingoList[10] = [
 	{ name: "Clear Shattered Kiln Bandit Camp"},
 	{ name: "Use a Ropecaster to tie-down 2 Stormbirds"},
-	{ name: "Find 10 Pig Skins"},
+	{ name: "Find 5 Boar Skins"},
 	{ name: "Find 5 Rat Bones"}
 ];
 bingoList[11] = [
@@ -68,7 +68,7 @@ bingoList[12] = [
 ];
 bingoList[13] = [
 	{ name: "Collect 6 Pigments"},
-	{ name: "Destroy 4 Control Towers"}
+	{ name: "Destroy/Override 4 Control Towers"}
 ];
 bingoList[14] = [
 	{ name: "Collect 25 Bluegleam"},
@@ -85,21 +85,24 @@ bingoList[16] = [
 ];
 bingoList[17] = [
 	{ name: "Clear RHO Cauldron"},
-	{ name: "Complete 'City of the Sun'"}
+	{ name: "Finish 'Honor the Fallen' Sidequest"}
 ];
 bingoList[18] = [
-	{ name: "Clear ZETA Cauldron"}
+	{ name: "Clear ZETA Cauldron"},
+	{ name: "Complete 'City of the Sun'"}
 ];
 bingoList[19] = [
 	{ name: "Clear XI Cauldron"},
-	{ name: "Complete 8 Errands"}
+	{ name: "Complete 8 Errands"},
+	{ name: "Finish 'The Shaman's Path' Sidequest"}
 ];
 bingoList[20] = [
-	{ name: "Override 12 Types of Machines"}
+	{ name: "Override 12 Types of Machines"},
+	{ name: "Finish 'Waterlogged' Sidequest"}
 ];
 bingoList[21] = [
 	{ name: "Override 16 Types of Machines"},
-	{ name: "Collect All Blazing Suns from 5 Hunting Grounds"}
+	{ name: "Destroy/Override All Control Towers"}
 ];
 bingoList[22] = [
 	{ name: "Kill 2 Frostclaws"},
@@ -112,7 +115,7 @@ bingoList[23] = [
 ];
 bingoList[24] = [
 	{ name: "Finish 'Sun and Shadow' Sidequest"},
-	{ name: "Finish 'Honor the Fallen' Sidequest"}
+	{ name: "Collect 14 Blazing Suns from any Hunting Grounds"}
 ];
 bingoList[25] = [
 	{ name: "Get First Place in 'Ikrie's Challenge'"},
