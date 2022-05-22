@@ -1151,8 +1151,8 @@ var bingoList = {
 },
 
 "8_u_concoct": {
-        "Desc": "8 Unique Concoctions Used",
-        "Diff": 9,
+        "Desc": "4 Unique Concoctions Used",
+        "Diff": 5,
         "Types": ["combat_counts","items","specific_character","combat","#_u_concoct"]
 },
 
@@ -1236,7 +1236,7 @@ var bingoList = {
 
 "5_chapter_2_chests": {
         "Desc": "Open 5 Chests in a single Chapter 2 Dungeon",
-        "Diff": 6,
+        "Diff": 5,
         "Types": ["chest","chest_set","exploration","ch_2"]
 },
 
@@ -1341,12 +1341,6 @@ var bingoList = {
         "Desc": "Capture a Strength 4+ Monster",
         "Diff": 6,
         "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
-},
-
-"1_ch_2": {
-        "Desc": "Complete a Chapter 2",
-        "Diff": 11,
-        "Types": ["chapter","progression","#_ch_2","ch_2"]
 },
 
 "ophilia_ch_2": {
@@ -1890,13 +1884,13 @@ var bingoList = {
 
 "3_optional_bosses": {
         "Desc": "Defeat 3 Unique Optional Bosses",
-        "Diff": 18,
+        "Diff": 19,
         "Types": ["boss","exploration","#_optional_bosses"]
 },
 
 "16_u_concoct": {
-        "Desc": "16 Unique Concoctions Used",
-        "Diff": 18,
+        "Desc": "8 Unique Concoctions Used",
+        "Diff": 10,
         "Types": ["combat_counts","items","specific_character","combat","#_u_concoct"]
 },
 
@@ -2007,12 +2001,6 @@ var bingoList = {
         "Desc": "500+ Elemental Defense",
         "Diff": 17,
         "Types": ["elem_def","stats","#_elem_def"]
-},
-
-"3_npc_summons": {
-        "Desc": "Expend all Summons on NPCs 3 times",
-        "Diff": 19,
-        "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
 },
 
 "8_u_silver": {
@@ -2138,7 +2126,7 @@ var bingoList = {
 },
 
 "str_7_NPC": {
-        "Desc": "Defeat a Strength 7 NPC",
+        "Desc": "Defeat a Strength 7+ NPC",
         "Diff": 19,
         "Types": ["combat_set","combat","str_#_NPC"]
 },
@@ -2583,12 +2571,6 @@ var bingoList = {
         "Desc": "6 Side Stories in Riverlands (No Kit)",
         "Diff": 18,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
-},
-
-"str_8_NPC": {
-        "Desc": "Defeat a Strength 8 NPC",
-        "Diff": 24,
-        "Types": ["combat_set","combat","str_#_NPC"]
 },
 
 "4_ch_2": {
