@@ -373,7 +373,7 @@ var bingoList = {
   },
 
   "FCharms": {
-    "Desc": "Obtain two Unbreakable charms",
+    "Desc": "Obtain all Fragile charms (3)",
     "Score": 1.00
   },
 
@@ -880,7 +880,7 @@ var bingoList = {
   },
 
   "GoamGarpede": {
-    "Desc": "Check Goam and Garpede Journal Entries"
+    "Desc": "Check Goam and Garpede Journal Entries Locations"
   },
 
   "Jiji": {
@@ -947,7 +947,7 @@ var bingoList = {
   },
 
   "Lumafly": {
-    "Desc": "Check the Charged Lumafly Journal Entry"
+    "Desc": "Check Charged Lumafly Journal Entry Location"
   },
 
   "MaskMaker": {
@@ -1043,7 +1043,7 @@ var bingoList = {
   },
 
   "Tendrils": {
-    "Desc": "Check the Void Tendrils Journal Entry"
+    "Desc": "Check Void Tendrils Journal Entry Location"
   },
 
   "Tiso": {
