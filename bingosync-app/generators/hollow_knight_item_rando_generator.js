@@ -238,7 +238,7 @@ var bingoList = {
   },
 
   "CrystalCrawler": {
-    "Desc": "Crystal Crawler Journal Entry"
+    "Desc": "Read the Crystal Crawler Journal Entry"
   },
 
   "Devout": {
@@ -880,7 +880,7 @@ var bingoList = {
   },
 
   "GoamGarpede": {
-    "Desc": "Goam and Garpede Journal Entries"
+    "Desc": "Check Goam and Garpede Journal Entries"
   },
 
   "Jiji": {
@@ -947,7 +947,7 @@ var bingoList = {
   },
 
   "Lumafly": {
-    "Desc": "Charged Lumafly Journal Entry"
+    "Desc": "Check the Charged Lumafly Journal Entry"
   },
 
   "MaskMaker": {
@@ -1043,7 +1043,7 @@ var bingoList = {
   },
 
   "Tendrils": {
-    "Desc": "Void Tendrils Journal Entry"
+    "Desc": "Check the Void Tendrils Journal Entry"
   },
 
   "Tiso": {
