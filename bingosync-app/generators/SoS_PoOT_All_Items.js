@@ -420,7 +420,6 @@ var bingoList = [
 	"French Toast",
 	"Mixed Rice",
 	"Tuna Sandwich",
-	ooops
 	"Boiled Sweet Potatoes[21]",
 	"Cream Sauce Pasta",
 	"Gratin",
@@ -432,7 +431,6 @@ var bingoList = [
 	"Risi e Bisi",
 	"Matsutake Rice",
 	"Boo Paht Pong Karee",
-	ooops
 	"Peperoncino Pasta",
 	"Stew",
 	"Mushroom Cabbage Rolls",
@@ -449,7 +447,6 @@ var bingoList = [
 	"Hot Pot",
 	"Onigiri",
 	"Mugwort Daifuku",
-	ooops
 	"Oshiruko",
 	"Strawberry Daifuku",
 	"Chestnut Monaka",
@@ -501,7 +498,6 @@ var bingoList = [
 	"Coconut Juice",
 	"Grape Juice",
 	"Banana Milk",
-	ooops
 	"Cornbread",
 	"Honey Milk Latte",
 	"Honey Milk Cocoa",
