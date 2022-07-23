@@ -328,6 +328,10 @@ class GameType(Enum):
     bug_fables = 324
     civilization_v = 325
     horizon_zero_dawn = 326
+    crash_2 = 327
+    crash_3 = 328
+    spyro_1 = 329
+    toy_story_2_version_2 = 330
 
     def __str__(self):
         return self.short_name
@@ -592,6 +596,13 @@ GAME_GROUPS = {
             (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
             (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
             (GameType.spyro_2_4_no_ds, "4.1 No Dragon Shores", "Spyro 2 - 4.1 No DS"),
+        ],
+    },
+    GameType.toy_story_2: {
+        "name": "Toy Story 2",
+        "variants": [
+            (GameType.toy_story_2, "1.0", "Toy Story 2 - 1.0"),
+            (GameType.toy_story_2_version_2, "2.0", "Toy Story 2 - 2.0"),
         ],
     },
     GameType.wii_sports_resort: {
@@ -961,6 +972,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
+    **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
+    **singleton_group(GameType.crash_3, "Crash Bandicoot 3; Warped", "Crash 3"),
     **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
     **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
@@ -1059,6 +1072,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
+    **singleton_group(GameType.spyro_1, "Spyro the dragon", "Spyro 1"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
@@ -1082,7 +1096,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
-    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V")
+    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V"),
 }
 
 GAME_TYPE_GROUPS = {}
