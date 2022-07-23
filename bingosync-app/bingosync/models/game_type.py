@@ -1083,7 +1083,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
-    **singleton_group(GameType.toy_story_2, "Toy Story 2: Buzz Lightyear to the Rescue", "Toy Story 2"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
     **singleton_group(GameType.undertale, "Undertale", "Undertale"),
     **singleton_group(GameType.untitled_goose_game, "Untitled Goose Game", "Goose Game"),
