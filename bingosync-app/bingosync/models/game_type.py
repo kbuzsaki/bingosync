@@ -327,6 +327,7 @@ class GameType(Enum):
     around_the_clock_at_bikini_bottom = 323
     bug_fables = 324
     civilization_v = 325
+    horizon_zero_dawn = 326
 
     def __str__(self):
         return self.short_name
@@ -989,6 +990,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
+    **singleton_group(GameType.horizon_zero_dawn, "Horizon Zero Dawn", "HZD"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
