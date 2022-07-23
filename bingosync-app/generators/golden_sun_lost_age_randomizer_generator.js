@@ -4,16 +4,18 @@ var bingoList = [];
     
 bingoList[1] = [
     {name: "Unequip a cursed item", types: ["action"]},
-    {name: "Fix a rusted weapon", types: ["action", "forge"]},
+    {name: "Fix a rusted weapon", types: ["forge"]},
     {name: "Learn Frost + Douse", types: ["psy"]},
-    {name: "Obtain 3 Lucky Medals", types: ["item"]}
+    {name: "Obtain 3 Lucky Medals", types: ["item"]},
+	{name: "Obtain 3 Vials", types: ["item"]}
 ];
  
 bingoList[2] = [
     {name: "Befriend Zephyr, Coal, Mud or Vine", types: ["djinn_r"]},
     {name: "Defeat the Chest Beaters", types: ["boss"]},
     {name: "Defeat King Scorpion", types: ["boss"]},
-    {name: "Check the Tremor Bit chest", types: ["loc"]}
+    {name: "Check the Tremor Bit chest", types: ["loc"]},
+	{name: "Obtain the Black Crystal", types: ["item"]}
 ];
     
 bingoList[3] = [
@@ -22,7 +24,7 @@ bingoList[3] = [
     {name: "Check the Grindstone chest", types: ["loc"]},
     {name: "Check the Lemuria fountain item", types: ["loc"]},
     {name: "Learn Megaera or Flora", types: ["summon"]},
-    {name: "Obtain Fire Brand or Sol Blade", types: ["equip"]}
+	{name: "Learn Sand", types: ["psy"]}
 ];
  
 bingoList[4] = [
@@ -44,8 +46,7 @@ bingoList[6] = [
     {name: "Have someone be an Ascetic", types: ["class"]},
     {name: "Have someone be a Shaman", types: ["class"]},
     {name: "Have someone be a Cavalier", types: ["class"]},
-    {name: "Have someone be an Enchanter", types: ["class"]},
-    {name: "Learn 4 multi-element summons", types: ["summon"]}
+    {name: "Have someone be an Enchanter", types: ["class"]}
 ];
  
 bingoList[7] = [
@@ -60,15 +61,14 @@ bingoList[8] = [
     {name: "Befriend the Djinni in Taopo Swamp", types: ["djinn_s"]},
     {name: "Obtain 2 trading sequence items", types: ["item"]},
     {name: "Befriend Spritz, Flower or Crystal", types: ["djinn_r"]},
-    {name: "Learn Sand", types: ["psy"]},
-    {name: "Check the Dancing Idol pedestal", types: ["loc", "gaia_rock"]}
+    {name: "Check the Dancing Idol pedestal", types: ["loc", "gaia_rock"]},
+	{name: "Obtain Fire Brand or Sol Blade", types: ["equip"]}
 ];
  
 bingoList[9] = [
     {name: "Reach the top of Tundaria Tower", types: ["clear", "towers"]},
     {name: "Obtain Meditation Rod or Thanatos Mace", types: ["equip"]},
     {name: "Check the Fujin Shield chest", types: ["loc", "airs_rock"]},
-    {name: "Obtain the Black Crystal", types: ["item"]},
     {name: "Use the Ruin Key", types: ["action"]},
     {name: "Obtain 2 Mist Potions", types: ["item"]}
 ];
@@ -108,7 +108,6 @@ bingoList[13] = [
  
 bingoList[14] = [
     {name: "Defeat 3 Mad Plants", types: ["enemy"]},
-    {name: "Learn 7 multi-element summons", types: ["summon"]},
     {name: "Obtain Masamune or Phaeton's Blade", types: ["equip"]},
     {name: "Check the chest in SW Atteka Islet", types: ["loc"]},
     {name: "Learn Tremor + Catch", types: ["psy"]},
@@ -144,28 +143,26 @@ bingoList[18] = [
     {name: "Check the chest in Gondowan Settlement", types: ["loc"]},
     {name: "Check the chest in Hesperia Settlement", types: ["loc"]},
     {name: "Learn Teleport", types: ["psy"]},
-    {name: "Enter the last room of Taopo Swamp", types: ["clear"]},
     {name: "Mind Read the cow in Lemuria", types: ["action"]},
     {name: "Defeat each Doomsayer-type enemy (2)", types: ["enemy"]}
 ];
  
 bingoList[19] = [
-    {name: "Forge with Orihalcon", types: ["action", "forge"]},
-    {name: "Forge with a Golem Core", types: ["action", "forge"]},
-    {name: "Forge with Mythril Silver", types: ["action", "forge"]},
-    {name: "Forge with Dark Matter", types: ["action", "forge"]}
+    {name: "Forge with Orihalcon", types: ["forge"]},
+    {name: "Forge with a Golem Core", types: ["forge"]},
+    {name: "Forge with Mythril Silver", types: ["forge"]},
+    {name: "Forge with Dark Matter", types: ["forge"]}
 ];
  
 bingoList[20] = [
-    {name: "Befriend 32 Djinn", types: ["djinn_n"]},
-    {name: "Befriend 8 Venus Djinn", types: ["djinn_n", "venus"]},
-    {name: "Befriend 8 Mars Djinn", types: ["djinn_n", "mars"]},
-    {name: "Befriend 8 Jupiter Djinn", types: ["djinn_n", "jupiter"]},
-    {name: "Befriend 8 Mercury Djinn", types: ["djinn_n", "mercury"]}
+    {name: "Befriend 24 Djinn", types: ["djinn_n"]},
+    {name: "Befriend 7 Venus Djinn", types: ["djinn_n", "venus"]},
+    {name: "Befriend 7 Mars Djinn", types: ["djinn_n", "mars"]},
+    {name: "Befriend 7 Jupiter Djinn", types: ["djinn_n", "jupiter"]},
+    {name: "Befriend 7 Mercury Djinn", types: ["djinn_n", "mercury"]}
 ];
  
 bingoList[21] = [
-    {name: "Defeat Moapa and co.", types: ["boss"]},
     {name: "Enter Magma Rock's tablet room", types: ["clear", "rocks"]},
     {name: "Befriend the Djinni in SW Atteka Islet", types: ["djinn_s"]},
     {name: "Check the Teleport Lapis chest", types: ["loc"]},
@@ -178,27 +175,29 @@ bingoList[22] = [
     {name: "Learn the Catastrophe summon", types: ["summon"]},
     {name: "Learn the Azul summon", types: ["summon"]},
     {name: "Learn Force", types: ["psy"]},
-    {name: "Clear Jupiter Lighthouse", types: ["clear"]},
-    {name: "Obtain the Alastor's Hood", types: ["item"]}
+    {name: "Obtain the Alastor's Hood", types: ["item"]},
+	{name: "Defeat an Aka Manah-type enemy", types: ["enemy"]}
 ];
  
 bingoList[23] = [
-    {name: "Defeat the Flame Dragons", types: ["boss"]},
     {name: "Learn both Lift and Carry", types: ["psy"]},
     {name: "Befriend the Djinni in Trial Road", types: ["djinn_s"]},
-    {name: "Defeat each Roc-type enemy (2)", types: ["enemy"]},
-    {name: "Defeat an Aka Manah-type enemy", types: ["enemy"]}
+	{name: "Defeat a Phoenix-type enemy", types: ["enemy"]},
+	{name: "Defeat each Roc-type enemy (2)", types: ["enemy"]},
+	{name: "Enter the innermost room of Taopo Swamp", types: ["clear"]}
 ];
  
 bingoList[24] = [
-    {name: "Defeat a Phoenix-type enemy", types: ["enemy"]},
     {name: "Defeat each Sea Dragon-type enemy (3)", types: ["enemy"]},
     {name: "Befriend the Djinni in Yampi Desert Cave", types: ["djinn_s"]},
-    {name: "Check the Atteka Cavern summon tablet", types: ["loc"]}
+	{name: "Enter the boss room in Yampi Desert Cave", types: ["loc"]},
+	{name: "Enter the boss room in Treasure Isle", types: ["loc"]},
+	{name: "Enter the boss room in Islet Cave", types: ["loc"]},
 ];
  
 bingoList[25] = [
-    {name: "Defeat Valukar", types: ["boss"]},
-    {name: "Defeat Sentinel", types: ["boss"]},
-    {name: "Defeat Star Magician", types: ["boss"]}
+	{name: "Clear Jupiter Lighthouse", types: ["clear"]},
+    {name: "Defeat the Flame Dragons", types: ["boss"]},
+	{name: "Defeat Moapa and co.", types: ["boss"]},
+	{name: "Check the Atteka Cavern summon tablet", types: ["loc"]}
 ];

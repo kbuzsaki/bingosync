@@ -234,7 +234,7 @@ class GameType(Enum):
     pokemon_omega_ruby_alpha_sapphire = 230
     monster_rancher_2_rng_lite = 231
     fallout_new_vegas = 232
-    minecraft_1_17_1 = 233
+    minecraft_1_18 = 233
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
     kingdom_hearts_2_final_mix_current = 236
@@ -322,7 +322,10 @@ class GameType(Enum):
     zelda_wind_waker_randomizer = 318
     doodle_champion_island_games_begin = 319
     quest_for_glory_vga = 320
-    bug_fables = 321
+    reventure = 321
+    crash_twinsanity_hoverless_variant = 322
+    around_the_clock_at_bikini_bottom = 323
+    bug_fables = 324
 
     def __str__(self):
         return self.short_name
@@ -542,6 +545,13 @@ GAME_GROUPS = {
             (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
         ],
     },
+    GameType.crash_twinsanity: {
+        "name": "Crash Twinsanity",
+        "variants": [
+            (GameType.crash_twinsanity, "Normal", "Crash Twinsanity"),
+            (GameType.crash_twinsanity_hoverless_variant, "Hoverless", "Twinsanity Hoverless"),
+        ],
+    },
     GameType.custom: {
         "name": "Custom (Advanced)",
         "variants": [
@@ -729,7 +739,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.minecraft_1_16_1, "1.16.1", "Minecraft 1.16.1"),
             (GameType.minecraft_1_8_9, "1.8.9", "Minecraft 1.8.9"),
-            (GameType.minecraft_1_17_1, "Most recent (1.17.1)", "Minecraft 1.17.1"),
+            (GameType.minecraft_1_18, "Most recent (1.18)", "Minecraft 1.18"),
         ],
     },
     GameType.monster_rancher_2: {
@@ -745,7 +755,7 @@ GAME_GROUPS = {
         "variants": [
             (GameType.octopath_traveler, "Standard", "Octopath"),
             (GameType.octopath_traveler_story, "Story", "Octopath Story"),
-            (GameType.octopath_traveler_short, "Short Card", "Octopath - Short Game"),
+            (GameType.octopath_traveler_short, "Short Card v2", "Octopath - Short Game"),
             (GameType.octopath_traveler_medium, "Medium Card", "Octopath - Medium Game"),
             (GameType.octopath_traveler_long, "Long Card", "Octopath - Long Game")
         ],
@@ -934,6 +944,7 @@ GAME_GROUPS = {
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
     **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
+    **singleton_group(GameType.around_the_clock_at_bikini_bottom, "Around the Clock at Bikini Bottom", "Around the Clock"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
@@ -950,7 +961,6 @@ GAME_GROUPS = {
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
     **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
-    **singleton_group(GameType.crash_twinsanity, "Crash Twinsanity", "Crash Twins."),
     **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
@@ -1031,6 +1041,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
+    **singleton_group(GameType.reventure, "Reventure", "Reventure"),
     **singleton_group(GameType.riven, "Riven: The Sequel to Myst", "Riven"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
     **singleton_group(GameType.saga_frontier, "SaGa Frontier (PS1)", "SaGa Frontier (PS1)"),
