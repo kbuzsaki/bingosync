@@ -25,7 +25,7 @@ bingoList[3] = [
 {"name": "70 bones in Spooky Forest ","types": ["sf"]},
 {"name": "70 bones in BigBen","types": ["bb"]},
 {"name": "70 bones in Royal Museum","types": ["rm"]},
-{"name": "70 bones in The Underground","types": ["u"},
+{"name": "70 bones in The Underground","types": ["u"]},
 {"name": "70 bones in Lumber Mill","types": ["lm"]},
 {"name": "70 bones in Barnyard","types": ["by"]},
 {"name": "70 bones in Ice Festival","types": ["if"]},
@@ -76,7 +76,7 @@ bingoList[7] = [
 {"name": "120 combined bones in Lumber Mill & Ice Festival","types": ["lm", "if"]}
 ];
 bingoList[8] = [
-{"name": "50 bones in both Regent's Park & De Vil's Manor", "types": ["rp","dvm"] }
+{"name": "50 bones in both Regent's Park & De Vil's Manor", "types": ["rp","dvm"] },
 {"name": "50 bones in both Piccadilly & Toy Factory","types": ["p", "tf"]},
 {"name": "50 bones in both BigBen & Spooky Forest","types": ["bb", "sf"]},
 {"name": "50 bones in both Royal Museum & Hedge Maze","types": ["rm", "hm"]},
@@ -199,7 +199,7 @@ bingoList[21] = [
 {"name": "Destroy 4 monkeys in 2 levels","types": ["hm", "rp"]},
 {"name": "Destroy 3 zepplins in 2 levels","types": ["hm", "bb"]},
 {"name": "Destroy 3 toasters in 2 levels","types": ["dvm", "rm"]},
-{"name": "Destroy 2 punshing bags in 3 levels","types": ["ts", "tf", "bb"},
+{"name": "Destroy 2 punshing bags in 3 levels","types": ["ts", "tf", "bb"]},
 {"name": "Destroy 2 jack in box in 3 levels","types": ["rp", "tf", "lm"]},
 {"name": "Destroy all cruella cars","types": ["rp", "p"]},
 {"name": "Destroy 4 bomb cars in 2 levels","types": ["rm", "ts"]},
