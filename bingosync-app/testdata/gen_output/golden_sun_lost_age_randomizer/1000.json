@@ -1,6 +1,6 @@
 [
     {
-        "name": "Defeat a Phoenix-type enemy"
+        "name": "Defeat each Sea Dragon-type enemy (3)"
     },
     {
         "name": "Check the chest in Hesperia Settlement"
@@ -12,16 +12,16 @@
         "name": "Clear Gabomba Statue"
     },
     {
-        "name": "Obtain 3 Lucky Medals"
+        "name": "Obtain 3 Vials"
     },
     {
         "name": "Befriend Aroma, Ether or Ember"
     },
     {
-        "name": "Defeat the Chest Beaters"
+        "name": "Defeat King Scorpion"
     },
     {
-        "name": "Check the Angara Cavern summon tablet"
+        "name": "Defeat each Merman-type enemy (3)"
     },
     {
         "name": "Forge with Orihalcon"
@@ -36,25 +36,25 @@
         "name": "Obtain the Corn"
     },
     {
+        "name": "Check the Dancing Idol pedestal"
+    },
+    {
+        "name": "Learn Mind Read + Reveal"
+    },
+    {
+        "name": "Defeat an Aka Manah-type enemy"
+    },
+    {
         "name": "Learn Sand"
     },
     {
-        "name": "Befriend the Djinni in Aqua Rock"
+        "name": "Clear Jupiter Lighthouse"
     },
     {
-        "name": "Learn the Daedalus summon"
+        "name": "Obtain the Iris Robe"
     },
     {
-        "name": "Obtain Fire Brand or Sol Blade"
-    },
-    {
-        "name": "Defeat Sentinel"
-    },
-    {
-        "name": "Reach the top of Shrine of the Sea God"
-    },
-    {
-        "name": "Obtain the Mysterious Card"
+        "name": "Befriend the Djinni in Lemuria"
     },
     {
         "name": "Check the Fujin Shield chest"
@@ -63,15 +63,15 @@
         "name": "Befriend 20 Djinn"
     },
     {
-        "name": "Learn 4 multi-element summons"
+        "name": "Have someone be an Enchanter"
     },
     {
         "name": "Befriend 5 Mars Djinn"
     },
     {
-        "name": "Defeat each Roc-type enemy (2)"
+        "name": "Defeat a Phoenix-type enemy"
     },
     {
-        "name": "Befriend 8 Jupiter Djinn"
+        "name": "Befriend 7 Jupiter Djinn"
     }
 ]
