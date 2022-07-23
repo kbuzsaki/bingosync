@@ -1,6 +1,6 @@
 [
     {
-        "name": "Befriend 8 Venus Djinn"
+        "name": "Befriend 7 Venus Djinn"
     },
     {
         "name": "Learn the Azul summon"
@@ -18,19 +18,19 @@
         "name": "Check the chest in SW Atteka Islet"
     },
     {
-        "name": "Have someone be an Enchanter"
+        "name": "Have someone be a Cavalier"
     },
     {
         "name": "Learn Teleport"
     },
     {
-        "name": "Defeat Sentinel"
-    },
-    {
-        "name": "Befriend Zephyr, Coal, Mud or Vine"
-    },
-    {
         "name": "Defeat the Flame Dragons"
+    },
+    {
+        "name": "Obtain the Black Crystal"
+    },
+    {
+        "name": "Learn both Lift and Carry"
     },
     {
         "name": "Befriend the Djinni in Aqua Rock"
@@ -60,7 +60,7 @@
         "name": "Learn Blaze"
     },
     {
-        "name": "Obtain 3 Lucky Medals"
+        "name": "Obtain 3 Vials"
     },
     {
         "name": "Learn Cyclone + Hover"
@@ -72,6 +72,6 @@
         "name": "Defeat a Blue Dragon-type enemy"
     },
     {
-        "name": "Check the Atteka Cavern summon tablet"
+        "name": "Enter the boss room in Islet Cave"
     }
 ]
