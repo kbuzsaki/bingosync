@@ -325,6 +325,7 @@ class GameType(Enum):
     reventure = 321
     crash_twinsanity_hoverless_variant = 322
     around_the_clock_at_bikini_bottom = 323
+    bug_fables = 324
 
     def __str__(self):
         return self.short_name
@@ -949,6 +950,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.bloodstained_rando, "Bloodstained: Ritual of the Night Randomizer", "Bloodstained Rando"),
+    **singleton_group(GameType.bug_fables, "Bug Fables: The Everlasting Sapling", "Bug Fables"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
