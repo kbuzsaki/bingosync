@@ -332,6 +332,7 @@ class GameType(Enum):
     crash_3 = 328
     spyro_1 = 329
     toy_story_2_version_2 = 330
+    pokemon_legends_arceus = 331
 
     def __str__(self):
         return self.short_name
@@ -407,7 +408,9 @@ def strip_articles(name):
 
 
 DEFAULT_VARIANT_NAME = "Normal"
-def singleton_group(game_type, name, short_name, variant_name=DEFAULT_VARIANT_NAME):
+def singleton_group(game_type, name, short_name=None, variant_name=DEFAULT_VARIANT_NAME):
+    if short_name is None:
+        short_name = name
     return {
         game_type: {
             "name": name,
@@ -1044,6 +1047,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
+    **singleton_group(GameType.pokemon_legends_arceus, "Pokémon Legends: Arceus"),
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
