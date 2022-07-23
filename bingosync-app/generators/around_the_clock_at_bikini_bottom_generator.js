@@ -1,6 +1,6 @@
 bingoGenerator = require("./generators/generator_bases/simple_generator.js");
 
-var bingolist = [
+var bingoList = [
 	"Ace a Spongebob level",
 	"Ace a Patrick level",
 	"Ace a Squidward level",
@@ -11,7 +11,7 @@ var bingolist = [
 	"Stop Left Glovey 10 times in the Glove World Maze",
 	"Beat Patrick in the jellyfishing contest",
 	"Collect the treasure from Big Lenny as Spongebob",
-	"Interact with the gun in Squidward's Monument"
+	"Interact with the gun in Squidward's Monument",
 	"Beat any level twice",
 	"Die to Big Lenny",
 	"Complete the Toys This Way room without using the flashlight",
@@ -39,7 +39,7 @@ var bingolist = [
 	"Get the token from Industrial Park",
 	"Beat Berry in hide & seek as Spongebob",
 	"Have a Boxing Menace spot you in Larry's Gym and live",
-	"Beat Larry's Gym"
+	"Beat Larry's Gym",
 	"Take the bottom path in Jellyfish Fields",
 	"Take the top path in Jellyfish Fields",
 	"Beat Ol' Bessy & the Jellybee",
