@@ -326,6 +326,7 @@ class GameType(Enum):
     crash_twinsanity_hoverless_variant = 322
     around_the_clock_at_bikini_bottom = 323
     bug_fables = 324
+    civilization_v = 325
 
     def __str__(self):
         return self.short_name
@@ -1079,6 +1080,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
+    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V")
 }
 
 GAME_TYPE_GROUPS = {}
