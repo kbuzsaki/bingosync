@@ -198,7 +198,7 @@ bingoList[20] = [
   { name: "Obtain Painting Guardian Set", types: ["paintedworld","armour"] },
   { name: "Obtain Velka's Rapier", types: ["paintedworld","weapons"] },
   { name: "Murder Priscilla", types: ["paintedworld","youmonster"] },
-  { name: "Obtain Dried Finger", types: ["paintedworld","items"] }
+  { name: "Obtain a Gold Coin", types: ["paintedworld","items"] }
 ];
 // Tomb of the Giants
 bingoList[21] = [
