@@ -42,8 +42,8 @@ bingoList[4] = [
   { name: "Join Warriors of Sunlight", types: ["covenant","parish"] },
   { name: "Cut Off a Gargoyle's Tail", types: ["bosses","parish","items"] },
   { name: "Obtain Crest of Artorias", types: ["items","parish"] },
-  { name: "Bloodbite Ring", types: ["rings","parish"] },
-  { name: "Poisonbite Ring", types: ["rings","parish"] },
+  { name: "Obtain Bloodbite Ring", types: ["rings","parish"] },
+  { name: "Obtain Poisonbite Ring", types: ["rings","parish"] },
   { name: "3 Purging Stones", types: ["items","parish"] }
 ];
 // Depths and Darkroot
@@ -74,12 +74,11 @@ bingoList[7] = [
   { name: "Obtain Whip", types: ["weapons","blighttown"] },
   { name: "Obtain Server", types: ["weapons","blighttown"] },
   { name: "Obtain Iaito", types: ["weapons","blighttown"] },
-  { name: "Obtain Force Within", types: ["items","spells","blighttown"] },
+  { name: "Obtain Power Within", types: ["items","spells","blighttown"] },
   { name: "Obtain Tin Banishment Catalyst", types: ["items","weapons"] },
   { name: "Obtain Remedy", types: ["items","spells"] },
   { name: "Obtain Fire Keeper Soul (Blighttown)", types: ["blighttown","items","humanity"] },
   { name: "Obtain Soul of Quelaag", types: ["bosses","depths","items"] },
-  { name: "Obtain Remedy", types: ["sorcery","blighttown"] },
   { name: "Defeat Maneater Mildred", types: ["bosses","depths"] }
 ];
 // Valley of the Drakes and New Londo
@@ -127,7 +126,7 @@ bingoList[11] = [
 ];
 // Sen's Fortress
 bingoList[12] = [
-  { name: "Obtain Lightning Spear", types: ["items","weapons"] },
+  { name: "Obtain a Spear upgraded with Lightning", types: ["items","weapons"] },
   { name: "Obtain Covetous Gold Serpent Ring", types: ["items","rings","sens"] },
   { name: "Obtain Ring of Steel Protection", types: ["items","rings","sens"] },
   { name: "Obtain Flame Stoneplate Ring", types: ["items","rings","sens"] },
