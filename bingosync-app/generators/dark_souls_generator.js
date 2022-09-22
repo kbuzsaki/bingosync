@@ -19,7 +19,7 @@ bingoList[2] = [
   { name: "No Master Key gift", types: ["startingitem","restrict_key"] },
   { name: "Take Pendant as gift", types: ["startingitem","restrict_key"] },
   { name: "Take Binoculars as gift", types: ["startingitem","restrict_key"] },
-  { name: "Take Old Witch's' Ring as gift", types: ["startingitem","restrict_key"] },
+  { name: "Take Old Witch's Ring as gift", types: ["startingitem","restrict_key"] },
   { name: "Right hand wielding only", types: ["restriction","wielding"] },
   { name: "Left hand wielding only", types: ["restriction","wielding"] }
 ];
