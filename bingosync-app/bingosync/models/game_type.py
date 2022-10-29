@@ -334,6 +334,8 @@ class GameType(Enum):
     toy_story_2_version_2 = 330
     pokemon_legends_arceus = 331
     hollow_knight_item_rando_jp = 332
+    sos_poot_all_items = 333
+    metroid_fusion_rando = 334
 
     def __str__(self):
         return self.short_name
@@ -1028,6 +1030,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
+    **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
@@ -1073,6 +1076,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.snailiad, "Snailiad", "Snailiad"),
     **singleton_group(GameType.sonic_adventure_dx, "Sonic Adventure DX", "SADX"),
     **singleton_group(GameType.sonic_r, "Sonic R", "Sonic R"),
+    **singleton_group(GameType.sos_poot_all_items, "Story of Seasons: Pioneers of Olive Town", "All Items"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.spyro_1, "Spyro the dragon", "Spyro 1"),

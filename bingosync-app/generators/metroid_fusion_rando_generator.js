@@ -80,8 +80,8 @@ bingoList[2] = [
 		name: "Gravity Suit",
 		types: ['suit', 'gravity']
 	},
-	
-	
+
+
 ];
 bingoList[3] = [
 	{
@@ -120,9 +120,9 @@ bingoList[3] = [
 		name: "Use 7 Save Points",
 		types: ['location', 'save']
 	},
-	 
-	
-	
+
+
+
 ];
 bingoList[4] = [
 	{
@@ -161,9 +161,9 @@ bingoList[4] = [
 		name: "Power Bomb Data",
 		types: ['powerbomb']
 	},
-	
-	
-	
+
+
+
 ];
 bingoList[5] = [
 	{
@@ -230,9 +230,9 @@ bingoList[6] = [
 	},
 	{
 		name: "Unlock Red Doors",
-		types: ['locks' 'reddoor']
+		types: ['locks', 'reddoor']
 	},
-	
+
 ];
 bingoList[7] = [
 	{
@@ -267,7 +267,7 @@ bingoList[7] = [
 		name: "Collect any 60 expansions",
 		types: ['item', 'missiles', 'energy', 'powerbomb']
 	},
-	
+
 ];
 bingoList[8] = [
 	{
@@ -294,8 +294,8 @@ bingoList[8] = [
 		name: "Get the Fish Tank item",
 		type: ['location', 'specific']
 	},
-	
-	
+
+
 ];
 bingoList[9] = [
 	{
@@ -326,7 +326,7 @@ bingoList[9] = [
 		name: "Collect both items in Lava Spark",
 		types: ['specific']
 	},
-	
+
 ];
 bingoList[10] = [
 	{
@@ -380,7 +380,7 @@ bingoList[11] = [
 		types: ['location', 'specific']
 	},
 	{
-		name: "Sector 4 Data Room item"
+		name: "Sector 4 Data Room item",
 		types: ['location', 'specific']
 	},
 	{
@@ -394,7 +394,7 @@ bingoList[12] = [
 		types: ['beam', 'wave']
 	},
 	{
-		name: "Collect all 4 missile upgrades"
+		name: "Collect all 4 missile upgrades",
 		types: ['missilelauncher', 'super', 'icemissile', 'diffusion']
 	},
 	{
@@ -469,12 +469,12 @@ bingoList[14] = [
 		name: "Use every Save in Sector 5",
 		types: ['save']
 	},
-	
+
 ];
 bingoList[15] = [
 	{
 		name: "Collect any 3 beam upgrades",
-		types: ['beam', 'icebeam', 'charge', 'wide', 'wave', 'plasma']	
+		types: ['beam', 'icebeam', 'charge', 'wide', 'wave', 'plasma']
 	},
 	{
 		name: "Finish in Sector 6 Data Room",
@@ -502,7 +502,7 @@ bingoList[15] = [
 	},
 	{
 		name: "Finish at Auxiliary Power Nav Station",
-		types: ['finish', 'location' 'yakuza']
+		types: ['finish', 'location', 'yakuza']
 	},
 	{
 		name: "Finish at Habitation Deck Terminal",
@@ -526,11 +526,11 @@ bingoList[16] = [
 		name: "Use every Save in Sector 4",
 		types: ['save']
 	},
-	
+
 ];
 bingoList[17] = [
 	{
-		name "Defeat Nightmare",
+        name: "Defeat Nightmare",
 		types: ['boss', 'nightmare']
 	},
 	{
@@ -545,7 +545,7 @@ bingoList[17] = [
 		name: "Use 29 save stations",
 		types: ['save']
 	},
-	
+
 ];
 bingoList[18] = [
 	{
@@ -560,7 +560,7 @@ bingoList[18] = [
 		name: "Use every Sector 1 Save",
 		types: ['save']
 	},
-	
+
 ];
 bingoList[19] = [
 	{
@@ -607,7 +607,7 @@ bingoList[21] = [
 		name: "Collect Restricted Area item",
 		types: ['location', 'specific']
 	},
-	
+
 ];
 bingoList[22] = [
 	{
@@ -622,7 +622,7 @@ bingoList[22] = [
 		name: "Collect both Space/Speed items in Sector 6",
 		types: ['location', 'specific']
 	},
-	
+
 ];
 bingoList[23] = [
 	{
@@ -676,6 +676,6 @@ bingoList[25] = [
 	{
 		name: "Kill all Golden Pirates in Sector 1",
 		types: ['specific']
-	},	
-	
+	},
+
 ];
