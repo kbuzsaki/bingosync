@@ -431,81 +431,7 @@ HIDDEN_VARIANTS = {
     GameType.video_games,
 }
 
-GAME_GROUPS = {
-    GameType.ocarina_of_time: {
-        "name": "Zelda: Ocarina of Time",
-        "variants": [
-            (GameType.ocarina_of_time, "Normal", "Zelda: OoT"),
-            (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
-            (GameType.ocarina_of_time_short, "Short", "OoT Short"),
-            (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
-            (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
-            (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
-            (GameType.ocarina_of_time_item_randomizer_short, "Item Randomizer Short", "OoT IR Short"),
-            (GameType.ocarina_of_time_beta_quest, "Beta Quest", "OoT BQ"),
-        ],
-    },
-    GameType.secret_of_mana: {
-        "name": "Secret of Mana",
-        "variants": [
-            (GameType.secret_of_mana, "Normal", "SoM"),
-            (GameType.secret_of_mana_german, "German", "SoM German"),
-            (GameType.secret_of_mana_short, "Short", "SoM Short"),
-            (GameType.secret_of_mana_short_german, "Short German", "SoM Short German"),
-        ],
-    },
-    GameType.pokemon_emerald_randomizer: {
-        "name": "Pokémon Emerald",
-        "variants": [
-            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald"),
-            (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
-            (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
-            (GameType.pokemon_emerald_vanilla, "Vanilla", "Emerald Vanilla"),
-        ],
-    },
-    GameType.pokemon_crystal: {
-        "name": "Pokémon Crystal",
-        "variants": [
-            (GameType.pokemon_crystal, "Normal", "Poké Crystal"),
-            (GameType.pokemon_crystal_randomizer, "Current Randomizer", "Crystal Current"),
-            (GameType.pokemon_crystal_classic_randomizer, "Classic Randomizer", "Crystal Classic"),
-            (GameType.pokemon_crystal_randomizer_tournament, "2021 Summer Tournament Randomizer", "Crystal Tournament"),
-        ],
-    },
-    GameType.pokemon_red_blue: {
-        "name": "Pokémon Red/Blue",
-        "variants": [
-            (GameType.pokemon_red_blue, "Normal", "Poké Red/Blue"),
-            (GameType.pokemon_red_blue_randomizer, "Randomizer", "Red/Blue Random"),
-        ],
-    },
-    GameType.sonic_adventure_2: {
-        "name": "Sonic Adventure 2",
-        "variants": [
-            (GameType.sonic_adventure_2, "Normal", "SA2"),
-            (GameType.sonic_adventure_2_hero_story, "Hero Story", "SA2 Hero"),
-            (GameType.sonic_adventure_2_dark_story, "Dark Story", "SA2 Dark"),
-            (GameType.sonic_adventure_2_long, "Long", "SA2 Long"),
-            (GameType.sonic_adventure_2_nightmare, "Nightmare", "SA2 Nightmare"),
-        ],
-    },
-    GameType.super_mario_odyssey: {
-        "name": "Super Mario Odyssey",
-        "variants": [
-            (GameType.super_mario_odyssey, "Normal", "SMO"),
-            (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
-            (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
-            (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
-            (GameType.super_mario_odyssey_all_kingdoms_post_game, "All Kingdoms + Post Game", "SMO AK + PG"),
-        ],
-    },
-    GameType.generic_bingo: {
-        "name": "Generic Bingo",
-        "variants": [
-            (GameType.generic_bingo, "Normal", "Generic"),
-            (GameType.generic_bingo_deluxe, "Deluxe", "Generic Deluxe"),
-        ],
-    },
+MANUAL_GAME_GROUPS = {
     GameType.alttp_randomizer: {
         "name": "Zelda: A Link to the Past",
         "variants": [
@@ -594,27 +520,11 @@ GAME_GROUPS = {
             (GameType.final_fantasy_1_randomizer_winter_dab, "Randomizer Winter DAB", "FF1R DAB"),
         ],
     },
-    GameType.spyro_2: {
-        "name": "Spyro 2: Ripto's Rage",
+    GameType.generic_bingo: {
+        "name": "Generic Bingo",
         "variants": [
-            (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
-            (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
-            (GameType.spyro_2_4_no_ds, "4.1 No Dragon Shores", "Spyro 2 - 4.1 No DS"),
-        ],
-    },
-    GameType.toy_story_2: {
-        "name": "Toy Story 2",
-        "variants": [
-            (GameType.toy_story_2, "1.0", "Toy Story 2 - 1.0"),
-            (GameType.toy_story_2_version_2, "2.0", "Toy Story 2 - 2.0"),
-        ],
-    },
-    GameType.wii_sports_resort: {
-            "name": "Wii Sports Resort",
-        "variants": [
-            (GameType.wii_sports_resort, "Normal", "WSR"),
-            (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
-            (GameType.wii_sports_resort_all_stamps_lite, "All Stamps Lite", "WSR Stamps Lite"),
+            (GameType.generic_bingo, "Normal", "Generic"),
+            (GameType.generic_bingo_deluxe, "Deluxe", "Generic Deluxe"),
         ],
     },
     GameType.halo_master_chief_collection: {
@@ -661,18 +571,18 @@ GAME_GROUPS = {
             (GameType.jak_and_daxter_new_game_plus, "NG+", "J&D: TPL NG+"),
         ],
     },
-    GameType.kingdom_hearts_final_mix: {
-        "name": "Kingdom Hearts Final Mix",
-        "variants": [
-            (GameType.kingdom_hearts_final_mix, "Normal", "KHFM"),
-            (GameType.kingdom_hearts_final_mix_randomizer, "Randomizer", "KHFM Rando"),
-        ],
-    },
     GameType.kingdom_hearts_2_final_mix: {
         "name": "Kingdom Hearts II Final Mix",
         "variants": [
             (GameType.kingdom_hearts_2_final_mix, "Original", "KH2FM"),
             (GameType.kingdom_hearts_2_final_mix_current, "Current", "KH2FM Current"),
+        ],
+    },
+    GameType.kingdom_hearts_final_mix: {
+        "name": "Kingdom Hearts Final Mix",
+        "variants": [
+            (GameType.kingdom_hearts_final_mix, "Normal", "KHFM"),
+            (GameType.kingdom_hearts_final_mix_randomizer, "Randomizer", "KHFM Rando"),
         ],
     },
     GameType.lego_batman: {
@@ -684,6 +594,18 @@ GAME_GROUPS = {
             (GameType.lego_batman_semi_random_level_numbers, "Semi-Random Level Numbers", "LEGO Batman Semi-Random Numbers"),
             (GameType.lego_batman_random_level_names, "Random Level Names", "LEGO Batman Random Names"),
             (GameType.lego_batman_random_level_numbers, "Random Level Numbers", "LEGO Batman Random Numbers"),
+        ],
+    },
+    GameType.links_awakening: {
+        "name": "Zelda: Link's Awakening",
+        "variants": [
+            (GameType.links_awakening, "Randomizer", "LADX Random"),
+        ],
+    },
+    GameType.links_awakening_switch: {
+        "name": "Zelda: Link's Awakening (Switch)",
+        "variants": [
+            (GameType.links_awakening_switch, "Normal", "LAS"),
         ],
     },
     GameType.lufia_2: {
@@ -700,24 +622,6 @@ GAME_GROUPS = {
             (GameType.luigis_mansion_all_rooms, "All Rooms", "LM All Rooms"),
         ],
     },
-    GameType.links_awakening: {
-        "name": "Zelda: Link's Awakening",
-        "variants": [
-            (GameType.links_awakening, "Randomizer", "LADX Random"),
-        ],
-    },
-    GameType.links_awakening: {
-        "name": "Zelda: Link's Awakening",
-        "variants": [
-            (GameType.links_awakening, "Randomizer", "LADX Random"),
-        ],
-    },
-    GameType.links_awakening_switch: {
-        "name": "Zelda: Link's Awakening (Switch)",
-        "variants": [
-            (GameType.links_awakening_switch, "Normal", "LAS"),
-        ],
-    },
     GameType.majoras_mask: {
         "name": "Zelda: Majora's Mask",
         "variants": [
@@ -732,19 +636,19 @@ GAME_GROUPS = {
             (GameType.mario_maker_2_2021, "2021", "Mario Maker 2 - 2021"),
         ],
     },
+    GameType.metroid_prime_2_randomizer_balanced: {
+        "name": "Metroid Prime 2: Echoes",
+        "variants": [
+            (GameType.metroid_prime_2_randomizer_balanced, "Randomizer Balanced", "MP2 Balanced"),
+            (GameType.metroid_prime_2_randomizer_chaos, "Randomizer Chaos", "MP2 Chaos"),
+        ],
+    },
     GameType.metroid_prime_randomizer_balanced: {
         "name": "Metroid Prime",
         "variants": [
             (GameType.metroid_prime_randomizer_balanced, "Randomizer Balanced", "MPR Balanced"),
             (GameType.metroid_prime_randomizer_chaos, "Randomizer Chaos", "MPR Chaos"),
         ],
-    },
-    GameType.metroid_prime_2_randomizer_balanced: {
-    "name": "Metroid Prime 2: Echoes",
-    "variants": [
-        (GameType.metroid_prime_2_randomizer_balanced, "Randomizer Balanced", "MP2 Balanced"),
-        (GameType.metroid_prime_2_randomizer_chaos, "Randomizer Chaos", "MP2 Chaos"),
-    ],
     },
     GameType.mgs_portable_ops_plus_training: {
         "name": "MGS: Portable Ops+",
@@ -766,6 +670,19 @@ GAME_GROUPS = {
             (GameType.monster_rancher_2, "Normal", "MR2"),
             (GameType.monster_rancher_2_rng_lite, "RNG Lite", "MR2 RNG Lite"),
             (GameType.monster_rancher_2_viewers, "Viewers", "MR2 Viewers"),
+        ],
+    },
+    GameType.ocarina_of_time: {
+        "name": "Zelda: Ocarina of Time",
+        "variants": [
+            (GameType.ocarina_of_time, "Normal", "Zelda: OoT"),
+            (GameType.ocarina_of_time_blackout, "Blackout", "OoT Blackout"),
+            (GameType.ocarina_of_time_short, "Short", "OoT Short"),
+            (GameType.ocarina_of_time_short_blackout, "Short Blackout", "OoT Short Blackout"),
+            (GameType.ocarina_of_time_item_randomizer, "Item Randomizer", "OoT IR"),
+            (GameType.ocarina_of_time_item_randomizer_blackout, "Item Randomizer Blackout", "OoT IR Blackout"),
+            (GameType.ocarina_of_time_item_randomizer_short, "Item Randomizer Short", "OoT IR Short"),
+            (GameType.ocarina_of_time_beta_quest, "Beta Quest", "OoT BQ"),
         ],
     },
     GameType.octopath_traveler: {
@@ -798,16 +715,56 @@ GAME_GROUPS = {
             (GameType.pikmin_2_all_areas_unlocked, "All Areas Unlocked", "Pikmin 2 AAU"),
         ],
     },
+    GameType.pokemon_crystal: {
+        "name": "Pokémon Crystal",
+        "variants": [
+            (GameType.pokemon_crystal, "Normal", "Poké Crystal"),
+            (GameType.pokemon_crystal_randomizer, "Current Randomizer", "Crystal Current"),
+            (GameType.pokemon_crystal_classic_randomizer, "Classic Randomizer", "Crystal Classic"),
+            (GameType.pokemon_crystal_randomizer_tournament, "2021 Summer Tournament Randomizer", "Crystal Tournament"),
+        ],
+    },
+    GameType.pokemon_emerald_randomizer: {
+        "name": "Pokémon Emerald",
+        "variants": [
+            (GameType.pokemon_emerald_randomizer, "Randomizer", "Emerald"),
+            (GameType.pokemon_emerald_old_randomizer, "Old Randomizer", "Emerald Old"),
+            (GameType.pokemon_emerald_old_randomizer_short, "Short Old Randomizer", "Emerald Old Short"),
+            (GameType.pokemon_emerald_vanilla, "Vanilla", "Emerald Vanilla"),
+        ],
+    },
     GameType.pokemon_heartgold_soulsilver: {
         "name": "Pokémon HeartGold/SoulSilver",
         "variants": [
             (GameType.pokemon_heartgold_soulsilver, "Randomizer", "Poké HG/SS"),
         ],
     },
+    GameType.pokemon_red_blue: {
+        "name": "Pokémon Red/Blue",
+        "variants": [
+            (GameType.pokemon_red_blue, "Normal", "Poké Red/Blue"),
+            (GameType.pokemon_red_blue_randomizer, "Randomizer", "Red/Blue Random"),
+        ],
+    },
+    GameType.resident_evil_hd_randomizer: {
+        "name": "Resident Evil: HD",
+        "variants": [
+            (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
+        ],
+    },
     GameType.runescape_3_clue_scroll: {
         "name": "Runescape 3",
         "variants": [
             (GameType.runescape_3_clue_scroll, "Clue Scroll", "RS3 Clue"),
+        ],
+    },
+    GameType.secret_of_mana: {
+        "name": "Secret of Mana",
+        "variants": [
+            (GameType.secret_of_mana, "Normal", "SoM"),
+            (GameType.secret_of_mana_german, "German", "SoM German"),
+            (GameType.secret_of_mana_short, "Short", "SoM Short"),
+            (GameType.secret_of_mana_short_german, "Short German", "SoM Short German"),
         ],
     },
     GameType.slime_rancher: {
@@ -817,11 +774,29 @@ GAME_GROUPS = {
             (GameType.slime_rancher_lockout, "Lockout", "Slime Rancher Lockout"),
         ],
     },
+    GameType.sonic_adventure_2: {
+        "name": "Sonic Adventure 2",
+        "variants": [
+            (GameType.sonic_adventure_2, "Normal", "SA2"),
+            (GameType.sonic_adventure_2_hero_story, "Hero Story", "SA2 Hero"),
+            (GameType.sonic_adventure_2_dark_story, "Dark Story", "SA2 Dark"),
+            (GameType.sonic_adventure_2_long, "Long", "SA2 Long"),
+            (GameType.sonic_adventure_2_nightmare, "Nightmare", "SA2 Nightmare"),
+        ],
+    },
     GameType.splatoon_2_octo_expansion: {
         "name": "Splatoon 2",
         "variants": [
             (GameType.splatoon_2_octo_expansion, "Octo Expansion", "Splatoon 2: OE"),
             (GameType.splatoon_2_hero_mode, "Hero Mode", "Splatoon 2: Hero Mode"),
+        ],
+    },
+    GameType.spyro_2: {
+        "name": "Spyro 2: Ripto's Rage",
+        "variants": [
+            (GameType.spyro_2, "3.1", "Spyro 2 - 3.1"),
+            (GameType.spyro_2_4_x, "4.1", "Spyro 2 - 4.1"),
+            (GameType.spyro_2_4_no_ds, "4.1 No Dragon Shores", "Spyro 2 - 4.1 No DS"),
         ],
     },
     GameType.stardew_valley: {
@@ -836,6 +811,16 @@ GAME_GROUPS = {
         "variants": [
             (GameType.super_mario_64, "Normal", "SM64"),
             (GameType.super_mario_64_randomizer_lockout, "Randomizer Lockout", "SM64 Randomizer"),
+        ],
+    },
+    GameType.super_mario_odyssey: {
+        "name": "Super Mario Odyssey",
+        "variants": [
+            (GameType.super_mario_odyssey, "Normal", "SMO"),
+            (GameType.super_mario_odyssey_short, "Short", "SMO Short"),
+            (GameType.super_mario_odyssey_long, "Long", "SMO Long"),
+            (GameType.super_mario_odyssey_all_kingdoms, "All Kingdoms", "SMO All Kingdoms"),
+            (GameType.super_mario_odyssey_all_kingdoms_post_game, "All Kingdoms + Post Game", "SMO AK + PG"),
         ],
     },
     GameType.super_mario_sunshine: {
@@ -873,12 +858,6 @@ GAME_GROUPS = {
             (GameType.super_smash_bros_brawl_basic, "Basic", "SSBB Basic"),
         ],
     },
-    GameType.resident_evil_hd_randomizer: {
-        "name": "Resident Evil: HD",
-        "variants": [
-            (GameType.resident_evil_hd_randomizer, "Randomizer", "REHD Random"),
-        ],
-    },
     GameType.terraria: {
         "name": "Terraria",
         "variants": [
@@ -894,10 +873,17 @@ GAME_GROUPS = {
             (GameType.the_witness_low, "Low%", "The Witness Low%"),
         ],
     },
-    GameType.wii_sports_series_all_sports: {
-        "name": "Wii Sports Series",
+    GameType.toy_story_2: {
+        "name": "Toy Story 2",
         "variants": [
-            (GameType.wii_sports_series_all_sports, "All Sports", "WSS All Sports")
+            (GameType.toy_story_2, "1.0", "Toy Story 2 - 1.0"),
+            (GameType.toy_story_2_version_2, "2.0", "Toy Story 2 - 2.0"),
+        ],
+    },
+    GameType.wii_party_global_trot: {
+        "name": "Wii Party",
+        "variants": [
+            (GameType.wii_party_global_trot, "Global Trot", "Wii Party GT"),
         ],
     },
     GameType.wii_sports_club_all_sports: {
@@ -906,6 +892,20 @@ GAME_GROUPS = {
             (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
             (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
             (GameType.wii_sports_club_all_sports_expert, "All Sports Expert", "WSC All Sports Expert"),
+        ],
+    },
+    GameType.wii_sports_resort: {
+            "name": "Wii Sports Resort",
+        "variants": [
+            (GameType.wii_sports_resort, "Normal", "WSR"),
+            (GameType.wii_sports_resort_all_stamps, "All Stamps", "WSR All Stamps"),
+            (GameType.wii_sports_resort_all_stamps_lite, "All Stamps Lite", "WSR Stamps Lite"),
+        ],
+    },
+    GameType.wii_sports_series_all_sports: {
+        "name": "Wii Sports Series",
+        "variants": [
+            (GameType.wii_sports_series_all_sports, "All Sports", "WSS All Sports")
         ],
     },
     GameType.world_of_warcraft: {
@@ -932,12 +932,6 @@ GAME_GROUPS = {
             (GameType.yugioh_forbidden_memories_alternate, "Type B", "YGO FM (Type B)"),
         ],
     },
-    GameType.wii_party_global_trot: {
-        "name": "Wii Party",
-        "variants": [
-            (GameType.wii_party_global_trot, "Global Trot", "Wii Party GT"),
-        ],
-    },
     GameType.zelda_botw: {
         "name": "Zelda: Breath of the Wild",
         "variants": [
@@ -959,6 +953,8 @@ GAME_GROUPS = {
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
         ],
     },
+}
+SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
     **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
@@ -975,6 +971,7 @@ GAME_GROUPS = {
     **singleton_group(GameType.celeste_classic_mods, "Celeste Classic", "Celeste Classic Mods", "Mods"),
     **singleton_group(GameType.chess_dot_com, "Chess.com", "Chess.com"),
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
+    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
@@ -991,15 +988,15 @@ GAME_GROUPS = {
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
+    **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
     **singleton_group(GameType.dont_starve_together, "Don't Starve Together", "Don't Starve Together"),
     **singleton_group(GameType.doodle_champion_island_games_begin, "Doodle Champion Island Games Begin!", "Doodle Champion Island Games Begin!"),
+    **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
-    **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
-    **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
-    **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
+    **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
@@ -1021,8 +1018,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
             "LEGO SW: TCS DS"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
-    **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.luigis_mansion_3, "Luigi's Mansion 3", "LM 3"),
+    **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
@@ -1053,8 +1050,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
-    **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
+    **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
@@ -1101,8 +1098,8 @@ GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
-    **singleton_group(GameType.civilization_v, "Civilization V", "Civ V"),
 }
+GAME_GROUPS = {**MANUAL_GAME_GROUPS, **SINGLETON_GAME_GROUPS}
 
 GAME_TYPE_GROUPS = {}
 GAME_TYPE_GROUP_NAMES = {}
