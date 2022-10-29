@@ -5,7 +5,7 @@ var bingoList = [
         "name": "Kill a Slime"
     },
     {
-        "name": "Full set of Chainmail Armuor"
+        "name": "Full set of Chainmail Armour"
     },
     {
         "name": "Grow a Pumpkin"
