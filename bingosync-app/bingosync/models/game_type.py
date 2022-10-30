@@ -344,6 +344,7 @@ class GameType(Enum):
     robot_64 = 340
     cod_black_ops_zombies = 341
     gta_v = 342
+    lego_city_undercover = 343
 
     def __str__(self):
         return self.short_name
@@ -1027,6 +1028,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.kotor, "Star Wars: Knights of the Old Republic", "KotOR"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
+    **singleton_group(GameType.lego_city_undercover, "LEGO City Undercover", "LEGO City Undercover"),
     **singleton_group(GameType.lego_pirates_of_the_caribbean, "LEGO Pirates of the Caribbean", "LEGO PotC"),
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
