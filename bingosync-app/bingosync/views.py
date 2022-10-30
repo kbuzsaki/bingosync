@@ -22,8 +22,6 @@ from bingosync.publish import publish_goal_event, publish_chat_event, publish_co
 from bingosync.publish import publish_connection_event, publish_new_card_event
 from bingosync.util import generate_encoded_uuid
 
-from crispy_forms.layout import Layout, Field
-
 logger = logging.getLogger(__name__)
 
 def rooms(request):
@@ -67,30 +65,13 @@ def room_view(request, encoded_room_uuid):
     else:
         try:
             room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
-            initial_values = {
-                "game_type": room.current_game.game_type.group.value,
-                "variant_type": room.current_game.game_type.value,
-                "lockout_mode": room.current_game.lockout_mode.value,
-                "hide_card": room.hide_card,
-            }
-            new_card_form = RoomForm(initial=initial_values)
-            new_card_form.helper.layout = Layout(
-                    "game_type",
-                    "variant_type",
-                    "custom_json",
-                    "lockout_mode",
-                    "seed",
-                    "hide_card",
-            )
-            new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
-            new_card_form.helper['custom_json'].wrap(Field, wrapper_class='hidden')
             player = _get_session_player(request.session, room)
             params = {
                 "room": room,
                 "game": room.current_game,
                 "player": player,
                 "sockets_url": SOCKETS_URL,
-                "new_card_form": new_card_form,
+                "new_card_form": RoomForm.new_card_form(room),
                 "temporary_socket_key": _create_temporary_socket_key(player)
             }
             return render(request, "bingosync/bingosync.html", params)

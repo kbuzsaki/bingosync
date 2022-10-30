@@ -13,6 +13,7 @@ from bingosync.widgets import GroupedSelect
 
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Field
+from crispy_forms.layout import Layout
 
 
 logger = logging.getLogger(__name__)
@@ -55,6 +56,26 @@ class RoomForm(forms.Form):
         # variant and custom_json hidden by default
         self.helper['variant_type'].wrap(Field, wrapper_class='hidden')
         self.helper['custom_json'].wrap(Field, wrapper_class='hidden')
+
+    @staticmethod
+    def new_card_form(room):
+        new_card_form = RoomForm(initial={
+            "game_type": room.current_game.game_type.group.value,
+            "variant_type": room.current_game.game_type.value,
+            "lockout_mode": room.current_game.lockout_mode.value,
+            "hide_card": room.hide_card,
+        })
+        new_card_form.helper.layout = Layout(
+                "game_type",
+                "variant_type",
+                "custom_json",
+                "lockout_mode",
+                "seed",
+                "hide_card",
+        )
+        new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
+        new_card_form.helper['custom_json'].wrap(Field, wrapper_class='hidden')
+        return new_card_form
 
     def clean(self):
         cleaned_data = super(RoomForm, self).clean()
