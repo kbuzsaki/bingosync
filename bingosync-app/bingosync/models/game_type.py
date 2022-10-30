@@ -339,6 +339,7 @@ class GameType(Enum):
     azure_dreams_ps1 = 335
     monkey_island_1_3 = 336
     no_mans_sky = 337
+    pokemon_crystal_clear = 338
 
     def __str__(self):
         return self.short_name
@@ -1055,6 +1056,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
+    **singleton_group(GameType.pokemon_crystal_clear, "Pokémon Crystal Clear,", "Poké CC"),
     **singleton_group(GameType.pokemon_legends_arceus, "Pokémon Legends: Arceus"),
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
