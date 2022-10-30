@@ -345,6 +345,7 @@ class GameType(Enum):
     cod_black_ops_zombies = 341
     gta_v = 342
     lego_city_undercover = 343
+    super_mario_rpg_randomizer = 344
 
     def __str__(self):
         return self.short_name
@@ -1102,6 +1103,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
+    **singleton_group(GameType.super_mario_rpg_randomizer, "Super Mario RPG", "SMRPG Rando", "Randomizer"),
     **singleton_group(GameType.super_meat_boy, "Super Meat Boy", "Super Meat Boy"),
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
