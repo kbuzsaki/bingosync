@@ -343,6 +343,7 @@ class GameType(Enum):
     disneyland_adventures = 339
     robot_64 = 340
     cod_black_ops_zombies = 341
+    gta_v = 342
 
     def __str__(self):
         return self.short_name
@@ -1012,6 +1013,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
+    **singleton_group(GameType.gta_v, "Grand Theft Auto V", "GTA V"),
     **singleton_group(GameType.hades, "Hades", "Hades"),
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
