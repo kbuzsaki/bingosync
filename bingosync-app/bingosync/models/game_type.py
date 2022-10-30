@@ -341,6 +341,7 @@ class GameType(Enum):
     no_mans_sky = 337
     pokemon_crystal_clear = 338
     disneyland_adventures = 339
+    robot_64 = 340
 
     def __str__(self):
         return self.short_name
@@ -1076,6 +1077,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.reventure, "Reventure", "Reventure"),
     **singleton_group(GameType.riven, "Riven: The Sequel to Myst", "Riven"),
     **singleton_group(GameType.road_trip_adventure, "Road Trip Adventure", "Road Trip Adv."),
+    **singleton_group(GameType.robot_64, "Robot 64", "Robot 64"),
     **singleton_group(GameType.saga_frontier, "SaGa Frontier (PS1)", "SaGa Frontier (PS1)"),
     **singleton_group(GameType.salt_and_sanctuary, "Salt and Sanctuary", "Salt and Sanctuary"),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
