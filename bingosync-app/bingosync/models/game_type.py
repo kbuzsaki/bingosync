@@ -337,6 +337,7 @@ class GameType(Enum):
     sos_poot_all_items = 333
     metroid_fusion_rando = 334
     azure_dreams_ps1 = 335
+    monkey_island_1_3 = 336
 
     def __str__(self):
         return self.short_name
@@ -1034,6 +1035,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Metroid Fusion Rando", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.monkey_island_1_3, "Monkey Island (1-3)", "MI (1-3)"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
