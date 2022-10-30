@@ -342,6 +342,7 @@ class GameType(Enum):
     pokemon_crystal_clear = 338
     disneyland_adventures = 339
     robot_64 = 340
+    cod_black_ops_zombies = 341
 
     def __str__(self):
         return self.short_name
@@ -982,6 +983,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.chibi_robo, "Chibi-Robo! Plug Into Adventure", "Chibi-Robo!"),
     **singleton_group(GameType.civilization_v, "Civilization V", "Civ V"),
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
+    **singleton_group(GameType.cod_black_ops_zombies, "Call of Duty: Black Ops Zombies Saga", "CoD Zombies"),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
     **singleton_group(GameType.crash_3, "Crash Bandicoot 3; Warped", "Crash 3"),
