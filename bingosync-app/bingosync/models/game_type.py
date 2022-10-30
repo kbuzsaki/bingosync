@@ -340,6 +340,7 @@ class GameType(Enum):
     monkey_island_1_3 = 336
     no_mans_sky = 337
     pokemon_crystal_clear = 338
+    disneyland_adventures = 339
 
     def __str__(self):
         return self.short_name
@@ -993,6 +994,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
+    **singleton_group(GameType.disneyland_adventures, "Disneyland Adventures", "Disneyland Adventures"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
     **singleton_group(GameType.donkey_kong_64, "Donkey Kong 64", "DK64"),
