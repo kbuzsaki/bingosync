@@ -72,7 +72,8 @@ def room_view(request, encoded_room_uuid):
                 "player": player,
                 "sockets_url": SOCKETS_URL,
                 "new_card_form": RoomForm.new_card_form(room),
-                "temporary_socket_key": _create_temporary_socket_key(player)
+                "temporary_socket_key": _create_temporary_socket_key(player),
+                "is_popout": False,
             }
             return render(request, "bingosync/bingosync.html", params)
         except NotAuthenticatedError:
@@ -86,6 +87,24 @@ def _join_room(request, join_form, room):
         "encoded_room_uuid": room.encoded_uuid,
     }
     return render(request, "bingosync/join_room.html", params)
+
+def popout_board(request, encoded_room_uuid):
+    try:
+        room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+        player = _get_session_player(request.session, room)
+        params = {
+            "room": room,
+            "game": room.current_game,
+            "player": player,
+            "sockets_url": SOCKETS_URL,
+            "temporary_socket_key": _create_temporary_socket_key(player),
+            "is_popout": True,
+        }
+        return render(request, "bingosync/popout_board.html", params)
+    except NotAuthenticatedError:
+        join_form = JoinRoomForm.for_room(room)
+        return _join_room(request, join_form, room)
+
 
 def room_board(request, encoded_room_uuid):
     room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)

@@ -104,13 +104,15 @@ var Board = (function(){
         setSquareColors(this.$square, json["colors"]);
     };
 
-    var Board = function($board, playerJson, colorChooser, getBoardUrl, selectGoalUrl) {
+    var Board = function($board, playerJson, colorChooser, getBoardUrl, selectGoalUrl, popoutBoardUrl) {
         this.$board = $board;
         this.$squares = $board.find(".square");
+        this.$boardPopout = $board.find(".board-popout-button");
         this.isSpectator = playerJson.is_spectator;
         this.colorChooser = colorChooser;
         this.getBoardUrl = getBoardUrl;
         this.selectGoalUrl = selectGoalUrl;
+        this.popoutBoardUrl = popoutBoardUrl;
         this.squares = [];
         for (var i = 0; i < 25; i++) {
             var $square = $board.find("#slot" + (i + 1));
@@ -146,6 +148,10 @@ var Board = (function(){
             e.preventDefault();
             $(this).children(".starred").toggleClass("hidden");
             return false;
+        });
+
+        this.$boardPopout.on("click", (e) => {
+            window.open(this.popoutBoardUrl, "popUpWindow", "width=556,height=543");
         });
     };
 

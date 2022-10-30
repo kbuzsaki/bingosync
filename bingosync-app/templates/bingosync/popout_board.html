@@ -1,0 +1,38 @@
+{% extends "bingosync/base.html" %}
+{% load staticfiles %}
+{% load app_filters %}
+
+<!-- bingosync.html doesn't use the same layout conventiona s the rest of the
+     site because the main layout flexboxes screw with the fill-parent based
+     layout that the chat and sidebar use
+ -->
+{% block page_body %}
+<div class="fill-parent" style="text-align: center">
+    <div class="board-container{{ room.hide_card|yesno:" hidden-card," }}">
+        {% include 'bingosync/board.html' %}
+        <div class="board-cover">
+            <div class="board-cover-text unselectable">
+                Click to Reveal
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden">
+    {% include 'bingosync/color_chooser.html' %}
+    {% include 'bingosync/chat_panel.html' %}
+    {% include 'bingosync/players_panel.html' %}
+    {% include 'bingosync/room_settings_panel.html' %}
+    {% include 'bingosync/chat_settings_panel.html' %}
+</div>
+<script src="{% static "bingosync/room/util.js" %}"></script>
+<script src="{% static "bingosync/room/color_chooser.js" %}"></script>
+<script src="{% static "bingosync/room/board.js" %}"></script>
+<script src="{% static "bingosync/room/board_cover.js" %}"></script>
+<script src="{% static "bingosync/room/players_panel.js" %}"></script>
+<script src="{% static "bingosync/room/room_settings_panel.js" %}"></script>
+<script src="{% static "bingosync/room/chat_panel.js" %}"></script>
+<script src="{% static "bingosync/room/chat_socket.js" %}"></script>
+<script src="{% static "bingosync/bingosync.js" %}"></script>
+{% include 'bingosync/bingosync_script.html' %}
+{% endblock %}
+

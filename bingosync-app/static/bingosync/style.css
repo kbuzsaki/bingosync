@@ -322,8 +322,8 @@
     margin-left: 31px;
 
     /* cover the board */
-    width: calc(100% - 31px);
-    height: calc(100% - 61px);
+    width: 524px;
+    height: 475px;
     background: #101821;
 
     /* helps align text */
@@ -348,6 +348,14 @@
 /* align text */
 .board-cover-text {
     align-self: center;
+}
+
+.spacer {
+    opacity: 0;
+}
+
+/* TODO: this doesn't work because #bingo is higher priority, fix that */
+.board-popout-square {
 }
 
 .goalcounter {

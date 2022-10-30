@@ -49,5 +49,14 @@
     </tr>
     <tr>
         <td class="unselectable popout" id="bltr">BL‑TR</td>
+{% if not is_popout %}
+        <td class="unselectable spacer"></td>
+        <td class="unselectable spacer"></td>
+        <td class="unselectable spacer"></td>
+        <td class="unselectable spacer"></td>
+        <td class="unselectable board-popout-square" style="background: none; border: none;">
+            <span class="board-popout-button btn btn-default">Popout</span>
+        </td>
+{% endif %}
     </tr>
 </table>

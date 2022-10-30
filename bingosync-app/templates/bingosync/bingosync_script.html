@@ -13,13 +13,14 @@
         var colorSelectedUrl = "{% url 'select_color' %}";
         var socketsUrl = "{{ sockets_url }}/broadcast";
         var goalSelectedUrl = "{% url 'goal_selected' %}";
+        var popoutBoardUrl = "{% url 'popout_board' room.encoded_uuid %}";
         var boardRevealedUrl = "{% url 'board_revealed' %}";
         var roomSettingsUrl = "{% url 'room_settings' room.encoded_uuid %}";
         var temporarySocketKey = "{{ temporary_socket_key }}";
 
         // Construct all of the UI components
         var colorChooser = new ColorChooser($("#color-chooser"), player, colorSelectedUrl);
-        var board = new Board($("#bingo"), player, colorChooser, boardUrl, goalSelectedUrl);
+        var board = new Board($("#bingo"), player, colorChooser, boardUrl, goalSelectedUrl, popoutBoardUrl);
         var boardCover = new BoardCover($(".board-container"), ROOM_SETTINGS.hide_card, boardRevealedUrl);
         var playersPanel = new PlayersPanel($("#players-panel"));
         var roomSettingsPanel = new RoomSettingsPanel($("#room-settings-container"), roomSettingsUrl);
