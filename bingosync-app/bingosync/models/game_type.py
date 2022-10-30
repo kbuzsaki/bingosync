@@ -338,6 +338,7 @@ class GameType(Enum):
     metroid_fusion_rando = 334
     azure_dreams_ps1 = 335
     monkey_island_1_3 = 336
+    no_mans_sky = 337
 
     def __str__(self):
         return self.short_name
@@ -1046,6 +1047,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
+    **singleton_group(GameType.no_mans_sky, "No Man's Sky", "No Man's Sky"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
     **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
