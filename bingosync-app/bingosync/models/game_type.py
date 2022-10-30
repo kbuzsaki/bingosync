@@ -347,6 +347,7 @@ class GameType(Enum):
     lego_city_undercover = 343
     super_mario_rpg_randomizer = 344
     oceanhorn_2 = 345
+    animal_crossing_new_horizons = 346
 
     def __str__(self):
         return self.short_name
@@ -971,6 +972,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
     **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
+    **singleton_group(GameType.animal_crossing_new_horizons, "Animal Crossing: New Horizons", "ACNH"),
     **singleton_group(GameType.around_the_clock_at_bikini_bottom, "Around the Clock at Bikini Bottom", "Around the Clock"),
     **singleton_group(GameType.azure_dreams_ps1, "Azure Dreams (PS1)", "Azure Dreams (PS1)"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
