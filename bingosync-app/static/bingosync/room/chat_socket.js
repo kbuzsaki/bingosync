@@ -1,10 +1,12 @@
 var ChatSocket = (function(){
     "use strict";
 
-    var ChatSocket = function(chatPanel, board, playersPanel, socketsUrl) {
+    var ChatSocket = function(chatPanel, board, playersPanel, colorChooser, player, socketsUrl) {
         this.chatPanel = chatPanel;
         this.board = board;
         this.playersPanel = playersPanel;
+        this.colorChooser = colorChooser;
+        this.player = player;
         this.socketsUrl = socketsUrl;
     };
 
@@ -41,6 +43,9 @@ var ChatSocket = (function(){
         else if(json["type"] === "color") {
             this.playersPanel.setPlayer(json["player"]);
             this.playersPanel.updateGoalCounters(this.board);
+            if (json["player"]["uuid"] === this.player["uuid"]) {
+                this.colorChooser.setChosenColor(json["player"]["color"]);
+            }
         }
         else if(json["type"] === "connection") {
             if(json["event_type"] === "connected" && !json["player"]["is_spectator"]) {
