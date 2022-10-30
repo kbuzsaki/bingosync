@@ -336,6 +336,7 @@ class GameType(Enum):
     hollow_knight_item_rando_jp = 332
     sos_poot_all_items = 333
     metroid_fusion_rando = 334
+    azure_dreams_ps1 = 335
 
     def __str__(self):
         return self.short_name
@@ -961,6 +962,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.a_bugs_life, "A Bug's Life", "Bug's Life"),
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.around_the_clock_at_bikini_bottom, "Around the Clock at Bikini Bottom", "Around the Clock"),
+    **singleton_group(GameType.azure_dreams_ps1, "Azure Dreams (PS1)", "Azure Dreams (PS1)"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
