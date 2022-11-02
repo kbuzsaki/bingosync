@@ -349,6 +349,7 @@ class GameType(Enum):
     oceanhorn_2 = 345
     animal_crossing_new_horizons = 346
     threads_of_fate = 347
+    counter_strike_global_offensive = 348
 
     def __str__(self):
         return self.short_name
@@ -992,6 +993,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.club_penguin, "Club Penguin", "Club Peng."),
     **singleton_group(GameType.cod_black_ops_zombies, "Call of Duty: Black Ops Zombies Saga", "CoD Zombies"),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
+    **singleton_group(GameType.counter_strike_global_offensive, "Counter-Strike: Global Offensive", "CS: GO"),
     **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
     **singleton_group(GameType.crash_3, "Crash Bandicoot 3; Warped", "Crash 3"),
     **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
