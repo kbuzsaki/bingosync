@@ -7,8 +7,8 @@ when speedrunning games.
 
 For more information on speedrunning and bingo, you can read:
   - [the bingosync about page](http://bingosync.com/about)
-  - [the speedrunslive faq](http://www.speedrunslive.com/faq/)
-  - [the about section of an SRL bingo card](http://www.speedrunslive.com/tools/oot-bingo/)
+  - [the speedrunslive faq](https://www.speedrunslive.com/rules-faq/faq)
+  - [the about section of an SRL bingo card](https://www.speedrunslive.com/tools/bingo/oot)
 
 #### Fun Implementation Details! :D
 
