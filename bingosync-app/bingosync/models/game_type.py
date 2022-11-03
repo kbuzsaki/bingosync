@@ -350,6 +350,16 @@ class GameType(Enum):
     animal_crossing_new_horizons = 346
     threads_of_fate = 347
     counter_strike_global_offensive = 348
+    hitman_3_paris = 349
+    hitman_3_sapienza = 350
+    hitman_3_hokkaido = 351
+    hitman_3_miami = 352
+    hitman_3_santa_fortuna = 353
+    hitman_3_whittleton_creek = 354
+    hitman_3_berlin = 355
+    hitman_3_chongqing = 356
+    hitman_3_mendoza = 357
+
 
     def __str__(self):
         return self.short_name
@@ -548,6 +558,20 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.halo_master_chief_collection, "Normal", "Halo MCC"),
             (GameType.halo_master_chief_collection_synergy, "Synergy", "Halo MCC Synergy"),
+        ],
+    },
+    GameType.hitman_3_paris: {
+        "name": "Hitman 3",
+        "variants": [
+            (GameType.hitman_3_paris "Paris", "Hitman 3 Paris"),
+            (GameType.hitman_3_sapienza, "Sapienza", "Hitman 3 Sapienza"),
+            (GameType.hitman_3_hokkaido, "Hokkaido", "Hitman 3 Hokkaido"),
+            (GameType.hitman_3_miami, "Miami", "Hitman 3 Miami"),
+            (GameType.hitman_3_santa_fortuna, "Santa Fortuna", "Hitman 3 Santa Fortuna"),
+            (GameType.hitman_3_whittleton_creek, "Whittleton Creek", "Hitman 3 Whittleton Creek"),
+            (GameType.hitman_3_berlin, "Berlin", "Hitman 3 Berlin"),
+            (GameType.hitman_3_chongqing, "Chongqing", "Hitman 3 Chongqing"),
+            (GameType.hitman_3_mendoza, "Mendoza", "Hitman 3 Mendoza"),
         ],
     },
     GameType.hollow_knight: {
