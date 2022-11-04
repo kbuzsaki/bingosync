@@ -7,7 +7,7 @@ bingoList[1] = [
 		types: ['free', 'missiles']
 	},
 	{
-		name: "Visit frozen Ridley",
+		name: "Fully view frozen Ridley",
 		types: ['location', 'free']
 	},
 	{
@@ -19,11 +19,11 @@ bingoList[1] = [
 		types: ['energy', 'missiles']
 	},
 	{
-		name: "Charge Beam",
+		name: "Collect Charge Beam",
 		types: ['charge', 'beam']
 	},
 	{
-		name: "Super Missile",
+		name: "Collect Super Missile",
 		types: ['super']
 	},
 	{
@@ -49,7 +49,7 @@ bingoList[2] = [
 		types: ['free', 'powerbomb']
 	},
 	{
-		name: "Speed Booster",
+		name: "Collect Speed Booster",
 		types: ['speed']
 	},
 	{
@@ -65,23 +65,21 @@ bingoList[2] = [
 		types: ['item', 'free', 'missiles', 'energy', 'powerbomb']
 	},
 	{
-		name: "Wide Beam",
+		name: "Collect Wide Beam",
 		types: ['beam', 'wide']
 	},
 	{
-		name: "Diffusion Missiles",
+		name: "Collect Diffusion Missiles",
 		types: ['diffusion']
 	},
 	{
-		name: "Varia Suit",
+		name: "Collect Varia Suit",
 		types: ['suit', 'varia']
 	},
 	{
-		name: "Gravity Suit",
+		name: "Collect Gravity Suit",
 		types: ['suit', 'gravity']
 	},
-	
-	
 ];
 bingoList[3] = [
 	{
@@ -101,11 +99,11 @@ bingoList[3] = [
 		types: ['missiles', 'powerbomb']
 	},
 	{
-		name: "Plasma Beam",
+		name: "Collect Plasma Beam",
 		types: ['beam', 'plasma']
 	},
 	{
-		name: "Screw Attack",
+		name: "Collect Screw Attack",
 		types: ['screw']
 	},
 	{
@@ -120,9 +118,6 @@ bingoList[3] = [
 		name: "Use 7 Save Points",
 		types: ['location', 'save']
 	},
-	 
-	
-	
 ];
 bingoList[4] = [
 	{
@@ -142,28 +137,25 @@ bingoList[4] = [
 		types: ['locks', 'greendoor']
 	},
 {
-		name: "Ice Missiles",
+		name: "Collect Ice Missiles",
 		types: ['icemissile']
 	},
 	{
-		name: "Hi-Jump/Jumpball",
+		name: "Collect Hi-Jump/Jumpball",
 		types: ['hijump']
 	},
 	{
-		name: "Space Jump",
+		name: "Collect Space Jump",
 		types: ['space']
 	},
 	{
-		name: "Bomb Data",
+		name: "Collect Bomb Data",
 		types: ['bomb']
 	},
 	{
-		name: "Power Bomb Data",
+		name: "Collect Power Bomb Data",
 		types: ['powerbomb']
 	},
-	
-	
-	
 ];
 bingoList[5] = [
 	{
@@ -171,7 +163,7 @@ bingoList[5] = [
 		types: ['boss', 'zazabi']
 	},
 	{
-		name: "Ice Beam",
+		name: "Collect Ice Beam",
 		types: ['icebeam', 'beam']
 	},
 	{
@@ -179,7 +171,7 @@ bingoList[5] = [
 		types: ['missiles', 'powerbomb']
 	},
 	{
-		name: "Wave Beam",
+		name: "Collect Wave Beam",
 		types: ['wave', 'beam']
 	},
 	{
@@ -311,7 +303,7 @@ bingoList[9] = [
 		types: ['boss', 'serris']
 	},
 	{
-		name: "Hi-Jump and Space Jump",
+		name: "Collect Hi-Jump and Space Jump",
 		types: ['hijump', 'space']
 	},
 	{
@@ -469,7 +461,10 @@ bingoList[14] = [
 		name: "Use every Save in Sector 5",
 		types: ['save']
 	},
-	
+	{
+		name: "Collect every movement system",
+		types: ['hijump', 'space', 'speed']
+	}
 ];
 bingoList[15] = [
 	{
@@ -501,7 +496,7 @@ bingoList[15] = [
 		types: ['finish', 'location']
 	},
 	{
-		name: "Finish at Auxiliary Power Nav Station",
+		name: "Visit Auxiliary Power Nav Station",
 		types: ['finish', 'location' 'yakuza']
 	},
 	{
@@ -553,8 +548,12 @@ bingoList[18] = [
 		types: ['boss', 'box2']
 	},
 	{
-		name: "Have 200 missiles",
-		types: ['missiles']
+		name: "Completely fill in any Sector map",
+		types: ['location']
+	},
+	{
+		name: "Completely fill in the Main Deck map",
+		types: ['location']
 	},
 	{
 		name: "Use every Sector 1 Save",
@@ -575,6 +574,10 @@ bingoList[19] = [
 		name: "Use Ridley-X save",
 		types: ['save', 'ridley']
 	},
+	{
+		name: "Visit every Sector Connector",
+		types: ['location']
+	}
 ];
 bingoList[20] = [
 	{
@@ -597,7 +600,7 @@ bingoList[20] = [
 bingoList[21] = [
 	{
 		name: "Have 200 missiles",
-		types: ['item', 'missiles']
+		types: ['missiles']
 	},
 	{
 		name: "Defeat BOTH B.O.X.",
@@ -611,11 +614,11 @@ bingoList[21] = [
 ];
 bingoList[22] = [
 	{
-		name: "Have 56 power bombs",
+		name: "Have 50 power bombs",
 		types: ['item', 'powerbomb']
 	},
 	{
-		name: "Defeat every both in Sector 1",
+		name: "Defeat every boss in Sector 1",
 		types: ['boss', 'chargecore', 'ridley']
 	},
 	{
