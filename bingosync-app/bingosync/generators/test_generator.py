@@ -5,6 +5,7 @@ import json
 import os
 import sys
 
+from bingosync.generators import GeneratorException
 from bingosync.models import GameType
 from bingosync.settings import GEN_TESTDATA_DIR
 
@@ -44,6 +45,16 @@ class GoldenDataTestCase(test.TestCase):
                             .format(game_type.name, seed, original_type.name, original_seed))
                 else:
                     data_map[golden_data] = game_type, seed
+
+
+class TimeoutTestCase(test.TestCase):
+
+    def test_eval_timeout(self):
+        try:
+            GameType.celeste.generator_instance().eval("(function() { for (var i = 0; true; i++) {} }())")
+            self.fail("Failed to time out!")
+        except GeneratorException as e:
+            pass
 
 
 def test_get_card(self, game_type):
