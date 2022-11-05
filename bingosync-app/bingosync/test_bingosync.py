@@ -2,15 +2,24 @@ from django import test
 
 import json
 
-from bingosync import models, forms
+from bingosync import models, forms, generators
 
 NO_ACTIVE_ROOMS_TEXT = "No active rooms right now"
 MAKE_ROOM_BUTTON = '<input type="submit" class="form-control" value="Make Room" />'
 JOIN_ROOM_BUTTON = '<input type="submit" class="form-control" value="Join Room" />'
 BOARD_CONTAINER_HTML = '<div class="board-container">'
 
+TEST_GAME_TYPE = models.GameType.celeste
+
 def filter_keys(d, keys):
     return dict((k, v) for k, v in d.items() if k in keys)
+
+def inject_eval_generator_exception(generator, message=""):
+    old_eval = generator.eval
+    def new_eval(*args, **kwargs):
+        generator.eval = old_eval
+        raise generators.GeneratorException(message)
+    generator.eval = new_eval
 
 class HomeTestCase(test.TestCase):
 
@@ -19,7 +28,7 @@ class HomeTestCase(test.TestCase):
             "room_name": "Test Room",
             "passphrase": "password",
             "nickname": "Bingoer",
-            "game_type": str(models.GameType.ocarina_of_time.value),
+            "game_type": str(TEST_GAME_TYPE.value),
             "lockout_mode": str(models.LockoutMode.lockout.value),
         })
 
@@ -50,6 +59,27 @@ class HomeTestCase(test.TestCase):
         self.assertContains(new_resp, "Test Room")
         self.assertNotContains(new_resp, BOARD_CONTAINER_HTML)
         self.assertContains(new_resp, JOIN_ROOM_BUTTON, html=True)
+
+    def test_home_create_room_timeout(self):
+        inject_eval_generator_exception(TEST_GAME_TYPE.generator_instance(), "some error message")
+
+        self.assertTrue(self.room_form.is_valid())
+        # create room with expected generation error
+        create_resp = self.client.post("/", self.room_form.data, follow=True)
+        # assert that the old form values and error message are present
+        self.assertContains(create_resp, "Test Room")
+        self.assertContains(create_resp, "some error message")
+        # assert that we're back on the create room page
+        self.assertContains(create_resp, MAKE_ROOM_BUTTON, html=True)
+        self.assertNotContains(create_resp, BOARD_CONTAINER_HTML)
+        self.assertNotContains(create_resp, JOIN_ROOM_BUTTON)
+
+        self.assertTrue(self.room_form.is_valid())
+        # try again and succeed
+        create_resp = self.client.post("/", self.room_form.data, follow=True)
+        self.assertContains(create_resp, "Test Room")
+        self.assertContains(create_resp, BOARD_CONTAINER_HTML)
+        self.assertNotContains(create_resp, JOIN_ROOM_BUTTON)
 
     def test_home_one_room(self):
         # test home page when one room already exists

@@ -12,7 +12,7 @@ import random
 import logging
 
 from bingosync.settings import SOCKETS_URL, SOCKETS_PUBLISH_URL, IS_PROD
-from bingosync.generators import InvalidBoardException
+from bingosync.generators import InvalidBoardException, GeneratorException
 from bingosync.forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from bingosync.models.colors import Color
 from bingosync.models.game_type import GameType, ALL_VARIANTS
@@ -30,10 +30,13 @@ def rooms(request):
     if request.method == "POST":
         form = RoomForm(request.POST)
         if form.is_valid():
-            room = form.create_room()
-            creator = room.creator
-            _save_session_player(request.session, creator)
-            return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
+            try:
+                room = form.create_room()
+                creator = room.creator
+                _save_session_player(request.session, creator)
+                return redirect("room_view", encoded_room_uuid=room.encoded_uuid)
+            except GeneratorException as e:
+                form.add_error(None, str(e))
         else:
             logger.warning("RoomForm errors: %r, custom_json was: %r", form.errors,
                     form.data.get("custom_json", "")[:2000])
@@ -146,7 +149,10 @@ def new_card(request):
     if not seed:
         seed = str(random.randint(1, 1000000)) if game_type.uses_seed else "0"
 
-    board_json = game_type.generator_instance().get_card(seed, custom_board)
+    try:
+        board_json = game_type.generator_instance().get_card(seed, custom_board)
+    except GeneratorException as e:
+        return HttpResponseBadRequest(str(e))
 
     with transaction.atomic():
         game = Game.from_board(board_json, room=room, game_type_value=game_type.value, lockout_mode_value=lockout_mode.value, seed=seed)
