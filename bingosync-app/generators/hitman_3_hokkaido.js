@@ -70,5 +70,5 @@ var bingoList = [
     {"name": "Blow up Yuki's Gas Heater Lamp"},
     {"name": "Poison the Heli Pilot's Pill Stash"},
     {"name": "Serve someone poisoned Sushi"},
-    {"name": "Place the Katana on the Yoga Platform"},
+    {"name": "Place the Katana on the Yoga Platform"}
 ];
