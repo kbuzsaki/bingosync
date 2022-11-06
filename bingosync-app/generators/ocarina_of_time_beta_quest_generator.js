@@ -23,6 +23,7 @@ bingoList[2] = [
 { name: "Bottled Poe", types: ["BottleContent"] },
 { name: "Red Potion", types: ["BottleContent"] },
 { name: "Adult's Wallet", types: ["SkullCount","Wallet"] },
+{ name: "Plant a bean in Gerudo Valley", types: ["Beans"] },
 ];
 
 bingoList[3] = [
@@ -47,6 +48,7 @@ bingoList[4] = [
 { name: "Giant's Knife", types: ["SoloSword"] },
 { name: "3 Maps", types: ["Maps"] },
 { name: "3 Tunics", types: ["Tunics"] },
+{ name: "Ganon's Castle Boss Key", types: ["ContentGT"] },
 ];
 
 bingoList[5] = [
@@ -62,7 +64,6 @@ bingoList[5] = [
 ];
 
 bingoList[6] = [
-{ name: "3 Unused Keys in Gerudo Training Grounds", types: ["ContentGTG"] },
 { name: "4 Songs", types: ["Songs","SongSaria","SongEpona","SongMinuet","SongBolero","SongSerenade","SongRequiem","SongPrelude"] },
 { name: "30 Deku Nuts", types: ["CapacityNuts"] },
 { name: "All 3 Kokiri Forest Area Skulltulas", types: [] },
@@ -71,6 +72,7 @@ bingoList[6] = [
 { name: "Map & Compass in Dodongo's Cavern", types: ["ContentDC"] },
 { name: "Map & Compass in Water Temple", types: ["ContentWater"] },
 { name: "Plant 3 Magic Beans", types: ["Beans"] },
+{ name: "Obtain one Hyrule Field HP", types: [] },
 ];
 
 bingoList[7] = [
@@ -84,6 +86,7 @@ bingoList[7] = [
 { name: "Clear 4 Silver Rupee Rooms", types: ["RupeesRoom"] },
 { name: "Desert Colossus HP", types: [] },
 { name: "7 Kakariko Area Skulltulas", types: ["SkullKakariko"] },
+{ name: "Defeat 5 Gibdos", types: [] },
 ];
 
 bingoList[8] = [
@@ -119,6 +122,7 @@ bingoList[9] = [
 { name: "Nayru's Love", types: [] },
 { name: "Beat 3 Dungeons", types: ["BeatDeku","BeatDC","BeatJabu","BeatForest","BeatFire","BeatWater","BeatShadow","BeatSpirit"] },
 { name: "Plant 4 Magic Beans", types: ["Beans"] },
+{ name: "Open Upper Gerudo Fortress Chest", types: [] },
 ];
 
 bingoList[10] = [
@@ -135,10 +139,10 @@ bingoList[10] = [
 { name: "Double Magic", types: [] },
 { name: "Get to the End of Light Trial", types: [] },
 { name: "4 Death Mountain Area Skulltulas", types: ["SkullDMT"] },
+{ name: "Defeat 6 different Stalfos", types: ["Stalfos"] },
 ];
 
 bingoList[11] = [
-{ name: "5 Unused Keys in Gerudo Training Grounds", types: ["ContentGTG"] },
 { name: "6 Songs", types: ["Songs","SongSaria","SongEpona","SongMinuet","SongBolero","SongSerenade","SongRequiem","SongPrelude"] },
 { name: "Blue Gauntlets", types: ["Strength"] },
 { name: "Defeat Phantom Ganon", types: ["BeatForest"] },
@@ -148,6 +152,8 @@ bingoList[11] = [
 { name: "Spirit Temple Boss Key", types: ["ContentSpirit","ArrowsLight"] },
 { name: "Skull Mask", types: ["SongSaria","TradeChild"] },
 { name: "Lower Final Platform in Spirit Temple", types: ["ContentSpirit"] },
+{ name: "Free 3 Carpenters", types: ["ContentTH"] },
+{ name: "Dispel 3 trial beams", types: [] },
 ];
 
 bingoList[12] = [
@@ -187,13 +193,14 @@ bingoList[14] = [
 { name: "All 4 Gerudo Valley Area Skulltulas", types: [] },
 { name: "Fairy Bow", types: ["ContentForest","Bow"] },
 { name: "Forest Temple Boss Key", types: ["ContentForest"] },
-{ name: "Gerudo's Card", types: [] },
+{ name: "Gerudo's Card", types: ["ContentTH"] },
 { name: "Milk", types: ["BottleContent","SongEpona"] },
 { name: "Get to the End of Fire Trial", types: [] },
 { name: "Map & Compass in Forest Temple", types: ["ContentForest"] },
 { name: "Beat the Sky Temple", types: ["CountIK"] },
 { name: "Defeat 3 Different White Wolfos", types: ["WhiteWolfos"] },
 { name: "Defeat Joelle (Red Poe) & Beth (Blue Poe)", types: ["ContentForest"] },
+{ name: "Open Ganon's Boss Door", types: ["ContentGT"] },
 ];
 
 bingoList[15] = [
@@ -209,6 +216,7 @@ bingoList[15] = [
 { name: "All 4 Adult Skulltulas in Zora's Domain Area", types: ["SkullDomain"] },
 { name: "Defeat 4 Different Iron Knuckles", types: ["CountIK"] },
 { name: "6 Zora's Domain Area Skulltulas", types: ["SkullDomain"] },
+{ name: "Open all 6 Ice Trap Chests", types: [] },
 ];
 
 bingoList[16] = [
@@ -245,11 +253,11 @@ bingoList[18] = [
 { name: "Longshot", types: ["ContentWater"] },
 { name: "Open 50 Rupee Chest in Wasteland", types: [] },
 { name: "All 8 Death Mountain Area Skulltulas", types: ["SkullDMT"] },
+{ name: "Defeat 10 different Stalfos", types: ["Stalfos"] },
 ];
 
 bingoList[19] = [
 { name: "6 Compasses", types: ["Compasses"] },
-{ name: "7 Different Unused Keys in Gerudo Training Grounds", types: ["ContentGTG"] },
 { name: "8 Songs", types: ["Songs"] },
 { name: "Both HPs in Lost Woods", types: ["SongSaria"] },
 { name: "Defeat Both Flare Dancers", types: ["ContentFire"] },
@@ -257,6 +265,8 @@ bingoList[19] = [
 { name: "Megaton Hammer", types: ["ContentFire","Hammer"] },
 { name: "Obtain All 8 Small Keys in Fire Temple", types: ["ContentFire"] },
 { name: "Open 4 Small Key Chests in Spirit Temple", types: ["ContentSpirit"] },
+{ name: "Both Hyrule Field HPs", types: [] },
+{ name: "Milk 4 Cows", types: ["BottleContent","SongEpona"] },
 ];
 
 bingoList[20] = [
@@ -279,6 +289,7 @@ bingoList[21] = [
 { name: "All 5 Skulltulas in Spirit Temple", types: [] },
 { name: "Get to the End of Water Trial", types: ["Hammer"] },
 { name: "Defeat 5 Different Iron Knuckles", types: ["CountIK"] },
+{ name: "Dispel the trials barrier (all 6 beams)", types: [] },
 ];
 
 bingoList[22] = [
@@ -298,6 +309,7 @@ bingoList[23] = [
 { name: "All 5 Lake Hylia Skulltulas", types: ["SkullHylia"] },
 { name: "Defeat Volvagia", types: ["BeatFire","Hammer"] },
 { name: "25 Different Skulltulas", types: ["SkullCount"] },
+{ name: "Defeat Ganondorf", types: ["ArrowsLight"] },
 ];
 
 bingoList[24] = [
