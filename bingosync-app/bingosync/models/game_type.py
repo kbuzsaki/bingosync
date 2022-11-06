@@ -359,6 +359,7 @@ class GameType(Enum):
     hitman_3_berlin = 355
     hitman_3_chongqing = 356
     hitman_3_mendoza = 357
+    horizon_zero_dawn_frozen_wilds = 358
 
 
     def __str__(self):
@@ -587,6 +588,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.hollow_knight_item_rando_tiebreakerless, "Item Randomizer - No Tiebreakers", "HK Item Rando Tiebreakerless"),
             (GameType.hollow_knight_item_rando_dab, "Item Randomizer - DAB", "HK Item Rando DAB"),
             (GameType.hollow_knight_cratthew, "Cratthew", "HK Cratthew"),
+        ],
+    },
+    GameType.horizon_zero_dawn: {
+        "name": "Horizon Zero Dawn",
+        "variants": [
+            (GameType.horizon_zero_dawn, "Normal", "HZD"),
+            (GameType.horizon_zero_dawn_frozen_wilds, "The Frozen Wilds", "HZD: TFW"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
@@ -1051,7 +1059,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
-    **singleton_group(GameType.horizon_zero_dawn, "Horizon Zero Dawn", "HZD"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
