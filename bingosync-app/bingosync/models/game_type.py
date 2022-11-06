@@ -563,7 +563,7 @@ MANUAL_GAME_GROUPS = {
     GameType.hitman_3_paris: {
         "name": "Hitman 3",
         "variants": [
-            (GameType.hitman_3_paris "Paris", "Hitman 3 Paris"),
+            (GameType.hitman_3_paris, "Paris", "Hitman 3 Paris"),
             (GameType.hitman_3_sapienza, "Sapienza", "Hitman 3 Sapienza"),
             (GameType.hitman_3_hokkaido, "Hokkaido", "Hitman 3 Hokkaido"),
             (GameType.hitman_3_miami, "Miami", "Hitman 3 Miami"),
