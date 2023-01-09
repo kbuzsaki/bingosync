@@ -72,6 +72,7 @@ def room_view(request, encoded_room_uuid):
                 "variant_type": room.current_game.game_type.value,
                 "lockout_mode": room.current_game.lockout_mode.value,
                 "hide_card": room.hide_card,
+                "size": room.current_game.size,
             }
             new_card_form = RoomForm(initial=initial_values)
             new_card_form.helper.layout = Layout(
@@ -80,6 +81,7 @@ def room_view(request, encoded_room_uuid):
                     "custom_json",
                     "lockout_mode",
                     "seed",
+                    "size",
                     "hide_card",
             )
             new_card_form.helper['variant_type'].wrap(Field, wrapper_class='hidden')
@@ -127,6 +129,7 @@ def new_card(request):
     lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
     hide_card = data["hide_card"]
     seed = data["seed"]
+    size = data['size']
     custom_json = data.get("custom_json", "")
 
     #create new game
@@ -147,10 +150,10 @@ def new_card(request):
         return HttpResponseBadRequest("Invalid board: " + str(e))
 
     if not seed:
-        seed = str(random.randint(1, 1000000)) if game_type.uses_seed else "0"
+        seed = "" if game_type.uses_seed else "0"
 
     try:
-        board_json = game_type.generator_instance().get_card(seed, custom_board)
+        seed, board_json = game_type.generator_instance().get_card(seed, custom_board, size)
     except GeneratorException as e:
         return HttpResponseBadRequest(str(e))
 
@@ -430,4 +433,3 @@ def parse_body_json_or_400(request, *, required_keys=[]):
             raise InvalidRequestJsonError("Request body \"" + str(data) + "\" missing key: '" + str(key) + "'")
 
     return data
-

@@ -59,14 +59,14 @@ class TimeoutTestCase(test.TestCase):
 
 def test_get_card(self, game_type):
     """ Tests whether the generator generates any valid card """
-    board_json = game_type.generator_instance().get_card(1)
+    _, board_json = game_type.generator_instance().get_card(1)
     self.assertEqual(len(board_json), 25)
     for i, el in enumerate(board_json):
         self.assertIn("name", el, "i: " + str(i) + ", el: " + repr(el))
 
 def test_card_correctness(self, game_type, seed):
     """ Tests whether the generator generates the correct card as compared to golden data """
-    board_json = game_type.generator_instance().get_card(seed)
+    _, board_json = game_type.generator_instance().get_card(seed)
     golden_json = get_golden_data(game_type, seed)
     msg = "game: " + game_type.name + ", seed: " + str(seed)
     self.assertListEqual(board_json, golden_json, msg=msg)

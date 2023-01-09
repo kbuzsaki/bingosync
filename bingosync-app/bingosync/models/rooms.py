@@ -6,6 +6,7 @@ from django.utils import timezone
 import datetime
 from uuid import uuid4
 from enum import Enum, unique
+import math
 
 from bingosync.models.game_type import GameType
 from bingosync.models.colors import Color, CompositeColor
@@ -149,6 +150,7 @@ LOCKOUT_MODE_NAMES = {
 class Game(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     seed = models.IntegerField()
+    size = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
     lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
@@ -158,6 +160,9 @@ class Game(models.Model):
 
     @staticmethod
     def from_board(board_json, *args, **kwargs):
+        size = int(math.sqrt(len(board_json)))
+        assert size * size == len(board_json)
+        kwargs['size'] = size
         with transaction.atomic():
             game = Game(*args, **kwargs)
             game.full_clean()
@@ -220,7 +225,7 @@ def validate_in_slot_range(slot):
 
 class Square(models.Model):
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
-    slot = models.IntegerField(choices=SLOT_CHOICES, validators=[validate_in_slot_range])
+    slot = models.IntegerField()
     goal = models.CharField(max_length=255)
     color_value = models.IntegerField("Color", default=CompositeColor.goal_default().value, choices=CompositeColor.goal_choices())
 

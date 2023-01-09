@@ -135,14 +135,10 @@ class CustomGenerator:
 
         raise Exception('Unrecognized custom game type: {}'.format(self.game_type))
 
-    def get_card(self, seed, custom_board):
+    def get_card(self, seed, custom_board=None, size=5):
         if self.game_type == GameType.custom:
-            return custom_board
+            return seed, custom_board
         elif self.game_type in (GameType.custom_randomized, GameType.custom_srl_v5, GameType.custom_isaac):
-            return BingoGenerator.instance(str(self.game_type.name)).get_card(seed, custom_board)
+            return BingoGenerator.instance(str(self.game_type.name)).get_card(seed, custom_board, size)
 
         raise Exception('Unrecognized custom game type: {}'.format(self.game_type))
-
-
-
-

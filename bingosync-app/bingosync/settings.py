@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -21,7 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 IS_PROD = False
 
-from bingosync.secret_settings import SECRET_KEY, ADMINS, SERVER_EMAIL, DB_USER
+SECRET_KEY = os.getenv("SECRET_KEY")
+ADMINS = os.getenv("ADMINS")
+SERVER_EMAIL = os.getenv("SERVER_EMAIL")
+DB_STRING = os.getenv("DB_STRING", 'sqlite:///db.sqlite')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not IS_PROD
@@ -55,7 +59,6 @@ MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -91,11 +94,7 @@ WSGI_APPLICATION = 'bingosync.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bingosync',
-        'USER': DB_USER,
-    }
+    'default': dj_database_url.parse(DB_STRING)
 }
 
 
@@ -207,7 +206,7 @@ else:
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+#STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 
 STATIC_URL = '/static/'
 

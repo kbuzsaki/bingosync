@@ -39,8 +39,10 @@ class RoomForm(forms.Form):
                            help_text="No other variants available", required=False)
     custom_json = forms.CharField(label="Board", widget=forms.Textarea(attrs={'rows': 6, 'placeholder': CUSTOM_JSON_PLACEHOLDER_TEXT}), required=False)
     lockout_mode = forms.ChoiceField(label="Mode", choices=LockoutMode.choices())
-    seed = forms.CharField(label="Seed", widget=forms.NumberInput(attrs={"min": 0, "max": 2147483647}),
+    seed = forms.CharField(label="Seed", widget=forms.NumberInput(attrs={"min": 0}),
                            help_text="Leave blank for a random seed", required=False)
+    size = forms.CharField(label="Board Size", widget=forms.NumberInput(attrs={"min": 1}),
+                           help_text="Leave blank for the generator's default size (usually 5)", required=False)
     is_spectator = forms.BooleanField(label="Create as Spectator", required=False)
     hide_card = forms.BooleanField(label="Hide Card Initially", required=False)
 
@@ -76,6 +78,8 @@ class RoomForm(forms.Form):
         except InvalidBoardException as e:
             raise forms.ValidationError(e)
 
+        return cleaned_data
+
     def create_room(self):
         room_name = self.cleaned_data["room_name"]
         passphrase = self.cleaned_data["passphrase"]
@@ -83,6 +87,7 @@ class RoomForm(forms.Form):
         game_type = GameType.for_value(int(self.cleaned_data["game_type"]))
         lockout_mode = LockoutMode.for_value(int(self.cleaned_data["lockout_mode"]))
         seed = self.cleaned_data["seed"]
+        size = self.cleaned_data["size"]
         custom_board = self.cleaned_data.get("custom_board", [])
         is_spectator = self.cleaned_data["is_spectator"]
         hide_card = self.cleaned_data["hide_card"]
@@ -92,9 +97,9 @@ class RoomForm(forms.Form):
         nickname = FilteredPattern.filter_string(nickname)
 
         if not seed:
-            seed = str(random.randint(1, 1000000)) if game_type.uses_seed else "0"
+            seed = "" if game_type.uses_seed else "0"
 
-        board_json = game_type.generator_instance().get_card(seed, custom_board)
+        seed, board_json = game_type.generator_instance().get_card(seed, custom_board)
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():

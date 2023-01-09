@@ -2,6 +2,7 @@ import json
 import logging
 import os
 import subprocess
+import re
 
 from bingosync.settings import GENERATOR_TIMEOUT_SECONDS
 
@@ -10,6 +11,8 @@ logger = logging.getLogger(__name__)
 
 GEN_DIR = "generators"
 GEN_NAME_TEMPL = "{}_generator.js"
+
+PREFERRED_SIZE_RE = re.compile(r'generator-preferred-size: (\d)+')
 
 
 def load_generator(game_name):
@@ -43,6 +46,9 @@ class BingoGenerator:
         self.game_name = game_name
         self.generator_js_bytes = generator_js.encode("utf-8")
 
+        match = PREFERRED_SIZE_RE.search(generator_js)
+        self.preferred_size = int(match.group(1)) if match else 5
+
     def validate_custom_json(self, custom_json):
         return []
 
@@ -59,8 +65,12 @@ class BingoGenerator:
 
         return json.loads(out.decode("utf-8"))
 
-    def get_card(self, seed=None, custom_board=None):
-        opts = {}
+    def get_card(self, seed=None, custom_board=None, size=5):
+        if isinstance(size, str) and not size:
+            size = self.preferred_size
+        size = int(size)
+
+        opts = {"size": size}
         if seed is not None:
             # the generator *actually* treats the seed as a string
             opts["seed"] = str(seed)
@@ -69,13 +79,15 @@ class BingoGenerator:
 
         js_command = "bingoGenerator(bingoList, " + json.dumps(opts) + ")"
         card = self.eval(js_command)
-        return process_card(card)
+        return process_card(card, size)
 
 
-def process_card(card):
+def process_card(card, size):
     # the regular SRL generator includes an extra null element at the front, so ignore that
-    if len(card) == 26:
+    seed = card['seed']
+    card = card['objectives']
+    if len(card) == (size * size) + 1:
         card = card[1:]
-    if len(card) != 25:
+    if len(card) != size * size:
         raise Exception("bad card length: " + str(len(card)) + ", card: " + str(card))
-    return [{"name": goal.get("name", "")} for goal in card]
+    return seed, [{"name": goal.get("name", "")} for goal in card]

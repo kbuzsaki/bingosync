@@ -1,3 +1,4 @@
+// presumably this is a seedrandom polyfill
 (function(j, i, g, m, k, n, o) {
     function q(b) {
         var e, f, a = this,
@@ -67,162 +68,296 @@
 })([], Math, 256, 6, 52);
 
 bingoGenerator = function(bingoList, opts) {
-    var LANG = opts.lang || 'name';
-    var MODE = opts.mode || "normal";
-    var cardType = "Normal";
-    var SEED = opts.seed || Math.ceil(999999 * Math.random()).toString();
-    var size = 5;
+    let size = opts.size || 5;
+    let seedCycle = size;
+    for (let i = 1; i <= size; i++) {
+        seedCycle *= i * i;
+    }
+    let seedCount = seedCycle;
+    if (seedCount < 1000000) {
+        seedCount = Math.ceil(1000000 / seedCycle) * seedCycle;
+    }
+    let lang = opts.lang || 'name';
+    let seed = opts.seed || Math.floor(seedCount * Math.random()).toString();
 
-    // The original SRL generators were written with 1-indexed difficuty tiers.
-    // If we get a goal list that is 0-indexed, hack it to be 1-indexed instead.
-    if (bingoList.length === 25) {
-        var originalBingoList = bingoList;
-        bingoList = [undefined].concat(originalBingoList);  // filler value for index 0
+    // The original SRL generators were written with 1-indexed difficulty tiers.
+    // If we get a goal list that is 1-indexed, hack it to be 0-indexed instead.
+    if (bingoList.length === (size * size) + 1) {
+        bingoList = bingoList.slice(1, (size * size) + 1);
+    }
+    // If we are doing a size for which the generator was not designed, shove it in anyway.
+    if (bingoList.length !== size * size) {
+        let concatenated = [];
+        for (let i = 0; i < bingoList.length; i++) {
+            if (typeof bingoList[i] !== 'undefined') {
+                for (let j = 0; j < bingoList[i].length; j++) {
+                    concatenated.push(bingoList[i][j]);
+                }
+            }
+        }
+        bingoList = [];
+        const perEach = Math.floor(concatenated.length / (size * size));
+        const remainder = concatenated.length % (size * size);
+        for (let i = 0; i < size * size; i++) {
+            bingoList.push([]);
+            for (let j = 0; j < perEach; j++) {
+                bingoList[i].push(concatenated.shift());
+            }
+            if (i < remainder) {
+                bingoList[i].push(concatenated.shift());
+            }
+        }
     }
 
-    if (true) {
-        Math.seedrandom(SEED);
-        var MAX_SEED = 999999;
+    Math.seedrandom(seed);
 
-        var lineCheckList = [];
-        if (size == 5) {
-            lineCheckList[1] = [1, 2, 3, 4, 5, 10, 15, 20, 6, 12, 18, 24];
-            lineCheckList[2] = [0, 2, 3, 4, 6, 11, 16, 21];
-            lineCheckList[3] = [0, 1, 3, 4, 7, 12, 17, 22];
-            lineCheckList[4] = [0, 1, 2, 4, 8, 13, 18, 23];
-            lineCheckList[5] = [0, 1, 2, 3, 8, 12, 16, 20, 9, 14, 19, 24];
-            lineCheckList[6] = [0, 10, 15, 20, 6, 7, 8, 9];
-            lineCheckList[7] = [0, 12, 18, 24, 5, 7, 8, 9, 1, 11, 16, 21];
-            lineCheckList[8] = [5, 6, 8, 9, 2, 12, 17, 22];
-            lineCheckList[9] = [4, 12, 16, 20, 9, 7, 6, 5, 3, 13, 18, 23];
-            lineCheckList[10] = [4, 14, 19, 24, 8, 7, 6, 5];
-            lineCheckList[11] = [0, 5, 15, 20, 11, 12, 13, 14];
-            lineCheckList[12] = [1, 6, 16, 21, 10, 12, 13, 14];
-            lineCheckList[13] = [0, 6, 12, 18, 24, 20, 16, 8, 4, 2, 7, 17, 22, 10, 11, 13, 14];
-            lineCheckList[14] = [3, 8, 18, 23, 10, 11, 12, 14];
-            lineCheckList[15] = [4, 9, 19, 24, 10, 11, 12, 13];
-            lineCheckList[16] = [0, 5, 10, 20, 16, 17, 18, 19];
-            lineCheckList[17] = [15, 17, 18, 19, 1, 6, 11, 21, 20, 12, 8, 4];
-            lineCheckList[18] = [15, 16, 18, 19, 2, 7, 12, 22];
-            lineCheckList[19] = [15, 16, 17, 19, 23, 13, 8, 3, 24, 12, 6, 0];
-            lineCheckList[20] = [4, 9, 14, 24, 15, 16, 17, 18];
-            lineCheckList[21] = [0, 5, 10, 15, 16, 12, 8, 4, 21, 22, 23, 24];
-            lineCheckList[22] = [20, 22, 23, 24, 1, 6, 11, 16];
-            lineCheckList[23] = [2, 7, 12, 17, 20, 21, 23, 24];
-            lineCheckList[24] = [20, 21, 22, 24, 3, 8, 13, 18];
-            lineCheckList[25] = [0, 6, 12, 18, 20, 21, 22, 23, 19, 14, 9, 4];
-        }
-
-        function mirror(i) {
-            if (i == 0) {
-                i = 4;
-            } else if (i == 1) {
-                i = 3;
-            } else if (i == 3) {
-                i = 1;
-            } else if (i == 4) {
-                i = 0;
+    var lineCheckList = [];
+    for (let square = 0; square < size * size; square++) {
+        lineCheckList[square] = [];
+    }
+    for (let row = 0; row < size; row++) {
+        for (let col = 0; col < size; col++) {
+            let square = row * size + col;
+            for (let colX = 0; colX < size; colX++) {
+                if (colX === col) {
+                    continue;
+                }
+                let squareX = row * size + colX;
+                lineCheckList[square].push(squareX);
             }
-            return i;
-        }
-
-        function difficulty(i) {
-            var Num3 = SEED % 1000;
-            var Rem8 = Num3 % 8;
-            var Rem4 = Math.floor(Rem8 / 2);
-            var Rem2 = Rem8 % 2;
-            var Rem5 = Num3 % 5;
-            var Rem3 = Num3 % 3;
-            var RemT = Math.floor(Num3 / 120);
-            var Table5 = [0];
-            Table5.splice(Rem2, 0, 1);
-            Table5.splice(Rem3, 0, 2);
-            Table5.splice(Rem4, 0, 3);
-            Table5.splice(Rem5, 0, 4);
-            Num3 = Math.floor(SEED / 1000);
-            Num3 = Num3 % 1000;
-            Rem8 = Num3 % 8;
-            Rem4 = Math.floor(Rem8 / 2);
-            Rem2 = Rem8 % 2;
-            Rem5 = Num3 % 5;
-            Rem3 = Num3 % 3;
-            RemT = RemT * 8 + Math.floor(Num3 / 120);
-            var Table1 = [0];
-            Table1.splice(Rem2, 0, 1);
-            Table1.splice(Rem3, 0, 2);
-            Table1.splice(Rem4, 0, 3);
-            Table1.splice(Rem5, 0, 4);
-            i--;
-            RemT = RemT % 5;
-            x = (i + RemT) % 5;
-            y = Math.floor(i / 5);
-            var e5 = Table5[(x + 3 * y) % 5];
-            var e1 = Table1[(3 * x + y) % 5];
-            value = 5 * e5 + e1;
-            if (MODE == "short") {
-                value = Math.floor(value / 2);
-            } else if (MODE == "long") {
-                value = Math.floor((value + 25) / 2);
+            for (let rowX = 0; rowX < size; rowX++) {
+                if (rowX === row) {
+                    continue;
+                }
+                let squareX = rowX * size + col;
+                lineCheckList[square].push(squareX);
             }
-            value++;
+            if (row === col) {
+                for (let rowX = 0; rowX < size; rowX++) {
+                    if (rowX === row) {
+                        continue;
+                    }
+                    let squareX = rowX * size + rowX;
+                    lineCheckList[square].push(squareX);
+                }
+            }
+            if (row === size - 1 - col) {
+                for (let rowX = 0; rowX < size; rowX++) {
+                    if (rowX === row) {
+                        continue;
+                    }
+                    let squareX = rowX * size + (size - 1 - col);
+                    lineCheckList[square].push(squareX);
+                }
+            }
+        }
+    }
+    let difficulty;
+    if (size === 5) {
+        difficulty = function(i) {
+
+            //This function takes a space on the board between 0 and 24, and returns its difficulty score, also between 0 and 24.
+            //These should always form a magic square if seed remains the same
+
+            var firstThreeDigits = Math.floor(seed / 1000) % 1000
+            var lastThreeDigits = seed % 1000
+
+            //Use last 3 digits to generate 4 random numbers. between 0-1, 0-2, 0-3, and 0-4 respectively
+            //Done by using relative prime factor modulo's. Except 2 and 4 which takes independent digits from a modulo 8
+            //3, 5, and 8 are co-prime so their modulo's are independent
+
+            var mod8 = lastThreeDigits % 8
+
+            var random1 = mod8 % 2					//between 0-1    (this essentially takes the last bit of the 3 bit number)
+            var random2 = lastThreeDigits % 3   	//between 0-2
+            var random3 = Math.floor(mod8 / 2)		//between 0-3    (this essentially takes the first two bits of the 3 bit number)
+            var random4 = lastThreeDigits % 5       //between 0-4
+
+            //using the numbers generated above, we insert the numbers 0-4 into a list in a random order to create a shuffled table
+            var randomTable1 = [0];
+            randomTable1.splice(random1, 0, 1);
+            randomTable1.splice(random2, 0, 2);
+            randomTable1.splice(random3, 0, 3);
+            randomTable1.splice(random4, 0, 4);
+
+
+            //Do the same this as above for a second table
+
+            mod8 = firstThreeDigits % 8
+            random1 = mod8 % 2
+            random2 = firstThreeDigits % 3
+            random3 = Math.floor(mod8 / 2)
+            random4 = firstThreeDigits % 5
+
+            var randomTable2 = [0];
+            randomTable2.splice(random1, 0, 1);
+            randomTable2.splice(random2, 0, 2);
+            randomTable2.splice(random3, 0, 3);
+            randomTable2.splice(random4, 0, 4);
+
+            //Since we use mod 3 5 and 8 for our random generation above, when dividing by 3*5*8=120 we have a new independent value.
+            //We use this to create one last value between 0 and 4
+            var lastDigitsSeed = Math.floor(lastThreeDigits / 120);
+            var firstDigitsSeed = Math.floor(firstThreeDigits / 120);
+            randomSeedX = (lastDigitsSeed * 8 + firstDigitsSeed) % 5;
+
+
+            var y = Math.floor(i / 5);
+            //This represents the y position on the board, top row being a 0, next a 1. esc.
+
+            var x = (i + randomSeedX) % 5;
+            //This represents the x position, modified by the randomSeedX. To make not every board use the same base for the magic square
+
+            //since x is added to this value and then mod5'd, every distinct value of x returns a distinct value for index1.
+            //and since every row has one objective of each x value, all objectives will have a different.
+            //and since 3 and 5 do not share any common factors, every unique value of y will also give a unique value
+            //so for index1, so each row also has 1 of each value.
+            var index1 = (x + 3 * y) % 5
+            //Same is true for index2
+            var index2 = (3 * x + y) % 5
+
+
+            //Now we use the tables generated earlier to get randomized difficulty scores. And since each row and column has every value
+            //for index1/index2 once, and the tables both contain every number once, each row and column will still have every value once.
+            var groupOf5 = randomTable1[index1];
+            var withinGroup = randomTable2[index2];
+
+            //Now calculate the actual true difficulty of the space.
+            return 5 * groupOf5 + withinGroup;
+
+            //since every row/column has every value for groupOf5 and withinGroup once, the total for all of them will be the same.
+            // 5 * (0,1,2,3,4) + (0,1,2,3,4)
+            // (0,5,10,15,20) + (0,1,2,3,4) = 60   (becomes 65 after 1-indexing)
+        }
+    } else {
+        difficulty = function(i) {
+            let seedMut = seed % seedCycle;
+            let seedCycleMut = seedCycle;
+            function extract(range) {
+                let result = seedMut % range;
+                seedMut = Math.floor(seedMut / range);
+                seedCycleMut = Math.floor(seedCycleMut / range);
+                return result;
+            }
+            function gcd(a, b) {
+                if (!b) {
+                    return a;
+                }
+
+                return gcd(b, a % b);
+            }
+
+            //This function takes a space on the board between 0 and 24, and returns its difficulty score, also between 0 and 24.
+            //These should always form a magic square if seed remains the same
+
+            //using the numbers generated above, we insert the numbers 0-4 into a list in a random order to create a shuffled table
+            let randomTable1 = [0];
+            for (let i = 1; i < size; i++) {
+                randomTable1.splice(extract(i + 1), 0, i);
+            }
+
+            //Do the same this as above for a second table
+            let randomTable2 = [0];
+            for (let i = 1; i < size; i++) {
+                randomTable2.splice(extract(i + 1), 0, i);
+            }
+
+            let randomSeedX = extract(size);
+
+            let y = Math.floor(i / size);
+            //This represents the y position on the board, top row being a 0, next a 1. esc.
+
+            let x = (i + randomSeedX) % size;
+            //This represents the x position, modified by the randomSeedX. To make not every board use the same base for the magic square
+
+            //since x is added to this value and then mod5'd, every distinct value of x returns a distinct value for index1.
+            //and since every row has one objective of each x value, all objectives will have a different.
+            //and since 3 and 5 do not share any common factors, every unique value of y will also give a unique value
+            //so for index1, so each row also has 1 of each value.
+            let modFactor = 3;
+            while (gcd(modFactor, size) !== 1) {
+                modFactor++;
+            }
+
+            let index1 = (x + modFactor * y) % size;
+            //Same is true for index2
+            let index2 = (modFactor * x + y) % size;
+
+
+            //Now we use the tables generated earlier to get randomized difficulty scores. And since each row and column has every value
+            //for index1/index2 once, and the tables both contain every number once, each row and column will still have every value once.
+            let groupOf5 = randomTable1[index1];
+            let withinGroup = randomTable2[index2];
+
+            //Now calculate the actual true difficulty of the space.
+            let value = size * groupOf5 + withinGroup;
+
+            //since every row/column has every value for groupOf5 and withinGroup once, the total for all of them will be the same.
+            // 5 * (0,1,2,3,4) + (0,1,2,3,4)
+            // (0,5,10,15,20) + (0,1,2,3,4) = 60   (becomes 65 after 1-indexing)
+
+            // sanity check
+            if (seedCycleMut !== 1) {
+                throw new Error("Programming error");
+            }
             return value;
         }
+    }
 
-        function checkLine(i, typesA) {
-            var synergy = 0;
-            for (var j = 0; j < lineCheckList[i].length; j++) {
-                var typesB = bingoBoard[lineCheckList[i][j] + 1].types;
-                if (typeof typesA != 'undefined' && typeof typesB != 'undefined') {
-                    for (var k = 0; k < typesA.length; k++) {
-                        for (var l = 0; l < typesB.length; l++) {
-                            if (typesA[k] == typesB[l]) {
+    function checkLine(i, typesA) {
+        var synergy = 0;
+        for (var j = 0; j < lineCheckList[i].length; j++) {
+            var typesB = bingoBoard[lineCheckList[i][j]].types;
+            if (typeof typesA !== 'undefined' && typeof typesB !== 'undefined') {
+                for (var k = 0; k < typesA.length; k++) {
+                    for (var l = 0; l < typesB.length; l++) {
+                        if (typesA[k] === typesB[l]) {
+                            synergy++;
+                            if (k === 0) {
                                 synergy++;
-                                if (k == 0) {
-                                    synergy++
-                                };
-                                if (l == 0) {
-                                    synergy++
-                                };
+                            }
+                            if (l === 0) {
+                                synergy++;
                             }
                         }
                     }
                 }
             }
-            return synergy;
         }
-        var bingoBoard = [];
-        for (var i = 1; i <= 25; i++) {
-            bingoBoard[i] = {
-                difficulty: difficulty(i)
-            };
-        }
-        for (var i = 1; i <= 25; i++) {
-            var getDifficulty = bingoBoard[i].difficulty;
-            var RNG = Math.floor(bingoList[getDifficulty].length * Math.random());
-            if (RNG == bingoList[getDifficulty].length) {
-                RNG--;
-            };
-            var j = 0,
-                synergy = 0,
-                currentObj = null,
-                minSynObj = null;
-            do {
-                currentObj = bingoList[getDifficulty][(j + RNG) % bingoList[getDifficulty].length];
-                synergy = checkLine(i, currentObj.types);
-                if (minSynObj == null || synergy < minSynObj.synergy) {
-                    minSynObj = {
-                        synergy: synergy,
-                        value: currentObj
-                    };
-                }
-                j++;
-            } while ((synergy != 0) && (j < bingoList[getDifficulty].length));
-            bingoBoard[i].types = minSynObj.value.types;
-            bingoBoard[i].name = minSynObj.value[LANG] || minSynObj.value.name;
-            bingoBoard[i].synergy = minSynObj.synergy;
-        }
-        return bingoBoard;
+        return synergy;
     }
+    var bingoBoard = [];
+    for (let i = 0; i < size * size; i++) {
+        bingoBoard[i] = {
+            difficulty: difficulty(i)
+        };
+    }
+    for (let i = 0; i < size * size; i++) {
+        let getDifficulty = bingoBoard[i].difficulty;
+        let RNG = Math.floor(bingoList[getDifficulty].length * Math.random());
+        if (RNG === bingoList[getDifficulty].length) {
+            RNG--;
+        }
+        let j = 0,
+            synergy = 0,
+            currentObj = null,
+            minSynObj = null;
+        do {
+            currentObj = bingoList[getDifficulty][(j + RNG) % bingoList[getDifficulty].length];
+            synergy = checkLine(i, currentObj.types);
+            if (minSynObj == null || synergy < minSynObj.synergy) {
+                minSynObj = {
+                    synergy: synergy,
+                    value: currentObj
+                };
+            }
+            j++;
+        } while ((synergy !== 0) && (j < bingoList[getDifficulty].length));
+        bingoBoard[i].types = minSynObj.value.types;
+        bingoBoard[i].name = minSynObj.value[lang] || minSynObj.value.name;
+        bingoBoard[i].synergy = minSynObj.synergy;
+    }
+    return {'objectives': bingoBoard, 'seed': seed};
 }
 
 module.exports = bingoGenerator;

@@ -34,7 +34,7 @@ class Event(models.Model):
     @staticmethod
     def get_all_recent_for_room(room):
         recent_events = []
-        total_events = 0;
+        total_events = 0
         for event_class in Event.event_classes():
             total_events += event_class.objects.filter(player__room=room).count()
             recent_events.extend(event_class.objects.filter(player__room=room).filter(timestamp__gte=datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)))

@@ -3,9 +3,6 @@ var Board = (function(){
 
     var ORDERED_COLORS = ["pink", "red", "orange", "brown", "yellow", "green", "teal", "blue", "navy", "purple"];
 
-    var ROW_NAMES = ["row1", "row2", "row3", "row4", "row5",
-                     "col1", "col2", "col3", "col4", "col5", "tlbr", "bltr"];
-
     function sortColors(colors) {
         var orderedColors = [];
         for (var i = 0; i < ORDERED_COLORS.length; i++) {
@@ -106,14 +103,54 @@ var Board = (function(){
 
     var Board = function($board, playerJson, colorChooser, getBoardUrl, selectGoalUrl) {
         this.$board = $board;
-        this.$squares = $board.find(".square");
+        this.size = 0;
         this.isSpectator = playerJson.is_spectator;
         this.colorChooser = colorChooser;
         this.getBoardUrl = getBoardUrl;
         this.selectGoalUrl = selectGoalUrl;
         this.squares = [];
-        for (var i = 0; i < 25; i++) {
-            var $square = $board.find("#slot" + (i + 1));
+        this.$squares = null;
+    };
+
+    Board.prototype.setup = function(size) {
+        this.size = size;
+        this.$board.html('');
+        const top = $('<tr>').appendTo(this.$board);
+        top.append('<td class="unselectable popout" id="tlbr">TL-BR</td>');
+        for (let iCol = 0; iCol < size; iCol++) {
+            $('<td class="unselectable popout"></td>')
+                .attr('id', 'col' + (iCol + 1).toString())
+                .text('COL' + (iCol + 1).toString())
+                .appendTo(top);
+        }
+        let slot = 1;
+        for (let iRow = 0; iRow < size; iRow++) {
+            const row = $('<tr>').appendTo(this.$board);
+            $('<td class="unselectable popout"></td>')
+                .attr('id', 'row' + (iRow + 1).toString())
+                .text('ROW' + (iRow + 1).toString())
+                .appendTo(row);
+            for (let iCol = 0; iCol < size; iCol++) {
+                const td = $('<td class="unselectable square blanksquare tlbr"></td>')
+                    .addClass('row' + (iRow + 1).toString())
+                    .addClass('col' + (iCol + 1).toString())
+                    .attr('id', 'slot' + slot);
+                if (iRow === iCol) {
+                    td.addClass('tlbr');
+                }
+                if (iRow === size - 1 - iCol) {
+                    td.addClass('bltr');
+                }
+                td.appendTo(row);
+                slot++;
+            }
+        }
+        this.$board.append('<tr><td class="unselectable popout" id="bltr"></td></tr>');
+
+        this.$squares = this.$board.find(".square");
+        this.squares = [];
+        for (let i = 0; i < size * size; i++) {
+            var $square = this.$board.find("#slot" + (i + 1));
             this.squares.push(new Square($square));
         }
 
@@ -133,9 +170,12 @@ var Board = (function(){
             );
         }
 
-        for (var i = 0; i < ROW_NAMES.length; i++) {
-            addRowHover(ROW_NAMES[i]);
+        for (let i = 0; i < this.size; i++) {
+            addRowHover('row' + (i + 1).toString());
+            addRowHover('col' + (i + 1).toString());
         }
+        addRowHover('tlbr');
+        addRowHover('bltr');
 
         $(window).resize(function () {
             that.$squares.each(function () { updateColorOffsets($(this)); });
@@ -150,7 +190,9 @@ var Board = (function(){
     };
 
     Board.prototype.setJson = function(json) {
-        for(var i = 0; i < json.length; i++) {
+        this.setup(preciseSqrt(json.length));
+
+        for(let i = 0; i < json.length; i++) {
             this.squares[i].setJson(json[i]);
         }
         this.refitGoalText();
@@ -179,17 +221,26 @@ var Board = (function(){
 
     Board.prototype.getRowCount = function(colorClass) {
         var that = this;
-        return ROW_NAMES.filter(function(row_name) {
+
+        const filterFunc = function(row_name) {
             var rowSquares = that.$board.find("." + row_name);
             var coloredSquares = rowSquares.filter(function() {
                 return squareHasColor($(this), colorClass);
             });
-            return coloredSquares.size() == rowSquares.size();
-        }).length;
+            return coloredSquares.size() === rowSquares.size() ? 1 : 0;
+        };
+
+        let count = 0;
+        for (let i = 0; i < this.size; i++) {
+            count += filterFunc('row' + (i + 1).toString());
+            count += filterFunc('col' + (i + 1).toString());
+        }
+        count += filterFunc('tlbr');
+        count += filterFunc('bltr');
+        return count;
     };
 
     Board.prototype.clickSquare = function(ev, $square) {
-        var goal = $square.html();
         var chosenColor = this.colorChooser.getChosenColor();
         var chosenColorClass = getSquareColorClass(chosenColor);
 
