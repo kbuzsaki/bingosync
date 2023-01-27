@@ -709,7 +709,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.minecraft_1_16_1, "1.16.1", "Minecraft 1.16.1"),
             (GameType.minecraft_1_8_9, "1.8.9", "Minecraft 1.8.9"),
-            (GameType.minecraft_1_18, "Most recent (1.18)", "Minecraft 1.18"),
+            (GameType.minecraft_recent, "Most recent (1.19.4)", "Minecraft 1.19"),
         ],
     },
     GameType.monster_rancher_2: {
