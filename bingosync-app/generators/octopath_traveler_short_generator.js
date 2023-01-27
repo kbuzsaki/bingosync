@@ -1,18 +1,487 @@
-bingoGenerator = require("./generators/generator_bases/synerGen.js");
+// This is using a modified SynerGen. Mostly it tries harder to not break typings and has finite loops for retrying at picking goals. There is also some "testlog" code that I've commented out, can be ignored.
+//The Goal List is further down after the generator for those who are looking for them.
+
+// Create Math.seedrandom function and maybe some other stuff idk can't be bothered to understand this obfuscated crap
+(function(j, i, g, m, k, n, o) {
+    function q(b) {
+        var e, f, a = this,
+            c = b.length,
+            d = 0,
+            h = a.i = a.j = a.m = 0;
+        a.S = [];
+        a.c = [];
+        for (c || (b = [c++]); d < g;) a.S[d] = d++;
+        for (d = 0; d < g; d++) e = a.S[d], h = h + e + b[d % c] & g - 1, f = a.S[h], a.S[d] = f, a.S[h] = e;
+        a.g = function(b) {
+            var c = a.S,
+                d = a.i + 1 & g - 1,
+                e = c[d],
+                f = a.j + e & g - 1,
+                h = c[f];
+            c[d] = h;
+            c[f] = e;
+            for (var i = c[e + h & g - 1]; --b;) d = d + 1 & g - 1, e = c[d], f = f + e & g - 1, h = c[f], c[d] = h, c[f] = e, i = i * g + c[e + h & g - 1];
+            a.i = d;
+            a.j = f;
+            return i
+        };
+        a.g(g)
+    }
+
+    function p(b, e, f, a, c) {
+        f = [];
+        c = typeof b;
+        if (e && c == "object")
+            for (a in b)
+                if (a.indexOf("S") < 5) try {
+                    f.push(p(b[a], e - 1))
+                } catch (d) {}
+                return f.length ? f : b + (c != "string" ? "\0" : "")
+    }
+
+    function l(b, e, f, a) {
+        b += "";
+        for (a = f = 0; a < b.length; a++) {
+            var c = e,
+                d = a & g - 1,
+                h = (f ^= e[a & g - 1] * 19) + b.charCodeAt(a);
+            c[d] = h & g - 1
+        }
+        b = "";
+        for (a in e) b += String.fromCharCode(e[a]);
+        return b
+    }
+    i.seedrandom = function(b, e) {
+        var f = [],
+            a;
+        b = l(p(e ? [b, j] : arguments.length ? b : [(new Date).getTime(), j, window], 3), f);
+        a = new q(f);
+        l(a.S, j);
+        i.random = function() {
+            for (var c = a.g(m), d = o, b = 0; c < k;) c = (c + b) * g, d *= g, b = a.g(1);
+            for (; c >= n;) c /= 2, d /= 2, b >>>= 1;
+            return (c + b) / d
+        };
+        return b
+    };
+    o = i.pow(g, m);
+    k = i.pow(2, k);
+    n = k * 2;
+    l(i.random(), j)
+})([], Math, 256, 6, 52);
+
+//synerGen: a bingo generator based on SRLv5 and Hollow Knight's generators.
+bingoGenerator = function(bingoList, opts) {
+
+    //Create a magic square that the board will be based on
+    function magicSquare() {
+        var A = B = C = D = E = f = g = h = i = j = 0;
+        //this whole thing generates one of the 144 "unique" 5x5 magic squares
+        //for more info visit https://www.grogono.com/magic/5x5pan144.php
+        var table1 = [];
+        table1[0] = [0, 5, 10, 15, 20];
+        table1[1] = [0, 5, 10, 20, 15];
+        table1[2] = [0, 5, 15, 10, 20];
+        table1[3] = [0, 5, 15, 20, 10];
+        table1[4] = [0, 5, 20, 10, 15];
+        table1[5] = [0, 5, 20, 15, 10];
+
+        var table2 = [];
+        table2[0] = [0, 1, 2, 3, 4];
+        table2[1] = [0, 1, 2, 4, 3];
+        table2[2] = [0, 1, 3, 2, 4];
+        table2[3] = [0, 1, 3, 4, 2];
+        table2[4] = [0, 1, 4, 2, 3];
+        table2[5] = [0, 1, 4, 3, 2];
+        table2[6] = [0, 2, 1, 3, 4];
+        table2[7] = [0, 2, 1, 4, 3];
+        table2[8] = [0, 2, 3, 1, 4];
+        table2[9] = [0, 2, 3, 4, 1];
+        table2[10] = [0, 2, 4, 1, 3];
+        table2[11] = [0, 2, 4, 3, 1];
+        table2[12] = [0, 3, 1, 2, 4];
+        table2[13] = [0, 3, 1, 4, 2];
+        table2[14] = [0, 3, 2, 1, 4];
+        table2[15] = [0, 3, 2, 4, 1];
+        table2[16] = [0, 3, 4, 1, 2];
+        table2[17] = [0, 3, 4, 2, 1];
+        table2[18] = [0, 4, 1, 2, 3];
+        table2[19] = [0, 4, 1, 3, 2];
+        table2[20] = [0, 4, 2, 1, 3];
+        table2[21] = [0, 4, 2, 3, 1];
+        table2[22] = [0, 4, 3, 1, 2];
+        table2[23] = [0, 4, 3, 2, 1];
+
+        var randTable1 = table1[Math.floor(6 * Math.random())];
+        var randTable2 = table2[Math.floor(24 * Math.random())];
+        A = randTable1[0];
+        B = randTable1[1];
+        C = randTable1[2];
+        D = randTable1[3];
+        E = randTable1[4];
+        f = randTable2[0];
+        g = randTable2[1];
+        h = randTable2[2];
+        i = randTable2[3];
+        j = randTable2[4];
+
+        var template = [];
+        template[0] = [(A+f+1), (B+i+1), (C+g+1), (D+j+1), (E+h+1)];
+        template[1] = [(D+g+1), (E+j+1), (A+h+1), (B+f+1), (C+i+1)];
+        template[2] = [(B+h+1), (C+f+1), (D+i+1), (E+g+1), (A+j+1)];
+        template[3] = [(E+i+1), (A+g+1), (B+j+1), (C+h+1), (D+f+1)];
+        template[4] = [(C+j+1), (D+h+1), (E+f+1), (A+i+1), (B+g+1)];
+
+        //here starts the translocations, rotations, and reflections that increase the possible magic squares to 28800
+        var ro = Math.floor(4 * Math.random());
+        var rf = Math.floor(2 * Math.random());
+        var tH = Math.floor(5 * Math.random());
+        var tV = Math.floor(5 * Math.random());
+
+        template = translocate(template, tH, 0);
+        template = translocate(template, tV, 1);
+        template = rotate(template, ro);
+        if (rf == 1)
+            template.reverse();
+
+        function inverse(t) { //inverts the table
+            var s = [];
+            for (var j = 0; j < t.length; j++)
+                s.push([]);
+            for (var j = 0; j < t.length; j++) {
+                for (var k = 0; k < t.length; k++)
+                    s[j][k] = t[k][j];
+            }
+        }
+
+        function rotate(t, i) { //rotates ccw i times
+            for (var j = 1; j <= i; j++) {
+                inverse(t);
+                t.reverse();
+            }
+            return t;
+        }
+
+        function translocate(t, i, dir) {
+            if (dir == 1) { //shifts down i times
+                for (j = 1; j <= i; j++) {
+                    var s = t.shift();
+                    t.push(s);
+                }
+            } else {
+                for (j = 1; j <= i; j++) { //shifts left i times
+                    for (k = 0; k <= 4; k++) {
+                        var s = t[k].shift();
+                        t[k].push(s);
+                    }
+                }
+            }
+            return t;
+        }
+
+        return template;
+    }
+
+    //Reduces fluff in bingoList object if there's a method to set defaults
+    function preprocessBingoList(bingoList) {
+        for (const key of Object.keys(bingoList)) {
+            bingoList[key].name = key;
+
+            if (!bingoList[key].hasOwnProperty("Desc"))
+                bingoList[key].Desc = "#!#" + key + "#!#";
+
+            if (!bingoList[key].hasOwnProperty("Diff"))
+                bingoList[key].Diff = 0;
+
+            if (!bingoList[key].hasOwnProperty("Types"))
+                bingoList[key].Types = [];
+
+            if (!bingoList[key].hasOwnProperty("Excludes"))
+                bingoList[key].Excludes = [];
+
+            if (!bingoList[key].hasOwnProperty("Synergy"))
+                bingoList[key].Synergy = [];
+
+            if (!bingoList[key].hasOwnProperty("Score"))
+                bingoList[key].Score = 0;
+        }
+    }
+
+    //Make sure everything exists that should, pull out maxScore and bingoTypes from bingoList
+    var bingoTypes = bingoList.bingoTypes;
+    delete bingoList.bingoTypes;
+    var maxScore = bingoList.maxScore;
+    delete bingoList.maxScore;
+    preprocessBingoList(bingoList);
+
+    //Separate goals into currently choosable / unchoosable (all goals are choosable at the start)
+    var choosable = [];
+    var unchoosable = [];
+    for (const key of Object.keys(bingoList))
+        choosable.push(key);
+
+    //Create counts for all types
+    var types = { };
+    for (const key of Object.keys(bingoTypes)) {
+        if (!bingoTypes[key].hasOwnProperty("Max"))
+            bingoTypes[key].Max = 5;
+        types[key] = bingoTypes[key].Max;
+    }
+
+    //Seed the random
+    seed = Math.seedrandom(opts.seed || Math.ceil(999999 * Math.random()));
+    //console.log(seed);
+
+    var testlog = "";
+    var test_diff = [];
+
+    //create a 1-dimensional array from the 2-dimensional matrix magicSquare[][]
+    var square = magicSquare();
+    var bingoBoard = square[0].concat(square[1], square[2], square[3], square[4]);
+
+    var unchosenDiffs = bingoBoard.slice();
+    var chosenGoals = [];
+    for (var i = 1; i <= 25; i++)
+        chosenGoals.push("");
+        test_diff.push(0);
+
+    var reroll = 0;
+    var super_roll = 0;
+
+    for (var i = 1; i <= 25; i++) {
+
+        //this is necessary on the edge case that all the exclusions and difficulties wind up eliminating every goal
+        if (choosable.length == 0 || reroll > 5) {
+            if (reroll > 5) {
+              super_roll++;
+            }
+            reroll = 0;
+            var newChoosableDiffs = [];
+            //add all goals with difficulty one more or less than any of the remaining difficulties back into choosable[]
+            for (var j of unchosenDiffs) {
+                var plusOne = j + 1;
+                var minusOne = j - 1;
+                if (!newChoosableDiffs.includes(plusOne) && plusOne <= 25)
+                    newChoosableDiffs.push(plusOne);
+                if (!newChoosableDiffs.includes(minusOne) && minusOne >= 1)
+                    newChoosableDiffs.push(minusOne);
+            }
+            //testlog += "Spread Used | ";
+            for (var k = 0; k < unchoosable.length; k++) {
+                if (newChoosableDiffs.includes(bingoList[unchoosable[k]].Diff)) {
+                  var check_types = true;
+                  for (var l = 0; l < bingoList[unchoosable[k]].Types.length; l++) {
+                      if (types[bingoList[unchoosable[k]].Types[l]] <= 0) {
+                          check_types = false;
+                          break;
+                      }
+                  }
+                  if (check_types) {
+                      choosable = choosable.concat(unchoosable.splice(k, 1));
+                      k--;
+                  }
+                }
+            }
+            //if choosable[] is still empty, just move everything from unchoosable[] back
+            if (choosable.length == 0 || super_roll > 1) {
+              testlog += "Full Spread | ";
+              for (var k = 0; k < unchoosable.length; k++) {
+                  var check_types = true;
+                  for (var l = 0; l < bingoList[unchoosable[k]].Types.length; l++) {
+                      if (types[bingoList[unchoosable[k]].Types[l]] <= 0) {
+                          check_types = false;
+                          break;
+                      }
+                  }
+                  if (check_types) {
+                      choosable = choosable.concat(unchoosable.splice(k, 1));
+                      k--;
+                  }
+              }
+              //if choosable[] is still empty, just move everything from unchoosable[] back
+              if (choosable.length == 0 || super_roll > 2) {
+                  while (unchoosable.length > 0)
+                      choosable = choosable.concat(unchoosable.splice(0, 1));
+                  testlog += "Generation Broke (i = "+i+")| ";
+                  for (var y in types) {
+                      //if (y in ["test"])
+                      testlog += y +":" + types[y] + " ~ ";
+                  }
+              }
+            }
+        }
+
+        //finally, choosing goals can begin
+        //Get a random goal, add to chosen
+        var index = Math.floor(Math.random() * choosable.length);
+        var goal = bingoList[choosable[index]];
+        var diff = goal.Diff;
+        var diffIndex = 0;
+        if (goal.Diff == 0) {
+            diffIndex = chosenGoals.indexOf("");
+        } else {
+            diffIndex = bingoBoard.indexOf(diff);
+            //deal with the edge case of the difficulty not matching
+            if (chosenGoals[diffIndex] != "") {
+                if (diff < 25) {diffIndex = bingoBoard.indexOf(diff - 1);}
+                if (chosenGoals[diffIndex] != "") {
+                    if (diff > 1) {diffIndex = bingoBoard.indexOf(diff + 1);}
+
+                    //these while loops go through the remaining difficulties, first those less than the true diff, then those greater.
+                    if (chosenGoals[diffIndex] != "") {
+                        var rel_diff = diff - 2;
+                        while (rel_diff >= 1 && chosenGoals[diffIndex] != "") {
+                            diffIndex = bingoBoard.indexOf(rel_diff);
+                            rel_diff--;
+                        }
+                        if (chosenGoals[diffIndex] != "") {
+                            if (reroll <= 5) {
+                                testlog += "Rerolling ("+reroll+") ";
+                                reroll++;
+                                goal = null;
+                            } else {
+                                rel_diff = diff + 2;
+                                while (rel_diff <= 25 && chosenGoals[diffIndex] != "") {
+                                    diffIndex = bingoBoard.indexOf(rel_diff);
+                                    rel_diff++;
+                                }
+                            }
+                        }
+                    }
+                    //this remaining safety case should not occur anymore anyways
+                    if (chosenGoals[diffIndex] != "") {
+                        diffIndex = chosenGoals.indexOf("");
+                    }
+                }
+            }
+        }
+        if (goal === null) {
+          i--;
+          continue;
+        } else {
+          reroll = 0;
+          super_roll = 0;
+        }
+        chosenGoals[diffIndex] = { "name": goal.Desc };
+        test_diff[diffIndex] = goal.Diff;
+        //testlog += "(Adding "+choosable[index]+": "+diff+")";
+        //remove the chosen goal and any duplicates of it completely
+        for (var j = 0; j < choosable.length; j++) {
+            if (choosable[j] == goal.name) {
+                choosable.splice(j, 1);
+                j--;
+            }
+        }
+        //remove the goal's difficulty from unchosenDiffs[]
+        var unchosenDiffIndex = unchosenDiffs.indexOf(goal.Diff);
+        if (goal.Diff == 0) {
+            unchosenDiffIndex = unchosenDiffs.indexOf(bingoBoard[diffIndex]);
+        }
+        if (unchosenDiffIndex != -1) {
+            unchosenDiffs.splice(unchosenDiffIndex, 1);
+        }
+
+        //increment type counters if relevant, also remove other goals of the same type if relevant
+        for (var j = 0; j < goal.Types.length; j++) {
+            types[goal.Types[j]]--;
+            if (types[goal.Types[j]] <= 0) {
+              //testlog += goal.Types[j] + " maxed, removing: "
+                for (var k = 0; k < choosable.length; k++) {
+                    for (var l = 0; l < bingoList[choosable[k]].Types.length; l++) {
+                        if (bingoList[choosable[k]].Types[l] === goal.Types[j]) {
+                            //testlog += choosable[k] + ", "
+                            unchoosable = unchoosable.concat(choosable.splice(k, 1));
+                            k--;
+                            break;
+                        }
+                    }
+                }
+                //testlog += " | "
+            }
+        }
+
+        //decrement score
+        maxScore = maxScore - goal.Score;
+        //remove all goals of the same difficulty from choosable[], also remove excluded goals and goals with too high score if relevant
+        for (var j = 0; j < choosable.length; j++) {
+            if (bingoList[choosable[j]].Diff == goal.Diff && goal.Diff != 0) {
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
+                j--;
+                continue;
+            }
+            if (bingoList[choosable[j]].Score > maxScore) {
+                unchoosable = unchoosable.concat(choosable.splice(j, 1));
+                j--;
+            }
+            for (var k = 0; k < goal.Excludes.length; k++) {
+                if (choosable[j] == goal.Excludes[k]) {
+                    unchoosable = unchoosable.concat(choosable.splice(j, 1));
+                    j--;
+                }
+            }
+        }
+
+        //duplicate all goals sharing synergies with the chosen goal in choosable[] to make them more likely to be chosen
+        for (var j = 0; j < goal.Synergy.length; j++) {
+            var temp = [];
+            for (var k = 0; k < choosable.length; k++) {
+                if (goal.Synergy[j] == choosable[k]) //check if the goal itself is a synergy
+                    temp.push(choosable[k]);
+                for (var l = 0; l < bingoList[choosable[k]].Synergy.length; l++) { //check if it shares a synergy group that isn't an existing goal
+                    if (goal.Synergy[j] == bingoList[choosable[k]].Synergy[l]
+                        && !choosable.includes(bingoList[choosable[k]].Synergy[l])
+                        && !unchoosable.includes(bingoList[choosable[k]].Synergy[l]))
+                            temp.push(choosable[k]);
+                }
+            }
+            choosable = choosable.concat(temp);
+        }
+    }
+
+    /*
+    let sum = 0;
+    for (var i = 0; i < 25; i++) {
+      testlog += test_diff[i];
+      sum += test_diff[i];
+      if ((i+1)%5 == 0) {
+        testlog += ",";
+        //testlog += ","+sum+"|";
+        sum = 0;
+      } else {
+        testlog += ",";
+      }
+    }*/
+    /*
+    for (var i = 0; i < 5; i++) {
+      testlog += (test_diff[i+0]+test_diff[i+5]+test_diff[i+10]+test_diff[i+15]+test_diff[i+20]);
+      testlog += ",";
+    }
+    testlog += "\\" + (test_diff[0]+test_diff[6]+test_diff[12]+test_diff[18]+test_diff[24]);
+    testlog += ",/" + (test_diff[4]+test_diff[8]+test_diff[12]+test_diff[16]+test_diff[20]);
+    */
+    /*
+    if (testlog != "" && true) {
+        chosenGoals[24] = {"name": chosenGoals[24].name + " (" + testlog + ")"};
+    }
+    */
+    return chosenGoals;
+}
 
 //List made by Doid
 //This is the Short game length Variant
 //The list has been generated with the help of this Google Sheet:
 //https://docs.google.com/spreadsheets/d/1csndIf-XziHWjSTF8f_ZrFrwRYPLBQK_lxpZu3Y4l2Y/edit?usp=sharing
 
+//Edit: after some substantial playtesting, the goals have been rebalanced and modified considerably from their original spreadsheet difficulty values.
+
 var bingoList = {
 
 "bingoTypes": {
-        "items": {"Max": 6},
-        "item_set": {"Max": 2},
-        "broad_item_set": {"Max": 2},
-        "item_count": {"Max": 2},
-        "weapon": {"Max": 2},
+        "items": {"Max": 5},
+        "item_set": {"Max": 3},
+        "broad_item_set": {"Max": 3},
+        "item_count": {"Max": 3},
+        "weapon": {"Max": 3},
         "armor": {"Max": 2},
         "accessory": {"Max": 2},
         "soulstone": {"Max": 1},
@@ -35,11 +504,11 @@ var bingoList = {
         "evasion": {"Max": 1},
         "speed": {"Max": 1},
         "accuracy": {"Max": 1},
-        "side_stories": {"Max": 6},
-        "broad_ss_set": {"Max": 1},
-        "ss_set": {"Max": 2},
+        "side_stories": {"Max": 5},
+        "broad_ss_set": {"Max": 3},
+        "ss_set": {"Max": 3},
         "ss_chain": {"Max": 2},
-        "ss_II": {"Max": 1},
+        "ss_II": {"Max": 2},
         "ss_III": {"Max": 1},
         "ss_frostlands": {"Max": 2},
         "ss_flatlands": {"Max": 2},
@@ -50,24 +519,27 @@ var bingoList = {
         "ss_cliftlands": {"Max": 2},
         "ss_woodlands": {"Max": 2},
         "ss_specific": {"Max": 3},
-        "ss_boss": {"Max": 3},
-        "specific_character": {"Max": 4},
-        "exploration": {"Max": 4},
+        "ss_boss": {"Max": 4},
+        "specific_character": {"Max": 10},
+        "exploration": {"Max": 6},
         "chest": {"Max": 2},
         "chest_set": {"Max": 1},
-        "chest_counts": {"Max": 1},
-        "combat": {"Max": 4},
+        "chest_counts": {"Max": 2},
+        "combat": {"Max": 5},
         "subjob": {"Max": 2},
-        "boss": {"Max": 5},
-        "advanced_boss": {"Max": 3},
-        "combat": {"Max": 4},
-        "combat_counts": {"Max": 2},
-        "beast_lore": {"Max": 2},
-        "extended_combat": {"Max": 2},
-        "combat_set": {"Max": 2},
+        "boss": {"Max": 6},
+        "advanced_boss": {"Max": 2},
+        "combat_counts": {"Max": 3},
+        "beast_lore": {"Max": 3},
+        "extended_combat": {"Max": 5},
+        "combat_set": {"Max": 4},
         "combat_challenge": {"Max": 2},
-        "progression": {"Max": 7},
-        "chapter": {"Max": 3},
+        "progression": {"Max": 8},
+        "specific_chapter": {"Max": 4},
+        "ch_1": {"Max": 3},
+        "ch_2": {"Max": 4},
+        "ch_3": {"Max": 3},
+        "chapter": {"Max": 8},
         "#_t_pouches": {"Max": 1},
         "#_u_gold_items": {"Max": 1},
         "#_u_iron": {"Max": 1},
@@ -222,24 +694,6 @@ var bingoList = {
         "Types": ["broad_item_set","armor","items","#_u_shields"]
 },
 
-"1_ss_flatlands": {
-        "Desc": "1 Side Story in Flatlands (No Kit)",
-        "Diff": 1,
-        "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
-},
-
-"1_ss_coastlands": {
-        "Desc": "1 Side Story in Coastlands (No Kit)",
-        "Diff": 1,
-        "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
-},
-
-"chapter_1_chests": {
-        "Desc": "Open All Chests in a Chapter 1 Dungeon",
-        "Diff": 1,
-        "Types": ["chest","chest_set","exploration"]
-},
-
 "5_u_iron": {
         "Desc": "5 Unique Iron Equipments",
         "Diff": 2,
@@ -254,7 +708,7 @@ var bingoList = {
 
 "5_t_s_nuts": {
         "Desc": "5 Nut (S)'s",
-        "Diff": 2,
+        "Diff": 4,
         "Types": ["item_count","nut","item_set","items","#_t_s_nuts"]
 },
 
@@ -264,18 +718,6 @@ var bingoList = {
         "Types": ["broad_item_set","soulstone","items","#_u_sstones"]
 },
 
-"10_t_brown_chests": {
-        "Desc": "Open 10 Brown Chests",
-        "Diff": 2,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"6_t_red_chests": {
-        "Desc": "Open 6 Red Chests",
-        "Diff": 2,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-},
-
 "5_weakness_sets": {
         "Desc": "5 Revealed Weakness Sets",
         "Diff": 2,
@@ -283,13 +725,13 @@ var bingoList = {
 },
 
 "2_bg_yolo": {
-        "Desc": "Use BG Lv. 4 at total of 2 times in one fight",
-        "Diff": 2,
+        "Desc": "Use BG Lv. 4 a total of 2 times in one fight",
+        "Diff": 4,
         "Types": ["extended_combat","combat","#_bg_yolo"]
 },
 
 "5_t_pouches": {
-        "Desc": "5 Money Pouches",
+        "Desc": "5 Total Money Pouches",
         "Diff": 2,
         "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
 },
@@ -316,18 +758,6 @@ var bingoList = {
         "Desc": "3 Unique Earrings",
         "Diff": 2,
         "Types": ["item_set","accessory","stat_accessory","items","#_u_earrings"]
-},
-
-"4_t_purple_chests": {
-        "Desc": "Open 4 Purple Chests",
-        "Diff": 2,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"15_t_chests": {
-        "Desc": "Open 15 Total Chests",
-        "Diff": 2,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
 "2_u_magus": {
@@ -372,12 +802,6 @@ var bingoList = {
         "Types": ["item_set","item_count","bottle","items","#_bottle_sets"]
 },
 
-"1_ss_frostlands": {
-        "Desc": "1 Side Story in Frostlands (No Kit)",
-        "Diff": 3,
-        "Types": ["ss_set","ss_frostlands","side_stories","#_ss_frostlands"]
-},
-
 "str_4_NPC": {
         "Desc": "Defeat a Strength 4 NPC",
         "Diff": 3,
@@ -385,14 +809,14 @@ var bingoList = {
 },
 
 "all_pouches": {
-        "Desc": "All 5 Money Pouches",
+        "Desc": "Each (5) Unique Money Pouches",
         "Diff": 4,
         "Types": ["item_set","gold_item","items"]
 },
 
 "10_t_pouches": {
-        "Desc": "10 Money Pouches",
-        "Diff": 4,
+        "Desc": "10 Total Money Pouches",
+        "Diff": 6,
         "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
 },
 
@@ -416,7 +840,7 @@ var bingoList = {
 
 "5_t_m_nuts": {
         "Desc": "5 Nut (M)'s",
-        "Diff": 4,
+        "Diff": 6,
         "Types": ["item_count","nut","item_set","items","#_t_m_nuts"]
 },
 
@@ -440,56 +864,20 @@ var bingoList = {
 
 "3_u_rings": {
         "Desc": "3 Unique Rings",
-        "Diff": 4,
+        "Diff": 3,
         "Types": ["item_set","accessory","stat_accessory","items","#_u_rings"]
 },
 
 "2_ss_flatlands": {
         "Desc": "2 Side Stories in Flatlands (No Kit)",
-        "Diff": 4,
+        "Diff": 2,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
 },
 
 "2_ss_coastlands": {
         "Desc": "2 Side Stories in Coastlands (No Kit)",
-        "Diff": 4,
+        "Diff": 2,
         "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
-},
-
-"1_ss_highlands": {
-        "Desc": "1 Side Story in Highlands (No Kit)",
-        "Diff": 4,
-        "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
-},
-
-"1_ss_sunlands": {
-        "Desc": "1 Side Story in Sunlands (No Kit)",
-        "Diff": 4,
-        "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
-},
-
-"1_ss_riverlands": {
-        "Desc": "1 Side Story in Riverlands (No Kit)",
-        "Diff": 4,
-        "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
-},
-
-"1_ss_cliftlands": {
-        "Desc": "1 Side Story in Cliftlands (No Kit)",
-        "Diff": 4,
-        "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
-},
-
-"1_ss_woodlands": {
-        "Desc": "1 Side Story in Woodlands (No Kit)",
-        "Diff": 4,
-        "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
-},
-
-"3_u_bl": {
-        "Desc": "Capture 3 Unique Monsters",
-        "Diff": 4,
-        "Types": ["combat_counts","specific_character","beast_lore","combat","#_u_bl"]
 },
 
 "3_dead_boss": {
@@ -499,14 +887,14 @@ var bingoList = {
 },
 
 "4_bg_yolo": {
-        "Desc": "Use BG Lv. 4 at total of 4 times in one fight",
-        "Diff": 4,
+        "Desc": "Use BG Lv. 4 a total of 4 times in one fight",
+        "Diff": 7,
         "Types": ["extended_combat","combat","#_bg_yolo"]
 },
 
 "10_u_gold_items": {
         "Desc": "10 Unique Gold Items",
-        "Diff": 5,
+        "Diff": 6,
         "Types": ["broad_item_set","gold_item","items","#_u_gold_items"]
 },
 
@@ -518,7 +906,7 @@ var bingoList = {
 
 "3_t_l_nuts": {
         "Desc": "3 Nut (L)'s",
-        "Diff": 5,
+        "Diff": 7,
         "Types": ["item_count","nut","item_set","items","#_t_l_nuts"]
 },
 
@@ -548,26 +936,14 @@ var bingoList = {
 
 "1_alluring": {
         "Desc": "1 Alluring Ribbon",
-        "Diff": 5,
+        "Diff": 4,
         "Types": ["item_set","accessory","side_stories","items","#_alluring"]
 },
 
 "ss_opt_6": {
         "Desc": "SS: The Weaver's Predicament",
-        "Diff": 5,
+        "Diff": 2,
         "Types": ["ss_specific","ss_cliftlands","side_stories"]
-},
-
-"20_t_brown_chests": {
-        "Desc": "Open 20 Brown Chests",
-        "Diff": 5,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"12_t_red_chests": {
-        "Desc": "Open 12 Red Chests",
-        "Diff": 5,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
 },
 
 "3_u_lizards_bl": {
@@ -602,8 +978,8 @@ var bingoList = {
 
 "5_ch_1": {
         "Desc": "Complete 5 Chapter 1's",
-        "Diff": 5,
-        "Types": ["chapter","progression","#_ch_1"]
+        "Diff": 6,
+        "Types": ["chapter","progression","#_ch_1","ch_1"]
 },
 
 "5_u_silver": {
@@ -620,13 +996,13 @@ var bingoList = {
 
 "2_u_adamantine": {
         "Desc": "2 Unique Adamantine Equipments",
-        "Diff": 6,
+        "Diff": 8,
         "Types": ["item_set","weapon","elem_atk","armor","items","#_u_adamantine"]
 },
 
 "10_t_nuts": {
         "Desc": "10 Nuts",
-        "Diff": 6,
+        "Diff": 8,
         "Types": ["item_count","nut","item_set","items","#_t_nuts"]
 },
 
@@ -650,44 +1026,26 @@ var bingoList = {
 
 "2_ss_frostlands": {
         "Desc": "2 Side Stories in Frostlands (No Kit)",
-        "Diff": 6,
+        "Diff": 3,
         "Types": ["ss_set","ss_frostlands","side_stories","#_ss_frostlands"]
 },
 
 "ss_opt_7": {
         "Desc": "SS: A Cub with No Name",
-        "Diff": 6,
+        "Diff": 5,
         "Types": ["ss_specific","ss_woodlands","side_stories"]
-},
-
-"8_t_purple_chests": {
-        "Desc": "Open 8 Purple Chests",
-        "Diff": 6,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"10_weakness_sets": {
-        "Desc": "10 Revealed Weakness Sets",
-        "Diff": 6,
-        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
 },
 
 "1_npc_summons": {
         "Desc": "Expend all Summons on an NPC",
-        "Diff": 6,
+        "Diff": 7,
         "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
-},
-
-"2_bl_summons": {
-        "Desc": "Expend all Summon Uses on 2 Monsters",
-        "Diff": 6,
-        "Types": ["combat_counts","extended_combat","combat","#_bl_summons"]
 },
 
 "3_t_olives": {
         "Desc": "3 Olive (L)'s",
-        "Diff": 7,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+        "Diff": 6,
+        "Types": ["item_count","broad_item_set","items","#_t_olives"]
 },
 
 "2_u_forbidden": {
@@ -710,12 +1068,12 @@ var bingoList = {
 
 "4_u_town_boosts": {
         "Desc": "Inquire/Scrutinize 4 Unique Town Boosts",
-        "Diff": 7,
+        "Diff": 1,
         "Types": ["item_set","info_counts","items","#_u_town_boosts"]
 },
 
 "10_t_town_boosts": {
-        "Desc": "10 Town Boost Infos",
+        "Desc": "10 Total Town Boost Infos",
         "Diff": 7,
         "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
 },
@@ -758,31 +1116,31 @@ var bingoList = {
 
 "3_ss_coastlands": {
         "Desc": "3 Side Stories in Coastlands (No Kit)",
-        "Diff": 7,
+        "Diff": 5,
         "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
 },
 
 "2_ss_highlands": {
         "Desc": "2 Side Stories in Highlands (No Kit)",
-        "Diff": 7,
+        "Diff": 5,
         "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
 "2_ss_sunlands": {
         "Desc": "2 Side Stories in Sunlands (No Kit)",
-        "Diff": 7,
+        "Diff": 5,
         "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
 },
 
 "2_ss_cliftlands": {
         "Desc": "2 Side Stories in Cliftlands (No Kit)",
-        "Diff": 7,
+        "Diff": 5,
         "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
 },
 
 "2_ss_woodlands": {
         "Desc": "2 Side Stories in Woodlands (No Kit)",
-        "Diff": 7,
+        "Diff": 5,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
@@ -793,8 +1151,8 @@ var bingoList = {
 },
 
 "8_u_concoct": {
-        "Desc": "8 Unique Concoctions Used",
-        "Diff": 7,
+        "Desc": "4 Unique Concoctions Used",
+        "Diff": 5,
         "Types": ["combat_counts","items","specific_character","combat","#_u_concoct"]
 },
 
@@ -802,12 +1160,6 @@ var bingoList = {
         "Desc": "Defeat a Strength 5 NPC",
         "Diff": 7,
         "Types": ["combat_set","combat","str_#_NPC"]
-},
-
-"6_bg_yolo": {
-        "Desc": "Use BG Lv. 4 at total of 6 times in one fight",
-        "Diff": 7,
-        "Types": ["extended_combat","combat","#_bg_yolo"]
 },
 
 "6_u_silver": {
@@ -830,7 +1182,7 @@ var bingoList = {
 
 "10_t_m_sstones": {
         "Desc": "10 Soulstone (M)'s",
-        "Diff": 8,
+        "Diff": 10,
         "Types": ["item_count","soulstone","item_set","items","#_t_m_sstones"]
 },
 
@@ -860,44 +1212,38 @@ var bingoList = {
 
 "2_ss_riverlands": {
         "Desc": "2 Side Stories in Riverlands (No Kit)",
-        "Diff": 8,
+        "Diff": 6,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
 },
 
 "ss_opt_2": {
         "Desc": "SS: An Exotic Aroma",
-        "Diff": 8,
+        "Diff": 5,
         "Types": ["ss_specific","ss_coastlands","side_stories"]
 },
 
 "ss_opt_4": {
         "Desc": "SS: A Corpse with No Name",
-        "Diff": 8,
+        "Diff": 7,
         "Types": ["ss_specific","ss_riverlands","side_stories"]
 },
 
 "ss_opt_5": {
         "Desc": "SS: The Bandit's Code",
-        "Diff": 8,
+        "Diff": 6,
         "Types": ["ss_specific","ss_cliftlands","specific_character","side_stories"]
 },
 
-"30_t_chests": {
-        "Desc": "Open 30 Total Chests",
-        "Diff": 8,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
-},
-
-"chapter_2_chests": {
-        "Desc": "Open All Chests in a Chapter 2 Dungeon",
-        "Diff": 8,
-        "Types": ["chest","chest_set","exploration"]
+"5_chapter_2_chests": {
+        "Desc": "Open 5 Chests in a single Chapter 2 Dungeon",
+        "Diff": 5,
+        "Types": ["chest","chest_set","exploration","ch_2"]
 },
 
 "6_ch_1": {
         "Desc": "Complete 6 Chapter 1's",
-        "Diff": 8,
-        "Types": ["chapter","progression","#_ch_1"],
+        "Diff": 9,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
         "Excludes": ["5_ch_1"]
 },
 
@@ -915,7 +1261,7 @@ var bingoList = {
 
 "2_u_soul": {
         "Desc": "2 Unique Soul Weapons",
-        "Diff": 9,
+        "Diff": 10,
         "Types": ["item_set","weapon","elem_atk","items","#_u_soul"]
 },
 
@@ -933,7 +1279,7 @@ var bingoList = {
 
 "10_t_s_nuts": {
         "Desc": "10 Nut (S)'s",
-        "Diff": 9,
+        "Diff": 11,
         "Types": ["item_count","nut","item_set","items","#_t_s_nuts"]
 },
 
@@ -963,55 +1309,105 @@ var bingoList = {
 
 "3_ss_frostlands": {
         "Desc": "3 Side Stories in Frostlands (No Kit)",
-        "Diff": 9,
+        "Diff": 10,
         "Types": ["ss_set","ss_frostlands","side_stories","#_ss_frostlands"]
 },
 
 "3_ss_flatlands": {
         "Desc": "3 Side Stories in Flatlands (No Kit)",
-        "Diff": 9,
+        "Diff": 7,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
 },
 
 "ss_opt_3": {
         "Desc": "SS: Performance Art",
-        "Diff": 9,
+        "Diff": 8,
         "Types": ["ss_specific","ss_highlands","side_stories"]
 },
 
 "ss_chain_6": {
         "Desc": "SS: Meryl, Lost then Found (III)",
-        "Diff": 9,
+        "Diff": 14,
         "Types": ["ss_specific","ss_riverlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
 "4_u_str_bl": {
-        "Desc": "4 Different Strength Monsters in Beast Lore",
+        "Desc": "4 Different Strength Monsters in Beast Lore (No Linde)",
         "Diff": 9,
         "Types": ["combat_counts","specific_character","beast_lore","extended_combat","combat_set","combat","#_u_str_bl"]
 },
 
 "str_4_bl": {
-        "Desc": "Capture a Strength 4 Monster",
-        "Diff": 9,
+        "Desc": "Capture a Strength 4+ Monster",
+        "Diff": 6,
         "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
 },
 
-"1_ch_2": {
-        "Desc": "Complete a Chapter 2",
-        "Diff": 9,
-        "Types": ["chapter","progression","#_ch_2"]
+"ophilia_ch_2": {
+        "Desc": "Complete Ophilia Chapter 2",
+        "Diff": 14,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2"]
+},
+
+"cyrus_ch_2": {
+        "Desc": "Complete Cyrus Chapter 2",
+        "Diff": 11,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2","2_ch_2","tressa_ch_2","therion_ch_2"]
+},
+
+"tressa_ch_2": {
+        "Desc": "Complete Tressa Chapter 2",
+        "Diff": 13,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2","2_ch_2","cyrus_ch_2","therion_ch_2"]
+},
+
+"olberic_ch_2": {
+        "Desc": "Complete Olberic Chapter 2",
+        "Diff": 23,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2"]
+},
+
+"primrose_ch_2": {
+        "Desc": "Complete Primrose Chapter 2",
+        "Diff": 13,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2"]
+},
+
+"alfyn_ch_2": {
+        "Desc": "Complete Alfyn Chapter 2",
+        "Diff": 16,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2"]
+},
+
+"therion_ch_2": {
+        "Desc": "Complete Therion Chapter 2",
+        "Diff": 14,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2","2_ch_2","cyrus_ch_2","tressa_ch_2"]
+},
+
+"haanit_ch_2": {
+        "Desc": "Complete H'aanit Chapter 2",
+        "Diff": 17,
+        "Types": ["chapter","progression","ch_2","specific_chapter","specific_character"],
+        "Excludes": ["1_ch_2"]
 },
 
 "15_t_pouches": {
-        "Desc": "15 Money Pouches",
-        "Diff": 10,
+        "Desc": "15 Total Money Pouches",
+        "Diff": 16,
         "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
 },
 
 "3_u_adamantine": {
         "Desc": "3 Unique Adamantine Equipments",
-        "Diff": 10,
+        "Diff": 13,
         "Types": ["item_set","weapon","elem_atk","armor","items","#_u_adamantine"]
 },
 
@@ -1029,13 +1425,13 @@ var bingoList = {
 
 "10_t_m_nuts": {
         "Desc": "10 Nut (M)'s",
-        "Diff": 10,
+        "Diff": 13,
         "Types": ["item_count","nut","item_set","items","#_t_m_nuts"]
 },
 
 "12_u_sstones": {
         "Desc": "12 Unique Soulstones",
-        "Diff": 10,
+        "Diff": 11,
         "Types": ["broad_item_set","soulstone","items","#_u_sstones"]
 },
 
@@ -1065,43 +1461,43 @@ var bingoList = {
 
 "3_ss_highlands": {
         "Desc": "3 Side Stories in Highlands (No Kit)",
-        "Diff": 10,
+        "Diff": 8,
         "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
 "3_ss_sunlands": {
         "Desc": "3 Side Stories in Sunlands (No Kit)",
-        "Diff": 10,
+        "Diff": 9,
         "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
 },
 
 "3_ss_cliftlands": {
         "Desc": "3 Side Stories in Cliftlands (No Kit)",
-        "Diff": 10,
+        "Diff": 9,
         "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
 },
 
 "3_ss_woodlands": {
         "Desc": "3 Side Stories in Woodlands (No Kit)",
-        "Diff": 10,
+        "Diff": 9,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
 "ss_opt_1": {
         "Desc": "SS: Left Behind",
-        "Diff": 10,
+        "Diff": 7,
         "Types": ["ss_specific","ss_coastlands","side_stories"]
 },
 
 "ss_chain_4": {
         "Desc": "SS: Noelle, Seeker of Knowledge (III)",
-        "Diff": 10,
+        "Diff": 14,
         "Types": ["ss_specific","ss_highlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
 "ss_chain_5": {
         "Desc": "SS: Ria, Born to Roam (III)",
-        "Diff": 10,
+        "Diff": 13,
         "Types": ["ss_specific","ss_sunlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
@@ -1111,28 +1507,10 @@ var bingoList = {
         "Types": ["ss_specific","ss_chain","ss_II","side_stories"]
 },
 
-"30_t_brown_chests": {
-        "Desc": "Open 30 Brown Chests",
-        "Diff": 10,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"18_t_red_chests": {
-        "Desc": "Open 18 Red Chests",
-        "Diff": 10,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-},
-
 "6_u_bl": {
-        "Desc": "Capture 6 Unique Monsters",
-        "Diff": 10,
+        "Desc": "Have 6 unique Monsters in Beast Lore",
+        "Diff": 7,
         "Types": ["combat_counts","specific_character","beast_lore","combat","#_u_bl"]
-},
-
-"8_bg_yolo": {
-        "Desc": "Use BG Lv. 4 at total of 8 times in one fight",
-        "Diff": 10,
-        "Types": ["extended_combat","combat","#_bg_yolo"]
 },
 
 "20_t_s_sstones": {
@@ -1161,56 +1539,38 @@ var bingoList = {
 
 "ss_collect_1": {
         "Desc": "SS: Here Be Dragons",
-        "Diff": 11,
+        "Diff": 15,
         "Types": ["ss_specific","ss_frostlands","side_stories"]
-},
-
-"12_t_purple_chests": {
-        "Desc": "Open 12 Purple Chests",
-        "Diff": 11,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
 },
 
 "2_optional_bosses": {
         "Desc": "Defeat 2 Unique Optional Bosses",
-        "Diff": 11,
+        "Diff": 13,
         "Types": ["boss","exploration","#_optional_bosses"]
-},
-
-"15_weakness_sets": {
-        "Desc": "15 Revealed Weakness Sets",
-        "Diff": 11,
-        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
 },
 
 "2_npc_summons": {
         "Desc": "Expend all Summons on an NPC 2 times",
-        "Diff": 11,
+        "Diff": 14,
         "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
-},
-
-"4_bl_summons": {
-        "Desc": "Expend all Summon Uses on 4 Monsters",
-        "Diff": 11,
-        "Types": ["combat_counts","extended_combat","combat","#_bl_summons"]
 },
 
 "7_ch_1": {
         "Desc": "Complete 7 Chapter 1's",
-        "Diff": 11,
-        "Types": ["chapter","progression","#_ch_1"],
+        "Diff": 12,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
         "Excludes": ["5_ch_1","6_ch_1"]
 },
 
 "7_u_silver": {
         "Desc": "7 Unique Silver Equipments",
-        "Diff": 12,
+        "Diff": 10,
         "Types": ["item_set","armor","weapon","items","#_u_silver"]
 },
 
 "2_u_dragon": {
         "Desc": "2 Unique Dragon Equipments",
-        "Diff": 12,
+        "Diff": 10,
         "Types": ["item_set","armor","weapon","crit","items","#_u_dragon"]
 },
 
@@ -1252,7 +1612,7 @@ var bingoList = {
 
 "2_ss_II_sets": {
         "Desc": "2 (II) Side Stories",
-        "Diff": 12,
+        "Diff": 10,
         "Types": ["ss_set","ss_chain","ss_II","side_stories","#_ss_II_sets"],
         "Excludes": ["1_ss_II_sets"]
 },
@@ -1265,25 +1625,25 @@ var bingoList = {
 
 "4_ss_coastlands": {
         "Desc": "4 Side Stories in Coastlands (No Kit)",
-        "Diff": 12,
+        "Diff": 11,
         "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
 },
 
 "ss_chain_1": {
         "Desc": "SS: Sir Miles, Servant of the Flame (III)",
-        "Diff": 12,
+        "Diff": 16,
         "Types": ["ss_specific","ss_frostlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
 "ss_chain_2": {
         "Desc": "SS: Theracio's Tutelage (III)",
-        "Diff": 12,
+        "Diff": 14,
         "Types": ["ss_specific","ss_flatlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
 "ss_chain_8": {
         "Desc": "SS: Ashlan the Beastmaster (III)",
-        "Diff": 12,
+        "Diff": 14,
         "Types": ["ss_specific","ss_woodlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
 },
 
@@ -1301,7 +1661,7 @@ var bingoList = {
 
 "5_t_l_nuts": {
         "Desc": "5 Nut (L)'s",
-        "Diff": 13,
+        "Diff": 16,
         "Types": ["item_count","nut","item_set","items","#_t_l_nuts"]
 },
 
@@ -1319,13 +1679,13 @@ var bingoList = {
 
 "10_t_bottles": {
         "Desc": "10 Status Bottles",
-        "Diff": 13,
+        "Diff": 12,
         "Types": ["item_set","item_count","bottle","items","#_t_bottles"]
 },
 
 "2_bottle_sets": {
         "Desc": "2 Complete Sets of Status Bottles",
-        "Diff": 13,
+        "Diff": 11,
         "Types": ["item_set","item_count","bottle","items","#_bottle_sets"]
 },
 
@@ -1355,31 +1715,31 @@ var bingoList = {
 
 "10_side_stories": {
         "Desc": "10 Side Stories",
-        "Diff": 13,
+        "Diff": 12,
         "Types": ["broad_ss_set","side_stories","#_side_stories"]
 },
 
 "3_ss_riverlands": {
         "Desc": "3 Side Stories in Riverlands (No Kit)",
-        "Diff": 13,
+        "Diff": 10,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
 },
 
 "4_ss_cliftlands": {
         "Desc": "4 Side Stories in Cliftlands (No Kit)",
-        "Diff": 13,
+        "Diff": 11,
         "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
 },
 
 "ss_boss_1": {
         "Desc": "SS: The Slumbering Giant",
-        "Diff": 13,
+        "Diff": 12,
         "Types": ["ss_specific","ss_frostlands","ss_boss","specific_character","boss","side_stories"]
 },
 
 "ss_chain_10": {
         "Desc": "SS: Daughter of the Dark God (II)",
-        "Diff": 13,
+        "Diff": 10,
         "Types": ["ss_specific","ss_chain","ss_II","side_stories"]
 },
 
@@ -1427,26 +1787,26 @@ var bingoList = {
 
 "1_ss_III_sets": {
         "Desc": "1 (III) Side Story",
-        "Diff": 14,
+        "Diff": 11,
         "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
         "Excludes": ["1_ss_II_sets"]
 },
 
 "4_ss_flatlands": {
         "Desc": "4 Side Stories in Flatlands (No Kit)",
-        "Diff": 14,
+        "Diff": 12,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
 },
 
 "ss_collect_2": {
         "Desc": "SS: The Price of Vengeance",
-        "Diff": 14,
+        "Diff": 20,
         "Types": ["ss_specific","ss_flatlands","side_stories"]
 },
 
 "1_ss_bosses": {
         "Desc": "Defeat 1 Side Story Boss",
-        "Diff": 14,
+        "Diff": 11,
         "Types": ["ss_set","ss_boss","boss","side_stories","#_ss_bosses"]
 },
 
@@ -1475,14 +1835,14 @@ var bingoList = {
 },
 
 "str_5_bl": {
-        "Desc": "Capture a Strength 5 Monster",
-        "Diff": 14,
+        "Desc": "Capture a Strength 5+ Monster",
+        "Diff": 9,
         "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
 },
 
 "20_t_nuts": {
         "Desc": "20 Nuts",
-        "Diff": 15,
+        "Diff": 18,
         "Types": ["item_count","nut","item_set","items","#_t_nuts"]
 },
 
@@ -1498,63 +1858,45 @@ var bingoList = {
         "Types": ["item_set","item_count","accessory","elem_reduce","items","#_t_strong_amulets"]
 },
 
-"20_t_town_boosts": {
-        "Desc": "20 Town Boost Infos",
-        "Diff": 15,
-        "Types": ["item_set","item_count","info_counts","items","#_t_town_boosts"]
-},
-
 "4_ss_highlands": {
         "Desc": "4 Side Stories in Highlands (No Kit)",
-        "Diff": 15,
+        "Diff": 13,
         "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
 "4_ss_sunlands": {
         "Desc": "4 Side Stories in Sunlands (No Kit)",
-        "Diff": 15,
+        "Diff": 13,
         "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
 },
 
 "4_ss_riverlands": {
         "Desc": "4 Side Stories in Riverlands (No Kit)",
-        "Diff": 15,
+        "Diff": 14,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
 },
 
 "4_ss_woodlands": {
         "Desc": "4 Side Stories in Woodlands (No Kit)",
-        "Diff": 15,
+        "Diff": 12,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
-},
-
-"ss_chain_7": {
-        "Desc": "SS: Kaia, Mother of Dragon (III)",
-        "Diff": 15,
-        "Types": ["ss_specific","ss_cliftlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
-},
-
-"45_t_chests": {
-        "Desc": "Open 45 Total Chests",
-        "Diff": 15,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
 "3_optional_bosses": {
         "Desc": "Defeat 3 Unique Optional Bosses",
-        "Diff": 15,
+        "Diff": 19,
         "Types": ["boss","exploration","#_optional_bosses"]
 },
 
 "16_u_concoct": {
-        "Desc": "16 Unique Concoctions Used",
-        "Diff": 15,
+        "Desc": "8 Unique Concoctions Used",
+        "Diff": 10,
         "Types": ["combat_counts","items","specific_character","combat","#_u_concoct"]
 },
 
 "15_u_gold_items": {
         "Desc": "15 Unique Gold Items",
-        "Diff": 16,
+        "Diff": 19,
         "Types": ["broad_item_set","gold_item","items","#_u_gold_items"]
 },
 
@@ -1566,7 +1908,7 @@ var bingoList = {
 
 "10_t_l_sstones": {
         "Desc": "10 Soulstone (L)'s",
-        "Diff": 16,
+        "Diff": 19,
         "Types": ["item_count","soulstone","item_set","items","#_t_l_sstones"]
 },
 
@@ -1584,7 +1926,7 @@ var bingoList = {
 
 "8_u_town_boosts": {
         "Desc": "Inquire/Scrutinize 8 Unique Town Boosts",
-        "Diff": 16,
+        "Diff": 14,
         "Types": ["item_set","info_counts","items","#_u_town_boosts"]
 },
 
@@ -1614,44 +1956,32 @@ var bingoList = {
 
 "5_ss_coastlands": {
         "Desc": "5 Side Stories in Coastlands (No Kit)",
-        "Diff": 16,
+        "Diff": 15,
         "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
 },
 
 "5_ss_cliftlands": {
         "Desc": "5 Side Stories in Cliftlands (No Kit)",
-        "Diff": 16,
+        "Diff": 14,
         "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
-},
-
-"40_t_brown_chests": {
-        "Desc": "Open 40 Brown Chests",
-        "Diff": 16,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"24_t_red_chests": {
-        "Desc": "Open 24 Red Chests",
-        "Diff": 16,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
 },
 
 "6_u_magic_bl": {
         "Desc": "Capture 6 Unique Elemental Themed Enemies",
-        "Diff": 16,
+        "Diff": 19,
         "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
 },
 
 "2_ch_2": {
         "Desc": "Complete 2 Chapter 2's",
-        "Diff": 16,
-        "Types": ["chapter","progression","#_ch_2"],
+        "Diff": 18,
+        "Types": ["chapter","progression","#_ch_2","ch_2"],
         "Excludes": ["1_ch_2"]
 },
 
 "3_u_dragon": {
         "Desc": "3 Unique Dragon Equipments",
-        "Diff": 17,
+        "Diff": 15,
         "Types": ["item_set","armor","weapon","crit","items","#_u_dragon"]
 },
 
@@ -1673,57 +2003,21 @@ var bingoList = {
         "Types": ["elem_def","stats","#_elem_def"]
 },
 
-"16_t_purple_chests": {
-        "Desc": "Open 16 Purple Chests",
-        "Diff": 17,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
-},
-
-"20_weakness_sets": {
-        "Desc": "20 Revealed Weakness Sets",
-        "Diff": 17,
-        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
-},
-
-"5_u_str_bl": {
-        "Desc": "5 Different Strength Monsters in Beast Lore",
-        "Diff": 17,
-        "Types": ["combat_counts","specific_character","beast_lore","extended_combat","combat_set","combat","#_u_str_bl"]
-},
-
-"3_npc_summons": {
-        "Desc": "Expend all Summons on an NPC 3 times",
-        "Diff": 17,
-        "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
-},
-
-"6_bl_summons": {
-        "Desc": "Expend all Summon Uses on 6 Monsters",
-        "Diff": 17,
-        "Types": ["combat_counts","extended_combat","combat","#_bl_summons"]
-},
-
-"20_t_pouches": {
-        "Desc": "20 Money Pouches",
-        "Diff": 18,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
-},
-
 "8_u_silver": {
         "Desc": "8 Unique Silver Equipments",
-        "Diff": 18,
+        "Diff": 15,
         "Types": ["item_set","armor","weapon","items","#_u_silver"]
 },
 
 "2_u_rune": {
         "Desc": "2 Unique Rune Weapons",
-        "Diff": 18,
+        "Diff": 14,
         "Types": ["item_set","weapon","elem_atk","items","#_u_rune"]
 },
 
 "4_u_adamantine": {
         "Desc": "4 Unique Adamantine Equipments",
-        "Diff": 18,
+        "Diff": 21,
         "Types": ["item_set","weapon","elem_atk","armor","items","#_u_adamantine"]
 },
 
@@ -1747,13 +2041,13 @@ var bingoList = {
 
 "20_t_m_sstones": {
         "Desc": "20 Soulstone (M)'s",
-        "Diff": 18,
+        "Diff": 21,
         "Types": ["item_count","soulstone","item_set","items","#_t_m_sstones"]
 },
 
 "7_t_l_nuts": {
         "Desc": "7 Nut (L)'s",
-        "Diff": 18,
+        "Diff": 22,
         "Types": ["item_count","nut","item_set","items","#_t_l_nuts"]
 },
 
@@ -1777,45 +2071,45 @@ var bingoList = {
 
 "3_ss_II_sets": {
         "Desc": "3 (II) Side Stories",
-        "Diff": 18,
+        "Diff": 14,
         "Types": ["ss_set","ss_chain","ss_II","side_stories","#_ss_II_sets"],
         "Excludes": ["1_ss_II_sets","2_ss_II_sets"]
 },
 
 "5_ss_flatlands": {
         "Desc": "5 Side Stories in Flatlands (No Kit)",
-        "Diff": 18,
+        "Diff": 16,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
 },
 
 "5_ss_highlands": {
         "Desc": "5 Side Stories in Highlands (No Kit)",
-        "Diff": 18,
+        "Diff": 15,
         "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
 "5_ss_woodlands": {
         "Desc": "5 Side Stories in Woodlands (No Kit)",
-        "Diff": 18,
+        "Diff": 14,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
-"chapter_3_chests": {
-        "Desc": "Open All Chests in a Chapter 3 Dungeon",
-        "Diff": 18,
-        "Types": ["chest","chest_set","exploration"]
+"5_chapter_3_chests": {
+        "Desc": "Open 5 Chests in a Chapter 3 Dungeon",
+        "Diff": 14,
+        "Types": ["chest","chest_set","exploration","ch_3"]
 },
 
 "ch_2_duo": {
         "Desc": "Chapter 2 Boss with 2 only Travelers",
-        "Diff": 18,
-        "Types": ["combat_challenge","boss","progression","combat"]
+        "Diff": 17,
+        "Types": ["combat_challenge","boss","progression","combat","ch_2"]
 },
 
 "8_ch_1": {
         "Desc": "Complete 8 Chapter 1's",
-        "Diff": 18,
-        "Types": ["chapter","progression","#_ch_1"],
+        "Diff": 15,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
         "Excludes": ["5_ch_1","6_ch_1","7_ch_1"]
 },
 
@@ -1831,28 +2125,22 @@ var bingoList = {
         "Types": ["phys_def","stats","#_phys_def"]
 },
 
-"ss_chain_3": {
-        "Desc": "SS: Le Mann, Explorer Extraordinaire (III)",
-        "Diff": 19,
-        "Types": ["ss_specific","ss_coastlands","ss_chain","ss_III","specific_character","ss_II","side_stories"]
-},
-
 "str_7_NPC": {
-        "Desc": "Defeat a Strength 7 NPC",
+        "Desc": "Defeat a Strength 7+ NPC",
         "Diff": 19,
         "Types": ["combat_set","combat","str_#_NPC"]
 },
 
 "15_t_s_nuts": {
         "Desc": "15 Nut (S)'s",
-        "Diff": 20,
+        "Diff": 22,
         "Types": ["item_count","nut","item_set","items","#_t_s_nuts"]
 },
 
 "6_t_olives": {
         "Desc": "6 Olive (L)'s",
-        "Diff": 20,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_olives"]
+        "Diff": 21,
+        "Types": ["item_count","broad_item_set","items","#_t_olives"]
 },
 
 "10_t_elem_amulets": {
@@ -1893,39 +2181,27 @@ var bingoList = {
 
 "5_ss_sunlands": {
         "Desc": "5 Side Stories in Sunlands (No Kit)",
-        "Diff": 20,
+        "Diff": 16,
         "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
 },
 
 "5_ss_riverlands": {
         "Desc": "5 Side Stories in Riverlands (No Kit)",
-        "Diff": 20,
+        "Diff": 16,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
-},
-
-"60_t_chests": {
-        "Desc": "Open 60 Total Chests",
-        "Diff": 20,
-        "Types": ["chest","chest_counts","exploration","#_t_chests"]
 },
 
 "4_optional_bosses": {
         "Desc": "Defeat 4 Unique Optional Bosses",
-        "Diff": 20,
+        "Diff": 23,
         "Types": ["boss","exploration","#_optional_bosses"]
 },
 
 "1_ch_3": {
         "Desc": "Complete a Chapter 3",
-        "Diff": 20,
-        "Types": ["chapter","progression","#_ch_3"],
+        "Diff": 21,
+        "Types": ["chapter","progression","#_ch_3","ch_3"],
         "Excludes": ["1_ch_2"]
-},
-
-"4_u_soul": {
-        "Desc": "4 Unique Soul Weapons",
-        "Diff": 20,
-        "Types": ["item_set","weapon","elem_atk","items","#_u_soul"]
 },
 
 "3_u_forbidden": {
@@ -1952,28 +2228,16 @@ var bingoList = {
         "Types": ["item_set","item_count","status_stone","accessory","items","#_t_stones"]
 },
 
-"15_t_bottles": {
-        "Desc": "15 Status Bottles",
-        "Diff": 20,
-        "Types": ["item_set","item_count","bottle","items","#_t_bottles"]
-},
-
-"12_u_bl": {
-        "Desc": "Capture 12 Unique Monsters",
-        "Diff": 20,
-        "Types": ["combat_counts","specific_character","beast_lore","combat","#_u_bl"]
-},
-
 "3_ch_2": {
         "Desc": "Complete 3 Chapter 2's",
-        "Diff": 20,
-        "Types": ["chapter","progression","#_ch_2"],
+        "Diff": 22,
+        "Types": ["chapter","progression","#_ch_2","ch_2"],
         "Excludes": ["1_ch_2","2_ch_2"]
 },
 
 "30_t_s_sstones": {
         "Desc": "30 Soulstone (S)'s",
-        "Diff": 21,
+        "Diff": 23,
         "Types": ["item_count","soulstone","item_set","items","#_t_s_sstones"]
 },
 
@@ -1997,20 +2261,8 @@ var bingoList = {
 
 "6_ss_cliftlands": {
         "Desc": "6 Side Stories in Cliftlands (No Kit)",
-        "Diff": 21,
+        "Diff": 17,
         "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
-},
-
-"4_npc_summons": {
-        "Desc": "Expend all Summons on an NPC 4 times",
-        "Diff": 21,
-        "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
-},
-
-"8_bl_summons": {
-        "Desc": "Expend all Summon Uses on 8 Monsters",
-        "Diff": 21,
-        "Types": ["combat_counts","extended_combat","combat","#_bl_summons"]
 },
 
 "3_u_boss_drop": {
@@ -2039,74 +2291,56 @@ var bingoList = {
 
 "2_ss_region_sets": {
         "Desc": "2 Side Stories in Each Region",
-        "Diff": 22,
+        "Diff": 20,
         "Types": ["broad_ss_set","side_stories","#_ss_region_sets"]
 },
 
 "2_ss_III_sets": {
         "Desc": "2 (III) Side Stories",
-        "Diff": 22,
+        "Diff": 18,
         "Types": ["ss_set","ss_chain","ss_III","side_stories","#_ss_III_sets"],
         "Excludes": ["1_ss_II_sets","2_ss_II_sets","1_ss_III_sets"]
 },
 
 "6_ss_frostlands": {
         "Desc": "6 Side Stories in Frostlands (No Kit)",
-        "Diff": 22,
+        "Diff": 20,
         "Types": ["ss_set","ss_frostlands","side_stories","#_ss_frostlands"]
 },
 
 "6_ss_flatlands": {
         "Desc": "6 Side Stories in Flatlands (No Kit)",
-        "Diff": 22,
+        "Diff": 18,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
 },
 
 "6_ss_coastlands": {
         "Desc": "6 Side Stories in Coastlands (No Kit)",
-        "Diff": 22,
+        "Diff": 19,
         "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
 },
 
-"50_t_brown_chests": {
-        "Desc": "Open 50 Brown Chests",
-        "Diff": 22,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
-},
-
-"30_t_red_chests": {
-        "Desc": "Open 30 Red Chests",
-        "Diff": 22,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-},
-
 "str_6_bl": {
-        "Desc": "Capture a Strength 6 Monster",
-        "Diff": 22,
+        "Desc": "Capture a Strength 6+ Monster",
+        "Diff": 15,
         "Types": ["extended_combat","specific_character","beast_lore","combat_set","combat","str_#_bl"]
 },
 
 "ch_2_slow": {
-        "Desc": "Chapter 2 Boss without Soulstones or Vets",
-        "Diff": 22,
-        "Types": ["combat_challenge","boss","progression","combat"]
+        "Desc": "Chapter 2 Boss without Vets",
+        "Diff": 23,
+        "Types": ["combat_challenge","boss","progression","combat","ch_2"]
 },
 
 "ch_2_no_boost": {
         "Desc": "Chapter 2 Boss without Boosting",
-        "Diff": 22,
-        "Types": ["combat_challenge","boss","progression","combat"]
-},
-
-"25_t_pouches": {
-        "Desc": "25 Money Pouches",
-        "Diff": 22,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
+        "Diff": 20,
+        "Types": ["combat_challenge","boss","progression","combat","ch_2"]
 },
 
 "4_u_dragon": {
         "Desc": "4 Unique Dragon Equipments",
-        "Diff": 22,
+        "Diff": 19,
         "Types": ["item_set","armor","weapon","crit","items","#_u_dragon"]
 },
 
@@ -2118,7 +2352,7 @@ var bingoList = {
 
 "15_t_m_nuts": {
         "Desc": "15 Nut (M)'s",
-        "Diff": 22,
+        "Diff": 25,
         "Types": ["item_count","nut","item_set","items","side_stories","#_t_m_nuts"]
 },
 
@@ -2140,23 +2374,11 @@ var bingoList = {
         "Types": ["broad_item_set","accessory","stat_accessory","elem_reduce","items","#_u_accessories"]
 },
 
-"3_bottle_sets": {
-        "Desc": "3 Complete Sets of Status Bottles",
-        "Diff": 22,
-        "Types": ["item_set","item_count","bottle","items","#_bottle_sets"]
-},
-
 "4_ss_II_sets": {
         "Desc": "4 (II) Side Stories",
-        "Diff": 22,
+        "Diff": 17,
         "Types": ["ss_set","ss_chain","ss_II","side_stories","#_ss_II_sets"],
         "Excludes": ["1_ss_II_sets","2_ss_II_sets","3_ss_II_sets"]
-},
-
-"20_t_purple_chests": {
-        "Desc": "Open 20 Purple Chests",
-        "Diff": 22,
-        "Types": ["chest","chest_counts","exploration","#_t_purple_chests"]
 },
 
 "9_u_lizards_bl": {
@@ -2195,15 +2417,9 @@ var bingoList = {
         "Types": ["ss_set","ss_frostlands","side_stories","#_ss_frostlands"]
 },
 
-"6_ss_highlands": {
-        "Desc": "6 Side Stories in Highlands (No Kit)",
-        "Diff": 22,
-        "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
-},
-
 "6_ss_woodlands": {
         "Desc": "6 Side Stories in Woodlands (No Kit)",
-        "Diff": 22,
+        "Diff": 16,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
@@ -2213,21 +2429,15 @@ var bingoList = {
         "Types": ["broad_item_set","weapon","elem_atk","items","#_u_elem_wpn"]
 },
 
-"20_t_s_nuts": {
-        "Desc": "20 Nut (S)'s",
-        "Diff": 23,
-        "Types": ["item_count","nut","item_set","items","#_t_s_nuts"]
-},
-
 "30_t_nuts": {
         "Desc": "30 Nuts",
-        "Diff": 23,
+        "Diff": 25,
         "Types": ["item_count","nut","item_set","items","side_stories","#_t_nuts"]
 },
 
 "18_u_sstones": {
         "Desc": "18 Unique Soulstones",
-        "Diff": 23,
+        "Diff": 24,
         "Types": ["broad_item_set","soulstone","items","#_u_sstones"]
 },
 
@@ -2251,25 +2461,13 @@ var bingoList = {
 
 "ss_boss_3": {
         "Desc": "SS: Scourge of the Seas",
-        "Diff": 23,
+        "Diff": 20,
         "Types": ["ss_specific","ss_coastlands","ss_boss","boss","side_stories"]
-},
-
-"5_optional_bosses": {
-        "Desc": "Defeat 5 Unique Optional Bosses",
-        "Diff": 23,
-        "Types": ["boss","exploration","#_optional_bosses"]
-},
-
-"25_weakness_sets": {
-        "Desc": "25 Revealed Weakness Sets",
-        "Diff": 23,
-        "Types": ["combat_counts","extended_combat","combat","#_weakness_sets"]
 },
 
 "20_u_gold_items": {
         "Desc": "20 Unique Gold Items",
-        "Diff": 23,
+        "Diff": 25,
         "Types": ["broad_item_set","gold_item","items","#_u_gold_items"]
 },
 
@@ -2311,32 +2509,14 @@ var bingoList = {
 
 "7_ss_flatlands": {
         "Desc": "7 Side Stories in Flatlands (No Kit)",
-        "Diff": 23,
+        "Diff": 21,
         "Types": ["ss_set","ss_flatlands","side_stories","#_ss_flatlands"]
-},
-
-"7_ss_coastlands": {
-        "Desc": "7 Side Stories in Coastlands (No Kit)",
-        "Diff": 23,
-        "Types": ["ss_set","ss_coastlands","side_stories","#_ss_coastlands"]
 },
 
 "6_ss_sunlands": {
         "Desc": "6 Side Stories in Sunlands (No Kit)",
-        "Diff": 23,
+        "Diff": 18,
         "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
-},
-
-"30_t_pouches": {
-        "Desc": "30 Money Pouches",
-        "Diff": 24,
-        "Types": ["item_count","gold_item","broad_item_set","items","#_t_pouches"]
-},
-
-"10_t_l_nuts": {
-        "Desc": "10 Nut (L)'s",
-        "Diff": 24,
-        "Types": ["item_count","nut","item_set","items","side_stories","#_t_l_nuts"]
 },
 
 "15_u_daggers": {
@@ -2365,38 +2545,20 @@ var bingoList = {
 
 "20_side_stories": {
         "Desc": "20 Side Stories",
-        "Diff": 24,
+        "Diff": 19,
         "Types": ["broad_ss_set","side_stories","#_side_stories"]
 },
 
 "7_ss_highlands": {
         "Desc": "7 Side Stories in Highlands (No Kit)",
-        "Diff": 24,
+        "Diff": 18,
         "Types": ["ss_set","ss_highlands","side_stories","#_ss_highlands"]
 },
 
 "ss_boss_4": {
         "Desc": "SS: Shadow over the Sands",
-        "Diff": 24,
+        "Diff": 23,
         "Types": ["ss_specific","ss_sunlands","ss_boss","boss","side_stories"]
-},
-
-"5_npc_summons": {
-        "Desc": "Expend all Summons on an NPC 5 times",
-        "Diff": 24,
-        "Types": ["combat_counts","extended_combat","combat","#_npc_summons"]
-},
-
-"10_bl_summons": {
-        "Desc": "Expend all Summon Uses on 10 Monsters",
-        "Diff": 24,
-        "Types": ["combat_counts","extended_combat","combat","#_bl_summons"]
-},
-
-"16_u_bl": {
-        "Desc": "Capture 16 Unique Monsters",
-        "Diff": 24,
-        "Types": ["combat_counts","specific_character","beast_lore","combat","#_u_bl"]
 },
 
 "630_evasion": {
@@ -2407,32 +2569,14 @@ var bingoList = {
 
 "6_ss_riverlands": {
         "Desc": "6 Side Stories in Riverlands (No Kit)",
-        "Diff": 24,
+        "Diff": 18,
         "Types": ["ss_set","ss_riverlands","side_stories","#_ss_riverlands"]
-},
-
-"24_u_concoct": {
-        "Desc": "24 Unique Concoctions Used",
-        "Diff": 24,
-        "Types": ["combat_counts","items","specific_character","combat","#_u_concoct"]
-},
-
-"6_u_str_bl": {
-        "Desc": "6 Different Strength Monsters in Beast Lore",
-        "Diff": 24,
-        "Types": ["combat_counts","specific_character","beast_lore","extended_combat","combat_set","combat","#_u_str_bl"]
-},
-
-"str_8_NPC": {
-        "Desc": "Defeat a Strength 8 NPC",
-        "Diff": 24,
-        "Types": ["combat_set","combat","str_#_NPC"]
 },
 
 "4_ch_2": {
         "Desc": "Complete 4 Chapter 2's",
-        "Diff": 24,
-        "Types": ["chapter","progression","#_ch_2"],
+        "Diff": 25,
+        "Types": ["chapter","progression","#_ch_2","ch_2"],
         "Excludes": ["1_ch_2","2_ch_2","3_ch_2"]
 },
 
@@ -2466,53 +2610,195 @@ var bingoList = {
         "Types": ["accuracy","stats","#_accuracy"]
 },
 
-"7_ss_cliftlands": {
-        "Desc": "7 Side Stories in Cliftlands (No Kit)",
-        "Diff": 25,
-        "Types": ["ss_set","ss_cliftlands","side_stories","#_ss_cliftlands"]
-},
-
 "7_ss_woodlands": {
         "Desc": "7 Side Stories in Woodlands (No Kit)",
-        "Diff": 25,
+        "Diff": 18,
         "Types": ["ss_set","ss_woodlands","side_stories","#_ss_woodlands"]
 },
 
 "10_u_magic_bl": {
-        "Desc": "Capture 10 Unique Elemental Themed Enemies",
+        "Desc": "Capture 9 Unique Elemental Themed Enemies",
         "Diff": 25,
         "Types": ["combat_counts","specific_character","beast_lore","combat_set","combat","#_u_magic_bl"]
 },
 
-"2_ch_3": {
-        "Desc": "Complete 2 Chapter 3's",
-        "Diff": 25,
-        "Types": ["chapter","progression","#_ch_3"],
-        "Excludes": ["1_ch_2","2_ch_2","1_ch_3"]
-},
-
 "3_u_rune": {
         "Desc": "3 Unique Rune Weapons",
-        "Diff": 25,
+        "Diff": 20,
         "Types": ["item_set","weapon","elem_atk","items","progression","#_u_rune"]
 },
 
-"7_ss_sunlands": {
-        "Desc": "7 Side Stories in Sunlands (No Kit)",
-        "Diff": 25,
-        "Types": ["ss_set","ss_sunlands","side_stories","#_ss_sunlands"]
+/*
+"3_chest_swords": {
+        "Desc": "Open 3 Chests containing Swords",
+        "Diff": 6,
+        "Types": ["item_set","weapon","items","#_u_swords","chests","chest_counts"]
 },
 
-"60_t_brown_chests": {
-        "Desc": "Open 60 Brown Chests",
-        "Diff": 25,
-        "Types": ["chest","chest_counts","exploration","#_t_brown_chests"]
+"6_chest_swords": {
+        "Desc": "Open 6 Chests containing Swords",
+        "Diff": 13,
+        "Types": ["item_set","weapon","items","#_u_swords","chests","chest_counts","exploration"]
 },
 
-"36_t_red_chests": {
-        "Desc": "Open 36 Red Chests",
-        "Diff": 25,
-        "Types": ["chest","chest_counts","exploration","#_t_red_chests"]
-}
+"2_chest_spears": {
+        "Desc": "Open 2 Chests containing Spears",
+        "Diff": 4,
+        "Types": ["item_set","weapon","items","#_u_spears","chests","chest_counts"]
+},
+
+"4_chest_spears": {
+        "Desc": "Open 4 Chests containing Spears",
+        "Diff": 9,
+        "Types": ["item_set","weapon","items","#_u_spears","chests","chest_counts","exploration"]
+},
+
+"3_chest_daggers": {
+        "Desc": "Open 3 Chests containing Daggers",
+        "Diff": 5,
+        "Types": ["item_set","weapon","items","#_u_daggers","chests","chest_counts","specific_character"]
+},
+
+"5_chest_daggers": {
+        "Desc": "Open 5 Chests containing Daggers",
+        "Diff": 10,
+        "Types": ["item_set","weapon","items","#_u_daggers","chests","chest_counts","specific_character","exploration"]
+},
+
+"2_chest_axes": {
+        "Desc": "Open 2 Chests containing Axes",
+        "Diff": 5,
+        "Types": ["item_set","weapon","items","#_u_axes","chests","chest_counts","specific_character"]
+},
+
+"4_chest_axes": {
+        "Desc": "Open 4 Chests containing Axes",
+        "Diff": 10,
+        "Types": ["item_set","weapon","items","#_u_axes","chests","chest_counts","specific_character","exploration"]
+},
+
+"2_chest_bows": {
+        "Desc": "Open 2 Chests containing Bows",
+        "Diff": 6,
+        "Types": ["item_set","weapon","items","#_u_bows","chests","chest_counts","specific_character"]
+},
+
+"4_chest_bows": {
+        "Desc": "Open 4 Chests containing Bows",
+        "Diff": 11,
+        "Types": ["item_set","weapon","items","#_u_bows","chests","chest_counts","specific_character","exploration"]
+},
+
+"3_chest_staves": {
+        "Desc": "Open 3 Chests containing Staves",
+        "Diff": 7,
+        "Types": ["item_set","weapon","items","#_u_staves","chests","chest_counts","specific_character","exploration"]
+},
+
+"5_chest_staves": {
+        "Desc": "Open 5 Chests containing Staves",
+        "Diff": 11,
+        "Types": ["item_set","weapon","items","#_u_staves","chests","chest_counts","specific_character","exploration"]
+},
+*/
+
+"1_5_region_chapters": {
+        "Desc": "Complete at least 1 chapter in 5 different regions",
+        "Diff": 7,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
+        "Excludes": ["1_ch_2"]
+},
+
+"1_6_region_chapters": {
+        "Desc": "Complete at least 1 chapter in 6 different regions",
+        "Diff": 12,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
+        "Excludes": ["1_ch_2"]
+},
+
+"1_7_region_chapters": {
+        "Desc": "Complete at least 1 chapter in 7 different regions",
+        "Diff": 16,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
+        "Excludes": ["1_ch_2","2_ch_2"]
+},
+
+"1_8_region_chapters": {
+        "Desc": "Complete at least 1 chapter in each region",
+        "Diff": 19,
+        "Types": ["chapter","progression","#_ch_1","ch_1"],
+        "Excludes": ["1_ch_2","2_ch_2"]
+},
+
+"2_2_region_chapters": {
+        "Desc": "Complete at least 2 chapters in each of 2 different regions",
+        "Diff": 20,
+        "Types": ["chapter","progression","#_ch_1","ch_1","#_ch_2","ch_2"],
+        "Excludes": ["1_ch_2","2_ch_2"]
+},
+
+"2_3_region_chapters": {
+        "Desc": "Complete at least 2 chapters in each of 3 different regions",
+        "Diff": 24,
+        "Types": ["chapter","progression","#_ch_1","ch_1","#_ch_2","ch_2"],
+        "Excludes": ["1_ch_2","2_ch_2","3_ch_2"]
+},
 
 };
+
+
+/*
+"2_purple_highlands": {
+        "Desc": "2 Purple Chests in Highlands",
+        "Diff": 5,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"4_purple_highlands": {
+        "Desc": "4 Purple Chests in Highlands",
+        "Diff": 6,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"5_purple_highlands": {
+        "Desc": "5 Purple Chests in Highlands",
+        "Diff": 9,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"3_purple_sunlands": {
+        "Desc": "3 Purple Chests in Sunlands",
+        "Diff": 4,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"6_purple_sunlands": {
+        "Desc": "6 Purple Chests in Sunlands",
+        "Diff": 8,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"7_purple_sunlands": {
+        "Desc": "8 Purple Chests in Sunlands",
+        "Diff": 10,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"3_purple_riverlands": {
+        "Desc": "3 Purple Chests in Riverlands",
+        "Diff": 4,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"3_purple_riverlands": {
+        "Desc": "6 Purple Chests in Riverlands",
+        "Diff": 8,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+
+"3_purple_riverlands": {
+        "Desc": "8 Purple Chests in Riverlands",
+        "Diff": 10,
+        "Types": ["chests","chest_counts","exploration","specific_character"]
+},
+*/

@@ -238,7 +238,7 @@ var bingoList = {
   },
 
   "CrystalCrawler": {
-    "Desc": "Crystal Crawler Journal Entry"
+    "Desc": "Check the Crystal Crawler Journal Entry"
   },
 
   "Devout": {
@@ -289,7 +289,7 @@ var bingoList = {
   },
 
   "Mimics": {
-    "Desc": "Kill 4 Mimics"
+    "Desc": "Check/Kill 4 Mimics"
   },
 
   "Myla": {
@@ -373,7 +373,7 @@ var bingoList = {
   },
 
   "FCharms": {
-    "Desc": "Obtain two Unbreakable charms",
+    "Desc": "Obtain all three Fragile charms",
     "Score": 1.00
   },
 
@@ -855,7 +855,7 @@ var bingoList = {
   },
 
   "DefenderSign": {
-    "Desc": "Read the Dung Defender sign before Isma's Grove"
+    "Desc": "Check/Read the Dung Defender sign before Isma's Grove"
   },
 
   "DirtmouthElevator": {
@@ -880,11 +880,11 @@ var bingoList = {
   },
 
   "GoamGarpede": {
-    "Desc": "Goam and Garpede Journal Entries"
+    "Desc": "Check the Goam and Garpede Journal Entries"
   },
 
   "Jiji": {
-    "Desc": "Open Jiji's Hut"
+    "Desc": "Open Jiji's Hut and buy out Jiji"
   },
 
   "HopperHell": {
@@ -909,45 +909,45 @@ var bingoList = {
   },
 
   "LoreArchives": {
-    "Desc": "Read 3 lore tablets in Teacher's Archives"
+    "Desc": "Check/Read 3 lore tablets in Teacher's Archives"
   },
 
   "LoreBasin": {
-    "Desc": "Read the lore tablet in Ancient Basin"
+    "Desc": "Check/Read the lore tablet in Ancient Basin"
   },
 
   "LoreCity": {
-    "Desc": "Read two lore tablets in City of Tears proper (No sub areas)"
+    "Desc": "Check/Read two lore tablets in City of Tears proper (No sub areas)"
   },
 
   "LoreCliffs": {
-    "Desc": "Read the lore tablet in Howling Cliffs"
+    "Desc": "Check/Read the lore tablet in Howling Cliffs"
   },
 
 
   "LoreGreenpath": {
-    "Desc": "Read three lore tablets in Greenpath"
+    "Desc": "Check/Read three lore tablets in Greenpath"
   },
 
   "LoreKEdge": {
-    "Desc": "Read the lore tablet in Kingdom's Edge (requires Spore Shroom)",
+    "Desc": "Check/Read the lore tablet in Kingdom's Edge (requires Spore Shroom)",
     "Score": 1.30
   },
 
   "LorePilgrims": {
-    "Desc": "Read both Pilgrim's Way lore tablets"
+    "Desc": "Check/Read both Pilgrim's Way lore tablets"
   },
 
   "LoreSanctum": {
-    "Desc": "Read both lore tablets in Soul Sanctum"
+    "Desc": "Check/Read both lore tablets in Soul Sanctum"
   },
 
   "LoreVillage": {
-    "Desc": "Read both lore tablets in Mantis Village"
+    "Desc": "Check/Read both lore tablets in Mantis Village"
   },
 
   "Lumafly": {
-    "Desc": "Charged Lumafly Journal Entry"
+    "Desc": "Check the Charged Lumafly Journal Entry"
   },
 
   "MaskMaker": {
@@ -1043,7 +1043,7 @@ var bingoList = {
   },
 
   "Tendrils": {
-    "Desc": "Void Tendrils Journal Entry"
+    "Desc": "Check the Void Tendrils Journal Entry"
   },
 
   "Tiso": {
@@ -1102,6 +1102,14 @@ var bingoList = {
   "WPShadeSkip": {
     "Desc": "Sit down in Hidden Station",
     "Excludes": ["HiddenStag", "Wings"]
+  },
+
+  "Grubfather": {
+    "Desc": "Get all the Grubfather checks"
+  },
+
+  "Seer": {
+    "Desc": "Get all the Seer checks"
   }
 
 };

@@ -1,7 +1,12 @@
 import json
+import logging
 import os
 import subprocess
 
+from bingosync.settings import GENERATOR_TIMEOUT_SECONDS
+
+
+logger = logging.getLogger(__name__)
 
 GEN_DIR = "generators"
 GEN_NAME_TEMPL = "{}_generator.js"
@@ -10,7 +15,11 @@ GEN_NAME_TEMPL = "{}_generator.js"
 def load_generator(game_name):
     filename = os.path.join(GEN_DIR, GEN_NAME_TEMPL.format(game_name))
     with open(filename) as js_file:
-        return BingoGenerator(js_file.read())
+        return BingoGenerator(game_name, js_file.read())
+
+
+class GeneratorException(Exception):
+    pass
 
 
 class BingoGenerator:
@@ -30,7 +39,8 @@ class BingoGenerator:
     def reload(game_name):
         BingoGenerator.CACHED_INSTANCES[game_name] = load_generator(game_name)
 
-    def __init__(self, generator_js):
+    def __init__(self, game_name, generator_js):
+        self.game_name = game_name
         self.generator_js_bytes = generator_js.encode("utf-8")
 
     def validate_custom_json(self, custom_json):
@@ -39,7 +49,14 @@ class BingoGenerator:
     def eval(self, js_command):
         js_eval = "\nconsole.log(JSON.stringify(" + js_command + "));"
         full_command = self.generator_js_bytes + js_eval.encode("utf-8")
-        out = subprocess.check_output(["node", "-"], input=full_command)
+
+        try:
+            out = subprocess.check_output(["node", "-"], input=full_command, timeout=GENERATOR_TIMEOUT_SECONDS)
+        except subprocess.TimeoutExpired:
+            error_message = "Took too long to generate a bingo board for game '" + self.game_name + "'"
+            logging.error(error_message)
+            raise GeneratorException(error_message)
+
         return json.loads(out.decode("utf-8"))
 
     def get_card(self, seed=None, custom_board=None):

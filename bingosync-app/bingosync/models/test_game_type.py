@@ -23,3 +23,10 @@ class GametypeTestCase(test.SimpleTestCase):
         all_variants_set = set(game_type.ALL_VARIANTS)
         self.assertEqual(game_types_set, all_variants_set)
 
+    def test_manual_groups_sorted(self):
+        group_keys = [gt.name for gt in game_type.MANUAL_GAME_GROUPS]
+        self.assertListEqual(group_keys, list(sorted(group_keys)))
+
+    def test_singleton_groups_sorted(self):
+        group_keys = [gt.name for gt in game_type.SINGLETON_GAME_GROUPS]
+        self.assertListEqual(group_keys, list(sorted(group_keys)))
