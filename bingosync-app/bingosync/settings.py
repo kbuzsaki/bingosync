@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-IS_PROD = False
+IS_PROD = os.getenv('DEBUG', '').lower() not in ('1', 'yes')
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 ADMINS = os.getenv("ADMINS")
@@ -223,7 +223,7 @@ PUBLIC_SOCKETS_URL = "sockets.celestebingo.rhelmot.io"
 if IS_PROD:
     SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
 else:
-    SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
+    SOCKETS_URL = "ws://" + INTERNAL_SOCKETS_URL
 
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL
