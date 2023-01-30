@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-                mkdir ~/.ssh
+                mkdir -p ~/.ssh
                 chmod 600 ~/.ssh
                 ssh-keyscan celestebingo.rhelmot.io > ~/.ssh/known_hosts
                 echo "$ID_RSA" > ~/.ssh/id_rsa
