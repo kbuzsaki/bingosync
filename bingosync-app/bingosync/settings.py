@@ -218,7 +218,7 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 
 INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
-PUBLIC_SOCKETS_URL = "sockets.celestebingo.rhelmot.io"
+PUBLIC_SOCKETS_URL = "sockets-celestebingo.rhelmot.io"
 
 if IS_PROD:
     SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
