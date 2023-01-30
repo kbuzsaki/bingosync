@@ -99,7 +99,7 @@ class RoomForm(forms.Form):
         if not seed:
             seed = "" if game_type.uses_seed else "0"
 
-        seed, board_json = game_type.generator_instance().get_card(seed, custom_board)
+        seed, board_json = game_type.generator_instance().get_card(seed, custom_board, size)
 
         encrypted_passphrase = hashers.make_password(passphrase)
         with transaction.atomic():
