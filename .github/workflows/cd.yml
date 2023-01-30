@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: |
                 mkdir -p ~/.ssh
-                chmod 600 ~/.ssh
+                chmod 700 ~/.ssh
                 ssh-keyscan celestebingo.rhelmot.io > ~/.ssh/known_hosts
                 echo "$ID_RSA" > ~/.ssh/id_rsa
                 chmod 600 ~/.ssh/known_hosts ~/.ssh/id_rsa
