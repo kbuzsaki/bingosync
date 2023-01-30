@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 IS_PROD = os.getenv('DEBUG', '').lower() not in ('1', 'yes')
 
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY", None if IS_PROD else '1234')
 ADMINS = os.getenv("ADMINS")
 SERVER_EMAIL = os.getenv("SERVER_EMAIL")
 DB_STRING = os.getenv("DB_STRING", 'sqlite:///db.sqlite')
