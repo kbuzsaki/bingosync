@@ -1,5 +1,5 @@
 certifi==2022.12.7
-chardet==~5.1
+chardet~=5.1
 Django~=4.1
 django-bootstrap-form==3.4
 django-crispy-forms~=1.14
