@@ -360,6 +360,8 @@ class GameType(Enum):
     hitman_3_chongqing = 356
     hitman_3_mendoza = 357
     horizon_zero_dawn_frozen_wilds = 358
+    celeste_extensions = 359
+    celeste_blackout_solo = 360
 
 
     def __str__(self):
@@ -417,7 +419,7 @@ class GameType(Enum):
     def game_choices():
         def to_sort_value(key):
             key = strip_articles(key[1]).lower()
-            FORCED_FIRST_NAMES = ["celeste", "custom (advanced)"]
+            FORCED_FIRST_NAMES = ["celeste", "celeste extensions", "custom (advanced)"]
             if key in FORCED_FIRST_NAMES:
                 return (FORCED_FIRST_NAMES.index(key), key)
             return (len(FORCED_FIRST_NAMES), key)
@@ -508,13 +510,20 @@ MANUAL_GAME_GROUPS = {
     GameType.celeste: {
         "name": "Celeste",
         "variants": [
-            (GameType.celeste, "Normal", "Celeste"),
-            (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
-            (GameType.celeste_long, "Long", "Celeste Long"),
+            (GameType.celeste, "Lockout", "Celeste"),
+            (GameType.celeste_blackout, "Co-op Blackout", "Celeste Blackout"),
+            (GameType.celeste_blackout_solo, "Solo Blackout", "Celeste Solo Blackout"),
             (GameType.celeste_cn, "Normal - CN", "Celeste CN"),
             (GameType.celeste_portuguese, "Normal - Portuguese", "Celeste PT"),
             (GameType.celeste_blackout_cn, "Blackout - CN", "Celeste Blackout CN"),
             (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
+        ],
+    },
+    GameType.celeste_extensions: {
+        "name" : "Celeste Extensions",
+        "variants": [
+            (GameType.celeste_extensions, "New Longo", "Celeste Long New"), #Because every game needs a default this file is called celeste_extensions_generator.js
+            (GameType.celeste_long, "Old Longo", "Celeste Long"),
         ],
     },
     GameType.crash_twinsanity: {
