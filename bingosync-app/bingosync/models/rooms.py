@@ -149,7 +149,7 @@ LOCKOUT_MODE_NAMES = {
 
 class Game(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
-    seed = models.IntegerField()
+    seed = models.BigIntegerField()
     size = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
