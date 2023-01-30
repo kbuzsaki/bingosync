@@ -1,0 +1,20 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+                mkdir ~/.ssh
+                ssh-keyscan celestebingo.rhelmot.io > ~/.ssh/known_hosts
+                echo "$ID_RSA" > ~/.ssh/id_rsa
+                chmod 600 ~/.ssh ~/.ssh/known_hosts ~/.ssh/id_rsa
+                ssh bingosync@celestebingo.rhelmot.io ./cycle.sh
+        env:
+          ID_RSA: ${{secrets.ID_RSA}}
+                
+
