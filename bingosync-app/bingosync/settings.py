@@ -223,7 +223,7 @@ PUBLIC_SOCKETS_URL = "sockets.celestebingo.rhelmot.io"
 if IS_PROD:
     SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
 else:
-    SOCKETS_URL = "ws://" + INTERNAL_SOCKETS_URL
+    SOCKETS_URL = "ws://" + PUBLIC_SOCKETS_URL
 
 # used for publishing events from django to tornado, so can always go across localhost
 SOCKETS_PUBLISH_URL = "http://" + INTERNAL_SOCKETS_URL

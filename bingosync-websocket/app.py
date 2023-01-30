@@ -10,7 +10,7 @@ import random
 import requests
 import pprint
 
-BASE_DJANGO_URL = "http://localhost:8000/"
+BASE_DJANGO_URL = "http://celestebingo.rhelmot.io/"
 BASE_API_URL = BASE_DJANGO_URL + "api/"
 
 SOCKET_VERIFICATION_URL = BASE_API_URL + "socket/"
