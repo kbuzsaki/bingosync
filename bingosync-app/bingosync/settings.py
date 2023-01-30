@@ -214,11 +214,11 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
 
-STATIC_ROOT = '/var/www/bingosync.com/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 
 INTERNAL_SOCKETS_URL = "127.0.0.1:8888"
-PUBLIC_SOCKETS_URL = "sockets.bingosync.com"
+PUBLIC_SOCKETS_URL = "sockets.celestebingo.rhelmot.io"
 
 if IS_PROD:
     SOCKETS_URL = "wss://" + PUBLIC_SOCKETS_URL
