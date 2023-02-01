@@ -1,0 +1,1422 @@
+[
+    [
+      {
+        "name": "1A Start without Jumping",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "All Berries in 1A Start (6)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Chasm (5)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "1A Start without Dashing",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "All Berries in Awake (1)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Awake without Dashing",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "2 Gems in The Summit",
+        "types": [
+          "gems"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "1-up in 1A",
+        "types": [
+          "1up"
+        ]
+      },
+      {
+        "name": "1-up in 2A",
+        "types": [
+          "1up"
+        ]
+      },
+      {
+        "name": "2 Cassettes",
+        "types": [
+          "amt_cassettes"
+        ]
+      },
+      {
+        "name": "2 Keys in 5B",
+        "types": [
+          "5b",
+          "task"
+        ]
+      },
+      {
+        "name": "Stun Oshiro 10 times",
+        "types": [
+          "oshiro",
+          "task"
+        ]
+      },
+      {
+        "name": "Kill 2 Seekers",
+        "types": [
+          "seeker",
+          "task"
+        ]
+      },
+      {
+        "name": "All Binoculars in 500M (3)",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "All Berries in 0M (4)",
+        "types": [
+          "cp_berries"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Two 1-ups",
+        "types": [
+          "1up"
+        ]
+      },
+      {
+        "name": "10 Berries in 1A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Intervention (8)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 2A Start (9)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "10 Berries in 2A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Presidential Suite (3)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Grabless Lake",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "1 Binocular in 4 Chapters",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "Complete City A-Side",
+        "types": [
+          "a_sides"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "All Berries in Crossing (9)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Shrine without Dashing",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "Chest \u2193 Books \u2191 Towel \u2192",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "Huge Mess: Chest \u2193 Towel \u2192 Books \u2191",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "Huge Mess: Towel \u2192 Books \u2191 Chest \u2193",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "10 Berries in 3A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Forsaken City C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Old Site C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Resolution without Jumping",
+        "types": [
+          "challenge"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Blue and Red Heart in City",
+        "types": [
+          "b_sides"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Site",
+        "types": [
+          "b_sides"
+        ]
+      },
+      {
+        "name": "Huge Mess: Books \u2191 Towel \u2192 Chest \u2193",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "Huge Mess: Books \u2191 Chest \u2193 Towel \u2192",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "Huge Mess: Towel \u2192 Chest \u2193 Books \u2191",
+        "types": [
+          "mess_order"
+        ]
+      },
+      {
+        "name": "1 Binocular in 5 Chapters",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "Celestial Resort C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Golden Ridge C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Grabless Through the Mirror",
+        "types": [
+          "grabless"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Chasm without Dashing",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "Intervention without Jumping",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "Grabless 4A Start",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "5 Berries in PICO-8",
+        "types": [
+          "pico"
+        ]
+      },
+      {
+        "name": "All Berries in Elevator Shaft (4)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Binoculars in 1000M (4)",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "5 Berries in 3 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "1-up in 2 Chapters",
+        "types": [
+          "1up",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Jump on 10 Snowballs",
+        "types": [
+          "task"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Grabless 3A Start",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "1-up in 4A",
+        "types": [
+          "1up",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Grabless 1A",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "3 Blue Hearts",
+        "types": [
+          "hearts"
+        ]
+      },
+      {
+        "name": "Three 1-ups",
+        "types": [
+          "1up",
+          "challenge"
+        ]
+      },
+      {
+        "name": "1-up in 5A",
+        "types": [
+          "1up",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Grabless Elevator Shaft",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "2 Keys in Search",
+        "types": [
+          "task",
+          "search"
+        ]
+      },
+      {
+        "name": "3 Keys in Search",
+        "types": [
+          "task",
+          "search"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "5 Berries in 4 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Crossing without Dashing",
+        "types": [
+          "challenge",
+          "task"
+        ]
+      },
+      {
+        "name": "20 Berries",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Grabless Unraveling",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Top route in Hollows",
+        "types": [
+          "task",
+          "ref_path"
+        ]
+      },
+      {
+        "name": "5 Binoculars in Farewell",
+        "types": [
+          "ch9",
+          "binos"
+        ]
+      },
+      {
+        "name": "2 Binoculars in 3 Chapters",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "Bottom route in Hollows",
+        "types": [
+          "task",
+          "ref_path"
+        ]
+      },
+      {
+        "name": "Stun Seekers 20 times",
+        "types": [
+          "seeker",
+          "task"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "All Berries in Huge Mess (7)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 4A Start (8)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Old Trail (7)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Grabless Presidential Suite",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "All Berries in Cliff Face (5)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Shrine (9)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Stun Seekers 15 times",
+        "types": [
+          "seeker",
+          "task"
+        ]
+      },
+      {
+        "name": "All Berries in Heart of the Mountain (1)",
+        "types": [
+          "cp_berries",
+          "core"
+        ]
+      },
+      {
+        "name": "4 Gems in The Summit",
+        "types": [
+          "gems"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "All Berries in Search (6)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "3 Keys in Power Source",
+        "types": [
+          "ch9",
+          "binos"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Ridge",
+        "types": [
+          "4b"
+        ]
+      },
+      {
+        "name": "All Berries in 500M (6)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 1000M (6)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Complete Site A-Side",
+        "types": [
+          "a_sides"
+        ]
+      },
+      {
+        "name": "Mirror Temple C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "10 Berries in PICO-8",
+        "types": [
+          "pico"
+        ]
+      },
+      {
+        "name": "Orb in PICO-8",
+        "types": [
+          "pico"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "2 Blue and 2 Red Hearts",
+        "types": [
+          "amt_hearts",
+          "amt_chapters",
+          "b_sides"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Temple",
+        "types": [
+          "5b"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Resort",
+        "types": [
+          "3b"
+        ]
+      },
+      {
+        "name": "Reflection C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "The Summit C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Core C-Side",
+        "types": [
+          "c_sides"
+        ]
+      },
+      {
+        "name": "Three Red Hearts",
+        "types": [
+          "amt_hearts",
+          "b_sides"
+        ]
+      },
+      {
+        "name": "10 Binoculars in Farewell",
+        "types": [
+          "ch9",
+          "binos"
+        ]
+      },
+      {
+        "name": "2 Winged Berries in 2 Chapters",
+        "types": [
+          "special_berries"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Grabless 1000M (7A)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless 1500M (7A)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless 2000M (7A)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Complete City B-Side",
+        "types": [
+          "b_sides"
+        ]
+      },
+      {
+        "name": "Complete Site B-Side",
+        "types": [
+          "b_sides"
+        ]
+      },
+      {
+        "name": "Grabless 2A",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "5 Winged Berries",
+        "types": [
+          "special_berries"
+        ]
+      },
+      {
+        "name": "Grabless Huge Mess",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless Search",
+        "types": [
+          "grabless"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "25 Berries",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "4 Cassettes",
+        "types": [
+          "amt_cassettes"
+        ]
+      },
+      {
+        "name": "15 Berries in 4A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "6 Binoculars in B-Sides",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "15 Berries in 3A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "2 Binoculars in 4 Chapters",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "4 Seeded Berries",
+        "types": [
+          "special_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 1500M (8)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 2000M (8)",
+        "types": [
+          "cp_berries"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete Temple B-Side",
+        "types": [
+          "5b"
+        ]
+      },
+      {
+        "name": "Kill 4 Seekers",
+        "types": [
+          "seeker",
+          "task"
+        ]
+      },
+      {
+        "name": "Grabless Hollows",
+        "types": [
+          "grabless",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Grabless Rock Bottom",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "All Berries in 2500M (8)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 3000M (7)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Hot and Cold (3)",
+        "types": [
+          "cp_berries",
+          "core"
+        ]
+      },
+      {
+        "name": "Grabless 1000M (7B)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless 2000M (7B)",
+        "types": [
+          "grabless"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "All Berries in 5A Start (12)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in 3A Start (11)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "All Berries in Depths (11)",
+        "types": [
+          "cp_berries"
+        ]
+      },
+      {
+        "name": "Intro Car in Remembered",
+        "types": [
+          "ch9",
+          "task",
+          "challenge"
+        ]
+      },
+      {
+        "name": "5 Keys in Power Source",
+        "types": [
+          "ch9",
+          "binos"
+        ]
+      },
+      {
+        "name": "All Flags in 3000M",
+        "types": [
+          "task"
+        ]
+      },
+      {
+        "name": "Complete Event Horizon",
+        "types": [
+          "ch9"
+        ]
+      },
+      {
+        "name": "Three Yellow Hearts",
+        "types": [
+          "c_sides",
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "2 Blue, 2 Red, 2 Yellow Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete PICO-8",
+        "types": [
+          "pico"
+        ]
+      },
+      {
+        "name": "Grabless 1500M (7B)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "1-up in 3 Chapters",
+        "types": [
+          "1up",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Grabless Cliff Face",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless Depths",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Complete Resort B-Side",
+        "types": [
+          "3b"
+        ]
+      },
+      {
+        "name": "20 Berries in 7A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete Ridge A-Side",
+        "types": [
+          "a_sides"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "5 Berries in 5 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete 2 B-Sides",
+        "types": [
+          "amt_chapters",
+          "b_sides"
+        ]
+      },
+      {
+        "name": "10 Berries in 3 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "8 Winged Berries",
+        "types": [
+          "special_berries"
+        ]
+      },
+      {
+        "name": "6 Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "All 4 Theo Cutscenes",
+        "types": [
+          "cutscene",
+          "task"
+        ]
+      },
+      {
+        "name": "2 Binoculars in 5 Chapters",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "2 Winged Berries in 3 Chapters",
+        "types": [
+          "special_berries"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "All Collectibles in 1A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "All Collectibles in 2A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Reflection",
+        "types": [
+          "6b"
+        ]
+      },
+      {
+        "name": "Complete Determination",
+        "types": [
+          "ch9"
+        ]
+      },
+      {
+        "name": "Complete Reconciliation",
+        "types": [
+          "ch9"
+        ]
+      },
+      {
+        "name": "5 Blue Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "Kill 6 Seekers",
+        "types": [
+          "seeker",
+          "task"
+        ]
+      },
+      {
+        "name": "Complete 2 A-Sides",
+        "types": [
+          "a_sides"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "20 Berries in 5A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "15 Berries in PICO-8",
+        "types": [
+          "pico",
+          "challenge"
+        ]
+      },
+      {
+        "name": "15 Berries in 2 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Grabless 3000M (7A)",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "5 Red Hearts",
+        "types": [
+          "amt_hearts",
+          "b_sides"
+        ]
+      },
+      {
+        "name": "8 Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "15 Binoculars",
+        "types": [
+          "binos"
+        ]
+      },
+      {
+        "name": "All Hearts in City",
+        "types": [
+          "hearts"
+        ]
+      },
+      {
+        "name": "All Hearts in Site",
+        "types": [
+          "hearts"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete Ridge B-Side",
+        "types": [
+          "4b"
+        ]
+      },
+      {
+        "name": "Winged Golden Berry",
+        "types": [
+          "challenge"
+        ]
+      },
+      {
+        "name": "6 Cassettes",
+        "types": [
+          "amt_cassettes"
+        ]
+      },
+      {
+        "name": "2 Chapters Grabless",
+        "types": [
+          "grabless",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Complete Core A-Side",
+        "types": [
+          "core"
+        ]
+      },
+      {
+        "name": "Complete Resort A-Side",
+        "types": [
+          "a_sides"
+        ]
+      },
+      {
+        "name": "Five Yellow Hearts",
+        "types": [
+          "c_sides",
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "2 C-Sides Grabless",
+        "types": [
+          "c_sides",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Complete Farewell (checkpoint)",
+        "types": [
+          "ch9",
+          "challenge"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete 3 A-Sides",
+        "types": [
+          "amt_chapters"
+        ]
+      },
+      {
+        "name": "40 Berries",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "4 Blue and 4 Red Hearts",
+        "types": [
+          "amt_hearts",
+          "amt_chapters",
+          "b_sides"
+        ]
+      },
+      {
+        "name": "10 Berries in 4 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "30 Berries in 7A",
+        "types": [
+          "amt_berries",
+          "big_berries"
+        ]
+      },
+      {
+        "name": "Complete Temple A-Side",
+        "types": [
+          "a_sides"
+        ]
+      },
+      {
+        "name": "All Collectibles in 4A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "10 Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "All Hearts in Core",
+        "types": [
+          "hearts"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete 2 A-Sides and 2 B-Sides",
+        "types": [
+          "amt_chapters"
+        ]
+      },
+      {
+        "name": "Complete 3 B-Sides",
+        "types": [
+          "amt_chapters"
+        ]
+      },
+      {
+        "name": "50 Berries",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete Reflection B-Side",
+        "types": [
+          "6b"
+        ]
+      },
+      {
+        "name": "15 Berries in 3 Chapters",
+        "types": [
+          "amt_berries",
+          "big_berries"
+        ]
+      },
+      {
+        "name": "All Collectibles in 8A",
+        "types": [
+          "cp_berries",
+          "core"
+        ]
+      },
+      {
+        "name": "All Hearts in Ridge",
+        "types": [
+          "hearts",
+          "4b"
+        ]
+      },
+      {
+        "name": "4 Blue, 4 Red, 4 Yellow Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "All Hearts in Reflection",
+        "types": [
+          "hearts",
+          "6b"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "10 Berries in 5 Chapters",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete Core B-Side",
+        "types": [
+          "b_sides"
+        ]
+      },
+      {
+        "name": "All Hearts in Resort",
+        "types": [
+          "hearts",
+          "3b"
+        ]
+      },
+      {
+        "name": "All Hearts in Temple",
+        "types": [
+          "hearts",
+          "5b"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in Core",
+        "types": [
+          "hearts"
+        ]
+      },
+      {
+        "name": "All Collectibles in 3A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete 4 B-Sides",
+        "types": [
+          "amt_chapters"
+        ]
+      },
+      {
+        "name": "3 C-Sides Grabless",
+        "types": [
+          "c_sides",
+          "challenge"
+        ]
+      },
+      {
+        "name": "25 Binoculars",
+        "types": [
+          "binos"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete Reflection A-Side",
+        "types": [
+          "a_sides"
+        ]
+      },
+      {
+        "name": "Grabless 3A",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "Grabless 5A",
+        "types": [
+          "grabless"
+        ]
+      },
+      {
+        "name": "65 Berries",
+        "types": [
+          "amt_berries",
+          "big_berries"
+        ]
+      },
+      {
+        "name": "Grabless 6A",
+        "types": [
+          "grabless",
+          "challenge"
+        ]
+      },
+      {
+        "name": "Complete The Summit B-Side",
+        "types": [
+          "7b"
+        ]
+      },
+      {
+        "name": "15 Berries in 4 Chapters",
+        "types": [
+          "amt_berries",
+          "big_berries"
+        ]
+      },
+      {
+        "name": "Summit Blue Heart",
+        "types": [
+          "gems",
+          "hearts"
+        ]
+      },
+      {
+        "name": "12 Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Complete 4 A-Sides",
+        "types": [
+          "amt_chapters"
+        ]
+      },
+      {
+        "name": "All Collectibles in 5A",
+        "types": [
+          "amt_berries"
+        ]
+      },
+      {
+        "name": "Complete The Summit A-Side",
+        "types": [
+          "a_sides"
+        ]
+      },
+      {
+        "name": "Moon Berry",
+        "types": [
+          "ch9",
+          "challenge"
+        ]
+      },
+      {
+        "name": "15 Hearts",
+        "types": [
+          "amt_hearts"
+        ]
+      },
+      {
+        "name": "Blue and Red Heart in The Summit",
+        "types": [
+          "hearts",
+          "7b"
+        ]
+      },
+      {
+        "name": "80 Berries",
+        "types": [
+          "amt_berries",
+          "big_berries"
+        ]
+      },
+      {
+        "name": "8 Cassettes",
+        "types": [
+          "amt_cassettes"
+        ]
+      },
+      {
+        "name": "All Hearts in The Summit",
+        "types": [
+          "hearts",
+          "7b"
+        ]
+      }
+    ]
+  ]

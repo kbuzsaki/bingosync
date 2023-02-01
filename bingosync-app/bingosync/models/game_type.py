@@ -362,6 +362,7 @@ class GameType(Enum):
     horizon_zero_dawn_frozen_wilds = 358
     celeste_extensions = 359
     celeste_blackout_solo = 360
+    celeste_cheat_mode = 361
 
 
     def __str__(self):
@@ -524,6 +525,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.celeste_extensions, "New Longo", "Celeste Long New"), #Because every game needs a default this file is called celeste_extensions_generator.js
             (GameType.celeste_long, "Old Longo", "Celeste Long"),
+            (GameType.celeste_cheat_mode, "Cheat Mode", "Celeste Cheat Mode"),
         ],
     },
     GameType.crash_twinsanity: {
