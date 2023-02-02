@@ -247,7 +247,7 @@
         "types": ["1up", "challenge"]
     },
     {
-        "name": "Read Diary in Elevator Shaft",
+        "name": "Read the Diary in Elevator Shaft",
         "types": ["resort_cutscene", "cutscene"]
     },
     {
@@ -292,15 +292,15 @@
         "types": ["grabless"]
     },
     {
-        "name": "Huge Mess: Books -> Chest -> Towel",
+        "name": "Huge Mess: Books \u2191 Chest \u2193 Towel \u2192",
         "types": ["huge_mess_pathing"]
     },
     {
-        "name": "Huge Mess: Books -> Towel -> Chest",
+        "name": "Huge Mess: Books \u2191 Towel \u2192 Chest \u2193",
         "types": ["huge_mess_pathing"]
     },
     {
-        "name": "Huge Mess: Towel -> Chest -> Books",
+        "name": "Huge Mess: Towel \u2192 Chest \u2193 Books \u2191",
         "types": ["huge_mess_pathing"]
     },
     {
@@ -829,7 +829,7 @@
         "types": ["lategame"]
     },
     {
-        "name": "5 Gems in the Summit",
+        "name": "5 Gems in The Summit",
         "types": ["lategame", "gems"]
     }
     ],
