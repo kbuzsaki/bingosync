@@ -222,15 +222,15 @@
         "types": ["5b"]
     },
     {
-        "name": "Huge Mess: Chest -> Books -> Towel",
+        "name": "Huge Mess: Chest \u2193 Books \u2191 Towel \u2192",
         "types": ["huge_mess_pathing"]
     },
     {
-        "name": "Huge Mess: Chest -> Towel -> Books",
+        "name": "Huge Mess: Chest \u2193 Towel \u2192 Books \u2191",
         "types": ["huge_mess_pathing"]
     },
     {
-        "name": "Huge Mess: Towel -> Books -> Chest",
+        "name": "Huge Mess: Towel \u2192 Books \u2191 Chest \u2193",
         "types": ["huge_mess_pathing"]
     },
     {
