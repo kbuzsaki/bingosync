@@ -372,6 +372,7 @@ class GameType(Enum):
     hitman_3_ambrose_island = 368
     elden_ring = 369
     star_wars_jfo = 370
+    pizza_tower = 371
 
     def __str__(self):
         return self.short_name
@@ -1124,6 +1125,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
+    **singleton_group(GameType.pizza_tower, "Pizza Tower", "PizzaTower"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
     **singleton_group(GameType.pokemon_crystal_clear, "Pokémon Crystal Clear,", "Poké CC"),
