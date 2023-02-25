@@ -373,6 +373,7 @@ class GameType(Enum):
     elden_ring = 369
     star_wars_jfo = 370
     pizza_tower = 371
+    sea_of_thieves = 372
 
     def __str__(self):
         return self.short_name
@@ -1149,6 +1150,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.robot_64, "Robot 64", "Robot 64"),
     **singleton_group(GameType.saga_frontier, "SaGa Frontier (PS1)", "SaGa Frontier (PS1)"),
     **singleton_group(GameType.salt_and_sanctuary, "Salt and Sanctuary", "Salt and Sanctuary"),
+    **singleton_group(GameType.sea_of_thieves, "Sea of Thieves", "Sea of Thieves"),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
