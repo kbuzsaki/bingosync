@@ -376,6 +376,9 @@ class GameType(Enum):
     sea_of_thieves = 372
     the_forest = 373
     nintendo_switch_sports = 374
+    zelda_botw_german = 375
+    zelda_botw_german_short = 376
+    zelda_botw_german_long = 377
 
     def __str__(self):
         return self.short_name
@@ -1014,6 +1017,9 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_botw_french, "Normal - FR", "BotW FR Normal"),
             (GameType.zelda_botw_french_short, "Short - FR", "BotW FR Short"),
             (GameType.zelda_botw_french_long, "Long - FR", "BotW FR Long"),
+            (GameType.zelda_botw_german, "Normal - DE", "BotW DE Normal"),
+            (GameType.zelda_botw_german_short, "Short - DE", "BotW DE Short"),
+            (GameType.zelda_botw_german_long, "Long - DE", "BotW DE Long"),
             (GameType.zelda_botw_jp, "Normal - JP", "BotW JP Normal"),
             (GameType.zelda_botw_jp_short, "Short - JP", "BotW JP Short"),
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
