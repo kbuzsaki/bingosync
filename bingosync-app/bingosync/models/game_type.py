@@ -360,7 +360,16 @@ class GameType(Enum):
     hitman_3_chongqing = 356
     hitman_3_mendoza = 357
     horizon_zero_dawn_frozen_wilds = 358
-
+    hitman_3_marrakech = 359
+    hitman_3_bangkok = 360
+    hitman_3_colorado = 361
+    hitman_3_mumbai = 362
+    hitman_3_isle_of_sgail = 363
+    hitman_3_new_york = 364
+    hitman_3_haven_island = 365
+    hitman_3_dubai = 366
+    hitman_3_dartmoor = 367
+    hitman_3_ambrose_island = 368
 
     def __str__(self):
         return self.short_name
@@ -566,13 +575,23 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.hitman_3_paris, "Paris", "Hitman 3 Paris"),
             (GameType.hitman_3_sapienza, "Sapienza", "Hitman 3 Sapienza"),
+            (GameType.hitman_3_marrakech, "Marrakech", "Hitman 3 Marrakech"),
+            (GameType.hitman_3_bangkok, "Bangkok", "Hitman 3 Bangkok"),
+            (GameType.hitman_3_colorado, "Colorado", "Hitman 3 Colorado"),
             (GameType.hitman_3_hokkaido, "Hokkaido", "Hitman 3 Hokkaido"),
             (GameType.hitman_3_miami, "Miami", "Hitman 3 Miami"),
             (GameType.hitman_3_santa_fortuna, "Santa Fortuna", "Hitman 3 Santa Fortuna"),
+            (GameType.hitman_3_mumbai, "Mumbai", "Hitman 3 Mumbai"),
             (GameType.hitman_3_whittleton_creek, "Whittleton Creek", "Hitman 3 Whittleton Creek"),
+            (GameType.hitman_3_isle_of_sgail, "Isle of Sgail", "Hitman 3 Isle of Sgail"),
+            (GameType.hitman_3_new_york, "New York", "Hitman 3 New York"),
+            (GameType.hitman_3_haven_island, "Haven Island", "Hitman 3 Haven Island"),
+            (GameType.hitman_3_dubai, "Dubai", "Hitman 3 Dubai"),
+            (GameType.hitman_3_dartmoor, "Dartmoor", "Hitman 3 Dartmoor"),
             (GameType.hitman_3_berlin, "Berlin", "Hitman 3 Berlin"),
             (GameType.hitman_3_chongqing, "Chongqing", "Hitman 3 Chongqing"),
             (GameType.hitman_3_mendoza, "Mendoza", "Hitman 3 Mendoza"),
+            (GameType.hitman_3_ambrose_island, "Ambrose Island", "Hitman 3 Ambrose Island"),
         ],
     },
     GameType.hollow_knight: {
