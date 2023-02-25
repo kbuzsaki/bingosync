@@ -371,6 +371,7 @@ class GameType(Enum):
     hitman_3_dartmoor = 367
     hitman_3_ambrose_island = 368
     elden_ring = 369
+    star_wars_jfo = 370
 
     def __str__(self):
         return self.short_name
@@ -1159,6 +1160,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.spyro_1, "Spyro the dragon", "Spyro 1"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
+    **singleton_group(GameType.star_wars_jfo, "Star Wars Jedi: Fallen Order", "JFO"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
