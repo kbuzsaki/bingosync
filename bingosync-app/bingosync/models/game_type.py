@@ -374,6 +374,7 @@ class GameType(Enum):
     star_wars_jfo = 370
     pizza_tower = 371
     sea_of_thieves = 372
+    the_forest = 373
 
     def __str__(self):
         return self.short_name
@@ -1173,6 +1174,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
+    **singleton_group(GameType.the_forest, "The Forest", "The Forest"),
     **singleton_group(GameType.threads_of_fate, "Threads of Fate", "Threads of Fate"),
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
