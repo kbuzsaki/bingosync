@@ -379,6 +379,7 @@ class GameType(Enum):
     zelda_botw_german = 375
     zelda_botw_german_short = 376
     zelda_botw_german_long = 377
+    rainbow_six_siege = 378
 
     def __str__(self):
         return self.short_name
@@ -1150,6 +1151,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.quest_for_glory_vga, "Quest for Glory 1 VGA", "QFG1 VGA"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
+    **singleton_group(GameType.rainbow_six_siege, "Rainbow Six Siege", "R6S"),
     **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
