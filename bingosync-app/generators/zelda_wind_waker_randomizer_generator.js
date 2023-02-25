@@ -1,4 +1,4 @@
-bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
 var bingoList = [[
 {"name": "Hookshot"},
@@ -91,7 +91,7 @@ var bingoList = [[
 {"name": "Parry a ChuChu"},
 {"name": "Score 75 Points in Orca’s Training"},
 {"name": "Parry a Moblin"},
-{"name": "Defeat a Redead with the Hurricane Spin"}, 
+{"name": "Defeat a Redead with the Hurricane Spin"},
 {"name": "Full Power Master Sword"}
 ],[
 {"name": "Cabana Deed"},
@@ -130,7 +130,7 @@ var bingoList = [[
 {"name": "Full Clear Angular Isles"},
 {"name": "Master Sword and Mirror Shield"}
 ],[
-{"name": "Empty Bottle"}, 
+{"name": "Empty Bottle"},
 {"name": "Bottled Water"},
 {"name": "Forest Firefly"},
 {"name": "Red Potion"},
@@ -168,7 +168,7 @@ var bingoList = [[
 {"name": "Open a Fire Ringed Chest"},
 {"name": "Defeat Both Kargarocs at Dragon Roost Island"}
 ],[
-{"name": "1 Triforce Shards"},
+{"name": "1 Triforce Shard"},
 {"name": "2 Triforce Shards"},
 {"name": "3 Triforce Shards"},
 {"name": "3 Charts"},
@@ -284,4 +284,4 @@ var bingoList = [[
 {"name": "Defeat a 12 Eyed Big Octo"},
 {"name": "Defeat an 8 Eyed Big Octo"},
 {"name": "Defeat all 4 Kargarocs at Islet of Steel"}
-]]
+]];
