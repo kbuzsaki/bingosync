@@ -575,3 +575,15 @@
 .asteriskField {
     display: none;
 }
+
+/* 
+ - add padding to history page game filter dropdown 
+ - change dropdown text color to be more visible
+*/
+#history_game_filter {
+    padding-right: 10px;    
+}
+
+#history_game_filter .game_dropdown {
+    color: #272b30;
+}

@@ -63,6 +63,16 @@ class Room(models.Model):
     def get_with_multiple_players():
         return Room.objects.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
 
+    @staticmethod
+    def get_by_game_type(gid):
+        rooms = Room.objects.filter(uuid__in=Game.objects.filter(game_type_value=gid).values('room__uuid'))
+
+        return rooms
+
+    @staticmethod
+    def get_by_game_type_with_multiple_players(gid):
+        return Room.get_by_game_type(gid).annotate(num_players=models.Count('player')).filter(num_players__gt=1)
+
     @property
     def encoded_uuid(self):
         return encode_uuid(self.uuid)
