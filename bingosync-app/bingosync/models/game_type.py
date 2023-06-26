@@ -380,6 +380,13 @@ class GameType(Enum):
     zelda_botw_german_short = 376
     zelda_botw_german_long = 377
     rainbow_six_siege = 378
+    spyro_1_2 = 379
+    spyro_1_3 = 380
+    crash_1 = 381
+    crash_1_NST = 382
+    bugs_bunny_lost_in_time = 383
+    crash_bash = 384
+    crash_team_racing_2 = 385
 
     def __str__(self):
         return self.short_name
@@ -525,6 +532,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.celeste_portuguese, "Normal - Portuguese", "Celeste PT"),
             (GameType.celeste_blackout_cn, "Blackout - CN", "Celeste Blackout CN"),
             (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
+        ],
+    },
+    GameType.crash_team_racing: {
+        "name": "Crash Team Racing",
+        "variants": [
+            (GameType.crash_team_racing, "1.0", "CTR - 1.0"),
+            (GameType.crash_team_racing_2, "2.0", "CTR - 2.0"),
         ],
     },
     GameType.crash_twinsanity: {
@@ -868,6 +882,14 @@ MANUAL_GAME_GROUPS = {
             (GameType.splatoon_2_hero_mode, "Hero Mode", "Splatoon 2: Hero Mode"),
         ],
     },
+        GameType.spyro_1: {
+        "name": "Spyro The Dragon",
+        "variants": [
+            (GameType.spyro_1, "1.0", "Spyro 1 - 1.0"),
+            (GameType.spyro_1_2, "2.0", "Spyro 1 - 2.0"),
+            (GameType.spyro_1_3, "3.0 No Dragon Shores", "Spyro 1 - 3.0"),
+        ],
+    },
     GameType.spyro_2: {
         "name": "Spyro 2: Ripto's Rage",
         "variants": [
@@ -1047,6 +1069,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.bloodstained_rando, "Bloodstained: Ritual of the Night Randomizer", "Bloodstained Rando"),
     **singleton_group(GameType.bug_fables, "Bug Fables: The Everlasting Sapling", "Bug Fables"),
+    **singleton_group(GameType.bugs_bunny_lost_in_time, "Bugs Bunny Lost in Time", "Bugs Bunny LIT"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
@@ -1058,10 +1081,12 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.cod_black_ops_zombies, "Call of Duty: Black Ops Zombies Saga", "CoD Zombies"),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.counter_strike_global_offensive, "Counter-Strike: Global Offensive", "CS: GO"),
+    **singleton_group(GameType.crash_1, "Crash Bandicoot", "Crash 1"),
+    **singleton_group(GameType.crash_1_NST, "Crash Bandicoot 1 N Sane Trilogy", "Crash 1 NST"),
     **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
     **singleton_group(GameType.crash_3, "Crash Bandicoot 3; Warped", "Crash 3"),
     **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
-    **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
+    **singleton_group(GameType.crash_bash, "Crash Bash", "Crash Bash"),
     **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
@@ -1173,7 +1198,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.sos_poot_all_items, "Story of Seasons: Pioneers of Olive Town", "SoS: PoOT All Items", "All Items"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
-    **singleton_group(GameType.spyro_1, "Spyro the dragon", "Spyro 1"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.star_wars_jfo, "Star Wars Jedi: Fallen Order", "JFO"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
