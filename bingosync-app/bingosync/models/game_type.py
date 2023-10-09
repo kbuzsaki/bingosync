@@ -380,6 +380,7 @@ class GameType(Enum):
     zelda_botw_german_short = 376
     zelda_botw_german_long = 377
     rainbow_six_siege = 378
+    fallout_3 = 379
 
     def __str__(self):
         return self.short_name
@@ -1200,6 +1201,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
+    **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3")
 }
 GAME_GROUPS = {**MANUAL_GAME_GROUPS, **SINGLETON_GAME_GROUPS}
 
