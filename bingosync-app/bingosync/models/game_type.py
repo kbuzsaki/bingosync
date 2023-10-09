@@ -1082,6 +1082,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.elden_ring, "Elden Ring", "Elden Ring"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
+    **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
@@ -1201,7 +1202,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
-    **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3")
 }
 GAME_GROUPS = {**MANUAL_GAME_GROUPS, **SINGLETON_GAME_GROUPS}
 
