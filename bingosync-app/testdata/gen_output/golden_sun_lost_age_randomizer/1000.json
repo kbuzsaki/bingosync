@@ -1,77 +1,77 @@
 [
     {
-        "name": "Defeat a Phoenix-type enemy"
+        "name": "Defeat a Blue Dragon-type enemy"
     },
     {
-        "name": "Check the chest in Hesperia Settlement"
+        "name": "Forge with a Golem Core"
     },
     {
-        "name": "Defeat all overworld Djinn (6)"
-    },
-    {
-        "name": "Clear Gabomba Statue"
-    },
-    {
-        "name": "Obtain 3 Lucky Medals"
-    },
-    {
-        "name": "Befriend Aroma, Ether or Ember"
-    },
-    {
-        "name": "Defeat the Chest Beaters"
-    },
-    {
-        "name": "Check the Angara Cavern summon tablet"
-    },
-    {
-        "name": "Forge with Orihalcon"
-    },
-    {
-        "name": "Reach the top of Ankohl Ruins"
-    },
-    {
-        "name": "Have someone be a Dragoon"
-    },
-    {
-        "name": "Obtain the Corn"
-    },
-    {
-        "name": "Learn Sand"
-    },
-    {
-        "name": "Befriend the Djinni in Aqua Rock"
-    },
-    {
-        "name": "Learn the Daedalus summon"
-    },
-    {
-        "name": "Obtain Fire Brand or Sol Blade"
-    },
-    {
-        "name": "Defeat Sentinel"
-    },
-    {
-        "name": "Reach the top of Shrine of the Sea God"
+        "name": "Collect the chest in SW Atteka Islet"
     },
     {
         "name": "Obtain the Mysterious Card"
     },
     {
-        "name": "Check the Fujin Shield chest"
+        "name": "Unequip a cursed item"
+    },
+    {
+        "name": "Have someone be a Cavalier"
+    },
+    {
+        "name": "Defeat Briggs"
+    },
+    {
+        "name": "Enter the innermost room of Taopo Swamp"
+    },
+    {
+        "name": "Defeat 3 Mad Plants"
+    },
+    {
+        "name": "Obtain the Erinyes' Tunic"
+    },
+    {
+        "name": "Befriend 7 Mercury Djinn"
+    },
+    {
+        "name": "Obtain the Corn"
+    },
+    {
+        "name": "Obtain Masamune or Phaeton's Blade"
     },
     {
         "name": "Befriend 20 Djinn"
     },
     {
-        "name": "Learn 4 multi-element summons"
+        "name": "Collect the Angara Cavern summon tablet"
     },
     {
-        "name": "Befriend 5 Mars Djinn"
+        "name": "Befriend the Djinni in Apojii Islands"
     },
     {
-        "name": "Defeat each Roc-type enemy (2)"
+        "name": "Clear Jupiter Lighthouse"
     },
     {
-        "name": "Befriend 8 Jupiter Djinn"
+        "name": "Learn Cyclone + Hover"
+    },
+    {
+        "name": "Obtain 2 keys"
+    },
+    {
+        "name": "Learn the Daedalus summon"
+    },
+    {
+        "name": "Befriend Zephyr, Coal or Vine"
+    },
+    {
+        "name": "Befriend the Djinni in Taopo Swamp"
+    },
+    {
+        "name": "Learn Mind Read + Reveal"
+    },
+    {
+        "name": "Befriend the Djinni in Trial Road"
+    },
+    {
+        "name": "Have someone be a Ninja"
     }
 ]
