@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,6 +25,8 @@ from bingosync.secret_settings import SECRET_KEY, ADMINS, SERVER_EMAIL, DB_USER
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not IS_PROD
+
+IS_TEST = len(sys.argv) > 1 and sys.argv[1] == "test"
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
@@ -184,11 +187,21 @@ LOGGING = {
 }
 
 
+if IS_TEST:
+    import logging
+    logging.disable(logging.CRITICAL)
+
 # base directory for data consumed in tests
 TESTDATA_DIR = os.path.join(BASE_DIR, "testdata")
 
 # base directory for data consumed in test_generator.py
 GEN_TESTDATA_DIR = os.path.join(TESTDATA_DIR, "gen_output")
+
+
+if IS_TEST or DEBUG:
+    GENERATOR_TIMEOUT_SECONDS = 2
+else:
+    GENERATOR_TIMEOUT_SECONDS = 10
 
 
 # Static files (CSS, JavaScript, Images)

@@ -8,7 +8,7 @@ bingoList[1] = [
   { name: "Knight Class", types: ["startingclass","restrict_sword"] },
   { name: "Hunter Class", types: ["startingclass","restrict_sword"] },
   { name: "Pyromancer Class", types: ["startingclass","restrict_axe"] },
-  { name: "Depraved Class", types: ["startingclass"] },
+  { name: "Deprived Class", types: ["startingclass"] },
   { name: "Wanderer Class", types: ["startingclass"] },
   { name: "Thief Class", types: ["startingclass","restrict_key"] },
   { name: "Warrior Class", types: ["startingclass","restrict_sword"] },
@@ -16,24 +16,23 @@ bingoList[1] = [
 ];
 // Starting items
 bingoList[2] = [
-  { name: "No Master Key", types: ["startingitem","restrict_key"] },
+  { name: "No Master Key gift", types: ["startingitem","restrict_key"] },
   { name: "Take Pendant as gift", types: ["startingitem","restrict_key"] },
   { name: "Take Binoculars as gift", types: ["startingitem","restrict_key"] },
-  { name: "Take Old witches ring as gift", types: ["startingitem","restrict_key"] },
+  { name: "Take Old Witch's Ring as gift", types: ["startingitem","restrict_key"] },
   { name: "Right hand wielding only", types: ["restriction","wielding"] },
-  { name: "Left hand wielding only", types: ["restriction","wielding"] },
-  { name: "No Swords", types: ["restriction","restrict_weapons"] }
+  { name: "Left hand wielding only", types: ["restriction","wielding"] }
 ];
 // Item Restrictions
 bingoList[3] = [
   { name: "No Shields", types: ["restriction","restrict_weapons"] },
   { name: "No Swords", types: ["restriction","restrict_weapons"] },
   { name: "No Polearms", types: ["restriction","restrict_weapons"] },
-  { name: "Daggers Only", types: ["restriction","restrict_weapons"] },
+  { name: "Daggers only", types: ["restriction","restrict_weapons"] },
   { name: "Axes only", types: ["restriction","restrict_weapons"] },
   { name: "No Rings", types: ["restriction","restrict_armour"] },
   { name: "Starting Armour only", types: ["restriction","restrict_armour"] },
-  { name: "Starting Weapons only", types: ["restriction","restrict_armour"] }
+  { name: "Starting Weapons only", types: ["restriction","restrict_weapons"] }
 ];
 // Firelink
 bingoList[4] = [
@@ -43,14 +42,13 @@ bingoList[4] = [
   { name: "Join Warriors of Sunlight", types: ["covenant","parish"] },
   { name: "Cut Off a Gargoyle's Tail", types: ["bosses","parish","items"] },
   { name: "Obtain Crest of Artorias", types: ["items","parish"] },
-  { name: "Bloodbite Ring", types: ["rings","parish"] },
-  { name: "Poisonbite Ring", types: ["rings","parish"] },
+  { name: "Obtain Bloodbite Ring", types: ["rings","parish"] },
+  { name: "Obtain Poisonbite Ring", types: ["rings","parish"] },
   { name: "3 Purging Stones", types: ["items","parish"] }
 ];
 // Depths and Darkroot
 bingoList[5] = [
   { name: "Open Lower Burg / Depths to Firelink Gate", types: ["shortcut","lowerburg"] },
-  { name: "Rescue Griggs", types: ["npcs","lowerburg"] },
   { name: "Join Forest Hunters", types: ["covenant","darkroot","npcs"] },
   { name: "Obtain Divine Ember", types: ["darkroot","ember"] },
   { name: "Obtain Enchanted Ember", types: ["darkroot","ember"] },
@@ -61,8 +59,8 @@ bingoList[5] = [
 ];
 // Lower Burg and Depths
 bingoList[6] = [
-  { name: "Obtain heavy Crossbow", types: ["weapons","depths","items"] },
-  { name: "Obtain Ring of Evil Eye", types: ["rings","depths","items"] },
+  { name: "Obtain Heavy Crossbow", types: ["weapons","depths","items"] },
+  { name: "Obtain Ring of the Evil Eye", types: ["rings","depths","items"] },
   { name: "Defeat Kirk (Depths)", types: ["npcs","depths","enemies"] },
   { name: "Kill Gaping Dragon", types: ["bosses","depths"] },
   { name: "Kill 2 Butchers", types: ["enemies","depths"] },
@@ -76,12 +74,11 @@ bingoList[7] = [
   { name: "Obtain Whip", types: ["weapons","blighttown"] },
   { name: "Obtain Server", types: ["weapons","blighttown"] },
   { name: "Obtain Iaito", types: ["weapons","blighttown"] },
-  { name: "Obtain Force Within", types: ["items","spells","blighttown"] },
+  { name: "Obtain Power Within", types: ["items","spells","blighttown"] },
   { name: "Obtain Tin Banishment Catalyst", types: ["items","weapons"] },
   { name: "Obtain Remedy", types: ["items","spells"] },
   { name: "Obtain Fire Keeper Soul (Blighttown)", types: ["blighttown","items","humanity"] },
-  { name: "Obtain Queelag's Soul", types: ["bosses","depths","items"] },
-  { name: "Obtain Remedy", types: ["sorcery","blighttown"] },
+  { name: "Obtain Soul of Quelaag", types: ["bosses","depths","items"] },
   { name: "Defeat Maneater Mildred", types: ["bosses","depths"] }
 ];
 // Valley of the Drakes and New Londo
@@ -103,7 +100,7 @@ bingoList[9] = [
   { name: "Obtain Gravelord Greastword", types: ["covenant","catacombs"] },
   { name: "Obtain Great Scythe", types: ["catacombs"] },
   { name: "Obtain Tranquil Walk of Peace", types: ["items","spells","catacombs"] },
-  { name: "Kill Black Knight (Catacombs)", types: ["items","spells","catacombs"] },
+  { name: "Kill Black Knight (The Catacombs)", types: ["items","spells","catacombs"] },
   { name: "Kill Titanite Demon (The Catacombs)", types: ["enemies","catacombs"] },
   { name: "Kill Patches", types: ["npcs","catacombs"] },
   { name: "Summon Paladin Leeroy", types: ["covenant","catacombs"] },
@@ -129,14 +126,14 @@ bingoList[11] = [
 ];
 // Sen's Fortress
 bingoList[12] = [
-  { name: "Obtain Lightning Spear", types: ["items","weapons"] },
+  { name: "Obtain a Spear upgraded with Lightning", types: ["items","weapons"] },
   { name: "Obtain Covetous Gold Serpent Ring", types: ["items","rings","sens"] },
   { name: "Obtain Ring of Steel Protection", types: ["items","rings","sens"] },
   { name: "Obtain Flame Stoneplate Ring", types: ["items","rings","sens"] },
   { name: "Obtain Sniper Crossbow", types: ["items","weapons","sens"] },
   { name: "Obtain Ricard's Rapier", types: ["items","weapons","sens","npcs"] },
   { name: "Obtain Hush", types: ["items","sens","spells"] },
-  { name: "Obtain Core of Iron Golem", types: ["sens","items","bosses"] },
+  { name: "Obtain Core of an Iron Golem", types: ["sens","items","bosses"] },
   { name: "Kill All 3 Giants in Sens", types: ["enemies","sens"] }
 ];
 // NPC Interactions
@@ -158,7 +155,7 @@ bingoList[15] = [
   { name: "Summon Solaire in Anor Londo", types: ["covenant","solaire"] },
   { name: "Kill Crestfallen Merchant", types: ["sens","npc"] },
   { name: "Rescue Griggs in Lower Burg", types: ["lowerburg","npc"] },
-  { name: "Rescue Logan in Sen's", types: ["sens","npc","spells"] },
+  { name: "Rescue Logan in Sen's Fortress", types: ["sens","npc","spells"] },
   { name: "Cause Crestfallen Warrior to go Hollow", types: ["firelink","npc"] }
 ];
 // More Restrictions
@@ -168,15 +165,14 @@ bingoList[16] = [
   { name: "Never use Consumables", types: ["restriction", "restrict_consumable"] },
   { name: "Only heal with Humanities", types: ["restriction", "restrict_consumable"] },
   { name: "Never use Pyromancy", types: ["restriction","restrict_spell"] },
-  { name: "Never wear Armour", types: ["restriction"] }
+  { name: "Never wear Armour", types: ["restriction","restrict_armour"] }
 ];
 // Anor Londo
 bingoList[17] = [
   { name: "Obtain Tiny Being's Ring (Siegmeyer)", types: ["npcs","anorlondo2"] },
   { name: "Obtain Ring of the Sun's Firstborn", types: ["anorlondo"] },
   { name: "Obtain Hawk Ring", types: ["anorlondo"] },
-  { name: "Kill Three Mimics", types: ["anorlondo"] },
-  { name: "Kill Titanite Demon (Anor Londo)", types: ["anorlondo","ornsmo"] },
+  { name: "Kill 3 Mimics", types: ["anorlondo"] },
   { name: "Kill Titanite Demon (Anor Londo)", types: ["anorlondo","ornsmo"] },
   { name: "Obtain Havel's Set", types: ["anorlondo","armour"] }
 ];
@@ -201,17 +197,17 @@ bingoList[20] = [
   { name: "Obtain Painting Guardian Set", types: ["paintedworld","armour"] },
   { name: "Obtain Velka's Rapier", types: ["paintedworld","weapons"] },
   { name: "Murder Priscilla", types: ["paintedworld","youmonster"] },
-  { name: "Obtain Dried Finger", types: ["paintedworld","items"] }
+  { name: "Obtain a Gold Coin", types: ["paintedworld","items"] }
 ];
 // Tomb of the Giants
 bingoList[21] = [
   { name: "Kill Black Knight (Tomb of the Giants)", types: ["enemies","totg"] },
-  { name: "Rescue Rhea", types: ["npcs","totg","rhea"] },
+  { name: "Rescue Reah", types: ["npcs","totg","reah"] },
   { name: "Get pushed by Patches", types: ["npcs","totg"] },
-  { name: "Obtain Skull Lantern", types: ["weapons","totg" ] },
-  { name: "Obtain Effigy Shield", types: ["weapons","totg" ] },
-  { name: "Obtain Large Divine Ember", types: ["ember","totg" ] },
-  { name: "Obtain Covetous Silver Serpent Ring", types: ["rings","totg" ] }
+  { name: "Obtain Skull Lantern", types: ["weapons","totg"] },
+  { name: "Obtain Effigy Shield", types: ["weapons","totg"] },
+  { name: "Obtain Large Divine Ember", types: ["ember","totg"] },
+  { name: "Obtain Covetous Silver Serpent Ring", types: ["rings","totg"] }
 
 ];
 // Long Darkroot
@@ -221,7 +217,7 @@ bingoList[22] = [
   { name: "Obtain Antiquated Set", types: ["darkroothard","dusk","spells"] },
   { name: "Never Light a bonfire", types: ["restriction"] },
   { name: "Fully kindle a bonfire", types: ["restriction"] },
-  { name: "Nver upgrade weapons", types: ["restriction"] }
+  { name: "Never upgrade weapons", types: ["restriction"] }
 ];
 // Ash Lake
 bingoList[23] = [
@@ -232,8 +228,8 @@ bingoList[23] = [
 ];
 // Humanity souls and stats
 bingoList[24] = [
-  { name: "Obtain 2 Soul of a Hero", types: ["stats","humanity"] },
-  { name: "20 soft humanity", types: ["stats","humanity"] },
+  { name: "Obtain 2 Souls of a Hero", types: ["stats","humanity"] },
+  { name: "20 Soft Humanity", types: ["stats","humanity"] },
   { name: "150000 souls", types: ["stats","souls"] },
   { name: "26 Resistance", types: ["stats","condition"] },
   { name: "36 Vitality", types: ["stats","condition"] },
@@ -249,4 +245,3 @@ bingoList[25] = [
   { name: "36 Intelligence", types: ["stats","casting"] },
   { name: "36 Faith", types: ["stats","casting"] }
 ];
-

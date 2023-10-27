@@ -5,6 +5,7 @@ import json
 import os
 import sys
 
+from bingosync.generators import GeneratorException
 from bingosync.models import GameType
 from bingosync.settings import GEN_TESTDATA_DIR
 
@@ -34,13 +35,26 @@ class GoldenDataTestCase(test.TestCase):
         data_map = {}
         for game_type in TEST_TYPES:
             for seed in TEST_SEEDS:
-                golden_data = freeze_dict(get_golden_data(game_type, seed))
+                raw_golden_data = get_golden_data(game_type, seed)
+                for goal in raw_golden_data:
+                    self.assertNotIn('"name":', goal["name"], str(game_type) + ", " + str(seed))
+                golden_data = freeze_dict(raw_golden_data)
                 if golden_data in data_map and game_type not in DUPLICATE_GUARD_BLACKLIST:
                     original_type, original_seed = data_map[golden_data]
                     self.fail("got duplicate card from ({}, {}), original was ({}, {})"
                             .format(game_type.name, seed, original_type.name, original_seed))
                 else:
                     data_map[golden_data] = game_type, seed
+
+
+class TimeoutTestCase(test.TestCase):
+
+    def test_eval_timeout(self):
+        try:
+            GameType.celeste.generator_instance().eval("(function() { for (var i = 0; true; i++) {} }())")
+            self.fail("Failed to time out!")
+        except GeneratorException as e:
+            pass
 
 
 def test_get_card(self, game_type):
