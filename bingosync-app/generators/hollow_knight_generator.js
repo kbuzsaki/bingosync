@@ -148,7 +148,7 @@ var bingoList = {
 "XRoadsGrub":{"Name":"All Grubs: Xroads (5) + Fog Canyon (1)", "excludes":[]},
 "CoTGrub":{"Name":"Save the 5 grubs in CoT", "excludes":[]},
 "FunGreenGrub":{"Name":"All Grubs: Greenpath (4) + Fungal (2)", "excludes":[]},
-"PeaksGrub":{"Name":"Save the 7 grubs in Crystal Peaks","excludes":["Mimics"]},
+"PeaksGrub":{"Name":"Save the 7 grubs in Crystal Peak","excludes":["Mimics"]},
 "WaterGrub":{"Name": "Save the 3 grubs in Waterways", "excludes":[]},
 "QueenGrub":{"Name":"Save the 3 grubs in Queen's Garden","excludes":[]},
 "DeepGrub":{"Name":"Save the 5 grubs in Deepnest","excludes":["Mimics"]},

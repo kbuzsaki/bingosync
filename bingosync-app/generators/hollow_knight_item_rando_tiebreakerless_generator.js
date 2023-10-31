@@ -614,7 +614,7 @@ var bingoList = {
   },
 
   "CPeaksChest": {
-    "Desc": "Open the Crystal Peaks chest"
+    "Desc": "Open the Crystal Peak chest"
   },
 
   "DeepFocusCheck": {
@@ -759,7 +759,7 @@ var bingoList = {
 */
 
   "PeaksGrub": {
-    "Desc": "Check/Free all grubs in Crystal Peaks (7)"
+    "Desc": "Check/Free all grubs in Crystal Peak (7)"
   },
 
   "QueenGrub": {
@@ -857,7 +857,7 @@ var bingoList = {
   },
 
   "DirtmouthElevator": {
-    "Desc": "Open the Dirtmouth / Crystal Peaks elevator"
+    "Desc": "Open the Dirtmouth / Crystal Peak elevator"
   },
 
   "ElderFlower": {
