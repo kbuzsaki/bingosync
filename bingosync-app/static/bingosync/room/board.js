@@ -241,6 +241,9 @@ var Board = (function(){
                 currentPercent -= 2;
                 $thisText.css('font-size', currentPercent + "%" );
             }
+            if (currentPercent == 0) {
+                $thisText.css('font-size', "1%" );
+            }
         });
     };
 
