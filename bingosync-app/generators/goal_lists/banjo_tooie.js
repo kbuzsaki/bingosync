@@ -416,9 +416,9 @@ bingoList[24] = [
 	{name: "Learn Sack Pack", types: ["CCL", "Global", "Moves"], subtypes: []},
 	{name: "6 Jiggies in WW", types: ["WW"], subtypes: ["Jiggies"]},
 	{name: "11 Jiggies Between GGM and CCL", types: ["GGM", "CCL"], subtypes: []},
-	{name: "8 Jiggies Between JRL and GI", types: ["JRL", "Gi"], subtypes: ["Jiggies"]},
-	{name: "8 Jiggies Between TDL and GI", types: ["TDL", "Gi"], subtypes: ["Jiggies"]},
-	{name: "9 Jiggies Between GI and HFP", types: ["HFP", "Gi"], subtypes: ["Jiggies"]},
+	{name: "8 Jiggies Between JRL and GI", types: ["JRL", "GI"], subtypes: ["Jiggies"]},
+	{name: "8 Jiggies Between TDL and GI", types: ["TDL", "GI"], subtypes: ["Jiggies"]},
+	{name: "9 Jiggies Between GI and HFP", types: ["HFP", "GI"], subtypes: ["Jiggies"]},
 	{name: "Heal the Sick Styracosaurus", types: ["TDL"], subtypes: []}
 ];
 
@@ -433,7 +433,7 @@ bingoList[25] = [
 	{name: "Bring Train to Icy Side", types: ["HFP", "Gobi"], subtypes: ["Train"]},
 	{name: "2 Jiggies in All 8 levels", types: ["Jiggies", "Global"], subtypes: []},
 	{name: "11 Jiggies Between GGM and TDL", types: ["GGM", "TDL"], subtypes: ["Jiggies"]},
-	{name: "10 Jiggies Between GGM and GI", types: ["GGM", "Gi"], subtypes: ["Jiggies"]},
+	{name: "10 Jiggies Between GGM and GI", types: ["GGM", "GI"], subtypes: ["Jiggies"]},
 	{name: "8 Jiggies Between WW and TDL", types: ["WW", "TDL"], subtypes: ["Jiggies"]},
 	{name: "8 Jiggies Between JRL and TDL", types: ["JRL", "TDL"], subtypes: ["Jiggies"]},
 	{name: "9 Jiggies Between TDL and HFP", types: ["TDL", "HFP"], subtypes: ["Jiggies"]},
