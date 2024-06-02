@@ -396,6 +396,7 @@ class GameType(Enum):
     final_fantasy_7_remake = 392
     final_fantasy_7_rebirth = 393
     mario_kart_wii = 394
+    fallout_4 = 395
 
     def __str__(self):
         return self.short_name
@@ -1132,6 +1133,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.elden_ring, "Elden Ring", "Elden Ring"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
+    **singleton_group(GameType.fallout_4, "Fallout 4", "Fallout 4"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.final_fantasy_5_career_day, "Final Fantasy 5 Career Day", "FF5 Career Day"),
