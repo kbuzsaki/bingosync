@@ -405,6 +405,7 @@ class GameType(Enum):
     mgs_twin_snakes = 401
     pummel_party = 402
     demoncrawl = 403
+    wwe_supercard = 404
 
     def __str__(self):
         return self.short_name
@@ -1264,6 +1265,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.video_games, "Video Games Bingo", "Video Games"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
+    **singleton_group(GameType.wwe_supercard, "WWE Supercard", "WWE SC"),
     **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
