@@ -408,6 +408,8 @@ class GameType(Enum):
     wwe_supercard = 404
     pseudoregalia = 405
     days_gone = 406
+    harvest_moon_back_to_nature_simple = 407
+    harvest_moon_back_to_nature_tiered = 408
 
     def __str__(self):
         return self.short_name
@@ -621,6 +623,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.halo_master_chief_collection, "Normal", "Halo MCC"),
             (GameType.halo_master_chief_collection_synergy, "Synergy", "Halo MCC Synergy"),
+        ],
+    },
+    GameType.harvest_moon_back_to_nature_simple: {
+        "name": "Harvest Moon: Back to Nature",
+        "variants": [
+            (GameType.harvest_moon_back_to_nature_simple, "Simple", "HMBTN Simple"),
+            (GameType.harvest_moon_back_to_nature_tiered, "Tiered", "HMBTN Tiered"),
         ],
     },
     GameType.hitman_3_paris: {
