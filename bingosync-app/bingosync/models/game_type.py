@@ -424,6 +424,7 @@ class GameType(Enum):
     king_of_the_castle_single = 420
     peggle_deluxe = 421
     peggle_nights = 422
+    horizon_zero_dawn_sacred_lands = 423
 
     def __str__(self):
         return self.short_name
@@ -690,6 +691,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.horizon_zero_dawn, "Normal", "HZD"),
             (GameType.horizon_zero_dawn_frozen_wilds, "The Frozen Wilds", "HZD: TFW"),
+            (GameType.horizon_zero_dawn_sacred_lands, "The Sacred Lands", "HZD: TSL"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
