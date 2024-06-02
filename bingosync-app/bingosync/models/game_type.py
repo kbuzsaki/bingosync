@@ -391,6 +391,10 @@ class GameType(Enum):
     crash_bash = 387
     crash_team_racing_2 = 388
     fallout_3 = 389
+    final_fantasy_5_career_day = 390
+    final_fantasy_7 = 391
+    final_fantasy_7_remake = 392
+    final_fantasy_7_rebirth = 393
 
     def __str__(self):
         return self.short_name
@@ -582,6 +586,14 @@ MANUAL_GAME_GROUPS = {
             (GameType.final_fantasy_1_randomizer_short, "Randomizer Short", "FF1 Random Short"),
             (GameType.final_fantasy_1_randomizer_long, "Randomizer Long (Defeat Chaos)", "FF1 Random Long"),
             (GameType.final_fantasy_1_randomizer_winter_dab, "Randomizer Winter DAB", "FF1R DAB"),
+        ],
+    },
+    GameType.final_fantasy_7: {
+        "name": "Final Fantasy 7",
+        "variants": [
+            (GameType.final_fantasy_7, "Normal", "FF7"),
+            (GameType.final_fantasy_7_remake, "Remake", "FF7 Remake"),
+            (GameType.final_fantasy_7_rebirth, "Rebirth", "FF7 Rebirth"),
         ],
     },
     GameType.generic_bingo: {
@@ -1121,6 +1133,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
+    **singleton_group(GameType.final_fantasy_5_career_day, "Final Fantasy 5 Career Day", "FF5 Career Day"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
