@@ -403,6 +403,7 @@ class GameType(Enum):
     lil_gator_game = 399
     pokemon_infinite_fusion = 400
     mgs_twin_snakes = 401
+    pummel_party = 402
 
     def __str__(self):
         return self.short_name
@@ -1216,6 +1217,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
+    **singleton_group(GameType.pummel_party, "Pummel Party", "Pummel Party"),
     **singleton_group(GameType.quest_for_glory_vga, "Quest for Glory 1 VGA", "QFG1 VGA"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
     **singleton_group(GameType.rainbow_six_siege, "Rainbow Six Siege", "R6S"),
