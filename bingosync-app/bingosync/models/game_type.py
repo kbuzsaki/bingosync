@@ -398,6 +398,7 @@ class GameType(Enum):
     mario_kart_wii = 394
     fallout_4 = 395
     infinite_craft = 396
+    horizon_forbidden_west = 397
 
     def __str__(self):
         return self.short_name
@@ -1147,6 +1148,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
+    **singleton_group(GameType.horizon_forbidden_west, "Horizon Forbidden West", "HFW"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.infinite_craft, "Infinite Craft", "Inf Craft"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
