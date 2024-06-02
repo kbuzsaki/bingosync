@@ -431,6 +431,10 @@ class GameType(Enum):
     terraria_pre_hardmode_journey = 427
     terraria_hardmode_journey = 428
     links_awakening_randomizer_dive = 429
+    fnaf_security_breach_everything = 430
+    fnaf_security_breach_no_collectibles = 431
+    fnaf_security_breach_only_collectibles = 432
+    fnaf_security_breach_speedrun_categories = 433
 
     def __str__(self):
         return self.short_name
@@ -634,6 +638,15 @@ MANUAL_GAME_GROUPS = {
             (GameType.final_fantasy_7, "Normal", "FF7"),
             (GameType.final_fantasy_7_remake, "Remake", "FF7 Remake"),
             (GameType.final_fantasy_7_rebirth, "Rebirth", "FF7 Rebirth"),
+        ],
+    },
+    GameType.fnaf_security_breach_everything: {
+        "name": "Five Nights at Freddy's: Security Breach",
+        "variants": [
+            (GameType.fnaf_security_breach_everything, "Everything", "FNaF: SB (Everything)"),
+            (GameType.fnaf_security_breach_no_collectibles, "No Collectibles", "FNaF: SB (No Collectibles)"),
+            (GameType.fnaf_security_breach_only_collectibles, "Only Collectibles", "FNaF: SB (Only Collectibles)"),
+            (GameType.fnaf_security_breach_speedrun_categories, "Speedrun Categories", "FNaF: SB (Speedrun Categories)"),
         ],
     },
     GameType.generic_bingo: {
