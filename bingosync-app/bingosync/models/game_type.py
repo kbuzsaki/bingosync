@@ -411,6 +411,7 @@ class GameType(Enum):
     harvest_moon_back_to_nature_simple = 407
     harvest_moon_back_to_nature_tiered = 408
     pikuniku = 409
+    destiny_2 = 410
 
     def __str__(self):
         return self.short_name
@@ -1145,6 +1146,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.days_gone, "Days Gone", "Days Gone"),
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.demoncrawl, "Demoncrawl", "Demoncrawl"),
+    **singleton_group(GameType.destiny_2, "Destiny 2", "Destiny 2"),
     **singleton_group(GameType.disneyland_adventures, "Disneyland Adventures", "Disneyland Adventures"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
