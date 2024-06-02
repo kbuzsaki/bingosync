@@ -402,6 +402,7 @@ class GameType(Enum):
     bluey = 398
     lil_gator_game = 399
     pokemon_infinite_fusion = 400
+    mgs_twin_snakes = 401
 
     def __str__(self):
         return self.short_name
@@ -1181,6 +1182,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Metroid Fusion Rando", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.mgs_twin_snakes, "Metal Gear Solid: The Twin Snakes", "MGS: TTS"),
     **singleton_group(GameType.monkey_island_1_3, "Monkey Island (1-3)", "MI (1-3)"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
