@@ -412,6 +412,7 @@ class GameType(Enum):
     harvest_moon_back_to_nature_tiered = 408
     pikuniku = 409
     destiny_2 = 410
+    undertale_genocide = 411
 
     def __str__(self):
         return self.short_name
@@ -1019,6 +1020,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.toy_story_2_version_2, "2.0", "Toy Story 2 - 2.0"),
         ],
     },
+    GameType.undertale: {
+        "name": "Undertale",
+        "variants": [
+            (GameType.undertale, "Normal", "Undertale"),
+            (GameType.undertale_genocide, "Genocide", "Undertale Genocide"),
+        ],
+    },
     GameType.wii_party_global_trot: {
         "name": "Wii Party",
         "variants": [
@@ -1277,7 +1285,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
-    **singleton_group(GameType.undertale, "Undertale", "Undertale"),
     **singleton_group(GameType.untitled_goose_game, "Untitled Goose Game", "Goose Game"),
     **singleton_group(GameType.video_games, "Video Games Bingo", "Video Games"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
