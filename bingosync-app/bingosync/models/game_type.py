@@ -400,6 +400,7 @@ class GameType(Enum):
     infinite_craft = 396
     horizon_forbidden_west = 397
     bluey = 398
+    lil_gator_game = 399
 
     def __str__(self):
         return self.short_name
@@ -1164,6 +1165,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
             "LEGO SW: TCS DS"),
+    **singleton_group(GameType.lil_gator_game, "Lil Gator Game", "Lil Gator Game"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
     **singleton_group(GameType.luigis_mansion_3, "Luigi's Mansion 3", "LM 3"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
