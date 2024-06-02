@@ -407,6 +407,7 @@ class GameType(Enum):
     demoncrawl = 403
     wwe_supercard = 404
     pseudoregalia = 405
+    days_gone = 406
 
     def __str__(self):
         return self.short_name
@@ -1131,6 +1132,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
+    **singleton_group(GameType.days_gone, "Days Gone", "Days Gone"),
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.demoncrawl, "Demoncrawl", "Demoncrawl"),
     **singleton_group(GameType.disneyland_adventures, "Disneyland Adventures", "Disneyland Adventures"),
