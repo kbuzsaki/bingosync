@@ -1,54 +1,124 @@
 bingoGenerator = require("./generators/generator_bases/simple_generator.js");
 
 var bingoList = [
-    "Break a tin can in Round 4 of Shooting Range",
-    "Catch 3 fish with bonus points in Fishing",
-    "Catch a “King of the Pond” fish in Fishing",
-    "Catch one of every type of fish in Fishing",
-    "Clear 200 points in Charge while still only getting Bronze (200 - 239)",
-    "Complete 3 levels of Pose Mii",
-    "Complete 5 missions in Tanks without losing a life",
-    "Complete 5 rounds of Find Mii with 1 sec left each round",
-    "Complete 5 rounds of find Mii",
-    "Complete a 2 player game of Billiards, player 1 must win",
-    "Complete the “Find the Mii you are Using” in Find Mii",
-    "Do 5 “obstruction” shots in in Table Tennis",
-    "Do a bank shot in Billiards, the break doesn’t count",
-    "Finish a Game of Billiards (Any Score)",
-    "Finish a Game of Billiards While Fouling on Every Shot",
-    "Finish a Game of Laser Hockey in a Tie",
-    "Finish a Game of Tanks but each death must be by a different tank",
-    "Finish a game of Charge without touching a scarecrow",
-    "Generate a random number between 40 - 70, stop the Find Mii clock on this number",
-    "Get 5 points scored on you in Laser Hockey",
-    "Get 6 goals in Laser Hockey",
-    "Get Bronze in Find Mii (20 Levels)",
-    "Get Bronze in Pose Mii (150 Points)",
-    "Get Bronze in Table Tennis (40)",
-    "Get Bronze in Tanks (Complete Mission 5)",
-    "Get Platinum in Charge (325+)",
-    "Get Platinum in Shooting Range (600)",
-    "Get Silver in Billiards without using the D-Pad (Using B to Aim)",
-    "Get Silver in Find Mii (40 Levels)",
-    "Get Silver in Pose Mii (400 Points)",
-    "Get Silver in Table Tennis (70)",
-    "Get Silver in Tanks (Complete Mission 10)",
-    "Get Specifically Bronze in Billiards (18 - 29)",
-    "Get a 4 ball or better break in Billiards",
-    "Get a combo of 120+ shots in Shooting Range",
-    "Get a combo of 60+ shots in Shooting Range",
-    "Get a least a Gold in Charge without jumping (300)",
-    "Get at least a Gold in Billiards (50+)",
-    "Get at least a Gold in Fishing (2300+)",
-    "Get killed by a yellow tank’s mine in Tanks",
-    "Get specifically Silver in Fishing (1600 - 2290)",
-    "Get specifically Silver in Shooting Range (400 - 499)",
-    "Hit 100 points in Charge, than turn around and hit the back fence",
-    "Hit a Red Hopping Scarecrow in Charge",
-    "Kill a tank with a mine in Tanks",
-    "Reach the max time of 120 sec in Find Mii",
-    "Score 4 goals in Laser Hockey with the alternate paddle",
-    "Shoot 10 targets of your face in Round 2 of Shooting Range",
-    "Shoot 2 balls of the table in Billiards, cue ball doesn’t count",
-    "Shoot 2 ducks in Shooting Range"
+    {
+        "name": "Shooting Range: Get between 490-510 points"
+    },
+    {
+        "name": "Shooting Range: Get a combo of 120+ shots"
+    },
+    {
+        "name": "Shooting Range: Silver without missing a shot, combo adds at the end (320)"
+    },
+    {
+        "name": "Shooting Range: Save a total of 10 Miis (points must add to the counter)"
+    },
+    {
+        "name": "Find Mii: Silver (40 levels)"
+    },
+    {
+        "name": "Find Mii: Bronze while completing levels 1-20 with 1 second remaining (20 levels)"
+    },
+    {
+        "name": "Find Mii: Complete 2 'find your favourite' levels (not counting 'pick a favourite')"
+    },
+    {
+        "name": "Table Tennis: Silver specifically (70-99)"
+    },
+    {
+        "name": "Table Tennis: Gold (100)"
+    },
+    {
+        "name": "Pose Mii: Gold (800)"
+    },
+    {
+        "name": "Pose Mii: Silver (400)"
+    },
+    {
+        "name": "Pose Mii: Let 3 rainbow bubbles fall"
+    },
+    {
+        "name": "Laser Hockey: Gold (10)"
+    },
+    {
+        "name": "Laser Hockey: Finish a game exactly 8-8"
+    },
+    {
+        "name": "Laser Hockey: Score 6 total goals with the alternate paddle"
+    },
+    {
+        "name": "Laser Hockey: Win with the alternate paddle"
+    },
+    {
+        "name": "Billiards: Platinum (60)"
+    },
+    {
+        "name": "Billiards: Bronze specifically (15-24)"
+    },
+    {
+        "name": "Billiards: Do a bank shot, the break doesn’t count"
+    },
+    {
+        "name": "Billiards: Shoot 4 total balls off the table, cue ball doesn’t count"
+    },
+    {
+        "name": "Billiards: Silver using only B to aim, no d-pad (27)"
+    },
+    {
+        "name": "Billiards: Get all 4 types of foul in a game"
+    },
+    {
+        "name": "Fishing: Gold (2300)"
+    },
+    {
+        "name": "Fishing: Silver without catching King of the Pond (1600)"
+    },
+    {
+        "name": "Fishing: Only catch one fish type for a game"
+    },
+    {
+        "name": "Fishing: Catch 1+ of every fish type"
+    },
+    {
+        "name": "Fishing: Finish a game on exactly -90"
+    },
+    {
+        "name": "Charge: Get between 308 and 312 points"
+    },
+    {
+        "name": "Charge: Get 100+ points avoiding perfect bonuses in a game"
+    },
+    {
+        "name": "Charge: Get 8 or fewer points in a game"
+    },
+    {
+        "name": "Tanks: Silver (10 missions)"
+    },
+    {
+        "name": "Tanks: Bronze (5 missions)"
+    },
+    {
+        "name": "Tanks: Kill a green tank"
+    },
+    {
+        "name": "Tanks: Kill either a teal or green tank with a mine"
+    },
+    {
+        "name": "Tanks: Complete 3 different missions with only mines"
+    },
+    {
+        "name": "Tanks: Destroy all walls on mission 10"
+    },
+    {
+        "name": "5+ Bronze or higher medals in the game select menu"
+    },
+    {
+        "name": "4+ Silver or higher medals in the game select menu"
+    },
+    {
+        "name": "3+ Gold or higher medals in the game select menu"
+    },
+    {
+        "name": "2+ Platinum medals in the game select menu"
+    }
 ];
