@@ -401,6 +401,7 @@ class GameType(Enum):
     horizon_forbidden_west = 397
     bluey = 398
     lil_gator_game = 399
+    pokemon_infinite_fusion = 400
 
     def __str__(self):
         return self.short_name
@@ -1203,6 +1204,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
     **singleton_group(GameType.pokemon_crystal_clear, "Pokémon Crystal Clear,", "Poké CC"),
+    **singleton_group(GameType.pokemon_infinite_fusion, "Pokémon Infinite Fusion", "Poké Inf. Fusion"),
     **singleton_group(GameType.pokemon_legends_arceus, "Pokémon Legends: Arceus"),
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
