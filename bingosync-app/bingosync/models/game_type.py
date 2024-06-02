@@ -422,6 +422,7 @@ class GameType(Enum):
     spyro_reignited = 418
     king_of_the_castle_multi = 419
     king_of_the_castle_single = 420
+    peggle_deluxe = 421
 
     def __str__(self):
         return self.short_name
@@ -1244,6 +1245,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.no_mans_sky, "No Man's Sky", "No Man's Sky"),
     **singleton_group(GameType.oceanhorn_2, "Oceanhorn 2: Knights of the Lost Realm", "Oceanhorn 2"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
+    **singleton_group(GameType.peggle_deluxe, "Peggle Deluxe", "PD EGM", "EGM"),
     **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
     **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
