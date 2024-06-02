@@ -522,6 +522,10 @@ def singleton_group(game_type, name, short_name=None, variant_name=DEFAULT_VARIA
 # don't actually remove the variant so that it still shows the correct data for historical rooms.
 # this will probably break if all of the variants for a game group are hidden.
 HIDDEN_VARIANTS = {
+    GameType.lego_batman,
+    GameType.lego_batman_long,
+    GameType.lego_batman_semi_random_level_names,
+    GameType.lego_batman_semi_random_level_numbers,
     GameType.super_mario_sunshine_1v1_beta,
     GameType.super_mario_sunshine_lockout,
     GameType.super_mario_sunshine_tournament,
