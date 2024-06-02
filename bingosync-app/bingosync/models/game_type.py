@@ -380,13 +380,16 @@ class GameType(Enum):
     zelda_botw_german_short = 376
     zelda_botw_german_long = 377
     rainbow_six_siege = 378
-    spyro_1_2 = 379
-    spyro_1_3 = 380
-    crash_1 = 381
-    crash_1_NST = 382
-    bugs_bunny_lost_in_time = 383
-    crash_bash = 384
-    crash_team_racing_2 = 385
+    zelda_totk = 379
+    zelda_totk_short = 380
+    zelda_totk_long = 381
+    spyro_1_2 = 382
+    spyro_1_3 = 383
+    crash_1 = 384
+    crash_1_NST = 385
+    bugs_bunny_lost_in_time = 386
+    crash_bash = 387
+    crash_team_racing_2 = 388
 
     def __str__(self):
         return self.short_name
@@ -1053,6 +1056,14 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
+        ],
+    },
+     GameType.zelda_totk: {
+        "name": "Zelda: Tears of the Kingdom",
+        "variants": [
+            (GameType.zelda_totk, "Normal", "TotK Normal"),
+            (GameType.zelda_totk_short, "Short", "TotK Short"),
+            (GameType.zelda_totk_long, "Long", "TotK Long"),
         ],
     },
 }
