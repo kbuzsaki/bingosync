@@ -395,6 +395,7 @@ class GameType(Enum):
     final_fantasy_7 = 391
     final_fantasy_7_remake = 392
     final_fantasy_7_rebirth = 393
+    mario_kart_wii = 394
 
     def __str__(self):
         return self.short_name
@@ -1161,6 +1162,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
+    **singleton_group(GameType.mario_kart_wii, "Mario Kart Wii", "MKW"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
