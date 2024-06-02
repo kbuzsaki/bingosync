@@ -577,7 +577,7 @@ MANUAL_GAME_GROUPS = {
     GameType.celeste: {
         "name": "Celeste",
         "variants": [
-            (GameType.celeste, "Normal", "Celeste"),
+            (GameType.celeste, "Lockout", "Celeste"),
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
             (GameType.celeste_long, "Long", "Celeste Long"),
             (GameType.celeste_cn, "Normal - CN", "Celeste CN"),
