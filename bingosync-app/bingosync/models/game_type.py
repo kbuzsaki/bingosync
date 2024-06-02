@@ -416,6 +416,7 @@ class GameType(Enum):
     splatoon_3 = 412
     ato = 413
     kirby_forgotten_land = 414
+    yugioh_tcg = 415
 
     def __str__(self):
         return self.short_name
@@ -1299,6 +1300,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
+    **singleton_group(GameType.yugioh_tcg, "Yu-Gi-Oh! TCG", "Yu-Gi-Oh! TCG"),
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),

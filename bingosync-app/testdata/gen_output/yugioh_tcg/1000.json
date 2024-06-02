@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Special Summon a monster from the GY"
+    },
+    {
+        "name": "Activate a card released in Cyberdark Impact"
+    },
+    {
+        "name": "Fusion Summon using 3 or more monsters"
+    },
+    {
+        "name": "Activate a field spell card"
+    },
+    {
+        "name": "Summon a non-monster card as a monster"
+    },
+    {
+        "name": "Summon a 2 Tokens at the same time"
+    },
+    {
+        "name": "Discard a card for cost or effect"
+    },
+    {
+        "name": "Tribute summon a Level 8 or higher monster"
+    },
+    {
+        "name": "Inflict piercing battle damage"
+    },
+    {
+        "name": "Change a monster from ATK to DEF"
+    },
+    {
+        "name": "Activate a Flip effect"
+    },
+    {
+        "name": "Summon Petit Moth"
+    },
+    {
+        "name": "Activate a card released in LOB"
+    },
+    {
+        "name": "Synchro summon using 3 or more monsters"
+    },
+    {
+        "name": "Return a card to the bottom of the deck"
+    },
+    {
+        "name": "Summon a Pyro-type monster"
+    },
+    {
+        "name": "Pendulum summon 2 or more monsters at once"
+    },
+    {
+        "name": "Decrease the ATK of a monster on the field"
+    },
+    {
+        "name": "Summon a Dark Magician"
+    },
+    {
+        "name": "Ritual summon a Level 5 or higher monster"
+    },
+    {
+        "name": "Tribute a monster your opponent controls"
+    },
+    {
+        "name": "Summon a Reptile-type monster"
+    },
+    {
+        "name": "Draw 2 cards from an effect"
+    },
+    {
+        "name": "Activate a continuous spell card"
+    },
+    {
+        "name": "Roll a die"
+    }
+]
