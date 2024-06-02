@@ -417,6 +417,7 @@ class GameType(Enum):
     ato = 413
     kirby_forgotten_land = 414
     yugioh_tcg = 415
+    the_long_dark = 416
 
     def __str__(self):
         return self.short_name
@@ -1288,6 +1289,7 @@ SINGLETON_GAME_GROUPS = {
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
     **singleton_group(GameType.the_forest, "The Forest", "The Forest"),
+    **singleton_group(GameType.the_long_dark, "The Long Dark", "The Long Dark"),
     **singleton_group(GameType.threads_of_fate, "Threads of Fate", "Threads of Fate"),
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
