@@ -406,6 +406,7 @@ class GameType(Enum):
     pummel_party = 402
     demoncrawl = 403
     wwe_supercard = 404
+    pseudoregalia = 405
 
     def __str__(self):
         return self.short_name
@@ -1219,6 +1220,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
+    **singleton_group(GameType.pseudoregalia, "Pseudoregalia", "Pseudoregalia"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
     **singleton_group(GameType.pummel_party, "Pummel Party", "Pummel Party"),
     **singleton_group(GameType.quest_for_glory_vga, "Quest for Glory 1 VGA", "QFG1 VGA"),
