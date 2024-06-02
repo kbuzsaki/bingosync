@@ -414,6 +414,7 @@ class GameType(Enum):
     destiny_2 = 410
     undertale_genocide = 411
     splatoon_3 = 412
+    ato = 413
 
     def __str__(self):
         return self.short_name
@@ -1119,6 +1120,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.animal_crossing_new_horizons, "Animal Crossing: New Horizons", "ACNH"),
     **singleton_group(GameType.around_the_clock_at_bikini_bottom, "Around the Clock at Bikini Bottom", "Around the Clock"),
+    **singleton_group(GameType.ato, "Ato", "Ato"),
     **singleton_group(GameType.azure_dreams_ps1, "Azure Dreams (PS1)", "Azure Dreams (PS1)"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
