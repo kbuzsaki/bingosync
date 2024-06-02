@@ -420,6 +420,8 @@ class GameType(Enum):
     the_long_dark = 416
     hell_pie = 417
     spyro_reignited = 418
+    king_of_the_castle_multi = 419
+    king_of_the_castle_single = 420
 
     def __str__(self):
         return self.short_name
@@ -708,6 +710,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.jak_and_daxter, "Normal", "J&D: TPL"),
             (GameType.jak_and_daxter_easy, "Easy", "J&D: TPL Easy"),
             (GameType.jak_and_daxter_new_game_plus, "NG+", "J&D: TPL NG+"),
+        ],
+    },
+    GameType.king_of_the_castle_single: {
+        "name": "King of the Castle",
+        "variants": [
+            (GameType.king_of_the_castle_single, "Single Playthrough", "KotC Single"),
+            (GameType.king_of_the_castle_multi, "Multi Playthrough", "KotC Multi"),
         ],
     },
     GameType.kingdom_hearts_2_final_mix: {
