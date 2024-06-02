@@ -425,6 +425,7 @@ class GameType(Enum):
     peggle_deluxe = 421
     peggle_nights = 422
     horizon_zero_dawn_sacred_lands = 423
+    paper_mario_2022 = 424
 
     def __str__(self):
         return self.short_name
@@ -858,6 +859,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.paper_mario, "Normal", "The Pape"),
             (GameType.paper_mario_new, "New", "The Pape (New)"),
+            (GameType.paper_mario_2022, "2022", "Paper Mario (v2022)"),
         ],
     },
     GameType.pikmin_2: {
