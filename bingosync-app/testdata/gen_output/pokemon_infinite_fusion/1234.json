@@ -36,19 +36,19 @@
         "name": "Defeat Sabrina before Koga"
     },
     {
-        "name": "Catch or faint Zapdos encounter"
+        "name": "Defeat a Gym Leader with only Ghost Type Pokes"
     },
     {
-        "name": "Have 10 different Pokeball types in inventory"
+        "name": "Defeat all trainers in Rocket Sewer (14)"
     },
     {
-        "name": "Release your starting Poke before it's level 11"
+        "name": "Use a Rare Candy to revive a fainted Poke"
     },
     {
-        "name": "Have 20 berries in your inventory"
+        "name": "Obtain 10 hidden items on the overworld"
     },
     {
-        "name": "Defeat all trainers on Route 25 (8)"
+        "name": "Defeat all Cerulean Gym trainers (3)"
     },
     {
         "name": "Have at least $100,000"
@@ -57,7 +57,7 @@
         "name": "Obtain 15 different TMs"
     },
     {
-        "name": "Fully evolve 10 different species of Pokes"
+        "name": "Defeat a Poke using Struggle"
     },
     {
         "name": "Complete 5 different trades (no wonder trade)"
@@ -72,6 +72,6 @@
         "name": "Inflict an opposing Poke with poison"
     },
     {
-        "name": "Defeat Elite 4 Champion"
+        "name": "Have a Poke with a stat value lower than its level"
     }
 ]
