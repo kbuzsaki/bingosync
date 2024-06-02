@@ -419,6 +419,7 @@ class GameType(Enum):
     yugioh_tcg = 415
     the_long_dark = 416
     hell_pie = 417
+    spyro_reignited = 418
 
     def __str__(self):
         return self.short_name
@@ -1281,6 +1282,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
     **singleton_group(GameType.splatoon_3, "Splatoon 3", "Splatoon 3", "Weapons"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
+    **singleton_group(GameType.spyro_reignited, "Spyro the Dragon Reignited", "Spyro Reignited"),
     **singleton_group(GameType.star_wars_jfo, "Star Wars Jedi: Fallen Order", "JFO"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
