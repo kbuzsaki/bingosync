@@ -410,6 +410,7 @@ class GameType(Enum):
     days_gone = 406
     harvest_moon_back_to_nature_simple = 407
     harvest_moon_back_to_nature_tiered = 408
+    pikuniku = 409
 
     def __str__(self):
         return self.short_name
@@ -1218,6 +1219,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
+    **singleton_group(GameType.pikuniku, "PikuNiku", "PikuNiku"),
     **singleton_group(GameType.pizza_tower, "Pizza Tower", "PizzaTower"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
