@@ -430,6 +430,7 @@ class GameType(Enum):
     metroid_dread_chaos = 426
     terraria_pre_hardmode_journey = 427
     terraria_hardmode_journey = 428
+    links_awakening_randomizer_dive = 429
 
     def __str__(self):
         return self.short_name
@@ -757,6 +758,7 @@ MANUAL_GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+            (GameType.links_awakening_randomizer_dive, "Dungeon Dive", "LADXR (Dive)"),
         ],
     },
     GameType.links_awakening_switch: {
