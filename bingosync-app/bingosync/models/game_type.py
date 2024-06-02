@@ -428,6 +428,8 @@ class GameType(Enum):
     paper_mario_2022 = 424
     metroid_dread_balanced = 425
     metroid_dread_chaos = 426
+    terraria_pre_hardmode_journey = 427
+    terraria_hardmode_journey = 428
 
     def __str__(self):
         return self.short_name
@@ -791,6 +793,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.mario_maker_2_2021, "2021", "Mario Maker 2 - 2021"),
         ],
     },
+    GameType.metroid_dread_balanced: {
+        "name": "Metroid Dread Balanced", 
+        "variants": [
+            (GameType.metroid_dread_balanced, "Balanced", "MDR Balanced"),
+            (GameType.metroid_dread_chaos, "Chaos", "MDR Chaos"),
+        ],
+    },
     GameType.metroid_prime_2_randomizer_balanced: {
         "name": "Metroid Prime 2: Echoes",
         "variants": [
@@ -1028,6 +1037,8 @@ MANUAL_GAME_GROUPS = {
             (GameType.terraria, "Pre-Hardmode", "Terraria PreHM"),
             (GameType.terraria_1_3, "1.3 Hardmode", "Terraria 1.3 HM"),
             (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
+            (GameType.terraria_hardmode_journey, "Hardmode Journey", "Terraria HM Journey"),
+            (GameType.terraria_pre_hardmode_journey, "Pre-Hardmode Journey", "Terraria PreHM Journey"),
         ],
     },
     GameType.the_witness: {
@@ -1234,8 +1245,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
-    **singleton_group(GameType.metroid_dread_balanced, "Metroid Dread Balanced", "Balanced", "MDR Balanced"),
-    **singleton_group(GameType.metroid_dread_chaos, "Metroid Dread Chaos", "Chaos", "MDR Chaos"),
     **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Metroid Fusion Rando", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.mgs_twin_snakes, "Metal Gear Solid: The Twin Snakes", "MGS: TTS"),
