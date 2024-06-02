@@ -397,6 +397,7 @@ class GameType(Enum):
     final_fantasy_7_rebirth = 393
     mario_kart_wii = 394
     fallout_4 = 395
+    infinite_craft = 396
 
     def __str__(self):
         return self.short_name
@@ -1147,6 +1148,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
+    **singleton_group(GameType.infinite_craft, "Infinite Craft", "Inf Craft"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
