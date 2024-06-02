@@ -426,6 +426,8 @@ class GameType(Enum):
     peggle_nights = 422
     horizon_zero_dawn_sacred_lands = 423
     paper_mario_2022 = 424
+    metroid_dread_balanced = 425
+    metroid_dread_chaos = 426
 
     def __str__(self):
         return self.short_name
@@ -1232,6 +1234,8 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
     **singleton_group(GameType.medabots_ax_rokusho, "Medabots AX: Rokusho", "Medabots AX"),
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
+    **singleton_group(GameType.metroid_dread_balanced, "Metroid Dread Balanced", "Balanced", "MDR Balanced"),
+    **singleton_group(GameType.metroid_dread_chaos, "Metroid Dread Chaos", "Chaos", "MDR Chaos"),
     **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Metroid Fusion Rando", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.mgs_twin_snakes, "Metal Gear Solid: The Twin Snakes", "MGS: TTS"),
