@@ -415,6 +415,7 @@ class GameType(Enum):
     undertale_genocide = 411
     splatoon_3 = 412
     ato = 413
+    kirby_forgotten_land = 414
 
     def __str__(self):
         return self.short_name
@@ -1189,6 +1190,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
+    **singleton_group(GameType.kirby_forgotten_land, "Kirby and the Forgotten Land", "KFL"),
     **singleton_group(GameType.kotor, "Star Wars: Knights of the Old Republic", "KotOR"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
