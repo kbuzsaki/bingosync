@@ -45,7 +45,7 @@ var bingoList = [
     "Super Mario 3 level",
     "Super Mario 3d world level",
     "Switch/rhythm blocks",
-    "Too many fucking spikes",
+    "Too many spikes",
     "Twister",
     "Under 60 seconds",
     "Vertical sublevel",
