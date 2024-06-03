@@ -8,10 +8,58 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             History
+              
             <a class="pull-right" href="{% toggle_params request.get_full_path hide_solo='true' %}"
                title="{{ hide_solo|yesno:"Show,Hide" }} rooms with only one player">
                 {{ hide_solo|yesno:"Show,Hide" }} Solo Rooms
             </a>
+
+            <div id="history_game_filter" class="pull-right">
+                <label>Filter by game:</label>
+                <select class="game_dropdown">
+                    {% for game in games %}
+                        <option 
+                            value="{{ game.0 }}" 
+                            {% if game.0|stringformat:'s' == request.GET.game %} selected {% endif %}                             
+                        >
+                            {{ game.1 }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    var $historyGameSelect = $('#history_game_filter select');
+
+                    $historyGameSelect.on('change', function () {
+                        var search = window.location.search, // gets the query string from url
+                            selected_game = $(this).val();
+
+                        // look for a game param, optionally preceded by ampersand, and remove it
+                        search = search.replace(/\??\&?game=[^&]+/g, '');
+
+                        // don't use the literal 'None' as a game value
+                        if (selected_game == 'None') {
+                            window.location.search = search;
+
+                            return;
+                        }
+
+                        // if the query string has anything left, we need to add an ampersand.
+                        // otherwise, game is only param present
+                        if (search != '') {
+                            search += '&';
+                        }
+
+                        // add the new game selection to the search var
+                        search += 'game=' + $(this).val();
+
+                        // set the complete search var back to location.search (query string)
+                        window.location.search = search;
+                    });
+                });
+            </script>
         </div>
         <div class="panel-body">
             {% if rooms %}
@@ -71,9 +119,15 @@
                     </span>
                 </div>
             {% else %}
-                <div>
-                    No rooms ever :O
-                </div>
+                {% if request.GET.game %}
+                    <div>
+                        No {% if request.GET.hide_solo %} non-solo {% endif %} rooms for the selected game
+                    </div>
+                {% else %}
+                    <div>
+                        No rooms ever :O
+                    </div>
+                {% endif %}
             {% endif %}
         </div>
     </div>
