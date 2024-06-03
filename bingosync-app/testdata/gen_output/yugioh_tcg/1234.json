@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Pass your turn without doing anything"
+    },
+    {
+        "name": "Normal summon a Normal monster"
+    },
+    {
+        "name": "Activate a Flip effect"
+    },
+    {
+        "name": "Gain exactly 2,000 LP from one effect"
+    },
+    {
+        "name": "Summon a monster with more than 3000 ATK"
+    },
+    {
+        "name": "Draw 2 cards from an effect"
+    },
+    {
+        "name": "Summon a Divine-Beast-type monster"
+    },
+    {
+        "name": "Tribute summon a Level 8 or higher monster"
+    },
+    {
+        "name": "Discard a card for cost or effect"
+    },
+    {
+        "name": "Summon a Reptile-type monster"
+    },
+    {
+        "name": "Change a monster from ATK to DEF"
+    },
+    {
+        "name": "Return a card to the bottom of the deck"
+    },
+    {
+        "name": "Activate a card as chain link 4"
+    },
+    {
+        "name": "Summon a non-monster card as a monster"
+    },
+    {
+        "name": "Pay half your LP as cost"
+    },
+    {
+        "name": "Change a monster's Level"
+    },
+    {
+        "name": "Place a monster in your S/T zone"
+    },
+    {
+        "name": "Attack with a 0 ATK monster"
+    },
+    {
+        "name": "Decrease the ATK of a monster on the field"
+    },
+    {
+        "name": "Destroy 2 or more cards at the same time"
+    },
+    {
+        "name": "Activate a LIMITED card"
+    },
+    {
+        "name": "Pendulum summon 2 or more monsters at once"
+    },
+    {
+        "name": "Apply a summoning restriction on yourself"
+    },
+    {
+        "name": "Toss a coin"
+    },
+    {
+        "name": "Summon Petit Moth"
+    }
+]

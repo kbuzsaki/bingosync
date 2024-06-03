@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Banish a monster from your GY"
+    },
+    {
+        "name": "Activate a field spell card"
+    },
+    {
+        "name": "Equip an equip spell card"
+    },
+    {
+        "name": "Summon a Dark Magician"
+    },
+    {
+        "name": "Activate a Flip effect"
+    },
+    {
+        "name": "Return a card from the field to the hand"
+    },
+    {
+        "name": "Place a monster in your S/T zone"
+    },
+    {
+        "name": "Summon Petit Moth"
+    },
+    {
+        "name": "T-set and pass"
+    },
+    {
+        "name": "Synchro summon using 3 or more monsters"
+    },
+    {
+        "name": "Summon a monster with more than 3000 ATK"
+    },
+    {
+        "name": "Activate a card as chain link 4"
+    },
+    {
+        "name": "Summon a Pyro-type monster"
+    },
+    {
+        "name": "Normal summon a Normal monster"
+    },
+    {
+        "name": "Destroy a monster on your field"
+    },
+    {
+        "name": "Give your opponent control of a card you own"
+    },
+    {
+        "name": "Discard a card for cost or effect"
+    },
+    {
+        "name": "Place a counter on a card"
+    },
+    {
+        "name": "Summon a Blue-Eyes White Dragon"
+    },
+    {
+        "name": "Toss a coin"
+    },
+    {
+        "name": "Fusion Summon using 3 or more monsters"
+    },
+    {
+        "name": "Summon a Red-Eyes Black Dragon"
+    },
+    {
+        "name": "Summon a Divine-Beast-type monster"
+    },
+    {
+        "name": "Inflict piercing battle damage"
+    },
+    {
+        "name": "Activate a card released in Cyberdark Impact"
+    }
+]

@@ -23,7 +23,7 @@ bingoList[2] = [
 { name: "Bottled Poe", types: ["BottleContent"] },
 { name: "Red Potion", types: ["BottleContent"] },
 { name: "Adult's Wallet", types: ["SkullCount","Wallet"] },
-{ name: "Plant a bean in Gerudo Valley", types: ["Beans"] },
+{ name: "Plant Bean in Gerudo Valley", types: ["Beans"] },
 ];
 
 bingoList[3] = [
@@ -72,7 +72,7 @@ bingoList[6] = [
 { name: "Map & Compass in Dodongo's Cavern", types: ["ContentDC"] },
 { name: "Map & Compass in Water Temple", types: ["ContentWater"] },
 { name: "Plant 3 Magic Beans", types: ["Beans"] },
-{ name: "Obtain one Hyrule Field HP", types: [] },
+{ name: "Obtain one Hyrule Field HP", types: ["FieldHPs"] },
 ];
 
 bingoList[7] = [
@@ -153,7 +153,7 @@ bingoList[11] = [
 { name: "Skull Mask", types: ["SongSaria","TradeChild"] },
 { name: "Lower Final Platform in Spirit Temple", types: ["ContentSpirit"] },
 { name: "Free 3 Carpenters", types: ["ContentTH"] },
-{ name: "Dispel 3 trial beams", types: [] },
+{ name: "Dispel 3 trial beams", types: ["TrialBeams"] },
 ];
 
 bingoList[12] = [
@@ -228,7 +228,7 @@ bingoList[16] = [
 { name: "Defeat Barinade", types: ["BeatJabu"] },
 { name: "Fire Arrows", types: ["ArrowsFire"] },
 { name: "Obtain All 5 Small Keys in Forest Temple", types: ["ContentForest"] },
-{ name: "Quiver (40)", types: ["Bow"] },
+{ name: "Quiver (40)", types: ["Bow","ContentForest"] },
 { name: "5 Child Death Mountain Area Skulltulas", types: ["SkullDMT"] },
 ];
 
@@ -265,7 +265,7 @@ bingoList[19] = [
 { name: "Megaton Hammer", types: ["ContentFire","Hammer"] },
 { name: "Obtain All 8 Small Keys in Fire Temple", types: ["ContentFire"] },
 { name: "Open 4 Small Key Chests in Spirit Temple", types: ["ContentSpirit"] },
-{ name: "Both Hyrule Field HPs", types: [] },
+{ name: "Both Hyrule Field HPs", types: ["FieldHPs"] },
 { name: "Milk 4 Cows", types: ["BottleContent","SongEpona"] },
 ];
 
@@ -289,7 +289,7 @@ bingoList[21] = [
 { name: "All 5 Skulltulas in Spirit Temple", types: [] },
 { name: "Get to the End of Water Trial", types: ["Hammer"] },
 { name: "Defeat 5 Different Iron Knuckles", types: ["CountIK"] },
-{ name: "Dispel the trials barrier (all 6 beams)", types: [] },
+{ name: "Dispel 5 trial beams", types: ["TrialBeams"] },
 ];
 
 bingoList[22] = [
@@ -309,7 +309,6 @@ bingoList[23] = [
 { name: "All 5 Lake Hylia Skulltulas", types: ["SkullHylia"] },
 { name: "Defeat Volvagia", types: ["BeatFire","Hammer"] },
 { name: "25 Different Skulltulas", types: ["SkullCount"] },
-{ name: "Defeat Ganondorf", types: ["ArrowsLight"] },
 ];
 
 bingoList[24] = [
@@ -330,4 +329,5 @@ bingoList[25] = [
 { name: "All 5 Skulltulas in Water Temple", types: ["SkullWater"] },
 { name: "30 Different Skulltulas", types: ["SkullCount"] },
 { name: "6 Zora area HP", types: ["HPZora"] },
+{ name: "Defeat Ganondorf", types: ["ArrowsLight","ContentForest"] },
 ];

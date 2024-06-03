@@ -234,7 +234,7 @@ class GameType(Enum):
     pokemon_omega_ruby_alpha_sapphire = 230
     monster_rancher_2_rng_lite = 231
     fallout_new_vegas = 232
-    minecraft_1_18 = 233
+    minecraft_recent = 233
     donald_duck_goin_quackers = 234
     monsters_inc_scare_island = 235
     kingdom_hearts_2_final_mix_current = 236
@@ -360,7 +360,81 @@ class GameType(Enum):
     hitman_3_chongqing = 356
     hitman_3_mendoza = 357
     horizon_zero_dawn_frozen_wilds = 358
-
+    hitman_3_marrakech = 359
+    hitman_3_bangkok = 360
+    hitman_3_colorado = 361
+    hitman_3_mumbai = 362
+    hitman_3_isle_of_sgail = 363
+    hitman_3_new_york = 364
+    hitman_3_haven_island = 365
+    hitman_3_dubai = 366
+    hitman_3_dartmoor = 367
+    hitman_3_ambrose_island = 368
+    elden_ring = 369
+    star_wars_jfo = 370
+    pizza_tower = 371
+    sea_of_thieves = 372
+    the_forest = 373
+    nintendo_switch_sports = 374
+    zelda_botw_german = 375
+    zelda_botw_german_short = 376
+    zelda_botw_german_long = 377
+    rainbow_six_siege = 378
+    zelda_totk = 379
+    zelda_totk_short = 380
+    zelda_totk_long = 381
+    spyro_1_2 = 382
+    spyro_1_3 = 383
+    crash_1 = 384
+    crash_1_NST = 385
+    bugs_bunny_lost_in_time = 386
+    crash_bash = 387
+    crash_team_racing_2 = 388
+    fallout_3 = 389
+    final_fantasy_5_career_day = 390
+    final_fantasy_7 = 391
+    final_fantasy_7_remake = 392
+    final_fantasy_7_rebirth = 393
+    mario_kart_wii = 394
+    fallout_4 = 395
+    infinite_craft = 396
+    horizon_forbidden_west = 397
+    bluey = 398
+    lil_gator_game = 399
+    pokemon_infinite_fusion = 400
+    mgs_twin_snakes = 401
+    pummel_party = 402
+    demoncrawl = 403
+    wwe_supercard = 404
+    pseudoregalia = 405
+    days_gone = 406
+    harvest_moon_back_to_nature_simple = 407
+    harvest_moon_back_to_nature_tiered = 408
+    pikuniku = 409
+    destiny_2 = 410
+    undertale_genocide = 411
+    splatoon_3 = 412
+    ato = 413
+    kirby_forgotten_land = 414
+    yugioh_tcg = 415
+    the_long_dark = 416
+    hell_pie = 417
+    spyro_reignited = 418
+    king_of_the_castle_multi = 419
+    king_of_the_castle_single = 420
+    peggle_deluxe = 421
+    peggle_nights = 422
+    horizon_zero_dawn_sacred_lands = 423
+    paper_mario_2022 = 424
+    metroid_dread_balanced = 425
+    metroid_dread_chaos = 426
+    terraria_pre_hardmode_journey = 427
+    terraria_hardmode_journey = 428
+    links_awakening_randomizer_dive = 429
+    fnaf_security_breach_everything = 430
+    fnaf_security_breach_no_collectibles = 431
+    fnaf_security_breach_only_collectibles = 432
+    fnaf_security_breach_speedrun_categories = 433
 
     def __str__(self):
         return self.short_name
@@ -452,6 +526,10 @@ def singleton_group(game_type, name, short_name=None, variant_name=DEFAULT_VARIA
 # don't actually remove the variant so that it still shows the correct data for historical rooms.
 # this will probably break if all of the variants for a game group are hidden.
 HIDDEN_VARIANTS = {
+    GameType.lego_batman,
+    GameType.lego_batman_long,
+    GameType.lego_batman_semi_random_level_names,
+    GameType.lego_batman_semi_random_level_numbers,
     GameType.super_mario_sunshine_1v1_beta,
     GameType.super_mario_sunshine_lockout,
     GameType.super_mario_sunshine_tournament,
@@ -499,13 +577,20 @@ MANUAL_GAME_GROUPS = {
     GameType.celeste: {
         "name": "Celeste",
         "variants": [
-            (GameType.celeste, "Normal", "Celeste"),
+            (GameType.celeste, "Lockout", "Celeste"),
             (GameType.celeste_blackout, "Blackout", "Celeste Blackout"),
             (GameType.celeste_long, "Long", "Celeste Long"),
             (GameType.celeste_cn, "Normal - CN", "Celeste CN"),
             (GameType.celeste_portuguese, "Normal - Portuguese", "Celeste PT"),
             (GameType.celeste_blackout_cn, "Blackout - CN", "Celeste Blackout CN"),
             (GameType.celeste_turkish, "Normal - Turkish", "Celeste TR"),
+        ],
+    },
+    GameType.crash_team_racing: {
+        "name": "Crash Team Racing",
+        "variants": [
+            (GameType.crash_team_racing, "1.0", "CTR - 1.0"),
+            (GameType.crash_team_racing_2, "2.0", "CTR - 2.0"),
         ],
     },
     GameType.crash_twinsanity: {
@@ -547,6 +632,23 @@ MANUAL_GAME_GROUPS = {
             (GameType.final_fantasy_1_randomizer_winter_dab, "Randomizer Winter DAB", "FF1R DAB"),
         ],
     },
+    GameType.final_fantasy_7: {
+        "name": "Final Fantasy 7",
+        "variants": [
+            (GameType.final_fantasy_7, "Normal", "FF7"),
+            (GameType.final_fantasy_7_remake, "Remake", "FF7 Remake"),
+            (GameType.final_fantasy_7_rebirth, "Rebirth", "FF7 Rebirth"),
+        ],
+    },
+    GameType.fnaf_security_breach_everything: {
+        "name": "Five Nights at Freddy's: Security Breach",
+        "variants": [
+            (GameType.fnaf_security_breach_everything, "Everything", "FNaF: SB (Everything)"),
+            (GameType.fnaf_security_breach_no_collectibles, "No Collectibles", "FNaF: SB (No Collectibles)"),
+            (GameType.fnaf_security_breach_only_collectibles, "Only Collectibles", "FNaF: SB (Only Collectibles)"),
+            (GameType.fnaf_security_breach_speedrun_categories, "Speedrun Categories", "FNaF: SB (Speedrun Categories)"),
+        ],
+    },
     GameType.generic_bingo: {
         "name": "Generic Bingo",
         "variants": [
@@ -561,18 +663,35 @@ MANUAL_GAME_GROUPS = {
             (GameType.halo_master_chief_collection_synergy, "Synergy", "Halo MCC Synergy"),
         ],
     },
+    GameType.harvest_moon_back_to_nature_simple: {
+        "name": "Harvest Moon: Back to Nature",
+        "variants": [
+            (GameType.harvest_moon_back_to_nature_simple, "Simple", "HMBTN Simple"),
+            (GameType.harvest_moon_back_to_nature_tiered, "Tiered", "HMBTN Tiered"),
+        ],
+    },
     GameType.hitman_3_paris: {
         "name": "Hitman 3",
         "variants": [
             (GameType.hitman_3_paris, "Paris", "Hitman 3 Paris"),
             (GameType.hitman_3_sapienza, "Sapienza", "Hitman 3 Sapienza"),
+            (GameType.hitman_3_marrakech, "Marrakech", "Hitman 3 Marrakech"),
+            (GameType.hitman_3_bangkok, "Bangkok", "Hitman 3 Bangkok"),
+            (GameType.hitman_3_colorado, "Colorado", "Hitman 3 Colorado"),
             (GameType.hitman_3_hokkaido, "Hokkaido", "Hitman 3 Hokkaido"),
             (GameType.hitman_3_miami, "Miami", "Hitman 3 Miami"),
             (GameType.hitman_3_santa_fortuna, "Santa Fortuna", "Hitman 3 Santa Fortuna"),
+            (GameType.hitman_3_mumbai, "Mumbai", "Hitman 3 Mumbai"),
             (GameType.hitman_3_whittleton_creek, "Whittleton Creek", "Hitman 3 Whittleton Creek"),
+            (GameType.hitman_3_isle_of_sgail, "Isle of Sgail", "Hitman 3 Isle of Sgail"),
+            (GameType.hitman_3_new_york, "New York", "Hitman 3 New York"),
+            (GameType.hitman_3_haven_island, "Haven Island", "Hitman 3 Haven Island"),
+            (GameType.hitman_3_dubai, "Dubai", "Hitman 3 Dubai"),
+            (GameType.hitman_3_dartmoor, "Dartmoor", "Hitman 3 Dartmoor"),
             (GameType.hitman_3_berlin, "Berlin", "Hitman 3 Berlin"),
             (GameType.hitman_3_chongqing, "Chongqing", "Hitman 3 Chongqing"),
             (GameType.hitman_3_mendoza, "Mendoza", "Hitman 3 Mendoza"),
+            (GameType.hitman_3_ambrose_island, "Ambrose Island", "Hitman 3 Ambrose Island"),
         ],
     },
     GameType.hollow_knight: {
@@ -595,6 +714,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.horizon_zero_dawn, "Normal", "HZD"),
             (GameType.horizon_zero_dawn_frozen_wilds, "The Frozen Wilds", "HZD: TFW"),
+            (GameType.horizon_zero_dawn_sacred_lands, "The Sacred Lands", "HZD: TSL"),
         ],
     },
     GameType.illusion_of_gaia_rando: {
@@ -617,6 +737,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.jak_and_daxter, "Normal", "J&D: TPL"),
             (GameType.jak_and_daxter_easy, "Easy", "J&D: TPL Easy"),
             (GameType.jak_and_daxter_new_game_plus, "NG+", "J&D: TPL NG+"),
+        ],
+    },
+    GameType.king_of_the_castle_single: {
+        "name": "King of the Castle",
+        "variants": [
+            (GameType.king_of_the_castle_single, "Single Playthrough", "KotC Single"),
+            (GameType.king_of_the_castle_multi, "Multi Playthrough", "KotC Multi"),
         ],
     },
     GameType.kingdom_hearts_2_final_mix: {
@@ -648,6 +775,7 @@ MANUAL_GAME_GROUPS = {
         "name": "Zelda: Link's Awakening",
         "variants": [
             (GameType.links_awakening, "Randomizer", "LADX Random"),
+            (GameType.links_awakening_randomizer_dive, "Dungeon Dive", "LADXR (Dive)"),
         ],
     },
     GameType.links_awakening_switch: {
@@ -684,6 +812,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.mario_maker_2_2021, "2021", "Mario Maker 2 - 2021"),
         ],
     },
+    GameType.metroid_dread_balanced: {
+        "name": "Metroid Dread Balanced", 
+        "variants": [
+            (GameType.metroid_dread_balanced, "Balanced", "MDR Balanced"),
+            (GameType.metroid_dread_chaos, "Chaos", "MDR Chaos"),
+        ],
+    },
     GameType.metroid_prime_2_randomizer_balanced: {
         "name": "Metroid Prime 2: Echoes",
         "variants": [
@@ -709,7 +844,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.minecraft_1_16_1, "1.16.1", "Minecraft 1.16.1"),
             (GameType.minecraft_1_8_9, "1.8.9", "Minecraft 1.8.9"),
-            (GameType.minecraft_1_18, "Most recent (1.18)", "Minecraft 1.18"),
+            (GameType.minecraft_recent, "Most recent (1.19.4)", "Minecraft 1.19"),
         ],
     },
     GameType.monster_rancher_2: {
@@ -754,6 +889,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.paper_mario, "Normal", "The Pape"),
             (GameType.paper_mario_new, "New", "The Pape (New)"),
+            (GameType.paper_mario_2022, "2022", "Paper Mario (v2022)"),
         ],
     },
     GameType.pikmin_2: {
@@ -839,6 +975,14 @@ MANUAL_GAME_GROUPS = {
             (GameType.splatoon_2_hero_mode, "Hero Mode", "Splatoon 2: Hero Mode"),
         ],
     },
+        GameType.spyro_1: {
+        "name": "Spyro The Dragon",
+        "variants": [
+            (GameType.spyro_1, "1.0", "Spyro 1 - 1.0"),
+            (GameType.spyro_1_2, "2.0", "Spyro 1 - 2.0"),
+            (GameType.spyro_1_3, "3.0 No Dragon Shores", "Spyro 1 - 3.0"),
+        ],
+    },
     GameType.spyro_2: {
         "name": "Spyro 2: Ripto's Rage",
         "variants": [
@@ -912,6 +1056,8 @@ MANUAL_GAME_GROUPS = {
             (GameType.terraria, "Pre-Hardmode", "Terraria PreHM"),
             (GameType.terraria_1_3, "1.3 Hardmode", "Terraria 1.3 HM"),
             (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
+            (GameType.terraria_hardmode_journey, "Hardmode Journey", "Terraria HM Journey"),
+            (GameType.terraria_pre_hardmode_journey, "Pre-Hardmode Journey", "Terraria PreHM Journey"),
         ],
     },
     GameType.the_witness: {
@@ -926,6 +1072,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.toy_story_2, "1.0", "Toy Story 2 - 1.0"),
             (GameType.toy_story_2_version_2, "2.0", "Toy Story 2 - 2.0"),
+        ],
+    },
+    GameType.undertale: {
+        "name": "Undertale",
+        "variants": [
+            (GameType.undertale, "Normal", "Undertale"),
+            (GameType.undertale_genocide, "Genocide", "Undertale Genocide"),
         ],
     },
     GameType.wii_party_global_trot: {
@@ -989,6 +1142,9 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_botw_french, "Normal - FR", "BotW FR Normal"),
             (GameType.zelda_botw_french_short, "Short - FR", "BotW FR Short"),
             (GameType.zelda_botw_french_long, "Long - FR", "BotW FR Long"),
+            (GameType.zelda_botw_german, "Normal - DE", "BotW DE Normal"),
+            (GameType.zelda_botw_german_short, "Short - DE", "BotW DE Short"),
+            (GameType.zelda_botw_german_long, "Long - DE", "BotW DE Long"),
             (GameType.zelda_botw_jp, "Normal - JP", "BotW JP Normal"),
             (GameType.zelda_botw_jp_short, "Short - JP", "BotW JP Short"),
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
@@ -1001,6 +1157,14 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
         ],
     },
+     GameType.zelda_totk: {
+        "name": "Zelda: Tears of the Kingdom",
+        "variants": [
+            (GameType.zelda_totk, "Normal", "TotK Normal"),
+            (GameType.zelda_totk_short, "Short", "TotK Short"),
+            (GameType.zelda_totk_long, "Long", "TotK Long"),
+        ],
+    },
 }
 SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType._102_dalmatians, "102 Dalmatians: Puppies to the Rescue", "102 Dal: PTTR"),
@@ -1008,13 +1172,16 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.adams_family, "The Addams Family (SNES)", "Addams Family"),
     **singleton_group(GameType.animal_crossing_new_horizons, "Animal Crossing: New Horizons", "ACNH"),
     **singleton_group(GameType.around_the_clock_at_bikini_bottom, "Around the Clock at Bikini Bottom", "Around the Clock"),
+    **singleton_group(GameType.ato, "Ato", "Ato"),
     **singleton_group(GameType.azure_dreams_ps1, "Azure Dreams (PS1)", "Azure Dreams (PS1)"),
     **singleton_group(GameType.banjo_dreamie, "Banjo-Dreamie", "Banjo-Dreamie"),
     **singleton_group(GameType.battle_for_bikini_bottom, "SpongeBob SquarePants: Battle for Bikini Bottom", "BFBB"),
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.bloodstained_rando, "Bloodstained: Ritual of the Night Randomizer", "Bloodstained Rando"),
+    **singleton_group(GameType.bluey, "Bluey: The Videogame", "Bluey: The Videogame"),
     **singleton_group(GameType.bug_fables, "Bug Fables: The Everlasting Sapling", "Bug Fables"),
+    **singleton_group(GameType.bugs_bunny_lost_in_time, "Bugs Bunny Lost in Time", "Bugs Bunny LIT"),
     **singleton_group(GameType.cardfight_vanguard, "Cardfight!! Vanguard", "CFVG"),
     **singleton_group(GameType.castlevania_aria_of_sorrow, "Castlevania: Aria of Sorrow", "CV: AoS"),
     **singleton_group(GameType.cat_quest_2, "Cat Quest 2", "Cat Quest 2"),
@@ -1026,10 +1193,12 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.cod_black_ops_zombies, "Call of Duty: Black Ops Zombies Saga", "CoD Zombies"),
     **singleton_group(GameType.cod_warzone, "Call of Duty: Warzone", "CoD: Warzone"),
     **singleton_group(GameType.counter_strike_global_offensive, "Counter-Strike: Global Offensive", "CS: GO"),
+    **singleton_group(GameType.crash_1, "Crash Bandicoot", "Crash 1"),
+    **singleton_group(GameType.crash_1_NST, "Crash Bandicoot 1 N Sane Trilogy", "Crash 1 NST"),
     **singleton_group(GameType.crash_2, "Crash Bandicoot 2: Cortex Strikes Back", "Crash 2"),
     **singleton_group(GameType.crash_3, "Crash Bandicoot 3; Warped", "Crash 3"),
     **singleton_group(GameType.crash_bandicoot_4, "Crash Bandicoot 4: It's About Time", "C4: IAT"),
-    **singleton_group(GameType.crash_team_racing, "Crash Team Racing", "CTR"),
+    **singleton_group(GameType.crash_bash, "Crash Bash", "Crash Bash"),
     **singleton_group(GameType.crystalis, "Crystalis", "Crystalis", "Randomizer"),
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
@@ -1037,7 +1206,10 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
+    **singleton_group(GameType.days_gone, "Days Gone", "Days Gone"),
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
+    **singleton_group(GameType.demoncrawl, "Demoncrawl", "Demoncrawl"),
+    **singleton_group(GameType.destiny_2, "Destiny 2", "Destiny 2"),
     **singleton_group(GameType.disneyland_adventures, "Disneyland Adventures", "Disneyland Adventures"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
@@ -1047,9 +1219,13 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
+    **singleton_group(GameType.elden_ring, "Elden Ring", "Elden Ring"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
+    **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
+    **singleton_group(GameType.fallout_4, "Fallout 4", "Fallout 4"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
+    **singleton_group(GameType.final_fantasy_5_career_day, "Final Fantasy 5 Career Day", "FF5 Career Day"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
@@ -1058,11 +1234,15 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.happy_wheels_level_editor, "Happy Wheels Level Editor", "HW Level Editor"),
     **singleton_group(GameType.harry_potter_2, "Harry Potter and the Chamber of Secrets", "HP2"),
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
+    **singleton_group(GameType.hell_pie, "Hell Pie", "Hell Pie"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
+    **singleton_group(GameType.horizon_forbidden_west, "Horizon Forbidden West", "HFW"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
+    **singleton_group(GameType.infinite_craft, "Infinite Craft", "Inf Craft"),
     **singleton_group(GameType.into_the_breach, "Into the Breach", "ITB"),
     **singleton_group(GameType.jade_cocoon, "Jade Cocoon: Story of the Tamamayu", "Jade Cocoon: SotT"),
     **singleton_group(GameType.kirby_and_the_amazing_mirror, "Kirby & The Amazing Mirror", "KtAM"),
+    **singleton_group(GameType.kirby_forgotten_land, "Kirby and the Forgotten Land", "KFL"),
     **singleton_group(GameType.kotor, "Star Wars: Knights of the Old Republic", "KotOR"),
     **singleton_group(GameType.league_of_legends_aram, "League of Legends ARAM", "LoL ARAM"),
     **singleton_group(GameType.legend_of_mana, "Legend of Mana", "LoM"),
@@ -1071,12 +1251,14 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.lego_star_wars, "LEGO Star Wars: The Video Game", "LEGO SW"),
     **singleton_group(GameType.lego_star_wars_the_complete_saga_ds, "LEGO Star Wars: The Complete Saga DS",
             "LEGO SW: TCS DS"),
+    **singleton_group(GameType.lil_gator_game, "Lil Gator Game", "Lil Gator Game"),
     **singleton_group(GameType.lucah_boad, "Lucah: Born of a Dream", "Lucah: BOAD"),
     **singleton_group(GameType.luigis_mansion_3, "Luigi's Mansion 3", "LM 3"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
     **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
+    **singleton_group(GameType.mario_kart_wii, "Mario Kart Wii", "MKW"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
     **singleton_group(GameType.mario_sports_mix, "Mario Sports Mix", "Mario Sports Mix"),
     **singleton_group(GameType.mass_effect_2, "Mass Effect 2", "Mass Effect 2"),
@@ -1084,6 +1266,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mega_man_11, "Mega Man 11", "MM11"),
     **singleton_group(GameType.metroid_fusion_rando, "Metroid Fusion", "Metroid Fusion Rando", "Randomizer"),
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
+    **singleton_group(GameType.mgs_twin_snakes, "Metal Gear Solid: The Twin Snakes", "MGS: TTS"),
     **singleton_group(GameType.monkey_island_1_3, "Monkey Island (1-3)", "MI (1-3)"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
@@ -1095,16 +1278,22 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.new_super_mario_bros_wii, "New Super Mario Bros. Wii", "NSMB Wii"),
     **singleton_group(GameType.nier_automata, "NieR: Automata", "NieR"),
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
+    **singleton_group(GameType.nintendo_switch_sports, "Nintendo Switch Sports", "NSS"),
     **singleton_group(GameType.no_mans_sky, "No Man's Sky", "No Man's Sky"),
     **singleton_group(GameType.oceanhorn_2, "Oceanhorn 2: Knights of the Lost Realm", "Oceanhorn 2"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
+    **singleton_group(GameType.peggle_deluxe, "Peggle Deluxe", "PD EGM", "EGM"),
+    **singleton_group(GameType.peggle_nights, "Peggle Nights", "PN UEGM", "UEGM"),
     **singleton_group(GameType.pen_pen_triicelon, "Pen Pen TriIcelon", "Pen Pen TriIcelon"),
     **singleton_group(GameType.phasmophobia, "Phasmophobia", "Phasmophobia"),
     **singleton_group(GameType.pikmin, "Pikmin", "Pikmin"),
     **singleton_group(GameType.pikmin_3, "Pikmin 3", "Pikmin 3"),
+    **singleton_group(GameType.pikuniku, "PikuNiku", "PikuNiku"),
+    **singleton_group(GameType.pizza_tower, "Pizza Tower", "PizzaTower"),
     **singleton_group(GameType.pokemon_black_white, "Pokémon Black/White", "Poké BW"),
     **singleton_group(GameType.pokemon_colosseum, "Pokémon Colosseum", "Poké Colosseum"),
     **singleton_group(GameType.pokemon_crystal_clear, "Pokémon Crystal Clear,", "Poké CC"),
+    **singleton_group(GameType.pokemon_infinite_fusion, "Pokémon Infinite Fusion", "Poké Inf. Fusion"),
     **singleton_group(GameType.pokemon_legends_arceus, "Pokémon Legends: Arceus"),
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
@@ -1113,9 +1302,12 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
     **singleton_group(GameType.pokepark_wii, "PokéPark Wii: Pikachu's Adventure", "PokéPark"),
+    **singleton_group(GameType.pseudoregalia, "Pseudoregalia", "Pseudoregalia"),
     **singleton_group(GameType.psychonauts, "Psychonauts", "Psychonauts"),
+    **singleton_group(GameType.pummel_party, "Pummel Party", "Pummel Party"),
     **singleton_group(GameType.quest_for_glory_vga, "Quest for Glory 1 VGA", "QFG1 VGA"),
     **singleton_group(GameType.rabi_ribi, "Rabi-Ribi", "Rabi-Ribi"),
+    **singleton_group(GameType.rainbow_six_siege, "Rainbow Six Siege", "R6S"),
     **singleton_group(GameType.rayman_legends, "Rayman Legends", "Rayman Legends"),
     **singleton_group(GameType.rayman_ps1, "Rayman (PS1)", "Rayman"),
     **singleton_group(GameType.revenge_of_the_bird_king, "Revenge of the Bird King", "RotBK"),
@@ -1125,6 +1317,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.robot_64, "Robot 64", "Robot 64"),
     **singleton_group(GameType.saga_frontier, "SaGa Frontier (PS1)", "SaGa Frontier (PS1)"),
     **singleton_group(GameType.salt_and_sanctuary, "Salt and Sanctuary", "Salt and Sanctuary"),
+    **singleton_group(GameType.sea_of_thieves, "Sea of Thieves", "Sea of Thieves"),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
@@ -1136,8 +1329,10 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.sos_poot_all_items, "Story of Seasons: Pioneers of Olive Town", "SoS: PoOT All Items", "All Items"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
-    **singleton_group(GameType.spyro_1, "Spyro the dragon", "Spyro 1"),
+    **singleton_group(GameType.splatoon_3, "Splatoon 3", "Splatoon 3", "Weapons"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
+    **singleton_group(GameType.spyro_reignited, "Spyro the Dragon Reignited", "Spyro Reignited"),
+    **singleton_group(GameType.star_wars_jfo, "Star Wars Jedi: Fallen Order", "JFO"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
@@ -1146,18 +1341,21 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
             "Super Metroid & A Link to the Past Crossover Randomizer", "SMZ3"),
     **singleton_group(GameType.super_paper_mario, "Super Paper Mario", "SPM"),
+    **singleton_group(GameType.the_forest, "The Forest", "The Forest"),
+    **singleton_group(GameType.the_long_dark, "The Long Dark", "The Long Dark"),
     **singleton_group(GameType.threads_of_fate, "Threads of Fate", "Threads of Fate"),
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
-    **singleton_group(GameType.undertale, "Undertale", "Undertale"),
     **singleton_group(GameType.untitled_goose_game, "Untitled Goose Game", "Goose Game"),
     **singleton_group(GameType.video_games, "Video Games Bingo", "Video Games"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
+    **singleton_group(GameType.wwe_supercard, "WWE Supercard", "WWE SC"),
     **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
+    **singleton_group(GameType.yugioh_tcg, "Yu-Gi-Oh! TCG", "Yu-Gi-Oh! TCG"),
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
