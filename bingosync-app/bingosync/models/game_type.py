@@ -1150,19 +1150,19 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
         ],
     },
-    GameType.zelda_wind_waker_sd: {
-        "name": "Zelda: The Wind Waker SD",
-        "variants": [
-            (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
-            (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
-        ],
-    },
      GameType.zelda_totk: {
         "name": "Zelda: Tears of the Kingdom",
         "variants": [
             (GameType.zelda_totk, "Normal", "TotK Normal"),
             (GameType.zelda_totk_short, "Short", "TotK Short"),
             (GameType.zelda_totk_long, "Long", "TotK Long"),
+        ],
+    },
+    GameType.zelda_wind_waker_sd: {
+        "name": "Zelda: The Wind Waker SD",
+        "variants": [
+            (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
+            (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
         ],
     },
 }
