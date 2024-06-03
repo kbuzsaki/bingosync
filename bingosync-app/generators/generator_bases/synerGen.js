@@ -149,6 +149,7 @@ bingoGenerator = function(bingoList, opts) {
                 for (var k = 0; k < t.length; k++)
                     s[j][k] = t[k][j];
             }
+            return s;
         }
 
         function rotate(t, i) { //rotates ccw i times
