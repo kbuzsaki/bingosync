@@ -154,7 +154,7 @@ bingoGenerator = function(bingoList, opts) {
 
         function rotate(t, i) { //rotates ccw i times
             for (var j = 1; j <= i; j++) {
-                inverse(t);
+                t = inverse(t);
                 t.reverse();
             }
             return t;
