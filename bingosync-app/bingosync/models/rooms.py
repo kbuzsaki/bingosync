@@ -26,6 +26,8 @@ class Room(models.Model):
     class Meta:
         indexes = [
             models.Index(fields=["uuid"]),
+            # TODO: make this a partial index after upgrading Django
+            models.Index(fields=["active"]),
         ]
 
     def __str__(self):
@@ -157,6 +159,11 @@ class Game(models.Model):
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
     game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
     lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
+
+    class Meta:
+        indexes = [
+            models.Index(fields=["room", "created_date"]),
+        ]
 
     def __str__(self):
         return self.room.name + ": " + str(self.seed)
