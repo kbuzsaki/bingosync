@@ -23,6 +23,11 @@ class Room(models.Model):
     active = models.BooleanField("Active", default=False)
     hide_card = models.BooleanField("Initially Hide Card", default=False)
 
+    class Meta:
+        indexes = [
+            models.Index(fields=["uuid"]),
+        ]
+
     def __str__(self):
         return self.name
 
@@ -253,6 +258,11 @@ class Player(models.Model):
     color_value = models.IntegerField("Color", default=Color.player_default().value, choices=Color.player_choices())
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
     is_spectator = models.BooleanField("Is Spectator", default=False)
+
+    class Meta:
+        indexes = [
+            models.Index(fields=["uuid"]),
+        ]
 
     @staticmethod
     def get_for_encoded_uuid(encoded_player_uuid):
