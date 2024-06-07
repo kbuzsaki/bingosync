@@ -28,6 +28,7 @@ class Room(models.Model):
             models.Index(fields=["uuid"]),
             # TODO: make this a partial index after upgrading Django
             models.Index(fields=["active"]),
+            models.Index(fields=["created_date"]),
         ]
 
     def __str__(self):
