@@ -10,7 +10,7 @@ import pprint
 from bingosync.models.rooms import Room, Game, Square, Player
 from bingosync.models.events import Event, ChatEvent, NewCardEvent, GoalEvent, ColorEvent, RevealedEvent
 from bingosync.models.events import ConnectionEvent
-from bingosync.models.misc import FilteredPattern
+from bingosync.models.misc import FilteredPattern, SiteNotice
 
 class GameInline(admin.StackedInline):
     model = Game
@@ -194,6 +194,22 @@ class NewCardEventAdmin(admin.ModelAdmin):
 @admin.register(FilteredPattern)
 class FilteredPatternAdmin(admin.ModelAdmin):
     list_display = ["__str__", "pattern"]
+
+def hide_notices(modeladmin, request, queryset):
+    for notice in queryset:
+        notice.hide_from_all()
+def show_to_admins_only(modeladmin, request, queryset):
+    for notice in queryset:
+        notice.show_to_admins_only()
+def show_to_all_users(modeladmin, request, queryset):
+    for notice in queryset:
+        notice.show_to_all_users()
+
+disconnect_players.short_description = "Mark players disconnected"
+@admin.register(SiteNotice)
+class SiteNoticeAdmin(admin.ModelAdmin):
+    list_display = ["__str__", "notice_type", "visible_to_users", "visible_to_admins", "header", "body"]
+    actions = [hide_notices, show_to_admins_only, show_to_all_users]
 
 
 @admin.register(Session)
