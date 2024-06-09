@@ -163,6 +163,7 @@ LOGGING = {
             'backupCount': 3,
             'formatter': 'verbose',
         },
+        # Not configured correctly on the server yet.
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
@@ -171,16 +172,16 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
         'django.server': {
-            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'ERROR'),
             'propagate': False,
         },
         'bingosync': {
-            'handlers': ['console', 'info_log', 'warn_log', 'error_log', 'mail_admins'],
+            'handlers': ['console', 'info_log', 'warn_log', 'error_log'],
             'level': 'INFO',
         },
     },
