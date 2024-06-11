@@ -1055,7 +1055,7 @@ MANUAL_GAME_GROUPS = {
     GameType.terraria: {
         "name": "Terraria",
         "variants": [
-            (GameType.terraria, "Pre-Hardmode", "Terraria PreHM"),
+            (GameType.terraria, "Pre-Hardmode Classic", "Terraria PreHM Classic"),
             (GameType.terraria_1_3, "1.3 Hardmode", "Terraria 1.3 HM"),
             (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
             (GameType.terraria_hardmode_journey, "Hardmode Journey", "Terraria HM Journey"),
