@@ -149,11 +149,12 @@ bingoGenerator = function(bingoList, opts) {
                 for (var k = 0; k < t.length; k++)
                     s[j][k] = t[k][j];
             }
+            return s;
         }
 
         function rotate(t, i) { //rotates ccw i times
             for (var j = 1; j <= i; j++) {
-                inverse(t);
+                t = inverse(t);
                 t.reverse();
             }
             return t;
