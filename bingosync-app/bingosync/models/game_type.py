@@ -436,6 +436,7 @@ class GameType(Enum):
     fnaf_security_breach_only_collectibles = 432
     fnaf_security_breach_speedrun_categories = 433
     hollow_knight_item_rando_blackout = 434
+    elden_ring_randomizer = 435
 
     def __str__(self):
         return self.short_name
@@ -615,6 +616,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.darkest_dungeon, "Normal", "Darkest Dungeon"),
             (GameType.darkest_dungeon_lockout, "Lockout", "DD Lockout"),
+        ],
+    },
+    GameType.elden_ring: {
+        "name": "Elden Ring", 
+        "variants": [
+            (GameType.elden_ring, "Normal", "Elden Ring"),
+            (GameType.elden_ring_randomizer, "Randomizer", "Elden Ring Rando"),
         ],
     },
     GameType.ff4_ancient_cave: {
@@ -1221,7 +1229,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
-    **singleton_group(GameType.elden_ring, "Elden Ring", "Elden Ring"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
     **singleton_group(GameType.fallout_4, "Fallout 4", "Fallout 4"),
