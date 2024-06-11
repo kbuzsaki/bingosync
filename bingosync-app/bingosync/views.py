@@ -17,6 +17,7 @@ from bingosync.forms import RoomForm, JoinRoomForm, GoalListConverterForm
 from bingosync.models.colors import Color
 from bingosync.models.game_type import GameType, ALL_VARIANTS
 from bingosync.models.events import Event, ChatEvent, RevealedEvent, ConnectionEvent, NewCardEvent
+from bingosync.models.misc import SiteNotice
 from bingosync.models.rooms import Room, Game, LockoutMode, Player
 from bingosync.publish import publish_goal_event, publish_chat_event, publish_color_event, publish_revealed_event
 from bingosync.publish import publish_connection_event, publish_new_card_event
@@ -46,9 +47,11 @@ def rooms(request):
     rooms = Room.get_listed_rooms()
     any_idle_rooms = any(room.is_idle for room in rooms)
     all_idle_rooms = all(room.is_idle for room in rooms)
+    notices = SiteNotice.notices_for_user(request.user)
     params = {
         "form": form,
         "rooms": rooms,
+        "notices": notices,
         "variants": ALL_VARIANTS,
         "hide_idle_rooms": any_idle_rooms and not all_idle_rooms,
     }

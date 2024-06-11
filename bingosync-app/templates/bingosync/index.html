@@ -5,6 +5,16 @@
 {% load crispy_forms_tags %}
 
 {% block page_content %}
+{% if notices %}
+    {% for notice in notices %}
+    <div class="panel {{ notice.panel_css_class }}">
+        {% autoescape off %}
+        {% if notice.header %}<div class="panel-heading">{{ notice.header }}</div>{% endif %}
+        {% if notice.body %}<div class="panel-body">{{ notice.body }}</div>{% endif %}
+        {% endautoescape %}
+    </div>
+    {% endfor %}
+{% endif %}
     <div class="row m-b-l">
         <div class="col-md-7">
             <div id="rooms_panel" class="panel panel-default {{ hide_idle_rooms|yesno:"hide-idle-rooms," }}">
