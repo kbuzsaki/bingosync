@@ -1,9 +1,9 @@
 [
     {
-        "name": "Defeat 2 Cemetery Shades"
+        "name": "Kill 1 Deathbird and 1 Death Rite Bird"
     },
     {
-        "name": "Defeat 3 Bell Bearing Hunters"
+        "name": "Kill 3 Bell Bearing Hunters"
     },
     {
         "name": "30 Intelligence (no rebirth or buffs)"
@@ -12,40 +12,40 @@
         "name": "Learn 14 different incantations"
     },
     {
-        "name": "Defeat 3 Crucible Knights"
+        "name": "Kill 3 Crucible Knights"
     },
     {
-        "name": "Defeat Godskin Noble (Volcano Manor) without status effects"
+        "name": "Kill Godskin Noble (Volcano Manor) without status effects"
     },
     {
-        "name": "Defeat 6 bosses in Liurnia"
+        "name": "Kill 6 bosses in Liurnia"
     },
     {
         "name": "Acquire 2 legendary armaments"
     },
     {
-        "name": "Defeat a Remembrance boss hitless"
+        "name": "Kill a Remembrance boss hitless"
     },
     {
-        "name": "Complete 2 catacomb dungeons"
+        "name": "Kill 5 bosses in Altus Plateau (no Volcano Manor)"
     },
     {
-        "name": "Defeat Mimic Tear consumables only"
+        "name": "Kill Mimic Tear consumables only"
     },
     {
         "name": "Acquire 10 Physick Flask tears"
     },
     {
-        "name": "Acquire full Dectus Medallion"
+        "name": "Acquire Somberstone Bell Bearing [1] and [2]"
     },
     {
         "name": "Sell Bloodhound's Fang +0"
     },
     {
-        "name": "Acquire Somberstone Bell Bearing [1] and [2]"
+        "name": "Acquire Smithing-stone Bell Bearing [1] and [2]"
     },
     {
-        "name": "Defeat 3 Tibia Mariners"
+        "name": "Kill 3 Tibia Mariners"
     },
     {
         "name": "Acquire 3 Imbued Sword Keys"
@@ -54,24 +54,24 @@
         "name": "Learn 12 different sorceries"
     },
     {
-        "name": "Defeat 3 Dragon Heart bosses"
+        "name": "Kill Putrid Crystalian trio"
     },
     {
-        "name": "Defeat Wormface"
-    },
-    {
-        "name": "Defeat Fia's Champions"
+        "name": "Kill Fia's Champions"
     },
     {
         "name": "Acquire 5 Ritual Pots"
     },
     {
-        "name": "Finish off a boss with the explosive physick"
+        "name": "Kill a boss on Torrent the whole fight"
     },
     {
         "name": "Restore Morgott\u2019s Great Rune"
     },
     {
         "name": "Return Thop's academy key"
+    },
+    {
+        "name": "Kill a Red Wolf Boss"
     }
 ]

@@ -1,9 +1,9 @@
 [
     {
-        "name": "Defeat Godrick while summoning Nepheli Loux"
+        "name": "Kill Godrick while summoning Nepheli Loux"
     },
     {
-        "name": "Defeat Royal Revenant (Kingsrealm Ruins)"
+        "name": "Kill Royal Revenant (Kingsrealm Ruins)"
     },
     {
         "name": "Complete 4 evergaols"
@@ -15,19 +15,19 @@
         "name": "Sell Bloodhound's Fang +0"
     },
     {
-        "name": "Defeat a boss Consumables only"
+        "name": "Kill a boss Spirit Ashes only"
     },
     {
-        "name": "Defeat a Remembrance boss hitless"
+        "name": "Kill 5 bosses with 'tree' in their name"
     },
     {
         "name": "Acquire 2 legendary armaments"
     },
     {
-        "name": "Defeat Rykard and discard Serpent Hunter +0"
+        "name": "Kill Rykard and discard Serpent Hunter +0"
     },
     {
-        "name": "Defeat Mimic Tear consumables only"
+        "name": "Kill Mimic Tear consumables only"
     },
     {
         "name": "30 Faith (no rebirth or buffs)"
@@ -39,39 +39,39 @@
         "name": "Restore Godrick\u2019s Great Rune"
     },
     {
+        "name": "Acquire 10 Cracked Pots"
+    },
+    {
         "name": "Acquire 10 Physick Flask tears"
     },
     {
         "name": "Kill 3 friendly NPCs (no hermit merchants)"
     },
     {
-        "name": "Defeat 5 bosses in Caelid"
+        "name": "Kill 5 bosses in Caelid"
+    },
+    {
+        "name": "Kill a boss Consumables only"
     },
     {
         "name": "Restore Morgott\u2019s Great Rune"
     },
     {
-        "name": "Defeat Fia's Champions"
+        "name": "Kill Fia's Champions"
     },
     {
         "name": "Invade and defeat Magnus the Beast Claw"
     },
     {
-        "name": "Defeat Greyoll without status effects"
+        "name": "Kill Greyoll without status effects"
     },
     {
-        "name": "Defeat a Remembrance boss colossal weapons only"
+        "name": "Kill a Remembrance boss hitless"
     },
     {
-        "name": "Complete 2 catacomb dungeons"
+        "name": "Kill 5 bosses in Altus Plateau (no Volcano Manor)"
     },
     {
-        "name": "Defeat Godskin Noble (Volcano Manor) without status effects"
-    },
-    {
-        "name": "Defeat 2 Cemetery Shades"
-    },
-    {
-        "name": "Acquire Smithing-stone Bell Bearing [1] and [2]"
+        "name": "Kill Godskin Noble (Volcano Manor) without status effects"
     }
 ]

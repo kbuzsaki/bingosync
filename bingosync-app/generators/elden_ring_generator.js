@@ -2,196 +2,196 @@ bingoGenerator = require("./generators/generator_bases/simple_generator.js");
 
 var bingoList = [
     {
-        "name": "Defeat Godrick while summoning Nepheli Loux"
+        "name": "Kill Godrick while summoning Nepheli Loux"
     },
     {
-        "name": "Defeat Rennala after she summons all 4 different spirits"
+        "name": "Kill Rennala after she summons all 4 different spirits"
     },
     {
-        "name": "Defeat Radahn without summoning NPCs"
+        "name": "Kill Radahn without summoning NPCs"
     },
     {
-        "name": "Defeat Rykard and discard Serpent Hunter +0"
+        "name": "Kill Rykard and discard Serpent Hunter +0"
     },
     {
-        "name": "Defeat Morgott"
+        "name": "Kill Morgott"
     },
     {
-        "name": "Defeat an Ancestor Spirit"
+        "name": "Kill an Ancestor Spirit"
     },
     {
-        "name": "Defeat Mohg, Lord of Blood"
+        "name": "Kill Mohg, Lord of Blood"
     },
     {
-        "name": "Defeat Margit with 4+ parries"
+        "name": "Kill Margit with 4+ parries"
     },
     {
-        "name": "Defeat Leonine Misbegotten"
+        "name": "Kill Leonine Misbegotten"
     },
     {
-        "name": "Defeat Red Wolf of Radagon"
+        "name": "Kill a Red Wolf Boss"
     },
     {
-        "name": "Defeat Godskin Noble (Volcano Manor) without status effects"
+        "name": "Kill Godskin Noble (Volcano Manor) without status effects"
     },
     {
-        "name": "Defeat a Godskin Apostle"
+        "name": "Kill a Godskin Apostle"
     },
     {
-        "name": "Defeat Godfrey (Gold Spirit)"
+        "name": "Kill Godfrey (Gold Spirit)"
     },
     {
-        "name": "Defeat Mimic Tear consumables only"
+        "name": "Kill Mimic Tear consumables only"
     },
     {
-        "name": "Defeat Valiant Gargoyles"
+        "name": "Kill Valiant Gargoyles"
     },
     {
-        "name": "Defeat Fia's Champions"
+        "name": "Kill Fia's Champions"
     },
     {
-        "name": "Defeat Mohg (Sewers)"
+        "name": "Kill Mohg (Sewers)"
     },
     {
-        "name": "Defeat Loretta (Blue Spirit)"
+        "name": "Kill Loretta (Blue Spirit)"
     },
     {
-        "name": "Defeat Commander O'Neil"
+        "name": "Kill Commander O'Neil"
     },
     {
-        "name": "Defeat Grafted Scion (Chapel of Anticipation)"
+        "name": "Kill Grafted Scion (Chapel of Anticipation)"
     },
     {
-        "name": "Defeat Soldier of Godrick bare fist only"
+        "name": "Kill Soldier of Godrick bare fist only"
     },
     {
-        "name": "Defeat Limgrave Tree Sentinel with a +0 weapon"
+        "name": "Kill Limgrave Tree Sentinel with a +0 weapon"
     },
     {
-        "name": "Defeat Agheel with a +0 weapon"
+        "name": "Kill Agheel with a +0 weapon"
     },
     {
-        "name": "Defeat Tree Sentinel duo"
+        "name": "Kill Tree Sentinel duo"
     },
     {
-        "name": "Defeat Crucible Knight & Misbegotten Warrior duo"
+        "name": "Kill Crucible Knight & Misbegotten Warrior duo"
     },
     {
-        "name": "Defeat Elemer of the Briar"
+        "name": "Kill Elemer of the Briar"
     },
     {
-        "name": "Defeat Putrid Crystalian trio"
+        "name": "Kill Putrid Crystalian trio"
     },
     {
-        "name": "Defeat Wormface"
+        "name": "Kill Wormface"
     },
     {
-        "name": "Defeat Royal Revenant (Kingsrealm Ruins)"
+        "name": "Kill Royal Revenant (Kingsrealm Ruins)"
     },
     {
-        "name": "Defeat Greyoll without status effects"
+        "name": "Kill Greyoll without status effects"
     },
     {
-        "name": "Defeat a Dragonkin Soldier"
+        "name": "Kill a Dragonkin Soldier"
     },
     {
-        "name": "Defeat a Magma Wyrm boss"
+        "name": "Kill a Magma Wyrm boss"
     },
     {
-        "name": "Defeat a Fallingstar Beast"
+        "name": "Kill a Fallingstar Beast"
     },
     {
-        "name": "Defeat a Black Blade Kindred"
+        "name": "Kill a Black Blade Kindred"
     },
     {
-        "name": "Defeat an Omenkiller boss"
+        "name": "Kill an Omenkiller boss"
     },
     {
-        "name": "Defeat 1 Deathbird and 1 Death Rite Bird"
+        "name": "Kill 1 Deathbird and 1 Death Rite Bird"
     },
     {
-        "name": "Defeat 2 Cemetery Shades"
+        "name": "Kill 2 Cemetery Shades"
     },
     {
-        "name": "Defeat 2 Duelist bosses"
+        "name": "Kill 3 Watchdogs"
     },
     {
-        "name": "Defeat 2 Black Knife Assassins"
+        "name": "Kill 2 Duelist bosses"
     },
     {
-        "name": "Defeat 3 Erdtree Watchdogs"
+        "name": "Kill 2 Black Knife Assassins"
     },
     {
-        "name": "Defeat 3 Crucible Knights"
+        "name": "Kill 3 Crucible Knights"
     },
     {
-        "name": "Defeat 3 Dragon Heart bosses"
+        "name": "Kill 3 Dragon Heart bosses"
     },
     {
-        "name": "Defeat 3 Erdtree Avatars"
+        "name": "Kill 3 Erdtree Avatars"
     },
     {
-        "name": "Defeat 3 Night's Cavalry"
+        "name": "Kill 3 Night's Cavalry"
     },
     {
-        "name": "Defeat 3 Tibia Mariners"
+        "name": "Kill 3 Tibia Mariners"
     },
     {
-        "name": "Defeat 3 Bell Bearing Hunters"
+        "name": "Kill 3 Bell Bearing Hunters"
     },
     {
-        "name": "Defeat 3 duo/trio bosses"
+        "name": "Kill 3 duo/trio bosses"
     },
     {
-        "name": "Defeat 5 bosses that ride a horse"
+        "name": "Kill 5 bosses that ride a horse"
     },
     {
-        "name": "Defeat 5 bosses with 'tree' in their name"
+        "name": "Kill 5 bosses with 'tree' in their name"
     },
     {
-        "name": "Defeat a Remembrance boss hitless"
+        "name": "Kill a Remembrance boss hitless"
     },
     {
-        "name": "Defeat a Remembrance boss colossal weapons only"
+        "name": "Kill a Remembrance boss colossal weapons only"
     },
     {
-        "name": "Defeat a Remembrance boss daggers, claws, or fists only"
+        "name": "Kill a Remembrance boss daggers, claws, or fists only"
     },
     {
-        "name": "Defeat a Remembrance boss bow only"
+        "name": "Kill a Remembrance boss bow only"
     },
     {
-        "name": "Defeat a Remembrance boss sorcery only"
+        "name": "Kill a Remembrance boss sorcery only"
     },
     {
-        "name": "Defeat a Remembrance boss incantations only"
+        "name": "Kill a Remembrance boss incantations only"
     },
     {
-        "name": "Defeat a Remembrance boss with Remembrance boss weapon only"
+        "name": "Kill a Remembrance boss w/ remembrance weapon only"
     },
     {
-        "name": "Defeat a boss Spirit Ashes only"
+        "name": "Kill a boss Spirit Ashes only"
     },
     {
-        "name": "Defeat a boss Consumables only"
+        "name": "Kill a boss Consumables only"
     },
     {
-        "name": "Defeat a boss on Torrent the whole fight"
+        "name": "Kill a boss on Torrent the whole fight"
     },
     {
         "name": "Finish off a boss with the explosive physick"
     },
     {
-        "name": "Defeat 8 bosses in Limgrave"
+        "name": "Kill 8 bosses in Limgrave"
     },
     {
-        "name": "Defeat 6 bosses in Liurnia"
+        "name": "Kill 6 bosses in Liurnia"
     },
     {
-        "name": "Defeat 5 bosses in Caelid"
+        "name": "Kill 5 bosses in Caelid"
     },
     {
-        "name": "Defeat 5 bosses in Altus Plateau (no Volcano Manor)"
+        "name": "Kill 5 bosses in Altus Plateau (no Volcano Manor)"
     },
     {
         "name": "Complete 2 catacomb dungeons"
@@ -200,16 +200,13 @@ var bingoList = [
         "name": "Complete 2 cave or grotto dungeons"
     },
     {
-        "name": "Complete 2 tunnel dungeons"
+        "name": "Complete 2 tunnel or precipice dungeons"
     },
     {
         "name": "Complete an Altus Plateau Hero's Grave"
     },
     {
         "name": "Complete 4 evergaols"
-    },
-    {
-        "name": "Clear the Frenzy tower in Liurnia"
     },
     {
         "name": "Acquire 4 different Remembrances"
@@ -278,7 +275,7 @@ var bingoList = [
         "name": "Acquire 2 legendary armaments"
     },
     {
-        "name": "Acquire 8 different talismans"
+        "name": "Acquire 8 different Talismans"
     },
     {
         "name": "Acquire 6 different Glintstone Staves"
@@ -308,7 +305,7 @@ var bingoList = [
         "name": "Memory of Grace with 50k+ Runes"
     },
     {
-        "name": "Defeat 3 NPC invaders"
+        "name": "Kill 3 NPC invaders"
     },
     {
         "name": "Kill 3 friendly NPCs (no hermit merchants)"
