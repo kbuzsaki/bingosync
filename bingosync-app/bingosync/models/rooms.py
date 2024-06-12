@@ -10,8 +10,13 @@ from enum import Enum, unique
 from bingosync.models.game_type import GameType
 from bingosync.models.colors import Color, CompositeColor
 from bingosync.models.events import Event, GoalEvent, ColorEvent, RevealedEvent, ConnectionEventType, ConnectionEvent
+from bingosync.settings import IS_PROD
 from bingosync.util import encode_uuid, decode_uuid
 
+
+# Temporary hooks for disabling these in production until performance improvements land.
+DISABLE_IDLE_CHECK = IS_PROD
+DISABLE_CONNECTED_PLAYER_SORT = IS_PROD
 
 STALE_THRESHOLD = datetime.timedelta(minutes=90)
 
@@ -64,7 +69,10 @@ class Room(models.Model):
         active_rooms = Room.objects.filter(active=True)
         # use -len(players) so that high numbers of players are at the top
         # but otherwise names are sorted lexicographically descending
-        key = lambda room: (room.is_idle, -len(room.connected_players), room.name)
+        if DISABLE_CONNECTED_PLAYER_SORT:
+            key = lambda room: (room.is_idle, room.name)
+        else:
+            key = lambda room: (room.is_idle, -len(room.connected_players), room.name)
         return sorted(active_rooms, key=key)
 
     @staticmethod
@@ -98,6 +106,8 @@ class Room(models.Model):
 
     @property
     def is_idle(self):
+        if DISABLE_IDLE_CHECK:
+            return False
         idle_time = datetime.datetime.now(datetime.timezone.utc) - self.latest_event_timestamp
         return idle_time > STALE_THRESHOLD
 
