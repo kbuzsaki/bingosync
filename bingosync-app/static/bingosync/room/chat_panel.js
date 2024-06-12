@@ -146,12 +146,17 @@ var ChatPanel = (function(){
     };
 
     ChatPanel.prototype.onSend = function() {
+        let message = this.$chatInput.val();
+        if (message.length === 0) {
+            return false;
+        }
+
         $.ajax({
             "url": this.chatUrl,
             "type": "PUT",
             "data": JSON.stringify({
                 "room": window.sessionStorage.getItem("room"),
-                "text": this.$chatInput.val()
+                "text": message
             }),
             "error": function(result) {
                 console.log(result);
