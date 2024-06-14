@@ -116,15 +116,15 @@ def room_board(request, encoded_room_uuid):
 
 # AJAX view to render the room settings panel
 def room_settings(request, encoded_room_uuid):
-    room = Room.get_for_encoded_uuid(encoded_room_uuid)
+    room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
     panel = loader.get_template("bingosync/room_settings_panel.html").render({"game": room.current_game, "room": room}, request)
     return JsonResponse({"panel": panel, "settings": room.settings});
 
 @csrf_exempt
 def new_card(request):
-    data = json.loads(request.body.decode("utf8"))
+    data = parse_body_json_or_400(request, required_keys=["room", "lockout_mode", "hide_card", "seed"])
 
-    room = Room.get_for_encoded_uuid(data["room"])
+    room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
 
     lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
@@ -169,7 +169,7 @@ def new_card(request):
         new_card_event.save()
     publish_new_card_event(new_card_event)
 
-    return HttpResponse("Recieved data: " + str(data))
+    return HttpResponse("Received data: " + str(data))
 
 def history(request):
     hide_solo = request.GET.get('hide_solo')
