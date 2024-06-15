@@ -38,8 +38,12 @@ class RequestLoggingMiddleware:
         try:
             user_ip = _get_ip_from_request(request)
             log_func = _get_log_func_for_status_code(response.status_code)
-            log_func('"%s %s" %s %s (%s)', request.method, request.get_full_path(), response.status_code,
-                    len(response.content), user_ip)
+            if request.method in ["PUT", "POST"] and response.status_code >= 400:
+                log_func('"%s %s" %s %s (%s)\nrequest: %s\nresponse: %s', request.method, request.get_full_path(),
+                         response.status_code, len(response.content), user_ip, request.body, response.content)
+            else:
+                log_func('"%s %s" %s %s (%s)', request.method, request.get_full_path(), response.status_code,
+                        len(response.content), user_ip)
         except Exception as e:
             logger.exception("Exception when logging request")
 
