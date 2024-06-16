@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bootstrapform',
     'crispy_forms',
+    'crispy_bootstrap3',
     'url_tools',
     'bingosync'
 )
