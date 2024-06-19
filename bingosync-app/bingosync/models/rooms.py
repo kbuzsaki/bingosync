@@ -20,6 +20,7 @@ DISABLE_CONNECTED_PLAYER_SORT = IS_PROD
 
 STALE_THRESHOLD = datetime.timedelta(minutes=90)
 
+
 class Room(models.Model):
     uuid = models.UUIDField(default=uuid4, editable=False)
     name = models.CharField(max_length=255)
@@ -84,16 +85,20 @@ class Room(models.Model):
         return encode_uuid(self.uuid)
 
     @property
-    def current_game(self):
-        return Game.objects.filter(room=self).order_by("-created_date").first()
-
-    @property
     def games(self):
         return Game.objects.filter(room=self)
 
     @property
+    def current_game(self):
+        return Game.objects.filter(room=self).order_by("-created_date").first()
+
+    @property
     def players(self):
         return Player.objects.filter(room=self).order_by("name")
+
+    @property
+    def creator(self):
+        return self.players.order_by("created_date").first()
 
     @property
     def connected_players(self):
@@ -124,10 +129,6 @@ class Room(models.Model):
         self.save()
 
     @property
-    def creator(self):
-        return self.players.order_by("created_date").first()
-
-    @property
     def settings(self):
         game = self.current_game
         return {
@@ -139,6 +140,7 @@ class Room(models.Model):
             "variant_id": game.game_type_value,
             "seed": game.seed,
         }
+
 
 class LockoutMode(Enum):
     non_lockout = 1
@@ -163,6 +165,7 @@ LOCKOUT_MODE_NAMES = {
     LockoutMode.non_lockout: "Non-Lockout",
     LockoutMode.lockout: "Lockout",
 }
+
 
 class Game(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
@@ -247,6 +250,9 @@ class Square(models.Model):
     goal = models.CharField(max_length=255)
     color_value = models.IntegerField("Color", default=CompositeColor.goal_default().value, choices=CompositeColor.goal_choices())
 
+    class Meta:
+        unique_together = (("game", "slot"),)
+
     @property
     def color(self):
         return CompositeColor.for_value(self.color_value)
@@ -266,8 +272,6 @@ class Square(models.Model):
             "colors": self.color.name
         }
 
-    class Meta:
-        unique_together = (("game", "slot"),)
 
 class Player(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
