@@ -81,8 +81,12 @@ class Room(models.Model):
         return sorted(active_rooms, key=key)
 
     @staticmethod
-    def get_with_multiple_players():
-        return Room.objects.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
+    def get_history(hide_solo):
+        rooms = Room.objects.order_by("-created_date")
+        if hide_solo:
+            return rooms.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
+        else:
+            return rooms.all()
 
     @property
     def encoded_uuid(self):

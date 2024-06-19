@@ -173,23 +173,15 @@ def new_card(request):
 
 def history(request):
     hide_solo = request.GET.get('hide_solo')
-
-    if hide_solo:
-        base_rooms = Room.get_with_multiple_players()
-    else:
-        base_rooms = Room.objects.all()
-
-    room_list = base_rooms.order_by("-created_date")
-    paginator = Paginator(room_list, 10) # Show 25 contacts per page
-
     page = request.GET.get('page')
+
+    room_list = Room.get_history(hide_solo=hide_solo)
+    paginator = Paginator(room_list, 10)
     try:
         rooms = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
         rooms = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
         rooms = paginator.page(paginator.num_pages)
 
     params = {
