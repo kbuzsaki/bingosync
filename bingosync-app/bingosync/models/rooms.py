@@ -82,7 +82,10 @@ class Room(models.Model):
 
     @staticmethod
     def get_history(hide_solo):
-        rooms = Room.objects.order_by("-created_date")
+        rooms = Room.objects.order_by("-created_date").prefetch_related(
+            "game_set",
+            "player_set",
+        )
         if hide_solo:
             return rooms.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
         else:
@@ -102,7 +105,7 @@ class Room(models.Model):
 
     @property
     def players(self):
-        return self.player_set.order_by("name").all()
+        return self.player_set.all()
 
     @property
     def creator(self):
