@@ -97,6 +97,7 @@ DATABASES = {
         'USER': DB_USER,
     }
 }
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
 # Internationalization
