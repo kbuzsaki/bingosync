@@ -168,7 +168,7 @@ class Game(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     seed = models.IntegerField()
     created_date = models.DateTimeField("Creation Time", default=timezone.now)
-    game_type_value = models.IntegerField("Game Type", choices=GameType.choices())
+    game_type_value = models.IntegerField("Game Type", choices=GameType.choices)
     lockout_mode_value = models.IntegerField("Lockout Mode", choices=LockoutMode.choices(), default=LockoutMode.default_value())
 
     class Meta:
