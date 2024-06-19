@@ -19,7 +19,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-from bingosync.secret_settings import IS_PROD, SECRET_KEY, ADMINS, SERVER_EMAIL, DB_USER
+# Import environment-dependent secrets from secret_settings.py,
+# an uncommitted file that varies between dev and prod environments.
+try:
+    from bingosync.secret_settings import IS_PROD, SECRET_KEY, ADMINS, SERVER_EMAIL, DB_USER
+except ImportError as e:
+    raise ImportError("secret_settings.py is missing! "
+                      "You may need to create one from secret_settings.py.template") from e
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = not IS_PROD
