@@ -16,7 +16,7 @@ from bingosync.util import encode_uuid, decode_uuid
 
 # Temporary hooks for disabling these in production until performance improvements land.
 DISABLE_IDLE_CHECK = IS_PROD
-DISABLE_CONNECTED_PLAYER_SORT = IS_PROD
+DISABLE_CONNECTED_PLAYER_SORT = False
 
 STALE_THRESHOLD = datetime.timedelta(minutes=90)
 
