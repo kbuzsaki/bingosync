@@ -22,9 +22,9 @@ bingoList[2] = [
     { name: "Cave: Shoot the Pupper", "types": ["Cave"] },
     { name: "Dog Tag: Psycho Mantis" },
     { name: "Gain 10 Alerts", "types": ["Alerts"] },
-    { name: "Kill 10 Guards", "types": ["Kill Guards"] },
     { name: "Ocelot: Damageless" },
     { name: "Vulcan Raven: Stinger Only", "types": ["Raven Weapon","Raven Lethal"] },
+    { name: "Find Liquid's Parachute" },
 ];
 bingoList[3] = [
     { name: "Claymore" },
@@ -40,12 +40,12 @@ bingoList[4] = [
     { name: "Dog Tag: Nuke Building B1 Office" },
     { name: "Dog Tag: Sniper Wolf" },
     { name: "FAMAS" },
-    { name: "Kill 20 Guards", "types": ["Kill Guards"] },
     { name: "Knock 1 guard over a fence", "types": ["Fence"] },
     { name: "Medi-room: Hide from Johnny" },
     { name: "Ninja: Use a Chaff" },
     { name: "Punch 1 guard in the crotch", "types": ["Crotch"] },
     { name: "See Snake fall flat on his face" },
+    { name: "Hind D: Finish fight with SOCOM" },
 ];
 bingoList[5] = [
     { name: "Answer a non-mandatory Codec call" },
@@ -82,6 +82,7 @@ bingoList[7] = [
     { name: "Ninja: Damageless" },
     { name: "Nuke Building 1F: No Chaff/M9" },
     { name: "Psycho Mantis: Lethal", "types": ["Psycho Mantis"] },
+    { name: "Claymore a guard" },
 ];
 bingoList[8] = [
     { name: "Call Nastasha Romanenko" },
@@ -89,11 +90,11 @@ bingoList[8] = [
     { name: "Dog Tag: Heliport Truck" },
     { name: "Dog Tag: Meryl" },
     { name: "Dog Tag: Warehouse West" },
-    { name: "Kill 30 Guards", "types": ["Kill Guards"] },
     { name: "Punch 3 guards in the crotch", "types": ["Crotch"] },
     { name: "RP Sensor" },
     { name: "Sniper Wolf 2: Damageless" },
     { name: "Vulcan Raven: Bullets Only", "types": ["Raven Weapon","Raven Lethal"] },
+    { name: "Attach a C4 to a guard's back"},
 ];
 bingoList[9] = [
     { name: "Cargo Elevator: Explosives Only", "types": ["Cargo Elevator"] },
@@ -139,7 +140,6 @@ bingoList[12] = [
     { name: "Dog Tag: Canyon North" },
     { name: "Gain 20 Alerts", "types": ["Alerts"] },
     { name: "Guard Encounter: Non-Lethal" },
-    { name: "Have a guard state “It’s just a box”" },
     { name: "Heliport: Fast-travel to Nuke Building 1F" },
     { name: "Liquid: Damageless" },
     { name: "Punch 5 guards in the crotch", "types": ["Crotch"] },
@@ -160,27 +160,26 @@ bingoList[13] = [
     { name: "Vulcan Raven: Famas Only", "types": ["Raven Weapon","Raven Lethal"] },
 ];
 bingoList[14] = [
-    { name: "Armory M9" },
-    { name: "Blast Furnace: No Hanging" },
-    { name: "Comms Tower A: No Stun Grenades", "types": ["Comms Tower A"] },
-    { name: "Destroy 20 Cameras", "types": ["Cameras"] },
-    { name: "Dog Tag: Armory PSG1" },
-    { name: "Dog Tag: Canyon Above Tank" },
-    { name: "Dog Tag: Warehouse Center" },
-    { name: "Game Over: Lava" },
-    { name: "Mine Detector" },
-    { name: "Sniper Wolf 2: No Crits" },
+    { "name": "Armory M9" },
+    { "name": "Blast Furnace: No Hanging" },
+    { "name": "Comms Tower A: No Stun Grenades", "types": ["Comms Tower A"] },
+    { "name": "Destroy 20 Cameras", "types": ["Cameras"] },
+    { "name": "Dog Tag: Armory PSG1 (Easy+)" },
+    { "name": "Dog Tag: Canyon Above Tank (Hard+)" },
+    { "name": "Dog Tag: Warehouse Center (Normal+)" },
+    { "name": "Game Over: Lava" },
+    { "name": "Mine Detector" },
+    { "name": "Sniper Wolf 2: No Crits" },
 ];
 bingoList[15] = [
-    { name: "Cargo Dock: Take a dive" },
-    { name: "Collect 10 Dog Tags", "types": ["Dog Tags"] },
-    { name: "Dog Tag: Armory Elevator" },
-    { name: "Heliport: Exit via the second floor vent" },
-    { name: "Hind D: Damageless" },
-    { name: "Knock 3 guards over fences", "types": ["Fence"] },
-    { name: "Liquid: No punch loops" },
-    { name: "PSG1" },
-    { name: "Vulcan Raven: Snipers Only", "types": ["Raven Weapon"] },
+   { "name": "Collect 10 Dog Tags", "types": ["Dog Tags"] },
+    { "name": "Dog Tag: Armory Elevator (Hard+)" },
+    { "name": "Heliport: Exit via the second floor vent" },
+    { "name": "Hind D: Damageless" },
+    { "name": "Knock 3 guards over fences", "types": ["Fence"] },
+    { "name": "Liquid: No punch loops" },
+    { "name": "PSG1" },
+    { "name": "Vulcan Raven: Snipers Only", "types": ["Raven Weapon"] },
 ];
 bingoList[16] = [
     { name: "Box 3" },
@@ -193,14 +192,14 @@ bingoList[16] = [
     { name: "Tank: No Throwables", "types": ["Tank"] },
 ];
 bingoList[17] = [
-    { name: "Destroy 25 Cameras", "types": ["Cameras","Max Cams"] },
-    { name: "Dog Tag: Blast Furnace North West" },
-    { name: "Dog Tag: Underground Base Lower West" },
-    { name: "Game Over: Wolf Lunge" },
-    { name: "Knock Out 30 Guards", "types": ["Knock Out"] },
-    { name: "Tank: Non-Lethal", "types": ["Tank","Tank Lethal"] },
-    { name: "Tank: Throwables Only", "types": ["Tank"] },
-    { name: "Vulcan Raven: Traps Only", "types": ["Raven Weapon","Raven Lethal"] },
+    { "name": "Destroy 25 Cameras", "types": ["Cameras","Max Cams"] },
+    { "name": "Dog Tag: Blast Furnace North West (Hard+)" },
+    { "name": "Dog Tag: Underground Base Lower West (Hard+)" },
+    { "name": "Game Over: Wolf Lunge" },
+    { "name": "Knock Out 30 Guards", "types": ["Knock Out"] },
+    { "name": "Tank: Non-Lethal", "types": ["Tank","Tank Lethal"] },
+    { "name": "Tank: Throwables Only", "types": ["Tank"] },
+    { "name": "Vulcan Raven: Traps Only", "types": ["Raven Weapon","Raven Lethal"] },
 ];
 bingoList[18] = [
     { name: "Box 1" },
@@ -240,7 +239,7 @@ bingoList[21] = [
 bingoList[22] = [
     { name: "Heliport: Fast-travel to the Snowfield" },
     { name: "Hide in a locker to escape an Evasion" },
-    { name: "Psycho Mantis: Melee Only", "types": ["Psycho Mantis"] },
+    { name: "Psycho : Melee Only", "types": ["Psycho "] },
     { name: "Sniper Wolf 2: Nikita Only", "types": ["Sniper Wolf 2"] },
     { name: "Snowfield: Fast-travel to the Heliport" },
     { name: "Underground Base: All Dog Tags" },
@@ -257,7 +256,6 @@ bingoList[24] = [
     { name: "Digital Camera" },
     { name: "Medi-room: Leave your gear behind" },
     { name: "No Prozac Skips" },
-    { name: "Psycho Mantis: No Controller Swap" },
 ];
 bingoList[25] = [
     { name: "Collect 20 Dog Tags", "types": ["Dog Tags"] },
