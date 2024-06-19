@@ -70,6 +70,7 @@ class Room(models.Model):
         active_rooms = Room.objects.filter(active=True).prefetch_related(
             "game_set",
             "player_set",
+            "player_set__connectionevent_set",
         )
         # use -len(players) so that high numbers of players are at the top
         # but otherwise names are sorted lexicographically descending
@@ -105,7 +106,7 @@ class Room(models.Model):
 
     @property
     def connected_players(self):
-        return [player for player in self.players if player.connected]
+        return [player for player in self.player_set.all() if player.connected]
 
     @property
     def latest_event_timestamp(self):
@@ -312,7 +313,8 @@ class Player(models.Model):
 
     @property
     def connected(self):
-        last_connection_event = ConnectionEvent.objects.filter(player=self).order_by("timestamp").last()
+        # TODO: try to continue using .last() here even with prefetch_related?
+        last_connection_event = max(self.connectionevent_set.all(), default=None, key=lambda ce: ce.timestamp)
         return not last_connection_event or last_connection_event.event_type == ConnectionEventType.connected
 
     def update_color(self, color):
