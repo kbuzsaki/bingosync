@@ -67,7 +67,10 @@ class Room(models.Model):
 
     @staticmethod
     def get_listed_rooms():
-        active_rooms = Room.objects.filter(active=True)
+        active_rooms = Room.objects.filter(active=True).prefetch_related(
+            "game_set",
+            "player_set",
+        )
         # use -len(players) so that high numbers of players are at the top
         # but otherwise names are sorted lexicographically descending
         if DISABLE_CONNECTED_PLAYER_SORT:
@@ -86,19 +89,19 @@ class Room(models.Model):
 
     @property
     def games(self):
-        return Game.objects.filter(room=self)
+        return self.game_set.all()
 
     @property
     def current_game(self):
-        return Game.objects.filter(room=self).order_by("-created_date").first()
+        return max(self.game_set.all(), key=lambda g: g.created_date)
 
     @property
     def players(self):
-        return Player.objects.filter(room=self).order_by("name")
+        return self.player_set.order_by("name").all()
 
     @property
     def creator(self):
-        return self.players.order_by("created_date").first()
+        return min(self.player_set.all(), key=lambda p: p.created_date)
 
     @property
     def connected_players(self):
