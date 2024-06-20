@@ -77,8 +77,8 @@ class Room(models.Model):
     @staticmethod
     def get_listed_rooms():
         active_rooms = Room.objects.filter(active=True).prefetch_related(
-            "game_set",
-            "player_set",
+            models.Prefetch("game_set", Game.objects.order_by("-created_date")[:1], to_attr="_current_game"),
+            models.Prefetch("player_set", Player.objects.order_by("created_date")[:1], to_attr="_creator"),
             models.Prefetch("player_set", Player.connected_players_qs(), to_attr="_connected_players"),
         )
         # use -len(players) so that high numbers of players are at the top
@@ -110,6 +110,8 @@ class Room(models.Model):
 
     @property
     def current_game(self):
+        if hasattr(self, "_current_game"):
+            return self._current_game[0]
         return max(self.game_set.all(), key=lambda g: g.created_date)
 
     @property
@@ -118,6 +120,8 @@ class Room(models.Model):
 
     @property
     def creator(self):
+        if hasattr(self, "_creator"):
+            return self._creator[0]
         return min(self.player_set.all(), key=lambda p: p.created_date)
 
     @property
