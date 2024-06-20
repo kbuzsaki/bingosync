@@ -71,8 +71,6 @@ class Room(models.Model):
     def get_prefetched_for_encoded_uuid_or_404(encoded_room_uuid):
         qs = Room.objects.prefetch_related(
             "game_set",
-            "player_set",
-            "player_set__connectionevent_set",
         )
         return Room.get_for_encoded_uuid(encoded_room_uuid, qs)
 
@@ -81,7 +79,7 @@ class Room(models.Model):
         active_rooms = Room.objects.filter(active=True).prefetch_related(
             "game_set",
             "player_set",
-            "player_set__connectionevent_set",
+            models.Prefetch("player_set", Player.connected_players_qs(), to_attr="_connected_players"),
         )
         # use -len(players) so that high numbers of players are at the top
         # but otherwise names are sorted lexicographically descending
@@ -124,7 +122,9 @@ class Room(models.Model):
 
     @property
     def connected_players(self):
-        return [player for player in self.player_set.all() if player.connected]
+        if hasattr(self, "_connected_players"):
+            return self._connected_players
+        return Player.connected_players_qs().filter(room=self)
 
     @property
     def latest_event_timestamp(self):
@@ -312,6 +312,13 @@ class Player(models.Model):
     def get_for_encoded_uuid(encoded_player_uuid):
         decoded_uuid = decode_uuid(encoded_player_uuid)
         return Player.objects.get(uuid=decoded_uuid)
+
+    @staticmethod
+    def connected_players_qs():
+        con_events = ConnectionEvent.objects.filter(player=models.OuterRef("pk")).order_by("-timestamp")
+        return Player.objects.annotate(
+                con_state=models.Subquery(con_events.values("event")[:1])
+            ).filter(models.Q(con_state=ConnectionEventType.connected.value) | models.Q(con_state=None))
 
     def __str__(self):
         return self.name
