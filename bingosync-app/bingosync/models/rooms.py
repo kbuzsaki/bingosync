@@ -51,19 +51,30 @@ class Room(models.Model):
         return reverse(room_view, kwargs=kwargs)
 
     @staticmethod
-    def get_for_encoded_uuid(encoded_room_uuid):
+    def get_for_encoded_uuid(encoded_room_uuid, qs=None):
+        if qs is None:
+            qs = Room.objects
         try:
             decoded_uuid = decode_uuid(encoded_room_uuid)
         except ValueError:
             raise Room.DoesNotExist("Malformed encoded uuid: '" + str(encoded_room_uuid) + "'")
-        return Room.objects.get(uuid=decoded_uuid)
+        return qs.get(uuid=decoded_uuid)
 
     @staticmethod
-    def get_for_encoded_uuid_or_404(encoded_room_uuid):
+    def get_for_encoded_uuid_or_404(encoded_room_uuid, qs=None):
         try:
-            return Room.get_for_encoded_uuid(encoded_room_uuid)
+            return Room.get_for_encoded_uuid(encoded_room_uuid, qs)
         except Room.DoesNotExist:
             raise Http404
+
+    @staticmethod
+    def get_prefetched_for_encoded_uuid_or_404(encoded_room_uuid):
+        qs = Room.objects.prefetch_related(
+            "game_set",
+            "player_set",
+            "player_set__connectionevent_set",
+        )
+        return Room.get_for_encoded_uuid(encoded_room_uuid, qs)
 
     @staticmethod
     def get_listed_rooms():

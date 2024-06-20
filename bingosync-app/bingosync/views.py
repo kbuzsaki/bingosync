@@ -69,7 +69,7 @@ def room_view(request, encoded_room_uuid):
             return _join_room(request, join_form, room)
     else:
         try:
-            room = Room.get_for_encoded_uuid_or_404(encoded_room_uuid)
+            room = Room.get_prefetched_for_encoded_uuid_or_404(encoded_room_uuid)
             initial_values = {
                 "game_type": room.current_game.game_type.group.value,
                 "variant_type": room.current_game.game_type.value,
