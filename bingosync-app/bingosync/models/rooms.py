@@ -72,7 +72,7 @@ class Room(models.Model):
         qs = Room.objects.prefetch_related(
             "game_set",
         )
-        return Room.get_for_encoded_uuid(encoded_room_uuid, qs)
+        return Room.get_for_encoded_uuid_or_404(encoded_room_uuid, qs)
 
     @staticmethod
     def get_listed_rooms():
