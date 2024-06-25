@@ -31,6 +31,9 @@ def _validate_square(i, square):
     elif square["name"] == "":
         raise InvalidBoardException(
                 'Square {} ({}) has an empty "name" attribute'.format(i + 1, json.dumps(square)))
+    elif len(square["name"]) > 255:
+        raise InvalidBoardException(
+                'Square {} ({}) has a "name" that is longer than 255 characters'.format(i + 1, json.dumps(square)))
 
 
 def _parse_simple_list(custom_board, game_type):
