@@ -122,14 +122,14 @@ def room_settings(request, encoded_room_uuid):
 
 @csrf_exempt
 def new_card(request):
-    data = parse_body_json_or_400(request, required_keys=["room", "lockout_mode", "hide_card", "seed"])
+    data = parse_body_json_or_400(request, required_keys=["room", "lockout_mode", "hide_card"])
 
     room = Room.get_for_encoded_uuid_or_404(data["room"])
     player = _get_session_player(request.session, room)
 
     lockout_mode = LockoutMode.for_value(int(data["lockout_mode"]))
     hide_card = data["hide_card"]
-    seed = data["seed"]
+    seed = data.get("seed", "")
     custom_json = data.get("custom_json", "")
 
     #create new game
