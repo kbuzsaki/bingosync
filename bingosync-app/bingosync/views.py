@@ -419,11 +419,9 @@ def parse_body_json_or_400(request, *, required_keys=[]):
 
     for key in required_keys:
         if key not in data:
-            raise InvalidRequestJsonError("Request body '" + str(data) +
-                                          "' is missing required key: '" + str(key) + "'")
+            raise InvalidRequestJsonError("Request is missing required key: '" + str(key) + "'")
         elif data[key] == "":
-            raise InvalidRequestJsonError("Request body '" + str(data) +
-                                          "' has empty string for required key: '" + str(key) + "'")
+            raise InvalidRequestJsonError("Request has empty string for required key: '" + str(key) + "'")
 
     return data
 
