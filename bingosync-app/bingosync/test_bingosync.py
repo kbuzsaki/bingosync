@@ -278,7 +278,7 @@ class CustomTestCase(test.TestCase):
 
 class ApiTestCase(test.TestCase):
 
-    def test_join_room_api(self):
+    def create_initial_room(self):
         # create a room to join
         room_resp = self.client.post("/", {
             "room_name": "Test Room",
@@ -289,6 +289,10 @@ class ApiTestCase(test.TestCase):
         }, follow=True)
 
         room_encoded_uuid = room_resp.context["room"].encoded_uuid
+        return room_encoded_uuid
+
+    def test_join_room_api(self):
+        room_encoded_uuid = self.create_initial_room()
 
         # join the room via api, expect to get redirected to the socket key endpoint
         join_room_resp = self.client.post("/api/join-room", json.dumps({
@@ -307,17 +311,29 @@ class ApiTestCase(test.TestCase):
         check_socket_key_resp = self.client.get("/api/socket/" + socket_key)
         self.assertEqual(check_socket_key_resp.status_code, 200)
 
-    def test_join_room_api_wrong_password(self):
-        # create a room to join
-        room_resp = self.client.post("/", {
-            "room_name": "Test Room",
-            "passphrase": "test password",
-            "nickname": "Bingoer",
-            "game_type": str(models.GameType.ocarina_of_time.value),
-            "lockout_mode": str(models.LockoutMode.lockout.value),
-        }, follow=True)
+    def test_join_room_api_missing_password(self):
+        room_encoded_uuid = self.create_initial_room()
 
-        room_encoded_uuid = room_resp.context["room"].encoded_uuid
+        # try to join the room via api, but give the wrong password
+        join_room_resp = self.client.post("/api/join-room", json.dumps({
+            "room": room_encoded_uuid,
+            "nickname": "other user",
+        }), content_type="application/json", follow=True)
+        self.assertContains(join_room_resp, "missing required key: 'password'", status_code=400)
+
+    def test_join_room_api_empty_password(self):
+        room_encoded_uuid = self.create_initial_room()
+
+        # try to join the room via api, but give the wrong password
+        join_room_resp = self.client.post("/api/join-room", json.dumps({
+            "room": room_encoded_uuid,
+            "nickname": "other user",
+            "password": "",
+        }), content_type="application/json", follow=True)
+        self.assertContains(join_room_resp, "empty string for required key: 'password'", status_code=400)
+
+    def test_join_room_api_wrong_password(self):
+        room_encoded_uuid = self.create_initial_room()
 
         # try to join the room via api, but give the wrong password
         join_room_resp = self.client.post("/api/join-room", json.dumps({

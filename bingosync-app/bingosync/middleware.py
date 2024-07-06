@@ -1,4 +1,5 @@
 from django.views import defaults
+from django.http import JsonResponse
 
 import logging
 
@@ -74,5 +75,7 @@ class InvalidRequestMiddleware:
 
     def process_exception(self, request, exception):
         if isinstance(exception, InvalidRequestJsonError):
-            print("Sending 400:", exception)
-            return defaults.bad_request(request, exception)
+            if request.get_full_path().startswith("/api/"):
+                return JsonResponse({"error": str(exception)}, status=400)
+            else:
+                return defaults.bad_request(request, exception)

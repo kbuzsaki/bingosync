@@ -272,10 +272,7 @@ def board_revealed(request):
 @csrf_exempt
 def join_room_api(request):
     # grab data from input json
-    try:
-        raw_data = parse_body_json_or_400(request, required_keys=["room", "nickname", "password"])
-    except InvalidRequestJsonError as e:
-        return JsonResponse({"error": str(e)})
+    raw_data = parse_body_json_or_400(request, required_keys=["room", "nickname", "password"])
 
     room = Room.get_for_encoded_uuid_or_404(raw_data["room"])
 
@@ -422,7 +419,11 @@ def parse_body_json_or_400(request, *, required_keys=[]):
 
     for key in required_keys:
         if key not in data:
-            raise InvalidRequestJsonError("Request body \"" + str(data) + "\" missing key: '" + str(key) + "'")
+            raise InvalidRequestJsonError("Request body '" + str(data) +
+                                          "' is missing required key: '" + str(key) + "'")
+        elif data[key] == "":
+            raise InvalidRequestJsonError("Request body '" + str(data) +
+                                          "' has empty string for required key: '" + str(key) + "'")
 
     return data
 
