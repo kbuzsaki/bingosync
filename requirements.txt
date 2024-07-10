@@ -2,7 +2,7 @@ asgiref==3.8.1
 certifi==2024.6.2
 charset-normalizer==3.3.2
 crispy-bootstrap3==2024.1
-Django==5.0.6
+Django==5.0.7
 django-bootstrap-form==3.4
 django-crispy-forms==2.1
 django-url-tools-py3==0.2.1
