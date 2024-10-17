@@ -437,8 +437,8 @@ class GameType(Enum):
     fnaf_security_breach_speedrun_categories = 433
     hollow_knight_item_rando_blackout = 434
     elden_ring_randomizer = 435
-    zelda_eow = 436
-    zelda_eow_no_ww = 437
+    zelda_eow_no_ww = 436
+    zelda_eow_ww = 437
 
     def __str__(self):
         return self.short_name
@@ -1177,11 +1177,11 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
         ],
     },
-    GameType.zelda_eow: {
+    GameType.zelda_eow_no_ww: {
         "name": "Zelda: Echoes Of Wisdom",
         "variants": [
-            (Gametype.zelda_eow, "Normal", "EOW Normal"),
-            (GameType.zelda_eow_no_ww, "No Wrong Warp", "EOW NWW"),
+            (GameType.zelda_eow_no_ww, "No Wrong Warp", "EOW NWW"),      
+            (Gametype.zelda_eow, "Wrong Warp", "EOW WW"),
         ],
     },
 }
