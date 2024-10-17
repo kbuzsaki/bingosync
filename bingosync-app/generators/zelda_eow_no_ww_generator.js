@@ -82,6 +82,12 @@ var bingoList = {
     },
     "dummy30": {
       "Max": 1
+    },
+    "dummy39": {
+      "Max": 1
+    },
+    "dummy40": {
+      "Max": 1
     }
   },
   "maxScore": 0,
@@ -366,6 +372,29 @@ var bingoList = {
       "other"
     ]
   },
+  "r39c29": {
+    "Desc": "Drown 5 Unique Enemies (Not Echoes)",
+    "Diff": 5,
+    "Types": [
+      "echoes",
+      "dummy39"
+    ]
+  },
+  "r40c29": {
+    "Desc": "Read 10 Signs",
+    "Diff": 2,
+    "Types": [
+      "overworld",
+      "dummy40"
+    ]
+  },
+  "r41c29": {
+    "Desc": "Use Drippitune In Gerudo Desert",
+    "Diff": 21,
+    "Types": [
+      "echoes"
+    ]
+  },
   "r2c30": {
     "Desc": "Learn 20 Echoes",
     "Diff": 4,
@@ -497,6 +526,22 @@ var bingoList = {
       "dummy30"
     ]
   },
+  "r39c30": {
+    "Desc": "Drown 10 Unique Enemies (Not Echoes)",
+    "Diff": 10,
+    "Types": [
+      "echoes",
+      "dummy39"
+    ]
+  },
+  "r40c30": {
+    "Desc": "Read 25 Signs",
+    "Diff": 14,
+    "Types": [
+      "overworld",
+      "dummy40"
+    ]
+  },
   "r2c31": {
     "Desc": "Learn 30 Echoes",
     "Diff": 8,
@@ -610,6 +655,14 @@ var bingoList = {
     "Types": [
       "overworld",
       "dummy30"
+    ]
+  },
+  "r39c31": {
+    "Desc": "Drown 15 Unique Enemies (Not Echoes)",
+    "Diff": 15,
+    "Types": [
+      "echoes",
+      "dummy39"
     ]
   },
   "r2c32": {
