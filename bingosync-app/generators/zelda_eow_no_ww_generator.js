@@ -262,26 +262,10 @@ var bingoList = {
   },
   "r24c29": {
     "Desc": "Obtain 3 Equipment Items",
-    "Diff": 6,
+    "Diff": 11,
     "Types": [
       "outfits",
       "dummy24"
-    ]
-  },
-  "r25c29": {
-    "Desc": "Become Catgirl",
-    "Diff": 9,
-    "Types": [
-      "outfits",
-      "quests"
-    ]
-  },
-  "r26c29": {
-    "Desc": "Obtain Horseriding Outfit",
-    "Diff": 8,
-    "Types": [
-      "outfits",
-      "quests"
     ]
   },
   "r27c29": {
@@ -316,7 +300,7 @@ var bingoList = {
     ]
   },
   "r31c29": {
-    "Desc": "Defeat Any Boss (Not Ganon) Without Echoes",
+    "Desc": "Defeat Any Boss As Zelda Without Echoes",
     "Diff": 21,
     "Types": [
       "dungeons"
@@ -358,20 +342,6 @@ var bingoList = {
       "quests"
     ]
   },
-  "r37c29": {
-    "Desc": "Complete \"A Treat For My Person\" Sidequest",
-    "Diff": 20,
-    "Types": [
-      "quests"
-    ]
-  },
-  "r38c29": {
-    "Desc": "Pause The Game For 10 Minutes",
-    "Diff": 25,
-    "Types": [
-      "other"
-    ]
-  },
   "r39c29": {
     "Desc": "Drown 5 Unique Enemies (Not Echoes)",
     "Diff": 5,
@@ -393,6 +363,13 @@ var bingoList = {
     "Diff": 21,
     "Types": [
       "echoes"
+    ]
+  },
+  "r42c29": {
+    "Desc": "Activate The Fountain In Jabul Ruins",
+    "Diff": 22,
+    "Types": [
+      "dungeons"
     ]
   },
   "r2c30": {
@@ -496,7 +473,7 @@ var bingoList = {
   },
   "r24c30": {
     "Desc": "Obtain 5 Equipment Items",
-    "Diff": 11,
+    "Diff": 16,
     "Types": [
       "outfits",
       "dummy24"
@@ -627,7 +604,7 @@ var bingoList = {
   },
   "r24c31": {
     "Desc": "Obtain 7 Equipment Items",
-    "Diff": 16,
+    "Diff": 22,
     "Types": [
       "outfits",
       "dummy24"
@@ -714,14 +691,6 @@ var bingoList = {
       "dummy23"
     ]
   },
-  "r24c32": {
-    "Desc": "Obtain 10 Equipment Items",
-    "Diff": 21,
-    "Types": [
-      "outfits",
-      "dummy24"
-    ]
-  },
   "r28c32": {
     "Desc": "Open 40 Overworld Chests",
     "Diff": 18,
@@ -747,7 +716,7 @@ var bingoList = {
     ]
   },
   "r7c33": {
-    "Desc": "Collect all 25 Stamps",
+    "Desc": "Collect 24 Stamps",
     "Diff": 23,
     "Types": [
       "stamps",
@@ -761,14 +730,6 @@ var bingoList = {
     "Types": [
       "smoothies",
       "dummy8"
-    ]
-  },
-  "r24c33": {
-    "Desc": "Obtain 15 Equipment Items",
-    "Diff": 22,
-    "Types": [
-      "outfits",
-      "dummy24"
     ]
   },
   "r29c33": {
