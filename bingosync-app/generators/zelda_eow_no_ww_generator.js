@@ -3,7 +3,7 @@ bingoGenerator = require("./generators/generator_bases/synerGen.js");
 var bingoList = {
   "bingoTypes": {
     "echoes": {
-      "Max": 4
+      "Max": 5
     },
     "stamps": {
       "Max": 2
@@ -26,14 +26,14 @@ var bingoList = {
     "crystals": {
       "Max": 2
     },
-    "outfits": {
+    "equipment": {
       "Max": 3
     },
     "overworld": {
-      "Max": 5
+      "Max": 6
     },
-    "other": {
-      "Max": 1
+    "rupees": {
+      "Max": 2
     },
     "dummy2": {
       "Max": 2
@@ -74,6 +74,9 @@ var bingoList = {
     "dummy24": {
       "Max": 2
     },
+    "dummy25": {
+      "Max": 1
+    },
     "dummy28": {
       "Max": 2
     },
@@ -92,8 +95,8 @@ var bingoList = {
   },
   "maxScore": 0,
   "r2c29": {
-    "Desc": "Learn 10 Echoes",
-    "Diff": 1,
+    "Desc": "Learn 20 Echoes",
+    "Diff": 4,
     "Types": [
       "echoes",
       "dummy2"
@@ -169,7 +172,7 @@ var bingoList = {
   },
   "r12c29": {
     "Desc": "Obtain 2 Heart Containers",
-    "Diff": 4,
+    "Diff": 8,
     "Types": [
       "hearts",
       "dummy12"
@@ -247,14 +250,14 @@ var bingoList = {
   },
   "r22c29": {
     "Desc": "Complete \"Getting It Twisted\" Sidequest",
-    "Diff": 10,
+    "Diff": 9,
     "Types": [
       "quests"
     ]
   },
   "r23c29": {
-    "Desc": "Obtain 10 Might Crystals",
-    "Diff": 3,
+    "Desc": "Obtain 10 Unusual Crystals",
+    "Diff": 1,
     "Types": [
       "crystals",
       "dummy23"
@@ -264,8 +267,25 @@ var bingoList = {
     "Desc": "Obtain 3 Equipment Items",
     "Diff": 11,
     "Types": [
-      "outfits",
+      "equipment",
       "dummy24"
+    ]
+  },
+  "r25c29": {
+    "Desc": "Possess 500 Or More Rupees",
+    "Diff": 6,
+    "Types": [
+      "rupees",
+      "dummy25"
+    ]
+  },
+  "r26c29": {
+    "Desc": "Obtain 5 Unusual Crystals From Under Rocks",
+    "Diff": 4,
+    "Types": [
+      "crystals",
+      "overworld",
+      "dummy26"
     ]
   },
   "r27c29": {
@@ -301,7 +321,7 @@ var bingoList = {
   },
   "r31c29": {
     "Desc": "Defeat Any Boss As Zelda Without Echoes",
-    "Diff": 21,
+    "Diff": 25,
     "Types": [
       "dungeons"
     ]
@@ -342,6 +362,20 @@ var bingoList = {
       "quests"
     ]
   },
+  "r37c29": {
+    "Desc": "Collect A Purple Rupee",
+    "Diff": 3,
+    "Types": [
+      "rupees"
+    ]
+  },
+  "r38c29": {
+    "Desc": "Collect A Silver Rupee",
+    "Diff": 21,
+    "Types": [
+      "rupees"
+    ]
+  },
   "r39c29": {
     "Desc": "Drown 5 Unique Enemies (Not Echoes)",
     "Diff": 5,
@@ -372,9 +406,23 @@ var bingoList = {
       "dungeons"
     ]
   },
+  "r43c29": {
+    "Desc": "Learn \"Chompfin\" Echo",
+    "Diff": 10,
+    "Types": [
+      "echoes"
+    ]
+  },
+  "r44c29": {
+    "Desc": "Learn \"Leever\" Echo",
+    "Diff": 18,
+    "Types": [
+      "echoes"
+    ]
+  },
   "r2c30": {
-    "Desc": "Learn 20 Echoes",
-    "Diff": 4,
+    "Desc": "Learn 30 Echoes",
+    "Diff": 8,
     "Types": [
       "echoes",
       "dummy2"
@@ -414,7 +462,7 @@ var bingoList = {
     ]
   },
   "r12c30": {
-    "Desc": "Obtain 5 Heart Containers",
+    "Desc": "Obtain 3 Heart Containers",
     "Diff": 12,
     "Types": [
       "hearts",
@@ -464,7 +512,7 @@ var bingoList = {
     ]
   },
   "r23c30": {
-    "Desc": "Obtain 20 Might Crystals",
+    "Desc": "Obtain 20 Unusual Crystals",
     "Diff": 6,
     "Types": [
       "crystals",
@@ -475,8 +523,25 @@ var bingoList = {
     "Desc": "Obtain 5 Equipment Items",
     "Diff": 16,
     "Types": [
-      "outfits",
+      "equipment",
       "dummy24"
+    ]
+  },
+  "r25c30": {
+    "Desc": "Possess 1000 Or More Rupees",
+    "Diff": 16,
+    "Types": [
+      "rupees",
+      "dummy25"
+    ]
+  },
+  "r26c30": {
+    "Desc": "Obtain 10 Unusual Crystals From Under Rocks",
+    "Diff": 17,
+    "Types": [
+      "crystals",
+      "overworld",
+      "dummy26"
     ]
   },
   "r28c30": {
@@ -520,8 +585,8 @@ var bingoList = {
     ]
   },
   "r2c31": {
-    "Desc": "Learn 30 Echoes",
-    "Diff": 8,
+    "Desc": "Learn 40 Echoes",
+    "Diff": 12,
     "Types": [
       "echoes",
       "dummy2"
@@ -542,6 +607,14 @@ var bingoList = {
     "Types": [
       "smoothies",
       "dummy8"
+    ]
+  },
+  "r9c31": {
+    "Desc": "Obtain 13 Unique Smoothie Ingredients",
+    "Diff": 20,
+    "Types": [
+      "smoothies",
+      "dummy9"
     ]
   },
   "r11c31": {
@@ -595,7 +668,7 @@ var bingoList = {
     ]
   },
   "r23c31": {
-    "Desc": "Obtain 35 Might Crystals",
+    "Desc": "Obtain 35 Unusual Crystals",
     "Diff": 11,
     "Types": [
       "crystals",
@@ -606,8 +679,25 @@ var bingoList = {
     "Desc": "Obtain 7 Equipment Items",
     "Diff": 22,
     "Types": [
-      "outfits",
+      "equipment",
       "dummy24"
+    ]
+  },
+  "r25c31": {
+    "Desc": "Possess 2500 Or More Rupees",
+    "Diff": 23,
+    "Types": [
+      "rupees",
+      "dummy25"
+    ]
+  },
+  "r26c31": {
+    "Desc": "Obtain 15 Unusual Crystals From Under Rocks",
+    "Diff": 21,
+    "Types": [
+      "crystals",
+      "overworld",
+      "dummy26"
     ]
   },
   "r28c31": {
@@ -627,7 +717,7 @@ var bingoList = {
     ]
   },
   "r30c31": {
-    "Desc": "Discover all 7 Shops",
+    "Desc": "Discover 7 Shops",
     "Diff": 20,
     "Types": [
       "overworld",
@@ -643,8 +733,8 @@ var bingoList = {
     ]
   },
   "r2c32": {
-    "Desc": "Learn 40 Echoes",
-    "Diff": 12,
+    "Desc": "Learn 50 Echoes",
+    "Diff": 16,
     "Types": [
       "echoes",
       "dummy2"
@@ -684,7 +774,7 @@ var bingoList = {
     ]
   },
   "r23c32": {
-    "Desc": "Obtain 50 Might Crystals",
+    "Desc": "Obtain 50 Unusual Crystals",
     "Diff": 25,
     "Types": [
       "crystals",
@@ -708,8 +798,8 @@ var bingoList = {
     ]
   },
   "r2c33": {
-    "Desc": "Learn 50 Echoes",
-    "Diff": 16,
+    "Desc": "Learn 60 Echoes",
+    "Diff": 20,
     "Types": [
       "echoes",
       "dummy2"
@@ -730,6 +820,14 @@ var bingoList = {
     "Types": [
       "smoothies",
       "dummy8"
+    ]
+  },
+  "r11c33": {
+    "Desc": "Obtain 24 Heart Pieces",
+    "Diff": 24,
+    "Types": [
+      "hearts",
+      "dummy11"
     ]
   },
   "r29c33": {
