@@ -1,9 +1,8 @@
-bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
+var bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 
 var bingoList = [];
-
 bingoList[1] = [
-{ name: "Captain Toad (Cascade)", types: ["Cascade", "Captain_Toad"] },
+{ name: "Good Morning, Captain Toad! (Cascade)", types: ["Cascade", "Captain_Toad"] },
 { name: "Purchase 4 Hats", types: ["Hats"] },
 { name: "Atop the Highest Tower (Sand)", types: ["Sand_Story", "Story"] },
 { name: "Call Jaxi from 2 Stands", types: ["Jaxi"] },
@@ -11,18 +10,18 @@ bingoList[1] = [
 { name: "20 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
 { name: "2 Moons from sub-areas (Lake)", types: ["Lake", "Sub_Areas"] },
 { name: "1 Moon from Keys", types: ["Keys"] },
-{ name: "Ice Cave Treasure-Moon (Sand)", types: ["Sand"] }
+{ name: "Ice Cave Treasure (Sand)", types: ["Sand"] }
 ];
 bingoList[2] = [
 { name: "7 Moons from Nuts", types: ["Nuts"] },
 { name: "3 Checkpoints (Lost)", types: ["Lost"] },
-{ name: "Captain Toad (Metro)", types: ["Metro", "Captain_Toad"] },
+{ name: "How You Doin', Captain Toad? (Metro)", types: ["Metro", "Captain_Toad"] },
 { name: "4 Checkpoints (Metro)", types: ["Metro"] },
 { name: "Captain Toad (Lost)", types: ["Lost", "Captain_Toad"] },
 { name: "6 Checkpoints (Sand)", types: ["Sand"] },
 { name: "25 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
 { name: "10 Moons from sub-areas (Total)", types: ["Sub_Areas"] },
-{ name: "Captain Toad (Cap)", types: ["Cap", "Captain_Toad"] },
+{ name: "Good Evening, Captain Toad! (Cap)", types: ["Cap", "Captain_Toad"] },
 { name: "Plant 1 Seed (Lake)", types: ["Lake", "Seeds"] }
 ];
 bingoList[3] = [
@@ -36,7 +35,7 @@ bingoList[3] = [
 { name: "Answer 6 Sphynx Questions Correctly", types: ["Sphynx"] },
 { name: "Purchase 4 Souvenirs", types: ["Souvenirs"] },
 { name: "30 Regional Coins (Cascade)", types: ["Cascade_Regional"] },
-{ name: "Puzzle Room Solved! (Lake)", types: ["Lake"] }
+{ name: "A Successful Repair Job (Lake)", types: ["Lake"] }
 ];
 bingoList[4] = [
 { name: "20 Moons (Sand)", types: ["Sand_Moons"] },
@@ -55,7 +54,7 @@ bingoList[5] = [
 { name: "3 Captain Toad Moons", types: ["Captain_Toad"] },
 { name: "3 Moons from 8-bit Sections", types: ["8bit"] },
 { name: "20 Moons (Wooded)", types: ["Wooded_Moons"] },
-{ name: "Captain Toad (Lake)", types: ["Lake", "Captain_Toad"] },
+{ name: "Let's Go Swimming, Captain Toad! (Lake)", types: ["Lake", "Captain_Toad"] },
 { name: "3 Moons from Moon Shards", types: ["Moon_Shards"] },
 { name: "Moon Shards in the Sand (Sand)", types: ["Sand_Story", "Story"] },
 { name: "12 Moons (Lake)", types: ["Lake_Moons"] },
@@ -70,7 +69,7 @@ bingoList[6] = [
 { name: "25 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
 { name: "10 Regional Coins (Lost)", types: ["Lost_Regional"] },
 { name: "10 Regional Coins (Cap)", types: ["Cap_Regional"] },
-{ name: "Koopa Trace-Walking (Sand)", types: ["Sand"] },
+{ name: "Walking the Desert (Sand)", types: ["Sand"] },
 { name: "2 Moons (Deep Woods)", types: ["Deep_Woods"] },
 { name: "35 Regional Coins (Sand)", types: ["Sand_Regional"] },
 { name: "Jump-Rope Hero! (Metro)", types: ["Metro"] },
@@ -89,7 +88,7 @@ bingoList[7] = [
 { name: "15 Regional Coins (Lake)", types: ["Lake_Regional"] }
 ];
 bingoList[8] = [
-{ name: "Outfit-Door (Metro)", types: ["Locked_Door"] },
+{ name: "Rewiring the Neighborhood (Metro)", types: ["Locked_Door"] },
 { name: "15 Regional Coins (Cap)", types: ["Cap_Regional"] },
 { name: "2 Moons from sub-areas (Cap)", types: ["Cap", "Sub_Areas"] },
 { name: "12 Moons (Cascade)", types: ["Cascade_Moons"] },
@@ -125,16 +124,16 @@ bingoList[10] = [
 { name: "Purchase 5 Full Costume Sets", types: ["Outfits"] },
 { name: "30 Regional Coins (Lake)", types: ["Lake_Regional"] },
 { name: "30 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
-{ name: "RC Car: Race Complete! (Metro)", types: ["Metro"] },
+{ name: "RC Car Pro! (Metro)", types: ["Metro"] },
 { name: "6 Unique Life-Up Hearts (excl. Shops)", types: ["LifeUp"] }
 ];
 bingoList[11] = [
-{ name: "Outfit-Door (Wooded)", types: ["Locked_Door"] },
+{ name: "Exploring for Treasure (Wooded)", types: ["Locked_Door"] },
 { name: "4 Moons from sub-areas (Wooded)", types: ["Wooded", "Sub_Areas"] },
 { name: "6 Moons (Cap)", types: ["Cap_Moons"] },
 { name: "4 Captain Toad Moons", types: ["Captain_Toad"] },
 { name: "Call Jaxi from 4 Stands", types: ["Jaxi"] },
-{ name: "Outfit-Door (Sand)", types: ["Locked_Door"] },
+{ name: "Dancing With New Friends (Sand)", types: ["Locked_Door"] },
 { name: "20 Regional Coins (Lost)", types: ["Lost_Regional"] },
 { name: "Wear the Boxer Shorts", types: ["Boxers"] },
 { name: "9 Moons from Nuts", types: ["Nuts"] },
@@ -207,7 +206,7 @@ bingoList[16] = [
 { name: "World Peace in 3 Kingdoms (excl. Cap, Cloud, Lost)", types: ["World_Peace"] },
 { name: "30 Regional Coins (Lost)", types: ["Lost_Regional"] },
 { name: "10 Regional Coins (Snow)", types: ["Late_Game", "Snow_Regional"] },
-{ name: "Captain Toad (Snow)", types: ["Late_Game", "Snow", "Captain_Toad"] },
+{ name: "Captain Toad is Chilly! (Snow)", types: ["Late_Game", "Snow", "Captain_Toad"] },
 { name: "All Regional Coins in 1 Kingdom", types: ["Regional_Kingdoms"] },
 ];
 bingoList[17] = [
@@ -216,7 +215,7 @@ bingoList[17] = [
 { name: "16 Moons (Cascade)", types: ["Cascade_Moons"] },
 { name: "8 Checkpoints (Sand)", types: ["Sand"] },
 { name: "Uncork 1 Fountain (Seaside)", types: ["Late_Game", "Uncork", "Story"] },
-{ name: "Captain Toad (Seaside)", types: ["Late_Game", "Seaside", "Captain_Toad"] },
+{ name: "Good Job, Captain Toad! (Seaside)", types: ["Late_Game", "Seaside", "Captain_Toad"] },
 { name: "50 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
 { name: "28 Unique Captures", types: ["Unique_Captures"] },
 { name: "2 Moons from Keys", types: ["Keys"] }
@@ -230,7 +229,7 @@ bingoList[18] = [
 { name: "4 Moons (Snow)", types: ["Late_Game", "Snow_Moons"] },
 { name: "15 Regional Coins (Snow)", types: ["Late_Game", "Snow_Regional"] },
 { name: "World Peace Restored! (Wooded)", types: ["World_Peace"] },
-{ name: "Outfit-Door (Snow)", types: ["Late_Game", "Locked_Door"] }
+{ name: "Moon Shards in the Cold Room (Snow)", types: ["Late_Game", "Locked_Door"] }
 ];
 bingoList[19] = [
 { name: "3 Warp-Painting Moons", types: ["Warp_Painting"] },
@@ -263,7 +262,7 @@ bingoList[21] = [
 { name: "1 Barrier-Moon (Snow)", types: ["Late_Game", "Snow", "Story"] },
 { name: "Look at 4 Hint Arts", types: ["Late_Game", "Hint_View"] },
 { name: "60 Regional Coins (Wooded)", types: ["Wooded_Regional"] },
-{ name: "Outfit-Door (Seaside)", types: ["Late_Game", "Locked_Door"] },
+{ name: "A Relaxing Dance (Seaside)", types: ["Late_Game", "Locked_Door"] },
 { name: "1 Checkpoint (Snow)", types: ["Late_Game", "Snow"] }
 ];
 bingoList[22] = [
@@ -279,11 +278,11 @@ bingoList[22] = [
 ];
 bingoList[23] = [
 { name: "25 Regional Coins (Snow)", types: ["Late_Game", "Snow_Regional"] },
-{ name: "Goomba Picture-Match (Cloud)", types: ["Cloud"] },
+{ name: "Picture Match: Basically a Goomba (Cloud)", types: ["Cloud"] },
 { name: "4 Ground-Pound Moons (Seaside)", types: ["Late_Game", "Seaside", "Seaside_Moons"] },
 { name: "18 Moons (Lost)", types: ["Lost_Moons"] },
 { name: "2 Barrier-Moons (Snow)", types: ["Late_Game", "Snow", "Story"] },
-{ name: "Catch the Rabbit! (Lost)", types: ["Lost", "Rabbit"] },
+{ name: "Caught Hopping in the Jungle! (Lost)", types: ["Lost", "Rabbit"] },
 { name: "30 Moons (Sand)", types: ["Sand_Moons"] }
 ];
 bingoList[24] = [
