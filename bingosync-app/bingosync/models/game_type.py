@@ -437,6 +437,8 @@ class GameType(Enum):
     fnaf_security_breach_speedrun_categories = 433
     hollow_knight_item_rando_blackout = 434
     elden_ring_randomizer = 435
+    zelda_eow_no_ww = 436
+    #zelda_eow_ww = 437 -- No Bingo Goal List Yet
 
     def __str__(self):
         return self.short_name
@@ -1173,6 +1175,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
+        ],
+    },
+    GameType.zelda_eow_no_ww: {
+        "name": "Zelda: Echoes Of Wisdom",
+        "variants": [
+            (GameType.zelda_eow_no_ww, "No Wrong Warp", "EOW NWW"),      
+            #(Gametype.zelda_eow, "Wrong Warp", "EOW WW"), --No Bingo Goal List Yet
         ],
     },
 }
