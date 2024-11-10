@@ -1,158 +1,111 @@
-bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
 
-var bingoList = [];
-bingoList[1] = [
-  { name: "Port Royal", types: [] },
-  { name: "Complete a Level with Zero Studs", types: [] },
-  { name: "Crash the Game", types: [] },
-];
-bingoList[2] = [
-  { name: "Tortuga", types: [] },
-  { name: "Pelegosto", types: [] },
-  { name: "Singapore", types: [] },
-  { name: "London Town", types: [] },
-  { name: "Singapore - No Level Skip", types: [] },
-  { name: "Pelegosto - No Dog Skip", types: [] },
-];
-bingoList[3] = [
-  { name: "The Black Pearl Attacks", types: [] },
-  { name: "A touch of Destiny", types: [] },
-  { name: "Davy Jone's Locker", types: [] },
-  { name: "Queen Anne's Revenge", types: [] },
-  { name: "Cannibals", types: ["Characters"] },
-];
-bingoList[4] = [
-  { name: "Smuglers Den", types: [] },
-  { name: "The Dutchman's secret", types: [] },
-  { name: "Norrington's choice", types: [] },
-  { name: "Whitecap Bay", types: [] },
-];
-bingoList[5] = [
-  { name: "Isla de Muerta", types: [] },
-  { name: "Isla Cruces", types: [] },
-  { name: "The Bretheren Court", types: [] },
-  { name: "A Spanish Legacy", types: [] },
-  { name: "1 Million studs", types: ["Studs"] },
-  { name: "Cursed Crew", types: ["Characters"] },
-];
-bingoList[6] = [
-  { name: "The Kraken", types: [] },
-  { name: "Maelstrom", types: [] },
-  { name: "The Fountain of Youth", types: [] },
-  { name: "Port Royal all Compass Items", types: [] },
-];
-bingoList[7] = [
-  { name: "Tortuga - True Pirate", types: [] },
-  { name: "Pelegosto - True Pirate", types: [] },
-  { name: "Singapore - True Pirate", types: [] },
-  { name: "London Town - True Pirate", types: [] },
-  { name: "Disguises", types: ["Red Hats"] },
-];
-bingoList[8] = [
-  { name: "Port Royal - True Pirate", types: [] },
-  { name: "Part of the Crew, Part of the Ship", types: ["Characters"] },
-  { name: "Pirate Lords", types: ["Characters"] },
-  { name: "5 Red Hats", types: ["Red Hats"] },
-];
-bingoList[9] = [
-  { name: "Queen Anne's Revenge - True Pirate", types: [] },
-  { name: "Davy Jone's Locker - True Pirate", types: [] },
-  { name: "Port Royal - 10 Minikits", types: [] },
-  { name: "The Bretheren Court - 10 Minikits", types: [] },
-];
-bingoList[10] = [
-  { name: "Smuglers Den - 10 Minikits", types: [] },
-  { name: "2 Million Studs", types: ["Studs"] },
-  { name: "Isla de Muerta - True Pirate", types: [] },
-  { name: "The Bretheren Court - True Pirate", types: [] },
-  { name: "A Spanish Legacy - True Pirate", types: [] },
-];
-bingoList[11] = [
-  { name: "The Fountain of Youth All Compass Items", types: [] },
-  { name: "A Spanish Legacy All Compass Items", types: [] },
-  { name: "Whitecap Bay All Compass Items", types: [] },
-  { name: "Queen Anne's Revenge All Compass Items", types: [] },
-
-];
-bingoList[12] = [
-  { name: "London Town All Compass Items", types: [] },
-  { name: "Singapore All Compass Items", types: [] },
-  { name: "Pelegosto All Compass Items", types: [] },
-  { name: "Tortuga all Compass Items", types: [] },
-  { name: "The Black Pearl Attacks - True Pirate", types: [] },
-  { name: "A touch of Destiny - True Pirate", types: [] },
-];
-bingoList[13] = [
-  { name: "Singapore - 10 Minikits", types: [] },
-  { name: "London Town - 10 Minikits", types: [] },
-  { name: "Whitecap Bay - 10 Minikits", types: [] },
-  { name: "A Spanish Legacy - 10 Minikits", types: [] },
-];
-bingoList[14] = [
-  { name: "The Black Pearl Attacks all Compass Items", types: [] },
-  { name: "A touch of Destiny All Compass Items", types: [] },
-  { name: "Davy Jone's Locker All Compass Items", types: [] },
-  { name: "The Kraken - True Pirate", types: [] },
-  { name: "The Fountain of Youth - True Pirate", types: [] },
-];
-bingoList[15] = [
-  { name: "Revenge", types: ["Characters"] },
-  { name: "Smuglers Den all Compass Items", types: [] },
-  { name: "The Dutchman's secret All Compass Items", types: [] },
-  { name: "Norrington's choice All Compass Items", types: [] },
-  { name: "The Dutchman's secret - 10 Minikits", types: [] },
-];
-bingoList[16] = [
-  { name: "Norrington's choice - 10 Minikits", types: [] },
-  { name: "The Dutchman's secret - True Pirate", types: [] },
-  { name: "Norrington's choice - True Pirate", types: [] },
-  { name: "Whitecap Bay - True Pirate", types: [] },
-];
-bingoList[17] = [
-  { name: "Isla de Muerta All Compass Items", types: [] },
-  { name: "Isla Cruces All Compass Items", types: [] },
-  { name: "The Bretheren Court All Compass Items", types: [] },
-  { name: "5 Million studs", types: ["Studs"] },
-];
-bingoList[18] = [
-  { name: "Tortuga - 10 Minikits", types: [] },
-  { name: "Pelegosto - 10 Minikits", types: [] },
-  { name: "Queen Anne's Revenge - 10 Minikits", types: [] },
-  { name: "Isla Cruces - True Pirate", types: [] },
-];
-bingoList[19] = [
-  { name: "The Fountain of Youth - 10 Minikits", types: [] },
-  { name: "The Kraken All Compass Items", types: [] },
-  { name: "Maelstrom All Compass Items", types: [] },
-  { name: "Maelstrom - 10 Minikits", types: [] },
-];
-bingoList[20] = [
-  { name: "The Black Pearl Attacks  - 10 Minikits", types: [] },
-  { name: "A touch of Destiny - 10 Minikits", types: [] },
-  { name: "Davy Jone's Locker - 10 Minikits", types: [] },
-  { name: "Maelstrom - True Pirate", types: [] },
-];
-bingoList[21] = [
-  { name: "Isla de Muerta - 10 Minikits", types: [] },
-  { name: "Isla Cruces - 10 Minikits", types: [] },
-  { name: "10 Red Hats", types: ["Red Hats"] },
-];
-bingoList[22] = [
-  { name: "The Kraken - 10 Minikits", types: [] },
-  { name: "3 ships", types: ["Minikits"] },
-];
-bingoList[23] = [
-  { name: "Go Fast", types: ["Red Hats"] },
-  { name: "Free Play Custom Character", types: [] },
-  { name: "10 Million studs", types: ["Studs"] },
-];
-bingoList[24] = [
-  { name: "15 Red Hats", types: ["Red Hats"] },
-  { name: "x7680", types: ["Red Hats"] },
-  { name: "20 Red Hats", types: ["Red Hats"] },
-];
-bingoList[25] = [
-  { name: "4 ships", types: ["Minikits"] },
-  { name: "5 ships", types: ["Minikits"] },
-  { name: "All ships from same movie", types: ["Minikits"] },
+var bingoList = [
+    "1 Story Level with Disguises",
+    "1 Story Level with Zero Studs",
+    "2 Story Episodes",
+    "2 Super Statuses",
+    "4 Super Statuses",
+    "6 Super Statuses",
+    "A Spanish Legacy - 3+ Story Bottles",
+    "A Spanish Legacy - 40k Studs",
+    "A Spanish Legacy - 9+ Bottles",
+    "A Spanish Legacy - All Compass Items",
+    "A Touch Of Destiny - 25k Studs",
+    "A Touch Of Destiny - 4+ Story Bottles",
+    "A Touch Of Destiny - 9+ Bottles",
+    "A Touch Of Destiny - All Compass Items",
+    "A Touch Of Destiny - No Room 1 Skip",
+    "At World's End - Story",
+    "Colleck 1 Million Studs",
+    "Collect 10 Minikits",
+    "Collect 15 Minikits",
+    "Collect 2 Million Studs",
+    "Collect 20 Minikits",
+    "Collect 25 Minikits",
+    "Collect 3 Red Hats",
+    "Collect 5 Red Hats",
+    "Collect 500k Studs",
+    "Collect 7 Red Hats",
+    "Complete 3 Levels in Free Play",
+    "Davy Jones' Locker - 5+ Story Bottles",
+    "Davy Jones' Locker - 9+ Bottles",
+    "Davy Jones' Locker - All Compass Items",
+    "Davy Jones' Locker - True Pirate",
+    "Dead Man's Chest - Story",
+    "Isla Cruces - 35k Studs",
+    "Isla Cruces - 4+ Story Bottles",
+    "Isla Cruces - 9+ Bottles",
+    "Isla Cruces - All Compass Items",
+    "Isla De Muerta - 2+ Story Bottles",
+    "Isla De Muerta - 30k Studs",
+    "Isla De Muerta - 8+ Bottles",
+    "Isla De Muerta - All Compass Items",
+    "London Town - 30k Studs",
+    "London Town - 9+ Bottles",
+    "London Town - All Compass Items",
+    "Norrington's Choice - 5+ Story Bottles",
+    "Norrington's Choice - 50k Studs",
+    "Norrington's Choice - 8+ Bottles",
+    "Norrington's Choice - All Compass Items",
+    "On Stranger Tides - Story",
+    "Pelegosto - 35k Studs",
+    "Pelegosto - 7+ Bottles",
+    "Pelegosto - All Compass Items",
+    "Pelegosto - No Dog Skip",
+    "Port Royal - 5+ Story Bottles",
+    "Port Royal - 70k Studs",
+    "Port Royal - 9+ Bottles",
+    "Port Royal - All Compass Items",
+    "Purchase 5 Crew Members of the Flying Dutchman",
+    "Purchase 5 Cursed Crew Members of the Black Pearl",
+    "Purchase 5 of the Pirate Lords",
+    "Purchase Fast Build, Fast Dig and Fast Forge",
+    "Queen Anne's Revenge - 25k Studs",
+    "Queen Anne's Revenge - 3+ Story Bottles",
+    "Queen Anne's Revenge - 8+ Bottles",
+    "Queen Anne's Revenge - All Compass Items",
+    "Singapore - 25k Studs",
+    "Singapore - 9+ Bottles",
+    "Singapore - All Compass Items",
+    "Singapore - No Barrel Jump / Pixel Jump",
+    "Smuggler's Den - 25k Studs",
+    "Smuggler's Den - 3+ Story Bottles",
+    "Smuggler's Den - 8+ Bottles",
+    "Smuggler's Den - All Compass Items",
+    "The Black Pearl Attacks - 25k Studs",
+    "The Black Pearl Attacks - 4+ Story Bottles",
+    "The Black Pearl Attacks - 7+ Bottles",
+    "The Black Pearl Attacks - All Compass Items",
+    "The Black Pearl Attacks - No Room 3 Skip",
+    "The Brethren Court - 2+ Story Bottles",
+    "The Brethren Court - 7+ Bottles",
+    "The Brethren Court - All Compass Items",
+    "The Brethren Court - True Pirate",
+    "The Curse of the Black Pearl - Story",
+    "The Dutchman's Secret - 3+ Story Bottles",
+    "The Dutchman's Secret - 50k Studs",
+    "The Dutchman's Secret - 9+ Bottles",
+    "The Dutchman's Secret - All Compass Items",
+    "The Fountain of Youth - 8+ Bottles",
+    "The Fountain of Youth - All Compass Items",
+    "The Fountain of Youth - True Pirate",
+    "The Kraken - 5+ Story Bottles",
+    "The Kraken - 8+ Bottles",
+    "The Kraken - All Compass Items",
+    "The Kraken - True Pirate",
+    "The Maelstrom - 25k Studs",
+    "The Maelstrom - 8+ Bottles",
+    "The Maelstrom - All Compass Items",
+    "Tortuga - 3+ Story Bottles",
+    "Tortuga - 7+ Bottles",
+    "Tortuga - 70k Studs",
+    "Tortuga - All Compass Items",
+    "Unlock 1 Ship",
+    "Unlock 2 Ships",
+    "Unlock 3 Ships",
+    "White Cap Bay - 10 Bottles",
+    "White Cap Bay - 25k Studs",
+    "White Cap Bay - 5+ Story Bottles",
+    "White Cap Bay - All Compass Items"
 ];
