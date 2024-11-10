@@ -443,6 +443,7 @@ class GameType(Enum):
     super_mario_bros_3_randomizer_open_world_race_to_w8 = 439
     terraria_calamity = 440
     mul_ty_player = 441
+    sky_children_of_the_light = 442
 
     def __str__(self):
         return self.short_name
@@ -1352,6 +1353,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.sea_of_thieves, "Sea of Thieves", "Sea of Thieves"),
     **singleton_group(GameType.sekiro, "Sekiro: Shadows Die Twice", "Sekiro"),
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
+    **singleton_group(GameType.sky_children_of_the_light, "Sky: Children of the Light", "Sky: COTL"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
     **singleton_group(GameType.smash_ultimate_world_of_light, "Smash Ultimate: World of Light", "Smush: WoL"),
