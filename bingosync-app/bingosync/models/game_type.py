@@ -446,6 +446,7 @@ class GameType(Enum):
     sky_children_of_the_light = 442
     noita = 443
     super_mario_eclipse = 444
+    elden_ring_eldendawgs = 445
 
     def __str__(self):
         return self.short_name
@@ -632,6 +633,7 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.elden_ring, "Normal", "Elden Ring"),
             (GameType.elden_ring_randomizer, "Randomizer", "Elden Ring Rando"),
+            (GameType.elden_ring_eldendawgs, "Eldendawgs", "Eldendawgs"),
         ],
     },
     GameType.ff4_ancient_cave: {
