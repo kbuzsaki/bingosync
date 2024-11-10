@@ -1162,6 +1162,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.zelda_botw_jp_long, "Long - JP", "BotW JP Long"),
         ],
     },
+    GameType.zelda_eow_no_ww: {
+        "name": "Zelda: Echoes Of Wisdom",
+        "variants": [
+            (GameType.zelda_eow_no_ww, "No Wrong Warp", "EOW NWW"),      
+            #(Gametype.zelda_eow, "Wrong Warp", "EOW WW"), --No Bingo Goal List Yet
+        ],
+    },
      GameType.zelda_totk: {
         "name": "Zelda: Tears of the Kingdom",
         "variants": [
@@ -1175,13 +1182,6 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
-        ],
-    },
-    GameType.zelda_eow_no_ww: {
-        "name": "Zelda: Echoes Of Wisdom",
-        "variants": [
-            (GameType.zelda_eow_no_ww, "No Wrong Warp", "EOW NWW"),      
-            #(Gametype.zelda_eow, "Wrong Warp", "EOW WW"), --No Bingo Goal List Yet
         ],
     },
 }
