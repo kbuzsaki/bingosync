@@ -441,6 +441,7 @@ class GameType(Enum):
     dead_rising = 437
     super_mario_bros_3_randomizer_open_world_mario = 438
     super_mario_bros_3_randomizer_open_world_race_to_w8 = 439
+    terraria_calamity = 440
 
     def __str__(self):
         return self.short_name
@@ -1079,6 +1080,7 @@ MANUAL_GAME_GROUPS = {
             (GameType.terraria_1_3_pre_hardmode, "1.3 Pre-Hardmode", "Terraria 1.3 PreHM"),
             (GameType.terraria_hardmode_journey, "Hardmode Journey", "Terraria HM Journey"),
             (GameType.terraria_pre_hardmode_journey, "Pre-Hardmode Journey", "Terraria PreHM Journey"),
+            (GameType.terraria_calamity, "Calamity", "Terraria Calamity"),
         ],
     },
     GameType.the_witness: {
