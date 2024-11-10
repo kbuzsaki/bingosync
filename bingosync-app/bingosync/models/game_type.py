@@ -439,6 +439,8 @@ class GameType(Enum):
     elden_ring_randomizer = 435
     zelda_eow_no_ww = 436
     dead_rising = 437
+    super_mario_bros_3_randomizer_open_world_mario = 438
+    super_mario_bros_3_randomizer_open_world_race_to_w8 = 439
 
     def __str__(self):
         return self.short_name
@@ -1015,6 +1017,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.super_mario_64, "Normal", "SM64"),
             (GameType.super_mario_64_randomizer_lockout, "Randomizer Lockout", "SM64 Randomizer"),
+        ],
+    },
+    GameType.super_mario_bros_3_randomizer_open_world_mario: {
+        "name": "Super Mario Bros. 3 Randomizer - Open World",
+        "variants": [
+            (GameType.super_mario_bros_3_randomizer_open_world_mario, "M-A-R-I-O", "SMB3R OW - MARIO"),
+            (GameType.super_mario_bros_3_randomizer_open_world_race_to_w8, "Race to W8", "SMB3R OW - Race to W8"),
         ],
     },
     GameType.super_mario_odyssey: {
