@@ -11,7 +11,7 @@ var bingoList = [
         "name": "swap lunches for the lunch friends"
     },
     {
-        "name": "fight monsters for penelope"
+        "name": "fight waterfall monsters for penelope"
     },
     {
         "name": "choose a pose for joe"
@@ -71,6 +71,27 @@ var bingoList = [
         "name": "deliver 10 pieces of litter to Roy"
     },
     {
+        "name": "matchmake cade & marlowe"
+    },
+    {
+        "name": "do a sick flip for twig (ya ya ya!)"
+    },
+    {
+        "name": "beat tony at chess"
+    },
+    {
+        "name": "clean Mr. Doddler's roof"
+    },
+    {
+        "name": "do water hops for Ssumantha"
+    },
+    {
+        "name": "save darcie from balloons"
+    },
+    {
+        "name": "climb to the top of the radio tower"
+    },
+    {
         "name": "befriend 5 characters",
         "types": [
             "frnds"
@@ -83,37 +104,13 @@ var bingoList = [
         ]
     },
     {
-        "name": "befriend 15 characters",
-        "types": [
-            "frnds"
-        ]
-    },
-    {
         "name": "befriend 20 characters",
         "types": [
             "frnds"
         ]
     },
     {
-        "name": "befriend 25 characters",
-        "types": [
-            "frnds"
-        ]
-    },
-    {
-        "name": "befriend 30 characters",
-        "types": [
-            "frnds"
-        ]
-    },
-    {
         "name": "befriend 35 characters",
-        "types": [
-            "frnds"
-        ]
-    },
-    {
-        "name": "befriend 40 characters",
         "types": [
             "frnds"
         ]
@@ -138,18 +135,6 @@ var bingoList = [
     },
     {
         "name": "buy 3 items from Roy",
-        "types": [
-            "junk"
-        ]
-    },
-    {
-        "name": "buy 5 items from Roy",
-        "types": [
-            "junk"
-        ]
-    },
-    {
-        "name": "buy all items from Roy",
         "types": [
             "junk"
         ]
@@ -273,5 +258,11 @@ var bingoList = [
     },
     {
         "name": "break 5 things with the princess wand"
+    },
+    {
+        "name": "have 1,000 scrap in your possession"
+    },
+    {
+        "name": "knock over 4 trash cans"
     }
 ];
