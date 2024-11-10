@@ -442,6 +442,7 @@ class GameType(Enum):
     super_mario_bros_3_randomizer_open_world_mario = 438
     super_mario_bros_3_randomizer_open_world_race_to_w8 = 439
     terraria_calamity = 440
+    mul_ty_player = 441
 
     def __str__(self):
         return self.short_name
@@ -1300,6 +1301,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.monkey_island_1_3, "Monkey Island (1-3)", "MI (1-3)"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
+    **singleton_group(GameType.mul_ty_player, "Mul-TY-Player", "MTP"),
     **singleton_group(GameType.myst, "Myst", "Myst"),
     **singleton_group(GameType.need_for_speed_carbon, "Need for Speed: Carbon", "NFSC"),
     **singleton_group(GameType.new_super_mario_bros_2, "New Super Mario Bros. 2", "NSMB2"),
