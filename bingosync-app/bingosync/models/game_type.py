@@ -445,6 +445,7 @@ class GameType(Enum):
     mul_ty_player = 441
     sky_children_of_the_light = 442
     noita = 443
+    super_mario_eclipse = 444
 
     def __str__(self):
         return self.short_name
@@ -1370,6 +1371,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.spyro_reignited, "Spyro the Dragon Reignited", "Spyro Reignited"),
     **singleton_group(GameType.star_wars_jfo, "Star Wars Jedi: Fallen Order", "JFO"),
     **singleton_group(GameType.super_mario_63, "Super Mario 63", "SM63"),
+    **singleton_group(GameType.super_mario_eclipse, "Super Mario Eclipse", "SME"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
     **singleton_group(GameType.super_mario_rpg_randomizer, "Super Mario RPG", "SMRPG Rando", "Randomizer"),
