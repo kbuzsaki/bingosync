@@ -444,6 +444,7 @@ class GameType(Enum):
     terraria_calamity = 440
     mul_ty_player = 441
     sky_children_of_the_light = 442
+    noita = 443
 
     def __str__(self):
         return self.short_name
@@ -1313,6 +1314,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.nights_into_dreams, "NiGHTS: Into Dreams", "NiGHTS Into Dreams"),
     **singleton_group(GameType.nintendo_switch_sports, "Nintendo Switch Sports", "NSS"),
     **singleton_group(GameType.no_mans_sky, "No Man's Sky", "No Man's Sky"),
+    **singleton_group(GameType.noita, "Noita", "Noita"),
     **singleton_group(GameType.oceanhorn_2, "Oceanhorn 2: Knights of the Lost Realm", "Oceanhorn 2"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.peggle_deluxe, "Peggle Deluxe", "PD EGM", "EGM"),
