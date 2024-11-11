@@ -3,11 +3,12 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 var bingoList = [];
 bingoList[1] = [
     {name: "Play Spade Card", types: ["spade"]},
-    {name: "Play Two Spade Cards", types: ["spade"]},
+    {name: "Star Fanfare", types: ["fanfare"]},
     {name: "Get 15 Lives"}  
 ];
 bingoList[2] = [
-    {name: "Get Gulped", types: ["boss bass"]},
+    {name: "Play Two Spade Cards", types: ["spade"]},
+	{name: "Get Gulped", types: ["boss bass"]},
     {name: "Defeat Boss Bass", types: ["boss bass"]},
 ];
 bingoList[3] = [
