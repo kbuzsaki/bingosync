@@ -74,7 +74,7 @@ bingoList[14] = [
     {name: "Collect Blue Coin (2-1, 3-4, 4-4, 4-5, 4F2, 5-1, 7-3, 8-1)", types:["21", "34", "44", "45", "51", "73", "81", "4F2"]},
 ];
 bingoList[15] = [
-    {name: "Level Swagger (6-5, 6-9, 7-1, 7-2, 7-5, 7-6, 7-7,7-9", Types: ["4F2", "65", "69", "71", "72", "75", "76", "77", "79", "81"]},
+    {name: "Level Swagger (6-5, 6-9, 7-1, 7-2, 7-5, 7-6, 7-7, 7-9)", Types: ["4F2", "65", "69", "71", "72", "75", "76", "77", "79", "81"]},
     {name: "Frog Level No Water"},
 	{name: "Defeat Boom Boom w/ Frog", types: ["boom boom"]},
 ];
@@ -85,12 +85,12 @@ bingoList[16] = [
     {name: "Complete 2 Non-Fort W4 Stages"},
 ];
 bingoList[17] = [
-    {name: "Scenic Route (2-4, 5-2, 7-1, 7-6, 8-2", types: ["24", "52", "71", "76", "82"]},
+    {name: "Scenic Route (2-4, 5-2, 7-1, 7-6, 8-2)", types: ["24", "52", "71", "76", "82"]},
     {name: "Complete 3 Non-Fort W5 Stages"},
 	{name: "Complete 3 Non-Fort W6 Stages"},
 ];
 bingoList[18] = [
-    {name: "Fort-Ship Swagger (3F1, 5F2, 6F3, First Class", types: ["3F1", "5F2", "6F3", "W6AS"]},
+    {name: "Fort-Ship Swagger (3F1, 5F2, 6F3, First Class)", types: ["3F1", "5F2", "6F3", "W6AS"]},
     {name: "Spawn Coin Ship"},
 	{name: "Special King Message"},
 ];
