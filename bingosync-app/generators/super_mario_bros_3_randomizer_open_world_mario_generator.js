@@ -4,7 +4,7 @@ var bingoList = [];
 bingoList[1] = [
     {name: "Play Spade Card", types: ["spade"]},
     {name: "Star Fanfare"},
-    {name: "Invisible Block 1-Up"},  
+    {name: "Invisible 1-Up"},  
 ];
 bingoList[2] = [
     {name: "Play Two Spade Cards", types: ["spade"]},
@@ -14,13 +14,14 @@ bingoList[2] = [
 bingoList[3] = [
     {name: "Get 15 Lives"},
     {name: "Hammer W4 Rock"},
+	{name: "Hammer W6 (middle) Rock"},
 	{name: "Cloud into Airship"},
 	{name: "W7 Prize Island"},
 ];
 bingoList[4] = [
     {name: "Beat Larry (W1)"},
     {name: "W2 Hidden Bro"},
-	{name: "Coin in Your Couch (3F1, 6-9, 7F1)", types: ["3F1", "7F1", "69"]},
+	{name: "Coin in Your Couch", types: ["3F1", "7F1", "69"]},
 ];
 bingoList[5] = [
     {name: "Beat Morton Jr. (W2)"},
@@ -50,7 +51,7 @@ bingoList[9] = [
 ];
 bingoList[10] = [
     {name: "Complete N Card"},
-    {name: "Large Power Up Block (3-5, 3-9, 4-5, 4F2, 5-2, 5-5, 6-3, 6-9, 6-10, 7F1, 7-8, 8-1)", types: ["35", "39", "4-5", "4F2", "52", "55", "63", "69", "610", "7F1", "78", "81"]},
+    {name: "Large Power Up Block", types: ["35", "39", "45", "4F2", "52", "55", "63", "69", "610", "7F1", "78", "81"]},
 	{name: "Mushroom or Flower Fanfare"},
 ];
 bingoList[11] = [
@@ -65,32 +66,32 @@ bingoList[12] = [
 ];
 bingoList[13] = [
     {name: "Complete an Autoscroller"},
-    {name: "Defeat Boom Boom w/ Tanuki Statue", types: ["boom boom"]},
-    {name: "Complete ANY Level w/ Frog Suit"}
+    {name: "Frog Level"}
+	{name: "Frog Level, No Water"},
 ];
 bingoList[14] = [
-    {name: "Unforced Forced Twisty"},
-    {name: "Secret Exit (1-3, 1F, 3-7, 4-5, 5-1)", types: ["13", "37", "45", "51", "1F"]},
-    {name: "Collect Blue Coin (2-1, 3-4, 4-4, 4-5, 4F2, 5-1, 7-3, 8-1)", types:["21", "34", "44", "45", "51", "73", "81", "4F2"]},
+    {name: "Defeat Boom Boom w/ Tanooki Statue", types: ["boom boom"]},
+	{name: "Defeat Boom Boom w/ Frog", types: ["boom boom"]},
+	{name: "Unforced Forced Twisty"},
 ];
 bingoList[15] = [
-    {name: "Level Swagger (6-5, 6-9, 7-1, 7-2, 7-5, 7-6, 7-7, 7-9)", Types: ["4F2", "65", "69", "71", "72", "75", "76", "77", "79", "81"]},
-    {name: "Frog Level No Water"},
-	{name: "Defeat Boom Boom w/ Frog", types: ["boom boom"]},
+	{name: "Level Swagger", Types: ["65", "69", "71", "72", "75", "76", "77", "79"]},
+    {name: "Secret Exit", types: ["13", "37", "45", "51", "1F"]},
+    {name: "Collect Blue Coin", types:["21", "34", "44", "45", "51", "73", "81", "4F2"]},
 ];
 bingoList[16] = [
-    {name: "Pump the Breaks - Forts (4F1, 6F1, 6F2)", types: ["4F1", "6F1", "6F2"]},
-	{name: "Go Fast - Forts (4F1, 6F1, 6F2)", types: ["4F1", "6F1", "6F2"]},
+    {name: "Pump the Breaks - Forts", types: ["4F1", "6F1", "6F2"]},
+	{name: "Go Fast - Forts", types: ["4F1", "6F1", "6F2"]},
     {name: "Complete 2 Non-Fort W2 Stages"},
     {name: "Complete 2 Non-Fort W4 Stages"},
 ];
 bingoList[17] = [
-    {name: "Scenic Route (2-4, 5-2, 7-1, 7-6, 8-2)", types: ["24", "52", "71", "76", "82"]},
+    {name: "Scenic Route", types: ["24", "52", "71", "76", "82"]},
     {name: "Complete 3 Non-Fort W5 Stages"},
 	{name: "Complete 3 Non-Fort W6 Stages"},
 ];
 bingoList[18] = [
-    {name: "Fort-Ship Swagger (3F1, 5F2, 6F3, First Class)", types: ["3F1", "5F2", "6F3", "W6AS"]},
+    {name: "Fort-Ship Swagger", types: ["3F1", "5F2", "6F3", "W6AS"]},
     {name: "Spawn Coin Ship"},
 	{name: "Special King Message"},
 ];
