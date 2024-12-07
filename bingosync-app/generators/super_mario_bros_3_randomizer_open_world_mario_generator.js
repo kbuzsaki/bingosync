@@ -3,114 +3,131 @@ bingoGenerator = require("./generators/generator_bases/srl_generator_v5.js");
 var bingoList = [];
 bingoList[1] = [
     {name: "Play Spade Card", types: ["spade"]},
-    {name: "Play Two Spade Cards", types: ["spade"]},
-    {name: "Get 15 Lives"}  
+    {name: "Star Fanfare"},
+    {name: "Invisible 1-Up"},  
 ];
 bingoList[2] = [
-    {name: "Get Gulped", types: ["boss bass"]},
-    {name: "Defeat Boss Bass", types: ["boss bass"]},
+    {name: "Play Two Spade Cards", types: ["spade"]},
+	{name: "Get Gulped"},
+    {name: "Defeat Boss Bass"},
 ];
 bingoList[3] = [
-    {name: "Star Fanfare"},
-    {name: "Find 7 Unique Items", types: ["RNG", "items"]},
+    {name: "Get 15 Lives"},
+    {name: "Hammer W4 Rock"},
+	{name: "Hammer W6 (middle) Rock"},
+	{name: "Cloud into Airship"},
+	{name: "W7 Prize Island"},
 ];
 bingoList[4] = [
-    {name: "Coin Ship: Collect All Coins"},
-    {name: "Defeat 5 Bros"},
+    {name: "Beat Larry (W1)"},
+    {name: "W2 Hidden Bro"},
+	{name: "Coin in Your Couch", types: ["3F1", "7F1", "69"]},
 ];
 bingoList[5] = [
-    {name: "W7 Both Plants", types: ["W7"]},
-    {name: "W7 Prize Island", types: ["W7"]},
+    {name: "Beat Morton Jr. (W2)"},
+    {name: "Beat Iggy (W4)"},
+	{name: "Beat Roy (W5)"},
+	{name: "Beat Ludwig von Koopa (W7)"},
 ];
 bingoList[6] = [
-    {name: "Find Large Power Up Block", types: ["RNG"]},
-    {name: "Complete a Beta Level", types: ["RNG"]},
+    {name: "Coin Ship: Collect ALl Coins"},
+    {name: "Defeat Boo"},
+	{name: "Mushroom, Flower, Star (any order)"},
 ];
 bingoList[7] = [
-   {name: "Beat Larry (W1)"},
+   {name: "Beat Lemmy (W6)", types: ["lemmy"]},
+   {name: "Beat Lemmy, 3 Balls (W6)", types: ["lemmy"]},
    {name: "Fire Kill a Koopaling"},
 ];
 bingoList[8] = [
-    {name: "Hammer W4 Rock"},
-    {name: "Cloud into Airship"},
+    {name: "Beat Wendy", types: ["wendy"]},
+    {name: "Beat Wendy, 1 or 3 Rings, (W3)", types: ["wendy"]},
+	{name: "Off Screen Wand Grab"},
 ];
 bingoList[9] = [
     {name: "Defeat Lakitu"},
-    {name: "Defeat Boo"},
-    {name: "Defeat Thwomp"},
+    {name: "Defeat Angry Sun"},
+    {name: "Complete a Beta Level"},
 ];
 bingoList[10] = [
     {name: "Complete N Card"},
-    {name: "Frog Level"},
+    {name: "Large Power Up Block", types: ["35", "39", "45", "4F2", "52", "55", "63", "69", "610", "7F1", "78", "81"]},
+	{name: "Mushroom or Flower Fanfare"},
 ];
 bingoList[11] = [
-    {name: "Beat Morton Jr. (W2)"},
-    {name: "W2 Hidden Bro"},
+    {name: "Defeat Thwomp"},
+    {name: "Defeat Disco Waffle"},
+	{name: "Tail-Whack 3 Piranhas (any stage)"},
 ];
 bingoList[12] = [
-    {name: "Beat Iggy (W4)"},
-    {name: "Boom Boom Star Kill (ORB!)", types: ["RNG"]},
+    {name: "Defeat Boom Boom w/ Hammer", types: ["boom boom"]},
+    {name: "Defeat an Enemy in Water w/ Tanooki"},
+	{name: "Win Spade Card"},
 ];
 bingoList[13] = [
-    {name: "Beat Roy (W5)"},
-    {name: "Unforced Forced Twisty"},
-    {name: "Mushroom, Flower, Star (any order)"}
+    {name: "Complete an Autoscroller"},
+    {name: "Frog Level"}
+	{name: "Frog Level, No Water"},
 ];
 bingoList[14] = [
-    {name: "100% One World", types: ["completion"]},
-    {name: "Shameful Forts (4F1, 6F1, 6F2)", types:["shameful forts"]},
-    {name: "Heroic Forts (4F1, 6F1, 6F2)", types:["shameful forts"]},
+    {name: "Defeat Boom Boom w/ Tanooki Statue", types: ["boom boom"]},
+	{name: "Defeat Boom Boom w/ Frog", types: ["boom boom"]},
+	{name: "Unforced Forced Twisty"},
 ];
 bingoList[15] = [
-    {name: "Beat Ludwig von Koopa (W7)"},
-    {name: "Off-Screen Wand Grab"},
+	{name: "Level Swagger", Types: ["65", "69", "71", "72", "75", "76", "77", "79"]},
+    {name: "Secret Exit", types: ["13", "37", "45", "51", "1F"]},
+    {name: "Collect Blue Coin", types:["21", "34", "44", "45", "51", "73", "81", "4F2"]},
 ];
 bingoList[16] = [
-    {name: "Mushroom or Flower Fanfare"},
-    {name: "Clear 8 Fortresses", types: ["fortresses"]},
-    {name: "Find 9 Unique Items", types: ["RNG", "items"]},
+    {name: "Pump the Breaks - Forts", types: ["4F1", "6F1", "6F2"]},
+	{name: "Go Fast - Forts", types: ["4F1", "6F1", "6F2"]},
+    {name: "Complete 2 Non-Fort W2 Stages"},
+    {name: "Complete 2 Non-Fort W4 Stages"},
 ];
 bingoList[17] = [
-    {name: "Clear 10 Fortresses"},
-    {name: "Defeat All 3 Forts in 3 Forter", types: ["fortresses"]},
+    {name: "Scenic Route", types: ["24", "52", "71", "76", "82"]},
+    {name: "Complete 3 Non-Fort W5 Stages"},
+	{name: "Complete 3 Non-Fort W6 Stages"},
 ];
 bingoList[18] = [
-    {name: "Fire Kill 3 Boom Booms", types: ["boom booms"]},
-    {name: "Fire Kill 4 Boom Booms", types: ["boom booms"]},
+    {name: "Fort-Ship Swagger", types: ["3F1", "5F2", "6F3", "W6AS"]},
+    {name: "Spawn Coin Ship"},
+	{name: "Special King Message"},
 ];
 bingoList[19] = [
-    {name: "3 Balls Lemmy", types: ["lemmy"]},
-    {name: "Defeat Lemmy", types: ["lemmy"]},
-    {name: "Frog a Boom Boom"},
+    {name: "100% World 1"},
+    {name: "Find 7 Unique Items", types: ["items"]},
+    {name: "W7 Defeat Both Plants"},
 ];
 bingoList[20] = [
-    {name: "1 Ring or 3 Ring Wendy", types: ["wendy"]},
-    {name: "Defeat Wendy", types: ["wendy"]},
-    {name: "Clear W3 Bonus Islands"},
+    {name: "100% World 2"},
+    {name: "100% World 4"},
+    {name: "Defeat 7 Bros", types: ["bros"]},
 ];
 bingoList[21] = [
-    {name: "100% Two World", types: ["completion"]},
-    {name: "Complete an Autoscroller", types: ["RNG"]},
-    {name: "Coin Heaven", types: ["RNG"]},
+    {name: "Fire Kill 3 Boom Booms", types: ["boom boom"]},
+    {name: "100% World 3"},
+    {name: "Clear W3 Bonus Islands"},
 ];
 bingoList[22] = [
-    {name: "Defeat Disco Waffle"},
-    {name: "Tail or Frog Clip", types: ["RNG"]},
-    {name: "Shameful Levels (7-1, 7-6, 5-2, 8-2)", types: ["RNG"]},
+    {name: "Clear 8 Forts", types: ["forts"]},
+    {name: "Clear All Forts in 3 Forter"},
+    {name: "100% World 5"},
 ];
 bingoList[23] = [
-    {name: "Tanooki a Boom Boom"},
-    {name: "Hammer a Boom Boom"},
-    {name: "Special King Message"},
+    {name: "Fire Kill 4 Boom Booms", types: ["boom boom"]},
+    {name: "Find 9 Unique Items", types: ["items"]},
+    {name: "100% World 6"},
 ];
 bingoList[24] = [
-    {name: "Spawn a Coin Ship"},
-    {name: "Fortress Swagger (3F1, 5F2, 6F3, First Class)"},
-    {name: "Level Swagger( 6-5, 6-9, 7-7, 7-9)"},
+    {name: "Clear 10 Forts", types: ["forts"]},
+    {name: "100% World 7"},
+    {name: "Find 11 Unique Items", types: ["items"]},
 ];
 bingoList[25] = [
     { name: "Defeat Bowser"},
-    { name: "Win Spade Card", types: ["spade","RNG"]},
-    { name: "Spawn White Mushroom", types: ["RNG"]},   
+    { name: "Clear 3 Stages in a Row - Hammer Suit"},
+    { name: "Spawn White Mushroom", types: ["14", "22", "38", "42", "55", "67", "72"]},   
 ];
 
