@@ -27,7 +27,7 @@ bingoList[5] = [
     {name: "Beat Morton Jr. (W2)"},
     {name: "Beat Iggy (W4)"},
 	{name: "Beat Roy (W5)"},
-	{name: "Beat Ludwig von Koopa"},
+	{name: "Beat Ludwig von Koopa (W7)"},
 ];
 bingoList[6] = [
     {name: "Coin Ship: Collect ALl Coins"},
@@ -103,7 +103,7 @@ bingoList[19] = [
 bingoList[20] = [
     {name: "100% World 2"},
     {name: "100% World 4"},
-    {name: "Defeat 7 Bros"},
+    {name: "Defeat 7 Bros", types: ["bros"]},
 ];
 bingoList[21] = [
     {name: "Fire Kill 3 Boom Booms", types: ["boom boom"]},
