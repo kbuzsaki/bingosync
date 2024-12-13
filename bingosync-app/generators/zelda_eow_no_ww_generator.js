@@ -366,6 +366,97 @@ var bingoList = {
       "overworld"
     ]
   },
+  "r37c29": {
+    "Desc": "Complete \"A Curious Child\" Sidequest",
+    "Diff": 4,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r38c29": {
+    "Desc": "Complete \"Runaway Horse\" Sidequest",
+    "Diff": 5,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r39c29": {
+    "Desc": "Complete \"Let's Play a Game\" Sidequest",
+    "Diff": 16,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r40c29": {
+    "Desc": "Complete \"Cuccos on the Loose\" Sidequest",
+    "Diff": 12,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r41c29": {
+    "Desc": "Complete \"The Firework Artist\" Sidequest",
+    "Diff": 11,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r42c29": {
+    "Desc": "Complete \"Glide Path\" Sidequest",
+    "Diff": 11,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r43c29": {
+    "Desc": "Complete \"The Rain-Making Monster\" Sidequest",
+    "Diff": 11,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r44c29": {
+    "Desc": "Complete \"Up a Wall\" Sidequest",
+    "Diff": 4,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r45c29": {
+    "Desc": "Complete \"The Zora Child's Fate\" Sidequest",
+    "Diff": 11,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r46c29": {
+    "Desc": "Complete \"Elusive Tumbleweeds\" Sidequest",
+    "Diff": 9,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r47c29": {
+    "Desc": "Complete \"Gerudo Tag Training\" Sidequest",
+    "Diff": 9,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r48c29": {
+    "Desc": "Complete \"Tornado Ghost?\" Sidequest",
+    "Diff": 10,
+    "Types": [
+      "quests"
+    ]
+  },
+  "r49c29": {
+    "Desc": "Complete \"Out of Bubble Kelp\" Sidequest",
+    "Diff": 11,
+    "Types": [
+      "quests"
+    ]
+  },
   "r2c30": {
     "Desc": "Collect 10 Stamps",
     "Diff": 7,
@@ -549,7 +640,7 @@ var bingoList = {
   },
   "r8c31": {
     "Desc": "Complete 9 Sidequests",
-    "Diff": 14,
+    "Diff": 17,
     "Types": [
       "quests",
       "dummy8"
@@ -664,7 +755,7 @@ var bingoList = {
   },
   "r32c31": {
     "Desc": "Read 15 Signs (Not Echoes)",
-    "Diff": 14,
+    "Diff": 12,
     "Types": [
       "overworld",
       "dummy32"
@@ -834,7 +925,7 @@ var bingoList = {
   },
   "r9c1": {
     "Desc": "Learn the \"Beetle\" Echo",
-    "Diff": 14,
+    "Diff": 16,
     "Types": [
       "specificEcho",
       "echoes"
@@ -842,7 +933,7 @@ var bingoList = {
   },
   "r10c1": {
     "Desc": "Learn the \"Beetle Mound\" Echo",
-    "Diff": 14,
+    "Diff": 16,
     "Types": [
       "specificEcho",
       "echoes"
@@ -1050,7 +1141,7 @@ var bingoList = {
   },
   "r36c1": {
     "Desc": "Learn the \"Fire Octo\" Echo",
-    "Diff": 13,
+    "Diff": 12,
     "Types": [
       "specificEcho",
       "echoes"
@@ -1610,7 +1701,7 @@ var bingoList = {
   },
   "r106c1": {
     "Desc": "Learn the \"Tangler Lv. 2\" Echo",
-    "Diff": 14,
+    "Diff": 13,
     "Types": [
       "specificEcho",
       "echoes"
@@ -1626,7 +1717,7 @@ var bingoList = {
   },
   "r108c1": {
     "Desc": "Learn the \"Tektite Lv. 2\" Echo",
-    "Diff": 14,
+    "Diff": 13,
     "Types": [
       "specificEcho",
       "echoes"
@@ -1642,7 +1733,7 @@ var bingoList = {
   },
   "r110c1": {
     "Desc": "Learn the \"Torch Slug\" Echo",
-    "Diff": 13,
+    "Diff": 12,
     "Types": [
       "specificEcho",
       "echoes"
@@ -1666,7 +1757,7 @@ var bingoList = {
   },
   "r113c1": {
     "Desc": "Learn the \"Tweelus\" Echo",
-    "Diff": 14,
+    "Diff": 13,
     "Types": [
       "specificEcho",
       "echoes"
