@@ -1369,6 +1369,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.sos_poot_all_items, "Story of Seasons: Pioneers of Olive Town", "SoS: PoOT All Items", "All Items"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
+    **singleton_group(GameType.spiderman_2000, "Spider-Man (2000)", "SM2K"),
     **singleton_group(GameType.splatoon_3, "Splatoon 3", "Splatoon 3", "Weapons"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.spyro_reignited, "Spyro the Dragon Reignited", "Spyro Reignited"),
@@ -1400,7 +1401,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
-    **singleton_group(GameType.spiderman_2000, "Spider-Man (2000)", "SM2K"),
 }
 GAME_GROUPS = {**MANUAL_GAME_GROUPS, **SINGLETON_GAME_GROUPS}
 
