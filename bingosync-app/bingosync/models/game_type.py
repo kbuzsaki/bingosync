@@ -447,6 +447,7 @@ class GameType(Enum):
     noita = 443
     super_mario_eclipse = 444
     elden_ring_eldendawgs = 445
+    spiderman_2000 = 446
 
     def __str__(self):
         return self.short_name
@@ -1399,6 +1400,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.zelda_minish_cap_randomizer, "Zelda: The Minish Cap Randomizer", "TMCR"),
     **singleton_group(GameType.zelda_skyward_sword, "Zelda: Skyward Sword", "Zelda: SS"),
     **singleton_group(GameType.zelda_twilight_princess, "Zelda: Twilight Princess", "Zelda: TP"),
+    **singleton_group(GameType.spiderman_2000, "Spider-Man (2000)", "SM2K"),
 }
 GAME_GROUPS = {**MANUAL_GAME_GROUPS, **SINGLETON_GAME_GROUPS}
 
