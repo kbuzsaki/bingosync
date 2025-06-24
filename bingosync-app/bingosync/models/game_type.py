@@ -447,6 +447,8 @@ class GameType(Enum):
     noita = 443
     super_mario_eclipse = 444
     elden_ring_eldendawgs = 445
+    team_fortress_2 = 446
+    team_fortress_2_hard = 447
 
     def __str__(self):
         return self.short_name
@@ -1199,6 +1201,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
+        ],
+    },
+    GameType.team_fortress_2: {
+        "name": "Team Fortress 2",
+        "variants": [
+            (GameType.team_fortress_2, "easy", "TF2 easy"),      
+            (GameType.team_fortress_2_hard, "hard", "TF2 hard"),      
         ],
     },
 }

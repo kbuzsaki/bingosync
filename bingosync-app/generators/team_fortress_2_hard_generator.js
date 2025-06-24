@@ -1,0 +1,78 @@
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+
+var bingoList = [
+    {"name": "bleed kill"},
+    {"name": "Half Zatoichi kill an enemy holding the Half Zatoichi"},
+    {"name": "kill an engineer + his sentry & dispenser in 1 life"},
+    {"name": "deny an ongoing uber push"},
+    {"name": "kill a medic who has 100% uber"},
+    {"name": "make an engi die to his own sentry"},
+    {"name": "destroy a regular sentry using melee"},
+    {"name": "get a kill with your primary, secondary and melee in 1 life"},
+    {"name": "kill an enemy with their own weapon that you picked up"},
+    {"name": "kill with the first shot of any Pistol clip"},
+    {"name": "5 kills in 1 life"},
+    {"name": "knock someone to their death"},
+    {"name": "win the round and be among the top 3 MVP"},
+    {"name": "domination"},
+    {"name": "revenge"},
+    {"name": "taunt kill"},
+    {"name": "2 kills during any uber (also counts as medic)"},
+    {"name": "get a kill without any movement input (WASD)"},
+    {"name": "get a kill without looking around (moving your mouse)"},
+
+    {"name": "Sandman moonshot"},
+    {"name": "Fan O War kill"},
+    {"name": "apply Mad Milk or Jarate to 3 enemies with 1 throw"},
+    {"name": "fully heal from <60 health only using Pretty Boy's Pocket Pistol"},
+    {"name": "kill in mid air after using all Soda Popper extra jumps"},
+
+    {"name": "Mantreads kill"},
+    {"name": "Reserve Shooter mini crit kill"},
+    {"name": "2 kills with one Airstrike jump"},
+    {"name": "fill and use any Soldier banner twice in 1 life"},
+    {"name": "2 Market Gardener crit kills in 1 life"},
+
+    {"name": "kill a medic + heal target with Third Degree"},
+    {"name": "Thermal Thruster stomp kill"},
+    {"name": "airblast reflect kill"},
+    {"name": "2 kills during Phlogistinator Mmmph"},
+    {"name": "fully heal from <100 health only using Airblast & Powerjack"},
+
+    {"name": "3+ heads using Eyelander"},
+    {"name": "Demo Shield kill"},
+    {"name": "2+ kills with 1 sticky explosion"},
+    {"name": "kill while explosive jumping as demo"},
+    {"name": "chain 2 charge kills using Tide Turner"},
+
+    {"name": "rev up Brass Beast in spawn and get a kill without unreving"},
+    {"name": "Huo Long Heater fire kill"},
+    {"name": "2 kills during single Buffalo Steak buff"},
+    {"name": "kill while crit boosted from Killing Gloves of Boxing"},
+    {"name": "pick up ammo from killed enemies to fully refill any empty Minigun"},
+
+    {"name": "with <50 metal, get back to 200 metal only using Widowmaker"},
+    {"name": "tele frag"},
+    {"name": "3 kills with 1 sentry"},
+    {"name": "kill while Wrangler jumping"},
+    {"name": "Short Circuit primary fire kill"},
+
+    {"name": "build stock Uber only using Crossbow & Amputator"},
+    {"name": "get 3 kills in 1 life as Medic"},
+    {"name": "heal >140 health with 1 crossbow arrow"},
+    {"name": "build and use stock uber only using Ubersaw"},
+    {"name": "extend a stock uber using Ubersaw"},
+
+    {"name": "kill while using Cleaner's Carbine crikey"},
+    {"name": "2 Huntsman headshots in a row (miss is ok, bodyshot resets)"},
+    {"name": "Machina penetration kill (play the sound)"},
+    {"name": "3+ heads using Bazaar Bargain"},
+    {"name": "use the Classic to headshot an enemy Sniper"},
+
+    {"name": "backstab the pyro who melted your Spy-Cycle in the same life"},
+    {"name": "destroy a building using Red Tape Recorder"},
+    {"name": "trickstab (backstab someone fighting you)"},
+    {"name": "backstab the person you are disguised as"},
+    {"name": "kill a Sniper after breaking his Razorback"},
+    {"name": "as a cloaked Spy, make an enemy suicide"}
+]
