@@ -14,7 +14,7 @@ var bingoList = [
     {"name": "kill the top scoring enemy"},
     {"name": "taunt while getting a kill"},
 
-    {"name": "Mad Milk or Jarate 2 people with 1 throw"},
+    {"name": "apply Mad Milk or Jarate to 2 enemies with 1 throw"},
     {"name": "kill with B.A.S.E. Jumper deployed"},
     {"name": "mini crit with Reserve Shooter"},
     {"name": "Mantreads or Thermal Thruster stomp"},

@@ -17,14 +17,14 @@ var bingoList = [
     {"name": "domination"},
     {"name": "revenge"},
     {"name": "taunt kill"},
-    {"name": "2 kills during any uber (also counts as medic)"},
+    {"name": "2 kills during any uber (also counts as Medic)"},
     {"name": "get a kill without any movement input (WASD)"},
     {"name": "get a kill without looking around (moving your mouse)"},
 
     {"name": "Sandman moonshot"},
     {"name": "Fan O War kill"},
     {"name": "apply Mad Milk or Jarate to 3 enemies with 1 throw"},
-    {"name": "fully heal from <60 health only using Pretty Boy's Pocket Pistol"},
+    {"name": "fully heal from <70 health only using Pretty Boy's Pocket Pistol"},
     {"name": "kill in mid air after using all Soda Popper extra jumps"},
 
     {"name": "Mantreads kill"},
@@ -37,7 +37,7 @@ var bingoList = [
     {"name": "Thermal Thruster stomp kill"},
     {"name": "airblast reflect kill"},
     {"name": "2 kills during Phlogistinator Mmmph"},
-    {"name": "fully heal from <100 health only using Airblast & Powerjack"},
+    {"name": "fully heal from <130 health only using Airblast & Powerjack"},
 
     {"name": "3+ heads using Eyelander"},
     {"name": "Demo Shield kill"},
@@ -49,7 +49,7 @@ var bingoList = [
     {"name": "Huo Long Heater fire kill"},
     {"name": "2 kills during single Buffalo Steak buff"},
     {"name": "kill while crit boosted from Killing Gloves of Boxing"},
-    {"name": "pick up ammo from killed enemies to fully refill any empty Minigun"},
+    {"name": "empty any Minigun and refill it by killing enemies and taking their ammo"},
 
     {"name": "with <50 metal, get back to 200 metal only using Widowmaker"},
     {"name": "tele frag"},
@@ -57,21 +57,21 @@ var bingoList = [
     {"name": "kill while Wrangler jumping"},
     {"name": "Short Circuit primary fire kill"},
 
-    {"name": "build stock Uber only using Crossbow & Amputator"},
+    {"name": "build 100% stock Uber only using Crossbow & Amputator"},
     {"name": "get 3 kills in 1 life as Medic"},
     {"name": "heal >140 health with 1 crossbow arrow"},
     {"name": "build and use stock uber only using Ubersaw"},
     {"name": "extend a stock uber using Ubersaw"},
 
-    {"name": "kill while using Cleaner's Carbine crikey"},
+    {"name": "kill with mini crits from Cleaner's Carbine crikey"},
     {"name": "2 Huntsman headshots in a row (miss is ok, bodyshot resets)"},
     {"name": "Machina penetration kill (play the sound)"},
     {"name": "3+ heads using Bazaar Bargain"},
     {"name": "use the Classic to headshot an enemy Sniper"},
 
-    {"name": "backstab the pyro who melted your Spy-Cycle in the same life"},
+    {"name": "kill the pyro who melted your Spy-Cycle in the same life"},
     {"name": "destroy a building using Red Tape Recorder"},
-    {"name": "trickstab (backstab someone fighting you)"},
+    {"name": "trickstab (backstab someone who is fighting you)"},
     {"name": "backstab the person you are disguised as"},
     {"name": "kill a Sniper after breaking his Razorback"},
     {"name": "as a cloaked Spy, make an enemy suicide"}
