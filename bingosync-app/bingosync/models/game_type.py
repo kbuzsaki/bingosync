@@ -451,6 +451,7 @@ class GameType(Enum):
     team_fortress_2_hard = 447
     spiderman_2000 = 448
     slay_the_spire = 449
+    tomba = 450
 
     def __str__(self):
         return self.short_name
@@ -1082,6 +1083,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.super_smash_bros_brawl_basic, "Basic", "SSBB Basic"),
         ],
     },
+    GameType.team_fortress_2: {
+        "name": "Team Fortress 2",
+        "variants": [
+            (GameType.team_fortress_2, "easy", "TF2 easy"),      
+            (GameType.team_fortress_2_hard, "hard", "TF2 hard"),      
+        ],
+    },
     GameType.terraria: {
         "name": "Terraria",
         "variants": [
@@ -1203,13 +1211,6 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.zelda_wind_waker_sd, "Normal", "TWW SD"),
             (GameType.zelda_wind_waker_randomizer, "Randomizer", "TWW Rando"),
-        ],
-    },
-    GameType.team_fortress_2: {
-        "name": "Team Fortress 2",
-        "variants": [
-            (GameType.team_fortress_2, "easy", "TF2 easy"),      
-            (GameType.team_fortress_2_hard, "hard", "TF2 hard"),      
         ],
     },
 }
@@ -1397,6 +1398,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.the_forest, "The Forest", "The Forest"),
     **singleton_group(GameType.the_long_dark, "The Long Dark", "The Long Dark"),
     **singleton_group(GameType.threads_of_fate, "Threads of Fate", "Threads of Fate"),
+    **singleton_group(GameType.tomba, "Tomba!", "Tomba!"),
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
