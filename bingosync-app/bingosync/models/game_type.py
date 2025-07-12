@@ -453,6 +453,7 @@ class GameType(Enum):
     slay_the_spire = 449
     tomba = 450
     disney_epic_mickey_rebrushed = 451
+    garn47 = 452
 
     def __str__(self):
         return self.short_name
@@ -1277,6 +1278,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
     **singleton_group(GameType.final_fantasy_5_career_day, "Final Fantasy 5 Career Day", "FF5 Career Day"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
+    **singleton_group(GameType.garn47, "Garn47", "Garn47"),
     **singleton_group(GameType.geometry_dash, "Geometry Dash", "Geometry Dash"),
     **singleton_group(GameType.golden_sun_lost_age_randomizer, "Golden Sun: The Lost Age Randomizer", "GS: TLA Rando"),
     **singleton_group(GameType.gta_v, "Grand Theft Auto V", "GTA V"),
