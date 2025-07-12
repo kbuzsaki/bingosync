@@ -462,6 +462,7 @@ class GameType(Enum):
     drakkhen_snes = 458
     dark_souls_v2 = 459
     super_mario_party_jamboree = 460
+    xenoblade_3 = 461
 
     def __str__(self):
         return self.short_name
@@ -1437,6 +1438,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
     **singleton_group(GameType.wwe_supercard, "WWE Supercard", "WWE SC"),
+    **singleton_group(GameType.xenoblade_3, "Xenoblade Chronicles 3: Future Redeemed", "Xenoblade 3 FR"),
     **singleton_group(GameType.xenoblade_chronicles_future_connected, "Xenoblade Chronicles: Future Connected", "XC FC"),
     **singleton_group(GameType.yooka_laylee, "Yooka-Laylee", "Yook"),
     **singleton_group(GameType.yooka_laylee_impossible_lair, "Yooka-Laylee and the Impossible Lair", "YLIL"),
