@@ -456,6 +456,7 @@ class GameType(Enum):
     garn47 = 452
     pokemon_scarlet_violet = 453
     blue_prince = 454
+    fear_and_hunger_2 = 455
 
     def __str__(self):
         return self.short_name
@@ -1279,6 +1280,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.fallout_4, "Fallout 4", "Fallout 4"),
     **singleton_group(GameType.fallout_new_vegas, "Fallout: New Vegas", "Fallout: NV"),
     **singleton_group(GameType.fantastic_contraption, "Fantastic Contraption", "Fantastic Contraption"),
+    **singleton_group(GameType.fear_and_hunger_2, "Fear & Hunger 2: Termina", "F&H2"),
     **singleton_group(GameType.final_fantasy_5_career_day, "Final Fantasy 5 Career Day", "FF5 Career Day"),
     **singleton_group(GameType.final_fantasy_8, "Final Fantasy 8", "FF8"),
     **singleton_group(GameType.garn47, "Garn47", "Garn47"),
