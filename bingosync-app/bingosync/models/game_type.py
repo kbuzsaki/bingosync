@@ -461,6 +461,7 @@ class GameType(Enum):
     mario_kart_8_deluxe_online = 457
     drakkhen_snes = 458
     dark_souls_v2 = 459
+    super_mario_party_jamboree = 460
 
     def __str__(self):
         return self.short_name
@@ -1418,6 +1419,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.super_mario_eclipse, "Super Mario Eclipse", "SME"),
     **singleton_group(GameType.super_mario_galaxy, "Super Mario Galaxy", "SM Galaxy"),
     **singleton_group(GameType.super_mario_galaxy_2, "Super Mario Galaxy 2", "SM Galaxy 2"),
+    **singleton_group(GameType.super_mario_party_jamboree, "Super Mario Party Jamboree", "SMPJ 30 Turn", "30 Turns, Any Board"),
     **singleton_group(GameType.super_mario_rpg_randomizer, "Super Mario RPG", "SMRPG Rando", "Randomizer"),
     **singleton_group(GameType.super_meat_boy, "Super Meat Boy", "Super Meat Boy"),
     **singleton_group(GameType.super_metroid_alttp_crossover_randomizer,
