@@ -458,6 +458,7 @@ class GameType(Enum):
     blue_prince = 454
     fear_and_hunger_2 = 455
     opposite_day_2 = 456
+    mario_kart_8_deluxe_online = 457
 
     def __str__(self):
         return self.short_name
@@ -835,6 +836,13 @@ MANUAL_GAME_GROUPS = {
         "variants": [
             (GameType.majoras_mask, "Normal", "Zelda: MM"),
             (GameType.majoras_mask_item_randomizer, "Item Randomizer", "Zelda: MM IR"),
+        ],
+    },
+    GameType.mario_kart_8_deluxe: {
+        "name": "Mario Kart 8 Deluxe",
+        "variants": [
+            (GameType.mario_kart_8_deluxe, "Normal", "MK8 Deluxe"),
+            (GameType.mario_kart_8_deluxe_online, "Online", "MK8D Online"),
         ],
     },
     GameType.mario_maker_2: {
@@ -1314,7 +1322,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.luigis_mansion_3, "Luigi's Mansion 3", "LM 3"),
     **singleton_group(GameType.luigis_mansion_dark_moon, "Luigi's Mansion: Dark Moon", "LM Dark Moon"),
     **singleton_group(GameType.make_a_good_megaman_level_2, "Make a Good Mega Man Level Contest 2", "MaGMMLC2"),
-    **singleton_group(GameType.mario_kart_8_deluxe, "Mario Kart 8 Deluxe", "MK8 Deluxe"),
     **singleton_group(GameType.mario_kart_double_dash, "Mario Kart: Double Dash", "MKDD"),
     **singleton_group(GameType.mario_kart_wii, "Mario Kart Wii", "MKW"),
     **singleton_group(GameType.mario_party_advance, "Mario Party Advance", "MP Advance"),
