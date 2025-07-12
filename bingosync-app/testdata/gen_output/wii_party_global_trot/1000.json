@@ -27,31 +27,31 @@
         "name": "Buy all 3 cards from a shop."
     },
     {
-        "name": "Don\u2019t use any special cards for 4 rounds in a row."
+        "name": "Don't use any special cards for 4 turns in a row."
     },
     {
-        "name": "Win an 1 vs. 3 minigame."
+        "name": "Win a 1 vs. 3 minigame."
     },
     {
         "name": "Travel the same amount of spaces 3 turns in a row."
     },
     {
-        "name": "Have the same (minimum) distance to 2 Hot Spots."
+        "name": "Have the same minimum distance to 2 Hot Spots."
     },
     {
-        "name": "Land on the same space an opponent is standing on."
+        "name": "Land on the starting space again."
     },
     {
         "name": "Have 5 special cards at once."
     },
     {
-        "name": "Land on a Surprise-space."
+        "name": "Land on a surprise space."
     },
     {
         "name": "Steal/Get coins from an opponent."
     },
     {
-        "name": "Get the last picture in the round."
+        "name": "Get the last photo of the game."
     },
     {
         "name": "Collect at least 40 coins from minigames."
@@ -60,10 +60,10 @@
         "name": "Get a photo from any Asian country."
     },
     {
-        "name": "Get transported by an UFO."
+        "name": "Get transported by a UFO."
     },
     {
-        "name": "Land on the Start again."
+        "name": "Land on the same space as an opponent."
     },
     {
         "name": "Move in a train."

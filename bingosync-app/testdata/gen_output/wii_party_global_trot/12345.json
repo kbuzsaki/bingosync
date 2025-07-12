@@ -12,10 +12,10 @@
         "name": "Steal/Get coins from an opponent."
     },
     {
-        "name": "Win an 1 vs. 3 minigame."
+        "name": "Win a 1 vs. 3 minigame."
     },
     {
-        "name": "Land on the Start again."
+        "name": "Land on the same space as an opponent."
     },
     {
         "name": "Win 5 minigames in a row."
@@ -27,7 +27,7 @@
         "name": "Collect at least 40 coins from minigames."
     },
     {
-        "name": "Land on the same space an opponent is standing on."
+        "name": "Land on the starting space again."
     },
     {
         "name": "Get paid 10 coins for a job."
@@ -51,10 +51,10 @@
         "name": "Move in a train."
     },
     {
-        "name": "Take 2 jobs in successive rounds."
+        "name": "Take 2 jobs in consecutive turns."
     },
     {
-        "name": "Get the last picture in the round."
+        "name": "Get the last photo of the game."
     },
     {
         "name": "Have 2 train cards at once."
@@ -66,10 +66,10 @@
         "name": "Get a photo from any African country."
     },
     {
-        "name": "Get transported by an UFO."
+        "name": "Get transported by a UFO."
     },
     {
-        "name": "Sail with a boat."
+        "name": "Sail on a boat."
     },
     {
         "name": "Get a photo from any American country."

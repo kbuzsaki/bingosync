@@ -9,7 +9,7 @@
         "name": "Steal/Get coins from an opponent."
     },
     {
-        "name": "Fly in a plain."
+        "name": "Fly on a plane."
     },
     {
         "name": "Have 2 train cards at once."
@@ -18,7 +18,7 @@
         "name": "Have 2 helicopter cards at once."
     },
     {
-        "name": "Land on the Start again."
+        "name": "Land on the same space as an opponent."
     },
     {
         "name": "Fly in a helicopter."
@@ -27,7 +27,7 @@
         "name": "Become a Super Mii and buy a photo."
     },
     {
-        "name": "Don\u2019t use any special cards for 4 rounds in a row."
+        "name": "Don't use any special cards for 4 turns in a row."
     },
     {
         "name": "Travel the same amount of spaces 3 turns in a row."
@@ -42,16 +42,16 @@
         "name": "Have cards that sum up to 20 or more."
     },
     {
-        "name": "Take 2 jobs in successive rounds."
+        "name": "Take 2 jobs in consecutive turns."
     },
     {
-        "name": "Win an 1 vs. 3 minigame."
+        "name": "Win a 1 vs. 3 minigame."
     },
     {
-        "name": "Land on a Surprise-space."
+        "name": "Land on a surprise space."
     },
     {
-        "name": "Get the last picture in the round."
+        "name": "Get the last photo of the game."
     },
     {
         "name": "Get paid 10 coins for a job."
