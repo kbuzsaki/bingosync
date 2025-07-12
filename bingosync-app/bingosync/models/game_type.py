@@ -463,6 +463,7 @@ class GameType(Enum):
     dark_souls_v2 = 459
     super_mario_party_jamboree = 460
     xenoblade_3 = 461
+    untitled_goose_game_v2 = 462
 
     def __str__(self):
         return self.short_name
@@ -1147,6 +1148,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.undertale_genocide, "Genocide", "Undertale Genocide"),
         ],
     },
+    GameType.untitled_goose_game: {
+        "name": "Untitled Goose Game",
+        "variants": [
+            (GameType.untitled_goose_game, "V1", "Goose Game"),
+            (GameType.untitled_goose_game_v2, "V2", "Goose Game V2"),
+        ],
+    },
     GameType.wii_party_global_trot: {
         "name": "Wii Party",
         "variants": [
@@ -1433,7 +1441,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.tony_hawks_pro_skater_1_2, "Tony Hawk's Pro Skater 1+2", "THPS 1+2"),
     **singleton_group(GameType.touhou_luna_nights, "Touhou Luna Nights", "TLN"),
     **singleton_group(GameType.transistor, "Transistor", "Transistor"),
-    **singleton_group(GameType.untitled_goose_game, "Untitled Goose Game", "Goose Game"),
     **singleton_group(GameType.video_games, "Video Games Bingo", "Video Games"),
     **singleton_group(GameType.wii_play, "Wii Play", "Wii Play"),
     **singleton_group(GameType.wii_sports, "Wii Sports", "Wii Sports"),
