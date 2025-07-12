@@ -454,6 +454,7 @@ class GameType(Enum):
     tomba = 450
     disney_epic_mickey_rebrushed = 451
     garn47 = 452
+    pokemon_scarlet_violet = 453
 
     def __str__(self):
         return self.short_name
@@ -1352,6 +1353,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.pokemon_omega_ruby_alpha_sapphire, "Pokémon Omega Ruby/Alpha Sapphire", "Poké OR/AS"),
     **singleton_group(GameType.pokemon_platinum, "Pokémon Platinum", "Poké Plat."),
     **singleton_group(GameType.pokemon_ruby_sapphire, "Pokémon Ruby/Sapphire", "Poké Ruby/Sapph"),
+    **singleton_group(GameType.pokemon_scarlet_violet, "Pokémon Scarlet/Violet", "Poké SV", "Wild Pokémon Race"),
     **singleton_group(GameType.pokemon_snap, "Pokémon Snap", "Poké Snap"),
     **singleton_group(GameType.pokemon_sword_shield, "Pokémon Sword/Shield", "Poké SWSH"),
     **singleton_group(GameType.pokemon_x_y, "Pokémon X and Y", "Poké XY"),
