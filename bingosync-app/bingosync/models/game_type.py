@@ -449,6 +449,7 @@ class GameType(Enum):
     elden_ring_eldendawgs = 445
     team_fortress_2 = 446
     team_fortress_2_hard = 447
+    spiderman_2000 = 448
 
     def __str__(self):
         return self.short_name
@@ -1377,6 +1378,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.sos_poot_all_items, "Story of Seasons: Pioneers of Olive Town", "SoS: PoOT All Items", "All Items"),
     **singleton_group(GameType.soul_knight, "Soul Knight", "Soul Knight"),
     **singleton_group(GameType.spelunky_2, "Spelunky 2", "Spelunk 2"),
+    **singleton_group(GameType.spiderman_2000, "Spider-Man (2000)", "SM2K"),
     **singleton_group(GameType.splatoon_3, "Splatoon 3", "Splatoon 3", "Weapons"),
     **singleton_group(GameType.spyro_3_year_of_the_dragon, "Spyro: Year of the Dragon", "Spyro: YotD"),
     **singleton_group(GameType.spyro_reignited, "Spyro the Dragon Reignited", "Spyro Reignited"),
