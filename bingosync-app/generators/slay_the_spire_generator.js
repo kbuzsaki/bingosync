@@ -1,4 +1,6 @@
-[
+bingoGenerator = require("./generators/generator_bases/simple_generator.js");
+
+var bingoList = [
 {"name": "Finish Act I", "types": ["Exordium"]},
 {"name": "Finish Act I in at least 0:10:00", "types": ["Exordium"]},
 {"name": "Finish Act I in at least 0:15:00", "types": ["Exordium"]},

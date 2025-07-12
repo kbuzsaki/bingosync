@@ -450,6 +450,7 @@ class GameType(Enum):
     team_fortress_2 = 446
     team_fortress_2_hard = 447
     spiderman_2000 = 448
+    slay_the_spire = 449
 
     def __str__(self):
         return self.short_name
@@ -1370,6 +1371,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.simpsons_hit_and_run, "The Simpsons: Hit & Run", "SHaR"),
     **singleton_group(GameType.sky_children_of_the_light, "Sky: Children of the Light", "Sky: COTL"),
     **singleton_group(GameType.skyrim, "The Elder Scrolls V: Skyrim", "Skyrim"),
+    **singleton_group(GameType.slay_the_spire, "Slay the Spire", "Slay the Spire"),
     **singleton_group(GameType.sludgelife, "Sludgelife", "Sludgelife"),
     **singleton_group(GameType.smash_ultimate_world_of_light, "Smash Ultimate: World of Light", "Smush: WoL"),
     **singleton_group(GameType.snailiad, "Snailiad", "Snailiad"),

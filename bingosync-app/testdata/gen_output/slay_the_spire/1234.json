@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Kill 2 enemies at once"
+    },
+    {
+        "name": "Deck size > 50"
+    },
+    {
+        "name": "Heal from an event"
+    },
+    {
+        "name": "Remove 15+ block with one card"
+    },
+    {
+        "name": "Win a fight with 1 HP remaining"
+    },
+    {
+        "name": "All Relics start with letter B, C, P or R at start Act II"
+    },
+    {
+        "name": "Kill an enemy while entangled"
+    },
+    {
+        "name": "Play 5 different strikes in a turn"
+    },
+    {
+        "name": "Collect 5 pairs of nonbasic cards"
+    },
+    {
+        "name": "Stack vulnerable, frail or weak to 5"
+    },
+    {
+        "name": "Finish Act II in at least 0:40:00"
+    },
+    {
+        "name": "Start your turn with 10+ block"
+    },
+    {
+        "name": "Empty a 10 card hand"
+    },
+    {
+        "name": "Spirit poop relic"
+    },
+    {
+        "name": "4 common colorless cards in hand"
+    },
+    {
+        "name": "Deck size < 5"
+    },
+    {
+        "name": "5 powers in hand"
+    },
+    {
+        "name": "Only upgraded cards in hand"
+    },
+    {
+        "name": "Kill 4 minions in 1 fight"
+    },
+    {
+        "name": "Take 30 unblocked damage in 1 turn"
+    },
+    {
+        "name": "Enemy deals 0 damage with an unblocked attack"
+    },
+    {
+        "name": "Finish Act II with 3 or fewer upgraded cards"
+    },
+    {
+        "name": "99+ Damage from one effect"
+    },
+    {
+        "name": "Lose a buff twice in one fight"
+    },
+    {
+        "name": "5+ max energy"
+    }
+]

@@ -66,7 +66,7 @@ bingoList[12] = [
 ];
 bingoList[13] = [
     {name: "Complete an Autoscroller"},
-    {name: "Frog Level"}
+    {name: "Frog Level"},
 	{name: "Frog Level, No Water"},
 ];
 bingoList[14] = [
