@@ -21,10 +21,10 @@
         "name": "Build any LGBTQ Flag"
     },
     {
-        "name": "Make a Level 30 Enchantment Table"
+        "name": "Breed 2 Pigs"
     },
     {
-        "name": "Spawn a Chicken from an Egg"
+        "name": "Find a Stronghold"
     },
     {
         "name": "Find an 'Ice Spikes' Biome (Formerly 'Mutated Ice Flats' Biome)"
@@ -39,7 +39,7 @@
         "name": "Find a Swamp/Witch's Hut"
     },
     {
-        "name": "Brew a Potion of Night Vision"
+        "name": "Cure a Zombie Villager"
     },
     {
         "name": "Ride a Minecart"
@@ -54,9 +54,6 @@
         "name": "Kill 10 Chickens"
     },
     {
-        "name": "Enter the End"
-    },
-    {
         "name": "Find a Nether Fortress"
     },
     {
@@ -69,9 +66,12 @@
         "name": "Enchant an Item"
     },
     {
-        "name": "Light a Firework Rocket"
+        "name": "Tame a Donkey"
     },
     {
         "name": "Get a Stack of any Food"
+    },
+    {
+        "name": "Light a Firework Rocket"
     }
 ]

@@ -128,9 +128,6 @@ var bingoList = [
         "name": "Reach the Hight Limit (y=256)"
     },
     {
-        "name": "Get the 'Levitation' Effect"
-    },
-    {
         "name": "Enchant an Item"
     },
     {

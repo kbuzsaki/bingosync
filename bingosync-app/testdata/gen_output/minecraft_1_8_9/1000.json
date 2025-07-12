@@ -15,10 +15,10 @@
         "name": "Cure a Zombie Villager"
     },
     {
-        "name": "Get the 'Levitation' Effect"
+        "name": "Reach the Hight Limit (y=256)"
     },
     {
-        "name": "Spawn a Chicken from an Egg"
+        "name": "Find a Stronghold"
     },
     {
         "name": "Make a Level 30 Enchantment Table"
@@ -60,18 +60,18 @@
         "name": "Kill the Wither"
     },
     {
+        "name": "Spawn a Chicken from an Egg"
+    },
+    {
         "name": "Find an 'Ice Spikes' Biome (Formerly 'Mutated Ice Flats' Biome)"
     },
     {
         "name": "Find a Desert Temple"
     },
     {
-        "name": "Grow Wheat"
+        "name": "Place a Beacon"
     },
     {
-        "name": "Fill a Map"
-    },
-    {
-        "name": "Full set of Wooden Tools"
+        "name": "Find a Village"
     }
 ]

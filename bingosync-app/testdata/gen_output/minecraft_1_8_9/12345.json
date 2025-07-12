@@ -6,7 +6,7 @@
         "name": "Brew a Potion"
     },
     {
-        "name": "Reach the Hight Limit (y=256)"
+        "name": "Kill all 3 Elder Guardians in 1 Ocean Monument"
     },
     {
         "name": "Get a Stack of any Food"
@@ -15,7 +15,7 @@
         "name": "Drink a Bucket of Milk"
     },
     {
-        "name": "Tame a Mule"
+        "name": "Full set of Wooden Tools"
     },
     {
         "name": "Kill 10 Chickens"
@@ -24,7 +24,7 @@
         "name": "Brew a Potion of Night Vision"
     },
     {
-        "name": "Full set of Diamond Tools"
+        "name": "Find a Jungle Temple"
     },
     {
         "name": "Full set of Leather Armour"
@@ -36,19 +36,22 @@
         "name": "Find a Nametag"
     },
     {
-        "name": "Enter the End"
+        "name": "Tame a Wolf"
     },
     {
-        "name": "Find a Swamp/Witch's Hut"
+        "name": "Ride a Minecart"
     },
     {
         "name": "Find a Fossil"
     },
     {
-        "name": "Brew a Potion of Instant Health"
+        "name": "Make a Functioning Mob Farm"
     },
     {
-        "name": "Spawn a Chicken from an Egg"
+        "name": "Find a Swamp/Witch's Hut"
+    },
+    {
+        "name": "Find a Stronghold"
     },
     {
         "name": "Breed 2 Sheep"
@@ -63,15 +66,12 @@
         "name": "Make a Snow Golem"
     },
     {
-        "name": "Repair a Tool/Armour"
-    },
-    {
-        "name": "Build any LGBTQ Flag"
+        "name": "Breed 2 Cows"
     },
     {
         "name": "Kill the Ender Dragon"
     },
     {
-        "name": "Kill a Ghast"
+        "name": "Build any LGBTQ Flag"
     }
 ]
