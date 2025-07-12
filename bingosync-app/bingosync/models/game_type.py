@@ -452,6 +452,7 @@ class GameType(Enum):
     spiderman_2000 = 448
     slay_the_spire = 449
     tomba = 450
+    disney_epic_mickey_rebrushed = 451
 
     def __str__(self):
         return self.short_name
@@ -1259,6 +1260,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.deaths_door, "Death's Door", "Death's Door"),
     **singleton_group(GameType.demoncrawl, "Demoncrawl", "Demoncrawl"),
     **singleton_group(GameType.destiny_2, "Destiny 2", "Destiny 2"),
+    **singleton_group(GameType.disney_epic_mickey_rebrushed, "Disney Epic Mickey: Rebrushed", "DEMR"),
     **singleton_group(GameType.disneyland_adventures, "Disneyland Adventures", "Disneyland Adventures"),
     **singleton_group(GameType.disneys_magical_mirror, "Disney's Magical Mirror Starring Mickey Mouse", "DMMSMM"),
     **singleton_group(GameType.donald_duck_goin_quackers, "Donald Duck: Goin' Quackers!", "DD: GQ!"),
