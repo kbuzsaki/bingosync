@@ -460,6 +460,7 @@ class GameType(Enum):
     opposite_day_2 = 456
     mario_kart_8_deluxe_online = 457
     drakkhen_snes = 458
+    dark_souls_v2 = 459
 
     def __str__(self):
         return self.short_name
@@ -632,6 +633,13 @@ MANUAL_GAME_GROUPS = {
             (GameType.custom_randomized, "Randomized", "Custom (Rand)"),
             (GameType.custom_srl_v5, "SRL v5", "Custom (SRLv5)"),
             (GameType.custom_isaac, "Isaac", "Custom (Isaac)"),
+        ],
+    },
+    GameType.dark_souls_v2: {
+        "name": "Dark Souls",
+        "variants": [
+            (GameType.dark_souls_v2, "V2", "Dark Souls V2"),
+            (GameType.dark_souls, "V1", "Dark Souls"),
         ],
     },
     GameType.darkest_dungeon: {
@@ -1267,7 +1275,6 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.cuphead, "Cuphead", "Cuphead"),
     **singleton_group(GameType.cyberpunk_2077, "Cyberpunk 2077", "CP2077"),
     **singleton_group(GameType.dark_devotion, "Dark Devotion", "Dark Devotion"),
-    **singleton_group(GameType.dark_souls, "Dark Souls", "Dark Souls"),
     **singleton_group(GameType.dark_souls_2, "Dark Souls 2", "Dark Souls 2"),
     **singleton_group(GameType.dark_souls_3, "Dark Souls 3", "Dark Souls 3"),
     **singleton_group(GameType.days_gone, "Days Gone", "Days Gone"),
