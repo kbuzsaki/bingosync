@@ -457,6 +457,7 @@ class GameType(Enum):
     pokemon_scarlet_violet = 453
     blue_prince = 454
     fear_and_hunger_2 = 455
+    opposite_day_2 = 456
 
     def __str__(self):
         return self.short_name
@@ -1340,6 +1341,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.no_mans_sky, "No Man's Sky", "No Man's Sky"),
     **singleton_group(GameType.noita, "Noita", "Noita"),
     **singleton_group(GameType.oceanhorn_2, "Oceanhorn 2: Knights of the Lost Realm", "Oceanhorn 2"),
+    **singleton_group(GameType.opposite_day_2, "Opposite Day 2", "Opposite Day 2"),
     **singleton_group(GameType.otogi, "Otogi: Myth of Demons", "Otogi"),
     **singleton_group(GameType.peggle_deluxe, "Peggle Deluxe", "PD EGM", "EGM"),
     **singleton_group(GameType.peggle_nights, "Peggle Nights", "PN UEGM", "UEGM"),
