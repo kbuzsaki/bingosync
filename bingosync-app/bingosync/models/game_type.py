@@ -455,6 +455,7 @@ class GameType(Enum):
     disney_epic_mickey_rebrushed = 451
     garn47 = 452
     pokemon_scarlet_violet = 453
+    blue_prince = 454
 
     def __str__(self):
         return self.short_name
@@ -1230,6 +1231,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.battleblock_theater, "BattleBlock Theater", "BBT"),
     **singleton_group(GameType.bloodborne, "Bloodborne", "Bloodborne"),
     **singleton_group(GameType.bloodstained_rando, "Bloodstained: Ritual of the Night Randomizer", "Bloodstained Rando"),
+    **singleton_group(GameType.blue_prince, "Blue Prince", "Blue Prince"),
     **singleton_group(GameType.bluey, "Bluey: The Videogame", "Bluey: The Videogame"),
     **singleton_group(GameType.bug_fables, "Bug Fables: The Everlasting Sapling", "Bug Fables"),
     **singleton_group(GameType.bugs_bunny_lost_in_time, "Bugs Bunny Lost in Time", "Bugs Bunny LIT"),
