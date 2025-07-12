@@ -459,6 +459,7 @@ class GameType(Enum):
     fear_and_hunger_2 = 455
     opposite_day_2 = 456
     mario_kart_8_deluxe_online = 457
+    drakkhen_snes = 458
 
     def __str__(self):
         return self.short_name
@@ -1283,6 +1284,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.doodle_champion_island_games_begin, "Doodle Champion Island Games Begin!", "Doodle Champion Island Games Begin!"),
     **singleton_group(GameType.doom_2016, "DOOM (2016)", "DOOM (2016)"),
     **singleton_group(GameType.dragon_warrior_monsters, "Dragon Warrior Monsters", "DWM"),
+    **singleton_group(GameType.drakkhen_snes, "Drakkhen (SNES)", "Drakkhen"),
     **singleton_group(GameType.dream, "Dream", "Dream"),
     **singleton_group(GameType.escape_from_tarkov, "Escape from Tarkov", "Escape from Tarkov"),
     **singleton_group(GameType.fallout_3, "Fallout 3", "Fallout 3"),
