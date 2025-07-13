@@ -464,6 +464,7 @@ class GameType(Enum):
     super_mario_party_jamboree = 460
     xenoblade_3 = 461
     untitled_goose_game_v2 = 462
+    monster_hunter_wilds = 463
 
     def __str__(self):
         return self.short_name
@@ -1352,6 +1353,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.mgs_peace_walker, "MGS: Peace Walker", "MGSPW"),
     **singleton_group(GameType.mgs_twin_snakes, "Metal Gear Solid: The Twin Snakes", "MGS: TTS"),
     **singleton_group(GameType.monkey_island_1_3, "Monkey Island (1-3)", "MI (1-3)"),
+    **singleton_group(GameType.monster_hunter_wilds, "Monster Hunter: Wilds", "MHWilds"),
     **singleton_group(GameType.monster_hunter_world, "Monster Hunter World", "MHW"),
     **singleton_group(GameType.monsters_inc_scare_island, "Monsters, Inc. Scare Island", "Monsters, Inc"),
     **singleton_group(GameType.mul_ty_player, "Mul-TY-Player", "MTP"),
