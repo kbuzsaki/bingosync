@@ -465,6 +465,7 @@ class GameType(Enum):
     xenoblade_3 = 461
     untitled_goose_game_v2 = 462
     monster_hunter_wilds = 463
+    wii_sports_club_stamps = 464
 
     def __str__(self):
         return self.short_name
@@ -1168,6 +1169,7 @@ MANUAL_GAME_GROUPS = {
             (GameType.wii_sports_club_all_sports, "All Sports", "WSC All Sports"),
             (GameType.wii_sports_club_golf_only, "Golf Only", "WSC Golf Only"),
             (GameType.wii_sports_club_all_sports_expert, "All Sports Expert", "WSC All Sports Expert"),
+            (GameType.wii_sports_club_stamps, "Stamps", "WSC Stamps"),
         ],
     },
     GameType.wii_sports_resort: {
