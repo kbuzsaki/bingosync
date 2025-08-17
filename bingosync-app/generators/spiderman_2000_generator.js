@@ -66,7 +66,7 @@ var bingoList = [
 "Die by a press",
 "Die by a laser",
 "Grab the 6 fire cartridges in Waterfront Warehouse",
-"Stand on the Pork'n Donuts billboard in Police Chopper Chase",
+"Touch the Pork'n Donuts billboard in Police Chopper Chase",
 "Die by fire in Bugle's Basement",
 "Stand on top of 2 cranes on the same level",
 "Stand on the Carnage billboard on Get To The Bank",
