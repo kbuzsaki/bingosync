@@ -28,6 +28,7 @@ class Room(models.Model):
     passphrase = models.CharField(max_length=255)
     active = models.BooleanField("Active", default=False)
     hide_card = models.BooleanField("Initially Hide Card", default=False)
+    player_count = models.SmallIntegerField(default=0)
 
     class Meta:
         indexes = [
