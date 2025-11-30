@@ -153,6 +153,7 @@ class Room(models.Model):
 
     def update_active(self):
         self.active = len(self.connected_players) > 0
+        self.player_count = len(self.players)
         self.save()
 
     @property
