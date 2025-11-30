@@ -36,6 +36,7 @@ class Room(models.Model):
             # TODO: make this a partial index after upgrading Django
             models.Index(fields=["active"]),
             models.Index(fields=["created_date"]),
+            models.Index(fields=["player_count"]),
         ]
 
     def __str__(self):
