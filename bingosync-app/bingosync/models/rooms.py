@@ -97,7 +97,7 @@ class Room(models.Model):
             "player_set",
         )
         if hide_solo:
-            return rooms.annotate(num_players=models.Count('player')).filter(num_players__gt=1)
+            return rooms.filter(player_count__gt=1)
         else:
             return rooms.all()
 
