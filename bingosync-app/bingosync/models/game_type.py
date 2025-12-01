@@ -466,6 +466,7 @@ class GameType(Enum):
     untitled_goose_game_v2 = 462
     monster_hunter_wilds = 463
     wii_sports_club_stamps = 464
+    hollow_knight_silksong = 465
 
     def __str__(self):
         return self.short_name
@@ -1324,6 +1325,7 @@ SINGLETON_GAME_GROUPS = {
     **singleton_group(GameType.hat_in_time, "A Hat in Time", "A Hat in Time"),
     **singleton_group(GameType.hell_pie, "Hell Pie", "Hell Pie"),
     **singleton_group(GameType.hogs_of_war, "Hogs of War", "Hogs of War"),
+    **singleton_group(GameType.hollow_knight_silksong, "Hollow Knight: Silksong", "HK: Silksong"),
     **singleton_group(GameType.horizon_forbidden_west, "Horizon Forbidden West", "HFW"),
     **singleton_group(GameType.iconoclasts, "Iconoclasts", "Iconoclasts"),
     **singleton_group(GameType.infinite_craft, "Infinite Craft", "Inf Craft"),
