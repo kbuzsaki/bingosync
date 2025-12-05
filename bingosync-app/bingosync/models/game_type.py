@@ -729,6 +729,7 @@ MANUAL_GAME_GROUPS = {
             (GameType.hitman_3_santa_fortuna, "Santa Fortuna", "Hitman 3 Santa Fortuna"),
             (GameType.hitman_3_mumbai, "Mumbai", "Hitman 3 Mumbai"),
             (GameType.hitman_3_whittleton_creek, "Whittleton Creek", "Hitman 3 Whittleton Creek"),
+            (GameType.hitman_3_ambrose_island, "Ambrose Island", "Hitman 3 Ambrose Island"),
             (GameType.hitman_3_isle_of_sgail, "Isle of Sgail", "Hitman 3 Isle of Sgail"),
             (GameType.hitman_3_new_york, "New York", "Hitman 3 New York"),
             (GameType.hitman_3_haven_island, "Haven Island", "Hitman 3 Haven Island"),
@@ -737,7 +738,6 @@ MANUAL_GAME_GROUPS = {
             (GameType.hitman_3_berlin, "Berlin", "Hitman 3 Berlin"),
             (GameType.hitman_3_chongqing, "Chongqing", "Hitman 3 Chongqing"),
             (GameType.hitman_3_mendoza, "Mendoza", "Hitman 3 Mendoza"),
-            (GameType.hitman_3_ambrose_island, "Ambrose Island", "Hitman 3 Ambrose Island"),
         ],
     },
     GameType.hollow_knight: {
